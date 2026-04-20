@@ -275,7 +275,8 @@ export default function SeoServicesPage({ cmsFaqItems }: SeoServicesPageProps) {
                 fetchPriority="high"
                 height={4096}
                 priority
-                sizes="(min-width: 1024px) 696px, 350px"
+                quality={95}
+                sizes="(min-width: 1024px) 90vw, 100vw"
                 src="/seo-services/hero-statue.webp"
                 width={3072}
               />
