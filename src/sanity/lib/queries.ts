@@ -1,0 +1,247 @@
+import { defineQuery } from "next-sanity";
+
+// --- Blog Posts ---
+
+export const POSTS_QUERY = defineQuery(`
+  *[_type == "post" && defined(slug.current)] | order(publishedAt desc) [0...12] {
+    _id,
+    title,
+    slug,
+    excerpt,
+    mainImage { ..., asset->{ metadata { lqip } } },
+    publishedAt,
+    categories,
+    author-> { name, photo }
+  }
+`);
+
+export const POST_BY_SLUG_QUERY = defineQuery(`
+  *[_type == "post" && slug.current == $slug][0] {
+    _id,
+    title,
+    slug,
+    excerpt,
+    mainImage { ..., asset->{ metadata { lqip } } },
+    body,
+    publishedAt,
+    categories,
+    author-> { name, role, photo, bio },
+    seo
+  }
+`);
+
+export const POST_SLUGS_QUERY = defineQuery(`
+  *[_type == "post" && defined(slug.current)].slug.current
+`);
+
+// --- Case Studies ---
+
+export const CASE_STUDIES_QUERY = defineQuery(`
+  *[_type == "caseStudy" && defined(slug.current)] | order(publishedAt desc) {
+    _id,
+    title,
+    slug,
+    client,
+    panelLabel,
+    excerpt,
+    publishedAt,
+    heroImage { ..., asset->{ metadata { lqip } } },
+    cardImage { ..., asset->{ metadata { lqip } } },
+    metrics,
+    services,
+    featured,
+    quoteText
+  }
+`);
+
+export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
+  *[_type == "caseStudy" && slug.current == $slug][0] {
+    _id,
+    title,
+    slug,
+    client,
+    excerpt,
+    heroImage { ..., asset->{ metadata { lqip } } },
+    metrics,
+    body,
+    services,
+    publishedAt,
+    seo
+  }
+`);
+
+export const CASE_STUDY_SLUGS_QUERY = defineQuery(`
+  *[_type == "caseStudy" && defined(slug.current)].slug.current
+`);
+
+export const FEATURED_CASE_STUDIES_QUERY = defineQuery(`
+  *[_type == "caseStudy" && featured == true] | order(publishedAt desc) [0...6] {
+    _id,
+    title,
+    slug,
+    client,
+    excerpt,
+    heroImage,
+    quoteText
+  }
+`);
+
+// --- Testimonials ---
+
+export const TESTIMONIALS_QUERY = defineQuery(`
+  *[_type == "testimonial"] | order(order asc) {
+    _id,
+    quote,
+    authorName,
+    authorTitle,
+    company,
+    avatar,
+    companyLogo,
+    rating,
+    featured
+  }
+`);
+
+// --- FAQ Items ---
+
+export const FAQ_BY_SERVICE_QUERY = defineQuery(`
+  *[_type == "faqItem" && servicePage == $service] | order(order asc) {
+    _id,
+    question,
+    answer
+  }
+`);
+
+// --- Team Members ---
+
+export const TEAM_MEMBERS_QUERY = defineQuery(`
+  *[_type == "teamMember" && showOnAboutPage != false] | order(order asc) {
+    _id,
+    name,
+    slug,
+    role,
+    department,
+    photo { ..., asset->{ metadata { lqip } } },
+    cardImage { ..., asset->{ metadata { lqip } } },
+    bio,
+    bioParagraphs,
+    contact,
+    socialLinks[] { _key, platform, url },
+    linkedin,
+    showOnAboutPage
+  }
+`);
+
+export const TEAM_MEMBER_BY_SLUG_QUERY = defineQuery(`
+  *[_type == "teamMember" && slug.current == $slug][0] {
+    _id,
+    name,
+    slug,
+    role,
+    department,
+    photo { ..., asset->{ metadata { lqip } } },
+    cardImage { ..., asset->{ metadata { lqip } } },
+    bio,
+    bioParagraphs,
+    contact,
+    socialLinks[] { _key, platform, url },
+    linkedin,
+    showOnAboutPage
+  }
+`);
+
+export const TEAM_MEMBER_SLUGS_QUERY = defineQuery(`
+  *[_type == "teamMember" && defined(slug.current)].slug.current
+`);
+
+// --- Partner Logos ---
+
+export const PARTNER_LOGOS_QUERY = defineQuery(`
+  *[_type == "partnerLogo"] | order(order asc) {
+    _id,
+    name,
+    logo,
+    url
+  }
+`);
+
+// --- Site Settings ---
+
+export const SITE_SETTINGS_QUERY = defineQuery(`
+  *[_type == "siteSettings"][0] {
+    companyName,
+    phone,
+    email,
+    socialLinks[] { _key, platform, url },
+    copyrightText,
+    navItems[] { _key, label, href, children[] { _key, label, href } },
+    footerNavItems[] { _key, label, href },
+    footerCtaHeading,
+    footerCtaBody,
+    footerCtaLabel,
+    footerCtaUrl,
+    headerCtaLabel,
+    headerCtaUrl
+  }
+`);
+
+// --- Partnership Page ---
+
+export const PARTNERSHIP_PAGE_QUERY = defineQuery(`
+  *[_type == "partnershipPage"][0] {
+    _id,
+    title,
+    intro,
+    heroCtaLabel,
+    heroCtaUrl,
+    body,
+    seo
+  }
+`);
+
+// --- Contact + Legal Pages ---
+
+export const CONTACT_PAGE_QUERY = defineQuery(`
+  *[_type == "contactPage"][0] {
+    _id,
+    title,
+    intro,
+    email,
+    seo
+  }
+`);
+
+export const LEGAL_PAGE_BY_SLUG_QUERY = defineQuery(`
+  *[_type == "legalPage" && slug.current == $slug][0] {
+    _id,
+    title,
+    slug,
+    intro,
+    body,
+    contactEmail,
+    seo
+  }
+`);
+
+// --- Service Pages ---
+
+export const SERVICE_PAGE_BY_SLUG_QUERY = defineQuery(`
+  *[_type == "servicePage" && slug.current == $slug][0] {
+    _id,
+    serviceType,
+    slug,
+    heroTitle,
+    heroDescription,
+    heroCtaLabel,
+    heroCtaUrl,
+    heroImage { ..., asset->{ metadata { lqip } } },
+    solutionSectionLabel,
+    solutionSectionHeading,
+    serviceCards[] { _key, title, subtitle, body, icon, iconSrc },
+    processSteps[] { _key, title, description },
+    whyChooseItems[] { _key, title, description, icon, iconSrc },
+    faqItems[]-> { _id, question, answer },
+    relatedCaseStudies[]-> { _id, title, slug, client, excerpt, heroImage { ..., asset->{ metadata { lqip } } } },
+    seo
+  }
+`);

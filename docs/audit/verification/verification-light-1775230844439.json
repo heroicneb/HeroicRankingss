@@ -1,0 +1,493 @@
+[
+  {
+    "frame": "HR - Homepage",
+    "frameIndex": 86,
+    "route": "/",
+    "theme": "light",
+    "figmaTextCount": 196,
+    "domTextCount": 305,
+    "issues": [
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Get Started Today",
+        "expected": "#ffffff",
+        "actual": "rgb(21, 20, 25)"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Others are not better, they’re just easier to find.",
+        "expected": "Others are not better, they’re just easier to find.",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "professionals in our team",
+        "expected": "#151419",
+        "actual": "rgb(83, 83, 83)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "At Heroic Rankings, we offer various partnership opportuniti",
+        "expected": "32px",
+        "actual": "18px",
+        "delta": "-14px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "At Heroic Rankings, we offer various partnership opportuniti",
+        "expected": 500,
+        "actual": 400
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "20+",
+        "expected": 700,
+        "actual": 600
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Committed to delivering data-driven results and long-term su",
+        "expected": "#151419",
+        "actual": "rgb(83, 83, 83)"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "100% CLIENT retention rate",
+        "expected": 700,
+        "actual": 600
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "Certified experts",
+        "expected": 700,
+        "actual": 600
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "OVER 200 SUCCESSFUL",
+        "expected": 700,
+        "actual": 600
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Featured and Recognized by Industry Leaders",
+        "expected": "24px",
+        "actual": "32px",
+        "delta": "8px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Benefit From a Proven Data-Driven Approach That Delivers Res",
+        "expected": "#151419",
+        "actual": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "With our dynamic approach, you'll experience unparalleled growth, dominate searc",
+        "expected": "With our dynamic approach, you'll experience unparalleled growth, dominate searc",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Top 5 SEO Myths You Still Believe in 2025",
+        "expected": "Top 5 SEO Myths You Still Believe in 2025",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "A Dive into Google Algorithm Updates in 2025",
+        "expected": "A Dive into Google Algorithm Updates in 2025",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Outsourcing Link Building: Tips & Tricks",
+        "expected": "24px",
+        "actual": "32px",
+        "delta": "8px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "Outsourcing Link Building: Tips & Tricks",
+        "expected": 500,
+        "actual": 400
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "July 30, 2024 — 6 min read",
+        "expected": "July 30, 2024 — 6 min read",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "July 30, 2024 — 6 min read",
+        "expected": "July 30, 2024 — 6 min read",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "There are so many SEO myths that even some of the oldest veterans in the field s",
+        "expected": "There are so many SEO myths that even some of the oldest veterans in the field s",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Google is always updating its algorithm and search in order to meet the needs of",
+        "expected": "Google is always updating its algorithm and search in order to meet the needs of",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Link-building is a crucial aspect of SEO for enhancing a website’s visibility an",
+        "expected": "Link-building is a crucial aspect of SEO for enhancing a website’s visibility an",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "My Baskets",
+        "expected": "24px",
+        "actual": "32px",
+        "delta": "8px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "My Baskets",
+        "expected": 500,
+        "actual": 400
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "My Baskets",
+        "expected": "#151419",
+        "actual": "rgb(255, 255, 255)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "My Baskets is a leading Canadian online retailer specializin",
+        "expected": "18px",
+        "actual": "24px",
+        "delta": "6px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "My Baskets is a leading Canadian online retailer specializin",
+        "expected": 400,
+        "actual": 500
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "My Baskets",
+        "expected": "32px",
+        "actual": "18px",
+        "delta": "-14px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "My Baskets",
+        "expected": 500,
+        "actual": 400
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Nagish",
+        "expected": "24px",
+        "actual": "32px",
+        "delta": "8px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "Nagish",
+        "expected": 500,
+        "actual": 400
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Nagish",
+        "expected": "#151419",
+        "actual": "rgb(255, 255, 255)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Nagish is a pioneering company dedicated to making communica",
+        "expected": "18px",
+        "actual": "24px",
+        "delta": "6px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "Nagish is a pioneering company dedicated to making communica",
+        "expected": 400,
+        "actual": 500
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Nagish",
+        "expected": "32px",
+        "actual": "18px",
+        "delta": "-14px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "Nagish",
+        "expected": 500,
+        "actual": 400
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Nagish",
+        "expected": "#ffffff",
+        "actual": "rgb(21, 20, 25)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Art by Maudsch",
+        "expected": "24px",
+        "actual": "32px",
+        "delta": "8px"
+      },
+      {
+        "severity": "Minor",
+        "type": "font-weight",
+        "text": "Art by Maudsch",
+        "expected": 500,
+        "actual": 400
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Art by Maudsch",
+        "expected": "#151419",
+        "actual": "rgb(255, 255, 255)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Art by Maudsch is an online platform dedicated to selling un",
+        "expected": "18px",
+        "actual": "32px",
+        "delta": "14px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Art by Maudsch is an online platform dedicated to selling un",
+        "expected": "#151419",
+        "actual": "rgb(255, 255, 255)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Art by Maudsch",
+        "expected": "32px",
+        "actual": "24px",
+        "delta": "-8px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Art by Maudsch",
+        "expected": "#ffffff",
+        "actual": "rgb(21, 20, 25)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Technical SEO Services",
+        "expected": "32px",
+        "actual": "16px",
+        "delta": "-16px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Technical SEO Services",
+        "expected": "#ffffff",
+        "actual": "rgb(21, 20, 25)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "All SEO Services",
+        "expected": "32px",
+        "actual": "16px",
+        "delta": "-16px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "All SEO Services",
+        "expected": "#ffffff",
+        "actual": "rgb(21, 20, 25)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "On-Page SEO",
+        "expected": "32px",
+        "actual": "16px",
+        "delta": "-16px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "On-Page SEO",
+        "expected": "#ffffff",
+        "actual": "rgb(21, 20, 25)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "E-Commerce SEO Services",
+        "expected": "32px",
+        "actual": "14px",
+        "delta": "-18px"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Content Services",
+        "expected": "Content Services",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Content Services",
+        "expected": "Content Services",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Gain visibility on top-tier websites and connect with your target audience to in",
+        "expected": "Gain visibility on top-tier websites and connect with your target audience to in",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "we grow by growing our clients a real SEO agency cannot grow",
+        "expected": "18px",
+        "actual": "52px",
+        "delta": "34px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "we grow by growing our clients a real SEO agency cannot grow",
+        "expected": "#ffffff",
+        "actual": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Services",
+        "expected": "14px",
+        "actual": "16px",
+        "delta": "2px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Services",
+        "expected": "#ffffff",
+        "actual": "rgb(21, 20, 25)"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "Partnership",
+        "expected": "14px",
+        "actual": "52px",
+        "delta": "38px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "Partnership",
+        "expected": "#ffffff",
+        "actual": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "©2025 Heroic Rankings",
+        "expected": "©2025 Heroic Rankings",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "font-size",
+        "text": "On-Page SEO Services",
+        "expected": "16px",
+        "actual": "32px",
+        "delta": "16px"
+      },
+      {
+        "severity": "Major",
+        "type": "color",
+        "text": "On-Page SEO Services",
+        "expected": "#151419",
+        "actual": "rgb(255, 255, 255)"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Technical SEO Services",
+        "expected": "Technical SEO Services",
+        "actual": "NOT FOUND IN DOM"
+      },
+      {
+        "severity": "Major",
+        "type": "missing-text",
+        "figmaText": "Local SEO Services",
+        "expected": "Local SEO Services",
+        "actual": "NOT FOUND IN DOM"
+      }
+    ],
+    "summary": {
+      "total": 65,
+      "critical": 0,
+      "major": 52,
+      "minor": 13
+    }
+  }
+]
