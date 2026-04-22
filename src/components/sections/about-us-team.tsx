@@ -260,7 +260,10 @@ function TeamCard({
         {member.name}
       </h3>
       {member.isRoleGradient ? (
-        <GradientText className="gradient-text-brand-about-us-team-role type-paragraph mt-1 px-5 text-center lg:text-left">
+        <GradientText
+          as="p"
+          className="gradient-text-brand-about-us-team-role type-paragraph mt-1 !block px-5 text-center lg:text-left"
+        >
           {member.role}
         </GradientText>
       ) : (
