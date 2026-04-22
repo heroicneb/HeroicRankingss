@@ -72,7 +72,7 @@ export default async function SiteLayout({
       <Suspense fallback={null}>
         <BreadcrumbSchema />
       </Suspense>
-      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="hr-theme">
+      <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem={false} storageKey="hr-theme">
         <Navbar
           navItems={settings?.navItems ?? []}
           phone={settings?.phone ?? ""}

@@ -1,27 +1,19 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import { flushSync } from "react-dom";
 import { useTheme } from "next-themes";
 
-const THEME_TRANSITION_CLASS = "theme-transitioning";
-const THEME_TRANSITION_DURATION_MS = 200;
+type DocumentWithViewTransition = Document & {
+  startViewTransition?: (cb: () => void) => { ready: Promise<void> };
+};
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const transitionTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
-    null,
-  );
 
   useEffect(() => {
     setMounted(true);
-    return () => {
-      if (transitionTimeoutRef.current !== null) {
-        clearTimeout(transitionTimeoutRef.current);
-      }
-
-      document.documentElement.classList.remove(THEME_TRANSITION_CLASS);
-    };
   }, []);
 
   const isDark = mounted ? resolvedTheme === "dark" : false;
@@ -35,20 +27,46 @@ export default function ThemeToggle() {
       />
     );
   }
-  const handleThemeToggle = () => {
-    const root = document.documentElement;
 
-    root.classList.add(THEME_TRANSITION_CLASS);
-    setTheme(isDark ? "light" : "dark");
+  const handleThemeToggle = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const next = isDark ? "light" : "dark";
+    const doc = document as DocumentWithViewTransition;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
 
-    if (transitionTimeoutRef.current !== null) {
-      clearTimeout(transitionTimeoutRef.current);
+    if (!doc.startViewTransition || prefersReducedMotion) {
+      setTheme(next);
+      return;
     }
 
-    transitionTimeoutRef.current = setTimeout(() => {
-      root.classList.remove(THEME_TRANSITION_CLASS);
-      transitionTimeoutRef.current = null;
-    }, THEME_TRANSITION_DURATION_MS);
+    const { clientX: x, clientY: y } = event;
+    const endRadius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y),
+    );
+
+    const transition = doc.startViewTransition(() => {
+      flushSync(() => {
+        setTheme(next);
+      });
+    });
+
+    void transition.ready.then(() => {
+      document.documentElement.animate(
+        {
+          clipPath: [
+            `circle(0 at ${x}px ${y}px)`,
+            `circle(${endRadius}px at ${x}px ${y}px)`,
+          ],
+        },
+        {
+          duration: 450,
+          easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+          pseudoElement: "::view-transition-new(root)",
+        },
+      );
+    });
   };
 
   return (
@@ -77,7 +95,7 @@ export default function ThemeToggle() {
       </svg>
 
       <span
-        className="relative inline-flex h-[22px] w-[44px] items-center rounded-full border border-[var(--color-hr-accent)] transition-colors"
+        className="relative inline-flex h-[22px] w-[44px] items-center rounded-full border border-[var(--color-hr-accent)]"
         data-state={isDark ? "checked" : "unchecked"}
       >
         <span
