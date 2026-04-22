@@ -82,24 +82,26 @@ export function Stats() {
                 className="w-[294px] text-center text-[var(--color-hr-pure-white)]"
                 key={`mobile-${stat.metric}`}
               >
-                <div
-                  className={cn(
-                    "relative mx-auto mb-[14px] overflow-hidden rounded-full",
-                    stat.mobileSizeClassName,
-                  )}
-                >
-                  <Image
-                    alt={stat.imageAlt}
-                    className="h-full w-full object-cover"
-                    fill
-                    sizes={index === 2 ? "508px" : "532px"}
-                    src={stat.imageSrc}
-                  />
+                <div className="flex h-[266px] items-end justify-center">
+                  <div
+                    className={cn(
+                      "relative overflow-hidden rounded-full",
+                      stat.mobileSizeClassName,
+                    )}
+                  >
+                    <Image
+                      alt={stat.imageAlt}
+                      className="h-full w-full object-cover"
+                      fill
+                      sizes={index === 2 ? "508px" : "532px"}
+                      src={stat.imageSrc}
+                    />
+                  </div>
                 </div>
-                <p className="w-full max-w-full text-[34px] font-semibold uppercase leading-none tracking-[-0.6801px] text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)]">
+                <p className="relative z-10 -mt-[10px] w-full max-w-full text-[34px] font-semibold uppercase leading-none tracking-[-0.6801px] text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)]">
                   {stat.metric}
                 </p>
-                <p className="type-paragraph mt-[7px] text-[var(--color-hr-pure-white)]">
+                <p className="type-paragraph mt-[10px] text-[var(--color-hr-pure-white)]">
                   {stat.detail}
                 </p>
               </article>
@@ -143,21 +145,23 @@ export function Stats() {
                 className="mx-auto w-full max-w-[413px] text-center text-[var(--color-hr-pure-white)]"
                 key={`desktop-${stat.metric}`}
               >
-                <div
-                  className={`relative mx-auto mb-6 overflow-hidden rounded-full ${stat.sizeClassName}`}
-                >
-                  <Image
-                    alt={stat.imageAlt}
-                    className="h-full w-full object-cover"
-                    fill
-                    sizes={index === 2 ? "718px" : "752px"}
-                    src={stat.imageSrc}
-                  />
+                <div className="flex h-[280px] items-end justify-center min-[1360px]:h-[376px]">
+                  <div
+                    className={`relative overflow-hidden rounded-full ${stat.sizeClassName}`}
+                  >
+                    <Image
+                      alt={stat.imageAlt}
+                      className="h-full w-full object-cover"
+                      fill
+                      sizes={index === 2 ? "718px" : "752px"}
+                      src={stat.imageSrc}
+                    />
+                  </div>
                 </div>
-                <p className="type-key-point w-full max-w-full text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)]">
+                <p className="type-key-point relative z-10 -mt-[15px] w-full max-w-full text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)]">
                   {stat.metric}
                 </p>
-                <p className="type-paragraph mt-2 text-[var(--color-hr-pure-white)]">
+                <p className="type-paragraph mt-3 text-[var(--color-hr-pure-white)]">
                   {stat.detail}
                 </p>
               </article>

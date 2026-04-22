@@ -156,24 +156,16 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
 };
 
 const ELEVATE_VARIANT: CtaVariant = {
-  heading: (
-    <>
-      Ready to Elevate
-      <br />
-      Your{" "}
-      <span className={GRADIENT_SPAN_CLASS} style={GRADIENT_STYLE}>
-        Online Presence?
-      </span>
-    </>
-  ),
+  heading: <>Ready to grow together</>,
   body: (
     <>
-      Scale your business with a framework that is adjustable to any industry.
-      <br />
-      Contact us today to start your SEO journey with Heroic Rankings.
+      Our success is measured in your results. We built Heroic Rankings on a
+      simple belief &mdash; a real SEO agency can only grow by growing its
+      clients. So we don&apos;t just run campaigns. We build long-term
+      partnerships where your growth is the only metric that matters.
     </>
   ),
-  ctaLabel: "Get Started Today",
+  ctaLabel: "Start Growing",
   ctaWidth: EXPANDED_CTA_WIDTH,
 };
 

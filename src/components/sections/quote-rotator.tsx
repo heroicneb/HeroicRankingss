@@ -10,9 +10,14 @@ export interface QuoteRotatorProps {
   intervalMs?: number;
 }
 
+/**
+ * Renders a 3-line rotating window (prev / current / next) across the full
+ * quote pool. All quotes stay mounted so transitions are smooth — the
+ * visible window shifts via CSS transform offsets as `activeIndex` advances.
+ */
 export function QuoteRotator({ quotes, intervalMs = 3200 }: QuoteRotatorProps) {
   const quoteCount = quotes.length;
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     if (quoteCount < 2) {
@@ -52,20 +57,45 @@ export function QuoteRotator({ quotes, intervalMs = 3200 }: QuoteRotatorProps) {
   const currentIndex = activeIndex % quoteCount;
 
   return (
-    <div className="quote-rotator mx-auto flex max-w-[926px] flex-col items-center gap-[30px] text-center">
+    <div
+      className="quote-rotator relative mx-auto h-[440px] w-full max-w-[926px] overflow-hidden sm:h-[340px] lg:h-[260px]"
+      style={
+        {
+          "--quote-offset": "160px",
+        } as React.CSSProperties
+      }
+    >
       {quotes.map((quote, index) => {
-        const isActive = currentIndex === index;
+        const rel = (index - currentIndex + quoteCount) % quoteCount;
+        const isCurrent = rel === 0;
+        const isNext = rel === 1;
+        const isPrev = rel === quoteCount - 1;
+        const isVisible = isCurrent || isNext || isPrev;
+
+        const position = isPrev
+          ? "calc(-50% - var(--quote-offset))"
+          : isNext
+            ? "calc(-50% + var(--quote-offset))"
+            : "-50%";
 
         return (
           <p
+            aria-hidden={!isCurrent}
             className={cn(
-              "quote-rotator-line type-h4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] transition-[opacity,filter,transform] duration-700 ease-out",
-              isActive ? "scale-100 opacity-100 blur-0" : "scale-[0.99] opacity-50 blur-[4px]",
+              "quote-rotator-line type-h4 absolute left-0 right-0 top-1/2 mx-auto w-full px-4 text-center transition-[opacity,filter,transform] duration-700 ease-out text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] sm:[--quote-offset:120px] lg:[--quote-offset:80px]",
+              isCurrent && "scale-100 opacity-100 blur-0",
+              (isPrev || isNext) && "scale-[0.99] opacity-50 blur-[4px]",
+              !isVisible && "pointer-events-none opacity-0",
             )}
             key={quote.id}
+            style={{
+              transform: `translateY(${position})`,
+            }}
           >
             {quote.lead}
-            <span className="gradient-text-brand gradient-text-brand-quote">{quote.accent}</span>
+            <span className="gradient-text-brand gradient-text-brand-quote">
+              {quote.accent}
+            </span>
             {quote.tail}
           </p>
         );

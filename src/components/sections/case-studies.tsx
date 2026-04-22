@@ -63,10 +63,46 @@ const QUOTES: QuoteLine[] = [
     tail: " through our targeted SEO strategy”",
   },
   {
-    id: "number-artist",
-    lead: "“Number Artist became ",
+    id: "diy-crafts",
+    lead: "“DIY Crafts eCom Brand became ",
     accent: "top seller on the market",
     tail: " in nine months”",
+  },
+  {
+    id: "support-adventure",
+    lead: "“SupportAdventure grew organic traffic by ",
+    accent: "113% in 6 months",
+    tail: " through targeted link building and content strategy.”",
+  },
+  {
+    id: "warrior-willpower",
+    lead: "“Warrior Willpower reached ",
+    accent: "top 3 positions for 10+ high-intent keywords",
+    tail: " within 2 months of launching their link-building campaign.”",
+  },
+  {
+    id: "cirrus-insight",
+    lead: "“Cirrus Insight increased ",
+    accent: "qualified organic leads by 40%",
+    tail: " after a full SEO strategy implementation and authority link-building push.”",
+  },
+  {
+    id: "nursa",
+    lead: "“Nursa expanded its search visibility across all targeted pages and ",
+    accent: "grew organic sessions by 20%",
+    tail: " within the first year.”",
+  },
+  {
+    id: "infobip",
+    lead: "“Infobip strengthened its ",
+    accent: "core pages and their authority",
+    tail: " through a targeted link building campaign.”",
+  },
+  {
+    id: "frontbrick",
+    lead: "“FrontBrick went from near-zero organic presence to ",
+    accent: "qualified monthly visitors",
+    tail: " in under 6 months.”",
   },
 ];
 

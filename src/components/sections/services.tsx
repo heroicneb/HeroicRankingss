@@ -112,7 +112,8 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "Turn engagement into conversions.",
     ],
     href: "/content-creation",
-    mobileImageClassName: "h-[165.32%] w-[125.27%] left-[-7.98%] top-[-42.29%]",
+    mobileImageClassName:
+      "h-[165.32%] w-[125.27%] left-[-7.98%] top-[-42.29%] [transform:scaleX(-1)]",
   },
   {
     title: "Content Services",

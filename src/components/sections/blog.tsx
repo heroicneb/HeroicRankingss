@@ -14,20 +14,26 @@ interface BlogCardItem {
   href: string;
 }
 
+const DEFAULT_READ_TIME = "6 min read";
+
 function mapCmsPosts(cmsPosts: SanityPostSummary[]): BlogCardItem[] {
-  return cmsPosts.map((post) => ({
-    slug: post.slug,
-    title: post.title,
-    excerpt: post.excerpt,
-    date: post.publishedAt
+  return cmsPosts.map((post) => {
+    const formatted = post.publishedAt
       ? new Intl.DateTimeFormat("en-US", {
           day: "numeric",
           month: "long",
           year: "numeric",
         }).format(new Date(post.publishedAt))
-      : null,
-    href: `/insights/${post.slug}`,
-  }));
+      : null;
+
+    return {
+      slug: post.slug,
+      title: post.title,
+      excerpt: post.excerpt,
+      date: formatted ? `${formatted} — ${DEFAULT_READ_TIME}` : null,
+      href: `/insights/${post.slug}`,
+    };
+  });
 }
 
 interface BlogProps {
@@ -64,7 +70,7 @@ export function Blog({ cmsPosts }: BlogProps) {
             </h2>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="hidden justify-end lg:flex">
             <AppLink
               className="type-cta motion-interactive motion-interactive-press inline-flex h-[47px] w-fit min-w-max items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
               href="/insights"
@@ -82,23 +88,36 @@ export function Blog({ cmsPosts }: BlogProps) {
           {posts.map((blog) => (
             <AppLink
               aria-label={`Open featured blog: ${blog.title}`}
-              className="mx-auto block w-full max-w-[348px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] p-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:h-[467px] lg:max-w-none lg:rounded-[var(--radius-card)]"
+              className="mx-auto flex w-full max-w-[348px] flex-col overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:h-[467px] lg:max-w-none lg:rounded-[var(--radius-card)]"
               href={blog.href}
               id={`featured-blog-${blog.slug}`}
               key={blog.slug}
             >
-              <div className="surface-radial h-[174px] rounded-[20px] lg:h-[207px] lg:rounded-[30px]" />
-              <h3 className="type-h4 mt-5 text-center font-normal text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
-                {blog.title}
-              </h3>
-              <p className="type-paragraph mt-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
-                {blog.excerpt}
-              </p>
-              <p className="type-paragraph mt-5 text-center text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
-                {blog.date}
-              </p>
+              <div className="surface-radial h-[174px] w-full shrink-0 lg:h-[207px]" />
+              <div className="flex flex-1 flex-col px-5 pb-5 pt-5">
+                <h3 className="type-h3 line-clamp-2 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
+                  {blog.title}
+                </h3>
+                <p className="type-paragraph mt-5 line-clamp-3 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
+                  {blog.excerpt}
+                </p>
+                <p className="type-paragraph mt-auto pt-5 text-center text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
+                  {blog.date}
+                </p>
+              </div>
             </AppLink>
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-center lg:hidden">
+          <AppLink
+            className="type-cta motion-interactive motion-interactive-press inline-flex h-[47px] w-full max-w-[350px] items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
+            href="/insights"
+            motionPreset="none"
+          >
+            View More Blogs
+            <GradientArrowUpRightIcon className="size-[10px]" />
+          </AppLink>
         </div>
       </Container>
     </section>

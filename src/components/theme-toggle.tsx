@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 
 const THEME_TRANSITION_CLASS = "theme-transitioning";
@@ -8,11 +8,13 @@ const THEME_TRANSITION_DURATION_MS = 200;
 
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const transitionTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
     null,
   );
 
   useEffect(() => {
+    setMounted(true);
     return () => {
       if (transitionTimeoutRef.current !== null) {
         clearTimeout(transitionTimeoutRef.current);
@@ -22,7 +24,17 @@ export default function ThemeToggle() {
     };
   }, []);
 
-  const isDark = resolvedTheme === "dark";
+  const isDark = mounted ? resolvedTheme === "dark" : false;
+
+  if (!mounted) {
+    return (
+      <span
+        aria-hidden
+        className="inline-flex items-center gap-[6px]"
+        style={{ width: 62, height: 22 }}
+      />
+    );
+  }
   const handleThemeToggle = () => {
     const root = document.documentElement;
 

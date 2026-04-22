@@ -624,22 +624,10 @@ textarea {
 
 .service-card-back-image {
   filter: blur(14px);
-  transform: scale(1.08);
-  transform-origin: center;
 }
 
 .service-card-back-overlay {
-  background:
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--color-hr-dark) 0%, transparent) 0%,
-      color-mix(in srgb, var(--color-hr-dark) 15%, transparent) 100%
-    ),
-    linear-gradient(
-      90deg,
-      color-mix(in srgb, var(--color-hr-dark) 24%, transparent) 0%,
-      color-mix(in srgb, var(--color-hr-dark) 24%, transparent) 100%
-    );
+  background: color-mix(in srgb, var(--color-hr-dark) 72%, transparent);
 }
 
 .seo-service-card {
@@ -709,21 +697,10 @@ textarea {
 
 .seo-service-card-back-image {
   filter: blur(14px);
-  transform: scale(1.08);
 }
 
 .seo-service-card-back-overlay {
-  background:
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--color-hr-dark) 6%, transparent) 0%,
-      color-mix(in srgb, var(--color-hr-dark) 52%, transparent) 100%
-    ),
-    linear-gradient(
-      90deg,
-      color-mix(in srgb, var(--color-hr-dark) 24%, transparent) 0%,
-      color-mix(in srgb, var(--color-hr-dark) 24%, transparent) 100%
-    );
+  background: color-mix(in srgb, var(--color-hr-dark) 72%, transparent);
 }
 
 .services-scroll-rail {

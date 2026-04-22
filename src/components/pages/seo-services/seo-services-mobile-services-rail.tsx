@@ -253,13 +253,11 @@ export function SeoServicesMobileServicesRail() {
                   <Image
                     alt=""
                     aria-hidden
-                    className={cn("service-card-back-image pointer-events-none absolute max-w-none", card.imageClassName)}
-                    height={card.imageHeight}
+                    className="service-card-back-image pointer-events-none absolute inset-0 h-full w-full object-cover"
+                    fill
                     quality={95}
                     sizes={`(max-width: 1023px) ${card.mobileImageRenderWidth}px, ${MOBILE_CARD_WIDTH}px`}
                     src={card.imageSrc}
-                    style={card.imageStyle}
-                    width={card.imageWidth}
                   />
                   <div className="seo-service-card-back-overlay absolute inset-0" />
 

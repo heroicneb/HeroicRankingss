@@ -191,7 +191,7 @@ export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
 
   return (
     <section
-      className="pb-[60px] pt-[40px] lg:pb-[120px] lg:pt-[20px]"
+      className="pb-[60px] pt-[60px] lg:pb-[120px] lg:pt-[120px]"
       id="testimonials"
     >
       <Container>
@@ -278,7 +278,7 @@ export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
                     >
                       “
                     </span>
-                    <p className="type-h4 w-full max-w-[310px] font-normal text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                    <p className="type-h4 w-full max-w-[310px] leading-[1.6] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                       {withWrappedQuotes(testimonial.quote)}
                     </p>
                   </div>
@@ -355,7 +355,7 @@ export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
               >
                 “
               </span>
-              <p className="type-h4 absolute left-5 top-[191px] w-[373px] font-normal text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+              <p className="type-h4 absolute left-5 top-[191px] w-[373px] leading-[1.6] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                 {withWrappedQuotes(testimonial.quote)}
               </p>
               <h3 className="type-h4 absolute left-5 top-[480px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">

@@ -271,7 +271,7 @@ export default function SeoServicesPage({ cmsFaqItems }: SeoServicesPageProps) {
             <div className="pointer-events-none relative h-[331px] w-full overflow-hidden lg:absolute lg:bottom-0 lg:left-[198px] lg:top-0 lg:h-auto lg:w-[1222px] lg:rounded-br-[40px] lg:rounded-tl-none">
               <Image
                 alt="Classical statue holding a sword"
-                className="absolute left-[-13.79%] top-[-15.85%] h-[199.15%] w-[130.1%] max-w-none object-cover lg:left-[34.77%] lg:top-[-13.53%] lg:h-[163.31%] lg:w-[69.76%]"
+                className="absolute left-[-6%] top-[-15.85%] h-[199.15%] w-[130.1%] max-w-none object-cover lg:left-[34.77%] lg:top-[-13.53%] lg:h-[163.31%] lg:w-[69.76%]"
                 fetchPriority="high"
                 height={4096}
                 priority

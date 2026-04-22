@@ -169,7 +169,7 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
 
   return (
     <section className="pt-[60px] lg:pt-[120px]" id="about-us-team">
-      <div className="mx-auto w-full max-w-[1440px] px-[15px] lg:px-[80px]">
+      <div className="mx-auto w-full max-w-[1440px] px-[15px] lg:px-[40px]">
         <SectionLabel className="text-center lg:text-left">
           / Our Team /
         </SectionLabel>

@@ -4,7 +4,7 @@ import { NavbarActiveLinks } from "@/components/layout/navbar-active-links";
 import { MobileMenu } from "@/components/layout/mobile-menu";
 import ThemeToggle from "@/components/theme-toggle";
 import { AppLink } from "@/components/ui/app-link";
-import { ArrowUpRightIcon } from "@/components/ui/icons";
+import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SITE_PHONE } from "@/lib/site";
 import type { NavItem } from "@/types";
 
@@ -102,12 +102,12 @@ export function Navbar({
 
             <AppLink
               aria-label={resolvedCtaLabel}
-              className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-[149px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
+              className="motion-interactive motion-interactive-press inline-flex items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-[20px] py-[12px] text-[16px] font-medium leading-none whitespace-nowrap text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
               href={resolvedCtaUrl}
               motionPreset="none"
             >
               {resolvedCtaLabel}
-              <ArrowUpRightIcon className="size-3.5" />
+              <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
 
