@@ -272,13 +272,14 @@ export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
                   </div>
 
                   <div className="flex flex-col gap-5">
-                    <span
+                    <Image
+                      alt=""
                       aria-hidden
-                      className="text-[40px] font-medium leading-none tracking-[-0.04em] text-[var(--color-hr-accent)]"
-                    >
-                      “
-                    </span>
-                    <p className="type-h4 w-full max-w-[310px] leading-[1.6] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                      height={15}
+                      src="/figma/testimonials/quote-mark.svg"
+                      width={22}
+                    />
+                    <p className="type-h4 w-full max-w-[310px] leading-[1.2] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                       {withWrappedQuotes(testimonial.quote)}
                     </p>
                   </div>
@@ -349,13 +350,15 @@ export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
                 </div>
               </div>
 
-              <span
+              <Image
+                alt=""
                 aria-hidden
-                className="absolute left-5 top-[137px] text-[40px] font-medium leading-none tracking-[-0.04em] text-[var(--color-hr-accent)]"
-              >
-                “
-              </span>
-              <p className="type-h4 absolute left-5 top-[191px] w-[373px] leading-[1.6] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                className="absolute left-5 top-[155px]"
+                height={15}
+                src="/figma/testimonials/quote-mark.svg"
+                width={22}
+              />
+              <p className="type-h4 absolute left-5 top-[215px] w-[373px] leading-[1.2] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                 {withWrappedQuotes(testimonial.quote)}
               </p>
               <h3 className="type-h4 absolute left-5 top-[480px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">

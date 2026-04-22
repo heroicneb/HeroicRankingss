@@ -34,7 +34,7 @@ export const TEAM_MEMBERS: AboutTeamMember[] = [
   },
   {
     name: "Slobodan Kačavenda",
-    role: "Head of Link Building",
+    role: "/  Link Building Manager  /",
     imageSrc: "/figma/about-us/team/slobodan.jpg",
     imageAlt: "Slobodan Kačavenda portrait",
   },

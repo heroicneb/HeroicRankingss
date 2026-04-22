@@ -121,26 +121,10 @@ export function About() {
               <SectionLabel className="w-full xl:relative xl:-top-[6px]">
                 / About /
               </SectionLabel>
-              <h2 className="type-h2 mt-5 w-[306px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] xl:mt-[26px] xl:w-auto">
-                <span className="xl:hidden">
-                  A Data-Driven SEO Agency and{" "}
-                  <span className="gradient-text-brand gradient-text-brand-about-heading">
-                    Trusted Growth Partner
-                  </span>
-                </span>
-                <span className="hidden xl:block">
-                  <span className="block">A Data-Driven SEO</span>
-                  <span className="block">
-                    Agency and{" "}
-                    <span className="gradient-text-brand gradient-text-brand-about-heading">
-                      Trusted
-                    </span>
-                  </span>
-                  <span className="block">
-                    <span className="gradient-text-brand gradient-text-brand-about-heading">
-                      Growth Partner
-                    </span>
-                  </span>
+              <h2 className="type-h2 mt-5 w-[306px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] xl:mt-[26px] xl:w-auto xl:max-w-[485px]">
+                Data-Driven SEO Agency and{" "}
+                <span className="gradient-text-brand gradient-text-brand-about-heading">
+                  Trusted Growth Partner
                 </span>
               </h2>
               <div className="mt-10 w-[316px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] xl:w-auto xl:max-w-[485px]">

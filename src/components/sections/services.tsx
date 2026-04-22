@@ -72,9 +72,9 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
     mobileTitleClassName: "max-w-[144px]",
   },
   {
-    title: "Technical SEO Services",
+    title: "Local SEO Services",
     frontImageSrc: "/figma/services/card-technical-2.webp",
-    frontImageAlt: "Classical statue with sculpted architectural column",
+    frontImageAlt: "Classical statue holding a horn",
     backDescription:
       "Dominate Your Local Market. Connect with Nearby Customers. Increase Foot Traffic.",
     backDescriptionLines: [
@@ -82,7 +82,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "Connect with Nearby Customers.",
       "Increase Foot Traffic.",
     ],
-    href: "/technical-seo",
+    href: "/local-seo",
     mobileImageClassName:
       "h-[81.55%] w-[183.54%] left-[-30.43%] top-[18.29%] [transform:scaleX(-1)]",
     mobileTitleClassName: "max-w-[144px]",
@@ -116,9 +116,9 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "h-[165.32%] w-[125.27%] left-[-7.98%] top-[-42.29%] [transform:scaleX(-1)]",
   },
   {
-    title: "Content Services",
+    title: "Keyword Strategy Services",
     frontImageSrc: "/figma/services/card-content-2.webp",
-    frontImageAlt: "Classical bust and stone fragment",
+    frontImageAlt: "Classical bust studying a stone fragment",
     backDescription:
       "Get the most out of your content. Target the Right Search. Find More Customers.",
     backDescriptionLines: [
@@ -126,8 +126,9 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "Target the Right Search.",
       "Find More Customers.",
     ],
-    href: "/content-creation",
+    href: "/keyword-strategy",
     mobileImageClassName: "h-[121.78%] w-[223.77%] left-[-14.04%] top-[-4.83%]",
+    mobileTitleClassName: "max-w-[180px]",
   },
 ];
 

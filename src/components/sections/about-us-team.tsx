@@ -188,7 +188,7 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
               return (
                 <a
                   aria-label={`Open team profile: ${member.name}`}
-                  className="motion-interactive motion-interactive-press group relative block overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px]"
+                  className="motion-interactive motion-interactive-press group relative block overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] pb-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px] lg:pb-7"
                   href={`#${createTeamMemberHash(member.name)}`}
                   key={member.name}
                 >
@@ -201,7 +201,7 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
               return (
                 <AppLink
                   aria-label="Apply to join Heroic Rankings"
-                  className="motion-interactive motion-interactive-press group relative block overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px]"
+                  className="motion-interactive motion-interactive-press group relative block overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] pb-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px] lg:pb-7"
                   href="/contact"
                   key={member.name}
                   motionPreset="none"
@@ -213,7 +213,7 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
 
             return (
               <div
-                className="relative block cursor-default overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px]"
+                className="relative block cursor-default overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] pb-5 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px] lg:pb-7"
                 key={member.name}
               >
                 <TeamCard member={member} showArrow={false} />
@@ -256,18 +256,18 @@ function TeamCard({
         width={305}
       />
 
-      <h3 className="type-team-title mt-5 px-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
+      <h3 className="type-team-title mt-5 px-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-6 lg:text-left">
         {member.name}
       </h3>
       {member.isRoleGradient ? (
         <GradientText
           as="p"
-          className="gradient-text-brand-about-us-team-role type-paragraph mt-1 !block px-5 text-center lg:text-left"
+          className="gradient-text-brand-about-us-team-role type-paragraph mt-1 !block px-5 text-center lg:mt-2 lg:text-left"
         >
           {member.role}
         </GradientText>
       ) : (
-        <p className="type-paragraph mt-1 px-5 text-center text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
+        <p className="type-paragraph mt-1 px-5 text-center text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:mt-2 lg:text-left">
           {member.role}
         </p>
       )}

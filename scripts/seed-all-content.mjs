@@ -206,7 +206,7 @@ const TEAM_MEMBERS = [
   { name: "Stefan Cvetković", role: "Organic Growth Manager", department: "seo-strategy", order: 3 },
   { name: "Una Stanojević", role: "Head of Operations", department: "operations", order: 4 },
   { name: "Srđan Gombar", role: "/ Content Manager /", department: "content", order: 5 },
-  { name: "Slobodan Kačavenda", role: "Head of Link Building", department: "link-building", order: 6 },
+  { name: "Slobodan Kačavenda", role: "Link Building Manager", department: "link-building", order: 6 },
   { name: "Anđela Knežević", role: "/ Link Building Specialist /", department: "link-building", order: 7 },
 ];
 
