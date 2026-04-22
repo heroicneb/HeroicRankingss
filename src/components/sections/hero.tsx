@@ -10,32 +10,35 @@ export function Hero() {
       <Container>
         <div className="mx-auto flex max-w-[857px] flex-col items-center text-center">
           <h1 className="type-h1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-            Others are not better, they&apos;re just easier to find.
+            Others are not better,
+            <br />
+            they&apos;re just easier to find.
           </h1>
-          <p className="type-paragraph mx-auto mt-[30px] w-full max-w-[342px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-[17px] lg:max-w-[670px] lg:min-h-[116px]">
+          <p className="type-paragraph mx-auto mt-[30px] w-full max-w-[342px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-[17px] lg:max-w-[670px]">
             <span className="block">
               If your audience can&apos;t find you, they&apos;ll choose the
-              competitor who ranks.
+              competitor who shows up.
             </span>
             <span className="mt-5 block">
-              We help businesses scale through a proven SEO framework that
-              adapts across industries. Backed by a 212.6% growth rate and 100%
-              client retention in our most recent year, our focus is simple:
-              sustained visibility that converts.
+              Search has changed. Your audience now finds answers through
+              Google, AI overviews, and LLM recommendations. If you&apos;re not
+              visible across all of them, you&apos;re losing ground. We help
+              businesses dominate every search surface &mdash; backed by a
+              212.6% growth rate and 100% client retention.
             </span>
           </p>
           <AppLink
-            className="type-cta motion-interactive motion-interactive-press mt-[30px] inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:mt-[29px] lg:w-[198px] lg:max-w-none"
+            className="type-cta motion-interactive motion-interactive-press mt-[30px] inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:mt-[29px] lg:w-auto lg:max-w-none lg:px-6"
             href="/contact"
             motionPreset="none"
           >
-            Get Started Today
+            Get Found Everywhere
             <GradientArrowUpRightIcon className="size-[10px]" />
           </AppLink>
         </div>
       </Container>
 
-      <div className="mx-auto mt-[5px] max-w-[1440px] px-[5px] md:px-[10px] lg:mt-[116px]">
+      <div className="mx-auto mt-[60px] max-w-[1440px] px-[5px] md:px-[10px] lg:mt-[116px]">
         <div className="relative h-[180px] overflow-hidden rounded-[30px] sm:h-[300px] md:h-[380px] lg:h-[480px] lg:rounded-[var(--radius-card)]">
           <Image
             alt="Classical statue representing enduring digital presence"
