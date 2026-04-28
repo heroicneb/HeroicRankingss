@@ -14,9 +14,9 @@ export function CaseStudyGrowthChart({
 }: {
   data: CaseStudyGrowthChartData | null;
 }) {
-  if (!data || !data.series?.length) {
+  if (!data || !data.series?.length || !data.months?.length) {
     return (
-      <div className="h-[480px] grid place-items-center text-[var(--color-hr-grey)]">
+      <div className="h-[384px] lg:h-[480px] grid place-items-center text-[var(--color-hr-grey)]">
         Data unavailable
       </div>
     );
