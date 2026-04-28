@@ -29,7 +29,7 @@ import type { NavItem, NavLink } from "@/types";
 // Represents a Sanity image field with expanded asset metadata (via `asset->`)
 
 interface SanityImageRef {
-  _type: 'image';
+  _type: "image";
   asset?: {
     _ref?: string;
     _type?: string;
@@ -267,7 +267,10 @@ interface SanityRawServicePage {
 
 // ── Helpers ────────────────────────────────────────────────────────
 
-function imageUrl(source: SanityImageRef | null | undefined, width?: number): string {
+function imageUrl(
+  source: SanityImageRef | null | undefined,
+  width?: number,
+): string {
   if (!source) return "";
   try {
     const builder = urlFor(source);
@@ -277,7 +280,9 @@ function imageUrl(source: SanityImageRef | null | undefined, width?: number): st
   }
 }
 
-function imageLqip(source: SanityImageRef | null | undefined): string | undefined {
+function imageLqip(
+  source: SanityImageRef | null | undefined,
+): string | undefined {
   if (!source || typeof source !== "object") return undefined;
   const asset = source.asset;
   if (!asset || typeof asset !== "object") return undefined;
@@ -334,50 +339,56 @@ export async function getPosts(): Promise<SanityPostSummary[]> {
     mainImageLqip: imageLqip(post.mainImage),
     mainImageAlt: post.mainImage?.alt ?? post.title,
     publishedAt: post.publishedAt ?? null,
-    categories: (post.categories ?? []).filter((category: unknown): category is string => typeof category === "string"),
+    categories: (post.categories ?? []).filter(
+      (category: unknown): category is string => typeof category === "string",
+    ),
   }));
 }
 
-export const getPostBySlug = cache(async (slug: string): Promise<SanityPostDetail | null> => {
-  const { data } = await sanityFetch({
-    query: POST_BY_SLUG_QUERY,
-    params: { slug },
-  });
-  if (!data) return null;
+export const getPostBySlug = cache(
+  async (slug: string): Promise<SanityPostDetail | null> => {
+    const { data } = await sanityFetch({
+      query: POST_BY_SLUG_QUERY,
+      params: { slug },
+    });
+    if (!data) return null;
 
-  const post = data as SanityRawPostDetail;
-  const rawAuthor = post.author ?? null;
-  const author: SanityPostAuthor | null = rawAuthor
-    ? {
-        name: rawAuthor.name ?? null,
-        role: rawAuthor.role ?? null,
-        bio: rawAuthor.bio ?? null,
-        bioParagraphs: rawAuthor.bioParagraphs ?? null,
-        linkedin: rawAuthor.linkedin ?? null,
-        photoUrl: imageUrl(rawAuthor.photo, 600),
-        photoAlt: rawAuthor.photo?.alt ?? rawAuthor.name ?? "",
-        photoLqip: imageLqip(rawAuthor.photo),
-      }
-    : null;
+    const post = data as SanityRawPostDetail;
+    const rawAuthor = post.author ?? null;
+    const author: SanityPostAuthor | null = rawAuthor
+      ? {
+          name: rawAuthor.name ?? null,
+          role: rawAuthor.role ?? null,
+          bio: rawAuthor.bio ?? null,
+          bioParagraphs: rawAuthor.bioParagraphs ?? null,
+          linkedin: rawAuthor.linkedin ?? null,
+          photoUrl: imageUrl(rawAuthor.photo, 600),
+          photoAlt: rawAuthor.photo?.alt ?? rawAuthor.name ?? "",
+          photoLqip: imageLqip(rawAuthor.photo),
+        }
+      : null;
 
-  return {
-    _id: post._id,
-    title: post.title,
-    slug: post.slug?.current ?? slug,
-    excerpt: post.excerpt ?? null,
-    mainImageUrl: imageUrl(post.mainImage, 1200),
-    mainImageLqip: imageLqip(post.mainImage),
-    mainImageAlt: post.mainImage?.alt ?? post.title,
-    publishedAt: post.publishedAt ?? null,
-    categories: (post.categories ?? []).filter((category: unknown): category is string => typeof category === "string"),
-    body: post.body ?? null,
-    authorName: rawAuthor?.name ?? null,
-    authorRole: rawAuthor?.role ?? null,
-    author,
-    seoTitle: post.seo?.metaTitle ?? null,
-    seoDescription: post.seo?.metaDescription ?? null,
-  };
-});
+    return {
+      _id: post._id,
+      title: post.title,
+      slug: post.slug?.current ?? slug,
+      excerpt: post.excerpt ?? null,
+      mainImageUrl: imageUrl(post.mainImage, 1200),
+      mainImageLqip: imageLqip(post.mainImage),
+      mainImageAlt: post.mainImage?.alt ?? post.title,
+      publishedAt: post.publishedAt ?? null,
+      categories: (post.categories ?? []).filter(
+        (category: unknown): category is string => typeof category === "string",
+      ),
+      body: post.body ?? null,
+      authorName: rawAuthor?.name ?? null,
+      authorRole: rawAuthor?.role ?? null,
+      author,
+      seoTitle: post.seo?.metaTitle ?? null,
+      seoDescription: post.seo?.metaDescription ?? null,
+    };
+  },
+);
 
 export async function getPostSlugs(): Promise<string[]> {
   const data = await client.fetch<unknown[]>(POST_SLUGS_QUERY);
@@ -455,7 +466,9 @@ export async function getContactPage(): Promise<SanityContactPage | null> {
   };
 }
 
-export async function getLegalPageBySlug(slug: string): Promise<SanityLegalPage | null> {
+export async function getLegalPageBySlug(
+  slug: string,
+): Promise<SanityLegalPage | null> {
   const { data } = await sanityFetch({
     query: LEGAL_PAGE_BY_SLUG_QUERY,
     params: { slug },
@@ -502,10 +515,12 @@ export async function getSiteSettings(): Promise<SiteSettings | null> {
     companyName: settings.companyName ?? "Heroic Rankings",
     phone: settings.phone ?? "+1 307 336 7191",
     email: settings.email ?? "info@heroicrankings.com",
-    socialLinks: (settings.socialLinks ?? []).map((sl: SanityRawSocialLink) => ({
-      platform: sl.platform,
-      url: sl.url,
-    })),
+    socialLinks: (settings.socialLinks ?? []).map(
+      (sl: SanityRawSocialLink) => ({
+        platform: sl.platform,
+        url: sl.url,
+      }),
+    ),
     copyrightText: settings.copyrightText ?? "©2026 Heroic Rankings",
     navItems: (settings.navItems ?? []).map((item: SanityRawNavItem) => ({
       label: item.label,
@@ -515,10 +530,12 @@ export async function getSiteSettings(): Promise<SiteSettings | null> {
         href: child.href,
       })),
     })),
-    footerNavItems: (settings.footerNavItems ?? []).map((item: SanityRawFooterNavItem) => ({
-      label: item.label,
-      href: item.href,
-    })),
+    footerNavItems: (settings.footerNavItems ?? []).map(
+      (item: SanityRawFooterNavItem) => ({
+        label: item.label,
+        href: item.href,
+      }),
+    ),
     footerCtaHeading: settings.footerCtaHeading ?? null,
     footerCtaBody: settings.footerCtaBody ?? null,
     footerCtaLabel: settings.footerCtaLabel ?? null,
@@ -566,7 +583,9 @@ export async function getTeamMembers(): Promise<SanityTeamMember[]> {
     cardImageLqip: imageLqip(m.cardImage),
     bio: m.bio ?? null,
     bioParagraphs: m.bioParagraphs ?? null,
-    contact: m.contact ? { email: m.contact.email ?? null, phone: m.contact.phone ?? null } : null,
+    contact: m.contact
+      ? { email: m.contact.email ?? null, phone: m.contact.phone ?? null }
+      : null,
     socialLinks: (m.socialLinks ?? []).map((sl: SanityRawSocialLink) => ({
       platform: sl.platform,
       url: sl.url,
@@ -616,7 +635,7 @@ export async function getTestimonials(): Promise<SanityTestimonial[]> {
     avatarUrl: imageUrl(t.avatar, 200),
     avatarAlt: t.avatar?.alt ?? t.authorName,
     companyLogoUrl: imageUrl(t.companyLogo, 400),
-    companyLogoAlt: t.companyLogo?.alt ?? (t.company ?? ""),
+    companyLogoAlt: t.companyLogo?.alt ?? t.company ?? "",
     rating: t.rating ?? null,
     featured: t.featured ?? false,
   }));
@@ -661,6 +680,20 @@ export async function getCaseStudies(): Promise<SanityCaseStudy[]> {
     featured: cs.featured ?? false,
     quoteText: cs.quoteText ?? null,
   }));
+}
+
+export interface CaseStudyGrowthChartData {
+  headingMain?: string | null;
+  headingHighlighted?: string | null;
+  leftAxisLabel?: string | null;
+  rightAxisLabel?: string | null;
+  months?: string[] | null;
+  series?: Array<{ label: string; color: string; points: number[] }> | null;
+  tooltipMonth?: string | null;
+  tooltipMetrics?: Array<{
+    label?: string | null;
+    value?: string | null;
+  }> | null;
 }
 
 export interface SanityCaseStudyDetail {
@@ -723,16 +756,7 @@ export interface SanityCaseStudyDetail {
       icon?: SanityImageRef | null;
     }> | null;
   } | null;
-  growthChart?: {
-    headingMain?: string | null;
-    headingHighlighted?: string | null;
-    leftAxisLabel?: string | null;
-    rightAxisLabel?: string | null;
-    months?: string[] | null;
-    series?: Array<{ label: string; color: string; points: number[] }> | null;
-    tooltipMonth?: string | null;
-    tooltipMetrics?: Array<{ label?: string | null; value?: string | null }> | null;
-  } | null;
+  growthChart?: CaseStudyGrowthChartData | null;
   proofData?: {
     label?: string | null;
     headingMain?: string | null;
@@ -772,14 +796,16 @@ export interface SanityCaseStudyDetail {
   } | null;
 }
 
-export const getCaseStudyBySlug = cache(async (slug: string): Promise<SanityCaseStudyDetail | null> => {
-  const { data } = await sanityFetch({
-    query: CASE_STUDY_BY_SLUG_QUERY,
-    params: { slug },
-  });
+export const getCaseStudyBySlug = cache(
+  async (slug: string): Promise<SanityCaseStudyDetail | null> => {
+    const { data } = await sanityFetch({
+      query: CASE_STUDY_BY_SLUG_QUERY,
+      params: { slug },
+    });
 
-  return (data as SanityCaseStudyDetail | null) ?? null;
-});
+    return (data as SanityCaseStudyDetail | null) ?? null;
+  },
+);
 
 export async function getCaseStudySlugs(): Promise<string[]> {
   const data = await client.fetch<unknown[]>(CASE_STUDY_SLUGS_QUERY);
@@ -847,18 +873,22 @@ export interface SanityPodcastEpisodeDetail extends SanityPodcastEpisodeSummary 
   seo?: SanitySeo | null;
 }
 
-export const getPodcastEpisodes = cache(async (): Promise<SanityPodcastEpisodeSummary[]> => {
-  const { data } = await sanityFetch({ query: PODCAST_EPISODES_QUERY });
-  return (data as SanityPodcastEpisodeSummary[] | null) ?? [];
-});
+export const getPodcastEpisodes = cache(
+  async (): Promise<SanityPodcastEpisodeSummary[]> => {
+    const { data } = await sanityFetch({ query: PODCAST_EPISODES_QUERY });
+    return (data as SanityPodcastEpisodeSummary[] | null) ?? [];
+  },
+);
 
-export const getPodcastEpisodeBySlug = cache(async (slug: string): Promise<SanityPodcastEpisodeDetail | null> => {
-  const { data } = await sanityFetch({
-    query: PODCAST_EPISODE_BY_SLUG_QUERY,
-    params: { slug },
-  });
-  return (data as SanityPodcastEpisodeDetail | null) ?? null;
-});
+export const getPodcastEpisodeBySlug = cache(
+  async (slug: string): Promise<SanityPodcastEpisodeDetail | null> => {
+    const { data } = await sanityFetch({
+      query: PODCAST_EPISODE_BY_SLUG_QUERY,
+      params: { slug },
+    });
+    return (data as SanityPodcastEpisodeDetail | null) ?? null;
+  },
+);
 
 export async function getPodcastEpisodeSlugs(): Promise<string[]> {
   const data = await client.fetch<unknown[]>(PODCAST_EPISODE_SLUGS_QUERY);
@@ -877,7 +907,9 @@ export interface SanityFaqItem {
   answer: string;
 }
 
-export async function getFaqItemsByService(service: string): Promise<SanityFaqItem[]> {
+export async function getFaqItemsByService(
+  service: string,
+): Promise<SanityFaqItem[]> {
   const { data } = await sanityFetch({
     query: FAQ_BY_SERVICE_QUERY,
     params: { service },
@@ -949,7 +981,9 @@ export interface SanityServicePage {
   }>;
 }
 
-export async function getServicePage(slug: string): Promise<SanityServicePage | null> {
+export async function getServicePage(
+  slug: string,
+): Promise<SanityServicePage | null> {
   const { data } = await sanityFetch({
     query: SERVICE_PAGE_BY_SLUG_QUERY,
     params: { slug },
@@ -979,23 +1013,27 @@ export async function getServicePage(slug: string): Promise<SanityServicePage | 
       title: s.title,
       description: s.description ?? null,
     })),
-    whyChooseItems: (d.whyChooseItems ?? []).map((w: SanityRawWhyChooseItem) => ({
-      title: w.title,
-      description: w.description ?? null,
-      iconUrl: imageUrl(w.icon, 200) || w.iconSrc || null,
-    })),
+    whyChooseItems: (d.whyChooseItems ?? []).map(
+      (w: SanityRawWhyChooseItem) => ({
+        title: w.title,
+        description: w.description ?? null,
+        iconUrl: imageUrl(w.icon, 200) || w.iconSrc || null,
+      }),
+    ),
     faqItems: (d.faqItems ?? []).filter(Boolean).map((f: SanityRawFaqItem) => ({
       _id: f._id,
       question: f.question,
       answer: f.answer,
     })),
-    relatedCaseStudies: (d.relatedCaseStudies ?? []).filter(Boolean).map((cs: SanityRawRelatedCaseStudy) => ({
-      _id: cs._id,
-      title: cs.title,
-      slug: cs.slug?.current ?? "",
-      client: cs.client,
-      excerpt: cs.excerpt ?? null,
-      heroImageUrl: imageUrl(cs.heroImage, 800),
-    })),
+    relatedCaseStudies: (d.relatedCaseStudies ?? [])
+      .filter(Boolean)
+      .map((cs: SanityRawRelatedCaseStudy) => ({
+        _id: cs._id,
+        title: cs.title,
+        slug: cs.slug?.current ?? "",
+        client: cs.client,
+        excerpt: cs.excerpt ?? null,
+        heroImageUrl: imageUrl(cs.heroImage, 800),
+      })),
   };
 }
