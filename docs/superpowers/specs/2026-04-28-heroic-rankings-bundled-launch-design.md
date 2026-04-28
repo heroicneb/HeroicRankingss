@@ -453,15 +453,20 @@ Per-entry try/catch. Errors collected with full context (`type`, `bcmsId`, `erro
 
 Low-risk batch shipped first.
 
-### 5.1 Footer CTA banner 3-way swap
+### 5.1 Footer CTA banner 3-way swap (final per Nebojša 2026-04-28)
 
 `src/components/layout/footer-cta-variant.tsx`:
 
-- `/on-page-seo` ← on-page content (currently misplaced under `/local-seo`)
-- `/technical-seo` ← technical content (currently under `/on-page-seo`)
-- `/local-seo` ← new copy: "Get Found by Customers Searching Right Now" + body about Google Maps + local pack visibility
+| Route | Final heading | Final body | CTA |
+|---|---|---|---|
+| `/on-page-seo` | "Start Generating SEO Organic Revenue" (split: solid "Start Generating SEO" + gradient "Organic Revenue") | "Start generating consistent organic SEO revenue and watch your business grow with sustainable, long-term results." | Get Started Today |
+| `/technical-seo` | "Perfect Your Site with Technical SEO Precision" (split: solid "Perfect Your Site with" + gradient "Technical SEO Precision") | "Contact us to schedule a consultation and discover how our technical SEO services can optimize your website's infrastructure, enhance user experience, and boost your search engine rankings." | Get Started Today |
+| `/local-seo` | "Dominate Your Market with Local SEO Success" (split: solid "Dominate" + gradient "Your Market" + solid "with Local SEO Success") | "Contact Us to schedule a consultation and learn how our local SEO services can enhance your local presence, connect you with nearby customers, and increase foot traffic to your business." | Get Started Today |
 
-The "Start Generating SEO Organic Revenue" copy is deleted (`/seo-services` already has its own variant).
+**Notes:**
+- The previous "Get Your On-Page SEO for Top Search Results" variant is **retired** — no route uses it after this swap. The on-page-seo bottom CTA becomes the generic revenue copy per Nebojša's preference.
+- Typo fix: previous body had "local SEO servicescan enhance" (joined). Final body has "local SEO services can enhance" (split). Verified by Nebojša screenshot 2026-04-28.
+- The `/seo-services` hub keeps its own variant ("Ready to Turn Search Into a Growth Engine") — unchanged.
 
 ### 5.2 Number Artist → DIY Craft eCom Brand
 
@@ -696,7 +701,7 @@ These remain unresolved and must be answered before the corresponding PR ships:
 
 | # | Question | Status | Blocks |
 |---|---|---|---|
-| O1 | Final `/local-seo` CTA copy | Pavle approved interim copy ("Get Found by Customers Searching Right Now") for PR 1; Nebojša provides final copy for follow-up | PR 1 (resolved) |
+| O1 | Final `/local-seo` CTA copy | ✅ resolved 2026-04-28 — Nebojša provided final copy ("Dominate Your Market with Local SEO Success" + body) directly. Plus revised plan: on-page-seo gets the retired "Start Generating SEO Organic Revenue" instead of on-page-specific copy. See Section 5.1. | (resolved) |
 | O2 | Real LinkedIn + X handles | ✅ resolved 2026-04-28 (`linkedin.com/company/heroic-rankings/` + `twitter.com/heroic_rankings`) | (resolved) |
 | O3 | BCMS API key + org/instance IDs | unresolved | PR 3a |
 | O4 | Sanity write token | unresolved | PR 3 |
