@@ -190,6 +190,30 @@ export const TEAM_MEMBERS_QUERY = defineQuery(`
   }
 `);
 
+export const TEAM_MEMBER_BY_SLUG_QUERY = defineQuery(`
+  *[_type == "teamMember" && slug.current == $slug][0] {
+    _id,
+    name,
+    slug,
+    role,
+    department,
+    photo { ..., asset->{ metadata { lqip } } },
+    cardImage { ..., asset->{ metadata { lqip } } },
+    bio,
+    bioParagraphs,
+    contact,
+    socialLinks[] { _key, platform, url },
+    linkedin,
+    showOnAboutPage,
+    _createdAt,
+    _updatedAt
+  }
+`);
+
+export const TEAM_MEMBER_SLUGS_QUERY = defineQuery(`
+  *[_type == "teamMember" && defined(slug.current)].slug.current
+`);
+
 // --- Partner Logos ---
 
 export const PARTNER_LOGOS_QUERY = defineQuery(`

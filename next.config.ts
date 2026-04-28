@@ -66,6 +66,15 @@ const nextConfig: NextConfig = {
         destination: "/case-studies/diy-craft-ecom-brand",
         permanent: true,
       },
+      // WHY: Legacy /about/<slug>/ team profile URLs map to the dedicated
+      // /team/<slug> route so Person/Author entity SEO survives migration.
+      // Per docs/migration/redirect-map.md (Option B). The full redirect map
+      // is a separate task; this team-only entry ships with the route.
+      {
+        source: "/about/:slug/",
+        destination: "/team/:slug",
+        permanent: true,
+      },
     ];
   },
   async headers() {
@@ -75,9 +84,15 @@ const nextConfig: NextConfig = {
         headers: [
           { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
           { key: "Cross-Origin-Resource-Policy", value: "same-origin" },
-          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-DNS-Prefetch-Control", value: "on" },
           { key: "X-Frame-Options", value: "DENY" },
@@ -86,9 +101,13 @@ const nextConfig: NextConfig = {
       },
       {
         // WHY: Keep long-lived immutable caching for static assets served from public paths.
-        source: "/(.*)\\.(js|css|woff2|woff|ttf|ico|svg|png|jpg|jpeg|webp|avif)$",
+        source:
+          "/(.*)\\.(js|css|woff2|woff|ttf|ico|svg|png|jpg|jpeg|webp|avif)$",
         headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
         ],
       },
     ];

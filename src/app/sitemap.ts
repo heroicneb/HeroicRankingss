@@ -1,6 +1,10 @@
 import type { MetadataRoute } from "next";
 
-import { getCaseStudySlugs, getPostSlugs } from "@/lib/sanity-data";
+import {
+  getCaseStudySlugs,
+  getPostSlugs,
+  getTeamMemberSlugs,
+} from "@/lib/sanity-data";
 import { SITE_URL } from "@/lib/site";
 
 // WHY: Use build-time generation timestamp to avoid stale manual dates while keeping static output.
@@ -23,15 +27,18 @@ function getRoutePriority(route: string): number {
   if (route === "/") return 1.0;
   if (SERVICE_PAGES.has(route)) return 0.9;
   if (LISTING_PAGES.has(route)) return 0.8;
-  if (route.startsWith("/insights/") || route.startsWith("/case-studies/")) return 0.7;
+  if (route.startsWith("/insights/") || route.startsWith("/case-studies/"))
+    return 0.7;
+  if (route.startsWith("/team/")) return 0.6;
   if (route === "/privacy-policy") return 0.3;
   return 0.8;
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [postSlugs, caseStudySlugs] = await Promise.all([
+  const [postSlugs, caseStudySlugs, teamSlugs] = await Promise.all([
     getPostSlugs(),
     getCaseStudySlugs(),
+    getTeamMemberSlugs(),
   ]);
   const routes: string[] = [
     "/",
@@ -51,6 +58,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/privacy-policy",
     ...postSlugs.map((slug) => `/insights/${slug}`),
     ...caseStudySlugs.map((slug) => `/case-studies/${slug}`),
+    ...teamSlugs.map((slug) => `/team/${slug}`),
   ];
 
   return routes.map((route) => ({

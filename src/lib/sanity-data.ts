@@ -9,6 +9,8 @@ import {
   POST_BY_SLUG_QUERY,
   POST_SLUGS_QUERY,
   TEAM_MEMBERS_QUERY,
+  TEAM_MEMBER_BY_SLUG_QUERY,
+  TEAM_MEMBER_SLUGS_QUERY,
   CASE_STUDIES_QUERY,
   CASE_STUDY_BY_SLUG_QUERY,
   CASE_STUDY_SLUGS_QUERY,
@@ -123,6 +125,8 @@ interface SanityRawTeamMember {
   socialLinks?: SanityRawSocialLink[] | null;
   linkedin?: string | null;
   showOnAboutPage?: boolean;
+  _createdAt?: string | null;
+  _updatedAt?: string | null;
 }
 
 /** Social link sub-object used in team members and site settings */
@@ -569,11 +573,14 @@ export interface SanityTeamMember {
   socialLinks: Array<{ platform: string; url: string }>;
 }
 
-export async function getTeamMembers(): Promise<SanityTeamMember[]> {
-  const { data } = await sanityFetch({ query: TEAM_MEMBERS_QUERY });
-  if (!data) return [];
+/** Detail view for /team/[slug] — adds createdAt/updatedAt for ProfilePage schema. */
+export interface SanityTeamMemberDetail extends SanityTeamMember {
+  createdAt: string | null;
+  updatedAt: string | null;
+}
 
-  return (data as SanityRawTeamMember[]).map((m) => ({
+function mapTeamMember(m: SanityRawTeamMember): SanityTeamMember {
+  return {
     _id: m._id,
     name: m.name,
     slug: m.slug ?? null,
@@ -594,7 +601,40 @@ export async function getTeamMembers(): Promise<SanityTeamMember[]> {
       platform: sl.platform,
       url: sl.url,
     })),
-  }));
+  };
+}
+
+export async function getTeamMembers(): Promise<SanityTeamMember[]> {
+  const { data } = await sanityFetch({ query: TEAM_MEMBERS_QUERY });
+  if (!data) return [];
+
+  return (data as SanityRawTeamMember[]).map(mapTeamMember);
+}
+
+export const getTeamMemberBySlug = cache(
+  async (slug: string): Promise<SanityTeamMemberDetail | null> => {
+    const { data } = await sanityFetch({
+      query: TEAM_MEMBER_BY_SLUG_QUERY,
+      params: { slug },
+    });
+    if (!data) return null;
+
+    const raw = data as SanityRawTeamMember;
+    return {
+      ...mapTeamMember(raw),
+      createdAt: raw._createdAt ?? null,
+      updatedAt: raw._updatedAt ?? null,
+    };
+  },
+);
+
+export async function getTeamMemberSlugs(): Promise<string[]> {
+  const data = await client.fetch<unknown[]>(TEAM_MEMBER_SLUGS_QUERY);
+  if (!data) return [];
+
+  return data.filter(
+    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+  );
 }
 
 // ── Testimonials ──────────────────────────────────────────────────
