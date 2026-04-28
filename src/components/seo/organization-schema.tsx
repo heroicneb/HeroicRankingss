@@ -2,7 +2,7 @@ import { headers } from "next/headers";
 
 import { CSP_NONCE_HEADER } from "@/lib/csp";
 import { safeJsonLdStringify } from "@/lib/safe-json-ld";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_LINKEDIN_URL, SITE_NAME, SITE_URL, SITE_X_URL } from "@/lib/site";
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
@@ -15,10 +15,7 @@ const organizationJsonLd = {
     telephone: "+1 307 336 7191",
     contactType: "customer service",
   },
-  sameAs: [
-    "https://www.linkedin.com/company/heroicrankings",
-    "https://x.com/heroicrankings",
-  ],
+  sameAs: [SITE_LINKEDIN_URL, SITE_X_URL],
 };
 const organizationJsonLdString = safeJsonLdStringify(organizationJsonLd);
 

@@ -1,4 +1,10 @@
-import { SITE_EMAIL, SITE_PHONE } from "@/lib/site";
+import {
+  SITE_EMAIL,
+  SITE_INSTAGRAM_URL,
+  SITE_LINKEDIN_URL,
+  SITE_PHONE,
+  SITE_X_URL,
+} from "@/lib/site";
 import type { AboutTeamMember, TeamMemberPopupData } from "@/types";
 
 export const TEAM_MEMBERS: AboutTeamMember[] = [
@@ -71,9 +77,9 @@ export const POPUP_DATA: Record<string, TeamMemberPopupData> = {
     ],
     contact: { phone: SITE_PHONE, email: SITE_EMAIL },
     socials: [
-      { label: "Instagram", url: "https://instagram.com/heroicrankings" },
-      { label: "LinkedIn", url: "https://linkedin.com/company/heroicrankings" },
-      { label: "X", url: "https://x.com/heroicrankings" },
+      { label: "Instagram", url: SITE_INSTAGRAM_URL },
+      { label: "LinkedIn", url: SITE_LINKEDIN_URL },
+      { label: "X", url: SITE_X_URL },
     ],
   },
 };

@@ -36,3 +36,10 @@ export const SITE_PHONE_HREF = "tel:+13073367191";
 export const SITE_EMAIL = "info@heroicrankings.com";
 export const SITE_EMAIL_HREF = "mailto:info@heroicrankings.com";
 export const SALES_EMAIL = "sales@heroicrankings.com";
+
+/** Brand-level social URLs — single source of truth.
+ * Note: real production handles use a hyphen on LinkedIn (heroic-rankings) and
+ * an underscore on Twitter/X (heroic_rankings). Confirmed by Pavle 2026-04-28. */
+export const SITE_LINKEDIN_URL = "https://www.linkedin.com/company/heroic-rankings/";
+export const SITE_X_URL = "https://twitter.com/heroic_rankings";
+export const SITE_INSTAGRAM_URL = "https://instagram.com/heroicrankings";

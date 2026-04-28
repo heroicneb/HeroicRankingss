@@ -2,7 +2,13 @@ import Image from "next/image";
 
 import { FooterCtaVariant } from "@/components/layout/footer-cta-variant";
 import { AppLink } from "@/components/ui/app-link";
-import { SITE_EMAIL, SITE_PHONE } from "@/lib/site";
+import {
+  SITE_EMAIL,
+  SITE_INSTAGRAM_URL,
+  SITE_LINKEDIN_URL,
+  SITE_PHONE,
+  SITE_X_URL,
+} from "@/lib/site";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -17,9 +23,9 @@ const NAV_LINKS = [
 ] as const;
 
 const SOCIAL_LINKS = [
-  { label: "LinkedIn", href: "https://linkedin.com/company/heroicrankings" },
-  { label: "Instagram", href: "https://instagram.com/heroicrankings" },
-  { label: "X", href: "https://x.com/heroicrankings" },
+  { label: "LinkedIn", href: SITE_LINKEDIN_URL },
+  { label: "Instagram", href: SITE_INSTAGRAM_URL },
+  { label: "X", href: SITE_X_URL },
 ] as const;
 
 const PLATFORM_LABELS: Record<string, string> = {
