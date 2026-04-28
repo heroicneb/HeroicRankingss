@@ -17,6 +17,15 @@ export const podcastEpisode = defineType({
       type: "string",
       description:
         'The portion of the title to render with brand gradient, e.g. "That Actually Works". Must be a substring of title.',
+      validation: (rule) =>
+        rule.custom((value, context) => {
+          if (!value) return true;
+          const title = (context.document?.title as string | undefined) ?? "";
+          if (!title.includes(value)) {
+            return "Highlighted substring must appear exactly in the title.";
+          }
+          return true;
+        }),
     }),
     defineField({
       name: "slug",

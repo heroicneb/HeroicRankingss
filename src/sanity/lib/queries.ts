@@ -321,6 +321,7 @@ export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
     heroImage { ..., asset->{ metadata { lqip } } },
     keyInsights,
     bestMoments[] {
+      _key,
       title,
       thumbnail { ..., asset->{ metadata { lqip } } },
       videoUrl,

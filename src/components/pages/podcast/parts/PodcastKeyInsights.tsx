@@ -67,6 +67,7 @@ export function PodcastKeyInsights({ insights }: PodcastKeyInsightsProps) {
                 </p>
               ) : null}
 
+              {/* TODO: wire to AI chat overlay (PodcastAISection backend not yet built) */}
               <button
                 aria-label="Ask Podcast AI"
                 className="motion-interactive motion-interactive-press mt-[24px] inline-flex items-center gap-[8px] rounded-[100px] border border-[var(--color-hr-accent)] bg-transparent px-[18px] py-[10px] text-[16px] font-medium leading-[20px] text-[var(--color-hr-pure-black)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:text-[var(--color-text-inverse)]"

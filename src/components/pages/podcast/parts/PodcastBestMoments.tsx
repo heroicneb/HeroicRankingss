@@ -8,9 +8,7 @@ interface PodcastBestMomentsProps {
   reels: SanityPodcastEpisodeDetail["bestMoments"];
 }
 
-type Reel = NonNullable<SanityPodcastEpisodeDetail["bestMoments"]>[number] & {
-  _key?: string;
-};
+type Reel = NonNullable<SanityPodcastEpisodeDetail["bestMoments"]>[number];
 
 const MOBILE_REEL_WIDTH = 320;
 const MOBILE_REEL_GAP = 10;
@@ -56,7 +54,7 @@ export function PodcastBestMoments({ reels }: PodcastBestMomentsProps) {
       id="podcast-best-moments"
     >
       <div className="mx-auto w-full max-w-[1440px]">
-        <div className="rounded-[30px] bg-[var(--color-hr-pure-white)] px-[15px] py-[60px] shadow-[0_4px_24px_rgba(0,0,0,0.06)] lg:rounded-[40px] lg:px-[60px] lg:py-[80px] dark:bg-[var(--color-bg-dark)] dark:shadow-none">
+        <div className="rounded-[30px] bg-[var(--color-hr-pure-white)] px-[15px] py-[60px] shadow-[var(--shadow-nav-dropdown)] lg:rounded-[40px] lg:px-[60px] lg:py-[80px] dark:bg-[var(--color-bg-dark)] dark:shadow-none">
           <div className="grid grid-cols-1 gap-[40px] lg:grid-cols-[523px_minmax(0,1fr)] lg:items-center lg:gap-[60px]">
             <div className="text-center lg:text-left">
               <TwoToneHeading

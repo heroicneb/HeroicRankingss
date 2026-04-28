@@ -867,6 +867,7 @@ export interface SanityPodcastEpisodeDetail extends SanityPodcastEpisodeSummary 
     bullets?: string[] | null;
   } | null;
   bestMoments?: Array<{
+    _key?: string;
     title?: string | null;
     thumbnail?: SanityImageRef | null;
     videoUrl?: string | null;
