@@ -8,8 +8,6 @@ import {
   POSTS_QUERY,
   POST_BY_SLUG_QUERY,
   POST_SLUGS_QUERY,
-  TEAM_MEMBER_BY_SLUG_QUERY,
-  TEAM_MEMBER_SLUGS_QUERY,
   TEAM_MEMBERS_QUERY,
   CASE_STUDIES_QUERY,
   CASE_STUDY_BY_SLUG_QUERY,
@@ -104,7 +102,7 @@ interface SanityRawFaqItem {
   answer: string;
 }
 
-/** Raw team member from TEAM_MEMBERS_QUERY / TEAM_MEMBER_BY_SLUG_QUERY */
+/** Raw team member from TEAM_MEMBERS_QUERY */
 interface SanityRawTeamMember {
   _id: string;
   name: string;
@@ -542,47 +540,6 @@ export async function getTeamMembers(): Promise<SanityTeamMember[]> {
       url: sl.url,
     })),
   }));
-}
-
-export const getTeamMemberBySlug = cache(async (
-  slug: string,
-): Promise<SanityTeamMember | null> => {
-  const { data } = await sanityFetch({
-    query: TEAM_MEMBER_BY_SLUG_QUERY,
-    params: { slug },
-  });
-  if (!data) return null;
-
-  const member = data as SanityRawTeamMember;
-  return {
-    _id: member._id,
-    name: member.name,
-    slug: member.slug ?? { current: slug },
-    role: member.role,
-    department: member.department ?? null,
-    photoUrl: imageUrl(member.photo, 1000),
-    photoAlt: member.photo?.alt ?? `${member.name} portrait`,
-    photoLqip: imageLqip(member.photo),
-    cardImageUrl: imageUrl(member.cardImage, 1000),
-    cardImageAlt: member.cardImage?.alt ?? member.name,
-    cardImageLqip: imageLqip(member.cardImage),
-    bio: member.bio ?? null,
-    bioParagraphs: member.bioParagraphs ?? null,
-    contact: member.contact ? { email: member.contact.email ?? null, phone: member.contact.phone ?? null } : null,
-    socialLinks: (member.socialLinks ?? []).map((social: SanityRawSocialLink) => ({
-      platform: social.platform,
-      url: social.url,
-    })),
-  };
-});
-
-export async function getTeamMemberSlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(TEAM_MEMBER_SLUGS_QUERY);
-  if (!data) return [];
-
-  return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
-  );
 }
 
 // ── Testimonials ──────────────────────────────────────────────────
