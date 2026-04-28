@@ -78,6 +78,10 @@
   --color-hr-gradient-start: var(--color-brand-surface-start);
   --color-hr-gradient-mid: var(--color-brand-surface-mid);
   --color-hr-gradient-end: var(--color-brand-surface-end);
+  --color-hr-pure-black: #050505;
+  --color-hr-black-box: #0C0C0C;
+  --color-hr-dark-line: #2A2A2A;
+  --gradient-brand-light: linear-gradient(210deg, #826FFF 18%, #E188FF 41%, #E1BDFF 130%);
 
   --font-fallback-sans: "DM Sans", "Avenir Next", "Segoe UI", sans-serif;
 
@@ -180,6 +184,9 @@
   --color-hr-gradient-start: var(--color-hr-gradient-start);
   --color-hr-gradient-mid: var(--color-hr-gradient-mid);
   --color-hr-gradient-end: var(--color-hr-gradient-end);
+  --color-hr-pure-black: var(--color-hr-pure-black);
+  --color-hr-black-box: var(--color-hr-black-box);
+  --color-hr-dark-line: var(--color-hr-dark-line);
 
   --font-sans: var(--font-dm-sans, "DM Sans");
 
@@ -484,6 +491,13 @@ textarea {
 }
 .gradient-text-brand-about-us-popup-name {
   --gradient-angle: 205.6543deg;
+}
+.gradient-text-brand-light {
+  background-image: var(--gradient-brand-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .gradient-text-partnership-hero {
   --gradient-angle: 208.28deg;
