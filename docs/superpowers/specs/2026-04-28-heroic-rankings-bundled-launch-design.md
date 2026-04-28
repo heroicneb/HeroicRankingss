@@ -1,9 +1,10 @@
 # Heroic Rankings — Bundled Launch Design
 
-**Status:** Draft, awaiting Pavle approval
+**Status:** Draft v2 (Codex review integrated), awaiting Pavle approval
 **Date:** 2026-04-28
 **Owner:** Pavle Lazic (product/architect/PM); Claude (implementation)
 **Brainstorm:** see commit history
+**Reviewers:** Codex senior-dev pass (2026-04-28) — 2 CRITICAL + 4 HIGH findings integrated; see Section 12 changelog
 
 ---
 
@@ -67,6 +68,8 @@ Standalone Node 20+ ESM script `scripts/bcms-to-sanity.mjs` runs locally or in C
 
 After PR 4 merges, hardcoded data files are deleted: `src/data/case-study-details.ts`, `src/data/podcast-episodes.ts`, `src/data/blog-posts.ts` registry stub, the `Market Research` constants in `blog-post-detail-content.tsx`. Pages 100% rely on Sanity. Empty Sanity dataset → 404 (intentional — catches gaps).
 
+**Pre-launch content validator (gate for PR 6):** before cutover, run `scripts/validate-launch-content.mjs` which queries Sanity production dataset and asserts every launch-required slug has every required structured field populated (see Section 6.10 for the validator spec). Validator failure → PR 6 cannot merge. This protects against the cutover-crash-risk where deleting hardcoded fallbacks meets editor-incomplete content.
+
 ---
 
 ## 2. Sanity Schema Additions & Extensions
@@ -84,9 +87,13 @@ Plus utility class `.gradient-text-brand-light` mirroring the existing `.gradien
 
 **Existing tokens unchanged.** Existing pages render byte-identical to today.
 
-### 2.2 `teamMember` (existing) — sufficient as-is
+### 2.2 `teamMember` (existing) — one breaking change required
 
 Existing fields cover the Figma popup (`name`, `role`, `bioParagraphs[]`, `cardImage`, `contact{email,phone}`, `socialLinks[]`). Migration populates them.
+
+**Required schema change in PR 2:** `slug` is currently `optional` at `src/sanity/schemaTypes/documents/teamMember.ts:14`. Change to `validation: r => r.required()`. Hash deep-linking on About Us popup (`#nebojsa-jankovic`) and prev/next navigation depend on slugs being present and unique. Migration step asserts every `teamMember` doc has a slug after import; fails if any are missing.
+
+**Image alt validation:** add `validation: r => r.required()` on `photo.alt` and `cardImage.alt`. Currently optional — non-decorative editorial images must have alt for accessibility (Codex MED finding).
 
 ### 2.3 `post` (existing blog) — sufficient as-is
 
@@ -113,6 +120,21 @@ Add 12 new fields to the existing `caseStudy.ts` schema. All optional to maintai
 
 Pattern for split-color headings: `headingMain` (solid) + `headingHighlighted` (gradient) — concatenated at render time with a space.
 
+**Bounded validation rules (added per Codex HIGH finding):**
+
+- `heroMetrics`: `r.max(3)`
+- `objectiveChallenges.items`: `r.length(3)` exactly
+- `strategyPillars`: `r.length(6)` exactly
+- `journeyTimeline.items`: `r.min(4).max(6)`
+- `numbersThatMatter.items`: `r.min(4).max(8)`
+- `growthChart.series`: `r.min(1).max(5)`; custom validation: every series has `points[]` length equal to `months.length`
+- `growthChart.series[].color`: `enum: ['gradient-light', 'white-trace', 'grey-trace']` (token-based, not free-form hex)
+- `proofData.items`: `r.max(8)`; each item's `image` field has `validation: r => r.required()` and `image.alt` required
+- `beforeAfter.items`: `r.length(5)` exactly
+- All editorial image fields (`heroImage`, `cardImage`, `strategyPillars[].icon`, `proofData[].image`, etc.): `alt` field required
+
+These rules prevent editors creating "valid" but visually broken docs (mismatched series lengths, missing required cards).
+
 ### 2.5 New: `podcastEpisode` document type
 
 Defined in `src/sanity/schemaTypes/documents/podcastEpisode.ts`. Registered in `src/sanity/schemaTypes/index.ts`. Fields:
@@ -134,6 +156,16 @@ Defined in `src/sanity/schemaTypes/documents/podcastEpisode.ts`. Registered in `
 - `seo` (existing seo object type)
 
 Plus orderings (newest first) and preview config.
+
+**Bounded validation rules:**
+
+- `episodeNumber`: required, integer, positive, **unique** (custom validation queries other docs)
+- `bestMoments`: `r.max(6)`; each reel's `thumbnail` required, `videoUrl` required, `thumbnail.alt` required
+- `keyInsights.bullets`: `r.min(1).max(10)`
+- `keyInsights.topicPills`: `r.max(8)`
+- `relatedEpisodes`: `r.unique().max(3)` (no self-reference)
+- `heroImage.alt` required, `guest.photo.alt` required
+- `transcript`: required if `videoEmbedUrl` present (so audio/video has searchable text)
 
 ### 2.6 Sanity Studio organization
 
@@ -171,7 +203,7 @@ Sub-components in `src/components/pages/case-studies/parts/`:
 New shared primitives in `src/components/ui/`:
 - `MetricTile.tsx`, `NumberedStepCard.tsx`, `BigNumberCard.tsx`, `TwoToneHeading.tsx`, `MobileScrollRail.tsx`
 
-Chart implementation: **`recharts`** dynamically imported via `next/dynamic({ ssr: false })`. Custom tooltip + dot for highlighted month. Skeleton placeholder during SSR.
+**Chart implementation (revised per Codex MED finding):** `recharts` lives in a dedicated client island file `CaseStudyGrowthChartClient.tsx` with explicit `'use client'` directive. The parent `CaseStudyGrowthChart.tsx` (server component) renders a wrapper `<div>` with **fixed height (mobile: 384px; desktop: 480px)** so the layout reserves space before hydration — prevents CLS. The client island is loaded via `next/dynamic(() => import('./CaseStudyGrowthChartClient'), { ssr: false, loading: () => <ChartSkeleton /> })`. ChartSkeleton matches the reserved height. Empty-data case (zero series or zero months) renders a "Data unavailable" placeholder instead of throwing.
 
 Data: `app/(site)/(pages)/case-studies/[slug]/page.tsx` calls `generateStaticParams()` from `getCaseStudySlugs()`, then `getCaseStudyBySlug(slug)`, then `notFound()` on null.
 
@@ -192,6 +224,15 @@ Data: same pattern as case study.
 `src/components/sections/team-member-popup.tsx` — full rewrite to match Figma `197:891` (desktop) and `672:4109` (mobile). Existing controller (`about-us-team-popup-controller.tsx`) and dialog wiring preserved.
 
 New sub-components: `TeamMemberPopupDesktop.tsx`, `TeamMemberPopupMobile.tsx`, `ContactPillStack.tsx`. New util: `src/lib/vcard.ts` — `.vcf` blob generation for "Save to Contacts".
+
+**vCard hardening (revised per Codex MED finding):**
+- Use **CRLF line endings** (`\r\n`) per RFC 6350 — Outlook chokes on plain `\n`
+- **Escape special chars** in field values: `\`, `,`, `;`, newlines (per RFC 6350 § 3.4)
+- **Normalize phone numbers** to E.164 (`+1 555 555 1234` → `+15555551234`); reject invalid
+- **Safe filename:** ASCII-only, no spaces, e.g. `nebojsa-jankovic.vcf` (slug-derived)
+- **Fallback path:** if vCard generation fails (validation reject), button degrades to opening a panel with `mailto:` + `tel:` + LinkedIn/X/Instagram links inline. Never silent failure.
+- **Tested fixtures:** `src/lib/__tests__/vcard.test.ts` covers names with diacritics (Nebojša Janković), emails with subaddressing, missing phone, all-empty contact (button hidden in that case).
+- **Cross-platform smoke:** stress-test phase manually verifies download + import on iOS Safari, Android Chrome, macOS Mail, Outlook (per matrix in 6.6).
 
 Data: `cmsTeamMembers` from Sanity (already wired through About Us page).
 
@@ -279,22 +320,63 @@ Custom `@sanity/client` writeClient script chosen over NDJSON CLI import or `def
 
 ```
 scripts/bcms-to-sanity.mjs
-  ├── parseArgs()              — --dry-run, --type, --limit
-  ├── connectBcms()
-  ├── connectSanity()
+  ├── parseArgs()              — --dry-run, --type, --limit, --strict
+  ├── connectBcms()            — verify auth, retry 3× w/ exponential backoff on 5xx
+  ├── connectSanity()          — verify project + dataset, fail fast if wrong
   ├── primeAssetCache()        — query existing sanity.imageAsset with source.id
   ├── migrateTeamMembers()     — first (others reference team)
   ├── migrateTestimonials()
   ├── migrateBlogPosts()       — depends on team for author refs
   ├── migrateCaseStudies()
   ├── migratePodcastEpisodes()
+  ├── validateLaunchAllowlist() — assert every slug in launch-allowlist.json was created/updated
   ├── writeReport()
-  └── main() — try/catch per type, exits non-zero on errors
+  └── main() — try/catch per type, exits non-zero on errors OR unsupportedHtml warnings
 ```
 
-### 4.4 Idempotency
+**Failure modes handled (added per Codex MED finding):**
 
-Deterministic doc IDs: `${type}-${bcmsEntry._id}`. `client.createOrReplace()` ensures same input produces same dataset state regardless of run count.
+- **Slug collisions:** if two BCMS entries map to the same Sanity slug, abort with explicit error listing both source IDs. Don't silently overwrite.
+- **Asset 4xx/5xx:** retry 3× with exponential backoff (1s, 2s, 4s); after 3 failures, log to `report.errors[]` and skip the doc.
+- **Asset MIME validation:** verify `Content-Type: image/*` on download; reject otherwise.
+- **Asset size cap:** reject assets > 20MB (Sanity asset upper limit is 20MB on free tier).
+- **Stale Sanity docs:** end-of-run query `*[_type in $importerTypes && !(_id in $writtenIds)]` flags docs the importer didn't touch this run; logged but not deleted automatically (manual cleanup decision).
+- **Launch allowlist:** `scripts/launch-allowlist.json` lists every slug expected to exist post-migration; script exits non-zero if any are missing. Updated by Pavle/Nebojša before each prod run.
+- **Exit codes:** 0 = clean, 1 = errors (any), 2 = warnings only (unsupported HTML, stale docs).
+
+### 4.4 Idempotency — patch-only-touch (revised per Codex CRITICAL finding)
+
+**Original plan (rejected):** `client.createOrReplace()` with deterministic IDs. Problem: rerun overwrites editor-entered structured fields (the 12 new caseStudy fields are manual Studio entry, not BCMS-migrated). A second run after editors enriched content silently destroys their work.
+
+**Revised plan:** explicit ownership boundary per document type, enforced via `patch()` semantics that only touch importer-owned keys.
+
+Per-type ownership map:
+
+| Doc type | Importer-owned (script writes/overwrites) | Editor-owned (script never touches after first creation) |
+|---|---|---|
+| `post` | title, slug, excerpt, mainImage, body, author, categories, publishedAt, seo | (none — all importer-owned) |
+| `teamMember` | name, slug, role, department, photo, cardImage, bio, bioParagraphs, contact, socialLinks | (none — all importer-owned) |
+| `testimonial` | quote, authorName, authorTitle, company, avatar, companyLogo, rating | featured, order |
+| `caseStudy` | title, slug, client, panelLabel, excerpt, heroImage, cardImage, metrics[], body, services, featured, quoteText | heroSubtitle, heroMetrics, caseOverview, objectiveChallenges, strategyPillars, journeyTimeline, numbersThatMatter, growthChart, proofData, beforeAfter, conclusion, ctaFooter (all 12 new structured fields) |
+| `podcastEpisode` | (likely empty — BCMS unlikely to have podcast template; verify in discovery) | all fields editor-owned |
+
+**Write semantics:**
+
+```js
+async function importDoc(type, sanityId, importedFields) {
+  const existing = await client.fetch(`*[_id == $id][0]`, { id: sanityId });
+  if (!existing) {
+    // First-time creation: write everything imported, leave editor-only fields undefined
+    return client.create({ _id: sanityId, _type: type, ...importedFields });
+  }
+  // Existing doc: patch ONLY importer-owned keys; editor-owned keys remain untouched
+  return client.patch(sanityId).set(importedFields).commit();
+}
+```
+
+`patch().set()` updates only the keys passed; existing keys not in the patch are preserved. This is the canonical Sanity primitive for partial-write-with-preserve.
+
+**Conflict detection:** if `existing` has any importer-owned key with a value that differs from `importedFields` (i.e., editor changed a "should be importer-owned" field manually), log a `WARN` to `migration-report.json` so we know editors went outside their lane. Don't fail the run — editor wins, but flag for review.
 
 Asset dedup cache primed at start:
 
@@ -316,9 +398,23 @@ async function uploadOrReuseAsset(bcmsAssetId, bcmsAssetUrl, name) {
 }
 ```
 
-### 4.5 HTML → Portable Text
+### 4.5 HTML → Portable Text — strict, sanitized (revised per Codex HIGH finding)
 
 `@portabletext/block-tools` `htmlToBlocks()` with custom rules for `<img>` blocks (upload + insert image reference). JSDOM polyfill for Node-side DOM parsing.
+
+**No raw-HTML escape hatch.** If `htmlToBlocks` encounters a node it cannot serialize, the script:
+
+1. Logs the unsupported HTML fragment + source `bcmsEntryId` to `migration-report.json`
+2. Falls back to a sanitized HTML block via `isomorphic-dompurify` with strict allowlist (`p`, `strong`, `em`, `a[href]`, `ul`, `ol`, `li`, `blockquote`, `code`)
+3. Wraps the sanitized HTML in a custom Portable Text block of `_type: 'rawHtml'` with `html` field — rendered via the Portable Text serializer in `src/sanity/lib/portable-text-components.tsx` using `dangerouslySetInnerHTML` (safe because input is DOMPurified)
+4. **Increments `report.warnings.unsupportedHtmlBlocks` counter.** If counter > 0 at end of migration, exit code is non-zero — forces human review before launch.
+
+**Dependencies added in PR 3:**
+- `@portabletext/block-tools` (Sanity official)
+- `isomorphic-dompurify` (DOMPurify wrapper that works in Node)
+- `jsdom` (DOM polyfill for `htmlToBlocks` Node usage)
+
+**Test fixtures:** `scripts/__tests__/htmlToBlocks.test.mjs` with malicious-input fixtures (`<script>`, `<iframe>`, event handlers, javascript: URLs) — all must be sanitized to safe output. Run via `node --test`.
 
 ### 4.6 Field mappings (provisional — finalized after BCMS discovery step)
 
@@ -389,9 +485,11 @@ Delete `src/app/(site)/(pages)/team/`. Verify `src/app/sitemap.ts` doesn't inclu
 
 ### 5.6 Social URL fixes
 
-`src/lib/site.ts`:
-- `SITE_LINKEDIN_URL`: confirm hyphenation with Pavle (live: `linkedin.com/company/heroic-rankings`)
-- `SITE_X_URL`: confirm handle (live: `twitter.com/heroic_rankings` underscore)
+`src/lib/site.ts` updates (confirmed by Pavle 2026-04-28):
+- `SITE_LINKEDIN_URL` → `https://www.linkedin.com/company/heroic-rankings/`
+- `SITE_X_URL` → `https://twitter.com/heroic_rankings`
+
+These also propagate to `organization-schema` JSON-LD, `about-us-team-data.ts` defaults, footer, and any podcast share-button defaults that reference the brand-level handles.
 
 ### 5.7 Verification
 
@@ -470,6 +568,45 @@ Vercel Speed Insights daily review. Vercel Analytics for traffic. Sanity Studio 
 
 Sentry / error monitoring NOT in scope; flagged as future work.
 
+### 6.10 Pre-launch content validator (CRITICAL gate for PR 6)
+
+`scripts/validate-launch-content.mjs` — runs against production Sanity dataset. Loads `scripts/launch-allowlist.json` (Pavle/Nebojša maintain) listing every slug that must be live at launch. For each slug:
+
+```js
+{
+  type: "caseStudy",
+  slug: "diy-craft-ecom-brand",
+  requiredFields: [
+    "title", "slug", "client", "excerpt", "heroImage", "cardImage",
+    "heroSubtitle", "heroMetrics", "caseOverview",
+    "objectiveChallenges", "strategyPillars", "journeyTimeline",
+    "numbersThatMatter", "growthChart", "proofData", "beforeAfter",
+    "conclusion", "ctaFooter"
+  ]
+}
+```
+
+Validator queries each doc, asserts every required field is **non-null AND non-empty** (arrays must have minimum length per validation rules, strings must be > 0 chars, references must resolve). Image fields validated to have `asset->_id` plus `alt` text.
+
+**Output:**
+- All pass → `report.status = 'PASS'`, exit 0, PR 6 unblocked
+- Any miss → `report.status = 'FAIL'`, lists missing-field-by-slug, exit 1, PR 6 cannot merge until fixed
+- Validator runs as a GitHub Action in PR 6 — can't merge if red
+
+This is the explicit gate that prevents shipping empty/partial detail pages after fallback deletion.
+
+### 6.11 Tooling install requirements (PR 5 prerequisite)
+
+The signoff gate (6.8) assumes tooling that is NOT yet in `package.json`. Must be added in PR 5 BEFORE the gate is checked:
+
+| Tool | Package | Use |
+|---|---|---|
+| Lighthouse CI | `@lhci/cli` (devDep) | Performance + a11y + SEO scores |
+| axe-core for Playwright | `@axe-core/playwright` (devDep) | Automated a11y checks |
+| k6 | binary install (or GitHub Action `grafana/k6-action`) | Light load test |
+
+If install introduces regressions or PR 5 runs out of time → fall back to manual Lighthouse runs in Chrome DevTools + manual axe DevTools spot-check + skip k6 for first launch.
+
 ---
 
 ## 7. Risks & Mitigations
@@ -491,43 +628,65 @@ Sentry / error monitoring NOT in scope; flagged as future work.
 
 ---
 
-## 8. Timeline & Sequencing
+## 8. Timeline & Sequencing — revised to 3 days (per Codex finding)
 
-### Day 1
+Original plan was 2 days. Codex correctly flagged that the critical path is content pipeline (BCMS discovery → migration → manual editor enrichment of 12 new caseStudy fields → 1:1 UI) rather than UI work itself. 3 days is realistic; 2 days is plausible only if BCMS discovery is clean on first pass AND editors populate the new caseStudy structured fields immediately.
 
-| PR | Hours | Notes |
-|---|---|---|
-| PR 1 — Nebojša fixes | ~2h | needs `/local-seo` CTA copy + social handles confirms |
-| PR 2 — Schema additions + tokens | ~3h | independent; parallel with PR 1 |
-| PR 3a — BCMS discovery script | ~1h | needs BCMS API key |
-| PR 3b — Migration script + dry-run | ~3h | depends on PR 2 deployed |
-
-Day 1 deliverable: PRs 1, 2, 3 merged to main; migration dry-run reviewed.
-
-### Day 2
+### Day 1 — Nebojša fixes + schema + discovery
 
 | PR | Hours | Notes |
 |---|---|---|
+| PR 1 — Nebojša fixes | ~2h | needs social handles confirm (local-seo copy locked already) |
+| PR 2 — Schema additions + tokens + validation rules + slug-required + alt-required | ~3h | independent; parallel with PR 1 |
+| PR 3a — BCMS discovery script + run | ~2h | **highest-priority blocker** — needs BCMS API key first thing |
+
+Day 1 deliverable: PRs 1, 2 merged. PR 3a discovery output reviewed; field mapping locked.
+
+### Day 2 — Migration + manual enrichment + UI start
+
+| PR | Hours | Notes |
+|---|---|---|
+| PR 3b — Migration script + dry-run | ~3h | depends on PR 2 deployed + PR 3a output |
 | PR 3c — Live migration run | ~30m | `--no-dry-run`, verify Studio populated |
-| PR 4 — Detail page wiring | ~8–10h | biggest chunk; case study + podcast + team popup + insights all 1:1 Figma |
-| PR 5 — Verification | ~2h | parallel with PR 4 review |
+| **Manual content enrichment session** | ~2–3h (Pavle/Nebojša) | populate the 12 new caseStudy structured fields for each launch case study; populate podcastEpisode docs entirely (BCMS unlikely to have podcast template); seed launch-allowlist.json |
+| PR 4a — Detail page wiring (team popup + insights) | ~3h | smaller surfaces, can start once schema is live (don't need migration content) |
+
+Day 2 deliverable: migration live; editors enriching content; team popup + insights detail pages done.
+
+### Day 3 — Heavy UI + verification + cutover
+
+| PR | Hours | Notes |
+|---|---|---|
+| PR 4b — Case study detail (1:1 Figma `2255:878` / `2255:1378`) | ~4h | needs enriched content from Day 2 |
+| PR 4c — Podcast episode detail (1:1 Figma `2223:49` / `2223:723`) | ~3h | needs podcastEpisode docs from Day 2 |
+| PR 5 — Verification (Lighthouse CI + axe + visual + k6 install + smoke) | ~3h | parallel with PR 4 review |
+| Pre-launch validator gate (Section 6.10) | ~30m | runs as GitHub Action; PR 6 blocked if red |
 | PR 6 — Production cutover | ~1h | DNS + Vercel + final smoke |
 
-Day 2 deliverable: bundled release live on production domain.
+Day 3 deliverable: bundled release live on production domain.
 
 ### Critical path & parallelization
 
-Sequential: PR 3 needs PR 2 deployed; PR 4 needs PR 3 data populated; PR 6 needs PR 5 green.
+**Sequential dependencies:** PR 3 needs PR 2 deployed; PR 4b/4c need PR 3 + manual enrichment; PR 6 needs PR 5 green AND validator green.
 
-Parallelizable: PR 1 + PR 2 simultaneously; within PR 4 case study + podcast + team popup are independent feature branches (3 parallel agent dispatches); visual baselines + a11y + k6 run concurrently in PR 5.
+**Parallelizable:**
+- Day 1: PR 1 + PR 2 simultaneously; PR 3a discovery in parallel with PR 2 review
+- Day 2: PR 4a (team popup + insights) starts during the enrichment session — only needs schema, not migrated content
+- Day 3: PR 4b + PR 4c are independent (3 parallel feature branches with Codex/agent dispatches OK); visual + a11y + k6 run concurrently in PR 5
+
+### What slips the timeline
+
+1. **BCMS API key delay** → entire migration shifts (Day 1 → Day 2)
+2. **Editor enrichment session pushed to Day 3** → PR 4b/4c lose data contract → late rework
+3. **First migration dry-run reveals BCMS shape mismatch** → discovery iteration adds ~half day
+4. **Visual regression baselines fail** → manual Figma comparison loop
 
 ### Blocking inputs needed from Pavle today
 
-1. BCMS API key + confirm org/instance IDs
-2. Sanity write token
-3. Confirm `/local-seo` CTA copy
-4. Confirm LinkedIn + X handles
-5. Re-confirm vCard "Save to Contacts" feature (already agreed; re-asked given timeline)
+1. **BCMS API key** + confirm org/instance IDs (`org/620528baca65b6578d29868d/instance/6710e3bdeeda0c4a2de4b330`)
+2. **Sanity write token** (Editor or Administrator role)
+3. **LinkedIn + X handles** (real URLs to lock in `src/lib/site.ts`)
+4. **Editor availability for Day 2 enrichment session** (Pavle/Nebojša ~3 hours to populate 6 case studies × 12 new fields + podcast episodes from scratch)
 
 ---
 
@@ -535,12 +694,14 @@ Parallelizable: PR 1 + PR 2 simultaneously; within PR 4 case study + podcast + t
 
 These remain unresolved and must be answered before the corresponding PR ships:
 
-| # | Question | Blocks |
-|---|---|---|
-| O1 | Final `/local-seo` CTA copy | PR 1 |
-| O2 | Real LinkedIn + X handles | PR 1 |
-| O3 | BCMS API key + org/instance IDs | PR 3a |
-| O4 | Sanity write token | PR 3 |
+| # | Question | Status | Blocks |
+|---|---|---|---|
+| O1 | Final `/local-seo` CTA copy | Pavle approved interim copy ("Get Found by Customers Searching Right Now") for PR 1; Nebojša provides final copy for follow-up | PR 1 (resolved) |
+| O2 | Real LinkedIn + X handles | ✅ resolved 2026-04-28 (`linkedin.com/company/heroic-rankings/` + `twitter.com/heroic_rankings`) | (resolved) |
+| O3 | BCMS API key + org/instance IDs | unresolved | PR 3a |
+| O4 | Sanity write token | unresolved | PR 3 |
+| O5 | Editor availability for Day 2 enrichment session | unresolved | PR 4b/4c |
+| O6 | Launch allowlist (`scripts/launch-allowlist.json`) — exact slugs that must be live + their required fields | needs Pavle/Nebojša input by Day 2 | PR 6 validator gate |
 
 ---
 
@@ -564,6 +725,26 @@ Decisions made during brainstorming, with reasoning:
 | Lighthouse score targets ≥ 90 perf / ≥ 95 a11y / ≥ 95 best-practices / 100 SEO | Industry standard for marketing sites |
 
 ---
+
+## 12. Changelog
+
+**v2 (2026-04-28) — Codex review integrated:**
+
+- Section 1.4: added pre-launch content validator as gate for PR 6 (CRITICAL)
+- Section 2.2: `teamMember.slug` made required; alt text required on photo + cardImage (HIGH/MED)
+- Section 2.4: added bounded validation rules for caseStudy structured fields (HIGH)
+- Section 2.5: added bounded validation rules for podcastEpisode (HIGH)
+- Section 3.2: explicit client-island boundary for Recharts with reserved layout space (MED)
+- Section 3.4: vCard hardening — CRLF, escaping, normalized phones, fallback path, tested fixtures (MED)
+- Section 4.4: switched from `createOrReplace` to patch-only-touch with importer-owned vs editor-owned field map per type (CRITICAL — prevents rerun overwriting editor work)
+- Section 4.5: removed raw-HTML escape hatch; DOMPurify + strict allowlist + malicious-input fixtures + non-zero exit on unsupported HTML (HIGH)
+- Section 4.3: added slug collision detection, asset retries, MIME validation, size cap, stale-doc detection, launch-allowlist assertion, exit code semantics (MED)
+- Section 6.10: added pre-launch content validator script spec (CRITICAL)
+- Section 6.11: added tooling install requirements (Lighthouse CI, axe-playwright, k6) before they're a gate (MED)
+- Section 8: timeline revised from 2 days to 3 days; PR 4 split into 4a (independent of migrated content) and 4b/4c (depends on migrated content); editor enrichment session called out explicitly (HIGH)
+- Section 9: added O5 (editor availability) and O6 (launch allowlist) as gating questions
+
+**v1 (2026-04-28) — initial spec:** see commit history.
 
 ## 11. References
 
