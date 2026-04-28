@@ -29,7 +29,6 @@ const SLUG_LABELS: Record<string, string> = {
   "content-creation": "Content Creation",
   "keyword-strategy": "Keyword Strategy",
   "link-building": "Link Building",
-  team: "Team",
 };
 
 /** Convert an unknown slug to title case as a fallback. */

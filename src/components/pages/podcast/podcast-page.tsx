@@ -68,7 +68,7 @@ interface Episode {
 
 const LATEST_EPISODE: Episode = {
   id: 15,
-  slug: "seo-growth",
+  slug: "organic-growth",
   title: "SEO Growth",
   guest: "Jonathan Bentz",
   description:
