@@ -45,34 +45,33 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
   "/local-seo": {
     heading: (
       <>
-        Get Your On-Page SEO
-        <br />
-        for{" "}
+        Dominate{" "}
         <span className={GRADIENT_SPAN_CLASS} style={GRADIENT_STYLE}>
-          Top Search Results
+          Your Market
         </span>
+        <br />
+        with Local SEO Success
       </>
     ),
-    body: "Contact Us to schedule a consultation and learn how our on-page SEO services can optimize your content, boost your rankings, and drive user engagement.",
+    body: "Contact Us to schedule a consultation and learn how our local SEO services can enhance your local presence, connect you with nearby customers, and increase foot traffic to your business.",
     ctaLabel: "Get Started Today",
     ctaWidth: EXPANDED_CTA_WIDTH,
   },
   "/on-page-seo": {
     heading: (
       <>
-        Perfect Your Site with
+        Start Generating SEO
         <br />
         <span className={GRADIENT_SPAN_CLASS} style={GRADIENT_STYLE}>
-          Technical SEO Precision
+          Organic Revenue
         </span>
       </>
     ),
-    body: "Contact us to schedule a consultation and discover how our technical SEO services can optimize your website\u2019s infrastructure, enhance user experience, and boost your search engine rankings.",
+    body: "Start generating consistent organic SEO revenue and watch your business grow with sustainable, long-term results.",
     ctaLabel: "Get Started Today",
     ctaWidth: EXPANDED_CTA_WIDTH,
-    headingMaxW: "max-w-[600px]",
-    bodyMaxW: "lg:max-w-[814px]",
-    rootMaxW: "max-w-[814px]",
+    bodyMaxW: "lg:max-w-[532px]",
+    rootMaxW: "max-w-[600px]",
   },
   "/content-creation": {
     heading: (
@@ -92,18 +91,19 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
   "/technical-seo": {
     heading: (
       <>
-        Start Generating SEO
+        Perfect Your Site with
         <br />
         <span className={GRADIENT_SPAN_CLASS} style={GRADIENT_STYLE}>
-          Organic Revenue
+          Technical SEO Precision
         </span>
       </>
     ),
-    body: "Start generating consistent organic SEO revenue and watch your business grow with sustainable, long-term results.",
+    body: "Contact us to schedule a consultation and discover how our technical SEO services can optimize your website’s infrastructure, enhance user experience, and boost your search engine rankings.",
     ctaLabel: "Get Started Today",
     ctaWidth: EXPANDED_CTA_WIDTH,
-    bodyMaxW: "lg:max-w-[532px]",
-    rootMaxW: "max-w-[600px]",
+    headingMaxW: "max-w-[600px]",
+    bodyMaxW: "lg:max-w-[814px]",
+    rootMaxW: "max-w-[814px]",
   },
   "/seo-services": {
     heading: (
