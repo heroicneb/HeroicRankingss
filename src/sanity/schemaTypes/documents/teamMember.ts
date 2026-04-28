@@ -16,6 +16,7 @@ export const teamMember = defineType({
       title: "Slug",
       type: "slug",
       options: { source: "name", maxLength: 96 },
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: "role",
@@ -47,7 +48,12 @@ export const teamMember = defineType({
       description: "Headshot for team grid. Square crop works best (min 400x400 px).",
       options: { hotspot: true },
       fields: [
-        defineField({ name: "alt", title: "Alt Text", type: "string" }),
+        defineField({
+          name: "alt",
+          title: "Alt Text",
+          type: "string",
+          validation: (rule) => rule.required(),
+        }),
       ],
     }),
     defineField({
@@ -57,7 +63,12 @@ export const teamMember = defineType({
       description: "Larger portrait image used in the team member popup/modal card.",
       options: { hotspot: true },
       fields: [
-        defineField({ name: "alt", title: "Alt Text", type: "string" }),
+        defineField({
+          name: "alt",
+          title: "Alt Text",
+          type: "string",
+          validation: (rule) => rule.required(),
+        }),
       ],
     }),
     defineField({
