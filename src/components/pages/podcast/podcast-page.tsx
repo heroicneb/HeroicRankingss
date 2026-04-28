@@ -5,6 +5,8 @@ import { AppLink } from "@/components/ui/app-link";
 import { GradientText } from "@/components/ui/gradient-text";
 import { DiagonalArrowIcon } from "@/components/ui/icons/decorative";
 import { createPageMetadata } from "@/lib/metadata";
+import type { SanityPodcastEpisodeSummary } from "@/lib/sanity-data";
+import { urlFor } from "@/sanity/lib/image";
 
 const PODCAST_LIGHT_GRADIENT =
   "linear-gradient(207.72deg, #826FFF 18.3%, #E188FF 40.65%, #E1BDFF 129.53%)";
@@ -51,65 +53,6 @@ export const metadata: Metadata = createPageMetadata({
   path: "/podcast",
 });
 
-// ---------------------------------------------------------------------------
-// Static data — CMS integration to follow
-// ---------------------------------------------------------------------------
-
-interface Episode {
-  id: number;
-  slug: string;
-  title: string;
-  guest: string;
-  description: string;
-  duration: string;
-  part?: string;
-  imageSrc?: string;
-}
-
-const LATEST_EPISODE: Episode = {
-  id: 15,
-  slug: "organic-growth",
-  title: "SEO Growth",
-  guest: "Jonathan Bentz",
-  description:
-    "You can have the mindset of, \u201Cman, I screwed up, I failed\u201D, or you can take those as lessons and make sure that you don\u2019t repeat them, but get better along the way the entire time. And that\u2019s kind of the mentality that I\u2019ve had through most of my career.",
-  duration: "52 min",
-  part: "Part 1",
-};
-
-const EPISODES: Episode[] = [
-  {
-    id: 14,
-    slug: "organic-growth",
-    title: "Organic Growth",
-    guest: "Jason Rivera",
-    description:
-      "If you work in SaaS and care about growing organic traffic, you\u2019ll want to hear what Jason Rivera has to say.",
-    duration: "50 min",
-    imageSrc: "/podcast/episode-1.png",
-  },
-  {
-    id: 14,
-    slug: "seo-aeo-and-ai-growth",
-    title: "SEO, AEO & AI Growth",
-    guest: "Sara Miller",
-    description:
-      "She quietly builds her content one piece at a time\u2014perfectly tuned for SEO, AEO, and AI before anyone else even realized.",
-    duration: "59 min",
-    imageSrc: "/podcast/episode-2.png",
-  },
-  {
-    id: 14,
-    slug: "seo-wind",
-    title: "SEO Wind",
-    guest: "Tom Winter",
-    description:
-      "He\u2019s all about getting real feedback to improve his product. He doesn\u2019t trust assumptions, he trusts data.",
-    duration: "57 min",
-    imageSrc: "/podcast/episode-3.png",
-  },
-];
-
 const AI_FEATURES = [
   {
     title: "Context-Aware Answers",
@@ -122,7 +65,7 @@ const AI_FEATURES = [
   {
     title: "Instant Streaming",
     description:
-      "Answers stream in real-time, token by token. No waiting \u2014 the conversation feels natural and responsive.",
+      "Answers stream in real-time, token by token. No waiting — the conversation feels natural and responsive.",
     iconSrc: "/podcast/icon-streaming.svg",
     iconWidth: 24,
     iconHeight: 34,
@@ -141,6 +84,38 @@ const PODCAST_LIGHT_TITLE_GRADIENT =
   "linear-gradient(208.76deg, #826FFF 18.3%, #E188FF 40.65%, #E1BDFF 129.53%)";
 const PODCAST_LIGHT_BUILT_GRADIENT =
   "linear-gradient(185.8deg, #826FFF 18.3%, #E188FF 40.65%, #E1BDFF 129.53%)";
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+function getEpisodeImageUrl(
+  episode: SanityPodcastEpisodeSummary,
+  width: number,
+): string | null {
+  if (!episode.heroImage?.asset) return null;
+  try {
+    return urlFor(episode.heroImage).width(width).url();
+  } catch {
+    return null;
+  }
+}
+
+function getEpisodeImageLqip(
+  episode: SanityPodcastEpisodeSummary,
+): string | undefined {
+  return episode.heroImage?.asset?.metadata?.lqip;
+}
+
+function getEpisodeAlt(episode: SanityPodcastEpisodeSummary): string {
+  if (episode.heroImage?.alt) return episode.heroImage.alt;
+  const guestName = episode.guest?.name ?? null;
+  return guestName ? `${guestName} — ${episode.title}` : episode.title;
+}
+
+// ---------------------------------------------------------------------------
+// Sections
+// ---------------------------------------------------------------------------
 
 function HeroSection() {
   return (
@@ -244,8 +219,16 @@ function HeroSection() {
   );
 }
 
-function LatestEpisodeSection() {
-  const ep = LATEST_EPISODE;
+function LatestEpisodeSection({
+  episode,
+}: {
+  episode: SanityPodcastEpisodeSummary;
+}) {
+  const slug = episode.slug?.current ?? "";
+  const guestName = episode.guest?.name ?? null;
+  const imageUrl = getEpisodeImageUrl(episode, 1200);
+  const imageLqip = getEpisodeImageLqip(episode);
+  const imageAlt = getEpisodeAlt(episode);
 
   return (
     <section className="pt-[60px] lg:pt-[120px]" id="podcast-latest">
@@ -267,37 +250,40 @@ function LatestEpisodeSection() {
                 className="bg-clip-text text-[52px] font-normal leading-[60px] tracking-[-1.04px] text-transparent"
                 style={{ backgroundImage: PODCAST_LIGHT_GRADIENT }}
               >
-                {ep.title.toUpperCase()}
+                {episode.title.toUpperCase()}
               </h2>
-              <p className="text-[18px] leading-[normal] tracking-[-0.36px] text-[var(--color-hr-pure-white)]">
-                with{" "}
-                <span
-                  className="bg-clip-text font-bold text-transparent"
-                  style={{ backgroundImage: PODCAST_GUEST_GRADIENT }}
-                >
-                  {ep.guest}
-                </span>
-              </p>
+              {guestName ? (
+                <p className="text-[18px] leading-[normal] tracking-[-0.36px] text-[var(--color-hr-pure-white)]">
+                  with{" "}
+                  <span
+                    className="bg-clip-text font-bold text-transparent"
+                    style={{ backgroundImage: PODCAST_GUEST_GRADIENT }}
+                  >
+                    {guestName}
+                  </span>
+                </p>
+              ) : null}
             </div>
 
-            <p className="text-[18px] leading-[24px] text-[var(--color-hr-pure-white)]">
-              &ldquo;{ep.description}&rdquo;
-            </p>
+            {episode.description ? (
+              <p className="text-[18px] leading-[24px] text-[var(--color-hr-pure-white)]">
+                &ldquo;{episode.description}&rdquo;
+              </p>
+            ) : null}
 
             <div className="flex flex-wrap gap-[5px]">
               <span className="inline-flex items-center rounded-[100px] border border-[var(--color-hr-off-white)] px-[14px] py-[6px] text-[18px] leading-[24px] text-[var(--color-hr-off-white)]">
-                EP&nbsp;•&nbsp;{ep.id}
-                {ep.part ? <>&nbsp;•&nbsp;{ep.part}</> : null}
+                EP&nbsp;&bull;&nbsp;{episode.episodeNumber}
               </span>
               <span className="inline-flex items-center rounded-[100px] border border-[var(--color-hr-off-white)] px-[14px] py-[6px] text-[18px] leading-[24px] text-[var(--color-hr-off-white)]">
-                {ep.duration}
+                {episode.duration}
               </span>
             </div>
 
             <AppLink
               aria-label="Open latest episode"
               className="mt-auto inline-flex size-[72px] shrink-0 items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] shadow-[0_4px_14px_rgba(0,0,0,0.18)] transition-transform hover:scale-105"
-              href={`/podcast/${ep.slug}`}
+              href={slug ? `/podcast/${slug}` : "#"}
             >
               <DiagonalArrowIcon className="size-5 text-[var(--color-hr-dark)]" />
             </AppLink>
@@ -305,13 +291,17 @@ function LatestEpisodeSection() {
 
           <div className="relative h-[260px] w-full lg:absolute lg:right-[20px] lg:top-[20px] lg:h-[500px] lg:w-[607.75px]">
             <div className="absolute inset-0 overflow-hidden rounded-[30px] shadow-[0px_4px_14px_0px_rgba(0,0,0,0.18)] lg:rounded-[40px]">
-              <Image
-                alt={`${ep.guest} — latest episode`}
-                className="object-cover"
-                fill
-                sizes="(min-width: 1024px) 608px, 100vw"
-                src="/podcast/guest-4.png"
-              />
+              {imageUrl ? (
+                <Image
+                  alt={imageAlt}
+                  blurDataURL={imageLqip}
+                  className="object-cover"
+                  fill
+                  placeholder={imageLqip ? "blur" : "empty"}
+                  sizes="(min-width: 1024px) 608px, 100vw"
+                  src={imageUrl}
+                />
+              ) : null}
             </div>
           </div>
         </div>
@@ -320,23 +310,32 @@ function LatestEpisodeSection() {
   );
 }
 
-function EpisodeCard({ episode }: { episode: Episode }) {
+function EpisodeCard({ episode }: { episode: SanityPodcastEpisodeSummary }) {
+  const slug = episode.slug?.current ?? "";
+  const href = slug ? `/podcast/${slug}` : "#";
+  const guestName = episode.guest?.name ?? null;
+  const imageUrl = getEpisodeImageUrl(episode, 800);
+  const imageLqip = getEpisodeImageLqip(episode);
+  const imageAlt = getEpisodeAlt(episode);
+
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]">
       <div className="relative h-[305px] w-full overflow-hidden">
-        {episode.imageSrc ? (
+        {imageUrl ? (
           <Image
-            alt={`${episode.guest} — ${episode.title}`}
+            alt={imageAlt}
+            blurDataURL={imageLqip}
             className="object-cover"
             fill
+            placeholder={imageLqip ? "blur" : "empty"}
             sizes="(min-width: 1024px) 413px, (min-width: 768px) 50vw, 100vw"
-            src={episode.imageSrc}
+            src={imageUrl}
           />
         ) : null}
 
         <div className="absolute right-[20px] top-[20px] flex gap-[5px]">
           <span className="inline-flex items-center rounded-[100px] bg-[var(--color-hr-pure-white)] px-[14px] py-[6px] text-[18px] leading-[24px] text-[var(--color-hr-dark)]">
-            EP&nbsp;•&nbsp;{episode.id}
+            EP&nbsp;&bull;&nbsp;{episode.episodeNumber}
           </span>
           <span className="inline-flex items-center rounded-[100px] bg-[var(--color-hr-pure-white)] px-[14px] py-[6px] text-[18px] leading-[24px] text-[var(--color-hr-dark)]">
             {episode.duration}
@@ -346,7 +345,7 @@ function EpisodeCard({ episode }: { episode: Episode }) {
         <AppLink
           aria-label={`Open episode: ${episode.title}`}
           className="absolute bottom-[20px] right-[20px] inline-flex size-[72px] items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] shadow-[0_4px_14px_rgba(0,0,0,0.12)] transition-transform hover:scale-105"
-          href={`/podcast/${episode.slug}`}
+          href={href}
         >
           <DiagonalArrowIcon className="size-5 text-[var(--color-hr-dark)]" />
         </AppLink>
@@ -355,25 +354,31 @@ function EpisodeCard({ episode }: { episode: Episode }) {
       <div className="flex flex-1 flex-col gap-5 px-[20px] pb-[20px] pt-[20px]">
         <div className="flex flex-col gap-[10px]">
           <h3 className="text-[32px] font-normal leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-            {episode.title}
+            <AppLink className="hover:underline" href={href}>
+              {episode.title}
+            </AppLink>
           </h3>
-          <p className="text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-            with{" "}
-            <span
-              className="bg-clip-text font-bold text-transparent"
-              style={{
-                backgroundImage:
-                  "linear-gradient(191.27deg, #998AFF 18.3%, #9956AF 40.65%, #2A2260 129.53%)",
-              }}
-            >
-              {episode.guest}
-            </span>
-          </p>
+          {guestName ? (
+            <p className="text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+              with{" "}
+              <span
+                className="bg-clip-text font-bold text-transparent"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(191.27deg, #998AFF 18.3%, #9956AF 40.65%, #2A2260 129.53%)",
+                }}
+              >
+                {guestName}
+              </span>
+            </p>
+          ) : null}
         </div>
 
-        <p className="text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-          {episode.description}
-        </p>
+        {episode.description ? (
+          <p className="text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+            {episode.description}
+          </p>
+        ) : null}
 
         <div className="mt-auto flex items-center gap-[10px]">
           <Image
@@ -392,7 +397,13 @@ function EpisodeCard({ episode }: { episode: Episode }) {
   );
 }
 
-function EpisodesGridSection() {
+function EpisodesGridSection({
+  episodes,
+}: {
+  episodes: SanityPodcastEpisodeSummary[];
+}) {
+  if (episodes.length === 0) return null;
+
   return (
     <section className="pt-[60px] lg:pt-[120px]" id="podcast-episodes">
       <div className="mx-auto w-full max-w-[1440px] px-5 md:px-10 lg:px-20">
@@ -410,8 +421,11 @@ function EpisodesGridSection() {
         </div>
 
         <div className="mt-[80px] grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {EPISODES.map((episode) => (
-            <EpisodeCard episode={episode} key={episode.guest} />
+          {episodes.map((episode) => (
+            <EpisodeCard
+              episode={episode}
+              key={episode._id ?? episode.slug?.current ?? episode.title}
+            />
           ))}
         </div>
       </div>
@@ -527,13 +541,31 @@ function PodcastAISection() {
 // Page
 // ---------------------------------------------------------------------------
 
-export default function PodcastPage() {
+interface PodcastPageProps {
+  episodes: SanityPodcastEpisodeSummary[];
+}
+
+/**
+ * Podcast index (`/podcast`) — Sanity-driven.
+ *
+ * The newest episode (first item in the Sanity-ordered list) populates the
+ * "Latest Episode" hero panel; remaining episodes render in the cards grid.
+ * When Sanity is empty both data sections collapse and only the static
+ * marketing sections render.
+ *
+ * No outer `route-motion-frame` wrapper here: `(site)/template.tsx` already
+ * provides one for every page; wrapping again would compound the
+ * route-enter animation.
+ */
+export default function PodcastPage({ episodes }: PodcastPageProps) {
+  const [latest, ...rest] = episodes;
+
   return (
-    <div className="route-motion-frame">
+    <>
       <HeroSection />
-      <LatestEpisodeSection />
-      <EpisodesGridSection />
+      {latest ? <LatestEpisodeSection episode={latest} /> : null}
+      <EpisodesGridSection episodes={rest} />
       <PodcastAISection />
-    </div>
+    </>
   );
 }

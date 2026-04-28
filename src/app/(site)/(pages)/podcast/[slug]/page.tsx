@@ -4,46 +4,52 @@ import { notFound } from "next/navigation";
 import { PodcastEpisodePage } from "@/components/pages/podcast/podcast-episode-page";
 import { createPageMetadata } from "@/lib/metadata";
 import {
-  getEpisodeBySlug,
-  getEpisodeSlugs,
-  getRelatedEpisodes,
-} from "@/data/podcast-episodes";
+  getPodcastEpisodeBySlug,
+  getPodcastEpisodeSlugs,
+} from "@/lib/sanity-data";
 
-interface PodcastEpisodePageProps {
-  params: Promise<{
-    slug: string;
-  }>;
+interface PodcastEpisodeRouteProps {
+  params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({ params }: PodcastEpisodePageProps): Promise<Metadata> {
+export async function generateStaticParams() {
+  const slugs = await getPodcastEpisodeSlugs();
+  return slugs.map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: PodcastEpisodeRouteProps): Promise<Metadata> {
   const { slug } = await params;
-  const episode = getEpisodeBySlug(slug);
+  const episode = await getPodcastEpisodeBySlug(slug);
 
   if (!episode) {
     notFound();
   }
 
+  const guestName = episode.guest?.name ?? null;
+  const titleFallback = guestName
+    ? `${episode.title} — EP ${episode.episodeNumber} with ${guestName}`
+    : `${episode.title} — EP ${episode.episodeNumber}`;
+
   return createPageMetadata({
-    title: `${episode.title} — EP ${episode.episodeNumber} with ${episode.guest}`,
-    description: episode.description,
+    title: episode.seo?.metaTitle?.trim() || titleFallback,
+    description:
+      episode.seo?.metaDescription?.trim() ||
+      episode.description ||
+      "Heroic Rankings podcast episode.",
     path: `/podcast/${slug}`,
     ogType: "article",
   });
 }
 
-export function generateStaticParams() {
-  return getEpisodeSlugs().map((slug) => ({ slug }));
-}
-
-export default async function PodcastSlugPage({ params }: PodcastEpisodePageProps) {
+export default async function Page({ params }: PodcastEpisodeRouteProps) {
   const { slug } = await params;
-  const episode = getEpisodeBySlug(slug);
+  const episode = await getPodcastEpisodeBySlug(slug);
 
   if (!episode) {
     notFound();
   }
 
-  const relatedEpisodes = getRelatedEpisodes(slug, 3);
-
-  return <PodcastEpisodePage episode={episode} relatedEpisodes={relatedEpisodes} />;
+  return <PodcastEpisodePage episode={episode} />;
 }
