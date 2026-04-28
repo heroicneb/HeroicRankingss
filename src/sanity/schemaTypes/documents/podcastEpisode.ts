@@ -4,19 +4,34 @@ export const podcastEpisode = defineType({
   name: "podcastEpisode",
   title: "Podcast Episode",
   type: "document",
+  groups: [
+    { name: "episode", title: "Episode", default: true },
+    { name: "guest", title: "Guest" },
+    { name: "content", title: "Content" },
+    { name: "related", title: "Related" },
+    { name: "seo", title: "SEO & Meta" },
+  ],
   fields: [
     defineField({
       name: "title",
       title: "Title",
       type: "string",
-      validation: (rule) => rule.required().max(160),
+      group: "episode",
+      validation: (rule) =>
+        rule
+          .required()
+          .max(160)
+          .error(
+            "Title is required (max 160 chars) and renders as the H1 on the episode page.",
+          ),
     }),
     defineField({
       name: "titleHighlighted",
       title: "Title Highlighted Substring",
       type: "string",
+      group: "episode",
       description:
-        'The portion of the title to render with brand gradient, e.g. "That Actually Works". Must be a substring of title.',
+        'The portion of the title to render with brand gradient, e.g. "That Actually Works". Must be a substring of the title.',
       validation: (rule) =>
         rule.custom((value, context) => {
           if (!value) return true;
@@ -31,18 +46,28 @@ export const podcastEpisode = defineType({
       name: "slug",
       title: "Slug",
       type: "slug",
+      group: "episode",
       options: { source: "title", maxLength: 96 },
-      validation: (rule) => rule.required(),
+      validation: (rule) =>
+        rule
+          .required()
+          .error(
+            "Slug is required — it forms the URL: /podcast/<slug>. Click Generate after the title is filled.",
+          ),
     }),
     defineField({
       name: "episodeNumber",
       title: "Episode Number",
       type: "number",
+      group: "episode",
       validation: (rule) =>
         rule
           .required()
           .integer()
           .positive()
+          .error(
+            "Episode number must be a positive integer (e.g. 1, 2, 3 ...).",
+          )
           .custom(async (value, context) => {
             if (!value) return true;
             const { document, getClient } = context;
@@ -62,18 +87,72 @@ export const podcastEpisode = defineType({
       name: "duration",
       title: "Duration",
       type: "string",
+      group: "episode",
       description: 'Display string, e.g. "1h 44min" or "50 min".',
-      validation: (rule) => rule.required(),
+      validation: (rule) =>
+        rule
+          .required()
+          .error('Duration is required, e.g. "1h 44min" or "50 min".'),
+    }),
+    defineField({
+      name: "publishedAt",
+      title: "Published At",
+      type: "datetime",
+      group: "episode",
+      validation: (r) =>
+        r
+          .required()
+          .error(
+            "Publish date is required — drives ordering on the podcast index.",
+          ),
+    }),
+    defineField({
+      name: "heroImage",
+      title: "Hero Image",
+      type: "image",
+      group: "episode",
+      options: { hotspot: true },
+      fields: [
+        defineField({
+          name: "alt",
+          type: "string",
+          validation: (r) =>
+            r
+              .required()
+              .error("Hero image alt text is required for accessibility."),
+        }),
+      ],
+    }),
+    defineField({
+      name: "videoEmbedUrl",
+      title: "Video Embed URL",
+      type: "url",
+      group: "episode",
+      description: "YouTube, Vimeo, or direct mp4 URL.",
+    }),
+    defineField({
+      name: "description",
+      title: "Description",
+      type: "text",
+      rows: 4,
+      group: "episode",
+      validation: (r) =>
+        r
+          .required()
+          .error(
+            "Description is required — shown under the hero and used as the meta description fallback.",
+          ),
     }),
     defineField({
       name: "guest",
       title: "Guest",
       type: "object",
+      group: "guest",
       fields: [
         defineField({
           name: "name",
           type: "string",
-          validation: (r) => r.required(),
+          validation: (r) => r.required().error("Guest name is required."),
         }),
         defineField({
           name: "role",
@@ -89,7 +168,10 @@ export const podcastEpisode = defineType({
             defineField({
               name: "alt",
               type: "string",
-              validation: (r) => r.required(),
+              validation: (r) =>
+                r
+                  .required()
+                  .error("Guest photo alt text is required for accessibility."),
             }),
           ],
         }),
@@ -100,35 +182,10 @@ export const podcastEpisode = defineType({
       ],
     }),
     defineField({
-      name: "description",
-      title: "Description",
-      type: "text",
-      rows: 4,
-      validation: (r) => r.required(),
-    }),
-    defineField({
-      name: "heroImage",
-      title: "Hero Image",
-      type: "image",
-      options: { hotspot: true },
-      fields: [
-        defineField({
-          name: "alt",
-          type: "string",
-          validation: (r) => r.required(),
-        }),
-      ],
-    }),
-    defineField({
-      name: "videoEmbedUrl",
-      title: "Video Embed URL",
-      type: "url",
-      description: "YouTube, Vimeo, or direct mp4 URL",
-    }),
-    defineField({
       name: "keyInsights",
       title: "Key Insights Section",
       type: "object",
+      group: "content",
       fields: [
         defineField({ name: "headingMain", type: "string" }),
         defineField({ name: "headingHighlighted", type: "string" }),
@@ -137,13 +194,15 @@ export const podcastEpisode = defineType({
           name: "topicPills",
           type: "array",
           of: [{ type: "string" }],
-          validation: (r) => r.max(8),
+          validation: (r) =>
+            r.max(8).error("Up to 8 topic pills are shown above the insights."),
         }),
         defineField({
           name: "bullets",
           type: "array",
           of: [{ type: "string" }],
-          validation: (r) => r.min(1).max(10),
+          validation: (r) =>
+            r.min(1).max(10).error("Provide 1–10 key-insight bullets."),
         }),
       ],
     }),
@@ -151,7 +210,8 @@ export const podcastEpisode = defineType({
       name: "bestMoments",
       title: "Best Moments (Reels)",
       type: "array",
-      validation: (r) => r.max(6),
+      group: "content",
+      validation: (r) => r.max(6).error("Up to 6 best-moment reels are shown."),
       of: [
         {
           type: "object",
@@ -166,15 +226,22 @@ export const podcastEpisode = defineType({
                 defineField({
                   name: "alt",
                   type: "string",
-                  validation: (r) => r.required(),
+                  validation: (r) =>
+                    r
+                      .required()
+                      .error(
+                        "Thumbnail alt text is required for accessibility.",
+                      ),
                 }),
               ],
-              validation: (r) => r.required(),
+              validation: (r) =>
+                r.required().error("Reel thumbnail is required."),
             }),
             defineField({
               name: "videoUrl",
               type: "url",
-              validation: (r) => r.required(),
+              validation: (r) =>
+                r.required().error("Reel video URL is required."),
             }),
             defineField({ name: "caption", type: "text", rows: 2 }),
           ],
@@ -186,24 +253,22 @@ export const podcastEpisode = defineType({
       name: "transcript",
       title: "Transcript",
       type: "portableText",
+      group: "content",
     }),
     defineField({
       name: "relatedEpisodes",
       title: "Related Episodes",
       type: "array",
-      validation: (r) => r.unique().max(3),
+      group: "related",
+      validation: (r) =>
+        r.unique().max(3).error("Pick up to 3 unique related episodes."),
       of: [{ type: "reference", to: [{ type: "podcastEpisode" }] }],
-    }),
-    defineField({
-      name: "publishedAt",
-      title: "Published At",
-      type: "datetime",
-      validation: (r) => r.required(),
     }),
     defineField({
       name: "seo",
       title: "SEO",
       type: "seo",
+      group: "seo",
     }),
   ],
   orderings: [

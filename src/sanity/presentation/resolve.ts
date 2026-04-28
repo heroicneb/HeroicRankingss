@@ -9,6 +9,10 @@ export const mainDocuments = defineDocuments([
     route: "/case-studies/:slug",
     filter: `_type == "caseStudy" && slug.current == $slug`,
   },
+  {
+    route: "/podcast/:slug",
+    filter: `_type == "podcastEpisode" && slug.current == $slug`,
+  },
 ]);
 
 export const locations = {
@@ -36,6 +40,18 @@ export const locations = {
       ],
     }),
   }),
+  podcastEpisode: defineLocations({
+    select: { title: "title", slug: "slug.current" },
+    resolve: (doc) => ({
+      locations: [
+        {
+          title: doc?.title || "Untitled",
+          href: `/podcast/${doc?.slug}`,
+        },
+        { title: "Podcast", href: "/podcast" },
+      ],
+    }),
+  }),
   testimonial: defineLocations({
     select: { title: "authorName" },
     resolve: () => ({
@@ -45,9 +61,7 @@ export const locations = {
   teamMember: defineLocations({
     select: { title: "name" },
     resolve: (doc) => ({
-      locations: [
-        { title: doc?.title || "About Us", href: "/about-us" },
-      ],
+      locations: [{ title: doc?.title || "About Us", href: "/about-us" }],
     }),
   }),
   faqItem: defineLocations({
