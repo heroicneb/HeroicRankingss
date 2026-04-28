@@ -35,4 +35,15 @@ export const structure: StructureResolver = (S) =>
       S.documentTypeListItem("teamMember").title("Team Members"),
       S.documentTypeListItem("faqItem").title("FAQ Items"),
       S.documentTypeListItem("partnerLogo").title("Partner Logos"),
+
+      S.divider(),
+
+      // Podcast
+      S.listItem()
+        .title("Podcast Episodes")
+        .child(
+          S.documentTypeList("podcastEpisode")
+            .title("Podcast Episodes")
+            .defaultOrdering([{ field: "publishedAt", direction: "desc" }]),
+        ),
     ]);

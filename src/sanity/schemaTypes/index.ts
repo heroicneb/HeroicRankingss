@@ -6,6 +6,7 @@ import { faqItem } from "./documents/faqItem";
 import { legalPage } from "./documents/legalPage";
 import { partnerLogo } from "./documents/partnerLogo";
 import { partnershipPage } from "./documents/partnershipPage";
+import { podcastEpisode } from "./documents/podcastEpisode";
 import { post } from "./documents/post";
 import { servicePage } from "./documents/servicePage";
 import { siteSettings } from "./documents/siteSettings";
@@ -29,6 +30,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     teamMember,
     faqItem,
     partnerLogo,
+    podcastEpisode,
     // Objects
     portableText,
     seo,
