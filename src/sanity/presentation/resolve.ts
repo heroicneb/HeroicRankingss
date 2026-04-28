@@ -9,10 +9,6 @@ export const mainDocuments = defineDocuments([
     route: "/case-studies/:slug",
     filter: `_type == "caseStudy" && slug.current == $slug`,
   },
-  {
-    route: "/team/:slug",
-    filter: `_type == "teamMember" && slug.current == $slug`,
-  },
 ]);
 
 export const locations = {
@@ -47,13 +43,10 @@ export const locations = {
     }),
   }),
   teamMember: defineLocations({
-    select: { title: "name", slug: "slug.current" },
+    select: { title: "name" },
     resolve: (doc) => ({
       locations: [
-        ...(doc?.slug
-          ? [{ title: doc?.title || "Team Member", href: `/team/${doc.slug}` }]
-          : []),
-        { title: "About Us", href: "/about-us" },
+        { title: doc?.title || "About Us", href: "/about-us" },
       ],
     }),
   }),

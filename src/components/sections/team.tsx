@@ -14,7 +14,7 @@ const MEMBERS: TeamMember[] = [
     role: "/  Founder & CEO  /",
     imageSrc: "/figma/team/nebojsa.webp",
     imageAlt: "Nebojša Janković portrait",
-    href: `/team/${createTeamMemberHash("Nebojša Janković")}`,
+    href: `/about-us#${createTeamMemberHash("Nebojša Janković")}`,
   },
   {
     name: "Anastasija Janković",
@@ -22,7 +22,7 @@ const MEMBERS: TeamMember[] = [
     imageSrc: "/figma/team/anastasija.webp",
     imageAlt: "Anastasija Janković portrait",
     offsetClassName: "min-[1360px]:translate-y-[70px]",
-    href: `/team/${createTeamMemberHash("Anastasija Janković")}`,
+    href: `/about-us#${createTeamMemberHash("Anastasija Janković")}`,
   },
 ];
 
