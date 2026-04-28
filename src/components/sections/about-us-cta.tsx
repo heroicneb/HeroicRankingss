@@ -7,22 +7,28 @@ export function AboutUsCta() {
     <section className="mt-[5px] lg:mt-[10px]" id="about-us-cta">
       <div className="mx-auto w-full max-w-[1440px] px-[5px] lg:px-[10px]">
         <div className="rounded-[30px] border border-[var(--color-border-inverse-10)] bg-[var(--color-bg-dark)] px-[15px] py-[60px] lg:hidden">
-          <GradientText
-            as="div"
-            className="gradient-text-brand-about-us-cta-copy type-h3 pb-[6px] mx-auto w-full max-w-[350px] text-center !block"
-          >
+          <div className="type-h3 pb-[6px] mx-auto w-full max-w-[350px] text-center text-[var(--color-text-inverse)]">
             <p className="leading-[normal] mb-0">
-              We focus on one thing: measurable performance.
+              We focus on one thing:{" "}
+              <GradientText className="gradient-text-brand-about-us-cta-copy">
+                measurable performance.
+              </GradientText>
             </p>
             <p className="leading-[normal] mb-0">&#8203;</p>
             <p className="leading-[normal]">
               Every strategy is based on data, tested at scale &amp; refined to
-              deliver rankings, traffic, and authority that keeps up with AI.
-              Supported by specialized experts across SEO, links, and content.
-              We build with you to execute at scale without compromising
-              quality.
+              deliver rankings, traffic, and authority that{" "}
+              <GradientText className="gradient-text-brand-about-us-cta-copy">
+                keeps up with AI
+              </GradientText>
+              . Supported by specialized experts across SEO, links, and content.
+              We build with you to execute at scale{" "}
+              <GradientText className="gradient-text-brand-about-us-cta-copy">
+                without compromising quality
+              </GradientText>
+              .
             </p>
-          </GradientText>
+          </div>
 
           <p className="type-paragraph mx-auto mt-[30px] w-full max-w-[350px] text-center text-[var(--color-text-inverse)]">
             Through transparent monthly reporting, we make SEO measurable and
@@ -40,22 +46,28 @@ export function AboutUsCta() {
         </div>
 
         <div className="relative hidden h-[577px] overflow-hidden rounded-[40px] bg-[var(--color-hr-dark)] lg:block">
-          <GradientText
-            as="div"
-            className="gradient-text-brand-about-us-cta-copy type-h3 pb-[6px] absolute left-1/2 top-[90px] w-[1280px] -translate-x-1/2 text-center !block"
-          >
+          <div className="type-h3 pb-[6px] absolute left-1/2 top-[90px] w-[1280px] -translate-x-1/2 text-center text-[var(--color-hr-pure-white)]">
             <p className="leading-[normal] mb-0">
-              We focus on one thing: measurable performance.
+              We focus on one thing:{" "}
+              <GradientText className="gradient-text-brand-about-us-cta-copy">
+                measurable performance.
+              </GradientText>
             </p>
             <p className="leading-[normal] mb-0">&#8203;</p>
             <p className="leading-[normal]">
               Every strategy is based on data, tested at scale &amp; refined to
-              deliver rankings, traffic, and authority that keeps up with AI.
-              Supported by specialized experts across SEO, links, and content.
-              We build with you to execute at scale without compromising
-              quality.
+              deliver rankings, traffic, and authority that{" "}
+              <GradientText className="gradient-text-brand-about-us-cta-copy">
+                keeps up with AI
+              </GradientText>
+              . Supported by specialized experts across SEO, links, and content.
+              We build with you to execute at scale{" "}
+              <GradientText className="gradient-text-brand-about-us-cta-copy">
+                without compromising quality
+              </GradientText>
+              .
             </p>
-          </GradientText>
+          </div>
 
           <p className="type-paragraph absolute left-1/2 top-[332px] w-[664px] -translate-x-1/2 text-center text-[var(--color-hr-pure-white)]">
             Through transparent monthly reporting, we make SEO measurable and
