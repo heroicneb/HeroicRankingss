@@ -17,6 +17,9 @@ import {
   LEGAL_PAGE_BY_SLUG_QUERY,
   PARTNER_LOGOS_QUERY,
   PARTNERSHIP_PAGE_QUERY,
+  PODCAST_EPISODES_QUERY,
+  PODCAST_EPISODE_BY_SLUG_QUERY,
+  PODCAST_EPISODE_SLUGS_QUERY,
   SERVICE_PAGE_BY_SLUG_QUERY,
   TESTIMONIALS_QUERY,
 } from "@/sanity/lib/queries";
@@ -651,6 +654,93 @@ export interface SanityCaseStudyDetail {
   } | null;
   services?: string[] | null;
   title: string;
+  // ── Extended structured fields (PR 2.3 schema) ──
+  heroSubtitle?: string | null;
+  heroMetrics?: Array<{ value: string; label: string }> | null;
+  caseOverview?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    body?: string | null;
+  } | null;
+  objectiveChallenges?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    body?: string | null;
+    items?: Array<{ number: string; title: string; body: string }> | null;
+  } | null;
+  strategyPillars?: Array<{
+    title: string;
+    intro: string;
+    bullets?: string[] | null;
+    icon?: SanityImageRef | null;
+  }> | null;
+  journeyTimeline?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    items?: Array<{ title: string; body: string }> | null;
+  } | null;
+  numbersThatMatter?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    body?: string | null;
+    items?: Array<{
+      value: string;
+      label: string;
+      sub?: string | null;
+      icon?: SanityImageRef | null;
+    }> | null;
+  } | null;
+  growthChart?: {
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    leftAxisLabel?: string | null;
+    rightAxisLabel?: string | null;
+    months?: string[] | null;
+    series?: Array<{ label: string; color: string; points: number[] }> | null;
+    tooltipMonth?: string | null;
+    tooltipMetrics?: Array<{ label?: string | null; value?: string | null }> | null;
+  } | null;
+  proofData?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    body?: string | null;
+    items?: Array<{
+      title: string;
+      body: string;
+      image?: SanityImageRef | null;
+      metricTags?: Array<{
+        label?: string | null;
+        value?: string | null;
+        isAccent?: boolean | null;
+      }> | null;
+      isFullWidth?: boolean | null;
+    }> | null;
+  } | null;
+  beforeAfter?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    body?: string | null;
+    items?: Array<{ label: string; before: string; after: string }> | null;
+  } | null;
+  conclusion?: {
+    heading?: string | null;
+    gradientSubhead?: string | null;
+    body?: PortableTextBlock[] | null;
+  } | null;
+  ctaFooter?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    body?: string | null;
+    primaryCta?: { label?: string | null; url?: string | null } | null;
+    secondaryCta?: { label?: string | null; url?: string | null } | null;
+  } | null;
 }
 
 export const getCaseStudyBySlug = cache(async (slug: string): Promise<SanityCaseStudyDetail | null> => {
@@ -664,6 +754,85 @@ export const getCaseStudyBySlug = cache(async (slug: string): Promise<SanityCase
 
 export async function getCaseStudySlugs(): Promise<string[]> {
   const data = await client.fetch<unknown[]>(CASE_STUDY_SLUGS_QUERY);
+  if (!data) return [];
+
+  return data.filter(
+    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+  );
+}
+
+// ── Podcast Episodes ──────────────────────────────────────────────
+
+export interface SanityPodcastEpisodeSummary {
+  _id: string;
+  title: string;
+  titleHighlighted?: string | null;
+  slug: { current: string };
+  episodeNumber: number;
+  duration: string;
+  description: string;
+  publishedAt: string;
+  guest?: {
+    name?: string | null;
+    role?: string | null;
+    company?: string | null;
+  } | null;
+  heroImage?: SanityImageRef | null;
+}
+
+export interface SanityPodcastEpisodeDetail extends SanityPodcastEpisodeSummary {
+  videoEmbedUrl?: string | null;
+  guest?: {
+    name?: string | null;
+    role?: string | null;
+    company?: string | null;
+    bio?: string | null;
+    linkedinUrl?: string | null;
+    twitterUrl?: string | null;
+    websiteUrl?: string | null;
+    photo?: SanityImageRef | null;
+  } | null;
+  keyInsights?: {
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    body?: string | null;
+    topicPills?: string[] | null;
+    bullets?: string[] | null;
+  } | null;
+  bestMoments?: Array<{
+    title?: string | null;
+    thumbnail?: SanityImageRef | null;
+    videoUrl?: string | null;
+    caption?: string | null;
+  }> | null;
+  transcript?: PortableTextBlock[] | null;
+  relatedEpisodes?: Array<{
+    _id: string;
+    title: string;
+    slug: { current: string };
+    episodeNumber: number;
+    duration: string;
+    heroImage?: SanityImageRef | null;
+    guest?: { name?: string | null } | null;
+  }> | null;
+  seo?: SanitySeo | null;
+}
+
+export const getPodcastEpisodes = cache(async (): Promise<SanityPodcastEpisodeSummary[]> => {
+  const { data } = await sanityFetch({ query: PODCAST_EPISODES_QUERY });
+  return (data as SanityPodcastEpisodeSummary[] | null) ?? [];
+});
+
+export const getPodcastEpisodeBySlug = cache(async (slug: string): Promise<SanityPodcastEpisodeDetail | null> => {
+  const { data } = await sanityFetch({
+    query: PODCAST_EPISODE_BY_SLUG_QUERY,
+    params: { slug },
+  });
+  return (data as SanityPodcastEpisodeDetail | null) ?? null;
+});
+
+export async function getPodcastEpisodeSlugs(): Promise<string[]> {
+  const data = await client.fetch<unknown[]>(PODCAST_EPISODE_SLUGS_QUERY);
   if (!data) return [];
 
   return data.filter(

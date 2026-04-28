@@ -66,6 +66,52 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
     body,
     services,
     publishedAt,
+    heroSubtitle,
+    heroMetrics,
+    caseOverview,
+    objectiveChallenges {
+      label,
+      headingMain,
+      headingHighlighted,
+      body,
+      items[] { number, title, body }
+    },
+    strategyPillars[] {
+      title,
+      intro,
+      bullets,
+      icon { ..., asset->{ metadata { lqip } } }
+    },
+    journeyTimeline,
+    numbersThatMatter {
+      label,
+      headingMain,
+      headingHighlighted,
+      body,
+      items[] {
+        value,
+        label,
+        sub,
+        icon { ..., asset->{ metadata { lqip } } }
+      }
+    },
+    growthChart,
+    proofData {
+      label,
+      headingMain,
+      headingHighlighted,
+      body,
+      items[] {
+        title,
+        body,
+        image { ..., asset->{ metadata { lqip } } },
+        metricTags,
+        isFullWidth
+      }
+    },
+    beforeAfter,
+    conclusion,
+    ctaFooter,
     seo
   }
 `);
@@ -222,4 +268,68 @@ export const SERVICE_PAGE_BY_SLUG_QUERY = defineQuery(`
     relatedCaseStudies[]-> { _id, title, slug, client, excerpt, heroImage { ..., asset->{ metadata { lqip } } } },
     seo
   }
+`);
+
+// --- Podcast Episodes ---
+
+export const PODCAST_EPISODES_QUERY = defineQuery(`
+  *[_type == "podcastEpisode" && defined(slug.current)] | order(publishedAt desc) {
+    _id,
+    title,
+    titleHighlighted,
+    slug,
+    episodeNumber,
+    duration,
+    description,
+    publishedAt,
+    guest { name, role, company },
+    heroImage { ..., asset->{ metadata { lqip } } }
+  }
+`);
+
+export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
+  *[_type == "podcastEpisode" && slug.current == $slug][0] {
+    _id,
+    title,
+    titleHighlighted,
+    slug,
+    episodeNumber,
+    duration,
+    description,
+    publishedAt,
+    videoEmbedUrl,
+    guest {
+      name,
+      role,
+      company,
+      bio,
+      linkedinUrl,
+      twitterUrl,
+      websiteUrl,
+      photo { ..., asset->{ metadata { lqip } } }
+    },
+    heroImage { ..., asset->{ metadata { lqip } } },
+    keyInsights,
+    bestMoments[] {
+      title,
+      thumbnail { ..., asset->{ metadata { lqip } } },
+      videoUrl,
+      caption
+    },
+    transcript,
+    relatedEpisodes[]-> {
+      _id,
+      title,
+      slug,
+      episodeNumber,
+      duration,
+      heroImage { ..., asset->{ metadata { lqip } } },
+      guest { name }
+    },
+    seo
+  }
+`);
+
+export const PODCAST_EPISODE_SLUGS_QUERY = defineQuery(`
+  *[_type == "podcastEpisode" && defined(slug.current)].slug.current
 `);
