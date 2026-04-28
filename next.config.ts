@@ -59,6 +59,15 @@ const nextConfig: NextConfig = {
       static: 180,
     },
   },
+  async redirects() {
+    return [
+      {
+        source: "/case-studies/number-artist",
+        destination: "/case-studies/diy-craft-ecom-brand",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

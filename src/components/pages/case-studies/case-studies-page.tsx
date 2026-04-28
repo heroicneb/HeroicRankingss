@@ -89,15 +89,15 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
     href: "/case-studies/designrush",
   },
   {
-    title: "Number Artist",
-    panelLabel: "Number Artist",
-    description: "Number Artist provides intricate and customized paint-by-number kits designed for art lovers of all skill levels.",
+    title: "DIY Craft eCom Brand",
+    panelLabel: "DIY Craft eCom",
+    description: "DIY Craft eCom Brand provides intricate and customized paint-by-number kits designed for art lovers of all skill levels.",
     date: "December 24, 2024",
     panelImageSrc: "/case-studies/imgGroup52.svg",
 
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-    href: "/case-studies/number-artist",
+    href: "/case-studies/diy-craft-ecom-brand",
   },
 ];
 
@@ -127,7 +127,7 @@ const CASE_STUDY_PANEL_FALLBACKS: Record<string, CaseStudyPanelFallback> = {
     panelLabelClassName: "left-[123px]",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
   },
-  "number-artist": {
+  "diy-craft-ecom-brand": {
     panelImageSrc: "/case-studies/imgGroup52.svg",
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",

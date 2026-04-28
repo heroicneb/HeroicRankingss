@@ -64,8 +64,8 @@ export interface EnhancedCaseStudy {
 
 export const ENHANCED_CASE_STUDIES: EnhancedCaseStudy[] = [
   {
-    slug: "number-artist",
-    heroTitle: "From Zero to Hero: Number Artist's Journey",
+    slug: "diy-craft-ecom-brand",
+    heroTitle: "From Zero to Hero: DIY Craft eCom's Journey",
     heroSubtitle:
       "How we transformed a new brand into an e-commerce giant, driving $1.3M in organic revenue and 63,500 monthly visitors in just 24 months.",
     heroMetrics: [
@@ -75,9 +75,9 @@ export const ENHANCED_CASE_STUDIES: EnhancedCaseStudy[] = [
     ],
     overviewTitle: "From Startup to Market Leader in 24 Months",
     overviewParagraphs: [
-      "Number Artist entered the market as a brand-new e-commerce store specialising in paint-by-number kits. With zero domain authority, no existing traffic, and a highly competitive niche, the challenge was not simply to grow — it was to build an entire organic presence from the ground up.",
-      "Heroic Rankings partnered with Number Artist from day one, crafting a long-term SEO strategy anchored in technical excellence, authoritative link acquisition, and conversion-optimised content. Over 24 months the brand scaled from obscurity to category leader, generating measurable revenue directly attributable to organic search.",
-      "Our objective was clear: establish Number Artist as the go-to destination for paint-by-number enthusiasts in English-speaking markets, capture high-intent commercial keywords, and build a link profile that would sustain rankings well beyond the campaign window.",
+      "DIY Craft eCom Brand entered the market as a brand-new e-commerce store specialising in paint-by-number kits. With zero domain authority, no existing traffic, and a highly competitive niche, the challenge was not simply to grow — it was to build an entire organic presence from the ground up.",
+      "Heroic Rankings partnered with the brand from day one, crafting a long-term SEO strategy anchored in technical excellence, authoritative link acquisition, and conversion-optimised content. Over 24 months the brand scaled from obscurity to category leader, generating measurable revenue directly attributable to organic search.",
+      "Our objective was clear: establish DIY Craft eCom Brand as the go-to destination for paint-by-number enthusiasts in English-speaking markets, capture high-intent commercial keywords, and build a link profile that would sustain rankings well beyond the campaign window.",
     ],
     challengeCards: [
       {
@@ -93,7 +93,7 @@ export const ENHANCED_CASE_STUDIES: EnhancedCaseStudy[] = [
       {
         number: "03",
         title: "Resource Constraints",
-        body: "As a startup, Number Artist had a lean marketing budget. Every investment had to be precision-targeted — no vanity metrics, no wasted spend. This shaped a strategy focused on compounding assets: links, content, and technical equity that appreciates over time.",
+        body: "As a startup, DIY Craft eCom Brand had a lean marketing budget. Every investment had to be precision-targeted — no vanity metrics, no wasted spend. This shaped a strategy focused on compounding assets: links, content, and technical equity that appreciates over time.",
       },
     ],
     strategyTitle: "Six Pillars of Dominant SEO",
@@ -204,7 +204,7 @@ export const ENHANCED_CASE_STUDIES: EnhancedCaseStudy[] = [
     ],
     conclusionTitle: "Conclusion",
     conclusionParagraphs: [
-      "The Number Artist engagement demonstrates what a disciplined, compounding SEO strategy can achieve for a brand starting from absolute zero. By combining technical rigour, authoritative link acquisition, and intent-matched content, Heroic Rankings built an organic channel that now rivals paid acquisition in revenue contribution — and unlike paid, it appreciates over time.",
+      "The DIY Craft eCom Brand engagement demonstrates what a disciplined, compounding SEO strategy can achieve for a brand starting from absolute zero. By combining technical rigour, authoritative link acquisition, and intent-matched content, Heroic Rankings built an organic channel that now rivals paid acquisition in revenue contribution — and unlike paid, it appreciates over time.",
       "The results speak for themselves: 63,500 monthly visitors, $1.3M in attributable organic revenue, and a domain that now commands genuine authority in its niche. This is what heroic SEO looks like in practice.",
     ],
     ctaHeading: "Ready to Write Your Own Success Story?",
