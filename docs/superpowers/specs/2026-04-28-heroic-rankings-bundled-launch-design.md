@@ -29,10 +29,10 @@ Current site traffic is ~4K monthly visits (~5/hour). Performance and correctnes
 
 ## Out of Scope
 
-- Blog post single-page detail design (Figma missing — deferred to a separate later PR)
 - Sentry / error monitoring tooling (flag for future work)
 - Editorial workflow training for Nebojša/Pavle on Sanity Studio (separate doc)
 - "Ask Podcast AI" / chatbot widget feature (button is rendered per Figma but the AI backend is out-of-scope)
+- Verification that AI summary pill deep-link URLs (ChatGPT, Perplexity, Claude, Google AI Mode, Grok) work in 2026 — patterns set in code, smoke-test during PR 4 stress test
 
 ---
 
@@ -238,11 +238,27 @@ Data: `cmsTeamMembers` from Sanity (already wired through About Us page).
 
 ### 3.5 Insights Blog Detail (`/insights/[slug]`)
 
-`src/components/pages/insights/blog-post-detail-content.tsx` — full rewrite. Placeholder editorial layout: hero (title + author + date + cover) + Portable Text body + related posts grid.
+**Figma now available** (separate file from main): `LrfQdM6RTwf95gfkga3tJl` — desktop `2339:27`, mobile `2339:195`. Cached extractions: `docs/figma-cache/extractions/2026-04-28-insights-section-01-blog-single-desktop.md` + `-02-blog-single-mobile.md`.
 
-Custom Portable Text serializers in `src/sanity/lib/portable-text-components.tsx` (new file): images with LQIP + responsive sizes, code blocks, callouts, internal links.
+`src/components/pages/insights/blog-post-detail-content.tsx` — full rewrite, 1:1 Figma fidelity (no longer placeholder per earlier deferral).
 
-When blog single Figma lands later → separate redesign PR. Data wiring done now stays.
+**Sub-components in `src/components/pages/insights/parts/`:**
+- `BlogPostHeader.tsx` — byline (author + category) + full-gradient H1 + Get summary block + divider
+- `BlogPostGetSummary.tsx` — desktop: 5 inline AI pills; mobile: collapsed dropdown with same 5 pills inside
+- `BlogPostTableOfContents.tsx` — desktop only, sticky left column. Derives items from H2 blocks in body. Active item highlighted via IntersectionObserver scroll-spy (reduced-motion friendly).
+- `BlogPostHero.tsx` — hero image with LQIP + responsive sizes
+- `BlogPostAuthorCard.tsx` — photo + name + role + bio + LinkedIn FAB. Reuses existing `teamMember.linkedin` field
+- `BlogPostShareBar.tsx` — LinkedIn / X / Facebook intent links + Copy link
+
+**New shared primitive:** `AISummaryPills.tsx` (in `src/components/ui/`) — 5-pill cluster with deep-links to ChatGPT, Perplexity, Claude, Google AI Mode, Grok. Each pill encodes `Please summarize this article: {URL}` as URL param. Patterns documented in cached extraction.
+
+**Custom Portable Text serializers** in `src/sanity/lib/portable-text-components.tsx`: images with LQIP + responsive sizes, code blocks, callouts, internal links (gradient-bold for emphasis, plain underline for standard), bulleted lists.
+
+**Data:** existing `post` schema sufficient (already covers title, slug, body, mainImage, author ref, categories, publishedAt, seo). Author card resolves the `author->teamMember` reference and reads name + photo + role + bio + linkedin.
+
+**TOC mobile behavior:** absent on mobile per Figma. Body flows continuously; readers scroll. Optional follow-up: add a "Jump to section" select dropdown if accessibility audit flags.
+
+**Body text alignment:** left-aligned on desktop, center-aligned on mobile (matches Figma). If stress test reveals readability concerns on mobile, fall back to left-aligned mobile in a follow-up.
 
 ### 3.6 Files modified summary
 
