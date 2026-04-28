@@ -174,21 +174,18 @@ const FAQ_ITEMS = [
     question: "What are SEO services and why do I need them?",
     answer:
       "SEO services enhance your website's visibility in search results, driving organic traffic and business growth. They include a variety of techniques and strategies aimed at improving your site's performance and user experience.",
-    ctaLabel: "Learn More",
     defaultOpen: true,
   },
   {
     question: "How do I know which SEO services are right for my business?",
     answer:
       "The best SEO services depend on your specific goals, industry, and current online presence. We start with a comprehensive audit to identify areas for improvement, then recommend a tailored strategy that aligns with your budget and objectives.",
-    ctaLabel: "Get a Free Audit",
     defaultOpen: false,
   },
   {
     question: "What are the benefits of On-Page Optimization services?",
     answer:
       "On-page optimization improves your website's content, structure, and HTML elements to make it more relevant and accessible to search engines. Benefits include higher rankings, better user experience, increased click-through rates, and more qualified organic traffic.",
-    ctaLabel: "Learn More",
     defaultOpen: false,
   },
 ] as const;
@@ -198,17 +195,13 @@ interface SeoServicesPageProps {
 }
 
 export default function SeoServicesPage({ cmsFaqItems }: SeoServicesPageProps) {
-  const useCms = !!cmsFaqItems?.length;
-  const faqItems = useCms
+  const faqItems = cmsFaqItems?.length
     ? cmsFaqItems.map((f, i) => ({
         question: f.question,
         answer: f.answer,
         defaultOpen: i === 0,
       }))
     : FAQ_ITEMS;
-  const faqCtaLabels = useCms
-    ? cmsFaqItems.map(() => "Learn More")
-    : FAQ_ITEMS.map((f) => f.ctaLabel);
 
   return (
     <>
@@ -342,20 +335,6 @@ export default function SeoServicesPage({ cmsFaqItems }: SeoServicesPageProps) {
 
       <ServiceFaq
         answerClassName="pb-[30px] pl-[30px] pr-[30px] sm:pr-[90px] lg:pr-[223px]"
-        answerExtra={(_item, index) => {
-          const ctaLabel = faqCtaLabels[index];
-          if (!ctaLabel) return null;
-          return (
-            <AppLink
-              className="type-cta motion-interactive motion-interactive-press mt-[30px] inline-flex h-[45px] w-[145px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href="/contact"
-              motionPreset="none"
-            >
-              {ctaLabel}
-              <GradientArrowUpRightIcon className="size-[10px]" />
-            </AppLink>
-          );
-        }}
         containerClassName="relative mt-[80px] overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)]"
         detailsClassName="group border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] open:bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)] dark:open:bg-[var(--color-bg-dark)]"
         items={faqItems}
