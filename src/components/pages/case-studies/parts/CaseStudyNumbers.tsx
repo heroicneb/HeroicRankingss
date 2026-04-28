@@ -74,7 +74,7 @@ export function CaseStudyNumbers({ data }: CaseStudyNumbersProps) {
           <div className="mt-[40px] hidden gap-[20px] lg:mt-[60px] lg:grid lg:grid-cols-4">
             {items.map((item, index) => (
               <BigNumberCard
-                key={`${item.label}-${index}`}
+                key={item._key ?? `${item.label}-${index}`}
                 className="!h-auto !w-full"
                 iconAlt={item.icon?.alt ?? ""}
                 iconSrc={getIconUrl(item)}
@@ -97,7 +97,7 @@ export function CaseStudyNumbers({ data }: CaseStudyNumbersProps) {
             >
               {items.map((item, index) => (
                 <BigNumberCard
-                  key={`${item.label}-${index}-mobile`}
+                  key={`${item._key ?? `${item.label}-${index}`}-mobile`}
                   className="snap-start"
                   iconAlt={item.icon?.alt ?? ""}
                   iconSrc={getIconUrl(item)}

@@ -1,6 +1,6 @@
 import { PortableText } from "@portabletext/react";
 
-import { portableTextComponents } from "@/components/sanity/PortableTextComponents";
+import { portableTextComponents } from "@/sanity/lib/portable-text-components";
 import type { SanityCaseStudyDetail } from "@/lib/sanity-data";
 
 type ConclusionData = NonNullable<SanityCaseStudyDetail["conclusion"]>;

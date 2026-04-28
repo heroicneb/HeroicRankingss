@@ -81,9 +81,10 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
       headingMain,
       headingHighlighted,
       body,
-      items[] { number, title, body }
+      items[] { _key, number, title, body }
     },
     strategyPillars[] {
+      _key,
       title,
       intro,
       bullets,
@@ -96,6 +97,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
       headingHighlighted,
       body,
       items[] {
+        _key,
         value,
         label,
         sub,
@@ -109,6 +111,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
       headingHighlighted,
       body,
       items[] {
+        _key,
         title,
         body,
         image { ..., asset->{ metadata { lqip } } },

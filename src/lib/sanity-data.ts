@@ -700,9 +700,7 @@ export interface SanityCaseStudyDetail {
   body?: PortableTextBlock[] | null;
   client: string;
   excerpt?: string | null;
-  heroImage?: {
-    alt?: string | null;
-  } | null;
+  heroImage?: SanityImageRef | null;
   metrics?: Array<{
     _key?: string;
     description?: string | null;
@@ -718,7 +716,7 @@ export interface SanityCaseStudyDetail {
   title: string;
   // ── Extended structured fields (PR 2.3 schema) ──
   heroSubtitle?: string | null;
-  heroMetrics?: Array<{ value: string; label: string }> | null;
+  heroMetrics?: Array<{ _key?: string; value: string; label: string }> | null;
   caseOverview?: {
     label?: string | null;
     headingMain?: string | null;
@@ -730,9 +728,15 @@ export interface SanityCaseStudyDetail {
     headingMain?: string | null;
     headingHighlighted?: string | null;
     body?: string | null;
-    items?: Array<{ number: string; title: string; body: string }> | null;
+    items?: Array<{
+      _key?: string;
+      number: string;
+      title: string;
+      body: string;
+    }> | null;
   } | null;
   strategyPillars?: Array<{
+    _key?: string;
     title: string;
     intro: string;
     bullets?: string[] | null;
@@ -742,7 +746,7 @@ export interface SanityCaseStudyDetail {
     label?: string | null;
     headingMain?: string | null;
     headingHighlighted?: string | null;
-    items?: Array<{ title: string; body: string }> | null;
+    items?: Array<{ _key?: string; title: string; body: string }> | null;
   } | null;
   numbersThatMatter?: {
     label?: string | null;
@@ -750,6 +754,7 @@ export interface SanityCaseStudyDetail {
     headingHighlighted?: string | null;
     body?: string | null;
     items?: Array<{
+      _key?: string;
       value: string;
       label: string;
       sub?: string | null;
@@ -763,10 +768,12 @@ export interface SanityCaseStudyDetail {
     headingHighlighted?: string | null;
     body?: string | null;
     items?: Array<{
+      _key?: string;
       title: string;
       body: string;
       image?: SanityImageRef | null;
       metricTags?: Array<{
+        _key?: string;
         label?: string | null;
         value?: string | null;
         isAccent?: boolean | null;
@@ -779,7 +786,12 @@ export interface SanityCaseStudyDetail {
     headingMain?: string | null;
     headingHighlighted?: string | null;
     body?: string | null;
-    items?: Array<{ label: string; before: string; after: string }> | null;
+    items?: Array<{
+      _key?: string;
+      label: string;
+      before: string;
+      after: string;
+    }> | null;
   } | null;
   conclusion?: {
     heading?: string | null;

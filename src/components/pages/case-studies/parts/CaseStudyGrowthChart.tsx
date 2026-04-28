@@ -21,10 +21,15 @@ export function CaseStudyGrowthChart({
 }: {
   data: CaseStudyGrowthChartData | null | undefined;
 }) {
-  if (!data) return null;
-
   const hasData =
-    (data.series?.length ?? 0) > 0 && (data.months?.length ?? 0) > 0;
+    !!data &&
+    Array.isArray(data.series) &&
+    data.series.length > 0 &&
+    Array.isArray(data.months) &&
+    data.months.length > 0;
+
+  if (!hasData) return null;
+
   const hasHeading = Boolean(data.headingMain || data.headingHighlighted);
 
   return (
@@ -41,15 +46,9 @@ export function CaseStudyGrowthChart({
             />
           ) : null}
 
-          {hasData ? (
-            <div className="h-[384px] lg:h-[480px]">
-              <CaseStudyGrowthChartLazy data={data} />
-            </div>
-          ) : (
-            <div className="grid h-[384px] place-items-center text-[var(--color-hr-grey)] lg:h-[480px]">
-              Data unavailable
-            </div>
-          )}
+          <div className="h-[384px] lg:h-[480px]">
+            <CaseStudyGrowthChartLazy data={data} />
+          </div>
         </div>
       </div>
     </section>

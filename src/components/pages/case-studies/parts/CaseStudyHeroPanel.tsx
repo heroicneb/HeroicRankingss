@@ -8,12 +8,10 @@ interface CaseStudyHeroPanelProps {
   data: SanityCaseStudyDetail;
 }
 
-interface SanityImageRef {
-  asset?: { _ref?: string; _type?: string; metadata?: { lqip?: string } };
-  alt?: string | null;
-}
-
-function imageUrl(source: SanityImageRef | null | undefined, width: number) {
+function getHeroImageUrl(
+  source: SanityCaseStudyDetail["heroImage"],
+  width: number,
+): string | null {
   if (!source?.asset) return null;
   try {
     return urlFor(source).width(width).url();
@@ -34,8 +32,8 @@ function imageUrl(source: SanityImageRef | null | undefined, width: number) {
  */
 export function CaseStudyHeroPanel({ data }: CaseStudyHeroPanelProps) {
   const metrics = data.heroMetrics ?? [];
-  const heroImage = data.heroImage as SanityImageRef | null | undefined;
-  const heroImageUrl = imageUrl(heroImage, 1600);
+  const heroImage = data.heroImage;
+  const heroImageUrl = getHeroImageUrl(heroImage, 1600);
 
   if (metrics.length === 0 && !heroImageUrl) return null;
 
@@ -49,7 +47,7 @@ export function CaseStudyHeroPanel({ data }: CaseStudyHeroPanelProps) {
           <div className="grid grid-cols-1 gap-[10px] lg:grid-cols-3 lg:gap-[20px]">
             {metrics.map((metric, index) => (
               <MetricTile
-                key={`${metric.label}-${index}`}
+                key={metric._key ?? `${metric.label}-${index}`}
                 label={metric.label}
                 value={metric.value}
                 variant="light"

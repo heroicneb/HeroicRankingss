@@ -119,7 +119,7 @@ export function CaseStudyJourney({ data }: CaseStudyJourneyProps) {
           >
             {items.map((step, index) => (
               <JourneyStepDesktop
-                key={`${step.title}-${index}`}
+                key={step._key ?? `${step.title}-${index}`}
                 index={index}
                 isLast={index === items.length - 1}
                 step={step}
@@ -139,7 +139,7 @@ export function CaseStudyJourney({ data }: CaseStudyJourneyProps) {
             >
               {items.map((step, index) => (
                 <JourneyStepMobile
-                  key={`${step.title}-${index}-mobile`}
+                  key={`${step._key ?? `${step.title}-${index}`}-mobile`}
                   index={index}
                   isLast={index === items.length - 1}
                   step={step}

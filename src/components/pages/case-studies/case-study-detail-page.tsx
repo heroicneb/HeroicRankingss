@@ -29,7 +29,7 @@ interface CaseStudyDetailPageProps {
  */
 export function CaseStudyDetailPage({ caseStudy }: CaseStudyDetailPageProps) {
   return (
-    <div className="route-motion-frame">
+    <>
       <CaseStudyHero data={caseStudy} />
       <CaseStudyHeroPanel data={caseStudy} />
       <CaseStudyOverview data={caseStudy.caseOverview} />
@@ -42,6 +42,6 @@ export function CaseStudyDetailPage({ caseStudy }: CaseStudyDetailPageProps) {
       <CaseStudyBeforeAfter data={caseStudy.beforeAfter} />
       <CaseStudyConclusion data={caseStudy.conclusion} />
       <CaseStudyCtaFooter data={caseStudy.ctaFooter} />
-    </div>
+    </>
   );
 }

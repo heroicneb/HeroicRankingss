@@ -21,16 +21,17 @@ interface PillarCardProps {
 const MOBILE_CARD_WIDTH = 350;
 const MOBILE_CARD_GAP = 10;
 
+function getIconUrl(pillar: StrategyPillar): string | null {
+  if (!pillar.icon) return null;
+  try {
+    return urlFor(pillar.icon).width(120).url();
+  } catch {
+    return null;
+  }
+}
+
 function PillarCard({ pillar, className }: PillarCardProps) {
-  const iconUrl = pillar.icon
-    ? (() => {
-        try {
-          return urlFor(pillar.icon).width(120).url();
-        } catch {
-          return null;
-        }
-      })()
-    : null;
+  const iconUrl = getIconUrl(pillar);
   const iconAlt = pillar.icon?.alt ?? "";
   const bullets = pillar.bullets ?? [];
 
@@ -94,7 +95,10 @@ export function CaseStudyPillars({ data }: CaseStudyPillarsProps) {
         <div className="mx-auto w-full max-w-[1440px] px-[80px]">
           <div className="grid grid-cols-3 gap-[20px]">
             {data.map((pillar, index) => (
-              <PillarCard key={`${pillar.title}-${index}`} pillar={pillar} />
+              <PillarCard
+                key={pillar._key ?? `${pillar.title}-${index}`}
+                pillar={pillar}
+              />
             ))}
           </div>
         </div>
@@ -111,7 +115,7 @@ export function CaseStudyPillars({ data }: CaseStudyPillarsProps) {
       >
         {data.map((pillar, index) => (
           <div
-            key={`${pillar.title}-${index}-mobile`}
+            key={`${pillar._key ?? `${pillar.title}-${index}`}-mobile`}
             className="snap-start"
             style={{ width: `${MOBILE_CARD_WIDTH}px` }}
           >

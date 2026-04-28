@@ -83,7 +83,7 @@ export function CaseStudyBeforeAfter({ data }: CaseStudyBeforeAfterProps) {
         <div className="mt-[40px] flex gap-0 overflow-x-auto lg:mt-[60px] lg:overflow-visible">
           {items.map((item, index) => (
             <div
-              key={`${item.label}-${index}`}
+              key={item._key ?? `${item.label}-${index}`}
               className={
                 index < items.length - 1
                   ? "flex-1 border-r border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-15)]"

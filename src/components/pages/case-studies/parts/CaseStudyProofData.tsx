@@ -95,7 +95,7 @@ function ProofCard({ item }: { item: ProofItem }) {
       {tags.length > 0 ? (
         <ul className="flex flex-wrap gap-[8px]">
           {tags.map((tag, index) => (
-            <li key={index}>
+            <li key={tag._key ?? `${tag.label ?? "tag"}-${index}`}>
               <MetricTagPill tag={tag} />
             </li>
           ))}
@@ -152,7 +152,10 @@ export function CaseStudyProofData({ data }: CaseStudyProofDataProps) {
 
         <div className="mt-[40px] grid grid-cols-1 gap-[20px] lg:mt-[60px] lg:grid-cols-2">
           {items.map((item, index) => (
-            <ProofCard key={`${item.title}-${index}`} item={item} />
+            <ProofCard
+              key={item._key ?? `${item.title}-${index}`}
+              item={item}
+            />
           ))}
         </div>
       </div>

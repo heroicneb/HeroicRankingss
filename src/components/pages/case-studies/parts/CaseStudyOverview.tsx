@@ -23,7 +23,7 @@ export function CaseStudyOverview({ data }: CaseStudyOverviewProps) {
   const hasHeading = Boolean(headingMain || headingHighlighted);
 
   const paragraphs = (data.body ?? "")
-    .split(/\n+/)
+    .split(/\n\s*\n/)
     .map((p) => p.trim())
     .filter(Boolean);
 
