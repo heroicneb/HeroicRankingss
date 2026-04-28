@@ -98,7 +98,7 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
         </span>
       </>
     ),
-    body: "Contact us to schedule a consultation and discover how our technical SEO services can optimize your website’s infrastructure, enhance user experience, and boost your search engine rankings.",
+    body: "Contact us to schedule a consultation and discover how our technical SEO services can optimize your website's infrastructure, enhance user experience, and boost your search engine rankings.",
     ctaLabel: "Get Started Today",
     ctaWidth: EXPANDED_CTA_WIDTH,
     headingMaxW: "max-w-[600px]",
