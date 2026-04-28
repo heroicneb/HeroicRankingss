@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { PortableTextBlock } from "@portabletext/react";
 
 import { cn } from "@/lib/cn";
+import { buildHeadingIdMap, extractBlockText } from "@/lib/heading-slug";
 
 interface BlogPostTableOfContentsProps {
   body: PortableTextBlock[] | null;
@@ -16,51 +17,27 @@ interface TocItem {
 
 const STICKY_OFFSET_PX = 120;
 
-function slugify(input: string): string {
-  return input
-    .toLowerCase()
-    .normalize("NFKD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z0-9\s-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-");
-}
-
-function extractText(block: PortableTextBlock): string {
-  // Portable Text blocks have a `children` array of spans with a `text` field.
-  const children = (block as unknown as { children?: Array<{ text?: string }> }).children;
-  if (!Array.isArray(children)) return "";
-  return children
-    .map((child) => (typeof child.text === "string" ? child.text : ""))
-    .join("")
-    .trim();
-}
-
 /**
- * Derive TOC items from H2 blocks in the body. Headings get a deterministic
- * slug id so the TOC can deep-link and scroll-spy can match them.
+ * Derive TOC items from H2 blocks in the body. Heading anchor ids are emitted
+ * by the PortableText H2 serializer using the same `buildHeadingIdMap` helper,
+ * so TOC ids and rendered DOM ids stay in sync without DOM patching.
  */
 export function deriveTocItems(body: PortableTextBlock[] | null): TocItem[] {
   if (!body) return [];
-  const seen = new Set<string>();
+  const idMap = buildHeadingIdMap(body);
   const items: TocItem[] = [];
 
   for (const block of body) {
     if (block._type !== "block") continue;
-    const style = (block as unknown as { style?: string }).style;
+    const style = (block as { style?: string }).style;
     if (style !== "h2") continue;
-    const text = extractText(block);
-    if (!text) continue;
-    let id = slugify(text);
+    const key = (block as { _key?: string })._key;
+    if (!key) continue;
+    const id = idMap.get(key);
     if (!id) continue;
-    let suffix = 2;
-    while (seen.has(id)) {
-      id = `${slugify(text)}-${suffix}`;
-      suffix += 1;
-    }
-    seen.add(id);
-    items.push({ id, label: text });
+    const label = extractBlockText(block);
+    if (!label) continue;
+    items.push({ id, label });
   }
 
   return items;
@@ -69,34 +46,12 @@ export function deriveTocItems(body: PortableTextBlock[] | null): TocItem[] {
 /**
  * Sticky desktop-only TOC. Derives items from H2 blocks in the post body
  * and uses IntersectionObserver to highlight the in-view section.
- *
- * IDs must match the H2 ids rendered by the body's Portable Text serializer
- * — use the same `slugify` helper there, or read the heading text directly
- * via DOM and rewrite its id at mount time.
  */
-export function BlogPostTableOfContents({ body }: BlogPostTableOfContentsProps) {
+export function BlogPostTableOfContents({
+  body,
+}: BlogPostTableOfContentsProps) {
   const items = useMemo(() => deriveTocItems(body), [body]);
   const [activeId, setActiveId] = useState<string | null>(items[0]?.id ?? null);
-
-  // Patch existing rendered H2s in the DOM with the matching slugified id so
-  // anchor scroll + IntersectionObserver can target them. The Portable Text
-  // serializers do not emit ids themselves; we slug here to keep the renderer
-  // pure HTML and avoid duplicating the slug logic in two places.
-  useEffect(() => {
-    if (items.length === 0) return;
-    if (typeof document === "undefined") return;
-
-    const article = document.querySelector("article[data-blog-post-body='true']");
-    if (!article) return;
-    const headings = Array.from(article.querySelectorAll<HTMLHeadingElement>("h2"));
-
-    headings.forEach((heading, index) => {
-      const item = items[index];
-      if (!item) return;
-      heading.id = item.id;
-      heading.style.scrollMarginTop = `${STICKY_OFFSET_PX}px`;
-    });
-  }, [items]);
 
   useEffect(() => {
     if (items.length === 0) return;
@@ -130,13 +85,18 @@ export function BlogPostTableOfContents({ body }: BlogPostTableOfContentsProps) 
     return () => observer.disconnect();
   }, [items]);
 
-  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+  const handleClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    id: string,
+  ) => {
     event.preventDefault();
     if (typeof window === "undefined") return;
     const el = document.getElementById(id);
     if (!el) return;
 
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
     el.scrollIntoView({
       behavior: prefersReducedMotion ? "auto" : "smooth",
       block: "start",
@@ -148,7 +108,10 @@ export function BlogPostTableOfContents({ body }: BlogPostTableOfContentsProps) 
   if (items.length === 0) return null;
 
   return (
-    <nav aria-label="Table of contents" className="flex w-full flex-col gap-[10px]">
+    <nav
+      aria-label="Table of contents"
+      className="flex w-full flex-col gap-[10px]"
+    >
       {items.map((item) => {
         const isActive = activeId === item.id;
         return (

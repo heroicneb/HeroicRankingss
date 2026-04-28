@@ -1,8 +1,9 @@
 import { PortableText } from "@portabletext/react";
 
+import { buildHeadingIdMap } from "@/lib/heading-slug";
 import type { SanityPostDetail } from "@/lib/sanity-data";
 import { SITE_URL } from "@/lib/site";
-import { portableTextComponents } from "@/sanity/lib/portable-text-components";
+import { makePortableTextComponents } from "@/sanity/lib/portable-text-components";
 
 import { BlogPostAuthorCard } from "./parts/BlogPostAuthorCard";
 import { BlogPostHeader } from "./parts/BlogPostHeader";
@@ -23,12 +24,21 @@ interface BlogPostDetailContentProps {
  *
  * Single-column mobile (TOC dropped per Figma; "Get summary" collapses to a
  * dropdown card; body text centered).
+ *
+ * H2/H3 anchor ids are computed once from the body and emitted by the
+ * PortableText serializer, so TOC links + scroll-spy + first-load #hash
+ * deep-links all resolve without DOM patching.
  */
 export function BlogPostDetailContent({ post }: BlogPostDetailContentProps) {
   const articleUrl = post.slug ? `${SITE_URL}/insights/${post.slug}` : SITE_URL;
+  const headingIds = buildHeadingIdMap(post.body);
+  const components = makePortableTextComponents(headingIds);
 
   return (
-    <article className="pb-[100px] pt-[60px] lg:pb-[160px] lg:pt-[183px]" id="insight-blog-post">
+    <article
+      className="pb-[100px] pt-[60px] lg:pb-[160px] lg:pt-[183px]"
+      id="insight-blog-post"
+    >
       <div className="mx-auto w-full max-w-[1440px] px-[20px] lg:px-[80px]">
         <BlogPostHeader articleUrl={articleUrl} post={post} />
 
@@ -45,11 +55,8 @@ export function BlogPostDetailContent({ post }: BlogPostDetailContentProps) {
           <div className="text-center lg:text-left">
             <BlogPostHero post={post} />
             {post.body && post.body.length > 0 ? (
-              <div
-                className="mt-[40px] lg:mt-[60px]"
-                data-blog-post-body="true"
-              >
-                <PortableText components={portableTextComponents} value={post.body} />
+              <div className="mt-[40px] lg:mt-[60px]">
+                <PortableText components={components} value={post.body} />
               </div>
             ) : null}
             <BlogPostShareBar articleUrl={articleUrl} post={post} />
