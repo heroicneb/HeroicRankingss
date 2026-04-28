@@ -69,6 +69,8 @@ interface SanityRawPostDetail extends SanityRawPost {
     role?: string;
     photo?: SanityImageRef | null;
     bio?: string | null;
+    bioParagraphs?: string[] | null;
+    linkedin?: string | null;
   } | null;
   seo?: SanitySeo | null;
 }
@@ -299,9 +301,21 @@ export interface SanityPostSummary {
   title: string;
 }
 
+export interface SanityPostAuthor {
+  name: string | null;
+  role: string | null;
+  bio: string | null;
+  bioParagraphs: string[] | null;
+  linkedin: string | null;
+  photoUrl: string;
+  photoAlt: string;
+  photoLqip: string | undefined;
+}
+
 export interface SanityPostDetail extends SanityPostSummary {
   authorName: string | null;
   authorRole: string | null;
+  author: SanityPostAuthor | null;
   body: PortableTextBlock[] | null;
   seoDescription: string | null;
   seoTitle: string | null;
@@ -332,6 +346,20 @@ export const getPostBySlug = cache(async (slug: string): Promise<SanityPostDetai
   if (!data) return null;
 
   const post = data as SanityRawPostDetail;
+  const rawAuthor = post.author ?? null;
+  const author: SanityPostAuthor | null = rawAuthor
+    ? {
+        name: rawAuthor.name ?? null,
+        role: rawAuthor.role ?? null,
+        bio: rawAuthor.bio ?? null,
+        bioParagraphs: rawAuthor.bioParagraphs ?? null,
+        linkedin: rawAuthor.linkedin ?? null,
+        photoUrl: imageUrl(rawAuthor.photo, 600),
+        photoAlt: rawAuthor.photo?.alt ?? rawAuthor.name ?? "",
+        photoLqip: imageLqip(rawAuthor.photo),
+      }
+    : null;
+
   return {
     _id: post._id,
     title: post.title,
@@ -343,8 +371,9 @@ export const getPostBySlug = cache(async (slug: string): Promise<SanityPostDetai
     publishedAt: post.publishedAt ?? null,
     categories: (post.categories ?? []).filter((category: unknown): category is string => typeof category === "string"),
     body: post.body ?? null,
-    authorName: post.author?.name ?? null,
-    authorRole: post.author?.role ?? null,
+    authorName: rawAuthor?.name ?? null,
+    authorRole: rawAuthor?.role ?? null,
+    author,
     seoTitle: post.seo?.metaTitle ?? null,
     seoDescription: post.seo?.metaDescription ?? null,
   };

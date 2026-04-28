@@ -25,7 +25,14 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
     body,
     publishedAt,
     categories,
-    author-> { name, role, photo, bio },
+    author-> {
+      name,
+      role,
+      photo { ..., asset->{ metadata { lqip } } },
+      bio,
+      bioParagraphs,
+      linkedin
+    },
     seo
   }
 `);
