@@ -129,6 +129,33 @@ export const podcastEpisode = defineType({
       type: "url",
       group: "episode",
       description: "YouTube, Vimeo, or direct mp4 URL.",
+      validation: (r) =>
+        r
+          .uri({ scheme: ["http", "https"], allowRelative: false })
+          .custom((value) => {
+            if (!value) return true;
+            try {
+              const url = new URL(value);
+              const allowedHosts = [
+                "youtube.com",
+                "www.youtube.com",
+                "youtu.be",
+                "vimeo.com",
+                "player.vimeo.com",
+              ];
+              const isAllowedHost = allowedHosts.some(
+                (host) =>
+                  url.hostname === host || url.hostname.endsWith(`.${host}`),
+              );
+              const isMp4 = url.pathname.toLowerCase().endsWith(".mp4");
+              if (!isAllowedHost && !isMp4) {
+                return "Must be a YouTube, Vimeo, or direct .mp4 URL.";
+              }
+              return true;
+            } catch {
+              return "Invalid URL.";
+            }
+          }),
     }),
     defineField({
       name: "description",
@@ -241,7 +268,39 @@ export const podcastEpisode = defineType({
               name: "videoUrl",
               type: "url",
               validation: (r) =>
-                r.required().error("Reel video URL is required."),
+                r
+                  .required()
+                  .uri({ scheme: ["http", "https"], allowRelative: false })
+                  .custom((value) => {
+                    if (!value) return true;
+                    try {
+                      const url = new URL(value);
+                      const allowedHosts = [
+                        "youtube.com",
+                        "www.youtube.com",
+                        "youtu.be",
+                        "vimeo.com",
+                        "player.vimeo.com",
+                        "tiktok.com",
+                        "www.tiktok.com",
+                        "instagram.com",
+                        "www.instagram.com",
+                      ];
+                      const isAllowedHost = allowedHosts.some(
+                        (host) =>
+                          url.hostname === host ||
+                          url.hostname.endsWith(`.${host}`),
+                      );
+                      const isMp4 = url.pathname.toLowerCase().endsWith(".mp4");
+                      if (!isAllowedHost && !isMp4) {
+                        return "Must be a YouTube, Vimeo, TikTok, Instagram, or direct .mp4 URL.";
+                      }
+                      return true;
+                    } catch {
+                      return "Invalid URL.";
+                    }
+                  })
+                  .error("Reel video URL is required."),
             }),
             defineField({ name: "caption", type: "text", rows: 2 }),
           ],

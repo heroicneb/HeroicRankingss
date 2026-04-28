@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import type { SanityPodcastEpisodeDetail } from "@/lib/sanity-data";
 
 interface PodcastKeyInsightsProps {
@@ -67,22 +65,9 @@ export function PodcastKeyInsights({ insights }: PodcastKeyInsightsProps) {
                 </p>
               ) : null}
 
-              {/* TODO: wire to AI chat overlay (PodcastAISection backend not yet built) */}
-              <button
-                aria-label="Ask Podcast AI"
-                className="motion-interactive motion-interactive-press mt-[24px] inline-flex items-center gap-[8px] rounded-[100px] border border-[var(--color-hr-accent)] bg-transparent px-[18px] py-[10px] text-[16px] font-medium leading-[20px] text-[var(--color-hr-pure-black)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:text-[var(--color-text-inverse)]"
-                type="button"
-              >
-                <Image
-                  alt=""
-                  aria-hidden
-                  className="dark:brightness-0 dark:invert"
-                  height={20}
-                  src="/podcast/ask-ai.svg"
-                  width={20}
-                />
-                Ask Podcast AI
-              </button>
+              {/* "Ask Podcast AI" affordance is hidden until the backend ships.
+                  Re-enable as a real <button onClick={...}> once PodcastAISection
+                  is wired (PR 4 deliberately left this dead — Codex MEDIUM 2026-04-28). */}
 
               {topicPills.length > 0 ? (
                 <ul className="mt-[24px] flex w-full flex-col gap-[10px] lg:mt-[30px] lg:flex-row lg:flex-wrap">

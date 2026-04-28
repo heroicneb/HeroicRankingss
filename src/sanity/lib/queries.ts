@@ -19,6 +19,7 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
   *[_type == "post" && slug.current == $slug][0] {
     _id,
     title,
+    titleHighlighted,
     slug,
     excerpt,
     mainImage { ..., asset->{ metadata { lqip } } },
@@ -65,6 +66,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
   *[_type == "caseStudy" && slug.current == $slug][0] {
     _id,
     title,
+    titleHighlighted,
     slug,
     client,
     excerpt,

@@ -53,6 +53,7 @@ interface SanitySeo {
 interface SanityRawPost {
   _id: string;
   title: string;
+  titleHighlighted?: string | null;
   slug?: { current: string };
   excerpt?: string | null;
   mainImage?: SanityImageRef | null;
@@ -304,6 +305,7 @@ export interface SanityPostSummary {
   publishedAt: string | null;
   slug: string;
   title: string;
+  titleHighlighted: string | null;
 }
 
 export interface SanityPostAuthor {
@@ -333,6 +335,7 @@ export async function getPosts(): Promise<SanityPostSummary[]> {
   return (data as SanityRawPost[]).map((post) => ({
     _id: post._id,
     title: post.title,
+    titleHighlighted: post.titleHighlighted ?? null,
     slug: post.slug?.current ?? "",
     excerpt: post.excerpt ?? null,
     mainImageUrl: imageUrl(post.mainImage, 1200),
@@ -371,6 +374,7 @@ export const getPostBySlug = cache(
     return {
       _id: post._id,
       title: post.title,
+      titleHighlighted: post.titleHighlighted ?? null,
       slug: post.slug?.current ?? slug,
       excerpt: post.excerpt ?? null,
       mainImageUrl: imageUrl(post.mainImage, 1200),
@@ -714,6 +718,7 @@ export interface SanityCaseStudyDetail {
   } | null;
   services?: string[] | null;
   title: string;
+  titleHighlighted?: string | null;
   // ── Extended structured fields (PR 2.3 schema) ──
   heroSubtitle?: string | null;
   heroMetrics?: Array<{ _key?: string; value: string; label: string }> | null;

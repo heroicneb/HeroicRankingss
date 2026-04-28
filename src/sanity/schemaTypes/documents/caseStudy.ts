@@ -26,6 +26,23 @@ export const caseStudy = defineType({
           ),
     }),
     defineField({
+      name: "titleHighlighted",
+      title: "Title — Highlighted Substring",
+      type: "string",
+      group: "hero",
+      description:
+        "Optional. Substring of Title to render in gradient (two-tone H1). Must appear in Title exactly.",
+      validation: (rule) =>
+        rule.custom((value, context) => {
+          if (!value) return true;
+          const title = (context.document?.title as string | undefined) ?? "";
+          if (!title.includes(value)) {
+            return "Highlighted substring must appear exactly in the Title.";
+          }
+          return true;
+        }),
+    }),
+    defineField({
       name: "slug",
       title: "Slug",
       type: "slug",

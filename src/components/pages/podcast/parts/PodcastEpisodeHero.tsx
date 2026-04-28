@@ -4,6 +4,7 @@ import { AppLink } from "@/components/ui/app-link";
 import { PlayButtonOverlay } from "@/components/ui/play-button-overlay";
 import { SectionLabel } from "@/components/ui/section-label";
 import type { SanityPodcastEpisodeDetail } from "@/lib/sanity-data";
+import { splitTitle } from "@/lib/split-title";
 import { urlFor } from "@/sanity/lib/image";
 
 interface PodcastEpisodeHeroProps {
@@ -20,35 +21,6 @@ function getHeroImageUrl(
   } catch {
     return null;
   }
-}
-
-/**
- * Splits the episode title into a solid prefix and a gradient suffix using
- * `titleHighlighted` (when present and a substring of `title`). Falls back to
- * a single solid block when no highlight is configured.
- *
- * Patterns supported:
- *   "Marketing That Actually Works" + highlighted "That Actually Works"
- *     => solid "Marketing" + gradient "That Actually Works"
- *
- * The highlight may appear at any position; the surrounding whitespace is
- * preserved so the rendered string matches the original `title`.
- */
-function splitTitle(title: string, highlighted: string | null | undefined) {
-  if (!highlighted) {
-    return { before: title, gradient: "", after: "" };
-  }
-
-  const idx = title.indexOf(highlighted);
-  if (idx === -1) {
-    return { before: title, gradient: "", after: "" };
-  }
-
-  return {
-    before: title.slice(0, idx),
-    gradient: highlighted,
-    after: title.slice(idx + highlighted.length),
-  };
 }
 
 /**

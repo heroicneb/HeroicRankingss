@@ -30,6 +30,20 @@ const BECOME_A_HERO_MEMBER = TEAM_MEMBERS.find(
   (member) => member.name === "Become a Hero",
 );
 
+/**
+ * Map Sanity socialLink platform enum (lowercase) to the display label the
+ * popup uses for ordering and "primary URL" matching. Keep keys in sync with
+ * src/sanity/schemaTypes/objects/socialLink.ts.
+ */
+const SOCIAL_PLATFORM_LABELS: Record<string, string> = {
+  linkedin: "LinkedIn",
+  twitter: "X",
+  instagram: "Instagram",
+  github: "GitHub",
+  youtube: "YouTube",
+  website: "Website",
+};
+
 function normalizeBioParagraphs(paragraphs?: string[] | null): string[] {
   return (paragraphs ?? [])
     .map((paragraph) => paragraph.trim())
@@ -100,7 +114,10 @@ function buildPopupDataFromCms(
 
     const socialsFromCms = cmsMember.socialLinks
       .filter((social) => social.url?.trim())
-      .map((social) => ({ label: social.platform, url: social.url.trim() }));
+      .map((social) => ({
+        label: SOCIAL_PLATFORM_LABELS[social.platform] ?? social.platform,
+        url: social.url.trim(),
+      }));
     const socials =
       socialsFromCms.length > 0
         ? socialsFromCms

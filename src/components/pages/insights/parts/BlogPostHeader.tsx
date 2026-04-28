@@ -1,5 +1,6 @@
 import { GradientText } from "@/components/ui/gradient-text";
 import type { SanityPostDetail } from "@/lib/sanity-data";
+import { splitTitle } from "@/lib/split-title";
 
 import { BlogPostGetSummary } from "./BlogPostGetSummary";
 
@@ -11,7 +12,9 @@ interface BlogPostHeaderProps {
 function formatCategoryLabel(category: string): string {
   return category
     .split("-")
-    .map((word) => (word.length > 0 ? word[0]!.toUpperCase() + word.slice(1) : word))
+    .map((word) =>
+      word.length > 0 ? word[0]!.toUpperCase() + word.slice(1) : word,
+    )
     .join(" ");
 }
 
@@ -28,6 +31,11 @@ export function BlogPostHeader({ articleUrl, post }: BlogPostHeaderProps) {
   const authorName = post.author?.name ?? post.authorName;
   const categoryRaw = post.categories[0];
   const categoryLabel = categoryRaw ? formatCategoryLabel(categoryRaw) : null;
+  const { before, gradient, after } = splitTitle(
+    post.title,
+    post.titleHighlighted,
+  );
+  const hasHighlight = gradient.length > 0;
 
   return (
     <header className="w-full">
@@ -40,7 +48,9 @@ export function BlogPostHeader({ articleUrl, post }: BlogPostHeaderProps) {
           </>
         ) : null}
         {authorName && categoryLabel ? (
-          <span aria-hidden className="mx-[6px] gradient-text-brand">·</span>
+          <span aria-hidden className="mx-[6px] gradient-text-brand">
+            ·
+          </span>
         ) : null}
         {categoryLabel ? (
           <>
@@ -50,9 +60,18 @@ export function BlogPostHeader({ articleUrl, post }: BlogPostHeaderProps) {
         ) : null}
       </p>
 
-      {/* Full-gradient H1 */}
-      <h1 className="mt-[20px] text-center text-[38px] font-normal leading-[1.2] tracking-[-0.76px] lg:mt-[30px] lg:text-left lg:text-[62px] lg:leading-[80px] lg:tracking-[-1.24px]">
-        <GradientText>{post.title}</GradientText>
+      {/* Two-tone H1 (solid + gradient via titleHighlighted), falls back to
+          full gradient when no highlight is configured. */}
+      <h1 className="mt-[20px] text-center text-[38px] font-normal leading-[1.2] tracking-[-0.76px] text-[var(--color-hr-pure-black)] lg:mt-[30px] lg:text-left lg:text-[62px] lg:leading-[80px] lg:tracking-[-1.24px] dark:text-[var(--color-text-inverse)]">
+        {hasHighlight ? (
+          <>
+            {before ? <span>{before}</span> : null}
+            <GradientText>{gradient}</GradientText>
+            {after ? <span>{after}</span> : null}
+          </>
+        ) : (
+          <GradientText>{post.title}</GradientText>
+        )}
       </h1>
 
       {/* AI summary block (desktop pills inline / mobile collapsed dropdown) */}

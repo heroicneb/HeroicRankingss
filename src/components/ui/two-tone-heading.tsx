@@ -29,6 +29,7 @@ export interface TwoToneHeadingProps {
    */
   gradientClass?: string;
   className?: string;
+  id?: string;
 }
 
 /**
@@ -50,12 +51,15 @@ export function TwoToneHeading({
   layout = "inline",
   gradientClass,
   className,
+  id,
 }: TwoToneHeadingProps) {
   const separator =
     layout === "stacked" ? <br aria-hidden="true" /> : <span> </span>;
 
   const gradientNode = (
-    <span className={cn("gradient-text-brand", gradientClass)}>{highlighted}</span>
+    <span className={cn("gradient-text-brand", gradientClass)}>
+      {highlighted}
+    </span>
   );
   const mainNode = <span>{main}</span>;
 
@@ -74,5 +78,5 @@ export function TwoToneHeading({
       </>
     );
 
-  return createElement(as, { className }, children);
+  return createElement(as, { className, id }, children);
 }
