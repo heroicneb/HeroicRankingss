@@ -42,7 +42,11 @@ describe("generateVCard", () => {
   });
 
   it("emits TITLE when role + company both present", () => {
-    const out = generateVCard({ name: "X", role: "Founder", company: "Heroic Rankings" });
+    const out = generateVCard({
+      name: "X",
+      role: "Founder",
+      company: "Heroic Rankings",
+    });
     expect(out).toContain("TITLE:Founder\\, Heroic Rankings");
   });
 
@@ -55,11 +59,27 @@ describe("generateVCard", () => {
     const out = generateVCard({ name: "X", url: "https://linkedin.com/in/x" });
     expect(out).toContain("URL:https://linkedin.com/in/x");
   });
+
+  it("escapes bare CR, LF, and CRLF in field values to prevent line injection", () => {
+    const lf = generateVCard({ name: "X", role: "line1\nINJECTED:bad" });
+    expect(lf).not.toContain("\r\nINJECTED:bad");
+    expect(lf).toContain("TITLE:line1\\nINJECTED:bad");
+
+    const cr = generateVCard({ name: "X", role: "line1\rINJECTED:bad" });
+    expect(cr).not.toContain("\r\nINJECTED:bad");
+    expect(cr).toContain("TITLE:line1\\nINJECTED:bad");
+
+    const crlf = generateVCard({ name: "X", role: "line1\r\nINJECTED:bad" });
+    expect(crlf).not.toContain("line1\r\nINJECTED:bad");
+    expect(crlf).toContain("TITLE:line1\\nINJECTED:bad");
+  });
 });
 
 describe("generateVCardFilename", () => {
   it("ASCII-only, slug-derived from name", () => {
-    expect(generateVCardFilename("Nebojša Janković")).toBe("nebojsa-jankovic.vcf");
+    expect(generateVCardFilename("Nebojša Janković")).toBe(
+      "nebojsa-jankovic.vcf",
+    );
   });
 
   it("strips diacritics consistently", () => {

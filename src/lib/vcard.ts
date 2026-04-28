@@ -12,7 +12,7 @@ const escape = (s: string) =>
     .replace(/\\/g, "\\\\")
     .replace(/,/g, "\\,")
     .replace(/;/g, "\\;")
-    .replace(/\n/g, "\\n");
+    .replace(/\r\n|\r|\n/g, "\\n");
 
 const normalizePhone = (p: string): string | null => {
   const digits = p.replace(/[^\d+]/g, "");
