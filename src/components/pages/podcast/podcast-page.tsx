@@ -57,6 +57,7 @@ export const metadata: Metadata = createPageMetadata({
 
 interface Episode {
   id: number;
+  slug: string;
   title: string;
   guest: string;
   description: string;
@@ -67,6 +68,7 @@ interface Episode {
 
 const LATEST_EPISODE: Episode = {
   id: 15,
+  slug: "seo-growth",
   title: "SEO Growth",
   guest: "Jonathan Bentz",
   description:
@@ -78,6 +80,7 @@ const LATEST_EPISODE: Episode = {
 const EPISODES: Episode[] = [
   {
     id: 14,
+    slug: "organic-growth",
     title: "Organic Growth",
     guest: "Jason Rivera",
     description:
@@ -87,6 +90,7 @@ const EPISODES: Episode[] = [
   },
   {
     id: 14,
+    slug: "seo-aeo-and-ai-growth",
     title: "SEO, AEO & AI Growth",
     guest: "Sara Miller",
     description:
@@ -96,6 +100,7 @@ const EPISODES: Episode[] = [
   },
   {
     id: 14,
+    slug: "seo-wind",
     title: "SEO Wind",
     guest: "Tom Winter",
     description:
@@ -292,7 +297,7 @@ function LatestEpisodeSection() {
             <AppLink
               aria-label="Open latest episode"
               className="mt-auto inline-flex size-[72px] shrink-0 items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] shadow-[0_4px_14px_rgba(0,0,0,0.18)] transition-transform hover:scale-105"
-              href="#"
+              href={`/podcast/${ep.slug}`}
             >
               <DiagonalArrowIcon className="size-5 text-[var(--color-hr-dark)]" />
             </AppLink>
@@ -341,7 +346,7 @@ function EpisodeCard({ episode }: { episode: Episode }) {
         <AppLink
           aria-label={`Open episode: ${episode.title}`}
           className="absolute bottom-[20px] right-[20px] inline-flex size-[72px] items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] shadow-[0_4px_14px_rgba(0,0,0,0.12)] transition-transform hover:scale-105"
-          href="#"
+          href={`/podcast/${episode.slug}`}
         >
           <DiagonalArrowIcon className="size-5 text-[var(--color-hr-dark)]" />
         </AppLink>
@@ -454,14 +459,6 @@ function PodcastAISection() {
               guests, topics, strategies — get instant answers grounded in real
               conversations.
             </p>
-
-            <AppLink
-              className="mt-[10px] inline-flex w-fit items-center justify-center rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[16px] font-medium leading-[normal] text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)]"
-              href="#podcast-chat"
-              motionPreset="subtle"
-            >
-              Try the Chat Widget
-            </AppLink>
           </div>
 
           <div className="relative z-10 mx-auto mt-10 aspect-[403/345] w-[min(403px,90%)] lg:absolute lg:left-[955px] lg:top-[200px] lg:mx-0 lg:mt-0 lg:h-[345px] lg:w-[403px]">
