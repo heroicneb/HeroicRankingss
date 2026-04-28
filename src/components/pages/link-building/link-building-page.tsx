@@ -28,7 +28,6 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 const HERO_STATUE_SRC = "/link-building/imgRectangle5.webp";
-const COMPETITOR_IMAGE_SRC = "/link-building/imgImage38.png";
 const CTA_BANNER_BG_SRC = "/link-building/imgSubtract1.svg";
 const COLLAPSED_ROW_BG_SRC = "/link-building/imgSubtract3.svg";
 const FAQ_BG_SRC = "/link-building/imgSubtract.svg";
@@ -48,8 +47,9 @@ interface ServiceCardItem {
 interface CompetitorInsightItem {
   title: string;
   body: readonly string[];
+  chartSrc: string;
+  chartAlt: string;
   defaultOpen?: boolean;
-  showChart?: boolean;
 }
 
 const SERVICE_CARDS: readonly ServiceCardItem[] = [
@@ -122,7 +122,8 @@ const COMPETITOR_INSIGHT_ITEMS: readonly CompetitorInsightItem[] = [
   {
     title: "Domain Rating Trend Over Time",
     defaultOpen: true,
-    showChart: true,
+    chartSrc: "/link-building/charts/domain-rating.jpg",
+    chartAlt: "Domain rating changes month-over-month chart",
     body: [
       "This chart visualizes the Domain Rating (DR) of yours and your competitor's websites over time, providing insight into how a domain's authority evolves based on its backlink profile.",
       "Domain Rating (DR) is a key metric that reflects the strength and quantity of a website's backlinks. A higher DR generally indicates better authority and visibility in search engines.",
@@ -133,24 +134,40 @@ const COMPETITOR_INSIGHT_ITEMS: readonly CompetitorInsightItem[] = [
   },
   {
     title: "Link Velocity Changes Month-over-Month",
+    chartSrc: "/link-building/charts/link-velocity.jpg",
+    chartAlt: "Link velocity changes month-over-month chart",
     body: [
-      "Demo insight: this section compares how many referring domains you and your competitors gain or lose each month.",
-      "Use this trend to spot campaign slowdowns early and rebalance outreach efforts before visibility drops.",
+      "This chart illustrates Link Velocity Changes Month-over-Month, tracking the number of referring domains acquired by yours and your competitor's websites over time. Referring domains represent unique websites linking back, and a higher number typically indicates stronger link-building efforts and potential for improved search visibility.",
+      "A steady increase in referring domains suggests effective link-building strategies, while plateaus or declines may signal the need for strategy adjustments. Websites with rapid growth in referring domains are likely benefiting from increased authority, while slower growth or fluctuations may highlight areas for improvement.",
+      "Monitoring these trends is crucial for evaluating the success of SEO campaigns. By analyzing the link velocity, websites can ensure they are consistently acquiring high-quality backlinks, maintaining competitive authority, and improving their overall performance in search results.",
+      "Regular tracking helps adjust link-building tactics for sustained SEO success.",
     ],
   },
   {
     title: "Competitive Organic Traffic Predictions for the Next Three Months",
+    chartSrc: "/link-building/charts/competitive-organic-traffic.jpg",
+    chartAlt:
+      "Competitive organic traffic predictions for the next three months chart",
     body: [
-      "Demo insight: projected traffic trends show which competitors are likely to gain visibility based on current authority and keyword movement.",
-      "This helps prioritize the pages and topics where faster link acquisition can close the gap.",
+      "This chart tracks the Organic Traffic changes for your website and your competitors, using predictive models to estimate future monthly traffic based on current SEO performance.",
+      "Organic Traffic reflects the number of visitors driven to a website through search engines, correlating directly with the effectiveness of its SEO strategies and overall visibility.",
+      "Monitoring predicted traffic trends helps evaluate the potential success of ongoing SEO efforts, with growth indicating effective keyword targeting and content optimization.",
+      "Sudden spikes or declines in organic traffic predictions may indicate algorithm changes, content adjustments, or market shifts, highlighting areas for strategic refinement.",
+      "Keeping track of traffic predictions is essential for planning SEO strategies and maintaining long-term search performance success.",
     ],
   },
   {
     title:
       "Your Website's Organic Traffic Predictions for the Next Three Months",
+    chartSrc: "/link-building/charts/website-organic-traffic.jpg",
+    chartAlt:
+      "Your website organic traffic predictions for the next three months chart",
     body: [
-      "Demo insight: this forecast estimates potential traffic growth from your current backlink profile and active campaigns.",
-      "Use it to set realistic monthly SEO targets and align budget with expected outcomes.",
+      "This chart predicts future Organic Traffic for your website, showing best-case, worst-case, and trend scenarios using predictive modeling based on SEO performance.",
+      "Organic Traffic Trend: A steady projection showing moderate growth in traffic based on current SEO strategies.",
+      "Best Case Scenario: Indicates the highest possible growth, assuming optimal SEO performance and success in areas like keyword optimization, backlink acquisition, and content improvements.",
+      "Worst Case Scenario: Reflects the potential for traffic stagnation or decline, possibly due to ineffective SEO strategies, competition, or external factors like search engine algorithm updates.",
+      "Tracking these traffic predictions is crucial for evaluating the effectiveness of your SEO strategies and adjusting efforts proactively. Regular monitoring allows you to prepare for potential growth or downturns, ensuring your strategy remains aligned with changing market trends and SEO developments.",
     ],
   },
 ] as const;
@@ -407,30 +424,22 @@ export default function LinkBuildingPage({
                   </summary>
 
                   <div className="relative z-10 border-t border-[var(--color-hr-light-grey)] px-[30px] pb-[30px] pt-[30px] dark:border-[var(--color-border-inverse-10)]">
-                    {item.showChart ? (
-                      <div className="grid gap-[30px] xl:grid-cols-[520px_1fr] xl:items-start">
-                        <Image
-                          alt="Domain rating comparison chart"
-                          className="h-auto w-full rounded-[20px]"
-                          height={441}
-                          sizes="(min-width: 1280px) 520px, 100vw"
-                          src={COMPETITOR_IMAGE_SRC}
-                          width={600}
-                        />
+                    <div className="grid gap-[30px] xl:grid-cols-[520px_1fr] xl:items-start">
+                      <Image
+                        alt={item.chartAlt}
+                        className="h-auto w-full rounded-[20px]"
+                        height={441}
+                        sizes="(min-width: 1280px) 520px, 100vw"
+                        src={item.chartSrc}
+                        width={600}
+                      />
 
-                        <div className="type-paragraph space-y-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                          {item.body.map((paragraph) => (
-                            <p key={paragraph}>{paragraph}</p>
-                          ))}
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="type-paragraph max-w-[1000px] space-y-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                      <div className="type-paragraph space-y-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                         {item.body.map((paragraph) => (
                           <p key={paragraph}>{paragraph}</p>
                         ))}
                       </div>
-                    )}
+                    </div>
                   </div>
                 </details>
               ))}
