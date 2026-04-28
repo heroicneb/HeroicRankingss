@@ -32,8 +32,10 @@ const API_VERSION = "2026-02-19";
 // Stable picsum seed → reproducible 1600x900 placeholder for every image field.
 const PLACEHOLDER_IMAGE_URL = "https://picsum.photos/seed/audit-fixture/1600/900";
 const PLACEHOLDER_ASSET_FILENAME = "audit-fixture-placeholder.jpg";
-// Deterministic asset ID — re-runs reuse the same asset, no duplicate uploads.
-const PLACEHOLDER_ASSET_ID = "image-audit-fixture-placeholder";
+
+// Sanity assigns asset IDs (image-<sha1>-<dims>-<format>) — we cannot pin one.
+// Instead: query for an existing asset by source URL on rerun, otherwise upload.
+let placeholderAssetId = null;
 
 // ── Token resolution ────────────────────────────────────────────────────
 function resolveWriteToken() {
@@ -118,23 +120,34 @@ function pt(text, opts = {}) {
 
 /** Build an image field referencing the shared placeholder asset. */
 function img(alt) {
+  if (!placeholderAssetId) {
+    throw new Error("img() called before ensurePlaceholderAsset() resolved.");
+  }
   return {
     _type: "image",
-    asset: { _type: "reference", _ref: PLACEHOLDER_ASSET_ID },
+    asset: { _type: "reference", _ref: placeholderAssetId },
     alt,
   };
 }
 
 /**
  * Upload (or reuse) the placeholder image asset. Idempotent: if an asset with
- * PLACEHOLDER_ASSET_ID already exists, returns it without re-uploading.
+ * the same source URL already exists, returns its real Sanity-assigned _id
+ * without re-uploading. Otherwise uploads, recording the source URL so future
+ * runs can find it.
  */
 async function ensurePlaceholderAsset() {
-  // Check if asset already exists.
-  const existing = await client.getDocument(PLACEHOLDER_ASSET_ID).catch(() => null);
-  if (existing) {
-    console.log(`  ✓ reusing placeholder asset ${PLACEHOLDER_ASSET_ID}`);
-    return PLACEHOLDER_ASSET_ID;
+  // Sanity records the originating URL on `source.url` when we set source on
+  // upload — query that to detect prior runs.
+  const existing = await client
+    .fetch(`*[_type == "sanity.imageAsset" && source.url == $url][0]{ _id }`, {
+      url: PLACEHOLDER_IMAGE_URL,
+    })
+    .catch(() => null);
+  if (existing?._id) {
+    placeholderAssetId = existing._id;
+    console.log(`  ✓ reusing placeholder asset ${placeholderAssetId}`);
+    return placeholderAssetId;
   }
 
   console.log(`  ↓ fetching ${PLACEHOLDER_IMAGE_URL}`);
@@ -144,15 +157,18 @@ async function ensurePlaceholderAsset() {
   }
   const buf = Buffer.from(await res.arrayBuffer());
 
-  // Upload with explicit _id so re-runs are idempotent.
-  // @sanity/client supports passing an `_id` option to assets.upload.
   const uploaded = await client.assets.upload("image", buf, {
     filename: PLACEHOLDER_ASSET_FILENAME,
     contentType: "image/jpeg",
-    _id: PLACEHOLDER_ASSET_ID,
+    source: {
+      id: "audit-fixture-placeholder",
+      name: "seed-audit-fixtures",
+      url: PLACEHOLDER_IMAGE_URL,
+    },
   });
-  console.log(`  ✓ uploaded image asset ${uploaded._id}`);
-  return uploaded._id;
+  placeholderAssetId = uploaded._id;
+  console.log(`  ✓ uploaded image asset ${placeholderAssetId}`);
+  return placeholderAssetId;
 }
 
 async function createOrReplace(doc) {
