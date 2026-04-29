@@ -12,10 +12,10 @@ export const BCMS_TEMPLATE_IDS = {
   blog: "6718e04bef5de485dc93f929",
   person: "6718e069ef5de485dc93f92a",
   service: "671a5d7be93230ec1d3de24d",
-  testimonial: "67ba9bb84e9c0f4cf5ab35bf", // from BCMS data; verified at preflight
+  testimonial: "6718c07def5de485dc93f8b8",
   "blog-category": "6718e5f0ef5de485dc93f93f",
-  certificate: "67c9f2c9c1a1f1e8b6c45c7d", // verified at preflight
-  company: "6718e1aaef5de485dc93f937", // verified at preflight
+  certificate: "6719f9d1b98a24129383bd2e",
+  company: "6718c0f2ef5de485dc93f8b9",
 };
 
 /**
