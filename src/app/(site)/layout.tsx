@@ -43,17 +43,23 @@ export default async function SiteLayout({
 }: Readonly<{
   children: ReactNode;
 }>) {
-  const [{ isEnabled: isDraftMode }, settings] = await Promise.all([
-    draftMode(),
-    getSiteSettings().catch((err) => {
-      console.error("[SiteLayout] Failed to fetch siteSettings:", err);
-      return null;
-    }),
-  ]);
+  const [{ isEnabled: isDraftMode }, settings, requestHeaders] =
+    await Promise.all([
+      draftMode(),
+      getSiteSettings().catch((err) => {
+        console.error("[SiteLayout] Failed to fetch siteSettings:", err);
+        return null;
+      }),
+      headers(),
+    ]);
 
   if (!settings) {
-    console.error("[SiteLayout] Missing siteSettings — rendering with fallback nav");
+    console.error(
+      "[SiteLayout] Missing siteSettings — rendering with fallback nav",
+    );
   }
+
+  const themeProviderNonce = requestHeaders.get(CSP_NONCE_HEADER) ?? undefined;
 
   return (
     <>
@@ -72,7 +78,14 @@ export default async function SiteLayout({
       <Suspense fallback={null}>
         <BreadcrumbSchema />
       </Suspense>
-      <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange enableSystem={false} storageKey="hr-theme">
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        disableTransitionOnChange
+        nonce={themeProviderNonce}
+        enableSystem={false}
+        storageKey="hr-theme"
+      >
         <Navbar
           navItems={settings?.navItems ?? []}
           phone={settings?.phone ?? ""}
@@ -87,7 +100,10 @@ export default async function SiteLayout({
           socialLinks={settings?.socialLinks ?? []}
           phone={settings?.phone ?? ""}
           email={settings?.email ?? ""}
-          copyrightText={settings?.copyrightText ?? `© ${new Date().getFullYear()} Heroic Rankings`}
+          copyrightText={
+            settings?.copyrightText ??
+            `© ${new Date().getFullYear()} Heroic Rankings`
+          }
           footerCtaHeading={settings?.footerCtaHeading ?? ""}
           footerCtaBody={settings?.footerCtaBody ?? ""}
           footerCtaLabel={settings?.footerCtaLabel ?? "Get Started"}
