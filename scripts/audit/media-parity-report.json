@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-04-29T12:39:54.281Z",
+  "summary": {
+    "docs_checked": 90,
+    "docs_failed": 1,
+    "unique_rendered_media_ids": 454,
+    "already_migrated": 452,
+    "missing": 2
+  },
+  "missing_ids": [
+    "69b955b3dbd5a7876d483157",
+    "69b955cddbd5a7876d483158"
+  ],
+  "docs_with_missing": [
+    {
+      "docId": "migrate-post-69b9559fdbd5a7876d483156",
+      "type": "post",
+      "slug": "best-ahrefs-alternatives",
+      "legacyUrl": "https://heroicrankings.com/seo/managed/best-ahrefs-alternatives/",
+      "missing_count": 2,
+      "missing_ids": [
+        "69b955b3dbd5a7876d483157",
+        "69b955cddbd5a7876d483158"
+      ]
+    }
+  ]
+}

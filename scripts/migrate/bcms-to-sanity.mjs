@@ -111,11 +111,38 @@ function shouldRun(args, key) {
   return args.only.has(key);
 }
 
+/**
+ * BCMS slugs explicitly excluded from migration (verified 404 on the legacy
+ * site or otherwise archival). Pavle decision 2026-04-29: do not sync.
+ */
+const ARCHIVED_SLUGS = new Set([
+  "web-summit-lisbon-2023",
+  "difference-between-marketing-and-sales-services",
+]);
+
+/**
+ * Is this entry publishable for migration?
+ *
+ * Migrate when:
+ *  - statuses array is missing or empty (BCMS no-status — verified live on
+ *    legacy site for 3 of 5 entries; the other 2 are archived and listed
+ *    in ARCHIVED_SLUGS above), OR
+ *  - statuses includes a Published label.
+ *
+ * Skip when:
+ *  - any status label is "Draft" (case-insensitive).
+ *  - slug is in ARCHIVED_SLUGS.
+ */
 function isPublished(entry) {
-  if (!Array.isArray(entry?.statuses)) return true; // tolerate missing
-  return entry.statuses.some(
-    (s) => typeof s?.label === "string" && s.label.toLowerCase() === "published",
-  );
+  const slug = entry?.meta?.en?.slug;
+  if (slug && ARCHIVED_SLUGS.has(slug)) return false;
+  const statuses = entry?.statuses;
+  if (!Array.isArray(statuses) || statuses.length === 0) return true; // BCMS no-status = publishable on legacy site
+  const labels = statuses
+    .map((s) => (typeof s?.label === "string" ? s.label.toLowerCase() : ""))
+    .filter(Boolean);
+  if (labels.includes("draft")) return false;
+  return labels.includes("published") || labels.length === 0;
 }
 
 async function fetchEntries(bcmsClient, templateName, args) {
