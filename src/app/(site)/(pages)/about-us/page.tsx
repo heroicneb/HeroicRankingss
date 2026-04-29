@@ -3,11 +3,19 @@ import AboutUsPage from "@/components/pages/about-us/about-us-page";
 
 export { metadata } from "@/components/pages/about-us/about-us-page";
 
+export const dynamic = "force-dynamic";
+
 export default async function AboutUsRoute() {
   const [teamMembers, cmsPosts, cmsTestimonials] = await Promise.all([
     getTeamMembers().catch(() => []),
     getPosts().catch(() => []),
     getTestimonials().catch(() => []),
   ]);
-  return <AboutUsPage cmsTeamMembers={teamMembers} cmsPosts={cmsPosts} cmsTestimonials={cmsTestimonials} />;
+  return (
+    <AboutUsPage
+      cmsTeamMembers={teamMembers}
+      cmsPosts={cmsPosts}
+      cmsTestimonials={cmsTestimonials}
+    />
+  );
 }

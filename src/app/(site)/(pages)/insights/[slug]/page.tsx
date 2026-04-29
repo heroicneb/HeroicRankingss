@@ -7,13 +7,17 @@ import { ArticleSchema } from "@/components/seo/article-schema";
 import { createPageMetadata } from "@/lib/metadata";
 import { getPostBySlug, getPostSlugs } from "@/lib/sanity-data";
 
+export const dynamic = "force-dynamic";
+
 interface InsightPostPageProps {
   params: Promise<{
     slug: string;
   }>;
 }
 
-export async function generateMetadata({ params }: InsightPostPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: InsightPostPageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
 
@@ -37,7 +41,9 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
-export default async function InsightPostPage({ params }: InsightPostPageProps) {
+export default async function InsightPostPage({
+  params,
+}: InsightPostPageProps) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
 
