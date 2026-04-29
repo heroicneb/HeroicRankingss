@@ -85,7 +85,7 @@ export function Blog({ cmsPosts }: BlogProps) {
 
       <Container className="mt-[40px] lg:mt-20">
         <div className="grid gap-5 lg:grid-cols-3">
-          {posts.map((blog) => (
+          {posts.slice(0, 3).map((blog) => (
             <AppLink
               aria-label={`Open featured blog: ${blog.title}`}
               className="mx-auto flex w-full max-w-[348px] flex-col overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:h-[467px] lg:max-w-none lg:rounded-[var(--radius-card)]"
