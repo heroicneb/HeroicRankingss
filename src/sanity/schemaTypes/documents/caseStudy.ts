@@ -128,6 +128,32 @@ export const caseStudy = defineType({
           ),
     }),
     defineField({
+      name: "website",
+      title: "Client Website",
+      type: "object",
+      group: "hero",
+      description:
+        "Optional client website link. Migrated from BCMS `website` field.",
+      fields: [
+        defineField({ name: "label", type: "string", title: "Display label" }),
+        defineField({
+          name: "href",
+          type: "url",
+          title: "URL",
+          validation: (r) => r.uri({ scheme: ["http", "https"] }),
+        }),
+      ],
+    }),
+    defineField({
+      name: "resultsCardsAsAccordion",
+      title: "Render results cards as accordion",
+      type: "boolean",
+      group: "proof",
+      description:
+        "Legacy presentation flag from BCMS. When true, results cards render as a vertical accordion instead of a grid.",
+      initialValue: false,
+    }),
+    defineField({
       name: "cardImage",
       title: "Card Image",
       type: "image",
@@ -259,15 +285,13 @@ export const caseStudy = defineType({
     }),
     defineField({
       name: "strategyPillars",
-      title: "Six Pillars Cards",
+      title: "Strategy Pillar Cards",
       type: "array",
       group: "strategy",
+      description:
+        "Strategy pillars rendered as a card grid. 1–8 items supported (design is optimized for 6 in a 3x2 grid; fewer collapse to a 1x or 2x layout).",
       validation: (rule) =>
-        rule
-          .length(6)
-          .error(
-            "Exactly 6 strategy pillars are required — the design is a 3x2 grid.",
-          ),
+        rule.min(1).max(8).error("Provide between 1 and 8 strategy pillars."),
       of: [
         {
           type: "object",
@@ -282,15 +306,13 @@ export const caseStudy = defineType({
               name: "intro",
               type: "text",
               rows: 2,
-              validation: (r) =>
-                r.required().error("Pillar intro paragraph is required."),
             }),
             defineField({
               name: "bullets",
               type: "array",
               of: [{ type: "string" }],
               validation: (r) =>
-                r.min(2).max(8).error("Each pillar needs 2–8 bullet points."),
+                r.max(12).error("Maximum 12 bullet points per pillar."),
             }),
             defineField({
               name: "icon",
@@ -300,14 +322,9 @@ export const caseStudy = defineType({
                 defineField({
                   name: "alt",
                   type: "string",
-                  validation: (r) =>
-                    r
-                      .required()
-                      .error("Icon alt text is required for accessibility."),
+                  description: "Required when icon is set.",
                 }),
               ],
-              validation: (r) =>
-                r.required().error("Pillar icon image is required."),
             }),
           ],
           preview: { select: { title: "title", media: "icon" } },
@@ -557,20 +574,15 @@ export const caseStudy = defineType({
                   name: "image",
                   type: "image",
                   options: { hotspot: true },
+                  description:
+                    "Optional. Cards without images render as text-only blocks.",
                   fields: [
                     defineField({
                       name: "alt",
                       type: "string",
-                      validation: (r) =>
-                        r
-                          .required()
-                          .error(
-                            "Image alt text is required for accessibility.",
-                          ),
+                      description: "Required when image is set.",
                     }),
                   ],
-                  validation: (r) =>
-                    r.required().error("Analytics screenshot is required."),
                 }),
                 defineField({
                   name: "metricTags",
