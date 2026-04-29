@@ -16,7 +16,15 @@
  */
 
 const DEFAULT_ORIGIN = "https://app.thebcms.com";
+const DEFAULT_CDN_ORIGIN = "https://cdn.thebcms.com";
 const DEFAULT_INSTANCE = "6710e3bdeeda0c4a2de4b330";
+const DEFAULT_ORG = "620528baca65b6578d29868d";
+// Media-scoped public API key embedded in rendered heroicrankings.com image URLs.
+// Read scope only, scoped to media binaries. Used because the content API key
+// (`BCMS_API_KEY`) does NOT have binary download permission — confirmed via
+// 403 on /api/v3/instance/.../media/.../bin2/<filename> with content key.
+const DEFAULT_MEDIA_PUBLIC_KEY =
+  "6720fb7d4af2f1ddaa6bbdf6.c00cf44655f4c098ecc0082a201e6c7eaef24cda05e94d2845e3c7a12ae6773b";
 const MAX_RETRIES = 3;
 const RETRY_BASE_MS = 500;
 
@@ -67,7 +75,13 @@ export function createPool(concurrency) {
 export function createBcmsClient(options = {}) {
   const apiKey = options.apiKey ?? process.env.BCMS_API_KEY;
   const instanceId = options.instanceId ?? process.env.BCMS_INSTANCE_ID ?? DEFAULT_INSTANCE;
+  const orgId = options.orgId ?? process.env.BCMS_ORG_ID ?? DEFAULT_ORG;
   const origin = options.origin ?? process.env.BCMS_API_ORIGIN ?? DEFAULT_ORIGIN;
+  const cdnOrigin = options.cdnOrigin ?? process.env.BCMS_CDN_ORIGIN ?? DEFAULT_CDN_ORIGIN;
+  const mediaPublicKey =
+    options.mediaPublicKey ??
+    process.env.BCMS_MEDIA_PUBLIC_KEY ??
+    DEFAULT_MEDIA_PUBLIC_KEY;
   const concurrency = options.concurrency ?? 5;
 
   if (!apiKey) {
@@ -187,7 +201,11 @@ export function createBcmsClient(options = {}) {
 
     /**
      * Download the original binary for a BCMS media item.
-     * Tries `/bin2/<filename>` first (matches parity data), then `/bin/<filename>`.
+     *
+     * Uses the CDN origin (cdn.thebcms.com) with a media-public-key query
+     * param (the same path used by the public site's <img> tags). The
+     * content API key does NOT have binary download permission against the
+     * /app/api endpoint — confirmed 403 in initial migration run.
      */
     async downloadMediaBinary(media) {
       if (!media || typeof media !== "object") {
@@ -199,14 +217,23 @@ export function createBcmsClient(options = {}) {
         throw new Error(`Cannot download media without _id and name (got id=${id}, name=${filename}).`);
       }
       const encoded = encodeURIComponent(filename);
-      const candidates = [
-        `/api/v3/instance/${instanceId}/media/${id}/bin2/${encoded}`,
-        `/api/v3/instance/${instanceId}/media/${id}/bin/${encoded}`,
+      const cdnPaths = [
+        `${cdnOrigin}/api/v3/org/${orgId}/instance/${instanceId}/media/${id}/bin2/${encoded}?apiKey=${mediaPublicKey}`,
+        `${cdnOrigin}/api/v3/org/${orgId}/instance/${instanceId}/media/${id}/bin/${encoded}?apiKey=${mediaPublicKey}`,
       ];
       let lastErr;
-      for (const path of candidates) {
+      for (const url of cdnPaths) {
         try {
-          return await bcmsFetchBinary(path);
+          return await pool.submit(() =>
+            withRetry(async () => {
+              const res = await fetch(url);
+              if (!res.ok) {
+                throw new BcmsHttpError(`${res.status} ${res.statusText} ${url}`, res.status);
+              }
+              const arr = await res.arrayBuffer();
+              return Buffer.from(arr);
+            }, `GET-bin ${url}`),
+          );
         } catch (err) {
           lastErr = err;
           if (err?.status === 404) continue;

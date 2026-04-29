@@ -16,14 +16,28 @@ export const partnerLogo = defineType({
       title: "Logo",
       type: "image",
       validation: (rule) => rule.required(),
-      fields: [
-        defineField({ name: "alt", title: "Alt Text", type: "string" }),
-      ],
+      fields: [defineField({ name: "alt", title: "Alt Text", type: "string" })],
     }),
     defineField({
       name: "url",
       title: "Partner Website",
       type: "url",
+    }),
+    defineField({
+      name: "featured",
+      title: "Featured (homepage strip)",
+      type: "boolean",
+      description:
+        "Show in the homepage 'Featured and Recognized by Industry Leaders' strip. Keep to ~4 for the design grid.",
+      initialValue: false,
+    }),
+    defineField({
+      name: "partner",
+      title: "Partner (partnership page)",
+      type: "boolean",
+      description:
+        "Show on the /partnership page partner grid. Used for agency-partnership relationships.",
+      initialValue: false,
     }),
     defineField({
       name: "order",

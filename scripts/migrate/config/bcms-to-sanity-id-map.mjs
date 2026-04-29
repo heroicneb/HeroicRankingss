@@ -31,7 +31,7 @@ export const BCMS_TO_SANITY_TYPE = {
   testimonial: "testimonial",
   "blog-category": null, // lookup-only, see codex plan
   certificate: null, // deferred — no Sanity consumer
-  company: null, // deferred — no Sanity consumer
+  company: "partnerLogo", // 2026-04-29 — migrated to partnerLogo with featured/partner flags
 };
 
 /**

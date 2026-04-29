@@ -217,11 +217,35 @@ export const TEAM_MEMBER_SLUGS_QUERY = defineQuery(`
 // --- Partner Logos ---
 
 export const PARTNER_LOGOS_QUERY = defineQuery(`
+  *[_type == "partnerLogo" && featured == true] | order(order asc) {
+    _id,
+    name,
+    logo,
+    url,
+    featured,
+    partner
+  }
+`);
+
+export const PARTNERSHIP_LOGOS_QUERY = defineQuery(`
+  *[_type == "partnerLogo" && partner == true] | order(order asc) {
+    _id,
+    name,
+    logo,
+    url,
+    featured,
+    partner
+  }
+`);
+
+export const ALL_PARTNER_LOGOS_QUERY = defineQuery(`
   *[_type == "partnerLogo"] | order(order asc) {
     _id,
     name,
     logo,
-    url
+    url,
+    featured,
+    partner
   }
 `);
 

@@ -47,6 +47,7 @@ import * as testimonialMapper from "./mappers/testimonial.mjs";
 import * as serviceMapper from "./mappers/service.mjs";
 import * as caseStudyMapper from "./mappers/case-study.mjs";
 import * as postMapper from "./mappers/post.mjs";
+import * as companyMapper from "./mappers/company.mjs";
 
 const SUPPORTED_BODY_NODE_TYPES = new Set([
   "paragraph",
@@ -63,6 +64,7 @@ const ALLOWED_ONLY = new Set([
   "service",
   "case-study",
   "post",
+  "company",
 ]);
 
 function parseArgs(argv) {
@@ -187,22 +189,28 @@ async function preflight(bcmsClient, logger, args) {
     totals[bcmsName] = entries.length;
     logger.info("preflight", bcmsName, `loaded ${entries.length} entries`);
 
-    // Slug collision check (within sanity type)
-    if (!slugsByType[sanityType]) slugsByType[sanityType] = new Map();
-    const seen = slugsByType[sanityType];
-    for (const e of entries) {
-      const slug = e.meta?.en?.slug ?? null;
-      if (!slug) {
-        warnings.push(`${bcmsName} ${e._id}: no slug`);
-        continue;
-      }
-      const prior = seen.get(slug);
-      if (prior && prior !== e._id) {
-        errors.push(
-          `slug collision in ${sanityType}: "${slug}" used by ${prior} and ${e._id}`,
-        );
-      } else {
-        seen.set(slug, e._id);
+    // Slug collision check (within sanity type) — skipped for types whose
+    // Sanity schema has no `slug` field (e.g., partnerLogo, testimonial).
+    // BCMS may legitimately have duplicate slugs in those templates because
+    // the slug is BCMS-internal-only, never written to Sanity.
+    const SANITY_TYPES_WITHOUT_SLUG = new Set(["partnerLogo", "testimonial"]);
+    if (!SANITY_TYPES_WITHOUT_SLUG.has(sanityType)) {
+      if (!slugsByType[sanityType]) slugsByType[sanityType] = new Map();
+      const seen = slugsByType[sanityType];
+      for (const e of entries) {
+        const slug = e.meta?.en?.slug ?? null;
+        if (!slug) {
+          warnings.push(`${bcmsName} ${e._id}: no slug`);
+          continue;
+        }
+        const prior = seen.get(slug);
+        if (prior && prior !== e._id) {
+          errors.push(
+            `slug collision in ${sanityType}: "${slug}" used by ${prior} and ${e._id}`,
+          );
+        } else {
+          seen.set(slug, e._id);
+        }
       }
     }
 
@@ -516,6 +524,28 @@ async function main() {
       records,
     });
     logger.endPhase("testimonial", `entries=${entries.length}`);
+  }
+
+  // === Phase 4b: company → partnerLogo ===
+  if (shouldRun(args, "company")) {
+    logger.startPhase("company", "migrate company → partnerLogo");
+    let entries = [];
+    try {
+      entries = await fetchEntries(bcmsClient, "company", args);
+    } catch (err) {
+      logger.warn("company", null, `fetch failed: ${err?.message ?? err}`);
+    }
+    await migrateEntries({
+      args,
+      client,
+      logger,
+      template: "company",
+      entries,
+      mapper: companyMapper,
+      ctx: { assetRegistry, logger },
+      records,
+    });
+    logger.endPhase("company", `entries=${entries.length}`);
   }
 
   // === Phase 5: service (first pass — no relatedCaseStudies) ===
