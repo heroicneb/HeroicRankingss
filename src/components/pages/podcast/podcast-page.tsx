@@ -117,7 +117,13 @@ function getEpisodeAlt(episode: SanityPodcastEpisodeSummary): string {
 // Sections
 // ---------------------------------------------------------------------------
 
-function HeroSection() {
+function HeroSection({ episodeCount }: { episodeCount: number }) {
+  const countLabel =
+    episodeCount >= 15
+      ? "15+ Episodes"
+      : episodeCount === 1
+        ? "1 Episode"
+        : `${episodeCount} Episodes`;
   return (
     <section className="pt-[100px] lg:pt-[120px]" id="podcast-hero">
       <div className="mx-auto w-full max-w-[1440px] px-5 md:px-10 lg:px-20">
@@ -135,9 +141,11 @@ function HeroSection() {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-[5px]">
-            <span className="inline-flex items-center rounded-[100px] bg-[var(--color-hr-off-white)] px-[14px] py-[6px] text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:bg-[var(--color-surface-inverse-10)] dark:text-[var(--color-text-inverse)]">
-              15+ Episodes
-            </span>
+            {episodeCount > 0 ? (
+              <span className="inline-flex items-center rounded-[100px] bg-[var(--color-hr-off-white)] px-[14px] py-[6px] text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:bg-[var(--color-surface-inverse-10)] dark:text-[var(--color-text-inverse)]">
+                {countLabel}
+              </span>
+            ) : null}
             <span className="inline-flex items-center gap-[10px] rounded-[100px] bg-[var(--color-hr-off-white)] px-[14px] py-[6px] text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:bg-[var(--color-surface-inverse-10)] dark:text-[var(--color-text-inverse)]">
               <Image
                 alt=""
@@ -562,7 +570,7 @@ export default function PodcastPage({ episodes }: PodcastPageProps) {
 
   return (
     <>
-      <HeroSection />
+      <HeroSection episodeCount={episodes.length} />
       {latest ? <LatestEpisodeSection episode={latest} /> : null}
       <EpisodesGridSection episodes={rest} />
       <PodcastAISection />
