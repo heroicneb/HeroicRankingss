@@ -1,0 +1,2806 @@
+{
+  "timestamp": "2026-04-29T10:49:14.275Z",
+  "samples": [
+    {
+      "template": "case-study",
+      "slug": "designrush",
+      "public_url": "https://heroicrankings.com/case-study/designrush/",
+      "bcms_id": "67389b07107a7e22c2301034",
+      "meta": {
+        "title": "DesignRush",
+        "slug": "designrush",
+        "seo": {
+          "title": "DesignRush SEO Case Study | Strengthening Authority with Link Building",
+          "description": "See how Heroic Rankings boosted DesignRush’s online authority with a powerful link-building strategy, driving increased visibility and trust in competitive search markets."
+        },
+        "read_time": null,
+        "date": {
+          "timestamp": 1734998400000,
+          "timezoneOffset": -60
+        },
+        "service_featured_title": "Achieved a 250% increase in organic traffic and a 180% increase in engagement in 8 months.",
+        "service_featured_description": {
+          "nodes": [
+            {
+              "type": "paragraph",
+              "value": "<p>By implementing a comprehensive SEO strategy including technical SEO, on-page optimization, and content marketing, we helped My Baskets achieve significant growth in organic traffic and sales.</p>"
+            }
+          ]
+        },
+        "hero_image": {
+          "_id": "671a23d7b98a24129383bd5e",
+          "type": "IMG",
+          "mimetype": "image/jpeg",
+          "alt_text": "",
+          "caption": "",
+          "name": "affinda.jpg",
+          "width": 2880,
+          "height": 1228,
+          "size": 52310,
+          "src": "/case-study/affinda.jpg",
+          "sizeTransforms": [
+            "350x-1",
+            "600x-1",
+            "900x-1",
+            "1200x-1",
+            "1600x-1",
+            "1920x-1"
+          ],
+          "version": "2",
+          "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671a23d7b98a24129383bd5e/bin2/affinda.jpg"
+        },
+        "description": "DesignRush is a B2B marketplace that connects businesses with top professional agencies in fields such as web design, digital marketing, branding, and technology. The platform offers comprehensive agency listings, reviews, and expert advice, helping companies find the right partners for their projects. Competing directly with Clutch.co, DesignRush aimed to establish a strong presence in search results despite being a younger website with fewer listed agencies.",
+        "our_job": "(link building for enterprise)",
+        "website": {
+          "label": "https://www.designrush.com/",
+          "href": "https://www.designrush.com/"
+        },
+        "objective": {
+          "nodes": [
+            {
+              "type": "paragraph",
+              "value": "<p>The primary goal was to build high-quality backlinks to improve SEO and compete effectively with Clutch.co, particularly in the categories of Web Design Companies and Digital Marketing Agencies.</p>"
+            }
+          ]
+        },
+        "challenges": [
+          {
+            "title": "Initial SEO Status",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>DesignRush had a strong in-house SEO team covering strategy, content, and development but relied heavily on PRs and reciprocal backlinks, which were of lower quality and less effective.</p>"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Key Obstacles",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Reciprocal links, often from lower-quality sites, had limited SEO impact. The competition, particularly <a href=\"https://clutch.co/\" target=\"_blank\">Clutch.co</a>, had a significantly larger volume of high-quality backlinks.</p>"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Budget Constraints",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Initial link-building efforts by external agencies couldn&#39;t scale due to high costs and inconsistent quality.</p>"
+                }
+              ]
+            }
+          }
+        ],
+        "strategy_items": [
+          {
+            "nodes": [
+              {
+                "type": "paragraph",
+                "value": "<p><strong>To overcome these challenges, the following strategies were implemented:</strong></p>"
+              }
+            ]
+          },
+          {
+            "nodes": [
+              {
+                "type": "paragraph",
+                "value": "<p>1. <strong>Standard Operating Procedures (SOPs) and Quality Guidelines</strong></p>"
+              },
+              {
+                "type": "paragraph",
+                "value": "<p>Established clear SOPs and quality guidelines for link building.</p>"
+              }
+            ]
+          },
+          {
+            "nodes": [
+              {
+                "type": "paragraph",
+                "value": "<p>2. <strong>Recruitment Support</strong></p>"
+              },
+              {
+                "type": "paragraph",
+                "value": "<p>Assisted in the recruitment and hiring process for new link builders.</p>"
+              }
+            ]
+          },
+          {
+            "nodes": [
+              {
+                "type": "paragraph",
+                "value": "<p>3. <strong>Interdepartmental Sync</strong></p>"
+              },
+              {
+                "type": "paragraph",
+                "value": "<p>Aligned work, goals, and KPIs with the SEO and content departments.</p>"
+              }
+            ]
+          },
+          {
+            "nodes": [
+              {
+                "type": "paragraph",
+                "value": "<p>4. <strong>Reporting</strong></p>"
+              },
+              {
+                "type": "paragraph",
+                "value": "<p>Developed reporting structures for shareholders, the head of marketing, and finance departments.</p>"
+              }
+            ]
+          },
+          {
+            "nodes": [
+              {
+                "type": "paragraph",
+                "value": "<p>5. <strong>Key Link Building Postulates</strong></p>"
+              },
+              {
+                "type": "orderedList",
+                "value": "<ol><li><p>Publish only on topically relevant websites with a contextual fit focused on web design, web development, marketing, business, and finance.</p></li><li><p>Publish only on websites that meet at least two of three criteria: Domain Rating (DR) 50+, Organic Traffic 1000+ with US traffic in the top three, and gTLDs or ccTLDs of English-speaking countries.</p></li><li><p>Daisy chain external links to boost indexation time and match link velocity percentage growth rather than exact link numbers.</p></li><li><p>Ensure all external links remain live for at least 11 months after publication.</p></li></ol>",
+                "attrs": {
+                  "start": 1
+                }
+              }
+            ]
+          }
+        ],
+        "execution_description": "With the founders initially employed at DesignRush, the execution involved:",
+        "execution_cards": [
+          {
+            "title": "Link Building Team Formation",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Created and trained an internal link-building team.</p>"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Quality Link Acquisition",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Focused on acquiring high-quality backlinks from reputable sites like Upwork, Entrepreneur, HubSpot, and .EDU websites.</p>"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Health Checks",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Developed Python scripts to monitor link health, reducing link loss to less than 5% within the first 12 months.</p>"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Indexation Improvement",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Implemented strategies to ensure over 80% of new links were indexed within a month of publication.</p>"
+                }
+              ]
+            }
+          }
+        ],
+        "results_description": "Despite competitors' higher link output, the combined efforts led to significant improvements:",
+        "results_cards": [
+          {
+            "title": "DR and Traffic Growth",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Increased Domain Rating from 70 to 90, organic traffic from 90,000 to 1,000,000, and traffic value from ~$30,000 to ~$3,200,000 (Ahrefs metrics).</p>"
+                }
+              ]
+            },
+            "media": {
+              "_id": "67389a7c107a7e22c2301032",
+              "type": "IMG",
+              "mimetype": "image/png",
+              "alt_text": "",
+              "caption": "",
+              "name": "DR and Traffic Growth analytics.png",
+              "width": 1353,
+              "height": 918,
+              "size": 123550,
+              "src": "/case-study/DR and Traffic Growth analytics.png",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1",
+                "900x-1",
+                "1200x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/67389a7c107a7e22c2301032/bin2/DR and Traffic Growth analytics.png"
+            }
+          },
+          {
+            "title": "Keyword Rankings",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Achieved top positions for key categories, outranking <a href=\"https://clutch.co/\" target=\"_blank\">Clutch.co</a> for &quot;Web Design Company&quot; and &quot;Digital Marketing Agency&quot; keywords, holding positions 1 and 2 on Google.</p>"
+                },
+                {
+                  "type": "bulletList",
+                  "value": "<ul><li><p><strong>&quot;digital marketing agency&quot;</strong><br />From position #7 in back in November 2022 to position 1 by July 2024, outranking <a href=\"https://clutch.co/\" target=\"_blank\">Clutch.co</a></p></li><li><p><strong>&quot;web design company&quot;</strong><br />From position #4 in back in July 2022 to position 1 by May 2024, outranking <a href=\"https://clutch.co/\" target=\"_blank\">Clutch.co</a> and <a href=\"https://www.g2.com/\" target=\"_blank\">G2.com</a></p></li></ul>"
+                }
+              ]
+            }
+          },
+          {
+            "title": "Link velocity and average domain rating ",
+            "subtitle": null,
+            "description": {
+              "nodes": [
+                {
+                  "type": "paragraph",
+                  "value": "<p>Despite having far fewer referring domains, we successfully matched and maintained their link velocity and have continued to sustain this pace.</p>"
+                }
+              ]
+            },
+            "media": {
+              "_id": "67389ae9107a7e22c2301033",
+              "type": "IMG",
+              "mimetype": "image/png",
+              "alt_text": "",
+              "caption": "",
+              "name": "link velocity.png",
+              "width": 1005,
+              "height": 579,
+              "size": 43009,
+              "src": "/case-study/link velocity.png",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1",
+                "900x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/67389ae9107a7e22c2301033/bin2/link velocity.png"
+            }
+          }
+        ],
+        "results_cards_as_accordion": false,
+        "conclusion_description": {
+          "nodes": []
+        },
+        "conclusion_content": {
+          "title": "All external links built by our team remain active, ensuring that our clients continue to benefit from their investments.",
+          "subtitle": null,
+          "description": {
+            "nodes": [
+              {
+                "type": "paragraph",
+                "value": "<p>This project exemplifies how precise, strategic actions and full collaboration between the client’s team and our in-house experts can achieve outstanding results, even without the initially anticipated budget, by adhering to best practices rather than outspending the competition.</p>"
+              },
+              {
+                "type": "paragraph",
+                "value": "<p>By following this structured approach, DesignRush successfully enhanced their backlink profile and achieved top rankings in key categories, demonstrating the effectiveness of strategic link-building and SEO optimization.</p>"
+              }
+            ]
+          }
+        }
+      },
+      "content_summary": {
+        "node_count": 0,
+        "plain_text_chars": 0,
+        "first_5_node_types": []
+      },
+      "full_content": []
+    },
+    {
+      "template": "blog",
+      "slug": "benefits-of-custom-software-development",
+      "public_url": null,
+      "bcms_id": "6718ea6cef5de485dc93f946",
+      "meta": {
+        "title": "The Benefits of Custom Business Software for Business Growth",
+        "slug": "benefits-of-custom-software-development",
+        "seo": {
+          "title": "The Benefits Of Custom Business Software",
+          "description": "Discover how custom business software can drive business growth by enhancing efficiency, scalability, and competitive advantage. Learn about the key benefits tailored solutions bring to your company."
+        },
+        "cover_image": {
+          "_id": "68401e741ebcf9aac6941d03",
+          "type": "IMG",
+          "mimetype": "image/png",
+          "alt_text": "",
+          "caption": "",
+          "name": "Blog Cover - The Benefits of Custom Business Software for Business Growth.png",
+          "width": 1200,
+          "height": 600,
+          "size": 684848,
+          "src": "/Blog Cover - The Benefits of Custom Business Software for Business Growth.png",
+          "sizeTransforms": [
+            "350x-1",
+            "600x-1",
+            "900x-1"
+          ],
+          "version": "2",
+          "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/68401e741ebcf9aac6941d03/bin2/Blog Cover - The Benefits of Custom Business Software for Business Growth.png"
+        },
+        "date": {
+          "timestamp": 1722297600000,
+          "timezoneOffset": -120
+        },
+        "read_time": "6 min",
+        "description": "What can you do today to help your business grow? How can you stay competitive? Can you improve your processes and efficiency? If you are asking yourself these questions it’s time to consider custom business…",
+        "author": {
+          "_id": "6718e0e6ef5de485dc93f935",
+          "createdAt": 1729683686034,
+          "updatedAt": 1769608359112,
+          "instanceId": "6710e3bdeeda0c4a2de4b330",
+          "templateId": "6718e069ef5de485dc93f92a",
+          "templateName": "person",
+          "userId": "6203d6c9b84228703e0954b2",
+          "statuses": [
+            {
+              "id": "6710e3bdeeda0c4a2de4b332",
+              "lng": "en",
+              "label": "Published"
+            }
+          ],
+          "meta": {
+            "en": {
+              "title": "Nebojsa Jankovic",
+              "slug": "nebojsa-jankovic",
+              "seo": {
+                "title": "Nebojsa Jankovic | Founder ",
+                "description": "I founded Heroic Rankings with desire to help other businesses increase their visibility and bring real customers. I love SEO and networking with people."
+              },
+              "bio": "I founded Heroic Rankings with desire to help other businesses increase their visibility and bring real customers. I love SEO and networking with people.",
+              "role": "Founder & CEO",
+              "image": {
+                "_id": "6718e0bcef5de485dc93f92e",
+                "type": "IMG",
+                "mimetype": "image/jpeg",
+                "alt_text": "Nebojsa Jankovic",
+                "caption": "",
+                "name": "nebojsa-jankovic.jpg",
+                "width": 704,
+                "height": 540,
+                "size": 22789,
+                "src": "/people/nebojsa-jankovic.jpg",
+                "sizeTransforms": [
+                  "350x-1",
+                  "600x-1",
+                  "900x-1",
+                  "1200x-1",
+                  "1600x-1",
+                  "1920x-1"
+                ],
+                "version": "2",
+                "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/6718e0bcef5de485dc93f92e/bin2/nebojsa-jankovic.jpg"
+              },
+              "description": {
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "value": "<p>My journey into the world of SEO has been one of perseverance and self-discovery. I started from humble beginnings, juggling warehouse shifts and studying engineering, but I always had a hunger for more. Throughout my life, I&#39;ve seen myself as a problem solver. To me, every problem is a puzzle first and a challenge second. This perspective has driven me to develop a keen eye for detail and a meticulous approach, which has earned me the reputation of being the go-to person for resolving SEO issues. Paired with my leadership skills and results-driven mindset, I view any task, no matter how monumental, as just another puzzle waiting to be solved. Through hard work and adaptability, I’ve built a career and a company I’m proud of, turning challenges into opportunities for success.</p>"
+                  },
+                  {
+                    "type": "paragraph",
+                    "value": "<p><strong>Name 3 of your personal traits: </strong></p>"
+                  },
+                  {
+                    "type": "paragraph",
+                    "value": "<p>Resilient, dedicated, and ambitious.</p>"
+                  },
+                  {
+                    "type": "paragraph",
+                    "value": "<p><strong>What I like to do in my spare time:</strong></p>"
+                  },
+                  {
+                    "type": "bulletList",
+                    "value": "<ul><li><p>Spending time with my wife and son</p></li><li><p>Traveling the world</p></li><li><p>Staying up to date with the latest marketing trends</p></li></ul>"
+                  }
+                ]
+              },
+              "cards": [
+                {
+                  "title": " ",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": []
+                  },
+                  "media": {
+                    "_id": "674ef7d75041788fdc396cc0",
+                    "type": "IMG",
+                    "mimetype": "image/jpeg",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "Nebojsa-jankovic-photo-5.JPG",
+                    "width": 4284,
+                    "height": 5712,
+                    "size": 5680329,
+                    "src": "/people/Nebojsa/Nebojsa-jankovic-photo-5.JPG",
+                    "sizeTransforms": [
+                      "350x-1",
+                      "600x-1",
+                      "900x-1",
+                      "1200x-1",
+                      "1600x-1",
+                      "1920x-1"
+                    ],
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef7d75041788fdc396cc0/bin2/Nebojsa-jankovic-photo-5.JPG"
+                  }
+                },
+                {
+                  "title": " ",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": []
+                  },
+                  "media": {
+                    "_id": "674ef7da5041788fdc396cc1",
+                    "type": "IMG",
+                    "mimetype": "image/jpeg",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "Nebojsa-jankovic-photo-4.JPG",
+                    "width": 1536,
+                    "height": 2048,
+                    "size": 543648,
+                    "src": "/people/Nebojsa/Nebojsa-jankovic-photo-4.JPG",
+                    "sizeTransforms": [
+                      "350x-1",
+                      "600x-1",
+                      "900x-1",
+                      "1200x-1"
+                    ],
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef7da5041788fdc396cc1/bin2/Nebojsa-jankovic-photo-4.JPG"
+                  }
+                },
+                {
+                  "title": " ",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": []
+                  },
+                  "media": {
+                    "_id": "674ef80f5041788fdc396cc2",
+                    "type": "IMG",
+                    "mimetype": "image/jpeg",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "Nebojsa-jankovic-photo-3.JPG",
+                    "width": 563,
+                    "height": 960,
+                    "size": 70591,
+                    "src": "/people/Nebojsa/Nebojsa-jankovic-photo-3.JPG",
+                    "sizeTransforms": [
+                      "350x-1"
+                    ],
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef80f5041788fdc396cc2/bin2/Nebojsa-jankovic-photo-3.JPG"
+                  }
+                },
+                {
+                  "title": " ",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": []
+                  },
+                  "media": {
+                    "_id": "674ef81e5041788fdc396cc3",
+                    "type": "IMG",
+                    "mimetype": "image/jpeg",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "Nebojsa-jankovic-photo-6.JPG",
+                    "width": 4284,
+                    "height": 5712,
+                    "size": 2937146,
+                    "src": "/people/Nebojsa/Nebojsa-jankovic-photo-6.JPG",
+                    "sizeTransforms": [
+                      "350x-1",
+                      "600x-1",
+                      "900x-1",
+                      "1200x-1",
+                      "1600x-1",
+                      "1920x-1"
+                    ],
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef81e5041788fdc396cc3/bin2/Nebojsa-jankovic-photo-6.JPG"
+                  }
+                },
+                {
+                  "title": " ",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": []
+                  },
+                  "media": {
+                    "_id": "674ef8315041788fdc396cc4",
+                    "type": "IMG",
+                    "mimetype": "image/jpeg",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "Nebojsa-jankovic-photo-2.JPG",
+                    "width": 5616,
+                    "height": 3744,
+                    "size": 1590167,
+                    "src": "/people/Nebojsa/Nebojsa-jankovic-photo-2.JPG",
+                    "sizeTransforms": [
+                      "350x-1",
+                      "600x-1",
+                      "900x-1",
+                      "1200x-1",
+                      "1600x-1",
+                      "1920x-1"
+                    ],
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef8315041788fdc396cc4/bin2/Nebojsa-jankovic-photo-2.JPG"
+                  }
+                },
+                {
+                  "title": " ",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": []
+                  },
+                  "media": {
+                    "_id": "674ef8465041788fdc396cc5",
+                    "type": "IMG",
+                    "mimetype": "image/jpeg",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "Nebojsa-jankovic-photo-1.JPG",
+                    "width": 1600,
+                    "height": 1068,
+                    "size": 354147,
+                    "src": "/people/Nebojsa/Nebojsa-jankovic-photo-1.JPG",
+                    "sizeTransforms": [
+                      "350x-1",
+                      "600x-1",
+                      "900x-1",
+                      "1200x-1"
+                    ],
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef8465041788fdc396cc5/bin2/Nebojsa-jankovic-photo-1.JPG"
+                  }
+                }
+              ],
+              "featured": true,
+              "linkedin": "https://www.linkedin.com/in/nebojsa-jankovic/",
+              "team_member": true
+            }
+          },
+          "content": {
+            "en": []
+          }
+        },
+        "category": {
+          "_id": "6738e357107a7e22c230107c",
+          "createdAt": 1731781463508,
+          "updatedAt": 1769608698788,
+          "instanceId": "6710e3bdeeda0c4a2de4b330",
+          "templateId": "6718e5f0ef5de485dc93f93f",
+          "templateName": "blog-category",
+          "userId": "6256ce298b80d634fb839f9b",
+          "statuses": [
+            {
+              "id": "6710e3bdeeda0c4a2de4b332",
+              "lng": "en",
+              "label": "Published"
+            }
+          ],
+          "meta": {
+            "en": {
+              "title": "SEO",
+              "slug": "seo"
+            }
+          },
+          "content": {
+            "en": []
+          }
+        },
+        "related_service": {
+          "_id": "671b4f383beff4fc58f49fed",
+          "createdAt": 1729843000424,
+          "updatedAt": 1769608294512,
+          "instanceId": "6710e3bdeeda0c4a2de4b330",
+          "templateId": "671a5d7be93230ec1d3de24d",
+          "templateName": "service",
+          "userId": "6203d6c9b84228703e0954b2",
+          "statuses": [
+            {
+              "id": "6710e3bdeeda0c4a2de4b332",
+              "lng": "en",
+              "label": "Published"
+            }
+          ],
+          "meta": {
+            "en": {
+              "title": "Technical SEO Services",
+              "slug": "technical",
+              "seo": {
+                "title": "Technical SEO Service",
+                "description": "Elevate performance, enhance crawlability, and conquer search engine excellence. Unleash the power of your website with Heroic Rankings' Technical SEO Services."
+              },
+              "cover_image": {
+                "_id": "671b5b7a3beff4fc58f49ff7",
+                "type": "IMG",
+                "mimetype": "image/jpeg",
+                "alt_text": "",
+                "caption": "",
+                "name": "technical-seo-services.jpg",
+                "width": 2880,
+                "height": 1228,
+                "size": 65175,
+                "src": "/service/technical-seo-services.jpg",
+                "sizeTransforms": [
+                  "350x-1",
+                  "600x-1",
+                  "900x-1",
+                  "1200x-1",
+                  "1600x-1",
+                  "1920x-1"
+                ],
+                "version": "2",
+                "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671b5b7a3beff4fc58f49ff7/bin2/technical-seo-services.jpg"
+              },
+              "description": {
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "value": "<p>Optimize Your Infrastructure. Enhance User<br />Experience. Boost Rankings.</p>"
+                  }
+                ]
+              },
+              "root_seo_page": false,
+              "hero_title": "Build a Strong Website Foundation and Achieve Top Rankings",
+              "hero_subtitle": "Foundation",
+              "hero_description": {
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "value": "<p>For every second your page load time is delayed, your bounce rate increases, causing you to lose valuable leads. Enhance your website&#39;s performance and capture high-quality leads and traffic with Heroic Rankings Marketing Agency&#39;s technical SEO services.</p>"
+                  }
+                ]
+              },
+              "hero_cta_description": {
+                "nodes": [
+                  {
+                    "type": "paragraph",
+                    "value": "<p>Are you ready to reveal your website&#39;s technical SEO issues and resolve them efficiently?</p>"
+                  }
+                ]
+              },
+              "hero_cta": {
+                "label": "Get Your Free Technical SEO Audit Now!",
+                "href": "/contact/"
+              },
+              "cards_slide_title": "Comprehensive Technical SEO Services",
+              "cards_slide_subtitle": "Solutions",
+              "cards_slide": [
+                {
+                  "title": "Website Audit and Analysis",
+                  "subtitle": "Revitalizing Your Digital Foundation",
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>Our comprehensive website audit delves into every corner of your site’s technical<br />infrastructure. We identify issues like broken links, duplicate content, and crawl<br />errors, paving the way for search engine crawlers and enhancing user experience.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "6718d0dfef5de485dc93f925",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "web.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 899,
+                    "src": "/icons/web.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/6718d0dfef5de485dc93f925/bin2/web.svg"
+                  },
+                  "link": {
+                    "label": "Get Your Audit",
+                    "href": "/contact/"
+                  }
+                },
+                {
+                  "title": "XML Sitemap Optimization",
+                  "subtitle": "Guiding Search Engines through Your Content",
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>XML sitemaps serve as blueprints for search engines. We optimize your sitemaps to ensure efficient content discovery and indexing, enhancing your website’s visibility in search results.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "671b5d913beff4fc58f49ffd",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "list.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 2535,
+                    "src": "/icons/list.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671b5d913beff4fc58f49ffd/bin2/list.svg"
+                  },
+                  "link": {
+                    "label": "Optimize Your Sitemaps",
+                    "href": "/contact/"
+                  }
+                },
+                {
+                  "title": "Robots.txt Optimization",
+                  "subtitle": "Navigating the Digital Landscape",
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>Robots.txt files instruct search engine bots on which pages to crawl. Our optimization ensures important pages are accessible while sensitive content is<br />hidden, enhancing your overall SEO strategy.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "671b5d903beff4fc58f49ffc",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "robot.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 2142,
+                    "src": "/icons/robot.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671b5d903beff4fc58f49ffc/bin2/robot.svg"
+                  },
+                  "link": {
+                    "label": "Optimize Robots.txt",
+                    "href": "/contact/"
+                  }
+                },
+                {
+                  "title": "Website Speed Optimization",
+                  "subtitle": "Accelerating Your Digital Journey",
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>Website speed impacts user experience and search rankings. Our speed optimization techniques include compressing images, minimizing code, and optimizing server configurations to ensure a fast-loading site</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "6718d0ddef5de485dc93f91d",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "speed-meter.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 1571,
+                    "src": "/icons/speed-meter.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/6718d0ddef5de485dc93f91d/bin2/speed-meter.svg"
+                  },
+                  "link": {
+                    "label": "Improve Your Speed",
+                    "href": "/contact/"
+                  }
+                },
+                {
+                  "title": "Mobile-Friendly Optimization",
+                  "subtitle": "Seamless Experiences on All Devices",
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>Ensuring a responsive, user-friendly mobile experience is crucial. Our strategies adapt your website to various screen sizes and devices, improving mobile search rankings and user engagement.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "6718d0d3ef5de485dc93f902",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "devices.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 1001,
+                    "src": "/icons/devices.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/6718d0d3ef5de485dc93f902/bin2/devices.svg"
+                  },
+                  "link": {
+                    "label": "Optimize for Mobile",
+                    "href": "/contact/"
+                  }
+                },
+                {
+                  "title": "Schema Markup Implementation",
+                  "subtitle": "Adding Depth to Your Content",
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>Schema markup provides additional context to search engines, enhancing your<br />chances of appearing in rich snippets and answer boxes in search results, boosting<br />your visibility and click-through rates.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "671b5d913beff4fc58f49ffe",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "circle-arrow.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 1834,
+                    "src": "/icons/circle-arrow.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671b5d913beff4fc58f49ffe/bin2/circle-arrow.svg"
+                  },
+                  "link": {
+                    "label": "Implement Schema Markup",
+                    "href": "/contact/"
+                  }
+                }
+              ],
+              "cta_block": {
+                "title": "Ready to start optimizing your website’s technical performance and search engine rankings?",
+                "subtitle": "Achieve Technical SEO Excellence",
+                "description": "Contact us to schedule a consultation and learn how our technical SEO services can transform your online presence.",
+                "cta": {
+                  "label": "Get Up and Running Today",
+                  "href": "/contact/"
+                }
+              },
+              "results_title": "Why Choose Heroic Rankings?",
+              "results_subtitle": "Guided by results",
+              "results_cards": [
+                {
+                  "title": "Expertise",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>Proven track record of success across various industries.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "6718d0d2ef5de485dc93f8fe",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "certificate.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 3281,
+                    "src": "/icons/certificate.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/6718d0d2ef5de485dc93f8fe/bin2/certificate.svg"
+                  }
+                },
+                {
+                  "title": "Customized Strategies",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>Tailored to your goals and industry.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "671b5c823beff4fc58f49ffa",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "grid-boxes.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 559,
+                    "src": "/icons/grid-boxes.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671b5c823beff4fc58f49ffa/bin2/grid-boxes.svg"
+                  }
+                },
+                {
+                  "title": "Comprehensive Services",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>From on-page to technical SEO, we cover it all</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "671b5c833beff4fc58f49ffb",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "check-list.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 564,
+                    "src": "/icons/check-list.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671b5c833beff4fc58f49ffb/bin2/check-list.svg"
+                  }
+                },
+                {
+                  "title": "Transparent Reporting",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>Regular updates and detailed reports on your SEO performance.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "671b5c823beff4fc58f49ff9",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "message.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 2118,
+                    "src": "/icons/message.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671b5c823beff4fc58f49ff9/bin2/message.svg"
+                  }
+                },
+                {
+                  "title": "Dedicated Support",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": [
+                      {
+                        "type": "paragraph",
+                        "value": "<p>A team of SEO experts always ready to assist you.</p>"
+                      }
+                    ]
+                  },
+                  "media": {
+                    "_id": "671b5c813beff4fc58f49ff8",
+                    "type": "SVG",
+                    "mimetype": "image/svg+xml",
+                    "alt_text": "",
+                    "caption": "",
+                    "name": "support.svg",
+                    "width": -1,
+                    "height": -1,
+                    "size": 2459,
+                    "src": "/icons/support.svg",
+                    "sizeTransforms": null,
+                    "version": "2",
+                    "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671b5c813beff4fc58f49ff8/bin2/support.svg"
+                  }
+                },
+                {
+                  "title": "Take Your SEO to the Next Level",
+                  "subtitle": null,
+                  "description": {
+                    "nodes": []
+                  },
+                  "link": {
+                    "label": "Take the First Step Today",
+                    "href": "/contact/"
+                  }
+                }
+              ],
+              "case_studies_title": "Success Stories",
+              "case_studies_subtitle": "Proven performance",
+              "case_studies_cards": [
+                {
+                  "_id": "671a2529b98a24129383bd5f",
+                  "createdAt": 1729766697765,
+                  "updatedAt": 1769608647836,
+                  "instanceId": "6710e3bdeeda0c4a2de4b330",
+                  "templateId": "671a222fb98a24129383bd5a",
+                  "templateName": "case-study",
+                  "userId": "6203d6c9b84228703e0954b2",
+                  "statuses": [
+                    {
+                      "id": "6710e3bdeeda0c4a2de4b332",
+                      "lng": "en",
+                      "label": "Published"
+                    }
+                  ],
+                  "meta": {
+                    "en": {
+                      "title": "Affinda",
+                      "slug": "affinda",
+                      "seo": {
+                        "title": "Affinda SEO Case Study | Boosting \"Resume Parser\" Rankings",
+                        "description": "Discover how Heroic Rankings helped Affinda dominate search results for \"resume parser\" with a strategic link-building campaign that improved rankings and organic visibility."
+                      },
+                      "read_time": null,
+                      "date": {
+                        "timestamp": 1689292800000,
+                        "timezoneOffset": -60
+                      },
+                      "service_featured_title": "Boosted organic search traffic by 300% and improved lead generation by 120% in 6 months.",
+                      "service_featured_description": {
+                        "nodes": [
+                          {
+                            "type": "paragraph",
+                            "value": "<p>Our targeted SEO strategy focused on content optimization, keyword research, and technical improvements led to substantial increases in organic search traffic and lead generation for Affinda.</p>"
+                          }
+                        ]
+                      },
+                      "hero_image": {
+                        "_id": "671a23d7b98a24129383bd5e",
+                        "type": "IMG",
+                        "mimetype": "image/jpeg",
+                        "alt_text": "",
+                        "caption": "",
+                        "name": "affinda.jpg",
+                        "width": 2880,
+                        "height": 1228,
+                        "size": 52310,
+                        "src": "/case-study/affinda.jpg",
+                        "sizeTransforms": [
+                          "350x-1",
+                          "600x-1",
+                          "900x-1",
+                          "1200x-1",
+                          "1600x-1",
+                          "1920x-1"
+                        ],
+                        "version": "2",
+                        "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671a23d7b98a24129383bd5e/bin2/affinda.jpg"
+                      },
+                      "description": "Affinda is a leading provider of AI-powered document parsing and data extraction solutions. Their advanced technology enables businesses to automate the extraction of critical data from various documents, enhancing efficiency and accuracy. The company's flagship product, the resume parser, helps organizations streamline their recruitment processes by accurately extracting information from resumes.",
+                      "our_job": "Link building for SaaS",
+                      "website": {
+                        "label": "affinda.com",
+                        "href": "https://www.affinda.com"
+                      },
+                      "objective": {
+                        "nodes": [
+                          {
+                            "type": "paragraph",
+                            "value": "<p>The primary goal was to achieve top rankings for the keyword &quot;resume parser&quot; on Google to increase visibility and attract more customers.</p>"
+                          }
+                        ]
+                      },
+                      "challenges": [
+                        {
+                          "title": "Initial SEO Status",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Affinda faced strong competition from established players in the document parsing industry, making it difficult to secure top rankings.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Key Obstacles",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>The market for resume parsers is highly competitive, with numerous companies vying for the same keywords.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Resource Constraints",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Affinda needed an effective SEO strategy that could deliver results within a limited budget.</p>"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "strategy_items": [
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>To overcome these challenges, the following strategies were implemented:</strong></p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>1. Comprehensive SEO Audit</strong><br />Conducted a thorough audit of Affinda&#39;s website to identify technical SEO issues, content gaps, and backlink opportunities.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>2. Keyword Optimization</strong><br />Focused on optimizing on-page elements, including title tags, meta descriptions, headings, and content, for the keyword &quot;resume parser&quot;.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>3. High-Quality Content Creation</strong><br />Developed in-depth, high-quality content around the keyword &quot;resume parser&quot; to establish Affinda as an authority in the field.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>4. Link Building</strong><br />Implemented a targeted link-building campaign to acquire high-quality backlinks from relevant, authoritative websites in the AI, technology, and recruitment industries.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>5. Key Link Building Postulates</strong></p>"
+                            },
+                            {
+                              "type": "bulletList",
+                              "value": "<ul><li><p> Publish content on topically relevant websites with a contextual fit focused on AI, technology, and recruitment.</p></li><li><p> Ensure publications are on websites with at least two of three criteria: Domain Rating (DR) 50+, Organic Traffic 1000+ with relevant traffic, and reputable TLDs.</p></li><li><p> Maintain a consistent link velocity to match the growth of competitors.</p></li><li><p> Keep all external links live for at least 11 months after publication.</p></li></ul>"
+                            }
+                          ]
+                        }
+                      ],
+                      "execution_description": "With a clear strategy in place, the execution involved:",
+                      "execution_cards": [
+                        {
+                          "title": "Content Optimization",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Enhanced existing content and created new content targeting the keyword &quot;resume parser.&quot;</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Outreach Campaigns",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Conducted targeted outreach to secure backlinks from high-authority sites, leveraging relationships with industry influencers and publications.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Technical SEO Improvements",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Fixed identified technical issues, such as site speed, mobile usability, and structured data, to improve overall site performance and search engine visibility.</p>"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "results_description": "The combined efforts led to significant improvements:",
+                      "results_cards": [
+                        {
+                          "title": "Keyword Rankings",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Achieved the top position on Google for the keyword &quot;resume parser,&quot; surpassing established competitors. This success was validated by the Ahrefs data showing Affinda ranking #1.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Organic Traffic Growth",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Substantial increase in organic traffic, from approximately 11,000 visitors to 28,000 visitors, representing a 2.5x growth.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Referring Domains",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Increased the number of high-quality referring domains significantly over the campaign period - from 39 referring domains in March 2023 to 142 in July 2023.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Backlink Profile",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Maintained high-quality backlinks, which remained active and continued to provide SEO benefits. We built high-quality links from reputable sites, including Upwork, Entrepreneur, and HubSpot.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Domain Rating",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Achieved significant growth in Domain Rating from 39 to 48 indicating improved site authority and visibility.</p>"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "results_cards_as_accordion": false,
+                      "conclusion_description": {
+                        "nodes": []
+                      },
+                      "conclusion_content": {
+                        "title": "All external links built by our team remain active, ensuring that our clients continue to benefit from their investments.",
+                        "subtitle": null,
+                        "description": {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>This project exemplifies how precise, strategic actions and full collaboration between the client’s team and our in-house experts can achieve outstanding results, even without the initially anticipated budget, by adhering to best practices rather than outspending the competition.</p>"
+                            },
+                            {
+                              "type": "paragraph",
+                              "value": "<p>By following this structured approach, Affinda successfully achieved top rankings for the critical keyword &quot;resume parser,&quot; demonstrating the effectiveness of strategic link-building and SEO optimization.</p>"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "content": {
+                    "en": []
+                  }
+                },
+                {
+                  "_id": "671a2754b98a24129383bd60",
+                  "createdAt": 1729767252784,
+                  "updatedAt": 1769608652228,
+                  "instanceId": "6710e3bdeeda0c4a2de4b330",
+                  "templateId": "671a222fb98a24129383bd5a",
+                  "templateName": "case-study",
+                  "userId": "6203d6c9b84228703e0954b2",
+                  "statuses": [
+                    {
+                      "id": "6710e3bdeeda0c4a2de4b332",
+                      "lng": "en",
+                      "label": "Published"
+                    }
+                  ],
+                  "meta": {
+                    "en": {
+                      "title": "My Baskets",
+                      "slug": "my-baskets",
+                      "seo": {
+                        "title": "My Baskets SEO Success | How Link Building Increased Traffic",
+                        "description": "Learn how Heroic Rankings elevated My Baskets' organic traffic through strategic outreach and high-authority backlinks, strengthening their position in the online gift industry."
+                      },
+                      "read_time": null,
+                      "date": {
+                        "timestamp": 1733011200000,
+                        "timezoneOffset": -60
+                      },
+                      "service_featured_title": "Increased organic traffic by 200% and sales by 150% in 12 months.",
+                      "service_featured_description": {
+                        "nodes": [
+                          {
+                            "type": "paragraph",
+                            "value": "<p>By implementing a comprehensive SEO strategy including technical SEO, on-page optimization, and content marketing, we helped My Baskets achieve significant growth in organic traffic and sales.</p>"
+                          }
+                        ]
+                      },
+                      "hero_image": {
+                        "_id": "671a23a6b98a24129383bd5d",
+                        "type": "IMG",
+                        "mimetype": "image/jpeg",
+                        "alt_text": "",
+                        "caption": "",
+                        "name": "my-baskets.jpg",
+                        "width": 2880,
+                        "height": 1228,
+                        "size": 40711,
+                        "src": "/case-study/my-baskets.jpg",
+                        "sizeTransforms": [
+                          "350x-1",
+                          "600x-1",
+                          "900x-1",
+                          "1200x-1",
+                          "1600x-1",
+                          "1920x-1"
+                        ],
+                        "version": "2",
+                        "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671a23a6b98a24129383bd5d/bin2/my-baskets.jpg"
+                      },
+                      "description": "My Baskets is a leading Canadian online retailer specializing in luxury gift baskets for various occasions. The website offers a wide range of themed baskets, including gourmet food, wine, baby gifts, and corporate gifts, ensuring a premium gifting experience for every customer.",
+                      "our_job": "Link building for eCommerce",
+                      "website": {
+                        "label": "mybaskets.ca",
+                        "href": "https://www.mybaskets.ca"
+                      },
+                      "objective": {
+                        "nodes": [
+                          {
+                            "type": "paragraph",
+                            "value": "<p>The primary goal was to regain top rankings for major keywords like &quot;gift baskets Toronto,&quot; &quot;gift baskets Canada,&quot; and &quot;gourmet gift baskets Canada,&quot; after noticing a significant drop in positions due to increased competition.</p>"
+                          }
+                        ]
+                      },
+                      "challenges": [
+                        {
+                          "title": "Initial SEO Status",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>My Baskets had stable positions at 2 and 3 for major keywords but dropped below position 20 by spring 2023.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Key Obstacles",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Competitors aggressively built new links, and previous link-building efforts were ineffective due to poor quality and relevance.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Resource Constraints",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>The budget limited the ability to match competitors&#39; link output, necessitating a strategic approach.</p>"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "strategy_items": [
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>To address these challenges within the budget constraints, the following strategies were implemented:</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>1. Anchor Text Audit and Optimization</strong><br />Conducted a thorough audit of internal and external anchor text portfolios to align with targeted anchor text distribution for the homepage and internal collection pages.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "bulletList",
+                              "value": "<ul><li><p><strong>Important Note</strong><br />Ensuring the proper distribution of anchor text is crucial for achieving optimal SEO results to supplement low budget off site SEO campaigns.<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;a. For the homepage, the target distribution was approximately 5% exact match anchors, 10% partial match and related anchors, and 85% branded and generic anchors,<br />&amp;nbsp;&amp;nbsp;&amp;nbsp;b. For internal collection pages, the target was 10% exact match anchors, 50% partial match and related anchors, and 40% branded and generic anchors,</p></li></ul>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>2. Internal and External Link Building</strong><br />Combined internal and external link-building efforts to achieve the desired anchor text ratio.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>3. Topically Relevant Publications</strong><br />Focused on publishing content on topically relevant websites with a contextual fit in lifestyle, parenting, and relationships.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>4. Quality Standards</strong><br />Ensured publications were on websites with a Domain Rating of 50+, organic traffic of 1000+ with Canadian traffic in the top three, and preferably a .CA ccTLD.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>5. Link Velocity Management</strong><br />Used daisy chaining to boost indexation time and matched link growth percentage rather than the exact number of links.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>6. Content Tweaks for Internal Links</strong><br />Enhanced internal links by tweaking content within the &lt;main&gt; element to include new sentences, paragraphs, or sections.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>7. Content Tweaks for External Links</strong><br />Maintained a 6:1 ratio of internal to external links to encourage frequent Googlebot visits in Refresh mode.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>8. Long-Term External Links</strong><br />Kept all external links live for at least 11 months after publication.</p>"
+                            }
+                          ]
+                        }
+                      ],
+                      "execution_description": "Due to budget limitations, the team focused on:",
+                      "execution_cards": [
+                        {
+                          "title": "Anchor Text Audit",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Utilized Screaming Frog, Ahrefs anchor text report, and in- house Python scripts to audit and flag anchor types, revealing over optimization with 35% exact match anchors.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Spreadsheet Setup and Sync",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Created a dynamic spreadsheet with array formulas to track anchor text distribution, internal link opportunities and their implementation progress.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Internal Links Implementation",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>The client&#39;s in-house team implemented internal links following the strategy, syncing efforts with our team using the spreadsheet.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "External Link Building",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Built five high-quality backlinks per month while the client&#39;s team added up to 30 internal links to maintain the ratio.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Automated Health Checks:",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>We implemented our own Python scripts to run automated health checks for each link built on a weekly basis in order to ensure it’s longevity for over 11 months.</p>"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "results_description": "Despite competitors' higher link output, the combined efforts led to significant improvements:",
+                      "results_cards": [
+                        {
+                          "title": "\"Gift Baskets Toronto\"",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>From outside the top 20 in June 2023 to position 2 by October 2023, surpassing bloomex.ca and baskits.com.</p>"
+                              }
+                            ]
+                          },
+                          "media": {
+                            "_id": "67389d9c107a7e22c2301036",
+                            "type": "IMG",
+                            "mimetype": "image/png",
+                            "alt_text": "",
+                            "caption": "",
+                            "name": "gift baskets toronto.png",
+                            "width": 726,
+                            "height": 627,
+                            "size": 68088,
+                            "src": "/case-study/gift baskets toronto.png",
+                            "sizeTransforms": [
+                              "350x-1",
+                              "600x-1"
+                            ],
+                            "version": "2",
+                            "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/67389d9c107a7e22c2301036/bin2/gift baskets toronto.png"
+                          }
+                        },
+                        {
+                          "title": "\"Gift Baskets Canada\"",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>From outside the top 20 in June 2023 to position 1 by October 2023, outranking <a href=\"https://bloomex.ca/\" target=\"_blank\">bloomex.ca</a>, <a href=\"https://baskits.com/\" target=\"_blank\">baskits.com</a>, and <a href=\"https://www.costco.ca/\" target=\"_blank\">costco.ca</a>.</p>"
+                              }
+                            ]
+                          },
+                          "media": {
+                            "_id": "67389de8107a7e22c2301037",
+                            "type": "IMG",
+                            "mimetype": "image/png",
+                            "alt_text": "",
+                            "caption": "",
+                            "name": "gift baskets canada.png",
+                            "width": 726,
+                            "height": 626,
+                            "size": 67438,
+                            "src": "/case-study/gift baskets canada.png",
+                            "sizeTransforms": [
+                              "350x-1",
+                              "600x-1"
+                            ],
+                            "version": "2",
+                            "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/67389de8107a7e22c2301037/bin2/gift baskets canada.png"
+                          }
+                        },
+                        {
+                          "title": "\"Gift Basket\"",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>From fluctuating and disappearing from the top 20 in summer 2023 to position 1 by October 2023, competing strongly with <a href=\"https://bloomex.ca/\" target=\"_blank\">bloomex.ca</a>, <a href=\"https://baskits.com/\" target=\"_blank\">baskits.com</a>, and <a href=\"https://www.costco.ca/\" target=\"_blank\">costco.ca</a>.</p>"
+                              }
+                            ]
+                          },
+                          "media": {
+                            "_id": "67389e10107a7e22c2301038",
+                            "type": "IMG",
+                            "mimetype": "image/png",
+                            "alt_text": "",
+                            "caption": "",
+                            "name": "gift baskets.png",
+                            "width": 725,
+                            "height": 618,
+                            "size": 115065,
+                            "src": "/case-study/gift baskets.png",
+                            "sizeTransforms": [
+                              "350x-1",
+                              "600x-1"
+                            ],
+                            "version": "2",
+                            "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/67389e10107a7e22c2301038/bin2/gift baskets.png"
+                          }
+                        },
+                        {
+                          "title": "Googlebot in refresh mode visits have become more frequent and stable",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": ""
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Due to external link daisy chaining we’ve managed to keep new backlink indexation to above 80% within its first month of publishing, whereas it’s a common industry standard for it to be ~60% within the first three months of publishing",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": ""
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Due to automated backlink health checks with our internal Python scripts, we’ve never lost a single link for more than 48 hours keeping it within the index at all times. Our total link loss for this client was less than 0.5% within 11 months, whereas industry standard can be anywhere between 35%-60% within first six month of their publication.",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": []
+                          }
+                        }
+                      ],
+                      "results_cards_as_accordion": false,
+                      "conclusion_description": {
+                        "nodes": [
+                          {
+                            "type": "paragraph",
+                            "value": "<p>Anchor text distribution optimization played a crucial role when external link building was limited.</p>"
+                          },
+                          {
+                            "type": "paragraph",
+                            "value": "<p>By maintaining quality standards and consistent link velocity growth, we improved the referring domain average DR distribution, keeping an edge over competitors.</p>"
+                          }
+                        ]
+                      },
+                      "conclusion_content": {
+                        "title": "By following this structured approach, My Baskets successfully regained top positions for critical keywords, demonstrating the effectiveness of strategic link- building and anchor text optimization.",
+                        "subtitle": null,
+                        "description": {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>All external links built by our team remain active, ensuring that our clients continue to benefit from their investments.</p>"
+                            },
+                            {
+                              "type": "paragraph",
+                              "value": "<p>This project exemplifies how precise, strategic actions and full collaboration between the client’s team and our in-house experts can achieve outstanding results, even without the initially anticipated budget, by adhering to best practices rather than outspending the competition.</p>"
+                            }
+                          ]
+                        },
+                        "media": {
+                          "_id": "67389d6f107a7e22c2301035",
+                          "type": "IMG",
+                          "mimetype": "image/png",
+                          "alt_text": "",
+                          "caption": "",
+                          "name": "conclusion image.png",
+                          "width": 724,
+                          "height": 789,
+                          "size": 44956,
+                          "src": "/case-study/conclusion image.png",
+                          "sizeTransforms": [
+                            "350x-1",
+                            "600x-1"
+                          ],
+                          "version": "2",
+                          "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/67389d6f107a7e22c2301035/bin2/conclusion image.png"
+                        }
+                      }
+                    }
+                  },
+                  "content": {
+                    "en": []
+                  }
+                },
+                {
+                  "_id": "67389b07107a7e22c2301034",
+                  "createdAt": 1731762951691,
+                  "updatedAt": 1769608668621,
+                  "instanceId": "6710e3bdeeda0c4a2de4b330",
+                  "templateId": "671a222fb98a24129383bd5a",
+                  "templateName": "case-study",
+                  "userId": "6256ce298b80d634fb839f9b",
+                  "statuses": [
+                    {
+                      "id": "6710e3bdeeda0c4a2de4b332",
+                      "lng": "en",
+                      "label": "Published"
+                    }
+                  ],
+                  "meta": {
+                    "en": {
+                      "title": "DesignRush",
+                      "slug": "designrush",
+                      "seo": {
+                        "title": "DesignRush SEO Case Study | Strengthening Authority with Link Building",
+                        "description": "See how Heroic Rankings boosted DesignRush’s online authority with a powerful link-building strategy, driving increased visibility and trust in competitive search markets."
+                      },
+                      "read_time": null,
+                      "date": {
+                        "timestamp": 1734998400000,
+                        "timezoneOffset": -60
+                      },
+                      "service_featured_title": "Achieved a 250% increase in organic traffic and a 180% increase in engagement in 8 months.",
+                      "service_featured_description": {
+                        "nodes": [
+                          {
+                            "type": "paragraph",
+                            "value": "<p>By implementing a comprehensive SEO strategy including technical SEO, on-page optimization, and content marketing, we helped My Baskets achieve significant growth in organic traffic and sales.</p>"
+                          }
+                        ]
+                      },
+                      "hero_image": {
+                        "_id": "671a23d7b98a24129383bd5e",
+                        "type": "IMG",
+                        "mimetype": "image/jpeg",
+                        "alt_text": "",
+                        "caption": "",
+                        "name": "affinda.jpg",
+                        "width": 2880,
+                        "height": 1228,
+                        "size": 52310,
+                        "src": "/case-study/affinda.jpg",
+                        "sizeTransforms": [
+                          "350x-1",
+                          "600x-1",
+                          "900x-1",
+                          "1200x-1",
+                          "1600x-1",
+                          "1920x-1"
+                        ],
+                        "version": "2",
+                        "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/671a23d7b98a24129383bd5e/bin2/affinda.jpg"
+                      },
+                      "description": "DesignRush is a B2B marketplace that connects businesses with top professional agencies in fields such as web design, digital marketing, branding, and technology. The platform offers comprehensive agency listings, reviews, and expert advice, helping companies find the right partners for their projects. Competing directly with Clutch.co, DesignRush aimed to establish a strong presence in search results despite being a younger website with fewer listed agencies.",
+                      "our_job": "(link building for enterprise)",
+                      "website": {
+                        "label": "https://www.designrush.com/",
+                        "href": "https://www.designrush.com/"
+                      },
+                      "objective": {
+                        "nodes": [
+                          {
+                            "type": "paragraph",
+                            "value": "<p>The primary goal was to build high-quality backlinks to improve SEO and compete effectively with Clutch.co, particularly in the categories of Web Design Companies and Digital Marketing Agencies.</p>"
+                          }
+                        ]
+                      },
+                      "challenges": [
+                        {
+                          "title": "Initial SEO Status",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>DesignRush had a strong in-house SEO team covering strategy, content, and development but relied heavily on PRs and reciprocal backlinks, which were of lower quality and less effective.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Key Obstacles",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Reciprocal links, often from lower-quality sites, had limited SEO impact. The competition, particularly <a href=\"https://clutch.co/\" target=\"_blank\">Clutch.co</a>, had a significantly larger volume of high-quality backlinks.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Budget Constraints",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Initial link-building efforts by external agencies couldn&#39;t scale due to high costs and inconsistent quality.</p>"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "strategy_items": [
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p><strong>To overcome these challenges, the following strategies were implemented:</strong></p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>1. <strong>Standard Operating Procedures (SOPs) and Quality Guidelines</strong></p>"
+                            },
+                            {
+                              "type": "paragraph",
+                              "value": "<p>Established clear SOPs and quality guidelines for link building.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>2. <strong>Recruitment Support</strong></p>"
+                            },
+                            {
+                              "type": "paragraph",
+                              "value": "<p>Assisted in the recruitment and hiring process for new link builders.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>3. <strong>Interdepartmental Sync</strong></p>"
+                            },
+                            {
+                              "type": "paragraph",
+                              "value": "<p>Aligned work, goals, and KPIs with the SEO and content departments.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>4. <strong>Reporting</strong></p>"
+                            },
+                            {
+                              "type": "paragraph",
+                              "value": "<p>Developed reporting structures for shareholders, the head of marketing, and finance departments.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>5. <strong>Key Link Building Postulates</strong></p>"
+                            },
+                            {
+                              "type": "orderedList",
+                              "value": "<ol><li><p>Publish only on topically relevant websites with a contextual fit focused on web design, web development, marketing, business, and finance.</p></li><li><p>Publish only on websites that meet at least two of three criteria: Domain Rating (DR) 50+, Organic Traffic 1000+ with US traffic in the top three, and gTLDs or ccTLDs of English-speaking countries.</p></li><li><p>Daisy chain external links to boost indexation time and match link velocity percentage growth rather than exact link numbers.</p></li><li><p>Ensure all external links remain live for at least 11 months after publication.</p></li></ol>",
+                              "attrs": {
+                                "start": 1
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "execution_description": "With the founders initially employed at DesignRush, the execution involved:",
+                      "execution_cards": [
+                        {
+                          "title": "Link Building Team Formation",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Created and trained an internal link-building team.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Quality Link Acquisition",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Focused on acquiring high-quality backlinks from reputable sites like Upwork, Entrepreneur, HubSpot, and .EDU websites.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Health Checks",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Developed Python scripts to monitor link health, reducing link loss to less than 5% within the first 12 months.</p>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Indexation Improvement",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Implemented strategies to ensure over 80% of new links were indexed within a month of publication.</p>"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "results_description": "Despite competitors' higher link output, the combined efforts led to significant improvements:",
+                      "results_cards": [
+                        {
+                          "title": "DR and Traffic Growth",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Increased Domain Rating from 70 to 90, organic traffic from 90,000 to 1,000,000, and traffic value from ~$30,000 to ~$3,200,000 (Ahrefs metrics).</p>"
+                              }
+                            ]
+                          },
+                          "media": {
+                            "_id": "67389a7c107a7e22c2301032",
+                            "type": "IMG",
+                            "mimetype": "image/png",
+                            "alt_text": "",
+                            "caption": "",
+                            "name": "DR and Traffic Growth analytics.png",
+                            "width": 1353,
+                            "height": 918,
+                            "size": 123550,
+                            "src": "/case-study/DR and Traffic Growth analytics.png",
+                            "sizeTransforms": [
+                              "350x-1",
+                              "600x-1",
+                              "900x-1",
+                              "1200x-1"
+                            ],
+                            "version": "2",
+                            "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/67389a7c107a7e22c2301032/bin2/DR and Traffic Growth analytics.png"
+                          }
+                        },
+                        {
+                          "title": "Keyword Rankings",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Achieved top positions for key categories, outranking <a href=\"https://clutch.co/\" target=\"_blank\">Clutch.co</a> for &quot;Web Design Company&quot; and &quot;Digital Marketing Agency&quot; keywords, holding positions 1 and 2 on Google.</p>"
+                              },
+                              {
+                                "type": "bulletList",
+                                "value": "<ul><li><p><strong>&quot;digital marketing agency&quot;</strong><br />From position #7 in back in November 2022 to position 1 by July 2024, outranking <a href=\"https://clutch.co/\" target=\"_blank\">Clutch.co</a></p></li><li><p><strong>&quot;web design company&quot;</strong><br />From position #4 in back in July 2022 to position 1 by May 2024, outranking <a href=\"https://clutch.co/\" target=\"_blank\">Clutch.co</a> and <a href=\"https://www.g2.com/\" target=\"_blank\">G2.com</a></p></li></ul>"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "title": "Link velocity and average domain rating ",
+                          "subtitle": null,
+                          "description": {
+                            "nodes": [
+                              {
+                                "type": "paragraph",
+                                "value": "<p>Despite having far fewer referring domains, we successfully matched and maintained their link velocity and have continued to sustain this pace.</p>"
+                              }
+                            ]
+                          },
+                          "media": {
+                            "_id": "67389ae9107a7e22c2301033",
+                            "type": "IMG",
+                            "mimetype": "image/png",
+                            "alt_text": "",
+                            "caption": "",
+                            "name": "link velocity.png",
+                            "width": 1005,
+                            "height": 579,
+                            "size": 43009,
+                            "src": "/case-study/link velocity.png",
+                            "sizeTransforms": [
+                              "350x-1",
+                              "600x-1",
+                              "900x-1"
+                            ],
+                            "version": "2",
+                            "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/67389ae9107a7e22c2301033/bin2/link velocity.png"
+                          }
+                        }
+                      ],
+                      "results_cards_as_accordion": false,
+                      "conclusion_description": {
+                        "nodes": []
+                      },
+                      "conclusion_content": {
+                        "title": "All external links built by our team remain active, ensuring that our clients continue to benefit from their investments.",
+                        "subtitle": null,
+                        "description": {
+                          "nodes": [
+                            {
+                              "type": "paragraph",
+                              "value": "<p>This project exemplifies how precise, strategic actions and full collaboration between the client’s team and our in-house experts can achieve outstanding results, even without the initially anticipated budget, by adhering to best practices rather than outspending the competition.</p>"
+                            },
+                            {
+                              "type": "paragraph",
+                              "value": "<p>By following this structured approach, DesignRush successfully enhanced their backlink profile and achieved top rankings in key categories, demonstrating the effectiveness of strategic link-building and SEO optimization.</p>"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "content": {
+                    "en": []
+                  }
+                }
+              ],
+              "faq": {
+                "title": "Frequently Asked Questions",
+                "subtitle": "Find Your Answers",
+                "items": [
+                  {
+                    "question": "What is technical SEO?",
+                    "answer": {
+                      "nodes": [
+                        {
+                          "type": "paragraph",
+                          "value": "<p>Technical SEO focuses on optimizing your website&#39;s technical aspects to enhance<br />its visibility and performance on search engines.</p>"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "question": "How does a website audit contribute to technical SEO?",
+                    "answer": {
+                      "nodes": [
+                        {
+                          "type": "paragraph",
+                          "value": "<p>A website audit identifies technical issues, improving your website’s accessibility to<br />search engines and enhancing user experience.</p>"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "question": "What is the purpose of XML sitemaps in technical SEO?",
+                    "answer": {
+                      "nodes": [
+                        {
+                          "type": "paragraph",
+                          "value": "<p>XML sitemaps guide search engines through your website’s pages, improving<br />search engine visibility.</p>"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "question": "Why is robots.txt optimization important?",
+                    "answer": {
+                      "nodes": [
+                        {
+                          "type": "paragraph",
+                          "value": "<p>Robots.txt optimization controls which pages search engines can access, ensuring they prioritize relevant content.</p>"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "question": "How does website speed optimization impact SEO?",
+                    "answer": {
+                      "nodes": [
+                        {
+                          "type": "paragraph",
+                          "value": "<p>Website speed is a ranking factor. Speed optimization improves page load times,<br />leading to better search rankings and reduced bounce rates.</p>"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "question": "What is mobile-friendly optimization and why is it crucial?",
+                    "answer": {
+                      "nodes": [
+                        {
+                          "type": "paragraph",
+                          "value": "<p>Mobile-friendly optimization ensures your website is responsive across devices,<br />improving search visibility and user engagement.</p>"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "contact_block": {
+                "title": {
+                  "nodes": [
+                    {
+                      "type": "paragraph",
+                      "value": "<p>Perfect Your Site with<br />Technical SEO Precision</p>"
+                    }
+                  ]
+                },
+                "description": "Contact us to schedule a consultation and discover how our technical SEO services can optimize your website’s infrastructure, enhance user experience,and boost your search engine rankings.",
+                "cta": {
+                  "label": "Get Started Now",
+                  "href": "/contact/"
+                }
+              }
+            }
+          },
+          "content": {
+            "en": []
+          }
+        }
+      },
+      "content_summary": {
+        "node_count": 0,
+        "plain_text_chars": 0,
+        "first_5_node_types": []
+      },
+      "full_content": [
+        {
+          "type": "paragraph",
+          "value": "<p>What can you do today to help your business grow? How can you stay competitive? Can you improve your processes and efficiency? If you are asking yourself these questions it’s time to consider custom business software. A solution made only for you and with you in mind.<br /><br />Sounds great, but is it really worth it? Data shows that by next year, the custom software development industry will generate $507.2 billion in revenue. This means custom software development is on the rise.<br /><br />If this number is not enough to convince you, we have prepared 10 key benefits of custom software that you can’t afford to miss. Let’s start!</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h2>What is Custom Business Software?</h2>",
+          "attrs": {
+            "level": 2
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom business software is a customized software solution built for a specific business. It is developed to address unique requests and demands that are uncommon and connected to a single business, niche, or industry.<br /><br />Unlike most generic solutions, custom solutions are not a one-size-fits-all kind of product. This means that these tailored software solutions are built to fit a current system and business processes that need improving. Because of their personalized approach, custom business software solutions are not only what the business needs but also what it can grow with.<br /><br />They work great for small businesses as well as enterprise-level companies so your business size or business goals won’t be in the way. What makes them so great is that they are easy to advertise and package as products for other similar businesses. To fully realize your project’s potential, partnering with a reliable custom software development company is essential like “<a href=\"https://brigit.dev/\" target=\"_blank\">brigit.dev</a>”.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h2>Examples of Custom Software Solutions</h2>",
+          "attrs": {
+            "level": 2
+          }
+        },
+        {
+          "type": "bulletList",
+          "value": "<ul><li><p>Docebo: E-learning platform for businesses</p></li><li><p>TraceLink: Supply chain management for pharmaceuticals</p></li><li><p>Kareo: Medical practice management software</p></li><li><p>PastPerfect: Museum management software</p></li><li><p>Envirosuite: Environmental monitoring software</p></li></ul>"
+        },
+        {
+          "type": "heading",
+          "value": "<h2>Custom Business Software vs Off-the-Shelf Software</h2>",
+          "attrs": {
+            "level": 2
+          }
+        },
+        {
+          "type": "widget",
+          "value": {
+            "image": {
+              "_id": "68401e9f1ebcf9aac6941d04",
+              "type": "IMG",
+              "mimetype": "image/png",
+              "alt_text": "Custom Business Software vs Off-the-Shelf Software",
+              "caption": "",
+              "name": "The Benefits of Custom Business Software for Business Growth - Image 01.png",
+              "width": 800,
+              "height": 448,
+              "size": 499163,
+              "src": "/The Benefits of Custom Business Software for Business Growth - Image 01.png",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/68401e9f1ebcf9aac6941d04/bin2/The Benefits of Custom Business Software for Business Growth - Image 01.png"
+            }
+          },
+          "widgetName": "image"
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom business software and off-the-shelf solutions are different at their core. Custom software is designed for a particular business, while off-the-shelf solutions are intended for a broad range of users. While your business can benefit from both, only custom software solutions can help your business grow. Custom software<br /><br />Here are the differences that show why:</p>"
+        },
+        {
+          "type": "orderedList",
+          "value": "<ol><li><p>Custom software</p><ul><li><p>personalized approach</p></li><li><p>adaptable</p></li><li><p>not available to everyone</p></li><li><p>easy to scale and add new features</p></li></ul></li><li><p>Off-the-shelf software</p><ul><li><p>built for a mass audience</p></li><li><p>can&#39;t be adapted or changed</p></li><li><p>immediately available</p></li><li><p>little or no room for scalability</p></li></ul></li></ol>",
+          "attrs": {
+            "start": 1
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>To show you how these differences translate into real benefits, here&#39;s a list of key advantages custom software development can bring you.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h2>10 Key Benefits of Custom Business Software for Business Growth</h2>",
+          "attrs": {
+            "level": 2
+          }
+        },
+        {
+          "type": "heading",
+          "value": "<h3>1. Personalization for your unique needs</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software is designed to fit your specific needs. It addresses your unique processes and workflows. It also makes sure that the software works just the way you need it to. This means you get features that directly support your business and improve efficiency and effective use.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>2. Higher return on investment</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software provides a higher return on investment over time. Because it’s custom-built according to you it can save money in the long run. It helps avoid extra costs associated with adapting off-the-shelf solutions to fit your business.<br /><br />Additionally, it improves your work and speeds up your progress. It also makes you one step ahead of everyone on the market, because you need very detailed and specific industry expertise to make it. This makes you an industry leader and you can profit from this knowledge.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>3. Competitive advantage</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software gives you a competitive edge because it keeps you ahead of the game. Your competition probably isn’t investing in solutions like these. They don’t have the time, money, or the expertise to do it. Everyone wants a quick solution. This helps you become a leading name. You can then profit from this down the line and sell your solution to others. It will be easier to market and position yourself as an authority on this matter.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>4. Easier scalability</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software can grow with your business. As your needs change or expand, the software can be adjusted to handle new challenges. This makes it easier to scale your operations without having to switch to a different system. This is one of the biggest benefits.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>5. Increased security</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software can provide better security because it is built specifically for your business. It can for example include advanced security features tailored to your unique requirements. This helps protect your sensitive data from potential threats and breaches. With custom solutions security is guaranteed.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>6. Selling and marketing potential</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software boosts your selling and marketing potential by offering a unique solution to specific market needs. This makes your product stand out and allows you to market it as a specialized tool with features not found in generic software. This easily sets you apart from competitors. It also gives you an even bigger return on the investment down the road.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>7. Faster processes</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>With custom software, you can speed up your business processes. The software is made to match your specific workflow and help with performance optimization. It eliminates unnecessary steps and reduces time spent on tasks. This means your team can work more quickly and productively. Ultimately it leads to faster completion of projects and services.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>8. Reliable support and maintenance</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software usually comes with reliable support and maintenance. Since the software is built specifically for your business, you can work closely with the development team to address any issues or updates. This ensures that the software remains up-to-date and functions smoothly. It also minimizes downtime and disruptions.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>9. Seamless integration</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software can be easily integrated with your existing systems, including legacy systems, to improve overall efficiency. It is designed to work seamlessly with other tools and applications you use to reduce compatibility issues. Easy integration doesn’t affect your workflow and avoids the complications of using incompatible software.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>10. Longevity</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software can have a longer lifespan compared to off-the-shelf solutions. It can be updated and modified as your business grows and changes, extending its usefulness. This long-term adaptability means you won’t need to replace the software very often. It saves time and money in the long run.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h2>Main Disadvantages of Custom Software Development You Should Consider</h2>",
+          "attrs": {
+            "level": 2
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom solutions come with many benefits that most definitely outweigh the possible drawbacks. However, it’s important to know these three disadvantages to prepare and use the full potential of custom software development.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>1. Time to deliver</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "widget",
+          "value": {
+            "image": {
+              "_id": "68401f591ebcf9aac6941d05",
+              "type": "IMG",
+              "mimetype": "image/png",
+              "alt_text": "time to deliver",
+              "caption": "",
+              "name": "The Benefits of Custom Business Software for Business Growth - Image 02.png",
+              "width": 800,
+              "height": 449,
+              "size": 723988,
+              "src": "/The Benefits of Custom Business Software for Business Growth - Image 02.png",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/68401f591ebcf9aac6941d05/bin2/The Benefits of Custom Business Software for Business Growth - Image 02.png"
+            }
+          },
+          "widgetName": "image"
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software development often takes longer to make compared to ready-made solutions. Because the software is built specifically for your needs, the process involves detailed planning, design, and multiple stages of development.<br /><br />Each phase requires a lot of attention to make sure that the software meets all requirements. This extended development period can seem long and tiring. But you must be prepared to wait and know that in the end, your business will benefit greatly from it.<br /><br />Also, choosing the right custom software development partner can make the development process quicker and better.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>2. Onboarding difficulties</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "widget",
+          "value": {
+            "image": {
+              "_id": "68401f8f1ebcf9aac6941d06",
+              "type": "IMG",
+              "mimetype": "image/png",
+              "alt_text": "onboarding difficulties ",
+              "caption": "",
+              "name": "The Benefits of Custom Business Software for Business Growth - Image 03.png",
+              "width": 800,
+              "height": 449,
+              "size": 526325,
+              "src": "/The Benefits of Custom Business Software for Business Growth - Image 03.png",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/68401f8f1ebcf9aac6941d06/bin2/The Benefits of Custom Business Software for Business Growth - Image 03.png"
+            }
+          },
+          "widgetName": "image"
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Even though these solutions are custom-made, some struggle to adapt to them. Unlike off-the-shelf solutions, custom software may have a longer adjustment period.<br /><br />You may need specialized training to learn how to use it. This is especially true if you are used to general solutions. It might be hard to switch or believe that a single solution can change so much. It’s often all in the mindset.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h3>3. Initial costs</h3>",
+          "attrs": {
+            "level": 3
+          }
+        },
+        {
+          "type": "widget",
+          "value": {
+            "image": {
+              "_id": "68401fb11ebcf9aac6941d07",
+              "type": "IMG",
+              "mimetype": "image/png",
+              "alt_text": "initial costs",
+              "caption": "",
+              "name": "The Benefits of Custom Business Software for Business Growth - Image 04.png",
+              "width": 800,
+              "height": 449,
+              "size": 564416,
+              "src": "/The Benefits of Custom Business Software for Business Growth - Image 04.png",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/68401fb11ebcf9aac6941d07/bin2/The Benefits of Custom Business Software for Business Growth - Image 04.png"
+            }
+          },
+          "widgetName": "image"
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>We don’t want to scare you, but we won’t hide this fact from you. The initial costs of custom software development can be quite high. Building software from scratch involves a lot of expenses for design, development, and testing. We know that this might be a barrier for many. Although the price is not always that high.<br /><br />Custom software development for small businesses is a lot smaller than for custom enterprise software development. Also, it’s important to note that the long-term benefits outweigh the initial costs and bring a high return on investment.</p>"
+        },
+        {
+          "type": "heading",
+          "value": "<h2>The Bottom Line</h2>",
+          "attrs": {
+            "level": 2
+          }
+        },
+        {
+          "type": "paragraph",
+          "value": "<p>Custom software development comes with many advantages. While the initial investment and longer development time might seem challenging, the benefits outweigh these concerns in the long run.<br /><br />It is a strategic investment that brings business growth. By focusing on your specific needs, it contributes to the long-term success of your business. So if you want to stay relevant and grow your business in 2026 custom software development is necessary.</p>"
+        },
+        {
+          "type": "paragraph",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "template": "person",
+      "slug": "nebojsa-jankovic",
+      "public_url": "https://heroicrankings.com/about/nebojsa-jankovic/",
+      "bcms_id": "6718e0e6ef5de485dc93f935",
+      "meta": {
+        "title": "Nebojsa Jankovic",
+        "slug": "nebojsa-jankovic",
+        "seo": {
+          "title": "Nebojsa Jankovic | Founder ",
+          "description": "I founded Heroic Rankings with desire to help other businesses increase their visibility and bring real customers. I love SEO and networking with people."
+        },
+        "bio": "I founded Heroic Rankings with desire to help other businesses increase their visibility and bring real customers. I love SEO and networking with people.",
+        "role": "Founder & CEO",
+        "image": {
+          "_id": "6718e0bcef5de485dc93f92e",
+          "type": "IMG",
+          "mimetype": "image/jpeg",
+          "alt_text": "Nebojsa Jankovic",
+          "caption": "",
+          "name": "nebojsa-jankovic.jpg",
+          "width": 704,
+          "height": 540,
+          "size": 22789,
+          "src": "/people/nebojsa-jankovic.jpg",
+          "sizeTransforms": [
+            "350x-1",
+            "600x-1",
+            "900x-1",
+            "1200x-1",
+            "1600x-1",
+            "1920x-1"
+          ],
+          "version": "2",
+          "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/6718e0bcef5de485dc93f92e/bin2/nebojsa-jankovic.jpg"
+        },
+        "description": {
+          "nodes": [
+            {
+              "type": "paragraph",
+              "value": "<p>My journey into the world of SEO has been one of perseverance and self-discovery. I started from humble beginnings, juggling warehouse shifts and studying engineering, but I always had a hunger for more. Throughout my life, I&#39;ve seen myself as a problem solver. To me, every problem is a puzzle first and a challenge second. This perspective has driven me to develop a keen eye for detail and a meticulous approach, which has earned me the reputation of being the go-to person for resolving SEO issues. Paired with my leadership skills and results-driven mindset, I view any task, no matter how monumental, as just another puzzle waiting to be solved. Through hard work and adaptability, I’ve built a career and a company I’m proud of, turning challenges into opportunities for success.</p>"
+            },
+            {
+              "type": "paragraph",
+              "value": "<p><strong>Name 3 of your personal traits: </strong></p>"
+            },
+            {
+              "type": "paragraph",
+              "value": "<p>Resilient, dedicated, and ambitious.</p>"
+            },
+            {
+              "type": "paragraph",
+              "value": "<p><strong>What I like to do in my spare time:</strong></p>"
+            },
+            {
+              "type": "bulletList",
+              "value": "<ul><li><p>Spending time with my wife and son</p></li><li><p>Traveling the world</p></li><li><p>Staying up to date with the latest marketing trends</p></li></ul>"
+            }
+          ]
+        },
+        "cards": [
+          {
+            "title": " ",
+            "subtitle": null,
+            "description": {
+              "nodes": []
+            },
+            "media": {
+              "_id": "674ef7d75041788fdc396cc0",
+              "type": "IMG",
+              "mimetype": "image/jpeg",
+              "alt_text": "",
+              "caption": "",
+              "name": "Nebojsa-jankovic-photo-5.JPG",
+              "width": 4284,
+              "height": 5712,
+              "size": 5680329,
+              "src": "/people/Nebojsa/Nebojsa-jankovic-photo-5.JPG",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1",
+                "900x-1",
+                "1200x-1",
+                "1600x-1",
+                "1920x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef7d75041788fdc396cc0/bin2/Nebojsa-jankovic-photo-5.JPG"
+            }
+          },
+          {
+            "title": " ",
+            "subtitle": null,
+            "description": {
+              "nodes": []
+            },
+            "media": {
+              "_id": "674ef7da5041788fdc396cc1",
+              "type": "IMG",
+              "mimetype": "image/jpeg",
+              "alt_text": "",
+              "caption": "",
+              "name": "Nebojsa-jankovic-photo-4.JPG",
+              "width": 1536,
+              "height": 2048,
+              "size": 543648,
+              "src": "/people/Nebojsa/Nebojsa-jankovic-photo-4.JPG",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1",
+                "900x-1",
+                "1200x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef7da5041788fdc396cc1/bin2/Nebojsa-jankovic-photo-4.JPG"
+            }
+          },
+          {
+            "title": " ",
+            "subtitle": null,
+            "description": {
+              "nodes": []
+            },
+            "media": {
+              "_id": "674ef80f5041788fdc396cc2",
+              "type": "IMG",
+              "mimetype": "image/jpeg",
+              "alt_text": "",
+              "caption": "",
+              "name": "Nebojsa-jankovic-photo-3.JPG",
+              "width": 563,
+              "height": 960,
+              "size": 70591,
+              "src": "/people/Nebojsa/Nebojsa-jankovic-photo-3.JPG",
+              "sizeTransforms": [
+                "350x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef80f5041788fdc396cc2/bin2/Nebojsa-jankovic-photo-3.JPG"
+            }
+          },
+          {
+            "title": " ",
+            "subtitle": null,
+            "description": {
+              "nodes": []
+            },
+            "media": {
+              "_id": "674ef81e5041788fdc396cc3",
+              "type": "IMG",
+              "mimetype": "image/jpeg",
+              "alt_text": "",
+              "caption": "",
+              "name": "Nebojsa-jankovic-photo-6.JPG",
+              "width": 4284,
+              "height": 5712,
+              "size": 2937146,
+              "src": "/people/Nebojsa/Nebojsa-jankovic-photo-6.JPG",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1",
+                "900x-1",
+                "1200x-1",
+                "1600x-1",
+                "1920x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef81e5041788fdc396cc3/bin2/Nebojsa-jankovic-photo-6.JPG"
+            }
+          },
+          {
+            "title": " ",
+            "subtitle": null,
+            "description": {
+              "nodes": []
+            },
+            "media": {
+              "_id": "674ef8315041788fdc396cc4",
+              "type": "IMG",
+              "mimetype": "image/jpeg",
+              "alt_text": "",
+              "caption": "",
+              "name": "Nebojsa-jankovic-photo-2.JPG",
+              "width": 5616,
+              "height": 3744,
+              "size": 1590167,
+              "src": "/people/Nebojsa/Nebojsa-jankovic-photo-2.JPG",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1",
+                "900x-1",
+                "1200x-1",
+                "1600x-1",
+                "1920x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef8315041788fdc396cc4/bin2/Nebojsa-jankovic-photo-2.JPG"
+            }
+          },
+          {
+            "title": " ",
+            "subtitle": null,
+            "description": {
+              "nodes": []
+            },
+            "media": {
+              "_id": "674ef8465041788fdc396cc5",
+              "type": "IMG",
+              "mimetype": "image/jpeg",
+              "alt_text": "",
+              "caption": "",
+              "name": "Nebojsa-jankovic-photo-1.JPG",
+              "width": 1600,
+              "height": 1068,
+              "size": 354147,
+              "src": "/people/Nebojsa/Nebojsa-jankovic-photo-1.JPG",
+              "sizeTransforms": [
+                "350x-1",
+                "600x-1",
+                "900x-1",
+                "1200x-1"
+              ],
+              "version": "2",
+              "url": "https://app.thebcms.com/api/v3/instance/6710e3bdeeda0c4a2de4b330/media/674ef8465041788fdc396cc5/bin2/Nebojsa-jankovic-photo-1.JPG"
+            }
+          }
+        ],
+        "featured": true,
+        "linkedin": "https://www.linkedin.com/in/nebojsa-jankovic/",
+        "team_member": true
+      },
+      "content_summary": {
+        "node_count": 0,
+        "plain_text_chars": 0,
+        "first_5_node_types": []
+      },
+      "full_content": []
+    }
+  ]
+}
