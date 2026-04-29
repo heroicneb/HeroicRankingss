@@ -22,6 +22,13 @@ const nextConfig: NextConfig = {
   reactCompiler: hasReactCompilerPlugin,
   // cacheComponents disabled: incompatible with dynamic CMS routes using sanityFetch (uncached live data).
   reactStrictMode: true,
+  // WHY: Don't auto-strip trailing slashes before custom redirects() runs.
+  // The legacy heroicrankings.com URLs all use trailing slashes, so the
+  // legacy → new redirect rules below match `/blog/` etc. directly. With
+  // the default behavior Next.js would 308 `/blog/` → `/blog` first and
+  // the legacy rule would never fire (verified pre-launch — every legacy
+  // URL was hitting a 404).
+  skipTrailingSlashRedirect: true,
   // WHY: No heavy server-only dependencies were detected in this repo.
   serverExternalPackages: [],
   // WHY: Improve image transfer efficiency and cacheability for Core Web Vitals.
