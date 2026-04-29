@@ -115,9 +115,14 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
             />
 
             {bioParagraphs.length > 0 ? (
-              <div className="mt-[30px] grid gap-5 text-[18px] font-normal leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] md:grid-cols-2 md:gap-x-[40px] lg:mt-[60px]">
+              <div className="mt-[30px] flex flex-col gap-5 text-[18px] font-normal leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-[60px]">
                 {bioParagraphs.map((paragraph, index) => (
-                  <p key={`${member._id}-bio-${index}`}>{paragraph}</p>
+                  <p
+                    className="whitespace-pre-line"
+                    key={`${member._id}-bio-${index}`}
+                  >
+                    {paragraph}
+                  </p>
                 ))}
               </div>
             ) : null}

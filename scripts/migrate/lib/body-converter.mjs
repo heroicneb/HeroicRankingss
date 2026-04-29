@@ -405,10 +405,21 @@ async function extractInlineImages(html, assetRegistry, logger) {
 
 /** Decode HTML entities and strip tags. Used for plain-text reductions. */
 function htmlToText(html) {
-  const dom = new JSDOM(`<!DOCTYPE html><body>${html}</body>`);
+  // Insert a newline marker before block-ish elements so list items and
+  // sibling block tags don't collapse into a single concatenated string
+  // when textContent strips markup. The marker is a literal "\n" the
+  // whitespace pass below preserves (we run \s collapsing per-line, not
+  // across the whole string).
+  const withBreaks = String(html).replace(
+    /<\/?(li|p|br|h[1-6]|tr|div)\b[^>]*>/gi,
+    "\n",
+  );
+  const dom = new JSDOM(`<!DOCTYPE html><body>${withBreaks}</body>`);
   const text = dom.window.document.body.textContent ?? "";
   return text
     .replace(/ /g, " ") // NBSP
-    .replace(/\s+/g, " ")
-    .trim();
+    .split("\n")
+    .map((line) => line.replace(/\s+/g, " ").trim())
+    .filter(Boolean)
+    .join("\n");
 }

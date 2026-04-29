@@ -8,7 +8,7 @@ export const POSTS_QUERY = defineQuery(`
     title,
     slug,
     excerpt,
-    mainImage { ..., asset->{ metadata { lqip } } },
+    mainImage { ..., asset->{ _id, _type, metadata { lqip } } },
     publishedAt,
     categories,
     author-> { name, photo }
@@ -22,14 +22,14 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
     titleHighlighted,
     slug,
     excerpt,
-    mainImage { ..., asset->{ metadata { lqip } } },
+    mainImage { ..., asset->{ _id, _type, metadata { lqip } } },
     body,
     publishedAt,
     categories,
     author-> {
       name,
       role,
-      photo { ..., asset->{ metadata { lqip } } },
+      photo { ..., asset->{ _id, _type, metadata { lqip } } },
       bio,
       bioParagraphs,
       linkedin
@@ -53,8 +53,8 @@ export const CASE_STUDIES_QUERY = defineQuery(`
     panelLabel,
     excerpt,
     publishedAt,
-    heroImage { ..., asset->{ metadata { lqip } } },
-    cardImage { ..., asset->{ metadata { lqip } } },
+    heroImage { ..., asset->{ _id, _type, metadata { lqip } } },
+    cardImage { ..., asset->{ _id, _type, metadata { lqip } } },
     metrics,
     services,
     featured,
@@ -70,7 +70,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
     slug,
     client,
     excerpt,
-    heroImage { ..., asset->{ metadata { lqip } } },
+    heroImage { ..., asset->{ _id, _type, metadata { lqip } } },
     metrics,
     body,
     services,
@@ -90,7 +90,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
       title,
       intro,
       bullets,
-      icon { ..., asset->{ metadata { lqip } } }
+      icon { ..., asset->{ _id, _type, metadata { lqip } } }
     },
     journeyTimeline,
     numbersThatMatter {
@@ -103,7 +103,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
         value,
         label,
         sub,
-        icon { ..., asset->{ metadata { lqip } } }
+        icon { ..., asset->{ _id, _type, metadata { lqip } } }
       }
     },
     growthChart,
@@ -116,7 +116,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
         _key,
         title,
         body,
-        image { ..., asset->{ metadata { lqip } } },
+        image { ..., asset->{ _id, _type, metadata { lqip } } },
         metricTags,
         isFullWidth
       }
@@ -179,8 +179,8 @@ export const TEAM_MEMBERS_QUERY = defineQuery(`
     slug,
     role,
     department,
-    photo { ..., asset->{ metadata { lqip } } },
-    cardImage { ..., asset->{ metadata { lqip } } },
+    photo { ..., asset->{ _id, _type, metadata { lqip } } },
+    cardImage { ..., asset->{ _id, _type, metadata { lqip } } },
     bio,
     bioParagraphs,
     contact,
@@ -197,8 +197,8 @@ export const TEAM_MEMBER_BY_SLUG_QUERY = defineQuery(`
     slug,
     role,
     department,
-    photo { ..., asset->{ metadata { lqip } } },
-    cardImage { ..., asset->{ metadata { lqip } } },
+    photo { ..., asset->{ _id, _type, metadata { lqip } } },
+    cardImage { ..., asset->{ _id, _type, metadata { lqip } } },
     bio,
     bioParagraphs,
     contact,
@@ -318,14 +318,14 @@ export const SERVICE_PAGE_BY_SLUG_QUERY = defineQuery(`
     heroDescription,
     heroCtaLabel,
     heroCtaUrl,
-    heroImage { ..., asset->{ metadata { lqip } } },
+    heroImage { ..., asset->{ _id, _type, metadata { lqip } } },
     solutionSectionLabel,
     solutionSectionHeading,
     serviceCards[] { _key, title, subtitle, body, icon, iconSrc },
     processSteps[] { _key, title, description },
     whyChooseItems[] { _key, title, description, icon, iconSrc },
     faqItems[]-> { _id, question, answer },
-    relatedCaseStudies[]-> { _id, title, slug, client, excerpt, heroImage { ..., asset->{ metadata { lqip } } } },
+    relatedCaseStudies[]-> { _id, title, slug, client, excerpt, heroImage { ..., asset->{ _id, _type, metadata { lqip } } } },
     seo
   }
 `);
@@ -343,7 +343,7 @@ export const PODCAST_EPISODES_QUERY = defineQuery(`
     description,
     publishedAt,
     guest { name, role, company },
-    heroImage { ..., asset->{ metadata { lqip } } }
+    heroImage { ..., asset->{ _id, _type, metadata { lqip } } }
   }
 `);
 
@@ -366,14 +366,14 @@ export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
       linkedinUrl,
       twitterUrl,
       websiteUrl,
-      photo { ..., asset->{ metadata { lqip } } }
+      photo { ..., asset->{ _id, _type, metadata { lqip } } }
     },
-    heroImage { ..., asset->{ metadata { lqip } } },
+    heroImage { ..., asset->{ _id, _type, metadata { lqip } } },
     keyInsights,
     bestMoments[] {
       _key,
       title,
-      thumbnail { ..., asset->{ metadata { lqip } } },
+      thumbnail { ..., asset->{ _id, _type, metadata { lqip } } },
       videoUrl,
       caption
     },
@@ -384,7 +384,7 @@ export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
       slug,
       episodeNumber,
       duration,
-      heroImage { ..., asset->{ metadata { lqip } } },
+      heroImage { ..., asset->{ _id, _type, metadata { lqip } } },
       guest { name }
     },
     seo
