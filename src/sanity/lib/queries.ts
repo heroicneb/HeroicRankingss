@@ -1,9 +1,14 @@
 import { defineQuery } from "next-sanity";
 
+// Pre-launch audit fixtures live in the production dataset under
+// deterministic IDs prefixed with `audit-fixture-`. Each public-facing
+// query gates them via `!(_id match "audit-fixture-*")` so the docs
+// stay queryable from audit scripts but never leak to the site.
+
 // --- Blog Posts ---
 
 export const POSTS_QUERY = defineQuery(`
-  *[_type == "post" && defined(slug.current)] | order(publishedAt desc) [0...12] {
+  *[_type == "post" && defined(slug.current) && !(_id match "audit-fixture-*")] | order(publishedAt desc) [0...12] {
     _id,
     title,
     slug,
@@ -16,7 +21,7 @@ export const POSTS_QUERY = defineQuery(`
 `);
 
 export const POST_BY_SLUG_QUERY = defineQuery(`
-  *[_type == "post" && slug.current == $slug][0] {
+  *[_type == "post" && slug.current == $slug && !(_id match "audit-fixture-*")][0] {
     _id,
     title,
     titleHighlighted,
@@ -39,13 +44,13 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
 `);
 
 export const POST_SLUGS_QUERY = defineQuery(`
-  *[_type == "post" && defined(slug.current)].slug.current
+  *[_type == "post" && defined(slug.current) && !(_id match "audit-fixture-*")].slug.current
 `);
 
 // --- Case Studies ---
 
 export const CASE_STUDIES_QUERY = defineQuery(`
-  *[_type == "caseStudy" && defined(slug.current)] | order(publishedAt desc) {
+  *[_type == "caseStudy" && defined(slug.current) && !(_id match "audit-fixture-*")] | order(publishedAt desc) {
     _id,
     title,
     slug,
@@ -63,7 +68,7 @@ export const CASE_STUDIES_QUERY = defineQuery(`
 `);
 
 export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
-  *[_type == "caseStudy" && slug.current == $slug][0] {
+  *[_type == "caseStudy" && slug.current == $slug && !(_id match "audit-fixture-*")][0] {
     _id,
     title,
     titleHighlighted,
@@ -129,11 +134,11 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
 `);
 
 export const CASE_STUDY_SLUGS_QUERY = defineQuery(`
-  *[_type == "caseStudy" && defined(slug.current)].slug.current
+  *[_type == "caseStudy" && defined(slug.current) && !(_id match "audit-fixture-*")].slug.current
 `);
 
 export const FEATURED_CASE_STUDIES_QUERY = defineQuery(`
-  *[_type == "caseStudy" && featured == true] | order(publishedAt desc) [0...6] {
+  *[_type == "caseStudy" && featured == true && !(_id match "audit-fixture-*")] | order(publishedAt desc) [0...6] {
     _id,
     title,
     slug,
@@ -147,7 +152,7 @@ export const FEATURED_CASE_STUDIES_QUERY = defineQuery(`
 // --- Testimonials ---
 
 export const TESTIMONIALS_QUERY = defineQuery(`
-  *[_type == "testimonial"] | order(order asc) {
+  *[_type == "testimonial" && !(_id match "audit-fixture-*")] | order(order asc) {
     _id,
     quote,
     authorName,
@@ -173,7 +178,7 @@ export const FAQ_BY_SERVICE_QUERY = defineQuery(`
 // --- Team Members ---
 
 export const TEAM_MEMBERS_QUERY = defineQuery(`
-  *[_type == "teamMember" && showOnAboutPage != false] | order(order asc) {
+  *[_type == "teamMember" && showOnAboutPage != false && !(_id match "audit-fixture-*")] | order(order asc) {
     _id,
     name,
     slug,
@@ -191,7 +196,7 @@ export const TEAM_MEMBERS_QUERY = defineQuery(`
 `);
 
 export const TEAM_MEMBER_BY_SLUG_QUERY = defineQuery(`
-  *[_type == "teamMember" && slug.current == $slug][0] {
+  *[_type == "teamMember" && slug.current == $slug && !(_id match "audit-fixture-*")][0] {
     _id,
     name,
     slug,
@@ -211,13 +216,13 @@ export const TEAM_MEMBER_BY_SLUG_QUERY = defineQuery(`
 `);
 
 export const TEAM_MEMBER_SLUGS_QUERY = defineQuery(`
-  *[_type == "teamMember" && defined(slug.current)].slug.current
+  *[_type == "teamMember" && defined(slug.current) && !(_id match "audit-fixture-*")].slug.current
 `);
 
 // --- Partner Logos ---
 
 export const PARTNER_LOGOS_QUERY = defineQuery(`
-  *[_type == "partnerLogo" && featured == true] | order(order asc) {
+  *[_type == "partnerLogo" && featured == true && !(_id match "audit-fixture-*")] | order(order asc) {
     _id,
     name,
     logo,
@@ -228,7 +233,7 @@ export const PARTNER_LOGOS_QUERY = defineQuery(`
 `);
 
 export const PARTNERSHIP_LOGOS_QUERY = defineQuery(`
-  *[_type == "partnerLogo" && partner == true] | order(order asc) {
+  *[_type == "partnerLogo" && partner == true && !(_id match "audit-fixture-*")] | order(order asc) {
     _id,
     name,
     logo,
@@ -239,7 +244,7 @@ export const PARTNERSHIP_LOGOS_QUERY = defineQuery(`
 `);
 
 export const ALL_PARTNER_LOGOS_QUERY = defineQuery(`
-  *[_type == "partnerLogo"] | order(order asc) {
+  *[_type == "partnerLogo" && !(_id match "audit-fixture-*")] | order(order asc) {
     _id,
     name,
     logo,
@@ -310,7 +315,7 @@ export const LEGAL_PAGE_BY_SLUG_QUERY = defineQuery(`
 // --- Service Pages ---
 
 export const SERVICE_PAGE_BY_SLUG_QUERY = defineQuery(`
-  *[_type == "servicePage" && slug.current == $slug][0] {
+  *[_type == "servicePage" && slug.current == $slug && !(_id match "audit-fixture-*")][0] {
     _id,
     serviceType,
     slug,
@@ -333,7 +338,7 @@ export const SERVICE_PAGE_BY_SLUG_QUERY = defineQuery(`
 // --- Podcast Episodes ---
 
 export const PODCAST_EPISODES_QUERY = defineQuery(`
-  *[_type == "podcastEpisode" && defined(slug.current)] | order(publishedAt desc) {
+  *[_type == "podcastEpisode" && defined(slug.current) && !(_id match "audit-fixture-*")] | order(publishedAt desc) {
     _id,
     title,
     titleHighlighted,
@@ -348,7 +353,7 @@ export const PODCAST_EPISODES_QUERY = defineQuery(`
 `);
 
 export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
-  *[_type == "podcastEpisode" && slug.current == $slug][0] {
+  *[_type == "podcastEpisode" && slug.current == $slug && !(_id match "audit-fixture-*")][0] {
     _id,
     title,
     titleHighlighted,
@@ -392,5 +397,5 @@ export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
 `);
 
 export const PODCAST_EPISODE_SLUGS_QUERY = defineQuery(`
-  *[_type == "podcastEpisode" && defined(slug.current)].slug.current
+  *[_type == "podcastEpisode" && defined(slug.current) && !(_id match "audit-fixture-*")].slug.current
 `);
