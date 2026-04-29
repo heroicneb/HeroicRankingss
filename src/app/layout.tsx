@@ -48,8 +48,17 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "none",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -68,7 +77,11 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://va.vercel-scripts.com" />
         <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
-        <link rel="preconnect" href="https://cdn.sanity.io" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://cdn.sanity.io"
+          crossOrigin="anonymous"
+        />
         <link rel="dns-prefetch" href="https://cdn.sanity.io" />
       </head>
       <body
