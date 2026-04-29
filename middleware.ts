@@ -25,6 +25,12 @@ export function middleware(request: NextRequest) {
     "Permissions-Policy",
     "camera=(), microphone=(), geolocation=(), interest-cohort=()",
   );
+  // Pre-launch lockdown: hard block all crawlers at the HTTP level. Belt-
+  // and-braces with the layout meta tag and robots.ts. Remove on cutover.
+  response.headers.set(
+    "X-Robots-Tag",
+    "noindex, nofollow, noarchive, nosnippet, noimageindex",
+  );
 
   return response;
 }
