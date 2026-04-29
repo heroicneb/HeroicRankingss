@@ -1,0 +1,214 @@
+{
+  "timestamp": "2026-04-29T12:27:10.901Z",
+  "phase1_coverage": {
+    "counts": {
+      "caseStudy": 6,
+      "post": 67,
+      "servicePage": 8,
+      "teamMember": 7,
+      "testimonial": 3
+    },
+    "post_fill": {
+      "total": 67,
+      "with_author": 67,
+      "with_body": 67,
+      "with_categories": 67,
+      "with_excerpt": 67,
+      "with_mainImage": 67,
+      "with_publishedAt": 67,
+      "with_readTime": 67,
+      "with_relatedService": 67,
+      "with_seo_title": 67,
+      "with_slug": 67,
+      "with_title": 67
+    },
+    "case_study_fill": {
+      "total": 6,
+      "with_caseOverview": 6,
+      "with_conclusion": 6,
+      "with_heroImage": 6,
+      "with_journeyTimeline_items": 6,
+      "with_objectiveChallenges_items": 6,
+      "with_proofData_items": 6,
+      "with_resultsCardsAsAccordion": 6,
+      "with_strategyPillars": 6,
+      "with_title": 6,
+      "with_website": 6
+    },
+    "team_member_fill": {
+      "total": 7,
+      "with_bio": 7,
+      "with_bioParagraphs": 7,
+      "with_cards": 7,
+      "with_photo": 7,
+      "with_socialLinks": 1
+    },
+    "broken_refs": {
+      "post_orphan_authors": [],
+      "service_orphan_caseStudies": []
+    }
+  },
+  "phase2_slug_parity": {
+    "case-study": {
+      "bcms_count": 6,
+      "sanity_count": 6,
+      "missing_in_sanity": [],
+      "extra_in_sanity": []
+    },
+    "blog": {
+      "bcms_count": 67,
+      "sanity_count": 67,
+      "missing_in_sanity": [],
+      "extra_in_sanity": []
+    },
+    "person": {
+      "bcms_count": 7,
+      "sanity_count": 7,
+      "missing_in_sanity": [],
+      "extra_in_sanity": []
+    },
+    "service": {
+      "bcms_count": 8,
+      "sanity_count": 8,
+      "missing_in_sanity": [
+        "technical",
+        "on-page",
+        "local",
+        "keyword-research",
+        "e-commerce",
+        "linkbuilding"
+      ],
+      "extra_in_sanity": [
+        "technical-seo",
+        "on-page-seo",
+        "local-seo",
+        "keyword-strategy",
+        "ecommerce-seo",
+        "link-building"
+      ]
+    },
+    "testimonial": {
+      "bcms_count": 3,
+      "sanity_count": 3,
+      "missing_in_sanity": [
+        "gianluca-ferruggia",
+        "momcilo-popov",
+        "nik-vujic"
+      ],
+      "extra_in_sanity": [
+        null
+      ]
+    }
+  },
+  "phase4_body_conversion": [
+    {
+      "slug": "benefits-of-custom-software-development",
+      "bcms_node_counts": {
+        "paragraph": 20,
+        "heading": 19,
+        "bulletList": 1,
+        "widget:image": 4,
+        "orderedList": 1
+      },
+      "sanity_block_counts": {
+        "block:normal": 34,
+        "block:h2": 6,
+        "block:image": 4,
+        "block:h3": 13
+      }
+    },
+    {
+      "slug": "craft-stunning-linkable-assets",
+      "bcms_node_counts": {
+        "paragraph": 41,
+        "heading": 6,
+        "widget:image": 5
+      },
+      "sanity_block_counts": {
+        "block:normal": 40,
+        "block:h2": 6,
+        "block:image": 5
+      }
+    },
+    {
+      "slug": "seo-marketing-practices-2026",
+      "bcms_node_counts": {
+        "paragraph": 39,
+        "bulletList": 3,
+        "heading": 6,
+        "widget:image": 5
+      },
+      "sanity_block_counts": {
+        "block:normal": 50,
+        "block:h2": 6,
+        "block:image": 5
+      }
+    },
+    {
+      "slug": "ranking-high-search-engine-results",
+      "bcms_node_counts": {
+        "paragraph": 52,
+        "heading": 9,
+        "widget:image": 6
+      },
+      "sanity_block_counts": {
+        "block:normal": 51,
+        "block:h2": 9,
+        "block:image": 6
+      }
+    },
+    {
+      "slug": "how-to-grow-your-business-online",
+      "bcms_node_counts": {
+        "paragraph": 43,
+        "heading": 6,
+        "widget:image": 4,
+        "widget:cta2": 1
+      },
+      "sanity_block_counts": {
+        "block:normal": 42,
+        "block:h2": 6,
+        "block:image": 4,
+        "block:ctaBlock": 1
+      }
+    }
+  ],
+  "phase5_risk": {
+    "unmigrated_blogs": [
+      {
+        "slug": "web-summit-lisbon-2023",
+        "title": "Heroic Rankings at Web Summit Lisbon 2023",
+        "statuses": "(none)"
+      },
+      {
+        "slug": "lets-discuss-google-search-updates",
+        "title": "Let’s Discuss Google Search Updates",
+        "statuses": "(none)"
+      },
+      {
+        "slug": "difference-between-marketing-and-sales-services",
+        "title": "Difference Between Marketing and Sales Services: How They Work Together?",
+        "statuses": "(none)"
+      },
+      {
+        "slug": "how-to-create-a-link-building-strategy",
+        "title": "How to Create a Link Building Strategy – From Scratch",
+        "statuses": "(none)"
+      },
+      {
+        "slug": "first-step-in-marketing-research-process",
+        "title": "What Is the First Step in the Marketing Research Process? - Everything You Need to Know",
+        "statuses": "(none)"
+      },
+      {
+        "slug": "best-backlinks-guide",
+        "title": "Earning the Best Backlinks for Free Through SEO Content (A 2026 Guide)",
+        "statuses": "Draft"
+      }
+    ],
+    "media_census": {
+      "bcms_total": 786,
+      "sanity_migrated": 471
+    }
+  }
+}
