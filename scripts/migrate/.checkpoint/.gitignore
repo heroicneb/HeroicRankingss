@@ -1,0 +1,6 @@
+# Migration runtime artifacts — never commit:
+# - asset-registry.json (BCMS media → Sanity assetId mapping)
+# - last-run.json (per-run report)
+# Keep this directory tracked via .gitignore so the path exists on first run.
+*
+!.gitignore
