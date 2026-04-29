@@ -48,12 +48,12 @@ function PillarCard({ pillar, className }: PillarCardProps) {
         ) : null}
       </div>
 
-      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] lg:text-[32px] lg:tracking-[-0.64px] dark:text-[var(--color-text-inverse)]">
+      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] lg:text-[32px] lg:tracking-[-0.64px]">
         {pillar.title}
       </h3>
 
       {pillar.intro ? (
-        <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+        <p className="type-paragraph text-[var(--color-hr-dark)]">
           {pillar.intro}
         </p>
       ) : null}
@@ -63,7 +63,7 @@ function PillarCard({ pillar, className }: PillarCardProps) {
           {bullets.map((bullet, index) => (
             <li
               key={index}
-              className="type-paragraph flex gap-[12px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]"
+              className="type-paragraph flex gap-[12px] text-[var(--color-hr-dark)]"
             >
               <span
                 aria-hidden

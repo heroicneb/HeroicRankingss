@@ -42,12 +42,10 @@ function JourneyStepDesktop({ step, index, isLast }: JourneyStepProps) {
       <p className="gradient-text-brand font-normal text-[24px] leading-[1.2] tracking-[-0.48px]">
         {stepNumber}
       </p>
-      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] lg:text-[28px] lg:tracking-[-0.56px] dark:text-[var(--color-text-inverse)]">
+      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] lg:text-[28px] lg:tracking-[-0.56px]">
         {step.title}
       </h3>
-      <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-        {step.body}
-      </p>
+      <p className="type-paragraph text-[var(--color-hr-dark)]">{step.body}</p>
     </li>
   );
 }
@@ -62,12 +60,10 @@ function JourneyStepMobile({ step, index }: JourneyStepProps) {
       <p className="gradient-text-brand font-normal text-[22px] leading-[1.2] tracking-[-0.44px]">
         {stepNumber}
       </p>
-      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)]">
+      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)]">
         {step.title}
       </h3>
-      <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-        {step.body}
-      </p>
+      <p className="type-paragraph text-[var(--color-hr-dark)]">{step.body}</p>
     </article>
   );
 }
@@ -106,7 +102,7 @@ export function CaseStudyJourney({ data }: CaseStudyJourneyProps) {
           {hasHeading ? (
             <TwoToneHeading
               as="h2"
-              className="mt-[14px] max-w-[860px] text-center font-normal text-[28px] leading-[1.2] tracking-[-0.56px] lg:mt-[20px] lg:text-left lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)]"
+              className="mt-[14px] max-w-[860px] text-center font-normal text-[28px] leading-[1.2] tracking-[-0.56px] lg:mt-[20px] lg:text-left lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px] text-[var(--color-hr-pure-black)]"
               highlighted={headingHighlighted}
               main={headingMain}
             />

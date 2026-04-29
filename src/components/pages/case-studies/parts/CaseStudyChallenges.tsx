@@ -44,14 +44,14 @@ export function CaseStudyChallenges({ data }: CaseStudyChallengesProps) {
           {hasHeading ? (
             <TwoToneHeading
               as="h2"
-              className="mt-[14px] max-w-[860px] text-center font-normal text-[28px] leading-[1.2] tracking-[-0.56px] lg:mt-[20px] lg:text-left lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)]"
+              className="mt-[14px] max-w-[860px] text-center font-normal text-[28px] leading-[1.2] tracking-[-0.56px] lg:mt-[20px] lg:text-left lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px] text-[var(--color-hr-pure-black)]"
               highlighted={headingHighlighted}
               main={headingMain}
             />
           ) : null}
 
           {data.body ? (
-            <p className="mt-[20px] max-w-[860px] text-center text-[16px] leading-[1.3] text-[var(--color-hr-dark)] lg:mt-[30px] lg:text-left lg:text-[18px] lg:leading-[24px] dark:text-[var(--color-text-inverse)]">
+            <p className="mt-[20px] max-w-[860px] text-center text-[16px] leading-[1.3] text-[var(--color-hr-dark)] lg:mt-[30px] lg:text-left lg:text-[18px] lg:leading-[24px]">
               {data.body}
             </p>
           ) : null}
