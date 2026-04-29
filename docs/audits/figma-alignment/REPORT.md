@@ -291,3 +291,45 @@ The 8th slot in the team grid is a **"Become a Hero"** purple CTA panel inviting
 Other Figma elements to verify on site:
 - "The Fastest and Most Effective to Get Started" — 4 service-category pills section between the 3-col block and the dark "we focus on one thing" panel. Confirm this section renders.
 - Dark "We focus on one thing: organic performance" panel.
+
+---
+
+## Grind verification round (2026-04-29 evening)
+
+### Item #5 — Proof-data images (verified, NOT a migration issue)
+
+Pulled the legacy heroicrankings.com case studies and counted result-card images:
+
+| Slug | Legacy result cards | Legacy images | Sanity images | Migration faithful? |
+|---|---|---|---|---|
+| Affinda | 5 text-only cards (Keyword Rankings / Organic Traffic Growth / Referring Domains / Backlink Profile / Domain Rating) | 0 | 0 | ✓ |
+| DesignRush | 3 (DR and Traffic Growth / Keyword Rankings / Link velocity) | 2 (Keyword Rankings text-only on legacy too) | 2 | ✓ |
+| Nagish | 4 (Keyword Rankings / Organic Traffic / Referring Domains / Domain Rating) | 4 | 4 | ✓ |
+
+**Verdict:** every empty `proofData.items[i].image` on the new site corresponds to a card that was text-only on the legacy site. Migration captured what existed. The new Figma design intent calls for analytics-screenshot images on every proof card — that's a content authoring task (capture screenshots from Ahrefs / Google Search Console for each slug), not a code or migration fix.
+
+### Item #6 — About-us mobile cards 5–8 (verified, false alarm)
+
+The `/about-us` team grid renders 8 cards: 7 team-member portraits with proper image bindings + an 8th **"Become a Hero"** CTA card linking to `/contact`, exactly matching the Figma reference. The dark thumbnails I worried about in pair 8b were the bottom row at low-resolution — at 375px viewport the images render fine.
+
+### Item — Hero metric pills + Numbers That Matter (NEW design, no legacy source)
+
+Legacy BCMS case-study schema only had `hero_title / hero_subtitle / hero_description / hero_image / hero_cta / hero_cta_description` — **no hero pill row, no numbers-that-matter section**. The Figma rebuild adds both as new structured data (3 pills below hero, 8-card metric grid mid-page). No migration source exists; both are content authoring tasks.
+
+### Item — panelLabel fix shipped (`6a16907`)
+
+Migrated `client` field holds URL form (`affinda.com`, `www.designrush.com`). Card fallback was `panelLabel ?? client ?? title` → URLs rendered on the panel. Flipped to `panelLabel ?? title ?? client` so the brand name lands first.
+
+## Final scoreboard
+
+| Item | Status |
+|---|---|
+| §3 Case-studies index cards | ✅ Fixed (`b4b52d8` — flat brand-color SVG panels, light + dark) |
+| panelLabel URL→brand | ✅ Fixed (`6a16907`) |
+| §5 Proof-data images | Content backlog (NEW design intent, no migration loss) |
+| §6 About-us mobile team grid | ✅ Verified (Become a Hero CTA in 8th slot) |
+| Hero pills + Numbers That Matter | Content backlog (NEW design, no legacy source) |
+| §7 Team body 1-col stack | Accepted as new spec (Figma uses flowing prose, our migrated bios are Q&A) |
+| §7 Glass contact tile | Deferred post-launch |
+| Footer CTA copy | Accepted (intentional) |
+| §6 Podcast single template | Re-audit when real episodes ship |
