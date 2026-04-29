@@ -224,7 +224,12 @@ function mergeCmsWithHardcoded(
 
       return {
         title: caseStudy.title,
-        panelLabel: caseStudy.panelLabel ?? caseStudy.client ?? caseStudy.title,
+        // Figma SoT shows the brand NAME on the index card (e.g. "Affinda",
+        // "DesignRush"), not the legacy URL. Migrated `client` holds the URL
+        // form (`affinda.com`, `www.designrush.com`), so prefer the explicit
+        // panelLabel first, then the brand title, and fall back to `client`
+        // only when neither is set.
+        panelLabel: caseStudy.panelLabel ?? caseStudy.title ?? caseStudy.client,
         description:
           caseStudy.excerpt ??
           "Explore how Heroic Rankings delivered measurable SEO growth for this client.",
