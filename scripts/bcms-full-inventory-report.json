@@ -1,0 +1,5272 @@
+{
+  "timestamp": "2026-04-29T11:37:42.902Z",
+  "cmsOrigin": "https://app.thebcms.com",
+  "instanceId": "6710e3bdeeda0c4a2de4b330",
+  "runtimeMs": 1354,
+  "note": "Templates seeded from bcms-spike-report.json (SDK template.getAll() returns empty with this key scope; REST entry/media endpoints work fine).",
+  "templates": [
+    {
+      "_id": "6718befdef5de485dc93f8b5",
+      "name": "contact-page",
+      "label": "Contact page",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "55b6b5bf-64fb-4090-a281-f41052a58340",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "5f4b549a-7bce-48ca-89aa-2835eb5198a2",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "79378d4e-85f3-4ba7-8a2e-0c2283b0d57c",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "008073f9-bc00-4c25-bb65-a333d6cbed58",
+          "name": "form_cta_label",
+          "label": "Form cta label",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6718c07def5de485dc93f8b8",
+      "name": "testimonial",
+      "label": "Testimonial",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "696fd6eb-790f-417c-9eae-5d78e1da3653",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "d13f33c3-d572-4f26-814b-ed320275d854",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "38661dc0-2080-4d68-acd8-fbb315096233",
+          "name": "quote",
+          "label": "Quote",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "081cb318-df08-40a5-bf3e-6b0ba0b4bf81",
+          "name": "name",
+          "label": "Name",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "228bfd92-2630-4afd-ab66-2e0817cd96ef",
+          "name": "role",
+          "label": "Role",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "eacb2514-30ec-492a-9199-52c5329ee692",
+          "name": "company_name",
+          "label": "Company name",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "0520c95d-8cd2-4500-a763-633383cad002",
+          "name": "company_description",
+          "label": "Company description",
+          "type": "STRING",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "aa37ee9a-e819-4f83-8a50-10916af59d8d",
+          "name": "company_url",
+          "label": "Company url",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "680d9d5d-d761-4db0-a939-d6bb3b9ccd10",
+          "name": "avatar_image",
+          "label": "Avatar image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6718c0f2ef5de485dc93f8b9",
+      "name": "company",
+      "label": "Company",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "5740b4d5-6629-4484-ac88-21b3520e5ea2",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "787837e2-d5a5-446b-a632-502f117bf1f9",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c62fbdeb-6ae2-4a5f-a44c-71c44dbb29cf",
+          "name": "logo",
+          "label": "Logo",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "4a90fb61-08cd-4e85-979d-042caa0db73e",
+          "name": "link",
+          "label": "Link",
+          "type": "STRING",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "dcf82e66-f00b-41c8-bc98-ca3ffc50a2e0",
+          "name": "featured",
+          "label": "Featured",
+          "type": "BOOLEAN",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "09ee8394-9725-49be-a392-cc7781959e64",
+          "name": "partner",
+          "label": "Partner",
+          "type": "BOOLEAN",
+          "array": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "_id": "6718cd2fef5de485dc93f8f0",
+      "name": "partnership-page",
+      "label": "Partnership page",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "617103c8-eeef-4708-906e-e245abb98b6a",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "29523e16-dc2d-47e9-9219-f2ae5fb174a3",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "ac1db7ca-3978-4c4c-a208-2cd8924f6dbb",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "44b8fcf6-11eb-4655-a5e4-21bb1917f9b2",
+          "name": "description",
+          "label": "Description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "681b2a76-ea7c-4897-8107-53228779856c",
+          "name": "perfect_match_title",
+          "label": "Perfect match title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "0f8f5f14-42f8-472b-9d5a-7ea83b07be4c",
+          "name": "perfect_match_cards",
+          "label": "Perfect match cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "9e81147d-b861-4b73-b95c-44db43665219",
+          "name": "perfect_match_form_title",
+          "label": "Perfect match form title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "4d71540c-9a8a-4346-86e2-b44f8c8bbd7e",
+          "name": "perfect_match_form_cta_label",
+          "label": "Perfect match form cta label",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "25ed6e62-8669-4536-8eec-566a3052a63e",
+          "name": "amplify_title",
+          "label": "Amplify title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "77772d75-e6c7-4ab0-8562-46f34593df3d",
+          "name": "amplify_description",
+          "label": "Amplify description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "e180b58f-2a04-496c-82fd-65d6565e23d4",
+          "name": "amplify_cards_accordion",
+          "label": "Amplify cards accordion",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "8927fa06-bc4d-4ee6-8961-e82ac3f8ed06",
+          "name": "partners",
+          "label": "Partners",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "758fa748-10a7-492d-8634-5661a00d829b",
+          "name": "partners_cta_block",
+          "label": "Partners cta block",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "939972b6-1c4a-47c1-bd5d-d6f2978a9aaa",
+          "name": "differences_title",
+          "label": "Differences title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "275812ce-0cd1-4a66-af40-d49c1653adf3",
+          "name": "differences_cards",
+          "label": "Differences cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "5a89932a-c658-4e73-9ba2-7cf09bcbecb8",
+          "name": "whats_next_title",
+          "label": "Whats next title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "a6288e0e-f61e-47b7-be38-7fa743b1145b",
+          "name": "whats_next_description",
+          "label": "Whats next description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "1a614118-3243-4d5b-8dba-141bfa20f7f1",
+          "name": "whats_next_process_title",
+          "label": "Whats next process title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "414aeac5-e45c-4d91-b27c-9466f90982dc",
+          "name": "whats_next_process_subtitle",
+          "label": "Whats next process subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "063db08c-fe7d-4769-97f2-3ab7ebdb9ba9",
+          "name": "whats_next_process_description",
+          "label": "Whats next process description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c99a91de-350c-4788-b09f-b87fbe9e9a1c",
+          "name": "whats_next_process_cards",
+          "label": "Whats next process cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "2f168d27-5ee2-4190-8314-fe9875d9527c",
+          "name": "faq",
+          "label": "FAQ",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6718e045ef5de485dc93f928",
+      "name": "about-page",
+      "label": "About page",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "55b5e31f-f189-41b8-83e9-e78ed804093d",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "ab540356-584f-4ff4-a81d-303fca11e785",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "b5a0c3d7-e560-49b9-8366-ee83a0184fe4",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "1a0c98cc-3884-48e1-9c93-1be8fe7dbac5",
+          "name": "cover_image",
+          "label": "Cover image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "bfad0980-4b8d-475d-a3a5-11f73eb7dbff",
+          "name": "headline",
+          "label": "Headline",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "03c1ce3e-cf98-43f0-9ae8-9bf664145b7a",
+          "name": "description",
+          "label": "Description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "50716d65-5902-41ba-b144-0a231bd99950",
+          "name": "about_title",
+          "label": "About title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "6d59c7ab-072e-4cd8-9261-cdf42142b615",
+          "name": "about_image",
+          "label": "About image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "2a809874-9bfa-4707-b40e-65cdec4b920c",
+          "name": "about_description",
+          "label": "About description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "0f30079d-49b6-4291-b793-7bdf62c26340",
+          "name": "about_cta_description",
+          "label": "About cta description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "6d09ad37-afef-4e2e-be5d-6ca08df19150",
+          "name": "about_cta",
+          "label": "About cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "6e1b322e-ebfa-4c74-8131-53ccea63a386",
+          "name": "get_started_title",
+          "label": "Get started title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "05918456-91f0-4ed9-8484-4c136d97e271",
+          "name": "get_started_cards",
+          "label": "Get started cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "1de23f21-8a3e-4f24-b6f3-f49907db9c29",
+          "name": "trust_title",
+          "label": "Trust title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "d5c99663-858d-4be5-beba-d5aa47ec89c2",
+          "name": "trust_subtitle",
+          "label": "Trust subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "2ab644f9-5203-4e52-a6a5-7f15bde7aa74",
+          "name": "trust_cards",
+          "label": "Trust cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "19964837-7a2d-43a5-8013-b6fc3954c34d",
+          "name": "team_title",
+          "label": "Team title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "1af83ed3-7216-471a-bcd5-b6baab38baf3",
+          "name": "team_subtitle",
+          "label": "Team subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "ccbbdedd-44eb-4852-a0a6-0a95bb8cf6b1",
+          "name": "team_description",
+          "label": "Team description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "720972ca-ee1f-4487-90e0-9a339751fabb",
+          "name": "team_footnote",
+          "label": "Team footnote",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "2d1f9ac3-8ae9-4bd8-bd5b-394f766995f8",
+          "name": "blogs",
+          "label": "Blogs",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6718e04bef5de485dc93f929",
+      "name": "blog",
+      "label": "Blog",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "f4dbc160-c341-42cd-bffe-36f3caecec43",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c92004d7-86b0-4df3-9366-cd64c839a4d6",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "7206519d-357b-4df8-babd-f40ab309220b",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "36556038-cb88-48c7-b1df-e27e1a080133",
+          "name": "cover_image",
+          "label": "Cover image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "d603ca5a-3f8c-4444-94c2-a090a68c8b52",
+          "name": "date",
+          "label": "Date",
+          "type": "DATE",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "9e1d1b87-651e-4711-b00e-daed1393c63d",
+          "name": "read_time",
+          "label": "Read time",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "019fe36c-83ec-4cf5-9673-d1fd9cd963cc",
+          "name": "description",
+          "label": "Description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "a310362c-997b-4769-8c07-8b97f439c061",
+          "name": "author",
+          "label": "Author",
+          "type": "ENTRY_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "3f008e98-7365-4c24-82fd-b0b443a50534",
+          "name": "category",
+          "label": "Category",
+          "type": "ENTRY_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "13787f8c-c24a-42ba-aae8-fdeaaa02812f",
+          "name": "related_service",
+          "label": "Related service",
+          "type": "ENTRY_POINTER",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6718e069ef5de485dc93f92a",
+      "name": "person",
+      "label": "Person",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "d2a4c992-cd7c-4212-83a0-691773ed4ba3",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "f2ff8c2e-b1e6-4442-86f6-4dd8e3fc253f",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "f5037333-fce5-4f7c-b533-fe2589af3284",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "1487b62b-0db9-4651-9af1-0d11d6318267",
+          "name": "bio",
+          "label": "Bio",
+          "type": "STRING",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "fb937c5e-bf63-44ed-bf63-cb9cca07f6a6",
+          "name": "role",
+          "label": "Role",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c4aeec03-36fd-4dc9-b66f-b9ebe0027d47",
+          "name": "image",
+          "label": "Image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "4828b63f-0b56-45d1-880e-a401b42a9a58",
+          "name": "description",
+          "label": "Description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "31d74fd6-463b-42f7-8776-70f7e35da91b",
+          "name": "cards",
+          "label": "Cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": false
+        },
+        {
+          "id": "0d588a12-aee3-41a0-b51d-63b1f584ecbe",
+          "name": "featured",
+          "label": "Featured",
+          "type": "BOOLEAN",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "c419fafc-ed58-4908-aebb-88a067e0f969",
+          "name": "linkedin",
+          "label": "LinkedIn",
+          "type": "STRING",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "57e24154-e6f0-4dd9-a460-41ccca584102",
+          "name": "team_member",
+          "label": "Team member",
+          "type": "BOOLEAN",
+          "array": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "_id": "6718e5f0ef5de485dc93f93f",
+      "name": "blog-category",
+      "label": "Blog category",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "bfc4aee3-c7a7-4a74-8e13-a6bfad3146c2",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "b8850527-f045-4dba-895f-2fd136f0b2f7",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6718f7b7e4d0077ad7a50f62",
+      "name": "home-page",
+      "label": "Home page",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "06597254-748f-41e2-b095-f5ca6c8cd83e",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "186e2c17-c8cb-4fa9-add0-e1f196b61ad4",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "558d0661-936d-40db-869c-8a4741c6878e",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "4a067776-a293-4075-881f-3032745eda7d",
+          "name": "description",
+          "label": "Description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "bb89fae1-608a-45f8-acba-98e5cbf7d8f7",
+          "name": "cta",
+          "label": "Cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "df76af13-606a-4d58-b9ba-015f63d1d7c2",
+          "name": "featured_title",
+          "label": "Featured title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "34c8a85c-766b-4eeb-8d16-6bb37f82b504",
+          "name": "featured_subtitle",
+          "label": "Featured subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "aab3dc2b-554b-4ace-aa07-5f80fa083a8b",
+          "name": "about_title",
+          "label": "About title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "b72df19e-fcee-4f02-9e04-c48bc9daa78b",
+          "name": "about_subtitle",
+          "label": "About subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "109fb014-dbf6-483f-8ea1-5a46223dde37",
+          "name": "about_image",
+          "label": "About image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "bec95e9e-3a22-46e1-aba3-6cb6710ba8f2",
+          "name": "about_description",
+          "label": "About description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "a61809b4-e7bc-494e-9824-c693dd8d7995",
+          "name": "about_cta",
+          "label": "About cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "bd90b765-1cda-4e14-a553-3f120947c157",
+          "name": "company_title",
+          "label": "Company title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "2f5768dd-1f87-4d0e-8fb2-0d5bf9a1c6f9",
+          "name": "company_subtitle",
+          "label": "Company subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "ecb21ee1-0793-4fb7-9c06-14bf09664551",
+          "name": "company_description",
+          "label": "Company description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "f26d8028-717d-453c-9acb-a9ffd550979a",
+          "name": "company_cta",
+          "label": "Company cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "d4fc6d75-6b23-44e7-a6d1-d7abc878d07a",
+          "name": "company_cards",
+          "label": "Company cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "bd2c4c3f-91d3-425c-9bac-6fa53e7e54a4",
+          "name": "data_title",
+          "label": "Data title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "979544c3-e9eb-451b-8f3a-2f605b948b30",
+          "name": "data_subtitle",
+          "label": "Data subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "94dcb88e-b0b5-4935-8265-f45770582120",
+          "name": "data_cta",
+          "label": "Data cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "5e205207-691c-4d58-8c4f-a281913b9f7f",
+          "name": "data_cards",
+          "label": "Data cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "02fbf812-8718-440f-baa9-e40094054d71",
+          "name": "results_title",
+          "label": "Results title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "f88cb73a-8336-45f8-9052-b7b0e1324b3c",
+          "name": "results_subtitle",
+          "label": "Results subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c21abf26-270c-4bdf-b5a1-b1f168ac9a36",
+          "name": "results_description",
+          "label": "Results description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "46489f39-b4b3-4725-a37b-bfa70f7ff32e",
+          "name": "results_cta",
+          "label": "Results cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "ea375cde-d2aa-4869-a792-7ecdd4f82827",
+          "name": "results_cards",
+          "label": "Results cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "c770754c-e3d6-4dec-8c44-22defac2f13d",
+          "name": "partners",
+          "label": "Partners",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "cb54cfda-0500-474d-b639-a2dc684208ed",
+          "name": "certificates_title",
+          "label": "Certificates title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "b76318b8-209f-4207-a8da-70229cc9a16e",
+          "name": "certificates_subtitle",
+          "label": "Certificates subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "33404e43-1da1-4f9b-aebc-aa8a34cf1c0f",
+          "name": "certificates_cta",
+          "label": "Certificates cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "d446b35f-ca9c-4d1c-bfa8-0c2ffd7f9054",
+          "name": "value_title",
+          "label": "Value title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "f35f3b1f-3a4e-4dc8-bd83-98ce2a171ce9",
+          "name": "value_subtitle",
+          "label": "Value subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "444a2349-cc78-475e-9956-8c00bd4f7209",
+          "name": "value_cta",
+          "label": "Value cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "0b067886-bb56-4c7e-9d2c-0fcde82e8ae5",
+          "name": "value_items",
+          "label": "Value items",
+          "type": "STRING",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "a3351643-0af0-430f-bab2-8a896fc50cdd",
+          "name": "blogs",
+          "label": "Blogs",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "694f16c3-2829-4df5-9ed8-20723144e021",
+          "name": "testimonials_title",
+          "label": "Testimonials title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "775e9a58-5d72-4635-b59b-1ea9c4f5d51b",
+          "name": "testimonials_subtitle",
+          "label": "Testimonials subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "ddd9b8ab-31df-49ec-bec4-c02177881c19",
+          "name": "testimonials_cta",
+          "label": "Testimonials cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "a65fded8-fcef-47b3-91dd-2af177ea1976",
+          "name": "brands",
+          "label": "Brands",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "8a3a3950-1bed-49d4-9410-342494cf70d0",
+          "name": "contact_block",
+          "label": "Contact block",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6719f9d1b98a24129383bd2e",
+      "name": "certificate",
+      "label": "Certificate",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "f937949b-ff31-4f05-9507-1d84f6c99d0a",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c74f4eae-9bb8-4afd-8542-76cc17100697",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "b9d73130-91af-4983-908b-247b8ce07c0d",
+          "name": "icon",
+          "label": "Icon",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "671a222fb98a24129383bd5a",
+      "name": "case-study",
+      "label": "Case study",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "2ddc80df-f28d-4d45-9d64-263cb2214973",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "f9bb8c95-e954-4440-a573-719202858b7e",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "4b5f1fb0-634c-4a69-9e08-6314d6b3f8dc",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "d18690c8-43c9-41ce-a3ff-a6371c3d556c",
+          "name": "read_time",
+          "label": "Read time",
+          "type": "STRING",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "dea00fb7-a8ed-44cd-94fe-ecb0aec72eeb",
+          "name": "date",
+          "label": "Date",
+          "type": "DATE",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "1cb4bac5-5c00-48ef-835f-d70c36255d8e",
+          "name": "service_featured_title",
+          "label": "Service featured title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "0a8831ef-b543-4d98-a3c8-0de44dd6eaab",
+          "name": "service_featured_description",
+          "label": "Service featured description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c651fc1c-52c1-41d6-83f6-b539bace24b0",
+          "name": "hero_image",
+          "label": "Hero image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "2a280bb8-0891-4f10-bc44-730218648508",
+          "name": "description",
+          "label": "Description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "705150a1-bb8f-4815-9a92-8c2bf690e621",
+          "name": "our_job",
+          "label": "Our job",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "b98c831c-a4b0-4794-bdfd-42f556b2bec4",
+          "name": "website",
+          "label": "Website",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "eb72a06d-a706-415b-87e5-d8abda065872",
+          "name": "objective",
+          "label": "Objective",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c9c08da0-50fa-475b-94c6-1a012775a755",
+          "name": "challenges",
+          "label": "Challenges",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "645206b1-5ce3-4294-ad3b-c84cca4cb04c",
+          "name": "strategy_items",
+          "label": "Strategy items",
+          "type": "RICH_TEXT",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "daa5aa99-9b6a-4a77-807e-1692a29691a7",
+          "name": "execution_description",
+          "label": "Execution description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "4a8f4ec0-f1a7-45de-9609-54250b43f86c",
+          "name": "execution_cards",
+          "label": "Execution cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "6a3f3699-cd4a-43ea-a18e-680e0f3eb585",
+          "name": "results_description",
+          "label": "Results description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "e4ad96ba-3ead-4382-9e40-4c5b58fbc50e",
+          "name": "results_cards",
+          "label": "Results cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "59c544ea-17eb-44bc-87f2-6be7bcdb8d08",
+          "name": "results_cards_as_accordion",
+          "label": "Results cards as accordion",
+          "type": "BOOLEAN",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "dc0f179e-85d0-4ac4-85cc-0134b1d0a54f",
+          "name": "conclusion_description",
+          "label": "Conclusion description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "1939203a-92ca-4327-ab94-1048894b156b",
+          "name": "conclusion_content",
+          "label": "Conclusion content",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "671a5d7be93230ec1d3de24d",
+      "name": "service",
+      "label": "Service",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "b252a152-1035-44ff-958e-37bfc6264e6f",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "56f0121d-6341-429e-8b93-b5c640c45995",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "73974f34-d1bf-4567-b285-e1064f044509",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "f7d9fa60-0538-4d77-b36e-7445ef605327",
+          "name": "cover_image",
+          "label": "Cover image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "238773fc-2a98-4fc7-bb8e-e58e4a0cf03a",
+          "name": "description",
+          "label": "Description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "8a67da47-d365-46fd-90b8-ea1cf8e211e2",
+          "name": "root_seo_page",
+          "label": "Root seo page",
+          "type": "BOOLEAN",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "4ad15446-5d2d-4aee-98ee-bf0b7a419aae",
+          "name": "hero_title",
+          "label": "Hero title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "df92b424-f1f7-4140-a058-f74412e427eb",
+          "name": "hero_subtitle",
+          "label": "Hero subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "67d9c6c0-6053-4398-9f3d-1022ff957f20",
+          "name": "hero_description",
+          "label": "Hero description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "6e27b874-3f9f-4d7e-816d-d7b14e7bebad",
+          "name": "hero_cta_description",
+          "label": "Hero cta description",
+          "type": "RICH_TEXT",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "bfc1e09f-2db9-4a6b-a483-5c7ce7320f57",
+          "name": "hero_cta",
+          "label": "Hero cta",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "6e8af31f-6fb9-4121-8714-eeae26805e8c",
+          "name": "cards_slide_title",
+          "label": "Cards slide title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "455097a9-3fd1-4b6f-9ae3-c17920f27ec6",
+          "name": "cards_slide_subtitle",
+          "label": "Cards slide subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "c1418075-9133-4076-9969-2ea29e5ca74b",
+          "name": "cards_slide",
+          "label": "Cards slide",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "c9d6b333-a383-45f9-994b-e5ab73edd2a8",
+          "name": "charts",
+          "label": "Charts",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "36e11437-2dfc-4890-a692-c32fd62c86f7",
+          "name": "cta_block",
+          "label": "Cta block",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "3e6f0065-b85b-4a17-ba55-71747b3f2b07",
+          "name": "results_title",
+          "label": "Results title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "0fd12dac-e6e5-4a14-b53c-e953d0bf08b1",
+          "name": "results_subtitle",
+          "label": "Results subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "a6ee03cb-c8ea-4239-9e31-555b8b97373d",
+          "name": "results_cards",
+          "label": "Results cards",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "469d50e0-6e89-4f09-ba13-8859bf357778",
+          "name": "case_studies_title",
+          "label": "Case studies title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "701ba6e9-ffcf-48cb-be39-9efaf5365373",
+          "name": "case_studies_subtitle",
+          "label": "Case studies subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "b036fa0f-7810-43aa-9e73-67cbe39cf72b",
+          "name": "case_studies_cards",
+          "label": "Case studies cards",
+          "type": "ENTRY_POINTER",
+          "array": true,
+          "required": true
+        },
+        {
+          "id": "b8312630-87d2-4e8a-a4bb-a36ec0c5f1a0",
+          "name": "faq",
+          "label": "FAQ",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "ee263a9c-e31b-42a1-a9d8-886558f78f69",
+          "name": "contact_block",
+          "label": "Contact block",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "671b90583beff4fc58f4a005",
+      "name": "privacy-policy-page",
+      "label": "Privacy policy page",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "0e0e5577-0d33-4f11-b105-34edaaa22277",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "1c7fc802-5e14-4b8f-ab89-e7cd9fdfec13",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "a1a981dc-afac-45cf-9907-1fc821f8556b",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "514308d0-67be-4778-8c52-1a492d08aefe",
+          "name": "blogs",
+          "label": "Blogs",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "671ba1b23beff4fc58f4a007",
+      "name": "blog-page",
+      "label": "Blog page",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "bc9c7ae5-e1f2-40c6-9341-ff97d4eb1c47",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "f0986ead-ccc4-49a6-903b-9259cbdcb9d3",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "66997d38-eaf5-45e1-8722-f52b1cee30d9",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "275e22fd-4429-4a89-b1ec-5b9adb38c48a",
+          "name": "cover_image",
+          "label": "Cover image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "9fb74d4c-57a3-431b-b223-bce1969f34ae",
+          "name": "headline",
+          "label": "Headline",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "91c31ef9-bbef-4401-9005-268186f7e039",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "58860b8f-944b-4f21-9b15-df4fc7e00346",
+          "name": "cta_description",
+          "label": "Cta description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "67289ec2819bfc10a7282da0",
+      "name": "header",
+      "label": "Header",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "4c3b45c4-0af1-4fc2-8572-53b9e1fc7fd5",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "8b36ea77-4fd4-403c-b955-402f86ab3e68",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "01201c37-af86-426f-b786-149bdd559cf1",
+          "name": "nav_items",
+          "label": "Nav items",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6728a846819bfc10a7282da3",
+      "name": "footer",
+      "label": "Footer",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "232d6075-c3be-4131-905f-8024309a7d1e",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "365190e7-5d54-4ada-89da-506a336b5385",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "1a203c3f-6c85-43cb-8bcb-8b041f1b14b2",
+          "name": "description",
+          "label": "Description",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "45a7bc8a-561c-4aec-a7ad-19a78947990f",
+          "name": "nav_items",
+          "label": "Nav items",
+          "type": "GROUP_POINTER",
+          "array": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "6735ca3f107a7e22c2300f81",
+      "name": "case-studies-page",
+      "label": "Case studies page",
+      "singleEntry": true,
+      "props": [
+        {
+          "id": "53e5bd75-dc37-4196-b6e1-306050b066d3",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "04515ec1-c823-472c-942b-4ac0f769f6e7",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "72e19eef-658b-4dbc-acce-2a8b00bcfad0",
+          "name": "seo",
+          "label": "SEO",
+          "type": "GROUP_POINTER",
+          "array": false,
+          "required": false
+        },
+        {
+          "id": "91d62273-38b0-461f-86ba-bb82e3c1647f",
+          "name": "cover_image",
+          "label": "Cover image",
+          "type": "MEDIA",
+          "array": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "_id": "679cc4e78219a897770f4de3",
+      "name": "redirect",
+      "label": "Redirect",
+      "singleEntry": false,
+      "props": [
+        {
+          "id": "5c9b4897-fa71-4139-ace9-618760a62757",
+          "name": "title",
+          "label": "Title",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "d8cb2e5f-648c-4a80-9d5d-5218c01c3cac",
+          "name": "slug",
+          "label": "Slug",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "f751e99a-91de-456e-b606-e307a3b8d13b",
+          "name": "from",
+          "label": "From",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        },
+        {
+          "id": "a236496b-bfbe-4f61-8a2d-2ac12642d3d5",
+          "name": "to",
+          "label": "To",
+          "type": "STRING",
+          "array": false,
+          "required": true
+        }
+      ]
+    }
+  ],
+  "templateSummaries": {
+    "contact-page": {
+      "templateId": "6718befdef5de485dc93f8b5",
+      "label": "Contact page",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "form_cta_label": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 0,
+      "mediaSample": []
+    },
+    "testimonial": {
+      "templateId": "6718c07def5de485dc93f8b8",
+      "label": "Testimonial",
+      "singleEntry": false,
+      "totalEntries": 3,
+      "statusDistribution": {
+        "Published": 3
+      },
+      "localeDistribution": {
+        "en": 3
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "quote": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "name": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "role": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "company_name": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "company_description": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "company_url": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "avatar_image": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 3,
+      "mediaSample": [
+        {
+          "field": "avatar_image",
+          "_id": "6769e2d7d26d5493eeab3659",
+          "mimetype": "image/jpeg",
+          "size": 10889
+        },
+        {
+          "field": "avatar_image",
+          "_id": "672cdb503f71798742933e6b",
+          "mimetype": "image/png",
+          "size": 171988
+        },
+        {
+          "field": "avatar_image",
+          "_id": "6769e2fed26d5493eeab365a",
+          "mimetype": "image/jpeg",
+          "size": 67039
+        }
+      ]
+    },
+    "company": {
+      "templateId": "6718c0f2ef5de485dc93f8b9",
+      "label": "Company",
+      "singleEntry": false,
+      "totalEntries": 24,
+      "statusDistribution": {
+        "Published": 24
+      },
+      "localeDistribution": {
+        "en": 24
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 24,
+          "total": 24,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 24,
+          "total": 24,
+          "pct": 100
+        },
+        "logo": {
+          "filled": 24,
+          "total": 24,
+          "pct": 100
+        },
+        "link": {
+          "filled": 0,
+          "total": 24,
+          "pct": 0
+        },
+        "featured": {
+          "filled": 24,
+          "total": 24,
+          "pct": 100
+        },
+        "partner": {
+          "filled": 24,
+          "total": 24,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 24,
+      "mediaSample": [
+        {
+          "field": "logo",
+          "_id": "6748000a45415c529d6a8364",
+          "mimetype": "image/svg+xml",
+          "size": 2173
+        },
+        {
+          "field": "logo",
+          "_id": "6748000b45415c529d6a8365",
+          "mimetype": "image/svg+xml",
+          "size": 659
+        },
+        {
+          "field": "logo",
+          "_id": "6748000c45415c529d6a8366",
+          "mimetype": "image/svg+xml",
+          "size": 5683
+        }
+      ]
+    },
+    "partnership-page": {
+      "templateId": "6718cd2fef5de485dc93f8f0",
+      "label": "Partnership page",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "perfect_match_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "perfect_match_cards": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "perfect_match_form_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "perfect_match_form_cta_label": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "amplify_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "amplify_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "amplify_cards_accordion": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "partners": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "partners_cta_block": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "differences_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "differences_cards": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "whats_next_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "whats_next_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "whats_next_process_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "whats_next_process_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "whats_next_process_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "whats_next_process_cards": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "faq": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 0,
+      "mediaSample": []
+    },
+    "about-page": {
+      "templateId": "6718e045ef5de485dc93f928",
+      "label": "About page",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "cover_image": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "headline": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_image": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_cta_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "get_started_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "get_started_cards": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "trust_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "trust_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "trust_cards": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "team_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "team_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "team_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "team_footnote": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "blogs": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 2,
+      "mediaSample": [
+        {
+          "field": "cover_image",
+          "_id": "6718ee91d806379c71d8bf66",
+          "mimetype": "image/jpeg",
+          "size": 57226
+        },
+        {
+          "field": "about_image",
+          "_id": "6718ec707d14c0b5931f8dc9",
+          "mimetype": "image/png",
+          "size": 1175084
+        }
+      ]
+    },
+    "blog": {
+      "templateId": "6718e04bef5de485dc93f929",
+      "label": "Blog",
+      "singleEntry": false,
+      "totalEntries": 73,
+      "statusDistribution": {
+        "Published": 67,
+        "Draft": 1
+      },
+      "localeDistribution": {
+        "en": 73
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "cover_image": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "date": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "read_time": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "description": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "author": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "category": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        },
+        "related_service": {
+          "filled": 73,
+          "total": 73,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {
+        "paragraph": 73,
+        "heading": 73,
+        "heading[level]": 73,
+        "widget": 73,
+        "bulletList": 50,
+        "orderedList": 15,
+        "orderedList[start]": 15
+      },
+      "referenceGraph": {
+        "blog → person": {
+          "count": 73,
+          "field": "author",
+          "targetTemplate": "person"
+        },
+        "blog → blog-category": {
+          "count": 73,
+          "field": "category",
+          "targetTemplate": "blog-category"
+        },
+        "blog → service": {
+          "count": 73,
+          "field": "related_service",
+          "targetTemplate": "service"
+        }
+      },
+      "totalMediaRefs": 73,
+      "mediaSample": [
+        {
+          "field": "cover_image",
+          "_id": "68401e741ebcf9aac6941d03",
+          "mimetype": "image/png",
+          "size": 684848
+        },
+        {
+          "field": "cover_image",
+          "_id": "684019401ebcf9aac6941cf3",
+          "mimetype": "image/png",
+          "size": 775165
+        },
+        {
+          "field": "cover_image",
+          "_id": "68416a611ebcf9aac6941dad",
+          "mimetype": "image/png",
+          "size": 547980
+        }
+      ]
+    },
+    "person": {
+      "templateId": "6718e069ef5de485dc93f92a",
+      "label": "Person",
+      "singleEntry": false,
+      "totalEntries": 7,
+      "statusDistribution": {
+        "Published": 7
+      },
+      "localeDistribution": {
+        "en": 7
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "bio": {
+          "filled": 3,
+          "total": 7,
+          "pct": 43
+        },
+        "role": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "image": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "description": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "cards": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "featured": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        },
+        "linkedin": {
+          "filled": 1,
+          "total": 7,
+          "pct": 14
+        },
+        "team_member": {
+          "filled": 7,
+          "total": 7,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 7,
+      "mediaSample": [
+        {
+          "field": "image",
+          "_id": "6718e0bcef5de485dc93f92e",
+          "mimetype": "image/jpeg",
+          "size": 22789
+        },
+        {
+          "field": "image",
+          "_id": "6718e0b8ef5de485dc93f92c",
+          "mimetype": "image/jpeg",
+          "size": 37809
+        },
+        {
+          "field": "image",
+          "_id": "6718e0c5ef5de485dc93f933",
+          "mimetype": "image/jpeg",
+          "size": 39696
+        }
+      ]
+    },
+    "blog-category": {
+      "templateId": "6718e5f0ef5de485dc93f93f",
+      "label": "Blog category",
+      "singleEntry": false,
+      "totalEntries": 3,
+      "statusDistribution": {
+        "Published": 3
+      },
+      "localeDistribution": {
+        "en": 3
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 3,
+          "total": 3,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 0,
+      "mediaSample": []
+    },
+    "home-page": {
+      "templateId": "6718f7b7e4d0077ad7a50f62",
+      "label": "Home page",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "featured_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "featured_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_image": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "about_cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "company_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "company_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "company_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "company_cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "company_cards": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "data_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "data_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "data_cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "data_cards": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "results_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "results_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "results_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "results_cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "results_cards": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "partners": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "certificates_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "certificates_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "certificates_cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "value_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "value_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "value_cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "value_items": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "blogs": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "testimonials_title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "testimonials_subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "testimonials_cta": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "brands": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "contact_block": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 1,
+      "mediaSample": [
+        {
+          "field": "about_image",
+          "_id": "6718ec707d14c0b5931f8dc9",
+          "mimetype": "image/png",
+          "size": 1175084
+        }
+      ]
+    },
+    "certificate": {
+      "templateId": "6719f9d1b98a24129383bd2e",
+      "label": "Certificate",
+      "singleEntry": false,
+      "totalEntries": 19,
+      "statusDistribution": {
+        "Published": 19
+      },
+      "localeDistribution": {
+        "en": 19
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 19,
+          "total": 19,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 19,
+          "total": 19,
+          "pct": 100
+        },
+        "icon": {
+          "filled": 19,
+          "total": 19,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 19,
+      "mediaSample": [
+        {
+          "field": "icon",
+          "_id": "671a1bd8b98a24129383bd57",
+          "mimetype": "image/png",
+          "size": 10138
+        },
+        {
+          "field": "icon",
+          "_id": "671a1b94b98a24129383bd56",
+          "mimetype": "image/png",
+          "size": 7834
+        },
+        {
+          "field": "icon",
+          "_id": "671a1b8fb98a24129383bd54",
+          "mimetype": "image/png",
+          "size": 7396
+        }
+      ]
+    },
+    "case-study": {
+      "templateId": "671a222fb98a24129383bd5a",
+      "label": "Case study",
+      "singleEntry": false,
+      "totalEntries": 6,
+      "statusDistribution": {
+        "Published": 6
+      },
+      "localeDistribution": {
+        "en": 6
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "read_time": {
+          "filled": 0,
+          "total": 6,
+          "pct": 0
+        },
+        "date": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "service_featured_title": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "service_featured_description": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "hero_image": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "description": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "our_job": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "website": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "objective": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "challenges": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "strategy_items": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "execution_description": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "execution_cards": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "results_description": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "results_cards": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "results_cards_as_accordion": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "conclusion_description": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "conclusion_content": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 6,
+      "mediaSample": [
+        {
+          "field": "hero_image",
+          "_id": "671a23d7b98a24129383bd5e",
+          "mimetype": "image/jpeg",
+          "size": 52310
+        },
+        {
+          "field": "hero_image",
+          "_id": "671a23a6b98a24129383bd5d",
+          "mimetype": "image/jpeg",
+          "size": 40711
+        },
+        {
+          "field": "hero_image",
+          "_id": "671a23d7b98a24129383bd5e",
+          "mimetype": "image/jpeg",
+          "size": 52310
+        }
+      ]
+    },
+    "service": {
+      "templateId": "671a5d7be93230ec1d3de24d",
+      "label": "Service",
+      "singleEntry": false,
+      "totalEntries": 8,
+      "statusDistribution": {
+        "Published": 8
+      },
+      "localeDistribution": {
+        "en": 8
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "cover_image": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "description": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "root_seo_page": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "hero_title": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "hero_subtitle": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "hero_description": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "hero_cta_description": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "hero_cta": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "cards_slide_title": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "cards_slide_subtitle": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "cards_slide": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "cta_block": {
+          "filled": 6,
+          "total": 6,
+          "pct": 100
+        },
+        "results_title": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "results_subtitle": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "results_cards": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "case_studies_title": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "case_studies_subtitle": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "case_studies_cards": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "faq": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "contact_block": {
+          "filled": 8,
+          "total": 8,
+          "pct": 100
+        },
+        "charts": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {
+        "service → case-study": {
+          "count": 24,
+          "field": "case_studies_cards",
+          "targetTemplate": "case-study"
+        }
+      },
+      "totalMediaRefs": 8,
+      "mediaSample": [
+        {
+          "field": "cover_image",
+          "_id": "671b5b7a3beff4fc58f49ff7",
+          "mimetype": "image/jpeg",
+          "size": 65175
+        },
+        {
+          "field": "cover_image",
+          "_id": "671cf8dc7250351b20ee2e09",
+          "mimetype": "image/jpeg",
+          "size": 165987
+        },
+        {
+          "field": "cover_image",
+          "_id": "671f5e897250351b20ee2f26",
+          "mimetype": "image/jpeg",
+          "size": 184444
+        }
+      ]
+    },
+    "privacy-policy-page": {
+      "templateId": "671b90583beff4fc58f4a005",
+      "label": "Privacy policy page",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "blogs": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {
+        "heading": 1,
+        "heading[level]": 1,
+        "paragraph": 1,
+        "bulletList": 1
+      },
+      "referenceGraph": {},
+      "totalMediaRefs": 0,
+      "mediaSample": []
+    },
+    "blog-page": {
+      "templateId": "671ba1b23beff4fc58f4a007",
+      "label": "Blog page",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "cover_image": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "headline": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "subtitle": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "cta_description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 1,
+      "mediaSample": [
+        {
+          "field": "cover_image",
+          "_id": "671f56df7250351b20ee2f21",
+          "mimetype": "image/jpeg",
+          "size": 54578
+        }
+      ]
+    },
+    "header": {
+      "templateId": "67289ec2819bfc10a7282da0",
+      "label": "Header",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "nav_items": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 0,
+      "mediaSample": []
+    },
+    "footer": {
+      "templateId": "6728a846819bfc10a7282da3",
+      "label": "Footer",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "description": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "nav_items": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 0,
+      "mediaSample": []
+    },
+    "case-studies-page": {
+      "templateId": "6735ca3f107a7e22c2300f81",
+      "label": "Case studies page",
+      "singleEntry": true,
+      "totalEntries": 1,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 1
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "seo": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        },
+        "cover_image": {
+          "filled": 1,
+          "total": 1,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 1,
+      "mediaSample": [
+        {
+          "field": "cover_image",
+          "_id": "6735cad6107a7e22c2300f82",
+          "mimetype": "image/jpeg",
+          "size": 64307
+        }
+      ]
+    },
+    "redirect": {
+      "templateId": "679cc4e78219a897770f4de3",
+      "label": "Redirect",
+      "singleEntry": false,
+      "totalEntries": 11,
+      "statusDistribution": {
+        "Published": 1
+      },
+      "localeDistribution": {
+        "en": 11
+      },
+      "fieldFillRates": {
+        "title": {
+          "filled": 11,
+          "total": 11,
+          "pct": 100
+        },
+        "slug": {
+          "filled": 11,
+          "total": 11,
+          "pct": 100
+        },
+        "from": {
+          "filled": 11,
+          "total": 11,
+          "pct": 100
+        },
+        "to": {
+          "filled": 11,
+          "total": 11,
+          "pct": 100
+        }
+      },
+      "bodyNodeTypes": {},
+      "referenceGraph": {},
+      "totalMediaRefs": 0,
+      "mediaSample": []
+    }
+  },
+  "entrySummaries": [
+    {
+      "template": "contact-page",
+      "_id": "6718c040ef5de485dc93f8b7",
+      "slug": "contact",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "testimonial",
+      "_id": "6718c4bfef5de485dc93f8ed",
+      "slug": "gianluca-ferruggia",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "testimonial",
+      "_id": "6718c4d2ef5de485dc93f8ee",
+      "slug": "momcilo-popov",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "testimonial",
+      "_id": "6718c4e5ef5de485dc93f8ef",
+      "slug": "nik-vujic",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c2bfef5de485dc93f8d2",
+      "slug": "serpstat",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c2c7ef5de485dc93f8d3",
+      "slug": "envato-elements",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c2d0ef5de485dc93f8d4",
+      "slug": "entrepreneur-magazine",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c2d8ef5de485dc93f8d5",
+      "slug": "cloudways",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c34eef5de485dc93f8d6",
+      "slug": "10-web",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c35cef5de485dc93f8d7",
+      "slug": "trading-view",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c368ef5de485dc93f8d8",
+      "slug": "zoomerang",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c371ef5de485dc93f8d9",
+      "slug": "affinda",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c37eef5de485dc93f8da",
+      "slug": "mathnasium",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c399ef5de485dc93f8db",
+      "slug": "draftable",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c3a4ef5de485dc93f8dc",
+      "slug": "syncspider",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c3adef5de485dc93f8dd",
+      "slug": "nagish",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c3bfef5de485dc93f8de",
+      "slug": "becomes",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c3f4ef5de485dc93f8df",
+      "slug": "design-rush",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c413ef5de485dc93f8e0",
+      "slug": "becomes",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c426ef5de485dc93f8e1",
+      "slug": "atropos-digital",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c432ef5de485dc93f8e2",
+      "slug": "take-off",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c43bef5de485dc93f8e3",
+      "slug": "veza",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c446ef5de485dc93f8e4",
+      "slug": "conversion-pipeline",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c450ef5de485dc93f8e5",
+      "slug": "ice-web",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c45bef5de485dc93f8e6",
+      "slug": "white-label",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c467ef5de485dc93f8e7",
+      "slug": "get-scaled",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6718c470ef5de485dc93f8e8",
+      "slug": "tcf",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "company",
+      "_id": "6719076ed3f0ab3abfd3d017",
+      "slug": "digital-spice",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "partnership-page",
+      "_id": "6718d310ef5de485dc93f926",
+      "slug": "partnership",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "about-page",
+      "_id": "6718ecfd7d14c0b5931f8dca",
+      "slug": "about",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "blog",
+      "_id": "6718ea6cef5de485dc93f946",
+      "slug": "benefits-of-custom-software-development",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6738c29c107a7e22c230105e",
+      "slug": "craft-stunning-linkable-assets",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6738e347107a7e22c230107b",
+      "slug": "seo-marketing-practices-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673b2f42107a7e22c2301173",
+      "slug": "ranking-high-search-engine-results",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673b325e107a7e22c230117a",
+      "slug": "how-to-grow-your-business-online",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673b95dd107a7e22c23011da",
+      "slug": "link-earning-strategies",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673b9707107a7e22c23011de",
+      "slug": "guide-to-keyword-research-strategies",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673b984e107a7e22c23011e3",
+      "slug": "ai-for-seo-new-approaches",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673bb8bb107a7e22c23011f3",
+      "slug": "dive-into-google-algorithm-updates-2023",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673bb99b107a7e22c23011f8",
+      "slug": "b2b-seo-solutions-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673cc3d7107a7e22c2301306",
+      "slug": "search-engine-rank-seo-stats-2024",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673cc5c2107a7e22c230130d",
+      "slug": "link-exchange",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673cc7de107a7e22c2301317",
+      "slug": "international-seo",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673ccba0107a7e22c2301321",
+      "slug": "web-summit-lisbon-2023",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673cce54107a7e22c2301329",
+      "slug": "outsourcing-link-building",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673ccffe107a7e22c230132c",
+      "slug": "ranking-factors-seo",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673ddfdcc8abc5e921e444a5",
+      "slug": "lets-discuss-google-search-updates",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673de2a9c8abc5e921e444ad",
+      "slug": "backlinks-management",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673de48fc8abc5e921e444b3",
+      "slug": "seo-vs-google-ads",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673de63ec8abc5e921e444b8",
+      "slug": "difference-between-marketing-and-sales-services",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673deac1c8abc5e921e444c2",
+      "slug": "how-to-create-a-link-building-strategy",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673df0c8c8abc5e921e444c8",
+      "slug": "process-that-affects-visibility-of-website",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673df293c8abc5e921e444cd",
+      "slug": "benefits-of-link-building",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "673df88bc8abc5e921e444d5",
+      "slug": "first-step-in-marketing-research-process",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68a44dd4f78097e4cd9dc70d",
+      "slug": "top-5-seo-myths",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68ad87b85983f8a701f514dc",
+      "slug": "marketing-mistakes-you-need-to-stop-making",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68b168a5d58050f970c7702c",
+      "slug": "top-content-marketing-strategies",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68bae1c050c097cd552a67b4",
+      "slug": "outdated-seo-practices-to-avoid-in-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68c4042f50c097cd552a6e22",
+      "slug": "seo-principles-to-boost-your-rank",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68cd469050c097cd552a755e",
+      "slug": "5-reasons-your-seo-campaign-isnt-giving-you-the-results-you-want",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68da69eb50c097cd552a81c1",
+      "slug": "benefits-of-blogging-for-small-businesses-in-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68df998fea1914cdebd7f6cf",
+      "slug": "seo-content-checklist",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68ecd6af122f59a5a2dbc9e1",
+      "slug": "how-to-add-schema-markup",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68f204166bb9a9ccb70ddedc",
+      "slug": "saas-seo-strategies",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "68fb5161e71880ba02e0231a",
+      "slug": "google-eeat-and-seo-in-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6904975bfb928258e9f63712",
+      "slug": "topic-clusters-for-seo",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6911d958e54ad7c9037d50a7",
+      "slug": "ai-content-for-seo-to-protect-rankings",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69174eede54ad7c9037d57a2",
+      "slug": "authenticity-in-marketing",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6920591071f9c1b763c7c22b",
+      "slug": "how-to-do-market-research-guide",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "692d79adc5beabe40ae2a68f",
+      "slug": "best-competitor-analysis-tools",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "693311e224182e87a7f3de3e",
+      "slug": "how-many-backlinks-do-i-need-to-rank",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "693ff9e47174f005355eb455",
+      "slug": "dofollow-and-nofollow-links",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "694a7c5ae32fe2487e3b9fa1",
+      "slug": "international-link-building-guide",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6952774ecee28f4eca1eefab",
+      "slug": "how-to-repurpose-old-blog-posts",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6961083fcee28f4eca1efa8f",
+      "slug": "backlink-audit-guide",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6964c384cee28f4eca1efd8e",
+      "slug": "mobile-seo-checklist-best-practices",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "696a11fed131c82d7db9f804",
+      "slug": "zero-click-searches",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "697266c6181e1dc790b77c7b",
+      "slug": "link-authority-essentials",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6980ab99068bc4db45005346",
+      "slug": "google-search-statistics-and-trends",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "698617ba068bc4db450056f9",
+      "slug": "google-ai-overview-statistics-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "698f0c7c1f870c1d2098b89f",
+      "slug": "content-marketing-statistics-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "699594ed114faae9a624e42d",
+      "slug": "link-building-statistics-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "6995980f114faae9a624e430",
+      "slug": "how-many-ads-do-we-see-a-day",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "699842de6ca64028c7a1f272",
+      "slug": "sonic-branding",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69986eb36ca64028c7a1f2a6",
+      "slug": "best-backlinks-guide",
+      "statuses": [
+        "Draft"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69a188848bbf3c646bb0e524",
+      "slug": "weird-designs-in-branding",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69a6b25b85422d2306ffd943",
+      "slug": "surfer-seo-vs-ahrefs-comparison",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69aac7e15190981f1119a68d",
+      "slug": "how-to-build-b2b-content-marketing-strategy",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69aeb85a5190981f1119a8f0",
+      "slug": "screaming-frog-vs-ahrefs-comparison",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69b3fd975190981f1119ac02",
+      "slug": "ahrefs-vs-moz-comparison",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69b9559fdbd5a7876d483156",
+      "slug": "best-ahrefs-alternatives",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69bd6666498fc9ee86aba62a",
+      "slug": "how-to-do-an-internal-link-audit",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69c284c5680201f4628aba5d",
+      "slug": "top-link-building-tools-in-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69c670134f655f1b19405d50",
+      "slug": "best-google-trends-alternatives",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69cb9b55b2b06aa427dcff57",
+      "slug": "what-is-a-website-title",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69cf84d143d597961ee5e9a5",
+      "slug": "cro-statistics-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69d4c3c07308919746d903fa",
+      "slug": "marketing-fundamentals",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69da0651141ab71ef7520908",
+      "slug": "seo-proposal-breakdown",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69df625d617d0da60d7397d9",
+      "slug": "top-backlink-analysis-tools-in-2026",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69e21ac49085a8e2c34f870e",
+      "slug": "what-is-internal-linking",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69e634011d1b7a34712645d2",
+      "slug": "what-is-a-content-pillar",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69eb6292c99dee216ff80c26",
+      "slug": "what-are-organic-keywords",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog",
+      "_id": "69f08211674bcf5697b386b2",
+      "slug": "the-psychology-of-email-fatigue",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "person",
+      "_id": "6718e0e6ef5de485dc93f935",
+      "slug": "nebojsa-jankovic",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "person",
+      "_id": "6718e0efef5de485dc93f936",
+      "slug": "anastasija-jankovic",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "person",
+      "_id": "6718e105ef5de485dc93f938",
+      "slug": "stefan-cvetkovic",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "person",
+      "_id": "6718e110ef5de485dc93f939",
+      "slug": "una-stanojevic",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "person",
+      "_id": "6718e11def5de485dc93f93a",
+      "slug": "srdjan-gombar",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "person",
+      "_id": "6718e129ef5de485dc93f93b",
+      "slug": "slobodan-kacavenda",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "person",
+      "_id": "6718e133ef5de485dc93f93c",
+      "slug": "andjela-knezevic",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "blog-category",
+      "_id": "6718ea4aef5de485dc93f944",
+      "slug": "marketing",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "blog-category",
+      "_id": "6718ea52ef5de485dc93f945",
+      "slug": "link-building",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "blog-category",
+      "_id": "6738e357107a7e22c230107c",
+      "slug": "seo",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "home-page",
+      "_id": "67190eaad3f0ab3abfd3d020",
+      "slug": "home",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719fea8b98a24129383bd2f",
+      "slug": "google-analytics",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719feb6b98a24129383bd30",
+      "slug": "google-ads",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719fec0b98a24129383bd31",
+      "slug": "google-ads-search",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719fecbb98a24129383bd32",
+      "slug": "google-ads-display",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719fed3b98a24129383bd33",
+      "slug": "google-ads-video",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719fee8b98a24129383bd34",
+      "slug": "hubspot-social-media-marketing",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719fef0b98a24129383bd35",
+      "slug": "hubspot-seo",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719fef8b98a24129383bd36",
+      "slug": "hubspot-seo-ii",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff02b98a24129383bd37",
+      "slug": "hubspot-sales-management",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff0ab98a24129383bd38",
+      "slug": "hubspot-sales-enablement",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff12b98a24129383bd39",
+      "slug": "hubspot-inbound",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff1db98a24129383bd3a",
+      "slug": "hubspot-inbound-marketing",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff25b98a24129383bd3b",
+      "slug": "hubspot-inbound-marketing-optimization",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff2db98a24129383bd3c",
+      "slug": "hubspot-growth-driven-design",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff36b98a24129383bd3d",
+      "slug": "hubspot-email-marketing",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff3fb98a24129383bd3e",
+      "slug": "hubspot-digital-advertising",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff4ab98a24129383bd3f",
+      "slug": "hubspot-digital-marketing",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff59b98a24129383bd40",
+      "slug": "hubspot-inbound-sales",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "certificate",
+      "_id": "6719ff67b98a24129383bd41",
+      "slug": "hubspot-content-marketing",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "case-study",
+      "_id": "671a2529b98a24129383bd5f",
+      "slug": "affinda",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "case-study",
+      "_id": "671a2754b98a24129383bd60",
+      "slug": "my-baskets",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "case-study",
+      "_id": "67360e42107a7e22c2300fc8",
+      "slug": "nagish",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "case-study",
+      "_id": "673764e0107a7e22c2300fff",
+      "slug": "art-by-maudsch",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "case-study",
+      "_id": "67389b07107a7e22c2301034",
+      "slug": "designrush",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "case-study",
+      "_id": "6738a04c107a7e22c230103b",
+      "slug": "number-artist",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "service",
+      "_id": "671b4f383beff4fc58f49fed",
+      "slug": "technical",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "service",
+      "_id": "671cf9ba7250351b20ee2e0a",
+      "slug": "on-page",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "service",
+      "_id": "671f64bb7250351b20ee2f2d",
+      "slug": "local",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "service",
+      "_id": "671f70347250351b20ee2f30",
+      "slug": "managed",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "service",
+      "_id": "671f7f987250351b20ee2f35",
+      "slug": "keyword-research",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "service",
+      "_id": "671f96ec4af2f1ddaa6bbd1a",
+      "slug": "content-creation",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "service",
+      "_id": "671f9af64af2f1ddaa6bbd1e",
+      "slug": "e-commerce",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "service",
+      "_id": "671f9fab4af2f1ddaa6bbd27",
+      "slug": "linkbuilding",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "privacy-policy-page",
+      "_id": "671b91873beff4fc58f4a006",
+      "slug": "privacy-policy",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": true
+    },
+    {
+      "template": "blog-page",
+      "_id": "671ba1c83beff4fc58f4a008",
+      "slug": "blog",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "header",
+      "_id": "67289f25819bfc10a7282da2",
+      "slug": "header",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "footer",
+      "_id": "6728ab1c819bfc10a7282da5",
+      "slug": "footer",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "case-studies-page",
+      "_id": "6735cb21107a7e22c2300f83",
+      "slug": "case-studies",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc5588219a897770f4de4",
+      "slug": "backlinks-management",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc5738219a897770f4de5",
+      "slug": "how-to-create-a-link-building-strategy",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc5a18219a897770f4de6",
+      "slug": "benefits-of-link-building",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc5b98219a897770f4de7",
+      "slug": "lets-discuss-google-search-updates",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc5d18219a897770f4de8",
+      "slug": "marketing",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc5ed8219a897770f4de9",
+      "slug": "marketingfirst-step-in-marketing-research-process",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc6048219a897770f4dea",
+      "slug": "web-design-development",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc61a8219a897770f4deb",
+      "slug": "marketingppcseo-vs-google-ads",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc6368219a897770f4dec",
+      "slug": "process-that-affects-visibility-of-website",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "679cc6518219a897770f4ded",
+      "slug": "seohow-to-grow-your-business-online",
+      "statuses": [],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    },
+    {
+      "template": "redirect",
+      "_id": "67cbf0169526ad3efc5bc870",
+      "slug": "ranking-factors-seo",
+      "statuses": [
+        "Published"
+      ],
+      "locales": [
+        "en"
+      ],
+      "hasContent": false
+    }
+  ],
+  "globalStats": {
+    "totalTemplates": 18,
+    "totalEntries": 163,
+    "statusDistribution": {
+      "Published": 147,
+      "Draft": 1
+    },
+    "localeDistribution": {
+      "en": 163
+    },
+    "bodyNodeTypes": {
+      "paragraph": 74,
+      "heading": 74,
+      "heading[level]": 74,
+      "bulletList": 51,
+      "widget": 73,
+      "orderedList": 15,
+      "orderedList[start]": 15
+    },
+    "unknownBodyNodeTypes": [
+      {
+        "type": "widget",
+        "count": 73,
+        "templates": [
+          "blog"
+        ]
+      }
+    ],
+    "referenceGraph": {
+      "blog → person": {
+        "count": 73,
+        "field": "author",
+        "targetTemplate": "person"
+      },
+      "blog → blog-category": {
+        "count": 73,
+        "field": "category",
+        "targetTemplate": "blog-category"
+      },
+      "blog → service": {
+        "count": 73,
+        "field": "related_service",
+        "targetTemplate": "service"
+      },
+      "service → case-study": {
+        "count": 24,
+        "field": "case_studies_cards",
+        "targetTemplate": "case-study"
+      }
+    },
+    "totalMediaRefs": 145
+  },
+  "mediaSummary": {
+    "total": 786,
+    "mimetypes": {
+      "image/jpeg": 372,
+      "image/png": 332,
+      "dir": 17,
+      "image/svg+xml": 65
+    },
+    "totalSizeBytes": 229469510,
+    "totalSizeMB": 219
+  },
+  "warnings": [
+    {
+      "type": "UNKNOWN_BODY_NODE_TYPE",
+      "nodeType": "widget",
+      "count": 73,
+      "templates": [
+        "blog"
+      ],
+      "message": "Unknown body node type \"widget\" (73x in: blog)"
+    }
+  ],
+  "errors": []
+}
