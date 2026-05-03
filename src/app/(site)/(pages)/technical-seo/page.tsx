@@ -1,18 +1,9 @@
-import { getFaqItemsByService, getServicePage } from "@/lib/sanity-data";
-import { CmsServicePage } from "@/components/pages/shared/cms-service-page";
+import { getFaqItemsByService } from "@/lib/sanity-data";
 import TechnicalSeoPage from "@/components/pages/technical-seo/technical-seo-page";
 
 export { metadata } from "@/components/pages/technical-seo/technical-seo-page";
 
 export default async function TechnicalSeoRoute() {
-  const [faqItems, servicePage] = await Promise.all([
-    getFaqItemsByService("technical-seo").catch(() => []),
-    getServicePage("technical-seo").catch(() => null),
-  ]);
-
-  if (servicePage?.heroImageUrl) {
-    return <CmsServicePage fallbackFaqItems={faqItems} servicePage={servicePage} />;
-  }
-
+  const faqItems = await getFaqItemsByService("technical-seo").catch(() => []);
   return <TechnicalSeoPage cmsFaqItems={faqItems} />;
 }
