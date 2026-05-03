@@ -43,12 +43,15 @@ export function BlogPostDetailContent({ post }: BlogPostDetailContentProps) {
         <BlogPostHeader articleUrl={articleUrl} post={post} />
 
         <div className="mt-[40px] lg:mt-[60px] lg:grid lg:grid-cols-[305px_minmax(0,933px)] lg:gap-[40px]">
-          {/* Desktop-only left column: TOC + Author card. Sticky. */}
-          <aside className="hidden lg:block">
-            <div className="sticky top-[100px] flex max-h-[calc(100vh-120px)] flex-col gap-[50px] overflow-y-auto pb-[40px]">
+          {/* Desktop-only left column: TOC stays sticky as user scrolls
+              the article body. Author card flows below in normal layout
+              so its full bio is always visible (longer bios were getting
+              clipped by the previous max-h-[calc(100vh-120px)] cap). */}
+          <aside className="hidden lg:flex lg:flex-col lg:gap-[50px]">
+            <div className="sticky top-[100px]">
               <BlogPostTableOfContents body={post.body} />
-              <BlogPostAuthorCard author={post.author} />
             </div>
+            <BlogPostAuthorCard author={post.author} />
           </aside>
 
           {/* Right column: hero image + body + share bar */}

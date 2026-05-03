@@ -12,9 +12,17 @@ import type { SanityPostSummary } from "@/lib/sanity-data";
 
 type CategoryTab = "All" | "Marketing" | "SEO" | "Link Building";
 
-const CATEGORY_TABS: CategoryTab[] = ["All", "Marketing", "SEO", "Link Building"];
+const CATEGORY_TABS: CategoryTab[] = [
+  "All",
+  "Marketing",
+  "SEO",
+  "Link Building",
+];
 const MOBILE_CATEGORY_LISTBOX_ID = "insights-category-listbox";
-const STATIC_CARD_BY_SLUG = new Map(BLOG_POSTS.map((card) => [card.slug, card]));
+const PAGE_SIZE = 6;
+const STATIC_CARD_BY_SLUG = new Map(
+  BLOG_POSTS.map((card) => [card.slug, card]),
+);
 
 function formatPublishedDate(dateValue: string | null): string {
   if (!dateValue) return "Draft";
@@ -44,7 +52,9 @@ function mapPostToCatalogCard(post: SanityPostSummary): BlogPostEntry {
     slug: post.slug,
     title: post.title,
     excerpt: post.excerpt ?? staticFallback?.excerpt ?? "",
-    date: post.publishedAt ? formatPublishedDate(post.publishedAt) : staticFallback?.date ?? "Draft",
+    date: post.publishedAt
+      ? formatPublishedDate(post.publishedAt)
+      : (staticFallback?.date ?? "Draft"),
     href: `/insights/${post.slug}`,
     category: mapPostCategory(post),
     imageSrc:
@@ -77,7 +87,7 @@ function InsightBlogCard({ card }: { card: BlogPostEntry }) {
 
       <div className="mt-[20px] flex flex-col items-center gap-[20px] lg:mt-0 lg:block lg:px-5 lg:pt-5">
         <div className="flex w-[286px] flex-col items-center gap-[10px] text-center lg:w-full lg:items-start lg:text-left">
-          <h3 className="text-[28px] font-normal leading-[1.2] tracking-[-0.56px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:min-h-[84px] lg:text-[32px] lg:leading-[32px] lg:tracking-[-0.64px]">
+          <h3 className="line-clamp-3 text-[28px] font-normal leading-[1.2] tracking-[-0.56px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:min-h-[84px] lg:text-[32px] lg:leading-[32px] lg:tracking-[-0.64px]">
             {card.title}
           </h3>
           <p className="text-[16px] font-normal leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:h-[72px] lg:overflow-hidden lg:text-[18px] lg:leading-[24px]">
@@ -128,13 +138,11 @@ interface InsightsCatalogProps {
 export function InsightsCatalog({ cmsPosts }: InsightsCatalogProps) {
   const [activeTab, setActiveTab] = useState<CategoryTab>("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const mobileDropdownRef = useRef<HTMLDivElement | null>(null);
 
   const catalogCards = useMemo(
-    () =>
-      cmsPosts?.length
-        ? cmsPosts.map(mapPostToCatalogCard)
-        : BLOG_POSTS,
+    () => (cmsPosts?.length ? cmsPosts.map(mapPostToCatalogCard) : BLOG_POSTS),
     [cmsPosts],
   );
 
@@ -177,6 +185,15 @@ export function InsightsCatalog({ cmsPosts }: InsightsCatalogProps) {
     return catalogCards.filter((card) => card.category === activeTab);
   }, [activeTab, catalogCards]);
 
+  // Reset pagination when the category filter changes — otherwise switching
+  // tabs leaves an unrelated visibleCount in place.
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [activeTab]);
+
+  const visibleCards = filteredCards.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredCards.length;
+
   return (
     <>
       <div className="mx-auto w-full max-w-[350px] px-[10px] lg:hidden">
@@ -191,7 +208,12 @@ export function InsightsCatalog({ cmsPosts }: InsightsCatalogProps) {
             type="button"
           >
             {activeTab}
-            <ChevronDownIcon className={cn("size-3 transition-transform", isDropdownOpen ? "rotate-180" : "")} />
+            <ChevronDownIcon
+              className={cn(
+                "size-3 transition-transform",
+                isDropdownOpen ? "rotate-180" : "",
+              )}
+            />
           </button>
 
           {isDropdownOpen ? (
@@ -206,7 +228,9 @@ export function InsightsCatalog({ cmsPosts }: InsightsCatalogProps) {
                   aria-selected={activeTab === tab}
                   className={cn(
                     "block min-h-[44px] w-full rounded-[12px] px-3 py-2 text-left text-[16px] text-[var(--color-hr-dark)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-hr-pure-white)] dark:text-[var(--color-text-inverse)] dark:focus-visible:ring-offset-[var(--color-bg-dark)]",
-                    activeTab === tab ? "bg-[var(--color-hr-off-white)] dark:bg-[var(--color-surface-inverse-10)]" : "",
+                    activeTab === tab
+                      ? "bg-[var(--color-hr-off-white)] dark:bg-[var(--color-surface-inverse-10)]"
+                      : "",
                   )}
                   key={tab}
                   onClick={() => {
@@ -247,10 +271,22 @@ export function InsightsCatalog({ cmsPosts }: InsightsCatalogProps) {
       </div>
 
       <div className="mx-auto mt-10 flex w-full flex-col items-center gap-[30px] pb-[10px] lg:grid lg:max-w-none lg:grid-cols-3 lg:gap-x-[21px] lg:gap-y-5 lg:px-[15px]">
-        {filteredCards.map((card) => (
+        {visibleCards.map((card) => (
           <InsightBlogCard card={card} key={card.slug} />
         ))}
       </div>
+
+      {hasMore ? (
+        <div className="mt-10 flex justify-center">
+          <button
+            className="motion-interactive motion-interactive-press inline-flex h-[47px] items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-6 text-[16px] font-normal leading-[24px] text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
+            onClick={() => setVisibleCount((prev) => prev + PAGE_SIZE)}
+            type="button"
+          >
+            Show More
+          </button>
+        </div>
+      ) : null}
 
       <div className="pb-[40px]" />
     </>
