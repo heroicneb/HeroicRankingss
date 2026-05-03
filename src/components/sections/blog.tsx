@@ -88,7 +88,7 @@ export function Blog({ cmsPosts }: BlogProps) {
           {posts.slice(0, 3).map((blog) => (
             <AppLink
               aria-label={`Open featured blog: ${blog.title}`}
-              className="mx-auto flex w-full max-w-[348px] flex-col overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:h-[467px] lg:max-w-none lg:rounded-[var(--radius-card)]"
+              className="mx-auto flex h-full w-full max-w-[348px] flex-col overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:max-w-none lg:rounded-[var(--radius-card)]"
               href={blog.href}
               id={`featured-blog-${blog.slug}`}
               key={blog.slug}
@@ -98,7 +98,7 @@ export function Blog({ cmsPosts }: BlogProps) {
                 <h3 className="type-h3 line-clamp-2 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
                   {blog.title}
                 </h3>
-                <p className="type-paragraph mt-5 line-clamp-3 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
+                <p className="type-paragraph mt-5 line-clamp-4 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
                   {blog.excerpt}
                 </p>
                 <p className="type-paragraph mt-auto pt-5 text-center text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
