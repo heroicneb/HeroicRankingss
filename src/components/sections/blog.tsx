@@ -95,7 +95,7 @@ export function Blog({ cmsPosts }: BlogProps) {
             >
               <div className="surface-radial h-[174px] w-full shrink-0 lg:h-[207px]" />
               <div className="flex flex-1 flex-col px-5 pb-5 pt-5">
-                <h3 className="type-h3 line-clamp-2 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
+                <h3 className="type-h3 line-clamp-3 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
                   {blog.title}
                 </h3>
                 <p className="type-paragraph mt-5 line-clamp-4 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse-50)] lg:text-left">
