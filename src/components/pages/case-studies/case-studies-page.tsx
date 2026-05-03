@@ -39,7 +39,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
       "Affinda is a leading provider of AI-powered document parsing and data extraction solutions.",
     date: "December 1, 2024",
     panelImageSrc: "/case-studies/imgGroup44.svg",
-    panelLabelClassName: "left-[35px]",
+    panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
     href: "/case-studies/affinda",
   },
@@ -51,7 +51,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
     date: "December 1, 2024",
     panelImageSrc: "/case-studies/imgGroup48.svg",
 
-    panelLabelClassName: "left-[126px]",
+    panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName:
       "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
     href: "/case-studies/my-baskets",
@@ -88,7 +88,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
     date: "December 1, 2024",
     panelImageSrc: "/case-studies/imgGroup53.svg",
 
-    panelLabelClassName: "left-[123px]",
+    panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
     href: "/case-studies/designrush",
   },
@@ -109,12 +109,12 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
 const CASE_STUDY_PANEL_FALLBACKS: Record<string, CaseStudyPanelFallback> = {
   affinda: {
     panelImageSrc: "/case-studies/imgGroup44.svg",
-    panelLabelClassName: "left-[35px]",
+    panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
   },
   "my-baskets": {
     panelImageSrc: "/case-studies/imgGroup48.svg",
-    panelLabelClassName: "left-[126px]",
+    panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName:
       "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
   },
@@ -130,7 +130,7 @@ const CASE_STUDY_PANEL_FALLBACKS: Record<string, CaseStudyPanelFallback> = {
   },
   designrush: {
     panelImageSrc: "/case-studies/imgGroup53.svg",
-    panelLabelClassName: "left-[123px]",
+    panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
   },
   "diy-craft-ecom-brand": {
