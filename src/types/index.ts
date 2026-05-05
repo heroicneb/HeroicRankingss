@@ -77,25 +77,10 @@ export interface BlogCard {
 }
 
 export interface AboutTeamMember extends TeamMemberBase {
+  slug?: string;
   imageSrc: string;
   imageAlt: string;
   isRoleGradient?: boolean;
-}
-
-export interface TeamMemberPopupSocial {
-  label: string;
-  url?: string;
-}
-
-export interface TeamMemberPopupData extends TeamMemberBase {
-  cardImageSrc: string;
-  cardImageAlt: string;
-  bioParagraphs: [string[], string[]];
-  contact: {
-    phone: string | null;
-    email: string;
-  };
-  socials: TeamMemberPopupSocial[];
 }
 
 export interface Testimonial {

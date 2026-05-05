@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { createTeamMemberHash } from "@/components/sections/about-us-team-data";
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
 import { ArrowUpRightIcon } from "@/components/ui/icons";
@@ -14,7 +13,7 @@ const MEMBERS: TeamMember[] = [
     role: "/  Founder & CEO  /",
     imageSrc: "/figma/team/nebojsa.webp",
     imageAlt: "Nebojša Janković portrait",
-    href: `/about-us#${createTeamMemberHash("Nebojša Janković")}`,
+    href: "/team/nebojsa-jankovic",
   },
   {
     name: "Anastasija Janković",
@@ -22,7 +21,7 @@ const MEMBERS: TeamMember[] = [
     imageSrc: "/figma/team/anastasija.webp",
     imageAlt: "Anastasija Janković portrait",
     offsetClassName: "min-[1360px]:translate-y-[70px]",
-    href: `/about-us#${createTeamMemberHash("Anastasija Janković")}`,
+    href: "/team/anastasija-jankovic",
   },
 ];
 

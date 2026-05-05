@@ -1,27 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
-import { AboutUsTeamPopupController } from "@/components/sections/about-us-team-popup-controller";
-import {
-  POPUP_DATA,
-  TEAM_MEMBERS,
-  createTeamMemberHash,
-} from "@/components/sections/about-us-team-data";
+import { TEAM_MEMBERS } from "@/components/sections/about-us-team-data";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientText } from "@/components/ui/gradient-text";
 import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
 import type { SanityTeamMember } from "@/lib/sanity-data";
-import type { AboutTeamMember, TeamMemberPopupData } from "@/types";
-
-/**
- * Split a flat array of bio paragraphs into the two-column tuple format
- * expected by TeamMemberPopupData.bioParagraphs.
- */
-function splitBioParagraphs(paragraphs: string[]): [string[], string[]] {
-  const mid = Math.ceil(paragraphs.length / 2);
-  return [paragraphs.slice(0, mid), paragraphs.slice(mid)];
-}
+import type { AboutTeamMember } from "@/types";
 
 const HARDCODED_MEMBER_BY_NAME = new Map(
   TEAM_MEMBERS.map((member) => [member.name, member]),
@@ -29,26 +16,6 @@ const HARDCODED_MEMBER_BY_NAME = new Map(
 const BECOME_A_HERO_MEMBER = TEAM_MEMBERS.find(
   (member) => member.name === "Become a Hero",
 );
-
-/**
- * Map Sanity socialLink platform enum (lowercase) to the display label the
- * popup uses for ordering and "primary URL" matching. Keep keys in sync with
- * src/sanity/schemaTypes/objects/socialLink.ts.
- */
-const SOCIAL_PLATFORM_LABELS: Record<string, string> = {
-  linkedin: "LinkedIn",
-  twitter: "X",
-  instagram: "Instagram",
-  github: "GitHub",
-  youtube: "YouTube",
-  website: "Website",
-};
-
-function normalizeBioParagraphs(paragraphs?: string[] | null): string[] {
-  return (paragraphs ?? [])
-    .map((paragraph) => paragraph.trim())
-    .filter((paragraph) => paragraph.length > 0);
-}
 
 function buildCmsTeamRoster(cmsMembers: SanityTeamMember[]): AboutTeamMember[] {
   return cmsMembers
@@ -69,7 +36,8 @@ function buildCmsTeamRoster(cmsMembers: SanityTeamMember[]): AboutTeamMember[] {
         : rawRole
           ? `/ ${rawRole} /`
           : "";
-      return {
+      const slug = cmsMember.slug?.current ?? hardcodedMember?.slug;
+      const built: AboutTeamMember = {
         name: cmsMember.name,
         role: normalizedRole,
         imageSrc,
@@ -77,88 +45,11 @@ function buildCmsTeamRoster(cmsMembers: SanityTeamMember[]): AboutTeamMember[] {
           cmsMember.photoAlt ||
           hardcodedMember?.imageAlt ||
           `${cmsMember.name} portrait`,
-      } satisfies AboutTeamMember;
+      };
+      if (slug) built.slug = slug;
+      return built;
     })
     .filter((member): member is AboutTeamMember => Boolean(member));
-}
-
-function buildPopupDataFromCms(
-  cmsMembers: SanityTeamMember[],
-): Record<string, TeamMemberPopupData> {
-  const popupData: Record<string, TeamMemberPopupData> = {};
-
-  for (const cmsMember of cmsMembers) {
-    const fallbackPopup = POPUP_DATA[cmsMember.name];
-    const fallbackMember = HARDCODED_MEMBER_BY_NAME.get(cmsMember.name);
-
-    const cmsBioParagraphs = normalizeBioParagraphs(cmsMember.bioParagraphs);
-    const fallbackBioParagraphs = fallbackPopup
-      ? [...fallbackPopup.bioParagraphs[0], ...fallbackPopup.bioParagraphs[1]]
-      : [];
-    const normalizedBio =
-      cmsBioParagraphs.length > 0
-        ? cmsBioParagraphs
-        : cmsMember.bio?.trim()
-          ? [cmsMember.bio.trim()]
-          : fallbackBioParagraphs;
-
-    const hasCmsPopupFields =
-      normalizedBio.length > 0 ||
-      Boolean(cmsMember.contact?.email?.trim()) ||
-      Boolean(cmsMember.contact?.phone?.trim()) ||
-      cmsMember.socialLinks.some((social) => Boolean(social.url?.trim()));
-
-    if (!hasCmsPopupFields && !fallbackPopup) {
-      continue;
-    }
-
-    const socialsFromCms = cmsMember.socialLinks
-      .filter((social) => social.url?.trim())
-      .map((social) => ({
-        label: SOCIAL_PLATFORM_LABELS[social.platform] ?? social.platform,
-        url: social.url.trim(),
-      }));
-    const socials =
-      socialsFromCms.length > 0
-        ? socialsFromCms
-        : (fallbackPopup?.socials ?? []);
-
-    const cardImageSrc =
-      cmsMember.cardImageUrl ||
-      cmsMember.photoUrl ||
-      fallbackPopup?.cardImageSrc ||
-      fallbackMember?.imageSrc ||
-      "";
-    if (!cardImageSrc) {
-      continue;
-    }
-
-    popupData[cmsMember.name] = {
-      name: cmsMember.name,
-      role: cmsMember.role || fallbackPopup?.role || "",
-      cardImageSrc,
-      cardImageAlt:
-        cmsMember.cardImageAlt ||
-        cmsMember.photoAlt ||
-        fallbackPopup?.cardImageAlt ||
-        `${cmsMember.name} portrait`,
-      bioParagraphs:
-        normalizedBio.length > 0 ? splitBioParagraphs(normalizedBio) : [[], []],
-      contact: {
-        phone:
-          cmsMember.contact?.phone?.trim() ||
-          fallbackPopup?.contact.phone ||
-          null,
-        email:
-          cmsMember.contact?.email?.trim() ||
-          fallbackPopup?.contact.email ||
-          "info@heroicrankings.com",
-      },
-      socials,
-    };
-  }
-
-  return popupData;
 }
 
 interface AboutUsTeamProps {
@@ -177,13 +68,6 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
       ? [...teamMembers, BECOME_A_HERO_MEMBER]
       : teamMembers;
 
-  const popupData = hasCmsData
-    ? buildPopupDataFromCms(cmsTeamMembers ?? [])
-    : POPUP_DATA;
-  const popupMemberNames = membersWithCta
-    .filter((member) => member.name in popupData)
-    .map((member) => member.name);
-
   return (
     <section className="pt-[60px] lg:pt-[120px]" id="about-us-team">
       <div className="mx-auto w-full max-w-[1440px] px-[15px] lg:px-[40px]">
@@ -199,18 +83,19 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
 
         <div className="mt-[40px] grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">
           {membersWithCta.map((member) => {
-            const hasPopup = member.name in popupData;
+            const cardClass =
+              "motion-interactive motion-interactive-press group relative block overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] pb-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px] lg:pb-7";
 
-            if (hasPopup) {
+            if (member.slug) {
               return (
-                <a
+                <Link
                   aria-label={`Open team profile: ${member.name}`}
-                  className="motion-interactive motion-interactive-press group relative block overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] pb-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px] lg:pb-7"
-                  href={`#${createTeamMemberHash(member.name)}`}
+                  className={cardClass}
+                  href={`/team/${member.slug}`}
                   key={member.name}
                 >
                   <TeamCard member={member} showArrow />
-                </a>
+                </Link>
               );
             }
 
@@ -218,7 +103,7 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
               return (
                 <AppLink
                   aria-label="Apply to join Heroic Rankings"
-                  className="motion-interactive motion-interactive-press group relative block overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] pb-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px] lg:pb-7"
+                  className={cardClass}
                   href="/contact"
                   key={member.name}
                   motionPreset="none"
@@ -239,11 +124,6 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
           })}
         </div>
       </div>
-
-      <AboutUsTeamPopupController
-        popupDataOverride={popupData}
-        popupMemberNames={popupMemberNames}
-      />
     </section>
   );
 }
