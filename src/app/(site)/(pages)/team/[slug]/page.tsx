@@ -59,12 +59,25 @@ export async function generateMetadata({
     firstParagraph(member.bioParagraphs?.[0] ?? null) ??
     `${member.name}${titleSuffix} at Heroic Rankings.`;
 
-  return createPageMetadata({
+  const base = createPageMetadata({
     title,
     description,
     path: `/team/${slug}`,
     ogType: "article",
   });
+
+  // Strip explicit `images` keys so Next can auto-populate from the per-route
+  // opengraph-image.tsx file (Next 16 hashes the OG route URL automatically;
+  // an explicit images URL would bypass that resolution and 404).
+  const { images: _baseOg, ...openGraphRest } = base.openGraph ?? {};
+  const { images: _baseTw, ...twitterRest } = base.twitter ?? {};
+  void _baseOg;
+  void _baseTw;
+  return {
+    ...base,
+    openGraph: openGraphRest,
+    twitter: twitterRest,
+  };
 }
 
 export default async function TeamMemberPage({ params }: TeamMemberPageProps) {
