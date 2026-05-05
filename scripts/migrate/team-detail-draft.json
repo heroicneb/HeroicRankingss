@@ -6,6 +6,7 @@
     "name": "Nebojsa Jankovic",
     "role": "Founder & CEO",
     "bio": "I founded Heroic Rankings with desire to help other businesses increase their visibility and bring real customers. I love SEO and networking with people.",
+    "bio_replace": "My journey into the world of SEO has been one of perseverance and self-discovery. I started from humble beginnings, juggling warehouse shifts and studying engineering, but I always had a hunger for more. Throughout my life, I've seen myself as a problem solver. To me, every problem is a puzzle first and a challenge second. This perspective has driven me to develop a keen eye for detail and a meticulous approach, which has earned me the reputation of being the go-to person for resolving SEO issues. Paired with my leadership skills and results-driven mindset, I view any task, no matter how monumental, as just another puzzle waiting to be solved. Through hard work and adaptability, I’ve built a career and a company I’m proud of, turning challenges into opportunities for success.",
     "bioParagraphs_legacy": [
       "My journey into the world of SEO has been one of perseverance and self-discovery. I started from humble beginnings, juggling warehouse shifts and studying engineering, but I always had a hunger for more. Throughout my life, I've seen myself as a problem solver. To me, every problem is a puzzle first and a challenge second. This perspective has driven me to develop a keen eye for detail and a meticulous approach, which has earned me the reputation of being the go-to person for resolving SEO issues. Paired with my leadership skills and results-driven mindset, I view any task, no matter how monumental, as just another puzzle waiting to be solved. Through hard work and adaptability, I’ve built a career and a company I’m proud of, turning challenges into opportunities for success.",
       "Name 3 of your personal traits:",
@@ -150,8 +151,12 @@
     ],
     "qaItems": [
       {
-        "question": "What do you like the most about your job? And what do you most like about working at Heroic Rankings?",
-        "answer": "It’s one of the healthiest work environments that I’ve ever worked in. We’re a small company so we can all get to know each other pretty well. Also, I love being enabled to grow, learn, and give a shot at new things."
+        "question": "What do you like the most about your job?",
+        "answer": "I love being enabled to grow, learn, and give a shot at new things."
+      },
+      {
+        "question": "What do you most like about working at Heroic Rankings?",
+        "answer": "It’s one of the healthiest work environments that I’ve ever worked in. We’re a small company so we can all get to know each other pretty well."
       }
     ],
     "lifestylePhotos": [
@@ -298,9 +303,7 @@
         "_index": 2
       }
     ],
-    "_warnings": [
-      "period-jammed bullets — verify split"
-    ]
+    "_warnings": ["period-jammed bullets — verify split"]
   },
   "slobodan-kacavenda": {
     "_id": "migrate-teamMember-6718e129ef5de485dc93f93b",
