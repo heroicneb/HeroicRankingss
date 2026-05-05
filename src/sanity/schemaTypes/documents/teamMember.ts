@@ -87,11 +87,85 @@ export const teamMember = defineType({
     }),
     defineField({
       name: "bioParagraphs",
-      title: "Extended Bio (Popup)",
+      title: "Extended Bio (Legacy)",
       type: "array",
       description:
-        "Longer multi-paragraph bio for the popup/modal. Each item is one paragraph.",
+        "Legacy field — replaced by qaItems + personalTraits + spareTimeBullets. Kept hidden + read-only for one release as rollback source. Will be removed in a follow-up after parity verified.",
       of: [{ type: "text" }],
+      readOnly: true,
+      hidden: ({ document }) =>
+        Boolean(
+          (document?.qaItems as unknown[] | undefined)?.length ||
+          (document?.personalTraits as string | undefined)?.length,
+        ),
+    }),
+    defineField({
+      name: "personalTraits",
+      title: "Personal Traits",
+      type: "string",
+      description:
+        'Three-word self-description, e.g. "Resilient, dedicated, and ambitious."',
+      validation: (rule) => rule.max(140),
+    }),
+    defineField({
+      name: "spareTimeBullets",
+      title: "Spare-Time Bullets",
+      type: "array",
+      of: [{ type: "string" }],
+      description:
+        "Hobbies / spare-time activities, one per item. Renders as bullet list.",
+      validation: (rule) => rule.max(8),
+    }),
+    defineField({
+      name: "qaItems",
+      title: "Q&A Items",
+      type: "array",
+      description:
+        "Question/answer pairs above traits. Each renders as a Q (heading) + A (paragraph).",
+      of: [
+        {
+          type: "object",
+          fields: [
+            defineField({
+              name: "question",
+              type: "string",
+              validation: (r) => r.required(),
+            }),
+            defineField({
+              name: "answer",
+              type: "text",
+              rows: 4,
+              validation: (r) => r.required(),
+            }),
+          ],
+          preview: { select: { title: "question", subtitle: "answer" } },
+        },
+      ],
+      validation: (rule) => rule.max(6),
+    }),
+    defineField({
+      name: "lifestylePhotos",
+      title: "Lifestyle Photos",
+      type: "array",
+      description:
+        "Personal/lifestyle photos rendered in the right column on /team/[slug]. 3–6 recommended; sticky bio card requires >=5.",
+      of: [
+        {
+          type: "image",
+          options: { hotspot: true },
+          fields: [
+            defineField({
+              name: "alt",
+              type: "string",
+              title: "Alt Text",
+              description:
+                "Required. Scene-accurate, ~125 chars max. First photo can include full name + role; rest scene-only or first-name + scene to avoid keyword stuffing.",
+              validation: (r) => r.required().max(140),
+            }),
+          ],
+        },
+      ],
+      validation: (rule) => rule.max(8),
     }),
     defineField({
       name: "contact",
@@ -151,10 +225,10 @@ export const teamMember = defineType({
     }),
     defineField({
       name: "cards",
-      title: "Cards / Gallery",
+      title: "Cards / Gallery (Legacy)",
       type: "array",
       description:
-        "Optional gallery / story cards (migrated from BCMS `cards[]`). Each card has title, optional subtitle, body text, and optional image.",
+        "Legacy field — replaced by lifestylePhotos. Kept hidden + read-only for one release as rollback source. Will be removed in a follow-up after parity verified.",
       of: [
         {
           type: "object",
@@ -184,6 +258,9 @@ export const teamMember = defineType({
           },
         },
       ],
+      readOnly: true,
+      hidden: ({ document }) =>
+        Boolean((document?.lifestylePhotos as unknown[] | undefined)?.length),
       validation: (rule) =>
         rule
           .max(12)
