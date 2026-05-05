@@ -1,0 +1,438 @@
+{
+  "nebojsa-jankovic": {
+    "_id": "migrate-teamMember-6718e0e6ef5de485dc93f935",
+    "_rev": "PBmZKgD0TypOug6iXb64Tv",
+    "_updatedAt": "2026-04-29T14:16:15Z",
+    "name": "Nebojsa Jankovic",
+    "role": "Founder & CEO",
+    "bio": "I founded Heroic Rankings with desire to help other businesses increase their visibility and bring real customers. I love SEO and networking with people.",
+    "bioParagraphs_legacy": [
+      "My journey into the world of SEO has been one of perseverance and self-discovery. I started from humble beginnings, juggling warehouse shifts and studying engineering, but I always had a hunger for more. Throughout my life, I've seen myself as a problem solver. To me, every problem is a puzzle first and a challenge second. This perspective has driven me to develop a keen eye for detail and a meticulous approach, which has earned me the reputation of being the go-to person for resolving SEO issues. Paired with my leadership skills and results-driven mindset, I view any task, no matter how monumental, as just another puzzle waiting to be solved. Through hard work and adaptability, I’ve built a career and a company I’m proud of, turning challenges into opportunities for success.",
+      "Name 3 of your personal traits:",
+      "Resilient, dedicated, and ambitious.",
+      "What I like to do in my spare time:",
+      "Spending time with my wife and son\nTraveling the world\nStaying up to date with the latest marketing trends"
+    ],
+    "personalTraits": "Resilient, dedicated, and ambitious.",
+    "spareTimeBullets": [
+      "Spending time with my wife and son",
+      "Traveling the world",
+      "Staying up to date with the latest marketing trends"
+    ],
+    "qaItems": [],
+    "lifestylePhotos": [
+      {
+        "_ref": "image-1c5306889d0e2c1be5c1aedb9d64765ec3c8e2d7-4284x5712-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/1c5306889d0e2c1be5c1aedb9d64765ec3c8e2d7-4284x5712.jpg",
+        "alt": "",
+        "_index": 0
+      },
+      {
+        "_ref": "image-c055c4f5337387e6e109b212ad57061e099057ee-1536x2048-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/c055c4f5337387e6e109b212ad57061e099057ee-1536x2048.jpg",
+        "alt": "",
+        "_index": 1
+      },
+      {
+        "_ref": "image-36b5903325189008d3a69c6e8242a4a28f273d5e-563x960-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/36b5903325189008d3a69c6e8242a4a28f273d5e-563x960.jpg",
+        "alt": "",
+        "_index": 2
+      },
+      {
+        "_ref": "image-5768686904f70d97bc63568387b7979151b6db3e-4284x5712-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/5768686904f70d97bc63568387b7979151b6db3e-4284x5712.jpg",
+        "alt": "",
+        "_index": 3
+      },
+      {
+        "_ref": "image-6f005d67e2ab9a6022a7db24619974fa1c62ce9d-5616x3744-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/6f005d67e2ab9a6022a7db24619974fa1c62ce9d-5616x3744.jpg",
+        "alt": "",
+        "_index": 4
+      },
+      {
+        "_ref": "image-0d713e799c8dcaecacea307a8fac5844068c1ac5-1600x1068-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/0d713e799c8dcaecacea307a8fac5844068c1ac5-1600x1068.jpg",
+        "alt": "",
+        "_index": 5
+      }
+    ],
+    "_warnings": [
+      "single paragraph before traits — likely Nebojsa-style long-form bio (qaItems = [], leave bio in `bio` field instead)"
+    ]
+  },
+  "anastasija-jankovic": {
+    "_id": "migrate-teamMember-6718e0efef5de485dc93f936",
+    "_rev": "4EJxGkidAvbDvq7TZ2c5Gw",
+    "_updatedAt": "2026-04-29T14:16:15Z",
+    "name": "Anastasija Jankovic",
+    "role": "Co-Founder & CHRO",
+    "bio": "I am a co-founder at Heroic Rankings and our goal is to help you find easy wins and grow your website’s organic traffic with SEO and marketing strategies.",
+    "bioParagraphs_legacy": [
+      "What do you like the most about your job?",
+      "I like being a human resources manager because it creates new opportunities for people by connecting their needs and talents with company demands and creating an environment where everyone can succeed.",
+      "What do you most like about working at Heroic Rankings?",
+      "Seeing how visions can be put into action and made a difference by a team of dedicated individuals is what drew me to work at Heroic Rankings.",
+      "Name 3 of your personal traits:",
+      "Resourceful, social, and analytic",
+      "What I like to do in my spare time:",
+      "Travel and explore new countries and cultures\nHanging out with my little family relaxes me even on my busiest days\nCook dishes, preferably full of spices and meat"
+    ],
+    "personalTraits": "Resourceful, social, and analytic",
+    "spareTimeBullets": [
+      "Travel and explore new countries and cultures",
+      "Hanging out with my little family relaxes me even on my busiest days",
+      "Cook dishes, preferably full of spices and meat"
+    ],
+    "qaItems": [
+      {
+        "question": "What do you like the most about your job?",
+        "answer": "I like being a human resources manager because it creates new opportunities for people by connecting their needs and talents with company demands and creating an environment where everyone can succeed."
+      },
+      {
+        "question": "What do you most like about working at Heroic Rankings?",
+        "answer": "Seeing how visions can be put into action and made a difference by a team of dedicated individuals is what drew me to work at Heroic Rankings."
+      }
+    ],
+    "lifestylePhotos": [
+      {
+        "_ref": "image-c5f18120d05a02405f38c32fdffe3bb226b9f440-1200x1599-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/c5f18120d05a02405f38c32fdffe3bb226b9f440-1200x1599.jpg",
+        "alt": "",
+        "_index": 0
+      },
+      {
+        "_ref": "image-6567e9f764a4540b2559377f7dd34eaec21bfedf-1200x1600-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/6567e9f764a4540b2559377f7dd34eaec21bfedf-1200x1600.jpg",
+        "alt": "",
+        "_index": 1
+      },
+      {
+        "_ref": "image-a964661bffae77955638301893d9d2f1042ccb3f-1200x1600-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/a964661bffae77955638301893d9d2f1042ccb3f-1200x1600.jpg",
+        "alt": "",
+        "_index": 2
+      },
+      {
+        "_ref": "image-48907e86dfcc52db3b29130f2c4b6a29f8d26cdc-1600x1066-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/48907e86dfcc52db3b29130f2c4b6a29f8d26cdc-1600x1066.jpg",
+        "alt": "",
+        "_index": 3
+      },
+      {
+        "_ref": "image-a7a9dcdc6c33a6e2d592a5369ad8b3c3bf497c72-1200x1600-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/a7a9dcdc6c33a6e2d592a5369ad8b3c3bf497c72-1200x1600.jpg",
+        "alt": "",
+        "_index": 4
+      }
+    ],
+    "_warnings": []
+  },
+  "stefan-cvetkovic": {
+    "_id": "migrate-teamMember-6718e105ef5de485dc93f938",
+    "_rev": "4EJxGkidAvbDvq7TZ1LGAM",
+    "_updatedAt": "2026-04-29T12:06:30Z",
+    "name": "Stefan Cvetkovic",
+    "role": "Organic Growth Manager",
+    "bio": "Stefan is a prolific writer, with his reach extending from business and tech content to scientific papers, poetry, and short stories. When not in the office, Stefan plays music, collects vinyl, and travels wherever his right index finger points on the globe.",
+    "bioParagraphs_legacy": [
+      "What do you like the most about your job? And what do you most like about working at Heroic Rankings?",
+      "It’s one of the healthiest work environments that I’ve ever worked in. We’re a small company so we can all get to know each other pretty well. Also, I love being enabled to grow, learn, and give a shot at new things.",
+      "Name 3 of your personal traits:",
+      "Patient, adaptable, and creative.",
+      "What do you like to do in your spare time:",
+      "In my spare time, I produce music, DJ, collect vinyl, and write. Also, I grab every possible opportunity to travel and soak in cultures from different parts of the world."
+    ],
+    "personalTraits": "Patient, adaptable, and creative.",
+    "spareTimeBullets": [
+      "In my spare time, I produce music, DJ, collect vinyl, and write. Also, I grab every possible opportunity to travel and soak in cultures from different parts of the world."
+    ],
+    "qaItems": [
+      {
+        "question": "What do you like the most about your job? And what do you most like about working at Heroic Rankings?",
+        "answer": "It’s one of the healthiest work environments that I’ve ever worked in. We’re a small company so we can all get to know each other pretty well. Also, I love being enabled to grow, learn, and give a shot at new things."
+      }
+    ],
+    "lifestylePhotos": [
+      {
+        "_ref": "image-b4237d75cd711c331e4114587f1c3caa06f0fc5c-1600x1200-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/b4237d75cd711c331e4114587f1c3caa06f0fc5c-1600x1200.jpg",
+        "alt": "",
+        "_index": 0
+      },
+      {
+        "_ref": "image-a754630558c98f95d212e15c9fbbf7907f3bb7ee-2048x1536-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/a754630558c98f95d212e15c9fbbf7907f3bb7ee-2048x1536.jpg",
+        "alt": "",
+        "_index": 1
+      },
+      {
+        "_ref": "image-db673435989f7cafbfdeefefe0260f6791c64d04-1536x2048-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/db673435989f7cafbfdeefefe0260f6791c64d04-1536x2048.jpg",
+        "alt": "",
+        "_index": 2
+      },
+      {
+        "_ref": "image-1be9eb2697d389ee27b130b58329f342561ee77f-1066x1600-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/1be9eb2697d389ee27b130b58329f342561ee77f-1066x1600.jpg",
+        "alt": "",
+        "_index": 3
+      },
+      {
+        "_ref": "image-2e68aa99706c93da1e77864dd7a6242a52fd2243-3024x4032-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/2e68aa99706c93da1e77864dd7a6242a52fd2243-3024x4032.jpg",
+        "alt": "",
+        "_index": 4
+      }
+    ],
+    "_warnings": [
+      "single-prose hobbies — kept as one bullet, may want to split"
+    ]
+  },
+  "una-stanojevic": {
+    "_id": "migrate-teamMember-6718e110ef5de485dc93f939",
+    "_rev": "R01fImVq6Pj54n4PTOs0vI",
+    "_updatedAt": "2026-04-29T17:31:49Z",
+    "name": "Una Stanojevic",
+    "role": "Strategic Assistant & Head of Operations",
+    "bio": null,
+    "bioParagraphs_legacy": [
+      "What do you like the most about your job?",
+      "The variety of tasks that let me tap into the skills I've built over the years. It allows me to continuously learn and grow, while also collaborating with an amazing team that shares the same passion for excellence.",
+      "What do you most like about working at Heroic Rankings?",
+      "The supportive, growth-oriented atmosphere. We’re constantly pushing each other to improve, and the sense of teamwork creates a place where innovation and success go hand in hand.",
+      "Name 3 of your personal traits:",
+      "Resilient, Creative and Adaptable",
+      "What I like to do in my spare time:",
+      "Music production and other artistic pursuits\nLearning new languages and immersing myself in new cultures\nHealth, wellness and personal growth"
+    ],
+    "personalTraits": "Resilient, Creative and Adaptable",
+    "spareTimeBullets": [
+      "Music production and other artistic pursuits",
+      "Learning new languages and immersing myself in new cultures",
+      "Health, wellness and personal growth"
+    ],
+    "qaItems": [
+      {
+        "question": "What do you like the most about your job?",
+        "answer": "The variety of tasks that let me tap into the skills I've built over the years. It allows me to continuously learn and grow, while also collaborating with an amazing team that shares the same passion for excellence."
+      },
+      {
+        "question": "What do you most like about working at Heroic Rankings?",
+        "answer": "The supportive, growth-oriented atmosphere. We’re constantly pushing each other to improve, and the sense of teamwork creates a place where innovation and success go hand in hand."
+      }
+    ],
+    "lifestylePhotos": [
+      {
+        "_ref": "image-a5c243c260da4c9c3673155d7671d2fb712b8cbc-4480x6720-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/a5c243c260da4c9c3673155d7671d2fb712b8cbc-4480x6720.jpg",
+        "alt": "",
+        "_index": 0
+      },
+      {
+        "_ref": "image-dd8bb5c0fa07a660b423e7f3caf9fec1f57501bc-3024x3138-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/dd8bb5c0fa07a660b423e7f3caf9fec1f57501bc-3024x3138.jpg",
+        "alt": "",
+        "_index": 1
+      },
+      {
+        "_ref": "image-011c19aef82f818e74c08c8a87db57337d7b2708-900x1600-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/011c19aef82f818e74c08c8a87db57337d7b2708-900x1600.jpg",
+        "alt": "",
+        "_index": 2
+      }
+    ],
+    "_warnings": []
+  },
+  "srdjan-gombar": {
+    "_id": "migrate-teamMember-6718e11def5de485dc93f93a",
+    "_rev": "4EJxGkidAvbDvq7TZ1LJoW",
+    "_updatedAt": "2026-04-29T12:06:53Z",
+    "name": "Srdjan Gombar",
+    "role": "Content Manager",
+    "bio": null,
+    "bioParagraphs_legacy": [
+      "What do you like the most about your job?",
+      "I love the fact that my work is always creative. Even when it’s a topic that was written and rewritten time and time again, there’s always a new spin or angle from which to approach it. Think about it: even in high literature, it’s not like you can invent a new genre or theme (even Hamlet wasn’t the first revenge story). You can just give it your personal stamp and hope it resonates well with the target audience. If anything, creating a new angle on something so many have covered so far is a challenge, and I, for one, love it.",
+      "What do you most like about working at Heroic Rankings?",
+      "The people. The process of creating SEO results is similar across enterprises, but people at Heroic Rankings are some of my favorite co-workers.",
+      "Name 3 of your personal traits:",
+      "Creative, communicative, and amicable.",
+      "What I like to do in my spare time:",
+      "Hang out with my son and nephew.Play video games.Boxing."
+    ],
+    "personalTraits": "Creative, communicative, and amicable.",
+    "spareTimeBullets": [
+      "Hang out with my son and nephew",
+      "Play video games",
+      "Boxing"
+    ],
+    "qaItems": [
+      {
+        "question": "What do you like the most about your job?",
+        "answer": "I love the fact that my work is always creative. Even when it’s a topic that was written and rewritten time and time again, there’s always a new spin or angle from which to approach it. Think about it: even in high literature, it’s not like you can invent a new genre or theme (even Hamlet wasn’t the first revenge story). You can just give it your personal stamp and hope it resonates well with the target audience. If anything, creating a new angle on something so many have covered so far is a challenge, and I, for one, love it."
+      },
+      {
+        "question": "What do you most like about working at Heroic Rankings?",
+        "answer": "The people. The process of creating SEO results is similar across enterprises, but people at Heroic Rankings are some of my favorite co-workers."
+      }
+    ],
+    "lifestylePhotos": [
+      {
+        "_ref": "image-26b450114beabfcab79ea99290a2e38d545060c8-1530x2040-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/26b450114beabfcab79ea99290a2e38d545060c8-1530x2040.jpg",
+        "alt": "",
+        "_index": 0
+      },
+      {
+        "_ref": "image-2abaedaf5006c46d906a59ffd759fcbd830f40f2-1200x1600-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/2abaedaf5006c46d906a59ffd759fcbd830f40f2-1200x1600.jpg",
+        "alt": "",
+        "_index": 1
+      },
+      {
+        "_ref": "image-3159eef70d77ae0fe5357abc249a8ee62702c728-1530x2040-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/3159eef70d77ae0fe5357abc249a8ee62702c728-1530x2040.jpg",
+        "alt": "",
+        "_index": 2
+      }
+    ],
+    "_warnings": [
+      "period-jammed bullets — verify split"
+    ]
+  },
+  "slobodan-kacavenda": {
+    "_id": "migrate-teamMember-6718e129ef5de485dc93f93b",
+    "_rev": "3MWM9PcfWwBrFzwRMXRsox",
+    "_updatedAt": "2026-04-29T14:16:16Z",
+    "name": "Slobodan Kacavenda",
+    "role": "Link Building Specialist",
+    "bio": null,
+    "bioParagraphs_legacy": [
+      "What do you like the most about your job?",
+      "I love link building because it's such a dynamic challenge to find and create new opportunities. In places others would never even think possible, through extraordinary value exchange, we have managed to establish fruitful partnerships and connections.",
+      "What do you most like about working at Heroic Rankings?",
+      "There is no greater feeling than taking our passion projects to new heights while preserving their unique identity. With an unparallel commitment to excellence, Heroic Rankings encourages me to bring the best out of myself.",
+      "Name 3 of your personal traits:",
+      "Creative, social, and hard-working.",
+      "What I like to do in my spare time:",
+      "Enjoying Movies and Video Games\nCycling and Swimming\nTravelling"
+    ],
+    "personalTraits": "Creative, social, and hard-working.",
+    "spareTimeBullets": [
+      "Enjoying Movies and Video Games",
+      "Cycling and Swimming",
+      "Travelling"
+    ],
+    "qaItems": [
+      {
+        "question": "What do you like the most about your job?",
+        "answer": "I love link building because it's such a dynamic challenge to find and create new opportunities. In places others would never even think possible, through extraordinary value exchange, we have managed to establish fruitful partnerships and connections."
+      },
+      {
+        "question": "What do you most like about working at Heroic Rankings?",
+        "answer": "There is no greater feeling than taking our passion projects to new heights while preserving their unique identity. With an unparallel commitment to excellence, Heroic Rankings encourages me to bring the best out of myself."
+      }
+    ],
+    "lifestylePhotos": [
+      {
+        "_ref": "image-2a7d93835cb6939a29d63b5d4e249482a60bf23b-3024x4032-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/2a7d93835cb6939a29d63b5d4e249482a60bf23b-3024x4032.jpg",
+        "alt": "",
+        "_index": 0
+      },
+      {
+        "_ref": "image-b73647f97c15b2a654e42b2fc7955865f2d09a97-3024x4032-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/b73647f97c15b2a654e42b2fc7955865f2d09a97-3024x4032.jpg",
+        "alt": "",
+        "_index": 1
+      },
+      {
+        "_ref": "image-cf4705337c86eab936d76751fa033ae300ee7b80-1200x1600-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/cf4705337c86eab936d76751fa033ae300ee7b80-1200x1600.jpg",
+        "alt": "",
+        "_index": 2
+      },
+      {
+        "_ref": "image-a0c20cef83472731012bc4c4a9025cf7547f27eb-3024x4032-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/a0c20cef83472731012bc4c4a9025cf7547f27eb-3024x4032.jpg",
+        "alt": "",
+        "_index": 3
+      }
+    ],
+    "_warnings": []
+  },
+  "andjela-knezevic": {
+    "_id": "migrate-teamMember-6718e133ef5de485dc93f93c",
+    "_rev": "4EJxGkidAvbDvq7TZ2c5am",
+    "_updatedAt": "2026-04-29T14:16:16Z",
+    "name": "Andjela Knezevic",
+    "role": "Link Building Specialist",
+    "bio": null,
+    "bioParagraphs_legacy": [
+      "What do you like the most about your job?",
+      "I like being a link builder because I can work on improving websites and helping them grow. I enjoy how this process gives me the opportunity to meet people from different niches and learn from them and their working styles.",
+      "What do you most like about working at Heroic Rankings?",
+      "The thing I like the most about working at Heroic Rankings is the team spirit and the support we all have for each other. It’s motivating and makes both work and life feel better.",
+      "Name 3 of your personal traits:",
+      "Curious, consistent, team player.",
+      "In my spare time, I love:",
+      "spending time with my friends and family, exploring new and interesting coffee shops\nrelaxing at home while watching movies or playing games."
+    ],
+    "personalTraits": "Curious, consistent, team player.",
+    "spareTimeBullets": [
+      "spending time with my friends and family, exploring new and interesting coffee shops",
+      "relaxing at home while watching movies or playing games."
+    ],
+    "qaItems": [
+      {
+        "question": "What do you like the most about your job?",
+        "answer": "I like being a link builder because I can work on improving websites and helping them grow. I enjoy how this process gives me the opportunity to meet people from different niches and learn from them and their working styles."
+      },
+      {
+        "question": "What do you most like about working at Heroic Rankings?",
+        "answer": "The thing I like the most about working at Heroic Rankings is the team spirit and the support we all have for each other. It’s motivating and makes both work and life feel better."
+      }
+    ],
+    "lifestylePhotos": [
+      {
+        "_ref": "image-59d686f156956e0ac4b4d9f30e8b6f145b340428-1440x1800-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/59d686f156956e0ac4b4d9f30e8b6f145b340428-1440x1800.jpg",
+        "alt": "",
+        "_index": 0
+      },
+      {
+        "_ref": "image-07baad1aa752c4868766f55f81e65933a2e5f417-1536x2048-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/07baad1aa752c4868766f55f81e65933a2e5f417-1536x2048.jpg",
+        "alt": "",
+        "_index": 1
+      },
+      {
+        "_ref": "image-eb14e1ed8b4ef349a21bc4dbc07218babb9d7137-1536x2048-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/eb14e1ed8b4ef349a21bc4dbc07218babb9d7137-1536x2048.jpg",
+        "alt": "",
+        "_index": 2
+      },
+      {
+        "_ref": "image-d67853826195ef8592931a640cbc046be41673ea-2048x1365-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/d67853826195ef8592931a640cbc046be41673ea-2048x1365.jpg",
+        "alt": "",
+        "_index": 3
+      },
+      {
+        "_ref": "image-56d1cbef441d9aa95d56932507a12d2e86659a82-946x2048-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/56d1cbef441d9aa95d56932507a12d2e86659a82-946x2048.jpg",
+        "alt": "",
+        "_index": 4
+      },
+      {
+        "_ref": "image-3b22dcf002dbf80b3713985e98e21ecda8753b54-1709x2280-jpg",
+        "url": "https://cdn.sanity.io/images/5cr26y9m/production/3b22dcf002dbf80b3713985e98e21ecda8753b54-1709x2280.jpg",
+        "alt": "",
+        "_index": 5
+      }
+    ],
+    "_warnings": []
+  }
+}
