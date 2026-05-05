@@ -206,6 +206,16 @@ export const TEAM_MEMBER_BY_SLUG_QUERY = defineQuery(`
     cardImage { ..., asset->{ _id, _type, metadata { lqip } } },
     bio,
     bioParagraphs,
+    personalTraits,
+    spareTimeBullets,
+    qaItems[]{ question, answer },
+    "lifestylePhotos": lifestylePhotos[]{
+      "url": asset->url,
+      "alt": alt,
+      "width": asset->metadata.dimensions.width,
+      "height": asset->metadata.dimensions.height,
+      "lqip": asset->metadata.lqip
+    },
     contact,
     socialLinks[] { _key, platform, url },
     linkedin,
@@ -216,7 +226,12 @@ export const TEAM_MEMBER_BY_SLUG_QUERY = defineQuery(`
 `);
 
 export const TEAM_MEMBER_SLUGS_QUERY = defineQuery(`
-  *[_type == "teamMember" && defined(slug.current) && !(_id match "audit-fixture-*")].slug.current
+  *[
+    _type == "teamMember"
+    && defined(slug.current)
+    && showOnAboutPage != false
+    && !(_id match "audit-fixture-*")
+  ].slug.current
 `);
 
 // --- Partner Logos ---

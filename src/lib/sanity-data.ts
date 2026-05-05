@@ -121,6 +121,16 @@ interface SanityRawTeamMember {
   cardImage?: SanityImageRef | null;
   bio?: string | null;
   bioParagraphs?: string[] | null;
+  personalTraits?: string | null;
+  spareTimeBullets?: string[] | null;
+  qaItems?: Array<{ question: string; answer: string }> | null;
+  lifestylePhotos?: Array<{
+    url: string | null;
+    alt: string | null;
+    width?: number | null;
+    height?: number | null;
+    lqip?: string | null;
+  }> | null;
   contact?: { email?: string | null; phone?: string | null } | null;
   socialLinks?: SanityRawSocialLink[] | null;
   linkedin?: string | null;
@@ -569,6 +579,16 @@ export interface SanityTeamMember {
   cardImageLqip: string | undefined;
   bio: string | null;
   bioParagraphs: string[] | null;
+  personalTraits: string | null;
+  spareTimeBullets: string[];
+  qaItems: Array<{ question: string; answer: string }>;
+  lifestylePhotos: Array<{
+    url: string;
+    alt: string;
+    width: number | null;
+    height: number | null;
+    lqip: string | undefined;
+  }>;
   contact: { email: string | null; phone: string | null } | null;
   socialLinks: Array<{ platform: string; url: string }>;
 }
@@ -594,6 +614,25 @@ function mapTeamMember(m: SanityRawTeamMember): SanityTeamMember {
     cardImageLqip: imageLqip(m.cardImage),
     bio: m.bio ?? null,
     bioParagraphs: m.bioParagraphs ?? null,
+    personalTraits: m.personalTraits?.trim() || null,
+    spareTimeBullets: (m.spareTimeBullets ?? []).filter(
+      (b): b is string => typeof b === "string" && b.trim().length > 0,
+    ),
+    qaItems: (m.qaItems ?? []).filter(
+      (q): q is { question: string; answer: string } =>
+        Boolean(q?.question?.trim() && q?.answer?.trim()),
+    ),
+    lifestylePhotos: (m.lifestylePhotos ?? [])
+      .filter((p): p is NonNullable<typeof p> & { url: string } =>
+        Boolean(p?.url),
+      )
+      .map((p) => ({
+        url: p.url,
+        alt: (p.alt ?? "").trim(),
+        width: p.width ?? null,
+        height: p.height ?? null,
+        lqip: p.lqip ?? undefined,
+      })),
     contact: m.contact
       ? { email: m.contact.email ?? null, phone: m.contact.phone ?? null }
       : null,
