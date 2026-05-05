@@ -42,10 +42,12 @@ function JourneyStepDesktop({ step, index, isLast }: JourneyStepProps) {
       <p className="gradient-text-brand font-normal text-[24px] leading-[1.2] tracking-[-0.48px]">
         {stepNumber}
       </p>
-      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] lg:text-[28px] lg:tracking-[-0.56px]">
+      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)] lg:text-[28px] lg:tracking-[-0.56px]">
         {step.title}
       </h3>
-      <p className="type-paragraph text-[var(--color-hr-dark)]">{step.body}</p>
+      <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+        {step.body}
+      </p>
     </li>
   );
 }
@@ -54,16 +56,18 @@ function JourneyStepMobile({ step, index }: JourneyStepProps) {
   const stepNumber = String(index + 1).padStart(2, "0");
   return (
     <article
-      className="snap-start flex shrink-0 flex-col gap-[14px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] p-[28px]"
+      className="snap-start flex shrink-0 flex-col gap-[14px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] p-[28px] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]"
       style={{ width: `${MOBILE_CARD_WIDTH}px` }}
     >
       <p className="gradient-text-brand font-normal text-[22px] leading-[1.2] tracking-[-0.44px]">
         {stepNumber}
       </p>
-      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)]">
+      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)]">
         {step.title}
       </h3>
-      <p className="type-paragraph text-[var(--color-hr-dark)]">{step.body}</p>
+      <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+        {step.body}
+      </p>
     </article>
   );
 }
@@ -92,7 +96,7 @@ export function CaseStudyJourney({ data }: CaseStudyJourneyProps) {
       id="case-study-journey"
     >
       <div className="mx-auto w-full max-w-[1440px]">
-        <div className="rounded-[30px] bg-[var(--color-hr-off-white)] px-[24px] py-[40px] lg:rounded-[40px] lg:px-[80px] lg:py-[80px]">
+        <div className="rounded-[30px] bg-[var(--color-hr-off-white)] px-[24px] py-[40px] dark:bg-[var(--color-surface-inverse-10)] lg:rounded-[40px] lg:px-[80px] lg:py-[80px]">
           {data.label ? (
             <SectionLabel className="text-center lg:text-left">
               {data.label}
@@ -102,7 +106,7 @@ export function CaseStudyJourney({ data }: CaseStudyJourneyProps) {
           {hasHeading ? (
             <TwoToneHeading
               as="h2"
-              className="mt-[14px] max-w-[860px] text-center font-normal text-[28px] leading-[1.2] tracking-[-0.56px] lg:mt-[20px] lg:text-left lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px] text-[var(--color-hr-pure-black)]"
+              className="mt-[14px] max-w-[860px] text-center font-normal text-[28px] leading-[1.2] tracking-[-0.56px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)] lg:mt-[20px] lg:text-left lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px]"
               highlighted={headingHighlighted}
               main={headingMain}
             />

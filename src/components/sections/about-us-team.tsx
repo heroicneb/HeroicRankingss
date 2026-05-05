@@ -159,12 +159,12 @@ function TeamCard({
       {member.isRoleGradient ? (
         <GradientText
           as="p"
-          className="gradient-text-brand-about-us-team-role type-paragraph mt-1 !block px-5 text-center lg:mt-2 lg:text-left"
+          className="gradient-text-brand-about-us-team-role type-paragraph mt-1 !block min-h-[3em] px-5 text-center lg:mt-2 lg:text-left"
         >
           {member.role}
         </GradientText>
       ) : (
-        <p className="type-paragraph mt-1 px-5 text-center text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:mt-2 lg:text-left">
+        <p className="type-paragraph mt-1 min-h-[3em] px-5 text-center text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:mt-2 lg:text-left">
           {member.role}
         </p>
       )}

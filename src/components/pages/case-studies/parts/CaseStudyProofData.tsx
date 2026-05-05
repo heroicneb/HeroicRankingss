@@ -30,7 +30,7 @@ function MetricTagPill({ tag }: { tag: MetricTag }) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-[6px] rounded-full border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] px-[16px] py-[8px] text-[14px] font-medium leading-[1.2] text-[var(--color-hr-dark)]",
+        "inline-flex items-center gap-[6px] rounded-full border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] px-[16px] py-[8px] text-[14px] font-medium leading-[1.2] text-[var(--color-hr-dark)] dark:border-[var(--color-border-inverse-15)] dark:bg-[var(--color-bg-dark)] dark:text-[var(--color-text-inverse)]",
         tag.isAccent ? "border-[var(--color-hr-accent)]" : null,
       )}
     >
@@ -55,7 +55,7 @@ function ProofCard({ item }: { item: ProofItem }) {
   return (
     <article
       className={cn(
-        "flex flex-col gap-[20px] rounded-[22px] bg-[var(--color-hr-off-white)] p-[24px] lg:rounded-[30px] lg:p-[30px]",
+        "flex flex-col gap-[20px] rounded-[22px] bg-[var(--color-hr-off-white)] p-[24px] dark:bg-[var(--color-surface-inverse-10)] lg:rounded-[30px] lg:p-[30px]",
         item.isFullWidth ? "lg:col-span-2" : null,
       )}
     >
@@ -82,12 +82,12 @@ function ProofCard({ item }: { item: ProofItem }) {
         </figure>
       ) : null}
 
-      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] lg:text-[28px] lg:tracking-[-0.56px]">
+      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)] lg:text-[28px] lg:tracking-[-0.56px]">
         {item.title}
       </h3>
 
       {item.body ? (
-        <p className="type-paragraph text-[var(--color-hr-dark)]">
+        <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
           {item.body}
         </p>
       ) : null}

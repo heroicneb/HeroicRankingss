@@ -34,7 +34,7 @@ export function CaseStudyChallenges({ data }: CaseStudyChallengesProps) {
       id="case-study-challenges"
     >
       <div className="mx-auto w-full max-w-[1440px]">
-        <div className="rounded-[30px] bg-[var(--color-hr-off-white)] px-[24px] py-[40px] lg:rounded-[40px] lg:px-[80px] lg:py-[80px]">
+        <div className="rounded-[30px] bg-[var(--color-hr-off-white)] px-[24px] py-[40px] dark:bg-[var(--color-surface-inverse-10)] lg:rounded-[40px] lg:px-[80px] lg:py-[80px]">
           {data.label ? (
             <SectionLabel className="text-center lg:text-left">
               {data.label}
@@ -44,14 +44,14 @@ export function CaseStudyChallenges({ data }: CaseStudyChallengesProps) {
           {hasHeading ? (
             <TwoToneHeading
               as="h2"
-              className="mt-[14px] max-w-[860px] text-center font-normal text-[28px] leading-[1.2] tracking-[-0.56px] lg:mt-[20px] lg:text-left lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px] text-[var(--color-hr-pure-black)]"
+              className="mt-[14px] max-w-[860px] text-center font-normal text-[28px] leading-[1.2] tracking-[-0.56px] lg:mt-[20px] lg:text-left lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)]"
               highlighted={headingHighlighted}
               main={headingMain}
             />
           ) : null}
 
           {data.body ? (
-            <p className="mt-[20px] max-w-[860px] text-center text-[16px] leading-[1.3] text-[var(--color-hr-dark)] lg:mt-[30px] lg:text-left lg:text-[18px] lg:leading-[24px]">
+            <p className="mt-[20px] max-w-[860px] text-center text-[16px] leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-[30px] lg:text-left lg:text-[18px] lg:leading-[24px]">
               {data.body}
             </p>
           ) : null}
@@ -62,7 +62,7 @@ export function CaseStudyChallenges({ data }: CaseStudyChallengesProps) {
                 key={`${item.number}-${index}`}
                 className={
                   index < items.length - 1
-                    ? "border-b border-[var(--color-hr-light-grey)] pb-[40px] lg:border-b-0 lg:border-r lg:pb-0 lg:pr-[40px]"
+                    ? "border-b border-[var(--color-hr-light-grey)] pb-[40px] dark:border-[var(--color-border-inverse-10)] lg:border-b-0 lg:border-r lg:pb-0 lg:pr-[40px]"
                     : undefined
                 }
               >

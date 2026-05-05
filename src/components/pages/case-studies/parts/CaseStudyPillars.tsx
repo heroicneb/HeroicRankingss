@@ -38,22 +38,22 @@ function PillarCard({ pillar, className }: PillarCardProps) {
   return (
     <article
       className={cn(
-        "flex flex-col gap-[16px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] p-[30px] lg:rounded-[40px] lg:p-[40px]",
+        "flex flex-col gap-[16px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] p-[30px] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px] lg:p-[40px]",
         className,
       )}
     >
-      <div className="flex size-[50px] items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)]">
-        {iconUrl ? (
+      {iconUrl ? (
+        <div className="flex size-[50px] items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]">
           <Image alt={iconAlt} height={28} src={iconUrl} width={28} />
-        ) : null}
-      </div>
+        </div>
+      ) : null}
 
-      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] lg:text-[32px] lg:tracking-[-0.64px]">
+      <h3 className="font-normal text-[22px] leading-[1.2] tracking-[-0.44px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)] lg:text-[32px] lg:tracking-[-0.64px]">
         {pillar.title}
       </h3>
 
       {pillar.intro ? (
-        <p className="type-paragraph text-[var(--color-hr-dark)]">
+        <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
           {pillar.intro}
         </p>
       ) : null}
@@ -63,7 +63,7 @@ function PillarCard({ pillar, className }: PillarCardProps) {
           {bullets.map((bullet, index) => (
             <li
               key={index}
-              className="type-paragraph flex gap-[12px] text-[var(--color-hr-dark)]"
+              className="type-paragraph flex gap-[12px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]"
             >
               <span
                 aria-hidden

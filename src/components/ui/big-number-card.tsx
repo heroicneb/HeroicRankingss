@@ -45,12 +45,7 @@ export function BigNumberCard({
         <div className="flex size-[80px] items-center justify-center rounded-[12px] border border-[var(--color-hr-dark-line)] bg-[var(--color-hr-black-box)]">
           <Image alt={iconAlt} height={48} src={iconSrc} width={48} />
         </div>
-      ) : (
-        <div
-          aria-hidden="true"
-          className="size-[80px] rounded-[12px] border border-[var(--color-hr-dark-line)] bg-[var(--color-hr-black-box)]"
-        />
-      )}
+      ) : null}
 
       <p className="gradient-text-brand-light font-extrabold leading-[1] tracking-[-1.6px] text-[80px]">
         {value}
@@ -61,7 +56,9 @@ export function BigNumberCard({
       </p>
 
       {sub ? (
-        <p className="gradient-text-brand-light leading-[1.33] text-[18px]">{sub}</p>
+        <p className="gradient-text-brand-light leading-[1.33] text-[18px]">
+          {sub}
+        </p>
       ) : null}
     </div>
   );

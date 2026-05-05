@@ -30,9 +30,9 @@ export function CaseStudyConclusion({ data }: CaseStudyConclusionProps) {
       id="case-study-conclusion"
     >
       <div className="mx-auto w-full max-w-[1440px]">
-        <div className="rounded-[22px] bg-[var(--color-hr-off-white)] px-[24px] py-[40px] lg:rounded-[40px] lg:px-[80px] lg:py-[80px]">
+        <div className="rounded-[22px] bg-[var(--color-hr-off-white)] px-[24px] py-[40px] dark:bg-[var(--color-surface-inverse-10)] lg:rounded-[40px] lg:px-[80px] lg:py-[80px]">
           {heading ? (
-            <h2 className="font-normal text-[28px] leading-[1.2] tracking-[-0.56px] text-[var(--color-hr-pure-black)] lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px]">
+            <h2 className="font-normal text-[28px] leading-[1.2] tracking-[-0.56px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)] lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px]">
               {heading}
             </h2>
           ) : null}
@@ -44,7 +44,7 @@ export function CaseStudyConclusion({ data }: CaseStudyConclusionProps) {
           ) : null}
 
           {body && body.length > 0 ? (
-            <div className="mt-[20px] max-w-[920px] text-[16px] leading-[1.3] text-[var(--color-hr-dark)] lg:mt-[30px] lg:text-[18px] lg:leading-[24px]">
+            <div className="mt-[20px] max-w-[920px] text-[16px] leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-[30px] lg:text-[18px] lg:leading-[24px]">
               <PortableText components={portableTextComponents} value={body} />
             </div>
           ) : null}

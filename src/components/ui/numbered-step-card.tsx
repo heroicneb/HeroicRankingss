@@ -17,28 +17,36 @@ export interface NumberedStepCardProps {
  *
  * Source: docs/figma-cache/extractions/2026-04-28-case-study-section-01-single-desktop.md
  */
-export function NumberedStepCard({ number, title, body, className }: NumberedStepCardProps) {
+export function NumberedStepCard({
+  number,
+  title,
+  body,
+  className,
+}: NumberedStepCardProps) {
   return (
-    <div className={cn("flex flex-col gap-[16px] text-center lg:text-left", className)}>
+    <div
+      className={cn(
+        "flex flex-col gap-[16px] text-center lg:text-left",
+        className,
+      )}
+    >
       <div className="flex items-center gap-[14px] justify-center lg:justify-start">
-        <div className="relative grid place-items-start shrink-0">
-          <div
-            aria-hidden="true"
-            className="col-start-1 row-start-1 size-[50px] rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)]"
-          />
+        <div className="flex size-[50px] shrink-0 items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]">
           <p
             className={cn(
-              "gradient-text-brand col-start-1 row-start-1 ml-[9px] mt-[8px] whitespace-nowrap font-normal leading-[1.2] tracking-[-0.64px] text-[32px]",
+              "gradient-text-brand whitespace-nowrap font-normal leading-none tracking-[-0.64px] text-[24px]",
             )}
           >
             {number}
           </p>
         </div>
-        <p className="font-normal text-[22px] lg:text-[32px] leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-dark)]">
+        <p className="font-normal text-[22px] lg:text-[32px] leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
           {title}
         </p>
       </div>
-      <p className="type-paragraph text-[var(--color-hr-dark)]">{body}</p>
+      <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+        {body}
+      </p>
     </div>
   );
 }
