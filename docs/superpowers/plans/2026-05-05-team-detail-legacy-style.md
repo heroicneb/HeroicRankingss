@@ -1040,7 +1040,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { GradientText } from "@/components/ui/gradient-text";
-import { ArrowUpRightIcon, LinkedInIcon } from "@/components/ui/icons";
+import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
 import type { SanityTeamMemberDetail } from "@/lib/sanity-data";
@@ -1168,18 +1168,9 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
                     </GradientText>
                   </h1>
                 </div>
-                {linkedinUrl ? (
-                  <a
-                    aria-label={`Open ${member.name} on LinkedIn`}
-                    className="motion-interactive inline-flex size-[44px] shrink-0 items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-off-white)] text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-dark)] hover:text-[var(--color-hr-off-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] dark:text-[var(--color-text-inverse)]"
-                    href={linkedinUrl}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <LinkedInIcon className="size-5" />
-                  </a>
-                ) : null}
               </div>
+              {/* No avatar-row LinkedIn icon — bottom-of-card "Connect on LinkedIn"
+                  CTA already covers the action; icons.tsx has no LinkedInIcon. */}
 
               <div
                 aria-hidden
@@ -1365,7 +1356,7 @@ function ContactPill({
 }
 ```
 
-If `LinkedInIcon` is not exported from `src/components/ui/icons`, replace with the inline SVG already used in the popup, or fall back to the `ArrowUpRightIcon` for the avatar-row LinkedIn button.
+**Note:** `icons.tsx` exports no `LinkedInIcon` and the popup also has no inline LinkedIn SVG (verified at smoke check). Plan does NOT add an avatar-row LinkedIn button — bottom-of-card "Connect on LinkedIn" CTA covers the same action and matches the legacy intent at lower complexity.
 
 - [ ] **Step 4: Run test to verify it passes**
 
@@ -1623,9 +1614,47 @@ In the desktop popup, immediately after the bio body (before the prev/next arrow
 
 In the mobile variant (`TeamMemberPopupMobile`), add the same link below the bio block before the bottom contact tile.
 
-- [ ] **Step 3: Verify popup type has `slug`**
+- [ ] **Step 3: Add `slug` to `TeamMemberPopupData` and propagate**
 
-Open `src/components/sections/team-member-popup.tsx` (top of file) and confirm the `member` shape has a `slug` field. If not, add it to whichever data type the popup is fed and propagate from `about-us-team-data` / Sanity mapper.
+Smoke check confirmed: `TeamMemberPopupData` (in `src/types/index.ts:90`) has no `slug` field; popup data is built in `buildPopupDataFromCms` at `src/components/sections/about-us-team.tsx:85`.
+
+In `src/types/index.ts`, add to `TeamMemberPopupData`:
+
+```ts
+export interface TeamMemberPopupData extends TeamMemberBase {
+  slug: string | null;
+  cardImageSrc: string;
+  cardImageAlt: string;
+  bioParagraphs: [string[], string[]];
+  contact: {
+    phone: string | null;
+    email: string;
+  };
+  socials: TeamMemberPopupSocial[];
+}
+```
+
+In `src/components/sections/about-us-team-data.ts`, ensure each entry in `POPUP_DATA` has `slug`. Hardcoded fallback:
+
+```ts
+"Nebojsa Jankovic": {
+  slug: "nebojsa-jankovic",
+  // existing fields...
+},
+```
+(Apply same to all 7 hardcoded entries — slug = lowercased name with hyphens.)
+
+In `src/components/sections/about-us-team.tsx`, in `buildPopupDataFromCms`, add `slug` to each constructed entry (line ~136):
+
+```ts
+popupData[cmsMember.name] = {
+  slug: cmsMember.slug?.current ?? null,
+  name: cmsMember.name,
+  // existing fields unchanged
+};
+```
+
+Then in popup `member.slug` is available for the link.
 
 - [ ] **Step 4: Lint + tsc**
 
