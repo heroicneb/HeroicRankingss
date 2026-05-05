@@ -79,9 +79,14 @@
   --color-hr-gradient-mid: var(--color-brand-surface-mid);
   --color-hr-gradient-end: var(--color-brand-surface-end);
   --color-hr-pure-black: #050505;
-  --color-hr-black-box: #0C0C0C;
-  --color-hr-dark-line: #2A2A2A;
-  --gradient-brand-light: linear-gradient(210deg, #826FFF 18%, #E188FF 41%, #E1BDFF 130%);
+  --color-hr-black-box: #0c0c0c;
+  --color-hr-dark-line: #2a2a2a;
+  --gradient-brand-light: linear-gradient(
+    210deg,
+    #826fff 18%,
+    #e188ff 41%,
+    #e1bdff 130%
+  );
 
   --font-fallback-sans: "DM Sans", "Avenir Next", "Segoe UI", sans-serif;
 
@@ -105,6 +110,7 @@
   --shadow-navbar-elevated:
     0 16px 40px rgb(var(--color-shadow-rgb) / 0.14),
     0 4px 12px rgb(var(--color-shadow-rgb) / 0.08);
+  --shadow-card: 0 4px 24px rgb(var(--color-shadow-rgb) / 0.08);
 
   --font-size-nav: 16px;
   --font-size-cta: 16px;
@@ -202,6 +208,7 @@
 
   --shadow-navbar: var(--shadow-navbar);
   --shadow-navbar-elevated: var(--shadow-navbar-elevated);
+  --shadow-card: var(--shadow-card);
 }
 
 * {
