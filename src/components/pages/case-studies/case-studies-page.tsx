@@ -7,6 +7,8 @@ import { createPageMetadata } from "@/lib/metadata";
 import type { SanityCaseStudy } from "@/lib/sanity-data";
 import { SubscribeBar } from "@/components/ui/subscribe-bar";
 
+import { CASE_STUDY_PANEL_BY_SLUG } from "./parts/case-study-panels";
+
 export const metadata: Metadata = createPageMetadata({
   title: "Case Studies",
   description:
@@ -23,12 +25,6 @@ interface CaseStudyCardData {
   panelLabelClassName: string;
   panelLabelColorClassName: string;
   title: string;
-}
-
-interface CaseStudyPanelFallback {
-  panelImageSrc: string;
-  panelLabelClassName: string;
-  panelLabelColorClassName: string;
 }
 
 const CASE_STUDY_CARDS: CaseStudyCardData[] = [
@@ -106,39 +102,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
   },
 ];
 
-const CASE_STUDY_PANEL_FALLBACKS: Record<string, CaseStudyPanelFallback> = {
-  affinda: {
-    panelImageSrc: "/case-studies/imgGroup44.svg",
-    panelLabelClassName: "left-1/2 -translate-x-1/2",
-    panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-  },
-  "my-baskets": {
-    panelImageSrc: "/case-studies/imgGroup48.svg",
-    panelLabelClassName: "left-1/2 -translate-x-1/2",
-    panelLabelColorClassName:
-      "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
-  },
-  nagish: {
-    panelImageSrc: "/case-studies/imgGroup34.svg",
-    panelLabelClassName: "left-1/2 -translate-x-1/2",
-    panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-  },
-  "art-by-maudsch": {
-    panelImageSrc: "/case-studies/imgGroup31.svg",
-    panelLabelClassName: "left-1/2 -translate-x-1/2",
-    panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-  },
-  designrush: {
-    panelImageSrc: "/case-studies/imgGroup53.svg",
-    panelLabelClassName: "left-1/2 -translate-x-1/2",
-    panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-  },
-  "diy-craft-ecom-brand": {
-    panelImageSrc: "/case-studies/imgGroup52.svg",
-    panelLabelClassName: "left-1/2 -translate-x-1/2",
-    panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-  },
-};
+const CASE_STUDY_PANEL_FALLBACKS = CASE_STUDY_PANEL_BY_SLUG;
 
 function formatPublishedDate(dateValue: string | null): string | null {
   if (!dateValue) return null;

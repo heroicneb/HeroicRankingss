@@ -74,6 +74,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
     titleHighlighted,
     slug,
     client,
+    panelLabel,
     excerpt,
     heroImage { ..., asset->{ _id, _type, metadata { lqip } } },
     metrics,

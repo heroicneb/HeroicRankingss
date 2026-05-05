@@ -782,6 +782,8 @@ export interface CaseStudyGrowthChartData {
 export interface SanityCaseStudyDetail {
   body?: PortableTextBlock[] | null;
   client: string;
+  panelLabel?: string | null;
+  slug?: { current: string } | null;
   excerpt?: string | null;
   heroImage?: SanityImageRef | null;
   metrics?: Array<{
