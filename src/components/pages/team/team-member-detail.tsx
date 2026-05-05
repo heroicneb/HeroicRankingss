@@ -70,7 +70,6 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
   const email = member.contact?.email?.trim() ?? "";
 
   const photos = member.lifestylePhotos ?? [];
-  const isStickyEligible = photos.length >= 5;
 
   const bioBlock = (() => {
     const trimmedBio = member.bio?.trim();
@@ -96,15 +95,8 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
           </Link>
         </div>
 
-        <div className="grid gap-[40px] lg:grid-cols-12 lg:gap-[40px]">
-          <div
-            className={cn(
-              "lg:col-span-7",
-              isStickyEligible
-                ? "lg:sticky lg:top-[100px] lg:h-fit lg:self-start"
-                : "lg:h-fit lg:self-start",
-            )}
-          >
+        <div className="flex flex-col gap-[40px] lg:gap-[80px]">
+          <div className="mx-auto w-full max-w-[800px]">
             <div className="rounded-[var(--radius-card)] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-off-white)] p-[24px] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:p-[60px]">
               <div className="flex items-start gap-[20px]">
                 {cardPhoto ? (
@@ -254,18 +246,13 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
           </div>
 
           {photos.length > 0 ? (
-            <aside className="lg:col-span-5">
-              <ul className="flex flex-col gap-[24px] lg:gap-[40px]">
+            <aside className="mx-auto w-full max-w-[1280px]">
+              <div className="columns-1 gap-[24px] sm:columns-2 lg:columns-3 lg:gap-[32px]">
                 {photos.map((photo, index) => {
                   const portrait = (photo.height ?? 1) > (photo.width ?? 1);
-                  const offsetClass =
-                    index % 2 === 0 ? "lg:ml-0" : "lg:ml-[60px]";
                   return (
-                    <li
-                      className={cn(
-                        offsetClass,
-                        "overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-card)]",
-                      )}
+                    <div
+                      className="mb-[24px] break-inside-avoid overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-card)] lg:mb-[32px]"
                       key={`${member._id}-photo-${index}`}
                     >
                       <Image
@@ -277,14 +264,14 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
                         height={photo.height ?? 800}
                         loading={index === 0 ? undefined : "lazy"}
                         priority={index === 0}
-                        sizes="(min-width: 1024px) 30vw, 100vw"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                         src={photo.url}
                         width={photo.width ?? 1067}
                       />
-                    </li>
+                    </div>
                   );
                 })}
-              </ul>
+              </div>
             </aside>
           ) : null}
         </div>
