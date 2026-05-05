@@ -1,0 +1,434 @@
+{
+  "_meta": {
+    "_doc": "Auto-extracted from https://heroicrankings.com/case-study/<slug>/ legacy prose. Each section uses real numbers from the legacy site. ctaFooter and growthChart skipped (global CTA fallback works; growth chart needs monthly data Nebojsa hasn't provided).",
+    "_extractedAt": "2026-05-05",
+    "_legacyUrls": {
+      "affinda": "https://heroicrankings.com/case-study/affinda/",
+      "art-by-maudsch": "https://heroicrankings.com/case-study/art-by-maudsch/",
+      "designrush": "https://heroicrankings.com/case-study/designrush/",
+      "my-baskets": "https://heroicrankings.com/case-study/my-baskets/",
+      "nagish": "https://heroicrankings.com/case-study/nagish/",
+      "diy-craft-ecom-brand": "https://heroicrankings.com/case-study/number-artist/ (rebranded as DIY Craft eCom Brand in Sanity)"
+    }
+  },
+
+  "affinda": {
+    "titleHighlighted": "Affinda",
+    "heroSubtitle": "2.5x Organic Traffic and #1 Ranking for \"Resume Parser\" in 4 Months",
+    "heroMetrics": [
+      { "value": "2.5x", "label": "Organic Traffic Growth" },
+      { "value": "#1", "label": "\"Resume Parser\" Ranking" },
+      { "value": "+103", "label": "New Referring Domains" }
+    ],
+    "numbersThatMatter": {
+      "label": "/ The Numbers That Matter /",
+      "headingMain": "The numbers",
+      "headingHighlighted": "that matter",
+      "body": "Four months of strategic link building turned a niche resume parser into a category leader.",
+      "items": [
+        {
+          "value": "#1",
+          "label": "Google Position",
+          "sub": "↑ from outside top results, keyword \"resume parser\""
+        },
+        {
+          "value": "28K",
+          "label": "Monthly Visitors",
+          "sub": "↑ from 11,000 (2.5x growth)"
+        },
+        {
+          "value": "142",
+          "label": "Referring Domains",
+          "sub": "↑ from 39 (Mar → Jul 2023)"
+        },
+        { "value": "48", "label": "Domain Rating", "sub": "↑ from 39" },
+        {
+          "value": "+9",
+          "label": "DR Points Gained",
+          "sub": "improved authority signal"
+        },
+        {
+          "value": "4",
+          "label": "Months to Rank #1",
+          "sub": "from baseline to top position"
+        }
+      ]
+    },
+    "beforeAfter": {
+      "label": "/ Before vs After /",
+      "headingMain": "Before",
+      "headingHighlighted": "vs After",
+      "body": "Direct comparison of Affinda's SEO metrics from campaign start to result.",
+      "items": [
+        { "label": "Domain Rating", "before": "39", "after": "48" },
+        { "label": "Organic Traffic", "before": "11,000", "after": "28,000" },
+        { "label": "Referring Domains", "before": "39", "after": "142" },
+        {
+          "label": "\"Resume Parser\" Rank",
+          "before": "Outside top",
+          "after": "#1"
+        },
+        { "label": "Traffic Growth", "before": "Baseline", "after": "2.5x" }
+      ]
+    }
+  },
+
+  "art-by-maudsch": {
+    "titleHighlighted": "Art by Maudsch",
+    "heroSubtitle": "Domain Rating from 19 to 45 and 5.8x Organic Traffic in a Competitive Art Market",
+    "heroMetrics": [
+      { "value": "5.8x", "label": "Organic Traffic Growth" },
+      { "value": "+26", "label": "Domain Rating Points" },
+      { "value": "#1", "label": "\"Abstract Art\" Ranking" }
+    ],
+    "numbersThatMatter": {
+      "label": "/ The Numbers That Matter /",
+      "headingMain": "The numbers",
+      "headingHighlighted": "that matter",
+      "body": "A focused link-building campaign starting April 2024 lifted an emerging art retailer into top spots across competitive art keywords.",
+      "items": [
+        {
+          "value": "19,100",
+          "label": "Monthly Visitors",
+          "sub": "↑ from 3,300 (5.8x growth)"
+        },
+        { "value": "288", "label": "Referring Domains", "sub": "↑ from 118" },
+        {
+          "value": "45",
+          "label": "Domain Rating",
+          "sub": "↑ from 19 (more than doubled)"
+        },
+        {
+          "value": "#1",
+          "label": "\"Abstract Art\"",
+          "sub": "Google position"
+        },
+        {
+          "value": "#1",
+          "label": "\"Canvas Paintings\"",
+          "sub": "Google position"
+        },
+        {
+          "value": "#2",
+          "label": "\"Wall Art for Living Room\"",
+          "sub": "Google position"
+        }
+      ]
+    },
+    "beforeAfter": {
+      "label": "/ Before vs After /",
+      "headingMain": "Before",
+      "headingHighlighted": "vs After",
+      "body": "Art by Maudsch's SEO metrics from campaign start to result.",
+      "items": [
+        { "label": "Domain Rating", "before": "19", "after": "45" },
+        {
+          "label": "Organic Traffic / Month",
+          "before": "3,300",
+          "after": "19,100"
+        },
+        { "label": "Referring Domains", "before": "118", "after": "288" },
+        {
+          "label": "\"Abstract Art\" Rank",
+          "before": "Outside top",
+          "after": "#1"
+        },
+        {
+          "label": "\"Canvas Paintings\" Rank",
+          "before": "Outside top",
+          "after": "#1"
+        }
+      ]
+    }
+  },
+
+  "designrush": {
+    "titleHighlighted": "DesignRush",
+    "heroSubtitle": "From 90K to 1M Organic Visitors and Domain Rating 70 to 90 — Outranking Clutch.co",
+    "heroMetrics": [
+      { "value": "11x", "label": "Organic Traffic Growth" },
+      { "value": "$3.2M", "label": "Traffic Value (Ahrefs)" },
+      { "value": "DR 90", "label": "Domain Rating" }
+    ],
+    "numbersThatMatter": {
+      "label": "/ The Numbers That Matter /",
+      "headingMain": "The numbers",
+      "headingHighlighted": "that matter",
+      "body": "An internal link-building team and rigorous quality SOPs scaled DesignRush past Clutch.co on the highest-value keywords in the agency-marketplace space.",
+      "items": [
+        {
+          "value": "1M",
+          "label": "Monthly Visitors",
+          "sub": "↑ from 90,000 (11x growth)"
+        },
+        {
+          "value": "$3.2M",
+          "label": "Traffic Value",
+          "sub": "↑ from $30,000 (107x)"
+        },
+        { "value": "90", "label": "Domain Rating", "sub": "↑ from 70" },
+        {
+          "value": "#1",
+          "label": "\"Web Design Company\"",
+          "sub": "↑ from #4 (Jul 2022 → May 2024)"
+        },
+        {
+          "value": "#1",
+          "label": "\"Digital Marketing Agency\"",
+          "sub": "↑ from #7 (Nov 2022 → Jul 2024)"
+        },
+        {
+          "value": "<5%",
+          "label": "Link Loss / 12 Months",
+          "sub": "vs 35–60% industry avg"
+        },
+        {
+          "value": "80%+",
+          "label": "Indexation Rate",
+          "sub": "within first month"
+        }
+      ]
+    },
+    "beforeAfter": {
+      "label": "/ Before vs After /",
+      "headingMain": "Before",
+      "headingHighlighted": "vs After",
+      "body": "DesignRush's metrics from campaign start to top-of-category position.",
+      "items": [
+        { "label": "Domain Rating", "before": "70", "after": "90" },
+        {
+          "label": "Organic Traffic",
+          "before": "90,000",
+          "after": "1,000,000"
+        },
+        {
+          "label": "Traffic Value",
+          "before": "~$30,000",
+          "after": "~$3,200,000"
+        },
+        { "label": "\"Web Design Company\"", "before": "#4", "after": "#1" },
+        {
+          "label": "\"Digital Marketing Agency\"",
+          "before": "#7",
+          "after": "#1"
+        }
+      ]
+    }
+  },
+
+  "my-baskets": {
+    "titleHighlighted": "My Baskets",
+    "heroSubtitle": "Three \"Gift Basket\" Keywords from Outside Top 20 to #1 in Four Months",
+    "heroMetrics": [
+      { "value": "#1", "label": "\"Gift Baskets Canada\"" },
+      { "value": "#1", "label": "\"Gift Basket\"" },
+      { "value": "<0.5%", "label": "Link Loss / 11 Months" }
+    ],
+    "numbersThatMatter": {
+      "label": "/ The Numbers That Matter /",
+      "headingMain": "The numbers",
+      "headingHighlighted": "that matter",
+      "body": "A budget-tight anchor-text and link-velocity strategy regained category leadership for a Canadian gift-basket retailer despite competitors' larger link output.",
+      "items": [
+        {
+          "value": "#1",
+          "label": "\"Gift Baskets Canada\"",
+          "sub": "↑ from outside top 20 (Jun → Oct 2023)"
+        },
+        {
+          "value": "#2",
+          "label": "\"Gift Baskets Toronto\"",
+          "sub": "↑ from outside top 20"
+        },
+        {
+          "value": "#1",
+          "label": "\"Gift Basket\"",
+          "sub": "↑ from disappearing in summer 2023"
+        },
+        {
+          "value": "<0.5%",
+          "label": "Link Loss / 11 Months",
+          "sub": "vs 35–60% industry avg"
+        },
+        {
+          "value": "80%+",
+          "label": "Indexation Rate",
+          "sub": "within first month vs ~60% in 3 months industry"
+        },
+        {
+          "value": "30/mo",
+          "label": "Internal Links Added",
+          "sub": "by client team, 6:1 internal-to-external ratio"
+        }
+      ]
+    },
+    "beforeAfter": {
+      "label": "/ Before vs After /",
+      "headingMain": "Before",
+      "headingHighlighted": "vs After",
+      "body": "Keyword and link-quality metrics from campaign start to recovery.",
+      "items": [
+        {
+          "label": "\"Gift Baskets Canada\"",
+          "before": "Outside top 20",
+          "after": "#1"
+        },
+        {
+          "label": "\"Gift Baskets Toronto\"",
+          "before": "Outside top 20",
+          "after": "#2"
+        },
+        { "label": "\"Gift Basket\"", "before": "Disappearing", "after": "#1" },
+        { "label": "Link Loss / 11 mo", "before": "35–60%", "after": "<0.5%" },
+        {
+          "label": "Indexation Speed",
+          "before": "60% / 3 mo",
+          "after": "80%+ / 1 mo"
+        }
+      ]
+    }
+  },
+
+  "nagish": {
+    "titleHighlighted": "Nagish",
+    "heroSubtitle": "From 300 to 12,500 Monthly Visitors — Scaling Search Visibility for Accessibility Tech",
+    "heroMetrics": [
+      { "value": "42x", "label": "Organic Traffic Growth" },
+      { "value": "+12.5", "label": "DR Points Gained" },
+      { "value": "12.5x", "label": "Referring Domains Growth" }
+    ],
+    "numbersThatMatter": {
+      "label": "/ The Numbers That Matter /",
+      "headingMain": "The numbers",
+      "headingHighlighted": "that matter",
+      "body": "A tone-and-voice-respecting link-building campaign starting March 2023 lifted an assistive-technology brand from invisible to top-3 across high-intent accessibility keywords.",
+      "items": [
+        {
+          "value": "12,563",
+          "label": "Monthly Visitors",
+          "sub": "↑ from 300 (42x growth)"
+        },
+        { "value": "250", "label": "Referring Domains", "sub": "↑ from 20" },
+        {
+          "value": "45",
+          "label": "Domain Rating",
+          "sub": "↑ from 22 (more than doubled)"
+        },
+        {
+          "value": "#3",
+          "label": "\"Android Hearing Aid App\"",
+          "sub": "Google position"
+        },
+        {
+          "value": "#3",
+          "label": "\"Best Hearing Aid App for Android\"",
+          "sub": "Google position"
+        },
+        {
+          "value": "#2",
+          "label": "\"Real Time Phone Call Captioning\"",
+          "sub": "Google position"
+        },
+        {
+          "value": "#4",
+          "label": "\"Hearing Aid App for Android Phone\"",
+          "sub": "Google position"
+        }
+      ]
+    },
+    "beforeAfter": {
+      "label": "/ Before vs After /",
+      "headingMain": "Before",
+      "headingHighlighted": "vs After",
+      "body": "Nagish's SEO metrics from campaign start to top-3 visibility.",
+      "items": [
+        { "label": "Domain Rating", "before": "22", "after": "45" },
+        {
+          "label": "Organic Traffic / Month",
+          "before": "300",
+          "after": "12,563"
+        },
+        { "label": "Referring Domains", "before": "20", "after": "250" },
+        {
+          "label": "\"Android Hearing Aid App\"",
+          "before": "Outside top 100",
+          "after": "#3"
+        },
+        {
+          "label": "\"Real Time Phone Call Captioning\"",
+          "before": "Outside top 100",
+          "after": "#2"
+        }
+      ]
+    }
+  },
+
+  "diy-craft-ecom-brand": {
+    "titleHighlighted": "DIY Craft eCom Brand",
+    "heroSubtitle": "From Domain Rating 0 to 43 and 9 to 26,500 Organic Visitors in 12 Months",
+    "heroMetrics": [
+      { "value": "2,944x", "label": "Organic Traffic Growth" },
+      { "value": "DR 0 → 43", "label": "Domain Rating" },
+      { "value": "4× #1", "label": "Top Keywords Ranked" }
+    ],
+    "numbersThatMatter": {
+      "label": "/ The Numbers That Matter /",
+      "headingMain": "The numbers",
+      "headingHighlighted": "that matter",
+      "body": "A combined onsite, technical, and offsite SEO program took an emerging DIY-craft e-commerce brand from zero authority to category dominance.",
+      "items": [
+        {
+          "value": "26,500",
+          "label": "Monthly Visitors",
+          "sub": "↑ from 9 visits (≈2,944x growth)"
+        },
+        { "value": "43", "label": "Domain Rating", "sub": "↑ from 0" },
+        {
+          "value": "#1",
+          "label": "\"Custom Paint by Number\"",
+          "sub": "12,000/mo search volume"
+        },
+        {
+          "value": "#1",
+          "label": "\"Custom Paint by Numbers\"",
+          "sub": "7,400/mo search volume"
+        },
+        {
+          "value": "#1",
+          "label": "\"Paint by Numbers Custom\"",
+          "sub": "2,200/mo search volume"
+        },
+        {
+          "value": "#1",
+          "label": "\"Paint by Number Custom\"",
+          "sub": "1,800/mo search volume"
+        }
+      ]
+    },
+    "beforeAfter": {
+      "label": "/ Before vs After /",
+      "headingMain": "Before",
+      "headingHighlighted": "vs After",
+      "body": "DIY Craft eCom Brand's SEO metrics from campaign start (March 2024) to category leadership.",
+      "items": [
+        { "label": "Domain Rating", "before": "0", "after": "43" },
+        { "label": "Monthly Visitors", "before": "9", "after": "26,500" },
+        {
+          "label": "\"Custom Paint by Number\"",
+          "before": "Unranked",
+          "after": "#1"
+        },
+        {
+          "label": "\"Custom Paint by Numbers\"",
+          "before": "Unranked",
+          "after": "#1"
+        },
+        {
+          "label": "\"Paint by Numbers Custom\"",
+          "before": "Unranked",
+          "after": "#1"
+        }
+      ]
+    }
+  }
+}
