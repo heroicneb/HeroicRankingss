@@ -161,7 +161,7 @@ function CaseStudyCard({
         <h2 className="text-[24px] font-medium leading-[24px] tracking-[-0.48px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
           {title}
         </h2>
-        <p className="mt-3 text-[18px] font-normal leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+        <p className="mt-3 line-clamp-4 text-[18px] font-normal leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
           {description}
         </p>
         <p className="mt-auto pb-5 text-[18px] font-normal leading-[24px] text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]">

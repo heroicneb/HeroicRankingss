@@ -79,10 +79,6 @@ function InsightBlogCard({ card }: { card: BlogPostEntry }) {
           sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
           src={card.imageSrc}
         />
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
-        <span className="absolute bottom-3 left-3 rounded-full bg-[var(--color-hr-accent)] px-3 py-1 text-[12px] font-medium leading-none text-[var(--color-hr-pure-white)]">
-          {card.category}
-        </span>
       </div>
 
       <div className="mt-[20px] flex flex-col items-center gap-[20px] lg:mt-0 lg:block lg:px-5 lg:pt-5">
