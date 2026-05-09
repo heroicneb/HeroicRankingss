@@ -26,7 +26,7 @@ const NAV_ITEMS: NavItem[] = [
   },
   { label: "Link Building", href: "/seo/linkbuilding" },
   { label: "Partnership", href: "/partnership" },
-  { label: "Insights", href: "/insights" },
+  { label: "Insights", href: "/blog" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Podcast", href: "/podcast" },
 ];
@@ -38,21 +38,21 @@ interface NavbarProps {
   ctaUrl?: string | null;
 }
 
-export function Navbar({
-  navItems,
-  phone,
-  ctaLabel,
-  ctaUrl,
-}: NavbarProps) {
+export function Navbar({ navItems, phone, ctaLabel, ctaUrl }: NavbarProps) {
   const baseItems = navItems?.length ? navItems : NAV_ITEMS;
   const hasPodcast = baseItems.some((item) => item.href === "/podcast");
-  const itemsWithPodcast = hasPodcast ? baseItems : [...baseItems, { label: "Podcast", href: "/podcast" }];
+  const itemsWithPodcast = hasPodcast
+    ? baseItems
+    : [...baseItems, { label: "Podcast", href: "/podcast" }];
   const items = itemsWithPodcast.map((item) => {
     if (!item.children?.length || !item.href) return item;
     if (item.children.some((child) => child.href === item.href)) return item;
     return {
       ...item,
-      children: [{ label: `All ${item.label} Services`, href: item.href }, ...item.children],
+      children: [
+        { label: `All ${item.label} Services`, href: item.href },
+        ...item.children,
+      ],
     };
   });
   const resolvedPhone = phone?.trim() || SITE_PHONE;

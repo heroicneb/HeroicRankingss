@@ -10,6 +10,6 @@ describe("blog post dataset", () => {
 
   it("keeps unpublished entries routed to catalog fallback", () => {
     const unpublished = BLOG_POSTS.filter((entry) => !entry.isPublished);
-    expect(unpublished.every((entry) => entry.href === "/insights")).toBe(true);
+    expect(unpublished.every((entry) => entry.href === "/blog")).toBe(true);
   });
 });

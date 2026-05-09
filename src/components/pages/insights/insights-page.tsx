@@ -9,7 +9,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "Insights",
   description:
     "Explore Heroic Rankings insights, research guides, and practical SEO playbooks for sustainable organic growth.",
-  path: "/insights",
+  path: "/blog",
 });
 const InsightsCatalog = dynamic(
   () =>

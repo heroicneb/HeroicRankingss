@@ -31,7 +31,7 @@ function mapCmsPosts(cmsPosts: SanityPostSummary[]): BlogCardItem[] {
       title: post.title,
       excerpt: post.excerpt,
       date: formatted ? `${formatted} — ${DEFAULT_READ_TIME}` : null,
-      href: `/insights/${post.slug}`,
+      href: `/blog/${post.slug}`,
     };
   });
 }
@@ -73,7 +73,7 @@ export function Blog({ cmsPosts }: BlogProps) {
           <div className="hidden justify-end lg:flex">
             <AppLink
               className="type-cta motion-interactive motion-interactive-press inline-flex h-[47px] w-fit min-w-max items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href="/insights"
+              href="/blog"
               motionPreset="none"
             >
               View More Blogs
@@ -112,7 +112,7 @@ export function Blog({ cmsPosts }: BlogProps) {
         <div className="mt-10 flex justify-center lg:hidden">
           <AppLink
             className="type-cta motion-interactive motion-interactive-press inline-flex h-[47px] w-full max-w-[350px] items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-            href="/insights"
+            href="/blog"
             motionPreset="none"
           >
             View More Blogs

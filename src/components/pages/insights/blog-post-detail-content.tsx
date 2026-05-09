@@ -30,7 +30,7 @@ interface BlogPostDetailContentProps {
  * deep-links all resolve without DOM patching.
  */
 export function BlogPostDetailContent({ post }: BlogPostDetailContentProps) {
-  const articleUrl = post.slug ? `${SITE_URL}/insights/${post.slug}` : SITE_URL;
+  const articleUrl = post.slug ? `${SITE_URL}/blog/${post.slug}` : SITE_URL;
   const headingIds = buildHeadingIdMap(post.body);
   const components = makePortableTextComponents(headingIds);
 

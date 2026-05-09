@@ -55,7 +55,7 @@ function mapPostToCatalogCard(post: SanityPostSummary): BlogPostEntry {
     date: post.publishedAt
       ? formatPublishedDate(post.publishedAt)
       : (staticFallback?.date ?? "Draft"),
-    href: `/insights/${post.slug}`,
+    href: `/blog/${post.slug}`,
     category: mapPostCategory(post),
     imageSrc:
       post.mainImageUrl ||

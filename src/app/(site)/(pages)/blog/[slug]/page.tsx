@@ -31,7 +31,7 @@ export async function generateMetadata({
       post.seoDescription?.trim() ||
       post.excerpt ||
       "Explore insights from Heroic Rankings.",
-    path: `/insights/${slug}`,
+    path: `/blog/${slug}`,
     ogType: "article",
   });
 }

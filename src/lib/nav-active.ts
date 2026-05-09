@@ -16,7 +16,7 @@ interface NavActiveItem {
 }
 
 function isInsightsRoute(pathname: string) {
-  return pathname === "/insights" || pathname.startsWith("/insights/");
+  return pathname === "/blog" || pathname.startsWith("/blog/");
 }
 
 function isCaseStudiesRoute(pathname: string) {

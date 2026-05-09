@@ -2,7 +2,7 @@ import { defineDocuments, defineLocations } from "sanity/presentation";
 
 export const mainDocuments = defineDocuments([
   {
-    route: "/insights/:slug",
+    route: "/blog/:slug",
     filter: `_type == "post" && slug.current == $slug`,
   },
   {
@@ -22,9 +22,9 @@ export const locations = {
       locations: [
         {
           title: doc?.title || "Untitled",
-          href: `/insights/${doc?.slug}`,
+          href: `/blog/${doc?.slug}`,
         },
-        { title: "Insights", href: "/insights" },
+        { title: "Insights", href: "/blog" },
       ],
     }),
   }),

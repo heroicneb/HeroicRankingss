@@ -49,7 +49,7 @@ export const post = defineType({
         rule
           .required()
           .error(
-            "Slug is required — it forms the URL: /insights/<slug>. Click Generate after the title is filled.",
+            "Slug is required — it forms the URL: /blog/<slug>. Click Generate after the title is filled.",
           ),
     }),
     defineField({

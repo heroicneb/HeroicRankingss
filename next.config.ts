@@ -82,13 +82,12 @@ const nextConfig: NextConfig = {
       // All composed one-hop (Codex's "no chains" rule).
 
       // Static pages
-      { source: "/blog/", destination: "/insights", permanent: true },
       { source: "/case-study/", destination: "/case-studies", permanent: true },
       { source: "/about/", destination: "/about-us", permanent: true },
 
       // Service category pages now serve directly under /seo/* — no redirects needed.
       // (Phase 1 nested service routes under /seo/ to match legacy heroicrankings.com paths.)
-      { source: "/seo/managed/", destination: "/insights", permanent: true },
+      { source: "/seo/managed/", destination: "/blog", permanent: true },
 
       // Case studies (per-slug, only those whose slug differs from new path)
       {
@@ -125,49 +124,49 @@ const nextConfig: NextConfig = {
       // 11 historical BCMS-internal redirects (composed one-hop into final URLs)
       {
         source: "/backlinks-management/",
-        destination: "/insights/backlinks-management",
+        destination: "/blog/backlinks-management",
         permanent: true,
       },
       {
         source: "/how-to-create-a-link-building-strategy/",
-        destination: "/insights/how-to-create-a-link-building-strategy",
+        destination: "/blog/how-to-create-a-link-building-strategy",
         permanent: true,
       },
       {
         source: "/benefits-of-link-building/",
-        destination: "/insights/benefits-of-link-building",
+        destination: "/blog/benefits-of-link-building",
         permanent: true,
       },
       {
         source: "/lets-discuss-google-search-updates/",
-        destination: "/insights/lets-discuss-google-search-updates",
+        destination: "/blog/lets-discuss-google-search-updates",
         permanent: true,
       },
       {
         source: "/marketing/first-step-in-marketing-research-process/",
-        destination: "/insights/first-step-in-marketing-research-process",
+        destination: "/blog/first-step-in-marketing-research-process",
         permanent: true,
       },
       {
         source: "/marketing/ppc/seo-vs-google-ads/",
-        destination: "/insights/seo-vs-google-ads",
+        destination: "/blog/seo-vs-google-ads",
         permanent: true,
       },
       { source: "/marketing/", destination: "/seo", permanent: true },
       { source: "/web-design-development/", destination: "/", permanent: true },
       {
         source: "/process-that-affects-visibility-of-website/",
-        destination: "/insights/process-that-affects-visibility-of-website",
+        destination: "/blog/process-that-affects-visibility-of-website",
         permanent: true,
       },
       {
         source: "/seo/how-to-grow-your-business-online/",
-        destination: "/insights/how-to-grow-your-business-online",
+        destination: "/blog/how-to-grow-your-business-online",
         permanent: true,
       },
       {
         source: "/seo/ranking-factors-seo/",
-        destination: "/insights/ranking-factors-seo",
+        destination: "/blog/ranking-factors-seo",
         permanent: true,
       },
 
@@ -178,12 +177,7 @@ const nextConfig: NextConfig = {
       // Blog post catch-alls (parameterized — must come AFTER specific service-category rules above)
       {
         source: "/seo/:category/:slug/",
-        destination: "/insights/:slug",
-        permanent: true,
-      },
-      {
-        source: "/blog/:slug/",
-        destination: "/insights/:slug",
+        destination: "/blog/:slug",
         permanent: true,
       },
     ];

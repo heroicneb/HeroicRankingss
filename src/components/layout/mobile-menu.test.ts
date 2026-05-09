@@ -21,7 +21,7 @@ describe("buildMobileMenuItems", () => {
       },
       { label: "Link Building", href: "/seo/linkbuilding" },
       { label: "Partnership", href: "/partnership" },
-      { label: "Insights", href: "/insights" },
+      { label: "Insights", href: "/blog" },
       { label: "Case Studies", href: "/case-studies" },
       { label: "Podcast", href: "/podcast" },
     ]);
