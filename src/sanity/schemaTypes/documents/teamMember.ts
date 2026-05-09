@@ -148,7 +148,7 @@ export const teamMember = defineType({
       title: "Lifestyle Photos",
       type: "array",
       description:
-        "Personal/lifestyle photos rendered in the right column on /team/[slug]. 3–6 recommended; sticky bio card requires >=5.",
+        "Personal/lifestyle photos rendered in the right column on /about/[slug]. 3–6 recommended; sticky bio card requires >=5.",
       of: [
         {
           type: "image",
@@ -270,7 +270,7 @@ export const teamMember = defineType({
       name: "seo",
       title: "SEO",
       type: "seo",
-      description: "Optional. Used by /team/[slug] page metadata.",
+      description: "Optional. Used by /about/[slug] page metadata.",
     }),
   ],
   orderings: [

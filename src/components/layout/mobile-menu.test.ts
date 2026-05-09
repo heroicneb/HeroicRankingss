@@ -6,7 +6,7 @@ describe("buildMobileMenuItems", () => {
   it("includes the podcast route when it exists in the navbar items", () => {
     const items = buildMobileMenuItems([
       { label: "Home", href: "/" },
-      { label: "About Us", href: "/about-us" },
+      { label: "About Us", href: "/about" },
       {
         label: "SEO",
         href: "/seo",

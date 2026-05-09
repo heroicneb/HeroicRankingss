@@ -61,7 +61,7 @@ export const locations = {
   teamMember: defineLocations({
     select: { title: "name" },
     resolve: (doc) => ({
-      locations: [{ title: doc?.title || "About Us", href: "/about-us" }],
+      locations: [{ title: doc?.title || "About Us", href: "/about" }],
     }),
   }),
   faqItem: defineLocations({

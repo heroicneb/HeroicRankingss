@@ -593,7 +593,7 @@ export interface SanityTeamMember {
   socialLinks: Array<{ platform: string; url: string }>;
 }
 
-/** Detail view for /team/[slug] — adds createdAt/updatedAt for ProfilePage schema. */
+/** Detail view for /about/[slug] — adds createdAt/updatedAt for ProfilePage schema. */
 export interface SanityTeamMemberDetail extends SanityTeamMember {
   createdAt: string | null;
   updatedAt: string | null;

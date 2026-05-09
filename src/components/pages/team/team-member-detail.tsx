@@ -89,7 +89,7 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
           <Link
             aria-label="Back to team"
             className="motion-interactive inline-flex items-center gap-[8px] text-[16px] font-normal leading-[24px] text-[var(--color-hr-grey)] hover:text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse-50)] dark:hover:text-[var(--color-text-inverse)]"
-            href="/about-us#about-us-team"
+            href="/about#about-us-team"
           >
             Back to team
           </Link>

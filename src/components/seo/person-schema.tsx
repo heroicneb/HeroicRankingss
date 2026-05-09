@@ -13,7 +13,7 @@ interface PersonSchemaProps {
   description?: string | null;
   /** Absolute URL to the person's primary photo. */
   image?: string | null;
-  /** Slug used to build the canonical /team/<slug> URL. */
+  /** Slug used to build the canonical /about/<slug> URL. */
   slug: string;
   /** Topics this person is known for; populates `Person.knowsAbout`. */
   knowsAbout?: string[];
@@ -43,7 +43,7 @@ export async function PersonSchema({
 }: PersonSchemaProps) {
   const nonce = (await headers()).get(CSP_NONCE_HEADER) ?? undefined;
 
-  const profileUrl = `${SITE_URL}/team/${slug}`;
+  const profileUrl = `${SITE_URL}/about/${slug}`;
 
   const cleanedSameAs = (sameAs ?? [])
     .map((value) => (typeof value === "string" ? value.trim() : ""))

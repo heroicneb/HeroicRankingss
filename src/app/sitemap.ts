@@ -29,7 +29,7 @@ function getRoutePriority(route: string): number {
   if (LISTING_PAGES.has(route)) return 0.8;
   if (route.startsWith("/blog/") || route.startsWith("/case-study/"))
     return 0.7;
-  if (route.startsWith("/team/")) return 0.6;
+  if (route.startsWith("/about/")) return 0.6;
   if (route === "/privacy-policy") return 0.3;
   return 0.8;
 }
@@ -42,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ]);
   const routes: string[] = [
     "/",
-    "/about-us",
+    "/about",
     "/seo-services",
     "/on-page-seo",
     "/technical-seo",
@@ -58,7 +58,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/privacy-policy",
     ...postSlugs.map((slug) => `/blog/${slug}`),
     ...caseStudySlugs.map((slug) => `/case-study/${slug}`),
-    ...teamSlugs.map((slug) => `/team/${slug}`),
+    ...teamSlugs.map((slug) => `/about/${slug}`),
   ];
 
   return routes.map((route) => ({

@@ -15,7 +15,7 @@ interface BreadcrumbSchemaProps {
 
 /** Map known URL slugs to human-readable breadcrumb labels. */
 const SLUG_LABELS: Record<string, string> = {
-  "about-us": "About Us",
+  about: "About Us",
   "case-studies": "Case Studies",
   insights: "Insights",
   partnership: "Partnership",
@@ -39,7 +39,7 @@ function slugToTitle(slug: string): string {
     .join(" ");
 }
 
-/** Build breadcrumb items from a pathname like "/about-us" or "/case-study/acme". */
+/** Build breadcrumb items from a pathname like "/about" or "/case-study/acme". */
 function buildBreadcrumbsFromPath(pathname: string): BreadcrumbItem[] {
   const items: BreadcrumbItem[] = [{ name: "Home", href: "/" }];
 

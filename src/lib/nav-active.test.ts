@@ -20,10 +20,10 @@ describe("isNavItemActive", () => {
 
   it("uses exact matching for standard nav items", () => {
     expect(
-      isNavItemActive("/about-us", { href: "/about-us", label: "About Us" }),
+      isNavItemActive("/about", { href: "/about", label: "About Us" }),
     ).toBe(true);
     expect(
-      isNavItemActive("/contact", { href: "/about-us", label: "About Us" }),
+      isNavItemActive("/contact", { href: "/about", label: "About Us" }),
     ).toBe(false);
   });
 });

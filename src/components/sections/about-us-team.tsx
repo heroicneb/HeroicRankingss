@@ -91,7 +91,7 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
                 <Link
                   aria-label={`Open team profile: ${member.name}`}
                   className={cardClass}
-                  href={`/team/${member.slug}`}
+                  href={`/about/${member.slug}`}
                   key={member.name}
                 >
                   <TeamCard member={member} showArrow />

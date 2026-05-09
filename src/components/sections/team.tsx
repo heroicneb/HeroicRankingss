@@ -13,7 +13,7 @@ const MEMBERS: TeamMember[] = [
     role: "/  Founder & CEO  /",
     imageSrc: "/figma/team/nebojsa.webp",
     imageAlt: "Nebojša Janković portrait",
-    href: "/team/nebojsa-jankovic",
+    href: "/about/nebojsa-jankovic",
   },
   {
     name: "Anastasija Janković",
@@ -21,7 +21,7 @@ const MEMBERS: TeamMember[] = [
     imageSrc: "/figma/team/anastasija.webp",
     imageAlt: "Anastasija Janković portrait",
     offsetClassName: "min-[1360px]:translate-y-[70px]",
-    href: "/team/anastasija-jankovic",
+    href: "/about/anastasija-jankovic",
   },
 ];
 
@@ -85,7 +85,7 @@ export function Team() {
 
           <AppLink
             className="type-cta motion-interactive motion-interactive-press mt-10 inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-            href="/about-us"
+            href="/about"
             motionPreset="none"
           >
             More About Us
@@ -112,7 +112,7 @@ export function Team() {
             </p>
             <AppLink
               className="type-cta motion-interactive motion-interactive-press mt-12 inline-flex h-[45px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href="/about-us"
+              href="/about"
               motionPreset="none"
             >
               More About Us

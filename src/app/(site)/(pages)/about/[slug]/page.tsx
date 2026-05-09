@@ -62,7 +62,7 @@ export async function generateMetadata({
   const base = createPageMetadata({
     title,
     description,
-    path: `/team/${slug}`,
+    path: `/about/${slug}`,
     ogType: "article",
   });
 
@@ -102,8 +102,8 @@ export default async function TeamMemberPage({ params }: TeamMemberPageProps) {
         <BreadcrumbSchema
           items={[
             { name: "Home", href: "/" },
-            { name: "About Us", href: "/about-us" },
-            { name: member.name, href: `/team/${slug}` },
+            { name: "About Us", href: "/about" },
+            { name: member.name, href: `/about/${slug}` },
           ]}
         />
         <PersonSchema

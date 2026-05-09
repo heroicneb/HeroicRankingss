@@ -10,7 +10,7 @@ import type { NavItem } from "@/types";
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us" },
+  { label: "About Us", href: "/about" },
   {
     label: "SEO",
     href: "/seo",

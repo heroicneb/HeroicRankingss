@@ -8,13 +8,17 @@ import { AboutUsTeam } from "@/components/sections/about-us-team";
 import { AboutUsTrust } from "@/components/sections/about-us-trust";
 import { Testimonials } from "@/components/sections/testimonials";
 import { createPageMetadata } from "@/lib/metadata";
-import type { SanityPostSummary, SanityTeamMember, SanityTestimonial } from "@/lib/sanity-data";
+import type {
+  SanityPostSummary,
+  SanityTeamMember,
+  SanityTestimonial,
+} from "@/lib/sanity-data";
 
 export const metadata: Metadata = createPageMetadata({
   title: "About Us",
   description:
     "Meet the ranking heroes behind Heroic Rankings and explore the team, process, and results-driven SEO philosophy.",
-  path: "/about-us",
+  path: "/about",
 });
 
 interface AboutUsPageProps {
@@ -23,7 +27,11 @@ interface AboutUsPageProps {
   cmsTestimonials?: SanityTestimonial[];
 }
 
-export default function AboutUsPage({ cmsTeamMembers, cmsPosts, cmsTestimonials }: AboutUsPageProps) {
+export default function AboutUsPage({
+  cmsTeamMembers,
+  cmsPosts,
+  cmsTestimonials,
+}: AboutUsPageProps) {
   return (
     <>
       <AboutUsHero />

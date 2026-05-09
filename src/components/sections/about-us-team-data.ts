@@ -4,7 +4,7 @@ import type { AboutTeamMember } from "@/types";
  * Hardcoded team roster used as a fallback when Sanity returns no team
  * members (or during initial render before CMS data is fetched). Each entry
  * mirrors what Sanity now ships, with `slug` matching the team document
- * slug so /team/[slug] routing works for both CMS and fallback data.
+ * slug so /about/[slug] routing works for both CMS and fallback data.
  */
 export const TEAM_MEMBERS: AboutTeamMember[] = [
   {

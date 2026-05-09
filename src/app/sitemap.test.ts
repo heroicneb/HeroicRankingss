@@ -31,7 +31,7 @@ describe("sitemap route", () => {
       "https://heroicrankings.com/blog/market-research-guide",
     );
     expect(urls).toContain("https://heroicrankings.com/case-study/affinda");
-    expect(urls).toContain("https://heroicrankings.com/team/nebojsa-jankovic");
+    expect(urls).toContain("https://heroicrankings.com/about/nebojsa-jankovic");
   });
 
   it("does not emit team URLs when data layer returns no visible members", async () => {
@@ -42,6 +42,12 @@ describe("sitemap route", () => {
     const entries = await sitemap();
     const urls = entries.map((entry) => entry.url);
 
-    expect(urls.some((url) => url.includes("/team/"))).toBe(false);
+    expect(
+      urls.some(
+        (url) =>
+          url.startsWith("https://heroicrankings.com/about/") &&
+          url !== "https://heroicrankings.com/about",
+      ),
+    ).toBe(false);
   });
 });

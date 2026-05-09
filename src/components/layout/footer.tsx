@@ -12,7 +12,7 @@ import {
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us" },
+  { label: "About Us", href: "/about" },
   { label: "Services", href: "/seo" },
   { label: "Link Building", href: "/seo/linkbuilding" },
   { label: "Partnership", href: "/partnership" },

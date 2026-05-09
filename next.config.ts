@@ -82,9 +82,6 @@ const nextConfig: NextConfig = {
       // Order matters: specific paths first, parameterized catch-alls last.
       // All composed one-hop (Codex's "no chains" rule).
 
-      // Static pages
-      { source: "/about/", destination: "/about-us", permanent: true },
-
       // Service category pages now serve directly under /seo/* — no redirects needed.
       // (Phase 1 nested service routes under /seo/ to match legacy heroicrankings.com paths.)
       { source: "/seo/managed/", destination: "/blog", permanent: true },
@@ -137,10 +134,6 @@ const nextConfig: NextConfig = {
         destination: "/blog/ranking-factors-seo",
         permanent: true,
       },
-
-      // WHY: Legacy /about/<slug>/ team profile URLs map to the dedicated
-      // /team/<slug> route so Person/Author entity SEO survives migration.
-      { source: "/about/:slug/", destination: "/team/:slug", permanent: true },
 
       // Blog post catch-alls (parameterized — must come AFTER specific service-category rules above)
       {
