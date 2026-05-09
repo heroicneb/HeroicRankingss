@@ -1,3 +1,4 @@
+import { AskPodcastAIButton } from "@/components/chat/AskPodcastAIButton";
 import type { SanityPodcastEpisodeDetail } from "@/lib/sanity-data";
 
 interface PodcastKeyInsightsProps {
@@ -65,9 +66,7 @@ export function PodcastKeyInsights({ insights }: PodcastKeyInsightsProps) {
                 </p>
               ) : null}
 
-              {/* "Ask Podcast AI" affordance is hidden until the backend ships.
-                  Re-enable as a real <button onClick={...}> once PodcastAISection
-                  is wired (PR 4 deliberately left this dead — Codex MEDIUM 2026-04-28). */}
+              <AskPodcastAIButton className="mt-[24px] lg:mt-[30px]" />
 
               {topicPills.length > 0 ? (
                 <ul className="mt-[24px] flex w-full flex-col gap-[10px] lg:mt-[30px] lg:flex-row lg:flex-wrap">

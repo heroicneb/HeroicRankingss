@@ -376,6 +376,7 @@ export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
     slug,
     episodeNumber,
     duration,
+    chatbotEpisodeId,
     description,
     publishedAt,
     videoEmbedUrl,

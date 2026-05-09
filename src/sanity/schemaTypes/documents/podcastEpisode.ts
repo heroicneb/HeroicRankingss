@@ -95,6 +95,21 @@ export const podcastEpisode = defineType({
           .error('Duration is required, e.g. "1h 44min" or "50 min".'),
     }),
     defineField({
+      name: "chatbotEpisodeId",
+      title: "Chatbot Episode UUID",
+      type: "string",
+      group: "episode",
+      description:
+        "UUID from the podcast-chatbot DB. Wires this episode to the per-episode chat drawer on /podcast/[slug]. Get the value from docs/CHATBOT_INTEGRATION.md §4 (Ep # → episodeId table). Leave blank to fall back to global mode for this episode.",
+      validation: (rule) =>
+        rule
+          .regex(
+            /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/,
+            { name: "uuid" },
+          )
+          .error("Must be a UUID like 0123abcd-...-... (lowercase hex)."),
+    }),
+    defineField({
       name: "publishedAt",
       title: "Published At",
       type: "datetime",

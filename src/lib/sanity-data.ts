@@ -934,6 +934,7 @@ export interface SanityPodcastEpisodeSummary {
 }
 
 export interface SanityPodcastEpisodeDetail extends SanityPodcastEpisodeSummary {
+  chatbotEpisodeId?: string | null;
   videoEmbedUrl?: string | null;
   guest?: {
     name?: string | null;

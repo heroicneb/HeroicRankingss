@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { PodcastChatProvider } from "@/components/chat/PodcastChatProvider";
 import { PodcastEpisodePage } from "@/components/pages/podcast/podcast-episode-page";
 import { createPageMetadata } from "@/lib/metadata";
 import {
@@ -53,5 +54,17 @@ export default async function Page({ params }: PodcastEpisodeRouteProps) {
     notFound();
   }
 
-  return <PodcastEpisodePage episode={episode} />;
+  const chatbotEpisodeId = episode.chatbotEpisodeId ?? undefined;
+  return (
+    <>
+      <PodcastEpisodePage episode={episode} />
+      <PodcastChatProvider
+        episodeId={chatbotEpisodeId}
+        episodeTitle={episode.title}
+        guestName={episode.guest?.name ?? undefined}
+        mode={chatbotEpisodeId ? "episode" : "global"}
+        routeKey={`podcast:${slug}`}
+      />
+    </>
+  );
 }
