@@ -27,42 +27,42 @@ const BASE = process.env.AUDIT_BASE ?? "https://heroic-rankings-final.vercel.app
 const TEMPLATES = [
   {
     id: "blog-index",
-    route: "/insights",
+    route: "/blog/",
     viewports: ["desktop"],
   },
   {
     id: "blog-single",
-    route: "/insights/best-ahrefs-alternatives",
+    route: "/seo/managed/best-ahrefs-alternatives/",
     viewports: ["desktop", "mobile"],
   },
   {
     id: "case-studies-index",
-    route: "/case-studies",
+    route: "/case-study/",
     viewports: ["desktop"],
   },
   {
     id: "case-study-single",
-    route: "/case-studies/designrush",
+    route: "/case-study/designrush/",
     viewports: ["desktop", "mobile"],
   },
   {
     id: "podcast-index",
-    route: "/podcast",
+    route: "/podcast/",
     viewports: ["desktop"],
   },
   {
     id: "podcast-single",
-    route: "/podcast/audit-fixture-podcast-episode",
+    route: "/podcast/audit-fixture-podcast-episode/",
     viewports: ["desktop", "mobile"],
   },
   {
     id: "team-detail",
-    route: "/team/nebojsa-jankovic",
+    route: "/about/nebojsa-jankovic/",
     viewports: ["desktop", "mobile"],
   },
   {
     id: "about-us",
-    route: "/about-us",
+    route: "/about/",
     viewports: ["desktop", "mobile"],
   },
 ];
