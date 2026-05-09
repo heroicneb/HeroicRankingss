@@ -317,7 +317,21 @@ export const caseStudy = defineType({
             defineField({
               name: "icon",
               type: "image",
-              options: { hotspot: false },
+              description:
+                "Monochrome SVG only — black fill on transparent background. The frontend applies `filter: invert(1)` in dark mode to flip black to white, so multi-color icons will render with inverted hues. Prefer SVGs that use `currentColor` or a single solid black fill.",
+              options: { hotspot: false, accept: "image/svg+xml" },
+              validation: (rule) =>
+                rule.custom((value) => {
+                  if (!value) return true;
+                  const ref =
+                    typeof value === "object" && value && "asset" in value
+                      ? (value as { asset?: { _ref?: string } }).asset?._ref
+                      : undefined;
+                  if (typeof ref === "string" && !ref.endsWith("-svg")) {
+                    return "Pillar icon must be SVG. Convert to SVG before uploading; PNG/JPG icons will not invert cleanly in dark mode.";
+                  }
+                  return true;
+                }),
               fields: [
                 defineField({
                   name: "alt",

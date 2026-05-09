@@ -61,3 +61,7 @@ figma-extract/
 
 # git worktrees
 /.worktrees
+
+# migration snapshots (write-once rollback refs, not source-of-truth)
+/scripts/migrate/*-snapshot.json
+/scripts/migrate/*-draft.json
