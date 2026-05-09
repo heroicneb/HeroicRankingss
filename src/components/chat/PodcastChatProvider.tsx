@@ -44,10 +44,12 @@ export function PodcastChatProvider({
   guestName,
   globalSuggestions,
 }: PodcastChatProviderProps) {
-  const enabled =
-    process.env.NEXT_PUBLIC_CHAT_ENABLED === "true" &&
-    Boolean(process.env.NEXT_PUBLIC_CHAT_API_URL) &&
-    Boolean(process.env.NEXT_PUBLIC_CHAT_TOKEN);
+  // Gate the widget mount only on the public-safe flag. The chatbot
+  // backend URL + Bearer secret live exclusively on the server (server-
+  // side env vars consumed by /api/chat Edge route), so the browser
+  // can't see them — and shouldn't need to. Per
+  // docs/CHATBOT_INTEGRATION.md §5.
+  const enabled = process.env.NEXT_PUBLIC_CHAT_ENABLED === "true";
 
   const [mounted, setMounted] = useState(false);
   const [open, setOpen] = useState(false);

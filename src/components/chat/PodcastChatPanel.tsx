@@ -34,8 +34,6 @@ export function PodcastChatPanel({
   guestName,
   globalSuggestions = [],
 }: PodcastChatPanelProps) {
-  const apiUrl = process.env.NEXT_PUBLIC_CHAT_API_URL;
-  const siteToken = process.env.NEXT_PUBLIC_CHAT_TOKEN;
   const [seedMessages] = useState(() => load(routeKey));
   const listEndRef = useRef<HTMLDivElement | null>(null);
 
@@ -51,9 +49,11 @@ export function PodcastChatPanel({
     setInput,
     setMessages,
   } = useChat({
-    api: `${apiUrl}/api/chat`,
+    // Same-origin Vercel Edge proxy — see src/app/api/chat/route.ts.
+    // The proxy injects the Bearer secret server-side; the browser never
+    // sees CHATBOT_SERVER_SECRET. Per docs/CHATBOT_INTEGRATION.md §6.2.
+    api: "/api/chat",
     initialMessages: seedMessages,
-    headers: siteToken ? { "X-Site-Token": siteToken } : undefined,
     body: {
       episodeId: mode === "episode" ? episodeId : undefined,
       podcastName: "Ranking Heroes",
