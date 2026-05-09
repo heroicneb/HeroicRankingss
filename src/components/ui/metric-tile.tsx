@@ -18,30 +18,42 @@ export interface MetricTileProps {
  * Figma reference: case-study desktop section 01 (hero metrics 3-up).
  * Source: docs/figma-cache/extractions/2026-04-28-case-study-section-01-single-desktop.md
  */
-export function MetricTile({ value, label, className, variant = "light" }: MetricTileProps) {
+export function MetricTile({
+  value,
+  label,
+  className,
+  variant = "light",
+}: MetricTileProps) {
   const isDark = variant === "dark";
-  const gradientClass = isDark ? "gradient-text-brand-light" : "gradient-text-brand";
 
   return (
     <div
       className={cn(
         "flex flex-col items-start rounded-[20px] px-[24px] py-[12px] lg:px-[40px]",
-        isDark ? "bg-[var(--color-hr-black-box)]" : "bg-[var(--color-hr-off-white)]",
+        isDark
+          ? "bg-[var(--color-hr-black-box)]"
+          : "bg-[var(--color-hr-off-white)] dark:bg-[var(--color-hr-black-box)]",
         className,
       )}
     >
-      <p
-        className={cn(
-          "w-full font-medium text-[24px] leading-[normal] tracking-[-0.48px]",
-          gradientClass,
+      <p className="w-full font-medium text-[24px] leading-[normal] tracking-[-0.48px]">
+        {isDark ? (
+          <span className="gradient-text-brand-light">{value}</span>
+        ) : (
+          <>
+            <span className="gradient-text-brand dark:!hidden">{value}</span>
+            <span className="hidden gradient-text-brand-light dark:!inline">
+              {value}
+            </span>
+          </>
         )}
-      >
-        {value}
       </p>
       <p
         className={cn(
           "type-paragraph w-full",
-          isDark ? "text-[var(--color-hr-pure-white)]" : "text-[var(--color-hr-dark)]",
+          isDark
+            ? "text-[var(--color-hr-pure-white)]"
+            : "text-[var(--color-hr-dark)] dark:text-[var(--color-hr-pure-white)]",
         )}
       >
         {label}

@@ -44,7 +44,13 @@ function PillarCard({ pillar, className }: PillarCardProps) {
     >
       {iconUrl ? (
         <div className="flex size-[50px] items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]">
-          <Image alt={iconAlt} height={28} src={iconUrl} width={28} />
+          <Image
+            alt={iconAlt}
+            className="dark:invert"
+            height={28}
+            src={iconUrl}
+            width={28}
+          />
         </div>
       ) : null}
 
