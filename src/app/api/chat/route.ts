@@ -1,12 +1,14 @@
 /**
- * Vercel Edge proxy for the podcast chatbot.
+ * Vercel server proxy for the podcast chatbot.
  *
  * Browser → this route (same-origin) → chatbot.heroicrankings.com/api/chat
  *
  * Bearer secret lives only here on the server. Never ships to the browser.
  * Per docs/CHATBOT_INTEGRATION.md §5–§6.
+ *
+ * Runs on Node.js runtime — `runtime: "edge"` is incompatible with
+ * Next 16's experimental.useCache flag in next.config.ts.
  */
-export const runtime = "edge";
 
 const CHATBOT_API_URL = process.env.CHATBOT_API_URL;
 const CHATBOT_SERVER_SECRET = process.env.CHATBOT_SERVER_SECRET;
