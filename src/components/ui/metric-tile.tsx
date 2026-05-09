@@ -36,13 +36,26 @@ export function MetricTile({
         className,
       )}
     >
-      <p className="w-full font-medium text-[24px] leading-[normal] tracking-[-0.48px]">
+      <p
+        aria-label={value}
+        className="w-full font-medium text-[24px] leading-[normal] tracking-[-0.48px]"
+      >
         {isDark ? (
-          <span className="gradient-text-brand-light">{value}</span>
+          <span aria-hidden="true" className="gradient-text-brand-light">
+            {value}
+          </span>
         ) : (
           <>
-            <span className="gradient-text-brand dark:!hidden">{value}</span>
-            <span className="hidden gradient-text-brand-light dark:!inline">
+            <span
+              aria-hidden="true"
+              className="gradient-text-brand dark:!hidden"
+            >
+              {value}
+            </span>
+            <span
+              aria-hidden="true"
+              className="hidden gradient-text-brand-light dark:!inline"
+            >
               {value}
             </span>
           </>
