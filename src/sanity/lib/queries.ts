@@ -16,6 +16,7 @@ export const POSTS_QUERY = defineQuery(`
     mainImage { ..., asset->{ _id, _type, metadata { lqip } } },
     publishedAt,
     categories,
+    urlCategory,
     author-> { name, photo }
   }
 `);
@@ -31,6 +32,7 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
     body,
     publishedAt,
     categories,
+    urlCategory,
     author-> {
       name,
       role,

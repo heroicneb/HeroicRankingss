@@ -123,6 +123,52 @@ export const post = defineType({
       },
     }),
     defineField({
+      name: "urlCategory",
+      title: "URL Category",
+      type: "string",
+      group: "article",
+      description:
+        "Drives the /seo/<urlCategory>/<slug>/ URL path for this post. Match the legacy heroicrankings.com category exactly. Required for the post to appear at its canonical URL.",
+      options: {
+        list: [
+          { title: "Content Creation", value: "content-creation" },
+          { title: "E-Commerce", value: "e-commerce" },
+          { title: "Keyword Research", value: "keyword-research" },
+          { title: "Link Building", value: "linkbuilding" },
+          { title: "Local SEO", value: "local" },
+          { title: "Managed", value: "managed" },
+          { title: "On-Page SEO", value: "on-page" },
+          { title: "Technical SEO", value: "technical" },
+        ],
+        layout: "dropdown",
+      },
+      validation: (rule) =>
+        rule
+          .required()
+          .custom((value) => {
+            const allowed = [
+              "content-creation",
+              "e-commerce",
+              "keyword-research",
+              "linkbuilding",
+              "local",
+              "managed",
+              "on-page",
+              "technical",
+            ];
+            if (!value) {
+              return "URL category is required. It picks the legacy /seo/<category>/<slug>/ path segment for this post.";
+            }
+            if (!allowed.includes(value as string)) {
+              return "URL category is required. It picks the legacy /seo/<category>/<slug>/ path segment for this post.";
+            }
+            return true;
+          })
+          .error(
+            "URL category is required. It picks the legacy /seo/<category>/<slug>/ path segment for this post.",
+          ),
+    }),
+    defineField({
       name: "readTime",
       title: "Read Time",
       type: "string",

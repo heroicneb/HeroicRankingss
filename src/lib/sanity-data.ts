@@ -61,6 +61,7 @@ interface SanityRawPost {
   mainImage?: SanityImageRef | null;
   publishedAt?: string | null;
   categories?: unknown[] | null;
+  urlCategory?: string | null;
   author?: { name?: string; photo?: SanityImageRef | null } | null;
 }
 
@@ -312,6 +313,7 @@ function imageLqip(
 export interface SanityPostSummary {
   _id: string;
   categories: string[];
+  urlCategory: string | null;
   excerpt: string | null;
   mainImageAlt: string;
   mainImageLqip: string | undefined;
@@ -359,6 +361,7 @@ export async function getPosts(): Promise<SanityPostSummary[]> {
     categories: (post.categories ?? []).filter(
       (category: unknown): category is string => typeof category === "string",
     ),
+    urlCategory: post.urlCategory ?? null,
   }));
 }
 
@@ -398,6 +401,7 @@ export const getPostBySlug = cache(
       categories: (post.categories ?? []).filter(
         (category: unknown): category is string => typeof category === "string",
       ),
+      urlCategory: post.urlCategory ?? null,
       body: post.body ?? null,
       authorName: rawAuthor?.name ?? null,
       authorRole: rawAuthor?.role ?? null,
