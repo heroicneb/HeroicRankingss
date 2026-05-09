@@ -24,7 +24,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "Link Building Services",
   description:
     "Strengthen your off-page SEO with white-hat link building services that improve rankings, authority, and long-term organic growth.",
-  path: "/link-building",
+  path: "/seo/linkbuilding",
 });
 
 const HERO_STATUE_SRC = "/link-building/imgRectangle5.webp";

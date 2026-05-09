@@ -8,7 +8,7 @@ describe("isNavItemActive", () => {
   });
 
   it("treats SEO service routes as active for SEO nav item", () => {
-    expect(isNavItemActive("/technical-seo", { href: "/seo-services", label: "SEO" })).toBe(true);
+    expect(isNavItemActive("/seo/technical", { href: "/seo", label: "SEO" })).toBe(true);
   });
 
   it("uses exact matching for standard nav items", () => {

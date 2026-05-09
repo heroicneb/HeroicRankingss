@@ -1,13 +1,13 @@
 import { normalizePath } from "@/lib/normalize-path";
 
 const SEO_ROUTES = new Set([
-  "/seo-services",
-  "/on-page-seo",
-  "/local-seo",
-  "/technical-seo",
-  "/ecommerce-seo",
-  "/content-creation",
-  "/keyword-strategy",
+  "/seo",
+  "/seo/on-page",
+  "/seo/local",
+  "/seo/technical",
+  "/seo/e-commerce",
+  "/seo/content-creation",
+  "/seo/keyword-research",
 ]);
 
 interface NavActiveItem {

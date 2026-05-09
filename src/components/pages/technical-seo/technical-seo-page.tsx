@@ -25,7 +25,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "Technical SEO Services",
   description:
     "Strengthen your site infrastructure, improve crawlability, and boost rankings with Heroic Rankings technical SEO services.",
-  path: "/technical-seo",
+  path: "/seo/technical",
 });
 
 const HERO_IMAGE = "/technical-seo/055420a1-fe99-46f5-9e5b-bbce63f8a07e.webp";

@@ -48,7 +48,7 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[305px]",
     backPointsWidthClass: "max-w-[248px]",
-    href: "/seo-services",
+    href: "/seo",
   },
   {
     title: "Link Building Services",
@@ -63,7 +63,7 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     backPoints: ["White Hat Link Building", "Niche edits", "Guest posting", "Listicle posting (boosts LLM performance)"],
     backIntroWidthClass: "max-w-[305px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/link-building",
+    href: "/seo/linkbuilding",
   },
   {
     title: "On-Page SEO",
@@ -84,7 +84,7 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[305px]",
     backPointsWidthClass: "max-w-[248px]",
-    href: "/on-page-seo",
+    href: "/seo/on-page",
   },
   {
     title: "Technical SEO Services",
@@ -100,7 +100,7 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     backPoints: ["Site Audits", "Mobile Optimization", "Speed Optimization", "Structured Data Markup"],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/technical-seo",
+    href: "/seo/technical",
   },
   {
     title: "Technical SEO Services",
@@ -117,7 +117,7 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     backPoints: ["Site Audits", "Mobile Optimization", "Speed Optimization", "Structured Data Markup"],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/technical-seo",
+    href: "/seo/technical",
   },
   {
     title: "E-Commerce SEO Services",
@@ -138,7 +138,7 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/ecommerce-seo",
+    href: "/seo/e-commerce",
   },
   {
     title: "Content Services",
@@ -152,7 +152,7 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     backPoints: ["Content Strategy", "Content Creation", "Content Optimization", "Content calendar"],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/content-creation",
+    href: "/seo/content-creation",
   },
   {
     title: "Content Services",
@@ -166,7 +166,7 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     backPoints: ["Content Strategy", "Content Creation", "Content Optimization", "Content calendar"],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/content-creation",
+    href: "/seo/content-creation",
   },
 ];
 

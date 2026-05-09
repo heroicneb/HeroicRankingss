@@ -24,7 +24,7 @@ interface CtaVariant {
 const EXPANDED_CTA_WIDTH = "w-full max-w-[251px] lg:w-[198px]";
 
 const CTA_VARIANTS: Record<string, CtaVariant> = {
-  "/keyword-strategy": {
+  "/seo/keyword-research": {
     heading: (
       <>
         Dominate{" "}
@@ -42,7 +42,7 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
     bodyMaxW: "lg:max-w-[800px]",
     rootMaxW: "max-w-[800px]",
   },
-  "/local-seo": {
+  "/seo/local": {
     heading: (
       <>
         Dominate{" "}
@@ -57,7 +57,7 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
     ctaLabel: "Get Started Today",
     ctaWidth: EXPANDED_CTA_WIDTH,
   },
-  "/on-page-seo": {
+  "/seo/on-page": {
     heading: (
       <>
         Start Generating SEO
@@ -73,7 +73,7 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
     bodyMaxW: "lg:max-w-[532px]",
     rootMaxW: "max-w-[600px]",
   },
-  "/content-creation": {
+  "/seo/content-creation": {
     heading: (
       <>
         Map Out Your Content for{" "}
@@ -88,7 +88,7 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
     bodyMaxW: "lg:max-w-[1130px]",
     rootMaxW: "max-w-[1130px]",
   },
-  "/technical-seo": {
+  "/seo/technical": {
     heading: (
       <>
         Perfect Your Site with
@@ -105,7 +105,7 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
     bodyMaxW: "lg:max-w-[814px]",
     rootMaxW: "max-w-[814px]",
   },
-  "/seo-services": {
+  "/seo": {
     heading: (
       <>
         Ready to Turn Search
@@ -120,7 +120,7 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
     ctaLabel: "Get Started Today",
     ctaWidth: EXPANDED_CTA_WIDTH,
   },
-  "/ecommerce-seo": {
+  "/seo/e-commerce": {
     heading: (
       <>
         Turn Shoppers into{" "}
@@ -138,7 +138,7 @@ const CTA_VARIANTS: Record<string, CtaVariant> = {
     bodyMaxW: "lg:max-w-[1188px]",
     rootMaxW: "max-w-[1188px]",
   },
-  "/link-building": {
+  "/seo/linkbuilding": {
     heading: (
       <>
         Strengthen Your{" "}

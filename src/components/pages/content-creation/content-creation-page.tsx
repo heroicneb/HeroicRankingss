@@ -30,7 +30,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "Content Creation Services",
   description:
     "Craft strategy-led content that attracts qualified traffic, strengthens authority, and turns engagement into conversions.",
-  path: "/content-creation",
+  path: "/seo/content-creation",
 });
 
 const HERO_STATUE_IMAGE =

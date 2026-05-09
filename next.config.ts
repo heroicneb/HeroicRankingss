@@ -85,36 +85,9 @@ const nextConfig: NextConfig = {
       { source: "/blog/", destination: "/insights", permanent: true },
       { source: "/case-study/", destination: "/case-studies", permanent: true },
       { source: "/about/", destination: "/about-us", permanent: true },
-      { source: "/seo/", destination: "/seo-services", permanent: true },
 
-      // Service category pages (must come BEFORE /seo/:category/:slug/)
-      {
-        source: "/seo/technical/",
-        destination: "/technical-seo",
-        permanent: true,
-      },
-      { source: "/seo/on-page/", destination: "/on-page-seo", permanent: true },
-      { source: "/seo/local/", destination: "/local-seo", permanent: true },
-      {
-        source: "/seo/keyword-research/",
-        destination: "/keyword-strategy",
-        permanent: true,
-      },
-      {
-        source: "/seo/content-creation/",
-        destination: "/content-creation",
-        permanent: true,
-      },
-      {
-        source: "/seo/linkbuilding/",
-        destination: "/link-building",
-        permanent: true,
-      },
-      {
-        source: "/seo/e-commerce/",
-        destination: "/ecommerce-seo",
-        permanent: true,
-      },
+      // Service category pages now serve directly under /seo/* — no redirects needed.
+      // (Phase 1 nested service routes under /seo/ to match legacy heroicrankings.com paths.)
       { source: "/seo/managed/", destination: "/insights", permanent: true },
 
       // Case studies (per-slug, only those whose slug differs from new path)
@@ -180,7 +153,7 @@ const nextConfig: NextConfig = {
         destination: "/insights/seo-vs-google-ads",
         permanent: true,
       },
-      { source: "/marketing/", destination: "/seo-services", permanent: true },
+      { source: "/marketing/", destination: "/seo", permanent: true },
       { source: "/web-design-development/", destination: "/", permanent: true },
       {
         source: "/process-that-affects-visibility-of-website/",

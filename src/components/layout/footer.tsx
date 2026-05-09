@@ -13,8 +13,8 @@ import {
 const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
-  { label: "Services", href: "/seo-services" },
-  { label: "Link Building", href: "/link-building" },
+  { label: "Services", href: "/seo" },
+  { label: "Link Building", href: "/seo/linkbuilding" },
   { label: "Partnership", href: "/partnership" },
   { label: "Insights", href: "/insights" },
   { label: "Case Studies", href: "/case-studies" },

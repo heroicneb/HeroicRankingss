@@ -25,7 +25,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "Local SEO Services",
   description:
     "Dominate your local market, connect with nearby customers, and increase foot traffic with Heroic Rankings local SEO services.",
-  path: "/local-seo",
+  path: "/seo/local",
 });
 
 const HERO_IMAGE_SRC =

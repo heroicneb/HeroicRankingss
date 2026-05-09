@@ -24,7 +24,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "On-Page SEO Services",
   description:
     "Create a solid on-site SEO structure and start driving traffic with Heroic Rankings on-page SEO services.",
-  path: "/on-page-seo",
+  path: "/seo/on-page",
 });
 
 const HERO_STATUE_IMAGE =

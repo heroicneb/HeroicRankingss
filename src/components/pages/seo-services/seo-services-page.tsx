@@ -27,7 +27,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "SEO Services",
   description:
     "Boost visibility, drive engagement, and grow revenue with Heroic Rankings AEO and SEO services.",
-  path: "/seo-services",
+  path: "/seo",
 });
 
 const SERVICE_CARDS: readonly SeoDesktopServiceCard[] = [
@@ -50,7 +50,7 @@ const SERVICE_CARDS: readonly SeoDesktopServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[528px]",
     backPointsWidthClass: "max-w-[248px]",
-    href: "/on-page-seo",
+    href: "/seo/on-page",
   },
   {
     title: "Local SEO Services",
@@ -68,7 +68,7 @@ const SERVICE_CARDS: readonly SeoDesktopServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/local-seo",
+    href: "/seo/local",
   },
   {
     title: "Technical SEO Services",
@@ -87,7 +87,7 @@ const SERVICE_CARDS: readonly SeoDesktopServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/technical-seo",
+    href: "/seo/technical",
   },
   {
     title: "Link Building Services",
@@ -107,7 +107,7 @@ const SERVICE_CARDS: readonly SeoDesktopServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[305px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/link-building",
+    href: "/seo/linkbuilding",
   },
   {
     title: "E-Commerce SEO Services",
@@ -126,7 +126,7 @@ const SERVICE_CARDS: readonly SeoDesktopServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/ecommerce-seo",
+    href: "/seo/e-commerce",
   },
   {
     title: "Content Services",
@@ -145,7 +145,7 @@ const SERVICE_CARDS: readonly SeoDesktopServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/content-creation",
+    href: "/seo/content-creation",
   },
   {
     title: "Keyword Research and Strategy",
@@ -165,7 +165,7 @@ const SERVICE_CARDS: readonly SeoDesktopServiceCard[] = [
     ],
     backIntroWidthClass: "max-w-[400px]",
     backPointsWidthClass: "max-w-[300px]",
-    href: "/keyword-strategy",
+    href: "/seo/keyword-research",
   },
 ] as const;
 

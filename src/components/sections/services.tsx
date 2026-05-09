@@ -35,7 +35,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
     frontImageAlt: "Classical statue holding a sword",
     backDescription:
       "Comprehensive support to ensure every aspect of your SEO strategy is optimized for success and tailored to your business needs.",
-    href: "/seo-services",
+    href: "/seo",
     mobileImageClassName: "h-[129.44%] w-[124.82%] left-[-17.1%] top-[5.33%]",
   },
   {
@@ -44,7 +44,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
     frontImageAlt: "Classical statue near an engraved stone",
     backDescription:
       "Gain visibility on top-tier websites and connect with your target audience to increase your site's authority and improve rankings. Strengthen online presence with exceptional link building strategies and reporting.",
-    href: "/link-building",
+    href: "/seo/linkbuilding",
     mobileImageClassName: "h-[91.07%] w-[94.43%] left-[2.79%] top-[14.04%]",
   },
   {
@@ -53,7 +53,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
     frontImageAlt: "Classical statue near an engraved stone",
     backDescription:
       "Refine your website's content and architecture for enhanced search engine visibility and better search rankings.",
-    href: "/on-page-seo",
+    href: "/seo/on-page",
     mobileImageClassName: "h-[92.07%] w-[207.56%] left-[-19.99%] top-[11.78%]",
   },
   {
@@ -67,7 +67,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "Enhance User Experience.",
       "Boost Rankings.",
     ],
-    href: "/technical-seo",
+    href: "/seo/technical",
     mobileImageClassName: "h-[76.67%] w-[229.11%] left-[-47.25%] top-[23.33%]",
     mobileTitleClassName: "max-w-[144px]",
   },
@@ -82,7 +82,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "Connect with Nearby Customers.",
       "Increase Foot Traffic.",
     ],
-    href: "/local-seo",
+    href: "/seo/local",
     mobileImageClassName:
       "h-[81.55%] w-[183.54%] left-[-30.43%] top-[18.29%] [transform:scaleX(-1)]",
     mobileTitleClassName: "max-w-[144px]",
@@ -96,7 +96,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "Optimize Your Online Store.",
       "Drive Conversions and Sales.",
     ],
-    href: "/ecommerce-seo",
+    href: "/seo/e-commerce",
     mobileImageClassName: "h-[172.71%] w-[166.54%] left-[-38.87%] top-[-47.9%]",
     mobileTitleClassName: "max-w-[144px]",
   },
@@ -111,7 +111,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "Connect with your audience.",
       "Turn engagement into conversions.",
     ],
-    href: "/content-creation",
+    href: "/seo/content-creation",
     mobileImageClassName:
       "h-[165.32%] w-[125.27%] left-[-7.98%] top-[-42.29%] [transform:scaleX(-1)]",
   },
@@ -126,7 +126,7 @@ export const SERVICE_CARDS: ServiceCardEntry[] = [
       "Target the Right Search.",
       "Find More Customers.",
     ],
-    href: "/keyword-strategy",
+    href: "/seo/keyword-research",
     mobileImageClassName: "h-[121.78%] w-[223.77%] left-[-14.04%] top-[-4.83%]",
     mobileTitleClassName: "max-w-[180px]",
   },

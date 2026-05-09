@@ -26,7 +26,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "E-commerce SEO Services",
   description:
     "Grow sales, not just traffic, with e-commerce SEO services built to turn search visibility into sustainable revenue.",
-  path: "/ecommerce-seo",
+  path: "/seo/e-commerce",
 });
 
 const HERO_IMAGE_SRC =

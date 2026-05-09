@@ -30,7 +30,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "Keyword Strategy Services",
   description:
     "Reveal keyword opportunities you are missing and turn search demand into qualified traffic and revenue.",
-  path: "/keyword-strategy",
+  path: "/seo/keyword-research",
 });
 
 const HERO_STATUE_IMAGE =
