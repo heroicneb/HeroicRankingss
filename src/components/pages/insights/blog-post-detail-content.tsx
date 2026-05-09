@@ -1,6 +1,7 @@
 import { PortableText } from "@portabletext/react";
 
 import { buildHeadingIdMap } from "@/lib/heading-slug";
+import { getPostHref } from "@/lib/post-url";
 import type { SanityPostDetail } from "@/lib/sanity-data";
 import { SITE_URL } from "@/lib/site";
 import { makePortableTextComponents } from "@/sanity/lib/portable-text-components";
@@ -30,7 +31,8 @@ interface BlogPostDetailContentProps {
  * deep-links all resolve without DOM patching.
  */
 export function BlogPostDetailContent({ post }: BlogPostDetailContentProps) {
-  const articleUrl = post.slug ? `${SITE_URL}/blog/${post.slug}` : SITE_URL;
+  const postPath = post.slug ? getPostHref(post) : null;
+  const articleUrl = postPath ? `${SITE_URL}${postPath}` : SITE_URL;
   const headingIds = buildHeadingIdMap(post.body);
   const components = makePortableTextComponents(headingIds);
 

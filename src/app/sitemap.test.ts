@@ -1,14 +1,14 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const { getPostSlugsMock, getCaseStudySlugsMock, getTeamMemberSlugsMock } =
+const { getPostUrlsMock, getCaseStudySlugsMock, getTeamMemberSlugsMock } =
   vi.hoisted(() => ({
-    getPostSlugsMock: vi.fn(),
+    getPostUrlsMock: vi.fn(),
     getCaseStudySlugsMock: vi.fn(),
     getTeamMemberSlugsMock: vi.fn(),
   }));
 
 vi.mock("@/lib/sanity-data", () => ({
-  getPostSlugs: getPostSlugsMock,
+  getPostUrls: getPostUrlsMock,
   getCaseStudySlugs: getCaseStudySlugsMock,
   getTeamMemberSlugs: getTeamMemberSlugsMock,
 }));
@@ -17,21 +17,33 @@ import sitemap from "./sitemap";
 
 describe("sitemap route", () => {
   beforeEach(() => {
-    getPostSlugsMock.mockResolvedValue(["market-research-guide"]);
+    getPostUrlsMock.mockResolvedValue([
+      { slug: "market-research-guide", urlCategory: "managed" },
+      { slug: "no-category-post", urlCategory: null },
+    ]);
     getCaseStudySlugsMock.mockResolvedValue(["affinda"]);
     getTeamMemberSlugsMock.mockResolvedValue(["nebojsa-jankovic"]);
   });
 
-  it("includes homepage, insight, case study, and visible team routes", async () => {
+  it("emits posts at /seo/<urlCategory>/<slug>/ to match legacy URL form", async () => {
     const entries = await sitemap();
     const urls = entries.map((entry) => entry.url);
 
     expect(urls).toContain("https://heroicrankings.com");
     expect(urls).toContain(
-      "https://heroicrankings.com/blog/market-research-guide",
+      "https://heroicrankings.com/seo/managed/market-research-guide",
     );
     expect(urls).toContain("https://heroicrankings.com/case-study/affinda");
     expect(urls).toContain("https://heroicrankings.com/about/nebojsa-jankovic");
+  });
+
+  it("skips posts without urlCategory until the editor fills the field", async () => {
+    const entries = await sitemap();
+    const urls = entries.map((entry) => entry.url);
+
+    // The post with urlCategory: null should NOT appear in the sitemap —
+    // it has no canonical URL until the editor sets the urlCategory field.
+    expect(urls.some((url) => url.includes("no-category-post"))).toBe(false);
   });
 
   it("does not emit team URLs when data layer returns no visible members", async () => {

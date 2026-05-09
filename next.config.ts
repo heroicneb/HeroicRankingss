@@ -81,64 +81,62 @@ const nextConfig: NextConfig = {
       // ---- Legacy heroicrankings.com → new IA (per docs/migration/redirect-map.md) ----
       // Order matters: specific paths first, parameterized catch-alls last.
       // All composed one-hop (Codex's "no chains" rule).
+      //
+      // Phase 4c: posts now serve DIRECTLY at /seo/<urlCategory>/<slug>/
+      // via the new src/app/(site)/(pages)/seo/[category]/[slug]/ route.
+      // The previous /seo/:category/:slug/ → /blog/:slug catch-all was
+      // dropped (it's now a circular identity), and the 9 historical
+      // BCMS short URLs below are remapped from /blog/<slug> → their
+      // canonical /seo/<urlCategory>/<slug>/ targets per
+      // docs/migration/legacy-url-inventory.txt.
 
-      // Service category pages now serve directly under /seo/* — no redirects needed.
-      // (Phase 1 nested service routes under /seo/ to match legacy heroicrankings.com paths.)
-      { source: "/seo/managed/", destination: "/blog", permanent: true },
-
-      // 11 historical BCMS-internal redirects (composed one-hop into final URLs)
+      // 9 historical BCMS-internal redirects → canonical /seo/ post URLs
       {
         source: "/backlinks-management/",
-        destination: "/blog/backlinks-management",
+        destination: "/seo/linkbuilding/backlinks-management/",
         permanent: true,
       },
       {
         source: "/how-to-create-a-link-building-strategy/",
-        destination: "/blog/how-to-create-a-link-building-strategy",
+        destination:
+          "/seo/linkbuilding/how-to-create-a-link-building-strategy/",
         permanent: true,
       },
       {
         source: "/benefits-of-link-building/",
-        destination: "/blog/benefits-of-link-building",
+        destination: "/seo/linkbuilding/benefits-of-link-building/",
         permanent: true,
       },
       {
         source: "/lets-discuss-google-search-updates/",
-        destination: "/blog/lets-discuss-google-search-updates",
+        destination: "/seo/on-page/lets-discuss-google-search-updates/",
         permanent: true,
       },
       {
         source: "/marketing/first-step-in-marketing-research-process/",
-        destination: "/blog/first-step-in-marketing-research-process",
+        destination: "/seo/on-page/first-step-in-marketing-research-process/",
         permanent: true,
       },
       {
         source: "/marketing/ppc/seo-vs-google-ads/",
-        destination: "/blog/seo-vs-google-ads",
+        destination: "/seo/technical/seo-vs-google-ads/",
         permanent: true,
       },
       { source: "/marketing/", destination: "/seo", permanent: true },
       { source: "/web-design-development/", destination: "/", permanent: true },
       {
         source: "/process-that-affects-visibility-of-website/",
-        destination: "/blog/process-that-affects-visibility-of-website",
+        destination: "/seo/on-page/process-that-affects-visibility-of-website/",
         permanent: true,
       },
       {
         source: "/seo/how-to-grow-your-business-online/",
-        destination: "/blog/how-to-grow-your-business-online",
+        destination: "/seo/on-page/how-to-grow-your-business-online/",
         permanent: true,
       },
       {
         source: "/seo/ranking-factors-seo/",
-        destination: "/blog/ranking-factors-seo",
-        permanent: true,
-      },
-
-      // Blog post catch-alls (parameterized — must come AFTER specific service-category rules above)
-      {
-        source: "/seo/:category/:slug/",
-        destination: "/blog/:slug",
+        destination: "/seo/technical/ranking-factors-seo/",
         permanent: true,
       },
     ];

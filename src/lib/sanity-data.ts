@@ -8,6 +8,7 @@ import {
   POSTS_QUERY,
   POST_BY_SLUG_QUERY,
   POST_SLUGS_QUERY,
+  POST_URLS_QUERY,
   TEAM_MEMBERS_QUERY,
   TEAM_MEMBER_BY_SLUG_QUERY,
   TEAM_MEMBER_SLUGS_QUERY,
@@ -419,6 +420,34 @@ export async function getPostSlugs(): Promise<string[]> {
   return data.filter(
     (slug): slug is string => typeof slug === "string" && slug.length > 0,
   );
+}
+
+/**
+ * Returns all post {slug, urlCategory} pairs — used by sitemap.ts and any
+ * caller that needs the legacy /seo/<urlCategory>/<slug>/ URL form for
+ * every post (not just the 12 most recent that POSTS_QUERY caps).
+ *
+ * Posts without urlCategory are returned with urlCategory: null — callers
+ * filter them out of URL lists (no canonical URL until the editor sets it).
+ */
+export async function getPostUrls(): Promise<
+  Array<{ slug: string; urlCategory: string | null }>
+> {
+  const data =
+    await client.fetch<
+      Array<{ slug?: string | null; urlCategory?: string | null }>
+    >(POST_URLS_QUERY);
+  if (!data) return [];
+
+  return data
+    .filter(
+      (row): row is { slug: string; urlCategory?: string | null } =>
+        typeof row?.slug === "string" && row.slug.length > 0,
+    )
+    .map((row) => ({
+      slug: row.slug,
+      urlCategory: row.urlCategory ?? null,
+    }));
 }
 
 // ── Partnership Page ───────────────────────────────────────────────

@@ -49,6 +49,13 @@ export const POST_SLUGS_QUERY = defineQuery(`
   *[_type == "post" && defined(slug.current) && !(_id match "audit-fixture-*")].slug.current
 `);
 
+export const POST_URLS_QUERY = defineQuery(`
+  *[_type == "post" && defined(slug.current) && !(_id match "audit-fixture-*")] {
+    "slug": slug.current,
+    urlCategory
+  }
+`);
+
 // --- Case Studies ---
 
 export const CASE_STUDIES_QUERY = defineQuery(`

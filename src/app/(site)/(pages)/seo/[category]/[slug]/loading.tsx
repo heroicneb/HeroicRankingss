@@ -1,5 +1,5 @@
 // WHY: Provide a route-segment skeleton so dynamic article transitions feel responsive.
-export default function InsightPostLoading() {
+export default function PostLoading() {
   return (
     <div className="mx-auto w-full max-w-[1440px] px-5 pb-[130px] pt-[109px] md:px-10 xl:px-[80px]">
       <div className="animate-pulse">

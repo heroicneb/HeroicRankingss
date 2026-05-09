@@ -15,6 +15,12 @@ export interface BlogPostEntry extends BlogCard {
 /**
  * Single source of truth for featured blog post data.
  * Consumed by both the homepage blog section and the /blog catalog.
+ *
+ * WHY: Static-fallback entries are placeholders; canonical post URLs are
+ * /seo/<urlCategory>/<slug>/ (per legacy heroicrankings.com inventory) and
+ * are only known once a real CMS post is loaded. Static cards therefore
+ * point at /blog (the catalog) and render as non-link via isPublished=false
+ * so they never serve a broken URL.
  */
 export const BLOG_POSTS: readonly BlogPostEntry[] = INSIGHT_REGISTRY.map(
   (entry) => ({
@@ -22,10 +28,10 @@ export const BLOG_POSTS: readonly BlogPostEntry[] = INSIGHT_REGISTRY.map(
     title: entry.title,
     excerpt: entry.excerpt,
     date: entry.date,
-    href: entry.published ? `/blog/${entry.slug}` : "/blog",
+    href: "/blog",
     category: entry.category,
     imageSrc: entry.imageSrc,
-    isPublished: entry.published,
+    isPublished: false,
   }),
 );
 

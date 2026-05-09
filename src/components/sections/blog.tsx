@@ -4,6 +4,7 @@ import { PUBLISHED_BLOG_POSTS } from "@/data/blog-posts";
 import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
+import { getPostHref } from "@/lib/post-url";
 import type { SanityPostSummary } from "@/lib/sanity-data";
 
 interface BlogCardItem {
@@ -14,9 +15,13 @@ interface BlogCardItem {
   href: string;
 }
 
+interface MaybeBlogCardItem extends Omit<BlogCardItem, "href"> {
+  href: string | null;
+}
+
 const DEFAULT_READ_TIME = "6 min read";
 
-function mapCmsPosts(cmsPosts: SanityPostSummary[]): BlogCardItem[] {
+function mapCmsPosts(cmsPosts: SanityPostSummary[]): MaybeBlogCardItem[] {
   return cmsPosts.map((post) => {
     const formatted = post.publishedAt
       ? new Intl.DateTimeFormat("en-US", {
@@ -31,7 +36,7 @@ function mapCmsPosts(cmsPosts: SanityPostSummary[]): BlogCardItem[] {
       title: post.title,
       excerpt: post.excerpt,
       date: formatted ? `${formatted} — ${DEFAULT_READ_TIME}` : null,
-      href: `/blog/${post.slug}`,
+      href: getPostHref(post),
     };
   });
 }
@@ -41,9 +46,13 @@ interface BlogProps {
 }
 
 export function Blog({ cmsPosts }: BlogProps) {
+  // WHY: Posts without urlCategory have no canonical URL — skip them in
+  // the homepage featured list rather than render dead links.
   const posts: BlogCardItem[] =
     cmsPosts && cmsPosts.length > 0
-      ? mapCmsPosts(cmsPosts)
+      ? mapCmsPosts(cmsPosts).filter(
+          (post): post is BlogCardItem => post.href !== null,
+        )
       : PUBLISHED_BLOG_POSTS.map((p) => ({
           slug: p.slug,
           title: p.title,

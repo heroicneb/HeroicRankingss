@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 
 // WHY: Scope failure handling to the article segment so users can retry without full-page disruption.
-export default function InsightPostError({
+export default function PostError({
   error,
   reset,
 }: {

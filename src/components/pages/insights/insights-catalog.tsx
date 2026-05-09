@@ -8,6 +8,7 @@ import { BLOG_POSTS } from "@/data/blog-posts";
 import type { BlogPostEntry } from "@/data/blog-posts";
 import { ChevronDownIcon } from "@/components/ui/icons";
 import { cn } from "@/lib/cn";
+import { getPostHref } from "@/lib/post-url";
 import type { SanityPostSummary } from "@/lib/sanity-data";
 
 type CategoryTab = "All" | "Marketing" | "SEO" | "Link Building";
@@ -47,6 +48,7 @@ function mapPostCategory(post: SanityPostSummary): BlogPostEntry["category"] {
 
 function mapPostToCatalogCard(post: SanityPostSummary): BlogPostEntry {
   const staticFallback = STATIC_CARD_BY_SLUG.get(post.slug);
+  const href = getPostHref(post);
 
   return {
     slug: post.slug,
@@ -55,13 +57,15 @@ function mapPostToCatalogCard(post: SanityPostSummary): BlogPostEntry {
     date: post.publishedAt
       ? formatPublishedDate(post.publishedAt)
       : (staticFallback?.date ?? "Draft"),
-    href: `/blog/${post.slug}`,
+    href: href ?? "/blog",
     category: mapPostCategory(post),
     imageSrc:
       post.mainImageUrl ||
       staticFallback?.imageSrc ||
       "/insights/imgSubtract1.png",
-    isPublished: true,
+    // Cards without a urlCategory have no canonical URL — render as
+    // non-link via existing isPublished=false rendering path.
+    isPublished: href !== null,
   };
 }
 
