@@ -22,13 +22,15 @@ const nextConfig: NextConfig = {
   reactCompiler: hasReactCompilerPlugin,
   // cacheComponents disabled: incompatible with dynamic CMS routes using sanityFetch (uncached live data).
   reactStrictMode: true,
-  // WHY: Don't auto-strip trailing slashes before custom redirects() runs.
-  // The legacy heroicrankings.com URLs all use trailing slashes, so the
-  // legacy → new redirect rules below match `/blog/` etc. directly. With
-  // the default behavior Next.js would 308 `/blog/` → `/blog` first and
-  // the legacy rule would never fire (verified pre-launch — every legacy
-  // URL was hitting a 404).
-  skipTrailingSlashRedirect: true,
+  // WHY: Per Nebojsa request 2026-05-09 — match legacy heroicrankings.com
+  // URL paths exactly. Legacy URLs all use a trailing slash (e.g.
+  // `/case-study/affinda/`). Setting `trailingSlash: true` makes the new
+  // site's canonical form match — every internal Link gets a trailing
+  // slash, and bare `/path` requests 308-redirect to `/path/`. Combined
+  // with the route-folder renames in this commit family, the new site
+  // serves the same paths the legacy site did, removing the need for
+  // most legacy → new 308 redirects.
+  trailingSlash: true,
   // WHY: No heavy server-only dependencies were detected in this repo.
   serverExternalPackages: [],
   // WHY: Improve image transfer efficiency and cacheability for Core Web Vitals.
