@@ -1,10 +1,21 @@
 # Heroic Rankings — Legacy URL Redirect Map (final)
 
 Strict literal match per `docs/migration/legacy-url-verification-baseline.md`.
-The new site serves the legacy heroicrankings.com URL structure directly:
-no redirects needed for the 102 indexed legacy URLs.
+**101 of 102** indexed legacy URLs serve as direct identity (HTTP 200 with no
+redirect). The remaining one — `/case-study/number-artist/` — 308-redirects
+to `/case-study/diy-craft-ecom-brand/` because the brand was renamed
+(Number Artist → DIY Craft eCom Brand) post-launch and that's a content
+decision, not a routing one.
 
-Verify: `node scripts/audit/verify-legacy-urls.mjs` → 102/102 PASS.
+`scripts/audit/verify-legacy-urls.mjs` follows redirects, so it reports
+102/102 PASS — true for end-user navigation but technically the
+number-artist URL is a 308 hop, not identity. Acceptable trade-off
+given the rename was an editorial choice; SEO equity transfers via 308
+permanent.
+
+Verify: `node scripts/audit/verify-legacy-urls.mjs` → 102/102 PASS
+(after follow-redirect). `node scripts/audit/verify-redirects.mjs` →
+12/12 retained rules emit correct 308 + 200 chains.
 
 ## Redirects still in `next.config.ts`
 
