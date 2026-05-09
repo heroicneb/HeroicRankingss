@@ -70,10 +70,11 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // WHY: Internal alias kept from prior naming.
+      // WHY: Internal alias kept from prior naming. Phase 2.2 renamed
+      // /case-studies → /case-study to match legacy heroicrankings.com.
       {
-        source: "/case-studies/number-artist",
-        destination: "/case-studies/diy-craft-ecom-brand",
+        source: "/case-study/number-artist",
+        destination: "/case-study/diy-craft-ecom-brand",
         permanent: true,
       },
 
@@ -82,44 +83,11 @@ const nextConfig: NextConfig = {
       // All composed one-hop (Codex's "no chains" rule).
 
       // Static pages
-      { source: "/case-study/", destination: "/case-studies", permanent: true },
       { source: "/about/", destination: "/about-us", permanent: true },
 
       // Service category pages now serve directly under /seo/* — no redirects needed.
       // (Phase 1 nested service routes under /seo/ to match legacy heroicrankings.com paths.)
       { source: "/seo/managed/", destination: "/blog", permanent: true },
-
-      // Case studies (per-slug, only those whose slug differs from new path)
-      {
-        source: "/case-study/affinda/",
-        destination: "/case-studies/affinda",
-        permanent: true,
-      },
-      {
-        source: "/case-study/my-baskets/",
-        destination: "/case-studies/my-baskets",
-        permanent: true,
-      },
-      {
-        source: "/case-study/nagish/",
-        destination: "/case-studies/nagish",
-        permanent: true,
-      },
-      {
-        source: "/case-study/art-by-maudsch/",
-        destination: "/case-studies/art-by-maudsch",
-        permanent: true,
-      },
-      {
-        source: "/case-study/designrush/",
-        destination: "/case-studies/designrush",
-        permanent: true,
-      },
-      {
-        source: "/case-study/number-artist/",
-        destination: "/case-studies/diy-craft-ecom-brand",
-        permanent: true,
-      },
 
       // 11 historical BCMS-internal redirects (composed one-hop into final URLs)
       {

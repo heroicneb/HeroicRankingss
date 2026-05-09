@@ -20,7 +20,7 @@ function isInsightsRoute(pathname: string) {
 }
 
 function isCaseStudiesRoute(pathname: string) {
-  return pathname === "/case-studies" || pathname.startsWith("/case-studies/");
+  return pathname === "/case-study" || pathname.startsWith("/case-study/");
 }
 
 function isSeoRoute(pathname: string) {

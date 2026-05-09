@@ -39,7 +39,7 @@ function slugToTitle(slug: string): string {
     .join(" ");
 }
 
-/** Build breadcrumb items from a pathname like "/about-us" or "/case-studies/acme". */
+/** Build breadcrumb items from a pathname like "/about-us" or "/case-study/acme". */
 function buildBreadcrumbsFromPath(pathname: string): BreadcrumbItem[] {
   const items: BreadcrumbItem[] = [{ name: "Home", href: "/" }];
 
@@ -81,7 +81,9 @@ export async function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
 
   return (
     <script
-      dangerouslySetInnerHTML={{ __html: safeJsonLdStringify(breadcrumbJsonLd) }}
+      dangerouslySetInnerHTML={{
+        __html: safeJsonLdStringify(breadcrumbJsonLd),
+      }}
       nonce={nonce}
       type="application/ld+json"
     />

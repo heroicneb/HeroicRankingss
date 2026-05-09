@@ -11,7 +11,7 @@ export const SUCCESS_STORIES: readonly ServiceSuccessStory[] = [
       "My Baskets is a leading Canadian online retailer specializing in luxury gift baskets for various occasions.",
     date: "December 1, 2024",
     heroClassName: "bg-[var(--color-case-my-baskets)]",
-    href: "/case-studies",
+    href: "/case-study",
   },
   {
     title: "Nagish",
@@ -19,7 +19,7 @@ export const SUCCESS_STORIES: readonly ServiceSuccessStory[] = [
       "Nagish is a pioneering company dedicated to making communication more accessible for individuals with hearing impairments.",
     date: "December 24, 2024",
     heroClassName: "bg-[var(--color-hr-dark)]",
-    href: "/case-studies",
+    href: "/case-study",
   },
   {
     title: "Art by Maudsch",
@@ -27,6 +27,6 @@ export const SUCCESS_STORIES: readonly ServiceSuccessStory[] = [
       "Art by Maudsch is an online platform dedicated to selling unique, handmade artworks by contemporary artists.",
     date: "December 24, 2024",
     heroClassName: "bg-[var(--color-case-art-maudsch)]",
-    href: "/case-studies",
+    href: "/case-study",
   },
 ] as const;

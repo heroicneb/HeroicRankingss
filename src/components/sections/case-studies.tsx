@@ -22,7 +22,7 @@ const STUDIES: CaseStudyEntry[] = [
       "My Baskets is a leading Canadian online retailer specializing in luxury gift baskets for various occasions.",
     date: "December 1, 2024",
     colorClassName: "bg-[var(--color-hr-my-baskets)]",
-    href: "/case-studies/my-baskets",
+    href: "/case-study/my-baskets",
     mobileCardHeightClassName: "h-[435px]",
   },
   {
@@ -32,7 +32,7 @@ const STUDIES: CaseStudyEntry[] = [
       "Nagish is a pioneering company dedicated to making communication more accessible for individuals with hearing impairments.",
     date: "December 24, 2024",
     colorClassName: "bg-[var(--color-hr-dark)]",
-    href: "/case-studies/nagish",
+    href: "/case-study/nagish",
     mobileCardHeightClassName: "h-[477px]",
     mobileDate: "December 1, 2024",
   },
@@ -43,7 +43,7 @@ const STUDIES: CaseStudyEntry[] = [
       "Art by Maudsch is an online platform dedicated to selling unique, handmade artworks by contemporary artists.",
     date: "December 24, 2024",
     colorClassName: "bg-[var(--color-hr-art-maudsch)]",
-    href: "/case-studies/art-by-maudsch",
+    href: "/case-study/art-by-maudsch",
     mobileCardHeightClassName: "h-[456px]",
     mobileDate: "December 1, 2024",
   },
@@ -132,7 +132,7 @@ export function CaseStudies() {
           </p>
           <AppLink
             className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-            href="/case-studies"
+            href="/case-study"
             motionPreset="none"
           >
             See For Yourself
@@ -163,7 +163,7 @@ export function CaseStudies() {
             </p>
             <AppLink
               className="type-cta motion-interactive motion-interactive-press mt-8 inline-flex h-[47px] w-fit min-w-max items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href="/case-studies"
+              href="/case-study"
               motionPreset="none"
             >
               See For Yourself

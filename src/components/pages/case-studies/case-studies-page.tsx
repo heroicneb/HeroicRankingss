@@ -13,7 +13,7 @@ export const metadata: Metadata = createPageMetadata({
   title: "Case Studies",
   description:
     "Review Heroic Rankings case studies to see how data-driven SEO strategy translated into measurable traffic and revenue growth.",
-  path: "/case-studies",
+  path: "/case-study",
 });
 
 interface CaseStudyCardData {
@@ -37,7 +37,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
     panelImageSrc: "/case-studies/imgGroup44.svg",
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-    href: "/case-studies/affinda",
+    href: "/case-study/affinda",
   },
   {
     title: "My Baskets",
@@ -50,7 +50,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName:
       "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
-    href: "/case-studies/my-baskets",
+    href: "/case-study/my-baskets",
   },
   {
     title: "Nagish",
@@ -62,7 +62,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
 
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-    href: "/case-studies/nagish",
+    href: "/case-study/nagish",
   },
   {
     title: "Art by Maudsch",
@@ -74,7 +74,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
 
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-    href: "/case-studies/art-by-maudsch",
+    href: "/case-study/art-by-maudsch",
   },
   {
     title: "DesignRush",
@@ -86,7 +86,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
 
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-    href: "/case-studies/designrush",
+    href: "/case-study/designrush",
   },
   {
     title: "DIY Craft eCom Brand",
@@ -98,7 +98,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
 
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-    href: "/case-studies/diy-craft-ecom-brand",
+    href: "/case-study/diy-craft-ecom-brand",
   },
 ];
 
@@ -216,7 +216,7 @@ function mergeCmsWithHardcoded(
         panelLabelColorClassName:
           panelFallback?.panelLabelColorClassName ??
           "text-[var(--color-hr-pure-white)]",
-        href: `/case-studies/${caseStudy.slug}`,
+        href: `/case-study/${caseStudy.slug}`,
       } satisfies CaseStudyCardData;
     });
 

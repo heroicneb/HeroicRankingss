@@ -45,7 +45,7 @@ export function ServiceSuccessStories({
 
             <AppLink
               className="type-cta motion-interactive motion-interactive-press hidden h-[45px] w-[168px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:inline-flex"
-              href="/case-studies"
+              href="/case-study"
               motionPreset="none"
             >
               See All Stories
@@ -117,7 +117,7 @@ export function ServiceSuccessStories({
           <div className="mt-10 flex justify-center lg:hidden">
             <AppLink
               className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-full max-w-[251px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href="/case-studies"
+              href="/case-study"
               motionPreset="none"
             >
               See All Stories

@@ -6,7 +6,7 @@ export const mainDocuments = defineDocuments([
     filter: `_type == "post" && slug.current == $slug`,
   },
   {
-    route: "/case-studies/:slug",
+    route: "/case-study/:slug",
     filter: `_type == "caseStudy" && slug.current == $slug`,
   },
   {
@@ -34,9 +34,9 @@ export const locations = {
       locations: [
         {
           title: doc?.title || "Untitled",
-          href: `/case-studies/${doc?.slug}`,
+          href: `/case-study/${doc?.slug}`,
         },
-        { title: "Case Studies", href: "/case-studies" },
+        { title: "Case Studies", href: "/case-study" },
       ],
     }),
   }),

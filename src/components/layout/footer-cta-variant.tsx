@@ -177,7 +177,7 @@ function resolveVariant(pathname: string): CtaVariant {
 
   if (
     pathname.startsWith("/blog") ||
-    pathname.startsWith("/case-studies") ||
+    pathname.startsWith("/case-study") ||
     pathname === "/contact" ||
     pathname === "/about-us" ||
     pathname.startsWith("/partnership")

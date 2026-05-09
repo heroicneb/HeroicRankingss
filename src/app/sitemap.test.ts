@@ -30,7 +30,7 @@ describe("sitemap route", () => {
     expect(urls).toContain(
       "https://heroicrankings.com/blog/market-research-guide",
     );
-    expect(urls).toContain("https://heroicrankings.com/case-studies/affinda");
+    expect(urls).toContain("https://heroicrankings.com/case-study/affinda");
     expect(urls).toContain("https://heroicrankings.com/team/nebojsa-jankovic");
   });
 

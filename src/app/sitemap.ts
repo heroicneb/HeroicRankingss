@@ -21,13 +21,13 @@ const SERVICE_PAGES = new Set([
   "/link-building",
 ]);
 
-const LISTING_PAGES = new Set(["/blog", "/case-studies"]);
+const LISTING_PAGES = new Set(["/blog", "/case-study"]);
 
 function getRoutePriority(route: string): number {
   if (route === "/") return 1.0;
   if (SERVICE_PAGES.has(route)) return 0.9;
   if (LISTING_PAGES.has(route)) return 0.8;
-  if (route.startsWith("/blog/") || route.startsWith("/case-studies/"))
+  if (route.startsWith("/blog/") || route.startsWith("/case-study/"))
     return 0.7;
   if (route.startsWith("/team/")) return 0.6;
   if (route === "/privacy-policy") return 0.3;
@@ -53,11 +53,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/link-building",
     "/partnership",
     "/blog",
-    "/case-studies",
+    "/case-study",
     "/contact",
     "/privacy-policy",
     ...postSlugs.map((slug) => `/blog/${slug}`),
-    ...caseStudySlugs.map((slug) => `/case-studies/${slug}`),
+    ...caseStudySlugs.map((slug) => `/case-study/${slug}`),
     ...teamSlugs.map((slug) => `/team/${slug}`),
   ];
 

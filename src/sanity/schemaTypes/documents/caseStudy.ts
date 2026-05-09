@@ -52,7 +52,7 @@ export const caseStudy = defineType({
         rule
           .required()
           .error(
-            "Slug is required — it forms the URL: /case-studies/<slug>. Click Generate after the title is filled.",
+            "Slug is required — it forms the URL: /case-study/<slug>. Click Generate after the title is filled.",
           ),
     }),
     defineField({

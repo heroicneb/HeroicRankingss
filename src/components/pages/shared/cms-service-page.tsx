@@ -233,8 +233,8 @@ export function CmsServicePage({
                     className="group rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] p-6 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:rounded-[40px]"
                     href={
                       caseStudy.slug
-                        ? `/case-studies/${caseStudy.slug}`
-                        : "/case-studies"
+                        ? `/case-study/${caseStudy.slug}`
+                        : "/case-study"
                     }
                     key={caseStudy._id}
                   >

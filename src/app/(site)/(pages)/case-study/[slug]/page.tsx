@@ -34,7 +34,7 @@ export async function generateMetadata({
       caseStudy.seo?.metaDescription?.trim() ||
       caseStudy.excerpt ||
       "Read this SEO case study from Heroic Rankings.",
-    path: `/case-studies/${slug}`,
+    path: `/case-study/${slug}`,
     ogType: "article",
   });
 }
