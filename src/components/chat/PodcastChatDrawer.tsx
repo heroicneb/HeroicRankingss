@@ -35,7 +35,7 @@ export function PodcastChatDrawer({
     <div
       aria-hidden={!open}
       className={cn(
-        "fixed bottom-[88px] right-[16px] z-[80] flex max-h-[calc(100dvh-120px)] w-[min(380px,calc(100vw-24px))] flex-col transition-[opacity,transform] duration-200 ease-out motion-reduce:transition-none lg:bottom-[100px] lg:right-[24px]",
+        "fixed bottom-[88px] right-[16px] z-[80] flex h-[min(620px,calc(100dvh-120px))] w-[min(380px,calc(100vw-24px))] flex-col transition-[opacity,transform] duration-200 ease-out motion-reduce:transition-none lg:bottom-[100px] lg:right-[24px]",
         open
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-3 opacity-0",
