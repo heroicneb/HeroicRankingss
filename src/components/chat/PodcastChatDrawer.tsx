@@ -31,6 +31,21 @@ export function PodcastChatDrawer({
     return () => document.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
+  // Body scroll lock on mobile (≤640px) only — drawer covers most of the
+  // small viewport so background scroll is confusing. On desktop the
+  // drawer is a corner widget and the page should keep scrolling.
+  useEffect(() => {
+    if (!open) return;
+    if (typeof window === "undefined") return;
+    const isMobile = window.matchMedia("(max-width: 640px)").matches;
+    if (!isMobile) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [open]);
+
   return (
     <div
       aria-hidden={!open}
@@ -57,19 +72,19 @@ export function PodcastChatDrawer({
       >
         <button
           aria-label="Close chat"
-          className="absolute right-[12px] top-[12px] z-10 flex size-[28px] items-center justify-center rounded-full text-white/60 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)]"
+          className="absolute right-[8px] top-[8px] z-10 flex size-[40px] items-center justify-center rounded-full text-white/60 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] sm:right-[12px] sm:top-[12px] sm:size-[32px]"
           onClick={onClose}
           type="button"
         >
           <svg
             aria-hidden="true"
             fill="none"
-            height="14"
+            height="16"
             stroke="currentColor"
             strokeLinecap="round"
             strokeWidth="2"
             viewBox="0 0 16 16"
-            width="14"
+            width="16"
           >
             <path d="M3 3l10 10M13 3L3 13" />
           </svg>

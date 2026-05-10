@@ -200,7 +200,7 @@ export function PodcastChatPanel({
       >
         <div className="flex items-end gap-[8px]">
           <textarea
-            className="flex-1 resize-none rounded-[14px] border border-white/8 bg-white/[0.04] px-[14px] py-[10px] text-[15px] leading-[22px] text-[var(--color-hr-pure-white)] placeholder:text-[var(--color-hr-pure-white)]/40 backdrop-blur-sm focus-visible:border-[var(--color-hr-accent)]/60 focus-visible:outline-none [&::-webkit-scrollbar]:w-0"
+            className="flex-1 resize-none rounded-[14px] border border-white/8 bg-white/[0.04] px-[14px] py-[10px] text-[16px] leading-[22px] text-[var(--color-hr-pure-white)] placeholder:text-[var(--color-hr-pure-white)]/40 backdrop-blur-sm focus-visible:border-[var(--color-hr-accent)]/60 focus-visible:outline-none [&::-webkit-scrollbar]:w-0 sm:text-[15px]"
             style={
               {
                 scrollbarWidth: "none",
