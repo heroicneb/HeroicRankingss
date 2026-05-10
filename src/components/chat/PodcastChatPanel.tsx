@@ -130,7 +130,7 @@ export function PodcastChatPanel({
 
       <div
         aria-live="polite"
-        className="flex min-h-0 flex-col overflow-y-auto [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:bg-transparent"
+        className="flex min-h-0 flex-1 flex-col overflow-y-auto [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:bg-transparent"
         role="log"
         style={{
           scrollbarWidth: "none",
