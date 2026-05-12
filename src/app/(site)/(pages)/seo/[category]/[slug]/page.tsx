@@ -7,8 +7,6 @@ import { ArticleSchema } from "@/components/seo/article-schema";
 import { createPageMetadata } from "@/lib/metadata";
 import { getPostBySlug, getPostUrls } from "@/lib/sanity-data";
 
-export const dynamic = "force-dynamic";
-
 interface PostRouteProps {
   params: Promise<{
     category: string;

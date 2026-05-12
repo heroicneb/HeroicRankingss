@@ -1,6 +1,5 @@
 import { cache } from "react";
 import type { PortableTextBlock } from "@portabletext/react";
-import { sanityFetch } from "@/sanity/lib/live";
 import { urlFor } from "@/sanity/lib/image";
 import { client } from "@/sanity/lib/client";
 import {
@@ -346,7 +345,11 @@ export interface SanityPostDetail extends SanityPostSummary {
 }
 
 export async function getPosts(): Promise<SanityPostSummary[]> {
-  const { data } = await sanityFetch({ query: POSTS_QUERY });
+  const data = await client.fetch(
+    POSTS_QUERY,
+    {},
+    { next: { tags: ["post"], revalidate: false } },
+  );
   if (!data) return [];
 
   return (data as SanityRawPost[]).map((post) => ({
@@ -368,10 +371,11 @@ export async function getPosts(): Promise<SanityPostSummary[]> {
 
 export const getPostBySlug = cache(
   async (slug: string): Promise<SanityPostDetail | null> => {
-    const { data } = await sanityFetch({
-      query: POST_BY_SLUG_QUERY,
-      params: { slug },
-    });
+    const data = await client.fetch(
+      POST_BY_SLUG_QUERY,
+      { slug },
+      { next: { tags: ["post"], revalidate: false } },
+    );
     if (!data) return null;
 
     const post = data as SanityRawPostDetail;
@@ -414,11 +418,15 @@ export const getPostBySlug = cache(
 );
 
 export async function getPostSlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(POST_SLUGS_QUERY);
+  const data = await client.fetch<unknown[]>(
+    POST_SLUGS_QUERY,
+    {},
+    URL_PARAM_FETCH,
+  );
   if (!data) return [];
 
   return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+    (slug): slug is string => typeof slug === "string" && isSafeSlug(slug),
   );
 }
 
@@ -430,19 +438,41 @@ export async function getPostSlugs(): Promise<string[]> {
  * Posts without urlCategory are returned with urlCategory: null — callers
  * filter them out of URL lists (no canonical URL until the editor sets it).
  */
+// URL-safe slug guard. Defensive backstop after the real fix
+// (`stega: false` on URL-param fetches below).
+// Why this exists: Sanity's stega visual-editing feature (enabled on
+// Vercel preview in src/sanity/lib/client.ts) appends ~1KB of zero-width
+// Unicode chars to every string field for click-to-edit metadata. When
+// `urlCategory: "technical"` came back as `"technical" + 984 zero-width
+// chars`, generateStaticParams used it as a filesystem path and Vercel's
+// build choked with ENAMETOOLONG. Per Sanity docs, URL-param fetches
+// must pass `{ stega: false, perspective: "published" }`. The regex
+// stays as a guard so any future regression fails closed.
+const SAFE_SLUG = /^[a-z0-9](?:[a-z0-9-]{0,79})$/;
+
+function isSafeSlug(slug: string): boolean {
+  return SAFE_SLUG.test(slug);
+}
+
+// Fetch options for URL-param queries (slugs, urlCategory). Disables
+// stega so returned strings can be used directly as filesystem paths.
+const URL_PARAM_FETCH = {
+  stega: false,
+  perspective: "published" as const,
+};
+
 export async function getPostUrls(): Promise<
   Array<{ slug: string; urlCategory: string | null }>
 > {
-  const data =
-    await client.fetch<
-      Array<{ slug?: string | null; urlCategory?: string | null }>
-    >(POST_URLS_QUERY);
+  const data = await client.fetch<
+    Array<{ slug?: string | null; urlCategory?: string | null }>
+  >(POST_URLS_QUERY, {}, URL_PARAM_FETCH);
   if (!data) return [];
 
   return data
     .filter(
       (row): row is { slug: string; urlCategory?: string | null } =>
-        typeof row?.slug === "string" && row.slug.length > 0,
+        typeof row?.slug === "string" && isSafeSlug(row.slug),
     )
     .map((row) => ({
       slug: row.slug,
@@ -464,7 +494,11 @@ export interface SanityPartnershipPage {
 }
 
 export async function getPartnershipPage(): Promise<SanityPartnershipPage | null> {
-  const { data } = await sanityFetch({ query: PARTNERSHIP_PAGE_QUERY });
+  const data = await client.fetch(
+    PARTNERSHIP_PAGE_QUERY,
+    {},
+    { next: { tags: ["partnershipPage"], revalidate: false } },
+  );
   if (!data) return null;
 
   const page = data as SanityRawPartnershipPage;
@@ -503,7 +537,11 @@ export interface SanityLegalPage {
 }
 
 export async function getContactPage(): Promise<SanityContactPage | null> {
-  const { data } = await sanityFetch({ query: CONTACT_PAGE_QUERY });
+  const data = await client.fetch(
+    CONTACT_PAGE_QUERY,
+    {},
+    { next: { tags: ["contactPage"], revalidate: false } },
+  );
   if (!data) return null;
 
   const page = data as SanityRawContactPage;
@@ -520,10 +558,11 @@ export async function getContactPage(): Promise<SanityContactPage | null> {
 export async function getLegalPageBySlug(
   slug: string,
 ): Promise<SanityLegalPage | null> {
-  const { data } = await sanityFetch({
-    query: LEGAL_PAGE_BY_SLUG_QUERY,
-    params: { slug },
-  });
+  const data = await client.fetch(
+    LEGAL_PAGE_BY_SLUG_QUERY,
+    { slug },
+    { next: { tags: ["legalPage"], revalidate: false } },
+  );
   if (!data) return null;
 
   const page = data as SanityRawLegalPage;
@@ -558,7 +597,11 @@ export interface SiteSettings {
 }
 
 export async function getSiteSettings(): Promise<SiteSettings | null> {
-  const { data } = await sanityFetch({ query: SITE_SETTINGS_QUERY });
+  const data = await client.fetch(
+    SITE_SETTINGS_QUERY,
+    {},
+    { next: { tags: ["siteSettings"], revalidate: false } },
+  );
   if (!data) return null;
 
   const settings = data as SanityRawSiteSettings;
@@ -677,7 +720,11 @@ function mapTeamMember(m: SanityRawTeamMember): SanityTeamMember {
 }
 
 export async function getTeamMembers(): Promise<SanityTeamMember[]> {
-  const { data } = await sanityFetch({ query: TEAM_MEMBERS_QUERY });
+  const data = await client.fetch(
+    TEAM_MEMBERS_QUERY,
+    {},
+    { next: { tags: ["teamMember"], revalidate: false } },
+  );
   if (!data) return [];
 
   return (data as SanityRawTeamMember[]).map(mapTeamMember);
@@ -685,10 +732,11 @@ export async function getTeamMembers(): Promise<SanityTeamMember[]> {
 
 export const getTeamMemberBySlug = cache(
   async (slug: string): Promise<SanityTeamMemberDetail | null> => {
-    const { data } = await sanityFetch({
-      query: TEAM_MEMBER_BY_SLUG_QUERY,
-      params: { slug },
-    });
+    const data = await client.fetch(
+      TEAM_MEMBER_BY_SLUG_QUERY,
+      { slug },
+      { next: { tags: ["teamMember"], revalidate: false } },
+    );
     if (!data) return null;
 
     const raw = data as SanityRawTeamMember;
@@ -701,11 +749,15 @@ export const getTeamMemberBySlug = cache(
 );
 
 export async function getTeamMemberSlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(TEAM_MEMBER_SLUGS_QUERY);
+  const data = await client.fetch<unknown[]>(
+    TEAM_MEMBER_SLUGS_QUERY,
+    {},
+    URL_PARAM_FETCH,
+  );
   if (!data) return [];
 
   return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+    (slug): slug is string => typeof slug === "string" && isSafeSlug(slug),
   );
 }
 
@@ -739,7 +791,11 @@ interface SanityRawTestimonial {
 }
 
 export async function getTestimonials(): Promise<SanityTestimonial[]> {
-  const { data } = await sanityFetch({ query: TESTIMONIALS_QUERY });
+  const data = await client.fetch(
+    TESTIMONIALS_QUERY,
+    {},
+    { next: { tags: ["testimonial"], revalidate: false } },
+  );
   if (!data) return [];
 
   return (data as SanityRawTestimonial[]).map((t) => ({
@@ -777,7 +833,11 @@ export interface SanityCaseStudy {
 }
 
 export async function getCaseStudies(): Promise<SanityCaseStudy[]> {
-  const { data } = await sanityFetch({ query: CASE_STUDIES_QUERY });
+  const data = await client.fetch(
+    CASE_STUDIES_QUERY,
+    {},
+    { next: { tags: ["caseStudy"], revalidate: false } },
+  );
   if (!data) return [];
 
   return (data as SanityRawCaseStudy[]).map((cs) => ({
@@ -929,21 +989,26 @@ export interface SanityCaseStudyDetail {
 
 export const getCaseStudyBySlug = cache(
   async (slug: string): Promise<SanityCaseStudyDetail | null> => {
-    const { data } = await sanityFetch({
-      query: CASE_STUDY_BY_SLUG_QUERY,
-      params: { slug },
-    });
+    const data = await client.fetch(
+      CASE_STUDY_BY_SLUG_QUERY,
+      { slug },
+      { next: { tags: ["caseStudy"], revalidate: false } },
+    );
 
     return (data as SanityCaseStudyDetail | null) ?? null;
   },
 );
 
 export async function getCaseStudySlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(CASE_STUDY_SLUGS_QUERY);
+  const data = await client.fetch<unknown[]>(
+    CASE_STUDY_SLUGS_QUERY,
+    {},
+    URL_PARAM_FETCH,
+  );
   if (!data) return [];
 
   return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+    (slug): slug is string => typeof slug === "string" && isSafeSlug(slug),
   );
 }
 
@@ -1008,27 +1073,36 @@ export interface SanityPodcastEpisodeDetail extends SanityPodcastEpisodeSummary 
 
 export const getPodcastEpisodes = cache(
   async (): Promise<SanityPodcastEpisodeSummary[]> => {
-    const { data } = await sanityFetch({ query: PODCAST_EPISODES_QUERY });
+    const data = await client.fetch(
+      PODCAST_EPISODES_QUERY,
+      {},
+      { next: { tags: ["podcastEpisode"], revalidate: false } },
+    );
     return (data as SanityPodcastEpisodeSummary[] | null) ?? [];
   },
 );
 
 export const getPodcastEpisodeBySlug = cache(
   async (slug: string): Promise<SanityPodcastEpisodeDetail | null> => {
-    const { data } = await sanityFetch({
-      query: PODCAST_EPISODE_BY_SLUG_QUERY,
-      params: { slug },
-    });
+    const data = await client.fetch(
+      PODCAST_EPISODE_BY_SLUG_QUERY,
+      { slug },
+      { next: { tags: ["podcastEpisode"], revalidate: false } },
+    );
     return (data as SanityPodcastEpisodeDetail | null) ?? null;
   },
 );
 
 export async function getPodcastEpisodeSlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(PODCAST_EPISODE_SLUGS_QUERY);
+  const data = await client.fetch<unknown[]>(
+    PODCAST_EPISODE_SLUGS_QUERY,
+    {},
+    URL_PARAM_FETCH,
+  );
   if (!data) return [];
 
   return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+    (slug): slug is string => typeof slug === "string" && isSafeSlug(slug),
   );
 }
 
@@ -1043,10 +1117,11 @@ export interface SanityFaqItem {
 export async function getFaqItemsByService(
   service: string,
 ): Promise<SanityFaqItem[]> {
-  const { data } = await sanityFetch({
-    query: FAQ_BY_SERVICE_QUERY,
-    params: { service },
-  });
+  const data = await client.fetch(
+    FAQ_BY_SERVICE_QUERY,
+    { service },
+    { next: { tags: ["faqItem"], revalidate: false } },
+  );
   if (!data) return [];
 
   return (data as SanityRawFaqItem[]).map((f) => ({
@@ -1066,7 +1141,11 @@ export interface SanityPartnerLogo {
 }
 
 export async function getPartnerLogos(): Promise<SanityPartnerLogo[]> {
-  const { data } = await sanityFetch({ query: PARTNER_LOGOS_QUERY });
+  const data = await client.fetch(
+    PARTNER_LOGOS_QUERY,
+    {},
+    { next: { tags: ["partnerLogo"], revalidate: false } },
+  );
   if (!data) return [];
 
   return (data as SanityRawPartnerLogo[]).map((l) => ({
@@ -1117,10 +1196,11 @@ export interface SanityServicePage {
 export async function getServicePage(
   slug: string,
 ): Promise<SanityServicePage | null> {
-  const { data } = await sanityFetch({
-    query: SERVICE_PAGE_BY_SLUG_QUERY,
-    params: { slug },
-  });
+  const data = await client.fetch(
+    SERVICE_PAGE_BY_SLUG_QUERY,
+    { slug },
+    { next: { tags: ["servicePage"], revalidate: false } },
+  );
   if (!data) return null;
 
   const d = data as SanityRawServicePage;
