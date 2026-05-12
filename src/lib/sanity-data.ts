@@ -422,7 +422,7 @@ export async function getPostSlugs(): Promise<string[]> {
   if (!data) return [];
 
   return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+    (slug): slug is string => typeof slug === "string" && isSafeSlug(slug),
   );
 }
 
@@ -434,6 +434,16 @@ export async function getPostSlugs(): Promise<string[]> {
  * Posts without urlCategory are returned with urlCategory: null — callers
  * filter them out of URL lists (no canonical URL until the editor sets it).
  */
+// URL-safe slug guard. Rejects slugs with hidden Unicode (zero-width,
+// bidi, control chars) or >80 chars. A real prod incident: a Sanity post
+// saved with invisible joiner chars in its slug exploded `next build`
+// with ENAMETOOLONG when generateStaticParams tried to mkdir the path.
+const SAFE_SLUG = /^[a-z0-9](?:[a-z0-9-]{0,79})$/;
+
+function isSafeSlug(slug: string): boolean {
+  return SAFE_SLUG.test(slug);
+}
+
 export async function getPostUrls(): Promise<
   Array<{ slug: string; urlCategory: string | null }>
 > {
@@ -446,7 +456,7 @@ export async function getPostUrls(): Promise<
   return data
     .filter(
       (row): row is { slug: string; urlCategory?: string | null } =>
-        typeof row?.slug === "string" && row.slug.length > 0,
+        typeof row?.slug === "string" && isSafeSlug(row.slug),
     )
     .map((row) => ({
       slug: row.slug,
@@ -727,7 +737,7 @@ export async function getTeamMemberSlugs(): Promise<string[]> {
   if (!data) return [];
 
   return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+    (slug): slug is string => typeof slug === "string" && isSafeSlug(slug),
   );
 }
 
@@ -974,7 +984,7 @@ export async function getCaseStudySlugs(): Promise<string[]> {
   if (!data) return [];
 
   return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+    (slug): slug is string => typeof slug === "string" && isSafeSlug(slug),
   );
 }
 
@@ -1064,7 +1074,7 @@ export async function getPodcastEpisodeSlugs(): Promise<string[]> {
   if (!data) return [];
 
   return data.filter(
-    (slug): slug is string => typeof slug === "string" && slug.length > 0,
+    (slug): slug is string => typeof slug === "string" && isSafeSlug(slug),
   );
 }
 
