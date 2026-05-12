@@ -35,14 +35,33 @@ export async function generateMetadata({
   });
 }
 
+// Strict guard: only ASCII URL-safe segments. Rejects any hidden
+// Unicode (zero-width joiner, BOM, bidi marks) that would otherwise
+// expand the prerender path beyond ENAMETOOLONG limits. Logs rejected
+// rows so we can hunt the source.
+const URL_SEG = /^[a-z0-9](?:[a-z0-9-]{0,79})$/;
+
 export async function generateStaticParams() {
   const posts = await getPostUrls();
-  return posts
-    .filter((post) => post.urlCategory && post.slug)
-    .map((post) => ({
-      category: post.urlCategory as string,
-      slug: post.slug,
-    }));
+  const safe: Array<{ category: string; slug: string }> = [];
+  for (const post of posts) {
+    if (!post.urlCategory || !post.slug) continue;
+    if (!URL_SEG.test(post.urlCategory) || !URL_SEG.test(post.slug)) {
+      console.error(
+        `[generateStaticParams seo/[cat]/[slug]] rejected: cat=%j (len=%d) slug=%j (len=%d) codepoints=%j`,
+        post.urlCategory,
+        post.urlCategory.length,
+        post.slug,
+        post.slug.length,
+        Array.from(post.urlCategory + "|" + post.slug).map((c) =>
+          c.codePointAt(0)?.toString(16),
+        ),
+      );
+      continue;
+    }
+    safe.push({ category: post.urlCategory, slug: post.slug });
+  }
+  return safe;
 }
 
 export default async function Page({ params }: PostRouteProps) {
