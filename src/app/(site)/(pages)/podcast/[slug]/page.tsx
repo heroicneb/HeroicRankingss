@@ -9,8 +9,6 @@ import {
   getPodcastEpisodeSlugs,
 } from "@/lib/sanity-data";
 
-export const dynamic = "force-dynamic";
-
 interface PodcastEpisodeRouteProps {
   params: Promise<{ slug: string }>;
 }

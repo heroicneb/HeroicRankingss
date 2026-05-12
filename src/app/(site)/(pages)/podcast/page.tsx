@@ -4,8 +4,6 @@ import { getPodcastEpisodes } from "@/lib/sanity-data";
 
 export { metadata } from "@/components/pages/podcast/podcast-page";
 
-export const dynamic = "force-dynamic";
-
 const GLOBAL_FALLBACK_SUGGESTIONS = [
   "What does Ranking Heroes teach about link-building at scale?",
   "Which guest had the most actionable SEO advice?",

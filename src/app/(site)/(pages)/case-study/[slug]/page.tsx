@@ -5,8 +5,6 @@ import { CaseStudyDetailPage } from "@/components/pages/case-studies/case-study-
 import { createPageMetadata } from "@/lib/metadata";
 import { getCaseStudyBySlug, getCaseStudySlugs } from "@/lib/sanity-data";
 
-export const dynamic = "force-dynamic";
-
 interface CaseStudyPageProps {
   params: Promise<{
     slug: string;

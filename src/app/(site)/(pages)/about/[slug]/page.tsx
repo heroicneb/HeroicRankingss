@@ -8,8 +8,6 @@ import { PersonSchema } from "@/components/seo/person-schema";
 import { createPageMetadata } from "@/lib/metadata";
 import { getTeamMemberBySlug, getTeamMemberSlugs } from "@/lib/sanity-data";
 
-export const dynamic = "force-dynamic";
-
 interface TeamMemberPageProps {
   params: Promise<{
     slug: string;

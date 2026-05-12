@@ -16,15 +16,6 @@ import { BreadcrumbSchema } from "@/components/seo/breadcrumb-schema";
 import { OrganizationSchema } from "@/components/seo/organization-schema";
 import { SanityLive } from "@/sanity/lib/live";
 
-// WHY: site layout reads siteSettings (navbar + footer hrefs) from Sanity
-// on every render. Static-rendered children (e.g. /contact/, /partnership/)
-// would otherwise bake stale siteSettings.navItems into HTML at build time
-// and persist legacy URLs across navbar/footer until next deploy. Forcing
-// dynamic on the layout propagates to every child route so navbar always
-// reflects current Sanity data without requiring a Sanity webhook to
-// revalidate. Per Codex adversarial audit task-moy8x59a-67cbew Check #10.
-export const dynamic = "force-dynamic";
-
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
