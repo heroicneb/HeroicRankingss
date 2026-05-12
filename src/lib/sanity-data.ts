@@ -418,7 +418,11 @@ export const getPostBySlug = cache(
 );
 
 export async function getPostSlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(POST_SLUGS_QUERY);
+  const data = await client.fetch<unknown[]>(
+    POST_SLUGS_QUERY,
+    {},
+    URL_PARAM_FETCH,
+  );
   if (!data) return [];
 
   return data.filter(
@@ -434,23 +438,35 @@ export async function getPostSlugs(): Promise<string[]> {
  * Posts without urlCategory are returned with urlCategory: null — callers
  * filter them out of URL lists (no canonical URL until the editor sets it).
  */
-// URL-safe slug guard. Rejects slugs with hidden Unicode (zero-width,
-// bidi, control chars) or >80 chars. A real prod incident: a Sanity post
-// saved with invisible joiner chars in its slug exploded `next build`
-// with ENAMETOOLONG when generateStaticParams tried to mkdir the path.
+// URL-safe slug guard. Defensive backstop after the real fix
+// (`stega: false` on URL-param fetches below).
+// Why this exists: Sanity's stega visual-editing feature (enabled on
+// Vercel preview in src/sanity/lib/client.ts) appends ~1KB of zero-width
+// Unicode chars to every string field for click-to-edit metadata. When
+// `urlCategory: "technical"` came back as `"technical" + 984 zero-width
+// chars`, generateStaticParams used it as a filesystem path and Vercel's
+// build choked with ENAMETOOLONG. Per Sanity docs, URL-param fetches
+// must pass `{ stega: false, perspective: "published" }`. The regex
+// stays as a guard so any future regression fails closed.
 const SAFE_SLUG = /^[a-z0-9](?:[a-z0-9-]{0,79})$/;
 
 function isSafeSlug(slug: string): boolean {
   return SAFE_SLUG.test(slug);
 }
 
+// Fetch options for URL-param queries (slugs, urlCategory). Disables
+// stega so returned strings can be used directly as filesystem paths.
+const URL_PARAM_FETCH = {
+  stega: false,
+  perspective: "published" as const,
+};
+
 export async function getPostUrls(): Promise<
   Array<{ slug: string; urlCategory: string | null }>
 > {
-  const data =
-    await client.fetch<
-      Array<{ slug?: string | null; urlCategory?: string | null }>
-    >(POST_URLS_QUERY);
+  const data = await client.fetch<
+    Array<{ slug?: string | null; urlCategory?: string | null }>
+  >(POST_URLS_QUERY, {}, URL_PARAM_FETCH);
   if (!data) return [];
 
   return data
@@ -733,7 +749,11 @@ export const getTeamMemberBySlug = cache(
 );
 
 export async function getTeamMemberSlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(TEAM_MEMBER_SLUGS_QUERY);
+  const data = await client.fetch<unknown[]>(
+    TEAM_MEMBER_SLUGS_QUERY,
+    {},
+    URL_PARAM_FETCH,
+  );
   if (!data) return [];
 
   return data.filter(
@@ -980,7 +1000,11 @@ export const getCaseStudyBySlug = cache(
 );
 
 export async function getCaseStudySlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(CASE_STUDY_SLUGS_QUERY);
+  const data = await client.fetch<unknown[]>(
+    CASE_STUDY_SLUGS_QUERY,
+    {},
+    URL_PARAM_FETCH,
+  );
   if (!data) return [];
 
   return data.filter(
@@ -1070,7 +1094,11 @@ export const getPodcastEpisodeBySlug = cache(
 );
 
 export async function getPodcastEpisodeSlugs(): Promise<string[]> {
-  const data = await client.fetch<unknown[]>(PODCAST_EPISODE_SLUGS_QUERY);
+  const data = await client.fetch<unknown[]>(
+    PODCAST_EPISODE_SLUGS_QUERY,
+    {},
+    URL_PARAM_FETCH,
+  );
   if (!data) return [];
 
   return data.filter(
