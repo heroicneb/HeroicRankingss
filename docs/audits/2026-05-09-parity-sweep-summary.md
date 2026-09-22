@@ -3,7 +3,7 @@
 - old: https://heroicrankings.com
 - new: https://heroic-rankings-final.vercel.app
 - paths checked: 102
-- avg latency old: 1365ms · new: 487ms
+- avg latency old: 1327ms · new: 758ms
 
 ## Status
 
@@ -21,8 +21,8 @@
 | Metric | Count |
 |---|---:|
 | title differs (content choice) | 22 |
-| h1 differs | 17 |
-| pages with new wordCount < 70% of old (potential content loss) | 6 |
+| h1 differs | 14 |
+| pages with new wordCount < 70% of old (potential content loss) | 3 |
 
 ## Cutover gate
 

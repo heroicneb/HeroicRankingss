@@ -1,4 +1,5 @@
-@import "tailwindcss";
+/* Restrict Tailwind class scanning to src/. The default scans the whole repo (docs, public, scripts), which is slow and, on iCloud-synced folders with evicted files, hangs the dev server. */
+@import "tailwindcss" source("../");
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {

@@ -65,3 +65,14 @@ figma-extract/
 # migration snapshots (write-once rollback refs, not source-of-truth)
 /scripts/migrate/*-snapshot.json
 /scripts/migrate/*-draft.json
+
+# Claude Code worktrees (stale merged branch copy; keep out of lint/tailwind scans)
+/.claude/worktrees/
+
+# iCloud Drive never syncs *.nosync — node_modules/.next live there via symlink (Desktop is iCloud-synced)
+*.nosync
+*.trash-old
+
+# .next is a symlink locally (iCloud workaround); match it as a file too
+.next
+node_modules

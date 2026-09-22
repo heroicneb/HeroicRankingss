@@ -1,0 +1,2143 @@
+{
+  "base": "https://heroic-rankings-final.vercel.app",
+  "timestamp": "2026-04-29T15:05:55.754Z",
+  "summary": {
+    "passing": 100,
+    "failing": 0,
+    "http200": 100,
+    "non200": 0
+  },
+  "byKind": {
+    "static": {
+      "total": 16,
+      "passing": 16,
+      "failing": 0
+    },
+    "caseStudy": {
+      "total": 6,
+      "passing": 6,
+      "failing": 0
+    },
+    "team": {
+      "total": 7,
+      "passing": 7,
+      "failing": 0
+    },
+    "post": {
+      "total": 70,
+      "passing": 70,
+      "failing": 0
+    },
+    "podcast": {
+      "total": 1,
+      "passing": 1,
+      "failing": 0
+    }
+  },
+  "results": [
+    {
+      "path": "/about-us",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 568862,
+      "title": "About Us | Heroic Rankings",
+      "metaDescription": "Meet the ranking heroes behind Heroic Rankings and explore the team, process, and results-driven SEO philosophy.",
+      "imageCount": 42,
+      "brokenImages": [],
+      "internalLinkCount": 27,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/technical-seo",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 415728,
+      "title": "Technical SEO Services | Heroic Rankings",
+      "metaDescription": "Strengthen your site infrastructure, improve crawlability, and boost rankings with Heroic Rankings technical SEO services.",
+      "imageCount": 16,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/on-page-seo",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 416673,
+      "title": "On-Page SEO Services | Heroic Rankings",
+      "metaDescription": "Create a solid on-site SEO structure and start driving traffic with Heroic Rankings on-page SEO services.",
+      "imageCount": 16,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/seo-services",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 503743,
+      "title": "SEO Services | Heroic Rankings",
+      "metaDescription": "Boost visibility, drive engagement, and grow revenue with Heroic Rankings AEO and SEO services.",
+      "imageCount": 40,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 742115,
+      "title": "Data-Driven SEO Agency for Organic Growth | Heroic Rankings",
+      "metaDescription": "Explore Heroic Rankings’ SEO services, proven case studies, certifications, and partnerships built for long-term organic growth.",
+      "imageCount": 75,
+      "brokenImages": [],
+      "internalLinkCount": 30,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/ecommerce-seo",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 410910,
+      "title": "E-commerce SEO Services | Heroic Rankings",
+      "metaDescription": "Grow sales, not just traffic, with e-commerce SEO services built to turn search visibility into sustainable revenue.",
+      "imageCount": 14,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/link-building",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 413416,
+      "title": "Link Building Services | Heroic Rankings",
+      "metaDescription": "Strengthen your off-page SEO with white-hat link building services that improve rankings, authority, and long-term organic growth.",
+      "imageCount": 14,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/keyword-strategy",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 416974,
+      "title": "Keyword Strategy Services | Heroic Rankings",
+      "metaDescription": "Reveal keyword opportunities you are missing and turn search demand into qualified traffic and revenue.",
+      "imageCount": 15,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/content-creation",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 404853,
+      "title": "Content Creation Services | Heroic Rankings",
+      "metaDescription": "Craft strategy-led content that attracts qualified traffic, strengthens authority, and turns engagement into conversions.",
+      "imageCount": 14,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/local-seo",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 416954,
+      "title": "Local SEO Services | Heroic Rankings",
+      "metaDescription": "Dominate your local market, connect with nearby customers, and increase foot traffic with Heroic Rankings local SEO services.",
+      "imageCount": 16,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/contact",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 346735,
+      "title": "Contact | Heroic Rankings",
+      "metaDescription": "Get in touch with Heroic Rankings to discuss SEO strategy, technical optimization, and long-term organic growth opportunities.",
+      "imageCount": 6,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/case-studies",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 444152,
+      "title": "Case Studies | Heroic Rankings",
+      "metaDescription": "Review Heroic Rankings case studies to see how data-driven SEO strategy translated into measurable traffic and revenue growth.",
+      "imageCount": 17,
+      "brokenImages": [],
+      "internalLinkCount": 21,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/insights",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 433196,
+      "title": "Insights | Heroic Rankings",
+      "metaDescription": "Explore Heroic Rankings insights, research guides, and practical SEO playbooks for sustainable organic growth.",
+      "imageCount": 16,
+      "brokenImages": [],
+      "internalLinkCount": 27,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/partnership",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 469121,
+      "title": "White Label SEO Partnership | Heroic Rankings",
+      "metaDescription": "Build scalable agency growth with Heroic Rankings&#x27; white label SEO partnership model, from execution and reporting to long-term client retention.",
+      "imageCount": 38,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/privacy-policy",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 342567,
+      "title": "Privacy Policy | Heroic Rankings",
+      "metaDescription": "Review how Heroic Rankings handles personal information, communication preferences, and data protection practices.",
+      "imageCount": 4,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/podcast",
+      "kind": "static",
+      "slug": null,
+      "httpStatus": 200,
+      "sizeBytes": 370901,
+      "title": "Podcast — SEO Conversations That Actually Rank | Heroic Rankings",
+      "metaDescription": "Deep-dive conversations with practitioners, founders, and marketers who&#x27;ve done the work. Every episode breaks down what actually moves the needle in SEO.",
+      "imageCount": 21,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/case-studies/affinda",
+      "kind": "caseStudy",
+      "slug": "affinda",
+      "httpStatus": 200,
+      "sizeBytes": 422432,
+      "title": "Affinda SEO Case Study | Boosting &quot;Resume Parser&quot; Rankings | Heroic Rankings",
+      "metaDescription": "Discover how Heroic Rankings helped Affinda dominate search results for &quot;resume parser&quot; with a strategic link-building campaign that improved rankings and organic visibility.",
+      "imageCount": 5,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "case-study-hero"
+      ],
+      "sectionAnchorsFound": [
+        "case-study-hero"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/case-studies/my-baskets",
+      "kind": "caseStudy",
+      "slug": "my-baskets",
+      "httpStatus": 200,
+      "sizeBytes": 451142,
+      "title": "My Baskets SEO Success | How Link Building Increased Traffic | Heroic Rankings",
+      "metaDescription": "Learn how Heroic Rankings elevated My Baskets&#x27; organic traffic through strategic outreach and high-authority backlinks, strengthening their position in the online gift industry.",
+      "imageCount": 8,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "case-study-hero"
+      ],
+      "sectionAnchorsFound": [
+        "case-study-hero"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/case-studies/nagish",
+      "kind": "caseStudy",
+      "slug": "nagish",
+      "httpStatus": 200,
+      "sizeBytes": 438317,
+      "title": "Nagish SEO Case Study | Scaling Search Visibility with Backlinks | Heroic Rankings",
+      "metaDescription": "Find out how Heroic Rankings helped Nagish scale its search visibility with strategic link building, positioning the brand for higher rankings and increased organic traffic.",
+      "imageCount": 9,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "case-study-hero"
+      ],
+      "sectionAnchorsFound": [
+        "case-study-hero"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/case-studies/designrush",
+      "kind": "caseStudy",
+      "slug": "designrush",
+      "httpStatus": 200,
+      "sizeBytes": 429735,
+      "title": "DesignRush SEO Case Study | Strengthening Authority with Link Building | Heroic Rankings",
+      "metaDescription": "See how Heroic Rankings boosted DesignRush’s online authority with a powerful link-building strategy, driving increased visibility and trust in competitive search markets.",
+      "imageCount": 7,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "case-study-hero"
+      ],
+      "sectionAnchorsFound": [
+        "case-study-hero"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/case-studies/art-by-maudsch",
+      "kind": "caseStudy",
+      "slug": "art-by-maudsch",
+      "httpStatus": 200,
+      "sizeBytes": 436725,
+      "title": "Art by Maudsch SEO Case Study | Elevating Rankings with Backlinks | Heroic Rankings",
+      "metaDescription": "Learn how Heroic Rankings crafted a tailored link-building strategy for Art by Maudsch, increasing search rankings and brand visibility in the competitive art market.",
+      "imageCount": 8,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "case-study-hero"
+      ],
+      "sectionAnchorsFound": [
+        "case-study-hero"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/case-studies/diy-craft-ecom-brand",
+      "kind": "caseStudy",
+      "slug": "diy-craft-ecom-brand",
+      "httpStatus": 200,
+      "sizeBytes": 440782,
+      "title": "Number Artist SEO Case Study | Boosting Authority with Link Building | Heroic Rankings",
+      "metaDescription": "See how Heroic Rankings amplified Number Artist’s reach with targeted link acquisition, driving authority and improving keyword rankings for its niche products.",
+      "imageCount": 9,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "case-study-hero"
+      ],
+      "sectionAnchorsFound": [
+        "case-study-hero"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/team/anastasija-jankovic",
+      "kind": "team",
+      "slug": "anastasija-jankovic",
+      "httpStatus": 200,
+      "sizeBytes": 352117,
+      "title": "Anastasija Jankovic, Co-Founder &amp; CHRO | Heroic Rankings | Heroic Rankings",
+      "metaDescription": "I am a co-founder at Heroic Rankings and our goal is to help you find easy wins and grow your website’s organic traffic with SEO and marketing strategies.",
+      "imageCount": 5,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/team/nebojsa-jankovic",
+      "kind": "team",
+      "slug": "nebojsa-jankovic",
+      "httpStatus": 200,
+      "sizeBytes": 356229,
+      "title": "Nebojsa Jankovic, Founder &amp; CEO | Heroic Rankings | Heroic Rankings",
+      "metaDescription": "I founded Heroic Rankings with desire to help other businesses increase their visibility and bring real customers. I love SEO and networking with people.",
+      "imageCount": 5,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/team/una-stanojevic",
+      "kind": "team",
+      "slug": "una-stanojevic",
+      "httpStatus": 200,
+      "sizeBytes": 351378,
+      "title": "Una Stanojevic, Strategic Assistant &amp; Head of Operations | Heroic Rankings | Heroic Rankings",
+      "metaDescription": "What do you like the most about your job?",
+      "imageCount": 5,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/team/stefan-cvetkovic",
+      "kind": "team",
+      "slug": "stefan-cvetkovic",
+      "httpStatus": 200,
+      "sizeBytes": 352319,
+      "title": "Stefan Cvetkovic, Organic Growth Manager | Heroic Rankings | Heroic Rankings",
+      "metaDescription": "Stefan is a prolific writer, with his reach extending from business and tech content to scientific papers, poetry, and short stories. When not in the office, Stefan plays music, collects vinyl, and travels wherever his right index finger points on the globe.",
+      "imageCount": 5,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/team/srdjan-gombar",
+      "kind": "team",
+      "slug": "srdjan-gombar",
+      "httpStatus": 200,
+      "sizeBytes": 351448,
+      "title": "Srdjan Gombar, Content Manager | Heroic Rankings | Heroic Rankings",
+      "metaDescription": "What do you like the most about your job?",
+      "imageCount": 5,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/team/slobodan-kacavenda",
+      "kind": "team",
+      "slug": "slobodan-kacavenda",
+      "httpStatus": 200,
+      "sizeBytes": 351283,
+      "title": "Slobodan Kacavenda, Link Building Specialist | Heroic Rankings | Heroic Rankings",
+      "metaDescription": "What do you like the most about your job?",
+      "imageCount": 5,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/team/andjela-knezevic",
+      "kind": "team",
+      "slug": "andjela-knezevic",
+      "httpStatus": 200,
+      "sizeBytes": 351212,
+      "title": "Andjela Knezevic, Link Building Specialist | Heroic Rankings | Heroic Rankings",
+      "metaDescription": "What do you like the most about your job?",
+      "imageCount": 5,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/insights/benefits-of-custom-software-development",
+      "kind": "post",
+      "slug": "benefits-of-custom-software-development",
+      "httpStatus": 200,
+      "sizeBytes": 489437,
+      "title": "The Benefits Of Custom Business Software | Heroic Rankings",
+      "metaDescription": "Discover how custom business software can drive business growth by enhancing efficiency, scalability, and competitive advantage. Learn about the key benefits tailored solutions bring to your company.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/craft-stunning-linkable-assets",
+      "kind": "post",
+      "slug": "craft-stunning-linkable-assets",
+      "httpStatus": 200,
+      "sizeBytes": 497360,
+      "title": "Top 5 Tips For Crafting Stunning Linkable Asset | Heroic Rankings",
+      "metaDescription": "Creating a linkable asset requires you to understand how people choose links. Here are some ideas and suggestions!",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/seo-marketing-practices-2026",
+      "kind": "post",
+      "slug": "seo-marketing-practices-2026",
+      "httpStatus": 200,
+      "sizeBytes": 506236,
+      "title": "SEO Marketing Guide 2026 | Best Practices &amp; Strategies | Heroic Rankings",
+      "metaDescription": "SEO marketing success depends on your methods and practices. Here are some underused practices that are overpowered in 2026.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/ranking-high-search-engine-results",
+      "kind": "post",
+      "slug": "ranking-high-search-engine-results",
+      "httpStatus": 200,
+      "sizeBytes": 520367,
+      "title": "Ranking High in Search Engine Result Pages Explained | Heroic Rankings",
+      "metaDescription": "Ranking high in search engine result pages is the best way to increase your visibility and appear more credible. Here’s what you need to know about it.",
+      "imageCount": 13,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-to-grow-your-business-online",
+      "kind": "post",
+      "slug": "how-to-grow-your-business-online",
+      "httpStatus": 200,
+      "sizeBytes": 493936,
+      "title": "Best Strategies To Grow Your Business Online (2026 Guide) | Heroic Rankings",
+      "metaDescription": "How to grow your business online? Read more to learn about some of the best digital marketing practices, tips, and tricks in 2026.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 17,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/guide-to-keyword-research-strategies",
+      "kind": "post",
+      "slug": "guide-to-keyword-research-strategies",
+      "httpStatus": 200,
+      "sizeBytes": 490826,
+      "title": "Guide To Mastering Keyword Research | Top Strategies 2026 | Heroic Rankings",
+      "metaDescription": "Keyword research is a mandatory first step in any SEO campaign. Here’s how you can do it right and make an effective keyword strategy in 2026.",
+      "imageCount": 9,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/link-earning-strategies",
+      "kind": "post",
+      "slug": "link-earning-strategies",
+      "httpStatus": 200,
+      "sizeBytes": 496845,
+      "title": "Link Earning | 5 Strategies To Get More Backlinks | Heroic Rankings",
+      "metaDescription": "Link earning is an SEO activity that provides incredible results in the long run. Here are five strategies to help you start your link-earning campaign right.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/ai-for-seo-new-approaches",
+      "kind": "post",
+      "slug": "ai-for-seo-new-approaches",
+      "httpStatus": 200,
+      "sizeBytes": 504346,
+      "title": "AI For SEO | 5 New AI SEO Approaches To Keyword Analysis | Heroic Rankings",
+      "metaDescription": "Using AI for SEO is the way for any campaign to reach its full potential. Here’s how these AI approaches can help boost your keyword analysis.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 16,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/dive-into-google-algorithm-updates-2023",
+      "kind": "post",
+      "slug": "dive-into-google-algorithm-updates-2023",
+      "httpStatus": 200,
+      "sizeBytes": 510836,
+      "title": "Google Algorithm Updates In 2023 | Things You&#x27;ve Missed | Heroic Rankings",
+      "metaDescription": "Every Google algorithm update in 2023 brought something new and unique to the discourse. Here’s what you have to know!",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/b2b-seo-solutions-2026",
+      "kind": "post",
+      "slug": "b2b-seo-solutions-2026",
+      "httpStatus": 200,
+      "sizeBytes": 743698,
+      "title": "A Guide To B2B SEO Solutions | Optimizing For Success | Heroic Rankings",
+      "metaDescription": "B2B SEO strategy focuses on boosting organic search visibility and improving keyword positions for business-to-business websites. The best channel for...",
+      "imageCount": 15,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/search-engine-rank-seo-stats-2024",
+      "kind": "post",
+      "slug": "search-engine-rank-seo-stats-2024",
+      "httpStatus": 200,
+      "sizeBytes": 492480,
+      "title": "Insights From The Latest 2024 Search Engine Rank Reports | Heroic Rankings",
+      "metaDescription": "Getting a favorable search engine rank report doesn&#x27;t happen overnight. Here are some fresh SEO stats that will help get there faster.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/link-exchange",
+      "kind": "post",
+      "slug": "link-exchange",
+      "httpStatus": 200,
+      "sizeBytes": 573871,
+      "title": "Link Exchanges In SEO - Skyrocket Your Authority In 2026 | Heroic Rankings",
+      "metaDescription": "Link exchanges in SEO have evolved into a sophisticated chess game, requiring finesse and strategy. Boost your authority in 2026 with heroic guide!",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/international-seo",
+      "kind": "post",
+      "slug": "international-seo",
+      "httpStatus": 200,
+      "sizeBytes": 606408,
+      "title": "How to Use International SEO to Maximize Online Presence | Heroic Rankings",
+      "metaDescription": "International SEO is designed to improve search rankings across countries, and drive targeted traffic. Start optimizing for the world today!",
+      "imageCount": 15,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/outsourcing-link-building",
+      "kind": "post",
+      "slug": "outsourcing-link-building",
+      "httpStatus": 200,
+      "sizeBytes": 552007,
+      "title": "Outsourcing Link Building. 2026 Checklist for Quality, Process &amp; Results | Heroic Rankings",
+      "metaDescription": "Discover why outsourcing link-building is a strategic move for SEO success and how to effectively implement it for optimal results",
+      "imageCount": 13,
+      "brokenImages": [],
+      "internalLinkCount": 21,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/lets-discuss-google-search-updates",
+      "kind": "post",
+      "slug": "lets-discuss-google-search-updates",
+      "httpStatus": 200,
+      "sizeBytes": 479772,
+      "title": "Let’s Discuss Google Search Updates | Heroic Rankings",
+      "metaDescription": "The Google&#x27;s success lies in the closely guarded secret: its search algorithm. Google search updates determine how search results are matched and ranked.",
+      "imageCount": 7,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/ranking-factors-seo",
+      "kind": "post",
+      "slug": "ranking-factors-seo",
+      "httpStatus": 200,
+      "sizeBytes": 838291,
+      "title": "Ranking Factors That Drive Search Engine Success | Heroic Rankings",
+      "metaDescription": "Discover SEO&#x27;s key ranking factors, and strategies for online visibility in this comprehensive guide.",
+      "imageCount": 15,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/backlinks-management",
+      "kind": "post",
+      "slug": "backlinks-management",
+      "httpStatus": 200,
+      "sizeBytes": 599916,
+      "title": "Mastering Backlinks Management: A Comprehensive Guide for SEO Success | Heroic Rankings",
+      "metaDescription": "Unlock the power of backlinks management to improve your website&#x27;s search engine rankings with effective strategies, and benefits of link building.",
+      "imageCount": 13,
+      "brokenImages": [],
+      "internalLinkCount": 24,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/seo-vs-google-ads",
+      "kind": "post",
+      "slug": "seo-vs-google-ads",
+      "httpStatus": 200,
+      "sizeBytes": 492466,
+      "title": "SEO Vs Google Ads: Your Comprehensive Guide In 2026 | Heroic Rankings",
+      "metaDescription": "Dive into our in-depth analysis of SEO vs Google Ads. Explore their pros, cons, differences, and how they can complement each other.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 17,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-to-create-a-link-building-strategy",
+      "kind": "post",
+      "slug": "how-to-create-a-link-building-strategy",
+      "httpStatus": 200,
+      "sizeBytes": 509547,
+      "title": "How To Create A Link Building Strategy - From Scratch | Heroic Rankings",
+      "metaDescription": "The fastest way to find out how to create link building strategy and make results. Learned from experience to end up with the perfect link building solution",
+      "imageCount": 15,
+      "brokenImages": [],
+      "internalLinkCount": 17,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/benefits-of-link-building",
+      "kind": "post",
+      "slug": "benefits-of-link-building",
+      "httpStatus": 200,
+      "sizeBytes": 482888,
+      "title": "Benefits Of Link Building In 2026 - Quality Links | Heroic Rankings",
+      "metaDescription": "Learn about the benefits of link building in 2026 and discover how to make quality links that will boost your website&#x27;s search engine rankings.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/process-that-affects-visibility-of-website",
+      "kind": "post",
+      "slug": "process-that-affects-visibility-of-website",
+      "httpStatus": 200,
+      "sizeBytes": 483894,
+      "title": "SEO - Process That Affects the Visibility of a Website | Heroic Rankings",
+      "metaDescription": "Looking to boost your website&#x27;s visibility? Discover the power of SEO - the process that affects the visibility of a website in search results pages!",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/first-step-in-marketing-research-process",
+      "kind": "post",
+      "slug": "first-step-in-marketing-research-process",
+      "httpStatus": 200,
+      "sizeBytes": 499138,
+      "title": "What Is The First Step In The Marketing Research Process? | Heroic Rankings",
+      "metaDescription": "Uncover the critical first step in the marketing research process and learn how it sets the foundation for a successful research project.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 17,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/top-5-seo-myths",
+      "kind": "post",
+      "slug": "top-5-seo-myths",
+      "httpStatus": 200,
+      "sizeBytes": 493223,
+      "title": "Busting 5 SEO Myths: 2026&#x27;s Misguided SEO Beliefs | Heroic Rankings",
+      "metaDescription": "There are so many SEO myths that even some of the oldest veterans in the field still believe. Read more to learn the five most common such myths in 2026.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/marketing-mistakes-you-need-to-stop-making",
+      "kind": "post",
+      "slug": "marketing-mistakes-you-need-to-stop-making",
+      "httpStatus": 200,
+      "sizeBytes": 500070,
+      "title": "5 Marketing Mistakes That Could Hurt Your Brand in 2026 | Heroic Rankings",
+      "metaDescription": "Discover the top 5 marketing mistakes holding your business back in 2026. Learn how to avoid them and improve branding, customer retention, and growth.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/top-content-marketing-strategies",
+      "kind": "post",
+      "slug": "top-content-marketing-strategies",
+      "httpStatus": 200,
+      "sizeBytes": 494765,
+      "title": "Content Marketing Strategies to Boost Your Brand&#x27;s Impact | Heroic Rankings",
+      "metaDescription": "Content marketing strategies are just as relevant as content creation methods. Here are a few tips to help make this challenge easier!",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 20,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/outdated-seo-practices-to-avoid-in-2026",
+      "kind": "post",
+      "slug": "outdated-seo-practices-to-avoid-in-2026",
+      "httpStatus": 200,
+      "sizeBytes": 495598,
+      "title": "Outdated SEO Practices to Avoid: Stay Ahead in 2026 | Heroic Rankings",
+      "metaDescription": "Outdated SEO practices are a waste of time and money and may even get you penalized. Here are some old-fashioned SEO practices that no longer work.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/seo-principles-to-boost-your-rank",
+      "kind": "post",
+      "slug": "seo-principles-to-boost-your-rank",
+      "httpStatus": 200,
+      "sizeBytes": 503173,
+      "title": "Top 7 SEO principles for boosting Your Website’s Ranking | Heroic Rankings",
+      "metaDescription": "Understanding SEO principles will ensure that you’re set no matter what change or update comes along. Here are seven such principles to follow!",
+      "imageCount": 14,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/5-reasons-your-seo-campaign-isnt-giving-you-the-results-you-want",
+      "kind": "post",
+      "slug": "5-reasons-your-seo-campaign-isnt-giving-you-the-results-you-want",
+      "httpStatus": 200,
+      "sizeBytes": 489081,
+      "title": "Top 5 Reasons Why Your SEO Campaign is Falling Short | Heroic Rankings",
+      "metaDescription": "Despite your best efforts and highest hopes, your SEO campaign may be doing worse than you expected. Here’s why this is happening.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/benefits-of-blogging-for-small-businesses-in-2026",
+      "kind": "post",
+      "slug": "benefits-of-blogging-for-small-businesses-in-2026",
+      "httpStatus": 200,
+      "sizeBytes": 490465,
+      "title": "Blogging for Small Businesses in 2026: Benefits, SEO &amp; ROI | Heroic Rankings",
+      "metaDescription": "The benefits of blogging for small businesses are too numerous to fit any list. Here are some of the most relevant perks of blogging for enterprises!",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/seo-content-checklist",
+      "kind": "post",
+      "slug": "seo-content-checklist",
+      "httpStatus": 200,
+      "sizeBytes": 560181,
+      "title": "SEO Content Checklist: Optimize Blog Posts That Rank Higher | Heroic Rankings",
+      "metaDescription": "Use this SEO content checklist for writers to optimize blog posts to rank. Cover keywords, structure, E-E-A-T, internal links, alt text &amp; metrics - step by step.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-to-add-schema-markup",
+      "kind": "post",
+      "slug": "how-to-add-schema-markup",
+      "httpStatus": 200,
+      "sizeBytes": 566589,
+      "title": "Schema Markup SEO Checklist: How to Optimize Blog Posts | Heroic Rankings",
+      "metaDescription": "Learn how to add schema markup, use structured data, and validate your SEO setup with this complete writer’s checklist with tools, tips, and best practices.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/saas-seo-strategies",
+      "kind": "post",
+      "slug": "saas-seo-strategies",
+      "httpStatus": 200,
+      "sizeBytes": 563081,
+      "title": "SaaS SEO in 2026 - Overcoming Challenges and Proven Strategies for Growth | Heroic Rankings",
+      "metaDescription": "Discover how SaaS SEO helps companies stand out in 2026. Here are some strategies, solutions to common challenges, and proven tactics for you to learn.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/google-eeat-and-seo-in-2026",
+      "kind": "post",
+      "slug": "google-eeat-and-seo-in-2026",
+      "httpStatus": 200,
+      "sizeBytes": 558399,
+      "title": "Google E-E-A-T in 2026: How Experience, Expertise, and Trust Drive SEO Success | Heroic Rankings",
+      "metaDescription": "Learn why Google E-E-A-T matters, how it impacts ranking, and inform yourself on some actionable tips that will help you build credibility and improve trust.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/topic-clusters-for-seo",
+      "kind": "post",
+      "slug": "topic-clusters-for-seo",
+      "httpStatus": 200,
+      "sizeBytes": 569614,
+      "title": "Topic Clusters That Drive Results: From Pillar to Post | Heroic Rankings",
+      "metaDescription": "Learn how to use topic clusters to build pillar pages and content hubs that rank. Get step-by-step tips on research, internal linking, and long-term SEO growth.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/ai-content-for-seo-to-protect-rankings",
+      "kind": "post",
+      "slug": "ai-content-for-seo-to-protect-rankings",
+      "httpStatus": 200,
+      "sizeBytes": 564167,
+      "title": "AI Content for SEO: Best Practices to Protect Your Rankings | Heroic Rankings",
+      "metaDescription": "Use AI content for SEO without risking rankings. Get tools, ethical workflows, E-E-A-T checks, and editing tips to keep pages accurate, original, and useful.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/authenticity-in-marketing",
+      "kind": "post",
+      "slug": "authenticity-in-marketing",
+      "httpStatus": 200,
+      "sizeBytes": 539375,
+      "title": "Authenticity in Marketing: Why Being Real Is the New Standard for Brand Success | Heroic Rankings",
+      "metaDescription": "Learn how authenticity in marketing, transparency, and consistent values can help your brand stand out, build trust, and achieve sustainable growth.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-to-do-market-research-guide",
+      "kind": "post",
+      "slug": "how-to-do-market-research-guide",
+      "httpStatus": 200,
+      "sizeBytes": 608406,
+      "title": "How to Do Market Research: A Clear, Practical Guide for Smarter Decisions | Heroic Rankings",
+      "metaDescription": "Learn how to do market research with a simple, structured process that reveals real audience needs, competitor moves, and new opportunities. A direct guide to defining personas, analyzing rivals, choosing research methods, and turning data into strategy.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/best-competitor-analysis-tools",
+      "kind": "post",
+      "slug": "best-competitor-analysis-tools",
+      "httpStatus": 200,
+      "sizeBytes": 765804,
+      "title": "Best Competitor Analysis Tools in 2026: Top 15 Platforms Compared | Heroic Rankings",
+      "metaDescription": "See the best competitor analysis tools for 2026 across SEO, PPC, social, content, email, and market intelligence. A clear breakdown of 15 platforms to help you pick the right tool for smarter competitive insights.",
+      "imageCount": 22,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-many-backlinks-do-i-need-to-rank",
+      "kind": "post",
+      "slug": "how-many-backlinks-do-i-need-to-rank",
+      "httpStatus": 200,
+      "sizeBytes": 563667,
+      "title": "How Many Backlinks Do I Need to Rank on Google in 2026 | Heroic Rankings",
+      "metaDescription": "Wondering how many backlinks do I need to rank on Google? Learn how to analyze competitors, track link quality, and build authority safely.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 16,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/dofollow-and-nofollow-links",
+      "kind": "post",
+      "slug": "dofollow-and-nofollow-links",
+      "httpStatus": 200,
+      "sizeBytes": 564510,
+      "title": "Dofollow vs Nofollow Links: Key Differences Explained | Heroic Rankings",
+      "metaDescription": "Learn how dofollow and nofollow links impact SEO, rankings, and link equity. Discover when and why each link type matters for your site’s visibility.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/international-link-building-guide",
+      "kind": "post",
+      "slug": "international-link-building-guide",
+      "httpStatus": 200,
+      "sizeBytes": 555092,
+      "title": "What Is International Link Building? Full Strategy Guide | Heroic Rankings",
+      "metaDescription": "Learn what international link building is and learn the best strategies for earning trusted local backlinks for global SEO success.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-to-repurpose-old-blog-posts",
+      "kind": "post",
+      "slug": "how-to-repurpose-old-blog-posts",
+      "httpStatus": 200,
+      "sizeBytes": 536755,
+      "title": "How to Repurpose Old Blog Posts and Grow Organic Traffic | Heroic Rankings",
+      "metaDescription": "Learn how to repurpose old blog posts into fresh traffic opportunities with smart updates, new formats, and a clear repurposing workflow.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 16,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/backlink-audit-guide",
+      "kind": "post",
+      "slug": "backlink-audit-guide",
+      "httpStatus": 200,
+      "sizeBytes": 527533,
+      "title": "Backlink Audit Guide to Boost Domain Authority in 2026 | Heroic Rankings",
+      "metaDescription": "Discover how to compare competitor profiles, find and evaluate links, remove harmful backlinks, reclaim lost authority, and build a stronger SEO foundation.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/mobile-seo-checklist-best-practices",
+      "kind": "post",
+      "slug": "mobile-seo-checklist-best-practices",
+      "httpStatus": 200,
+      "sizeBytes": 537716,
+      "title": "Essential Mobile SEO Checklist for Better Search Visibility | Heroic Rankings",
+      "metaDescription": "Master your mobile SEO checklist with essential strategies for 2026. Learn responsive design, voice search optimization, and mobile-first content that ranks.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/zero-click-searches",
+      "kind": "post",
+      "slug": "zero-click-searches",
+      "httpStatus": 200,
+      "sizeBytes": 535642,
+      "title": "Zero-Click Searches: Turn Lost Clicks Into Brand Trust | Heroic Rankings",
+      "metaDescription": "Learn about zero-click searches, the different SERP features involved, and actionable strategies to maintain visibility, build authority, and drive real business value.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/link-authority-essentials",
+      "kind": "post",
+      "slug": "link-authority-essentials",
+      "httpStatus": 200,
+      "sizeBytes": 588405,
+      "title": "What is Link Authority? Building Backlinks That Rank | Heroic Rankings",
+      "metaDescription": "Learn what link authority is, how it’s calculated, and how to build high-authority backlinks that drive sustainable rankings. A practical guide with expert insights.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/google-search-statistics-and-trends",
+      "kind": "post",
+      "slug": "google-search-statistics-and-trends",
+      "httpStatus": 200,
+      "sizeBytes": 520078,
+      "title": "Google Search Statistics 2026: Key Trends &amp; Top Insights | Heroic Rankings",
+      "metaDescription": "Latest Google search statistics for 2026. Explore market share, searches per day, top query patterns and what these trends mean for visibility and SEO planning.",
+      "imageCount": 9,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/google-ai-overview-statistics-2026",
+      "kind": "post",
+      "slug": "google-ai-overview-statistics-2026",
+      "httpStatus": 200,
+      "sizeBytes": 512399,
+      "title": "Google AI Overview Statistics: 2026 Trends and Impact | Heroic Rankings",
+      "metaDescription": "See key Google AI Overview statistics for 2026: AIO frequency, zero-click rates, citation patterns, and what they mean for SEO visibility in SERPs this year.",
+      "imageCount": 14,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/content-marketing-statistics-2026",
+      "kind": "post",
+      "slug": "content-marketing-statistics-2026",
+      "httpStatus": 200,
+      "sizeBytes": 530187,
+      "title": "Content Marketing Statistics 2026: Key Trends &amp; ROI Data | Heroic Rankings",
+      "metaDescription": "Content marketing statistics for 2026. Learn how AI adoption, ROI tracking, and quality-focused strategies are reshaping B2B content marketing.",
+      "imageCount": 8,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/link-building-statistics-2026",
+      "kind": "post",
+      "slug": "link-building-statistics-2026",
+      "httpStatus": 200,
+      "sizeBytes": 516474,
+      "title": "Link Building Statistics: How the Industry Is Changing in 2026 | Heroic Rankings",
+      "metaDescription": "Explore the latest link building statistics for 2026. Discover how quality, authority, and cost are reshaping link acquisition strategies and what it means for your SEO.",
+      "imageCount": 9,
+      "brokenImages": [],
+      "internalLinkCount": 17,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-many-ads-do-we-see-a-day",
+      "kind": "post",
+      "slug": "how-many-ads-do-we-see-a-day",
+      "httpStatus": 200,
+      "sizeBytes": 514066,
+      "title": "How Many Ads Do We See A Day? (A Statistics Deep Dive) | Heroic Rankings",
+      "metaDescription": "How many ads do we see a day? The average American encounters up to 10,000 ads daily. Explore the latest statistics and trends shaping modern advertising.",
+      "imageCount": 8,
+      "brokenImages": [],
+      "internalLinkCount": 16,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/sonic-branding",
+      "kind": "post",
+      "slug": "sonic-branding",
+      "httpStatus": 200,
+      "sizeBytes": 528601,
+      "title": "Sonic Branding: The Science Behind Memorable Brand Sounds | Heroic Rankings",
+      "metaDescription": "Discover what sonic branding is and why audio logos work. Learn how any brand can use sound to build instant recognition and lasting recall.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/weird-designs-in-branding",
+      "kind": "post",
+      "slug": "weird-designs-in-branding",
+      "httpStatus": 200,
+      "sizeBytes": 524665,
+      "title": "Weird Designs, Big Results: The Anti-Design Branding Strategy | Heroic Rankings",
+      "metaDescription": "What looks like a mistake might be your biggest advantage. See how weird designs transform brand identity and why imperfection wins over audiences.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/surfer-seo-vs-ahrefs-comparison",
+      "kind": "post",
+      "slug": "surfer-seo-vs-ahrefs-comparison",
+      "httpStatus": 200,
+      "sizeBytes": 572987,
+      "title": "Surfer SEO vs Ahrefs: The Complete Comparison for 2026 | Heroic Rankings",
+      "metaDescription": "Comparing Surfer SEO vs Ahrefs? See how each tool stacks up on content optimization, keyword research, backlinks, and pricing to find the best fit.",
+      "imageCount": 13,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-to-build-b2b-content-marketing-strategy",
+      "kind": "post",
+      "slug": "how-to-build-b2b-content-marketing-strategy",
+      "httpStatus": 200,
+      "sizeBytes": 538706,
+      "title": "B2B Content Marketing Strategy: From Planning to Pipeline | Heroic Rankings",
+      "metaDescription": "Learn how to create a B2B content marketing strategy that builds trust, supports buying decisions, and drives measurable growth.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/screaming-frog-vs-ahrefs-comparison",
+      "kind": "post",
+      "slug": "screaming-frog-vs-ahrefs-comparison",
+      "httpStatus": 200,
+      "sizeBytes": 556786,
+      "title": "Screaming Frog vs Ahrefs: The Complete Comparison for 2026 | Heroic Rankings",
+      "metaDescription": "Compare Screaming Frog vs Ahrefs on technical SEO, keyword research, backlinks, pricing, and ease of use to find the right tool for your SEO strategy.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/ahrefs-vs-moz-comparison",
+      "kind": "post",
+      "slug": "ahrefs-vs-moz-comparison",
+      "httpStatus": 200,
+      "sizeBytes": 573409,
+      "title": "Ahrefs vs Moz: The Complete Comparison for 2026 | Heroic Rankings",
+      "metaDescription": "Ahrefs vs Moz comparison covering features, keyword research, backlinks, and ranking tools to help you choose the right SEO platform.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/best-ahrefs-alternatives",
+      "kind": "post",
+      "slug": "best-ahrefs-alternatives",
+      "httpStatus": 200,
+      "sizeBytes": 606492,
+      "title": "Top 8 Ahrefs Alternatives for Every Budget | Heroic Rankings",
+      "metaDescription": "Looking for Ahrefs alternatives that fit your workflow and budget? Explore 8 top SEO tools (both free and paid) and find the right one for your team.",
+      "imageCount": 17,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/how-to-do-an-internal-link-audit",
+      "kind": "post",
+      "slug": "how-to-do-an-internal-link-audit",
+      "httpStatus": 200,
+      "sizeBytes": 510195,
+      "title": "Internal Link Audit Guide: How to Find &amp; Fix Internal Linking Issues | Heroic Rankings",
+      "metaDescription": "Learn how to run an internal link audit, find linking issues, improve site structure, and boost SEO with practical internal linking tips.",
+      "imageCount": 14,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/best-google-trends-alternatives",
+      "kind": "post",
+      "slug": "best-google-trends-alternatives",
+      "httpStatus": 200,
+      "sizeBytes": 514970,
+      "title": "Top 7 Google Trends Alternatives for Every Budget | Heroic Rankings",
+      "metaDescription": "Discover the 7 best Google Trends alternatives for deeper keyword data, competitor insights, and smarter SEO strategies in 2026.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/top-link-building-tools-in-2026",
+      "kind": "post",
+      "slug": "top-link-building-tools-in-2026",
+      "httpStatus": 200,
+      "sizeBytes": 593532,
+      "title": "Best Link Building Tools to Boost Your SEO | Heroic Rankings",
+      "metaDescription": "Compare these top link building tools for SEO, including Ahrefs, Semrush, and Hunter.io. Find the best options for outreach, analysis, and reporting.",
+      "imageCount": 18,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/what-is-a-website-title",
+      "kind": "post",
+      "slug": "what-is-a-website-title",
+      "httpStatus": 200,
+      "sizeBytes": 575638,
+      "title": "What Is a Website Title? SEO Impact, Examples &amp; How to Write One | Heroic Rankings",
+      "metaDescription": "Understand what is a website title and why it matters for SEO. See examples, learn how to write better titles, and improve rankings, clicks, and performance.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/cro-statistics-2026",
+      "kind": "post",
+      "slug": "cro-statistics-2026",
+      "httpStatus": 200,
+      "sizeBytes": 509368,
+      "title": "CRO Statistics: Key Trends &amp; Benchmarks for 2026 | Heroic Rankings",
+      "metaDescription": "Discover key conversion rate optimization statistics for 2026, including industry benchmarks, device trends, and tips to improve your digital performance.",
+      "imageCount": 8,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/marketing-fundamentals",
+      "kind": "post",
+      "slug": "marketing-fundamentals",
+      "httpStatus": 200,
+      "sizeBytes": 615045,
+      "title": "Marketing Fundamentals: A Practical Guide to Marketing Basics | Heroic Rankings",
+      "metaDescription": "A practical guide to marketing fundamentals, covering audience insight, strategy, and the core principles behind successful marketing campaigns.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 18,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/seo-proposal-breakdown",
+      "kind": "post",
+      "slug": "seo-proposal-breakdown",
+      "httpStatus": 200,
+      "sizeBytes": 569038,
+      "title": "How to Write an SEO Proposal That Wins Clients | Heroic Rankings",
+      "metaDescription": "Learn how to structure an SEO proposal from first call to signed contract, including audits, strategy, and pitching SEO services.",
+      "imageCount": 11,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/top-backlink-analysis-tools-in-2026",
+      "kind": "post",
+      "slug": "top-backlink-analysis-tools-in-2026",
+      "httpStatus": 200,
+      "sizeBytes": 556452,
+      "title": "Best Backlink Analysis Tools: Top 7 SEO Platforms | Heroic Rankings",
+      "metaDescription": "Compare the best backlink analysis tools used by SEO professionals. Find the right platform for competitor research, link audits, and backlink tracking.",
+      "imageCount": 14,
+      "brokenImages": [],
+      "internalLinkCount": 19,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/what-is-internal-linking",
+      "kind": "post",
+      "slug": "what-is-internal-linking",
+      "httpStatus": 200,
+      "sizeBytes": 561065,
+      "title": "Internal Linking Best Practices for SEO | Heroic Rankings",
+      "metaDescription": "Learn what internal linking is, why it matters for SEO, and discover the best practices to improve rankings and user experience.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 20,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/what-is-a-content-pillar",
+      "kind": "post",
+      "slug": "what-is-a-content-pillar",
+      "httpStatus": 200,
+      "sizeBytes": 532506,
+      "title": "What Is a Content Pillar? Meaning, Strategy, and SEO Benefits | Heroic Rankings",
+      "metaDescription": "Learn what a content pillar is, how pillar pages and topic clusters work, and how a content pillar strategy improves SEO and long-term content planning.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 17,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/insights/what-are-organic-keywords",
+      "kind": "post",
+      "slug": "what-are-organic-keywords",
+      "httpStatus": 200,
+      "sizeBytes": 521356,
+      "title": "What Are Organic Keywords? An SEO Guide | Heroic Rankings",
+      "metaDescription": "Learn what organic keywords are in SEO, how they work, and how to find and use them to increase organic search visibility, rankings, and traffic.",
+      "imageCount": 10,
+      "brokenImages": [],
+      "internalLinkCount": 17,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    },
+    {
+      "path": "/podcast/audit-fixture-podcast-episode",
+      "kind": "podcast",
+      "slug": "audit-fixture-podcast-episode",
+      "httpStatus": 200,
+      "sizeBytes": 335926,
+      "title": "Heroic Rankings",
+      "metaDescription": "Heroic Rankings helps businesses scale organic growth through data-driven SEO strategy, technical excellence, and long-term partnerships.",
+      "imageCount": 4,
+      "brokenImages": [],
+      "internalLinkCount": 15,
+      "deadInternalLinks": [],
+      "jsonLdCount": 3,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [],
+      "sectionAnchorsFound": [],
+      "issues": []
+    },
+    {
+      "path": "/insights/the-psychology-of-email-fatigue",
+      "kind": "post",
+      "slug": "the-psychology-of-email-fatigue",
+      "httpStatus": 200,
+      "sizeBytes": 525145,
+      "title": "Why You Can’t Unsubscribe: The Psychology Behind Email Fatigue | Heroic Rankings",
+      "metaDescription": "Marketers know exactly why you won&#x27;t unsubscribe. Learn the psychology behind email fatigue and how to take back control of your inbox.",
+      "imageCount": 12,
+      "brokenImages": [],
+      "internalLinkCount": 16,
+      "deadInternalLinks": [],
+      "jsonLdCount": 4,
+      "jsonLdParseErrors": 0,
+      "sectionAnchorsExpected": [
+        "insight-blog-post"
+      ],
+      "sectionAnchorsFound": [
+        "insight-blog-post"
+      ],
+      "issues": []
+    }
+  ]
+}

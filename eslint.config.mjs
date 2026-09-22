@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local iCloud workaround dirs (see .gitignore): real node_modules/.next live here via symlink.
+    "node_modules.nosync/**",
+    ".next.nosync/**",
   ]),
 ]);
 
