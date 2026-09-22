@@ -185,11 +185,12 @@ export function InsightsCatalog({ cmsPosts }: InsightsCatalogProps) {
     return catalogCards.filter((card) => card.category === activeTab);
   }, [activeTab, catalogCards]);
 
-  // Reset pagination when the category filter changes — otherwise switching
-  // tabs leaves an unrelated visibleCount in place.
-  useEffect(() => {
+  // WHY: reset pagination together with the tab change instead of in an
+  // effect — otherwise switching tabs leaves an unrelated visibleCount in place.
+  const selectTab = (tab: CategoryTab) => {
+    setActiveTab(tab);
     setVisibleCount(PAGE_SIZE);
-  }, [activeTab]);
+  };
 
   const visibleCards = filteredCards.slice(0, visibleCount);
   const hasMore = visibleCount < filteredCards.length;
@@ -234,7 +235,7 @@ export function InsightsCatalog({ cmsPosts }: InsightsCatalogProps) {
                   )}
                   key={tab}
                   onClick={() => {
-                    setActiveTab(tab);
+                    selectTab(tab);
                     setIsDropdownOpen(false);
                   }}
                   role="option"
@@ -261,7 +262,7 @@ export function InsightsCatalog({ cmsPosts }: InsightsCatalogProps) {
                   : "bg-[var(--color-hr-off-white)] text-[var(--color-hr-grey)] hover:bg-[color-mix(in_srgb,var(--color-hr-off-white)_84%,var(--color-hr-light-grey)_16%)] dark:bg-[var(--color-surface-inverse-10)] dark:text-[var(--color-text-inverse-60)] dark:hover:bg-[var(--color-surface-inverse-10)]",
               )}
               key={tab}
-              onClick={() => setActiveTab(tab)}
+              onClick={() => selectTab(tab)}
               type="button"
             >
               {tab}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { flushSync } from "react-dom";
 import { useTheme } from "next-themes";
 
@@ -8,13 +8,16 @@ type DocumentWithViewTransition = Document & {
   startViewTransition?: (cb: () => void) => { ready: Promise<void> };
 };
 
+const subscribeNoop = () => () => {};
+
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // WHY: true only after hydration; avoids the setState-in-effect lint rule and a hydration mismatch.
+  const mounted = useSyncExternalStore(
+    subscribeNoop,
+    () => true,
+    () => false,
+  );
 
   const isDark = mounted ? resolvedTheme === "dark" : false;
 
