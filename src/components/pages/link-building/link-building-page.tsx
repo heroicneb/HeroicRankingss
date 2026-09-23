@@ -32,6 +32,53 @@ const CTA_BANNER_BG_SRC = "/link-building/imgSubtract1.svg";
 const COLLAPSED_ROW_BG_SRC = "/link-building/imgSubtract3.svg";
 const FAQ_BG_SRC = "/link-building/imgSubtract.svg";
 const ROW_DIVIDER_SRC = "/link-building/imgLine13.svg";
+const BACKLINKS_CLIPBOARD_SRC = "/link-building/backlinks-clipboard.webp";
+const SECTION_GLOW_SRC = "/link-building/glow.svg";
+
+interface HowWeBuildCard {
+  title: string;
+  body: string;
+  titleWidthClass?: string;
+}
+
+// Figma 2524:1124 — seven tactic cards, verbatim copy.
+const HOW_WE_BUILD_CARDS: readonly HowWeBuildCard[] = [
+  {
+    title: "Competitor reverse-engineering.",
+    body: "We start by mapping your competitors’ link profiles, pinpointing the high-authority domains driving their growth. Then we go one better, securing placements from even stronger sources so you close the gap and pull ahead faster.",
+    titleWidthClass: "max-w-[334px]",
+  },
+  {
+    title: "Custom, high-authority placements.",
+    body: "Every link is hand-built on relevant, domain-approved sites. No shortcuts, no filler, no recycled placements: just contextual links that read naturally because they belong where they sit.",
+    titleWidthClass: "max-w-[334px]",
+  },
+  {
+    title: "Digital PR and original research.",
+    body: "We help you publish original research, proprietary data, and industry benchmarks — the kind of content publications cite and AI extracts. One strong data study can earn dozens of high-authority backlinks while supplying the quotable findings LLMs pull into their answers.",
+    titleWidthClass: "max-w-[293px]",
+  },
+  {
+    title: "Linkable asset creation.",
+    body: "We build the kind of content people reference by choice — free tools, calculators, templates, original statistics pages, and definitive guides. These assets keep earning links long after launch, turning one investment into a compounding source of authority and AI citations.",
+    titleWidthClass: "max-w-[217px]",
+  },
+  {
+    title: "Third-party listicle placements.",
+    body: "Getting your brand featured inside existing high-ranking “best of” lists is one of the most direct ways to win search and AI visibility in a single placement. AI already cites these lists — when your brand sits inside them, it cites you by extension. We pursue earned placements on trusted publications, not self-serving lists that now lose ground in AI recommendations.",
+    titleWidthClass: "max-w-[336px]",
+  },
+  {
+    title: "Brand mentions on trusted sources.",
+    body: "A contextual mention on a major publisher, niche-authority site, or trusted directory can earn AI citations even without a hyperlink, because AI models cross-reference mentions to build trust. We secure those mentions — and, where it makes sense, convert them into links.",
+    titleWidthClass: "max-w-[293px]",
+  },
+  {
+    title: "Authentic community presence.",
+    body: "Reddit and industry forums are among the most-cited sources in AI answers, because that's where people go for unfiltered, peer-driven insight. We build genuine, helpful visibility in the communities relevant to your brand — credibility that traditional link building simply can't replicate.",
+    titleWidthClass: "max-w-[334px]",
+  },
+];
 
 interface ServiceCardItem {
   title: string;
@@ -283,6 +330,123 @@ export default function LinkBuildingPage({
                 width={1858}
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Figma 2524:1111 — "Why Backlinks Still Rule Both Search and AI" */}
+      <section className="pt-[10px]" id="link-building-why-backlinks">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className="relative overflow-hidden rounded-[30px] bg-[linear-gradient(65.1111deg,var(--color-hr-dark)_37.4%,var(--color-case-art-maudsch)_153.3%)] px-5 py-[60px] text-[var(--color-hr-pure-white)] sm:px-8 lg:rounded-[40px] lg:py-[120px] lg:pl-[70px] lg:pr-[88px]">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute left-1/2 top-[-145px] flex h-[834px] w-[1701px] -translate-x-1/2 items-center justify-center"
+            >
+              <div className="relative h-[439px] w-[1643px] flex-none rotate-[14.4deg]">
+                <Image
+                  alt=""
+                  className="absolute block max-w-none"
+                  height={664}
+                  src={SECTION_GLOW_SRC}
+                  style={{ width: 1868, height: 664, left: "-6.85%", top: "-25.62%" }}
+                  width={1868}
+                />
+              </div>
+            </div>
+
+            <div className="relative z-10 flex flex-col items-start gap-[40px] lg:flex-row lg:gap-[69px]">
+              <Image
+                alt="Marble-carved search bar and results list"
+                // WHY: 581px is the 1440 design width; let it shrink between lg and xl so the text column keeps fitting.
+                className="h-auto w-full max-w-[581px] lg:w-[46%] lg:shrink-0 xl:w-[581px]"
+                height={1081}
+                sizes="(min-width: 1024px) 581px, 100vw"
+                src={BACKLINKS_CLIPBOARD_SRC}
+                width={1735}
+              />
+              <div className="min-w-0 lg:max-w-[612px] lg:flex-1">
+                <h2 className="type-h2 max-w-[542px] tracking-[-1.04px] text-[var(--color-hr-pure-white)]">
+                  Why Backlinks Still Rule{" "}
+                  <GradientText className="gradient-text-brand-about-heading">
+                    Both Search and AI
+                  </GradientText>
+                </h2>
+                <div className="type-paragraph mt-[40px] space-y-5 text-[var(--color-text-inverse-95)]">
+                  <p>
+                    Backlinks have topped Google&apos;s ranking factors for over
+                    a decade — and that hasn&apos;t changed. Every quality link
+                    is a signal of trust that lifts your rankings faster than
+                    any other tactic.
+                  </p>
+                  <p>
+                    Today those same signals shape AI visibility too: ChatGPT,
+                    Perplexity, and AI Overviews cite the sources they trust
+                    most, and trust is built on links.
+                  </p>
+                  <p>
+                    The takeaway is simple: strong backlinks lift your rankings
+                    and help your brand get cited in the AI answers your
+                    customers now read first. That&apos;s exactly what our link
+                    building services are built to deliver. Get the backlinks
+                    right, and you win in search and in AI answers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Figma 2524:1118 — "How We Build Links: One Motion, Two Systems" */}
+      <section className="pt-[10px]" id="link-building-how-we-build">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className="rounded-[40px] bg-[var(--color-hr-off-white)] px-5 py-[60px] dark:bg-[var(--color-bg-dark)] sm:px-8 lg:px-[70px] lg:py-[120px]">
+            <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-5">
+              <div className="lg:w-[630px] lg:shrink-0">
+                <SectionLabel>/ Link Building /</SectionLabel>
+                <h2 className="type-h2 mt-5 tracking-[-1.04px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                  How We Build Links:
+                  <br className="hidden lg:block" aria-hidden />{" "}
+                  <GradientText className="gradient-text-brand-services">
+                    One Motion, Two Systems
+                  </GradientText>
+                </h2>
+              </div>
+              <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:max-w-[565px]">
+                Modern link building has to serve two audiences at once —
+                Google&apos;s rankings and the AI systems your customers now ask
+                first. We focus on the tactics that do both in a single motion.
+              </p>
+            </div>
+
+            <div className="mt-[70px] grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+              {HOW_WE_BUILD_CARDS.map((card) => (
+                <article
+                  className="flex flex-col gap-[30px] rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] p-[30px] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] xl:min-h-[400px]"
+                  key={card.title}
+                >
+                  <h3
+                    className={cn(
+                      "type-h3 tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
+                      card.titleWidthClass,
+                    )}
+                  >
+                    {card.title}
+                  </h3>
+                  <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                    {card.body}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <p className="type-paragraph mt-[70px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+              Every tactic is chosen to do double duty: build the authority that
+              lifts your Google rankings today, and the presence that makes AI
+              name your brand tomorrow. If you&apos;re ready to dominate
+              competitive keywords with smarter SEO investment, we&apos;re the
+              link building partner built to get you there.
+            </p>
           </div>
         </div>
       </section>
