@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  NEXT_PUBLIC_SANITY_PROJECT_ID: "5cr26y9m"
+  NEXT_PUBLIC_SANITY_PROJECT_ID: "y4pfm1uv"
   NEXT_PUBLIC_SANITY_DATASET: "production"
   NEXT_PUBLIC_SANITY_STUDIO_URL: "/studio"
 
