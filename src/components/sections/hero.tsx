@@ -41,17 +41,18 @@ export function Hero() {
 
       <div className="mx-auto mt-[60px] max-w-[1440px] px-[5px] md:px-[10px] lg:mt-[116px]">
         <div className="relative h-[180px] overflow-hidden rounded-[30px] sm:h-[300px] md:h-[380px] lg:h-[480px] lg:rounded-[var(--radius-card)]">
+          {/* WHY: the still is the video's first frame, so it stays the LCP asset and the
+              fallback on touch/reduced-motion; the video fades in over it on hover. */}
           <Image
             alt="Classical statue representing enduring digital presence"
-            className="pointer-events-none absolute left-[-52.16%] top-0 h-full w-[210.21%] max-w-none object-cover sm:left-[-22.13%] sm:w-[150.01%]"
+            className="pointer-events-none object-cover"
             fetchPriority="high"
             fill
             priority
-            quality={95}
+            quality={90}
             sizes="(min-width: 1024px) 1440px, 100vw"
-            src="/hero-face.webp"
+            src="/hero-face-poster.webp"
           />
-          {/* WHY: the loop was rendered from the desktop crop of the image, so it only overlays at lg where the framing matches 1:1. */}
           <HeroVideoOverlay src="/hero-face-loop.mp4" />
         </div>
       </div>

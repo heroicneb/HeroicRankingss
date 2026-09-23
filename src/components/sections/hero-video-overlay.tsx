@@ -60,9 +60,11 @@ export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps)
     const video = videoRef.current;
     setActive(false);
     if (!video) return;
-    // WHY: keep the frames moving through the fade-out, then pause to stop decoding.
+    // WHY: keep the frames moving through the fade-out, then pause and rewind so
+    // the hidden video sits on the same frame as the poster underneath.
     pauseTimer.current = window.setTimeout(() => {
       video.pause();
+      video.currentTime = 0;
       pauseTimer.current = null;
     }, FADE_MS);
   };
