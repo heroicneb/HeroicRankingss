@@ -45,6 +45,7 @@ export const faqItem = defineType({
           { title: "E-commerce SEO", value: "ecommerce-seo" },
           { title: "Keyword Strategy", value: "keyword-strategy" },
           { title: "SEO Services", value: "seo-services" },
+          { title: "Reddit Marketing", value: "reddit-marketing" },
         ],
       },
     }),

@@ -19,6 +19,7 @@ const SERVICE_PAGES = new Set([
   "/seo/content-creation",
   "/seo/e-commerce",
   "/seo/linkbuilding",
+  "/seo/reddit-marketing",
 ]);
 
 const LISTING_PAGES = new Set(["/blog", "/case-study"]);
@@ -50,6 +51,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/seo/content-creation",
     "/seo/e-commerce",
     "/seo/linkbuilding",
+    "/seo/reddit-marketing",
     "/partnership",
     "/blog",
     "/case-study",

@@ -24,6 +24,22 @@ interface CtaVariant {
 const EXPANDED_CTA_WIDTH = "w-full max-w-[251px] lg:w-[198px]";
 
 const CTA_VARIANTS: Record<string, CtaVariant> = {
+  "/seo/reddit-marketing": {
+    heading: (
+      <>
+        Ready to own your{" "}
+        <span className={GRADIENT_SPAN_CLASS} style={GRADIENT_STYLE}>
+          corner of Reddit?
+        </span>
+      </>
+    ),
+    body: "Reddit is the breakout channel of the moment — and the brands moving now are locking in visibility that gets harder to win every month. Let's map your opportunities and put your brand in the threads that rank, convert, and shape buyer decisions.",
+    ctaLabel: "Book a Reddit Strategy Call",
+    ctaWidth: "w-full max-w-[265px] lg:w-[265px]",
+    headingMaxW: "max-w-[498px]",
+    bodyMaxW: "lg:max-w-[736px]",
+    rootMaxW: "max-w-[736px]",
+  },
   "/seo/keyword-research": {
     heading: (
       <>
