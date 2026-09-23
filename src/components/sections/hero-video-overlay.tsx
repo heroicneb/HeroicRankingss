@@ -49,6 +49,8 @@ export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps)
       pauseTimer.current = null;
     }
     setActive(true);
+    // WHY: every hover restarts the clip from its first frame rather than resuming.
+    video.currentTime = 0;
     // WHY: play() returns a promise that rejects if the browser blocks it; the
     // image simply stays visible in that case.
     void video.play().catch(() => setActive(false));
