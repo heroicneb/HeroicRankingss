@@ -31,6 +31,7 @@ These are the only `"use client"` files and why they require the client runtime:
 - `src/components/pages/insights/blog-post-detail-content.tsx` — tab state, hash synchronization, keyboard tablist navigation.
 - `src/components/pages/insights/insights-catalog.tsx` — interactive category filtering and mobile dropdown control state.
 - `src/components/sections/about-us-team-popup-controller.tsx` — hash-driven popup open/close and previous/next member transitions.
+- `src/components/sections/hero-video-overlay.tsx` — hover-driven play/pause and fade state for the homepage hero video loop.
 - `src/components/sections/process-step-switcher.tsx` — touch + button-driven step switching state.
 - `src/components/sections/quote-rotator.tsx` — interval-driven quote rotation and reduced-motion checks.
 - `src/components/sections/services.tsx` — hover/flip state and custom wheel-to-horizontal rail interaction.

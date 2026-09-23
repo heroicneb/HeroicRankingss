@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { HeroVideoOverlay } from "@/components/sections/hero-video-overlay";
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
@@ -50,6 +51,8 @@ export function Hero() {
             sizes="(min-width: 1024px) 1440px, 100vw"
             src="/hero-face.webp"
           />
+          {/* WHY: the loop was rendered from the desktop crop of the image, so it only overlays at lg where the framing matches 1:1. */}
+          <HeroVideoOverlay src="/hero-face-loop.mp4" />
         </div>
       </div>
     </section>
