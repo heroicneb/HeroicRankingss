@@ -22,6 +22,7 @@ const NAV_ITEMS: NavItem[] = [
       { label: "E-commerce Services", href: "/seo/e-commerce" },
       { label: "Content Creation Services", href: "/seo/content-creation" },
       { label: "Keyword Strategy Services", href: "/seo/keyword-research" },
+      { label: "Reddit Marketing Services", href: "/seo/reddit-marketing" },
     ],
   },
   { label: "Link Building", href: "/seo/linkbuilding" },
@@ -30,6 +31,17 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Case Studies", href: "/case-study" },
   { label: "Podcast", href: "/podcast" },
 ];
+
+// WHY: The Reddit Marketing page shipped in code before it was added to the Sanity
+// nav; guarantee the SEO dropdown links to it until editors manage it in siteSettings.
+const REDDIT_NAV_CHILD = {
+  label: "Reddit Marketing Services",
+  href: "/seo/reddit-marketing",
+} as const;
+
+function isRedditHref(href: string | undefined) {
+  return Boolean(href && href.replace(/\/+$/, "") === REDDIT_NAV_CHILD.href);
+}
 
 interface NavbarProps {
   navItems?: NavItem[];
@@ -46,14 +58,15 @@ export function Navbar({ navItems, phone, ctaLabel, ctaUrl }: NavbarProps) {
     : [...baseItems, { label: "Podcast", href: "/podcast" }];
   const items = itemsWithPodcast.map((item) => {
     if (!item.children?.length || !item.href) return item;
-    if (item.children.some((child) => child.href === item.href)) return item;
-    return {
-      ...item,
-      children: [
-        { label: `All ${item.label} Services`, href: item.href },
-        ...item.children,
-      ],
-    };
+    const children = item.children.some((child) => child.href === item.href)
+      ? item.children
+      : [{ label: `All ${item.label} Services`, href: item.href }, ...item.children];
+    const isSeoDropdown = item.href.replace(/\/+$/, "") === "/seo";
+    const withReddit =
+      isSeoDropdown && !children.some((child) => isRedditHref(child.href))
+        ? [...children, REDDIT_NAV_CHILD]
+        : children;
+    return withReddit === item.children ? item : { ...item, children: withReddit };
   });
   const resolvedPhone = phone?.trim() || SITE_PHONE;
   const resolvedCtaLabel = ctaLabel?.trim() || "Get Started";
