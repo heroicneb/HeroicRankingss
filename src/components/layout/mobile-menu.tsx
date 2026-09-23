@@ -39,6 +39,7 @@ export function buildMobileMenuItems(navItems: NavItem[]): MobileMenuItem[] {
     seoChildrenByLabel.get("E-commerce Services"),
     seoChildrenByLabel.get("Content Creation Services"),
     seoChildrenByLabel.get("Keyword Strategy Services"),
+    seoChildrenByLabel.get("Reddit Marketing Services"),
     byLabel.get("Link Building"),
     byLabel.get("Partnership"),
     byLabel.get("Insights"),
