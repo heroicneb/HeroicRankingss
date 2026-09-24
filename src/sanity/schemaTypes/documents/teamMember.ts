@@ -236,7 +236,6 @@ export const teamMember = defineType({
             defineField({
               name: "title",
               type: "string",
-              validation: (r) => r.required(),
             }),
             defineField({ name: "subtitle", type: "string" }),
             defineField({ name: "description", type: "text", rows: 4 }),

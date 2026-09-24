@@ -374,7 +374,7 @@ export const caseStudy = defineType({
                   type: "text",
                   rows: 3,
                   validation: (r) =>
-                    r.required().error("Milestone description is required."),
+                    r.required().warning("Milestone description is required."),
                 }),
               ],
               preview: { select: { title: "title" } },
@@ -582,7 +582,7 @@ export const caseStudy = defineType({
                   type: "text",
                   rows: 3,
                   validation: (r) =>
-                    r.required().error("Card body is required."),
+                    r.required().warning("Card body is required."),
                 }),
                 defineField({
                   name: "image",

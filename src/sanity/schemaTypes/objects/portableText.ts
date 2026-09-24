@@ -31,7 +31,11 @@ export const portableText = defineType({
                 type: "url",
                 title: "URL",
                 validation: (rule) =>
-                  rule.uri({ scheme: ["http", "https", "mailto", "tel"] }),
+                  rule.uri({
+                    scheme: ["http", "https", "mailto", "tel"],
+                    // WHY: internal links are stored as site-relative paths.
+                    allowRelative: true,
+                  }),
               },
               {
                 name: "openInNewTab",
@@ -52,7 +56,8 @@ export const portableText = defineType({
           name: "alt",
           type: "string",
           title: "Alt Text",
-          validation: (rule) => rule.required(),
+          validation: (rule) =>
+            rule.required().warning("Add alt text for accessibility and SEO."),
         },
         {
           name: "caption",
@@ -131,7 +136,11 @@ export const portableText = defineType({
           type: "url",
           title: "Button URL",
           validation: (rule) =>
-            rule.required().uri({ scheme: ["http", "https", "mailto", "tel"] }),
+            rule.required().uri({
+              scheme: ["http", "https", "mailto", "tel"],
+              // WHY: CTA buttons usually point at internal pages like /contact.
+              allowRelative: true,
+            }),
         },
       ],
       preview: {
