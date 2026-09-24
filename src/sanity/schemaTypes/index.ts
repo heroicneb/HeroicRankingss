@@ -4,10 +4,12 @@ import { caseStudy } from "./documents/caseStudy";
 import { contactPage } from "./documents/contactPage";
 import { faqItem } from "./documents/faqItem";
 import { legalPage } from "./documents/legalPage";
+import { linkBuildingPage } from "./documents/linkBuildingPage";
 import { partnerLogo } from "./documents/partnerLogo";
 import { partnershipPage } from "./documents/partnershipPage";
 import { podcastEpisode } from "./documents/podcastEpisode";
 import { post } from "./documents/post";
+import { redditMarketingPage } from "./documents/redditMarketingPage";
 import { servicePage } from "./documents/servicePage";
 import { siteSettings } from "./documents/siteSettings";
 import { teamMember } from "./documents/teamMember";
@@ -25,6 +27,8 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     post,
     servicePage,
     partnershipPage,
+    linkBuildingPage,
+    redditMarketingPage,
     contactPage,
     legalPage,
     caseStudy,

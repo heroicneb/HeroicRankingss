@@ -1,335 +1,121 @@
-import type { Metadata } from "next";
 import Image from "next/image";
+
+import { RichParagraphs } from "@/components/sanity/rich-paragraphs";
 import { ProcessStepSwitcher } from "@/components/sections/process-step-switcher";
 import { ServiceFaq } from "@/components/sections/shared/service-faq";
 import { ServiceSuccessStories } from "@/components/sections/shared/service-success-stories";
 import { ServiceWhyChoose } from "@/components/sections/shared/service-why-choose";
-import { GradientText } from "@/components/ui/gradient-text";
 import { AppLink } from "@/components/ui/app-link";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { GradientText } from "@/components/ui/gradient-text";
 import {
   DiagonalArrowIcon,
   FaqPlusIcon,
   GradientArrowUpRightIcon,
 } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
-import { buildProcessSteps } from "@/data/process-steps";
 import { PAGE_SHELL_CLASS, CONTENT_SHELL_CLASS } from "@/data/service-shared";
 import { SUCCESS_STORIES } from "@/data/success-stories";
-import { WHY_CHOOSE_ITEMS } from "@/data/why-choose-items";
-import { cn } from "@/lib/cn";
-import { createPageMetadata } from "@/lib/metadata";
 import type { SanityFaqItem } from "@/lib/sanity-data";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Link Building Services",
-  description:
-    "Strengthen your off-page SEO with white-hat link building services that improve rankings, authority, and long-term organic growth.",
-  path: "/seo/linkbuilding",
-});
+import type { ContentImage } from "../shared/page-content";
+import type { LinkBuildingContent } from "./link-building-content";
 
-const HERO_STATUE_SRC = "/link-building/imgRectangle5.webp";
+/*
+ * /seo/linkbuilding — layout lives here; every word, image, icon and link
+ * comes from `content` (Sanity "Link Building Page" document, or the
+ * built-in default). Figma: frame 2524:718 in LrfQdM6RTwf95gfkga3tJl.
+ */
+
+const TEXT = "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]";
 const CTA_BANNER_BG_SRC = "/link-building/imgSubtract1.svg";
 const COLLAPSED_ROW_BG_SRC = "/link-building/imgSubtract3.svg";
 const FAQ_BG_SRC = "/link-building/imgSubtract.svg";
 const ROW_DIVIDER_SRC = "/link-building/imgLine13.svg";
-const BACKLINKS_CLIPBOARD_SRC = "/link-building/backlinks-clipboard.webp";
 const SECTION_GLOW_SRC = "/link-building/glow.svg";
 
-interface HowWeBuildCard {
-  title: string;
-  body: string;
-  titleWidthClass?: string;
+function IconTile({ icon }: { icon: ContentImage | null }) {
+  if (!icon) return null;
+  return (
+    <span className="inline-flex size-[50px] items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]">
+      <Image
+        alt={icon.alt}
+        aria-hidden={icon.alt === "" || undefined}
+        className="block dark:brightness-0 dark:invert"
+        height={icon.height}
+        src={icon.src}
+        style={{ height: icon.height, width: icon.width }}
+        width={icon.width}
+      />
+    </span>
+  );
 }
-
-// Figma 2524:1124 — seven tactic cards, verbatim copy.
-const HOW_WE_BUILD_CARDS: readonly HowWeBuildCard[] = [
-  {
-    title: "Competitor reverse-engineering.",
-    body: "We start by mapping your competitors’ link profiles, pinpointing the high-authority domains driving their growth. Then we go one better, securing placements from even stronger sources so you close the gap and pull ahead faster.",
-    titleWidthClass: "max-w-[334px]",
-  },
-  {
-    title: "Custom, high-authority placements.",
-    body: "Every link is hand-built on relevant, domain-approved sites. No shortcuts, no filler, no recycled placements: just contextual links that read naturally because they belong where they sit.",
-    titleWidthClass: "max-w-[334px]",
-  },
-  {
-    title: "Digital PR and original research.",
-    body: "We help you publish original research, proprietary data, and industry benchmarks — the kind of content publications cite and AI extracts. One strong data study can earn dozens of high-authority backlinks while supplying the quotable findings LLMs pull into their answers.",
-    titleWidthClass: "max-w-[293px]",
-  },
-  {
-    title: "Linkable asset creation.",
-    body: "We build the kind of content people reference by choice — free tools, calculators, templates, original statistics pages, and definitive guides. These assets keep earning links long after launch, turning one investment into a compounding source of authority and AI citations.",
-    titleWidthClass: "max-w-[217px]",
-  },
-  {
-    title: "Third-party listicle placements.",
-    body: "Getting your brand featured inside existing high-ranking “best of” lists is one of the most direct ways to win search and AI visibility in a single placement. AI already cites these lists — when your brand sits inside them, it cites you by extension. We pursue earned placements on trusted publications, not self-serving lists that now lose ground in AI recommendations.",
-    titleWidthClass: "max-w-[336px]",
-  },
-  {
-    title: "Brand mentions on trusted sources.",
-    body: "A contextual mention on a major publisher, niche-authority site, or trusted directory can earn AI citations even without a hyperlink, because AI models cross-reference mentions to build trust. We secure those mentions — and, where it makes sense, convert them into links.",
-    titleWidthClass: "max-w-[293px]",
-  },
-  {
-    title: "Authentic community presence.",
-    body: "Reddit and industry forums are among the most-cited sources in AI answers, because that's where people go for unfiltered, peer-driven insight. We build genuine, helpful visibility in the communities relevant to your brand — credibility that traditional link building simply can't replicate.",
-    titleWidthClass: "max-w-[334px]",
-  },
-];
-
-interface ServiceCardItem {
-  title: string;
-  subtitle: string;
-  body: string;
-  ctaLabel: string;
-  iconSrc: string;
-  iconWidth: number;
-  iconHeight: number;
-  iconClassName?: string;
-}
-
-interface CompetitorInsightItem {
-  title: string;
-  body: readonly string[];
-  chartSrc: string;
-  chartAlt: string;
-  defaultOpen?: boolean;
-}
-
-const SERVICE_CARDS: readonly ServiceCardItem[] = [
-  {
-    title: "Guest Posting",
-    subtitle: "Sharing Expertise, Building Authority",
-    body: "Your brand's ideas in the right spotlights. Our guest posting services enable you to showcase your expertise, reach new audiences, and secure backlinks to your website. By contributing valuable insights, you establish yourself as a thought leader while reaping the benefits of enhanced SEO.",
-    ctaLabel: "Start Building Authority",
-    iconSrc: "/link-building/imgBusinessUserCurriculum.svg",
-    iconWidth: 28,
-    iconHeight: 33,
-  },
-  {
-    title: "Link Exchanges",
-    subtitle: "Fostering Mutually Beneficial Connections",
-    body: "Strategic partnerships between complementary, non-competing websites that create genuine value on both sides. We identify and manage link exchange opportunities that broaden your reach, strengthen domain authority, and hold up long-term.",
-    ctaLabel: "Grow Your Connections",
-    iconSrc: "/link-building/imgUserFeedbackHeart.svg",
-    iconWidth: 32,
-    iconHeight: 32,
-    iconClassName: "-scale-y-100 rotate-180",
-  },
-  {
-    title: "Niche Edits",
-    subtitle: "Strategically Enhancing Existing Content",
-    body: "We secure contextual placements within already-indexed, high-performing content — putting your brand exactly where their target audience is already engaged. One of the most efficient ways to build authority without starting from scratch.",
-    ctaLabel: "Elevate Your Rankings",
-    iconSrc: "/link-building/imgGroup176769.svg",
-    iconWidth: 34,
-    iconHeight: 33,
-  },
-  {
-    title: "Directory Submissions",
-    subtitle: "Navigating the Online Directory Landscape",
-    body: "Directory submissions involve submitting your website to online directories and listings. We ensure that submissions are made to reputable and relevant directories, enhancing your website's online visibility and authority. This tactic contributes to improved search rankings and local SEO efforts.",
-    ctaLabel: "Improve Local Visibility",
-    iconSrc: "/link-building/imgGroup176770.svg",
-    iconWidth: 32,
-    iconHeight: 30,
-  },
-  {
-    title: "Multilingual Backlinks",
-    subtitle: "Reach New Audiences Across Languages and Borders",
-    body: "Expand your brand reach beyond borders with high-quality backlinks across US, 27+ EU countries, Asian, and other markets. We source niche-relevant placements in the right language, on the right platforms — so your website builds real authority in every market that matters to their growth.",
-    ctaLabel: "Expand Internationally",
-    iconSrc: "/link-building/imgGroup176793.svg",
-    iconWidth: 32,
-    iconHeight: 32,
-  },
-  {
-    title: "Listicle Backlinks",
-    subtitle: "Strategically Enhancing Existing Content",
-    body: "We secure placements within high-traffic listicles and curated roundups — the kind of content readers actively seek out and share. These links drive referral traffic, build brand recognition, therefore directly impacting your AI performance while strengthening your website's authority in its niche.",
-    ctaLabel: "Enhance Your AI presence",
-    iconSrc: "/link-building/imgGroup176769.svg",
-    iconWidth: 34,
-    iconHeight: 33,
-  },
-];
-
-const PROCESS_STEPS = buildProcessSteps([
-  "Contact us to schedule a consultation and learn how our Link Building services can transform your online presence.",
-  "During the initial call, we align on your goals, backlink profile status, and the outcomes you want from a focused link acquisition strategy.",
-  "We gather your current SEO data, target pages, target geographies, and vertical priorities to build the right campaign structure.",
-  "Budgets are scoped based on authority targets, campaign velocity, and the volume of placements required to reach your ranking goals.",
-  "You receive clear strategic guidance, execution priorities, and a measurable roadmap for sustained off-page growth.",
-]);
-
-const COMPETITOR_INSIGHT_ITEMS: readonly CompetitorInsightItem[] = [
-  {
-    title: "Domain Rating Trend Over Time",
-    defaultOpen: true,
-    chartSrc: "/link-building/charts/domain-rating.jpg",
-    chartAlt: "Domain rating changes month-over-month chart",
-    body: [
-      "This chart visualizes the Domain Rating (DR) of yours and your competitor's websites over time, providing insight into how a domain's authority evolves based on its backlink profile.",
-      "Domain Rating (DR) is a key metric that reflects the strength and quantity of a website's backlinks. A higher DR generally indicates better authority and visibility in search engines.",
-      "Tracking these changes month-over-month helps identify trends in a website's SEO performance, such as growth from effective link-building campaigns or declines due to lost backlinks.",
-      "Consistent increases in DR can suggest ongoing successful SEO efforts, while fluctuations may point to temporary issues or opportunities for improvement.",
-      "Monitoring DR changes over time is crucial for assessing the long-term success of SEO strategies and adjusting link-building efforts to maintain or improve a site's authority.",
-    ],
-  },
-  {
-    title: "Link Velocity Changes Month-over-Month",
-    chartSrc: "/link-building/charts/link-velocity.jpg",
-    chartAlt: "Link velocity changes month-over-month chart",
-    body: [
-      "This chart illustrates Link Velocity Changes Month-over-Month, tracking the number of referring domains acquired by yours and your competitor's websites over time. Referring domains represent unique websites linking back, and a higher number typically indicates stronger link-building efforts and potential for improved search visibility.",
-      "A steady increase in referring domains suggests effective link-building strategies, while plateaus or declines may signal the need for strategy adjustments. Websites with rapid growth in referring domains are likely benefiting from increased authority, while slower growth or fluctuations may highlight areas for improvement.",
-      "Monitoring these trends is crucial for evaluating the success of SEO campaigns. By analyzing the link velocity, websites can ensure they are consistently acquiring high-quality backlinks, maintaining competitive authority, and improving their overall performance in search results.",
-      "Regular tracking helps adjust link-building tactics for sustained SEO success.",
-    ],
-  },
-  {
-    title: "Competitive Organic Traffic Predictions for the Next Three Months",
-    chartSrc: "/link-building/charts/competitive-organic-traffic.jpg",
-    chartAlt:
-      "Competitive organic traffic predictions for the next three months chart",
-    body: [
-      "This chart tracks the Organic Traffic changes for your website and your competitors, using predictive models to estimate future monthly traffic based on current SEO performance.",
-      "Organic Traffic reflects the number of visitors driven to a website through search engines, correlating directly with the effectiveness of its SEO strategies and overall visibility.",
-      "Monitoring predicted traffic trends helps evaluate the potential success of ongoing SEO efforts, with growth indicating effective keyword targeting and content optimization.",
-      "Sudden spikes or declines in organic traffic predictions may indicate algorithm changes, content adjustments, or market shifts, highlighting areas for strategic refinement.",
-      "Keeping track of traffic predictions is essential for planning SEO strategies and maintaining long-term search performance success.",
-    ],
-  },
-  {
-    title:
-      "Your Website's Organic Traffic Predictions for the Next Three Months",
-    chartSrc: "/link-building/charts/website-organic-traffic.jpg",
-    chartAlt:
-      "Your website organic traffic predictions for the next three months chart",
-    body: [
-      "This chart predicts future Organic Traffic for your website, showing best-case, worst-case, and trend scenarios using predictive modeling based on SEO performance.",
-      "Organic Traffic Trend: A steady projection showing moderate growth in traffic based on current SEO strategies.",
-      "Best Case Scenario: Indicates the highest possible growth, assuming optimal SEO performance and success in areas like keyword optimization, backlink acquisition, and content improvements.",
-      "Worst Case Scenario: Reflects the potential for traffic stagnation or decline, possibly due to ineffective SEO strategies, competition, or external factors like search engine algorithm updates.",
-      "Tracking these traffic predictions is crucial for evaluating the effectiveness of your SEO strategies and adjusting efforts proactively. Regular monitoring allows you to prepare for potential growth or downturns, ensuring your strategy remains aligned with changing market trends and SEO developments.",
-    ],
-  },
-] as const;
-
-const FAQ_ITEMS = [
-  {
-    question: "What is off-page SEO?",
-    answer:
-      "Off-page SEO involves strategies taken outside your website to improve authority, trust, and visibility in search engines. It includes tactics like link building, digital PR, brand mentions, and partnerships that signal credibility to search engines.",
-    defaultOpen: true,
-  },
-  {
-    question: "How does off-page SEO contribute to search engine rankings?",
-    answer:
-      "Off-page SEO builds your website's authority and trustworthiness through external signals like backlinks, brand mentions, and social engagement. Search engines interpret these signals as endorsements of your content quality, which directly influences how high your pages rank for competitive keywords.",
-    defaultOpen: false,
-  },
-  {
-    question: "What is the importance of link building in off-page SEO?",
-    answer:
-      "Link building is the cornerstone of off-page SEO because backlinks remain one of the strongest ranking factors in search algorithms. High-quality links from authoritative, relevant websites pass trust and authority to your domain, helping your pages outrank competitors and sustain long-term organic visibility.",
-    defaultOpen: false,
-  },
-  {
-    question: "How does guest posting benefit my website?",
-    answer:
-      "Guest posting places your content on established industry publications, exposing your brand to new audiences while earning authoritative backlinks. This dual benefit drives referral traffic directly from the host site and strengthens your domain authority, which improves rankings across your entire website.",
-    defaultOpen: false,
-  },
-  {
-    question: "Are all types of backlinks beneficial for SEO?",
-    answer:
-      "Not all backlinks are created equal. Links from low-quality, spammy, or irrelevant websites can actually harm your rankings and may trigger search engine penalties. Effective link building focuses on earning contextual, editorially placed links from trusted domains within your industry or niche.",
-    defaultOpen: false,
-  },
-  {
-    question: "How do niche edits contribute to off-page SEO?",
-    answer:
-      "Niche edits involve placing your link within existing, already-indexed content on relevant websites, which means the link benefits from the page's established authority immediately. This approach provides a natural, contextual backlink that search engines value highly, often delivering faster ranking improvements than newly published content.",
-    defaultOpen: false,
-  },
-] as const;
 
 interface LinkBuildingPageProps {
+  content: LinkBuildingContent;
+  /** FAQ documents from the "FAQ Items" collection (used when the page has no inline FAQ). */
   cmsFaqItems?: SanityFaqItem[];
 }
 
-export default function LinkBuildingPage({
-  cmsFaqItems,
-}: LinkBuildingPageProps) {
-  const faqItems = cmsFaqItems?.length
-    ? cmsFaqItems.map((f, i) => ({
-        question: f.question,
-        answer: f.answer,
-        defaultOpen: i === 0,
-      }))
-    : FAQ_ITEMS;
+export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingPageProps) {
+  const { hero, whyBacklinks, howWeBuild, solutions, competitorInsights, whyChoose, faq } = content;
+
+  const faqSource = faq.items.length
+    ? faq.items
+    : cmsFaqItems?.length
+      ? cmsFaqItems.map((f) => ({ question: f.question, answer: f.answer }))
+      : [];
+  const faqItems = faqSource.map((item, index) => ({ ...item, defaultOpen: index === 0 }));
 
   return (
     <>
       <section className="pt-[60px] lg:pt-[120px]" id="link-building-home">
         <div className={PAGE_SHELL_CLASS}>
-          <h1 className="type-h1 mx-auto max-w-[294px] text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:max-w-[857px]">
-            Link Building Services
+          <h1 className={`type-h1 mx-auto max-w-[294px] text-center lg:max-w-[857px] ${TEXT}`}>
+            <GradientHeading highlightClassName="gradient-text-brand-services" segments={hero.title} />
           </h1>
 
-          <p className="type-paragraph mx-auto mt-5 max-w-[220px] text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:max-w-[688px]">
-            From Authority to Visibility. From Rankings to Revenue - One Link at
-            a Time.
+          <p className={`type-paragraph mx-auto mt-5 max-w-[220px] text-center lg:max-w-[688px] ${TEXT}`}>
+            {hero.tagline}
           </p>
 
           <div className="relative mt-[60px] overflow-hidden rounded-[30px] bg-[linear-gradient(73.9149deg,var(--color-hr-dark)_35.359%,var(--color-case-art-maudsch)_142.03%)] dark:opacity-90 lg:mt-[120px] lg:h-[684px] lg:rounded-[40px] lg:bg-[linear-gradient(52.4159deg,var(--color-hr-dark)_35.359%,var(--color-case-art-maudsch)_142.03%)]">
             <div className="relative z-10 flex flex-col items-center px-[15px] pb-[20px] pt-[60px] text-center text-[var(--color-hr-pure-white)] lg:h-full lg:items-start lg:px-[70px] lg:pt-[120px] lg:text-left">
               <div className="mx-auto w-full max-w-[298px] lg:mx-0 lg:max-w-[561px]">
-                <SectionLabel className="text-[var(--color-hr-pure-white)]">
-                  / Network /
-                </SectionLabel>
+                <SectionLabel className="text-[var(--color-hr-pure-white)]">{hero.label}</SectionLabel>
                 <h2 className="type-h2 mx-auto mt-5 w-full max-w-[254px] text-center tracking-[-1.04px] text-[var(--color-hr-pure-white)] lg:mx-0 lg:max-w-[561px] lg:text-left">
-                  Strengthen Your Off-Page SEO for Long-Term Growth
+                  <GradientHeading highlightClassName="gradient-text-brand-services" segments={hero.heading} />
                 </h2>
 
-                <p className="type-paragraph mx-auto mt-5 w-full max-w-[274px] text-center text-[var(--color-hr-pure-white)] lg:mx-0 lg:mt-[40px] lg:max-w-[484px] lg:text-left">
-                  Link building is key to{" "}
-                  <span className="font-bold">
-                    improving your website&apos;s keyword rankings and AI
-                    visibility
-                  </span>{" "}
-                  faster than any other SEO tactic. By securing high-quality
-                  backlinks, you&apos;ll drive more organic traffic and increase
-                  domain authority in the blink of an eye.
-                </p>
+                <div className="mx-auto mt-5 w-full max-w-[274px] text-center text-[var(--color-hr-pure-white)] lg:mx-0 lg:mt-[40px] lg:max-w-[484px] lg:text-left">
+                  <RichParagraphs blocks={hero.body} paragraphClassName="text-[var(--color-hr-pure-white)]" />
+                </div>
 
                 <AppLink
                   className="type-cta motion-interactive motion-interactive-press mt-5 inline-flex h-[45px] w-full items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)] lg:mt-4 lg:w-auto"
-                  href="/contact"
+                  href={hero.ctaUrl}
                   motionPreset="none"
                 >
-                  Book Link Building Consultation
+                  {hero.ctaLabel}
                   <GradientArrowUpRightIcon className="size-[10px]" />
                 </AppLink>
               </div>
             </div>
 
-            <div className="pointer-events-none relative h-[331px] w-full overflow-hidden lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:top-0 lg:h-auto">
-              <Image
-                alt="Classical statue"
-                className="absolute left-[3.41%] top-[-11.48%] h-[132.66%] w-[93.19%] max-w-none object-cover lg:left-[48.24%] lg:top-[-9.3%] lg:h-[122.57%] lg:w-[47.61%]"
-                fetchPriority="high"
-                height={2304}
-                priority
-                sizes="(min-width: 1024px) 48vw, 350px"
-                src={HERO_STATUE_SRC}
-                width={1858}
-              />
-            </div>
+            {hero.image ? (
+              <div className="pointer-events-none relative h-[331px] w-full overflow-hidden lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:top-0 lg:h-auto">
+                <Image
+                  alt={hero.image.alt}
+                  className="absolute left-[3.41%] top-[-11.48%] h-[132.66%] w-[93.19%] max-w-none object-cover lg:left-[48.24%] lg:top-[-9.3%] lg:h-[122.57%] lg:w-[47.61%]"
+                  fetchPriority="high"
+                  height={hero.image.height}
+                  priority
+                  sizes="(min-width: 1024px) 48vw, 350px"
+                  src={hero.image.src}
+                  width={hero.image.width}
+                />
+              </div>
+            ) : null}
           </div>
         </div>
       </section>
@@ -355,41 +141,25 @@ export default function LinkBuildingPage({
             </div>
 
             <div className="relative z-10 flex flex-col items-start gap-[40px] lg:flex-row lg:gap-[69px]">
-              <Image
-                alt="Marble-carved search bar and results list"
-                // WHY: 581px is the 1440 design width; let it shrink between lg and xl so the text column keeps fitting.
-                className="h-auto w-full max-w-[581px] lg:w-[46%] lg:shrink-0 xl:w-[581px]"
-                height={1081}
-                sizes="(min-width: 1024px) 581px, 100vw"
-                src={BACKLINKS_CLIPBOARD_SRC}
-                width={1735}
-              />
+              {whyBacklinks.image ? (
+                <Image
+                  alt={whyBacklinks.image.alt}
+                  // WHY: 581px is the 1440 design width; let it shrink between lg and xl so the text column keeps fitting.
+                  className="h-auto w-full max-w-[581px] lg:w-[46%] lg:shrink-0 xl:w-[581px]"
+                  height={whyBacklinks.image.height}
+                  sizes="(min-width: 1024px) 581px, 100vw"
+                  src={whyBacklinks.image.src}
+                  width={whyBacklinks.image.width}
+                />
+              ) : null}
               <div className="min-w-0 lg:max-w-[612px] lg:flex-1">
                 <h2 className="type-h2 max-w-[542px] tracking-[-1.04px] text-[var(--color-hr-pure-white)]">
-                  Why Backlinks Still Rule{" "}
-                  <GradientText className="gradient-text-brand-about-heading">
-                    Both Search and AI
-                  </GradientText>
+                  <GradientHeading highlightClassName="gradient-text-brand-about-heading" segments={whyBacklinks.heading} />
                 </h2>
                 <div className="type-paragraph mt-[40px] space-y-5 text-[var(--color-text-inverse-95)]">
-                  <p>
-                    Backlinks have topped Google&apos;s ranking factors for over
-                    a decade — and that hasn&apos;t changed. Every quality link
-                    is a signal of trust that lifts your rankings faster than
-                    any other tactic.
-                  </p>
-                  <p>
-                    Today those same signals shape AI visibility too: ChatGPT,
-                    Perplexity, and AI Overviews cite the sources they trust
-                    most, and trust is built on links.
-                  </p>
-                  <p>
-                    The takeaway is simple: strong backlinks lift your rankings
-                    and help your brand get cited in the AI answers your
-                    customers now read first. That&apos;s exactly what our link
-                    building services are built to deliver. Get the backlinks
-                    right, and you win in search and in AI answers.
-                  </p>
+                  {whyBacklinks.paragraphs.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
                 </div>
               </div>
             </div>
@@ -403,102 +173,56 @@ export default function LinkBuildingPage({
           <div className="rounded-[40px] bg-[var(--color-hr-off-white)] px-5 py-[60px] dark:bg-[var(--color-bg-dark)] sm:px-8 lg:px-[70px] lg:py-[120px]">
             <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-5">
               <div className="lg:w-[630px] lg:shrink-0">
-                <SectionLabel>/ Link Building /</SectionLabel>
-                <h2 className="type-h2 mt-5 tracking-[-1.04px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                  How We Build Links:
-                  <br className="hidden lg:block" aria-hidden />{" "}
-                  <GradientText className="gradient-text-brand-services">
-                    One Motion, Two Systems
-                  </GradientText>
+                <SectionLabel>{howWeBuild.label}</SectionLabel>
+                <h2 className={`type-h2 mt-5 tracking-[-1.04px] ${TEXT}`}>
+                  <GradientHeading highlightClassName="gradient-text-brand-services" segments={howWeBuild.heading} />
                 </h2>
               </div>
-              <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:max-w-[565px]">
-                Modern link building has to serve two audiences at once —
-                Google&apos;s rankings and the AI systems your customers now ask
-                first. We focus on the tactics that do both in a single motion.
-              </p>
+              <p className={`type-paragraph lg:max-w-[565px] ${TEXT}`}>{howWeBuild.intro}</p>
             </div>
 
             <div className="mt-[70px] grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {HOW_WE_BUILD_CARDS.map((card) => (
+              {howWeBuild.cards.map((card) => (
                 <article
                   className="flex flex-col gap-[30px] rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] p-[30px] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] xl:min-h-[400px]"
                   key={card.title}
                 >
-                  <h3
-                    className={cn(
-                      "type-h3 tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
-                      card.titleWidthClass,
-                    )}
-                  >
-                    {card.title}
-                  </h3>
-                  <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                    {card.body}
-                  </p>
+                  <h3 className={`type-h3 max-w-[336px] tracking-[-0.64px] ${TEXT}`}>{card.title}</h3>
+                  <p className={`type-paragraph ${TEXT}`}>{card.body}</p>
                 </article>
               ))}
             </div>
 
-            <p className="type-paragraph mt-[70px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              Every tactic is chosen to do double duty: build the authority that
-              lifts your Google rankings today, and the presence that makes AI
-              name your brand tomorrow. If you&apos;re ready to dominate
-              competitive keywords with smarter SEO investment, we&apos;re the
-              link building partner built to get you there.
-            </p>
+            <p className={`type-paragraph mt-[70px] ${TEXT}`}>{howWeBuild.closing}</p>
           </div>
         </div>
       </section>
 
       <section className="pt-[10px] lg:pt-[10px]" id="link-building-solutions">
         <div className={PAGE_SHELL_CLASS}>
-          <div className="rounded-[40px] bg-[var(--color-hr-off-white)] dark:bg-[var(--color-bg-dark)] px-5 pb-[70px] pt-[60px] lg:pt-[120px] sm:px-8 lg:px-[70px]">
-            <SectionLabel>/ Solutions /</SectionLabel>
-            <h2 className="type-h2 mt-5 max-w-[500px] tracking-[-1.04px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              <GradientText className="gradient-text-brand-services">
-                White Hat
-              </GradientText>{" "}
-              Link Building Services
+          <div className="rounded-[40px] bg-[var(--color-hr-off-white)] px-5 pb-[70px] pt-[60px] dark:bg-[var(--color-bg-dark)] sm:px-8 lg:px-[70px] lg:pt-[120px]">
+            <SectionLabel>{solutions.label}</SectionLabel>
+            <h2 className={`type-h2 mt-5 max-w-[500px] tracking-[-1.04px] ${TEXT}`}>
+              <GradientHeading highlightClassName="gradient-text-brand-services" segments={solutions.heading} />
             </h2>
 
             <div className="mt-[80px] grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
-              {SERVICE_CARDS.map((card) => (
+              {solutions.cards.map((card) => (
                 <article
-                  className="flex h-[588px] flex-col rounded-[40px] border border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)] px-[30px] pb-[30px] pt-[30px]"
+                  className="flex h-[588px] flex-col rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] px-[30px] pb-[30px] pt-[30px] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]"
                   key={card.title}
                 >
-                  <span className="inline-flex size-[50px] items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)]">
-                    <Image
-                      alt=""
-                      aria-hidden
-                      className={cn(
-                        "block dark:brightness-0 dark:invert",
-                        card.iconClassName,
-                      )}
-                      height={card.iconHeight}
-                      src={card.iconSrc}
-                      style={{
-                        height: `${card.iconHeight}px`,
-                        width: `${card.iconWidth}px`,
-                      }}
-                      width={card.iconWidth}
-                    />
-                  </span>
+                  <IconTile icon={card.icon} />
 
-                  <h3 className="type-h3 mt-[15px] min-h-[64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                    {card.title}
-                  </h3>
+                  <h3 className={`type-h3 mt-[15px] min-h-[64px] ${TEXT}`}>{card.title}</h3>
                   <p className="type-paragraph mt-[10px] min-h-[48px] gradient-text-brand gradient-text-brand-services">
                     {card.subtitle}
                   </p>
-                  <p className="type-paragraph mt-[30px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                    {card.body}
-                  </p>
+                  <p className={`type-paragraph mt-[30px] ${TEXT}`}>{card.body}</p>
 
                   <AppLink
-                    href="/contact"
-                    className="type-cta mt-auto inline-flex h-[45px] w-fit min-w-[163px] items-center justify-center gap-2 self-start rounded-[var(--radius-button)] whitespace-nowrap border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] hover:bg-[var(--color-hr-off-white)] dark:hover:bg-[var(--color-surface-inverse-10)]"
+                    className={`type-cta mt-auto inline-flex h-[45px] w-fit min-w-[163px] items-center justify-center gap-2 self-start whitespace-nowrap rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 hover:bg-[var(--color-hr-off-white)] dark:hover:bg-[var(--color-surface-inverse-10)] ${TEXT}`}
+                    href={card.ctaUrl}
                   >
                     {card.ctaLabel}
                     <GradientArrowUpRightIcon className="size-[10px]" />
@@ -507,22 +231,12 @@ export default function LinkBuildingPage({
               ))}
             </div>
 
-            <section className="relative mt-[120px] h-[382px] overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)]">
-              <Image
-                alt=""
-                aria-hidden
-                className="pointer-events-none object-cover dark:hidden"
-                fill
-                sizes="1280px"
-                src={CTA_BANNER_BG_SRC}
-              />
+            <section className="relative mt-[120px] h-[382px] overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]">
+              <Image alt="" aria-hidden className="pointer-events-none object-cover dark:hidden" fill sizes="1280px" src={CTA_BANNER_BG_SRC} />
 
               <div className="relative z-10 px-[30px] pb-[30px] pt-[51px]">
-                <h3 className="type-h3 max-w-[884px] pb-[4px] leading-[1.3] tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                  The Fastest and{" "}
-                  <GradientText className="gradient-text-brand-about-us-process-title">
-                    Most Effective way to Get Started
-                  </GradientText>
+                <h3 className={`type-h3 max-w-[884px] pb-[4px] leading-[1.3] tracking-[-0.64px] ${TEXT}`}>
+                  <GradientHeading highlightClassName="gradient-text-brand-about-us-process-title" segments={solutions.banner.heading} />
                 </h3>
 
                 <div className="mt-[20px] lg:mt-[30px]">
@@ -531,16 +245,16 @@ export default function LinkBuildingPage({
                     descriptionClassName="type-paragraph mt-[63px] max-w-[488px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]"
                     mutedPillClassName="type-paragraph whitespace-nowrap rounded-[100px] bg-[var(--color-hr-off-white)] dark:bg-[var(--color-surface-inverse-10)] px-[14px] py-[6px] text-[18px] leading-[24px] text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-60)] transition-colors hover:text-[var(--color-hr-dark)] dark:hover:text-[var(--color-text-inverse)]"
                     rowClassName="flex flex-wrap items-center gap-[10px] pb-1 min-[1280px]:flex-nowrap"
-                    steps={PROCESS_STEPS}
+                    steps={solutions.banner.processSteps}
                   />
                 </div>
 
                 <AppLink
-                  className="type-cta motion-interactive motion-interactive-press mt-[30px] inline-flex h-[45px] w-full items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:mt-[40px] lg:w-[222px]"
-                  href="/contact"
+                  className={`type-cta motion-interactive motion-interactive-press mt-[30px] inline-flex h-[45px] w-full items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent hover:bg-[var(--color-hr-off-white)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:mt-[40px] lg:w-auto lg:min-w-[222px] lg:px-5 ${TEXT}`}
+                  href={solutions.banner.ctaUrl}
                   motionPreset="none"
                 >
-                  Book a Discovery Call
+                  {solutions.banner.ctaLabel}
                   <GradientArrowUpRightIcon className="size-[10px]" />
                 </AppLink>
               </div>
@@ -549,57 +263,44 @@ export default function LinkBuildingPage({
         </div>
       </section>
 
-      <section
-        className="pt-[60px] lg:pt-[120px]"
-        id="link-building-competitor-insights"
-      >
+      <section className="pt-[60px] lg:pt-[120px]" id="link-building-competitor-insights">
         <div className={PAGE_SHELL_CLASS}>
           <div className={CONTENT_SHELL_CLASS}>
-            <SectionLabel>/ Competitor Insights /</SectionLabel>
-            <h2 className="type-h2 mt-5 max-w-[542px] tracking-[-1.04px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              Discover Opportunities{" "}
-              <GradientText className="gradient-text-brand-services">
-                For Growth
-              </GradientText>
+            <SectionLabel>{competitorInsights.label}</SectionLabel>
+            <h2 className={`type-h2 mt-5 max-w-[542px] tracking-[-1.04px] ${TEXT}`}>
+              <GradientHeading highlightClassName="gradient-text-brand-services" segments={competitorInsights.heading} />
             </h2>
 
             <div className="mt-[80px] space-y-[10px]">
-              {COMPETITOR_INSIGHT_ITEMS.map((item) => (
+              {competitorInsights.items.map((item, index) => (
                 <details
-                  className="group relative overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)]"
+                  className="group relative overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]"
                   key={item.title}
                   name="link-building-competitor-insights"
-                  open={item.defaultOpen}
+                  open={index === 0}
                 >
-                  <Image
-                    alt=""
-                    aria-hidden
-                    className="pointer-events-none object-cover group-open:hidden dark:hidden"
-                    fill
-                    sizes="1280px"
-                    src={COLLAPSED_ROW_BG_SRC}
-                  />
+                  <Image alt="" aria-hidden className="pointer-events-none object-cover group-open:hidden dark:hidden" fill sizes="1280px" src={COLLAPSED_ROW_BG_SRC} />
 
                   <summary className="relative z-10 flex cursor-pointer list-none items-center justify-between gap-5 px-[30px] py-[30px] [&::-webkit-details-marker]:hidden">
-                    <h3 className="type-h3 tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                      {item.title}
-                    </h3>
+                    <h3 className={`type-h3 tracking-[-0.64px] ${TEXT}`}>{item.title}</h3>
                     <FaqPlusIcon className="size-[18px] shrink-0 transition-transform duration-200 group-open:-rotate-45 dark:text-[var(--color-text-inverse)]" />
                   </summary>
 
                   <div className="relative z-10 border-t border-[var(--color-hr-light-grey)] px-[30px] pb-[30px] pt-[30px] dark:border-[var(--color-border-inverse-10)]">
                     <div className="grid gap-[30px] xl:grid-cols-[520px_1fr] xl:items-start">
-                      <Image
-                        alt={item.chartAlt}
-                        className="h-auto w-full rounded-[20px]"
-                        height={441}
-                        sizes="(min-width: 1280px) 520px, 100vw"
-                        src={item.chartSrc}
-                        width={600}
-                      />
+                      {item.chart ? (
+                        <Image
+                          alt={item.chart.alt}
+                          className="h-auto w-full rounded-[20px]"
+                          height={item.chart.height}
+                          sizes="(min-width: 1280px) 520px, 100vw"
+                          src={item.chart.src}
+                          width={item.chart.width}
+                        />
+                      ) : null}
 
-                      <div className="type-paragraph space-y-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                        {item.body.map((paragraph) => (
+                      <div className={`type-paragraph space-y-5 ${TEXT}`}>
+                        {item.paragraphs.map((paragraph) => (
                           <p key={paragraph}>{paragraph}</p>
                         ))}
                       </div>
@@ -613,20 +314,23 @@ export default function LinkBuildingPage({
       </section>
 
       <ServiceWhyChoose
+        ctaHref={whyChoose.ctaUrl}
         ctaIcon={<GradientArrowUpRightIcon className="size-[10px]" />}
+        ctaLabel={whyChoose.ctaLabel}
+        ctaTitle={whyChoose.ctaTitle}
         descriptionBaseClassName="type-paragraph mt-[10px] text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]"
         gridClassName="mt-[80px] grid grid-cols-1 gap-y-[56px] lg:grid-cols-3 lg:gap-x-[110px]"
-        heading={
-          <>
-            Why Choose{" "}
-            <GradientText className="gradient-text-brand-trust">
-              Heroic Rankings?
-            </GradientText>
-          </>
-        }
+        heading={<GradientHeading highlightClassName="gradient-text-brand-trust" segments={whyChoose.heading} />}
         iconBaseClassName="size-[50px] dark:brightness-0 dark:invert"
-        items={WHY_CHOOSE_ITEMS}
-        outerClassName="rounded-[40px] bg-[var(--color-hr-off-white)] dark:bg-[var(--color-bg-dark)] px-5 pb-[96px] pt-[96px] sm:px-8 lg:px-[70px] lg:pb-[120px] lg:pt-[120px]"
+        items={whyChoose.items.map((item) => ({
+          title: item.title,
+          description: item.description,
+          iconSrc: item.icon?.src ?? "",
+          iconWidth: item.icon?.width ?? 20,
+          iconHeight: item.icon?.height ?? 20,
+        }))}
+        label={whyChoose.label}
+        outerClassName="rounded-[40px] bg-[var(--color-hr-off-white)] px-5 pb-[96px] pt-[96px] dark:bg-[var(--color-bg-dark)] sm:px-8 lg:px-[70px] lg:pb-[120px] lg:pt-[120px]"
         sectionClassName="pt-[10px] lg:pt-[10px]"
         sectionId="link-building-why-heroic"
       />
@@ -637,10 +341,7 @@ export default function LinkBuildingPage({
         contentShellClass={CONTENT_SHELL_CLASS}
         heading={
           <>
-            <GradientText className="gradient-text-brand-case">
-              Success
-            </GradientText>{" "}
-            Stories
+            <GradientText className="gradient-text-brand-case">Success</GradientText> Stories
           </>
         }
         pageShellClass={PAGE_SHELL_CLASS}
@@ -650,18 +351,9 @@ export default function LinkBuildingPage({
 
       <ServiceFaq
         answerClassName="px-[30px] pb-[30px] pr-[60px] sm:pr-[90px] lg:pr-[223px]"
-        containerClassName="relative mt-[80px] overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)]"
-        containerExtra={
-          <Image
-            alt=""
-            aria-hidden
-            className="pointer-events-none object-cover dark:hidden"
-            fill
-            sizes="1280px"
-            src={FAQ_BG_SRC}
-          />
-        }
-        detailsClassName="group relative z-10 border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] open:bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)] dark:open:bg-[var(--color-bg-dark)]"
+        containerClassName="relative mt-[80px] overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]"
+        containerExtra={<Image alt="" aria-hidden className="pointer-events-none object-cover dark:hidden" fill sizes="1280px" src={FAQ_BG_SRC} />}
+        detailsClassName="group relative z-10 border-[var(--color-hr-light-grey)] open:bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] dark:open:bg-[var(--color-bg-dark)]"
         detailsExtra={(index) =>
           index !== 0 ? (
             <Image
@@ -674,7 +366,7 @@ export default function LinkBuildingPage({
             />
           ) : null
         }
-        headingClassName="type-h3 tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]"
+        headingClassName={`type-h3 tracking-[-0.64px] ${TEXT}`}
         items={faqItems}
         renderIcon={
           <span className="inline-flex size-[18px] items-center justify-center">

@@ -15,9 +15,9 @@ import {
   type ContentImage,
   type HeadingSegment,
   type RichBlock,
-} from "@/components/pages/shared/page-content";
+} from "../shared/page-content.ts";
 
-export type { ContentImage, HeadingSegment, RichBlock } from "@/components/pages/shared/page-content";
+export type { ContentImage, HeadingSegment, RichBlock } from "../shared/page-content.ts";
 
 export interface PartnershipContent {
   hero: { heading: HeadingSegment[]; intro: string; image: ContentImage | null };

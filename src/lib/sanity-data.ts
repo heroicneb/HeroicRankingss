@@ -18,7 +18,9 @@ import {
   FAQ_BY_SERVICE_QUERY,
   LEGAL_PAGE_BY_SLUG_QUERY,
   PARTNER_LOGOS_QUERY,
+  LINK_BUILDING_PAGE_QUERY,
   PARTNERSHIP_PAGE_QUERY,
+  REDDIT_MARKETING_PAGE_QUERY,
   PODCAST_EPISODES_QUERY,
   PODCAST_EPISODE_BY_SLUG_QUERY,
   PODCAST_EPISODE_SLUGS_QUERY,
@@ -30,12 +32,19 @@ import {
   DEFAULT_PARTNERSHIP_CONTENT,
   type PartnershipContent,
 } from "@/components/pages/partnership/partnership-content";
+import {
+  DEFAULT_LINK_BUILDING_CONTENT,
+  type LinkBuildingContent,
+} from "@/components/pages/link-building/link-building-content";
+import {
+  DEFAULT_REDDIT_MARKETING_CONTENT,
+  type RedditMarketingContent,
+} from "@/components/pages/reddit-marketing/reddit-marketing-content";
 import type { RichBlock } from "@/components/pages/shared/page-content";
 import {
   faqEntries,
   headingSegments,
   listOr,
-  optionalText,
   pageImage,
   text,
   type SanityRawPageImage,
@@ -1366,4 +1375,227 @@ export async function getServicePage(
         heroImageUrl: imageUrl(cs.heroImage, 800),
       })),
   };
+}
+
+// ---------------------------------------------------------------------------
+// Fixed-section service pages
+// ---------------------------------------------------------------------------
+
+type RawHeading = PortableTextBlock[] | null;
+interface RawIconItem { _key: string; title?: string | null; description?: string | null; icon?: SanityRawPageImage | null }
+interface RawFaq { items?: Array<{ question?: string | null; answer?: string | null }> | null }
+interface RawSeoPage { seo?: SanitySeo | null }
+
+const seoOf = (raw: RawSeoPage) =>
+  raw.seo ? { metaTitle: raw.seo.metaTitle ?? null, metaDescription: raw.seo.metaDescription ?? null } : null;
+
+interface SanityRawLinkBuildingPage extends RawSeoPage {
+  _id: string;
+  hero?: {
+    title?: RawHeading; tagline?: string | null; label?: string | null; heading?: RawHeading;
+    body?: RichBlock[] | null; ctaLabel?: string | null; ctaUrl?: string | null; image?: SanityRawPageImage | null;
+  } | null;
+  whyBacklinks?: { heading?: RawHeading; paragraphs?: string[] | null; image?: SanityRawPageImage | null } | null;
+  howWeBuild?: {
+    label?: string | null; heading?: RawHeading; intro?: string | null;
+    cards?: Array<{ _key: string; title?: string | null; body?: string | null }> | null; closing?: string | null;
+  } | null;
+  solutions?: {
+    label?: string | null; heading?: RawHeading;
+    cards?: Array<{ _key: string; title?: string | null; subtitle?: string | null; body?: string | null; ctaLabel?: string | null; ctaUrl?: string | null; icon?: SanityRawPageImage | null }> | null;
+    banner?: { heading?: RawHeading; processSteps?: Array<{ _key: string; label?: string | null; description?: string | null }> | null; ctaLabel?: string | null; ctaUrl?: string | null } | null;
+  } | null;
+  competitorInsights?: {
+    label?: string | null; heading?: RawHeading;
+    items?: Array<{ _key: string; title?: string | null; paragraphs?: string[] | null; chart?: SanityRawPageImage | null }> | null;
+  } | null;
+  whyChoose?: { label?: string | null; heading?: RawHeading; items?: RawIconItem[] | null; ctaTitle?: string | null; ctaLabel?: string | null; ctaUrl?: string | null } | null;
+  faq?: RawFaq | null;
+}
+
+export interface SanityLinkBuildingPage {
+  _id: string;
+  content: LinkBuildingContent;
+  seo: { metaTitle: string | null; metaDescription: string | null } | null;
+}
+
+export async function getLinkBuildingPage(): Promise<SanityLinkBuildingPage | null> {
+  const data = await client.fetch(LINK_BUILDING_PAGE_QUERY, {}, { next: { tags: ["linkBuildingPage"], revalidate: false } });
+  if (!data) return null;
+  const raw = data as SanityRawLinkBuildingPage;
+  const d = DEFAULT_LINK_BUILDING_CONTENT;
+
+  const content: LinkBuildingContent = {
+    hero: {
+      title: headingSegments(raw.hero?.title, d.hero.title),
+      tagline: text(raw.hero?.tagline, d.hero.tagline),
+      label: text(raw.hero?.label, d.hero.label),
+      heading: headingSegments(raw.hero?.heading, d.hero.heading),
+      body: raw.hero?.body?.length ? raw.hero.body : d.hero.body,
+      ctaLabel: text(raw.hero?.ctaLabel, d.hero.ctaLabel),
+      ctaUrl: text(raw.hero?.ctaUrl, d.hero.ctaUrl),
+      image: pageImage(raw.hero?.image, d.hero.image),
+    },
+    whyBacklinks: {
+      heading: headingSegments(raw.whyBacklinks?.heading, d.whyBacklinks.heading),
+      paragraphs: raw.whyBacklinks?.paragraphs?.length ? raw.whyBacklinks.paragraphs : d.whyBacklinks.paragraphs,
+      image: pageImage(raw.whyBacklinks?.image, d.whyBacklinks.image),
+    },
+    howWeBuild: {
+      label: text(raw.howWeBuild?.label, d.howWeBuild.label),
+      heading: headingSegments(raw.howWeBuild?.heading, d.howWeBuild.heading),
+      intro: text(raw.howWeBuild?.intro, d.howWeBuild.intro),
+      cards: listOr(raw.howWeBuild?.cards, d.howWeBuild.cards, (c) => ({ title: c.title ?? "", body: c.body ?? "" })),
+      closing: text(raw.howWeBuild?.closing, d.howWeBuild.closing),
+    },
+    solutions: {
+      label: text(raw.solutions?.label, d.solutions.label),
+      heading: headingSegments(raw.solutions?.heading, d.solutions.heading),
+      cards: listOr(raw.solutions?.cards, d.solutions.cards, (c, i) => ({
+        title: c.title ?? "",
+        subtitle: c.subtitle ?? "",
+        body: c.body ?? "",
+        ctaLabel: text(c.ctaLabel, d.solutions.cards[i]?.ctaLabel ?? "Get Started"),
+        ctaUrl: text(c.ctaUrl, "/contact"),
+        icon: pageImage(c.icon, d.solutions.cards[i]?.icon ?? null),
+      })),
+      banner: {
+        heading: headingSegments(raw.solutions?.banner?.heading, d.solutions.banner.heading),
+        processSteps: listOr(raw.solutions?.banner?.processSteps, d.solutions.banner.processSteps, (s) => ({ label: s.label ?? "", description: s.description ?? "" })),
+        ctaLabel: text(raw.solutions?.banner?.ctaLabel, d.solutions.banner.ctaLabel),
+        ctaUrl: text(raw.solutions?.banner?.ctaUrl, d.solutions.banner.ctaUrl),
+      },
+    },
+    competitorInsights: {
+      label: text(raw.competitorInsights?.label, d.competitorInsights.label),
+      heading: headingSegments(raw.competitorInsights?.heading, d.competitorInsights.heading),
+      items: listOr(raw.competitorInsights?.items, d.competitorInsights.items, (item, i) => ({
+        title: item.title ?? "",
+        paragraphs: item.paragraphs ?? [],
+        chart: pageImage(item.chart, d.competitorInsights.items[i]?.chart ?? null),
+      })),
+    },
+    whyChoose: {
+      label: text(raw.whyChoose?.label, d.whyChoose.label),
+      heading: headingSegments(raw.whyChoose?.heading, d.whyChoose.heading),
+      items: listOr(raw.whyChoose?.items, d.whyChoose.items, (item, i) => ({
+        title: item.title ?? "",
+        description: item.description ?? "",
+        icon: pageImage(item.icon, d.whyChoose.items[i]?.icon ?? null),
+      })),
+      ctaTitle: text(raw.whyChoose?.ctaTitle, d.whyChoose.ctaTitle),
+      ctaLabel: text(raw.whyChoose?.ctaLabel, d.whyChoose.ctaLabel),
+      ctaUrl: text(raw.whyChoose?.ctaUrl, d.whyChoose.ctaUrl),
+    },
+    faq: { items: faqEntries(raw.faq?.items, d.faq.items) },
+  };
+
+  return { _id: raw._id, content, seo: seoOf(raw) };
+}
+
+interface SanityRawRedditMarketingPage extends RawSeoPage {
+  _id: string;
+  hero?: { heading?: RawHeading; subtitle?: string | null; tagline?: string | null; ctaLabel?: string | null; ctaUrl?: string | null; image?: SanityRawPageImage | null } | null;
+  whyDifferent?: { label?: string | null; heading?: RawHeading; intro?: string | null; items?: RawIconItem[] | null } | null;
+  opportunity?: { label?: string | null; heading?: RawHeading; intro?: string | null; cards?: RawIconItem[] | null } | null;
+  whatWeDo?: { label?: string | null; heading?: RawHeading; intro?: string | null; cards?: Array<RawIconItem & { subtitle?: string | null }> | null } | null;
+  serviceMenu?: { label?: string | null; heading?: RawHeading; cards?: Array<{ _key: string; title?: string | null; items?: string[] | null }> | null } | null;
+  whatYouWin?: { label?: string | null; heading?: RawHeading; intro?: string | null; cards?: RawIconItem[] | null } | null;
+  process?: { label?: string | null; heading?: RawHeading; intro?: string | null; steps?: Array<{ _key: string; number?: string | null; title?: string | null; description?: string | null; optional?: boolean | null }> | null } | null;
+  reporting?: { label?: string | null; heading?: RawHeading; intro?: string | null; cards?: Array<{ _key: string; title?: string | null; body?: string | null }> | null } | null;
+  whyTrust?: { label?: string | null; heading?: RawHeading; items?: Array<{ _key: string; title?: string | null; description?: string | null }> | null; ctaTitle?: string | null; ctaLabel?: string | null; ctaUrl?: string | null } | null;
+  faq?: RawFaq | null;
+}
+
+export interface SanityRedditMarketingPage {
+  _id: string;
+  content: RedditMarketingContent;
+  seo: { metaTitle: string | null; metaDescription: string | null } | null;
+}
+
+export async function getRedditMarketingPage(): Promise<SanityRedditMarketingPage | null> {
+  const data = await client.fetch(REDDIT_MARKETING_PAGE_QUERY, {}, { next: { tags: ["redditMarketingPage"], revalidate: false } });
+  if (!data) return null;
+  const raw = data as SanityRawRedditMarketingPage;
+  const d = DEFAULT_REDDIT_MARKETING_CONTENT;
+
+  const iconItems = (items: RawIconItem[] | null | undefined, fallback: RedditMarketingContent["opportunity"]["cards"]) =>
+    listOr(items, fallback, (item, i) => ({
+      title: item.title ?? "",
+      description: item.description ?? "",
+      icon: pageImage(item.icon, fallback[i]?.icon ?? null),
+    }));
+
+  const content: RedditMarketingContent = {
+    hero: {
+      heading: headingSegments(raw.hero?.heading, d.hero.heading),
+      subtitle: text(raw.hero?.subtitle, d.hero.subtitle),
+      tagline: text(raw.hero?.tagline, d.hero.tagline),
+      ctaLabel: text(raw.hero?.ctaLabel, d.hero.ctaLabel),
+      ctaUrl: text(raw.hero?.ctaUrl, d.hero.ctaUrl),
+      image: pageImage(raw.hero?.image, d.hero.image),
+    },
+    whyDifferent: {
+      label: text(raw.whyDifferent?.label, d.whyDifferent.label),
+      heading: headingSegments(raw.whyDifferent?.heading, d.whyDifferent.heading),
+      intro: text(raw.whyDifferent?.intro, d.whyDifferent.intro),
+      items: iconItems(raw.whyDifferent?.items, d.whyDifferent.items),
+    },
+    opportunity: {
+      label: text(raw.opportunity?.label, d.opportunity.label),
+      heading: headingSegments(raw.opportunity?.heading, d.opportunity.heading),
+      intro: text(raw.opportunity?.intro, d.opportunity.intro),
+      cards: iconItems(raw.opportunity?.cards, d.opportunity.cards),
+    },
+    whatWeDo: {
+      label: text(raw.whatWeDo?.label, d.whatWeDo.label),
+      heading: headingSegments(raw.whatWeDo?.heading, d.whatWeDo.heading),
+      intro: text(raw.whatWeDo?.intro, d.whatWeDo.intro),
+      cards: listOr(raw.whatWeDo?.cards, d.whatWeDo.cards, (c, i) => ({
+        title: c.title ?? "",
+        subtitle: c.subtitle ?? "",
+        description: c.description ?? "",
+        icon: pageImage(c.icon, d.whatWeDo.cards[i]?.icon ?? null),
+      })),
+    },
+    serviceMenu: {
+      label: text(raw.serviceMenu?.label, d.serviceMenu.label),
+      heading: headingSegments(raw.serviceMenu?.heading, d.serviceMenu.heading),
+      cards: listOr(raw.serviceMenu?.cards, d.serviceMenu.cards, (c) => ({ title: c.title ?? "", items: c.items ?? [] })),
+    },
+    whatYouWin: {
+      label: text(raw.whatYouWin?.label, d.whatYouWin.label),
+      heading: headingSegments(raw.whatYouWin?.heading, d.whatYouWin.heading),
+      intro: text(raw.whatYouWin?.intro, d.whatYouWin.intro),
+      cards: iconItems(raw.whatYouWin?.cards, d.whatYouWin.cards),
+    },
+    process: {
+      label: text(raw.process?.label, d.process.label),
+      heading: headingSegments(raw.process?.heading, d.process.heading),
+      intro: text(raw.process?.intro, d.process.intro),
+      steps: listOr(raw.process?.steps, d.process.steps, (s, i) => ({
+        number: text(s.number, String(i + 1).padStart(2, "0")),
+        title: s.title ?? "",
+        description: s.description ?? "",
+        optional: Boolean(s.optional),
+      })),
+    },
+    reporting: {
+      label: text(raw.reporting?.label, d.reporting.label),
+      heading: headingSegments(raw.reporting?.heading, d.reporting.heading),
+      intro: text(raw.reporting?.intro, d.reporting.intro),
+      cards: listOr(raw.reporting?.cards, d.reporting.cards, (c) => ({ title: c.title ?? "", body: c.body ?? "" })),
+    },
+    whyTrust: {
+      label: text(raw.whyTrust?.label, d.whyTrust.label),
+      heading: headingSegments(raw.whyTrust?.heading, d.whyTrust.heading),
+      items: listOr(raw.whyTrust?.items, d.whyTrust.items, (item) => ({ title: item.title ?? "", description: item.description ?? "" })),
+      ctaTitle: text(raw.whyTrust?.ctaTitle, d.whyTrust.ctaTitle),
+      ctaLabel: text(raw.whyTrust?.ctaLabel, d.whyTrust.ctaLabel),
+      ctaUrl: text(raw.whyTrust?.ctaUrl, d.whyTrust.ctaUrl),
+    },
+    faq: { items: faqEntries(raw.faq?.items, d.faq.items) },
+  };
+
+  return { _id: raw._id, content, seo: seoOf(raw) };
 }

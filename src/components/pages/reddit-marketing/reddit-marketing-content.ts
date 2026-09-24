@@ -12,7 +12,7 @@ import {
   type ContentImage,
   type FaqEntry,
   type HeadingSegment,
-} from "@/components/pages/shared/page-content";
+} from "../shared/page-content.ts";
 
 export interface IconItem {
   title: string;

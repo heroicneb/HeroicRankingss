@@ -431,3 +431,40 @@ export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
 export const PODCAST_EPISODE_SLUGS_QUERY = defineQuery(`
   *[_type == "podcastEpisode" && defined(slug.current) && !(_id match "audit-fixture-*")].slug.current
 `);
+
+// --- Fixed-section service pages ---
+
+export const LINK_BUILDING_PAGE_QUERY = defineQuery(`
+  *[_type == "linkBuildingPage"][0] {
+    _id,
+    hero { title, tagline, label, heading, body, ctaLabel, ctaUrl, image ${PAGE_IMAGE} },
+    whyBacklinks { heading, paragraphs, image ${PAGE_IMAGE} },
+    howWeBuild { label, heading, intro, cards[] { _key, title, body }, closing },
+    solutions {
+      label, heading,
+      cards[] { _key, title, subtitle, body, ctaLabel, ctaUrl, icon ${PAGE_IMAGE} },
+      banner { heading, processSteps[] { _key, label, description }, ctaLabel, ctaUrl }
+    },
+    competitorInsights { label, heading, items[] { _key, title, paragraphs, chart ${PAGE_IMAGE} } },
+    whyChoose { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} }, ctaTitle, ctaLabel, ctaUrl },
+    faq { items[] { _key, question, answer } },
+    seo
+  }
+`);
+
+export const REDDIT_MARKETING_PAGE_QUERY = defineQuery(`
+  *[_type == "redditMarketingPage"][0] {
+    _id,
+    hero { heading, subtitle, tagline, ctaLabel, ctaUrl, image ${PAGE_IMAGE} },
+    whyDifferent { label, heading, intro, items[] { _key, title, description, icon ${PAGE_IMAGE} } },
+    opportunity { label, heading, intro, cards[] { _key, title, description, icon ${PAGE_IMAGE} } },
+    whatWeDo { label, heading, intro, cards[] { _key, title, subtitle, description, icon ${PAGE_IMAGE} } },
+    serviceMenu { label, heading, cards[] { _key, title, items } },
+    whatYouWin { label, heading, intro, cards[] { _key, title, description, icon ${PAGE_IMAGE} } },
+    process { label, heading, intro, steps[] { _key, number, title, description, optional } },
+    reporting { label, heading, intro, cards[] { _key, title, body } },
+    whyTrust { label, heading, items[] { _key, title, description }, ctaTitle, ctaLabel, ctaUrl },
+    faq { items[] { _key, question, answer } },
+    seo
+  }
+`);

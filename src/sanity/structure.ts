@@ -23,6 +23,18 @@ export const structure: StructureResolver = (S) =>
         .child(
           S.document().schemaType("partnershipPage").documentId("partnershipPage"),
         ),
+      S.listItem()
+        .title("Link Building Page")
+        .id("linkBuildingPage")
+        .child(
+          S.document().schemaType("linkBuildingPage").documentId("linkBuildingPage"),
+        ),
+      S.listItem()
+        .title("Reddit Marketing Page")
+        .id("redditMarketingPage")
+        .child(
+          S.document().schemaType("redditMarketingPage").documentId("redditMarketingPage"),
+        ),
 
       S.divider(),
 

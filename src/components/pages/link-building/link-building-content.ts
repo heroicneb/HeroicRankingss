@@ -15,7 +15,7 @@ import {
   type FaqEntry,
   type HeadingSegment,
   type RichBlock,
-} from "@/components/pages/shared/page-content";
+} from "../shared/page-content.ts";
 
 export interface LinkBuildingContent {
   hero: {

@@ -42,6 +42,14 @@ export interface ServiceWhyChooseProps {
   heading?: ReactNode;
   /** Base CSS class on the description <p>. Default includes max-w-[302px]. */
   descriptionBaseClassName?: string;
+  /** Section label text. Default: "/  Guided by Results  /" */
+  label?: string;
+  /** CTA cell title. Default: "Take Your SEO To The Next Level" */
+  ctaTitle?: string;
+  /** CTA button label. Default: "Take the First Step Today" */
+  ctaLabel?: string;
+  /** CTA button link. Default: /contact */
+  ctaHref?: string;
 }
 
 export function ServiceWhyChoose({
@@ -56,12 +64,16 @@ export function ServiceWhyChoose({
   sectionClassName = "pt-[60px] lg:pt-[120px]",
   heading,
   descriptionBaseClassName = "type-paragraph mt-[10px] max-w-[302px] text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]",
+  label = "/  Guided by Results  /",
+  ctaTitle = "Take Your SEO To The Next Level",
+  ctaLabel = "Take the First Step Today",
+  ctaHref = "/contact",
 }: ServiceWhyChooseProps) {
   return (
     <section className={sectionClassName} id={sectionId}>
       <div className={PAGE_SHELL_CLASS}>
         <div className={outerClassName}>
-          <SectionLabel>/  Guided by Results  /</SectionLabel>
+          <SectionLabel>{label}</SectionLabel>
           <h2 className="type-h2 mt-5 max-w-[406px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
             {heading ?? <>Why Choose Heroic <GradientText className="gradient-text-brand-trust">Rankings?</GradientText></>}
           </h2>
@@ -99,13 +111,13 @@ export function ServiceWhyChoose({
 
             {showCta ? (
               <article className="border-l border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)] pl-[30px]">
-                <h3 className="type-h3 max-w-[257px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">Take Your SEO To The Next Level</h3>
+                <h3 className="type-h3 max-w-[257px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{ctaTitle}</h3>
                 <AppLink
                   className="type-cta motion-interactive motion-interactive-press mt-[30px] inline-flex h-[45px] w-[249px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-                  href="/contact"
+                  href={ctaHref}
                   motionPreset="none"
                 >
-                  Take the First Step Today
+                  {ctaLabel}
                   {ctaIcon}
                 </AppLink>
               </article>
