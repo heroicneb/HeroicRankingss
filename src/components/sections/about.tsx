@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { AboutColumnsLoop } from "@/components/sections/about-columns-loop";
 import { Container } from "@/components/ui/container";
 import { DesktopScrollProgress } from "@/components/ui/desktop-scroll-progress";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -154,6 +155,7 @@ export function About() {
               sizes="(min-width: 1280px) 1260px, 704px"
               src="/figma/about/about-main.webp"
             />
+            <AboutColumnsLoop darkSrc="/about/columns-dark.mp4" lightSrc="/about/columns-light.mp4" />
           </div>
         </div>
       </Container>

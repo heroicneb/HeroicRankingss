@@ -1,87 +1,38 @@
 "use client";
 
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/cn";
 
 interface HeroVideoOverlayProps {
-  /** Silent MP4 rendered on top of the hero image (desktop size). */
+  /** Silent MP4 rendered on top of the hero image. */
   src: string;
-  /** Lighter encode used on small screens. */
-  mobileSrc?: string;
   /** Extra classes for the <video> element (positioning/cropping should match the image). */
   videoClassName?: string;
 }
 
 const FADE_MS = 700;
-const SMALL_SCREEN = "(max-width: 1023px)";
-
-function prefersReducedMotion() {
-  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-}
 
 function canHover() {
-  return window.matchMedia("(hover: hover) and (pointer: fine)").matches && !prefersReducedMotion();
-}
-
-function subscribeSmallScreen(onChange: () => void) {
-  const query = window.matchMedia(SMALL_SCREEN);
-  query.addEventListener("change", onChange);
-  return () => query.removeEventListener("change", onChange);
+  if (typeof window === "undefined") return false;
+  return (
+    window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
 }
 
 /**
- * Video layer for the homepage hero.
+ * Hover-activated video layer for the homepage hero — desktop only.
  *
  * WHY: the clip is a one-shot "awakening" (cracks light up, eyes glow), not a
  * seamless loop, so it plays once and holds its final frame instead of looping.
- * The static poster stays as the LCP asset and the reduced-motion fallback.
- * Pointer devices trigger it on hover and rewind on leave; touch devices play
- * it once when the hero scrolls into view.
+ * The static poster stays as the LCP asset and is all that phones, tablets and
+ * reduced-motion visitors get (Nebojsa's call: no video motion on phones).
  */
-export function HeroVideoOverlay({ src, mobileSrc, videoClassName }: HeroVideoOverlayProps) {
+export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
   const pauseTimer = useRef<number | null>(null);
   const [active, setActive] = useState(false);
-  const isSmallScreen = useSyncExternalStore(
-    subscribeSmallScreen,
-    () => window.matchMedia(SMALL_SCREEN).matches,
-    () => false,
-  );
-
-  const play = () => {
-    const video = videoRef.current;
-    if (!video) return;
-    if (pauseTimer.current !== null) {
-      window.clearTimeout(pauseTimer.current);
-      pauseTimer.current = null;
-    }
-    setActive(true);
-    // WHY: every trigger restarts the clip from its first frame rather than resuming.
-    video.currentTime = 0;
-    // WHY: play() rejects if the browser blocks it; the poster simply stays visible.
-    void video.play().catch(() => setActive(false));
-  };
-
-  // Touch devices: play once when the hero is mostly on screen.
-  useEffect(() => {
-    const wrapper = wrapperRef.current;
-    if (!wrapper || canHover() || prefersReducedMotion()) return;
-    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
-    if (connection?.saveData) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (!entries.some((entry) => entry.isIntersecting)) return;
-        observer.disconnect();
-        play();
-      },
-      { threshold: 0.5 },
-    );
-    observer.observe(wrapper);
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     return () => {
@@ -91,11 +42,20 @@ export function HeroVideoOverlay({ src, mobileSrc, videoClassName }: HeroVideoOv
 
   const handleEnter = () => {
     if (!canHover()) return;
-    play();
+    const video = videoRef.current;
+    if (!video) return;
+    if (pauseTimer.current !== null) {
+      window.clearTimeout(pauseTimer.current);
+      pauseTimer.current = null;
+    }
+    setActive(true);
+    // WHY: every hover restarts the clip from its first frame rather than resuming.
+    video.currentTime = 0;
+    // WHY: play() rejects if the browser blocks it; the poster simply stays visible.
+    void video.play().catch(() => setActive(false));
   };
 
   const handleLeave = () => {
-    if (!canHover()) return;
     const video = videoRef.current;
     setActive(false);
     if (!video) return;
@@ -111,10 +71,9 @@ export function HeroVideoOverlay({ src, mobileSrc, videoClassName }: HeroVideoOv
   return (
     <div
       aria-hidden
-      className="absolute inset-0"
+      className="absolute inset-0 hidden lg:block"
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
-      ref={wrapperRef}
     >
       <video
         className={cn(
@@ -126,7 +85,7 @@ export function HeroVideoOverlay({ src, mobileSrc, videoClassName }: HeroVideoOv
         playsInline
         preload="metadata"
         ref={videoRef}
-        src={isSmallScreen && mobileSrc ? mobileSrc : src}
+        src={src}
         style={{ transitionDuration: `${FADE_MS}ms` }}
         tabIndex={-1}
       />
