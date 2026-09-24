@@ -984,3 +984,147 @@ textarea {
     transparent 65%
   );
 }
+
+/* ---------------------------------------------------------------------------
+   Homepage motion: entrance, scroll reveal, counters, card spotlight.
+   Everything below is progressive — no JS or reduced motion means no hiding.
+   --------------------------------------------------------------------------- */
+
+/* Hero entrance: words rise out of a mask, then copy, button and frame settle. */
+.hero-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding: 0.08em 0.04em 0.16em;
+  margin: -0.08em -0.04em -0.16em;
+}
+
+.hero-word > span {
+  display: inline-block;
+  animation: hero-word-rise 900ms var(--motion-ease-emphasized) both;
+  animation-delay: calc(80ms + var(--i, 0) * 55ms);
+}
+
+@keyframes hero-word-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 105%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hero-fade {
+  animation: hero-fade-up 900ms var(--motion-ease-emphasized) both;
+  animation-delay: var(--d, 0ms);
+}
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* WHY: transform only, never opacity — the frame holds the LCP image and an
+   invisible LCP candidate would push the metric out by the animation length. */
+.hero-frame {
+  animation: hero-frame-settle 1200ms var(--motion-ease-emphasized) both;
+  animation-delay: 120ms;
+}
+
+@keyframes hero-frame-settle {
+  from {
+    transform: translate3d(0, 28px, 0) scale(0.985);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/* Scroll reveal. Targets: [data-reveal] or any child of [data-reveal-stagger]. */
+[data-reveal],
+[data-reveal-stagger] > * {
+  transition:
+    opacity 700ms var(--motion-ease-emphasized),
+    transform 700ms var(--motion-ease-emphasized);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+html[data-reveal-ready] :is([data-reveal], [data-reveal-stagger] > *):not([data-reveal="in"]) {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+}
+
+[data-reveal-stagger] > :nth-child(2) {
+  --reveal-delay: 90ms;
+}
+
+[data-reveal-stagger] > :nth-child(3) {
+  --reveal-delay: 180ms;
+}
+
+[data-reveal-stagger] > :nth-child(4) {
+  --reveal-delay: 270ms;
+}
+
+[data-reveal-stagger] > :nth-child(5) {
+  --reveal-delay: 360ms;
+}
+
+[data-reveal-stagger] > :nth-child(n + 6) {
+  --reveal-delay: 450ms;
+}
+
+/* Services card spotlight: a soft accent glow that follows the pointer across
+   the back face. The back face is mirrored (rotateY 180deg), so x is flipped. */
+.service-card-back::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms var(--motion-ease-standard);
+  background: radial-gradient(
+    420px circle at calc(100% - var(--spot-x, 50%)) var(--spot-y, 50%),
+    color-mix(in srgb, var(--color-hr-accent) 42%, transparent),
+    transparent 62%
+  );
+}
+
+.service-card:hover .service-card-back::after,
+.service-card:focus-within .service-card-back::after {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-word > span,
+  .hero-fade,
+  .hero-frame {
+    animation: none;
+  }
+
+  [data-reveal],
+  [data-reveal-stagger] > * {
+    transition: none;
+  }
+
+  html[data-reveal-ready] :is([data-reveal], [data-reveal-stagger] > *):not([data-reveal="in"]) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .service-card-back::after {
+    display: none;
+  }
+}

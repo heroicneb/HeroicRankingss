@@ -113,7 +113,7 @@ export function CaseStudies() {
   return (
     <section className="section-shell pt-[60px] lg:pt-20" id="case-studies">
       <Container>
-        <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5 text-center lg:hidden">
+        <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5 text-center lg:hidden" data-reveal>
           <SectionLabel>
             /{"  "}Proven Results{"  "}/
           </SectionLabel>
@@ -140,7 +140,7 @@ export function CaseStudies() {
           </AppLink>
         </div>
 
-        <div className="hidden gap-12 min-[1360px]:grid-cols-[577px_413px] min-[1360px]:items-end min-[1360px]:justify-between lg:grid">
+        <div className="hidden gap-12 min-[1360px]:grid-cols-[577px_413px] min-[1360px]:items-end min-[1360px]:justify-between lg:grid" data-reveal>
           <div className="text-center min-[1360px]:text-left">
             <SectionLabel>
               /{"  "}Proven Results{"  "}/
@@ -216,7 +216,7 @@ export function CaseStudies() {
           ))}
         </div>
 
-        <div className="hidden gap-5 lg:grid lg:grid-cols-3">
+        <div className="hidden gap-5 lg:grid lg:grid-cols-3" data-reveal-stagger>
           {STUDIES.map((study) => (
             <AppLink
               aria-label={`Open case study: ${study.title}`}

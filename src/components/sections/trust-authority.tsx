@@ -42,7 +42,7 @@ export function TrustAuthority() {
       id="trust-authority"
     >
       <Container>
-        <div className="grid items-start gap-[10px] lg:grid-cols-[600px_670px]">
+        <div className="grid items-start gap-[10px] lg:grid-cols-[600px_670px]" data-reveal-stagger>
           <div className="text-center lg:text-left">
             <SectionLabel>/ Trust and Authority /</SectionLabel>
             <h2 className="type-h2 mt-5 max-w-[413px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">

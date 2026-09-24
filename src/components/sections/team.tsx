@@ -29,7 +29,7 @@ export function Team() {
   return (
     <section className="section-shell pt-[60px] lg:pt-16">
       <Container>
-        <div className="mx-auto flex max-w-[350px] flex-col items-center lg:hidden">
+        <div className="mx-auto flex max-w-[350px] flex-col items-center lg:hidden" data-reveal>
           <div className="flex w-[348px] flex-col items-center gap-5 text-center">
             <SectionLabel>
               /{"  "}The Team{"  "}/
@@ -94,7 +94,7 @@ export function Team() {
         </div>
 
         <div className="hidden gap-10 lg:grid min-[1360px]:grid-cols-[506px_630px] min-[1360px]:gap-[144px]">
-          <div>
+          <div data-reveal>
             <SectionLabel>
               /{"  "}The Team{"  "}/
             </SectionLabel>
@@ -119,7 +119,7 @@ export function Team() {
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
-          <div className="grid justify-center gap-5 sm:grid-cols-2 min-[1360px]:justify-start">
+          <div className="grid justify-center gap-5 sm:grid-cols-2 min-[1360px]:justify-start" data-reveal-stagger>
             {MEMBERS.map((member) => (
               <AppLink
                 aria-label={`Open team profile: ${member.name}`}

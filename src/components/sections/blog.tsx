@@ -66,7 +66,7 @@ export function Blog({ cmsPosts }: BlogProps) {
       id="blog"
     >
       <Container>
-        <div className="grid gap-8 lg:grid-cols-[577px_1fr] lg:items-end">
+        <div className="grid gap-8 lg:grid-cols-[577px_1fr] lg:items-end" data-reveal>
           <div className="text-center lg:text-left">
             <SectionLabel>
               /{"  "}Featured Blogs{"  "}/
@@ -93,7 +93,7 @@ export function Blog({ cmsPosts }: BlogProps) {
       </Container>
 
       <Container className="mt-[40px] lg:mt-20">
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="grid gap-5 lg:grid-cols-3" data-reveal-stagger>
           {posts.slice(0, 3).map((blog) => (
             <AppLink
               aria-label={`Open featured blog: ${blog.title}`}

@@ -8,7 +8,7 @@ export function Partnerships() {
       <div className="mx-auto max-w-[var(--size-page-max)] px-[10px]">
         {/* Mobile layout (< lg) — single column: label → H3 → body paragraphs → full-width CTA */}
         <div className="overflow-hidden rounded-[30px] border border-[var(--color-hr-accent)] bg-[linear-gradient(80.38deg,var(--color-bg-inverse)_35.359%,var(--color-case-art-maudsch)_142.03%)] px-[15px] py-[60px] lg:hidden">
-          <div className="mx-auto flex w-full max-w-[350px] flex-col items-center gap-10 text-center text-[var(--color-hr-pure-white)]">
+          <div className="mx-auto flex w-full max-w-[350px] flex-col items-center gap-10 text-center text-[var(--color-hr-pure-white)]" data-reveal>
             <SectionLabel className="text-[16px] text-[var(--color-hr-pure-white)]">
               / The Value We Bring /
             </SectionLabel>
@@ -50,7 +50,7 @@ export function Partnerships() {
 
         {/* Desktop layout (lg+) — two-column: left = label+H3+CTA, right = two body paragraphs */}
         <div className="hidden overflow-hidden rounded-[var(--radius-card)] bg-[linear-gradient(40.898deg,var(--color-bg-inverse)_35.359%,var(--color-case-art-maudsch)_142.03%)] lg:block lg:px-[70px] lg:py-[80px]">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,418px)] lg:gap-[140px] lg:items-start">
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,418px)] lg:gap-[140px] lg:items-start" data-reveal-stagger>
             <div className="max-w-[600px]">
               <SectionLabel className="text-[var(--color-hr-pure-white)]">
                 / The Value We Bring /
