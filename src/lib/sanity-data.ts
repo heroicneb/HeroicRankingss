@@ -28,11 +28,18 @@ import {
 import type { NavItem, NavLink } from "@/types";
 import {
   DEFAULT_PARTNERSHIP_CONTENT,
-  type ContentImage,
-  type HeadingSegment,
   type PartnershipContent,
-  type RichBlock,
 } from "@/components/pages/partnership/partnership-content";
+import type { RichBlock } from "@/components/pages/shared/page-content";
+import {
+  faqEntries,
+  headingSegments,
+  listOr,
+  optionalText,
+  pageImage,
+  text,
+  type SanityRawPageImage,
+} from "@/lib/page-content-mappers";
 
 // ── Sanity Image Reference ────────────────────────────────────────
 // Represents a Sanity image field with expanded asset metadata (via `asset->`)
@@ -199,12 +206,6 @@ interface SanityRawSiteSettings {
   footerCtaUrl?: string | null;
   headerCtaLabel?: string | null;
   headerCtaUrl?: string | null;
-}
-
-/** Raw image projection used by the fixed-section page documents. */
-interface SanityRawPageImage {
-  alt?: string | null;
-  asset?: { url?: string | null; metadata?: { dimensions?: { width?: number; height?: number } | null } | null } | null;
 }
 
 /** Raw partnership page from PARTNERSHIP_PAGE_QUERY */
@@ -534,37 +535,6 @@ export interface SanityPartnershipPage {
   content: PartnershipContent;
   seo: { metaTitle: string | null; metaDescription: string | null } | null;
 }
-
-/** gradientHeading blocks → heading segments (block boundaries become line breaks). */
-function headingSegments(blocks: PortableTextBlock[] | null | undefined, fallback: HeadingSegment[]): HeadingSegment[] {
-  if (!blocks?.length) return fallback;
-  const segments: HeadingSegment[] = [];
-  blocks.forEach((block, blockIndex) => {
-    if (blockIndex > 0) segments.push({ break: true });
-    const children = (block as { children?: Array<{ text?: string; marks?: string[] }> }).children ?? [];
-    for (const child of children) {
-      const lines = (child.text ?? "").split("\n");
-      lines.forEach((line, lineIndex) => {
-        if (lineIndex > 0) segments.push({ break: true });
-        if (line) segments.push({ text: line, highlight: child.marks?.includes("highlight") ?? false });
-      });
-    }
-  });
-  return segments;
-}
-
-function pageImage(raw: SanityRawPageImage | null | undefined, fallback: ContentImage | null): ContentImage | null {
-  const url = raw?.asset?.url;
-  if (!url) return fallback;
-  return {
-    src: url,
-    alt: raw?.alt ?? fallback?.alt ?? "",
-    width: raw?.asset?.metadata?.dimensions?.width ?? fallback?.width ?? 32,
-    height: raw?.asset?.metadata?.dimensions?.height ?? fallback?.height ?? 32,
-  };
-}
-
-const text = (value: string | null | undefined, fallback: string) => (value?.trim() ? value : fallback);
 
 export async function getPartnershipPage(): Promise<SanityPartnershipPage | null> {
   const data = await client.fetch(

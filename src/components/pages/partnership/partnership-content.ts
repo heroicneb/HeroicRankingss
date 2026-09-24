@@ -8,35 +8,16 @@
  * script can import it under plain Node.
  */
 
-export interface HeadingSegment {
-  text?: string;
-  /** Render this segment in the brand gradient. */
-  highlight?: boolean;
-  /** Line break (segment carries no text). */
-  break?: boolean;
-}
+import {
+  br,
+  hl,
+  paragraph,
+  type ContentImage,
+  type HeadingSegment,
+  type RichBlock,
+} from "@/components/pages/shared/page-content";
 
-export interface ContentImage {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-}
-
-export interface RichSpan {
-  _type: "span";
-  _key: string;
-  text: string;
-  marks: string[];
-}
-
-export interface RichBlock {
-  _type: "block";
-  _key: string;
-  style: "normal";
-  markDefs: Array<{ _key: string; _type: "link"; href: string }>;
-  children: RichSpan[];
-}
+export type { ContentImage, HeadingSegment, RichBlock } from "@/components/pages/shared/page-content";
 
 export interface PartnershipContent {
   hero: { heading: HeadingSegment[]; intro: string; image: ContentImage | null };
@@ -79,32 +60,6 @@ export interface PartnershipContent {
   faq: { items: Array<{ question: string; answer: string }> };
 }
 
-// ---------------------------------------------------------------------------
-// Small builders for the default content
-// ---------------------------------------------------------------------------
-
-let keyCounter = 0;
-const nextKey = (prefix: string) => `${prefix}-${(keyCounter += 1)}`;
-
-type SpanInput = string | { text: string; bold?: boolean; italic?: boolean };
-
-/** One paragraph block with optional bold/italic spans. */
-export function paragraph(...spans: SpanInput[]): RichBlock {
-  return {
-    _type: "block",
-    _key: nextKey("p"),
-    style: "normal",
-    markDefs: [],
-    children: spans.map((s) => {
-      const span = typeof s === "string" ? { text: s } : s;
-      const marks: string[] = [];
-      if (span.bold) marks.push("strong");
-      if (span.italic) marks.push("em");
-      return { _type: "span", _key: nextKey("s"), text: span.text, marks };
-    }),
-  };
-}
-
 const icon = (file: string, width: number, height: number): ContentImage => ({
   src: `/partnership/${file}`,
   alt: "",
@@ -116,9 +71,6 @@ const logo = (file: string, alt: string, width: number, height: number, keepColo
   image: { src: `/partnership/${file}`, alt, width, height },
   keepColor,
 });
-
-const hl = (text: string): HeadingSegment => ({ text, highlight: true });
-const br: HeadingSegment = { break: true };
 
 // ---------------------------------------------------------------------------
 // Default content — the copy that shipped in code before the page moved to
