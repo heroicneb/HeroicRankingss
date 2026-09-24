@@ -21,10 +21,10 @@ import {
   LINK_BUILDING_PAGE_QUERY,
   PARTNERSHIP_PAGE_QUERY,
   REDDIT_MARKETING_PAGE_QUERY,
+  SEO_SERVICE_PAGE_QUERY,
   PODCAST_EPISODES_QUERY,
   PODCAST_EPISODE_BY_SLUG_QUERY,
   PODCAST_EPISODE_SLUGS_QUERY,
-  SERVICE_PAGE_BY_SLUG_QUERY,
   TESTIMONIALS_QUERY,
 } from "@/sanity/lib/queries";
 import type { NavItem, NavLink } from "@/types";
@@ -41,6 +41,8 @@ import {
   type RedditMarketingContent,
 } from "@/components/pages/reddit-marketing/reddit-marketing-content";
 import type { RichBlock } from "@/components/pages/shared/page-content";
+import type { SeoServiceContent, SeoServicePageKey } from "@/components/pages/shared/seo-service-content";
+import { seoServicePage } from "@/components/pages/shared/seo-service-registry";
 import {
   faqEntries,
   headingSegments,
@@ -128,12 +130,6 @@ interface SanityRawMetric {
 }
 
 /** Raw FAQ item from FAQ_BY_SERVICE_QUERY */
-interface SanityRawFaqItem {
-  _id: string;
-  question: string;
-  answer: string;
-}
-
 /** Raw team member from TEAM_MEMBERS_QUERY */
 interface SanityRawTeamMember {
   _id: string;
@@ -283,31 +279,8 @@ interface SanityRawLegalPage {
 }
 
 /** Raw service card sub-object */
-interface SanityRawServiceCard {
-  _key: string;
-  title: string;
-  subtitle?: string | null;
-  body?: string | null;
-  icon?: SanityImageRef | null;
-  iconSrc?: string | null;
-}
-
 /** Raw process step sub-object */
-interface SanityRawProcessStep {
-  _key: string;
-  title: string;
-  description?: string | null;
-}
-
 /** Raw why-choose item sub-object */
-interface SanityRawWhyChooseItem {
-  _key: string;
-  title: string;
-  description?: string | null;
-  icon?: SanityImageRef | null;
-  iconSrc?: string | null;
-}
-
 /** Raw related case study reference (expanded via `->`) */
 interface SanityRawRelatedCaseStudy {
   _id: string;
@@ -316,26 +289,6 @@ interface SanityRawRelatedCaseStudy {
   client: string;
   excerpt?: string | null;
   heroImage?: SanityImageRef | null;
-}
-
-/** Raw service page from SERVICE_PAGE_BY_SLUG_QUERY */
-interface SanityRawServicePage {
-  _id: string;
-  serviceType: string;
-  slug?: { current: string };
-  heroTitle: string;
-  heroDescription?: string | null;
-  heroCtaLabel?: string | null;
-  heroCtaUrl?: string | null;
-  heroImage?: SanityImageRef | null;
-  solutionSectionLabel?: string | null;
-  solutionSectionHeading?: string | null;
-  serviceCards?: SanityRawServiceCard[] | null;
-  processSteps?: SanityRawProcessStep[] | null;
-  whyChooseItems?: SanityRawWhyChooseItem[] | null;
-  faqItems?: SanityRawFaqItem[] | null;
-  relatedCaseStudies?: SanityRawRelatedCaseStudy[] | null;
-  seo?: SanitySeo | null;
 }
 
 // ── Helpers ────────────────────────────────────────────────────────
@@ -1234,6 +1187,16 @@ export async function getPodcastEpisodeSlugs(): Promise<string[]> {
 
 // ── FAQ Items ─────────────────────────────────────────────────────
 
+/** Raw faq item from FAQ_BY_SERVICE_QUERY */
+interface SanityRawFaqItem {
+  _id: string;
+  question: string;
+  answer: string;
+  category?: string | null;
+  servicePage?: string | null;
+  order?: number | null;
+}
+
 export interface SanityFaqItem {
   _id: string;
   question: string;
@@ -1284,98 +1247,7 @@ export async function getPartnerLogos(): Promise<SanityPartnerLogo[]> {
 
 // ── Service Page ──────────────────────────────────────────────────
 
-export interface SanityServicePage {
-  _id: string;
-  serviceType: string;
-  slug: string;
-  heroTitle: string;
-  heroDescription: string | null;
-  heroCtaLabel: string | null;
-  heroCtaUrl: string | null;
-  heroImageUrl: string;
-  heroImageLqip: string | undefined;
-  solutionSectionLabel: string | null;
-  solutionSectionHeading: string | null;
-  serviceCards: Array<{
-    title: string;
-    subtitle: string | null;
-    body: string | null;
-    iconUrl: string | null;
-  }>;
-  processSteps: Array<{ title: string; description: string | null }>;
-  whyChooseItems: Array<{
-    title: string;
-    description: string | null;
-    iconUrl: string | null;
-  }>;
-  faqItems: SanityFaqItem[];
-  relatedCaseStudies: Array<{
-    _id: string;
-    title: string;
-    slug: string;
-    client: string;
-    excerpt: string | null;
-    heroImageUrl: string;
-  }>;
-}
 
-export async function getServicePage(
-  slug: string,
-): Promise<SanityServicePage | null> {
-  const data = await client.fetch(
-    SERVICE_PAGE_BY_SLUG_QUERY,
-    { slug },
-    { next: { tags: ["servicePage"], revalidate: false } },
-  );
-  if (!data) return null;
-
-  const d = data as SanityRawServicePage;
-  return {
-    _id: d._id,
-    serviceType: d.serviceType,
-    slug: d.slug?.current ?? slug,
-    heroTitle: d.heroTitle,
-    heroDescription: d.heroDescription ?? null,
-    heroCtaLabel: d.heroCtaLabel ?? null,
-    heroCtaUrl: d.heroCtaUrl ?? null,
-    heroImageUrl: imageUrl(d.heroImage, 1200),
-    heroImageLqip: imageLqip(d.heroImage),
-    solutionSectionLabel: d.solutionSectionLabel ?? null,
-    solutionSectionHeading: d.solutionSectionHeading ?? null,
-    serviceCards: (d.serviceCards ?? []).map((c: SanityRawServiceCard) => ({
-      title: c.title,
-      subtitle: c.subtitle ?? null,
-      body: c.body ?? null,
-      iconUrl: imageUrl(c.icon, 200) || c.iconSrc || null,
-    })),
-    processSteps: (d.processSteps ?? []).map((s: SanityRawProcessStep) => ({
-      title: s.title,
-      description: s.description ?? null,
-    })),
-    whyChooseItems: (d.whyChooseItems ?? []).map(
-      (w: SanityRawWhyChooseItem) => ({
-        title: w.title,
-        description: w.description ?? null,
-        iconUrl: imageUrl(w.icon, 200) || w.iconSrc || null,
-      }),
-    ),
-    faqItems: (d.faqItems ?? []).filter(Boolean).map((f: SanityRawFaqItem) => ({
-      _id: f._id,
-      question: f.question,
-      answer: f.answer,
-    })),
-    relatedCaseStudies: (d.relatedCaseStudies ?? [])
-      .filter(Boolean)
-      .map((cs: SanityRawRelatedCaseStudy) => ({
-        _id: cs._id,
-        title: cs.title,
-        slug: cs.slug?.current ?? "",
-        client: cs.client,
-        excerpt: cs.excerpt ?? null,
-        heroImageUrl: imageUrl(cs.heroImage, 800),
-      })),
-  };
-}
 
 // ---------------------------------------------------------------------------
 // Fixed-section service pages
@@ -1593,6 +1465,99 @@ export async function getRedditMarketingPage(): Promise<SanityRedditMarketingPag
       ctaTitle: text(raw.whyTrust?.ctaTitle, d.whyTrust.ctaTitle),
       ctaLabel: text(raw.whyTrust?.ctaLabel, d.whyTrust.ctaLabel),
       ctaUrl: text(raw.whyTrust?.ctaUrl, d.whyTrust.ctaUrl),
+    },
+    faq: { items: faqEntries(raw.faq?.items, d.faq.items) },
+  };
+
+  return { _id: raw._id, content, seo: seoOf(raw) };
+}
+
+// ---------------------------------------------------------------------------
+// SEO hub + six service pages (one document type, keyed by pageKey)
+// ---------------------------------------------------------------------------
+
+interface SanityRawSeoServicePage extends RawSeoPage {
+  _id: string;
+  hero?: {
+    title?: RawHeading; tagline?: RawHeading; label?: string | null; heading?: RawHeading;
+    paragraphs?: string[] | null; ctaLabel?: string | null; ctaUrl?: string | null; image?: SanityRawPageImage | null;
+  } | null;
+  solutions?: {
+    label?: string | null; heading?: RawHeading;
+    cards?: Array<{ _key: string; title?: string | null; subtitle?: string | null; body?: string | null; ctaLabel?: string | null; ctaUrl?: string | null; icon?: SanityRawPageImage | null }> | null;
+    hubCards?: Array<{ _key: string; title?: string | null; description?: string | null; descriptionGradient?: boolean | null; backIntro?: string | null; backPoints?: string[] | null; href?: string | null; image?: SanityRawPageImage | null }> | null;
+    banner?: { heading?: RawHeading; steps?: Array<{ _key: string; label?: string | null; description?: string | null }> | null; ctaLabel?: string | null; ctaUrl?: string | null } | null;
+  } | null;
+  whyChoose?: { label?: string | null; heading?: RawHeading; items?: RawIconItem[] | null; ctaTitle?: string | null; ctaLabel?: string | null; ctaUrl?: string | null } | null;
+  faq?: RawFaq | null;
+}
+
+export interface SanitySeoServicePage {
+  _id: string;
+  content: SeoServiceContent;
+  seo: { metaTitle: string | null; metaDescription: string | null } | null;
+}
+
+export async function getSeoServicePage(pageKey: SeoServicePageKey): Promise<SanitySeoServicePage | null> {
+  const data = await client.fetch(SEO_SERVICE_PAGE_QUERY, { pageKey }, { next: { tags: ["seoServicePage"], revalidate: false } });
+  if (!data) return null;
+  const raw = data as SanityRawSeoServicePage;
+  const d = seoServicePage(pageKey).content;
+
+  const bannerRaw = raw.solutions?.banner;
+  const banner = d.solutions.banner
+    ? {
+        heading: headingSegments(bannerRaw?.heading, d.solutions.banner.heading),
+        steps: listOr(bannerRaw?.steps, d.solutions.banner.steps, (s) => ({ label: s.label ?? "", description: s.description ?? "" })),
+        ctaLabel: text(bannerRaw?.ctaLabel, d.solutions.banner.ctaLabel),
+        ctaUrl: text(bannerRaw?.ctaUrl, d.solutions.banner.ctaUrl),
+      }
+    : null;
+
+  const content: SeoServiceContent = {
+    hero: {
+      title: headingSegments(raw.hero?.title, d.hero.title),
+      tagline: headingSegments(raw.hero?.tagline, d.hero.tagline),
+      label: text(raw.hero?.label, d.hero.label),
+      heading: headingSegments(raw.hero?.heading, d.hero.heading),
+      paragraphs: raw.hero?.paragraphs?.length ? raw.hero.paragraphs : d.hero.paragraphs,
+      ctaLabel: text(raw.hero?.ctaLabel, d.hero.ctaLabel),
+      ctaUrl: text(raw.hero?.ctaUrl, d.hero.ctaUrl),
+      image: pageImage(raw.hero?.image, d.hero.image),
+    },
+    solutions: {
+      label: text(raw.solutions?.label, d.solutions.label),
+      heading: headingSegments(raw.solutions?.heading, d.solutions.heading),
+      cards: listOr(raw.solutions?.cards, d.solutions.cards, (c, i) => ({
+        title: c.title ?? "",
+        subtitle: c.subtitle ?? "",
+        body: c.body ?? "",
+        ctaLabel: text(c.ctaLabel, d.solutions.cards[i]?.ctaLabel ?? "Get Started"),
+        ctaUrl: text(c.ctaUrl, d.solutions.cards[i]?.ctaUrl ?? "/contact"),
+        icon: pageImage(c.icon, d.solutions.cards[i]?.icon ?? null),
+      })),
+      hubCards: listOr(raw.solutions?.hubCards, d.solutions.hubCards, (c, i) => ({
+        title: c.title ?? "",
+        description: c.description ?? "",
+        descriptionGradient: Boolean(c.descriptionGradient),
+        image: pageImage(c.image, d.solutions.hubCards[i]?.image ?? null),
+        backIntro: c.backIntro ?? "",
+        backPoints: c.backPoints ?? [],
+        href: text(c.href, d.solutions.hubCards[i]?.href ?? "/seo"),
+      })),
+      banner,
+    },
+    whyChoose: {
+      label: text(raw.whyChoose?.label, d.whyChoose.label),
+      heading: headingSegments(raw.whyChoose?.heading, d.whyChoose.heading),
+      items: listOr(raw.whyChoose?.items, d.whyChoose.items, (item, i) => ({
+        title: item.title ?? "",
+        description: item.description ?? "",
+        icon: pageImage(item.icon, d.whyChoose.items[i]?.icon ?? null),
+      })),
+      ctaTitle: text(raw.whyChoose?.ctaTitle, d.whyChoose.ctaTitle),
+      ctaLabel: text(raw.whyChoose?.ctaLabel, d.whyChoose.ctaLabel),
+      ctaUrl: text(raw.whyChoose?.ctaUrl, d.whyChoose.ctaUrl),
     },
     faq: { items: faqEntries(raw.faq?.items, d.faq.items) },
   };

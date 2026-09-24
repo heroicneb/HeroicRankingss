@@ -10,7 +10,7 @@ import { partnershipPage } from "./documents/partnershipPage";
 import { podcastEpisode } from "./documents/podcastEpisode";
 import { post } from "./documents/post";
 import { redditMarketingPage } from "./documents/redditMarketingPage";
-import { servicePage } from "./documents/servicePage";
+import { seoServicePage } from "./documents/seoServicePage";
 import { siteSettings } from "./documents/siteSettings";
 import { teamMember } from "./documents/teamMember";
 import { testimonial } from "./documents/testimonial";
@@ -25,7 +25,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     // Documents
     siteSettings,
     post,
-    servicePage,
+    seoServicePage,
     partnershipPage,
     linkBuildingPage,
     redditMarketingPage,

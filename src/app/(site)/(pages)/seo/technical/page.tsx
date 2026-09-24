@@ -1,9 +1,26 @@
-import { getFaqItemsByService } from "@/lib/sanity-data";
+import type { Metadata } from "next";
+
 import TechnicalSeoPage from "@/components/pages/technical-seo/technical-seo-page";
+import { seoServicePage } from "@/components/pages/shared/seo-service-registry";
+import { createPageMetadata } from "@/lib/metadata";
+import { getFaqItemsByService, getSeoServicePage } from "@/lib/sanity-data";
 
-export { metadata } from "@/components/pages/technical-seo/technical-seo-page";
+const PAGE = seoServicePage("technical-seo");
 
-export default async function TechnicalSeoRoute() {
-  const faqItems = await getFaqItemsByService("technical-seo").catch(() => []);
-  return <TechnicalSeoPage cmsFaqItems={faqItems} />;
+export async function generateMetadata(): Promise<Metadata> {
+  const page = await getSeoServicePage(PAGE.key).catch(() => null);
+  return createPageMetadata({
+    title: page?.seo?.metaTitle?.trim() || PAGE.seo.title,
+    description: page?.seo?.metaDescription?.trim() || PAGE.seo.description,
+    path: PAGE.path,
+  });
+}
+
+export default async function Route() {
+  // WHY: the built-in copy is the safety net if the CMS document is missing or unreachable.
+  const [page, faqItems] = await Promise.all([
+    getSeoServicePage(PAGE.key).catch(() => null),
+    getFaqItemsByService(PAGE.faqService).catch(() => []),
+  ]);
+  return <TechnicalSeoPage cmsFaqItems={faqItems} content={page?.content ?? PAGE.content} />;
 }

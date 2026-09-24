@@ -345,26 +345,6 @@ export const LEGAL_PAGE_BY_SLUG_QUERY = defineQuery(`
 
 // --- Service Pages ---
 
-export const SERVICE_PAGE_BY_SLUG_QUERY = defineQuery(`
-  *[_type == "servicePage" && slug.current == $slug && !(_id match "audit-fixture-*")][0] {
-    _id,
-    serviceType,
-    slug,
-    heroTitle,
-    heroDescription,
-    heroCtaLabel,
-    heroCtaUrl,
-    heroImage { ..., asset->{ _id, _type, metadata { lqip } } },
-    solutionSectionLabel,
-    solutionSectionHeading,
-    serviceCards[] { _key, title, subtitle, body, icon, iconSrc },
-    processSteps[] { _key, title, description },
-    whyChooseItems[] { _key, title, description, icon, iconSrc },
-    faqItems[]-> { _id, question, answer },
-    relatedCaseStudies[]-> { _id, title, slug, client, excerpt, heroImage { ..., asset->{ _id, _type, metadata { lqip } } } },
-    seo
-  }
-`);
 
 // --- Podcast Episodes ---
 
@@ -464,6 +444,22 @@ export const REDDIT_MARKETING_PAGE_QUERY = defineQuery(`
     process { label, heading, intro, steps[] { _key, number, title, description, optional } },
     reporting { label, heading, intro, cards[] { _key, title, body } },
     whyTrust { label, heading, items[] { _key, title, description }, ctaTitle, ctaLabel, ctaUrl },
+    faq { items[] { _key, question, answer } },
+    seo
+  }
+`);
+
+export const SEO_SERVICE_PAGE_QUERY = defineQuery(`
+  *[_type == "seoServicePage" && pageKey == $pageKey][0] {
+    _id,
+    hero { title, tagline, label, heading, paragraphs, ctaLabel, ctaUrl, image ${PAGE_IMAGE} },
+    solutions {
+      label, heading,
+      cards[] { _key, title, subtitle, body, ctaLabel, ctaUrl, icon ${PAGE_IMAGE} },
+      hubCards[] { _key, title, description, descriptionGradient, backIntro, backPoints, href, image ${PAGE_IMAGE} },
+      banner { heading, steps[] { _key, label, description }, ctaLabel, ctaUrl }
+    },
+    whyChoose { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} }, ctaTitle, ctaLabel, ctaUrl },
     faq { items[] { _key, question, answer } },
     seo
   }

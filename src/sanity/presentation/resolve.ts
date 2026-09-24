@@ -83,16 +83,6 @@ export const locations = {
       locations: [{ title: "Partnership", href: "/partnership" }],
     }),
   }),
-  servicePage: defineLocations({
-    select: { title: "heroTitle", slug: "slug.current" },
-    resolve: (doc) => ({
-      locations: [
-        ...(doc?.slug
-          ? [{ title: doc?.title || "Service Page", href: `/${doc.slug}` }]
-          : []),
-      ],
-    }),
-  }),
   siteSettings: defineLocations({
     select: { title: "companyName" },
     resolve: () => ({
