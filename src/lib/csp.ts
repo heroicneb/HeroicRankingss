@@ -9,6 +9,8 @@ export function buildContentSecurityPolicy(nonce: string) {
     "font-src 'self'",
     "connect-src 'self' https://va.vercel-scripts.com https://vitals.vercel-insights.com https://*.sanity.io https://*.api.sanity.io",
     "object-src 'none'",
+    // WHY: blog posts embed videos; only these players are allowed (see toEmbedUrl in portable-text-components).
+    "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com",
     "frame-ancestors 'none'",
     "base-uri 'self'",
     "form-action 'self'",
