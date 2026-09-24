@@ -12,8 +12,10 @@ import { servicePage } from "./documents/servicePage";
 import { siteSettings } from "./documents/siteSettings";
 import { teamMember } from "./documents/teamMember";
 import { testimonial } from "./documents/testimonial";
+import { gradientHeading } from "./objects/gradientHeading";
 import { portableText } from "./objects/portableText";
 import { seo } from "./objects/seo";
+import { simpleText } from "./objects/simpleText";
 import { socialLink } from "./objects/socialLink";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
@@ -33,6 +35,8 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     podcastEpisode,
     // Objects
     portableText,
+    gradientHeading,
+    simpleText,
     seo,
     socialLink,
   ],

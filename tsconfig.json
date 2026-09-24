@@ -43,6 +43,7 @@
     "node_modules.nosync",
     ".next.nosync",
     "node_modules.trash-old",
-    ".next.trash-old"
+    ".next.trash-old",
+    "scripts"
   ]
 }

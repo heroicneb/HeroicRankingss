@@ -26,6 +26,13 @@ import {
   TESTIMONIALS_QUERY,
 } from "@/sanity/lib/queries";
 import type { NavItem, NavLink } from "@/types";
+import {
+  DEFAULT_PARTNERSHIP_CONTENT,
+  type ContentImage,
+  type HeadingSegment,
+  type PartnershipContent,
+  type RichBlock,
+} from "@/components/pages/partnership/partnership-content";
 
 // ── Sanity Image Reference ────────────────────────────────────────
 // Represents a Sanity image field with expanded asset metadata (via `asset->`)
@@ -194,14 +201,54 @@ interface SanityRawSiteSettings {
   headerCtaUrl?: string | null;
 }
 
+/** Raw image projection used by the fixed-section page documents. */
+interface SanityRawPageImage {
+  alt?: string | null;
+  asset?: { url?: string | null; metadata?: { dimensions?: { width?: number; height?: number } | null } | null } | null;
+}
+
 /** Raw partnership page from PARTNERSHIP_PAGE_QUERY */
 interface SanityRawPartnershipPage {
   _id: string;
-  title: string;
-  intro?: string | null;
-  heroCtaLabel?: string | null;
-  heroCtaUrl?: string | null;
-  body?: PortableTextBlock[] | null;
+  hero?: { heading?: PortableTextBlock[] | null; intro?: string | null; image?: SanityRawPageImage | null } | null;
+  recognize?: {
+    label?: string | null;
+    heading?: PortableTextBlock[] | null;
+    items?: Array<{ _key: string; title?: string | null; description?: string | null; icon?: SanityRawPageImage | null }> | null;
+  } | null;
+  amplify?: {
+    label?: string | null;
+    heading?: PortableTextBlock[] | null;
+    intro?: string | null;
+    cards?: Array<{
+      _key: string;
+      title?: string | null;
+      subtitle?: string | null;
+      paragraphs?: string[] | null;
+      ctaLabel?: string | null;
+      ctaUrl?: string | null;
+      icon?: SanityRawPageImage | null;
+    }> | null;
+  } | null;
+  scale?: {
+    label?: string | null;
+    heading?: PortableTextBlock[] | null;
+    paragraphs?: RichBlock[] | null;
+    logos?: Array<{ _key: string; keepColor?: boolean | null; image?: SanityRawPageImage | null }> | null;
+  } | null;
+  darkCta?: { heading?: PortableTextBlock[] | null; body?: string | null; ctaLabel?: string | null; ctaUrl?: string | null } | null;
+  differentiators?: {
+    label?: string | null;
+    heading?: PortableTextBlock[] | null;
+    items?: Array<{ _key: string; title?: string | null; description?: RichBlock[] | null; icon?: SanityRawPageImage | null }> | null;
+  } | null;
+  nextSteps?: {
+    label?: string | null;
+    heading?: PortableTextBlock[] | null;
+    paragraphs?: string[] | null;
+    items?: Array<{ _key: string; title?: string | null; description?: string | null; icon?: SanityRawPageImage | null }> | null;
+  } | null;
+  faq?: { items?: Array<{ _key: string; question?: string | null; answer?: string | null }> | null } | null;
   seo?: SanitySeo | null;
 }
 
@@ -484,14 +531,40 @@ export async function getPostUrls(): Promise<
 
 export interface SanityPartnershipPage {
   _id: string;
-  body: PortableTextBlock[] | null;
-  heroCtaLabel: string | null;
-  heroCtaUrl: string | null;
-  intro: string | null;
-  seoDescription: string | null;
-  seoTitle: string | null;
-  title: string;
+  content: PartnershipContent;
+  seo: { metaTitle: string | null; metaDescription: string | null } | null;
 }
+
+/** gradientHeading blocks → heading segments (block boundaries become line breaks). */
+function headingSegments(blocks: PortableTextBlock[] | null | undefined, fallback: HeadingSegment[]): HeadingSegment[] {
+  if (!blocks?.length) return fallback;
+  const segments: HeadingSegment[] = [];
+  blocks.forEach((block, blockIndex) => {
+    if (blockIndex > 0) segments.push({ break: true });
+    const children = (block as { children?: Array<{ text?: string; marks?: string[] }> }).children ?? [];
+    for (const child of children) {
+      const lines = (child.text ?? "").split("\n");
+      lines.forEach((line, lineIndex) => {
+        if (lineIndex > 0) segments.push({ break: true });
+        if (line) segments.push({ text: line, highlight: child.marks?.includes("highlight") ?? false });
+      });
+    }
+  });
+  return segments;
+}
+
+function pageImage(raw: SanityRawPageImage | null | undefined, fallback: ContentImage | null): ContentImage | null {
+  const url = raw?.asset?.url;
+  if (!url) return fallback;
+  return {
+    src: url,
+    alt: raw?.alt ?? fallback?.alt ?? "",
+    width: raw?.asset?.metadata?.dimensions?.width ?? fallback?.width ?? 32,
+    height: raw?.asset?.metadata?.dimensions?.height ?? fallback?.height ?? 32,
+  };
+}
+
+const text = (value: string | null | undefined, fallback: string) => (value?.trim() ? value : fallback);
 
 export async function getPartnershipPage(): Promise<SanityPartnershipPage | null> {
   const data = await client.fetch(
@@ -501,20 +574,94 @@ export async function getPartnershipPage(): Promise<SanityPartnershipPage | null
   );
   if (!data) return null;
 
-  const page = data as SanityRawPartnershipPage;
+  const raw = data as SanityRawPartnershipPage;
+  const d = DEFAULT_PARTNERSHIP_CONTENT;
+
+  const content: PartnershipContent = {
+    hero: {
+      heading: headingSegments(raw.hero?.heading, d.hero.heading),
+      intro: text(raw.hero?.intro, d.hero.intro),
+      image: pageImage(raw.hero?.image, d.hero.image),
+    },
+    recognize: {
+      label: text(raw.recognize?.label, d.recognize.label),
+      heading: headingSegments(raw.recognize?.heading, d.recognize.heading),
+      items: raw.recognize?.items?.length
+        ? raw.recognize.items.map((item, i) => ({
+            title: item.title ?? "",
+            description: item.description ?? "",
+            icon: pageImage(item.icon, d.recognize.items[i]?.icon ?? null),
+          }))
+        : d.recognize.items,
+    },
+    amplify: {
+      label: text(raw.amplify?.label, d.amplify.label),
+      heading: headingSegments(raw.amplify?.heading, d.amplify.heading),
+      intro: text(raw.amplify?.intro, d.amplify.intro),
+      cards: raw.amplify?.cards?.length
+        ? raw.amplify.cards.map((card, i) => ({
+            title: card.title ?? "",
+            subtitle: card.subtitle ?? "",
+            paragraphs: card.paragraphs ?? [],
+            icon: pageImage(card.icon, d.amplify.cards[i]?.icon ?? null),
+            ctaLabel: card.ctaLabel?.trim() || null,
+            ctaUrl: card.ctaUrl?.trim() || null,
+          }))
+        : d.amplify.cards,
+    },
+    scale: {
+      label: text(raw.scale?.label, d.scale.label),
+      heading: headingSegments(raw.scale?.heading, d.scale.heading),
+      paragraphs: raw.scale?.paragraphs?.length ? raw.scale.paragraphs : d.scale.paragraphs,
+      logos: raw.scale?.logos?.length
+        ? raw.scale.logos.flatMap((cell) => {
+            const image = pageImage(cell.image, null);
+            return image ? [{ image, keepColor: Boolean(cell.keepColor) }] : [];
+          })
+        : d.scale.logos,
+    },
+    darkCta: {
+      heading: headingSegments(raw.darkCta?.heading, d.darkCta.heading),
+      body: text(raw.darkCta?.body, d.darkCta.body),
+      ctaLabel: text(raw.darkCta?.ctaLabel, d.darkCta.ctaLabel),
+      ctaUrl: text(raw.darkCta?.ctaUrl, d.darkCta.ctaUrl),
+    },
+    differentiators: {
+      label: text(raw.differentiators?.label, d.differentiators.label),
+      heading: headingSegments(raw.differentiators?.heading, d.differentiators.heading),
+      items: raw.differentiators?.items?.length
+        ? raw.differentiators.items.map((item, i) => ({
+            title: item.title ?? "",
+            description: item.description ?? [],
+            icon: pageImage(item.icon, d.differentiators.items[i]?.icon ?? null),
+          }))
+        : d.differentiators.items,
+    },
+    nextSteps: {
+      label: text(raw.nextSteps?.label, d.nextSteps.label),
+      heading: headingSegments(raw.nextSteps?.heading, d.nextSteps.heading),
+      paragraphs: raw.nextSteps?.paragraphs?.length ? raw.nextSteps.paragraphs : d.nextSteps.paragraphs,
+      items: raw.nextSteps?.items?.length
+        ? raw.nextSteps.items.map((item, i) => ({
+            title: item.title ?? "",
+            description: item.description ?? "",
+            icon: pageImage(item.icon, d.nextSteps.items[i]?.icon ?? null),
+          }))
+        : d.nextSteps.items,
+    },
+    faq: {
+      items: raw.faq?.items?.length
+        ? raw.faq.items.map((item) => ({ question: item.question ?? "", answer: item.answer ?? "" }))
+        : d.faq.items,
+    },
+  };
+
   return {
-    _id: page._id,
-    title: page.title,
-    intro: page.intro ?? null,
-    heroCtaLabel: page.heroCtaLabel ?? null,
-    heroCtaUrl: page.heroCtaUrl ?? null,
-    body: page.body ?? null,
-    seoTitle: page.seo?.metaTitle ?? null,
-    seoDescription: page.seo?.metaDescription ?? null,
+    _id: raw._id,
+    content,
+    seo: raw.seo ? { metaTitle: raw.seo.metaTitle ?? null, metaDescription: raw.seo.metaDescription ?? null } : null,
   };
 }
-
-// ── Contact + Legal Pages ─────────────────────────────────────────
 
 export interface SanityContactPage {
   _id: string;

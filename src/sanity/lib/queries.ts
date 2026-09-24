@@ -301,14 +301,20 @@ export const SITE_SETTINGS_QUERY = defineQuery(`
 
 // --- Partnership Page ---
 
+// Image projection shared by the fixed-section page documents.
+const PAGE_IMAGE = `{ alt, asset->{ url, metadata { dimensions { width, height } } } }`;
+
 export const PARTNERSHIP_PAGE_QUERY = defineQuery(`
   *[_type == "partnershipPage"][0] {
     _id,
-    title,
-    intro,
-    heroCtaLabel,
-    heroCtaUrl,
-    body,
+    hero { heading, intro, image ${PAGE_IMAGE} },
+    recognize { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} } },
+    amplify { label, heading, intro, cards[] { _key, title, subtitle, paragraphs, ctaLabel, ctaUrl, icon ${PAGE_IMAGE} } },
+    scale { label, heading, paragraphs, logos[] { _key, keepColor, image ${PAGE_IMAGE} } },
+    darkCta { heading, body, ctaLabel, ctaUrl },
+    differentiators { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} } },
+    nextSteps { label, heading, paragraphs, items[] { _key, title, description, icon ${PAGE_IMAGE} } },
+    faq { items[] { _key, question, answer } },
     seo
   }
 `);
