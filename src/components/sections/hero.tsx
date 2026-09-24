@@ -45,7 +45,8 @@ export function Hero() {
       <div className="mx-auto mt-[60px] max-w-[1440px] px-[5px] md:px-[10px] lg:mt-[116px]">
         <div className="hero-frame relative h-[180px] overflow-hidden rounded-[30px] sm:h-[300px] md:h-[380px] lg:h-[480px] lg:rounded-[var(--radius-card)]">
           {/* WHY: the still is the video's first frame, so it stays the LCP asset and the
-              fallback on touch/reduced-motion; the video fades in over it on hover. */}
+              reduced-motion fallback; the clip plays once over it on hover (desktop) or
+              when the hero scrolls into view (touch). */}
           <Image
             alt="Classical statue representing enduring digital presence"
             className="pointer-events-none object-cover"
@@ -56,7 +57,7 @@ export function Hero() {
             sizes="(min-width: 1024px) 1440px, 100vw"
             src="/hero-face-poster.webp"
           />
-          <HeroVideoOverlay src="/hero-face-loop.mp4" />
+          <HeroVideoOverlay mobileSrc="/hero-face-loop-1280.mp4" src="/hero-face-loop.mp4" />
         </div>
       </div>
     </section>

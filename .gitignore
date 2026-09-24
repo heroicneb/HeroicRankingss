@@ -76,3 +76,4 @@ figma-extract/
 # .next is a symlink locally (iCloud workaround); match it as a file too
 .next
 node_modules
+scripts/media/out/
