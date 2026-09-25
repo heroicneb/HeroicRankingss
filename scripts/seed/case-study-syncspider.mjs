@@ -155,7 +155,7 @@ const doc = {
   },
   seo: {
     _type: "seo",
-    metaTitle: "SyncSpider SEO Case Study | Organic Growth in a Competitive SaaS Market",
+    metaTitle: "SyncSpider SEO Case Study | Organic Growth",
     metaDescription: "How data-driven link building and keyword research lifted SyncSpider's organic traffic 25%, put 15+ keywords on page one and cut paid ad spend 30%.",
   },
 };

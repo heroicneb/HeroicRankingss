@@ -26,7 +26,12 @@ function niceMax(max: number): number {
   return Math.ceil(max / step) * step;
 }
 
-const formatLeft = (value: number) => (value >= 1000 ? `${Math.round(value / 1000)}k` : `${value}`);
+// WHY: small ranges (e.g. 0–2,000) need one decimal or several ticks read as the same "2k".
+const formatLeft = (value: number) => {
+  if (value < 1000) return `${value}`;
+  const k = value / 1000;
+  return `${Number.isInteger(k) ? k : k.toFixed(1)}k`;
+};
 
 interface TooltipPayload {
   name: string;
