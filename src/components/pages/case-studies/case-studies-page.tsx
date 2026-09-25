@@ -45,7 +45,7 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
     description:
       "My Baskets is a leading Canadian online retailer specializing in luxury gift baskets for various occasions.",
     date: "December 1, 2024",
-    panelImageSrc: "/case-studies/imgGroup48.svg",
+    panelImageSrc: "/case-studies/my-baskets-cs-f.png",
 
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName:
