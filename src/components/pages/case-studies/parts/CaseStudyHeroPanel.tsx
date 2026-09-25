@@ -1,69 +1,48 @@
 import Image from "next/image";
 
-import { MetricTile } from "@/components/ui/metric-tile";
 import type { SanityCaseStudyDetail } from "@/lib/sanity-data";
 import { urlFor } from "@/sanity/lib/image";
-
-import {
-  CASE_STUDY_PANEL_BY_SLUG,
-  CASE_STUDY_PANEL_FALLBACK,
-} from "./case-study-panels";
 
 interface CaseStudyHeroPanelProps {
   data: SanityCaseStudyDetail;
 }
 
 /**
- * Hero metrics grid + brand-color panel beneath the H1.
+ * Hero metric pills + full-width image strip (Figma 2255:921 and 2255:931).
  *
- * Renders the 3 hero `MetricTile` cards on a 3-up grid above 1024px and as
- * a vertical stack on mobile. Followed by the brand-color SVG panel keyed
- * by slug — the same flat panel artwork used on the case-studies index card
- * top half — with the brand name centered and a soft shadow.
- *
- * WHY: the Figma frame (2255:878) puts a full-width image strip here. When
- * the case study has a hero image in Sanity it fills the panel; otherwise the
- * brand-colour panel with the label is the fallback.
- *
- * Returns `null` when both `heroMetrics` and the slug-resolved panel are
- * absent so the page can collapse cleanly.
+ * Pills sit centred under the subtitle: off-white, rounded 20, light-gradient
+ * value over a dark label. The strip below is 1420×684 on desktop and bleeds
+ * to 10px from the viewport edge like the design; it shows the case study's
+ * hero image when one is set, otherwise the frame's dark-to-indigo gradient.
  */
 export function CaseStudyHeroPanel({ data }: CaseStudyHeroPanelProps) {
   const metrics = data.heroMetrics ?? [];
-  const slug = data.slug?.current;
-  const panel = slug
-    ? (CASE_STUDY_PANEL_BY_SLUG[slug] ?? CASE_STUDY_PANEL_FALLBACK)
-    : CASE_STUDY_PANEL_FALLBACK;
-  const panelLabel = data.panelLabel ?? data.client ?? data.title;
   const heroImage = data.heroImage?.asset ? data.heroImage : null;
   const heroImageUrl = heroImage ? urlFor(heroImage).width(2840).url() : null;
-  const heroImageAlt = (heroImage as { alt?: string } | null)?.alt ?? panelLabel ?? "";
-
-  if (metrics.length === 0 && !panel && !heroImageUrl) return null;
+  const heroImageAlt = (heroImage as { alt?: string } | null)?.alt ?? data.title ?? "";
 
   return (
-    <section className="px-[20px] pb-[40px] lg:px-[80px] lg:pb-[100px]">
-      <div className="mx-auto w-full max-w-[1440px]">
-        {metrics.length > 0 ? (
-          <div className="grid grid-cols-1 gap-[10px] lg:grid-cols-3 lg:gap-[20px]">
-            {metrics.map((metric, index) => (
-              <MetricTile
-                key={metric._key ?? `${metric.label}-${index}`}
-                label={metric.label}
-                value={metric.value}
-                variant="light"
-              />
-            ))}
-          </div>
-        ) : null}
+    <section className="pb-[60px] pt-[30px] lg:pb-[120px] lg:pt-[40px]">
+      {metrics.length > 0 ? (
+        <div className="mx-auto flex w-full max-w-[1280px] flex-col items-stretch gap-[10px] px-[20px] lg:flex-row lg:items-stretch lg:justify-center lg:px-[80px]">
+          {metrics.map((metric, index) => (
+            <div
+              className="flex flex-col items-center rounded-[20px] bg-[var(--color-hr-off-white)] px-[24px] py-[12px] text-center dark:bg-[var(--color-hr-black-box)] lg:px-[40px]"
+              key={metric._key ?? `${metric.label}-${index}`}
+            >
+              <p className="gradient-text-brand-light w-full font-medium text-[24px] leading-[normal] tracking-[-0.48px]">
+                {metric.value}
+              </p>
+              <p className="w-full text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                {metric.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      ) : null}
 
-        <figure
-          className={
-            metrics.length > 0
-              ? "relative mt-[24px] aspect-[350/255] w-full overflow-hidden rounded-[30px] lg:mt-[40px] lg:aspect-[1420/684] lg:rounded-[40px]"
-              : "relative aspect-[350/255] w-full overflow-hidden rounded-[30px] lg:aspect-[1420/684] lg:rounded-[40px]"
-          }
-        >
+      <div className="mx-auto mt-[40px] w-full max-w-[1440px] px-[10px] lg:mt-[120px]">
+        <figure className="relative aspect-[350/255] w-full overflow-hidden rounded-[30px] bg-[linear-gradient(52.4159deg,var(--color-hr-dark)_35.359%,var(--color-case-art-maudsch)_142.03%)] lg:aspect-[1420/684] lg:rounded-[40px]">
           {heroImageUrl ? (
             <Image
               alt={heroImageAlt}
@@ -74,23 +53,6 @@ export function CaseStudyHeroPanel({ data }: CaseStudyHeroPanelProps) {
               sizes="(min-width: 1024px) 1420px, 100vw"
               src={heroImageUrl}
             />
-          ) : (
-            <Image
-              alt={`${panelLabel} brand panel`}
-              className="object-cover"
-              fetchPriority="high"
-              fill
-              priority
-              sizes="(min-width: 1024px) 1420px, 100vw"
-              src={panel.panelImageSrc}
-            />
-          )}
-          {panelLabel && !heroImageUrl ? (
-            <p
-              className={`absolute top-1/2 -translate-y-1/2 text-[40px] font-normal leading-[1.1] tracking-[-0.8px] lg:text-[80px] lg:leading-[1.05] lg:tracking-[-1.6px] ${panel.panelLabelClassName} ${panel.panelLabelColorClassName}`}
-            >
-              {panelLabel}
-            </p>
           ) : null}
         </figure>
       </div>

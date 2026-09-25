@@ -1012,6 +1012,13 @@ export interface SanityCaseStudyDetail {
       body: string;
     }> | null;
   } | null;
+  strategyIntro?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    highlightPosition?: "leading" | "trailing" | null;
+    body?: string | null;
+  } | null;
   strategyPillars?: Array<{
     _key?: string;
     title: string;
@@ -1059,6 +1066,8 @@ export interface SanityCaseStudyDetail {
     }> | null;
   } | null;
   beforeAfter?: {
+    beforeLabel?: string | null;
+    afterLabel?: string | null;
     label?: string | null;
     headingMain?: string | null;
     headingHighlighted?: string | null;

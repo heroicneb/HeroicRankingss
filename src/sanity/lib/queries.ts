@@ -104,6 +104,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
       body,
       items[] { _key, number, title, body }
     },
+    strategyIntro,
     strategyPillars[] {
       _key,
       title,

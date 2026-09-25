@@ -77,3 +77,4 @@ figma-extract/
 .next
 node_modules
 scripts/media/out/
+/scripts/seed/*-snapshot.json

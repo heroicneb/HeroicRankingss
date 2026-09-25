@@ -4,7 +4,6 @@ import { CaseStudyBeforeAfter } from "./parts/CaseStudyBeforeAfter";
 import { CaseStudyChallenges } from "./parts/CaseStudyChallenges";
 import { CaseStudyConclusion } from "./parts/CaseStudyConclusion";
 import { CaseStudyCtaFooter } from "./parts/CaseStudyCtaFooter";
-import { CaseStudyGrowthChart } from "./parts/CaseStudyGrowthChart";
 import { CaseStudyHero } from "./parts/CaseStudyHero";
 import { CaseStudyHeroPanel } from "./parts/CaseStudyHeroPanel";
 import { CaseStudyJourney } from "./parts/CaseStudyJourney";
@@ -18,14 +17,13 @@ interface CaseStudyDetailPageProps {
 }
 
 /**
- * Sanity-driven case study detail page (Figma `2255:878` desktop /
- * `2255:1378` mobile).
+ * Case study detail page — the template from Figma `2255:878` (desktop),
+ * `2255:1899` (dark) and `2255:1378` (mobile).
  *
- * Composes 12 self-contained sub-components — each renders one Sanity
- * field block in its own `<section>` and returns `null` when the
- * corresponding field is empty. Vertical rhythm comes from the
- * sub-components themselves so missing data collapses without leaving
- * gaps.
+ * Every section reads one block of the Sanity case study document and
+ * returns `null` when that block is empty, so a new case study only shows
+ * the sections its editor filled in. Duplicate a document in the Studio to
+ * start a new case study from this template.
  */
 export function CaseStudyDetailPage({ caseStudy }: CaseStudyDetailPageProps) {
   return (
@@ -34,12 +32,11 @@ export function CaseStudyDetailPage({ caseStudy }: CaseStudyDetailPageProps) {
       <CaseStudyHeroPanel data={caseStudy} />
       <CaseStudyOverview data={caseStudy.caseOverview} />
       <CaseStudyChallenges data={caseStudy.objectiveChallenges} />
-      <CaseStudyPillars data={caseStudy.strategyPillars} />
+      <CaseStudyPillars data={caseStudy.strategyPillars} intro={caseStudy.strategyIntro} />
       <CaseStudyJourney data={caseStudy.journeyTimeline} />
-      <CaseStudyNumbers data={caseStudy.numbersThatMatter} />
-      <CaseStudyGrowthChart data={caseStudy.growthChart} />
+      <CaseStudyNumbers chart={caseStudy.growthChart} data={caseStudy.numbersThatMatter} />
       <CaseStudyProofData data={caseStudy.proofData} />
-      <CaseStudyBeforeAfter data={caseStudy.beforeAfter} />
+      <CaseStudyBeforeAfter afterLabel={caseStudy.beforeAfter?.afterLabel ?? undefined} beforeLabel={caseStudy.beforeAfter?.beforeLabel ?? undefined} data={caseStudy.beforeAfter} />
       <CaseStudyConclusion data={caseStudy.conclusion} />
       <CaseStudyCtaFooter data={caseStudy.ctaFooter} />
     </>
