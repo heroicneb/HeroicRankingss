@@ -44,7 +44,7 @@ export function Hero() {
 
       <div className="mx-auto mt-[60px] max-w-[1440px] px-[5px] md:px-[10px] lg:mt-[116px]">
         <div className="hero-frame relative h-[180px] overflow-hidden rounded-[30px] sm:h-[300px] md:h-[380px] lg:h-[480px] lg:rounded-[var(--radius-card)]">
-          {/* WHY: the still is the video's first frame, so it stays the LCP asset and the
+          {/* WHY: file names carry a version because image caches key by URL. The still is the video's first frame, so it stays the LCP asset and the
               only thing phones and reduced-motion visitors see; on desktop the clip plays
               once over it on hover. */}
           <Image
@@ -55,9 +55,9 @@ export function Hero() {
             priority
             quality={90}
             sizes="(min-width: 1024px) 1440px, 100vw"
-            src="/hero-face-poster.webp"
+            src="/hero-face-final-poster.webp"
           />
-          <HeroVideoOverlay src="/hero-face-loop.mp4" />
+          <HeroVideoOverlay src="/hero-face-final.mp4" />
         </div>
       </div>
     </section>
