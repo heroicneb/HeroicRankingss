@@ -45,6 +45,11 @@ export const CASE_STUDY_PANEL_BY_SLUG: Record<string, CaseStudyPanelArt> = {
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
   },
+  "support-adventure": {
+    panelImageSrc: "/case-studies/support-adventure-case-study-f.png",
+    panelLabelClassName: "left-1/2 -translate-x-1/2",
+    panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
+  },
 };
 
 /**
