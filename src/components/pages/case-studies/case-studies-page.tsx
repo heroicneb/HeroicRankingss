@@ -100,6 +100,17 @@ const CASE_STUDY_CARDS: CaseStudyCardData[] = [
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
     href: "/case-study/diy-craft-ecom-brand",
   },
+  {
+    title: "Support Adventure",
+    panelLabel: "Support Adventure",
+    description:
+      "Support Adventure is a remote staffing agency specializing in placing top-tier customer support and IT helpdesk talent for growing businesses.",
+    date: "December 24, 2024",
+    panelImageSrc: "/case-studies/support-adventure-case-study-f.png",
+    panelLabelClassName: "left-1/2 -translate-x-1/2",
+    panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
+    href: "/case-study/support-adventure",
+  },
 ];
 
 const CASE_STUDY_PANEL_FALLBACKS = CASE_STUDY_PANEL_BY_SLUG;
