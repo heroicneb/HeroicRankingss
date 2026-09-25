@@ -79,7 +79,8 @@ export default function CaseStudyGrowthChartClient({ data }: { data: CaseStudyGr
           </linearGradient>
         </defs>
         <CartesianGrid stroke={GRID} strokeWidth={1} />
-        <XAxis axisLine={false} dataKey="month" dy={12} tick={{ fill: TICK, ...AXIS_FONT }} tickLine={false} />
+        {/* WHY: monthly exports have 25+ points; keep labels legible by spacing ticks at least 48px apart. */}
+        <XAxis axisLine={false} dataKey="month" dy={12} interval="preserveStartEnd" minTickGap={48} tick={{ fill: TICK, ...AXIS_FONT }} tickLine={false} />
         {hasLeft ? (
           <YAxis
             axisLine={false}
