@@ -162,7 +162,7 @@ const doc = {
   seo: {
     _type: "seo",
     metaTitle: "Support Adventure SEO Case Study | Long-Term Organic Growth",
-    metaDescription: `How an ongoing SEO engagement took Support Adventure from ${fmtK(traffic0)} to ${fmtK(traffic1)} monthly organic visits and Domain Rating ${dr0} to ${dr1} through content, keyword research, link building and technical fixes.`,
+    metaDescription: `How ongoing SEO took Support Adventure from ${fmtK(traffic0)} to ${fmtK(traffic1)} monthly organic visits and DR ${dr0} to ${dr1} with content, links and technical fixes.`,
   },
 };
 
