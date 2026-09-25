@@ -235,7 +235,7 @@ export function makePortableTextComponents(
         const openInNewTab = v?.openInNewTab ?? isExternal;
         return (
           <a
-            className="underline decoration-from-font underline-offset-[3px] text-[var(--color-hr-dark)] hover:text-[var(--color-hr-accent)] dark:text-[var(--color-text-inverse)] dark:hover:text-[var(--color-hr-accent)]"
+            className="underline decoration-from-font underline-offset-[3px] text-[var(--color-hr-accent)] transition-opacity hover:opacity-75"
             href={href}
             rel={openInNewTab ? "noopener noreferrer" : undefined}
             target={openInNewTab ? "_blank" : undefined}
