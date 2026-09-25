@@ -17,6 +17,8 @@ export const POSTS_QUERY = defineQuery(`
     publishedAt,
     categories,
     urlCategory,
+    readTime,
+    "bodyLength": length(pt::text(body)),
     author-> { name, photo }
   }
 `);
@@ -33,6 +35,8 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
     publishedAt,
     categories,
     urlCategory,
+    readTime,
+    "bodyLength": length(pt::text(body)),
     author-> {
       name,
       role,

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
 import { PUBLISHED_BLOG_POSTS } from "@/data/blog-posts";
@@ -13,13 +15,12 @@ interface BlogCardItem {
   excerpt: string | null;
   date: string | null;
   href: string;
+  image: { src: string; alt: string; lqip?: string } | null;
 }
 
 interface MaybeBlogCardItem extends Omit<BlogCardItem, "href"> {
   href: string | null;
 }
-
-const DEFAULT_READ_TIME = "6 min read";
 
 function mapCmsPosts(cmsPosts: SanityPostSummary[]): MaybeBlogCardItem[] {
   return cmsPosts.map((post) => {
@@ -35,8 +36,9 @@ function mapCmsPosts(cmsPosts: SanityPostSummary[]): MaybeBlogCardItem[] {
       slug: post.slug,
       title: post.title,
       excerpt: post.excerpt,
-      date: formatted ? `${formatted} — ${DEFAULT_READ_TIME}` : null,
+      date: formatted ? `${formatted} — ${post.readMinutes} min read` : null,
       href: getPostHref(post),
+      image: post.mainImageUrl ? { src: post.mainImageUrl, alt: post.mainImageAlt, lqip: post.mainImageLqip } : null,
     };
   });
 }
@@ -59,6 +61,7 @@ export function Blog({ cmsPosts }: BlogProps) {
           excerpt: p.excerpt,
           date: p.date,
           href: p.href,
+          image: null,
         }));
   return (
     <section
@@ -102,7 +105,19 @@ export function Blog({ cmsPosts }: BlogProps) {
               id={`featured-blog-${blog.slug}`}
               key={blog.slug}
             >
-              <div className="surface-radial h-[174px] w-full shrink-0 lg:h-[207px]" />
+              <div className="surface-radial relative h-[174px] w-full shrink-0 overflow-hidden lg:h-[207px]">
+                {blog.image ? (
+                  <Image
+                    alt={blog.image.alt}
+                    blurDataURL={blog.image.lqip}
+                    className="object-cover object-center"
+                    fill
+                    placeholder={blog.image.lqip ? "blur" : "empty"}
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    src={blog.image.src}
+                  />
+                ) : null}
+              </div>
               <div className="flex flex-1 flex-col px-5 pb-5 pt-5">
                 <h3 className="type-h3 line-clamp-3 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
                   {blog.title}
