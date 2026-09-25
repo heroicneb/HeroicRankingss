@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { AboutColumnsLoop } from "@/components/sections/about-columns-loop";
 import { Container } from "@/components/ui/container";
 import { DesktopScrollProgress } from "@/components/ui/desktop-scroll-progress";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -115,7 +116,7 @@ export function About() {
       </div>
 
       <Container className="pt-0 lg:pt-20">
-        <div className="grid gap-10 xl:grid-cols-[522px_630px] xl:items-start xl:gap-32">
+        <div className="grid gap-10 xl:grid-cols-[522px_630px] xl:items-start xl:gap-32" data-reveal-stagger>
           <div className="mx-auto w-full max-w-[352px] xl:mx-0 xl:max-w-none">
             <div className="flex flex-col items-center text-center xl:items-start xl:text-left">
               <SectionLabel className="w-full xl:relative xl:-top-[6px]">
@@ -154,6 +155,7 @@ export function About() {
               sizes="(min-width: 1280px) 1260px, 704px"
               src="/figma/about/about-main.webp"
             />
+            <AboutColumnsLoop darkSrc="/about/columns-dark.mp4" lightSrc="/about/columns-light.mp4" />
           </div>
         </div>
       </Container>

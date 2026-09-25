@@ -195,7 +195,7 @@ export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
       id="testimonials"
     >
       <Container>
-        <div className="grid gap-[30px] xl:grid-cols-[393px_1fr] xl:items-end">
+        <div className="grid gap-[30px] xl:grid-cols-[393px_1fr] xl:items-end" data-reveal>
           <div className="mx-auto w-full max-w-[350px] text-center xl:mx-0 xl:max-w-[393px] xl:text-left">
             <SectionLabel>
               /{"  "}Dedication{"  "}/
@@ -319,7 +319,7 @@ export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
           ))}
         </div>
 
-        <div className="hidden gap-5 lg:grid lg:grid-cols-2 xl:grid-cols-3">
+        <div className="hidden gap-5 lg:grid lg:grid-cols-2 xl:grid-cols-3" data-reveal-stagger>
           {testimonials.map((testimonial) => (
             <article
               className="relative mx-auto h-[574px] w-full max-w-[413px] overflow-hidden rounded-[var(--radius-card)] dark:border dark:border-[var(--color-border-inverse-10)] bg-[var(--color-hr-off-white)] dark:bg-[var(--color-bg-dark)]"

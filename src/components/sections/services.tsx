@@ -143,6 +143,13 @@ export function getServiceCardArticleClassName(
   );
 }
 
+/** Stores the pointer position on the card so the back-face spotlight can follow it. */
+function trackSpotlight(event: React.PointerEvent<HTMLElement>) {
+  const rect = event.currentTarget.getBoundingClientRect();
+  event.currentTarget.style.setProperty("--spot-x", `${event.clientX - rect.left}px`);
+  event.currentTarget.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
+}
+
 export function Services() {
   const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
   const [mobileIndicatorIndex, setMobileIndicatorIndex] = useState(0);
@@ -310,7 +317,7 @@ export function Services() {
       ref={sectionRef}
     >
       <Container>
-        <div className="mx-auto flex max-w-[350px] flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:text-left">
+        <div className="mx-auto flex max-w-[350px] flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:text-left" data-reveal>
           <div className="flex w-[324px] flex-col items-center gap-5 lg:w-auto lg:items-start lg:gap-[25px]">
             <SectionLabel>/ Services /</SectionLabel>
             <h2
@@ -347,7 +354,7 @@ export function Services() {
         id="services-rail-scroll"
         ref={railRef}
       >
-        <div className="mx-auto flex w-max gap-[10px] px-[20px] lg:gap-5 lg:px-[var(--space-page-x)]">
+        <div className="mx-auto flex w-max gap-[10px] px-[20px] lg:gap-5 lg:px-[var(--space-page-x)]" data-reveal-stagger>
           {SERVICE_CARDS.map((card, index) => (
             <article
               className={getServiceCardArticleClassName(
@@ -365,6 +372,7 @@ export function Services() {
               }}
               onFocus={() => setActiveCardIndex(index)}
               onMouseEnter={() => setActiveCardIndex(index)}
+              onPointerMove={trackSpotlight}
               onMouseLeave={() =>
                 setActiveCardIndex((current) =>
                   current === index ? null : current,

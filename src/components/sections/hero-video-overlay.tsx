@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/cn";
 
 interface HeroVideoOverlayProps {
-  /** Looping, silent MP4 rendered on top of the hero image. */
+  /** Silent MP4 rendered on top of the hero image. */
   src: string;
   /** Extra classes for the <video> element (positioning/cropping should match the image). */
   videoClassName?: string;
@@ -22,12 +22,12 @@ function canHover() {
 }
 
 /**
- * Hover-activated video layer for the homepage hero.
+ * Hover-activated video layer for the homepage hero — desktop only.
  *
- * WHY: The static image stays as the LCP asset and the fallback for touch,
- * reduced-motion and no-JS users. On hover-capable devices the video fades in
- * over it and loops, so the image appears to come alive; on leave it fades out
- * and pauses so nothing decodes in the background.
+ * WHY: the clip is a one-shot "awakening" (cracks light up, eyes glow), not a
+ * seamless loop, so it plays once and holds its final frame instead of looping.
+ * The static poster stays as the LCP asset and is all that phones, tablets and
+ * reduced-motion visitors get (Nebojsa's call: no video motion on phones).
  */
 export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -51,8 +51,7 @@ export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps)
     setActive(true);
     // WHY: every hover restarts the clip from its first frame rather than resuming.
     video.currentTime = 0;
-    // WHY: play() returns a promise that rejects if the browser blocks it; the
-    // image simply stays visible in that case.
+    // WHY: play() rejects if the browser blocks it; the poster simply stays visible.
     void video.play().catch(() => setActive(false));
   };
 
@@ -82,7 +81,6 @@ export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps)
           active ? "opacity-100" : "opacity-0",
           videoClassName,
         )}
-        loop
         muted
         playsInline
         preload="metadata"

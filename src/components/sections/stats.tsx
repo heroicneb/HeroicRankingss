@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { CountUp } from "@/components/motion/count-up";
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
@@ -43,12 +44,29 @@ const STATS: StatEntry[] = [
   },
 ];
 
+const METRIC_NUMBER = /(\d+(?:\.\d+)?)(%?)/;
+
+/** Wraps the first number in a metric ("100% CLIENT…", "OVER 200…") in a counter. */
+function renderMetric(metric: string) {
+  const match = METRIC_NUMBER.exec(metric);
+  if (!match || match.index === undefined) return metric;
+  const [whole, digits = "", suffix = ""] = match;
+  const decimals = digits.includes(".") ? digits.split(".")[1]?.length ?? 0 : 0;
+  return (
+    <>
+      {metric.slice(0, match.index)}
+      <CountUp decimals={decimals} suffix={suffix} value={Number(digits)} />
+      {metric.slice(match.index + whole.length)}
+    </>
+  );
+}
+
 export function Stats() {
   return (
     <section className="pt-[40px] lg:pt-[60px]">
       <Container>
         <div className="mx-auto flex max-w-[350px] flex-col items-center text-center text-[var(--color-hr-pure-white)] lg:hidden">
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-center gap-5" data-reveal>
             <SectionLabel className="text-[var(--color-hr-pure-white)]">
               / Guided by Data /
             </SectionLabel>
@@ -76,7 +94,7 @@ export function Stats() {
             </AppLink>
           </div>
 
-          <div className="mt-[60px] flex flex-col gap-10">
+          <div className="mt-[60px] flex flex-col gap-10" data-reveal-stagger>
             {STATS.map((stat, index) => (
               <article
                 className="w-[294px] text-center text-[var(--color-hr-pure-white)]"
@@ -99,7 +117,7 @@ export function Stats() {
                   </div>
                 </div>
                 <p className="relative z-10 -mt-[10px] w-full max-w-full text-[34px] font-semibold uppercase leading-none tracking-[-0.6801px] text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)]">
-                  {stat.metric}
+                  {renderMetric(stat.metric)}
                 </p>
                 <p className="type-paragraph mt-[10px] text-[var(--color-hr-pure-white)]">
                   {stat.detail}
@@ -110,7 +128,7 @@ export function Stats() {
         </div>
 
         <div className="hidden lg:block">
-          <div className="mx-auto max-w-[724px] pt-20 text-center text-[var(--color-hr-pure-white)] lg:pt-[80px]">
+          <div className="mx-auto max-w-[724px] pt-20 text-center text-[var(--color-hr-pure-white)] lg:pt-[80px]" data-reveal>
             <SectionLabel className="text-[var(--color-hr-pure-white)]">
               / Guided by Data /
             </SectionLabel>
@@ -139,7 +157,7 @@ export function Stats() {
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
-          <div className="grid gap-8 pb-10 pt-16 lg:grid-cols-3 lg:gap-0 lg:pb-[40px] lg:pt-[114px]">
+          <div className="grid gap-8 pb-10 pt-16 lg:grid-cols-3 lg:gap-0 lg:pb-[40px] lg:pt-[114px]" data-reveal-stagger>
             {STATS.map((stat, index) => (
               <article
                 className="mx-auto w-full max-w-[413px] text-center text-[var(--color-hr-pure-white)]"
@@ -159,7 +177,7 @@ export function Stats() {
                   </div>
                 </div>
                 <p className="type-key-point relative z-10 -mt-[15px] w-full max-w-full text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)]">
-                  {stat.metric}
+                  {renderMetric(stat.metric)}
                 </p>
                 <p className="type-paragraph mt-3 text-[var(--color-hr-pure-white)]">
                   {stat.detail}

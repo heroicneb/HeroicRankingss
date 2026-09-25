@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { ScrollReveal } from "@/components/motion/scroll-reveal";
 import { About } from "@/components/sections/about";
 import { Blog } from "@/components/sections/blog";
 import { CaseStudies } from "@/components/sections/case-studies";
@@ -30,6 +31,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <ScrollReveal />
       <Hero />
       <Services />
       <About />
