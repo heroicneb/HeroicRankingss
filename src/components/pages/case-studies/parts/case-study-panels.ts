@@ -26,7 +26,6 @@ export const CASE_STUDY_PANEL_BY_SLUG: Record<string, CaseStudyPanelArt> = {
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName:
       "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
-    panelLabelHidden: true,
   },
   nagish: {
     panelImageSrc: "/case-studies/imgGroup34.svg",
@@ -52,7 +51,6 @@ export const CASE_STUDY_PANEL_BY_SLUG: Record<string, CaseStudyPanelArt> = {
     panelImageSrc: "/case-studies/support-adventure-case-study-f.png",
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
-    panelLabelHidden: true,
   },
 };
 

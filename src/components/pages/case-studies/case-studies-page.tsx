@@ -160,7 +160,7 @@ function CaseStudyCard({
           src={panelImageSrc}
         />
 
-        {!panelLabelHidden ? (
+        {!panelLabelHidden && panelLabel ? (
           <p
             className={`absolute top-[131px] text-[32px] font-normal leading-[32px] tracking-[-0.64px] ${panelLabelClassName} ${panelLabelColorClassName}`}
           >
@@ -203,12 +203,10 @@ function mergeCmsWithHardcoded(
 
       return {
         title: caseStudy.title,
-        // Figma SoT shows the brand NAME on the index card (e.g. "Affinda",
-        // "DesignRush"), not the legacy URL. Migrated `client` holds the URL
-        // form (`affinda.com`, `www.designrush.com`), so prefer the explicit
-        // panelLabel first, then the brand title, and fall back to `client`
-        // only when neither is set.
-        panelLabel: caseStudy.panelLabel ?? caseStudy.title ?? caseStudy.client,
+        // WHY: the label is only ever the explicit Panel Label from Sanity. An
+        // empty field means the artwork carries the brand itself, so nothing is
+        // drawn over it (no fallback to the title or client name).
+        panelLabel: caseStudy.panelLabel?.trim() ?? "",
         description:
           caseStudy.excerpt ??
           "Explore how Heroic Rankings delivered measurable SEO growth for this client.",
