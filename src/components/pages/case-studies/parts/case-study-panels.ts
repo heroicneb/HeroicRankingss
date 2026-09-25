@@ -11,6 +11,8 @@ export interface CaseStudyPanelArt {
   panelLabelClassName: string;
   /** Tailwind color class for the brand label text (varies per brand bg). */
   panelLabelColorClassName: string;
+  /** Set when the artwork already contains the brand name/logo. */
+  panelLabelHidden?: boolean;
 }
 
 export const CASE_STUDY_PANEL_BY_SLUG: Record<string, CaseStudyPanelArt> = {
@@ -24,6 +26,7 @@ export const CASE_STUDY_PANEL_BY_SLUG: Record<string, CaseStudyPanelArt> = {
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName:
       "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
+    panelLabelHidden: true,
   },
   nagish: {
     panelImageSrc: "/case-studies/imgGroup34.svg",
@@ -49,6 +52,7 @@ export const CASE_STUDY_PANEL_BY_SLUG: Record<string, CaseStudyPanelArt> = {
     panelImageSrc: "/case-studies/support-adventure-case-study-f.png",
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
+    panelLabelHidden: true,
   },
 };
 
