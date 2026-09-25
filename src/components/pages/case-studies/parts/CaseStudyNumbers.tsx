@@ -68,14 +68,13 @@ export function CaseStudyNumbers({ data, chart }: CaseStudyNumbersProps) {
       <div className="mx-auto w-full max-w-[1440px] px-[10px]">
         <div className="rounded-[30px] bg-[var(--color-hr-dark)] px-[20px] py-[40px] lg:rounded-[40px] lg:px-[70px] lg:py-[120px]">
           {data.label ? <SectionLabel className="text-center text-[var(--color-hr-pure-white)] lg:text-left">{data.label}</SectionLabel> : null}
-          <div className="mt-[20px] flex flex-col items-center gap-[20px] text-center lg:grid lg:grid-cols-[325px_minmax(0,847px)] lg:items-start lg:justify-between lg:gap-[40px] lg:text-left">
+          <div className="mt-[20px] flex flex-col items-center gap-[20px] text-center lg:grid lg:grid-cols-[minmax(325px,520px)_minmax(0,847px)] lg:items-start lg:justify-between lg:gap-[40px] lg:text-left">
             {hasHeading ? (
               <TwoToneHeading
                 as="h2"
                 className="font-normal text-[28px] leading-[1.2] tracking-[-0.56px] text-[var(--color-hr-pure-white)] lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px]"
                 gradientClass="gradient-text-brand-light"
                 highlighted={headingHighlighted}
-                layout="stacked"
                 main={headingMain}
               />
             ) : null}
