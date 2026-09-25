@@ -6,7 +6,7 @@ import { SectionLabel } from "@/components/ui/section-label";
 export function AboutUsTrust() {
   return (
     <section
-      className="px-[15px] pt-[60px] lg:px-[80px] lg:pt-[120px]"
+      className="px-[15px] pb-[60px] pt-[60px] lg:px-[80px] lg:pb-[70px] lg:pt-[120px]"
       id="about-us-trust"
     >
       <div className="lg:hidden">
