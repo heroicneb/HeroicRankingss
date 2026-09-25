@@ -43,7 +43,7 @@ export default function AboutUsPage({
 
       <AboutUsCta />
       <AboutUsTeam cmsTeamMembers={cmsTeamMembers} />
-      <Testimonials cmsTestimonials={cmsTestimonials} />
+      <Testimonials cmsTestimonials={cmsTestimonials} showCta={false} />
       <div className="-mt-14">
         <Blog cmsPosts={cmsPosts} />
       </div>

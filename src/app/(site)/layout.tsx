@@ -98,8 +98,6 @@ export default async function SiteLayout({
         <Footer
           navLinks={settings?.footerNavItems ?? []}
           socialLinks={settings?.socialLinks ?? []}
-          phone={settings?.phone ?? ""}
-          email={settings?.email ?? ""}
           copyrightText={
             settings?.copyrightText ??
             `© ${new Date().getFullYear()} Heroic Rankings`
