@@ -53,7 +53,7 @@ export function Hero() {
             fetchPriority="high"
             fill
             priority
-            quality={90}
+            quality={95}
             sizes="(min-width: 1024px) 1440px, 100vw"
             src="/hero-face-final-poster.webp"
           />

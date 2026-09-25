@@ -88,6 +88,8 @@ function withWrappedQuotes(text: string) {
 
 interface TestimonialsProps {
   cmsTestimonials?: SanityTestimonial[];
+  /** Hide the "Become a Satisfied Client" button (the About page has its own CTA block). */
+  showCta?: boolean;
 }
 
 function cmsToEntry(t: SanityTestimonial): TestimonialEntry {
@@ -113,7 +115,7 @@ function cmsToEntry(t: SanityTestimonial): TestimonialEntry {
   };
 }
 
-export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
+export function Testimonials({ cmsTestimonials, showCta = true }: TestimonialsProps = {}) {
   const cmsReady =
     cmsTestimonials &&
     cmsTestimonials.length > 0 &&
@@ -209,16 +211,18 @@ export function Testimonials({ cmsTestimonials }: TestimonialsProps = {}) {
             </h2>
           </div>
 
-          <div className="flex justify-center xl:justify-end">
-            <AppLink
-              className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] xl:max-w-[253px]"
-              href="/contact"
-              motionPreset="none"
-            >
-              Become a Satisfied Client
-              <GradientArrowUpRightIcon className="size-[10px]" />
-            </AppLink>
-          </div>
+          {showCta ? (
+            <div className="flex justify-center xl:justify-end">
+              <AppLink
+                className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] xl:max-w-[253px]"
+                href="/contact"
+                motionPreset="none"
+              >
+                Become a Satisfied Client
+                <GradientArrowUpRightIcon className="size-[10px]" />
+              </AppLink>
+            </div>
+          ) : null}
         </div>
       </Container>
 

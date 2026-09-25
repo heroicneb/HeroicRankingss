@@ -3,10 +3,8 @@ import Image from "next/image";
 import { FooterCtaVariant } from "@/components/layout/footer-cta-variant";
 import { AppLink } from "@/components/ui/app-link";
 import {
-  SITE_EMAIL,
   SITE_INSTAGRAM_URL,
   SITE_LINKEDIN_URL,
-  SITE_PHONE,
   SITE_X_URL,
 } from "@/lib/site";
 
@@ -40,8 +38,6 @@ const PLATFORM_LABELS: Record<string, string> = {
 interface FooterProps {
   navLinks?: Array<{ label: string; href: string }>;
   socialLinks?: Array<{ platform: string; url: string }>;
-  phone?: string;
-  email?: string;
   copyrightText?: string;
   footerCtaHeading?: string | null;
   footerCtaBody?: string | null;
@@ -52,8 +48,6 @@ interface FooterProps {
 export function Footer({
   navLinks,
   socialLinks,
-  phone,
-  email,
   copyrightText,
   footerCtaHeading,
   footerCtaBody,
@@ -67,8 +61,6 @@ export function Footer({
         href: sl.url,
       }))
     : SOCIAL_LINKS;
-  const resolvedPhone = phone || SITE_PHONE;
-  const resolvedEmail = email || SITE_EMAIL;
   const resolvedCopyright = copyrightText || "\u00A92026 Heroic Rankings";
 
   return (
@@ -97,23 +89,6 @@ export function Footer({
               <div className="h-px w-full bg-[color-mix(in_srgb,var(--color-hr-light-grey)_40%,transparent)]" />
 
               <div className="mt-[20px] flex w-full flex-col items-center gap-[20px] text-[var(--color-hr-pure-white)] lg:mt-[30px] lg:flex-row lg:items-center lg:justify-between lg:gap-[18px]">
-                <div className="order-1 flex w-full flex-col items-center gap-[5px] text-center lg:order-2 lg:w-auto lg:flex-row lg:gap-[18px]">
-                  <a
-                    className="type-footer inline-flex min-h-[44px] items-center rounded-[10px] px-1 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg-dark)] lg:min-h-0 lg:rounded-none lg:px-0"
-                    href={`tel:${resolvedPhone.replace(/\s/g, "")}`}
-                  >
-                    {resolvedPhone}
-                  </a>
-                  <a
-                    className="type-footer inline-flex min-h-[44px] items-center rounded-[10px] px-1 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg-dark)] lg:min-h-0 lg:rounded-none lg:px-0"
-                    href={`mailto:${resolvedEmail}`}
-                  >
-                    {resolvedEmail}
-                  </a>
-                </div>
-
-                <div className="order-2 h-px w-full bg-[color-mix(in_srgb,var(--color-hr-light-grey)_40%,transparent)] lg:hidden" />
-
                 <div className="order-3 flex items-center justify-center gap-[30px] lg:order-3 lg:gap-[18px]">
                   {resolvedSocialLinks.map((social) => (
                     <a
