@@ -38,6 +38,7 @@ const block = (key, text) => ({
 const content = {
   title: "Building Search Authority: My Baskets' Link Building Story",
   titleHighlighted: "Building Search Authority:",
+  panelLabel: "My Baskets",
   heroSubtitle:
     "A consistent, targeted link-building program helped strengthen domain authority and support long-term organic search performance.",
   // PLACEHOLDER numbers

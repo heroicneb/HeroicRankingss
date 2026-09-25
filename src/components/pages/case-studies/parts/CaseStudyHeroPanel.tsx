@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { MetricTile } from "@/components/ui/metric-tile";
 import type { SanityCaseStudyDetail } from "@/lib/sanity-data";
+import { urlFor } from "@/sanity/lib/image";
 
 import {
   CASE_STUDY_PANEL_BY_SLUG,
@@ -20,6 +21,10 @@ interface CaseStudyHeroPanelProps {
  * by slug — the same flat panel artwork used on the case-studies index card
  * top half — with the brand name centered and a soft shadow.
  *
+ * WHY: the Figma frame (2255:878) puts a full-width image strip here. When
+ * the case study has a hero image in Sanity it fills the panel; otherwise the
+ * brand-colour panel with the label is the fallback.
+ *
  * Returns `null` when both `heroMetrics` and the slug-resolved panel are
  * absent so the page can collapse cleanly.
  */
@@ -29,9 +34,12 @@ export function CaseStudyHeroPanel({ data }: CaseStudyHeroPanelProps) {
   const panel = slug
     ? (CASE_STUDY_PANEL_BY_SLUG[slug] ?? CASE_STUDY_PANEL_FALLBACK)
     : CASE_STUDY_PANEL_FALLBACK;
-  const panelLabel = data.panelLabel ?? data.title ?? data.client;
+  const panelLabel = data.panelLabel ?? data.client ?? data.title;
+  const heroImage = data.heroImage?.asset ? data.heroImage : null;
+  const heroImageUrl = heroImage ? urlFor(heroImage).width(2840).url() : null;
+  const heroImageAlt = (heroImage as { alt?: string } | null)?.alt ?? panelLabel ?? "";
 
-  if (metrics.length === 0 && !panel) return null;
+  if (metrics.length === 0 && !panel && !heroImageUrl) return null;
 
   return (
     <section className="px-[20px] pb-[40px] lg:px-[80px] lg:pb-[100px]">
@@ -56,16 +64,28 @@ export function CaseStudyHeroPanel({ data }: CaseStudyHeroPanelProps) {
               : "relative aspect-[350/255] w-full overflow-hidden rounded-[30px] lg:aspect-[1420/684] lg:rounded-[40px]"
           }
         >
-          <Image
-            alt={`${panelLabel} brand panel`}
-            className="object-cover"
-            fetchPriority="high"
-            fill
-            priority
-            sizes="(min-width: 1024px) 1420px, 100vw"
-            src={panel.panelImageSrc}
-          />
-          {panelLabel ? (
+          {heroImageUrl ? (
+            <Image
+              alt={heroImageAlt}
+              className="object-cover"
+              fetchPriority="high"
+              fill
+              priority
+              sizes="(min-width: 1024px) 1420px, 100vw"
+              src={heroImageUrl}
+            />
+          ) : (
+            <Image
+              alt={`${panelLabel} brand panel`}
+              className="object-cover"
+              fetchPriority="high"
+              fill
+              priority
+              sizes="(min-width: 1024px) 1420px, 100vw"
+              src={panel.panelImageSrc}
+            />
+          )}
+          {panelLabel && !heroImageUrl ? (
             <p
               className={`absolute top-1/2 -translate-y-1/2 text-[40px] font-normal leading-[1.1] tracking-[-0.8px] lg:text-[80px] lg:leading-[1.05] lg:tracking-[-1.6px] ${panel.panelLabelClassName} ${panel.panelLabelColorClassName}`}
             >
