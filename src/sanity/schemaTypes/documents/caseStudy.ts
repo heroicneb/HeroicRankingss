@@ -284,6 +284,25 @@ export const caseStudy = defineType({
       ],
     }),
     defineField({
+      name: "strategyIntro",
+      title: "Strategy Section Intro",
+      type: "object",
+      group: "strategy",
+      description: "Label, two-tone heading and paragraph shown above the pillar cards (Figma 2255:972).",
+      fields: [
+        defineField({ name: "label", type: "string", description: 'e.g. "/ Our Proven Strategy /"' }),
+        defineField({ name: "headingMain", type: "string", description: "Solid part of the heading" }),
+        defineField({ name: "headingHighlighted", type: "string", description: "Gradient part of the heading" }),
+        defineField({
+          name: "highlightPosition",
+          type: "string",
+          options: { list: [{ title: "Gradient first", value: "leading" }, { title: "Gradient last", value: "trailing" }], layout: "radio" },
+          initialValue: "leading",
+        }),
+        defineField({ name: "body", type: "text", rows: 4 }),
+      ],
+    }),
+    defineField({
       name: "strategyPillars",
       title: "Strategy Pillar Cards",
       type: "array",
@@ -491,6 +510,7 @@ export const caseStudy = defineType({
                   options: {
                     list: [
                       { title: "Light gradient", value: "gradient-light" },
+                      { title: "Indigo", value: "indigo" },
                       { title: "White trace", value: "white-trace" },
                       { title: "Grey trace", value: "grey-trace" },
                     ],
@@ -628,6 +648,8 @@ export const caseStudy = defineType({
       type: "object",
       group: "proof",
       fields: [
+        defineField({ name: "beforeLabel", type: "string", title: "Legend: before", description: 'e.g. "Before - March 24"' }),
+        defineField({ name: "afterLabel", type: "string", title: "Legend: after", description: 'e.g. "Present"' }),
         defineField({ name: "label", type: "string" }),
         defineField({ name: "headingMain", type: "string" }),
         defineField({ name: "headingHighlighted", type: "string" }),

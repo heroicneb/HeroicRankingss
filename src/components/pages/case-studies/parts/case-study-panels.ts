@@ -20,7 +20,7 @@ export const CASE_STUDY_PANEL_BY_SLUG: Record<string, CaseStudyPanelArt> = {
     panelLabelColorClassName: "text-[var(--color-hr-pure-white)]",
   },
   "my-baskets": {
-    panelImageSrc: "/case-studies/imgGroup48.svg",
+    panelImageSrc: "/case-studies/my-baskets-cs-f.png",
     panelLabelClassName: "left-1/2 -translate-x-1/2",
     panelLabelColorClassName:
       "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",

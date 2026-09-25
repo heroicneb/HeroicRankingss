@@ -87,6 +87,9 @@ interface SanityRawPost {
   publishedAt?: string | null;
   categories?: unknown[] | null;
   urlCategory?: string | null;
+  readTime?: string | null;
+  /** Character count of the body text, projected by POSTS_QUERY. */
+  bodyLength?: number | null;
   author?: { name?: string; photo?: SanityImageRef | null } | null;
 }
 
@@ -320,6 +323,18 @@ function imageLqip(
 
 // ── Blog Posts ────────────────────────────────────────────────────
 
+/**
+ * WHY: legacy read-time labels are free text ("10 mins", "10-12 min"); take the
+ * first number, else estimate from the body length. Calibrated on labelled
+ * posts: about 6.2 characters per word and 240 words per minute.
+ */
+function readMinutes(label: unknown, bodyLength: unknown): number {
+  const fromLabel = typeof label === "string" ? Number.parseInt(label, 10) : Number.NaN;
+  if (Number.isFinite(fromLabel) && fromLabel > 0) return fromLabel;
+  const chars = typeof bodyLength === "number" ? bodyLength : 0;
+  return Math.max(1, Math.round(chars / 6.2 / 240));
+}
+
 export interface SanityPostSummary {
   _id: string;
   categories: string[];
@@ -329,6 +344,8 @@ export interface SanityPostSummary {
   mainImageLqip: string | undefined;
   mainImageUrl: string;
   publishedAt: string | null;
+  /** Whole minutes; from the CMS label when set, otherwise estimated from the body length. */
+  readMinutes: number;
   slug: string;
   title: string;
   titleHighlighted: string | null;
@@ -372,6 +389,7 @@ export async function getPosts(): Promise<SanityPostSummary[]> {
     mainImageLqip: imageLqip(post.mainImage),
     mainImageAlt: post.mainImage?.alt ?? post.title,
     publishedAt: post.publishedAt ?? null,
+    readMinutes: readMinutes(post.readTime, post.bodyLength),
     categories: (post.categories ?? []).filter(
       (category: unknown): category is string => typeof category === "string",
     ),
@@ -413,6 +431,7 @@ export const getPostBySlug = cache(
       mainImageLqip: imageLqip(post.mainImage),
       mainImageAlt: post.mainImage?.alt ?? post.title,
       publishedAt: post.publishedAt ?? null,
+      readMinutes: readMinutes(post.readTime, post.bodyLength),
       categories: (post.categories ?? []).filter(
         (category: unknown): category is string => typeof category === "string",
       ),
@@ -993,6 +1012,13 @@ export interface SanityCaseStudyDetail {
       body: string;
     }> | null;
   } | null;
+  strategyIntro?: {
+    label?: string | null;
+    headingMain?: string | null;
+    headingHighlighted?: string | null;
+    highlightPosition?: "leading" | "trailing" | null;
+    body?: string | null;
+  } | null;
   strategyPillars?: Array<{
     _key?: string;
     title: string;
@@ -1040,6 +1066,8 @@ export interface SanityCaseStudyDetail {
     }> | null;
   } | null;
   beforeAfter?: {
+    beforeLabel?: string | null;
+    afterLabel?: string | null;
     label?: string | null;
     headingMain?: string | null;
     headingHighlighted?: string | null;

@@ -1,7 +1,7 @@
 import { PortableText } from "@portabletext/react";
 
-import { portableTextComponents } from "@/sanity/lib/portable-text-components";
 import type { SanityCaseStudyDetail } from "@/lib/sanity-data";
+import { portableTextComponents } from "@/sanity/lib/portable-text-components";
 
 type ConclusionData = NonNullable<SanityCaseStudyDetail["conclusion"]>;
 
@@ -10,41 +10,32 @@ interface CaseStudyConclusionProps {
 }
 
 /**
- * Conclusion panel (Figma `2255:1373` desktop / `2255:1865` mobile).
- *
- * Light grey rounded panel with a solid-black H2 ("Conclusion"), a
- * gradient subhead, and a Portable Text body. Subhead and body are both
- * optional — section collapses if all three are absent.
+ * Conclusion panel (Figma 2255:1373): "Conclusion" 52/60 solid, a 32px
+ * full-gradient lead line 40px below, then 18/24 body paragraphs 40px below.
  */
 export function CaseStudyConclusion({ data }: CaseStudyConclusionProps) {
   if (!data) return null;
   const heading = data.heading ?? "";
   const subhead = data.gradientSubhead ?? "";
   const body = data.body ?? null;
-
   if (!heading && !subhead && !(body && body.length > 0)) return null;
 
   return (
-    <section
-      className="px-[20px] pb-[60px] lg:px-[80px] lg:pb-[120px]"
-      id="case-study-conclusion"
-    >
-      <div className="mx-auto w-full max-w-[1440px]">
-        <div className="rounded-[22px] bg-[var(--color-hr-off-white)] px-[24px] py-[40px] dark:bg-[var(--color-surface-inverse-10)] lg:rounded-[40px] lg:px-[80px] lg:py-[80px]">
+    <section className="pb-[10px]" id="case-study-conclusion">
+      <div className="mx-auto w-full max-w-[1440px] px-[10px]">
+        <div className="rounded-[22px] bg-[var(--color-hr-off-white)] px-[20px] py-[40px] dark:bg-[var(--color-surface-inverse-10)] lg:rounded-[40px] lg:px-[70px] lg:py-[120px]">
           {heading ? (
-            <h2 className="font-normal text-[28px] leading-[1.2] tracking-[-0.56px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)] lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px]">
+            <h2 className="font-normal text-[32px] leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-pure-black)] dark:text-[var(--color-text-inverse)] lg:text-[52px] lg:leading-[60px] lg:tracking-[-1.04px]">
               {heading}
             </h2>
           ) : null}
-
           {subhead ? (
-            <p className="gradient-text-brand mt-[14px] text-[20px] font-normal leading-[1.3] lg:mt-[20px] lg:text-[24px] lg:leading-[1.3]">
+            <p className="gradient-text-brand mt-[20px] font-normal text-[22px] leading-[normal] lg:mt-[40px] lg:text-[32px] lg:leading-[1.2] lg:tracking-[-0.64px]">
               {subhead}
             </p>
           ) : null}
-
           {body && body.length > 0 ? (
-            <div className="mt-[20px] max-w-[920px] text-[16px] leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-[30px] lg:text-[18px] lg:leading-[24px]">
+            <div className="mt-[20px] space-y-[20px] text-[16px] leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-[40px] lg:text-[18px] lg:leading-[24px] [&_p+p]:mt-[20px]">
               <PortableText components={portableTextComponents} value={body} />
             </div>
           ) : null}
