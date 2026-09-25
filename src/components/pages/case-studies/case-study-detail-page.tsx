@@ -1,5 +1,6 @@
 import type { SanityCaseStudyDetail } from "@/lib/sanity-data";
 
+import { CASE_STUDY_PANEL_BY_SLUG } from "./parts/case-study-panels";
 import { CaseStudyBeforeAfter } from "./parts/CaseStudyBeforeAfter";
 import { CaseStudyChallenges } from "./parts/CaseStudyChallenges";
 import { CaseStudyConclusion } from "./parts/CaseStudyConclusion";
@@ -26,10 +27,11 @@ interface CaseStudyDetailPageProps {
  * start a new case study from this template.
  */
 export function CaseStudyDetailPage({ caseStudy }: CaseStudyDetailPageProps) {
+  const panelArt = caseStudy.slug?.current ? CASE_STUDY_PANEL_BY_SLUG[caseStudy.slug.current] : undefined;
   return (
     <>
       <CaseStudyHero data={caseStudy} />
-      <CaseStudyHeroPanel data={caseStudy} />
+      <CaseStudyHeroPanel data={caseStudy} fallbackImageSrc={panelArt?.panelImageSrc} />
       <CaseStudyOverview data={caseStudy.caseOverview} />
       <CaseStudyChallenges data={caseStudy.objectiveChallenges} />
       <CaseStudyPillars data={caseStudy.strategyPillars} intro={caseStudy.strategyIntro} />

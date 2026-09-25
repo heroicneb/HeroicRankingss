@@ -5,6 +5,8 @@ import { urlFor } from "@/sanity/lib/image";
 
 interface CaseStudyHeroPanelProps {
   data: SanityCaseStudyDetail;
+  /** Local /public path used when no Sanity heroImage asset is set. */
+  fallbackImageSrc?: string;
 }
 
 /**
@@ -15,10 +17,10 @@ interface CaseStudyHeroPanelProps {
  * to 10px from the viewport edge like the design; it shows the case study's
  * hero image when one is set, otherwise the frame's dark-to-indigo gradient.
  */
-export function CaseStudyHeroPanel({ data }: CaseStudyHeroPanelProps) {
+export function CaseStudyHeroPanel({ data, fallbackImageSrc }: CaseStudyHeroPanelProps) {
   const metrics = data.heroMetrics ?? [];
   const heroImage = data.heroImage?.asset ? data.heroImage : null;
-  const heroImageUrl = heroImage ? urlFor(heroImage).width(2840).url() : null;
+  const heroImageUrl = heroImage ? urlFor(heroImage).width(2840).url() : (fallbackImageSrc ?? null);
   const heroImageAlt = (heroImage as { alt?: string } | null)?.alt ?? data.title ?? "";
 
   return (
