@@ -33,9 +33,11 @@ const InsightsCatalog = dynamic(
 
 interface InsightsPageProps {
   cmsPosts?: SanityPostSummary[];
+  category?: string | null;
+  page?: string | null;
 }
 
-export default function InsightsPage({ cmsPosts }: InsightsPageProps) {
+export default function InsightsPage({ cmsPosts, category, page }: InsightsPageProps) {
   return (
     <section className="pt-[100px] lg:pt-[109px]" id="blog">
       <div className="mx-auto w-full max-w-[1440px] px-[5px]">
@@ -62,7 +64,7 @@ export default function InsightsPage({ cmsPosts }: InsightsPageProps) {
             <SubscribeBar />
           </div>
 
-          <InsightsCatalog cmsPosts={cmsPosts} />
+          <InsightsCatalog category={category} cmsPosts={cmsPosts} page={page} />
         </div>
       </div>
     </section>

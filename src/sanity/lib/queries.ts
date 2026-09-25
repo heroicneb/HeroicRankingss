@@ -8,7 +8,7 @@ import { defineQuery } from "next-sanity";
 // --- Blog Posts ---
 
 export const POSTS_QUERY = defineQuery(`
-  *[_type == "post" && defined(slug.current) && !(_id match "audit-fixture-*")] | order(publishedAt desc) [0...12] {
+  *[_type == "post" && defined(slug.current) && !(_id match "audit-fixture-*")] | order(publishedAt desc) {
     _id,
     title,
     slug,

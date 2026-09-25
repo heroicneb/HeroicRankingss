@@ -442,7 +442,8 @@ async function convertPost({ url, slug, urlCategory }, ctx) {
     excerpt,
     publishedAt: meta.datePublished ? new Date(meta.datePublished).toISOString() : new Date().toISOString(),
     urlCategory,
-    categories: category && category !== "seo" ? ["seo", category] : ["seo"],
+    // WHY: the Insights filter treats a post as "SEO" whenever that value is present, so store one category only.
+    categories: [category ?? "seo"],
     relatedService: RELATED_SERVICE_BY_URL_CATEGORY[urlCategory] ?? undefined,
     body,
   };
