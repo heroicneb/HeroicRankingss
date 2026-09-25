@@ -5,6 +5,7 @@ import { AppLink } from "@/components/ui/app-link";
 import { DiagonalArrowIcon } from "@/components/ui/icons/decorative";
 import { createPageMetadata } from "@/lib/metadata";
 import type { SanityCaseStudy } from "@/lib/sanity-data";
+import { PageLinks } from "@/components/ui/page-links";
 import { SubscribeBar } from "@/components/ui/subscribe-bar";
 
 import { CASE_STUDY_PANEL_BY_SLUG } from "./parts/case-study-panels";
@@ -16,6 +17,8 @@ export const metadata: Metadata = createPageMetadata({
   path: "/case-study",
 });
 
+const PAGE_SIZE = 9;
+
 interface CaseStudyCardData {
   date: string;
   description: string;
@@ -24,6 +27,8 @@ interface CaseStudyCardData {
   panelLabel: string;
   panelLabelClassName: string;
   panelLabelColorClassName: string;
+  /** True when the panel image already shows the brand, so no text label is drawn. */
+  panelLabelHidden?: boolean;
   title: string;
 }
 
@@ -136,6 +141,7 @@ function CaseStudyCard({
   panelLabel,
   panelLabelClassName,
   panelLabelColorClassName,
+  panelLabelHidden,
   title,
 }: CaseStudyCardData) {
   return (
@@ -154,11 +160,13 @@ function CaseStudyCard({
           src={panelImageSrc}
         />
 
-        <p
-          className={`absolute top-[131px] text-[32px] font-normal leading-[32px] tracking-[-0.64px] ${panelLabelClassName} ${panelLabelColorClassName}`}
-        >
-          {panelLabel}
-        </p>
+        {!panelLabelHidden ? (
+          <p
+            className={`absolute top-[131px] text-[32px] font-normal leading-[32px] tracking-[-0.64px] ${panelLabelClassName} ${panelLabelColorClassName}`}
+          >
+            {panelLabel}
+          </p>
+        ) : null}
 
         <span
           aria-hidden
@@ -181,10 +189,6 @@ function CaseStudyCard({
       </div>
     </AppLink>
   );
-}
-
-interface CaseStudiesPageProps {
-  cmsCaseStudies?: SanityCaseStudy[];
 }
 
 function mergeCmsWithHardcoded(
@@ -227,6 +231,7 @@ function mergeCmsWithHardcoded(
         panelLabelColorClassName:
           panelFallback?.panelLabelColorClassName ??
           "text-[var(--color-hr-pure-white)]",
+        panelLabelHidden: panelFallback?.panelLabelHidden ?? false,
         href: `/case-study/${caseStudy.slug}`,
       } satisfies CaseStudyCardData;
     });
@@ -234,12 +239,25 @@ function mergeCmsWithHardcoded(
   return cardsFromCms.length > 0 ? cardsFromCms : CASE_STUDY_CARDS;
 }
 
-export default function CaseStudiesPage({
-  cmsCaseStudies,
-}: CaseStudiesPageProps) {
+interface CaseStudiesPageProps {
+  cmsCaseStudies?: SanityCaseStudy[];
+  /** `page` query param from the URL. */
+  page?: string | null;
+}
+
+const hrefForPage = (n: number) => (n <= 1 ? "/case-study/" : `/case-study/?page=${n}`);
+
+/**
+ * Case studies index: a uniform 3-up grid (2-up on tablets, 1-up on phones),
+ * nine cards per page, with link-based pagination when there are more.
+ */
+export default function CaseStudiesPage({ cmsCaseStudies, page: pageParam }: CaseStudiesPageProps) {
   const cards = mergeCmsWithHardcoded(cmsCaseStudies);
-  const firstRowCards = cards.slice(0, 3);
-  const secondRowCards = cards.slice(3);
+  const pageCount = Math.max(1, Math.ceil(cards.length / PAGE_SIZE));
+  const requested = Math.max(1, Number.parseInt(pageParam ?? "1", 10) || 1);
+  const page = Math.min(requested, pageCount);
+  const visible = cards.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
   return (
     <section className="pb-[60px] pt-[109px] lg:pb-[120px]" id="case-studies">
       <div className="mx-auto w-full max-w-[1440px] px-5 md:px-10 xl:px-[80px]">
@@ -248,46 +266,23 @@ export default function CaseStudiesPage({
             Success Stories
           </span>
         </h1>
-
         <p className="mx-auto mt-[7px] w-full max-w-[734px] text-center text-[18px] font-normal leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
           Work we&apos;re proud to stand behind.
           <br />
           See what this looks like in practice &amp; how our execution performs
           over time.
         </p>
-
         <div className="mt-10 flex justify-center">
           <SubscribeBar />
         </div>
 
-        <div className="relative mx-auto mt-[122px] hidden w-full max-w-[1280px] xl:block">
-          <div className="flex items-start justify-between gap-5">
-            {firstRowCards.map((card) => (
-              <CaseStudyCard key={card.title} {...card} />
-            ))}
-          </div>
-
-          <Image
-            alt=""
-            aria-hidden
-            className="pointer-events-none absolute left-[calc(50%+38px)] top-[601px]"
-            height={34}
-            src="/case-studies/imgImage39.png"
-            width={36}
-          />
-
-          <div className="mt-5 flex items-start justify-between gap-5">
-            {secondRowCards.map((card) => (
-              <CaseStudyCard key={card.title} {...card} />
-            ))}
-          </div>
-        </div>
-
-        <div className="mx-auto mt-20 grid w-full max-w-[860px] grid-cols-1 justify-items-center gap-5 md:grid-cols-2 xl:hidden">
-          {cards.map((card) => (
-            <CaseStudyCard key={card.title} {...card} />
+        <div className="mx-auto mt-20 grid w-full max-w-[1280px] grid-cols-1 justify-items-center gap-5 md:grid-cols-2 xl:mt-[122px] xl:grid-cols-3">
+          {visible.map((card) => (
+            <CaseStudyCard key={card.href} {...card} />
           ))}
         </div>
+
+        <PageLinks ariaLabel="Case study pages" className="mt-[60px]" hrefFor={hrefForPage} page={page} pageCount={pageCount} />
       </div>
     </section>
   );
