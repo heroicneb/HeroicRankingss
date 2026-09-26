@@ -57,9 +57,15 @@ function transcriptOpener(files: string[]): { speaker: string; text: string } | 
   if (!existsSync(full)) return null;
   const raw = readFileSync(full, "utf8");
   const m = raw.match(/^\s*([^\n(]+?)\s*\([\d.:]+\)\s*\n([\s\S]*?)(?:\n\s*\n|$)/);
-  if (!m) return null;
-  const speaker = /^speaker-\d/i.test(m[1] ?? "") ? "Nebojsa" : (m[1] ?? "Nebojsa").replace(/\s+\S$/, "").trim();
-  return { speaker, text: (m[2] ?? "").replace(/\s+/g, " ").trim() };
+  if (m) {
+    const speaker = /^speaker-\d/i.test(m[1] ?? "") ? "Nebojsa" : (m[1] ?? "Nebojsa").replace(/\s+\S$/, "").trim();
+    return { speaker, text: (m[2] ?? "").replace(/\s+/g, " ").trim() };
+  }
+  // WHY: some exports have no speaker labels (plain caption lines); the host always opens, so take the first ~70 words.
+  const words = raw.replace(/\s+/g, " ").trim().split(" ");
+  const cut = words.slice(0, 70).join(" ");
+  const end = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "), cut.lastIndexOf("! "));
+  return { speaker: "Nebojsa", text: end > 40 ? cut.slice(0, end + 1) : cut };
 }
 
 async function uploadThumbnail(youtubeId: string, alt: string) {
