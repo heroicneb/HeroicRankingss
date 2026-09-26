@@ -405,7 +405,8 @@ export default function PodcastPage({ episodes }: PodcastPageProps) {
     <>
       <HeroSection episodeCount={hasCms ? episodes.length : 15} />
       <LatestEpisodeSection episode={latest ?? FALLBACK_LATEST} />
-      <EpisodesGridSection episodes={hasCms ? rest : FALLBACK_EPISODES} />
+      {/* WHY: the newest episode fills the Latest panel; the grid shows the rest, or the frame's trio until more exist. */}
+      <EpisodesGridSection episodes={rest.length ? rest : FALLBACK_EPISODES} />
       <PodcastAISection />
     </>
   );
