@@ -1,0 +1,577 @@
+speaker-0 (00:00.066)
+Hello everyone, we gathered here to share some interesting insights regarding the SEO industry. As many of you noticed that things are changing drastically in the previous few months since the AI launched the new features and now Google is featuring AI in its search. Today we have three of us as three different SEO and marketing experts covering different industries.
+
+And the things we are going to share here will be real, not the BS LinkedIn tips and things that you all of you are reading every day when you're scrolling the LinkedIn feed. So I'm Nebojsa, I run Heroic Rankings, which is a digital agency, primarily focused on link building services. I'm going to let Michal introduce himself and then move to Alisade.
+
+My name is Michelo. I'm the CEO and founder of Elvion. We work with enterprise and e-commerce brands and help them convert more demand into revenue. That practically means that we apply the SEO insights and SEO expertise, combining with PPC and conversion rate optimization insights and processes to help brands convert that traffic from search engines into more customers, more revenue.
+
+and producing the tangible value for that. Ali, you can go.
+
+My name is Ali, I'm the SEO manager at One Identity and One Login. I'm also the co-founder of Aleph website, a digital marketing agency. Happy to be here with you guys. This is fantastic.
+
+speaker-0 (01:36.79)
+Yeah, nice intro. I made my intro very short, but nevermind. People will learn more during this podcast. And I want to just plug quick that guys, if you want, can check my podcast, ranking heroes podcast on YouTube. I'm interviewing marketing experts and they are sharing some insightful tips. can listen. Mihajlo was one of my previous guests and I hope Ali will join in the future podcasts.
+
+They will want to know more for sure.
+
+speaker-2 (02:03.96)
+very soon yes
+
+So guys, I would like for us to start by each of us sharing the current situation in the industry. So let's start from the end, Ali.
+
+So just like many of you have noticed already AI has completely changed the game for us. We've seen the phenomena of decoupling basically seeing impressions go up drastically, but then clicks go down and we all are seeing the same thing in our dashboards. Similarly in the space of cybersecurity, all the informational queries are now being handed over basically to chatbots.
+
+So we really had to rethink some of our strategies. We will be sharing these strategies with you. So there is a lot to learn there. And I will say one thing, Gen.AI is becoming a reality. It's a marketing channel. And we will be discussing more about this. So that's the main topic for me here.
+
+Yeah, and what I can tell from the agency experience and from experience with working with many clients across
+
+speaker-1 (03:07.31)
+many verticals is that pretty much all of the executives are now interested into the question, how do I show up in CHPT and other platforms? So although in some cases that doesn't make sense and how that question is phrased, cetera, executives and company owners and clients that we work with are all pressured by their executives to
+
+get to know what they need to do, what are the next steps, because no one knows what to expect, what will happen. Everything is changing at a dramatic pace. And that's why now more than ever, there is a need for experts and for honest people that can understand their knowledge or their not understanding of certain areas that can
+
+past many things that work with many accounts so that they can drive more insights and ultimately help other clients and other market players implement the same things. So it's becoming a reality and what I can tell as well is that starting from August 2024 last year, Chachi Pitti has started sending massive amount of traffic with significant increase month over month.
+
+So now ChachiPT is becoming a legit traffic channel that's producing conversions, signups, e-commerce transactions, and ultimately the source of revenue. So it's no more about like it will come. No, it's coming and it's there. And that's why now more than ever, we need to kind of think about this, talk about this, and just learn from each other and help our clients succeed in this new era.
+
+Yeah, I think you pretty much covered everything I also wanted to mention here. I would like to add that people are getting serious with this and we have clients approaching and asking, hey, Hi, heroic rankings, could you guys help us be featured in this AI search, become more visible in the AI overview and the AI search results? Because we heard that backlinks
+
+speaker-0 (05:29.622)
+can help with that. Let me tell you, yeah, backlinks, they can help you with that, but the strategy will need to change. Now it's not any more search engine optimization, it's becoming search everywhere optimization, meaning that you need to be omnipresent, you need to be everywhere on every social media, although you need to think always where is your audience? So like if you're an H-Wag business, you don't have anything to do on LinkedIn.
+
+you don't have audience there. So I tell clients you need to know where your audience is on which channels they are, which shows for medias and then become an authority and know the niche in that area. And since link building is all about the relevancy, all about becoming an authority in your niche, in your industry, you now need to build more links on authority websites.
+
+in your industry, where your audience is, and also mention your brand wherever you can, like PR, listicals, citations. Do everything. Be everywhere. That's what you need to do now if you want to also be seen in the AI next to the search result and engine pages. So now how I.
+
+I want to cover more about this topic, SEO is going to die. You guys know like, SEO is going to die. We are all going to get hired. AI is going to replace us. So we need to do something about that. So let's share some thoughts on this. Like, do you guys think like AI will replace us? Yeah.
+
+I think what I can add is that first thing first, if you read some of the most recent documentation from OpenAI and from ChachiPT, they itself speak about ChachiPT as a search engine. So they literally point out like OpenAI and ChachiPT like any other search engine use crawl bots to browse the web.
+
+speaker-1 (07:40.618)
+So if we have the search engine, in this case, Chachapiti, then again, we have search engine optimization where we make sure that using the understanding from algorithms and understanding what these bots crawl, what they need, et cetera, we can optimize for that surface. So I don't think that, I mean, that's very non-professional and just irrelevant claim that SEO is dying.
+
+It's a trap, it's like, I don't want to talk about it. So it's about that. The second thing that we know is that, as I mentioned, ChachiPT now sends tangible traffic and becoming the large, and have more and more kind of share across all other channels. And what they saw as well in Google Analytics in some of the accounts,
+
+I heard that too many times.
+
+speaker-1 (08:38.078)
+is that ChachiBT traffic started being labeled as organic traffic. So we have all of the signs that we have practically a new search engine. And like we had optimized for Bing and DuckDuckGo and all others and changes apart from Google, now we will optimize our interfaces and our instances of websites for these surfaces. So first thing first, like even
+
+OpenAI in the documentation claims that, hey, you need to allow our crawlers to crawl your website. You don't need to block search bots from OpenAI. just by you making sure that the robots.txt doesn't block the AI bots make you kind of SEO specialist because you are actually optimizing things so that these crawlers can crawl the website. So these are all basic items and all fundamental
+
+things that we need to understand. And I think that the SOS industry need more and more this fundamental knowledge and fundamentals that we all agree on so that we can all help each other as an industry and as a community to kind of thrive in this new era. Ali, you want to do it?
+
+Yeah, I think it's a very radical statement. SEO is dead. It's like saying digital marketing is dead or marketing is dead or whatever. I think it tells a story about the people who actually post that on LinkedIn. They are not mentally stable. I think the hype gets into their heads and makes them very radical. It almost radicalizes them, which is very funny. Actually, no, SEO is not dead. It's evolving into something new. Maybe it's going to be
+
+Gen.ai, maybe IO, maybe IAO, maybe EO, nobody knows what's the name yet, but it's there, it's happening. It's very important to be calm, be patient, and talk to experts, learn from actually people who are working day and night trying to figure it out, and now listen to people on LinkedIn that claim to be authorities but have no actual experience. So be very careful who you listen to because
+
+speaker-2 (10:51.458)
+based on the lessons you learn in the next few months, that's gonna make the distinction between a good SEO and a bad SEO. Just like Mihairo said, SEO is still relevant for Chagypt. We can even think of Chagypt as a search engine and it's gonna evolve in that direction for many, many, many reasons. For shopping, for ads, there is just a lot of infrastructure already pre-built for it to shift in that direction. So I would say...
+
+Just stay patient and calm and let everybody lose their minds but listen only to experts. Don't listen to crazy people.
+
+Yeah. And I'd like to add that like strong performance and rankings on both will help both search engine result pages and the availability. Now we can see that top top authority websites, they're often featured in this new AI overview and it provides you as a trustworthy source. When you are
+
+typing or looking for specific keywords. So I think that like before, it's always been about customers and now we must also care about AI. How will AI like go through the content, what we'll understand, et cetera. So for LMSU, I would say that we all need to focus on context, clarity, trustworthiness and consistency.
+
+We want to use our content as a reliable source. And one guy told me, if you're writing a landing page piece, just ask yourself, will AI be able to summarize all this in 10 seconds? If the answer is yes, don't write it like that. Change the way you're writing, add more value. So it's not something that every user can...
+
+speaker-0 (12:41.902)
+search in LLM and then wait for the output that will be exactly as your landing page. So you to add some valuable information such as experts' opinion, case studies, use cases, things like that. And I think that now we need to structure this information for AI. So we need to make it easy for AI to find your data, ensure AI can understand your content.
+
+help AI include your info in relevant responses and get referenced by the AI whenever possible. So these are the things that you need to do now moving forward in 2025 in this new AI SEO era. I sound as an AI.
+
+I promise we're real people.
+
+Yeah
+
+So yeah, what do you think about adapting to AI? What would you say that the most important things are when it comes to adapting?
+
+speaker-2 (13:40.738)
+Yeah, I think Mihailo touched on something very important website accessibility. know, content accessibility is the first thing you need to be thinking of. You have LLM text as a file, add that to help LLMs understand what's on your website, but also update your robots TXT for a different variety of bots used specifically to send traffic to your website. You will be able to market and even understand which...
+
+engine is providing you what kind of traffic and then track that traffic and see the behavior. If they're coming from GPT via shopping, it's going to be a whole different experience. If they're coming from Gemini to you from a different type of prompt, you want to know these things. What's the difference? Why are people coming to your website through different sources? So accessibility would be very important, but there's a list of things that you still need to do. And we will go through it. We have plenty of strategies for that.
+
+Okay.
+
+Yeah, and the one thing that I have regarding adoption is that we need to understand that UX at all is changing. And I saw some claims that over the next years...
+
+the main user interface will be chat bots. there will be, I mean, you heard that from, for example, from Satya Nadella, the CEO of Microsoft, that SaaS as a business model is dead because now AI agents are replacing SaaS as software solutions. So no one is immune to this change and even users will adapt to it. And I think what drives this
+
+speaker-1 (15:19.298)
+and what drives this is user experience and the way how user adapts to them. So for example, what I mean by that is that for some basic informational queries, for some things, for some basic information retrieval where user just want to find a quick information, chat GPT and that kind of...
+
+experience is better than searching on Google, landing on 10 blue links, and then having to click on something, then having to have AdSense ads popping up. then just kind of, you need to spend like 30 seconds to find out whether you need to cook your chicken like...
+
+five minutes or seven minutes, where instead now you can get that information immediately. And then on the other side, people talk about traffic and decline, but what's the worth of that click and of that traffic if somebody wants to just find information? That's pretty much irrelevant. And I think what caused the biggest issue is that we label that traffic as some kind of business metric and some kind of business contribution where it's not. So now you're telling like, we're losing something that didn't
+
+have any value at all. And I'm not saying like all block traffic or all informational kind of traffic is invaluable, but I'm just saying this kind of very broad, very generic items like chat GPT and other chat bots really answer that better. So I think we need to listen to users. I think now more than ever user testing and first party data and that
+
+that type of qualitative research where you speak to customers and speak to actual users who use JTPT, Google, et cetera, from various B2B, B2C cases. I think that can help us understand how we will shape the SEO strategy and how we will shape the oral website marketing strategy. So as I said, no one is immune to this apps, websites, companies, IT as total, like everything is changing and
+
+speaker-1 (17:23.714)
+I can tell you, everyone is shaking and I don't think now is either this kind of fear or is either this, let me figure this out. So there are only two options that we can go for. so just saying that OSU is that, no, everything is changing and now other folks in industry will just kind of evolve and we'll just learn how to adapt.
+
+speaker-0 (17:57.814)
+Yeah, we
+
+I would say also, if you look at the quality of leads, you would see that it has grown since GPT and other chatbots. You have less traffic, but higher quality traffic. People coming to your website, they're really going to...
+
+something.
+
+Yeah.
+
+I just, you know, they're coming with an intention. So, you know, keep an eye on that. Look at them, what they're doing, because you're going to learn a lot of things that previously were not visible because you a lot of non-converted traffic.
+
+speaker-1 (18:34.958)
+Exactly, now I can see in the traffic like the average session duration five minutes. Like those visits are worth a lot and that's like these are B2B website, these are not some kind of news website, these are actual B2B website that provide them. So five minutes per session on average.
+
+Hikes loaded.
+
+That's crazy, I I think that's happening because all these articles that are being written for the SEO purposes, people are turning, people are not clicking on the websites because they get their answers in the AI overview. So you are now missing that traffic from your blogs, but you're receiving that amount of high quality converting traffic. mean, people are actually want to buy,
+
+want to convert. That's why businesses who did a lot of SGA especially with blog posts and educational content, they will see some drops but still the traffic that remains will be qualified leads. People who are actually interested in your products or services and people who are going to stay on your website, explore your services, explore your brand and figure out if you are the right fit for them.
+
+Yeah, with lower, I will tell you from the data I'm looking at, lower conversions, organic conversions, we're still getting a bigger pipeline than ever before. So you have pipeline, then you have revenue. When you look at all of that, you will see actually the entire user journey has been improved. Because now there's more information available to the user. They know what they want. They know what they need. They know how to get there faster and better. So it's not just looking at clicks. It's also just understanding.
+
+speaker-2 (20:22.722)
+the entire funnel and adapt the entire marketed funnel with the GEN.AI and it's brand new and we will talk about all of these strategies.
+
+And instantly...
+
+purchasing journey and overall buyer journey. So how the average buying journey in Google, how it looks like. You have an idea of what you need and what you're looking for either for a B2B solution for some software or for like B2C you want to buy something for your office or something like that. So you would perform the search or couple of searches, you will get 10 links. You would open five links, then you would compare prices, testimonials,
+
+all of that. Eventually you are not sure that day what you want so you bookmark all of these options you have a google docs or something and then the next day or like in 30 days we know I don't know what's energy purchasing journey and then check everything exactly like you then evaluate everything write everything down about pricing cross-con so maybe you call someone hey have you used this etc and then you make the decision now everything
+
+that I have described and everything that used to happen for like 48 hours now is happening in three seconds because AI is the one that synthesizes all the data and provides you immediate access and immediate breakdown. So I can tell, okay, I'm thinking to buy a MacBook Pro 2024 but I'm not sure whether that is the best model. Should I use the model that was released like two years ago, et cetera?
+
+speaker-1 (22:04.048)
+give me the breakdown on processing of hey, buy this if you want like kind of the new design, the software, etc. But buy this if you're more budget aware, etc. But again, in order for Chetchupiti to generate that information, Chetchupiti needs content.
+
+So it doesn't know anything. It doesn't have any intelligence. It's just trained on what is there on the website and on the other websites. So if you are there to provide that information to JGPT, you will be featured in there. And of course, if JGPT gives you, hey, here are the three links, and this is the best price, of I'll click, and I'll buy. And then you will see in G for my purchase. So that is, in a nutshell, how the user journey and the purchasing journey has changed.
+
+and of course there are ways how you can impact that and how you can influence that and how your content can influence what is shown. And something that I can add that we will talk later is that SEO now becomes product and business initiative challenge because ranking factors in CH2PT are actually business factors. What I mean by that? Price, usability, testimonials, sentiment, user perception, reviews, et cetera. And all of those things are not
+
+SEO think those are business related business initiatives, business goals. So now SEO becomes even more more disciplinary and I think now more than ever we need to take the lead inside the companies, inside of the clients and actually make sure that everything is orchestrated and everything speaks the same language so that these bots can create the right perception.
+
+Yeah, I had these thoughts that like before when you were a local business you needed to a lot of local business directories where you need to keep in mind that your NAP data needs to be the same on every directory that you build. Now it's the same but like it's not anymore just the NAP. It's like everything about your brand needs to have the same value, needs to speak the same message to all the customers across all different channels.
+
+speaker-0 (24:16.88)
+It's pretty much the same. need to be recognized as that brand everywhere the same. can't be like one message on LinkedIn, one message on your website, the second message when you are onboarding new clients. No, that won't work. And now I think that SEOs will have to connect with more in-house people from a client, company, because now it's not just you need one developer to help you with technical SEO, or you need content writing team community.
+
+if they have it. Now you need like a brand manager, social media manager, all these people so you can align your SEO points with all these different channels if you want to make it happen and to become more visible in the AI sector.
+
+Yes.
+
+when you say that, of think of it now I have more meetings than ever before.
+
+That's correct, that's correct. spotted the trans.
+
+speaker-0 (25:15.47)
+You see, now it's happening. So it will be more time consuming, but hopefully we could use AI to shorten the time that you need to spend these days on communication.
+
+But definitely more dynamic work will be done regarding this UI. it as going just like you said, multidisciplinary. It's just going outside of its rails. It's no more just one channel. It's actually now a whole experience of the website. And even the website itself needs to change as well to accommodate for this experience. So yes, I agree with that.
+
+And I want to go back to what Mihailo was speaking before about that we are going to need to test the users. Every business needs to test their users to see what's their buy-in journey, what's their intent, what's their thinking approach when it comes to search. So I think that these user testing platforms, they will start massively gaining traffic. This is a good opportunity for them. And I want to mention one example that they already discussed.
+
+before it's two days ago my mom she came to my house and she took two medicines during the day and it was like 8 in the evening and she was asking herself could I take another pill or not because she had some back pain so what she did she pulled out her phone she went to try GPT and she typed today this morning at 8 I took one pill and then at 4 I
+
+the another pill now it's eight at night and I I want to know can I take another one or that would be dangerous for my body
+
+speaker-0 (26:59.854)
+So that was like a long-tailed phrase that she put in chat.gpt and it gave her the answers immediately. She didn't even want to research on Google or anywhere else to see if that's true and valid because they told her, yes, you can take another pill. She just took the pill. mean...
+
+Something bad happened. And then I asked her, okay, now tell me if she didn't take a haircut tomorrow. And I said, do you know which hair salon you're going to? And she said, no, I'm not sure. And I said, how are you going to find it? And she said, I'm going to go to Google and I'm just going to type hair salon Novi Sad, which is the city where we live.
+
+then it got me thinking, okay, so the mom test actually works because as you can see guys, like these long tail keywords that didn't make any sense that she wants to Google that, she typed that in LLM and she received an answer. But when it comes to these short queries, like transactional, especially local, transactional.
+
+keywords, commercial keywords, they will be still searched more in Google Navigation than in LLM. So what's your opinion about this?
+
+My opinion is that chatbots are the most powerful
+
+speaker-1 (28:24.558)
+tools for these contextual queries. Like, I am at this situation and I'm thinking about several opinions. What should they do? So, these type of queries were not possible to answer five years ago. And once ChatchBD and OpenAI cracked the code and built a powerful large-engaged model that could process that query and synthesize it into multiple subqueries and actually
+
+give the powerful answer. That's where it made sense. But on the other side, keep in mind now with all the recent updates, Google is now competing against that because now Google...
+
+I think in the next 12 months, want to have AI first search experience. So we will not have the regular, we will have a regular search box, but AI mode will become the default search experience. So that your mount as an average user.
+
+can type exactly the same type of query to Google to receive the same chatbot response with that text, that synthesized information. And it's becoming true. mean, recently, like this week, Google has pushed AI mode to non-collapse.
+
+users so non-experimental users and I think over the next 12 months we'll see massive adoption to it and
+
+speaker-1 (30:01.454)
+So yeah, we will speak with more users and we'll just ask that as a feature. But on the other side, what Lavishan has mentioned and both I will elaborate on later, Google owns transactional and navigational queries. There is no question on it. No other company has a better product for...
+
+for maps and for local searches and for everything local and for shopping. Because Google has the most richest, the most, the biggest, the most dense and the most powerful database to power those two tools. So, navigational searches, transactional searches and local searches will still be dominated by Google.
+
+Even if you search and charge GPT for businesses, it's going to not.
+
+pull up
+
+So that's a testimony that it's the most reliable source of information.
+
+speaker-1 (31:04.002)
+That's true.
+
+especially because it has so many reviews and I noticed that it will always display the ones with the highest number of reviews because these are real people that provided these reviews about the business.
+
+and Google and Google now has more more strict policy about which business can be verified because the verification process like previously if you remember it was just
+
+code and development that was sent to your address. then anybody can config it and just kind of receive it. But now you need to record everything. You need to showcase your office, your actual address. And then on the other side, now Google has to have the algorithm. So if they detect the comments that are not taken in that specific location, that are not geo-located with things of images, et cetera, they will just make that comment less and less relevant.
+
+Yeah, that's really cool. And I'd like to add that like first time in the history Google lost 2.5 % of the search market share taken by ChaiGPD.
+
+speaker-2 (32:06.338)
+Yeah, it's even more drastic in the UK where they lost down to 83%. I mean, when you think about it, like, it's still number one source of traffic.
+
+still on.
+
+speaker-1 (32:18.798)
+I mean in the first place Google shouldn't have built such a monopoly to have like 90 % because that's I mean I think in capitalism you cannot blame a company to have such a great product to do it. Of course, of course, of course they had some shady things and Apple contracts and stuff like that to retain that but I think like man
+
+I spoke with a friend who's an investor and he told me that search as a business model is one of the best business model that exists that incorporates ads because it's such a powerful product. Everyone needs search to interact with the web and then ads are in most of the cases, actually naturally embedded and kind of fit the experience. So I think that...
+
+Like, open hand, and I was listening to Sam Altman. He was telling that making another Google is a race in love, and it's not possible. Making AI first search engine is something that they want to put in their mission and that they want to, that they're interested in. So I think now that's kind of speaks to itself.
+
+Yeah.
+
+speaker-2 (33:40.738)
+Yeah, perplexity is whole business model is to be that rapper of the search engine to be your ask or answer engine, whatever you want to call it. And they're trying to integrate shopping and trying to, you know, go beyond what Google is doing, trying to do something user friendly with the AI. they're doing a fantastic job. It's very fast. It doesn't give you really accurate information.
+
+I say, like I saw that pattern all over again, like the sea of complexity.
+
+was the intern and not just intern but the research scientist about Google and also the for example Claude and the anthropic CEO is also in open I don't think Google produced all of these talents and all these tools and I think because they are so
+
+If you think about it, it was very weird that Google was low on entries. It's like you guys have the time.
+
+Yeah. keep in mind that they were not so... Google was the one that invented Transformers. Exactly. And for the longest time ever, DeepMind as a company had the most talent in machine learning and AI space. And I think...
+
+speaker-2 (34:54.892)
+Yeah, with birds.
+
+speaker-1 (35:08.622)
+the community, not community, but the co-founders of OpenAI saw that as an opportunity because they saw they were kind of, because they were monopoly, like they just didn't care about innovations, about putting that as a frontier in their product. And I think that that's what OpenAI used. mean, they didn't know that this will become at this scale in this past, et cetera. But.
+
+I need high-pitched
+
+They could have maybe had like a defensive strategy, let's you know the monopoly as long as.
+
+Enjoy.
+
+Keep in mind that we can all agree that more and more users are frustrated because of the search experience, just because of shareholders and all of the Wall Street things. They push ads into every single thing that you can imagine and then eventually a couple of years ago the search end result page looked like a query, six ads and then five organic results with some stupid elements.
+
+speaker-2 (36:06.51)
+Thanks.
+
+speaker-2 (36:11.95)
+It was very very just annoying but that's the thing you know open AI did not have these restrictions and they were like okay let's do you know the taboo you know let's just enter the market with an AI product which was GPT and at first it sucked it was horrible we all want to live like this
+
+Yeah.
+
+speaker-1 (36:30.382)
+Yeah, and also keep in mind that was I think a 2.0 was released in 2019. if I were Google I would be they are creating something. And that was 2019. Because in 2012 they released this in the public, but they had it internally.
+
+I feel that I'm not sure. mean, I don't have any data or statements, we all felt that they rushed a bit with releasing their first model. It looked like they are competing with other brands, with other big enterprises that had worked on their own AIs and they wanted to go public. So it felt like OpenAI released their models because they wanted to be the first.
+
+which gained a huge traction and now you can see how many millions of people are
+
+Yeah.
+
+speaker-2 (37:33.39)
+Startup culture, knew we were going to get all money.
+
+Yeah, but one thing like it's not really just it's more related to some ethical issues and some concerns that I have is that all of these companies have this like mission claims like we want AGI to benefit everyone, we want this. But then how you can combine that with the...
+
+competition with market share, with games, like so many users and AI is not any kind of technology, it's technology that can fundamentally change the human trajectory and human history and I don't think they as companies and as kind of competitive entities understand the responsibility that they have and I think the money in power in that perspective is just something that will
+
+take of the control and I don't think that governments now kind of put more restrictions and more regulations about hey you cannot have private companies dictate the whole world. I mean I know that's now the fact but it's such a sensitive topic and it's such a kind of big topic so I think that in a kind of ideal world that doesn't exist this should be done by some institutes and some non-profit first non-
+
+non-competence that can actually benefit this humanity. And then on the other side, OpenAI trained their models on Open Web and no one gave them the copyright to do that. So now they will face a lot of...
+
+speaker-2 (39:12.942)
+Bye!
+
+speaker-1 (39:19.118)
+a lot of actions because they stole somebody's property, intellectual property and information and I don't think that's their company standing on the right foundation from that perspective.
+
+Yeah, I mean, we can see that the government is invested in these private companies. So there's a complete opposite thing. So from what you were saying, you know, it should be an institute for this, like an AI institute, like the global AI, that that whole that dictates how the the AI industry is going to develop, what will become and how it will prevent some
+
+Yeah.
+
+speaker-0 (39:59.406)
+damages to the users, the people. not sure, but yeah, I think that there should be limitations like a low regulations regarding the AI because it can be easily abused. Like you can see how many platforms they've built that are not safe to watch, et cetera. Like these adult industries platform where people are using AI to make replicas from the porn stars or people like that, you know, so that's like...
+
+AI being abused and monetized in these purposes and who are the customers? Just think about that. Should they be served with content like that?
+
+It's true. So, but yeah, many people will disagree. People will agree. I mean, it's not a topic that should be discussed because it has both ends. yeah, guys, let's move on and like speak about how this AI introduction, what happened with your organization, with your companies, with how like your working methodologies.
+
+What did you do so far? Ali, you can start. I know that you did a lot of things regarding AI. You are developing some tools. You have your own website, writing your content related to this, and also helping your two companies.
+
+Yeah, like any good SEO practitioner out there when we saw the first time GPT, we knew this was going to just transform our industry and we should start doing something about it. one thing we did at the corporate level is we use Profound for services. So we actually kind of know it's been almost six months now we're working together and the Profound product has changed dramatically.
+
+speaker-1 (41:27.022)
+I
+
+speaker-2 (41:55.692)
+during these six months. So they added so many new features. let me just tell you what it's good for, what we are using it for. So clearly, can, within your business, within your vertical, within your industry or market, whatever you want to call it, there are always topics and categories. So that's the first thing. You do a breakdown, you have topics and categories. Within each topic, you have a set of prompts that the users are likely to use. So with Profound,
+
+tools you can define the type of prompts in your marketing funnel. So is this awareness level? Are they still getting educated and learning about the product and solution? What it is? How it works? Is it good for them? Is it bad for them? And then on the second level of consideration, they are aware of products and solutions, trying to compare products and solutions. This is consideration. So you already can intuit what kind of prompts would go in each of the different levels. At the bottom, you have
+
+have the brand level, you have the conversion level, they are now aware of you, they're asking about you.
+
+So that's a different problem. So if you have this kind of categorization within your tracking tools, you can understand the behavior way before they make it to your website because you know what the LLMs are serving them. So Profound does that. Other tools do that too. It's not just I'm promoting them. In fact, I'm not promoting them. Use other tools. But this one just turns to be one of most advanced ones because they get most of the funding.
+
+So here's an interesting thing you can do right away, was profound, is you can analyze sentiment score for your products and solutions. So this is very interesting because it will highlight for you the negative sentiment. It would say, you know, most of the elements, there is a higher occurrence of product complexity. So that turns out to be an issue that we are dealing with our customers saying, hey, you you have a great product, but it's really difficult. So what we did is we
+
+speaker-2 (43:58.128)
+created a series of education and more interactive knowledge base that allows users to get this information faster.
+
+also write blog posts about it. So here's what we did to the complexity. Now we have reduced complexity. You have links here. You have knowledge base there. And we pushed that content and we watched the sentiment score go up because we have learned what users complain about, what's their pain point. And that's what goes outside of SEO into marketing. Now you're getting some kind of very quantitative data, not just quantitative data that you're
+
+Cool.
+
+speaker-1 (44:36.012)
+What are the?
+
+speaker-2 (44:39.76)
+learning from these tools and now you are advising the product marketing team to adjust their strategies and turns out as soon as I call this like you know what we were just talking about this so it's like we are all together like they can feel it too in the departments even though you're not talking so we have a strategy for it to increase our sentiment score based on simple tracking tools so that's one way you can deal with it but obviously when you are
+
+In a stage of consideration, you will be comparing products. So you'll be doing something, for example, top XYZ tools for whatever industry. And it would list the number of 10, 5, whatever you want.
+
+and you will see your competitors there hopefully you're appearing too. That's the next frontier of optimization. You've raised your sentiment score. Now it's time for you to appear higher in the rankings when people are considering products because number one, number two products are going to be the ones most purchased. If you're number 10, that's not good. You appear, you're mentioned, but you're mentioned in a bad context. So now it's time to change that context. How can we
+
+rank up.
+
+within these listicles. So obviously one easy way you can do it, and this is more like a hack, is you write the review yourself. It's a top 5 XYZ solutions in my industry and use if you have a corporate site, have a strong DR, you have very good domain, you have authority establishes, they're going to rank very quickly. We're going to outrank most of the websites doing the reviews. So that's one way. But also you can adapt to link building strategies to acquire more
+
+speaker-2 (46:24.592)
+more links from this because and then ask the publisher hey what's up can we get out
+
+Yeah, I...
+
+What does it take? Do you need something? We can give you case studies, can give you reviews, can give you awards or maybe just cash, whatever you need to move up. And you do that with as many publishers. And you wait a little and you observe your rank climb up in topics.
+
+you have them divided by topics. So you can see exactly which one went up, which one did not. And then you adjust your strategy. Just like with SEO, when you're building topical authority, start somewhere and then you adjust over time to what you're seeing in your Google Search Console and other tracking tools. So I'd say like these are really interesting things we're working on right now. And I can tell you it works and you should start doing it because soon it may not work anymore.
+
+And you mentioned something very interesting about publishers and making sure that your company or client is appearing there. So why is that the case? Because JGPT and other models use those.
+
+speaker-1 (47:39.47)
+resources to form the narrative and to form kind of the ranking, etc. So now publishers have such a big power and such a big monopoly because they dictate the narrative. what are the consequences of that is the first, it will be manipulated. Like it will be manipulated a lot, a lot more because you could manipulate Google with patterns.
+
+But given the hallucination tendencies of fellow lambs and given everything, I think this is another f***ing publisher. Second thing, it will get more expensive because the demand will increase for you to rank somewhere else. And then on the other side, you will have a bunch of best...
+
+Yeah.
+
+speaker-1 (48:32.41)
+and then into your category tools in 2025. So I think that now with that method of CHPT generating those responses, think they kind of, they just synthesize the content and they understand that it can go bad. But as you can see, what remains is that you are well positioned across the internet, across these resources that...
+
+LNs used for training and for giving the resources and then the ties back to classical PR, linear link and just reputation management. So I think we will be reputation managers for this company and making sure this tactical content library is accessible, formatted, etc. But again, there will be still like a huge need for you to now actually create that narrative and then to orchestrate everything into one.
+
+Yeah, like YouTube, Reddit, for all these websites, you will need to show up there.
+
+One business idea, if somebody creates the code on how you can from one place manage and dictate the reputation from all of this and manage the context with PR, with listicles, with threading, with everything, this will be very interesting. I will just leave it here.
+
+That's a good idea. I'd like to add the things that you guys mentioned about being featured in the listicles, like top authority websites, for example, when users type...
+
+speaker-0 (50:03.928)
+top payroll management softwares. They will get a bunch of results, listicles that are listing these products. So yes, you can write your own if you have a high authority website that could rank well, you can do that. But still, if you want to show in LLM you need to be on other websites as well. And before we called this...
+
+Yeah.
+
+speaker-0 (50:28.874)
+strategy parasite SEO. that means wait, let me explain that means that let's say you rank number one for identity management solutions. Now you're number one and then number two is like Forbes, number three is Microsoft, number four is I'm an entrepreneur, is
+
+Back in time.
+
+Yeah.
+
+speaker-1 (50:44.078)
+Thanks
+
+speaker-0 (50:54.606)
+HubSpot or something like that. What you want to do, you want to be featured in these listicles as well because then you're gaining more visits by people who are opening these links and looking at these listicles. So before we call this strategy Parasite SEO because you want to be part of other top search results and this is a strategy
+
+where people, they got a link from, let's say, Forbes, listing top payroll solutions, and then they built links to that article because they wanted that article to rank high. And then they get another featured in another, let's say, medium authority website, then they started creating back links to boost that article. So...
+
+Their website is number one. Number two is listicle where they are. Number three is the second listicle where they are. Therefore they are getting more visitors from that page. This is something that will be done and that LLM will see, read and showcase in AI overview.
+
+It's something very unique, that's basically the strategy here, know, like it works and it works until it doesn't.
+
+They are more expensive as the information is published. They huge control and they can abuse that, they can do whatever they want.
+
+speaker-2 (52:23.68)
+Now publishers are becoming aware that this is a service they can sell. So sooner you get into it, the better you can establish good positions and then you're going to shift your strategy to something else.
+
+Yeah, if you want to build battling, start now. You should reach out to me right away because the grass are going to grow up very soon.
+
+Yeah, we're already working on this together. I'm his client, so it's going to get more expensive very soon.
+
+Nice.
+
+Yeah. OK, guys. So we are getting to an hour of our conversation soon, but we still have some things to cover before we wrap up.
+
+speaker-2 (53:06.252)
+I do have one time topic here.
+
+I have as well.
+
+So, let's... Miha, you can start with your topic.
+
+Yeah, so I'll briefly mention what I have planned is that first thing first, that I think everything will radically change once OpenAI and other tools launch webmaster tools, like tools that are dedicated for web owners. I don't think that will come soon.
+
+And I don't think they have incentive to work with webmasters to establish the better kind of experience. But we will see. But what they can tell you, and this is very important for e-commerce, SEO and e-commerce organic presence, is that...
+
+speaker-1 (53:51.82)
+ChachiBD for e-commerce will be the first use case where ChachiBD is directly communicating to web owners. Why is that? Because they opened a wait list for merchants to submit their product feeds directly to ChachiBD and directly to their own systems. So this is the first time where ChachiBD is requesting data from, a formatted way, from webmasters to actually generate better responses.
+
+to be good.
+
+So I think that is ultimately the first step towards GPT becoming official official official search engine and directly competing with search experience. Although I need to mention that Google and its shopping graph has more than 50 billion products. So can you imagine Chatchabee competing and started just started collecting feeds yet Google has 50
+
+billion products in their shopping graph. can you imagine that, for example, can you imagine that now OpenA launch their maps?
+
+Can you imagine how many years they would need to just kind of catch up and then user because now everyone knows yeah, I just googled it. You don't change it. The second thing that we do extensively in our company for all of the websites that we have, we analyze log files. So what I saw across many accounts is that
+
+speaker-1 (55:24.436)
+OpenAI crawls the web like crazy. They have five times more requests than Google bots and search bots. And it's become like crazy. And then the second thing is that, as I mentioned, starting from August last year, JGPD started sending massive amounts of traffic to other websites. And we can clearly see the type of content they are featuring. So I can clearly see that
+
+statistics, trends, market overviews, market reports get cited almost immediately by CHPT. So for example, my newly published link of the last or overview of the industry statistics and the industry data gets plenty of links from Google, but already received 100 sessions and 100 users from CHPT.
+
+So then the first thing, the second thing I can see from the technical products that technical plan would have technical products, their docs section and product documentation gets featured and their navigational pages, pricing, homepage, et cetera. So those are very interesting insights and I think that if any one of you have authoritative enough B2B website, just like focus on
+
+that type of content you will see immediate kind of feedback from PHPD while receiving the traffic. And also, AI traffic has, in most other cases, better engagement and higher engagement, higher session time. And now, as we work with more and more e-commerce clients,
+
+I can see that for the first time ever, Chet GPT is actual revenue producing channel where some of my clients have generated already first couple of thousands of dollars from sales coming directly from Chet GPT referred traffic. it's becoming a search engine, it's becoming a real deal. And now we are producing the only channel, the only channel marketing strategy for this search engines. And that's why our company is positioned
+
+speaker-1 (57:43.024)
+like we help you convert that demand into revenue because now demand is expressed not only through Google but through all of these checkouts and search engines. And I think we already have very successful kind of portfolio, very successful kind of use cases, how that becomes the real thing. But...
+
+What I see from speaking with more more top level executives and CEOs and clients is that if you don't orchestrate all of that, if you don't speak about that, and if you don't speak about the revenue impact of all this, then inevitably your strategies, your tips, your insights will be obsolete and irrelevant to that. So it's very kind of complex and it's very challenging because now it involves kind of
+
+working a lot with clients, getting the user feedback, getting that, but also learning a lot of things, like, because basically, and chatbots use totally different algorithms to generate results rather than classic information retrieval-based search engines. So it will be interesting, it will be challenging, but I think with this podcast, with these resources, I think we can all kind of help each other, and we can all share the feedback, knowledge, insights.
+
+down.
+
+Get better.
+
+speaker-2 (59:03.554)
+So it's time to rethink tracking. you know, use some new tool, whether it's profound, whether it's peak, whether it's, you know, there are many, many tools where you can actually track even products. You can see where your product ranks or put other products across different lands. So you want to do that. You want to know where you are, where you rank, how you stand, how you look. All these things are very important and we're going to see more and more and more traffic.
+
+his name Glenn just posted yesterday that judge GPT has a UTM pattern for the more section of leave so you know how judge GPT gets a lot of expectations and then the top citations you can get a UTM and you couldn't for those in the more section if they are adding UTM for the more section it means it's sending traffic they want to show that because they want
+
+Yes.
+
+speaker-1 (59:58.242)
+to show the tool.
+
+a replacement for Google, as a traffic generator, as worth attention, you know. And we are already at our company, at One Identity, we already have a marketing channel called Gen.ai. And it's just a channel only for AI. We had an external team of people help us, we have profound, we have tied everything together, we see everything from visibility.
+
+outside all the way out.
+
+they come inside, we have a user journey mapped out and we all are looking at it and it's super intuitive guys, it's so intuitive and it's great when you get that picture it's almost that missing link in your marketing funnel so you now know almost intuitively all your users and what they're doing on your website. It gives you such a leverage, such a competitive advantage that is unfair so if you should do it now
+
+Yeah, I would say that like SEO now is like a cross platform brand positioning and one topic can dominate like SERP, YouTube, Reddit, Amazon, if the content is tailored for each. So relevance would be the core metric here when it comes to the AI and not just like keyword stuffing links and things that worked before. I mean, they are going to work, but yes, relevancy will be the core metric.
+
+speaker-0 (01:01:18.32)
+when you think about all the different algorithms, the only common thing is relevance basically for all of them. So it will remain like one of the main signals to both search engines and RLM.
+
+.
+
+In this journey that we are in right now, a lot of people on LinkedIn, I'm sure you've noticed it too, have started coming out and saying, you know, tofu is dead. So first of all, like anything that is dead, should be very skeptical about it, like including tofu, like.
+
+How can a part of your marketing funnel be dead? It cannot be, it could be transformed into something else. That's what happened with tofu. In fact, with GPT, you're now able to generate more content than ever before. Why stop producing content? It's insane. Like it just, again, like anything that they say is dead, don't do it. Just sit, calm down, and try to do your own research and adapt to a whole new set of production.
+
+or
+
+speaker-2 (01:02:25.154)
+You have to have workflows and automation. Use GPT, to produce even more content, more structure.
+
+use multiple.
+
+speaker-1 (01:02:33.55)
+More. More color.
+
+That's what you need to be doing, not reducing it, but go and even more hyper production. Tackle long tails, go even deeper, longer tails, long long tails. Keep going, keep going deeper. know, like these tools should be allowing you to do that on a scale never seen before. no, tofu is not dead. Tofu is now in steroids. But I want to say also something else and I want to get your opinion on this guys. Cause when we talk about tofu, we talk about awareness.
+
+Thanks.
+
+speaker-1 (01:02:47.384)
+you
+
+speaker-2 (01:03:07.408)
+It's like saying awareness is no longer important, which is of course crazy because you know you have display ads and you have banners that are completely just for awareness. They rarely generate any conversions by the way. you want your brand to be visible.
+
+Do it.
+
+Yeah.
+
+Why do you do that? At that stage, it makes no sense. There are no conversions. You are not getting clicks and you're paying for it. A lot of people, and I say so many companies, cancel because they didn't see conversion, which is a big mistake. I'll tell you what I'm looking at. I see at that level, at the early stage of user journey, is brand association.
+
+Yeah.
+
+speaker-2 (01:03:47.786)
+in their minds when they are looking for a solution the more they are exposed to your brand the more they associate your brand to the solution and even though there are no conversions no metrics no kpi is involved you still see what happens when you cancel that budget when you say i'm no longer going to invest in ppc and as in banners and seo
+
+You
+
+speaker-2 (01:04:10.318)
+Boy oh boy, are you in for one nasty journey because from then you're down, it's just gonna... We've seen that with some of our products and we will not do it again. awareness is very important. Brand perception is something that starts with your tofu. That's definitely when it comes to brand in the case, I would say also LLMs use your content to learn and if you have a lot of good tofu that ranks well.
+
+they're going to use your content to learn. So if I'm teaching you how, I don't know how this microphone works and you learn it from me and LLMs learn it from me, now everybody is talking about how my solutions work. Exactly. Right? So if you learn how it works, of course, with your knowledge, which product are you going to use? The product you are familiar with or the product you're not familiar with?
+
+us.
+
+speaker-2 (01:05:01.964)
+So that's one thing people don't notice, don't see happening because it's all in the background. But keep that in mind, you're teaching LLMs with your messaging, with your language, with your educational materials. So that sets the trajectory that they end up using your solution because they're more familiar with it. So that's really important. I don't know if you've noticed.
+
+agree with you. mean you're raising your brand awareness even though you're not getting clicks you're still getting impressions and you're being seen by the audience maybe some of them are irrelevant but they will be relevant audience but let me give you one example that I can how can I this correlate this with the real life example so for example when every day when I'm going to work there is this gift shop that has a
+
+neon logo right on the glass that's always has some good lights like RGB lights and I am passing by that logo every single day I just
+
+.
+
+see it like maybe just with the tip of my eye but I know that 30 years in the future when I go there and there will be like a completely different store I will always remember that even though I didn't enter I didn't buy anything I have seen that brand too many times that it just engraved in my mind and I'll be always remembering that brand this is what I think about Tafo so yeah you shouldn't stop
+
+speaker-0 (01:06:39.403)
+and what they also tell.
+
+people, say, okay, so backlinks, they can help if my competitors are not doing it anyway. like you have, let's imagine you have two exactly same websites, like replica's competitors, like they don't have duplicate content, et cetera. And one of these websites, it's doing backlinks, the other one don't. will bring that? The one that's doing top one or the one that
+
+Don't listen to people say don't do topical content. I hope that this is one learning that comes out because I get very very disturbed when I read these Indian posts. These guys should be just banned from the platform. What is this like this you know?
+
+Like, like
+
+speaker-1 (01:07:30.862)
+for a while.
+
+Yeah, exactly. So I also want to, have some like reference table that I pulled out. So guys, you will be able to see it right here somewhere. And I'm going to just quickly go through it. So we have two different aspects that we covered in this podcast. One is traditional SEO and the second one is this new AI driven SEO. And what we want to achieve here, at least the three of us, we want to become that.
+
+bridge between traditional SEO and the new AI driven SEO and like innovate, test different approaches, strategies and tactics to figure out which ones are working and which ones don't and share it with the people in the industry. So I will say that focus on traditional SEO was about keywords and rankings, now is context, intent and data platforms.
+
+Where Google and Bing now we have AI chatbots, LLMs, voice searches. Content was keyword-rich before, now we have more in-depth, semantic, direct content, FAQs. So in-building before was more about quantity and authority, now is quality, relevance, PR. And measurement, we were measuring clicks and impression, now we are also measuring AI references, snippets.
+
+referral traffic from MelaLamps and things like that. So you will be able to see that in this table that you can see here. So yeah guys...
+
+speaker-2 (01:09:20.31)
+knowledge of a lot of actionable items a lot of suggestions for tools you can use as well and an understanding of where we are going so make sure to subscribe to sign up to acquire services talk to us reach out to us
+
+Hello.
+
+speaker-1 (01:09:29.144)
+with all of it.
+
+speaker-1 (01:09:38.158)
+Yeah, I think it's just the best yet to come. This is just the first one in this series, so we'll have the regular kind of roundtables. Regularly, I mean, that can be online as well. Just commenting on what's happening. Do we have any more case studies, any more concrete insights that we can share with the audience so that we can build that momentum and...
+
+And I would like to use this opportunity since this is the first episode that we are filming. I want to tell to the audience that we are going to launch the community related to this new AEO, GEO, whatever, but the new SEO AI search optimization. And you can all be a part of it. Just wait for us to prepare everything and we'll make sure to share that everywhere.
+
+so you can be a part of our community. We will be sharing all the knowledge there, tools, tips, insights, use cases, everything you will be able to find there. We will have some experts joining right away, which you can communicate with and just figure your things out and how you want to move with your business in this new AI era.
+
+All
+
+So that would be all for today. This was a great session and I think that we really shared a lot of useful information with zero BS in it, all with data backup. yeah, okay. So see you in the next episode.
+
+speaker-1 (01:11:25.016)
+Till next time, bye bye.
+

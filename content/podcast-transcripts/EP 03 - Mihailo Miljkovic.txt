@@ -1,0 +1,1791 @@
+Nebojsa (00:00.815)
+Yo, what up folks, welcome to the ranking heroes. I'm the voice share host. And today we have a Michal Milkovich, a brilliant young mind behind all the SEO strategies. So first of all, welcome Michal. It's so nice to have you here. So to kick off this properly. Yeah. So to kick off this properly, I wanted to like, you can make an introduction. You can share your journey.
+
+Mihailo Miljkovic (00:17.173)
+Thank you. Thank you Nabishan for having me. Yeah, thank you. Thank you. Thank you.
+
+Nebojsa (00:28.431)
+what led you into the field of SEO and what inspired you to specialize in this area.
+
+Mihailo Miljkovic (00:36.629)
+got it. First of all, thanks for having me. I'm so glad that I can be a part of your journey and to start like podcasting and all of that. So it's a great to be here. So my name is Mihailo, as Nabish mentioned, and people also call me Michael, because that's like the American version of my name. So if somebody like needs to like American pronunciation, that's, that's how it can be. And I've been in this industry for approximately like
+
+five, six years and it's been a crazy ride so far because as far as I can remember, I knew that I wanted to become entrepreneur. I wanted to kind of made an positive impact to the world in some sense. So I saw entrepreneurship to be part of that. And when I was young,
+
+During high school, I made a lot of good decisions to be part of certain activities, certain organizations, certain non -government institutions, and there to learn initially about digital marketing and about digital business as a model, like overall. And back then, I literally got enrolled into one academy that was...
+
+That was mainly focused on digital marketing education and in a formal way, not just in a course level, but more like with a mentor with all of that. So that I can say that that led me into the overall journey after that. Like I applied to the multiple internships, got first job, et cetera, et cetera. And then I met my mentor like approximately five years ago when it comes to SEO. And now I can say that the single most impactful thing regarding my
+
+Nebojsa (02:10.19)
+Mm -hmm.
+
+Nebojsa (02:20.878)
+Mm -hmm.
+
+Nebojsa (02:29.231)
+Mm -hmm.
+
+Mihailo Miljkovic (02:33.301)
+career is that I had a structured approach at the beginning when it comes to learning, when it comes to overall way how I should approach things, how I should think, how which approach should I take, etc. So that's basically the main reason why I'm here and why I will make results hopefully in the future. And after that, I was so immersed into the world of
+
+Nebojsa (02:37.87)
+Mm -hmm.
+
+Nebojsa (02:53.711)
+Mm -hmm.
+
+Mm -hmm.
+
+Mihailo Miljkovic (03:02.293)
+into the world of like how can I optimize the website, how I can make certain changes on the website, how that can be have impact on the rankings and the results, et cetera, et cetera. And of course, as like as everyone, I started with small local websites, like some local stores, et cetera. And then I started my first, like my own project because I was part of one...
+
+Nebojsa (03:09.358)
+Mm -hmm.
+
+Nebojsa (03:19.918)
+Mm -hmm.
+
+Nebojsa (03:28.142)
+Mm -hmm.
+
+Mihailo Miljkovic (03:30.869)
+English, let's say English program because I wanted to improve my English vocabulary, English speaking skills, etc. to speak more like a native speaker. And then I was so shocked how good that program was. And after like a couple of months of being in that program, I received an email from their company that they have actually an affiliate program. And then...
+
+Nebojsa (03:35.311)
+Mm -hmm.
+
+Nebojsa (03:59.248)
+Mmm.
+
+Mihailo Miljkovic (04:00.437)
+I connected the dots and I thought, okay, let me promote this program in Serbia. And with that, I can also practice the SEO, everything that I learned about digital marketing, et cetera. And that's where OnePro came into existence. OnePro was my first business venture. OnePro was a website where we promoted like English programs, English courses that were focused purely on the conversation.
+
+Nebojsa (04:08.015)
+Mm -hmm.
+
+Nebojsa (04:16.112)
+Mm -hmm.
+
+Nebojsa (04:21.84)
+Mm -hmm.
+
+Mihailo Miljkovic (04:29.845)
+And I got ranked that website in Skirbil like number one for like really important keyword terms. And what is the most important thing is that...
+
+Nebojsa (04:37.84)
+Was it easy to rank it in Serbia?
+
+Mihailo Miljkovic (04:41.941)
+Yes and no. But because like in Serbia compared to the United States or other competitive markets, if you do everything properly in terms of structure, in terms of how your website look, in terms of how homepage elements are distributed and optimized, you will sure have success. Like you don't need a solid off -page infrastructure or investments, etc. So that was a, I can say, not the luck factor, but...
+
+Nebojsa (04:52.945)
+Mm -hmm.
+
+Nebojsa (05:00.209)
+Mm -hmm.
+
+Mihailo Miljkovic (05:10.517)
+That was a good thing initially. Anyways, with that, with my, I can say, with my ability to connect the dots and to be proactive, I got in contact with the CEO of that company from America, like which programs I promoted. And they invited me to be their best manager, SEO and content manager. And that's how I got.
+
+Nebojsa (05:12.114)
+Mm -hmm.
+
+Nebojsa (05:25.553)
+Mm -hmm.
+
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (05:38.032)
+Ha ha.
+
+Mihailo Miljkovic (05:38.613)
+like how I landed my first official job in a startup world when I was 17 years old. So that is probably the biggest life -changing moment in my life because when you have that opportunity in that young age, the whole world is yours. I mean, you think the whole world is yours. And after that, really it's...
+
+Nebojsa (05:48.241)
+Mm -hmm.
+
+Nebojsa (05:53.424)
+Mm -hmm.
+
+Nebojsa (05:57.648)
+Mm -hmm.
+
+Mm -hmm. Yeah.
+
+Mihailo Miljkovic (06:06.261)
+all about like my persistence and my, like me wanting to be excellent and what they do. So that was my primarily kind of motivations. And, that's where I firstly got introduced to the corporate SEO to how companies actually care about SEO or don't care how they execute that, how are they organized or not organized, et cetera. And also I was able to witness, other.
+
+Nebojsa (06:10.321)
+Mm -hmm.
+
+Nebojsa (06:15.057)
+Mm -hmm.
+
+Nebojsa (06:24.882)
+Mm -hmm.
+
+Mm -hmm.
+
+Mihailo Miljkovic (06:36.053)
+team works from PPC side, from the social media side. And I saw how that everything was merged together in like cohesive marketing strategy. So when you work hard, like you get lucky. So I got that opportunity. And then based on that opportunity and based on that kind of my first official employment there,
+
+Nebojsa (06:42.865)
+Mm -hmm.
+
+Nebojsa (06:50.258)
+Whoa, man.
+
+Nebojsa (06:54.194)
+Yeah.
+
+Mihailo Miljkovic (07:05.333)
+I was able to make my CV look better and my resume like more professional. And I took a leap of faith and I like went to LinkedIn like when I was 18, 19 and literally started applying for the SEO jobs because I knew that like I have a desire, I have, no, no, it was really funny because I knew that I can do it.
+
+Nebojsa (07:09.81)
+Mm -hmm.
+
+Nebojsa (07:13.682)
+Mhm.
+
+Nebojsa (07:20.146)
+Mm -hmm.
+
+Nebojsa (07:27.666)
+Ha!
+
+Nebojsa (07:35.09)
+Mm -hmm.
+
+Mihailo Miljkovic (07:35.093)
+but I just didn't know how like exactly, like which dots where, et cetera. And I knew that I needed some type of organization that will help me grow. And luckily I got, I got landed a job in one of the, one of the biggest digital agencies in the United States at that young age. And that was the second thing that changed my life because then like I was able to absorb,
+
+Nebojsa (07:41.875)
+Yeah.
+
+Nebojsa (07:46.414)
+Yeah. Mm -hmm.
+
+Nebojsa (07:56.05)
+Mm -hmm.
+
+Nebojsa (08:02.802)
+Mm -hmm.
+
+Mihailo Miljkovic (08:04.661)
+knowledge like sponge to adopt really fast and I got all the energy that you can imagine because I was young and like I was passionate so that was that was basically my story that got me in the SEO world.
+
+Nebojsa (08:12.306)
+Yeah.
+
+Whoa, man.
+
+Nebojsa (08:21.843)
+That's impressive, man. I mean, these two milestones basically changed your future. I mean, that's amazing. Like, congratulations on everything you did and everything about, I mean, the whole experience is very motivating. And I think that all the young people should listen to your advice and do the same. For example,
+
+what you just said, like you need to do some free work and you will get lucky. If you do nothing, you won't be lucky. I mean, you need to push, you need to make changes in order to success. I mean, that's the life in the end. So yeah, regarding the entrepreneurship that you mentioned, I forgot to mention one important thing that you started an agency, alveon .io. So,
+
+What motivated you to start Elvion and what sets your company apart from other SEO agencies?
+
+Mihailo Miljkovic (09:18.933)
+Yeah, so I think that the story behind Elvion is a kind of natural next step after my kind of jobs within the lab, after the second milestone, because when I got the job, I knew that I needed to take 200 % of myself in order to adapt that quickly to the...
+
+Nebojsa (09:31.315)
+Second milestone. Yeah. Yeah.
+
+Nebojsa (09:45.298)
+Mm -hmm.
+
+Mihailo Miljkovic (09:47.637)
+such a professional environment because my role was like, like I wasn't let, let's say like that. I wasn't I won't say prepared, but I wasn't qualified enough on paper to do the job. But I, I got lucky that a few important people believed in me back then.
+
+Nebojsa (09:49.394)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (10:01.435)
+Mm -hmm.
+
+Mm -hmm. Mm -hmm.
+
+Nebojsa (10:13.203)
+Mm -hmm.
+
+Mihailo Miljkovic (10:13.717)
+And that single thing that somebody gave me a chance than somebody that, that believed in me and knew that I can make great things just if I got the chance. That was my main motivator because when I came into the company, I was literally like the most productive employee, the best employee in terms of client success, in terms of like kind of internal procedures, et cetera, et cetera, because I knew that.
+
+Nebojsa (10:21.972)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (10:29.108)
+Mm -hmm.
+
+Nebojsa (10:36.372)
+haha
+
+Yeah.
+
+Mihailo Miljkovic (10:42.261)
+I need to take 200 % of myself in order to adapt to their standard operations. And during that period of two and a half years, I didn't stop growing in terms of consulting skills, in terms of knowledge, in terms of overall broad client relationship.
+
+Nebojsa (10:47.188)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (10:59.444)
+Mm -hmm.
+
+Nebojsa (11:07.029)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (11:11.51)
+management and all of that. And at one point I realized that now I'm capped and that I need to take another step to further develop myself and to take risk and to start something that I'm not qualified for, but that I have faith and purpose to do. And that's where Elvion. Yeah.
+
+Nebojsa (11:14.452)
+Mm -hmm.
+
+Nebojsa (11:19.604)
+Mm -hmm.
+
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (11:32.085)
+Mm -hmm.
+
+Nebojsa (11:37.86)
+Yeah.
+
+Mihailo Miljkovic (11:40.149)
+That's where Alvion came into existence literally to bridge the gap where I see like a huge gap in the market on how other SEO agencies and how other agencies treat the clients and how, like which approach they take and especially in terms of SEO, which we'll cover later in the podcast for sure. But that was my main motivator for Alvion and I cannot wait to
+
+Nebojsa (11:48.788)
+Mm -hmm.
+
+Nebojsa (12:00.404)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (12:06.996)
+Mm -hmm.
+
+Mihailo Miljkovic (12:10.549)
+To build that and to really make something that everyone that's involved in LVM is proud of and to make great things. Yeah, that's the important thing.
+
+Nebojsa (12:17.14)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (12:22.903)
+Yeah, and like if you didn't have people who believe in you and you would be still, you know, hitting that wall in that company and you would feel like you are not free, completely free to do whatever you want to do and help other, would you still make that step? Like with knowing all the risks but not having people who believe you, would you do it?
+
+Mihailo Miljkovic (12:50.645)
+Nebojsa (12:50.646)
+would you start your own business?
+
+Mihailo Miljkovic (12:53.653)
+Yes and no. Because currently nowadays there are a lot of advices that are like start your business as soon as possible. Be your own boss from day one. And honestly I don't think that's a good idea. Especially for someone young and passionate and with a great ambition. I think that the best, the single best thing for a young person.
+
+Nebojsa (13:00.278)
+Mm -hmm. Yeah.
+
+Nebojsa (13:07.863)
+Mm -hmm.
+
+Nebojsa (13:12.118)
+Mm -hmm.
+
+Nebojsa (13:17.078)
+Mm -hmm.
+
+Mihailo Miljkovic (13:21.077)
+that want to, that has ambition and that want to succeed is to join a great company. That's it. And with a proper environment, with the proper challenges and with the proper guidance in terms of learning, in terms of knowledge, in terms of mentorship, like only then you will be prepared. Although you are never prepared, like of course, but you need...
+
+Nebojsa (13:22.134)
+Mm -hmm. Mm -hmm.
+
+Mm -hmm. Yeah.
+
+Nebojsa (13:33.525)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (13:44.022)
+Yeah, but we must agree that not like everyone is able to run their own business. There are people who just don't have that in their cell, you know, so like we must agree on that.
+
+Mihailo Miljkovic (13:57.205)
+Exactly. Yeah, that's for sure. That's for sure. And I don't feel like entrepreneurship is something better than employment ship or something like that. Because at the end of the day, great people make great things and great teams make great things. So what I mean by that is that if you join a great team, it's not that important.
+
+Nebojsa (14:10.325)
+Mm -hmm. Yeah.
+
+Mihailo Miljkovic (14:24.885)
+like which role you have, which responsibility you have, if you do something that you are proud of and that you are making something really great. I mean, really great. So at the end of the day, someone feels within themselves that they can and should do it for multiple reasons. And I think they should follow that. But just be patient and yeah, and be it because that's the thing when you build a company,
+
+Nebojsa (14:34.454)
+Yeah.
+
+Nebojsa (14:42.006)
+Yeah.
+
+Nebojsa (14:47.99)
+Yeah.
+
+Nebojsa (14:53.878)
+Mm -hmm.
+
+Mihailo Miljkovic (14:54.293)
+Like everything is stacked against you and you don't have...
+
+Nebojsa (14:56.886)
+Yeah, yeah, yeah, there is the pressure like that, like...
+
+Mihailo Miljkovic (15:00.501)
+No, I mean, you have pressure for core, of course, but the time you need to build reputation, to build customer base, to build a solid product, to be in a position to work with great clients, great projects, that takes time. And if you're young and not young, but if you're just starting out and without 10 experience before, without any network that can refer you,
+
+Nebojsa (15:03.222)
+Yeah, yeah.
+
+Nebojsa (15:07.926)
+Yeah, exactly. Yeah.
+
+Nebojsa (15:14.966)
+Mm -hmm. Yeah.
+
+Nebojsa (15:20.984)
+Mm -hmm.
+
+Mihailo Miljkovic (15:29.205)
+then you will end up working with some like lower type clients and that will drain you like especially like we're talking about agency side of businesses. So yeah, I as I said, my advice definitely is join a great company because like I wouldn't talk like I knew you also like you was you were the best employee out there. I was the best employee out there.
+
+Nebojsa (15:32.631)
+Yeah.
+
+Nebojsa (15:39.767)
+Yeah.
+
+Yeah.
+
+Nebojsa (15:46.999)
+Yeah.
+
+Nebojsa (15:55.767)
+Yeah.
+
+Mihailo Miljkovic (15:57.557)
+Because it's not about what do you do, it's like how do you do it? Like how excellent do you want to be? And that's probably the biggest thing.
+
+Nebojsa (16:00.183)
+Exactly.
+
+Yeah.
+
+Nebojsa (16:07.672)
+Yeah, like 100 % agree with you, Michal, on this because like at the end, what makes one company successful is the team inside that company. So you, no one should like make difference between employees and business owners, especially because business owners are the greatest employees of that company at the end. So another thing, yeah, so I know that Alvion, you guys are helping.
+
+Mihailo Miljkovic (16:30.037)
+Exactly.
+
+Nebojsa (16:37.624)
+B2B brands like e -commerce and also enterprise businesses scale. So like what are some of the most common challenges that e -commerce and enterprise websites face regarding SEO?
+
+Mihailo Miljkovic (16:54.101)
+Yeah, that's a great question. So the single most important problem that all big companies face is that they think of SEO as a function and not as an outcome. What I mean by that is that they treat SEO like development side of company, like design side of company, like finance side of company, and they try to approach it like, okay,
+
+Nebojsa (17:05.528)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (17:17.975)
+Mm -hmm.
+
+Mihailo Miljkovic (17:20.917)
+like with other companies, what's the early rate, what will you do, et cetera. And then that creates a negative consequences because then other side agencies are forced to report what they did, how many hours they spent on certain project, et cetera. And none of that matters because as I said, SEO is an outcome. SEO is an actual result that you have as a...
+
+Nebojsa (17:24.535)
+Yeah.
+
+Nebojsa (17:43.895)
+Mm -hmm.
+
+Nebojsa (17:48.246)
+Mm -hmm.
+
+Mihailo Miljkovic (17:50.005)
+as a consequence of certain inputs. And when you like, that's the first thing that is the first problem that many companies face and that many companies don't think in that way. Then the second thing is that of course, like that, that will sound, this will sound like a cliche, but companies are really not well educated about this topic. And that's why I see such a great potential because I had the privilege to work with
+
+Nebojsa (17:52.982)
+Mm -hmm.
+
+Nebojsa (18:18.326)
+Mm -hmm.
+
+Mihailo Miljkovic (18:20.757)
+Some of the world's biggest brands in various industries and that moment where you present the client the potential that they can acquire through search engines or any other medium for demand to be expressed, that's amazing. And that's why I definitely think that it's not about companies, like it's about us, I mean.
+
+Nebojsa (18:26.199)
+Mm -hmm.
+
+Nebojsa (18:37.783)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (18:49.525)
+me as an agency owner, me as a company, how well I educate the market, how well I put that message right in front of their face so they can understand. Because at the end of the day, one of the main missions of Alvion and our company is to really help companies convert more demand into revenue. And what that means is that...
+
+Nebojsa (18:49.847)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (18:56.729)
+Mm -hmm.
+
+Nebojsa (19:02.456)
+Mm -hmm.
+
+Nebojsa (19:14.616)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (19:18.677)
+Currently, search engines are the main mediums through which users express the demand. Demand for information, demand for products, demand for services, et cetera. And when you have that currently in the market, then you need to understand that you can calculate that demand. We call it search volume, but it's not search volume. It's like a hat.
+
+Nebojsa (19:27.608)
+Mm -hmm.
+
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (19:48.085)
+Like what's the quantitative number of demand? It's not like search volume. Because companies don't talk in the terms of search volume, the main rating, and none of that matters to them. What matters to them is to understand what's the total addressable market? How much share do we have as a company? What's our market share in that total addressable market?
+
+Nebojsa (19:53.624)
+Mm -hmm, yeah.
+
+Nebojsa (19:58.84)
+Yeah.
+
+Mihailo Miljkovic (20:11.989)
+And then third thing, how we can increase that market share and as a direct consequence of that, how we can increase the revenue. So with this kind of frameworks and with this approaches, then everything regarding us here becomes more strategic. Everything become, because I feel that maybe a lot of companies approach us like a tactic.
+
+Nebojsa (20:15.608)
+Mm -hmm.
+
+Nebojsa (20:28.087)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (20:37.109)
+Like they need to some something to do on their blog landing page or like collection page. But that's not the case when you have e -commerce or enterprise type of websites because you need actual strategy like a guiding principle that will lead all of the resources. Then the third thing, let's say the biggest problem that companies are facing, especially big ones.
+
+Nebojsa (20:37.495)
+Mm -hmm.
+
+Yeah, yeah.
+
+Nebojsa (20:47.031)
+Mm.
+
+Nebojsa (20:51.383)
+Mm -hmm. Mm -hmm.
+
+Exactly.
+
+Nebojsa (21:00.119)
+Yeah.
+
+Mihailo Miljkovic (21:07.349)
+as the lack of proper resource management. What I mean by that is that all those big companies have their own dedicated writers, have their own dedicated web resources, design resources. However, what they lack is like the proper organization of those resources for the bigger outcome. So that's why we put extreme importance on
+
+Nebojsa (21:07.735)
+Mm -hmm.
+
+Nebojsa (21:11.257)
+Mm -hmm. Okay.
+
+Nebojsa (21:21.336)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (21:28.44)
+Mm -hmm.
+
+Mm -hmm.
+
+Mihailo Miljkovic (21:37.237)
+helping companies organize what they already have and to put that into action, to put that into something that will create incremental results. Because everything that we do on the website side has a potential to compound over time. So like basically I treat it especially for e -commerce clients and also for enterprise clients that have the right measurement systems.
+
+Nebojsa (21:41.976)
+Mm -hmm.
+
+Nebojsa (21:45.72)
+Mm -hmm.
+
+Nebojsa (21:49.752)
+Mm -hmm.
+
+Nebojsa (21:59.416)
+Yeah.
+
+Mihailo Miljkovic (22:06.965)
+Like we are building you assets, assets that will generate you more over time, users, conversions, revenue, and all those metrics that matter the most. And last but not least, what I would highlight and what I will communicate over LinkedIn and YouTube is the lack of effective communication between the agencies and companies.
+
+Nebojsa (22:16.919)
+Mm -hmm, mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (22:28.855)
+Mm -hmm.
+
+Nebojsa (22:32.663)
+Mm -hmm.
+
+Mihailo Miljkovic (22:36.437)
+because you as an agency owner or you as an SEO consultant or as an SEO specialist, it's your responsibility to make clients believe in SEO. What I mean by that, it's your responsibility to show them what is the quantitative potential that they can acquire within the certain timeframe. It's your responsibility to show them what are the concrete actions that will lead.
+
+Nebojsa (22:37.591)
+Yeah.
+
+Nebojsa (22:47.769)
+Yeah.
+
+Nebojsa (22:57.624)
+Mm -hmm.
+
+Mihailo Miljkovic (23:05.365)
+to that specific result. And it's your responsibility to put that into meaningful costs so that other companies can hire your company and to invest in you to actually helping them achieve those goals. And this brings me to the like really important point for Alvion as a business and how our offerings is not different, but is like.
+
+Nebojsa (23:06.168)
+Mm -hmm.
+
+Nebojsa (23:17.592)
+Mm -hmm.
+
+Nebojsa (23:22.648)
+Mm -hmm.
+
+Mihailo Miljkovic (23:34.997)
+let's say unique in some way, is that what they like previously explained, all of that is hard to do when you don't have exact data. So what I mean by that is it's really hard for like, let's say you're facing a solid big e -commerce project, you know there is a potential, you know everything.
+
+Nebojsa (23:38.52)
+Mm -hmm.
+
+Nebojsa (23:45.432)
+Mm -hmm.
+
+Nebojsa (23:52.472)
+Mm -hmm.
+
+Nebojsa (24:00.952)
+Okay.
+
+Mihailo Miljkovic (24:04.757)
+But you need somehow to convince the business owner or the chief marketing officer or whoever you are in contact with to invest significant resources into SEO. So if you don't have... Yeah, I mean, that can be hard in terms of like when you don't have previous data on that account, on that specific case, because otherwise you're relying on third party metrics, you're relying on...
+
+Nebojsa (24:18.904)
+Yeah, that can be hard.
+
+Nebojsa (24:26.105)
+Exactly.
+
+Mihailo Miljkovic (24:34.453)
+like all the existing data that's probably not serving you in terms of proofing your concept. And that's why I think, exactly. And that's why I think that the best approach for this is something that we call like pilot projects or something, certain activity that can be condensed into like short timeframe, in our case, 90 days.
+
+Nebojsa (24:34.873)
+Yeah.
+
+Nebojsa (24:39.637)
+You cannot guarantee anything, yeah.
+
+Nebojsa (24:57.881)
+Mm -hmm.
+
+Nebojsa (25:01.369)
+Okay.
+
+Mihailo Miljkovic (25:03.797)
+And within those 90 days, what we do is we execute the biggest leverage points for that specific company to achieve the first significant results as soon as possible so that they can see on a small sample how impactful certain activities are on the company's revenue, users position, like anything. And after 90 days or
+
+Nebojsa (25:03.929)
+Okay.
+
+Nebojsa (25:18.745)
+Mm -hmm.
+
+Nebojsa (25:24.122)
+Yeah.
+
+Yeah.
+
+Mihailo Miljkovic (25:32.565)
+like 120 days, depending on the project size, we then talk with client showing the concrete data from that project. Look, we implemented this. These are the results. And our recommendation is for you to continue at this scale to put inputs within the company. And as a result of that, you will achieve, let's say 20 acts of path you achieved just.
+
+Nebojsa (25:35.385)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (25:40.889)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (25:51.801)
+Mm -hmm.
+
+Mm -hmm.
+
+Mihailo Miljkovic (26:02.069)
+with these resources. And when we put in that order and in that framework, I think that more companies will listen to us, more companies will trust us, and more companies will feel that we are here to be their strategic partner, not like not an agency that wants a retainer, basically.
+
+Nebojsa (26:13.337)
+Mm -hmm.
+
+Nebojsa (26:22.073)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (26:28.441)
+Yeah.
+
+Mihailo Miljkovic (26:28.501)
+Because I feel like the business pressure because I speak with a lot of CMOs, a lot of CEOs, with a lot of website managers and they are bombarded with agency requests and with all of that. But I think that people feel when you work on something because you believe in it, because you see a greater purpose in it, because you want to help actually.
+
+Nebojsa (26:34.137)
+Mm -hmm.
+
+Nebojsa (26:38.745)
+Mm -hmm.
+
+Nebojsa (26:51.033)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (26:54.869)
+And at the end of the day, that will be the main deciding factor why companies choose us over other agencies, especially now at the beginning of Elvion as a company, because everything goes through us. Like the connection between us and clients are so personal and like we get to know each other better so that we can really help them accelerate their demand capturing results.
+
+Nebojsa (26:58.809)
+Mm -hmm.
+
+Nebojsa (27:03.321)
+Mm -hmm.
+
+Nebojsa (27:08.473)
+Yeah.
+
+Nebojsa (27:25.305)
+Yeah, man, I mean, thanks for all the information and I really like the 90 days SEO growth strategy because yeah, it kinds of build trust and when you have all the data, then you can make some predictions, projections, show them to the client and then make them realize what's, what is the output based on the input that you guys did for them. So like,
+
+It seems like that you guys are not struggling with any challenges because everything is too easy for you. I know that's not true that you're facing challenges daily. So like I wanted to ask you, I know that there are some NDAs and everything, but like, are you able to share us some story or a case study of one client you helped detailing some challenges they faced and the solutions that you guys.
+
+Mihailo Miljkovic (28:21.397)
+Yeah, sure. Yeah, that's fine. I mean, the biggest clients that I get to know, that I get to lead, etc. ended up, unfortunately, due to objective reasons that are business -wide, company -wide, not marketing -wide. I like to mention that two
+
+Nebojsa (28:23.451)
+You don't have to mention the client's name if you have an NDA signed. You can just... Yeah. Okay.
+
+Nebojsa (28:37.627)
+Okay.
+
+Nebojsa (28:48.155)
+Okay.
+
+Mihailo Miljkovic (28:51.669)
+like two biggest clients that I worked with and that I was leading the strategy was bodybuilding .com and International Monetary Fund. Like both of those organizations, like really, really, really, really big organizations. And I was so glad that I got like that opportunity to present all of that because as I said, I got to know the...
+
+Nebojsa (29:05.979)
+Nice man, big names.
+
+Mihailo Miljkovic (29:20.821)
+how companies and organizations on that level operate, what they want to know, what they care about, what's their management style, et cetera. And then probably the biggest case study, the biggest project impact that we had was on one outdoors e -commerce enterprise store. And...
+
+Nebojsa (29:25.626)
+Mm -hmm.
+
+Nebojsa (29:44.538)
+Mm -hmm.
+
+Mihailo Miljkovic (29:48.949)
+The moment when I came into the contact with that account, with that project, I was so shocked how small percentage of their accomplished potential was. And again, when I see that gap between when a company is and where they can be, that's what's the main, the...
+
+Nebojsa (29:54.714)
+Mm -hmm.
+
+Nebojsa (30:06.33)
+Mm -hmm, mm -hmm.
+
+Nebojsa (30:14.33)
+Yeah.
+
+Mihailo Miljkovic (30:18.069)
+biggest motivator for you and that what gives you like a passion to help them bridge that gap and to actually like bring that into existence like to actually help them grow. Anyways, so the case there was that that company has more than 50 ,000 SQAs, 50 ,000 products. And you can just imagine how
+
+Nebojsa (30:30.49)
+man.
+
+Mihailo Miljkovic (30:46.933)
+many collection pages, how many category pages, how many menu navigation complexity, how many website visitors, et cetera. And the main thing that was done there, it can be broke down into three main verticals, three main pillars. So the first thing of course is the technical foundation. And like we know that like the
+
+Nebojsa (30:55.61)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (31:07.002)
+Mm -hmm.
+
+Nebojsa (31:13.786)
+Mm -hmm.
+
+Mihailo Miljkovic (31:16.245)
+bigger the website is, the more technical side of the website is important to the results and vice versa. Smaller websites, they cannot pull any leverage based on the technical side of the website. So to be precise, that website got migrated from Agento to custom -built Power Web App.
+
+Nebojsa (31:19.066)
+Mm -hmm.
+
+Nebojsa (31:24.154)
+Yeah.
+
+Nebojsa (31:28.922)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (31:34.202)
+Mm -hmm, yeah.
+
+Mihailo Miljkovic (31:46.965)
+or progressive web app, custom -built JavaScript website. So you imagine how challenging that was seeing a website like that side being migrated from one platform to another custom -built. So that case, like that was the biggest challenge for me so far in the career to being able to witness that migration process.
+
+Nebojsa (31:47.065)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (31:57.625)
+Yeah.
+
+Nebojsa (32:02.297)
+Yeah.
+
+Mihailo Miljkovic (32:15.221)
+And of course, like that was followed by URL rewriting and URL redirects on a scale of thousands and thousands of URLs. So that was like probably the most challenging and most scariest migration that I have ever witnessed. Fortunately, everything regarding that went fine and went good. And so like that was like, again, the smoothest migration that we witnessed.
+
+Nebojsa (32:21.337)
+man.
+
+Nebojsa (32:31.673)
+Yeah.
+
+Nebojsa (32:45.308)
+I don't want to even ask how their developers felt like.
+
+Mihailo Miljkovic (32:45.493)
+and then
+
+Mihailo Miljkovic (32:49.493)
+I'm like, no, it was a mess, but luckily everything was fine after that. So then, like the first problem that we faced is how Google rendered their pages. How Google wasn't able to properly render JavaScript directories and all of the resources that they were using to create pages and to actually
+
+Nebojsa (33:05.179)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (33:10.811)
+Yeah.
+
+Mihailo Miljkovic (33:19.125)
+like display pages on the user's browsers. And also they are 100 % they are 100 % client site rendering website. So you imagine, so you imagine like, like you see.
+
+Nebojsa (33:23.035)
+Yeah, I know about that issue.
+
+Nebojsa (33:29.595)
+man, yeah. They had a lot of problems with indexation, I believe.
+
+Mihailo Miljkovic (33:36.629)
+Yeah, so you see how challenging that was. Luckily, with the proper audit and with the proper technical support from the SEO side, we were able to cover all of those most impactful issues when it comes to technical foundations of the website. And as a result of that, we got a...
+
+Nebojsa (33:40.411)
+Yeah.
+
+Yeah.
+
+Mihailo Miljkovic (34:03.733)
+Like we got a solid increase in the index rates and number of pages within our index. So that was done. That was done pretty nice. Then the second thing, the second vertical, which I think is the most like most important because I talk about technical stuff only in a way how they are connected to the results and revenue that they need to produce. I'm not.
+
+Nebojsa (34:26.779)
+Mm -hmm.
+
+Mihailo Miljkovic (34:29.141)
+overly focused on that when I talk with client or about like business because of course like we have the top -notch technical team that will debug every single page, every single code, everything but that's not important for kind of business discussion that we have. Anyways, so I will now say something.
+
+Nebojsa (34:35.067)
+Okay.
+
+Mihailo Miljkovic (34:56.981)
+creating pages based on your existing stock to cover untapped market demand in a way that users search for your products, but you are not currently displayed them on the website so they can be found. So that sentence alone brings that client more than $1 million in incremental revenue annually. And what I mean by that is that...
+
+Nebojsa (35:23.515)
+I'm going to go home.
+
+Mihailo Miljkovic (35:25.077)
+Every client, every big e -commerce website has a certain categorization, certain collections. And the bigger the organization, the more formal that organization is in terms of who manages that. Like they're like merchant center, merchant people that they are literally their responsibility is how they will categorize products. But anyways, like those big websites, they lack the more granular
+
+Nebojsa (35:48.571)
+Mm -hmm.
+
+Mihailo Miljkovic (35:55.093)
+and more detailed categorization so that they can capture the untapped market demand. So what they mean by that is that let's say they sell desks. So they have a collection page where they sell desks. But desks, and it turns out like they have hundreds and hundreds and thousands of thousands of desks in different variations.
+
+Nebojsa (35:56.667)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (36:03.227)
+Yeah.
+
+Nebojsa (36:10.235)
+Okay.
+
+Nebojsa (36:15.195)
+Mm -hmm.
+
+Nebojsa (36:20.731)
+Mm -hmm.
+
+Mihailo Miljkovic (36:23.797)
+But with that single page, with that single website asset, they can cover a limited market segment, which is desks, desk online, et cetera. But when you look at their facet navigation, their filters, their product variants, you can see that that product can be described from the attributes like
+
+Nebojsa (36:23.835)
+Mm -hmm.
+
+Nebojsa (36:32.347)
+Mm -hmm.
+
+Yeah.
+
+Mihailo Miljkovic (36:53.621)
+color, size, material, use, I don't know, like, I think that's like anything that you can think of. And when you actually go in that granular approach, and when you search for all of the ways how the certain product in this case, like Dask can be expressed, you can.
+
+Nebojsa (36:57.051)
+Mm -hmm.
+
+Nebojsa (37:02.075)
+Type of dust, for example, yeah.
+
+Mihailo Miljkovic (37:19.413)
+clearly see that they covered like a fraction of market segment and market demand. And with the already existing stock with what they already have, they can produce more website assets, which will attack different market segments. And with that approach, which is really simple and really straightforward, but yet many companies are not aware of that. We were able to create, I truly call them revenue generating assets.
+
+Nebojsa (37:34.779)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (37:42.939)
+Yeah.
+
+Mihailo Miljkovic (37:48.981)
+because when you deploy, let's say 500 categories, when you deploy 1000 new pages, you will see incrementally how those pages get indexed, get ranked, get first users, get first conversions. And then once we track the first conversion, we then track conversions and revenue week over week. So we have that.
+
+Nebojsa (37:57.467)
+Mm -hmm.
+
+Nebojsa (38:05.499)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (38:16.348)
+Mm -hmm.
+
+Mihailo Miljkovic (38:17.749)
+We hold that process accountable from the day one and we are tracking that from the day one. Like what's the nature of growth for this pages? And when you deploy that, like, and when you witness that, you will see how those pages six months later generate 10, 20, 30, 40, $50 ,000 a month. But again, that's only tasks.
+
+Nebojsa (38:22.524)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (38:47.189)
+For example, what they explained, what about your products, what about other segments? Yeah, I mean, and with that approach, we were able to incrementally increase this e -commerce store like organic revenue by more than one million dollars in a year. And also that's like just one segment and one pillar. The second and third pillar is connected to this.
+
+Nebojsa (38:48.604)
+Yeah, I mean... But yeah, it's a good explanation, yeah.
+
+Mihailo Miljkovic (39:16.693)
+Because what they explain is just everything is so manual and everything is so like manual and not I won't say outdated, but manual. There are a couple of ways what we are working with with enterprise clients is how their faceted navigation look like. What's their function? How can we leverage that to produce a meaningful indexable, crawlable
+
+Nebojsa (39:20.316)
+Mm -hmm.
+
+Nebojsa (39:27.804)
+Yeah.
+
+Nebojsa (39:36.829)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (39:46.261)
+URLs for Google to rank for certain variations because that's like that's like automated version of what I just previously explained and then the second thing is something that we are working on as a company within our R &D department is we are looking for a ways to connect Google Search Console API to connect Google Serps API.
+
+to connect multiple data sources and to build a process which is automated and done by software, by computer, to predictably find more demand segments that aren't covered yet with the existing stock. And so far, we are still in the development phase, we are testing that with the clients, but...
+
+Nebojsa (40:18.396)
+Mm -hmm.
+
+Mihailo Miljkovic (40:44.757)
+All of that gives you such a great approach and such a great ability to make sure that when the client comes in, they understand how much potential they have and how fast you can deploy those solutions to the website so you make sure that they are starting acquiring new users and conversions right away. And the third thing, what will be the...
+
+Nebojsa (40:59.548)
+Yeah, man.
+
+Nebojsa (41:05.308)
+Mm -hmm.
+
+Mihailo Miljkovic (41:13.621)
+The future of Fasio and the future of search engine landscape is the marketing on the product level.
+
+Nebojsa (41:16.317)
+Mm -hmm.
+
+Nebojsa (41:22.556)
+Mm -hmm. Okay.
+
+Mihailo Miljkovic (41:24.053)
+What I mean by that is we will speak about this later, but Elvion is a company that one of the most comprehensive research studies on the surge generative experience now called AI overviews. And.
+
+Nebojsa (41:39.804)
+Yeah, I saw that your LinkedIn post exploded with like 300 plus comments and I'm now, yeah man, that's such a great case study. Everyone should look at your YouTube video, read your research at your website's blog. Great job, man.
+
+Mihailo Miljkovic (41:44.885)
+Yes, yes, yes, yes, it's on fire.
+
+Mihailo Miljkovic (41:55.381)
+Yeah, thank you. Thank you. We will talk about that later. But anyways, like we analyze more than 28 ,000 e -commerce transactional keywords.
+
+And when you see the type of e -commerce AI overview layout, you will understand that Google is becoming more like a marketplace rather than search engine. What I mean by that is that Google will become the next Amazon.
+
+Nebojsa (42:25.98)
+Mm -hmm, yeah.
+
+Nebojsa (42:31.708)
+And what do you mean by that? Okay.
+
+Mihailo Miljkovic (42:32.309)
+If you search from United States and if you search for any e -commerce related keyword, you will see how many product reads are there where Google directly pulls data from their shopping graph and directly show you products.
+
+Nebojsa (42:42.364)
+Yeah.
+
+Nebojsa (42:47.772)
+Ciao.
+
+Nebojsa (42:53.853)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (42:58.645)
+And everything is happening within their ecosystem. When you click on the product, you will see all of the reviews, all of the images, all of their, like everything. And then just one click to the vendor's website in form of the product link. And all of that is done through merchant center and through, of course, schema markup and semantic understanding.
+
+Nebojsa (43:04.157)
+Yeah.
+
+Nebojsa (43:08.125)
+Exactly, yeah.
+
+Nebojsa (43:16.829)
+Yeah, yeah, yeah. And you're there, yeah.
+
+Nebojsa (43:23.997)
+Mm -hmm.
+
+Yeah, yeah, yeah.
+
+Mihailo Miljkovic (43:28.213)
+products and the product data. But what I mean by that is that our research clearly suggests that for more than 80 % of e -commerce queries that were eligible for AI overviews, 80 % more of them generated products, product reads, like product layouts. And what I mean by that is that Google will...
+
+Nebojsa (43:29.949)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (43:46.045)
+Mm -hmm.
+
+Mihailo Miljkovic (43:56.405)
+Now, and AI overview since our generative experience is the future of search, despite challenges that they are facing right now, because that is, because their functionality, what you can do as a user, it's like really great. And I think that that's definitely, that will be leveraged by Google in like soon. And when you see that in that case, like Google really doesn't care about,
+
+Nebojsa (44:01.245)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (44:11.613)
+Yeah.
+
+Nebojsa (44:18.333)
+Mm -hmm.
+
+Mihailo Miljkovic (44:26.453)
+collection pages, category pages anymore. I mean, I'm not saying like right now, but in the future, how the process goes, because our research clearly shows that approximately 79 % of links that we found within the AI overviews don't rank within the search engine result page, like the normal search.
+
+Nebojsa (44:29.085)
+Mm -hmm.
+
+Nebojsa (44:34.812)
+Mm -hmm.
+
+Nebojsa (44:49.884)
+Yeah.
+
+Mihailo Miljkovic (44:50.677)
+And we cannot take that for granted. We cannot just say, okay, 79 % in rank. We want to understand why is that the case? Because now Google within the AI overviews rank listicle and review type of articles because they use those articles and those review type of articles and listicles for the product suggestions. And if you open kind of the product tab within the AI overview and
+
+Nebojsa (44:56.796)
+Mm -hmm.
+
+Nebojsa (45:05.436)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (45:11.74)
+Yeah.
+
+Mihailo Miljkovic (45:19.701)
+when you want to see from where Google pulled the information to show that product, you will see that certain articles impacted certain product listing. So that's what I mean for the product level marketing, especially for the e -commerce section and vertical. And definitely, especially for the broader categories when you search for shoes, you search for jeans.
+
+Nebojsa (45:30.268)
+Yeah, yeah.
+
+Nebojsa (45:38.172)
+Mm -hmm.
+
+Nebojsa (45:43.548)
+Mm -hmm.
+
+Yeah, what I also notice, sorry for interrupting you, but like what you just said, I've noticed that it's the same thing for some of the services. For example, someone is searching for a web design agency. There are listicles that are mentioning different web design agencies, but also these agencies are getting that value and ranking better on Google search when people are searching for their specific services.
+
+So it's same for e -commerce. So that's connected.
+
+Mihailo Miljkovic (46:16.309)
+Exactly, exactly, exactly. And it's also the same. It's also the same for the software industry, software article. For project management software, if you search for SEO tracking software, whatever software related keyword, you will see that listicle type of articles rank higher than any landing page, anything, because users and Google, like they trust more those listicles than like one thing.
+
+Nebojsa (46:22.428)
+Yeah, yeah, yeah.
+
+Nebojsa (46:30.044)
+Yeah, yeah, yeah.
+
+Nebojsa (46:37.34)
+Exactly. Yeah.
+
+Nebojsa (46:43.964)
+Exactly. Yeah, they are not looking damn promotional rather than educational. So they give value to those articles. Yeah. So I mean, very interesting, man, like too many valuable insights. Thank you for that. I mean, I'm also learning a lot from you. So just keep it going. So what I wanted to ask you, like I can see that you're revenue oriented.
+
+Mihailo Miljkovic (46:53.525)
+Exactly, exactly.
+
+Nebojsa (47:11.036)
+like that's important for all the companies they want to drive more sales, get more revenue from the services they are paying for at the end. But like, what else, like what metrics and KPIs do you use to measure the success of an SEO campaign? Let's say it like that.
+
+Mihailo Miljkovic (47:30.677)
+Right. So the main reason why we are focused on revenue and business metrics is that that's the main way how we can connect our inputs and everything that we do on the client's company, website, et cetera, with the final results. And as a part and as a consequence of that, we are able...
+
+Nebojsa (47:54.012)
+Mm -hmm.
+
+Mihailo Miljkovic (47:59.509)
+to propose bigger budgets, bigger strategy initiatives, and overall the level of communication and level of respect between you as a company and other company increases. At the end of the day, if SEO is not properly executed with the proper resources, then it's a waste of time, resources, and money.
+
+Nebojsa (48:09.306)
+Mm -hmm.
+
+Nebojsa (48:13.21)
+Mm -hmm. Mm -hmm. Mm -hmm.
+
+Nebojsa (48:27.93)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (48:29.269)
+And the only way how we can be sure that we got the proper buy -in from the other company, from their executives, is that when we tie everything that we do with what they care about, because at the end of the day, we are helping CMOs, web managers, we are helping, at the end of the day, and CEOs to
+
+Nebojsa (48:39.546)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (48:47.898)
+Mm -hmm.
+
+Nebojsa (48:58.554)
+Yeah.
+
+Mihailo Miljkovic (48:59.733)
+report to their bosses what they actually improved on the website, which results they created, etc. And that's why I saw, like, when you bring that to the table, everything becomes more serious, everyone is more accountable. And when you don't talk about something that companies really don't care about,
+
+Nebojsa (49:02.906)
+Mm -hmm.
+
+Yeah.
+
+Nebojsa (49:14.074)
+Mm -hmm.
+
+Yeah, exactly.
+
+Mihailo Miljkovic (49:25.109)
+such as like SEO metrics and everything that from the technical side is important for us, but for them not, then you will be in trouble because companies won't see SEO as an investment. They will see it as a cost. And that's a problem. Like you cannot operate well in that case. So yeah, so that's why we are focused on the revenue and business metrics.
+
+Nebojsa (49:25.146)
+Yeah.
+
+Yeah.
+
+Yeah.
+
+Nebojsa (49:43.194)
+Yeah.
+
+Yeah, 100 % right, man.
+
+Mihailo Miljkovic (49:54.709)
+However, I need to mention that attribution becomes more and more and more challenging over time. And that's why SEO companies, marketing companies need to be the specialists in marketing attribution and the marketing strategy and in the consulting before they specialize.
+
+Nebojsa (50:18.396)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (50:23.637)
+into certain field, into certain like segment of all those services, because if you are not, if you don't control the attribution and if you don't understand the mechanism behind analytics, behind everything that's reported back as a result, then also you will have problems when you need to justify the cost of your strategy, the cost of your campaign.
+
+Nebojsa (50:25.852)
+Mm -hmm. Yeah.
+
+Nebojsa (50:39.1)
+Mm -hmm.
+
+Nebojsa (50:42.62)
+Mm -hmm.
+
+Nebojsa (50:46.588)
+Yeah.
+
+Mihailo Miljkovic (50:51.125)
+So that's why I think that bringing revenue to the table and bringing all of those business metrics into discussion creates, like it's not comfortable and it requires a huge responsibility. But I think it's the main way how SEO can be meaningful and how SEO can actually be, can create a business case.
+
+Nebojsa (51:15.484)
+Mm -hmm.
+
+Nebojsa (51:20.028)
+Mm -hmm.
+
+Mihailo Miljkovic (51:20.789)
+Not just like we are doing SEO, no, but we are acquiring new customers with that as a channel. So that's the main reason why we are so focused on that. Of course, of course we have secondary tertiary metrics because we understand that revenue or conversion is just the last step within the hierarchy of things that need to happen. So what I mean by that is you cannot have
+
+Nebojsa (51:24.54)
+Yeah.
+
+Nebojsa (51:33.116)
+Mm -hmm.
+
+Nebojsa (51:38.108)
+Yeah.
+
+Nebojsa (51:45.596)
+Mm -hmm, mm -hmm, mm -hmm.
+
+Mihailo Miljkovic (51:50.485)
+revenue if your page is not indexed.
+
+Nebojsa (51:55.166)
+Mm -hmm.
+
+Mihailo Miljkovic (51:56.245)
+or if your page is not crawled or if your page doesn't rank for keywords or if your page doesn't have impressions. So what I mean by that is that we broke down the whole process into like tangible steps where we track is page indexed? Yes. Or first of all, is page crawled? Yes. If page is indexed? Yes. If page is ranked? Yes. Does page have more impressions week over week, month over month? Yes. All those are steps.
+
+Nebojsa (51:58.397)
+Yeah.
+
+Nebojsa (52:02.125)
+Yeah, yeah, yeah.
+
+Nebojsa (52:10.749)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (52:22.813)
+Mm -hmm.
+
+Mihailo Miljkovic (52:25.141)
+before actual conversion happens. And that's why we can more reliably control the output because we know everything that needs to happen before that final output. Because the output is only the consequence of all of these steps. And that's why our culture as a company is that we need to be excellent at every stage from technical side, reporting side.
+
+Nebojsa (52:27.965)
+Mm -hmm. Mm.
+
+Nebojsa (52:37.373)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (52:41.821)
+Mm -hmm.
+
+Mihailo Miljkovic (52:51.029)
+keyword side, on page side, off page side in order to actually create meaningful results. So as I said, all of that requires huge responsibility and huge involvement in it, but it's the probably the best way how you can generate meaningful results.
+
+Nebojsa (52:52.989)
+Yeah, man.
+
+Nebojsa (53:10.653)
+Yeah, man, I mean, I'm impressed, like, hats off, man. Like, I love the mindset, like, from the very beginning, like, when you said, when I get a client, I do the analysis, and when I see that they are there now with their current, you know, potential and the market demand, and now I can see they can be there.
+
+And I got the goosebumps, man, because I can see like how that like drives you. That's your motivator. Like that's driving you to go and work, you know, and to do amazing things and help other businesses. That's amazing. And that's why you and your company will be always successful, you know? And that you look at the other companies like, hey, that's not just my client. That's my...
+
+Entire team that I need to work with like CMO CEO, you know website managers. They need my help. They're my team that mindset is like a gold man So just keep doing that like never never change your mindset, you know I think that in like a real life you you're the same like in the real life not only in the business because like Business is kind of a reflection of us in real life. So I can see that like
+
+Mihailo Miljkovic (54:09.717)
+Thank you. Thank you. Yeah, thank you.
+
+Nebojsa (54:25.469)
+They're very connected, you know, and that's why I think you're a great person as well. Yeah.
+
+Mihailo Miljkovic (54:29.941)
+Of course, of course. Yeah. Yeah, sure. For sure. That's non -negotiable. And I don't think that however, your mindset, your business approach is tested on the market. And that's it. Like it works. Yes, it doesn't. You need to change it. And that's why, like everything that I explained is...
+
+Nebojsa (54:36.893)
+Hehehe
+
+Nebojsa (54:46.909)
+Yeah. Yeah, exactly, man.
+
+Exactly, man, exactly.
+
+Mihailo Miljkovic (54:56.757)
+And of course, we'll be devout over time. Like we are just like a new company, startup company with a great vision, with a great mission and all of that. But everything that I explained is a consequence of me listening to actual conversations with great companies, with big decision makers, with a C -suite level of executives and they talk in this language. And that's why if I want to get them to be my...
+
+Nebojsa (54:59.517)
+I know.
+
+Nebojsa (55:23.421)
+Mm -hmm.
+
+Mihailo Miljkovic (55:26.293)
+client and to work with me, I need to speak in their language. So that's the thing.
+
+Nebojsa (55:27.069)
+Yeah.
+
+Their language, yeah, exactly.
+
+Nebojsa (55:35.135)
+you need to fit into their shoes, you know. So that's it. So let's get back to the 90 days strategy that you guys are doing. So my question here is once that's done, you show the results client likes it.
+
+Mihailo Miljkovic (55:38.101)
+Thanks.
+
+Nebojsa (55:51.327)
+What are the next steps? Like do you define a six month strategy, a year strategy? What do you do after that? Like do you have any agreements that your clients needs to sign in order to proceed further? Like how do you operate? What are the next steps?
+
+Mihailo Miljkovic (56:10.677)
+So everything that we do before that, I mean, within the first 90 days, et cetera, that's not strategy. That's execution and that's like fast, getting the results fast, like meaningful, tangible results. Yeah. And I feel that in the industry, the...
+
+Nebojsa (56:30.654)
+like initial setup, quick results. Yeah.
+
+Mihailo Miljkovic (56:40.373)
+term strategy is used a lot of times without any context and that we are get used to use the word strategy in a way that's not appropriate because from the business perspective like for economic business perspective the words the word strategy requires much more things than just like this is the list of tasks that we need to execute.
+
+What I mean by that is that strategy requires, let's say, a guiding principle, a north star that needs to be achieved. And that can be expressed with some visionary bold claims like this company, like company X, or not X, like X exists, like X is Twitter now. Okay, no. Company Y, like, okay, company Y. Okay.
+
+Nebojsa (57:09.054)
+Mm -hmm.
+
+Nebojsa (57:16.062)
+Mm -hmm.
+
+Nebojsa (57:30.206)
+Yeah, no, I like yeah X is a placeholder in your sentence. Yeah Don't get don't get you mad
+
+Mihailo Miljkovic (57:38.869)
+Okay, somebody asked, as let's say in the...
+
+Let's say that they are.
+
+They are selling shoes. They are selling like specific shoes from one specific material. And let's say that their category, business category is called Leather Shoes. For example, the main visionary North Star is Company X will become the best website, the leading website in the category of Leather Shoes.
+
+Nebojsa (58:28.318)
+Mm -hmm.
+
+Mihailo Miljkovic (58:29.973)
+And when you say that, when you say that to executives, when you say that to people, that's such a powerful, like a sample of different words and different kind of things. And it's again, it needs to be grounded in reality. So it cannot be just like visionary and just kind of, we will be the best of the best of the best. And it also needs to have details.
+
+So I didn't say we will be the best website in shoes category. No, we will be the like what users would think the best website in that specific category. And when you have that strategy, when you have that principle that guides the world strategy, then everything needs to be aligned with that. What I mean by that is not like there is no as a strategy. No, no, expect.
+
+if it's connected to the broader business strategy, if it's connected to something broader that executives and higher management think and care about. Because otherwise, and that's the problem, otherwise you will get stuck and nothing will be implemented and you will have no results. And that's the pattern of a pattern for big enterprise websites and big e -commerce websites. So let's say you have that guiding principle,
+
+Nebojsa (59:30.494)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (59:36.126)
+Mm -hmm.
+
+Nebojsa (59:52.797)
+Mm -hmm. And like what advice would you give them just like if they just start investing to this? Yeah.
+
+Mihailo Miljkovic (59:57.813)
+Yeah, so that's like when we finish the 90 days process, when we finish all of that and when we get the first results, then we start with guiding principles and with coherent actions and coherent strategy that will follow that. So they understand that if you want to become the best, you will need this, this and this.
+
+Nebojsa (01:00:05.885)
+Mm -hmm.
+
+Mihailo Miljkovic (01:00:26.901)
+And then when we break that down, we have different initiatives. So let's say we need to build out a whole new category on the website. We need to publish more than 200 pages. We need to improve how our pages look. So we need resources there. When you have those initiatives, the third part is to connect those initiatives with a potential. So.
+
+Nebojsa (01:00:54.749)
+Mm -hmm.
+
+Mihailo Miljkovic (01:00:55.637)
+how that will sound. That will sound like, okay, this potential is worth 1 .5 million users a year, which will be converted into $4 million incrementally year over year. For that to be achieved, we need three full -time designers, two full -time web developers, and we need...
+
+Nebojsa (01:01:03.677)
+Mm -hmm.
+
+Nebojsa (01:01:09.245)
+Mm -hmm.
+
+Mihailo Miljkovic (01:01:21.397)
+hundred thousand dollars in terms of resources for the content production. And you see how when you structured like that and when you are accountable for the it's not the claim, it's like a vision, like it's a strategy, like wow, what you want to achieve, then everything made sense because everything is connected, like the dots are connected and then everyone is working towards achieving that. And then the whole engine of content writers.
+
+PR team, link building team, technical team, this team. Everyone is aligned and everyone is working towards the same end. Otherwise, product team will have one direction, other team has another direction. That creates a huge fraction, friction, and you won't achieve anything otherwise. So like this is the sneak peek. I try to explain it in a kind of in a simple terms, but.
+
+Nebojsa (01:01:53.437)
+Mm -hmm.
+
+Nebojsa (01:01:58.909)
+Mm -hmm.
+
+Nebojsa (01:02:07.485)
+Mm -hmm.
+
+Nebojsa (01:02:13.053)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (01:02:18.269)
+Yeah.
+
+Mihailo Miljkovic (01:02:19.797)
+It's indeed a complex thing and it's indeed something that you really need to be skilled at in terms of consulting skills. And I think that when you want to reach that level in the SEO world and to make such a big impact on companies results, man, you have to be the best of best consultants out there. Your soft skills and your ability to structure everything.
+
+Nebojsa (01:02:30.173)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (01:02:39.389)
+Mm -hmm.
+
+Mihailo Miljkovic (01:02:49.141)
+needs to be at the highest level. And then after you like, that's my goal, like to really be at the level where I work within like, and I operate within those soft skills, part where CEO's, CMO's understand. And then we work internally with the team where we are experts, we are technical people, we work on this and we are nerds there, but not to the client because clients like, they don't care about how much do you know? Like they don't care.
+
+Nebojsa (01:03:04.253)
+Mm -hmm.
+
+Nebojsa (01:03:08.285)
+Mm -hmm. Mm -hmm. Mm -hmm.
+
+Nebojsa (01:03:18.653)
+Yeah.
+
+Mihailo Miljkovic (01:03:19.285)
+And when you understand that, and when you feel that you don't need to prove yourself that you know something that like the whole world then locks for you. And again, when you, when you put, when you put the framework like this. And depending on the case of cases like that will be changed, et cetera, then we actually get to execute that. We have guiding principle. We have that let's execute that a week over week, month over month. These are our.
+
+Nebojsa (01:03:25.089)
+Yeah.
+
+Nebojsa (01:03:36.637)
+Mm -hmm.
+
+Mihailo Miljkovic (01:03:48.789)
+plans and then we report how much did we move towards that goal. So everything is like so much easier when the hard part is done right because otherwise you will revise your plan every two months and you know that pain when you work with a big client and then every two months something needs to change. Something needs to be
+
+Nebojsa (01:03:56.894)
+Mm -hmm.
+
+Nebojsa (01:04:01.949)
+Mm -hmm.
+
+Nebojsa (01:04:07.613)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (01:04:15.837)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (01:04:16.789)
+adjusted. Something needs to be allocated towards something else. So it's a really like yeah, of course.
+
+Nebojsa (01:04:22.237)
+Yeah, so you need to be proactive.
+
+Yeah, I've seen your research, I've looked at your videos and like I know that you're following all the trends, algorithms and everything but like are there any secrets on how do you stay ahead of changes in search engine algorithms and ensure your clients do too?
+
+Mihailo Miljkovic (01:04:50.645)
+That's a good question. So.
+
+You need to treat Google like a, let's say on a company level, like Google is software company. Google is like a informational technology company. And when you understand the technical level on which search engines operate and which mechanisms and different IT principles are applied there, that already gives you a solid curve and a solid kind of.
+
+Nebojsa (01:05:04.637)
+Yeah.
+
+Mihailo Miljkovic (01:05:27.605)
+approach because SEO cannot be seen and analyzed through the lens of keywords or rankings or anything like that because that's on a surface level. When you go deeper and deeper, you will find like, of course, you will find how much you don't know and how much is there to learn and to to to be to to actually get familiar with. But technical principles and
+
+also understanding the semantics, how Google process the words, the text, the codes, everything. So when you get that understanding on a deeper level, then you won't be terrified when something with algorithm happens because you know how algorithm at its core operates and what are search engines at its core.
+
+Nebojsa (01:06:22.494)
+Mm -hmm. Mm -hmm.
+
+Mihailo Miljkovic (01:06:26.901)
+because they are information retrieval system. So you type something in, they retrieve something back. And there's like a whole like theory behind this. And I'm a big believer that you like, of course, like everything is practical and everything is tied to the business results. But you also need to be a solid, to have a solid theoretical foundation in order to actually properly execute and do things. So definitely being more educated in terms of
+
+Nebojsa (01:06:30.174)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (01:06:49.566)
+Mm -hmm.
+
+Mihailo Miljkovic (01:06:56.725)
+technical perspective in terms of IT perspective that helps a lot. And then of course you have that. The second thing is the marketing knowledge, user experience knowledge, to understand how users interact with Google and what users want to see, what they don't want to see, what they found helpful, what they don't. And then on top of that consulting skills and skills to interact with people, to learn from that.
+
+Nebojsa (01:07:00.35)
+Mm -hmm.
+
+Nebojsa (01:07:06.334)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (01:07:23.038)
+Mm -hmm.
+
+Mihailo Miljkovic (01:07:26.837)
+So those three segments, like I try to keep consistent with, and that will, I think that that will make you understand at the core every change. Because as I said, Albion is grounded with idea that currently search engines are the main places where people express demand in form of questions, products, et cetera. But maybe that won't be the case in 10 years.
+
+Nebojsa (01:07:29.63)
+Mm -hmm.
+
+Nebojsa (01:07:35.966)
+Yeah.
+
+Nebojsa (01:07:47.006)
+Mm -hmm.
+
+Nebojsa (01:07:51.294)
+Yeah.
+
+Nebojsa (01:07:56.095)
+Yeah, and let's say like...
+
+Mihailo Miljkovic (01:07:56.373)
+Maybe, yeah, I mean, with a, with not judge, I won't say judgeability, but with AI, let's use word AI, although it's like so buzzword and et cetera with AI.
+
+Nebojsa (01:08:00.734)
+Yeah.
+
+Nebojsa (01:08:08.894)
+Sorry for interrupting you, but I just want to slip one question because you're going into that direction. So like, like what trends or innovations do you see shaping the future of SEO in the next few years? You mentioned 10 years, but I think that's like a long term, but let's say in a couple of years in the future.
+
+Mihailo Miljkovic (01:08:26.325)
+Right.
+
+Mihailo Miljkovic (01:08:30.741)
+In a couple of years, we already had a sneak peek into what search is going to look like when it comes to AI overviews and being able to rapidly test and scale the research on that scale of keywords. So all of that gave us a perspective on
+
+Nebojsa (01:08:46.142)
+Mm -hmm.
+
+Mihailo Miljkovic (01:09:00.149)
+where the search is going. First of all, people that look for information will find information on Google. That's it. What I mean by that is that all top of the funnel keywords, terms, web pages, they won't receive traffic as they did previously because Google will show
+
+Nebojsa (01:09:13.598)
+Mm -hmm.
+
+Nebojsa (01:09:26.974)
+Mm -hmm.
+
+Mihailo Miljkovic (01:09:30.037)
+answers and everything within the AI overview snapshot. That's it. Because you as a user, you don't want to find website. You want to find the answer to your question. So traffic will decrease over the total amount of traffic that Google is referring people to other websites will decrease over time. But the quality of that traffic
+
+Nebojsa (01:09:35.902)
+Mm -hmm. Mm -hmm.
+
+Okay.
+
+Nebojsa (01:09:44.254)
+Yeah, right.
+
+Nebojsa (01:09:53.598)
+Mm -hmm.
+
+Mm -hmm.
+
+Mihailo Miljkovic (01:09:59.541)
+will probably increase because people that are actually interested to find more will actually click on the links and on everything that's populated within the AI overview. So that's the first thing. The second thing is that e -commerce and shopping experience will change and is changing. So Google will become marketplace.
+
+Nebojsa (01:10:09.279)
+Mm -hmm.
+
+Nebojsa (01:10:14.559)
+Mm -hmm.
+
+Mihailo Miljkovic (01:10:25.205)
+Google will find more ways how they can list more products, how they can have the full spectrum of what users expect within Google without you have to go to the product pages. And we already witnessed that. We already witnessed that because we work with a lot of clients where we work with their merchant center accounts. With all of that, Google is becoming much smarter towards
+
+Nebojsa (01:10:33.823)
+Mm -hmm.
+
+Nebojsa (01:10:44.511)
+Yeah.
+
+Mihailo Miljkovic (01:10:54.453)
+predicting demand towards helping you organize your stock, your vendors, your supply chain and Google will become that really soon. And for example, when you search for any type of broad keyword, you will see that Google is like a whole category page because you can pick different filters on the left side. You see already products, you see images. So,
+
+Nebojsa (01:10:56.351)
+Mm -hmm.
+
+Nebojsa (01:11:02.111)
+Mm -hmm.
+
+Nebojsa (01:11:07.455)
+Mm -hmm.
+
+Nebojsa (01:11:17.535)
+Yeah, yes.
+
+Mihailo Miljkovic (01:11:23.765)
+We already feel how that will look like. And then that's it. And then the third thing is SEO strategies and everything. They don't need, they must be much more tied toward which target like user group, user persona the company is targeting. And what I mean by that.
+
+Nebojsa (01:11:27.103)
+Yeah.
+
+Nebojsa (01:11:49.535)
+Mm -hmm.
+
+Mihailo Miljkovic (01:11:51.477)
+As a strategist needs to be so refined, so aligned with the world business strategy so that it makes sense for the company to actually execute it on.
+
+Nebojsa (01:11:54.975)
+Mm -hmm.
+
+Yeah.
+
+Nebojsa (01:12:05.118)
+And do you think that backlinks would have like a good ranking, would be a good ranking signal for these new AI results?
+
+Mihailo Miljkovic (01:12:17.205)
+Yes and no. Yes for the... Look, what we learned from the March Core update and helpful content updates, all of that is that websites that relied on the off -page authority remained pretty much same before and after the updates.
+
+Nebojsa (01:12:44.094)
+Yeah.
+
+Mihailo Miljkovic (01:12:45.237)
+websites that relied on the content by itself, although that content is the most helpful mode with most expertise, most experience, they got destroyed and just like diminished in terms of. Yeah. So you see, you see, you see there like the power of external because backlinks are external votes. You vote for my website.
+
+Nebojsa (01:12:52.926)
+Yeah.
+
+Nebojsa (01:12:59.902)
+Yeah, they got hit by a Google update. And recently you...
+
+Nebojsa (01:13:13.534)
+Yeah, exactly. Yeah.
+
+Mihailo Miljkovic (01:13:14.613)
+And that's it. So that's the biggest thing. So that won't be like we are like those anchor tax back links, hreflings like that. That will remain like how, whatever people say, because that's the biggest trust signal. Because if my research is linked from Harvard or for any institution, like tell me it's not a signal.
+
+Nebojsa (01:13:38.654)
+Maybe it will be. Maybe it will be.
+
+Mihailo Miljkovic (01:13:41.461)
+Yeah, I mean, but you see, like, anyways, like I built a great research, et cetera, but if it's not like voted for, then it cannot be surpassed higher on the Google land. That's obvious. Like analyze any competitive term, you will see which results dominate and how they got there. So somebody that tells me that, backlinks are not important. That's, that's not the case. but.
+
+Nebojsa (01:14:06.269)
+Yeah.
+
+Mihailo Miljkovic (01:14:11.157)
+The only case, as I said, where that may be the case is the top of the funnel answers where Google now with AI overviews, Google picks maybe lightweight websites, maybe websites with, of course, like topical authority, with in -depth involvement in certain topic and in certain cluster.
+
+Nebojsa (01:14:28.893)
+Mm -hmm.
+
+Nebojsa (01:14:33.565)
+Mm -hmm. Mm.
+
+Mihailo Miljkovic (01:14:39.477)
+So that's of course important, but on that side for informational side for competitive terms and for money keywords, backlinks are definitely important.
+
+Nebojsa (01:14:44.381)
+Mm -hmm.
+
+Nebojsa (01:14:50.717)
+Yeah.
+
+Okay, man, thanks. Also, yeah, I wanted to ask you another question. I actually have two more. Let's do this one first. Recently, we got a leak from Google about the 12 ,000 ranking factors. So like, what's your opinion about that? Did you learn something new or that was something that you already knew but just confirmed it?
+
+Mihailo Miljkovic (01:15:18.389)
+So that whatever whatever people say that's the that's the biggest thing that happened in the as industry for the last 20 years. Because we haven't seen more direct points before like it's amazing to see and again it doesn't matter if it's still reliable if it's still.
+
+Nebojsa (01:15:40.477)
+Mm -hmm.
+
+Mihailo Miljkovic (01:15:47.829)
+applicable to the current algorithm because of course they update that of course that they they did like they have like how many thousands of engineers working on the Google's algorithm that's being updated regularly. But the depth and level of knowledge that the person can acquire through those documentation especially those with refined descriptions and conclusions and action steps that's
+
+That's the, I won't say the biggest learning, but that's like really, really, really important thing. And me and also like the whole team, we are spending every week trying to see what can we implement more, how we can understand more search engines like in Google as a dominant search engine. And of course that, that helped a lot. However, I've also.
+
+Nebojsa (01:16:19.357)
+Mm -hmm. Yeah.
+
+Nebojsa (01:16:35.325)
+Mm -hmm.
+
+Mm -hmm.
+
+Mihailo Miljkovic (01:16:44.981)
+I won't say it's not a conspiracy theory, but I mean, if you...
+
+Nebojsa (01:16:47.805)
+Yeah. You know, like Google has been always been suspicious. Like they just leak something that's not right, you know, because they don't want to reveal how their algorithm is working, you know.
+
+Mihailo Miljkovic (01:16:54.037)
+Yeah, we will.
+
+Mihailo Miljkovic (01:17:02.097)
+Exactly. So when you see the whole mess that it was a consequence of AI overviews that being launched on May 10th, et cetera, et cetera, and the bad PR that Google as a company received. And then you have this where everyone in industry talk about this. So now everyone, like I can see like, okay, I still see some posts about.
+
+Nebojsa (01:17:23.149)
+Yeah.
+
+Mihailo Miljkovic (01:17:31.445)
+SGAI over is how bad they are, how good they are, et cetera. But I see in 90 % of cases these. So is it intentional? I don't know.
+
+Nebojsa (01:17:34.525)
+Yeah.
+
+Nebojsa (01:17:40.96)
+Yeah, I think they increase their brand awareness like Google was all over the place. Definitely. If that was their strategy, it's a good one. Yeah, and Michael, the last question for you would be like, let's say you have a company that wants to invest in SEO, they have a pretty decent budget. What advice would you give them?
+
+Mihailo Miljkovic (01:17:46.741)
+Right, right. So maybe like. Yeah, yeah, yeah.
+
+Nebojsa (01:18:08.383)
+to help them choose the right agency to do it.
+
+Mihailo Miljkovic (01:18:14.581)
+Definitely examine the level of detail before you make any agreement or anything that's happening pre -purchase. Examine that and see how different companies are involved to help you understand the potential you have and you as a company to achieve certain things in the market.
+
+I will say that because when you look at our proposals, when you look at everything that we do prior to someone become our client, like you will see, they receive like $10 ,000 worth of consulting and analysis and everything. And I mean, we are here to provide value, of course, and to help them understand that as well. So that's the first sign. That's the first good sign. And then the second thing is just...
+
+Nebojsa (01:18:54.591)
+Hehehehe
+
+Nebojsa (01:19:00.319)
+Yeah.
+
+Mihailo Miljkovic (01:19:11.989)
+talk about the way, how strategic that will be. If the company only talks about their common terms, in our case, traffic, keyword rankings, link building, this and that, or they talk about something that you care about, user experience, market share, revenue, annual increase, monthly recurring revenue, assets.
+
+Nebojsa (01:19:28.479)
+Mm -hmm.
+
+Nebojsa (01:19:33.311)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (01:19:38.335)
+Mm -hmm.
+
+Mihailo Miljkovic (01:19:41.781)
+Et cetera, et cetera. Then you can examine which one do you see. And by the way, by the way, not every company want to have like strategy or like a big plan. They just want to have somebody that can execute and that's completely okay. And overall, we are not working with those type of clients because we just want to be focused on those that we can help the most and someone that we believe in but...
+
+Nebojsa (01:19:54.689)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (01:19:59.904)
+Mm -hmm.
+
+Nebojsa (01:20:07.328)
+Mm -hmm.
+
+Mihailo Miljkovic (01:20:10.965)
+The case is vice versa. Like they also believe in our strategy and our approach. That's the thing. And then the third thing is, of course, regarding how comfortable they are when they talk and how professional they are when they talk about results, when they talk about what's possible, what's not, because guarantees and not even mentioning results, like both of those cases are
+
+Nebojsa (01:20:13.472)
+Mm -hmm.
+
+Mihailo Miljkovic (01:20:41.013)
+I won't say red flags, but it's just like you will tell that something is not off. But when you hear from the agency, like how it is actually like the mechanics of the results and what's possible, what's not both in theory and practice, then you will see that you have a reliable partner that you can trust on. Because if companies don't trust me that I have the best interest for them,
+
+Nebojsa (01:21:04.256)
+Mm -hmm.
+
+Mihailo Miljkovic (01:21:11.221)
+then that won't be a good collaboration. And you know that when the client is kind of hesitant, don't want to interact too much, like you see the pain in that collaboration and the tremendous impact that they can, that that can have. So like those three things are probably the biggest things that companies that seek as your help, as your strategic assistance should examine.
+
+Nebojsa (01:21:15.04)
+Yeah.
+
+Nebojsa (01:21:19.744)
+Yeah.
+
+Nebojsa (01:21:28.48)
+Mm -hmm.
+
+Nebojsa (01:21:41.795)
+Well, man, like you left me speechless there with the interview and all the questions. I mean, these were all the questions I had so far. So I just want to thank you for being here for this conversation. I don't know like if it's because I understand what you're saying here, but you just made me feel much deeper level of your words, like feel some emotions behind them, you know, like.
+
+I really love the mindset. I think you're a very smart person. There is like a whole bright future for you and all the people that believe in you and are in your company are all around you. I mean, not only in the business and that I think that those people are very happy to have you around and to spend time with you. So man, like you left me speechless for real.
+
+Mihailo Miljkovic (01:22:34.005)
+Thank you. Thank you. Thank you for those words. But that's the case also, vice versa. I'm also really grateful to have to speak with you, to work with you, to work with other partners, to work with other people that want to believe in something, envisioning. And I mean, that's the end of the day. I mean, we...
+
+Nebojsa (01:22:43.522)
+Yeah, I can see that. I can see that.
+
+Nebojsa (01:23:00.738)
+haha
+
+Mihailo Miljkovic (01:23:03.325)
+We cannot forget that everything is kind of... And again, it's not like Kalksha, but everything is journey. And if you don't make your day -to -day exciting good and that you are striving towards something, then you will feel drained and you won't get any satisfaction from what you do.
+
+Nebojsa (01:23:15.202)
+Yeah.
+
+Nebojsa (01:23:28.866)
+Yeah.
+
+Mihailo Miljkovic (01:23:32.885)
+day to day basis and our job and our work is an important part in our life. Of course, it's not our life at all, but it is important part. So everything like and the other day, it's not what you do, it's how well do you do it? So it's everything about my. Yeah, and my last thing is my last thing is that we started the company literally with a comprehensive.
+
+Nebojsa (01:23:38.05)
+Mm -hmm.
+
+Yeah, it is.
+
+Nebojsa (01:23:47.14)
+mmm yeah exactly yeah man yeah like that
+
+Mihailo Miljkovic (01:24:00.981)
+research and development study with a lot of insights, with a lot of that. And what I can say to the audience that's listening to this is that we are preparing a lot more coming in and we want to become a research institute and to become the company that's set certain standards in terms of methodologies and in terms of how thoughtful we approach things and how systematic we want to do this.
+
+Nebojsa (01:24:02.947)
+Mm -hmm. Mm -hmm.
+
+Mm -hmm.
+
+Mihailo Miljkovic (01:24:29.781)
+So a lot of free value and a lot of things people can expect in the future from our end. We are working on such an amazing project that not only companies, but also like colleagues, like everyone that's involved will benefit from. And they can't wait to show that public and to kind of just to continue that trend. Because as you said, like that, like our announcement for the research that went viral, a lot of.
+
+Nebojsa (01:24:58.339)
+Yeah.
+
+Mihailo Miljkovic (01:24:59.157)
+A lot of smart, important and curious people reached out, got in contact. We made so many great connections, et cetera. So that's the best thing about the quality things. When you build quality things, that's the outcome of that.
+
+Nebojsa (01:25:11.139)
+Mm -hmm.
+
+Nebojsa (01:25:18.531)
+Mm -hmm.
+
+Nebojsa (01:25:22.628)
+Man, congratulations. I mean, thank you for sharing all the knowledge, the valuable insights with us and the listeners and all you guys who are listening. I hope you really enjoyed hearing what Mihailo had to say and, you know, like his journey is impressive one. And yeah, I mean.
+
+Yeah, man. I just I'm speechless man. Yeah, I think this was one of the best experiences I had like in this podcast so far. I mean, I really love the story. You had a lot of useful information. You know, I absorbed everything and I do think that all the other people will also absorb it like this. You're very positive man and just never keep that spirit goes down, you know, just keep it going man and while things are there for you.
+
+Mihailo Miljkovic (01:25:47.125)
+Thank you. Thank you.
+
+Nebojsa (01:26:15.075)
+Thanks again.
+
+Mihailo Miljkovic (01:26:15.349)
+Thank you. Thanks for having me on the show and I cannot wait for your podcast become one of the most influential one in the industry. So it will be.
+
+Nebojsa (01:26:24.963)
+Yeah, did you hear him guys, please subscribe follow us on social media I'll put Michailo's LinkedIn in description so you can follow him as well and Yeah, that's it man Yeah, ps man, if you really want that link from Harvard shoot me an email I'll get it for you Okay, okay have a nice day man, bye bye bye
+
+Mihailo Miljkovic (01:26:45.493)
+Okay, okay, we'll do, we'll do, we'll do.
+
+Mihailo Miljkovic (01:26:51.605)
+You too. Bye bye. Bye bye.
+

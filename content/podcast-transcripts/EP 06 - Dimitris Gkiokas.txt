@@ -1,0 +1,2219 @@
+Nebojsa (00:01.241)
+Welcome to the ranking heroes podcast where we discuss different strategies with the experts behind them. I'm Nebojsa's host and this here is Nenad, my co-host and today we have a very special guest coming from the country we all love and go on a vacation, Greece, with the beautiful seas and great SEO experts. So it's wonderful to have you today Dimitris. I just want to say that...
+
+Dimitris Gkiokas (00:27.092)
+Nice to be here, guys.
+
+Nebojsa (00:29.071)
+I just want to say to all the listeners that Dimitris is an expert in the SEO and CRO and also a founder of a digital agency, Atropos Digital. So to kick off this properly, I'll ask you Dimitris if you can share your journey into the field of SEO and what inspired you to specialize in this area.
+
+Dimitris Gkiokas (00:54.271)
+Yeah. Okay. So, I had a pretty long journey with SEO, but also very standard one. So I'm originally a developer. I started coding in college. I, you know, studied, I actually started electrical engineering, but I majored in software. So I became like software engineer. I knew I never wanted to actually be an engineer full time, like a coder full time. So I worked as an analyst, in sales for a while for, you know, big conglomerate. And then
+
+I actually hated the corporate world. Like that was, that was a turning point for me. And leaving that company, I decided to start freelancing, building websites, know, WordPress, like basic stuff. I was still very young and at the time I started my own blog. So for a very long time, I had an interest in learning techniques, how to learn faster, how to memorize better. And I wanted to start a blog of my own on that. And I literally was writing the articles and I started studying SEO.
+
+Because I want to grow my own blog. That was it, right?
+
+Nebojsa (01:53.723)
+Sorry for interrupting, are you referring to Meta Learners that you started back in December? Can you tell us more about that? Since that was like the first project that got you into the SEO.
+
+Dimitris Gkiokas (01:57.969)
+Exactly.
+
+Yes. Yeah, that was that was the very first thing I was doing for myself apart from a couple of websites I had built for, you know, as a freelancer, smaller websites. And so I built a blog. was pretty much standard WordPress blog. And I knew nothing. Imagine that I knew coding, but I knew nothing about marketing, like literally zero marketing in general, not just SEO. Right. So I'm starting that and I.
+
+Nebojsa (02:21.381)
+Yeah.
+
+Dimitris Gkiokas (02:26.907)
+I wrote, think, five or six articles. would go to Starbucks and I would write the articles by hand because I was getting so distracted on the computer. I just couldn't write. So I would write them by hand and then type them out on the computer. Very vanilla stuff, you know? And I wanted to grow that. So the first thing I did is I reached out to every person I ever knew on Facebook and I was like, hey, I created this website. Here it is.
+
+Nebojsa (02:33.733)
+Haha.
+
+Nebojsa (02:37.808)
+haha
+
+Dimitris Gkiokas (02:54.657)
+It actually started getting a lot of traction, know, like just from that for SEO, I got a CNBC backlink, you know, through Haro, if I recall correctly, right? I've got more than 200, I think, like quality referring domains right now, all just from the quality of content. I never did any link building other than a little bit of a few Haro pitches I did at some point. But the funner part wasn't that. As soon as I had it online, you know, the very first month I had it online,
+
+Nebojsa (03:03.559)
+Yeah.
+
+Dimitris Gkiokas (03:24.805)
+I saw that the company I was following in the U S that had online courses, they were looking for someone to help them produce their podcast. Like very, very different from SEO. Yeah. And they, they had courses on memory, right? So I was talking about how to learn memory and I had learned from them. That's how I knew them. So I reached out, they were looking for a native English speaker. I'm not a native English speaker, but I'd still reached out and, I joined the team, you know, like for a few hours a week, just helping them with their podcast.
+
+Nebojsa (03:33.478)
+Mm-hmm.
+
+Nenad S (03:34.604)
+Specific thing yeah
+
+Dimitris Gkiokas (03:54.665)
+did that for free for a few months, just for access to their courses. And at the end of that, they were very happy with me. I was very happy with them. And I was like, I want to keep working for you for more. And the guy was like, OK, but what are you going to be working on? was like, SEO. I'm going to do SEO for you. But at the time, I had my blog for like four months. So I knew the basics, maybe. Right. But I was like, I want to do SEO for you. So I joined the company.
+
+Nebojsa (04:06.685)
+Mm-hmm.
+
+Nebojsa (04:13.341)
+you
+
+Nebojsa (04:19.739)
+Mm-hmm.
+
+Dimitris Gkiokas (04:24.235)
+part -time doing SEO for them. And that was probably the best decision of my life, right? First of all, I learned a ton of SEO because I started from zero, but now, you I had a salary, I had a manager, like I had everything I needed to keep me accountable and actually grow in that. But at the same time, this was a very marketing heavy business. They had some huge success in Udemy and they had courses of their own that were like the higher level on Thinkific, just giving some, you know, practical context as well.
+
+Nebojsa (04:37.743)
+Yeah.
+
+Mm-hmm.
+
+Dimitris Gkiokas (04:53.569)
+So they were spending maybe like 75 ,000 a month on ads at the time. And I started doing SEO, but I went on to become their marketing tech guy. So you want integrations between two systems, I would build them. You wanted the app cells and funnels. I would build them. Like I did all of that, right? Anything website or tech related. And it wasn't like, you know, software engineering, but scripts, like it was a scripty kid.
+
+Nenad S (05:08.522)
+Yeah.
+
+Nebojsa (05:15.069)
+Mm-hmm.
+
+Nebojsa (05:20.047)
+Mm-hmm.
+
+Nenad S (05:20.534)
+But still, still it's programmatic. So I have a question for you regarding all that. So we have a similar journey in terms of, hey, I started as an engineer, but I never saw myself as an engineer. But hear me out. Whenever you approach discussing marketing or SEO with a developer, like a person who...
+
+Dimitris Gkiokas (05:33.675)
+Never.
+
+Nenad S (05:42.994)
+is a software engineer. You are always facing a stigma like when it comes to marketing. Those people rely on inputs and outputs. So you can just tell them, hey, I'm going to do a campaign that seems to do this or to achieve this, etc. How did you manage to get over that bridge, to get over those stigma as a developer who was engaged in marketing and SEO?
+
+Dimitris Gkiokas (05:52.255)
+Yeah.
+
+Nebojsa (05:52.744)
+Yeah.
+
+Nenad S (06:10.868)
+So how come you didn't have that or did you have those same opinions earlier? How did you overcome them?
+
+Nebojsa (06:11.329)
+See you in
+
+Dimitris Gkiokas (06:18.861)
+I really did. I really did have those opinions earlier. I think there are two or three things to what you asked. First of all, I started with SEO, right? And when you start with SEO, what's one of the first things you encounter? Technical SEO. It was like, and I was building websites already. It was like the easiest transition in that sense. Two, I was always interested in, I was a coder, but I was also interested in business. So while I was in college, I actually studied for myself like finance and I took part in
+
+Nenad S (06:28.343)
+Yeah.
+
+Nenad S (06:32.532)
+Exactly.
+
+Nebojsa (06:37.747)
+Yeah.
+
+Dimitris Gkiokas (06:48.297)
+finance competitions. I was always nerdy. And so the business side of things made more sense with marketing. And the third thing is in that company, that US company with the courses, they were very data driven. Like they were spending so much money on ads specifically that it was all about numbers. And I can deal with numbers. I can deal with creative, like, you know, creative marketing. It's not my exam, numbers I can do and analytics and tracking and marketing tech and apps sales and
+
+Nenad S (07:12.3)
+Yeah, yeah.
+
+Nebojsa (07:13.707)
+Yeah.
+
+Dimitris Gkiokas (07:18.183)
+sales and lifetime values and all those things. These were very easy for my engineer brain.
+
+Nebojsa (07:22.113)
+Mm-hmm.
+
+Nenad S (07:25.036)
+So you basically came up, I mean, basically your first encounter with it. You came to a company that is also data driven that has that data, but tell me, would it made the difference if you came up to another company that doesn't have that data? What would your first steps be there? Would you just give up or try to consolidate any data behind it?
+
+Dimitris Gkiokas (07:50.677)
+So nowadays I wouldn't give up, right? I have the skillset and the experience to not only know what data I need, not only know how to set up the analytics to get it, but I also now know how to talk to the company and make them understand why they need that and why they need, for example, to pay for me to set those things up and everything. Now I can do that, but I think if I had started in a company that didn't have that approach, I would have quit. Like I mean, I would have
+
+Nebojsa (08:11.105)
+Mm-hmm.
+
+Nebojsa (08:19.755)
+Mm-hmm.
+
+Dimitris Gkiokas (08:20.233)
+persisted I would have tried but I don't know if I would have succeeded, yeah.
+
+Nenad S (08:20.47)
+Yeah, but after a while. Also, I have sort of a controversial opinion, but I just want to see your opinion on it. So a technical SEO is just a guy who is picking up, who is resolving...
+
+Nebojsa (08:25.238)
+Mm-hmm.
+
+Nenad S (08:41.034)
+work of software developers or general web developers who are not following web standards, consolidated web standards. So if a software developer or a web developer would just follow through the web standards that they learned in school, like vanilla, then a technical SEO wouldn't be there as calling as a job description, right?
+
+Dimitris Gkiokas (09:05.685)
+Yeah, no, I don't think that's a controversial take, man. And I feel like if the same way we want writers to not just be writing, but be familiar with SEO standards and write for SEO, we should expect that from developers that work on public facing websites as well. They need to be set up up to some standards that will make a big difference to the client's results. Even if an SEO is never
+
+Nebojsa (09:05.717)
+Mm-hmm.
+
+Nenad S (09:08.554)
+Yeah, cool. Just wanted to...
+
+Nenad S (09:20.64)
+Mm -hmm.
+
+Nebojsa (09:25.505)
+Mm-hmm.
+
+Dimitris Gkiokas (09:35.553)
+involved, know, setting up a good website, a great website for your clients should be a standard, right? That's I think I agree with you a lot, 100%.
+
+Nebojsa (09:41.791)
+Mm-hmm. Mm-hmm. Cool.
+
+Nenad S (09:45.588)
+Also another thing, you mentioned accountability earlier. Does this mean that you won't, that you have troubles engaging in anything if you don't have accountability behind it? So you wouldn't develop anything creative or come up with something new unless you have accountability behind it. So for instance,
+
+Dimitris Gkiokas (09:57.813)
+Bro, bro, are you kidding me?
+
+Nebojsa (09:59.915)
+You
+
+Dimitris Gkiokas (10:05.345)
+Is that like a research? Is that the question you've prepared? Okay. I've had so much trouble with procrastination. It's been my core, like core problem forever. I've been addicted to gaming. I've had like all those things to the point where also because I was in a company that was doing online courses, I've created an online course on procrastination.
+
+Nenad S (10:09.224)
+No, I just asked.
+
+Nenad S (10:29.051)
+You're awesome.
+
+Dimitris Gkiokas (10:29.793)
+I don't actively sell it nowadays because now I'm focused on SEO and my SEO agency, but there is a course on procrastination, both in English and in Greek. And the concept is there's no silver bullet that solves everything, but I found solutions. I found hacks that work. And so what you asked has been for me one of the biggest chapters in my life. And funny story, like funny, small story.
+
+Nebojsa (10:30.237)
+Dimitris Gkiokas (10:56.959)
+Creating that course was one of the hardest things I've ever done in my life because of procrastination.
+
+Nebojsa (11:00.609)
+You're going against yourself.
+
+Nenad S (11:02.025)
+Awesome.
+
+Dimitris Gkiokas (11:04.345)
+yeah, I mean, for two, because the course I wrote all of it. I wrote scripts and then I recorded that with the teleprompter. And it's all, you know, on video, it's on camera. I'm standing there's green screen behind me. There are things happening right. It's not a small production, but I couldn't see myself ever completing such a big project before. And it took like two and a half months of writing and maybe nine months to have everything ready.
+
+Nenad S (11:12.631)
+God.
+
+Dimitris Gkiokas (11:32.797)
+Ever since I did that and I struggled a lot, I've never had such a hard time doing something big again. Like that one time was life changing.
+
+Nenad S (11:42.112)
+Yeah, had like, I always needed like a goal or some accountability to actually develop something that I came up with. So for instance, I, we made several versions and upgrades of our reporting SEO reporting, but whenever I actually made an upgrade on it, it was because I had the issue or a client had an issue. So some accountability needed to, to move me forward, but
+
+These days I just use a model. If you're going to do the work, you're going to do it out of spite or out of passion. So those are the only two drivers, no procrastination there. But if it's not out of spite or out of passion, I'm not doing it at all. Also regarding, yeah, go.
+
+Dimitris Gkiokas (12:24.863)
+Yeah.
+
+Dimitris Gkiokas (12:29.747)
+I completely understand.
+
+Nebojsa (12:29.843)
+Yeah exactly and I want to go back yeah I just wanted to go back I don't want to let it slip so when back when you said that
+
+You now know the approach and how to explain to the client the advantage of SEO and how it will contribute to the website to the company and the organic revenue that you can make happen. So do you have any like materials that you share on the call or this is something that you just point out you already have some things that you repeat or you make it like unique for each client and each approach individually. How do you do it.
+
+Dimitris Gkiokas (13:10.113)
+I still follow the unique approach. I find that unlike what I expected in the beginning, explaining SEO and its value hasn't been that hard, mostly because people that come to me usually are already thinking about it or looking for it. It's not like people who have never heard of it or what, you know, that they can do for them. There is this, this, let's say story. It's not story, like it's an example that I give often of, you know,
+
+Nebojsa (13:13.567)
+Mm-hmm.
+
+Nebojsa (13:31.425)
+Mm-hmm.
+
+Dimitris Gkiokas (13:38.913)
+I take a user journey, know, where a user, Google's one of their keywords, finds them, goes in, you know, ends up filling a form. I mean, I, I personalized the example to each company, but I just guide them through something they have experienced themselves when they, when I need to. But what I found needs more, they respond to more is like, explain to them how, you know, they're, they're going to be communicated with like,
+
+Nebojsa (13:55.243)
+Mm-hmm.
+
+Dimitris Gkiokas (14:08.661)
+what's gonna happen in their relationship, how the clients are gonna be getting, everything we do, they're gonna be getting a deliverable out of it. how they'll be seeing the growth, not the growth, but the progress to everything we do. And I think, yeah, exactly. And I think the biggest thing of anything is something pretty standard in the industry nowadays. I just tied back to the results, the result they care for. So if...
+
+Nenad S (14:23.276)
+Justification of each step you do. Basically.
+
+Nebojsa (14:36.093)
+And what about like if you cannot achieve any result, let's say in the first two or three months, how do you make them wait until the third month or something like that?
+
+Dimitris Gkiokas (14:46.579)
+Okay, so when I started with the agency model and the Anthropos, which is like two and a half years now, that part, I was already more than qualified on SEO. But I've seen myself during the last two, two and a half years, I've grown much more in client communication than SEO itself, which I've also grown in, right? There's not a single thing we do nowadays in our agency that the client doesn't receive a deliverable out of.
+
+Nebojsa (14:52.097)
+Mm-hmm. Mm-hmm.
+
+Dimitris Gkiokas (15:17.087)
+Right. Even if it's an analysis step, if one analyze how content has been performing in order to decide which content to optimize, they get a spreadsheet with data on it. And my clients, mostly enterprise and software companies, they love data. Right. So they get a spreadsheet out of it. We optimize something, they get a spreadsheet out of it. Right. Or a doc or Google doc. They get a spreadsheet out of everything. So I cover the time SEO needs to work with progress.
+
+Nenad S (15:17.502)
+Absolutely.
+
+Nenad S (15:26.401)
+Mm
+
+Nebojsa (15:27.877)
+So everything is followed by data
+
+Yeah.
+
+Nebojsa (15:36.992)
+Yeah.
+
+Dimitris Gkiokas (15:45.845)
+with deliverables, with execution, right? So they're receiving things and they were having calls and we're doing this and that. And I found that with most clients, I can get to the six month mark before they actually expect to see the results as well, not just the work, which is a lot of time. It can work really well. Like if I have six months, generally, we can guarantee results, but generally we have at least something of good quality to show.
+
+Nenad S (16:03.084)
+Got it.
+
+Nebojsa (16:03.949)
+okay.
+
+Nenad S (16:15.756)
+Do you form and guide?
+
+Nebojsa (16:16.413)
+Yeah, man. mean, I really like how you focused. Yeah, I just want to say that I really like how you focused your ICPs on the same types of people as you are like software development companies, etc. Because you just need to treat them how you would treat yourself. So basically it's a win-win like you know how you know their language, they know yours and it's easy to discuss with them and make them understand the data and how the work is gonna...
+
+Nenad S (16:30.764)
+people who understand the input and output.
+
+Nebojsa (16:45.665)
+go. So that's a good thing and I think that's a great advice for everyone starting their SEO agency. If they have some unique skills and characteristics they should also, I mean they don't need necessarily to do it but it will be easier for them to understand the same type of clients as they are, like with the same personal traits and everything.
+
+Dimitris Gkiokas (17:09.617)
+Yeah, you don't have to go super narrow, right? It's not like I'm focused to software engineers. We're mostly focusing on enterprise SEO. So large contract B2B businesses, software is often in that category because I happen to understand like that kind of business and these kinds of people much better. I think I would be very bad at client communication if I was trying to service small local SEO businesses.
+
+Nebojsa (17:12.52)
+Yeah, yeah, yeah.
+
+Nebojsa (17:16.681)
+Yeah.
+
+Nebojsa (17:20.842)
+Yeah.
+
+Nebojsa (17:28.917)
+Yeah.
+
+Dimitris Gkiokas (17:36.297)
+It's not a model I have in my mind. On the other hand, even other SEO, their father was a dentist, for example, like focus on that. You know what they need. You know what they're looking for. We know their thoughts day to day, not just dentists, but local SEO business. So sell to them, right? That's going to be your sweet spot, especially when you're getting started.
+
+Nebojsa (17:36.702)
+Mm-hmm.
+
+Nebojsa (17:48.744)
+Exactly.
+
+Nebojsa (17:54.219)
+right right
+
+Nenad S (17:55.508)
+you working with smart goals? mean setups, smart goal setups when you start SEO campaigns. Like in this specific time we're going to achieve this and this is our guideline for it. No.
+
+Dimitris Gkiokas (18:10.877)
+No, and I'm not sure if that's good or not. Like I haven't made the conscious decision not to, but because I need to deliver a lot of work to the clients the first few months to cover, you know, for results, I follow in the beginning of my campaigns a more holistic approach. instead of picking like...
+
+Nenad S (18:26.05)
+Mm -hmm.
+
+Nenad S (18:30.582)
+That's the thing that I just wanted to cover because that's smart goal setups. mean, it's something that always, whenever you try and find any tutorials, whenever you find like, let's say, any tutorials regarding SEO, they will always tell you, find out your ICP approach, create a smart goal, et cetera, et cetera. But SEO is in the goals.
+
+of SEO can be different depending on the stages the website is in. If it's a fresh website your goals are indexation and increases in organic keywords that you're being indexed and found for. If your website already exists for a while then you want to move with rankings. If it exists for a while after that you want to increase in traffic, you want to increase in conversions coming in from that part. So
+
+Dimitris Gkiokas (18:56.991)
+Yeah.
+
+Dimitris Gkiokas (19:03.742)
+Exactly.
+
+Nenad S (19:18.346)
+Setting up a smart goal depends on the stage and you cannot always apply it to each individual client. You need that holistic approach. The question was more oriented to how do you approach it and you explained it yourself. You have a holistic approach depending on the client. But yeah, there's a lot of deliverables. Now when it comes to SEO, when it comes to your clients, you set up a specific API, right?
+
+Dimitris Gkiokas (19:34.326)
+Yeah.
+
+Nenad S (19:46.39)
+This KPI differs based on their stage, right? How do you handle when that KPI is not performing according to your planned actions, planned development? Because KPI is different than deliverable. I mean, that's the whole point. How do you handle that?
+
+Dimitris Gkiokas (19:51.048)
+Mmm.
+
+Dimitris Gkiokas (20:00.001)
+So first of all, the most common, yeah, the hard version.
+
+100%. So first of all, the KPI we usually track for clients is some form of form -fill lead submission, you know, because this is the kind of clients we most often get and work on. So I have two different things I do in that case. The first is I try to bring forward some leading signals of success, right? So if we're tracking form submissions, but...
+
+Nebojsa (20:07.898)
+Mm-hmm.
+
+Dimitris Gkiokas (20:37.065)
+We haven't seen that yet, but we have growth in keywords we care about. I'll be like, we are not where we want to be with form submissions yet. But you know, in the beginning, I told you it might take longer than, you know, six months, but here are key keywords that we've actually seen a serious increase for, which are the main service you offer, for example. So we're getting there. Or, you know, you are nowhere to be found for your brand name. Now you're position one for that. Like things like that.
+
+Nenad S (20:48.79)
+Yeah.
+
+Dimitris Gkiokas (21:06.241)
+And the other thing I do is because we're also a CRO agency, less so than we're an SEO agency, I help them improve their lead submission flow as well. So someone comes on a forum and most websites, most of my clients, when I start working with them, they have these forums that have like 12 fields on them that no one will ever feel. And I'm like, no, let's simplify that. Let's only ask for a name and email, maybe one more dropdown thing. And when they hit submit, they go to a second
+
+Nebojsa (21:16.178)
+Mm-hmm.
+
+Nenad S (21:29.57)
+Exactly.
+
+Dimitris Gkiokas (21:34.471)
+form that asks for the rest of the details, right? And we significantly increased lead from submissions and I guide them, we don't do it for them, but I got them to build an email marketing flow for the, if they only feel the first step. So they start getting a lot more leads thanks to that new flow, which really gives me time to get a CEO up to speed for them.
+
+Nenad S (21:58.878)
+I have another question regarding that. So there are only a few things like goals in terms of conversion goals that you're seeing when it comes to website. You can either sell products, sell services, collect donations, collect subscribers and that's about it. But in terms of lead gen now
+
+Nebojsa (21:59.248)
+Mm-hmm.
+
+Nenad S (22:17.658)
+you are increasing their form submissions, but you will never know if it's a qualified lead or an unqualified lead because this data is not returned to Google Analytics where you would confirm like this came from organic traffic and we know that we have increased those leads. This is the thing that you need to communicate directly with the shareholder, with the owner of that company.
+
+There are ways in which you can do that technically by tying in some email marketing software, some funnels, et cetera, but usually these are not the initial steps that you do when you do that part. So how do you handle the response when you say, hey, we had an increase in number of form submissions, but the client says, hey, but I'm not getting any new clients from it. So how do you handle justifying your efforts if
+
+Dimitris Gkiokas (23:07.872)
+Yeah.
+
+Nebojsa (23:10.566)
+Hmm.
+
+Nenad S (23:13.576)
+it doesn't actually benefit the bottom line of the client. If you're selling CRO via optimizing for organic channel, let's say for lead gen.
+
+Dimitris Gkiokas (23:18.494)
+Okay.
+
+Dimitris Gkiokas (23:23.165)
+Okay, I'll answer that first, but I want to hear your answer too in the end. Like, how would you approach it? So there are a few, not tricks, not at all tricks, but there are a things we do. The first thing is we implement, we often implement some form of custom tracking of their forms. So very simple things. One, the original refer that brought them to the website. I know the analytics platforms track that, but I want that on the form submission. So, know, Dimitris submitted the form with that email.
+
+Nebojsa (23:27.218)
+You
+
+Nenad S (23:28.713)
+Okay cool. Cool.
+
+Dimitris Gkiokas (23:52.703)
+And the refer was google .com or bing .com, you know? And I also track their user journey on the website. So a simple list of the first page they followed, the second, the third. So for every lead submission they have, we know if it came from organic and what flow they followed on the website. That gives me the opportunity to be like, you know, that client you closed, that was us, right? I don't know if analytics say that to you, the form says that to you, right? So that's the first thing. And the...
+
+Nenad S (23:55.212)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (24:11.154)
+Mm-hmm.
+
+Nebojsa (24:20.146)
+Hmm.
+
+Dimitris Gkiokas (24:22.143)
+The bigger thing is we also help them on their MQL and SQL flows. So I mentioned earlier having a smaller form and then a second form that asks for the rest of the details. We've implemented flows that have extra steps, but depending on their previous answers and you know, if they're qualified, so the marketing qualification happens on the website and if they're qualified, they go to a HubSpot or you know, Calendly thing. If they're not, they just go to a thank you page and they get nurtured by email. So.
+
+We help them have more qualified sales goals, but with less people. So we get them more lead submissions, but they spend less time. So even if they don't get more submissions or more clients, they at least save time. We do all those things to help them improve on their flow.
+
+Nenad S (24:58.882)
+Yeah.
+
+Nebojsa (24:59.429)
+Mm-hmm.
+
+Nenad S (25:11.478)
+You're basically like, you're diversifying the flow based off if it's not a fully qualified lead, then it goes down this path. If it's a full qualified lead, then it goes to this path. However, in Google Analytics, you can only track page paths or event paths. So in this case, it lands on a specific form. Then it goes to a second page that has some specific path and you just...
+
+Dimitris Gkiokas (25:20.224)
+Yeah.
+
+Nenad S (25:38.56)
+track paths that way. That way you're tying it to a channel and you're diversifying a path based on if it's qualified or unqualified. That was the thing that I wanted to ask because any other way if you're not forming it with paths and you're tracking it with events you will need to fit a cookie in a user's window and I wanted to call you out on GDPR because you're greek and you're a cradle of democracy and I just wanted to hear your opinion on it.
+
+I mean, there are ways in which you can do it. There are ways in which you can do it. There are even ways in which you can avoid getting at any point suspended by Google Analytics for getting that data. But the way you actually thought of it is making two different paths and having those go through the forms is much, much better and much more elegant solution to do that way.
+
+Because in case you don't have it like that, you would always need to rely on the owner's response. Like we have this amount of qualified leads and we cannot tie them if they came from this path or this channel or this channel unless we have that submitted via form as well. Like what is their referral channel? But yeah, you have a much elegant solution for it and...
+
+Nebojsa (26:35.345)
+Mm-hmm.
+
+Dimitris Gkiokas (27:01.483)
+Thank you.
+
+Nenad S (27:01.772)
+To be honest, I was actually expecting it, but I needed to call you on GDPR, so I just wanted to know if you're going that way or not.
+
+Nebojsa (27:05.22)
+Hehehehe
+
+Dimitris Gkiokas (27:06.88)
+Yeah.
+
+Yeah, I mean, we're trying to be very careful with GDPR. We have a bunch of US clients. So.
+
+Nenad S (27:20.746)
+And California is full like GDPR. mean, California basically has a whole EU laws regarding it. Not the rest of the states, but California specifically, I know.
+
+Dimitris Gkiokas (27:29.685)
+Yeah, yeah.
+
+Nebojsa (27:35.42)
+Dimitris, and I wanted to ask you what motivates you to start at Ropos Digital and what would you say that sets your company apart from other SEO agencies?
+
+Nenad S (27:44.396)
+BITE
+
+Dimitris Gkiokas (27:47.681)
+Okay, let me go back to the story a little bit, right? So I was doing a CEO for the company with online courses. I eventually even became the COO of the company. I mean, it wasn't that big a common like 15, maybe 20 people with contractors, right? But I ended up running most of the day to day, like not.
+
+Nebojsa (27:52.454)
+Yeah, for sure.
+
+Dimitris Gkiokas (28:07.937)
+There were other very qualified people there. Everyone knew their job, so it was an easy COO position, but I was running a lot of the day -to -day. But at some point, the owner had already had a lot of success. He was like, okay, I want to slow down and I want to just keep it running. I don't want to grow anymore. And I was like, you know when I grow. At the time, I had started the podcast in Greece and it had become the biggest podcast in the country already.
+
+in Greece, in Greek, right? A podcast in Greece, in Greek. And it was still on the same context, know, learning, mindset, memory, stuff like that, similar to my blog. So that became my full time thing for about two years. And it was three people that we were working on it full time. That became my business. We built physical products, we built courses, like we build a lot of stuff. And I wasn't primarily in SEO at the time, but I was engaging on a lot of that for, you know, that business on, you know, eco.
+
+Nebojsa (28:47.548)
+Mm-hmm.
+
+Dimitris Gkiokas (29:06.301)
+e -commerce, digital products all at once. But apart from the podcast recording itself, which I loved, I hated the day to day of the business. just freaking hated it. Right. So I did for two years and I was like, you know what? I hate this. I'm not even making a lot of money out of it or anything. You know, my costs are covered, but nothing more than that. And I was like,
+
+Nebojsa (29:29.537)
+Mm-hmm.
+
+Yeah.
+
+Dimitris Gkiokas (29:33.779)
+Okay, I'm going back to the thing I know and love as my primary thing SEO, and I joined the agency space. It was my first agency gig at the time. I've been working with SEO for a while now, but not through an agency.
+
+Nebojsa (29:49.102)
+Is it a Greek SEO agency or a US agency?
+
+Dimitris Gkiokas (29:52.123)
+No, this is a Serbian SEO agency. You know the guys. Yeah. And so Serbian that operated mostly in the, you know, in the US and Canada. So I joined in, I joined in, in the beginning, I joined in internally. So it was the SEO manager internally, my client was the agency itself. And they weren't selling SEO at the time. So they approached me, we have a client that is that's interested in SEO. Do you want to do that? I was like, yes.
+
+Nebojsa (29:55.538)
+okay.
+
+Nebojsa (30:04.497)
+Mm-hmm.
+
+Dimitris Gkiokas (30:21.449)
+You know, I did great work, client loved it. And we start selling SEO externally. It only took four months before I had to stop working internally because we had too much client work, which was awesome. Right. And I was doing that for them. And the first thing that freaked me out to answer the question now, the first thing that freaked me out was the white label change. Right. Because I could see a company for a website, for example, paid twenty thousand that was given to another company for, you know,
+
+Nebojsa (30:31.506)
+Mm-hmm. Mm-hmm.
+
+Dimitris Gkiokas (30:49.281)
+12 ,000 and then was given to another company for 5 ,000 and then to another company for like 2 ,000. And the person that actually built the website got like 1 ,000 something dollars and the original client had paid 20 ,000. And it was like, the website was crappy, right? It like, makes sense that it's crappy, know? 95 % of the margins is lost to the white label chain. And I was like, what would it look like if I could build a company that...
+
+Nebojsa (30:56.178)
+Mmm.
+
+Dimitris Gkiokas (31:19.293)
+is just a company that takes on the work. I'm not like that. wouldn't be the one part of a chain where everyone just tries to get margins. I would be the company where the other person would pay me the 20K. I would do amazing job for them and still make a lot of profit. So that was the time when I transitioned to building my own thing effectively.
+
+Nenad S (31:21.814)
+Yeah.
+
+Dimitris Gkiokas (31:48.937)
+I mean ever since, it's been going really well.
+
+Nebojsa (31:53.002)
+I love to hear that. Did you already have some clients that you could immediately start working with or did you have to do something else to acquire more clients and start getting revenue in your company?
+
+Nenad S (31:53.697)
+the -
+
+Dimitris Gkiokas (32:07.713)
+I had nothing. So not nothing. had my collaboration with that agency. All right. So initially it was internal, but soon I transitioned as an external partner that still had the same clients from them. But everything was going through that one relationship for a while. Right. And that was, it was an anxiety thing to say the least. Right. I hear through the grapevine that that relationship might fall off at some point.
+
+Nebojsa (32:14.079)
+Exactly.
+
+Dimitris Gkiokas (32:35.457)
+relatively soon. That was like, I guess, a little less than two years ago. And I'm like, okay, I need to step up and just, you know, take on more clients. So I did a combination of everything. did some cold sales. I got one large client out of that. But my biggest lead generation
+
+think and there has been referrals. So there are people, you like you guys that I appreciate and they appreciate me back, I hope. And this is where most of my referrals have come from. Yeah, I know. It's like, I haven't had that many referrals from clients because clients don't generally talk about these things, but people in the industry, know, people doing websites, developers, designers, other people that we've worked together that really appreciate me and vice versa.
+
+Nenad S (33:02.944)
+Exactly. Yeah.
+
+Nebojsa (33:05.289)
+Yeah.
+
+Nenad S (33:12.745)
+You
+
+Dimitris Gkiokas (33:29.053)
+they have been my best source of referrals. Right, so I really invest in those relationships as well myself, not for the referrals, but because I really appreciate these people. I would recommend them in a heartbeat and you know, I get that back effectively.
+
+Nenad S (33:31.455)
+Exactly.
+
+Nebojsa (33:32.053)
+Mm-hmm.
+
+Nenad S (33:41.95)
+I was always going with that same motto, if I do my work properly, if I deliver everything without a hitch, the money will come on its own. The word of mouth is such an underestimated thing and people always try to like...
+
+Nebojsa (33:48.052)
+Exactly.
+
+Nenad S (34:00.266)
+encapsulated like word of mouth is something you need to do like this or like that and in order to transfer it online or whatever like you need a good google my business page you need good reviews on this on this platform it doesn't it doesn't your work can speak for itself and especially in the yeah and especially in connections like this so it's much more important if you ask me not to get in like
+
+Nebojsa (34:16.477)
+I mean, man, we built this company based on word of mouth.
+
+Nenad S (34:26.462)
+good terms with a company but to get in good terms and good relations by working with people who are in those companies who actually deliver work. We had so much work by basically I was working on a website for a content on a website for a company that was doing the design for that website I needed to help them with some event tracking
+
+Nebojsa (34:35.072)
+exactly.
+
+Nenad S (34:49.662)
+and I did that work with developers of some other company etc. They all knew what I weigh, I knew what they weighed and we just consistently draw projects or refer new clients to one another. mean word of mouth is greatly unappreciated thing and completely underestimated when it comes to this work. But if you keep that mantra, I do my work properly, I do my work flawlessly,
+
+Dimitris Gkiokas (35:05.801)
+No.
+
+Nenad S (35:17.204)
+Even if there is an error or something that comes up, it's no issue for us to resolve it. There's no like anxious things behind it. There's no bad blood and it just grows naturally, organically. By the way, regarding your CEO position... Yes, sorry.
+
+Dimitris Gkiokas (35:30.975)
+He does. He does. And I - And I
+
+Nebojsa (35:31.391)
+Yeah, exactly. I agree with you, like 100%.
+
+Dimitris Gkiokas (35:38.259)
+Wait, wait, before you change the subject, before you change the subject, I want to add one more thing. Everything you said is absolutely true. And I want to add one more thing. I'm always trying to build relationships with the people I'm working with for the client. it's not, you know, delivering great work on time, you know, everything that that's the most important. then these people, these people I've been working with for a few months or a year, you know, that are from the client side.
+
+Nenad S (35:52.396)
+Yeah.
+
+Nebojsa (35:52.897)
+Mm-hmm.
+
+Dimitris Gkiokas (36:07.729)
+I build trust with them. try to build trust with them and, you know, and them with me. And so that whenever they talk to someone else, whenever someone asks them for what, how they do SEO in their business, like every conversation they have, I'm going to, you know, come in mind for, for work related, but it's genuine. It's not like a trick, but I'm trying to build a relationship. For example, in the beginning, not in, the very first time I talked to someone, but
+
+Nenad S (36:31.606)
+Yep.
+
+Dimitris Gkiokas (36:35.773)
+Even when it's the beginning of an engagement and I'm talking to my contact in the client, I'll ask them, I know what I need to do to make this company grow. What do I need to do to make you look better internally in the company you work for? Like I can help the company get more leads, but I want to help you grow in your position. I want to help you be better perceived in your business. And they love that.
+
+Nebojsa (36:49.014)
+Mm-hmm.
+
+Nenad S (36:56.776)
+Exactly, exactly, Yeah, yeah, absolutely. It was always a sure shot whenever I tried to do that, to build a relationship like that. It was always a sure shot. Also, the thing that I wanted to ask you is, again, regarding that CEO, it's not about position of CEO, but can you tell me, you never wanted to be an engineer?
+
+Nebojsa (37:00.853)
+Yeah.
+
+Nebojsa (37:09.109)
+Yeah.
+
+Nenad S (37:19.506)
+but you have that mindset. So you're now doing CRO, you did analytics, you're doing SEO, you're always focusing on input and output. Like these are the input stuff, these are the deliverables or the metrics data that I want to get from it. How much do you, even if you didn't want to be a software engineer, can you tell me how much did that influence your work?
+
+Nebojsa (37:31.829)
+Yeah.
+
+Nebojsa (37:36.097)
+Yeah.
+
+Nebojsa (37:47.357)
+You
+
+Dimitris Gkiokas (37:47.627)
+tremendously, tremendously. can't even imagine. First of all, I'm still writing code, right? I've taken on some programmatic SEO projects, which I coded from scratch. I do write code, but even when I was in college, I was like, I don't want to do code full -time because I don't like the cave mentality of being a software engineer. I want to work on the business side of things as well. Remember I said I was doing like finance and stuff.
+
+Nenad S (37:53.962)
+Yeah, but your code for yourself, right?
+
+Nenad S (37:59.274)
+Okay.
+
+Nenad S (38:11.105)
+Yeah.
+
+Nenad S (38:15.287)
+Yeah.
+
+Dimitris Gkiokas (38:17.753)
+Right now and all these years being in this combination of marketing and tech has been the perfect middle ground for me because it has both right so even right now running my own business having to with sales having to deal with clients I Do invest a lot of time on the business side of things as well right and then the execution of the work is all a software engineer influenced a hundred percent It's all like algorithmical analytical
+
+Nenad S (38:43.679)
+Yeah, yeah.
+
+Dimitris Gkiokas (38:46.442)
+structured, know, hard percent.
+
+Nebojsa (38:47.107)
+Yeah
+
+Nenad S (38:48.938)
+You also mentioned like doing work, SEO work for some local companies, local businesses. When I started working, I mean, I haven't worked for specifically locally in my local area, but I work for a company that handles SEO for local businesses in US and Canada.
+
+It really, I mean, in order to do that work, I mean, you can follow through some steps that you need to do in SEO campaigns, but in order to actually do the work properly, you need to understand their work. So I wear wore a lot of hats. So I was a restaurant owner, was a baker, was a car cleaner, dentist, etc, etc. Did you wear a lot of hats? Did you have the same approach in your work?
+
+Dimitris Gkiokas (39:35.126)
+Yeah.
+
+Nenad S (39:35.988)
+So regardless if it's a big company, it's a smaller company, was that something that you would advise people to actually do rather than just focusing on steps in SEO campaign that they need to do?
+
+Dimitris Gkiokas (39:49.919)
+Try to understand. I mean, in fact, but when I say try to understand to the deepest level what the client does, how it works, who they're selling it to.
+
+what problem they solve. Like try to understand. I'm a generalist by nature. So that came very easily to me because I'm naturally interested in various industries and how things work, you know, combine curiosity with a generalist approach and an engineer. It's like the perfect breed for SEO. And I love learning. have built stuff, you know, blocks and products and learning. But it's hard to explain how well it compounds.
+
+Nenad S (40:04.651)
+Mm -hmm.
+
+Nenad S (40:09.761)
+Yeah.
+
+Nebojsa (40:20.864)
+Yeah.
+
+Nenad S (40:28.78)
+Mm -mm. Yeah.
+
+Dimitris Gkiokas (40:29.055)
+Right? Like once you start, you start understanding more and more businesses, the next one becomes just easier and easier to understand. terminology starts repeating itself. It's like, you get so much better in the living this and you learn so many things. You're becoming more interesting person. Like forget SEO. If you were to date, you're a more interesting person as long as you don't get too nerdy. Right?
+
+Nebojsa (40:29.345)
+Mm-hmm.
+
+Nebojsa (40:51.209)
+Yeah.
+
+Nenad S (40:52.982)
+Yeah, that's part like the part of Agile Manifesto, individuals and interactions over processes and tools. If you start actually understanding the individuals interactions behind that business, it will be much more easier to actually form and follow a process or to make a tool for their, I mean, execution.
+
+Nebojsa (41:09.691)
+Exactly, I mean education is the first step like you need to educate the client about your services how SEO will work then I mean a client also needs to educate you about his business his goals vision and everything so you can like compile everything and then actually kick off with the cool
+
+Nenad S (41:13.922)
+too.
+
+Nenad S (41:29.396)
+What was your biggest SEO challenge that you had? No, let me rephrase. What was your biggest technical SEO challenge that you had since you started working?
+
+Dimitris Gkiokas (41:29.692)
+A quest?
+
+Dimitris Gkiokas (41:40.441)
+yeah, I mean, you won't hear anything like crazy, but I've I've been working on two businesses in Greece, very big ones. One is like an insurance aggregator and the other is like a delivery app, like food delivery app, both of which are custom custom builds. So, you know, and we've had to work on things from like
+
+implementing status codes correctly, you know, like, and they were, they were already pretty big when I, when I started working with them. So it's not like these projects, these problems, I could suggest solutions from the beginning and they would do them correctly. It was like, things were already major and we had to fix things, you know, without them breaking on everything you can imagine, like HTTP to HTTP directs being 307, you know, like the wrong, wrong status codes.
+
+Nebojsa (42:14.529)
+Nenad S (42:35.234)
+Yeah, yeah, yeah, yeah. They had a page that says 404 but doesn't return a 404 status code. Yeah.
+
+Dimitris Gkiokas (42:38.544)
+Dimitris Gkiokas (42:42.241)
+No, even worse, they would just rewrite the URL to the homepage. And the status code was 200 on the original URL. The wrong one. No, it was bad,
+
+Nenad S (42:47.634)
+Are you kidding me? Are you kidding me? god, David, was... That was hell, I know, I know. know. Been there. Been there. I know what hell it is. Yeah, that's...
+
+Nebojsa (42:49.023)
+Hahaha
+
+Dimitris Gkiokas (42:58.164)
+Yeah.
+
+Dimitris Gkiokas (43:01.953)
+And I've had two of those right now. It's like, fuck.
+
+Nenad S (43:07.112)
+Okay, I feel you. Also, how did you communicate that with the developers? Did you just tell them, hey, you're getting this and I want to get this? Or did you communicate the whole solution behind it? The whole solution. Yeah, Cool, good to know.
+
+Nebojsa (43:09.435)
+And Dimitris, I wanna ask you... Yeah.
+
+Developers, yeah.
+
+Dimitris Gkiokas (43:24.479)
+The whole, the whole thing. Yeah. With the benefit of having a product person on the client side who understands that what I'm saying is important. So I had that ally internally to help, you know, push things forward.
+
+Nebojsa (43:24.605)
+Mm-hmm. The false lose.
+
+Nenad S (43:42.89)
+Yeah, awesome. So those are the things that when you look at them, they're not that big of a deal for you right now, but I couldn't find like two or three people in my whole, I mean, work time that actually had those issues, that had those steps.
+
+Nebojsa (43:45.198)
+Yeah
+
+Nenad S (44:04.31)
+that resolve those issues without actually having to hire like, I don't know, new external teams to actually get new developers on board that actually knew the ways on how to resolve it and to communicate with the developers even though themselves are not the developers of that product, of that app or have like much experience in the development itself.
+
+Dimitris Gkiokas (44:29.721)
+I wouldn't be able to do that if I weren't originally a coder.
+
+Nenad S (44:33.588)
+Yeah, coder, got it.
+
+Nebojsa (44:35.297)
+without your background, yeah. And like, I wanna ask you, how do you prioritize issues when you do a technical SEO audit? And like, what are your tools? Like, go to SEO tools, or which one do you use when you do technical SEO audits?
+
+Dimitris Gkiokas (44:36.63)
+Yeah.
+
+Dimitris Gkiokas (44:54.165)
+Yeah, I mean, I'm a nature of guy in everything. Even my audits are nature of screaming frog, screaming frog is there for complementary purposes. You sometimes you need that extra thing from screaming frog. What? What does it?
+
+Nebojsa (44:57.889)
+Mm-hmm.
+
+Nebojsa (45:13.014)
+Yeah.
+
+Nenad S (45:14.69)
+Screaming frog is just complimentary. Okay, okay.
+
+Dimitris Gkiokas (45:20.307)
+Only because I don't generally need all that extra.
+
+Nenad S (45:23.658)
+No, no, just kidding, just kidding. I always start with Screaming Frog, I always needed like first input of the website itself, so I wanna know the onsite, the technical part, then I go to Ahrefs. But I know that it's just a matter of flavor, it's not like a specific type, didn't think that you need to do it that way.
+
+Nebojsa (45:27.637)
+He loves screaming frog-like.
+
+Dimitris Gkiokas (45:29.194)
+No, it's amazing.
+
+Dimitris Gkiokas (45:41.777)
+It's also one more thing, right? And I'm trying to build a team. We're not primarily or almost at all link building agency, right? So we are trying to, I'm trying to build a team that does all of SEO, right? Full stack SEO, including some kind of technical. And I'm trying to hire from Greece and Greece is not that full of SEO talent, right?
+
+So I've had to bring in juniors and people, know, people interested in SEO, but not yet experienced and train them. Screaming from and using it well is complicated as hell compared to h -ers and starting from there. Yeah.
+
+Nenad S (46:21.064)
+Yeah, and you want to just keep it in the same... Yeah, and you just want to keep it under the same roof. One tool, one ecosystem, and let's use that for it. Got it. Yeah, that was the issue. Whenever I wanted to scale anything or to transfer my knowledge or to actually get onboard new people, I always had an issue because they always approached with some new tools or specific tools that resolve specific things, but I wanted to have...
+
+Nebojsa (46:22.271)
+For beginners, yes.
+
+Dimitris Gkiokas (46:30.473)
+Yep. Exactly.
+
+Nebojsa (46:31.027)
+Yeah, it's more scalable. Yeah. Okay.
+
+Nenad S (46:49.426)
+like a stack of tools that I can always rely on that have long -term support etc. Ahrefs always captured me with scalability. So you want to have more accounts, you want to tie in their API, you want to do a bunch of exports. When you scale a team with Ahrefs they will constantly just charge and charge and charge. You have five people on board, it's okay a month to have it.
+
+My approach was always to focus on some tools that I don't. For instance, Screaming Frog is one of them and I really rely on Screaming Frog for a lot of data. But even with it, I used SEO Macroscope, which is basically an open source tool that was replicated Screaming Frog. It didn't have many developers behind it. I mean, it's open source and you didn't have much updates behind it. But from all of the stacks, Ahrefs,
+
+and Screaming Frog were the ones that were left. It's better approach what you have. So let's keep it under Ahrefs, let's keep everything under the same roof. Again, it's more of a flavor thing. So for me who started with Screaming Frog, would always first do crawling with Screaming Frog, then go to Ahrefs. But for you who plans ahead, who wants to onboard new people, etc. It's much better to have everything consolidated under one tool and that's it.
+
+Dimitris Gkiokas (47:58.196)
+Yeah.
+
+Nebojsa (47:58.323)
+Yeah, it's more than enough.
+
+Dimitris Gkiokas (48:14.591)
+Yeah.
+
+Nenad S (48:14.804)
+So have you explored any other tools? I mean, they all have their form of metrics, they all have their form of weighing of those metrics. But what's your thought on Majestic SEO, for instance, compared to Ahrefs?
+
+Dimitris Gkiokas (48:29.125)
+I can't say I've really used it. I mean, not that I've never used, but I can say I've actually have. The only tool I could speak a little bit about Semras other than the other two, right? But Majestic, although I know what it can do, I know how to use it. It's not a tool I've actually utilized in real situations enough to have an opinion.
+
+Nenad S (48:38.86)
+Mm -hmm.
+
+Nenad S (48:49.196)
+SEMrush has one thing that Ahrefs doesn't that I really like. They have flagging of commercial and educational, informational keywords. So that flag, if that flag would exist in Ahrefs, I would never use SEMrush whatsoever. If they build, I mean, I haven't checked their backlog. I check from time to time their backlog of things that they're gonna do. Awesome.
+
+Dimitris Gkiokas (49:04.691)
+I think they're working on it.
+
+Dimitris Gkiokas (49:11.529)
+No, no, mean like, like it's gonna be live, it's gonna be live soon or something.
+
+Nebojsa (49:16.993)
+that's nice.
+
+Nenad S (49:17.086)
+Awesome, I haven't checked them since like, I think I haven't checked their backlog for like six months since they had that conference. It was a while back. But yeah, if they implement that part, then SEMrush for me would basically be obsolete. HFC has a much better date, larger database. They have a much better crawler. They implement data from two data streams, like they use Google Keyword Planner and Word Stream for keyword data, et cetera.
+
+Dimitris Gkiokas (49:32.726)
+Yeah.
+
+Nenad S (49:45.224)
+And I get it, I get it. I would much more focus. The only thing for Majestic is they have that trust flow and citation flow and topical flow. Those were always more important things for me than it was a pure domain authority, page authority. But you can kind of organically build those metrics. For instance, you open a website and you see that they...
+
+Nebojsa (49:46.888)
+Yeah.
+
+Dimitris Gkiokas (50:01.13)
+I agree with you.
+
+Nenad S (50:10.966)
+talk about cars, talk about babies, they talk about technology, etc. It's topically irrelevant and you can naturally build that mindset yourself. You wouldn't use Majestic for it. But if there was a thing where you need like a huge data set and 10k websites and you need to kind of structure and reorganize them, that thing was always much better as a
+
+Nebojsa (50:21.737)
+Yeah.
+
+Nenad S (50:37.762)
+as a pointer than it was in nature as domain rating and page rating.
+
+Dimitris Gkiokas (50:45.101)
+And I think if I were to structure a team like I'm doing right now, I would always go with Hedgehog. I think it's the most comprehensive tool. I really trust its data more than anyone else. But...
+
+Nenad S (50:54.87)
+Yeah, yeah, and it's used by a lot of people so when you discuss and when you try to explain whatever of those metrics they kind of already know it or it's in their same ecosystem so it's much more easy to scale when working with other agencies and with other teams.
+
+Nebojsa (50:56.29)
+Me too.
+
+Dimitris Gkiokas (51:12.513)
+Yeah, but I feel like the scalability point was absolutely valid. I would still scale with that for, you know, team members, for the people actually using it and clicking on it. But I was, doing some exploration with its API nowadays for some, you know, software like automations I want to build. And bro, it took me for two calls for a few key, for like a few keywords and everything. It takes $2.
+
+Nebojsa (51:34.02)
+He he.
+
+Dimitris Gkiokas (51:39.969)
+Whereas data for SEO, which has all the SEO APIs, for the same request, it would get like 15 cents.
+
+Nenad S (51:49.346)
+Wait, wait, wait, it took you two dollars from Ahrefs API. Yeah, exactly. I wanted, when I... Yeah, when I, for instance, I moved to Nightwatch I .O. to use for keyword rank tracking compared to Ahrefs because it's super expensive. For instance, what I get for $80 on Nightwatch, it would take me around, I think it's...
+
+Nebojsa (51:49.562)
+Mmm.
+
+Dimitris Gkiokas (51:55.955)
+Yeah, it's incredibly expensive.
+
+Nebojsa (51:56.408)
+Yeah, it's expensive, I know.
+
+Nebojsa (52:01.399)
+I know.
+
+Nenad S (52:18.338)
+Last number I remember for the amount of clients that I had so I was not completely utilizing the $80 on Nightwatch. It would take me $400 or $450 to utilize the same things, the same data that I needed to track in Ahrefs. And it was like hell no, I'm not scaling it with Ahrefs. For keyword ranking specifically, not.
+
+Nebojsa (52:34.659)
+Mm-hmm.
+
+Nebojsa (52:38.266)
+Yeah.
+
+Dimitris Gkiokas (52:39.936)
+Yeah, I know.
+
+No, I agree with you. I agree with you.
+
+Nebojsa (52:42.894)
+Yeah, we already discussed this like we shouldn't rely on too many tools, you know.
+
+Nenad S (52:45.206)
+That's the thing that I always had issues. Yeah, and the ones that you rely on, completely like capture you in their... I mean, they capture your process completely in their tool set that the moment you try to ditch them, they basically blackmail you. So that's the reason why I always turn to either something that has long -term support or something that I can make myself. But I could never escape address.
+
+Nebojsa (52:54.306)
+Exactly.
+
+Nebojsa (53:06.999)
+indirectly.
+
+Nebojsa (53:12.527)
+Yeah.
+
+Nenad S (53:13.73)
+they have a crawler and that crawler has generated such a big database. Even if you can replicate the domain rating and page rating like metrics, et cetera, even if you can get and generate data about their traffic, et cetera, it's still at that scale that it will take you like, I don't know, 20 years to catch up with them, at least 20 years. And also you will again need some initial data set from them in order to form a
+
+further metric data based on some input.
+
+Nebojsa (53:45.529)
+Yeah.
+
+Dimitris Gkiokas (53:46.571)
+Yeah, I agree.
+
+Nebojsa (53:48.086)
+Yeah, Dimitris, let's say you have a client who has two different products on its website and it's already generating some organic traffic. They did SEO before, but he isn't satisfied with the results and now he's asking you to implement some SEO strategies for these two products and he wants, let's say to grow by 20 % in organic revenue in the next three or four months.
+
+How do you ensure that your SEO strategies are aligned with the company's revenue and business goals?
+
+Dimitris Gkiokas (54:23.283)
+I'd start by telling him to change his goals. First thing. Let me do what I need to do for you. Let me do the holistic. Let me grow everything. eventually that will result, like a little bit later, but will result in growth, bigger growth and everything.
+
+Nenad S (54:29.666)
+Bam.
+
+Nebojsa (54:43.512)
+Yeah, but like do you tell him that immediately or do you first do some analysis and get back with your feedback? Yeah.
+
+Dimitris Gkiokas (54:50.337)
+Probably some analysis, but with experience, can get the insights you want in a few hours if it's a tough conversation like this one, even faster if it's a simple meet and greet with a client. But let's say they insisted on that. Let's say they insisted on this is our business goal, this is what we want you to come back on. I would just do the opposite of what I would do usually, and I would focus on high intent.
+
+Nenad S (54:52.844)
+Yeah.
+
+Nebojsa (54:57.846)
+Exactly. Yeah.
+
+Dimitris Gkiokas (55:19.797)
+keywords and I would probably call you guys up and talk about some link building as well. And, you know.
+
+Nenad S (55:27.298)
+I would ask a question that 20 % jump, I mean 100 % jump is same from going from 1 to 2 as it is the same from going from 100 to 200. Also if we're talking in absolute numbers like you want to increase revenue from 10k to 15k how will I ensure that you don't set up a sale that is immediately going to drop that value of that product for 30 % or something because Black Friday is close.
+
+Nebojsa (55:35.384)
+Yeah, I know that. I didn't specify, but I know that.
+
+Dimitris Gkiokas (55:36.975)
+Of course.
+
+Nebojsa (55:51.194)
+Yeah, yeah, yeah.
+
+Nenad S (55:55.114)
+So there are lot of fucking variables there that you need to cover.
+
+Nebojsa (55:58.67)
+Yeah, guys, have some, yeah, please free if you, yeah, I have something interesting to share with you and I want to hear both of your, like your opinions. It's the situation that I had with the, with some of the previous sales calls. So hear me out. There is a client who provides
+
+Dimitris Gkiokas (55:59.834)
+no, no, ahead. Go ahead, please.
+
+Nenad S (56:09.717)
+It's on.
+
+Nebojsa (56:20.307)
+product that's helping C sharp developers to write and maintain less code by eliminating some boilerplate generating dynamically during compilation some things like that. So basically
+
+When we spoke about the content strategy, he said that he's paying $1,000 for an article because he's hiring a developer content writer who knows how development works and he is afraid to...
+
+let any other writer writes on their blog because he's afraid of ruining his reputation. So what do you think about that? Isn't is this something necessary or could he like do some proofreading or some articles being written from an SEO agency or something like can you give me your opinion? Feel free Dimitris to give me your opinion about this. Okay yeah.
+
+Dimitris Gkiokas (57:15.257)
+Nenad, go ahead first. I've talked a lot today.
+
+Nenad S (57:18.306)
+First of, would tell them that the content that we are going to write doesn't have any tie -ins to the content that you're writing. We're writing content that's specifically for SEO purposes and we are aiming to put
+
+set of keywords or topics that are related to what we are going to rank. However, you want to share your expertise, expertize, authoritativeness and that part, yeah, if you want to do that you will still continue doing your content for it and that content is irreplaceable.
+
+Nebojsa (57:54.759)
+EFT, right?
+
+Nenad S (58:05.214)
+In this term, we are not taking over the whole content production. You're still going to proceed with your content production in the frequency that you can do, in the quality that you can do. The content that we are producing is here just to either support it with specific terms, keywords, syntagms that we are aiming for to increase specific
+
+you are ranking or something to cover some specific topics. This content doesn't have to be that much in depth and doesn't serve the same purpose you are writing your content for. yeah, you would have the last call like is this content something okay to be published on your website?
+
+Nebojsa (58:45.22)
+Mm-hmm.
+
+Nenad S (58:57.694)
+you will have the opportunity to do a couple of revisions, one or two max. So if after second revision you don't like it, we're just going to ditch the content and do another one. That's it.
+
+Nebojsa (58:57.825)
+Mm-hmm.
+
+Nebojsa (59:09.56)
+Yeah, like you would offer a demo article just to proofcase it. Okay.
+
+Nenad S (59:12.788)
+not a demo article, not necessarily a demo article is something that I will probably offer them immediately before we continue with that, but the whole point is I would first try and explain these are two different sets of content that serve two different types of goals. What we are doing is not aimed with the same goal you are doing.
+
+Dimitris Gkiokas (59:37.803)
+you
+
+Nenad S (59:38.108)
+and if it hurts your bottom line, you will know if it hurts your bottom line. You're talking about branding, we're talking about SEO. We have methods and metrics in track, I mean in our set that we are using to justify this content and its effectiveness on SEO, but if you see it, if you're looking it through
+
+brand image and brand perspective, then we're not talking about the same thing. You're not hiring us for SEO, you're hiring us for online reputation management, for branding, etc. We are not doing that part. We can sync with you on that part, but the goal of this content is not aimed towards it. So that would be my take.
+
+Nebojsa (01:00:18.126)
+Okay.
+
+Nebojsa (01:00:21.943)
+Okay.
+
+Dimitris Gkiokas (01:00:23.615)
+yeah.
+
+Dimitris Gkiokas (01:00:27.489)
+everything, everything and everything that said is exactly on point. And I'll add to it, some practical strategies. So the question is very interesting because I've had this exact same problem. have a client that's software that developers use, not the same software that developers use. And their CEO was like, I don't want basic content on my website because people are going to think we're talking down on them.
+
+Nebojsa (01:00:27.85)
+Okay, Dimitris, do you agree with Nenad? Would you add something?
+
+Nebojsa (01:00:35.364)
+Yeah.
+
+Nebojsa (01:00:43.458)
+Yeah
+
+Nebojsa (01:00:47.161)
+Yeah.
+
+Dimitris Gkiokas (01:00:55.476)
+Right. So I want only expert level content on the website. So and they would all write internally and review internally similar situation. So I made them. I argued a lot to get make that happen. But we they had their blog, you know, and we made an academy. So same website, same domain, new sub directory called Academy, which I was like, the whole concept of that is basic on like what is, you know.
+
+Nebojsa (01:01:04.749)
+Yeah, yeah.
+
+Nenad S (01:01:12.235)
+You
+
+Dimitris Gkiokas (01:01:21.601)
+What is C -SARP? Let's call that. No, that's not one of the topics, but let's say that, right? So what is topics like definitional, easy, but high volume, low difficulty, basic stuff that's great for an SEO company to write and get traffic of them. We optimize them for CRO. The five top performing pages on the website are from that sub directory right now, or at least five in the top 10, right? And that was like one practical way we solved that.
+
+Nenad S (01:01:23.777)
+Mm -hmm.
+
+Nebojsa (01:01:24.684)
+Yeah.
+
+Nebojsa (01:01:32.345)
+Yeah.
+
+Dimitris Gkiokas (01:01:50.963)
+And everything we said, I said everything then I'd said, you know, we're going to give it to you for review. This is all happening. Right. And that's one thing. And the other thing I want to say is in spending one thousand for an article, I think is excessive. Right. Even if they were to keep that flow, they could fire a cheaper developer to write developer writer, even if he's concerned that that's not going to be as high quality.
+
+Nebojsa (01:01:54.796)
+Yeah.
+
+Nenad S (01:02:04.992)
+Yeah, it is.
+
+Nebojsa (01:02:05.805)
+Yeah.
+
+Nebojsa (01:02:12.153)
+Yeah.
+
+Dimitris Gkiokas (01:02:18.305)
+It would still make sense to hire a developer to write an article for like 300 or 400 and then hire another developer for another 100 and 150 to edit the piece of content the first one wrote. So two developers have seen it and would cost half as much.
+
+Nebojsa (01:02:29.816)
+Exactly.
+
+Nenad S (01:02:30.053)
+No, I would f
+
+For instance, I would rather have a person going to Stack Overflow, picking out the best questions that have the highest engagement, and then just consolidate a list of 10 questions and send out to the whole development team and just say, answer this, pick a question from here and answer it. I would form a response, I would post it on Stack Overflow, and I would consolidate all those 10 Q &As and have it as an article somewhere on my website. Now just imagine how
+
+Nebojsa (01:02:33.93)
+Exactly, I agree with you.
+
+Nenad S (01:03:03.234)
+how much less resources you need to do that form of content and to still get what you're aiming for. Also, I wanted to share a screen with you just to cover again the question that asked Nebojsa. I will first, that whole company call on their hypocrisy because this specific thing. So we're talking about a software development company, right?
+
+Nebojsa (01:03:09.303)
+sucks.
+
+Nenad S (01:03:32.381)
+and we're talking about how it depicts their branding. I just opened HTML validator of their page, right? So first off, let's discuss what actually affects your branding. If you're a software development company, if you're doing C Sharp, if you're helping programmers consolidate, compile, and effectively write their C Sharp code, what are we talking about here?
+
+Nebojsa (01:03:32.42)
+Mm-hmm.
+
+Nenad S (01:04:00.97)
+You're not even doing QA for your own company and you're offering services to other developers, right?
+
+Nebojsa (01:04:08.036)
+Mm-hmm.
+
+Right.
+
+Dimitris Gkiokas (01:04:10.935)
+A little, a little strict.
+
+Nenad S (01:04:11.252)
+It's one thing that they say and one thing that they actually do. So let's consolidate on that part if we're discussing branding.
+
+Dimitris Gkiokas (01:04:19.221)
+I think you're a little strict there, but I see what you're saying. Right? It's like...
+
+Nenad S (01:04:21.386)
+Yes.
+
+Nebojsa (01:04:23.98)
+Yeah.
+
+Nenad S (01:04:24.338)
+If they are putting so much weight that their work is perfect, then show us, don't tell us. So if we're talking about branding, but let's consolidate on what we are doing actually here. SEO or branding.
+
+Nebojsa (01:04:35.918)
+But anyway, do you guys think that the brand's reputation can be based on their blog quality?
+
+Nenad S (01:04:44.31)
+Yes it can, yes it can, but again the type of content, the question is what type of content are we using for what type of goals that we're aiming for. So if it's for SEO, this one.
+
+Nebojsa (01:04:53.934)
+Yeah.
+
+Dimitris Gkiokas (01:04:54.241)
+I mean, let's use the C -SARP as an example, Like if you want to talk as a developer company that specializes in C -SARP stuff, if you want to talk about how to structure your C -SARP project, yes, you need a highly qualified developer to write, know, talk about pattern and everything. But if you want to...
+
+Nebojsa (01:04:56.91)
+Yeah.
+
+Nenad S (01:05:10.494)
+Yeah, definitely.
+
+Nebojsa (01:05:10.509)
+Exactly.
+
+Dimitris Gkiokas (01:05:15.425)
+talk about something, how to import a module, you know, in Csarp or something like that. I'm not a Csarp developer, but let's say if you want to explain a simple feature, which will probably have more search volume and probably still low keyword difficulty, you can write that. And I love the Stack Overflow reference from Nenad. Like you can do what he said, or you can have one of your developers or any developer that's cheaper than a thousand dollars, go through 10 different Stack Overflow threads on the same problem.
+
+Nenad S (01:05:27.464)
+Exactly, exactly.
+
+Nebojsa (01:05:27.498)
+Two beginners, right?
+
+Dimitris Gkiokas (01:05:44.437)
+consolidate the solutions and answer that one question on the blog. Same problem, one keyword, one question with consolidated different solutions and points. That it's gonna run well.
+
+Nenad S (01:05:48.61)
+Exactly.
+
+Nenad S (01:05:54.786)
+You can even form it in your company. Like I worked for a software developer company. I had the similar issue and I just formed it like form of a game. So you get the reward of some type if you answer this one question from Stack Overflow and I gave you a list of 10, 20, 50 questions that and I picked those questions because I picked out like a technology and I'm looking for the highest engagements. So answer this and
+
+Nebojsa (01:05:55.255)
+Exactly.
+
+Nenad S (01:06:23.714)
+That's a go. And if you do that, will be rewarded some kind of reward. So I will either give you some cash for buying some new tools or I will give you a gift card to do this or to do that, or it will accumulate to a day off that you can use whenever, but still it's cheaper, way cheaper than doing it for $1 ,000. Also,
+
+Nebojsa (01:06:36.024)
+Exactly.
+
+Dimitris Gkiokas (01:06:41.825)
+Very good.
+
+Nebojsa (01:06:45.226)
+Exactly, that's what I was thinking about and that's why I wanted to bring up this topic.
+
+Dimitris Gkiokas (01:06:46.57)
+Very good.
+
+Nenad S (01:06:49.534)
+Also, when you need to think about the topic, you need to form some content calendar, you need to figure out several different topics to have to write them. Will you write them in time? Will something new come up or something? Here you already have like a strategy, like these are the questions and just answer these questions. I'm not telling you think of a topic that you would think that people will read or look for. Here's a specific problem.
+
+Nebojsa (01:06:57.016)
+Yeah. Yeah.
+
+Dimitris Gkiokas (01:07:12.955)
+Imagine imagine a context
+
+Nebojsa (01:07:13.444)
+Yeah.
+
+Nenad S (01:07:17.334)
+Find me a solution, advise a solution based on your expertise.
+
+Dimitris Gkiokas (01:07:21.729)
+Imagine a contest within a company like that, let's say in Q4, the one that gets the most reputation on Stack Overflow gets an extra salary or something.
+
+Nebojsa (01:07:21.859)
+Yeah.
+
+Nenad S (01:07:31.066)
+We did that, we did that, we did that and it actually works and it can affect both their employee branding, their company branding, their authority, their expertise, etc. But in that way you first just need to have them understand this content is for this goal and for these purposes.
+
+Nebojsa (01:07:32.186)
+shit.
+
+Dimitris Gkiokas (01:07:39.379)
+Of
+
+You're right.
+
+Nebojsa (01:07:42.337)
+Yeah.
+
+Nenad S (01:07:55.968)
+and they immediately figure out like whatever content we write is specifically tied into any other purpose that we're using here. No, content for SEO is content for SEO, content for branding is content for branding. You can't match them in a single basket.
+
+Nebojsa (01:08:03.897)
+Yeah.
+
+Dimitris Gkiokas (01:08:08.534)
+this.
+
+Nebojsa (01:08:12.706)
+Yeah, so Dimitris, right at the beginning you said how you went to Starbucks to write content with pen on paper. So I want to ask you like how has SEO changed since then and how do you stay ahead of changes in search engine algorithms and also ensure your clients do?
+
+Dimitris Gkiokas (01:08:13.025)
+Yes.
+
+Dimitris Gkiokas (01:08:38.155)
+First of all, I've been blessed with no severe problems in the last few core updates, mostly because my clients are actual like businesses with very strong brand signals and they're enterprise level. So their websites are protected mostly from, you know, the last few campaigns. So to start from the end, stay updated. One of the first things I've done and it's changed everything is I've followed a lot of
+
+Nebojsa (01:08:45.626)
+Mm-hmm.
+
+Dimitris Gkiokas (01:09:08.373)
+people that actually share good SEO stuff on all platforms. if you go on my Twitter, you'll see a lot of SEO. If you go on my Facebook, you'll see a lot of SEO. If you go on my Instagram, you'll see a lot of SEO, less than the other ones. So if you go to my LinkedIn, you'll see a lot of SEO, right? Like content and everything. So even if I'm not on top of something, the community will let me know, like immediately, right? I learn faster than any of my SEO peers.
+
+Nebojsa (01:09:29.921)
+Yeah.
+
+Nenad S (01:09:30.465)
+Yeah.
+
+Dimitris Gkiokas (01:09:34.975)
+Not you guys, but you know, the day to day people what happens in the industry just because I follow other people who will immediately write about it as soon as it happens. That's been a game changer for me. I'm always on top of things and like that. Sorry, no, no.
+
+Nenad S (01:09:47.042)
+Do you have any feed burner for it? Or do you have any TIDEN feed burner or just scrolling your social media?
+
+Dimitris Gkiokas (01:09:53.983)
+Yeah, yeah, casually, like every other person, I spend about an hour and day on socials, which is not great, not bad either, not too bad. And that's that has a lot of SEO input, you know, by design, the way I've designed it. Right. And
+
+Nenad S (01:10:05.613)
+Yeah, true.
+
+Nenad S (01:10:09.748)
+I love the term the way I designed it. So you designed your social media and what your follower... Yeah, yeah, yeah, yeah. I had to escape of all of that. So I now rely on just I know which websites to track and when I should look for something. But the feed burner actually sounds good. Yeah, we'll do. We'll do. We'll follow up. We'll follow up. But to be honest, you're probably following them all together already. But I'll follow up.
+
+Dimitris Gkiokas (01:10:12.064)
+Yeah
+
+My algorithm. Yeah.
+
+Nebojsa (01:10:17.262)
+Yeah, cool.
+
+Dimitris Gkiokas (01:10:20.0)
+Yeah.
+
+Dimitris Gkiokas (01:10:26.737)
+I'd love that list, by the way.
+
+I'd love that list.
+
+Dimitris Gkiokas (01:10:35.667)
+Okay, nevertheless.
+
+Nebojsa (01:10:37.495)
+Yeah.
+
+Nenad S (01:10:38.444)
+Two names I want to get from this are Barry Schwartz and Gary Elias. You can find them somewhere. Those are two names I want to take out from here. Also, Dan from Danseo. He's a whole new beast to tackle. He's one of the old guards. A caveman.
+
+Nebojsa (01:10:48.633)
+Yeah.
+
+Nebojsa (01:10:55.522)
+Yeah.
+
+Dimitris Gkiokas (01:10:57.312)
+Yeah.
+
+Nebojsa (01:11:02.573)
+Dimitris, how do you... huh, yeah. Yeah.
+
+Dimitris Gkiokas (01:11:02.609)
+And to answer the other part, SEO has changed, it's changed a lot and it hasn't really at the same time, right? Content production is a whole new beast nowadays with AI. But man, I've been doing SEO for so many years and everyone's like, SEO is dead, SEO is changing, SEO is gonna be completely different. It's the same thing.
+
+Nenad S (01:11:10.784)
+Exactly, exactly. Yeah.
+
+Nenad S (01:11:24.77)
+No, no, it's the same thing subparameters the same parameters that we used for technical for on -site when you know this is the input this is the output you need to set the canonical you always had to set the canonical Google always told you that it could render a JavaScript you cannot rely on that part it never could properly render a JavaScript so something's never changed even though they're saying they it changed since 2011 or something
+
+Nebojsa (01:11:24.903)
+Yeah, it's the same for link building.
+
+Dimitris Gkiokas (01:11:28.48)
+Yeah.
+
+Dimitris Gkiokas (01:11:38.58)
+Exactly.
+
+Dimitris Gkiokas (01:11:46.484)
+No, exactly.
+
+Nenad S (01:11:53.882)
+link will always have the highest value because it's a certain signal that you can track and connect several websites with. mean, all other signals have some room for errors or some windows of accuracy or something, but these are like straightforward.
+
+Dimitris Gkiokas (01:11:58.527)
+Exactly.
+
+Nenad S (01:12:14.74)
+You want to block something from being indexed, you put the metarobots noindex. You want something to ban from crawling, you put the robots txt, it from crawling. Or completely remove the page altogether. Those are the things that are just like axioms that never changed. So it has changed, but it hasn't.
+
+Dimitris Gkiokas (01:12:32.897)
+True. And you know what, I've worked with clients either internally or, you know, as an agency my whole life. We don't do black hat. The most gray hat we do is like building building like everyone else. That's right. I mean, it's considered black hat, but who cares? My point is the basics, like the important stuff, know, like producing quality content that's been researched.
+
+Nebojsa (01:12:46.387)
+Mm-hmm.
+
+Nenad S (01:12:49.142)
+Mm -hmm.
+
+Nenad S (01:12:52.832)
+Yeah, but who cares?
+
+Nenad S (01:13:00.115)
+Yeah.
+
+Dimitris Gkiokas (01:13:02.209)
+improving internal linking, make sure the basics like canonicalization and indexation are taken care of. Like these things are the same. Not only that, they just become more and more important over time because they, they strained techniques that are on this, on the, you know, the gray area, they just get killed one after another over the years. So if you're, you know, if you're doing like high quality work off the basics, you're getting better, you're better and better in SEO, not worse, which is
+
+Nebojsa (01:13:11.111)
+Mm-hmm.
+
+Nenad S (01:13:11.394)
+Ciao!
+
+Dimitris Gkiokas (01:13:29.909)
+fun, know, people try to find the silver bullet, just build good processes. That's the silver bullet.
+
+Nenad S (01:13:35.746)
+It was always, I mean the whole point of SEO, they always wanted, they always pushed it towards trust and UX. Google did that with its 10 blue links. For instance, it doesn't matter how your website looks, it doesn't matter how your website feels, loads, or how much content or pages it has. When I get search results, you will always get 10 blue links. And it's on Google to decide based on a lot of data behind it.
+
+Nebojsa (01:13:58.971)
+Yeah.
+
+Nenad S (01:14:03.906)
+which one in what order those 10 blue links would go. But that's basic UX. That's basic UX. So ditch out all of the factors, just focus on trust, pick out the ones in order and order them in terms of trust. If you just have that mindset, I'm going to focus on the best user experience here on the website. So when a user lands on my web page, they will find a solution to the problem they're investigating on.
+
+which might be just looking for some info, just looking for some recommendation, tutorials, products to buy or whatever, I will allow them to find that with ease. So no commercials, no banners, no interstitial redirections or whatever. All of the things when you look at the content guidelines, they will tell you all those things, they will just list you the things that you shouldn't have. But...
+
+Nebojsa (01:14:39.729)
+Right.
+
+Nenad S (01:14:59.884)
+The whole point was just focused on giving them the most relevant thing and that it's easy for them to find it. Focus on having a user finding what they are the solution to a problem they are experiencing right now and that's about it. If you just have that mindset, all of the other things are just tools. So a redirection is a tool, canonical is a tool, a link built is a tool for it.
+
+Dimitris Gkiokas (01:15:25.226)
+Yeah.
+
+Nenad S (01:15:28.864)
+deliverable, call it what you wish. But it all got clouded under a noise, content is king. And that's what really made me sick and that's what causes a lot of confusion in the SEO world, especially with beginners. Especially with beginners.
+
+Nebojsa (01:15:30.579)
+Mm-hmm.
+
+Dimitris Gkiokas (01:15:43.241)
+Yeah, I think and I think it's one of those things where it's fully wrong, like that content is important. It's not like content is not important, but it yeah.
+
+Nenad S (01:15:52.268)
+Yeah, it's not fully so you can never just like unjustified it like don't do content or don't do bullshit content or whatever
+
+Dimitris Gkiokas (01:15:57.793)
+I think I have a way to explain it to people. That's mostly to people who don't really understand what the COE is. It's like, anytime someone types something in Google, they're asking a question. It might be a one word question or it might be a long word, but they're asking a question. That's the intent they have. If your website doesn't have the answer to that question, you're never going to rank for that search. That's where content can come in. You need to have the answer to the question, to the question you care about answering.
+
+Nenad S (01:16:09.068)
+Yeah.
+
+Nenad S (01:16:19.497)
+Exactly
+
+Nebojsa (01:16:24.274)
+Yeah.
+
+Dimitris Gkiokas (01:16:28.761)
+And that's the importance of content. you need to have it. Then you need to have a good answer. Right. And then you need to answer as many questions as you can that are relevant to your company. That's it. And then there's everything else.
+
+Nenad S (01:16:34.452)
+Yeah, that ties into your bottom line.
+
+Nenad S (01:16:41.41)
+company product to your bottom line selling this solution to whatever problem you're having. yeah. Also there was a swap at some point. mean it kind of began in 2008 when they started first implementing voice search but that was probably the biggest change.
+
+Nebojsa (01:16:42.567)
+Yeah.
+
+Nebojsa (01:16:47.907)
+Exactly. Yeah, so...
+
+Nenad S (01:17:04.642)
+In 2008, they implemented voice search. They started testing out voice search. In 2013 was when Hummingbird update was actually introduced when they started using NLP's and to discern what actually content and context behind that content was. But the whole point is whenever you use search now
+
+You go in, you need to find, I don't know, a car mechanic in Athens. So you're going to type in car mechanic Athens. But when you use voice search, you will do, where can I find the nearest mechanic? And you're in Athens. It will exactly know, but that's converse. No, that's not a long tail keyword. That's a question. That's a conversational search that you're actually doing.
+
+Nebojsa (01:17:43.033)
+Exactly, yeah, like long-tailed Questions?
+
+Crash computer, yeah, yeah, yeah, yeah. Exactly.
+
+Nenad S (01:17:52.556)
+But the thing is that although that conversational search and that voice search has changed and I mean it's used much more today with Alexa's, Google Homes, Bigsby's and whatever you're not using those assistance, people are still tied to that original search pattern like car mechanic Athens. So when you say like they're going to use a single word or using, they're basically asking a question.
+
+Nebojsa (01:18:04.529)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (01:18:13.861)
+Mm-hmm. Mm-hmm. Yeah.
+
+Nenad S (01:18:22.678)
+but the question is simplified when you use it as a type and when you use it as a voice.
+
+Nebojsa (01:18:27.631)
+Yeah, they don't want to put an effort to write all the things. They just say care mechanic location.
+
+Dimitris Gkiokas (01:18:28.861)
+Exactly.
+
+Nenad S (01:18:31.34)
+Yeah, so that's probably the biggest misconception when people are actually thinking about SEO and how it ties into answering that question. I tried that method of explanation a long time, I mean a lot of times, but I always get challenged with that. But yeah, where is my nearest car mechanic tie into car mechanic atoms?
+
+I know that people, you tell me that people are searching it for search looking for it that way. You're telling me that I need to have an answer and content written around that way. But I just see a primary keyword here. Car mechanic atoms. I'm not seeing the question at all. I'm not seeing the context at all.
+
+Dimitris Gkiokas (01:19:15.891)
+Yeah, I I bridge that gap with talking about intent, right? And showing the intent of the first page and just explaining that, you the person that wrote this, effectively their intent was that, right? What's there on the first page effectively, especially the query is at least a little bit popular and I can bridge it.
+
+Nenad S (01:19:19.681)
+Yeah.
+
+Nenad S (01:19:28.875)
+Mm -hmm.
+
+Nenad S (01:19:35.628)
+Was it more difficult for you to explain that to, let's say if you're working with an agency, company, companies of scale that you work with usually have a person who is in charge of SEO management or communication behind it. And when you need to communicate, if they have a mindset like primary, secondary keywords and long tail, short tail ones, and you want to communicate the intent behind it with questions and conversational search,
+
+How did you bridge that gap? Did you have issues with that?
+
+Dimitris Gkiokas (01:20:07.015)
+I've had issues, I've had issues, but I will take it a step back and say this. I'm not working for my clients. And I mean, I'm not their employee, right? I'm following as a person, I'm following a more like, I know what I'm saying, shut up and trust me, approach.
+
+Nenad S (01:20:16.748)
+Yeah.
+
+Nenad S (01:20:20.032)
+Yeah.
+
+Nenad S (01:20:28.052)
+Yeah, yeah, I stand behind my words, yeah.
+
+Dimitris Gkiokas (01:20:28.391)
+Right. And I have that I have that for them from the very beginning. Right. I you're not going to tell me what to do. I'm going to tell you what to do for what you've brought in here. Obviously, the reality the realistic version is a little more equal. Right. We're partners in this. But by no means do you like personally the company dictate how I'll work with primary and secondary keywords. I'm telling you this is what we need to do. I'm you know, you got me here for a reason. Yeah. Trust me.
+
+Nenad S (01:20:36.585)
+Exactly.
+
+Nenad S (01:20:53.256)
+and I stand behind those those yeah got it got it got it it's the same it's the same whenever I was like pushed to hey we need to do this thing no no no you need this if you want me to do that thing
+
+Nebojsa (01:20:59.057)
+Yeah.
+
+Nenad S (01:21:09.022)
+I don't know, it was always like, I would rather always just tell them no, you want me to do a thing that I know it's not going to affect positively your bottom line here. And I would just move away and tell you no, I'm not doing that. But there are cases when, but I usually when it's only if a client is too cocky or too convinced, then I'll tell him, okay, not an issue.
+
+Dimitris Gkiokas (01:21:28.47)
+There are.
+
+Nenad S (01:21:38.324)
+I'll do that and I'll set up tracking and testing for what you just told me, but you're asking me for deliverables. You're not asking me for a KPI or a goal. So in this case, I'm a deliverable provider and here is the KPIs behind my deliverables that you can track. So that's it. We have that relationship.
+
+Dimitris Gkiokas (01:21:58.783)
+No, that's a very good approach. That's a very good approach. I've managed to, you know, I'm not, I made it sound, I made it very strict earlier. I'm, you know, I'm very friendly in my communication. I've always managed to convince them, but I think what you said would be great if I couldn't manage like, yes, but since you're insisting on that, which I'm telling you not to, we're gonna track the performance of that. You're not gonna judge me the performance of, you know, the KPI.
+
+Nebojsa (01:21:59.12)
+Yeah.
+
+Nenad S (01:22:06.186)
+Not always, not always.
+
+Nenad S (01:22:23.648)
+Yeah. Yeah. A while ago I was like completely exclusive, like completely ditching them and telling them no that won't work, it will hurt your bottom line, I will not be the guy who is going to take that step and do that for you. Find another person because I don't want to be blamed for it and you will always get the blame even though if you explain to them. But in this case I mean after a while I just learned to say okay let's test it.
+
+and I set up a test. Now, to consolidate, you're asking me for a set of deliverables. Here is the set of deliverables that you will use to test out this idea. Here is also a test method where you can test out that idea. And that's it. And there's no bad blood in it. I mean, usually there is bad blood. Usually there's always that little voice in me that says, aha, I told you so. Yeah, I told you so. It gives me some joy.
+
+Nebojsa (01:22:55.547)
+Yeah.
+
+Dimitris Gkiokas (01:23:17.889)
+I told you so!
+
+Nebojsa (01:23:20.061)
+Yeah.
+
+Dimitris Gkiokas (01:23:21.215)
+You know what? You know what? It's also it's also like always a matter like you have to to to work the relationship right. Sometimes they want they insist on one thing. And sometimes we take the heat like we do everything we would do anyway. And the one thing they want is that extra work. Is it out of scope? Yes. But they're happy because I did what they wanted and I've done my things and they see growth. And I tell them it's not because of your things was because of our things.
+
+Nenad S (01:23:29.463)
+Yep.
+
+Nenad S (01:23:45.868)
+care.
+
+Dimitris Gkiokas (01:23:50.121)
+Hey, we got what we wanted, so we're all happy. And if they're not asking for too much, I'll take the hit and make it happen regardless. If they're asking for too much, I'll explain why not and see where it goes.
+
+Nenad S (01:24:03.744)
+Yeah, but hear me out. grew in this field from two different sets of environments. For instance, I'm using this analogy because I used it a while back. So you have a person who is going to build your house. He builds a wall and one of the bricks is like pointing out compared to other bricks for like five centimeters. And when you tell him, hey man, this brick is like pointing out, you need to resolve it, he will tell you, no, no, the guy
+
+Nebojsa (01:24:04.902)
+Yeah.
+
+Nenad S (01:24:33.68)
+that puts the plaster over it he will resolve it then comes the guy who does the plaster but he requires more tools more resources because he needs more plaster to resolve it you don't have as many he does his work but it still goes out then and he'll tell you hey no worries the guy who does the paint job he will resolve it he'll find something he'll do something like place a frame or place a shelf over it and something and that that guy
+
+comes there and does his work but it still is pointing out and that guy because he's the last in line he will take all the heat and when you're discussing why your wall doesn't look pretty and it's bending because it has that brick pointing out it will be the last guy that did work on him that's taking the blame. Now just imagine when it comes to SEO
+
+Nebojsa (01:25:24.209)
+Mm-hmm.
+
+Nenad S (01:25:28.534)
+that we're doing link building, we're basically the last in line. So any other person who is doing SEO strategy, onsite, technical, content writing or anything, the link builders will always be the last in line and they will always take the worst of heat like we're not ranking because we don't have enough links because these links are low quality. And when you check their page, the page itself was probably no index because somebody did some other work.
+
+Nebojsa (01:25:33.036)
+Exactly.
+
+Dimitris Gkiokas (01:25:34.943)
+true.
+
+Nebojsa (01:25:43.955)
+It's always their fault.
+
+Nenad S (01:25:58.028)
+but you will always take that heat. So this is where my whole idea of like, let's test it or just pushing back and say, okay, I'm a deliverable provider. Here's what you can expect from me. But if it was for SEO and SEO management where you handle the full managed SEO campaign from the start, then I could take your approach.
+
+Nebojsa (01:25:58.288)
+Yeah.
+
+Dimitris Gkiokas (01:26:20.905)
+I think, of course, you're absolutely right. think this is a problem that not only we have, like not only you have, right? There's, no, I mean, and I mean in many industries as well. And I think the way it's been solved in many other cases is people take a look before they do the work. So the painter comes in and before they start painting and putting frames and anything, they see that and they're saying, this I cannot fix.
+
+Nebojsa (01:26:21.778)
+Yeah.
+
+Nenad S (01:26:28.828)
+No, no, this is is all arounder. Yeah
+
+Nebojsa (01:26:30.161)
+Yeah.
+
+Nenad S (01:26:49.43)
+Yeah, exactly. That fix.
+
+Dimitris Gkiokas (01:26:49.503)
+Right. I can improve it, but I cannot fix. Right. So don't blame it on me. And if you do that beforehand, it saves you a lot of heat. And I feel like for you guys, I don't know if you did already, taking a look at the, you know, the, all the, the rest of the SEO and be like, you have some problems, right? We are going to the Libil, but you have some problems. And then, you know, I don't know, like reach out to me, right. And we get it. We, we sort it out together. Like,
+
+Nebojsa (01:26:50.611)
+You
+
+Nenad S (01:27:02.976)
+We always do that
+
+Nebojsa (01:27:05.721)
+Exactly.
+
+Nenad S (01:27:07.874)
+You always do that.
+
+Nenad S (01:27:14.082)
+Exactly.
+
+Nebojsa (01:27:15.13)
+Exactly.
+
+Dimitris Gkiokas (01:27:16.103)
+as a team for that since you do link building only, right? But don't go in and ignore the brick that sticks out.
+
+Nenad S (01:27:24.77)
+We always do that and whenever we tell them so for instance when if they outreach us for if they reach reach out to us for link building campaigns so to form it or just for deliverables even if they just Approach us and tell us hey we want ten links these anchors these targets. These are the metric thresholds Whatever. We always do tell them hey you have issues on the website. You have issues with this and just to note building links
+
+Nebojsa (01:27:44.625)
+Yeah.
+
+Nenad S (01:27:52.214)
+for this page or for this website at this state will be like pouring water in a bucket that has holes. So they will not have as big of an impact compared to if you resolve these issues. Keep them in mind and you decide. Do you just want links? Do you want us to proceed with this work? But keep in mind this, this, this and that. So we always take that approach. I mean, that was the one and only method I could resolve.
+
+that heat that we were getting at the end of the line. But it was difficult to get to that part. It took us like, I mean not took us, it took me five years to get to that mentality before actually implementing it. But the way we did it, now allows me to also be a deliverable provider and to be a managed SEO.
+
+Dimitris Gkiokas (01:28:25.426)
+Exactly.
+
+Nebojsa (01:28:36.978)
+Yeah.
+
+Nenad S (01:28:43.842)
+manager that managed SEO campaign manager who is accountable for all the metrics and the bottom line of the company if needed.
+
+Dimitris Gkiokas (01:28:53.429)
+Very good.
+
+Nenad S (01:28:54.421)
+Yeah.
+
+Nebojsa (01:28:55.057)
+Yeah, yeah guys like I want to end up with some like serious topic so I want to ask you I'm gonna make some bold statements here so I want to say like will Google exist I want to ask you that like I know it's a big statement it's a multi-billion dollar company but however here's why I am the top
+
+came to my mind. So first we have exponential growth of AI content, AI tools and AI results.
+
+Then Google search engine page is dominated by only a few top authority websites. Like there is almost no space in competitive industry for new content websites. So why not just go to those sites directly? For example, for videos, we have YouTube, for what is it type of content, we have Wikipedia, we have Forbes for other things, etc. And then like the primary objective of search engines should be to offer
+
+all possibilities to users like old sites, new sites etc. and let users decide which one they wish to click and read. So also there is one thing
+
+Nenad S (01:30:04.438)
+Controversial statement. Users are dumb.
+
+Nebojsa (01:30:06.979)
+Also there is one thing according to the search engine journal over 96 % of top 10 ranking pages have more than 1000 domains pointing to it so 1000 referring domains so like what is the scope for new websites like how hard is it to rank in competitive industries where do see this going like five years from from now where what we will see on google what google will be what do you think guys
+
+Dimitris Gkiokas (01:30:23.743)
+Yeah.
+
+Nenad S (01:30:34.26)
+Netscape was also the top search engine. Conversational search and voice search was also and is also the new method and most used method to do Google search, yet still we use it the other way. If you're focusing on search engine optimization then you're focusing on all search engines. The one that's the top search engine, there are rules and standards that apply to all search engines.
+
+Nebojsa (01:30:38.62)
+Yeah.
+
+Nebojsa (01:30:43.068)
+Mm-hmm
+
+Nebojsa (01:30:55.876)
+Exactly like all the...
+
+Nebojsa (01:31:02.508)
+Mm-hmm.
+
+Nenad S (01:31:02.6)
+On your website if you have a search bar it's a search engine of itself of its own. YouTube is a search engine of its own so don't focus on that part. But when it comes to Google and the way that we are using it if it's going to be there
+
+Nebojsa (01:31:07.082)
+Exactly, yeah.
+
+Nebojsa (01:31:11.507)
+Exactly.
+
+Nenad S (01:31:20.404)
+it's not going to be there for a while. The methods that we're using from GPT, for instance, like where you type in a question and get an answer without actually going to a website or verifying its validity, it's a thing that Google's missing, but also that GPT is missing the validation that Google gives you. Like this is a website, it's taken from this source and this source is viable.
+
+Dimitris Gkiokas (01:31:44.809)
+Yep.
+
+Nebojsa (01:31:46.142)
+Yeah, yeah.
+
+Nenad S (01:31:46.85)
+combination of those two would be a search engine of the future, but still none of them, even Bing tried that, other search engines tried that and not a single one is at stage where they have something ready. These are not betas, these are alphas.
+
+Nebojsa (01:31:52.639)
+Yeah, I
+
+Nebojsa (01:31:59.616)
+Yeah.
+
+Nebojsa (01:32:05.246)
+Yeah, but my point is like that Google won't be like people won't be able to use Google in the future for problem solving because of the AI and everything. So I'm then that correlates with SEO. So that can be also endangered.
+
+Nenad S (01:32:18.658)
+No, no, no, no, no. Google still uses links and websites and pages to give some validation to it. They won't be using the same UI Google gives you now. So they won't be using 10 blue links. They will be using something else. the underlying, yeah, but the underlying engine behind it.
+
+Dimitris Gkiokas (01:32:33.057)
+Yeah.
+
+Nebojsa (01:32:35.902)
+Yeah, exactly. That's why I got this, because you mentioned 10 blue links.
+
+Nenad S (01:32:44.251)
+will not differ too much from what it is today, it will just be complemented with some other stuff that's coming in. But the UI should change and needs to change, but we're still not at that point that we can use that both.
+
+Nebojsa (01:32:52.394)
+Yeah.
+
+Nebojsa (01:32:55.862)
+Yeah.
+
+But you think it will be like vastly different in 10 years, like five years, 10. Okay.
+
+Dimitris Gkiokas (01:32:58.989)
+I think...
+
+Nenad S (01:33:02.892)
+The UI will be different. The UI will be different. And it wouldn't be Google's per se. mean, other search engines are there as well that have better managing of that data.
+
+Nebojsa (01:33:11.05)
+Okay.
+
+Dimitris Gkiokas (01:33:14.529)
+I think I want to separate the question into two aspects, right? The first thing to say is the AI content, which is a little bit easier for me to integrate. AI content on its own is not necessarily, it's not bad or good, right? It's not, it's just what it is. It's AI content. The user looks for some information. If they get their answer, if their problem is solved, no one gives...
+
+Nebojsa (01:33:15.071)
+Okay.
+
+Nebojsa (01:33:19.062)
+Mm-hmm.
+
+Nebojsa (01:33:25.932)
+Mm-hmm.
+
+Dimitris Gkiokas (01:33:43.585)
+if it's AI content, or if it's written by human. mean, yeah, human writing is more engaging, it's more likely to read, you're gonna spend more time on the page, yes, right? But if my problem is answered, it's not such a problem. So I think AI will keep evolving in so many ways, like we don't know exactly where and how it will, where it will all come down to, but what I know right now is on its own, it's not the problem.
+
+Nebojsa (01:33:44.628)
+Yeah.
+
+Nebojsa (01:33:54.336)
+Yeah.
+
+Dimitris Gkiokas (01:34:13.151)
+Right? Still human content is performing better. It's gonna keep performing better for a significant amount of time. And when it doesn't, it's gonna be because it's sufficient, not because it's a problem. Right? So we'll get there. Now, on the other hand, when it comes to the search experience itself, I also think there are some things that are gonna go away from search engines. I've been working on some technical stuff earlier, some coding stuff. I mentioned them when we were talking about the APIs.
+
+Nenad S (01:34:13.9)
+Yep.
+
+Dimitris Gkiokas (01:34:42.131)
+I want to learn some new coding concepts, some concepts I'm not very familiar with. I learned them through talking with ChatGPT. I didn't learn them by Googling them, by going through finding a tutorial, by going through Stack Overflow. I just had a ChatGPT experience, conversation, more than once in the last few weeks. That's very telling of what's coming. There's some form of information that's going to be replaced.
+
+Nebojsa (01:34:52.065)
+Yeah.
+
+Nenad S (01:34:53.164)
+Yeah.
+
+Nenad S (01:34:58.178)
+Yeah.
+
+Nebojsa (01:35:05.772)
+Mm-hmm.
+
+Dimitris Gkiokas (01:35:09.237)
+the way we consume it, right? When it's information, when it's basic stuff, when it's definitional stuff, all those easy pieces of content we SEOs write, these are going away and we'll have to adapt, right? But I feel like the concept of search and the concept, especially the concept of shifting through different options is crucial to the human psyche, not just SEO, right? I will never trust Google or any platform to ask it, give me the best car mechanic in Athens.
+
+Nebojsa (01:35:15.361)
+Yeah.
+
+Nebojsa (01:35:21.132)
+Mm-hmm.
+
+Nebojsa (01:35:28.62)
+Mm-hmm.
+
+Nenad S (01:35:31.006)
+Exactly. Exactly.
+
+Nebojsa (01:35:32.735)
+Mm-hmm.
+
+Dimitris Gkiokas (01:35:39.027)
+and to trust blindly the first response. Never, never. I will always going to go through a list of options, maybe reviews, maybe where they're located, some form of information consumption that will help me. Even if it's an illusion of decision, I'll have to decide which car mechanic I go to.
+
+Nenad S (01:35:41.192)
+Exactly, exactly.
+
+Nebojsa (01:35:42.226)
+Yeah, yeah, I guess.
+
+Nebojsa (01:35:50.665)
+Exactly.
+
+Nenad S (01:35:56.66)
+Even if it's the best car mechanic it's out of your price range so it's not the best mechanic for you. Even if it's the best car mechanic it doesn't cover like getting parts or something so it's not the right for you. On another note, GPTs, I love them so I use them but the GPTs never know the end of the sentence.
+
+Dimitris Gkiokas (01:36:02.623)
+Yeah. Exactly.
+
+Nebojsa (01:36:05.736)
+Exactly. Yeah, good points there, guys.
+
+Yeah, yeah.
+
+Nenad S (01:36:22.828)
+when they start typing it out because the whole point of GPT is doing predictability which word comes next or which letter comes next. Also, GPTs work with the content that is existing on the web. We have not yet accumulated all the knowledge that there is on the web. So if someone thinks about a new concept, something that's completely new,
+
+Nebojsa (01:36:29.302)
+Exactly, yeah. Mm-hmm.
+
+Nebojsa (01:36:39.562)
+Mm-hmm.
+
+Nenad S (01:36:48.684)
+they're going to write it out, they're going in whatever media format you can think of it. If it's a text, a video or anything, they will publish it somewhere on the web. And what do you have for it? You have a link pointing to that new resource. If there is something that will always be a perfect signal and matching or used as a join key,
+
+Nebojsa (01:36:53.164)
+Mm-hmm.
+
+Nebojsa (01:36:59.414)
+Mm-hmm.
+
+Nebojsa (01:37:05.47)
+Got it.
+
+Nenad S (01:37:12.322)
+to tie in all the information or give validity to some other metrics or dimensions or whatever, link will always be there. So people are in their nature are always tied into, hey, let me see where you found out this information and how it ties in to me specifically. So there are combinations of doing like GPT plus search engine the way the UI works now.
+
+but we're still far off and it's more of a thing of a human nature than is to a nature of search engines themselves. So you can never just go through fully relying on them, GPT typing out the answer because you know it takes only the data that already exists on the web. So another person needs to generate that new concept and publish it somewhere. GPTs cannot do it on their own.
+
+Dimitris Gkiokas (01:37:48.512)
+And
+
+Nebojsa (01:37:58.95)
+Exists, right?
+
+Dimitris Gkiokas (01:38:04.894)
+yeah.
+
+Yeah. And for legal reasons as well, I think citation of where you got the information from will always be there in AI overview as well, like it's right now in SD. So the source of the information for AI will be visible, will be clickable. That's SEO, a new form, but that's SEO. Right. So people, as long as people want to see through options to find either mechanical information, there's room for SEO. Right. We may have to do SEO on
+
+Nebojsa (01:38:08.129)
+Got it.
+
+Nenad S (01:38:15.394)
+Exactly.
+
+Nenad S (01:38:23.927)
+Yeah.
+
+Nenad S (01:38:34.507)
+Yeah, exactly.
+
+Dimitris Gkiokas (01:38:36.875)
+freaking TikTok, but it's going to still be a profession that we're going to be the most tailored. Yeah. And I mean, people are like, SEO is going to die. SEO is going to be out of job. Literally the opposite. think people are, the search experience, the sifting through options experience is going to just transition to somewhere else at some point. And the first people who will know that's happening is us. People in the industry, right? We'll be the first ones to know that Google is losing.
+
+Nenad S (01:38:39.584)
+Yeah, I mean people do it on Amazon for... I mean...
+
+Nebojsa (01:38:41.81)
+Exist. Yeah.
+
+Nenad S (01:38:56.575)
+Exactly.
+
+Nenad S (01:39:00.104)
+Yeah. Yeah.
+
+Nebojsa (01:39:01.664)
+Mm-hmm.
+
+Dimitris Gkiokas (01:39:05.277)
+Marketer will be the first ones to know that this new thing came out We were the first ones to research search GPT when they announced it like things like that, right? So when the transition is to happen When the transition is to happen, yeah exactly We're gonna be the first ones that make that that Try the new things out make the transition. So I think I'm not a very big fan of the fear culture. I don't know if you can tell right
+
+Nenad S (01:39:13.504)
+Yeah, yeah, SEOs were the first guy, yeah. The first community that used GPT -MAX.
+
+Nebojsa (01:39:14.816)
+Yeah.
+
+Nenad S (01:39:32.406)
+Yeah.
+
+Nebojsa (01:39:32.945)
+Mm-hmm.
+
+Dimitris Gkiokas (01:39:34.559)
+You know, like if you are keen in growing and keep growing, we're going to be fine.
+
+Nenad S (01:39:36.556)
+FOMO.
+
+Nenad S (01:39:41.45)
+Yeah, exactly. I don't think that SEO will die as a concept. I do think that SEO will change. I mean, the processes of SEO behind SEO will change. The only thing that I strongly believe that we can tie in now is that the link as a signal would always be
+
+Nebojsa (01:39:42.208)
+Yeah. I agree.
+
+Dimitris Gkiokas (01:39:48.758)
+Yeah.
+
+Nenad S (01:40:05.229)
+as one of the strongest signals, if not first in top three of the major signals regarding and used for SEO purposes. So that's the only thing that I can from the concepts and from the things that I'm seeing now and even with new concepts like GPT's with the algorithms with new stores and new search engines etc. It's always the starting point, it's always the joint key and it's one axiom that you will always use. The weighing of it like how
+
+Nebojsa (01:40:14.738)
+Exactly, yeah.
+
+Nebojsa (01:40:23.093)
+Yeah.
+
+Nenad S (01:40:34.946)
+important it is, can change, but it will still be one of the highest weighing factors in terms of SEO influence.
+
+Dimitris Gkiokas (01:40:44.309)
+Yeah, and lots of...
+
+Nebojsa (01:40:45.12)
+Basically, I agree with you. mean in the end link is a URL and URL is a unique identifier used to locate a resource on the internet. So basically exactly.
+
+Nenad S (01:40:51.048)
+I don't know the universal resource locator. if you don't have a locator, a pointer to a resource that you're basing your whole assumption of how something gives trust, of something's trustworthiness, authoritativeness, etc. If you don't have a locator pointing to it, I can't figure out any other concept.
+
+Dimitris Gkiokas (01:41:01.089)
+yeah.
+
+Nebojsa (01:41:01.938)
+Exactly.
+
+Nebojsa (01:41:12.674)
+Exactly, like...
+
+Nenad S (01:41:20.19)
+in software engineering that can tie endpoint me to it. I really can.
+
+Dimitris Gkiokas (01:41:24.703)
+I mean... No, no, sorry.
+
+Nebojsa (01:41:24.938)
+Basically, you're telling a web browser how and where to retrieve a resource with that. So it's a signal. It's the signal.
+
+Nenad S (01:41:30.994)
+Yeah, exactly. don't know how else to call a server and tell him I need that specific info. I couldn't know.
+
+Nebojsa (01:41:37.81)
+Exactly, yeah, you're out. Is the point here. Yeah.
+
+Dimitris Gkiokas (01:41:40.597)
+Yeah. And I mean, you know, we're, getting into a little bit of opinion zone now, but it's also a very simple signal for machines to understand. Google can develop the best, the best NLP, you know, analysis software in the world. It will cost, it will cost so much more than just reading and assigning weight to a link. Right. And, we, yeah, exactly.
+
+Nenad S (01:41:51.019)
+Yeah!
+
+Nenad S (01:41:56.758)
+but it costs, it's resource costly.
+
+Nebojsa (01:41:58.634)
+Yeah.
+
+Nenad S (01:42:05.602)
+Exactly, exactly it costs too much resources to go through that
+
+Nebojsa (01:42:07.168)
+Yeah.
+
+Dimitris Gkiokas (01:42:10.689)
+So unless something like a quantum computer comes along that changes completely what a lot of resources mean, links are going to be there.
+
+Nebojsa (01:42:15.755)
+Yeah.
+
+Nenad S (01:42:17.09)
+Yep.
+
+Nenad S (01:42:21.378)
+But still, even with that quantum computing, you need to first optimize it for that specific use case. Then you need to scale it. Then you need to optimize costs around those quantum computing. So for at least 20 to 30 years, we're safe with links. Yeah. Even with GPT
+
+Dimitris Gkiokas (01:42:35.199)
+Yeah, and that was just an exaggeration of what's happened. We're gonna retire safely.
+
+Nebojsa (01:42:36.392)
+Yeah, yeah, we're good. We can retire safely. Yeah, yeah.
+
+Nenad S (01:42:42.738)
+Even with GPTs, mean, they had that curve when they all tried to use it as much and to implement it in whatever they could. But now they're in that zone where they try to optimize the costs around it so they can scale it bigger, so the GPTs work better, so more people can use it, et cetera. And you're seeing a fall off.
+
+of lot of tools that are initially when chat gpt launched you had like 10 new products a day that were appearing for it do you see them now i mean those products themselves or new products coming in they are more focused on optimizing the costs behind it so it would because you can make a tool that uses gpt's or whatever
+
+But once you get 10 ,000 users, the API itself costs too much and it hurts your bottom line. So I'm just going to nuke it and kill it. But they're working on those processes now so it can be more readily available. I think that something will happen also when we're talking about Google. Google is currently having a lawsuit for monopoly practices. And if there was a point in time
+
+Nebojsa (01:43:37.792)
+Yeah.
+
+Nebojsa (01:44:00.076)
+Yeah.
+
+Nenad S (01:44:02.818)
+There were two points in time where Google could be killed off. There was the first time when they used Google Books, when they went to universities and scanned books so they can point to snippets of Google Books for authored pieces that actually had a copyright behind them. That was back in, I think it was 2006 or something. They were like this close to being completely shut down.
+
+And this was actually pointed by the FCC now for monopoly practices. If there was a point in time where Google was near death, this was it. But this is a thing that will probably last for at least two to four years, that whole process of them being judged for it, etc. for monopoly processes.
+
+Dimitris Gkiokas (01:44:53.673)
+Well, let's set up our Bing Webmaster Analytics then because...
+
+Nenad S (01:44:57.302)
+Did you use, did you, so I wanna know, have you used any other search console for SEO work outside Google search console?
+
+Nebojsa (01:44:58.406)
+Hahaha
+
+Dimitris Gkiokas (01:45:09.237)
+being webmaster analytics for like two seconds. No, not really, but like, but you get what I'm saying, much less than Google search console.
+
+Nenad S (01:45:12.298)
+for two seconds. I used Bing, used Yandex and used Baidu. So I'm covered. Yeah, but Bing is actually a good thing to know and to note because we can talk about like Google having like a big monopoly or having biggest market share.
+
+Nebojsa (01:45:17.761)
+Yeah.
+
+Dimitris Gkiokas (01:45:22.847)
+No, I've only I've only used beings
+
+Dimitris Gkiokas (01:45:27.989)
+I've only used Binks.
+
+Nebojsa (01:45:28.959)
+Yeah.
+
+Nenad S (01:45:39.02)
+but you still have a non -neglecting traffic that's coming in from Bing search engine. So if I were to do managed SEO campaigns, I would implement also Bing Webmaster Tools as well with Google Search Console. And Bing has other concepts. Yeah.
+
+Dimitris Gkiokas (01:45:57.707)
+Plus Google does render JavaScript, not perfectly, not always, but the other search engines don't. And it's one of the reasons why I'm so strict with not allowing the search engine to render JavaScript, because even if Google may render and actually index some content, nothing...
+
+Nenad S (01:46:09.206)
+Yeah
+
+Nenad S (01:46:13.452)
+hear me out?
+
+Nenad S (01:46:19.594)
+do it.
+
+Because you're working as a search engine optimizer, it's your search engine agnostic. That's it. Also, thing to note, fun stuff, and I'm gonna wrap it up here. Google is ignoring meta keywords parameter since 2000, I don't know, 2000s, early 2010s, something like that.
+
+Dimitris Gkiokas (01:46:28.437)
+Yeah, exactly.
+
+Dimitris Gkiokas (01:46:43.572)
+Long time ago,
+
+Nenad S (01:46:47.798)
+However, it will ignore, so it doesn't matter if you have it or not, it will completely ignore it. However, if Google Bing sees it as a negative signal, so if you have meta keywords, parameter, it will automatically nuke it and ban you like a negative signal because you're using it as a parameter. So even though the one ignores it, the other one use it as a negative signal, so you need to know all of that stuff if you're...
+
+Nebojsa (01:47:07.18)
+Mm-hmm.
+
+Dimitris Gkiokas (01:47:16.627)
+Interesting.
+
+Nenad S (01:47:17.054)
+If you're, yeah, so keeping it search engine agnostic, if you have that mindset from the start, you will never have to fear about Google dropping. Never.
+
+Nebojsa (01:47:28.576)
+Yeah, my final question is for you Dimitris. This is the question that I ask every guest. What advice would you give to someone just starting in SEO who wants to grow into an expert?
+
+Dimitris Gkiokas (01:47:42.655)
+All right.
+
+Dimitris Gkiokas (01:47:50.113)
+Right, apart from studying, like learning SEO, I would advise them to become as proficient as they can in one tool. Just use one tool and become as proficient as you can. if possible, like if I were to decide for them, I would start my career in an agency. Because agency SEO versus in -house SEO offers breadth over depth.
+
+And in the beginning, it's much more important that you see many different situations, many different websites, many different things, and just pick up something from everyone. I think as a junior, one year in an agency equals three years in an in -house position, right? In -house positions are for expertise and doing some of the unique things you will never do in an agency just because they're so specialized. And if you're into that, that's later in the career. So start in an agency.
+
+Nebojsa (01:48:24.854)
+Right.
+
+Nenad S (01:48:24.866)
+Exactly.
+
+Nenad S (01:48:33.218)
+True. True.
+
+Nenad S (01:48:40.916)
+Exactly.
+
+Dimitris Gkiokas (01:48:48.417)
+get as many like clients and different projects under your belt as you can. yeah, and SEO, another one of the thing, SEO is not.
+
+Nenad S (01:48:53.43)
+understand their processes to be able to challenge them.
+
+Dimitris Gkiokas (01:49:01.309)
+It's not that hard. Like it is, but it's not. It's not system engineering. Okay. It just isn't right. It's just not hard. The processes of SEO are hard. It's tough to make budgets work in SEO. It's tough to get a specific budget and still manage to get results because you want to do everything, but you can't do everything and you have to decide what you do. So prioritization, working under uncertainty.
+
+Nenad S (01:49:08.865)
+Exactly,
+
+Yeah.
+
+Nenad S (01:49:26.036)
+You need to pick.
+
+Dimitris Gkiokas (01:49:30.751)
+These are the hard processes. These are the hard parts with SEO. Focus on those. The actual knowledge, like the specifics, will work. And, and one more advice, since I have it. Don't just study white label, white hat SEO. don't, don't, black hat SEO is gonna be a huge school, even if you never practice it. Like you're gonna learn a ton from what these guys are doing. Learn from them and just.
+
+Nebojsa (01:49:47.116)
+Mm-hmm.
+
+Nebojsa (01:49:54.188)
+Mm-hmm.
+
+Dimitris Gkiokas (01:50:00.053)
+Dig to White, hide SEO for Client. Bye.
+
+Nenad S (01:50:02.434)
+I have Black Hat SEO forum account for like 10 years and it's one of the four accounts I have in Google Authenticator. it's, so I think HFC is the first and the second one is Black Hat SEO forum, not my email, my company email. So that speaks volumes. You don't need to practice it, but you need to understand everything, the ins and outs because
+
+Nebojsa (01:50:02.781)
+Okay.
+
+Dimitris Gkiokas (01:50:24.571)
+Yeah, yeah, no, it makes it it makes sense though. No
+
+Nenad S (01:50:31.298)
+Black Hat is just something that Google hasn't, Google or other search engines have not figured out how yet to handle. So it comes from a good, it doesn't always have to come from a bad place if you do Black Hat or if you investigate Black Hat. It can come from a good place as well. I mean, just take a look a lot of hackers, they are not all working.
+
+Nebojsa (01:50:38.698)
+Yeah.
+
+Dimitris Gkiokas (01:50:40.224)
+Yeah.
+
+Nenad S (01:50:56.54)
+as hackers suggest to hurt someone's bottom line. Sometimes they're working to actually improve someone's bottom line in terms of safety. Yeah, yeah, exactly, exactly. So yeah, do black hat at least to understand it.
+
+Nebojsa (01:51:02.533)
+Yeah.
+
+Dimitris Gkiokas (01:51:03.059)
+Most of them are protectors, are protectors.
+
+Nebojsa (01:51:10.2)
+Cool, guys.
+
+Dimitris Gkiokas (01:51:12.64)
+Yeah.
+
+Nebojsa (01:51:13.005)
+I mean this was a wonderful conversation I mean thank you I know bro like I think that today
+
+Dimitris Gkiokas (01:51:16.296)
+Indeed.
+
+Nenad S (01:51:18.273)
+Yeah.
+
+Nebojsa (01:51:22.223)
+organization brought a lot of value and fresh insights to whoever listens to it. So I want to wrap this up quickly. can then stay on a call after that. Dimitris, first of all, thank you for being a part and helping us with this podcast sessions. I think what you just shared will be very valuable. Also Nena, than you, I mean, with tons of knowledge in the SEO field, I think there is much to learn from you guys.
+
+Nenad S (01:51:27.98)
+Yeah.
+
+Dimitris Gkiokas (01:51:38.965)
+Glad to be here, guys.
+
+Nenad S (01:51:48.898)
+Stop it, I'm blushing.
+
+Nebojsa (01:51:52.177)
+So thank you for tuning in. We hope that today's conversation brought you value. If you enjoyed this episode, please share, subscribe, leave a review or whatever. Stay connected with us and we'll see you in the next episode. Until then, keep pushing the boundaries and making an impact. See you guys.
+
+Dimitris Gkiokas (01:51:58.443)
+He did.
+

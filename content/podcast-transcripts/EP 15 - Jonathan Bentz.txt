@@ -1,0 +1,1596 @@
+Nebojsa (00:00.714)
+Okay, welcome to the Ranking Heroes, the podcast where we sit down with digital marketing experts who are driving real measurable growth for businesses around the world. I'm your host and today we have a truly exceptional guest from Pittsburgh. Imagine building a lead funnel from scratch that generates like 50 % of your company's reoccurring revenue and over a million dollars in new business annually.
+
+or achieving 2000 % traffic growth for a Fortune 500 tech company. These aren't just impressive numbers, they're real world results our guest Jonathan Bentz delivered throughout his nearly two decade career in digital marketing. Today, I'm thrilled to welcome Jonathan, growth specialist at Direct Online Marketing and an SEO consultant, mentor, true professional who's seen it all, from being an employee number four at a startup marketing company to managing
+
+companies and campaigns across agency, corporate, freelance and startup environments. Jonathan has consistently delivered trailblazing results in an industry that's undergone massive transformation in the last few months, especially with the recent AI revolution. In today's episode, we'll dive deep into Jonathan's journey, unpack some strategies behind his most successful campaigns, explore how he's adapting to the new AI driven search and
+
+his hard-won advice for both companies and practitioners looking to excel in SEO. Jonathan, welcome, thanks for joining our podcast.
+
+Bentz (01:35.881)
+Man, thank you for having me. with that introduction, I feel like I need you to like, to be by my side all the time, telling everybody, this is, this is your guy. I'm very humbled by the introduction there. So thank you for that.
+
+Nebojsa (01:54.487)
+No worries, now that we set high expectations for our listeners, let's start by asking you what was your entry point into SEO and digital marketing, like nearly two decades ago, and what did this field look like back then?
+
+Bentz (02:13.47)
+Wow, okay. So my entry into the field, was a student in university. Actually, this is West Virginia University. This is my alma mater right here on my chest. Convenient that I wore this quarter zip today. So at that time I was a journalist. I was doing sports writing for the Associated Press.
+
+I got an email from an agency owner in the Philadelphia market in the States. So this was 2004. And at that time, he offered me an internship. He offered me more money per hour than I had ever been offered by anybody to do anything. And it did.
+
+Nebojsa (03:08.546)
+That felt nice.
+
+Bentz (03:12.212)
+It turns out that the business owner is my uncle. And so it turned out my hourly rate that he offered me was actually at the dinner table. My aunt told him, yeah, you should pay him that much, right? Like that was how involved it was. So he offered me this internship and the...
+
+response at the time or the feedback at the time was here, he gave me a link to seobook.com and he told me, I want you to learn this and who knows, maybe you'll make it a career someday.
+
+Turns out, 20 years later, he was right. So I'm forever indebted to Bob Bents, who now runs the marketing agency, the digital marketing agency, Purple Gator in the Philadelphia area. Because at that time and at that stage of his business, visionary, innovative thinker, and he brought his nephew in to learn the ropes of SEO in 2004.
+
+and he's gotten a lot right in his career. That was also something that he got right, that I was going to make this my career.
+
+Nebojsa (04:38.142)
+I want that guy to tell me my future. He'll be right.
+
+Bentz (04:41.525)
+Once this podcast airs, I'll send it to him and I'll introduce you to him. And certainly, if he has predictions for you, I'm sure he'll share them.
+
+Nebojsa (04:55.118)
+Thanks man, thanks man. Cool, that's very interesting and I like how that like went like he said something and now 20 years later he must have been like he's probably very proud of you and what you become. So yeah.
+
+Bentz (05:10.393)
+I, it, he and I still cross paths from time to time and collaborate on things. certainly, certainly in my career, he's been, he's been a valuable mentor.
+
+Nebojsa (05:18.52)
+Mm-hmm.
+
+Nebojsa (05:26.208)
+Yeah, yeah, that's very good. I mean, it really helps you shape and like when you know the direction you want to steer on and you want to stick to that plan, it really helps you because like...
+
+People usually need to test and fail before they succeed, but now when you have someone who can just push you, give you a slight push in your back and tell you this is the direction you need to go to or would be the best path for you, that really helps you and it also saves a lot of stress that you would go through.
+
+Bentz (05:59.518)
+What one 100 % yeah, I mean certainly this line of work that we're in Is not without its stress. You will notice how you will notice the color of my beard and you will notice the amount of hair I have on my head and Certainly, yes, there there have been stresses throughout my professional career setbacks failures things of that nature, but
+
+Nebojsa (06:08.173)
+Yeah.
+
+Nebojsa (06:11.854)
+you
+
+Bentz (06:28.691)
+to me, all of those that you can have that mindset of, man, I screwed up, I failed, or you can take those as lessons and make sure that you don't repeat them, but get better along the way the entire time. And that's kind of the mentality that I've had through most of my career.
+
+Nebojsa (06:50.56)
+And you mentioned the game has changed dramatically over your career. What's been the biggest shift you witnessed?
+
+Bentz (06:55.038)
+Absolutely.
+
+Bentz (07:01.077)
+The size of the boulder for SEO, speaking specifically about SEO, the size of the boulder that all of us need to push up the hill has gotten so much larger, especially for companies that haven't started yet. And so,
+
+In 2004, one of the things that was really attractive for me as a to learn this practice, one was just that at that time, the general transition into digital. But in addition to that, the other thing that was really attractive, I believe for me as a job candidate was my background in journalism. So.
+
+Nebojsa (07:57.678)
+Yeah.
+
+Bentz (07:58.836)
+And at that time, you really, if you had a competent writer producing content for you, blogs and, blogs and e-zines, that actually was a term in the early 2000s, but there were so many web properties that would just repurpose your content, just take it and straight republish it, not even make, you know, make additions or updates to it.
+
+and include your backlink that you could produce something of high value, put it out on websites to get distribution, and the distribution would take care of itself and your rankings, you would be rewarded with those rankings. Today, the level of sophistication and the, there are so many, the algorithms have become so diverse that you can't just do one thing really well.
+
+Nebojsa (08:43.436)
+Yeah.
+
+Bentz (08:58.741)
+You have to do almost all of the things really well. And the turnaround time, if you haven't done a campaign, the turnaround time to get results, unless you're in a very niche market, that turnaround time, it really is an investment strategy where earlier in my career, you still had delayed returns, but-
+
+the turnaround time on those returns was a lot sooner and the effort required was not as great. And so that to me, that's probably the biggest change that I've seen outside of this wild, wild West revolution that we're all living in since November, you know, since November, 2022 when chat GPT got released to the public. Yeah, outside of that.
+
+Nebojsa (09:44.876)
+Yeah, yeah, exactly.
+
+Yeah.
+
+Bentz (09:57.492)
+Yeah, I think that's probably been the biggest sea change over the last two decades is just that that degree of difficulty if you haven't started or haven't had some success and then plateaued. Yeah, just that turnaround time on results and performance has just gotten so much longer and the lift required is so much heavier.
+
+Nebojsa (10:24.396)
+Yeah, you said, now that you said in November, TraGPT was published, it seems like it was, it happened like a decade ago. That's how this AI evolving. I mean, you really lose a track of time. It seems like, like, would you say that the first LLM was accessible like two years ago? It looks like it was five, I don't know.
+
+Bentz (10:46.613)
+Yeah, well, yeah, I think it was, I vaguely remember it was either, if my memory is right, was either October 22 or November 22 that we first had the opportunity to kind of get our hands on it, public, in public. I even remember one, I even remember one evening where I have three children.
+
+Nebojsa (10:59.135)
+Yeah.
+
+Nebojsa (11:05.132)
+Yeah, yeah, yeah, yeah.
+
+Bentz (11:16.641)
+and my wife and two of our kids were off at an event or doing something. And so I was home with my youngest son and I remember sitting down with him just being, you know, just being mesmerized by the fact that there was this machine that would type back to me in conversational language and give me answers on anything I asked it. It wasn't always right.
+
+Nebojsa (11:17.294)
+Mm-hmm.
+
+Nebojsa (11:23.896)
+Mm-hmm.
+
+Bentz (11:47.328)
+but it would give answers to questions that it would just, you know, just casually give you an automated answer response that read and sounded like a human. And now thinking about how we're all kind of using it to some degree as a co-pilot or as a companion app to producing the work that we do and
+
+Nebojsa (11:47.438)
+Mm-hmm.
+
+Nebojsa (12:00.525)
+Mm-hmm.
+
+Nebojsa (12:16.856)
+Yeah.
+
+Bentz (12:16.885)
+And really, we're three years into, like, big picture, we're three years into this. thinking about, and thinking about where we're at now and ultimately where the potential could be. Yeah, it's just, it's an exciting thing to think about.
+
+Nebojsa (12:23.397)
+That's crazy, man.
+
+Nebojsa (12:36.972)
+Yeah, it is, is. mean, especially in the SEO now when it became quite popular in the SEO industry, like people are really like making assumptions. They want to like include all that. I've seen a lot of websites that have listed Geo as a service already, which is like weird because nobody has the exact details how it works, but we will see that. Yeah. the, go, go,
+
+Bentz (12:55.381)
+Sure, sure.
+
+Bentz (13:01.013)
+Yeah. Yeah. Well, no, I apologize. I apologize for interrupting you there because we are the agency that I, the agency that I represent, Direct Online Marketing. actually, we are one of those agencies that has a service page for generative engine optimization. So that's at least, that's the term that we're using for it. I akin the, is it AEO? Is it GEO? Is it...
+
+Nebojsa (13:08.968)
+No worries.
+
+Nebojsa (13:15.267)
+Mm-hmm.
+
+Nebojsa (13:19.982)
+Mm-hmm.
+
+Nebojsa (13:23.79)
+Mm-hmm.
+
+Bentz (13:29.775)
+LLMSCO, what, what, ultimately what term are we going to call it? If you can remember back to a point in time where we not only had Blu-ray physical digital, physical media, but there was also a version of it called HD DVD. And then eventually HD DVD just kind of, just kind of went by the wayside and now everything was Blu-ray.
+
+Nebojsa (13:44.205)
+Mm-hmm
+
+Nebojsa (13:49.324)
+Mm-hmm. Mm-hmm. Yeah.
+
+Nebojsa (13:56.142)
+Swamp, to that.
+
+Bentz (14:00.062)
+In terms of that naming convention that we're positioning for with this, that's kind of how I see this playing out, is which acronym in our industry ultimately is going to be the mainstay. I don't know that anybody knows that with clarity yet.
+
+Nebojsa (14:00.193)
+Yeah.
+
+Nebojsa (14:05.261)
+Mm-hmm.
+
+Nebojsa (14:18.967)
+Mm-hmm.
+
+Yeah, but it makes sense. It makes sense now that you're saying that. I mean, how else are you going to find it? What works? What not? If you're not just going to test it on the real websites. So from that perspective, it really makes sense to have at least those clients that really want to try it and to serve you as a test because you can't do anything wrong. The only thing you can do, like either you're not going to have the results or you're going to achieve some results.
+
+Bentz (14:22.068)
+Yeah!
+
+Bentz (14:32.763)
+Right, right.
+
+Bentz (14:48.809)
+Yeah.
+
+Nebojsa (14:50.105)
+So then it makes sense and thanks for clarifying that.
+
+Bentz (14:53.235)
+Yeah, and I think, you know, at least from what we're seeing with some of, there are clients that we're serving with a generative engine optimization service. And you're right, a little bit, it's, there's, are clients who have the appetite for being on the, being on the cutting edge and, and experimenting with things, right? That's always helpful with the search engine optimization service anyway, or any kind of digital marketing service.
+
+Nebojsa (15:14.924)
+Yeah.
+
+Nebojsa (15:18.955)
+exact.
+
+Bentz (15:21.417)
+You wanna be open to experimenting and trying new things. With these clients in particular though, because they have some type of tracking set up where they can see source attribution, whether it's HubSpot, Google Analytics, any other marketing attribution platform. When you start seeing the...
+
+Nebojsa (15:39.116)
+Mm-hmm.
+
+Bentz (15:50.536)
+If you can see a lead or a conversion on your website and see it all the way through and then be able to attribute it back to the large language models, that starts to make life easier for people to understand its impact. And what we've seen so far, just early results, and we're experiencing this on our website with a...
+
+opportunities being created through our own website. are using the opportunities that come in through large language models are versed already. They're highly qualified and they're high intent. And so you don't have to...
+
+Nebojsa (16:45.239)
+Yeah.
+
+Bentz (16:50.943)
+compete quite as hard to get them into engaging with one of your solutions. So if that works for us in the B2B professional services industry, that should also then extrapolate out to anything in business to business, software companies or manufacturers, anything like that, there are so many use cases where
+
+Nebojsa (17:00.685)
+Mmm.
+
+Bentz (17:20.425)
+the large language models, are they experimental? Yes. Is there any agency with 100 % confidence that knows exactly what the playbook is going to be on a quarter to quarter basis? No. But the opportunity is there for great leads, great opportunities, and you almost have that opportunity with large language models to get in on the ground floor and do it well now.
+
+Nebojsa (17:32.364)
+Mm-hmm.
+
+Nebojsa (17:38.733)
+Mm-hmm.
+
+Nebojsa (17:50.604)
+Mm-hmm.
+
+Bentz (17:51.858)
+like companies who were disruptive 20 plus years ago doing traditional SEO, that they got the benefits from that. And so as we're talking to companies who are considering this for 2026, or they're considering maybe trying to get something started now, that I think really is the, that's what companies are going to have to weigh.
+
+Nebojsa (17:57.421)
+Mm-hmm.
+
+Bentz (18:18.471)
+as they're evaluating whether or not they want to step into a speculative generative engine optimization service and what is that?
+
+Nebojsa (18:28.557)
+Make sense, make sense. So you would say that the user intent from the people coming to your website through LLM is most likely transactional like all the time because what I think it doesn't make sense to capture those like top of the funnel keywords because Google AI overview is already eating them all because they are getting replies to all the TOEFL content, you know, so now all the Bafoo content
+
+Bentz (18:56.553)
+Mm-hmm.
+
+Nebojsa (18:58.511)
+it needs to be let's say optimized for LLM. So the user intent is like transactional or commercial and those are the high quality leads that will visit your website through the LLM.
+
+Bentz (19:10.741)
+Yeah, and I mean, you I've always been of the mindset that that is how a good, especially in the B2B space, that's how a good SEO campaign should be run and should be anchored. That's my personal opinion. And I've had disagreements before with companies because of that. I haven't always been on the same page with, depending on the person's job role.
+
+Nebojsa (19:25.622)
+Yeah.
+
+Bentz (19:39.658)
+that we're working with, sometimes they'll be more interested in writing that, what is, one example here, but what is link building? I've had foundational strategic disagreements with our points of contact at companies before because they've wanted to generate foundational long form.
+
+you know, definition, top of funnel content on their topics and thought that was the best path forward for an SEO campaign when at the same time they were telling, they were frustrated about lack of leads coming in and they were getting feedback on that. And my mentality all the time has been, what do you want? Do you want visibility or do you want performance? If you want performance,
+
+Nebojsa (20:13.77)
+Mm-hmm.
+
+Nebojsa (20:29.516)
+Yeah.
+
+Bentz (20:38.259)
+We're gonna structure your campaign this way. If you want just general visibility and you want a lot of traffic and you wanna like fill up awareness, you can go after that.
+
+Nebojsa (20:47.852)
+Mmm, go exactly. I mean I agree with you 100 % you're 100 % right like I mean like 20 visitors visiting your landing service page will generate conversions and revenue than like 500-1000 people visiting like educational content from your blog. So yeah, makes sense, makes sense.
+
+Bentz (20:52.147)
+Yeah.
+
+Bentz (21:04.468)
+Yes.
+
+Bentz (21:08.115)
+Yeah, well, you know, when we were, when several years ago, right, pre-October 2022, you would have been able to comfortably say that, we still want traffic. What we started seeing once Gemini was getting, once AI overviews came into play, once Google really got into the
+
+Nebojsa (21:18.902)
+Mm-hmm.
+
+Bentz (21:38.229)
+large language model space on the public side of things, you instantly started seeing informational content.
+
+Nebojsa (21:47.18)
+Impressions remaining the same but clicks going down
+
+Bentz (21:50.398)
+Yes. so, and it wasn't, it was in companies that had made their, made their, you know, made their presence known by just having an article out on every single topic that related to their industry. It was a great strategy, but it didn't resonate when, when they found, once we found people.
+
+Nebojsa (22:06.699)
+Yeah.
+
+Nebojsa (22:11.264)
+Yeah.
+
+Bentz (22:18.537)
+blindly trusting the AI overview answers the same way they trusted position zero, the featured snippets at position zero, the same way they trusted the rankings. Like no matter what Google stacks on top in that number one position, just becomes the new accepted thing. And so they were losing traffic even though their pipeline and their business outcomes weren't
+
+Nebojsa (22:27.254)
+Yeah.
+
+Nebojsa (22:36.744)
+Yeah.
+
+Bentz (22:46.953)
+So your traffic chart looked like, sorry, I'm in a window, but like your traffic chart might've looked like this going down, but your performance numbers were kind of like flat or maybe even growing. And like, how do you explain that? Right? Because, so it's with some campaigns, it's taken a while to kind of...
+
+Nebojsa (23:00.106)
+Yeah.
+
+Nebojsa (23:04.044)
+Yeah, that's crazy.
+
+Bentz (23:13.481)
+The light was always kind of poking through the holes in the performance, but it wasn't a full ray of light. And now we're at a point, I think all of us now are at a point where the light is shining right in people's faces. And you need for your strategies, it's something that I've been standing on my soapbox and preaching about for the majority of my career. And now...
+
+It's really amplified. out, companies need to figure out what their core pages are and double down on those. And let's drive results from those instead of worrying so much about having the best informational article because ultimately anything in that informational article is just going to be paraphrased and repurposed by large language model. Yeah. Yeah.
+
+Nebojsa (24:01.941)
+Yeah.
+
+Nebojsa (24:08.127)
+Yeah, exactly. Exactly, exactly. Yeah, completely agree. So I wanna like circle back on your uncle when he tell you like, hey, you should like read that book for SEO. So like...
+
+Bentz (24:20.798)
+Yeah.
+
+Nebojsa (24:22.641)
+I know that you came across all the other digital marketing channels. So I want to ask you what drew you to focus specifically on SEO driven growth? Like why did you like SEO more than other marketing channels? I mean, it's so crazy what happens with SEO, a lot of changes, a lot of things like you should just do PPC instead. Why did you choose SEO?
+
+Bentz (24:42.719)
+Sure!
+
+Bentz (24:49.112)
+Well, okay, so let's go back into the time machine and go back to 2004.
+
+Nebojsa (24:58.997)
+Don't tell me you didn't want to disappoint your uncle?
+
+Bentz (25:02.357)
+Well, yeah, I mean, of course, of course you didn't, right? Somebody believes in you, somebody invests in you, and certainly you want to work hard and at least that's my mentality. I wanna work hard for that person who's putting their faith in me and putting their trust in me to do something and produce my best work, right? Certainly that's the case. Maybe not for everybody, but it is for me. The, but,
+
+Nebojsa (25:10.933)
+Yeah.
+
+Nebojsa (25:29.789)
+Yeah, and that's very good.
+
+Bentz (25:31.963)
+In 2004.
+
+Bentz (25:36.805)
+You could... You could manage... Exact match keywords in Google Ads.
+
+and literally go through manually on a day-by-day basis and say, I only want to bid one cent on Led Zeppelin ringtones, but ringtones are really expensive, so we're gonna manually, just manually boost up that exact match keyword to $1.50. Now.
+
+Nebojsa (26:09.836)
+Okay
+
+Bentz (26:10.319)
+I did that, that was as an intern, right? Sometimes you get the tasks that nobody wants to do. So I had experience with SEO and had gotten a taste of what those tasks look like and what the outcome was. And then I had also gotten a taste of having to manually manage Google ads on a keyword by keyword basis and are all of these as cheap as possible? So just putting those two.
+
+up alongside one another, why would I just want to manage dashboards every day? and with my background in writing, that gave me a little bit of an unfair advantage and lean towards something that was more catered to content creators and writers. So that turned me and then...
+
+Nebojsa (26:44.182)
+Yeah.
+
+Nebojsa (26:49.164)
+Yeah, exactly.
+
+Bentz (27:09.395)
+You've probably been there. I'm sure a lot of people listening to this podcast have been here as well. The first time that you pull a ranking for a keyword that matters, you're hooked. You are hooked. So, or the first time you experience, you see in metrics, you see any kind of virality for something that you've done, whether it's a traffic boost or...
+
+Nebojsa (27:24.596)
+Yeah. Yeah.
+
+Bentz (27:37.203)
+a site, like a link where a website or an organization that you hold in high regard sites work that you've done?
+
+Right, and so that dopamine hit, right, a lot of people get dopamine hits from likes on Instagram. That's not me. For me, it was that dopamine hit of I took a couple hours to produce this thing and this reputable organization decided to cite my work and include it in their newsletter. okay, now that's getting traffic. Or, okay, now I'm ranking if
+
+Nebojsa (27:49.131)
+Yeah.
+
+Nebojsa (27:56.662)
+Yeah.
+
+Bentz (28:17.777)
+you Google this keyword phrase that the boss was really concerned about having coverage for. And now this piece that I created from nothing is the piece that's driving that outcome. That was the dopamine hit for me where I was like, like I, right, I did this. Nobody else at the company did this. I'm hooked. And so for me, that was the moment where
+
+Nebojsa (28:32.361)
+Yeah.
+
+Nebojsa (28:39.955)
+You
+
+Bentz (28:47.697)
+I was in on SEO as the option for me. Now, to your point, yeah, I've been an email marketing manager, I've been a website manager, I've certainly managed advertising campaigns across a lot of the different platforms, but the thing that always comes back for me is that trust that people put in the organic stuff in Google and now the organic, the,
+
+Nebojsa (28:53.919)
+Yeah.
+
+Bentz (29:16.219)
+organic recommendations from large language models as we're looking forward and wanting to be that trusted, I want to be wanting to be that trusted resource or produce that trusted resource that people naturally put their trust in.
+
+Nebojsa (29:18.9)
+Mm-hmm.
+
+Bentz (29:38.067)
+That, that I think is probably what motivates me. Thank you for the therapy couch this afternoon. I appreciate it.
+
+Nebojsa (29:39.05)
+Yeah.
+
+Nebojsa (29:45.388)
+That's crazy like when you said like when you started the ranking number one for a very important keyword that dopamine hit I just Remembered my my son trying tasting the ice cream for the first time. That's the same feeling like you are hooked up Yeah That's it. That's it
+
+Bentz (30:03.157)
+Right. Right. Yeah, you're on with the right. Like that's that's that's a that's a special feeling. Right. The and you can I mean, you can think about it at all different at all different levels. The first time that the first time that you got called out and you weren't expecting it from on social media, there's a there's a feeling that comes along with that. And so there's just there's those
+
+Nebojsa (30:13.363)
+Yeah.
+
+Nebojsa (30:17.78)
+Yeah.
+
+Nebojsa (30:27.593)
+Yeah, that's so...f, man.
+
+Bentz (30:32.341)
+If I'm really kind of thinking back on it, that probably was what drew me to SEO in 2004 and kept me going in SEO through 2005, 2006, then, you know, keeping it that and it was something that nobody else knew a lot about in 2004, at least in my circles. And so I came back from that internship, went back to university and it was like,
+
+Nebojsa (30:47.147)
+Yeah.
+
+Nebojsa (30:53.247)
+Yeah.
+
+Bentz (31:03.221)
+I had learned this thing that none of my other schoolmates knew about. And so I knew I had that hirable, like I had that X factor in 2004 that all of my other, some of my classmates will have better grades, some of my classmates will have a better network, some of my classmates will naturally have more accolades than I
+
+Nebojsa (31:11.295)
+Yeah.
+
+Nebojsa (31:19.179)
+Mm-hmm.
+
+Nebojsa (31:32.49)
+Yeah.
+
+Bentz (31:33.098)
+But I had this thing that they didn't know anything about and I knew it was going to be, that was at the early stage of the digital wave. And so I was kind of like, this is my ticket. And I had found that. So yeah, so it's that dopamine hit of success, But then however you evaluate that, but then in addition, having that X factor I think is what really drew me to.
+
+Nebojsa (31:43.945)
+Yeah, yeah.
+
+Nebojsa (31:48.319)
+Whoa man, that's amazing.
+
+Bentz (32:00.586)
+to SEO and then once you're in the system, if you're good at it, then you're going to stay relevant and stay in demand.
+
+Nebojsa (32:00.991)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (32:12.395)
+Yeah, yeah, I agree, I agree. And you were young, you were studying then, and I don't know how you even managed to sit down there and be there for exams and everything when you had that thing going on in your head, like SEO, marketing, and your colleagues were like, what's this guy telling you? Like, what's CGO? What is this? They couldn't even spell it out. That's crazy, that's crazy.
+
+Bentz (32:36.819)
+Right. Right. Right. Yeah, it was, it was, was, it was, I mean, and there are still people, there are still people today that when we tell them what we do in our career, right, I'm speaking to practitioners, we're speaking, it's us speaking to us, but there's still when we, I'm sure there are still people when we identify what we do that, you know.
+
+Nebojsa (32:41.663)
+But I can see the motivation.
+
+Nebojsa (32:58.069)
+Yeah.
+
+Bentz (33:06.303)
+kind of look at it like, what's that? yeah, right, right, you right? Are you IT? Are you a website developer? Not really. you know, do I have, can I do some of those things? Absolutely. But no, our core competency still sometimes gets, does still kind of get that head turn and that like confused look and.
+
+Nebojsa (33:10.389)
+Programming, IT, yes.
+
+Nebojsa (33:15.421)
+Yeah, that's everybody.
+
+you
+
+Bentz (33:36.063)
+We end up having to be able to explain it like our friends, family, loved ones are five, because that's the easiest way to make it relevant to them.
+
+Nebojsa (33:53.099)
+Yeah, I agree. I agree. And I say when they ask me, how would you describe SEO? Like I'm having a business, I don't know anything about it. And I say running a business without SEO is like running it but without telling anyone. That's how I phrase it so they can understand it properly. Yeah.
+
+Bentz (34:14.025)
+Hmm.
+
+That's really good. And most people have now either been on their phones or been on a laptop, desktop, whatever, long enough to see the sponsored listings against the traditional listings. so that analogy for, how when you go onto Google and Google something and then start scrolling through the ads, you know that list of 10 links? Did you know that
+
+Nebojsa (34:28.714)
+Mm-hmm.
+
+Nebojsa (34:32.872)
+Yeah. So it.
+
+Nebojsa (34:44.276)
+Mm-hmm.
+
+Bentz (34:47.113)
+those can be influenced and like, know, right? And then they're like, no, I didn't know that. And then you show them, like you can show them kind of in 60 seconds, they wrote on this page that you clicked on, they wrote things a certain way so that they would be recommended ahead of everybody else. Yeah, and then it's, you know, then you've kind of, you've shown them with something that's tangible to them.
+
+Nebojsa (34:49.626)
+Ha ha ha.
+
+Nebojsa (35:06.782)
+Yeah.
+
+Nebojsa (35:15.71)
+Yeah, makes sense, makes sense. Cool, so I would move and ask you about the 500 act firm. I would like to hear like you achieved huge growth and you drove 1 million annual sales pipeline. like.
+
+Bentz (35:26.091)
+Nebojsa (35:31.186)
+I know probably you have some NDA or something but can you walk us through some parts of that campaign and like maybe add some just explain us what you did how the process would like like you can start from the goals that you wanted to achieve and then like give us some more details
+
+Bentz (35:37.779)
+Absolutely.
+
+Bentz (35:47.263)
+Sure.
+
+So yeah, for the, we're, and we're going, we're going back in, there are some principles that are always going to carry forward, but I've now been with direct online marketing, fortunate enough to be here, 10 year, it will be 10 years in March. So this case study, love talking about it, but this case study is aged a little bit. So I'll explain what we did and how it,
+
+Nebojsa (35:58.313)
+Mm-hmm.
+
+Bentz (36:18.697)
+how it worked and try to keep that focused on stuff that any business at any stage could take and apply to their marketing campaigns even in 2025, 2026. Yeah.
+
+Nebojsa (36:32.82)
+That would be my follow up question. I just wanted to ask you, do you think the same strategy would work now? But you just gave me an answer. Yeah, shoot please.
+
+Bentz (36:40.149)
+I do think it would. And one of the reasons that I think it would work, I went about it differently because there were different tools available in 2013, 14, 15, but the principles will continue to carry over. So when I went, that was an in-house role, and when I went into that in-house role, there were,
+
+Nebojsa (36:44.531)
+Yeah.
+
+Bentz (37:10.153)
+The website was the equivalent of a digital brochure. That company at that time was doing sponsorships with local athletic teams. They were doing a lot of partner referrals. Some things that a lot of IT managed services, technology service providers do to scale their business in the real
+
+and scale awareness in the real world. When I came in and took a look at things from a digital perspective, the website was a, like I said, a glorified brochure. A lot of information, not really well positioned, inconsistent throughout the website, almost no blog activity. And when I came in and started taking a look at things, as I was doing...
+
+keyword research and that's really where it started, right? Any SEO campaign naturally starts with keyword research. So when I did keyword research, instead of just taking the list of the most popular terms from the most frequently searched to the least frequently searched and then prioritizing based on that,
+
+Nebojsa (38:16.02)
+Mm-hmm.
+
+Nebojsa (38:32.17)
+Mm-hmm.
+
+Bentz (38:33.381)
+I took the cost per click data and multiplied that against the search volume. And then with that dollar amount calculation, I reorganized the keyword list. When I did that, trends started emerging for keywords that were competitive from an advertising perspective. And the logic that I applied to that was
+
+Nebojsa (38:38.077)
+Okay.
+
+Nebojsa (38:41.816)
+Mm-hmm, okay.
+
+Nebojsa (38:47.562)
+you
+
+Bentz (39:01.777)
+if a keyword is expensive for advertisers to bid on, and it's got some good search volume, that's probably a more lucrative keyword for my business to chase than the most frequently searched term. So, yeah. So, and so when I reorganized my keyword report that way, and there are tools out there today that will do that.
+
+Nebojsa (39:20.724)
+Makes sense.
+
+Bentz (39:31.136)
+Keywords Everywhere is a tool that will kind of just as a default, it will do that for you. We didn't have that in 2015. You could get all the data, but you had to do some manual read adjustment of your deck. So one of the biggest trends that I took out of that as I was reviewing it is that for some of our services, because it was a more commoditized technology service,
+
+Nebojsa (39:35.082)
+Mm-hmm.
+
+Bentz (39:58.09)
+There was a lot of search volume around pricing, comparison, what was the, were, but there were high intent keywords like that. What we call today, do keywords, you know, commercial transactional intent, depending on, middle of the funnel to bottom of the funnel type keyword terms.
+
+Nebojsa (40:15.858)
+Mm-hmm.
+
+Nebojsa (40:22.973)
+Yeah.
+
+Bentz (40:27.965)
+And so I started optimizing our website and building pages out that catered to the middle of the funnel and the bottom of the funnel. And I started there instead of starting with, you know, a what is article page. And so, you know, so for us, that was for us with SEO, that was foundational. And then the other thing too, we had the benefit of
+
+Nebojsa (40:47.793)
+Yeah. Yeah.
+
+Bentz (40:57.973)
+being in a location that was attractive for the type of services that we provided. And so I looked at local and I looked at high intent and steered our strategies towards that as opposed to just pulling the keyword list up and starting at the top and then working through the bottom with a content plan. Yeah. And so that really, were other...
+
+Nebojsa (41:21.353)
+Very nice.
+
+Bentz (41:26.673)
+strategies and tactics that really helped drive leads, but what turned opportunities around inside my first 30 days, what turned enterprise leads into our, brought enterprise leads into our pipeline in the first 90 days. That shift happened because of owning our local market and owning lower surge volume, but
+
+incredibly high, impactful intent keyword terms instead of, you know, trying to fight for the top of the mountain for an ego keyword.
+
+Nebojsa (42:08.351)
+Yeah.
+
+take like it would be a higher investment it would take much longer for the results to come in this was like the safe play and the most I say optimized solution for the clients business and I want to ask you did you show the clients since you were doing that keyword prioritization but based on the search frequency plus how much it costs per click in Google Ads did you show them how much money their business is gonna save by ranking for these keywords organic
+
+clear.
+
+Bentz (42:39.613)
+Yeah, and that's the justification and the logic behind kind of ranking your keywords that way. I'm not the innovator of looking at keywords that way, but certainly taking it when that strategy was revealed to me. I'll give a quick shout out here to Nick Eubanks, because I believe he was the one that I first saw kind of document.
+
+Nebojsa (42:44.55)
+Yeah. Yeah.
+
+Bentz (43:08.287)
+here's how we should think about our keywords. And when he mentioned that, it resonated with me, and then I started trying it. So, shout out to him if he happens to stumble across this on the internet. But yeah, I did show that to them, but that was the conversation point, right? We could advertise for these terms.
+
+but look at how much you would actually have to spend to capture market share or potentially have to invest. Does that financially make sense for you? And I knew already the answer was no. So that then helped, that really helped restack the deck and it also helped me prioritize not just for myself, but for leadership. Here's the why. Like here's why we're going after this term that's lower volume.
+
+Nebojsa (43:42.366)
+Mm-hmm.
+
+Nebojsa (43:49.716)
+Yeah.
+
+Nebojsa (44:01.757)
+Mm-hmm.
+
+Bentz (44:07.635)
+Right, this term might only get searched for 700 times a month versus the head term that searched for 4,400. But why are we doing that? Because our competitors are willing to pay $20 a click for this term and they're willing to pay a dollar a click for the other ones. There's fire here, there's smoke here, there's, you know, like we're gonna be fighting an uphill battle for months and months on end to try to get here for this head term.
+
+Nebojsa (44:25.811)
+Yeah.
+
+Nebojsa (44:35.805)
+That's a great tactic. I really like it. I think it's something that I will also follow like in the future when I'm doing keyword research. mean, I will definitely pass this to my team because it makes sense. So thanks for sharing that. It's very useful advice to everyone doing SEO. And I want to like ask you about the data. How do you use data analytics to inform your SEO and growth strategies and what metrics matter most to you?
+
+Bentz (44:48.872)
+Appreciate it,
+
+Bentz (45:06.037)
+Awesome question. The metric that matters the most to me is key event and original source. Those are the two metrics that matter the most. Absolutely, absolutely. So if your data team or whoever's managing your analytics has your important key events, whatever key events matter the most to you, if they have those tagged,
+
+Nebojsa (45:08.403)
+Yeah.
+
+Nebojsa (45:20.443)
+Can you elaborate?
+
+Bentz (45:36.116)
+and set up correctly, then you should never know, you should never be outside of the loop or be unclear on which pages drive the actions, which pages start the actions that you want people to take. In HubSpot, they call it the first page scene report. In GA4, it's the landing pages report. think that's still what it's called.
+
+Please don't check me on that. But, you know, and then when you add in, so which channel are you getting the best performance out of? In a lot of cases for our clients, it's organic search, or maybe it's diversified today to direct traffic, right? Because people are doing searches on so many different platforms and they're seeing different, so what ends up happening is...
+
+Nebojsa (46:07.1)
+I know.
+
+Bentz (46:31.753)
+Somebody gets influenced to just go directly to a site and then reach out that way. So if you can get that, if you can see by source for that key event that you want, what's driving it. And you know from the landing page report, or you know from your CRM tool if it's tracking first page scene, you then know that.
+
+you should be able to see which pages are your most valuable, the term I'll use for it is digital front doors. You now know which pages are your most important digital front doors. From there, you can then tailor an experience to get them to do the action that you want. So first page scene, landing page, and key event.
+
+Nebojsa (47:12.178)
+Mm-hmm.
+
+Nebojsa (47:25.001)
+Yeah.
+
+Bentz (47:28.883)
+If you have all of those set up, you probably, have the beginning and you have the end. And then all you're doing is just figuring out the, it's messy, right? It's a muddy middle, but you're figuring out the middle to get them from A to B. And that makes life, that for me at least a lot of times, that makes life easier.
+
+Nebojsa (47:35.955)
+Yeah.
+
+Nebojsa (47:47.635)
+So easy.
+
+Yeah, like imagine having a puzzle and you have someone who started puzzling like resolving at the beginning and the end is also resolved. It's much easier to like get into the middle and you know fill out the gaps. So it makes completely sense.
+
+Bentz (48:04.637)
+Yeah, yeah, and my favorite, really like, depending on how aligned your sales and marketing is, what really gets valuable is when you know who customers are. So if you have a good CRM and good data in your CRM, then...
+
+and you can see the first page seen, and you can see that they converted and which channel, and did they turn into a conversion, a sale, they bought something on your website, whatever grail you have for your site. If you can figure that out, and you have that kind of feedback, that feedback loop coming in, now you can look at what that ideal path actually was. You can look at page two and page three.
+
+Nebojsa (48:57.766)
+Mm-hmm.
+
+Bentz (48:59.613)
+and page four that naturally resulted in them reaching out. And so for me, a lot of times the path becomes more predictable if you know all that stuff on the end. So if you know all that stuff on the end, then you can look at the trends. What trends can you pull from this handful of your traffic population that did everything that you wanted them to do? Okay, now.
+
+Nebojsa (49:00.776)
+Yeah.
+
+Nebojsa (49:15.208)
+Mm-hmm.
+
+Bentz (49:26.865)
+let's go back and re-navigate the user experience so that we can take them from point A where we know they're going to come in. We want them to get to point B. Now A1 is here and A2 is here and A3 is here. Now we got them to B. And just try to streamline that process as much as possible. And it's not, it's not you guessing. It's your own customers, like the experience and the data from your own customers. They chose their adventure.
+
+Nebojsa (49:49.64)
+Yeah.
+
+Nebojsa (49:54.31)
+Mm-hmm. Mm-hmm. Mm-hmm.
+
+Bentz (49:56.83)
+and did, they completed the mission. So, just set it up for more people starting the mission to follow their path.
+
+Nebojsa (49:59.581)
+Yeah.
+
+Nebojsa (50:06.512)
+Yeah, I agree, and I see a big correlation here between marketing and sales. You should really know your audience, know your ICPs, their pain points, follow their journey, optimize. I mean, everybody should do that. However, I've seen a lot of businesses that...
+
+Bentz (50:12.788)
+Yes.
+
+Nebojsa (50:25.68)
+don't care about like setting up the events and the goal tracking things like that. I've seen I've seen businesses that are using custom dashboards where they just see the revenue and the number of orders but they don't see channels like is it they come from organic or from paid and then they want like to do SEO and to track conversions but how can I do it without setting up everything in analytics that's the first thing that you should do but yeah sadly
+
+Bentz (50:29.78)
+right.
+
+Bentz (50:43.188)
+Yeah.
+
+Bentz (50:54.451)
+Yeah, unfortunately that is true. ultimately, what makes that challenging is when they want to hold you accountable to results. And so, how are you going to, if you're not going to invest time and materials to be able to make that happen,
+
+Nebojsa (50:55.836)
+are not doing it.
+
+Nebojsa (51:10.92)
+Yeah
+
+Bentz (51:24.335)
+or you're not going to invest in the, make the investment in the company that you're bringing alongside you for support to get that reporting right so that you can actually be, you can have good data, then you're kind of, setting, you're setting your, that relationship up to fail. No matter, no matter how much you invested in the service,
+
+If it's not set up to be data-driven and actionable for you, you're ultimately setting your consultant, vendor, service provider, whatever term you want to use for it, you're setting them up to not perform at their best for you. They could do better for you. Part of the way that they could be better for you is by you giving them the tools that they need in order to perform at their best level.
+
+Nebojsa (51:59.145)
+Hmm.
+
+Nebojsa (52:12.103)
+Yeah.
+
+Nebojsa (52:24.642)
+I agree and I think that every SEO strategy should be aligned with the business goals ultimately and like how can you contribute if you don't have a support and I'm it's kind of I think it's stupid the word that I will use but how can you as a founder hire an agency to help you grow your business online without like giving them any details who your customers are what are your goals how do you want to distribute the budget
+
+Bentz (52:30.824)
+Absolutely.
+
+Bentz (52:51.881)
+Mm-hmm.
+
+Nebojsa (52:54.626)
+where your audience can be found, what are you doing or have you done any marketing channel before? You know people just do that. So I want to dive the... Yeah, yeah, shoot, shoot.
+
+Bentz (53:01.589)
+Yeah.
+
+Well, no, go ahead. I was just gonna say sometimes that isn't defined, right? In some cases that isn't defined. I do think though that maturity, having some level of maturity in your performance tracking really sets you up for success and sets your...
+
+Nebojsa (53:13.286)
+Yeah.
+
+Nebojsa (53:27.516)
+Yeah.
+
+Bentz (53:33.82)
+agency team up for success, even if you're not coming to them because you just want them to take the wheel that's already spinning and just make it spin faster, right? Even if you want them to kind of be innovative, they need something to be innovative against. you know, think about that. So that might be something worth thinking about from that perspective too.
+
+Nebojsa (53:54.716)
+Yeah, yeah, that's...
+
+Nebojsa (54:03.815)
+I agree and you said that very nicely. So I want to dive deeper into some AI trends that are happening right now. started the conversation with that but now it's time for some like on-point questions. So first...
+
+Bentz (54:09.711)
+You
+
+Absolutely.
+
+Bentz (54:21.533)
+Okay.
+
+Nebojsa (54:23.887)
+You've been into SEO from 2004. You've seen all the updates like Google Penguin's update, like I don't know, every important update that wrote out, you've been there, you felt it. So like, since you've seen all these multiple algorithm updates, how is the current AI revolution different from past changes?
+
+Bentz (54:27.146)
+Yeah.
+
+Bentz (54:33.429)
+Yes.
+
+Bentz (54:42.858)
+Mm-hmm.
+
+Bentz (54:50.611)
+This one's interesting, right? Because the companies that are, I feel like there's, it is really difficult to serve two masters. But I think in some cases, we are being asked to serve two masters with the work that we're doing. And it's not just because search is more distributed.
+
+Nebojsa (54:53.509)
+I'm
+
+Bentz (55:15.771)
+It's because the companies, from my perspective, the companies that are serving us with the new found tools that are supposed to increase our productivity, improve our creativity, improve the quality of our production.
+
+They're then also on the other side of things with their main tools telling us that they want humans in the loop and human generation for every single thing that they're going to give credit to.
+
+You tell me how to balance that. And so with AI tools and with the AI overviews, the large language models, what I've been on my soapbox or from my pulpit, whatever analogy you want to use for that, what I've been preaching to those who will listen is giving reasonable doubt to the large language models.
+
+that you're using the large language models to generate your content. It can work. And we've seen some wild stuff being created across different media channels with artificial intelligence. The images and video, the quality of the generation over the last 18 months has been phenomenal. I think back to the...
+
+famous viral video, the Will Smith viral video that was generated by AI, and what I'm seeing now, the progress has been outstanding. you need to, regardless of whether or not you use it for content generation, I'm not here to debate. But if you do, you need to make sure that you're reinforcing that with some level of human validation.
+
+Nebojsa (56:57.916)
+Yeah.
+
+Bentz (57:20.679)
+Otherwise, it's going to get ignored and get lost. It's an interesting juxtaposition for me. What do you think about?
+
+Nebojsa (57:26.727)
+Mm-hmm.
+
+Nebojsa (57:30.373)
+Yeah, mean, definitely. don't think that writing down the copy using chat GPT and publishing that right on your website will make an effect. Also, what I don't like is that the dashes that AI does are like very wide and it can be really easily recognized that the content is done by the AI. So at least make those changes. Also, I would recommend
+
+And like first put that content in like copy leaks or I don't know AI content detector and make sure that it doesn't have 100 % AI written score. Try to lower that score by manually rewarding some sentences. There are some tools also that can do that. But anyway I would always proofread the content and ask...
+
+Bentz (58:07.253)
+and
+
+Nebojsa (58:27.855)
+Like does this make sense to my audience, to the reader? Is it giving enough value? That's what I would do. And also I would ask you how are you adopting your SEO content strategies in response to AI generated content and Google's emphasis on the EEAT?
+
+Bentz (58:47.603)
+That I think is the, that EAT principles are the easiest way to give, again, what I mentioned earlier, to give that reasonable doubt to the tools that you're not using the tools. How do I tell a machine that I'm not using it? By trying to humanize that content as much as possible. And so, one of the ways to do that is with,
+
+Nebojsa (59:03.779)
+Yeah.
+
+Bentz (59:17.381)
+E E A T. Just flat out. We've been telling people for years, hey, you gotta do this, right? And there are some fantastic examples out there for, in the healthcare space. In, yeah, yeah, and I, the healthcare space, legal, personal finance, some of those industries where the, money, your life,
+
+Nebojsa (59:32.709)
+Yeah, that's what I wanted to mention, especially in that space.
+
+Nebojsa (59:41.402)
+Yeah.
+
+Bentz (59:45.846)
+the best use cases for content in those industries, you can apply that to your business to business manufacturing website. So how do you do that, right? How do you present that? you can even present it in your own unique way. You don't have to have the vice president at your company
+
+or the subject matter expert literally writing the content. The healthcare company, the WebMD doesn't have medical doctors all the time writing content on their website. But what they do have is that peer review process. They have the sanity check. what, so you need to adopt that and make sure that you annotate that, that you acknowledge that on the webpage, that someone with background at this company,
+
+Nebojsa (01:00:21.2)
+Yeah.
+
+Nebojsa (01:00:27.693)
+Yeah.
+
+Bentz (01:00:41.971)
+has reviewed this, has sanity checked this, has quality assured it before it came out on our website, you'd be amazed how much credibility that gives to your human readers, but then that also gives to the large language models that a human saw this before it was just programmatically published on the internet.
+
+So for us, that certainly has been one way to apply those principles, regardless of industry. The other thing that we're seeing be really successful with large language models with Google, freshness still matters. And from what I'm seeing right now, freshness is a performance multiplier that is easy to leverage.
+
+Nebojsa (01:01:06.522)
+Yeah, I agree. I agree.
+
+Nebojsa (01:01:17.84)
+Mm-hmm.
+
+Nebojsa (01:01:36.016)
+Mm-hmm. Mm-hmm.
+
+Bentz (01:01:36.374)
+So if you treat your web pages like they're Wikipedia pages, and when I say that, I'm not saying you need to let users come in and edit, like, you know, random users of the internet contribute content on your website. That's not what I'm saying. I'm also not saying that you need to have a whole bunch of neutrally written informational content on your service page. No!
+
+Nebojsa (01:01:44.55)
+Hmm.
+
+Nebojsa (01:01:54.597)
+Yeah.
+
+Bentz (01:02:05.373)
+If you have the best service for what, if you think you have the best, brag about it, go for it. But you need to have the pages that are the most important to your business outcomes on your website need to be fresh on a, need to be freshened up on a regular basis. There are a lot of ways you can do that. And we have found that to be an outsized performance multiplier that
+
+anybody can leverage on pages if you know which pages are the most important to growing your business.
+
+Nebojsa (01:02:41.862)
+And when you say that I know that for example in our blogs you can see the date published and date modified. Are you referring to that?
+
+Bentz (01:02:49.705)
+Yes.
+
+Bentz (01:02:53.031)
+Sometimes, if it is time-sensitive content, yes. In other cases...
+
+Nebojsa (01:02:55.462)
+Okay.
+
+And if... But you also meant like landing pages, service pages. Okay, okay.
+
+Bentz (01:03:03.143)
+Yeah, and in those cases, it's maybe instead of doing, know, one way to take a look at this would be instead of doing just a massive overhaul on a page one time and then letting it sit for 12 months and then going back again, or six months or whatever, right? Like a long interval where performance decay can start to happen.
+
+Nebojsa (01:03:30.246)
+Mm-hmm.
+
+Bentz (01:03:31.112)
+Maybe you're looking at making minor incremental updates. That can mean a lot of things. can you add an FAQ to that page? Can you add new media to that page? Did you guys win an award and now you can upload a logo? Like, there are so many different levers that you can pull. But as you're making incremental progress on those pages and you keep telling Google, hey, there's...
+
+Nebojsa (01:03:37.21)
+Yeah, makes sense.
+
+Nebojsa (01:03:45.562)
+Yeah.
+
+Bentz (01:03:59.542)
+there's something different to see here, you need to come back and the machine learns that that page is always fresh and always relevant and I'm gonna come back again and come back again. Then you start sending that signal to traditional Google rankings, but then also to all of these diverse ways that people can search, that this is a good and relevant page for what you're looking to learn more.
+
+Nebojsa (01:03:59.856)
+Yeah, visit that page. Yeah.
+
+Nebojsa (01:04:24.985)
+That's a very good approach. you want to say that, for example, if a person wants to like update or re-haul the entire page, it should do like a section by section and do it incrementally rather than just wiping out the page and publishing the new one.
+
+Bentz (01:04:44.841)
+And essentially, yes, there's a couple different tactical ways to approach that. But yeah, that for us anyway is one of the differentiators that we're seeing in the better performing campaigns today as opposed to campaigns that have kind of gotten stagnant.
+
+Nebojsa (01:04:47.682)
+Essentially,
+
+Nebojsa (01:05:00.036)
+Yeah.
+
+Nebojsa (01:05:10.721)
+Yeah, I understand. So for example, right now I wanted to add three more sections to our link building page. So in this case, I will add one and then like two weeks later, I will add another one and then like that. Yeah, that makes sense. That's a very useful advice. Thanks for that. Thanks for that. Really appreciate it. like, and what's your perspective on the future of search with AI overviews and conversional search becoming more prominent?
+
+Bentz (01:05:24.531)
+Yes. Yeah.
+
+Sure, sure.
+
+Nebojsa (01:05:40.345)
+Like do you have a bold prediction at least?
+
+Bentz (01:05:43.391)
+Hahaha!
+
+I don't know that I have a bold prediction, but I do see a future where...
+
+having where, and we're already starting to see it. I think I may even, I maybe even had referenced that earlier in our conversation today. Where.
+
+The, you know, before the dot com boom, right, so this is now going way back, right, the humans relied on other humans for information to influence their decision making. Then in the earlier, you know, web 1.0 to 3.0, we were relying on the information published on the internet.
+
+or the information published in social networks to try to feed us, to get us to 80 % before we ever took a business, took a business action or took some type of intentional step forward towards deciding something. Now, what I see is that 80 % number is starting to creep up towards 90. And so, do you get to a stage,
+
+Bentz (01:07:10.707)
+with large language models where you're not even that 10%, you're not on a company's individual website making those decisions. Instead, what you're now doing, you're now doing 95 % as a consumer, you're doing 95 % of all of your pre-sell stuff in other tools before you finally
+
+visit that end destination real estate and just say, I'm ready to buy. So how much of that is done beforehand? I think we're going to push past 90%. How close do we get to 90 % or to 100 %? I don't know, but I see that kind of accelerating forward.
+
+Nebojsa (01:07:46.008)
+Yeah.
+
+Nebojsa (01:07:59.29)
+Mm-hmm.
+
+Nebojsa (01:08:04.419)
+Yeah, I want to ask you this, like, do you think your five years old will like use Google to search? Do you think it will search for the like in the same way that you are searching it right now?
+
+Bentz (01:08:16.241)
+No, no, hundred percent my teenagers, have three, I have two teenagers and one's on the dawn of becoming a teenager.
+
+Nebojsa (01:08:21.775)
+Yeah.
+
+Nebojsa (01:08:29.057)
+Also it's not five years, I understood it, you have a five years old. Sorry, I heard you, yeah. Yeah, okay. We all do, we all do. Only not our wives, they are not, never.
+
+Bentz (01:08:31.637)
+No, no, no, no, no, no, no, that's all right. That's all right. Sometimes they act like they're but sometimes I probably do also. So.
+
+Bentz (01:08:50.291)
+Yeah, please sound bite that somebody because I'm going to agree And edit that part out where I said somebody sound bite that okay, just put the part in where I say I agree so There I do believe that there will come a and I'm already seeing it. I don't know that they're using The large language models to search for
+
+Nebojsa (01:08:53.477)
+Yeah
+
+I don't know what...
+
+Bentz (01:09:19.573)
+products and services. But they are casually using the large language models to, least for entertainment. And that, for me, that was, you know, in the late 90s, early 2000s, when I was using the internet, I was using it for education and for entertainment. And then once I got into the business side of it, I was hooked.
+
+Nebojsa (01:09:34.766)
+Yeah.
+
+Bentz (01:09:49.182)
+And so I do see that where they're going to grow, they're growing up in an environment where Google is not the ultimate source of knowledge.
+
+And so that experience for them is going to be a little bit different. Now, is it Gemini? Is it Chad GPT? Is it Perplexity? Like, ultimately which one becomes the leader in the clubhouse? I don't know what that looks like. I think you're in distributed world. You're in a more distributed world right now. There's probably some consolidation at some point that happens.
+
+Nebojsa (01:10:19.628)
+Yeah.
+
+Bentz (01:10:33.439)
+Does perplexity by Gemini or by Chrome? I don't think so. there probably is some contraction that happens over time. so does that field narrow so that there's one bigger source of truth? I think so. And I think that really is where it's going to transition. Our parents used offline sources.
+
+Nebojsa (01:10:51.457)
+Yeah.
+
+Bentz (01:11:02.909)
+we use online sources, they're going to use agentic sources. And then their generation, my goodness, I can't even think about what would be the evolution off of that. There are futurists out there who will certainly probably imagine what that looks like. But to me, that's just part of the natural progression and evolution of things. And then, you know, I hope I'm around long enough to see where it...
+
+Nebojsa (01:11:15.053)
+I don't know man
+
+Nebojsa (01:11:27.083)
+Exactly.
+
+Bentz (01:11:31.913)
+where it all kind of plays out.
+
+Nebojsa (01:11:34.115)
+Yeah, you will be, we will be, yeah. And also I witnessed the whole evolution of search. Now we both witnessed that with the LLMs being here right now, but I think that our kids, are growing next to this technology, like next to the LLMs, AI, we haven't do that. Like we were buying CDs to watch movies and install games, then we couldn't find cracks to like, uncrack the game, know, things like that.
+
+Bentz (01:11:47.561)
+Yeah.
+
+Bentz (01:11:51.955)
+Yes.
+
+Bentz (01:12:01.365)
+Yeah.
+
+Nebojsa (01:12:04.068)
+know what's that you know they go and buy the game and you know so it's very different and like if you just take a look like before you wanted to buy shoes you go to Google you type Nike shoes red and now they are searching like where can I buy shoes in Pittsburgh list me top quality stores having red Nike shoes for men things like that they are like completely different how the search works right now and I
+
+Bentz (01:12:05.533)
+Yes!
+
+Nebojsa (01:12:33.968)
+don't even know where...
+
+like where is going to go in which direction like in the next 20 years. you know, SEO and marketing, that was adoption all the time. Like you need to adapt with every change, with every update. And that what makes you and your business stands out. The quick adoption and you know, like being able to really accept the changes rather than throwing them away because like you have some, I don't know, personal issues. You don't want to accept it.
+
+Bentz (01:13:04.724)
+Yes.
+
+Nebojsa (01:13:05.53)
+too much for me. didn't like you. I was buying CDs. I don't want to like do this and that. So no. And that's very important for everybody to know, you know.
+
+Bentz (01:13:16.403)
+Yeah. Well, I think, you know, to maybe do a callback here to when you were talking about the GEO service providers and how...
+
+Nebojsa (01:13:23.205)
+huh.
+
+Bentz (01:13:29.915)
+exploratory that that type of service actually is. You're right, but the disrupt the disruptors and the experimenters are going to be the ones that learn fast and improve fast and get it get as far ahead of this as they can, as opposed to waiting to see how it all plays out. And then your market is crowded again when you're trying to get in.
+
+Nebojsa (01:13:34.862)
+Yeah.
+
+Bentz (01:13:59.624)
+And so, you know, if you, for companies that are like on the fence about whether or not they should give this a consideration in their planning for 2026, if those companies were, have been established long enough that they missed out on the initial SEO wave in the early 2000s, you're getting a second chance here.
+
+Nebojsa (01:14:27.17)
+Yeah, that's powerful. Yeah. Yeah.
+
+Bentz (01:14:27.189)
+Don't miss out on it again, right? So even if it's experimental, if you have room in your budget to do some testing and do some experimentation, give it a consideration. Even if there's not full clarity on what is predictable for success, what does success of this ultimately look like? If you can invest in it.
+
+Nebojsa (01:14:42.68)
+Do it. Yeah.
+
+Bentz (01:14:55.529)
+dedicate some dollars to it and see how it can impact your positioning not just for now, but for in the future.
+
+Nebojsa (01:15:06.58)
+agreed and even if you have a competitor that's doing everything same as you are doing and you just like do an extra thing like testing the geo you're still doing something that they are not doing and you will be better so that's the whole point yeah makes sense so
+
+Bentz (01:15:16.255)
+Yes.
+
+Bentz (01:15:22.517)
+100 % agree.
+
+Nebojsa (01:15:27.906)
+I wanted to ask you, are there any specific tools or technologies you're incorporating into your workflow that have made a significant impact? Would you mind sharing your tool stack with us?
+
+Bentz (01:15:41.342)
+Yeah, to a certain degree. everything that... I've been using WordPress since 2008. I know it has taken its licks over the years for some of its vulnerabilities. It's lonely at the top, isn't it? So I am still very much a proponent of building your web properties in WordPress and not being reliant on the walled gardens of social media.
+
+Google, just those, you need to have your own independent property. And I think WordPress, for the majority of businesses, WordPress is still that best platform. it, when we're evaluating potential clients and we see their platforms built, their websites built on other platforms, there's always a, there's, I continually run into some type of limitation for,
+
+Nebojsa (01:16:14.71)
+Yeah.
+
+Nebojsa (01:16:33.037)
+Mm-hmm.
+
+Nebojsa (01:16:41.451)
+yeah.
+
+Bentz (01:16:42.193)
+If you're looking for success in organic discovery from search, there's always some type of limitation. So I would, I'd offer that as a foundational hub spot for us, Google analytics for Samrush. This is your, as, as I start peeling back, like what does the major tech stack look like for us? That's, those are some of those core components. When
+
+Nebojsa (01:16:47.561)
+Mm-hmm. Yeah, I agree.
+
+Nebojsa (01:16:55.107)
+Mm-hmm.
+
+Bentz (01:17:10.355)
+You're thinking about things from a, how do I, me personally, how do I get things done? I use Canva. I use, I use a variety of the large language models depending on what I'm trying to do. So if it's research, I may go to Gemini over ChatGPT. If it's
+
+media production, will probably go to Chad GPT over Gemini, right? the each one of them kind of have their own unique use case based on what I'm trying to accomplish. So I'm not I'm not as agnostic or I'm sorry, I'm not as a single focus when it comes to some of those tools. One that I will mention here that is
+
+is high value, but I don't know that it gets enough credit for the impact it can have, is the content decay tool from animals.
+
+Nebojsa (01:18:14.327)
+Mm-hmm.
+
+Bentz (01:18:24.479)
+So if you're not familiar with that one, you can connect your Google Analytics to it. And then that tool will tell you which pages on your website are the most susceptible to traffic loss from not being maintained.
+
+Nebojsa (01:18:50.467)
+That's very interesting. I mean you can use that data, update those pages and prevent them from losing their traffic and numbers. That's very good.
+
+Bentz (01:18:52.596)
+Yeah.
+
+Bentz (01:18:56.255)
+Correct. Yes. Yeah. And so it does some of the manual work that we would have to do in spreadsheets to get some of that data out of Google Analytics. It's built in doing the work for you. And so you don't have to, you can really streamline your time and get your to-do list straight from that tool as opposed to
+
+having to manually figure it out yourself.
+
+Nebojsa (01:19:28.131)
+Okay, thanks for sharing that. think that many will find those tools useful. I've heard for nearly all of them, but I haven't heard from the content decay from animals. I'll definitely check it out.
+
+Bentz (01:19:43.302)
+Awesome, awesome.
+
+Nebojsa (01:19:44.715)
+Yeah, cool man. That seemed like it sounds very good, like powerful. You can just connect your Google Search Console, it will get all the data and it will do something with the data. I suppose it has the AI integration as well that's helping you, you know, get some summaries, reports, things like that.
+
+Bentz (01:20:03.209)
+Yeah, it does, like I said, it does, I'm a big fan of tools that take what I used to, what I felt like I used to have to do manually, and it will automate some of those things, right? What I used to take an hour or more to do, now I can receive that data in minutes and act on it faster. Huge fan of stuff like that.
+
+Nebojsa (01:20:08.716)
+Mm-hmm.
+
+Nebojsa (01:20:16.363)
+Mm-hmm.
+
+Nebojsa (01:20:27.074)
+Yeah.
+
+Yeah, me too, me too. Like it's so time effective. I mean, it really saves a lot of time and gives you like, boosts your production and the ability of the workload you can take in. So yeah, it's very powerful.
+
+Bentz (01:20:42.845)
+Uh-huh, 100%.
+
+Nebojsa (01:20:45.418)
+So now I'm going to change two questions into one because I think it will be more interesting for you. So I've seen many companies making mistakes when they want to launch their SEO strategy or campaign. So first I want to ask you what are the most common mistakes you see companies make when launching new SEO campaigns? And then if you could follow up with like three to five
+
+foundational elements they absolutely need to do to get it right.
+
+Bentz (01:21:20.649)
+Hmm
+
+Bentz (01:21:27.893)
+So the biggest, all right, so the biggest mistake I would say people do with their websites is they prioritize.
+
+They prioritize function over foundation.
+
+Nebojsa (01:21:44.61)
+Okay.
+
+Bentz (01:21:44.99)
+And so a lot of people design what they want. They want a an innovative design. They want the the sizzle from their steak, but but aren't paying attention to what the steak actually is.
+
+Nebojsa (01:21:57.132)
+Yeah.
+
+Bentz (01:22:03.133)
+And so when you do that, there's opportunities that you're leaving on the table. What's really unfortunate is when companies think that, or when companies have had momentum and had traction in the past, and then they make a change like that and don't take into consideration where they were and what they were already doing well, and then they kind of like fall, like you'll see it in a chart, right? Like they'll kind of fall off a cliff.
+
+and then they never come back.
+
+Nebojsa (01:22:36.13)
+Bentz (01:22:36.573)
+And the longer that you wait to try to come back, that boulder gets bigger, right? That you're trying to push back up the hill. And so can it be done? Yes, of course it can. But anybody with time and patience and the right plan can make something happen. But the degree of difficulty just gets so much longer the longer you wait. And so for me, the...
+
+Nebojsa (01:22:41.75)
+The harder it is, yeah. Yeah, yeah.
+
+Nebojsa (01:23:01.484)
+Yeah.
+
+Bentz (01:23:06.195)
+the strategies or the tactics that everybody needs to be paying attention to is can your content be read, not just is it readable and interesting for humans to read, but are the bots able to process it? And you can have the most gorgeous website that there is, but if it's, I would actually,
+
+For your human visitors, I would actually encourage you to deliver a personalized experience and deliver a more modern website architecture and website experience for them because you have to have something experiential for them to want to come to your website as opposed to just using the tools they already use every day to do the same stuff. Social media, large language models, and search engines. What value does your website have to get them off of that and get them to you?
+
+And that experience, that personalization and that experiential website can be that. But if the bots that you are dependent on to validate your website, give you credibility, and then ultimately drive people in, if they can't process it.
+
+Bentz (01:24:27.603)
+Like, how are you generating that interest in those eyeballs? So, readability matters a ton.
+
+So deliver that personalized experience, but make sure on the back end that your content is readable. And there are tools like Prerender that you can use to make sure that that content gets delivered in a way that the bots prefer and the large language models prefer while you're on the front end still developing that highly personalized experience. So make sure your stuff is readable.
+
+Nebojsa (01:24:44.578)
+Mm-hmm.
+
+Bentz (01:25:06.845)
+Make sure that you're delivering information in a way that search engines prefer. So schema matters as well, right? So SEOs talk a lot about schema, markup. That's the JavaScript that the search engines actually like. So, right, right, and the large language models as well.
+
+Nebojsa (01:25:30.644)
+Yeah, Netherlands. Yeah.
+
+Bentz (01:25:35.23)
+Make sure that you're offering schema content inside your code in addition to making sure that all that content is readable by the search engines. So how do you balance that website worth going to with giving the tools, the platforms that you rely on for that information? How do you give them what they want? Those are two of the ways that you can do that. The third.
+
+Nebojsa (01:25:41.9)
+Mm-hmm.
+
+Nebojsa (01:25:47.254)
+Mm-hmm.
+
+Bentz (01:26:03.135)
+thing that we commonly look at helping people fix, this happens a lot in the software space, is that keyword is keyword positioning. A lot of times what companies will see that try to take on private equity or what they see as a way to differentiate themselves in the market.
+
+when you're trying to create your blue ocean, that's a great thing. But in the process sometimes of trying to create your blue ocean, you actually leave opportunity on the table for client acquisition. Because as you've gone out and kind of made yourself a category king or found your blue ocean, your market hasn't caught up yet. So rely on that data to...
+
+Nebojsa (01:26:31.797)
+Yeah.
+
+Nebojsa (01:26:43.541)
+Yeah.
+
+Bentz (01:26:58.023)
+allow you to be found by the people who haven't discovered your blue ocean yet. They're still swimming in the red ocean. You gotta get them over to the blue one. Right? How do you show them that there's a blue one? Because you're able to be found when they are, you're able to be found when they are still swimming in the red ocean. Don't forget about
+
+Nebojsa (01:27:04.351)
+Mm-hmm. Mm-hmm.
+
+Yeah.
+
+Nebojsa (01:27:22.379)
+Yeah, that's a great metaphor. I really like it.
+
+Bentz (01:27:26.594)
+I get one every now and then. I appreciate you acknowledging that.
+
+Nebojsa (01:27:30.225)
+Yeah, yeah, I've noticed like through the podcast there were a few metaphors which I really liked. Yeah, I also like really like I often tell metaphors as well so I'm noticing them as well coming from your end. Cool and thanks for sharing like that answer was so thorough and so like on point so I think a lot of value there. Yeah.
+
+Bentz (01:27:37.685)
+Thank you.
+
+Bentz (01:27:46.888)
+Awesome, thank you.
+
+Bentz (01:27:58.24)
+Great, I appreciate that.
+
+Nebojsa (01:28:00.686)
+So I do have a few more like advice type of questions before we wrap it up. So the next one would be what essential skills should someone entering the SEO field today focus on developing? What do you think a person needs to have? Like which skill?
+
+Bentz (01:28:07.998)
+Okay?
+
+Bentz (01:28:24.393)
+The, we talked about it a few minutes ago. I think the ability to use the tools that, I don't know that you need as many foundational, traditional foundational skills today for coding and developing because there's so much low code, no code, and AI innovation.
+
+Nebojsa (01:28:34.091)
+Mm-hmm.
+
+Bentz (01:28:53.875)
+that's able to generate what you can conceive.
+
+So, but you need to be versed and familiar with those middle layer platforms. So don't need that foundation, but you need to be able to know the strengths, the weaknesses, and the, and how to get benefit from the foundational tools in the middle. So, yeah, so maybe you don't need to...
+
+Nebojsa (01:29:23.617)
+Makes sense.
+
+Bentz (01:29:29.237)
+be an HTML developer, right, with HTML developmental skills, but you better know how to, if you want to be on the backend side of things, you probably need to know how to code for WordPress and how to build on the WordPress platform. Or, yeah, I think that's probably the easiest example. Or you need to know how to interpret data from SEMrush.
+
+Nebojsa (01:29:33.717)
+Yeah.
+
+Nebojsa (01:29:44.021)
+Mm-hmm.
+
+Nebojsa (01:29:53.217)
+you
+
+Bentz (01:29:59.304)
+And then what do you actually do with that after you get the data? It's really easy to, or it's easier to just kind of pull the reports and say, are the reports. But people don't need you to pull reports. They need you to interpret that and then be able to act on it. So you need some of those skills as opposed to just knowing what the best practices are. You need to know what the best practices are. And then from that list of best practices,
+
+Nebojsa (01:30:13.427)
+Mm-hmm. Yeah, yeah.
+
+Bentz (01:30:29.237)
+based on what the data is telling me, I need option A, C, and F. We need to invest in A, C, and F. Instead of here are the best practices, we're gonna implement the best practices. No, no, no. There's going to be precision problems that you need to focus in on, and knowing how to prioritize those from the large C of data.
+
+Nebojsa (01:30:39.293)
+Understood.
+
+Nebojsa (01:30:45.461)
+Mm-hmm.
+
+Nebojsa (01:30:51.595)
+Mm-hmm.
+
+Bentz (01:30:56.977)
+is what's going to give you a performance edge over just being able to read the reports back.
+
+Nebojsa (01:31:04.161)
+Cool and I'm gonna now go into the completely opposite direction and ask you this if you exclude all the like professional business skills what personal traits you think a person needs to have in order to be a successful marketer?
+
+Bentz (01:31:23.637)
+Trendspotting for me has always been an important skill that sets it apart. as in our line of work, we tend to work on a variety of websites. Sometimes they're in the same niche, sometimes we're analyzing competitors. Right, we're doing a lot of analysis and a lot of data intake. But you need to be able to...
+
+Nebojsa (01:31:27.71)
+Uh-huh.
+
+Okay
+
+Bentz (01:31:51.99)
+If you spot something, you can either validate that you're moving in the right direction, and then you try to accelerate that, or you can pump the brakes really fast. If you identify that the top performers are doing, there's consistency across top performers. If there's consistency across top performers and you can see it, then you can figure out how to apply that to
+
+something that's underperforming. So, and if something is performing really well, you can identify that and figure out how to amplify that 2x, 3x, 4x. So, being able to, for me at least, that softer skill of being able to spot trends and then implement strategies to amplify or course correct.
+
+Nebojsa (01:32:24.883)
+sense.
+
+Bentz (01:32:49.875)
+has been a really important differentiator, at least from my perspective. And then also being able, you had mentioned metaphors earlier. I do speak in analogies, I do speak in metaphors, and sometimes I mix them, but I try really hard to keep them, like if I'm talking to somebody about food analogies or in food metaphors, I at least for that conversation try to keep it in food metaphors.
+
+Nebojsa (01:33:01.161)
+Yeah.
+
+Nebojsa (01:33:15.454)
+Mm-hmm
+
+Bentz (01:33:20.021)
+Being able to explain something to someone that is confusing to them or fuzzy to them and make it clear is always going to give you an advantage over someone who is talking up here all the time and the person that they're talking to is not at the same chapter in the book.
+
+Nebojsa (01:33:21.12)
+Hmm
+
+Nebojsa (01:33:33.684)
+Mm-hmm.
+
+Nebojsa (01:33:48.501)
+Aha, yeah. Cool. Makes sense, makes sense. And I like, especially like how you said, if I'm talking with someone and using food metaphors, I'm gonna stick to the food metaphors and not go to other topic metaphors. Makes sense, makes sense. They'll be confused like, what is this guy telling? Yeah, yeah.
+
+Bentz (01:33:50.835)
+Yep. Yep.
+
+Bentz (01:34:00.296)
+Yes.
+
+It, it does, I, that is, yeah, yeah, right, right. And that is, that, that can be, that can be a challenge. It can be a challenge when you are someone who has a lot of, has a lot of metaphors, but yeah, trying to streamline those I think makes, it, it, it helps keep the conversation on track.
+
+Nebojsa (01:34:27.539)
+Yeah, I want to see an article from you streamlining metaverse 2025 Cool
+
+Bentz (01:34:31.317)
+Interesting. right. Challenge accepted. I'll have my AI bot work on that after the call today.
+
+Nebojsa (01:34:41.792)
+Cool, yeah, yeah, I really like them, for real, I would definitely read them all. Yeah, so next question is for all these...
+
+Bentz (01:34:47.421)
+Awesome. Awesome.
+
+Nebojsa (01:34:54.718)
+People from our SEO world that are struggling with the unrealistic client expectations. What would you tell them? What's the best way to approach clients and educate them when they have unrealistic expectations about SEO timelines or results?
+
+Bentz (01:35:15.897)
+I think the biggest way to avoid that is to make sure that everybody's clear on what the priority is. So you can, if your organization or if you're a one person shop, if you have all of the capabilities, that's great. If...
+
+your client has the expectation that you're going to handle every single thing for them.
+
+that if you didn't get clarification on that, part of that's on you. Part of it. So making sure that you're always clear on what the main thing the client wants, the main thing the client needs is, and then always reiterating, you know, equating what you are doing back to helping them achieve that main thing. If you keep the main thing the main thing,
+
+then you can work on at least focusing them. And if you focus, if you focus, they're focused, you're all moving in the same direction, then the conversations get a lot easier. I think one of the challenges that we run into, because our websites have all of the service offerings and it's a competitive market and there's constant noise.
+
+coming in for, in marketing for, you need this thing, no, you need this thing, no, you need this thing.
+
+Nebojsa (01:36:57.833)
+Yeah.
+
+Bentz (01:36:58.511)
+if how do you get people to stay tuned into the signal? Here we go, metaphor. So for those of us who maybe grew up at a time where radio, not everything was streamed and radio is what mattered, internet analogy makes sense as well. You have varying degrees of upload and download speed or varying degrees of quality of signal. But when you really tune in on that main signal,
+
+Nebojsa (01:37:05.897)
+Yeah.
+
+Bentz (01:37:28.841)
+The performance is great. The sound is great. The speeds and feeds are awesome. But if you start veering from that, then performance starts to get tough and things get cluttered. So always orient and tune back into what that main signal is. And as long as you and your client are always aligned on this is what the main signal is, and you constantly reference back, this is what you want,
+
+this is what I'm doing to accomplish what you want. But remember, that's going to be a longer, like this is the long-term goal. This is not, there are steps that we need to do to get there. Then that a lot of times helps alleviate some of that stress and some of that confusion.
+
+Nebojsa (01:38:07.036)
+Yeah.
+
+Yeah.
+
+Nebojsa (01:38:17.823)
+Makes sense, makes sense. Basically like reminding the client that the goal remains the same and the road to that goal can be bumpy so when you fall down don't freak out the goal is there we're gonna you know go back and you know like
+
+Bentz (01:38:37.205)
+Yeah.
+
+Nebojsa (01:38:39.195)
+ride that wave, like reach that goal, but eventually that's life and business. It's the same when it comes to that you have ups and downs. Even if you have a goal doesn't matter.
+
+It can be that that goal will have much more downs than ups. But yeah, it's like that. So don't worry as long as you are sticking to that goal, sticking to that plan. That's fine. I think that people they freak out because they think that the plan changed, that the goal changed when something bad happens. And like when the plan has changed and if it was really changed, yes that can
+
+Bentz (01:38:57.13)
+Yeah.
+
+Bentz (01:39:12.092)
+Right.
+
+Nebojsa (01:39:21.365)
+cause anxiety and it will slow you down because using the another plan and strategy you're starting from the beginning but if you just fall down and continue like get up continue with the same plan you are not returning to the start you're just continuing climbing so yeah that's
+
+Bentz (01:39:23.263)
+Mm-hmm.
+
+Bentz (01:39:39.158)
+Yeah, 100%. And reminding, so if you are a service provider who has multiple service lines, always kind of, so if a client is coming to you and asking for something like that, you absolutely could say to them, yeah, we can take care of this thing over here that you want, but.
+
+Nebojsa (01:39:48.413)
+Mm-hmm.
+
+Bentz (01:40:01.683)
+that isn't going to accelerate you getting to your goal. So if we take a diversion and go do that thing, we can, but isn't this what you, my understanding is that this main thing over here, this is what you actually wanted. Do you still want that? And in most cases, right, they're gonna nod and say, yes, absolutely, I still want that. And so then that's when you step forward from being a vendor and a doer of things to being a consultant or an advisor.
+
+Nebojsa (01:40:05.499)
+Mm-hmm. Yeah.
+
+Nebojsa (01:40:17.459)
+Yeah.
+
+Nebojsa (01:40:30.429)
+Yeah.
+
+Bentz (01:40:31.495)
+and saying, okay, if you want this main thing, we can't do this right now. We need to just stay focused on carrying out that mission. And once we get there, man, whatever you wanna do, like we're here for it. But just keep that, just always keep that perspective and constantly reorienting them to the goal that they want, unless they tell you that their goals have changed. That constant reiteration back against the goal helps.
+
+Nebojsa (01:40:41.439)
+Yeah.
+
+You
+
+Bentz (01:40:59.955)
+helps eliminate some of that concern.
+
+Nebojsa (01:41:01.972)
+Yeah.
+
+Yeah, I fully agree with you. So my last two questions for you. So now the first one is like, I know that you already mentioned this throughout the podcast, but I wanna like summarize it for the listeners. for for SEO professionals looking to grow their careers, what mindsets or approaches have been most valuable in your journey?
+
+Bentz (01:41:36.017)
+our industry is evolving all the time. And so getting into that mindset of learning all the, being in a learning mode all the time, I think that's good for all of us as humans, but I think that helps for us as digital marketers. So even if you're not,
+
+reading Ahrefs blog or SEMrush blog or Moz blog every single week, even if you're not doing that, still being in that mindset of not resting on your laurels, not resting on what you've done and not getting complacent and constantly learning how to get better at something, it...
+
+It is gonna be the actual practice of SEO, I think, for a little while, right? But then at some point, just having that mindset of constantly being in a learning mode and never feeling like you've arrived, I think, gives you that edge to constantly push forward.
+
+Nebojsa (01:42:41.887)
+Mm-hmm.
+
+Nebojsa (01:42:48.631)
+can definitely relate and I think that many could relate with what you just said. So my last question for you excluding your uncle what's one piece of advice you wish someone had given you early in your SEO career?
+
+Nebojsa (01:43:11.475)
+Yeah.
+
+Bentz (01:43:15.592)
+early in my SEO career.
+
+Nebojsa (01:43:18.149)
+Or you can say like early before beginning SC or whatever like do you have anything that you learned and now you say like okay I really need needed to learn this and this is something that will like help me throughout my career do you have like something like that yeah
+
+Bentz (01:43:35.158)
+Okay, all right, here's one. Here's one. All right. And this actually comes from Direct Online Marketing's agency president, okay? I don't know who told him this, but he has told me this over my years here and I've heard him mention it other places. When you work in an agency, every client at some point will fire
+
+Nebojsa (01:43:49.149)
+Mm-hmm.
+
+Bentz (01:44:08.157)
+And so you can't take it personally or let it, there are lessons to learn from every single time you take a loss, right? But, or you fail. But at some point, every, because you're an agency service provider and you're a third party, at some point, every client will fire you.
+
+So you can react to that a couple different ways, right? You can react to that and really carry it on you, or you can respect their decision, get better from it, but respect their decision and then move forward, or you can really kind of that eat at you and sit with you. so having that realization, that one's a good one.
+
+The other one that I'll leave you with is that every other person that you're talking to in our line of work is a person. Sometimes we get really caught up in the fact that somebody's the CEO or somebody is the vice president of marketing for a really big company that we really like being involved with, but...
+
+Nebojsa (01:45:20.914)
+Hahaha.
+
+Nebojsa (01:45:34.685)
+Mm-hmm.
+
+Bentz (01:45:37.973)
+They're just, they're also a person. I used to, earlier on in my career, I would get anxious or kind of be on my heels a little bit for points of contact at companies that were in senior executive positions. And really, what, like, what can that person do to you?
+
+What can they do? They can end their engagement with your company. That's it. So just talk to them the way that you would talk to anybody else. Don't get stage fright or don't get anxious about the fact that they have a certain...
+
+Nebojsa (01:46:09.214)
+You're right.
+
+Nebojsa (01:46:16.68)
+Yeah.
+
+Bentz (01:46:35.797)
+job title or have accomplished a certain level of success in their career if ultimately that has no bearing on on you and who you are.
+
+Nebojsa (01:46:47.838)
+Yeah, and that's, I also think that you differentiate with the mindset like that because they used to have conversations with people who are feeling anxious because they know that they own multi-billion company and they are now on a call with a...
+
+Regular person and that you will stand out they will like you more because you are relaxed You don't feel like my god. I need to be like very formal I'm speaking with the CEO of the multi-billion company so you can even like land that plant The chances are higher to land the project and or to like at least stay in touch with the dead person in the future Yeah cool
+
+Bentz (01:47:06.056)
+Right.
+
+Bentz (01:47:29.363)
+Yeah, yeah, yeah, 100%. Yes.
+
+Nebojsa (01:47:34.664)
+Tom, thank you so much for sharing your insights and experiences with us today. Your whole journey from those early days of SEO to today's AI SEO changes has been absolutely fascinating. And I know that listeners have gained tremendous value from your knowledge, practical wisdom, and metaphors.
+
+Bentz (01:47:49.525)
+Appreciate it.
+
+Bentz (01:47:58.358)
+Thank you.
+
+Nebojsa (01:48:00.99)
+For those of you listening who want to connect with Jonathan or learn more about his work, can find him on LinkedIn. Just search for Jonathan Benz, B E and T Z. And if you are a business owner thinking, I need someone like Jonathan to help me unlock growth through SEO, don't hesitate to reach out to Jonathan. As he said, if your business can generate more from the digital channel, he's ready to help you exceed your expectations.
+
+Bentz (01:48:10.473)
+Yep. Thank you.
+
+Bentz (01:48:21.545)
+Mm-hmm.
+
+Bentz (01:48:29.521)
+Absolutely, yeah, absolutely, check out the agency that I work for, Direct Online Marketing. Check out our website, please, DirectOM.com. You can reach out to, you can find me there and reach out to me there too. I'm actually the smiling face in the chat, in the chat window. So reach out to me there.
+
+Nebojsa (01:48:47.581)
+Yeah.
+
+make sense that you are the one in that chat window because your energy man I would just be there just to see your face and chat with you like all day you really made my day you really made my day it rarely happens that you find a person with energy like yours and I'm like I'm speaking from the bottom of my heart truly mean
+
+Bentz (01:48:57.589)
+We got
+
+Bentz (01:49:11.109)
+Ha, man, I appreciate that. Thank you so much. This was a fun conversation today. Hope it was helpful. yeah, like I said, reach out and connect with me on LinkedIn or find me off of LinkedIn and let's always down to talk digital marketing.
+
+Nebojsa (01:49:30.928)
+Yeah, thanks Jonathan.
+
+Bentz (01:49:32.937)
+Yep, thank you.
+

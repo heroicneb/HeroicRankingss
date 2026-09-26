@@ -1,0 +1,821 @@
+Nebojsa (00:01.083)
+Hello people, welcome to the ranking heroes, a podcast where we discover different strategies right with the experts behind them. So I'm pleased to present a very special guest, Tom Winter. He is a growth consultant, but also a co-founder of one of the biggest content writing SaaS tools that's being used all over the world.
+
+So Tom, nice to have you here. Thank you for joining the session. I'd like you to, if you can introduce yourself, say a few words about yourself to the audience before we move to the questions.
+
+Tom Winter (00:40.536)
+Perfect. Thank you for the invite. I'm really pleased to be here. I hope to share as much knowledge as possible from my side. My name is Tom. I'm the founder at SEO Window IO, which is an AI writing tool that focuses on the research part. For us, like the most important part in the AI writing process is to do the research, to be able to provide it all to AI so it doesn't write fluff. We focus on the EAT score and this is exactly what everybody should focus on if you're using humans for writing or AI for writing.
+
+you actually should focus on the EAT and you should measure that. So this is exactly what we try to do. Personally, I'm a half a developer, half a marketer, and I try to combine these skills together to be able to provide the value that the users need.
+
+Nebojsa (01:28.989)
+Cool, Tom, thanks for the introduction. So since you just mentioned you are a coder and also a marketer and that's I don't see very often. So you worked both in tech and marketing sides of SaaS. What first drew you into this hybrid space? What was the trigger point telling you, hey, Tom, you should do both?
+
+Tom Winter (01:50.862)
+So definitely it was a little bit of an accident I think because like I'm a serial founder my previous company that I founded with a couple of friends was devskiller.com which is a tool to test developer skills and map out the skills of developers and actually other roles inside the company so the company understands what kind of skills they have inside which grew to a huge company working with blue chip companies all over the world
+
+But back then, like when I teamed up with a couple of friends, they were better developers than I am. Like, so I got the role, like because I'm an extrovert, I got the role like within marketing and sales. Also, I could apply my skills with technical skills to just to automate a lot of things and make it simpler. But then I saw a lot of repetitive tasks in marketing that were really frustrating me. So for example, one of the
+
+key ones was creating briefs for humans actually because when we are creating briefs for articles to nail the search intents to focus on a specific keyword it was a repetitive task every single time it took me one hour to two hours to do it i had to open up like 20 tabs or 30 tabs to check all the things i i really hated it although every single time that i wanted to streamline it i just was i was cutting on the value i was cutting on the quality of the end product which was a big big problem and this is
+
+Nebojsa (03:11.188)
+You
+
+Nebojsa (03:18.584)
+Mm-hmm.
+
+Tom Winter (03:20.696)
+exactly what we wanted initially to solve in SEOWin, to create briefs for humans. But then we realized if we have a brief, if we have all the knowledge that we need, and we can provide it to AI in a digestible form, it actually can write really cool stuff.
+
+Nebojsa (03:25.661)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (03:36.359)
+Mm-hmm.
+
+Yeah, I've seen a lot of AIs like when the AI came up people starting playing with it and then the content was like too generic I would say it wouldn't look as something I would read to be honest, but now like AI content is getting better and better and better. So like what did your early experiences look like before SEO Wind? Were there any pivotal lessons that shape your entrepreneurial style?
+
+Tom Winter (04:07.66)
+Definitely I made a lot of mistakes and I'm like really happy with making all of these mistakes Because of them I became a better person. I was able to actually Create a better product one of the crucial mistakes that I did over and over again is that
+
+Nebojsa (04:13.348)
+Hahaha.
+
+Nebojsa (04:20.594)
+Mm-hmm
+
+Tom Winter (04:26.976)
+I thought that I know everything and to be honest, my ego is too big. So I had to just take my ego aside at some point and start to listen to customers and actually go and talk to them, listen to the hard truth that they're saying and be able to apply it to whatever I'm doing. Just to understand exactly that I don't know everything and actually can learn a lot from customers.
+
+Nebojsa (04:52.765)
+And since your product is used all over the world, how did you adapt your approach while building product for a global audience?
+
+Tom Winter (05:03.854)
+So always the big problem is like how to define the product that brings value because you have to understand at some point that you're not building a product for yourself, but you're building a product for your customers. But to do it, you have to talk a lot with the customers. So last year, I think I had like around 600 talks with the customers more or less because I keep like everything, I keep a list of all the comments that they give. So all the feedback that they give me.
+
+just to understand exactly what to focus on because it's not about resolving a problem again for one customer. It's about resolving a problem for a big group of customers and to understand the problem. So, but here comes another issue. When a customer tells you about the problem, you have to actually dig into the actual problem to understand what they really want because they will often tell you solutions that they know of like because
+
+they saw it somewhere else and that's not always the best solutions for you. So like you have to understand exactly what is the problem, what is the pain and then find the way to resolve it. It doesn't have to be the way that the customer said but to do it I had to make a lot of mistakes and I did it like over and over again. So I've developed many things then just to understand that this wasn't the thing that the customer wanted.
+
+Nebojsa (06:31.79)
+And since your tool is saying again like used by different culture's car culture's so Is that like?
+
+Did that change the way you think about growth or product strategy? Because like I know that there is this cultural mindset so people tend to think differently and then you get feedback from different cultures all over the world. Do you like put them into containers like prioritize the groups that have the same issues and then like start prioritizing and resolving the biggest groups with the same issue and then you move like down.
+
+Does it work like that?
+
+Tom Winter (07:11.934)
+Like I have a yeah, I have a mathematical mindset so like for me everything Excel defines everything and if data says something that means that data is right and I'm not right like so simple as that so for me money speaks so if I can see that within a certain group I will get the majority of the revenue I'll focus on this group like so
+
+Nebojsa (07:15.613)
+okay.
+
+huh.
+
+Tom Winter (07:36.34)
+I want to build something that can grow even further. I want to build a tool that is able to scale, but like to do it, we have to focus on certain groups of customers. So it doesn't have to be different regions, but it can also be a specific ICP. For me, like the main group would be agencies because agencies have the biggest demand and they are able to produce the biggest amount of content. At the same time, they have the biggest pain when it comes to
+
+AI content and using AI on daily basis because they see that they are not getting the value that they want if they use it. So because of that they're in the middle between like using humans fully or using AI and not getting the quality that they want.
+
+Nebojsa (08:09.136)
+Mm-hmm.
+
+Nebojsa (08:18.941)
+Mm-hmm.
+
+Nebojsa (08:24.413)
+And like right before you explained where you figured out that you want to build the SEO wind as a tool that will produce this EAT high quality content, but I'm curious when did you know you were onto something?
+
+Tom Winter (08:41.39)
+Mmm.
+
+I think like we always as start-upers, want to solve our own problems. And from this idea, best ideas happen. Like it's not always that a bigger group will have the same problem as you do, but it often is. So in early stage, have to like, we started with creating briefs. This was the time that GPT-3 was announced. So GPT-3 was the first model that was in chat GPT. So the version where we chat it with
+
+Nebojsa (08:47.484)
+Yeah.
+
+Nebojsa (08:51.738)
+Mm-hmm.
+
+Nebojsa (09:02.46)
+Mm-hmm.
+
+Nebojsa (09:09.405)
+Yeah.
+
+Tom Winter (09:12.368)
+AI this was GPT-3 and this is when it was like we started to work on it We saw that like More people have a similar problem, but we had to talk with them just to understand like what are the problems? Because it's good that you have a problem you defined it But you might be the only person in the world that has this problem and wants a solution for that
+
+Nebojsa (09:34.269)
+Mm-hmm, yeah, I accept.
+
+Tom Winter (09:38.542)
+In this case, you would build a tool for yourself. Again, coming back to my hypothesis, you're not building a tool for yourself. I can use my tool without the front end. I don't mind, but my customers don't. So I need to create something that they can use. Even if I think that's obvious, it doesn't matter because they're right, I'm not.
+
+Nebojsa (09:46.3)
+Yeah.
+
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (10:01.949)
+Yeah, I get it. get it. And like what what were some of the biggest growth challenges during your early scale up phase?
+
+Tom Winter (10:11.628)
+I think branding, think for most companies that are building a new product is the branding because if you don't have the brand, then the customers don't know about you and they are not coming in. So you have to find another solution to bring in the customers and how you can do it. You can either put a person in front of your company as an expert who will use their name and be able to pull first friends, family, some close companies that you know.
+
+Nebojsa (10:21.915)
+Mm-hmm.
+
+Tom Winter (10:41.692)
+down the road like using LinkedIn to outreach or you can also use organic but organic takes time or you can use ads which burns a lot of money and the question is do you have the money to start with ads ads are good because they really can validate the product really fast because you can turn on the traffic really fast but if you turn off the money the traffic turns off which is a problem
+
+Nebojsa (10:52.626)
+Yeah.
+
+Nebojsa (11:01.051)
+Yeah.
+
+Nebojsa (11:08.455)
+Yeah.
+
+Tom Winter (11:11.662)
+This is the biggest problem to get the first customers like to get to first hundred customers That's really extremely tough because when you get there to a hundred customers You know that you have something if you have like just two or three customers That's not yet a validation of product market fit. That's not something that shows you that you're on the right path
+
+Nebojsa (11:17.371)
+Mm-hmm
+
+Nebojsa (11:30.199)
+Mm-hmm. Mm-hmm. Mm-hmm. Yeah, I understand. I'm very curious to know Where do you find your first customers? Like what channels did you focus on?
+
+Tom Winter (11:44.088)
+So definitely the first place that I would look for any customers is just friends and family. So look for some companies that you already know, that you worked with in the past. Maybe you're working in a different niche, but check there. Like this is the easiest thing. They know what you do. They know you as a person, they trust you. So probably the product that you do is also going to help them out. So definitely this is the first thing. The second thing is I have like quite a big audience.
+
+Nebojsa (12:01.191)
+Yeah.
+
+Nebojsa (12:05.137)
+Mm-hmm.
+
+Tom Winter (12:14.172)
+on LinkedIn, so I was able to also reach out to the audience and also find more people on LinkedIn. The third thing, because we have a tool to help build organic traffic, we would be stupid not to use our own tool to build organic traffic. So we eat our own shit. We use it on daily basis and we want to build organic traffic also on our own. And we do a lot of tests on website. So sometimes it goes up, sometimes it goes down because we actually test things there also.
+
+Nebojsa (12:40.221)
+Mm-hmm.
+
+Tom Winter (12:46.926)
+Other things like offline events. So I'm a speaker on many conferences. So on conferences you meet people. I'm a strong believer in something that I call a game of touch points. So the more touch points you get with people, the higher is the chance that they will convert into a customer. But it doesn't matter if the touch points are online, LinkedIn, ads, blog, organic or offline, like conferences that you're a speaker on. It all adds up together to build trust. If people trust you,
+
+Nebojsa (12:52.701)
+Mm-hmm.
+
+Nebojsa (13:03.195)
+Yeah.
+
+Nebojsa (13:12.989)
+Yeah.
+
+Tom Winter (13:16.88)
+as a person they will probably trust also your company. But that slowly scales and this is kind of like a game of luck. So the more touch points you build, the higher is the chance of converting people to customers.
+
+Nebojsa (13:20.689)
+Yeah, I agree.
+
+Nebojsa (13:34.942)
+Yeah, I couldn't agree more and that conversion is just the beginning of their journey. Then you need to retain them. So that's a challenge. So yeah, cool. So I want to dig more deeper. So let's talk about what you do the best and your tool. What your tool does the best and that's SEO content. So specifically where AI fits in and where human expertise still matters. So I want to explore that right balance between those two
+
+Tom Winter (13:44.012)
+Exactly.
+
+Nebojsa (14:04.895)
+So like with so many tools available, what principles should people follow to make sure their AI generated content still aligns with SEO goals?
+
+Tom Winter (14:17.484)
+Okay, basically from like to explain how it works, like there are two or three types of AI tools on the market. Festival, vanilla, LLM. So basically, chat, GPT, cloud, you go directly there and you write the content directly there. So like you have a chat with AI, you probably add some value, add some data into the chat and AI helps you directly with you to write content. The second type of tools that I see
+
+on the market, which is our AI writing tools, they're kind of like a front end to chat GPT. So in my opinion, it's not worth to go there because you lose control over what is the discussion between like LLM and you. And they don't add up too much value because they don't do the research, they don't pull some data, they don't...
+
+sync everything together to create valuable content. And easy way to spot if an AI writing tool is like just a front end to chat GPT is if it can create content within two, three minutes. Because if it can, that doesn't mean it doesn't scrape any data, it doesn't go anywhere, it doesn't rewrite the articles, it doesn't focus on specific data like SEO data, like keywords, because it can't pull that physically, it can't do it within two, three minutes, easy as that.
+
+I would avoid them. Unfortunately, 95 to 97 % of the market of AI writing tools, this is exactly what it is. Basically, they add some simple prompts like, write me an outline for this and that, and then write me an article based on this. This is the definition of writing spam. Then there are tools like SEO Wind, which focus on the research. To be honest, for us, the most important part how to use AI is to use it as a logical engine, not a search engine.
+
+So what I mean, like if you're a human and you're writing about something that you know of like for me, for example, it's SEO. If I would write about SEO, a specific piece of content, I would still dig into Google to check like new trends, to go to Ahrefs, to check like for some keywords, to get some quotes from Rand Fishkin. I don't know, maybe he wrote something about it like in the last month. I want to get the best data, up-to-date data, and I want to nail the search into my intent. So I would go to search results. I would check all these things.
+
+Nebojsa (16:10.961)
+Mm-hmm.
+
+Nebojsa (16:17.308)
+Okay.
+
+Tom Winter (16:40.176)
+Even though that I have SEO, let's say in this one finger. It doesn't matter I would still want to check all the valuable things just to pull it all together and make the best content possible on a specific topic This is exactly how we work at SEO wins. So we start with the whole research We go to SERP results. We go to every single competitor just to check what do they do to nail the search and then because they actually Nailed it there in top 10 SERP results. We go to grab data about the SEO
+
+Nebojsa (16:49.212)
+Yeah.
+
+Tom Winter (17:10.116)
+So keywords, and we start to use vectors just to understand what to goes with what. Whenever we're going to AI, we're asking a question and giving context. So if we're building an outline, we're going to anything like, look, I am writing about this and that.
+
+Here are the top 10 SERP results. Like we scraped it. Here are the outlines of them. They nailed the search intent. How we can use this to understand exactly how to nail the search intent. The same goes with title. The same goes with description. So we're packing it all with data every single time. When we're going after keywords, we have a list of keywords that our competition ranks for, but we want to understand exactly what kind of keywords we want to go after looking at our outline because we want to have the context of the briefs.
+
+So it's not about like ranking for all the keywords that are competitions ranking. It's about ranking and focusing on the keywords that are an entity connected to what we're writing in the brief. So if I'm going after the keywords, I'm like looking at the brief, I'm looking at the keywords and I'm asking AI to use vectors. Actually I'm using vectors to do that. Just to understand which, which keywords should I focus on when writing on this topic from this angle. Then like what I try to do, I want to
+
+Nebojsa (17:59.591)
+Mm-hmm.
+
+Tom Winter (18:25.712)
+to get information from a human that is writing this article, like or is designing it. So they can go through the outline and say like, I like this, I don't like this. They still have access to all the competition. They can combine their knowledge with what AI told them that would nail the search and then create even a better brief. After that, what they can do, they can also provide additional knowledge. So like we have a place for additional knowledge that they feel is important. So maybe they did.
+
+some kind of research, maybe they have like some kind of a case study, maybe they have some data, maybe they talk to the product team, the marketing team, the customers, and they have some insights that are extremely valuable for this specific article. What they can do, they can basically copy paste it into the brief and we will evaluate it with AI, divide it into separate thoughts, then look for the outline, find the relevant place to add it as context to AI because our special matter expert said this and this is important. And then when writing the article, we will provide to AI, look, AI.
+
+Our special matter expert in this specific heading said that this is very important. Our customers said that They focus on that and that's very important. That's opinions opinions and Google loves opinions It's part of EAT. So when we have this brief, we have all the knowledge from the special matter expert that is writing it We go into a writing process. So when we're writing the process like writing the article what we do
+
+Nebojsa (19:38.045)
+Mm-hmm.
+
+Tom Winter (19:51.776)
+We go to AI and ask it kindly, dear AI, I'm writing the article. This is the title, this is the description, this is the outline. This is our predefined brand voice that we want to write this article with, but hold on. Let's write it piece by piece. Let's start with the first heading because for the first heading, what we did, we looked into the search intent. So search results, and they think for this specific heading, like this is important. So this is the information. We actually researched additional case studies, statistics,
+
+Nebojsa (20:13.725)
+You
+
+Tom Winter (20:21.024)
+thought leadership insights and so on. We found something that is really important for this specific heading. Like here are some statistics that you can use there from this link. So you can quote it like, then we actually went to the customer's page. So our own page. And we found that we have a case study that would also fit this specific heading, which is important because we use the website of our customers as a special matter expert, additional special matter expert, because whatever you publish on
+
+Nebojsa (20:22.769)
+Mm-hmm.
+
+Nebojsa (20:44.689)
+Hmm.
+
+Nebojsa (20:50.013)
+Mm-hmm.
+
+Tom Winter (20:50.928)
+this website, that means this is what you're talking, like how you're talking to the audience. So we're taking this website, we're using, scraping it, we're using vector, like changing it to a vector database, and we're pulling the information that we think is important for our specific brief. So if you have like their case studies, if you have information about your product, services, whatever, like maybe some feedback from the customers, we will pull it, find a place to add it in a specific
+
+Nebojsa (21:05.18)
+Mm-hmm.
+
+Tom Winter (21:20.878)
+place in the outline and give it also as context. So once we have this first part, we tell AI like, look, write it.
+
+Then we write the next section exactly the same way. We pull the data from different places. The next section, the next section, the next section. What we get and how we get it, like it's full of value because we have the data, we have opinions, we have like trust signals and everything else, but we don't stop there. For us, this is a draft. So what you do as a human with a draft, you analyze it and you proofread it and you make it better. Because like when you have a draft, you at least see how it looks like.
+
+because earlier you only saw the brief, you saw the outline, you could estimate what you will like how it will look like but until you write the draft, actual draft, you will not see it. So what we do with that, use we have an AI agent that does the following.
+
+it takes the article, looks at EAT factors, and it evaluates it, uses something that we call critique stage. So basically it says, these are the strong points in the article, these are the weak points, these are the actionable points that we have to take to improve it. And actually we need this and this data to make it even better, because we see how all the data that we gathered earlier fits in the article. So then it uses different kind of tools to scrape additional data.
+
+It pulls the data. It goes into rewriting stage based on all the critique stage that we went through and it rewrites the article again to make it even better. What we do after that, we score the article based on the EAT factors. So every single factor, we show you like exactly what, how we score it, what we think about it to be able to measure that. Like I haven't seen many people to be able to measure EAT. They normally talk about.
+
+Nebojsa (23:13.692)
+Yeah.
+
+Tom Winter (23:14.64)
+But when you ask them like, but how do you know this piece of content is better than this one? They say like intuition But this is not the way to do it to be honest, I try to measure whatever I can So and this is how we create the final article what you can do with the article at the end You can actually rewrite it like even further like so you get it as a human
+
+Nebojsa (23:22.619)
+Yeah, yeah.
+
+Tom Winter (23:42.318)
+We actually give you also a list of things that you can improve like how you can even improve it further because we use AI for that Just to understand like what still we're missing and how we can even go further Maybe some kind of opinions directly from the customers or maybe you can go deeper into your case studies
+
+Nebojsa (23:51.965)
+Mm-hmm.
+
+Nebojsa (23:59.048)
+Yeah.
+
+Tom Winter (23:59.22)
+something like that, but we will list out all the things that you can do. You can go through it, make additional adjustments. We normally use like 15 to 20 minutes, maybe half an hour to make it even better. But then it's full of data. It has links inside. It has tables. It compares things together. It's based on data, not some hallucinations from AI.
+
+Nebojsa (24:11.453)
+full.
+
+Nebojsa (24:22.533)
+I mean, I really like...
+
+the whole approach and there are too many things that you are doing behind the scenes and we are only seeing it in front of our eyes. yeah, I I would say if you want to get to that point of quality, get to the data that you can easily access using your tool, you would have to hire at least five SEOs and five content writers, pay more than $10,000 every
+
+So if you don't want to spend that money I suggest signing up for a free demo of SEO Wind trying it out
+
+Tom Winter (24:55.861)
+and
+
+Tom Winter (24:59.374)
+Thank you Thank you. I actually test it out because I know all the prompts that we do I know the whole process inside out I tried to I tried to do it like as like using my hands and the vanilla LLMs so I went to perplexity I went to Claude 3.7 and I tried to do all of these things together like
+
+Nebojsa (25:06.363)
+Yeah, I can see that.
+
+Nebojsa (25:14.437)
+Yeah. Yeah.
+
+Nebojsa (25:21.554)
+Mm-hmm.
+
+Tom Winter (25:22.892)
+to get the final result, it took me over six hours to pull all the data and put things together in place and just to get the final output that I would get like with a system that would pull data from different places. And I had like a big headache afterwards, to be honest, like because it was like a lot of concentration that I had to put in.
+
+Nebojsa (25:34.735)
+Yeah.
+
+Yeah, that's crazy, man.
+
+Nebojsa (25:46.566)
+Yeah, yeah. I think your tool can be used a lot for publishing some statistic pages as it can read too many data and you know, like these are very, they are ranking very well so you might use that for your tool as well. Cool.
+
+Tom Winter (26:05.91)
+Yeah, but the great thing that we published just two weeks ago or three weeks ago, we went all in on content update. Like we had an earlier version of content update, but like...
+
+Nebojsa (26:09.735)
+Mm-hmm.
+
+Tom Winter (26:17.462)
+what we wanted to do, we wanted to do a full rewrite of certain content that you already published. Because the easiest way from the SEO perspective, the easiest way to gain more traffic is to focus on keywords that are already, let's say in top 20, maybe top 10, and move them a couple of positions up. Because Google thinks already like, okay, you're good, you're within this niche, so let's find these striking distance keywords, and let's pull them and make them better. To do it, like the easiest way is to update the
+
+Nebojsa (26:22.973)
+Mm-hmm.
+
+Nebojsa (26:33.115)
+Mm-hmm.
+
+Yeah.
+
+Tom Winter (26:47.496)
+But the problem with updating the content, to update any kind of content, you have to go through the whole process of writing new content, because you have to understand what is the search intent, what kind of additional data do you need to make it better, and you have to go through the same process of writing new content, but with old content.
+
+Nebojsa (26:48.261)
+Exactly.
+
+Tom Winter (27:05.966)
+So we felt like okay, let's do the whole thing and let's focus on the 80 factors Let's pull the data that we need. Let's see like what kind of things in the old content we don't need and we want to remove because it's redundant because like it's Outdated what kind of additional data do we need? Let's go to also our competitors just to see like what do they do and let's combine this all and rewrite and rewrite again To make as good update as possible because everybody hates updating content. I don't know
+
+one SEO person that likes to do updates. They prefer to go after new content. Nobody does updating content, although everybody's speaking about it.
+
+Nebojsa (27:36.369)
+Yeah.
+
+Nebojsa (27:41.724)
+Yeah.
+
+Nebojsa (27:46.366)
+Yeah, they probably just go update the dates. Like if they have best marketing strategies 2024, they are now updating this 2025. Yeah. I don't know SEO who likes updating content. A good starting point, right? So another question that I had is like I've seen companies rely too heavily on automation. So like what are some signs that a company may be over automating its content strategy?
+
+Tom Winter (27:54.99)
+Good starting point.
+
+Tom Winter (28:16.166)
+basically I would go back to measuring like the final output because if you see that the final output like is first of all not performing in Google search console, that's a first indicator that like probably have some kind of a problem, but
+
+Nebojsa (28:19.441)
+Mm-hmm.
+
+Tom Winter (28:33.806)
+The problem with Google Search Console is that you will get this data after you publish and wait for a month. So it's not something that you will see straight out of the box. So what I would recommend to do is actually to measure like EAT, which is extremely hard to measure because there is no one simple measurement how to do it. Normally when you look at all kinds of content graders, so like if you see like a grader that shows
+
+Nebojsa (28:53.213)
+Yeah.
+
+Tom Winter (29:03.76)
+you're like at 50, you're like 80 and you're in green, that's like okay. There are a couple of tools that are a rating tools that have these graders. I don't want to tell the names, but problem with these graders, these graders are keyword stuffing graders. So the more keywords you put in, the higher the grade will be. And this is how they work. Simple as that. Like if you want to, you can check out many of them. All of them have the same algorithm.
+
+Nebojsa (29:14.268)
+Yeah.
+
+Nebojsa (29:25.041)
+Yeah,
+
+Nebojsa (29:32.336)
+Yeah, I know.
+
+Tom Winter (29:33.848)
+but this is not connected. Actually Google is against keyword stuffing. But like what Google wants, Google wants you to be the Wikipedia of your own niche. And you want to give the best possible answer to the specific problem that you're talking about, your opinions, expertise. And you have to measure that. So the easiest way that I found like for everybody to be able to measure that is actually use AI to be able to tell you more about the
+
+Nebojsa (29:37.925)
+Exactly.
+
+Nebojsa (29:44.72)
+Except
+
+Nebojsa (30:00.669)
+Mm-hmm.
+
+Tom Winter (30:03.802)
+article that you wrote. you can, if you want to compare two articles, you can even go to AI and say like, look, I would like to compare these two articles based on EEAT factors. Can you help me out with that? This simple prompt can already help you out and show you like which one is better. So then you can ask like, why do you think this one is better? Can you actually measure EEAT on a scale of one to 10? I'm not saying that this will be repetitive, but that will bring
+
+Nebojsa (30:30.589)
+Mm-hmm.
+
+Tom Winter (30:33.751)
+you closer to identify what is better and how to actually evaluate it. And that's kind of fast because you can do it within a couple of minutes and then you can compare things together. You can also go further with that. Like you can ask, okay, so if I want to improve each EEAT factor, what should I do in my article to do it? And then you get additional information. So like let's use AI as a second pair of eyes, somebody that can read far faster than you and can make and draw conclusions
+
+Nebojsa (30:37.373)
+Mm-hmm.
+
+Nebojsa (30:42.385)
+Mm-hmm.
+
+Tom Winter (31:03.692)
+what you do.
+
+Nebojsa (31:05.853)
+I understand. And like back when we discussed about, for example, now you said if you want to check the EAT factors, you could easily go yourself, open any LLM, put two articles, ask for help. But like, where do you see human input making the biggest difference in this, like today's SEO content workflows?
+
+Tom Winter (31:27.256)
+So in.
+
+Mm-hmm.
+
+Sure. So in my opinion, like what we see the biggest input is all experience that humans have. That's why at the level of creating a brief, we ask a like the human, what is your, what are your thoughts about this brief? So basically when you're creating the brief, you are in control. You're the strategist of the whole thing. So you can improve it and make it better. like if AI tells you like, in my opinion, this outline makes a lot of sense. What do you think, Tom? I'm just saying like,
+
+good that you asked like because actually I don't like this part. I don't like this part I think actually this is something that I want to add on top of that is All my experience because I as a human I talked to the product team I talked to the marketing team I talked to the CEO I talked to the customers I have all this experience from my past that worked or didn't work so I can share also this knowledge and this is very important because this knowledge is Something that is additional on top of what AI knows from the internet
+
+This is something that goes far broader than our knowledge, like the AI knowledge. And that's what Google is looking for. What I like to do with content is kind of a sandwich. I really like to focus on the search intent. For me, this is about 60 % of the whole article that focuses on the search intent and looks at the things that already work. Why? Because Google is looking for something that they know of. They actually define the search intent. If you will go against the rules, this will be kind of
+
+Tom Winter (33:00.758)
+problematic for Google because they will not know if this is a good answer or not. But on top of that, we want to see opinions, expertise, experience, everything that you can add on top like data, anything that is an eye-stopper. Like when you're scrolling through the article, you want to see tables, you want to see graphs, you want to see anything else that will help you out. So this is where a human can add value because they have a lot of expertise.
+
+Nebojsa (33:14.353)
+Yeah.
+
+Nebojsa (33:20.657)
+Yeah, exactly.
+
+Yeah, yeah, yeah, yeah.
+
+Nebojsa (33:30.557)
+At the end of the day, they are the ones who are reading all the content that we publish. Yeah. Yeah. So like, how do you make sure SEO VIN feels intuitive to non-technical users without oversimplifying the power behind it?
+
+Tom Winter (33:35.745)
+Also.
+
+Tom Winter (33:47.406)
+I try to talk to the users and I treat what users say really really serious because I'm in the mindset that if I think I know something I will check it because if a user says that like it didn't work for them or they didn't they couldn't find something to be honest they're right and I'm wrong so like my design or my way of thinking the UI that we build is
+
+done in a bad way. the thing that you can do, talk to your customers. How do they use it? And whenever you're pushing out something, a new feature, even create a hot jar, see like where people are stuck, like where do they click? Where are the rage clicks in the whole thing? And find ways to simplify the process. One of the biggest problems that we saw, because we pull a lot of data from different places and it takes
+
+a while to pull the data, we wanted to break down the process in a way that would not make our users wait in front of the screen for five minutes just for us to spit out something. So we decided to break down the whole process into creating a brief. So you start with just adding a keyword and starting creating a brief. Then you wait three minutes, but you can go for a coffee. You can create actually multiple briefs. So we're not stopping
+
+Nebojsa (35:03.898)
+I understand.
+
+Tom Winter (35:17.7)
+you there. It's all about just pushing out and creating a brief. When we have the brief, we have all the data so we can work on the brief as much as you want and you don't wait there. And then you hit generate the article. The article is generated within 20 minutes. But again, you don't have to watch it. You don't have to wait for that. It's behind the scenes. You will be back in an hour, in half an hour, whenever you want. Maybe the next day.
+
+Nebojsa (35:21.597)
+Mm-hmm.
+
+Tom Winter (35:44.396)
+But the most important part for us is you don't waste your time on waiting until we process a specific thing. So because it's very, very unproductive. And we saw a lot of...
+
+Nebojsa (35:53.182)
+Yeah, think for user experience as well, it's very important.
+
+Tom Winter (35:59.468)
+We saw a lot of tools out there that tell you like, give me a keyword and then they now wait for the outline. It's like, okay, two minutes in. it's like, now, okay, you have the outline. So now we will grab the keywords for you. It's like another two minutes. And this process is like split into so many stages that I would really feel bad.
+
+Nebojsa (36:09.053)
+Yeah, yeah, yeah, I saw that.
+
+Nebojsa (36:20.359)
+Yeah, it's cool.
+
+and then your users just start churning because it takes too long.
+
+Tom Winter (36:29.866)
+Exactly. So, and we focus on drag and drop. want to make it simple and we want to keep the user in one tab, like because...
+
+One thing that I really hated when I was using like my brain for creating briefs and doing it all like that, I had to open up like 20 tabs. And the problem is that because I had like keywords, like in 10 tabs of my competition. So I went to Ahrefs like, I checked the keywords. had like 10 tabs of keywords of my competition. Then I had like my competition opened up like in 10 other tabs and so on. And the problem is that whenever I'm switching tabs,
+
+Nebojsa (36:47.161)
+Yeah, you mentioned that.
+
+Nebojsa (36:54.363)
+Yeah
+
+Tom Winter (37:07.328)
+I'm using my brain power for just memorizing stuff instead of focusing on the main part which is creating the best possible outline and best possible to brief. So we wanted to like just remove it like we wanted to have like one tab where you have all the information that you need to make it as good as possible.
+
+Nebojsa (37:40.702)
+Sorry, something with my internet. Just switched to my data. So yeah, I wanted to ask you more about user experience because like, what kind of user experience decisions have you made to make the platform more accessible to marketers? Because you said like, there is this punchline, building for marketers, not engineers. So I wanna learn more about that.
+
+Tom Winter (38:04.222)
+Yes, like so so definitely we we always try to focus on on
+
+marketers because we don't want to give them additional tasks that are really hard to make decisions. We wanted to create a tool that will basically be a drag and drop. So you just add value. We're like, we will do a lot of things under the hood. we use, we vectorize things. We use vector search. We have a retrieval, augmented generation underneath. Like, so basically we're using retrieval, augmented generation to
+
+Nebojsa (38:12.764)
+Yeah.
+
+Nebojsa (38:39.847)
+Yeah.
+
+Tom Winter (38:41.368)
+pull data from different sources. But all we want you to have is
+
+Nebojsa (38:43.538)
+Yeah.
+
+Tom Winter (38:47.128)
+the decision making data. So basically, if we want you to work on the outline, we want to show you the outlines of others. So what others are doing. We don't want you to understand how you can pull things together, how we use vectors for specific things to identify what goes with what, because that makes no sense for you. If we're asking you to provide the additional information, what do you think is important for this brief? We just tell you like,
+
+Nebojsa (38:50.301)
+Hmm.
+
+Nebojsa (39:09.01)
+Yeah.
+
+Tom Winter (39:17.072)
+paste in whatever you think, like whatever you have in your mind, just paste it in. We will parse it, we will divide it into separate thoughts.
+
+We will beautify it. Don't worry. Like just give us the data. So we always want it to simplify things as much as possible. We don't ask you for every single heading to tell us like, okay, so what kind of additional information do you have for this heading? What kind of information you have for this heading? What kind of information you have for this? Because we know the users will not do it. So we prefer to just like, just pour in everything that you have about this topic. We will deal with that for you. Like, so we will actually parse it, find where it fits as the source of data.
+
+and we will tell AI exactly there what's important. We will also pull data from additional case studies. So we have an agent that
+
+Nebojsa (39:59.23)
+Mm-hmm.
+
+Tom Winter (40:05.482)
+is focused on research. So what it does, it has access to multiple tools that it can do research with. So it takes the brief and it asks a simple question. So what data, looking at this brief, looking at this outline, what kind of data do I need to make this article outstanding? So do I need case studies? Do I need statistics? Do I need trends? Maybe I need some information about some products, so I can research that.
+
+it and it pulls the data and it provides to EI directly the data that it needs to write the article but it does it autonomously. I don't handle and don't specify like bring me all statistics for this brief like I leave it to the agent so it decides exactly what kind of data it needs and where to look for it.
+
+Nebojsa (40:59.471)
+Mm-hmm. Mm-hmm. Yeah, understood like that's how you buy marketers attention Just keep them in one tab save their time enable them to make the database decisions move to move forward and yeah, let them focus Exactly. Yeah, I mean we all want that Are we yeah, we all want to focus on the most important things and just like stop wasting our time on a
+
+Tom Winter (41:11.732)
+Let them focus. Focus on the most important part.
+
+Nebojsa (41:25.863)
+things that are not important, you know, and they're not like helping us grow that efficiently. So yeah, I want to talk more about what you have learned from direct conversations with your users because you mentioned you had like hundreds of conversations with your users. So can you share an example of a user insight that led to a major product improvement?
+
+Tom Winter (41:52.578)
+So.
+
+One of the last things that we added is a graph showing, like when you're updating content, we added a graph showing, comparing your old article to your new article. And also like we define all the things that we changed and how we impacted EAT score. It came directly from a user. So the users like had a simple problem. Like I didn't understand it early, but then it was obvious. If they had the original article,
+
+Nebojsa (42:00.989)
+Mm-hmm.
+
+Tom Winter (42:23.484)
+and the new article, they weren't able to objectively compare these things together. like, for example, if they wrote an article as humans with their own hands, they spent eight hours or two days on writing the specific article. And now we're updating it within 20 minutes using AI without like sweating.
+
+the user from their perspective, what they would say like, okay, I would justify my original article because I spent two days on that. They don't even think it this way. And I would say like, no, my article is better because the other one is written by AI. So it's fluff and it's empty. Right. And this is what most of the users said because they didn't have the tools to be able to objectively compare these together and say like, okay, this is actually a lot better. When you told
+
+Nebojsa (42:58.502)
+Yeah, yeah.
+
+Nebojsa (43:03.985)
+Yeah
+
+Nebojsa (43:14.609)
+Mm-hmm.
+
+Mm-hmm.
+
+Tom Winter (43:18.562)
+me that, like you listed out all the things that are changed and why it's better, it makes a lot of sense. So does it impact the final results? No, it doesn't, because like you could just have like copied the updated article and updated your old article and it wouldn't change anything. But from the perspective of a human, it builds trust. It shows them like, okay, this is how it's better. I haven't seen it. I didn't see it at the first glance, but now when you
+
+told me what to look at and how it's different, there is a graph showing EAT score on the spider graph showing where it's improved, okay, I do see it. Because we as humans, when it comes to AI, and especially in marketing, we don't trust it. There's a lot of fluff, a lot of people are telling on LinkedIn, AI content is empty, fluff, humans are better.
+
+Nebojsa (44:08.093)
+Mm-hmm.
+
+Nebojsa (44:14.513)
+Yeah.
+
+Tom Winter (44:18.432)
+somehow right, but they're very subjective. Like they don't have a tool to compare it. So this is one of the things that we heard from the customers, give our customers a tool to be able to compare things.
+
+Nebojsa (44:22.855)
+Yeah.
+
+Nebojsa (44:36.465)
+Yeah, makes sense. does that happen rarely? That only one user can make you implement something on your product? Like, how do you gather and prioritize feedback from users when planning your roadmap? You do it mathematically.
+
+Tom Winter (44:52.278)
+It's never a one user. It's never a one user. Like if somebody tells me like once that like this or that is a problem, I'm...
+
+Rarely, really rarely. It probably happens once or twice. It had to be so obvious to get it and pull and actually create this feature or to do this thing. It's really rare. But if it happens more often, I have a list of features. We don't let our customers vote, but when I listen to people, I actually have my own voting list. So I can see what kind of things people request.
+
+Nebojsa (45:10.673)
+Mm-hmm.
+
+Nebojsa (45:22.013)
+Mm-hmm.
+
+Nebojsa (45:30.119)
+okay.
+
+Tom Winter (45:32.612)
+and then I'm trying to figure out like okay that already makes sense because the problem of when you're building a startup you never have enough time to build everything and you have to make decisions what to prioritize so I always say like if you want to go from point A to point B make a decision
+
+Nebojsa (45:41.117)
+Mm-hmm.
+
+Exactly,
+
+Nebojsa (45:48.028)
+Mm-hmm.
+
+Tom Winter (45:54.062)
+What do you need and what you don't need to actually go there? So if you're a human and you need to walk from like point A to point B, do you need these two hands? No, you need to like, you need legs. Do you need both legs? Actually, you can hop on the one. It will be uncomfortable, but you will get to point B. And this is exactly the sweet spot like of start-up in the world that you have to make hard decisions, sometimes uncomfortable.
+
+Nebojsa (45:58.556)
+Yeah.
+
+Nebojsa (46:11.901)
+Yeah.
+
+Yeah, that's right.
+
+Tom Winter (46:23.96)
+but you don't need like two hands and two legs to go from point A to point B. And you have to make this decision. So as an example, like we really long, we didn't have a team feature. So there was only one account and one user. You could share like the user account like with others. So you could access the...
+
+Nebojsa (46:28.549)
+Yeah, yeah, with fewer resources. Yeah, you can achieve those goals.
+
+Nebojsa (46:39.645)
+Mm-hmm.
+
+Nebojsa (46:43.549)
+Mm-hmm.
+
+Mm-hmm.
+
+Tom Winter (46:49.408)
+system like using one user account, but we didn't have a team feature. Why? Because it wasn't necessary. We could live without it. Was it painful? Yes, it was. Did we need it? No, we could live without it. Our customers also lived without it. It wasn't a deal breaker.
+
+Nebojsa (46:52.401)
+Mm-hmm. Mm-hmm.
+
+Mm-hmm. Mm-hmm.
+
+Nebojsa (47:07.015)
+Mm-hmm. Yeah.
+
+Tom Winter (47:11.658)
+A lot of people mention it like, they need it. But when you ask them, like, do you really, really need it? Like, will you be able to survive without it? They say like, yeah.
+
+Nebojsa (47:22.935)
+Yeah, they're just being spoiled. They want to have that.
+
+Tom Winter (47:26.776)
+Do you still want to buy? Yeah. Will it be a deal breaker that will not make you buy? No, it won't. So we don't need it at the moment.
+
+Nebojsa (47:35.365)
+Yeah, we can live without it. Yeah, cool. And Tom, I know we don't have many, like a lot of time left. So I want to ask you a few more questions before we wrap it up. You spent time developing the products hands-on. How do you balance long-term product vision with short-term feature requests?
+
+Tom Winter (47:58.862)
+I try not to create a long, long term vision. Like if I talk about long term vision, more or less it's very, very top level, really, really top level. Like I try to have a product view for the next three months.
+
+Nebojsa (48:08.229)
+Mm-hmm.
+
+Nebojsa (48:18.596)
+Mm-hmm.
+
+Tom Winter (48:23.246)
+and really top level view like for the next year or year and a half. But it's so flexible that it can mean a lot. But right now, like with the whole development of AI,
+
+a lot of things are changing extremely fast. Like few months back, we weren't even talking about AI agents. At the moment, it's part of like our main product that we're using on daily basis. The feature that we're rolling out like soon, we'll be adding images into the articles because GPT4ALL is capable, finally capable of creating something that is...
+
+Nebojsa (48:42.044)
+Yeah.
+
+Mm-hmm.
+
+Nebojsa (48:49.051)
+Yeah. Yeah.
+
+Tom Winter (49:02.87)
+consistent with the brand guidelines. So we are able to create brand guidelines for an image and then using the data from the article, we are able to create graphs, we're able to create tables, anything that is visually appealing in the style of brand guidelines. Earlier, when you looked at the daily mid-journey or anything, it was all over the place. So basically, I didn't like the images because I wouldn't put them as a human because I would think like, okay, they're not
+
+Nebojsa (49:05.575)
+Mm-hmm.
+
+Tom Winter (49:33.004)
+branded. They're wrong. There's something in them that makes no sense. Like every single image is like from a different thing. because of the changes with AI, we want to be flexible with the things that we want to go after. Sometimes we know that things are impossible to do right now. We wait for it to be possible.
+
+Nebojsa (49:50.994)
+Okay.
+
+Yeah.
+
+Tom Winter (49:58.062)
+And then we are able to implement it. So like there are a couple of things in the drawer that we know That we are really close, but we don't have yet a solution because the solution is not yet on the market so Yeah
+
+Nebojsa (50:08.573)
+Mm-hmm. Yeah.
+
+I completely understand you like in this like world of AI like there is a lot of volatility a lot of changes Month to month week to week and you just can't form like a three years in future strategy because You know, the data will just become different and you can't rely on the same data All the way to the top. So considering we have 10 more minutes. I'd like just to ask three more like questions
+
+Is that okay? So first I'm very interested and I believe all the users that are using SEO Wind are interested. What happens with your tool when there are some shifts in Google's algorithm change? Like when content core update happens and some things need to be changed in, for example, for EAT when it came out, the EAT factor is one of the biggest ranking signals for the
+
+Tom Winter (50:43.726)
+Sure.
+
+Nebojsa (51:12.383)
+content, then like does your tool need to stay on top of these trends and do you need to like update some things when these like big changes happen with the algorithm to support that ranking? Yeah.
+
+Tom Winter (51:27.34)
+So we try to, I do understand. like we try to keep the system like up to date as much as possible. But like if you publish an article like a year ago, like what you should do probably if you use humans or you use AI, it doesn't matter. You should look back to it. Like you can, you should update. And because we have like a tool for updating old content,
+
+Nebojsa (51:51.334)
+Mm-hmm.
+
+Tom Winter (51:52.398)
+it's not that like once done, it's done. As you mentioned, like with normal SEOs, they change these dates. Like, so for example, best tools for X and Y for 2024, then they change it to 2025 and they actually have to update it every single year. I've talked with the...
+
+of SEO at ClickUp and they mentioned that they have couple of pools of types of content. So like there are some content that they look back into every single, I don't know, quarter. There's a pool of content that they look back into every half of a year and there is a pool of content that they look into like every year. So if you divide your content into such pools so you know when to go back and when to update it, you can use
+
+Nebojsa (52:15.901)
+Mm-hmm.
+
+Nebojsa (52:24.967)
+Mm-hmm.
+
+Nebojsa (52:36.881)
+Mm-hmm.
+
+Tom Winter (52:43.9)
+tools like SEOwind to make it better. We try to keep SEOwind as much up-to-date and it's a consistent improvement that we can do because if there's some new ideas how we can improve EAT factors, we will try to do it. As an example that I've mentioned, images. So if we can create contextual images of graphs and visualizing the context that we can see in the article, this is a dream scenario for Google. If I would be able to do
+
+Nebojsa (52:44.039)
+make sense.
+
+Nebojsa (53:06.844)
+Yeah.
+
+Nebojsa (53:12.967)
+Yes.
+
+Tom Winter (53:13.76)
+right now, I would basically do it because you will not have an image of like, I don't know, a hand with like different colors of nails like showing like differences. Like this is so 2015, like you have to show visualize the context and this is something that we can't do right now yet. We will do within a month. So whenever it's like back and available, I would go with updating content.
+
+Nebojsa (53:21.7)
+Yeah.
+
+Nebojsa (53:27.142)
+Yeah, yeah.
+
+Nebojsa (53:34.535)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (53:43.364)
+Nice, nice. Okay, I'm excited for that new image feature on your tool. I'd be happy to check it out. Okay, so the final two questions are related to, let's say, people who want to build a startup today in this like fast evolving AI marketing and tech space. So what's one mindset that's helped you stay focused while building and scaling SEO wind?
+
+Tom Winter (54:13.614)
+in the fast evolving landscape as AI would say. This is just stay focused on your goal, like look at the metrics and like what I would recommend really work in sprints, like define the KPIs that you want to reach and check every so often if you're reaching them. We are all...
+
+Nebojsa (54:18.983)
+Yeah.
+
+Tom Winter (54:39.222)
+If don't have KPIs and if we don't write our goals down on a piece of paper in three months or six months, we will justify the hell out of whatever we're doing just to prove that we're right. And this is the problem with humans. So, I really like to put on paper my plans and actually check every so often with the team and meet with the team and discuss it. If we're on the right path or we're not like if we're reaching the goal and if not, why are we not reaching the goal? Just to understand where we are, but you have
+
+to see metrics to be able to make decisions. And you have to decide early on what are the metrics, what are my goals to be able to understand. if you have it, then you will know if you're succeeding or not. So this is one thing that I would recommend to all the start-upers. Write down your plans. I know it's uncomfortable. And then write down your hypothesis just to know if you succeed or not. Because if you don't have like a metrics
+
+Nebojsa (55:25.809)
+Mm-hmm.
+
+Tom Winter (55:39.197)
+that will show you that you succeeded. You will succeed every single time according to you.
+
+Nebojsa (55:46.256)
+Okay, that kind of answered both of my questions. So let me ask you this final question, like looking ahead, how do you see your personal role evolving as the company continues to grow and the industry also continues to grow? Where do you see yourself?
+
+Tom Winter (56:04.916)
+I love to be a product manager. Like I really love directly with the product just to understand like how it works. I want to see how people are using the tool just to understand exactly what do they need. And this is my dream scenario. I'm a chaos person. Like personally, I'm really a chaos person. I like to be all over the place, everywhere. I'm not like, I have a CEO like that is really an amazing person, but like she is very strict.
+
+She knows how to manage the whole project, like which is the company. And I know that I'm not good with that. Like I know I can solve problems. I can go with solving the problem up to 80%, not to make it perfect. I'm really bad with making it perfect. So I would like to keep to be the product manager of the company to help to design things that will help our customers. And this is where this is my sweet spot.
+
+I like to find solutions. I'm really good with finding solutions.
+
+Nebojsa (57:09.937)
+Yeah.
+
+Okay, Tom, that really answers all the questions that I had for you today. And we are on time. Tom, I want to thank you for being a part of this podcast and also providing all the knowledge that you just shared with the audience. I'm sure that people will find it very useful. So I suggest to all the listeners to follow Tom on LinkedIn and also read the posts that he's sharing because they are also
+
+valuable as all the podcast answers he just answered to us also try to Try you should definitely people who are writing content for whatever purpose do they write it? They should test SEO wind as a tool as it has a huge potential and it's already being used with Like too many people across the whole world. So Tom, thank you again for sharing everything
+
+I hope to see you again on some other opportunity that comes up. So we'll be in touch.
+
+Tom Winter (58:19.566)
+Thanks a lot, it was a pleasure to be here and thank you for the invite.
+
+Nebojsa (58:24.391)
+Thank you, I wish you like a lot of success on your growth and less chaos and good products on your way.
+
+Tom Winter (58:34.84)
+Thanks a lot and cheers everybody. Have a good day.
+
+Nebojsa (58:37.799)
+Cheers, bye bye.
+

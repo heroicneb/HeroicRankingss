@@ -1,0 +1,1144 @@
+Nebojsa (00:00.807)
+So, welcome to the ranking heroes where we dive deep into the strategies that top the charts and explore the stories behind the minds that make it happen. So I'm your host Nebojsa and today we are joined by a very special guest Nenad, an expert in digital marketing, SEO, product development and UX. So let's get started.
+
+Nenad S (00:22.801)
+Stop it unblushing.
+
+Nebojsa (00:26.119)
+Let's take it slow. So first of all, Nenad, thanks for coming. And the first question for you is if you could share with us how your journey started in digital marketing and product development and what initially drove you to this field.
+
+Nenad S (00:30.897)
+Pleasure to be here.
+
+Nenad S (00:43.601)
+Well, I started actually I started doing this workout of spite Like I don't know more than a decade ago around 15 years ago There were some friends that were doing ghost writing for an SEO expert from my hometown
+
+And I was a kid, I needed the money, I wanted to have some cash on the side so I can go party or whatever. But the whole point is when I tried to apply with my friends, hey, can I do some ghost writing, can I do some articles for you? They actually gave me like, yeah man, you don't know English, I'm not sure if you're going to be a good ghost writer. So I basically...
+
+took one of my friends and told him, hey I'm gonna work for free like four or five articles give me something to write but I just want you to forward those articles to that guy who's an editor who told me that I don't know English so one thing led to another I started ghostwriting and as time went by I actually went a bit deeper to understand what I'm actually doing so I mean
+
+Nebojsa (02:01.35)
+Mm -hmm.
+
+Nenad S (02:01.411)
+Blogosphere itself was a new thing to me. Not that new. I mean I was active on forums, I did read a lot of articles for whatever I needed but I never truly understood what it was done for. So I started learning more about SEO and how does that go. I had some previous experience with CSS and HTML so I started formatting and publishing articles on my own.
+
+Nebojsa (02:18.183)
+Mm -hmm.
+
+Nebojsa (02:28.455)
+Mm -hmm.
+
+Nenad S (02:31.267)
+It was sort of a time when WordPress just started kicking in like a popular platform like a CMS to actually publish articles and Again one thing led to another I started more researching on -site SEO I started with link building started to research on -site SEO Again, I had previous skills with different programming languages CSS and HTML
+
+are more of markup languages, they are not specifically program languages. But I started doing PHP, I started doing JavaScript, and it kinda just clicked. So my journey as a whole...
+
+Nebojsa (03:02.566)
+Mm -hmm.
+
+Nebojsa (03:15.174)
+Nenad S (03:20.689)
+Let's say that it took two or three years first of just studying SEO. Then I slowly moved to actual product development to other marketing specializations. So I started doing social media as a way to boost SEO and content marketing. Then I started doing PPC once I started to experiment with pages that match search intent, etc. It was easier for me to
+
+Nebojsa (03:26.726)
+Mm -hmm.
+
+Nebojsa (03:40.326)
+Mm -hmm.
+
+Nenad S (03:50.595)
+to just drive traffic and to see how the page works, how it converts.
+
+Nebojsa (03:51.526)
+Mmm.
+
+Nenad S (03:55.761)
+Then I started to dive more into analytics. Then I started working with designers and finally I got into UX where again one thing led to another. I started doing and facilitating design sprints, started doing with work with product development teams and I worked and I worked on publishing and user acquisition for several apps so far. All of them successful. One of them went
+
+Nebojsa (04:09.83)
+Mm -hmm.
+
+Nebojsa (04:22.598)
+yeah.
+
+Nenad S (04:25.907)
+IPO.
+
+Nebojsa (04:28.039)
+Also, there are a lot of things that you covered like over the past decade. So I suppose When you said it was the beginning of the wordpress, that's like 15 years ago
+
+Nenad S (04:40.625)
+Kind of, so I mean before that, whenever we, again, that was the time when you...
+
+Nebojsa (04:42.055)
+Yeah.
+
+Nenad S (04:51.857)
+it was around 2000 before 2011 2012 you didn't have an actual SEO manager at that point we were all webmasters so you are the guy who is basically developing designing the website plus doing all on -site optimization plus you're running social media so you're basically a webmaster and owner of a website doing all of that work specific job titles like SEO manager
+
+Nebojsa (04:55.974)
+Mm -hmm.
+
+Nebojsa (05:01.574)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (05:17.991)
+Okay.
+
+Nenad S (05:21.763)
+SEO consultant, SEO specialist were just starting to appear because there were at 2011 it's kind of when SEO 2 .0 let's call it started where a lot of spam was cut off from Google, Google became really large they started doing work with NLP's with voice
+
+Nebojsa (05:37.031)
+Yeah.
+
+Nebojsa (05:40.999)
+Mhm.
+
+Nenad S (05:49.009)
+with voice search etc. So at that point there were too many things and you needed to actually specialize for specific part of SEO. But before that we were just webmasters.
+
+Nebojsa (05:51.11)
+Mm -hmm, mm -hmm.
+
+Nebojsa (06:02.725)
+Mm -hmm.
+
+Yeah, and when you said it took you three years to learn SEO, do you mean like, was it easier to do SEO back like 10 years ago compared to now? In terms of competition, I know it was kind of easier, but in terms of some technicalities, was it easier to rank a website 10 years ago than it is now?
+
+Nenad S (06:30.993)
+Well, to be honest, it was easier, but it required skill because there were a lot of things that are now, today, are considered black hat that were then in sort of a gray zone. And to be honest, Google works differently. For instance, I'm going to explain an example. Back then, we wanted to apply for rich,
+
+Nebojsa (06:44.197)
+Mm -hmm.
+
+Nebojsa (06:50.596)
+Mm -hmm.
+
+Nebojsa (06:54.214)
+Mm -hmm.
+
+Nenad S (07:00.899)
+snippet results but in order to be to apply for rich snippet results your website needed structured data at that point the only the default structured data markup that was used was micro data and micro data required you to actually change the h
+
+Nebojsa (07:02.469)
+Mm -hmm.
+
+Nebojsa (07:13.03)
+Mm -hmm.
+
+Nenad S (07:25.137)
+HTML of the page so you can have some proper nesting for it in order to actually have a validated structure data markup. How...
+
+Nebojsa (07:27.013)
+Mmm.
+
+Nebojsa (07:31.398)
+Mm -hmm.
+
+Nebojsa (07:36.39)
+Also you didn't have the plugins that can easily help you do this. Okay.
+
+Nenad S (07:39.185)
+No, no, no, no, this was needed to be done directly in code so regardless if it is WordPress or a static website or whatever you needed to change the whole HTML template in order to apply it. However, because Google...
+
+wanted to enable more websites to have that structured data to use that structured data and to apply for each snippet results they moved the whole formatting from micro data to JSON -LD. Now JSON -LD is just a script that you place in the head section and there are rules how you write it and there are rules how you nest them but again there are a lot of generators for it and you can just write your own JSON -LD
+
+Nebojsa (08:05.638)
+Mm -hmm.
+
+Nebojsa (08:24.87)
+Mm -hmm.
+
+Nenad S (08:28.451)
+and put it in head. Now you completely avoided changing the HTML of page. If you're not a developer or if it was a complicated CMS you needed developers help for that. Now when they moved to JSON -LD you didn't need it and most of CMS's had already some plugins or generators where you could do it. So Google is trying to enable people to do as
+
+Nebojsa (08:41.99)
+Mm -hmm.
+
+Nebojsa (08:47.333)
+Mm -hmm.
+
+Nenad S (08:58.307)
+less complicated things or to do something like so little things to do just to write content just to publish your website just to be true to it and they will figure it out how to rank it so back then you had some like proper input signals like do this as an input and you receive this as an output it required skill it required
+
+Nebojsa (09:07.974)
+Mm -hmm.
+
+Nebojsa (09:15.237)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (09:22.277)
+Mm -hmm.
+
+Nebojsa (09:26.15)
+Mm -hmm.
+
+Nenad S (09:28.163)
+more resources and it was more on you to do that part of optimization. Now it's more about Google deciding itself and awarding itself without you even having to do any technical work or on -site work. Now this is like this is not...
+
+Nebojsa (09:34.372)
+Mm -hmm.
+
+Nebojsa (09:44.517)
+Okay, I got it.
+
+Nenad S (09:52.177)
+I'm really explaining it in layman terms. There are still things that you can do that affect SEO, but there was a much bigger tool set of things that you could do like a decade ago than you could do now to actually influence search engine rankings, specifically for Google. Specifically for Google.
+
+Nebojsa (10:01.221)
+Mm -hmm.
+
+Nebojsa (10:08.549)
+Mm -hmm.
+
+Nebojsa (10:12.293)
+Okay, got it.
+
+Yeah, I actually wanted to ask you about the first major challenges you faced back then but I now can see that the one of the main challenges was like know how to program things, you know, because you don't need a programmer now. If you want to do SEO, you can just do it using by using plugins. You don't need to code anything. So now it's much easier than it was before and who are the biggest influences or mentors?
+
+Nenad S (10:39.697)
+too.
+
+Nebojsa (10:44.535)
+when you started out in your career? Like how did they shape your approach to marketing and development?
+
+Nenad S (10:50.705)
+I can name like really just two or three names. So one of them was Radomir Basta was a guy, an SEO consultant here from Serbia who has an agency 4Dots where I start I worked at some point in 4Dots, but that guy was my idol like
+
+Nebojsa (10:59.077)
+If you feel comfortable, yeah, please go.
+
+Nebojsa (11:12.099)
+Mm -hmm.
+
+Nenad S (11:20.305)
+before all of that. So while I was just learning the job because...
+
+Nebojsa (11:22.02)
+Mm -hmm. Mm -hmm. Yeah.
+
+Nenad S (11:28.593)
+As a person who is just starting out and who's just starting to learn SEO, you can Google like SEO guide or whatever, but you will get a ton of intro introductory or overall like articles that explain those part. You actually start to learn SEO once you start to Google and to find specific questions and specific issues that you're covering. And Basta was a guy who really could explain you those parts.
+
+Nebojsa (11:44.389)
+Mm -hmm.
+
+Nenad S (11:58.719)
+or from who you can ask and to explain specific questions like when you ask him a question he says no that wasn't the question you're asking this was the question you're asking and here is the answer because he would actually pinpoint what specific question could you ask him where to start learn from it that is Radomir Basta. Second guy got a Gary Elias he worked at Google he was part of
+
+Nebojsa (12:04.101)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (12:14.117)
+Mmm.
+
+Nebojsa (12:21.541)
+Yeah.
+
+Nenad S (12:28.355)
+of the web spam team and I love that guy so it was on my feed burner so whenever thing got published him and Gary Barry Schwartz because he export Google patents so those guys were like my
+
+Nebojsa (12:34.949)
+Haha.
+
+Nenad S (12:41.905)
+primary source of what Google says and the way it says it. And the third and most influential guy on my whole work and experience was Dan from Dan's SEO. Because that guy...
+
+Nebojsa (12:43.314)
+Yeah
+
+Nebojsa (12:57.798)
+Mm -hmm.
+
+Nenad S (13:01.265)
+I learned from that guy how to properly test an assumption and how to never trust Google. I mean never trust like something like...
+
+Nebojsa (13:06.342)
+Mhm.
+
+Yeah.
+
+Nenad S (13:15.345)
+whenever Google says something like you completely trust it immediately. But I learned how to test all of those assumptions, whatever Google says if it's true or if it's not, and to rely more on empirical evidence and data rather than just hearsay coming in from PRs. So that guy was probably the most influential on my whole learning curve. But from that moment on, when I start, when I learned how to actually test,
+
+Nebojsa (13:19.142)
+Yeah.
+
+Nebojsa (13:35.078)
+Yeah.
+
+Nenad S (13:45.251)
+assumptions I'm not sure I ever like followed an influencer or an SEO expert I mean I accumulated enough knowledge and I cherry picked enough resources of information for SEO so I learned to make an assumption myself for how to test it without having to go on and read stuff.
+
+Nebojsa (13:52.87)
+Mm -hmm.
+
+Nebojsa (13:59.942)
+Mhm.
+
+Nebojsa (14:06.342)
+Mm -hmm.
+
+Nebojsa (14:11.207)
+So basically you learned what's working and what's not by actually testing it live on the websites. Yeah. So that's the great.
+
+Nenad S (14:16.305)
+Trial and error. Yeah. Yeah, and I'm not just saying
+
+Yeah, but you will find a lot of people not specifically in SEO, but in I know SEO is not a specific branch of marketing. However, if we take as a digital marketing as an overall, whatever you see, like is the advertising like PPC or is content marketing or social media, people constantly explain A -B test, like we're going to A -B test this, we're going to A -B test that. They never did.
+
+Nebojsa (14:30.821)
+Yeah.
+
+Nebojsa (14:48.069)
+Mm -hmm.
+
+Nenad S (14:50.383)
+I was actually doing and relying heavily on A -B tests, A -B -N tests, multivariate tests and doing specific user testing on spot when needed, whenever I wanted to test any kind of assumption.
+
+Nebojsa (14:50.918)
+Mm -hmm.
+
+Nebojsa (15:02.822)
+Yeah.
+
+Nebojsa (15:08.934)
+So when it comes to testing, could you discuss one project that you remember and think that significantly impacted on your career? And what were the key lessons you learned from that experience? Do you have a single project that really challenged you and made you completely change the way you're thinking and approaching to all the strategies that twisted your mind?
+
+Nenad S (15:24.433)
+Nenad S (15:37.617)
+We had some of those things. There are many projects, but there was one that really gave me like where I really truly experienced.
+
+Nebojsa (15:42.694)
+There are many projects, I know, but can you pick one?
+
+Nebojsa (15:50.886)
+-huh.
+
+Nebojsa (15:58.214)
+Mm -hmm.
+
+Nenad S (15:58.417)
+like raising a conversion from around 4 % to 5 .5 % and that it made a difference on a website in terms of sales of we're talking six figures here with that just an increase of a is around six figures so and I'm not lying at that point it was but the whole
+
+Nebojsa (16:05.19)
+Mm -hmm.
+
+Nebojsa (16:16.423)
+So like 1 .5 % increase in...
+
+Nenad S (16:26.705)
+point of that test was it was a retail website that sold clothes and we wanted to make sort of an algorithm where I'm saying sort of where we can with a few clicks we can conclude which brand do you I mean and not clicks like do you like more Nike or Adidas where you can click no just by using the website with four to six clicks we can
+
+Nebojsa (16:50.119)
+Mm -hmm. Mm -hmm.
+
+Nenad S (16:56.659)
+get an idea and basically create a segment, a persona. This guy likes Adidas, wears that number of shoes, likes this color and so it's summer so more of a polo shirt than the one with no...
+
+Nebojsa (17:02.759)
+Mm -hmm.
+
+Nebojsa (17:08.968)
+Nenad S (17:16.497)
+with no payload, I'm not sure the name for it. So we can do that with a few clicks and that testing was on a website that had 1 .2 million users a month. So it was at any point of time you always had like between 60 and 100 users in the most active part of the day on that website. So the whole thing
+
+Nebojsa (17:17.959)
+Yeah, yeah, yeah, yeah.
+
+Nebojsa (17:44.103)
+Mm -hmm. Mm.
+
+Nenad S (17:46.571)
+testing needed to be done. I mean we did it on staging but the whole testing needed to be done directly there and the data that we accumulated we accumulated data for a month in order to test those assumptions and at one point because we had a formula and this was a mathematical formula that was checked with a psychologist where we needed to do those testings with various colors and various buttons and whatever and we actually had to bring in a professor
+
+Nebojsa (17:51.014)
+Mm -hmm.
+
+Yeah.
+
+Nebojsa (18:08.007)
+Mm -hmm.
+
+Nenad S (18:16.371)
+of mathematics from the University of Belgrade to help us out just to tweak the formula because the weight weighing of it was complicated for us to make but
+
+Nebojsa (18:22.92)
+Whoa, man.
+
+Nenad S (18:31.313)
+If there was a point in time where I actually did a huge testing with a huge data set with something that didn't require for a user to engage in like a sort of a questionnaire or just to see if they will click more on this button on a page but to actually increase the chances of them buying the whole thing for themselves by knowing exactly
+
+what brands do they prefer, colors, etc. Just to shorten the process of their picks that was that project. Now...
+
+Nebojsa (19:04.328)
+Yeah.
+
+Nebojsa (19:08.392)
+and serve them what they actually want and need bro that's crazy
+
+Nenad S (19:11.537)
+exactly I can say that it was a US project it was a US website it still exists today but due to legalities I can't share I mean I can share other tests but if there was a point in time where one huge project where one and a half percent made a six -figure difference at the end of the month that's that and we're talking not
+
+Nebojsa (19:26.311)
+It's okay,
+
+Nebojsa (19:38.599)
+bro but like yeah but like going that deep without even knowing what will cause what will happen when you raise the conversion rate from 4 to 5 .5 you already knew that
+
+Nenad S (19:49.969)
+no we knew we knew in terms of we we already knew what traffic is that web had yeah so our goal was to increase it to one and a half percent no our goal was to increase it for just half a percent but we went above and beyond to increase it to one and one point five percent and we did a completely
+
+Nebojsa (19:56.87)
+You calculated what will happen, yeah.
+
+Nebojsa (20:11.846)
+I mean, you even hired a professor who helped you create the formula. It's crazy, it's incredible.
+
+Nenad S (20:16.145)
+Yeah, yeah, because we thought more out of the box. It was not just, hey, can I change this button or can I change adding to cart like this step to short, whatever. We actually did it via...
+
+Nebojsa (20:22.566)
+Yeah.
+
+Nebojsa (20:30.022)
+Yeah.
+
+Nenad S (20:33.521)
+We optimized the discovery phase, not the sales process where you were actually purchasing. So we optimized the discovery phase so people would be more engaged to finding exactly what they need. And there was a mix of UX and SEO there and a lot of analytics there. But that website was generating most of its traffic from organic. It was like...
+
+Nebojsa (20:49.094)
+Yeah.
+
+Nebojsa (20:57.35)
+crazy.
+
+Nenad S (21:01.841)
+65 to 70 percent of traffic was from organic because they did ads as well. I mean it's a huge website working with retailers
+
+Nebojsa (21:09.639)
+Yeah, man, that's incredible. I mean, thanks for sharing such an interesting story. And yeah, regarding UX and digital marketing, these are areas that see rapid changes. So how do you keep yourself updated and continue to innovate in your field?
+
+Nenad S (21:28.497)
+UX never changes. Marketing never changes. No, it never changes. The whole... Well, think of the...
+
+Nebojsa (21:31.047)
+It remains the same and what do you mean by that like People you know Google announced Google update and people go crazy obviously they need their NSEO to make them calm but and Why do you think that?
+
+Nenad S (21:40.889)
+It's bullshit. It's bullshit. Hear me out. Marketing at its core is to promote a product...
+
+Nebojsa (21:51.814)
+Okay.
+
+Nenad S (21:53.809)
+or a service that solves a user's problem or user's need at that point so if UX goes the same so for instance I have a bottle that I want to open and I need a corkscrew so I'm going to buy a corkscrew I'm not going to use a screwdriver for it or anything I'm looking for a corkscrew because that's
+
+Nebojsa (21:56.071)
+Mm -hmm.
+
+Nebojsa (22:02.599)
+Yeah.
+
+Nebojsa (22:21.831)
+Okay.
+
+Nenad S (22:22.961)
+the solution for that problem. So, yeah, exactly. So, when you're looking at marketing, you need to focus on the messaging and on the messaging where you are addressing a person where you're resolving, you're proposing an issue to resolve their problem. So, if you want to address a user,
+
+Nebojsa (22:24.551)
+That's the tool, yeah.
+
+Nebojsa (22:31.111)
+Okay.
+
+Nenad S (22:53.009)
+that if it's a local business, you can just go out with flyers. You can also do digital marketing. You can also do PPC ads if it's a local business. If you're working on a scale where we're talking like a big city like New York, you can go with billboards. You can go with social media. You can go with whatever. But the whole point is your message needs to be sent across and your goals as a business needs to be met.
+
+Nebojsa (22:58.759)
+Mm -hmm.
+
+Nebojsa (23:04.23)
+Mm -hmm.
+
+Nebojsa (23:09.064)
+Mm -hmm. Mm -hmm. Mm -hmm.
+
+Nebojsa (23:20.455)
+Mm -hmm.
+
+Nenad S (23:22.963)
+and the problem for a user needs to be solved. It's just a matter of all of the tools that you are using. So let's say I'm going to social media, Instagram, LinkedIn or whatever. Those are all just tools. But at the core of marketing is the messaging that you're sharing and that that messaging needs to be consistent over all other channels, over all other media that you're using. So if you have a
+
+Nebojsa (23:36.872)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (23:42.824)
+Mm -hmm.
+
+Nebojsa (23:49.992)
+so for example if we take yeah if we take coca -cola as an example their brand message stayed the same for over 100 years now
+
+Nenad S (23:59.345)
+stay the same exactly Coca -Cola is red in all countries okay they have that one green one but that's like a thing but the whole point is
+
+Nebojsa (24:08.328)
+What about okay, that's the core but what about the the other things for example, they have some Promotions like you buy and you buy colas and you then I don't know you can just scan the QR codes and then get a gift or a tool. Okay Okay
+
+Nenad S (24:21.041)
+Again, a tool. Again, it's a tool. But the marketing messaging behind Coca -Cola is that when you are thirsty, you grab a Coke, right? So you do that because you have a problem, you're thirsty. Now hear me out. Does soda actually help you with your thirst? No, only water helps.
+
+Nebojsa (24:29.0)
+is yeah yeah the yeah yeah it's the same yeah
+
+Okay.
+
+Nebojsa (24:43.686)
+Actually, no, yes.
+
+Nenad S (24:45.393)
+But you have that messaging in mind that's promoted on any kind of marketing channel that you can see. But the messaging is, it's hot outside, grab a coke. So the same goes with... Now when it comes to UX...
+
+Nebojsa (24:54.055)
+Yeah, yeah, that's true.
+
+Nebojsa (25:00.199)
+Yeah, right.
+
+Nenad S (25:08.593)
+UX was done like, you can see it through ages if you want. So imagine an engineer working at a factory and he's just standing there looking at the factory worker working on a machine and he's looking at him for an hour and he sees that while he's pulling that lever he's hitting his elbow on some part and he does that like three times in a thousand lever pulls.
+
+Nebojsa (25:13.926)
+Mm -hmm.
+
+Nenad S (25:38.499)
+going to consider and to think how can he do that because the factor worker won't hit himself and the process can be improved, his health can be improved, etc. etc. So the UX at its core is you are doing work, you are solving a problem.
+
+Nebojsa (25:38.534)
+Yeah.
+
+Nebojsa (25:45.318)
+Yeah.
+
+Nenad S (25:57.809)
+some problem was so you need to have it you need to access it and to solve it as easy as you can so you can apply UX to traditional product to physical product you can apply UX to digital product whatever but if you look at its core
+
+Nebojsa (26:07.367)
+Mm -hmm.
+
+Nebojsa (26:21.573)
+Mm -hmm.
+
+Nenad S (26:22.353)
+Those are just methods and everything that you see today, I mean, let's go social media, paid advertising, PPC advertising, SEO, or to go with UX, you can do with improving processes like implement processes. For instance, Toyota, they implemented their whole methodology, et cetera, in how to have as least churn and to improve the whole building process.
+
+Nebojsa (26:34.437)
+Mm -hmm.
+
+Nebojsa (26:45.317)
+Mm -hmm.
+
+Nenad S (26:52.259)
+of a car etc. Those are all methods and those methods at their core rarely change. There are different flavors of methods when it comes to marketing like frameworks that you can use the same goes for UX but at its core the whole goal is get my message across and ease the process as much as possible.
+
+Nebojsa (26:56.934)
+Mm -hmm.
+
+Nebojsa (27:01.575)
+Mmm.
+
+Nebojsa (27:06.759)
+Mm -hmm.
+
+Nenad S (27:19.345)
+for a person to resolve its problem either by using my product, hiring my services, subscribing to my newsletter, whatever the goal is.
+
+Nebojsa (27:29.447)
+Yeah, so the the key is like the core is always the same but the product can be upgraded developed even further but the the core is remains the same. Yeah, yeah, okay.
+
+Nenad S (27:34.851)
+The same, yeah.
+
+Exactly, I mean those are all just tools. Yeah, those are all just tools. Search engine optimization is the same if you look at it from a UX perspective.
+
+Nebojsa (27:49.799)
+Mm -hmm.
+
+Nenad S (27:52.337)
+Take a look at the first page of Google. So you might have a flashy website with five pages that has storytelling, etc. I might have a corporate website with 200 pages. A friend of mine can have an e -commerce website with 100 ,000 products. If we look at from a pure perspective, like how many pages do each one of us has? If we look at from a perspective, the page speed of all of those websites, the storytelling one,
+
+Nebojsa (27:52.422)
+Mm -hmm.
+
+Yeah.
+
+Nebojsa (28:11.238)
+Mm -hmm.
+
+Nenad S (28:22.243)
+might be flashy, has a lot of JavaScript, etc. If you look at it from that perspective, website to website, they're all different, they have all different strengths, different problems, different scales. But when it comes to Google...
+
+Google resolves that with their SERP snippets. You have a blue one that's title, green one that's URL and the gray one that's meta description. So regardless how big or small you are, all the results look the same at the first page and it's on Google to decide which of those will be the first, which one will be above the other or whatever. But when you look at when it's your initial contact,
+
+Nebojsa (28:42.183)
+Mm -hmm.
+
+Nebojsa (28:48.839)
+Mm -hmm.
+
+Nebojsa (28:54.215)
+Yeah.
+
+Nenad S (29:08.593)
+with that search all of those websites are the same so from a UX perspective nothing is picking up your attention outside of defined parameters that are those 10 on a single page I mean I know that Google has now infinite scrolling it's not just 10 results but again you get the point.
+
+Nebojsa (29:10.918)
+Mm -hmm.
+
+Nebojsa (29:26.182)
+Mm -hmm.
+
+Nebojsa (29:32.932)
+Yeah.
+
+Nebojsa (29:37.572)
+Yeah, okay. So I mean your brainwaves are going faster than a formula one, bro. Yeah, so no, no, no, I love it. I love it. I think people will love it as well. So I wanted to ask you another question because I know how good you are with analytics. So how has advanced analytics transformed the way you make decisions in marketing?
+
+Nenad S (29:44.497)
+Do interrupt me if it's...
+
+Nenad S (29:58.193)
+Mm -hmm.
+
+Nenad S (30:04.689)
+a lot, a lot, since day one, I mean, before that, before, let's say, before the whole GDPR came in...
+
+Nebojsa (30:14.852)
+Mm -hmm. Mm -hmm.
+
+Nenad S (30:18.097)
+I mean, I was always careful with what data I'm actually picking up and what data am I using to pick up. I never actually picked up, for instance, personal information about a user. Like, I know that this was Nebo Sheyankovic, that was it at my website. I never did that. But...
+
+Nebojsa (30:25.189)
+Mm -hmm.
+
+Nebojsa (30:33.827)
+Mm -hmm. Mm -hmm.
+
+Nenad S (30:39.889)
+before that. So let's say 2011 -2012, let's take that number. So you had the GA, it wasn't still...
+
+Universal Analytics it was different at that point if I recall. However, if you wanted to match a user, now I didn't need to know a specific username but I could look at the segment like this is a user that user group that has the same interests, same behavior, same demography, so a hundred or so people. But for instance I wanted to learn more about Omnichannel.
+
+Nebojsa (30:56.132)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (31:16.259)
+Mm -hmm.
+
+Nenad S (31:20.675)
+marketing. For instance, a person visits my website and he sees my app. At that point he visited from his mobile phone, so he left, he came back home, he googled it from his PC and couldn't find it because he forgot the brand name, he misspelled it, whatever.
+
+Nebojsa (31:21.444)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (31:28.323)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (31:45.219)
+Mm -hmm.
+
+Nenad S (31:45.969)
+but he was on Facebook and he saw an ad like a remarketing ad or whatever so he came back from that ad to my website from his PC from a completely different device from a completely different location and he left it as is he just
+
+Nebojsa (32:01.123)
+Mm -hmm.
+
+Nenad S (32:05.121)
+day after he used his phone but he googled brand name and downloaded the app he used the app, left the app few months passed and he remembered it again but he only remembered the brand name he again googled it just to see if it is then went back and installed it now if you look at it that way he used google, facebook,
+
+Nebojsa (32:30.05)
+Mm -hmm.
+
+Nenad S (32:34.947)
+He used Google Ads, he used his phone, etc.
+
+Nebojsa (32:38.435)
+Mm -hmm.
+
+Nenad S (32:39.857)
+but when you look at it in analytics it was all a different session it was all a different user so from your perspective you had four different bounces like he came in from Google bounced he came in from his home from Google bounced he came from Facebook he bounced and he downloaded it from home now you're seeing four different users doing four different sessions but you couldn't connect it like this was a user this was his journey he took like
+
+Nebojsa (32:52.257)
+Mm -hmm.
+
+Nebojsa (33:01.378)
+Mm -hmm.
+
+Nebojsa (33:07.362)
+Yeah.
+
+Nenad S (33:09.763)
+this time before installing and uninstalling an app. Now at that point in order for you to do that form of tracking you needed to do deep linking with a lot of UTM parameters etc. and you needed to apply specific variables like specific IDs to tie in that user to a specific user group. It was really complicated.
+
+Nebojsa (33:11.793)
+Yeah.
+
+Nebojsa (33:23.714)
+to connect the dots, yeah.
+
+Nebojsa (33:32.738)
+Mm -hmm. Mm -hmm.
+
+And did that also like hurt your capacities? I don't know how to say it, but like does that complicate things when you have all the URLs and everything? Yeah.
+
+Nenad S (33:46.897)
+It's extremely com -
+
+extremely complicated things because it's really difficult to scale because you needed to have like JavaScript libraries with random number generators for IDs etc. It was really difficult to do it that way but it wasn't fully necessary. It was on some bigger scale projects where as I explained the one where a half percent increase can mean six figures. So in revenue so that's like a big thing. However...
+
+Nebojsa (33:54.017)
+Mm -hmm.
+
+yeah.
+
+Got it, yeah.
+
+Nebojsa (34:07.649)
+Mm -hmm, mm -hmm.
+
+Nenad S (34:17.969)
+You have universal analytics now. You have GA4 now, which doesn't tie you to a session ID, but to a user ID. It gives a user that specific indicator that tracks him from whatever channel at any point from whatever device he visits that website. So you can track its full journey and track
+
+Nebojsa (34:22.752)
+Yes.
+
+Nebojsa (34:26.914)
+Mhm.
+
+Nebojsa (34:39.81)
+Mm -hmm.
+
+Nenad S (34:47.875)
+that omni -channel how is one channel assisting the other one?
+
+For instance, you could go and visit the social media page and see some brand and you go to Google and Google that brand name and land on the website and buy a product. Now if we look at from a channel perspective, it was the social media one that initiated the buying. It was the social media one that initiated the conversion and you should probably give in more to social media, invest more in social media, but when you look at from a Google Analytics
+
+Nebojsa (35:00.0)
+Okay.
+
+Nebojsa (35:05.44)
+Okay.
+
+Mm -hmm.
+
+Nebojsa (35:19.328)
+Nenad S (35:23.779)
+perspective, I mean if you don't have that specific tracking or you're not looking for that specific data, yeah and that they Google search the brand name in your head, it's that organic traffic is the thing that you should focus on and that you should build more, let's say links for brand terms and dedicate pages for brand terms, but it's not. So that form...
+
+Nebojsa (35:26.754)
+Yeah, you think that they Google searched your brand?
+
+Nebojsa (35:37.505)
+Yes.
+
+Nebojsa (35:44.417)
+Hmm. Yeah, that makes sense.
+
+Nenad S (35:48.049)
+that form of tracking that form of assumption testing was difficult before to do and it's much easier to do now with those tools specifically after GDPR specifically after Google enabled Google signals etc. where they can hide your IP they can hide your location they can hide any personal identifiable information about you but still give you enough data and enough I mean form those segments to
+
+Nebojsa (35:53.856)
+Mm -hmm.
+
+Nebojsa (36:05.951)
+Mm -hmm.
+
+Nenad S (36:17.955)
+explain what exactly where people find about you how they find about you and how are other channels affecting it so you can properly distribute your marketing budgets accordingly. Again I know that I'm explaining like in broad terms but this is specifically for
+
+Nebojsa (36:21.505)
+Mm -hmm.
+
+Nebojsa (36:26.465)
+Mm -hmm.
+
+Nebojsa (36:35.616)
+Yeah, I mean that that's
+
+Nebojsa (36:41.825)
+No, no worries, I get it, I totally understand what you want to say and I think that people who don't do this, they make mistakes.
+
+Nenad S (36:45.937)
+because this was not tied just for Google this is not just tied to Google Analytics the whole point of when GDPR first got introduced where they told like people you cannot force a cookie to remember some data about that person without they actually accepting it
+
+Nebojsa (36:53.056)
+Yeah.
+
+Nebojsa (37:02.008)
+Allowing it yeah, yeah, yeah
+
+Nenad S (37:06.929)
+Yeah, it wasn't the point if all the websites are going to actually enforce that on their own. Like a small website doesn't know, doesn't have any clue about it. A person who is having a bakery doesn't have any idea of GDPR. Maybe his son made him a website or whatever. But the whole point is that big companies that track data like Google Analytics, Mixpanel, etc. needed to...
+
+Nebojsa (37:15.584)
+Mm -mm.
+
+Nebojsa (37:19.552)
+Yes, exactly.
+
+Nebojsa (37:26.752)
+Yeah.
+
+Nebojsa (37:35.39)
+Mm -hmm.
+
+Nenad S (37:36.835)
+They were forced to change those and they needed to change their inner workings of how that data and how that user is tracked. So once those tools changed, a lot of it changed and a lot of it got easier, but you still needed...
+
+Nebojsa (37:38.302)
+Mm -hmm.
+
+Nenad S (38:00.081)
+skill in terms of here's my advice don't ever ever open analytics or look into analytics without writing down a question that you need answered you if you just open analytics to browse it it's a mistake
+
+Nebojsa (38:13.437)
+Mm -hmm. Mm -hmm.
+
+Nenad S (38:18.065)
+So, and this is why all of the people that actually use analytics have issue with analytics. Why they think it's difficult. Don't ever open it without writing a question. When you write a question, you can find specific parameters, you can even find guides where to find or how to measure specific thing, but don't open analytics just for the sake of it. It's an error, it's a mistake and you'll never learn it properly.
+
+Nebojsa (38:18.558)
+So yeah.
+
+Nebojsa (38:31.677)
+Yeah.
+
+Nebojsa (38:39.838)
+Yeah.
+
+Yeah, that makes sense Like writing down the questions and then figuring out which events you want to track. Yeah Yeah, yeah
+
+Nenad S (38:49.969)
+Where to find the answer and what do you need in order to find that answer? Do I need people visiting this? So how much did we earn from our website from Google this month? Okay, I'm looking for organic traffic, e -commerce purchases, purchases that covered, etc. I'm ditching...
+
+Nebojsa (38:56.317)
+Nice.
+
+Nenad S (39:15.505)
+Whatever. So I'm merging if someone landed on a specific variant page where they have a URL parameter or whatever. So there is... Before you know, before you write down the question, don't ever look into analytics because you're going to have a lot of false positives.
+
+Nebojsa (39:16.078)
+Yeah
+
+Nebojsa (39:30.813)
+Mm -hmm That's a good advice. That's a good advice I mean I can now see the bigger picture and I can clearly see how has your role evolved from when you started to where you are now as a co -founder as Cmo and CEO and whatnot. I mean so
+
+Nenad S (39:50.513)
+Stop and blushing.
+
+Nebojsa (39:51.933)
+Yeah, so the thing another question that I have is like, what is the biggest change that you've seen in the SEO industry over the last decade?
+
+Nenad S (40:05.649)
+Introduction of Hummingbird update, it was somewhere back in 2013. It was, I mean, or when they started to introduce Voice Search, but that was around 2008. I think Hummingbird,
+
+Nebojsa (40:14.524)
+Mm -hmm.
+
+Nebojsa (40:27.708)
+So these two, the hummingbird and the voice search update.
+
+Nenad S (40:30.737)
+Voice search was the thing that actually enabled Hummingbird Update. Hummingbird Update was a semantical upgrade where they actually ran for your content and used NLP natural language processing to actually learn the context behind your content. Before that we had to use microdata and proper HTML5 markup to inform, for instance,
+
+Nebojsa (40:38.779)
+Mm -hmm.
+
+Nebojsa (40:47.645)
+Mm -hmm, mm -hmm.
+
+Nebojsa (40:52.732)
+Mm.
+
+Nenad S (40:59.313)
+When you create a page you have proper HTML5 semantic markup that you need to use. So header is header, nav is navigation, a sidebar is some related links, a side is a block where you probably stuff something that doesn't have anything to do with the website, for instance an AdSense block or a banner or whatever, and the main is part where you have
+
+Nebojsa (41:23.325)
+Mm -hmm.
+
+Mm -hmm, mm -hmm.
+
+Nenad S (41:29.219)
+content of that page. With the microdata you could differentiate between a page and an article by adding segments in the code itself like informing this is the article title, this is the headline or this is the title of the page and this is the content of the page. When Coming Bird was introduced, figuring out that context,
+
+Nebojsa (41:31.1)
+Mhm.
+
+Nebojsa (41:38.268)
+Mm -hmm.
+
+Nebojsa (41:45.308)
+Mm -hmm.
+
+Nebojsa (41:51.773)
+Mm -hmm.
+
+Nebojsa (41:58.076)
+Mm -hmm.
+
+Nenad S (41:58.801)
+wasn't relying on microdata and that structure data that you were given, but it was relying on the content itself to find the context behind it. It was greatly pushed by NLP development, by natural language processing development, and the thing that pushed NLP development was voice search, because people who actually used voice search are not doing the same prompts,
+
+Nebojsa (42:03.099)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (42:22.684)
+Mm -hmm.
+
+Nenad S (42:28.707)
+When you google search for instance hairdresser in Novi Sad you're going to google hairdresser Novi Sad, right? That's what you're going to type But when you do voice search you're going to ask where is the nearest hairdresser and you actually compose the question a semantical question behind it voice search
+
+Nebojsa (42:34.077)
+Yeah.
+
+Yes, yes.
+
+Nebojsa (42:43.868)
+Yeah, that's right, yeah.
+
+Nebojsa (42:49.372)
+Yes.
+
+Nenad S (42:51.665)
+was what employed natural language processing to work better and with all of that Hummingbird was introduced somewhere 2013 -2014 where it started to get the context from the content without relying on specific technical...
+
+Nebojsa (42:56.38)
+Mm -hmm.
+
+Nebojsa (43:03.772)
+Mm -hmm.
+
+Nenad S (43:13.105)
+things that you did in that content to inform about the context. So that was probably the most impactful if you ask me. If you ask someone older who was doing like...
+
+Nebojsa (43:14.907)
+Mm -hmm. Mm -hmm.
+
+Nenad S (43:27.889)
+five or six years, like somewhere between 2005 and 2010 then it was the penguin update when they did a lot of cleaning of link spam where for instance they removed the meta keywords tag where they introduced keyword stuff etc link spam using page score etc that was like a big big hit but from my perspective compared to what I
+
+Nebojsa (43:36.476)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (43:44.923)
+Mm -hmm.
+
+Nebojsa (43:51.93)
+Mm -hmm.
+
+Nenad S (43:56.401)
+no, now Hummingbird was the most influential one. It really did like a really really big impact on the industry.
+
+Nebojsa (44:00.572)
+okay, okay.
+
+I bet a lot of SEOs would agree with you on this.
+
+Nenad S (44:07.857)
+I'm not sure on that part because I'm really not sure about it. Again, I think I'm somewhere in the middle behind that because when you look at the fresher SEO experts that are coming in, they will always use that mantra like content is king. And I really, it's not about that that mantra is wrong.
+
+Nebojsa (44:11.645)
+The old ones, like the old school ones. That really experienced it. Yeah.
+
+Nebojsa (44:28.701)
+Yeah, yeah, yeah, I heard about that.
+
+Nenad S (44:34.993)
+but they are abusing it and they are not understanding what that mantra should present. So here is the reason why I explained with Hummingbird, with context behind the content, with value behind the content, with authorship, with expertise, with experience, etc. But they just see it as write as much content and as long as content as you need because that's going to help SEO.
+
+Nebojsa (44:35.421)
+Mm -hmm.
+
+Nebojsa (44:43.195)
+Mm -hmm.
+
+Nebojsa (44:46.748)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (44:53.5)
+Mm -hmm.
+
+Nenad S (45:03.057)
+hear me out from a UX perspective. Search engines are all about UX because they want to serve you valuable, important information relevant to you in the most easiest, understandable way. So those 10 results, blue, green and gray for explaining them. But if you write an article that's 3500 words long,
+
+Nobody is going to read that not on mobile I mean not that they won't they will read through it if a specific piece of information they need is somewhere in that content But for people who are looking for specific answers Usually you can do that in 200 to 300 words of data like for instance open any
+
+Nebojsa (45:33.691)
+Mm -hmm.
+
+Nebojsa (45:42.333)
+Mm -hmm. Mm -hmm. Yeah.
+
+Nebojsa (45:52.667)
+Yeah, like just give me what I want and I can go. Yeah. Yeah.
+
+Nenad S (45:54.865)
+Yeah, open any product page on e -commerce. Did you ever need to read through a specific product description? If you wanted a review of that product, you're going to read the review for that specific product.
+
+Nebojsa (46:01.34)
+No.
+
+Nebojsa (46:05.371)
+Yeah, yeah, but like when I see it, I know if it's good for me or...
+
+Nenad S (46:09.713)
+Exactly, exactly. So they are abusing that content, this King Mantra, because they see it from a different perspective, like, right as much content that's clear to read, easy to use, blah blah blah. It's not like that.
+
+Nebojsa (46:15.322)
+Yeah.
+
+Nebojsa (46:23.899)
+Mm -hmm. Okay.
+
+Nenad S (46:25.617)
+So if I'm telling now Hummingbird update was a big one it was that time when Content Disking mantra was introduced and it was at that time that many new SEOs let's say started with SEO 2 .0 where you saw a lot of people who actually were more of content writers than actual SEO consultants.
+
+Nebojsa (46:42.587)
+Yeah.
+
+Nebojsa (46:51.803)
+Okay, we have 10 more minutes and I want to ask you a few more questions. So I really like the way you're approaching to different problems. I see that you like to step out and see the bigger picture from the outside. So what personal philosophy guides your work in digital marketing product development SEO and
+
+Nenad S (46:56.209)
+Go.
+
+Nebojsa (47:18.171)
+What advice would you give to young professionals who are just starting out?
+
+Nenad S (47:25.617)
+I'm not sure how to answer that question. So...
+
+Nebojsa (47:26.778)
+Hehehe
+
+Nebojsa (47:36.283)
+I see like you're mixing psychology, programming, I mean there are a lot of different areas that you're covering that a person cannot learn to do in five years, ten years, you need a lot of time to actually learn how to do it and approach it. But I like how creative your approach is and you know, so like do you have any personal philosophy behind it?
+
+Nenad S (48:05.553)
+Nenad S (48:10.033)
+I'm probably going to use the one that's used for... It's more applicable to software development. There's an Agile software development manifesto. It's a thing. I'm just going to read through this. Individuals and interactions over processes and tools. Working tools, working software over comprehensive documentation. Customer collaboration over contract negotiations.
+
+Nebojsa (48:19.546)
+Okay. -huh.
+
+Nebojsa (48:31.61)
+Mm -hmm.
+
+Mm -hmm.
+
+Nenad S (48:39.939)
+responding to change over following a plan. So it's really applicable to everything, everything I do here because I'm always going to... I cannot give you a specific learning curve to learn all of this. It's important to work with a lot of individuals and to work to have a lot of interactions with different people doing work from different spheres. So for instance...
+
+Nebojsa (48:40.505)
+Hehehe
+
+Nebojsa (48:49.754)
+Mm -hmm.
+
+Nebojsa (48:57.913)
+Mm -hmm, mm -hmm.
+
+Nebojsa (49:02.809)
+Mm -hmm.
+
+Nebojsa (49:07.835)
+Mm -hmm.
+
+Nenad S (49:09.233)
+If you have a designer preparing the design for a website and you have a content writer writing content for that website and you have a developer developing that page. If they all work in isolation, a designer will make a design and will fill it with lorem ipsum. You will come in as a content writer, you will write content that's going to be longer than what was intended with lorem ipsum, it will disfigure the design.
+
+Nebojsa (49:14.841)
+Mm -hmm.
+
+Nebojsa (49:20.985)
+Mm -hmm.
+
+Nebojsa (49:30.81)
+Yeah.
+
+Nebojsa (49:37.978)
+Mm -hmm.
+
+Nenad S (49:38.193)
+Once the design is done, the developer will try to replicate it, but the developer only...
+
+the static design, he never thought about animations, like how fast should these animations be and most often frontend developers will add the animations but they are looking the website like really slow when they're scrolling, they're trying to find things and the animations are slower than the user actually scrolls. So...
+
+Nebojsa (49:51.066)
+Mm -hmm.
+
+Nebojsa (49:54.715)
+Mm -hmm.
+
+Nenad S (50:09.681)
+Individuals and interactions between those individuals are really really important in all of it to have that proper learning curve If you're a person who's starting to do SEO, yes, you will read a lot. Yes, you will explore a lot, but it's really important that you actually work on with developers and designers on building a page, a specific page, just to see how the process works to get insight from them.
+
+Nebojsa (50:17.211)
+Mm -hmm.
+
+Nebojsa (50:31.324)
+Yeah
+
+Mm -hmm.
+
+Nenad S (50:39.587)
+on how users should interact and are interacting with the website. You should learn analytics. You should never start working or doing any marketing without at least understanding basic channel grouping and basic page and event tracking for anything. So doing marketing without getting any data behind it like if this works you're not going to do it.
+
+Nebojsa (51:02.204)
+Mm -hmm.
+
+Nenad S (51:09.443)
+So for a marketer starting out, I would advise HubSpot because they have that whole inbound methodology in place with user personas, etc. with smart goals, which is a good thing to start. I would again never do anything without jumping. So learn the method, then learn the analytics, then learn how to test it.
+
+Nebojsa (51:09.468)
+Mm -hmm.
+
+Nenad S (51:36.017)
+Talk with people, use working and existing tools that are already on the market. Don't cherry pick and find something that's new, trendy or whatever. Now it's a highlight. For instance, I rarely use chat .jpt. I rarely use it. I mean, because...
+
+Nebojsa (51:36.156)
+Mm -hmm.
+
+Nebojsa (51:53.916)
+Mm -hmm.
+
+Nenad S (51:55.537)
+much of the things can be done without using any GPT in my line of work. But work with people, interact with people. Interact with people from other branches as well, be open to them, be skeptical of their opinions, learn how to test your assumptions, never open analytics before you know the question you are asking and test, test, test.
+
+That's the whole mantra behind it, learning curve that you should have for an SEO starting out. First, understand what is inbound, understand how inbound methodology, what it is and how content marketing works from a user perspective and a business perspective. Go with HubSpot if you're a beginner.
+
+explore other options and other academia once you pass those introductions. So yeah, that's about it.
+
+Nebojsa (52:58.27)
+I think that that was very helpful. Thanks for coming with such a detailed answer and providing the feedback. So guys, you heard Nana. If you have any questions about the tools, about the strategies or the articles you need to read, feel free to leave comments. So.
+
+Nenad S (53:14.769)
+Yeah, here's your first task as an SEO. I'm a marketer and I don't have any social media. Find me. Find me and ask me a question. If you can manage that, then we can do some work. Then you can start learning.
+
+Nebojsa (53:23.635)
+Yeah
+
+Nebojsa (53:32.639)
+Nice. So yeah, thank you for tuning in to the ranking heroes. Special thanks and a big shout out to you, Nanad, for joining us today and sharing such invaluable insights.
+
+If you enjoyed our conversation and want to learn more, make sure to subscribe to our channel, follow us on our social media platforms, and we'll be back with more stories and strategies that will help you climb the ranks in your industry. Until next time, keep striving for the excellence and remember, every hero needs a team. So goodbye.
+
+Nenad S (54:12.529)
+True. Bye!
+

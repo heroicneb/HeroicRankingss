@@ -1,0 +1,673 @@
+Nebojsa (00:01.034)
+And we are back to our podcast session with Trevor. It's been... It's been...
+
+Trevor @ CrowdTamers (00:05.399)
+Been a relaxing seven years. How long has it been?
+
+Nebojsa (00:11.31)
+I think two months actually It should be like two months ago. We said it will be will continue tomorrow, but then things just escalated So yeah, as you can see I'm wearing the blue outfit Trevor is also wearing different outfit and Yeah, so we are like two months older, but also we have more knowledge than we had two months before
+
+Trevor @ CrowdTamers (00:30.775)
+Have a beard?
+
+Trevor @ CrowdTamers (00:37.815)
+That's right.
+
+Nebojsa (00:41.022)
+So as you remember, we went through your early career, then we discussed some strategies, growth strategies that you're implementing in Crowd Tamers and also building Crowd Tamers. We also discussed your previous experience working in different companies like GOG, like Electronic Arts and everything. So what I want to discuss now is more like this.
+
+entrepreneurship life, your mentorship and community. So I would first like to start with this role of mentorship and community. So I know you mentor founders every week. What are the most common marketing mistakes you see in early stage startups?
+
+Trevor @ CrowdTamers (01:29.193)
+Everybody launches a startup because they want to build a thing right and then naturally you want to talk about the thing you built and That's not what you need to talk about No one cares about what you built. No one cares about you Talk about the people who you serve talk about their problems and you'll get their interest I just had on my podcast
+
+because of course every white guy has a podcast. On my podcast I had Nick Huber who's pretty big on Twitter, he's got like 750,000 followers. And he talks about how you will never be given permission to succeed. You have to take it, but you have to take it from people who don't care about you. And this is very much the case. If you're able to empathize with what it is that the...
+
+Nebojsa (01:59.759)
+you
+
+Trevor @ CrowdTamers (02:26.026)
+buyer wants, you'll be way more successful. Nick Huber's first business ever was he helped college students store their stuff over the summer. And the, like, when you move away for three months, you've got to put all the stuff from your dorm room somewhere. So he just packed it up, put it away. And, the way he advertised was he found the one part of the college, every student had to walk through and he wrote, he wrote, was no boxes, no moving fee, free delivery.
+
+store your stuff all summer. Now, the temptation might be, I've got a warehouse that's 50,000 square feet. Let me store your stuff for cheap. That's the I built a thing perspective, right? But instead to say free boxes, no moving fee. Well, that's the actual pain these people have, right? So it's the exact same product, but when your copy addresses what people want as opposed to what you did, you make a lot more money. That's the number one mistake.
+
+The number two mistake people make is they assume they got it right on the first try. Builders build because they go, I can't stand this thing. So I built a thing to solve my problem. So I want to sell people who are like I was, and then that will fix my problem. And inevitably, no, because if you're a builder, you're the kind of person who builds things. That means you probably don't buy things if you have an opportunity. Right. I bought.
+
+the kitchen table for my house. I bought my bed for my house because at the time I didn't have any woodworking tools. I made all of my kids their beds. I made the office I work in. I've made cabinets like all these things. It's faster and probably the same price if not maybe cheaper to buy it. But I'm a builder. I like to my hands and build things. So I built all these things. Likewise, you as a founder, you build things, you're
+
+immediate thought isn't going to be to go buy them. So if you try to sell to you, you're selling to other founders who are going to buy from you because they rather build things. So like you've got to figure out who your audience is and talk to them and not build for you because you had that problem. So those are two big mistakes I see.
+
+Nebojsa (04:32.021)
+you
+
+Nebojsa (04:40.334)
+Yeah, I recently heard about the mom test that you can implement for every product. Did you hear about the mom test? Yeah, so that's...
+
+Trevor @ CrowdTamers (04:48.458)
+Yes. Yeah, that's I'm not sure. I heard about it. I'm pretty sure from April Dunford's book, obviously awesome, which I'd argue is the best book on positioning out there. Shout out to April Dunford and the the challenge with this gets to be like I used to do among other things. I was doing marketing for container attached stories for container attached storage for Kubernetes.
+
+Nebojsa (04:57.282)
+Mm-hmm.
+
+Nebojsa (05:16.588)
+Mm-hmm.
+
+Trevor @ CrowdTamers (05:17.556)
+Yeah, how does any of that pass the mom test? Like what is container? What's the container? What's container attached storage? What's Kubernetes? And why do you want these things? I think the mom test has its place, but there are definitely times when you are selling it that's in a niche and there's moms don't know the niche and you don't worry about it. If you found that niche, you want that thing. Likewise, if you're saying, Hey, I manufacture a new, anti-coagulant surface coating for stents.
+
+Nebojsa (05:30.689)
+Yeah.
+
+Nebojsa (05:34.86)
+Mm-hmm.
+
+Trevor @ CrowdTamers (05:48.117)
+And your mom goes, like, but, but surgeons will be like, anticoagulant surface coating for stents, that's right up my market. I would rather not have my patients die from blood clots. So like, okay, there you go, right? So mom test works for a general appeal thing, I would say, but there are definitely times when I think it's a little too reductionist.
+
+Nebojsa (05:50.604)
+Yeah, obviously. She doesn't have a clue.
+
+Nebojsa (06:04.696)
+Yeah, makes sense.
+
+Yeah.
+
+Maybe if you want to build a cooking platform with recipes, maybe the mom test can really help you. Cool. So your mentorship program aims to teach founders how to scale on their own. What are the biggest mindset shifts they need to make in order to scale?
+
+Trevor @ CrowdTamers (06:15.446)
+There you go. There you go.
+
+Trevor @ CrowdTamers (06:28.724)
+the achievements, sorry.
+
+Nebojsa (06:30.542)
+What are the biggest mindset shifts they need to make? Exactly.
+
+Trevor @ CrowdTamers (06:35.549)
+nine-touch shift, okay.
+
+So as a marketer, I am wrong about 90 % of the time. I've been doing this for 23 years and I'm wrong 90 % of the time. If you're good at it.
+
+I'm going to assume I'm going to after all these years. If you're good at it, you're wrong 90 % of the time. If you're bad at it, you're wrong 95, 99 % of the time. And when I tell people that test-based marketing is the inevitable way to find success, it can be tremendously dispiriting to be wrong even five times in a row, much less 15.
+
+Trevor @ CrowdTamers (07:22.738)
+It is easy as a founder because founders only really build companies because they are stupidly optimistic that they will succeed when almost nobody else does. And that stupid optimism requires that you when you start the company lie to yourself enough that you believe you will be able to make it when nobody else did. And there's a temptation, right? I've had a bunch of experiments and a bunch of them didn't work.
+
+Maybe if I just squint right at this, it's actually good enough. I turn my head a little bit, I can believe that maybe this is success. I don't have to keep trying. The mental shift is to realize that any day I can spend $100 and learn how not to market something is a very valuable day because I've saved myself months, maybe a year or more in time.
+
+When you're early in your entrepreneurial journey, can time and money, right? You have to trade one for the other. I'm fortunate I've been around long enough now where I would almost always rather trade money instead of time. I have more money than I have time, most of the time these days. I mean...
+
+Nebojsa (08:36.448)
+Yeah, you can get your time back, but you can get your money back.
+
+Trevor @ CrowdTamers (08:39.894)
+or more money. There are some times, like, for a new project I'm building, my co-founder of the project is like, hey, I found the perfect domain. It's a three-letter domain dot AI. It's only a quarter of a million dollars, Trevor. And I went, no, I don't have that much money to spend instead of time. We'll pick a longer domain. But you make the trade-off, right? So getting into the mindset of
+
+Nebojsa (08:59.542)
+Yeah, makes sense.
+
+Trevor @ CrowdTamers (09:07.762)
+Even in the early days, a hundred dollars shouldn't be too much to save you weeks or months of time. And getting founders to one, understand that if I'm wrong eight times in a row, that shouldn't discourage me. That should tell me, look at how much I've learned so cheaply compared to if I was doing it the hard way. And the other part is founders at the beginning days are like every single
+
+dime, every penny you pay attention to. And you're looking at the wolf at the door, right? Which is this, marketing, the marketing wolf is saying, I want your money. And you're like, no, I'm going to keep the wolf out. I'm not going to spend the money, but you don't pay attention to the rats in the basement, which is just time costs, money, server costs, right? Just a month when you didn't learn anything, cost an extra 300 or maybe thousand, whatever bucks in infra. If you could have taken
+
+and learn faster and maybe you learn, I don't need that info, I found how to get clients now, my info pays for itself, like whatever. If you look at what you're sacrificing by not speeding up your development of education, you begin to be willing to say, I'm willing to trade some of my very limited money resource, my very limited money resource to buy me some more time. So those two shifts, which are, both quite related to each other, right?
+
+Those were hard for founders to make. I think the last one is, and every builder does this, if I just make it better, people will like me. But the road to bankruptcy is littered with the corpses of millions of superior products. Being better than your competition is irrelevant to success by and large.
+
+What matters is, am I able to position what I have as something that is important enough to get people's money now? If I can do that, whether or not I am feature complete, whether or not I am marginally better than the competition at these three things, all of that is put aside. I've got people who are convinced this is important enough to take their money right now. Let's go. I was advising a startup this week.
+
+Trevor @ CrowdTamers (11:33.687)
+and they are a collectibles grading company. So you think of like Pokemon cards or, I don't know, comic books or baseball cards, these kinds of things. And there's only two big grading associations out there. And they may have like literally 99 % of the market. And these guys are like, well, we're better than they are. So how can we can't get customers? I'm like, because everybody knows and trusts these guys. It doesn't matter.
+
+Nebojsa (11:38.35)
+Okay.
+
+Trevor @ CrowdTamers (12:01.94)
+The value of your card is whatever some random dude in some workshop, wherever you mail that thing off to, says it's worth. And like any other fiat currency, which is really what a collectible is, right? It's a fiat currency. We've decided it's worth $3,000 because we've all hallucinated this is somehow worth that much. Now mind you, the dollar's a hallucination too, but whatever, let's not get into that. So we've kind of collectively agreed we believe this person's hallucination enough that this
+
+piece of paper is worth more than this piece of paper despite being functionally identical. So okay, they have trust. You will never win by saying we are better than they are. You win by saying they are not trustworthy. So your marketing campaign is let me show you examples of cards they graded superior that were not or authenticated that were fraud like you erode their trust.
+
+And then people might go, well, I guess if you were good enough to spot that, maybe you're good enough to grade this for real. Not servicing on superiority, but rather finding what people are actually buying from a grading agency, which is trust. And then saying, well, you can't trust them anymore. Trust me more. Right? So that's the other thing. You have to trade money in time, have to be willing to trade money in time. And you have to understand that what you built is not what people want. If you get all that locked down, your mind's in the right place. And now you're ready to actually market your business.
+
+Nebojsa (13:29.452)
+okay that makes sense and a lot of founders they can't really afford top-tier marketing agencies so how does for example crowd tamers help bridge that gap?
+
+Trevor @ CrowdTamers (13:42.208)
+So there's a couple of ways. One is really every single thing that my team does.
+
+with, okay, there are probably a few exceptions because I haven't published yet, but 95 % of what my team does, we document, we share on our blog, on YouTube, on LinkedIn. It's out there, right? As we develop new tactics and we document them, we then basically take that documentation, rewrite it a bit and make a blog post out of it. Yay. You can learn how to do the things that I've done for a decade.
+
+just by reading my blog, crowdtakers.com forward slash blog. There's my plug. And if you have enough time to do that and you lack the money to afford it, there you go. Easy enough, self-teach. I've made a living for 17 years by being the guy who pushes the buttons on Facebook ads and meta ads because other people don't wanna push the buttons.
+
+This is not such a high technical skill, right? It's if anything, testament to the fact that a lot of people would just rather not learn how to push a I mean, a decent little living out. I'm not fabulously rich, but I have yet to be homeless. So we'll call it a win and, employ to, you know, build a whole company up out of it. The opportunity for you as a founder is to say, well, I'll take the time to learn how to push the buttons. It takes a couple of weeks or.
+
+You can say, I don't want to push the buttons. I want someone to do it for me. Crowd Tamers contract start at one K a month. And if you have any kind of funding for any kind of traction, one K a month to have somebody come take over your content marketing, take over your brand awareness marketing, get you visible to your buyers is an extremely low price. We do that because most everybody who pays us 1000 bucks a month within
+
+Nebojsa (15:42.121)
+Yes, that's...
+
+Trevor @ CrowdTamers (15:47.255)
+90 days pays us more. So we upgrade them, right? They find working with us so, I don't know, her stutes so very hairy that they like to work with us and upgrade and renew. So we basically do that 1K a month as I mean, we're, not making money at 1K a month, right? It's rather just enough to see that we're not losing money or working with somebody. And then we build up.
+
+Nebojsa (16:15.534)
+So I know that you founded Beatrip and Individi in the past, so looking back at those two brands, what lessons did you take from those experiences?
+
+Trevor @ CrowdTamers (16:27.158)
+So Btrip was the startup where I was the bad founder because somebody wanted to write us a check for 50k US and own half the company. And I went, no. And what I learned there was don't.
+
+Don't found a company where you or the other found it unaligned. Because we had a cool product. actually still have sitting somewhere on one of my phones, the mobile app functioning. And it was pretty cool for the time, which is like a decade ago now or something. We had scan any receipt, instantly OCR it, and then through...
+
+Nebojsa (17:03.502)
+Mm-hmm.
+
+Trevor @ CrowdTamers (17:12.224)
+mean, AI wasn't a thing back then, but rather we had built a giant match table of like...
+
+think it was maybe 10,000 different company types or receipt types and what industry it was. And by doing that, we were able to instantly classify a receipt by the type of industry it was so that you didn't have to do any further bookkeeping. Like, cool, the product worked. It even integrated with Expensify and QuickBooks and like all the other platforms out there. So we had a cool cortex.
+
+Nebojsa (17:28.878)
+you
+
+Trevor @ CrowdTamers (17:49.751)
+but we had to go to market with it. I was CEO and unemployed, I think at the time, because when your CEO was a startup that has no money, you were unemployed, you're just also CEO. And everybody else was earning nothing. We had like a, I think maybe a $7,000 $12,000 grant from the Polish government was it. And when we reached the point of what do we do now out of that money, the other founders and I weren't aligned. And so it fell apart.
+
+Nebojsa (17:51.886)
+Mm-hmm.
+
+Nebojsa (18:01.112)
+Yeah.
+
+Trevor @ CrowdTamers (18:19.036)
+That's the lesson, make sure you and your founders agree on what you want to do before you launch. And they even kind of, brought me in as CEO after they'd been doing it for a couple of months, because they went, we think you are a good person to be CEO, let's go. And I went, okay, I'll do it. And then from Individi, with my buddy John, he and I are still friends, I talked to him last week, this week, this week I talked to him. And what we had there was we came up with a business idea, he and I.
+
+Nebojsa (18:20.834)
+Yeah.
+
+Trevor @ CrowdTamers (18:49.438)
+And then one of the best ways to test the business idea in my experience on the cheap is go to a trade show that's specific to this business. And so we went to HR tech in Las Vegas. I had, when was this, November? I think I had like five month old twin daughters. I told my wife, bye, I want to go to Las Vegas for a week. It's work, I promise. Which that was not a popular decision, but it's fine.
+
+Nebojsa (19:13.646)
+You
+
+Hey
+
+Trevor @ CrowdTamers (19:18.494)
+My wife is next week going to Hawaii for her work and she's like, you owe me. I'm like, that's fair. It's been a while, but that's fair. So we, we went there, we, we pitched, think maybe 70 times over the course of three days, we pitched Individi and Individi was a API integration software for HR tech. And we got a lot of interest. And so I'm like, this is a real thing. We should write the software. We got two clients from the show.
+
+Nebojsa (19:26.946)
+Yeah.
+
+Trevor @ CrowdTamers (19:48.695)
+One of them was a mid-level enterprise client. They required that we get cybersecurity and hacking insurance. And so the cost of the insurance policy was the entire cost of the contract with that client. So we made no money. We didn't get to pay us upfront. We're like, look, we will buy the policy, but we can't until you pay us because it's like $17,000. So.
+
+Nebojsa (20:14.082)
+Yeah.
+
+Trevor @ CrowdTamers (20:17.64)
+And so they paid us upfront. We bought the coverage. We made no money. In one of clients, made a couple of grand, but then we got no clients ever again. And the problem there was what we have was fundamentally a vitamin. Because what we were saying was, is we would connect all of your HR tech tools together so that you update a record one place they update everywhere. Which is nice to have. That's pretty cool. But you try and tell your boss,
+
+Nebojsa (20:42.114)
+Yes.
+
+Trevor @ CrowdTamers (20:46.122)
+This is going to save me eight hours, 10 hours, 20 hours a month. And the boss goes, I don't care because your pay is a sunk cost. I already have to pay it. A new tool? I don't want to give the HR team new tools. More money is never a popular thing for the HR department to have, right? Engineering can ask for money. Marketing can ask for money. HR cannot. And so think the other, what I learned from there was one, make sure about your validation.
+
+Nebojsa (20:58.581)
+Exactly.
+
+Trevor @ CrowdTamers (21:16.074)
+like understand your validation. And then we went into an accelerator, which is a really good accelerator called Song Tech here in Montreal. But Song Tech is really built around like engineering development. So we were a really weird fit. We were not the right people to be in that accelerator. And all of our pictures, all the judges were like, but is what you're doing patentable? And we're like, no, it's software. can't really, it's not even hardly software. It's just different API convicted in the backend.
+
+Nebojsa (21:46.126)
+Mm-hmm.
+
+Trevor @ CrowdTamers (21:46.305)
+So at the end, despite having to really experience founders, like did not win the pitch competition, didn't even place and just like, nah, this went well. And then I nearly died. It was in the hospital for three weeks. And at the end of it, my co-founder was like, I don't think this is the right time for this, Trevor. I was like, yeah, you're right. And so market validation and making sure you have good market validation is important. mean, John and had fun in Las Vegas. That was nice. I did nearly die in the desert.
+
+Nebojsa (22:14.391)
+Yeah.
+
+Trevor @ CrowdTamers (22:16.386)
+we went for like a seven hour hike in the desert and I brought one bottle of water and then was like, no, this is a horrible mistake. but other than that, had fun and, the, the need to validate your market properly and understand, cause I wasn't a very good sales person at the time. hadn't, I hadn't been set up in marketing. All the people saying, yeah, yeah, I'd love to work with you. This sounds cool. They don't actually mean that. Right.
+
+Nebojsa (22:23.487)
+Ha ha.
+
+Trevor @ CrowdTamers (22:45.494)
+And that's part of why increasingly I shifted over to Market Foundation through advertising. Because in an ad, these people aren't going to lie to you to make you feel better. They don't care about you. You're just an ad. If they click and if they sign up, they are interested. So there's much less social kindness in that environment. So you get a truer signal. So that's the other thing I want to think was like face to face, people will lie to you.
+
+Nebojsa (22:52.846)
+Okay.
+
+Nebojsa (22:59.5)
+Yeah.
+
+Trevor @ CrowdTamers (23:14.688)
+quantitative data is way better than qualitative data for this use.
+
+Nebojsa (23:18.818)
+Yeah, my follow up question you already answered, but I wanted to ask you like how should founders approach failures and how do you personally bounce back from setbacks like that. But I guess you already gave me an answer. So.
+
+Trevor @ CrowdTamers (23:30.774)
+Yeah. So from B-Trip, was I was like I was mad about how things ended because I'm like these guys are idiots. They should know. I don't know. Right. And I mean, the.
+
+Nebojsa (23:40.95)
+Yeah, yeah.
+
+Nebojsa (23:44.984)
+So how did you find the new inspiration? Like what brought you back in life? Because you said you were dead like for three weeks. What happened to like bring you back?
+
+Trevor @ CrowdTamers (23:55.019)
+So two things there, one of them was I probably wasn't the right co-founder for them, they weren't the right co-founder for me and realizing that gave me a...
+
+Nebojsa (24:00.686)
+Mm-hmm.
+
+Trevor @ CrowdTamers (24:05.802)
+This wasn't my only time at bat, right? You get other chances. Now, to like go all in on a business, like I'm all in on crowd tamers, like I don't have another job now, I've had this one, and I probably will never have another job where I'm not CEO because I'm kind of unemployable now. I've got too many opinions that are too strong to listen to someone else. I got other turns at bat. I was able to start other businesses. I was able to fail other businesses too.
+
+And I think one thing to carry away from this is if you do something, the sooner you get out, well, it's not good, right? The less you've tied your fortune to the success or failure of others, that's okay. You get another go around. From indivity, when it failed, I was just desperately ill. So a big part of it was just like, I have to get healthy again. I had an intravenous line in my arm delivering me antibiotics for eight weeks. Right? Like that's, that's serious stuff.
+
+And so the first thing was just like, get well, quit being dead because I also still had my twin daughters. Like they had stopped being twin daughters. I was just unable to be much of an active father for a while. So I came back down to, well be a dad. Like just do this for a bit. And then what do I want to do? And a big part of how Crowd Tamers
+
+Nebojsa (25:18.2)
+Yeah.
+
+Trevor @ CrowdTamers (25:33.012)
+has become what it is, is one of my goals is to help a thousand founders make a million dollars a year. that, yes, buy it. Now that's looking tight, looking tight, but I think it's still possible.
+
+Nebojsa (25:39.784)
+Yeah, by 2028, right?
+
+Nebojsa (25:46.754)
+Yeah, what's the road map to achieving that? I really want to know that. Reach.
+
+Trevor @ CrowdTamers (25:50.731)
+Reach requires a ton of reach. part of why, I've mentored 6,000 founders through Founders Institute, right? Most of them have not built a marketing engine. Most of them have probably never even really built a business. Founders Institute, the good thing about it is it takes people at the earliest stage of business. People don't even have a corporation when they join Founders Institute. Usually they have no revenue. They maybe only have the barest bit of an idea. So really, really good.
+
+And as a result, their fail rate is just unbelievably high. But it's like, is it really a fail rate if somebody spends three weeks attending your accelerator and goes, God, businesses work. And then like, nopes out. I'm like, no, no, they wash it out because they discovered it wasn't a good fit for them. And that's fine. Most folks shouldn't be CEOs. They just don't have the right temperament, right? If you learn it and you get out, good for you. So.
+
+That exposure there means like I have a reach to help some founders. I have with CXL marketing where I just published a course which is apparently going super well. I'm getting people reaching out to me giving me like, this is very helpful. I really appreciate it. I've learned a whole lot. CXL marketing has like 70,000 marketers who their courses are distributed to, right? I've got other networks I'm working.
+
+to contribute to that are all 50, 100, 200,000 people, where by getting in front of them and not saying hire crowd tamers, but saying this is the way to do it. If you understand go to market, it's repeatable. It does take like four or five months, but if you are able to do it, it works in four or five months and then you can build from there. Like that lesson, the more broadly I can distribute it,
+
+the more founders I will help. Many of them I may not even know I've helped. Right? I'm okay with that. I didn't set this goal to be like, and then everyone will love me. If I was that way, I'd be a politician, or I guess an actor. Right? Those people have holes in their minds where love should go. I don't have that. I just want people to learn this thing and have their business be more successful.
+
+Nebojsa (28:03.128)
+Yeah.
+
+Nebojsa (28:08.674)
+Yeah.
+
+Nebojsa (28:15.15)
+Okay, that's very...
+
+like generous from you sharing all the knowledge giving like a lot of knowledge for free as you're currently doing by having this podcast with me so out of curiosity when they do this four to five months implementing a like growth engine and when it starts bringing leads closing them what happens when they are no more like they just can't accept more lead because they can't scale their
+
+Operations as quickly as they are scaling the incoming leads and that becomes a bottleneck So what do they do? Like if they put everything on stop, can they continue with the same? Tempo when they scale the operations
+
+Trevor @ CrowdTamers (29:02.656)
+So I was actually having a talk with somebody yesterday about this. So, see, it's good that we waited two months. I have new stories to tell. He runs all the, I think general manager, but also the sales manager for a B2B company. I won't specify the industry because I don't want to get in trouble with breaking the end of the age or something. And he has a precise target for how many leads he can take per salesperson. He does seven. If he gets five,
+
+Nebojsa (29:30.712)
+Thank
+
+Trevor @ CrowdTamers (29:33.089)
+For a day or two, it's fine. If he gets five every day for a week, the marketing team is in trouble. If he gets nine every day for a week, the marketing team is also in trouble because his closed time, I think, is like two weeks or three weeks for these leads. And so if you take seven a day and then you stack it up over two weeks, he's got a hundred dials a day after the end of working for this company for a month. And you can only really expect a hundred dials a day per salesperson, right? Most of these dials don't connect.
+
+Nebojsa (29:42.478)
+you
+
+Trevor @ CrowdTamers (30:03.158)
+So I have to place the call, let it ring, and then do it again tomorrow to try and get the sale to happen. Finding good salespeople takes time. So scaling up a salesperson is probably a three or four month job once you've hired them. So he's very resource constrained on I've got to do these dials. And I know this is a spoiler alert for the topic you want to bring up later, but AI shows up to solve these kinds of things.
+
+Nebojsa (30:09.942)
+Yeah, and you're stacking them.
+
+Nebojsa (30:18.456)
+Yeah.
+
+Trevor @ CrowdTamers (30:33.022)
+And this is actually a big part of what I would recommend the founder think about is Shopify published a memo. think it was still this week, but maybe it was last week. Before you hire anybody in this organization, he has said, prove to me AI can't do what you need done first. And I think every founder needs to think that way.
+
+Nebojsa (30:38.574)
+Okay.
+
+Nebojsa (30:58.318)
+Okay.
+
+Trevor @ CrowdTamers (30:58.94)
+I've basically four or five X my overall team's productivity over the last two years by having AI show up. So we're able to service, I mean, five times the heck we could two years ago, right? Because AI and automation and just being smarter about how you deliver work, pick up the tempo tremendously. But that's also true for like this one company and an AI tool I have built.
+
+which is an AI phone calling service where it goes through the exact script you want gone through. And then at the end of it, if a human is interested, says, great, let me connect you to our senior whatever person to finish this discussion. Then you close the deal with the human, right? Like that would suddenly mean all of these sales agents who can only take seven clients a day because they have to follow up with them all can now take 24 clients a day because all the follow up is automated away.
+
+Nebojsa (31:56.225)
+Okay, I understand. But like what?
+
+Trevor @ CrowdTamers (31:56.235)
+Like, so there you go. There you go. That's how you build capacity.
+
+Nebojsa (32:01.452)
+Yeah, but like what happens when the industry doesn't can't look can't accept. Yeah, for example, AI can't do on-site implementations. Like if you have to add in some content on the websites and when I said operational bottlenecks, I meant like you start getting leads. They're coming like five leads a day. Let's take for example, but you just can't close all of them because you don't have a human capacity. People who can deliver service
+
+to all these clients and you just need to put your sales on stop.
+
+Trevor @ CrowdTamers (32:35.83)
+No. So again, this is, mean, I don't want to be AI maximalist and AI solves every problem, right? But in every company, even the super AI forward companies right now, there are operational efficiencies AI can deliver if you look. So I'll give an example, Crowd Tamers. It is still the Crowd Tamer way right now. When a client signed a contract and they onboard, I custom write their welcome email.
+
+Nebojsa (32:42.51)
+Okay.
+
+Nebojsa (32:53.153)
+Okay?
+
+Trevor @ CrowdTamers (33:06.538)
+Right. I'm only doing, I mean, one to three a week. Right. This is not too much. If we had 10 clients onboard in the same week, I promise you I would switch over to team GPT and be like, here's company description, write me the onboarding like boom, and just copy paste them over. And if I had 10 a week every week, I would build an automation in my CRM where it would take the company info in the CRM.
+
+Nebojsa (33:10.445)
+Okay.
+
+Nebojsa (33:28.024)
+Mm-hmm.
+
+Trevor @ CrowdTamers (33:35.617)
+pass it over to ChatGPT with the prompt, get the custom written reply and automatically send it. Right? Like that, because right now it saves me, I mean, maybe five minutes per lead, sorry, per client if I stop writing these emails by hand. I don't need to now. If sales volume picked up, I'd automate this away. Reporting is very manual in my company right now. Reporting probably takes an hour per week per client. Right? Now.
+
+This is deliberately inefficient because when a human looks at the numbers every week, a human has to think about the numbers. And because you've looked at the numbers and thought about the numbers, you can make a good synthesis and a good recommendation. And I've yet to find, although again, if it was really important, I would start to, how to prompt AI to really look at these numbers and come to the conclusion that makes sense to me as conclusions and say,
+
+Because you did this marketing, this result happened, so we recommend this. If I had so many clients, which I don't right now, I wouldn't mind if I don't, where that time spent in reporting is impossible to fulfill. Okay, you deliver, right? You find the right way to build. And I mean, the tools for this are so good compared to how they were even nine months ago. Like I've got, I mean, I shipped last week.
+
+I shipped three applications, right? And of varying sizes. One of them was I think decently big and two of them were quite small. And my total time spent was maybe 20 hours. The big product I shipped last week, if I had written this four years ago or three years ago, I would have raised a million dollars from my Combinator with it. And now I spent $22 in AI credits. Like what we can ship now and how we can make efficiency happen is so much more than.
+
+Nebojsa (35:13.55)
+Mm-hmm.
+
+Trevor @ CrowdTamers (35:33.835)
+I think even plugged in founders realize that the answer to, I've got too many leads and I can't onboard them as clients need to be systematized, operationalized and automate. And if you do that, you will discover, mean, human in the loop is still required for all AI, but AI can do 80 % of the lift of almost any problem. So you could five X your throughput. If you were a little bit savvier about how you're operationalizing.
+
+Nebojsa (36:04.974)
+That's a nice answer. So I know you have experience in generative AI and from engineering as well Where do you AI playing the biggest role in marketing? Let's say over the next few years
+
+Trevor @ CrowdTamers (36:19.392)
+So I saw, and I wish I'd saved the tweet, or the X post, I guess we now call them because enough there anymore. I I'd saved the whatever we wish to call it. Somebody made a great analogy, which is for 50 years, coding has been like being a farmer hand tilling their soil, like Mesopotamia did for 3,000 years, right? A dude with a stick poking holes in the dirt.
+
+Nebojsa (36:27.348)
+Yeah.
+
+Nebojsa (36:48.75)
+Yes.
+
+Trevor @ CrowdTamers (36:49.032)
+is how programming was effectively. And we've just invented the Combine Harvester. There's going to be a lot fewer farmers and a lot more food. And what this means in effect is, and I'm seeing it all over LinkedIn and X these days, every marketer I know with the least sense of ambition is like, hey, I wrote a tool to do this today. And
+
+Was there a tool out there that already did it? Very possibly, right? But I wrote it and I added these two little things that I needed and it works now. I put two hours, five hours, 20 hours into building it and I'm using it.
+
+And then somebody else, like I've seen three people in the last eight days post how they used lovable.dev to build an app that scrapes ads off of meta ad library and Google ad library and then does something, right? And all of them built their own thing from scratch. Now these people are farmers in this analogy. They're doing something else, but they got the food. They got the program they wanted and it was bespoke for them.
+
+Nebojsa (37:48.846)
+Mm-hmm.
+
+Yeah.
+
+Trevor @ CrowdTamers (38:03.75)
+in the marketing space and in broadly everywhere over the next couple of years, custom software is going to become disposable. I have written over the last five or six months, I think four different website scrapers. Well, okay, I have written, I didn't write squat. AI has written for me four different website scrapers, each of which had a tiny specific use case. And because it was such a niche thing,
+
+I didn't even bother finding the previous scraper to try and modify it. I just went, I'm gonna write a new one from scratch. So like one of them was crawling Reddit and looking at some specific subreddits and pulling the top posts every hour and then analyzing the top posts with Claude, I think 3.5 at the time to understand sentiment analysis and then generate charts based off of that. Like whole thing done, start to finish. Cool, the next one was I wanted to pull.
+
+all of one client's website, entire website, then use another, it wrote all one giant flat file. So it's like a, I don't know, a seven or 10 kilobyte flat file, and then dump that into Gemini for basically training data. Like it was a rag, because Gemini has a ridiculous, I think at the time it was like a 1.5 million token context window, right? So like, boom, and then have a chat bot now that knows everything about this company. Let's go, right?
+
+Nebojsa (39:30.712)
+Yeah.
+
+Trevor @ CrowdTamers (39:31.744)
+So, very different use cases. Wrote a Python script, ran off my computer, went and grabbed lunch, job's done, right? But disposable, I didn't even bother using Git for either of these. I just have a directory, not even on this computer. Some of these, at least two of these crawlers were on a Hetzner server that I didn't even bother renewing. I didn't copy the software off, right? I don't need this.
+
+Nebojsa (39:39.202)
+Bam.
+
+Nebojsa (39:46.894)
+Yeah.
+
+Trevor @ CrowdTamers (39:59.927)
+for it again. So this to be disposable software, purpose driven software. Every marketer who can think in a systems way is going to discover weird, oblique, unusual things they can do to solve traditional problems in non-traditional ways. Growth hacking was a big thing for a while as folks found these edge cases in the algorithm and in the UIs that let them get an outsized advantage and then all the platforms wised up to it.
+
+and went, I can make more money if you can't use an outsized advantage. So they have basically removed a bunch of the capacity for people to do what used to be considered growth hacking. it's something like growth hacking is going to come back. Because with these tools to now build weird one-off pieces of software that nobody else has ever built before, new opportunities for weird, oblique outsized advantages will come.
+
+And so new exploits are going to show up and a smart marketer won't talk about them. It'll just be something quietly I have done that makes me money. And then people work with me because I just make more money than other guys do. Right? So like, this is what's going to be happening again. And this rise of various AI driven algos and softwares fighting each other to try and make different weird things happen. We have no idea how crazy it's going to get, but the, with all this chaos comes tremendous potential, but also
+
+Nebojsa (40:59.694)
+Yeah.
+
+Trevor @ CrowdTamers (41:25.002)
+You've got to put in so much work to make sure that you're current in what's doable right now. Because week to week, all the best practices change.
+
+Nebojsa (41:34.989)
+Yeah, like before you could use some no coding platforms, like before there was a, for example, Elementor where you can simply drag and drop elements and show them on your website. Then we got some more advanced platforms like Bubble or the one that you mentioned that enables you to custom build some tool without having to type the code itself. But then those platforms...
+
+got AI integrated. So now you can just say to AI, hey, I want this and that. I want to add these extra features, help me code them. Now AI does everything for you. What's the next, like what's the next step? Like I really don't know where this is going to go. And back, like before you mentioned 80 % can be the AI, 20 % should be the human. Do you think AI can ever fully replace human led marketing strategy? Now like marketing strategy,
+
+that you are discussing or is there always a need for human creativity?
+
+Mm-hmm.
+
+Trevor @ CrowdTamers (42:41.898)
+So I made this analogy on someone else's podcast a couple months ago.
+
+Nebojsa (42:45.326)
+Mm-hmm.
+
+Trevor @ CrowdTamers (42:48.648)
+I think there will be AIs that are smart enough that what they do will be beyond the comprehension of a human. We're not there yet. But I also think those AIs are going to be impractically expensive to use for quite a while. I am reminded of the fact that the 8088 chip, which was a 64 kilobyte RAM chip that was used in the Apple II
+
+that was used in the Commodore 64, that was used in really early IBMs in the early 80s, right, was in common use all the way up till the mid 2000s. Even though, like, why would I buy a chip that old for some edge computing device that I manufactured in the year 2002? It's because it was very cheap. It was...
+
+the chips were so simple, every single possible feature of the chip was known by anybody who used them. There were no unknown bugs in the chip. So this cheap, stupid little chip had ubiquitous use everywhere for a long time after it stopped being used in like performance computing. And we're going to see that a lot of simple, dumb, limited AIs
+
+will be in common use and the really, really smart ones that might outperform humans will be too expensive for everyday interaction. Which means there's this gap in the middle where human insight will still be needed because most LLMs are trained, they have to be trained on the average of human intellect, right? So they're as smart as the average human and the average human IQ is about 100, right? Depending on part of the world you live in and they have a average understanding of
+
+Nebojsa (44:34.538)
+Exactly, right.
+
+Nebojsa (44:41.474)
+Yeah.
+
+Trevor @ CrowdTamers (44:45.822)
+any given topic. If you are an expert in a topic, if you understand how to exploit systems thinking for your topic, I do think we've got, I mean, 20, 30 years before knowledge workers are endangered. And I also think humans are a self-replicating protein robot that's easily trained and currently almost every environment in the world is designed for human interaction.
+
+Nebojsa (44:47.309)
+Yeah.
+
+Nebojsa (45:01.314)
+Yeah.
+
+Trevor @ CrowdTamers (45:12.638)
+If you're a plumber, if you're an electrician, if you're a carpenter, if like any of these jobs, the value isn't there for AI and robotics to take them over. So like there's also whole industries that I feel like if my kid decided, right, here he is nine, if he's like, I wanna be a plumber. Like, okay, I think when you're 50, you will still see that plumbing looks.
+
+Nebojsa (45:34.188)
+Yassss
+
+Trevor @ CrowdTamers (45:38.901)
+basically like it does now, even though everything around might become AI, because the cheapest robot is the one that's self-replicating and trains without special huge data sets. like, I think there's, as a civilization, we've moved, like America's moved to almost purely information economy, right? A lot of those jobs weirdly feel like they're going to go away, am I going to be stuck with
+
+Nebojsa (45:47.33)
+Yeah.
+
+Trevor @ CrowdTamers (46:06.75)
+Now we have more plumbers again and more electricians and more bricklayers because that's the thing we can't. You can't export bricklaying. Someone has to physically be here and lay a brick. And you can't put it to AI because AI can envision a brick, but it can't put one.
+
+Nebojsa (46:11.266)
+Yeah.
+
+Nebojsa (46:16.158)
+Exactly, yes, yes.
+
+Nebojsa (46:21.472)
+Exactly, yeah. I wouldn't trust AI building my house.
+
+Trevor @ CrowdTamers (46:25.078)
+Yeah, imagine the chat GPT house with six doorknobs and 44 windows.
+
+Nebojsa (46:29.974)
+I don't know. No, no, no, no, no. Cool. And you mentioned that you're doing something with the AI recently. So would you be open sharing what are you doing with the AI?
+
+Trevor @ CrowdTamers (46:41.888)
+sure. So one thing I mentioned already, we have an AI calling service. And I should note, right, AI calling service, there's like 20 competitors out there, right? This is not new. I have a tool I am building, which will ship sometime this month, that basically does competitor analysis, right? Punch in your domain, it'll look at how you're marketing, what frameworks you're using, what your competitors are using, what their content marketing, what their ads are, all these things, and then recommend to you.
+
+Nebojsa (46:47.214)
+Mm-hmm.
+
+Nebojsa (47:10.798)
+please let me know when that saliva I'd love to check it out.
+
+Trevor @ CrowdTamers (47:14.198)
+I'm gonna be happy to let you see it. It cost about a quarter of a cent per query. And so I'm just gonna put out there and say, hey, sign up, give me your email address. I'll give you the reports. And then of course I will spam you because now I've got your email, right? But this tooling is there wanting to solve some problems for me, but also the competitor research tool will of course say,
+
+Nebojsa (47:26.328)
+Cool.
+
+Trevor @ CrowdTamers (47:39.009)
+Here are some examples of the ads you might want to run to see if there's market opportunity where no one's currently competing. Would you like to talk to someone about running these ads for you? crap, I run an agency that buys ads. Look at that. I've got lead gen, right? And likewise, this AI calling tool. I've made a living for 15 years, like I mentioned, by being the guy who pushes the buttons on Facebook and on Google. Anybody can take bland.com or 11 Labs and build an AI calling service.
+
+Nebojsa (48:08.366)
+Mm-hmm.
+
+Trevor @ CrowdTamers (48:09.13)
+But most people won't. So my business is not, let me release a software for people to use because there's not much moat there. My business is, I have experts in building these workflows and making sure all the tech works the way you want. We'll do it for you. And you'll pay me a couple grand a month for it. Just like people pay me a couple grand a month to be their interface for Facebook. And I do think for a while, how many years?
+
+I don't know, but for at least a couple years, building tooling that other people don't want to build and then being the agency who fulfilled execution on the tooling is going to be very lucrative. And that's where I'm moving CrowdTamers to is we still have our marketing team and for that AI calling service I mentioned, part of what we do is we generate the leads for the AI calling service to validate. So there you go, right? It's a complete circle.
+
+Nebojsa (48:49.144)
+Mm-hmm. Mm-hmm.
+
+Trevor @ CrowdTamers (49:05.846)
+But if you're like, I've got 60,000 leads, I just have to call them. Okay, we'll do that too and we'll build it all for you. I think anybody listening, right? If you think of where your agency, where you might want to go and work, be that. Be the expert on a set of tooling that other people wish they knew how to use. And then just keep current because it takes so much work these days just to know what's the new thing in AI that I can use. But if you do keep current,
+
+Nebojsa (49:09.486)
+Yeah.
+
+Trevor @ CrowdTamers (49:34.654)
+and you are able to ship and perform for people. There you go. You've got job security for at least five years and right now, unless you're going to be a plumber or a carpenter, that's probably the best you can do.
+
+Nebojsa (49:46.327)
+Yeah, for those who want to stay updated with all the AI trends and maybe get some thoughts and ideas what they can create, do you have any resources that you would recommend?
+
+Trevor @ CrowdTamers (49:59.787)
+there's a couple like slash R slash singularity on Reddit is a big AI group. There's also slash R slash Claude and slash chat, chief of T and slash perplexity and slash Gemini. Like just follow all these because people love to build stuff and say, what I built. So I'm, I'm, I will admit I've been a redditor for like 12 years. I'm on Reddit every day, right? I'm looking to see what's there. I'm still on X every day. There's a couple of accounts I follow there.
+
+Nebojsa (50:04.206)
+Mm-hmm.
+
+Trevor @ CrowdTamers (50:28.638)
+I subscribe to a bunch of newsletters and then I realized this week I haven't read a newsletter in maybe two years. So I've been aggressively unsubscribing from everything because I'm not looking at them. But if you like newsletters, there are folks who predigest this stuff for you. I just find that my email inbox got to where I was getting like 500 emails a day. And I'm not like I'm not going to look at those emails. Sorry, it's not going to happen. So.
+
+Nebojsa (50:37.838)
+Yeah.
+
+Nebojsa (50:54.264)
+can't even imagine your Mondays when you open the email.
+
+Trevor @ CrowdTamers (50:57.65)
+Yeah, I basically told all my clients never email me because you will never get a reply. Just hit me on Slack because I'll reply on Slack until I had a client right now who only works on email. And so I just never read their emails and hope that one of my other team members does instead. I'm not saying this is good. Don't be like me.
+
+Nebojsa (51:05.07)
+You
+
+Nebojsa (51:11.863)
+Yeah.
+
+Nebojsa (51:17.26)
+Yeah, hope you're not missing some inbound leads. Yeah, I hope you're not missing some inbound leads that sends you mails. Cool. Yeah.
+
+Trevor @ CrowdTamers (51:24.554)
+Yeah, I very possibly am. It's one of my like, but you got you got to pick and choose where you can go. I would know people who know me know like, I hate Trevor, I sent you an email today. I'm not gonna hit you up on WhatsApp and be like, Hey, Trevor, I sent you an email. I'll be like, fine, I'm gonna look for it. So, all right. This has been a great conversation. I'm happy we could wrap it up finally.
+
+Nebojsa (51:35.406)
+Hey, okay cool have a only a Yeah, yeah, can I ask you just like a three to four like very simple and questions you can like provide short answers to
+
+Trevor @ CrowdTamers (51:53.119)
+Okay, I'm late for a call, but I'll go real fast, so ask them and I will... no, I can't be quick, so... Okay.
+
+Nebojsa (51:56.431)
+No worries, just I'll choose two. I'll choose two first one If you could give one piece of advice to startup founders trying to scale their business today, what would it be?
+
+Trevor @ CrowdTamers (52:12.202)
+Figure out your positioning and who you sell to and the rest gets easier.
+
+Nebojsa (52:19.278)
+Okay, and the second question, if you could start over, what's one thing you'd do differently in your career?
+
+Trevor @ CrowdTamers (52:27.936)
+Good one. I spent much of my 20s and early into my 30s knowing I was the smartest person in the room.
+
+Nebojsa (52:39.534)
+Okay.
+
+Trevor @ CrowdTamers (52:39.694)
+And I also let other people know that no one likes that guy. Right. It took me to my mid thirties to stop being that guy and realizing that, okay, yes, you know what? have an eye, a high IQ. That's only one of like 20 ways to be smart. And in so many of the other ways to be smart, I am an idiot. And once you understand that and you can bring humility into your discussions with people and say,
+
+Nebojsa (52:45.502)
+Okay.
+
+Trevor @ CrowdTamers (53:09.78)
+This is what I think, but with your perspective, you may have a very valid idea too, because you're smart in other ways I'm not. You get a lot more done. People like you, they work with you more. And generally you go through life a little easier. A lot of founders are type A, INTP, like let me be the coder. I know I'm smart. You must be stupid because I'm smart. And if you can get over yourself and realize that
+
+other types of intelligence are just as valid and just as useful as this narrow definition, your life will be better.
+
+Nebojsa (53:47.919)
+Yeah, you need to make sure that you can put yourself in another person's shoes, understand the different perspectives. Have a different perspective enables you to learn and grow at the end of the day. And you need to put your ego aside, not have it showing yourself as...
+
+Trevor @ CrowdTamers (54:07.662)
+If you'd asked me when I was 25, like, do you have ego? I'd been like, no, I don't have ego. I'm just always right. Which is...
+
+Nebojsa (54:11.468)
+Yeah. Yeah. And surround yourself with people. Yeah. I also think surrounding yourself with people who are even smarter than you is a good environment. My mentor said, if you are the stupidest person in the room, then you are with the right people. You know? So that's true. Yeah. Trevor, it's a...
+
+Trevor @ CrowdTamers (54:15.702)
+25 year old me was an a-hole.
+
+Trevor @ CrowdTamers (54:33.846)
+That's a good way to be about it. Yes, but I also 25 year old me would have been like, my IQ is 141. I don't, I can't be the stupid person in the room. Everyone else was dumber than me. Now, again, that's, there's one number, right? But like emotionally, am I the most intelligent person? No. Like spatially, can I think at all? No. Like there's tons of other ways. Physically, I'm a klutz. I'm surprised I have all 10 fingers given that I've done woodworking for five years, right? Like.
+
+Nebojsa (54:45.244)
+Hehehehe
+
+Trevor @ CrowdTamers (55:02.514)
+all these other ways, I'm awful. And when you hear something like if you're the smartest person in the room, you're in the wrong room, when you're like, but I am the smartest person in the room, like you have to understand that there's other ways to be smart.
+
+Nebojsa (55:11.854)
+Yeah.
+
+you
+
+Yeah, exactly. Yeah, that's the perspective like you have a different perspective cool cool man Like I really appreciate having you on this podcast and you sharing all these nights of wisdom like part one was Crazy now part two as well. So I want to thank you for having two different calls with me Even though like two months passed by But yeah, so I want to thank you for that. It's been a pleasure speaking with you and I want to tell to all the listeners
+
+Trevor @ CrowdTamers (55:24.246)
+Thanks for having me.
+
+Trevor @ CrowdTamers (55:35.658)
+Yes, sir. Yeah.
+
+Nebojsa (55:45.296)
+and followers to follow you on Instagram, Trevor Longuino, he runs Crowd Tamers so make sure to follow up Trevor and also I think this was the first time I had a podcast with a guy who has 141 IQ so it's an honor to speak with you Einstein.
+
+Trevor @ CrowdTamers (55:47.862)
+Thank you.
+
+Trevor @ CrowdTamers (55:53.334)
+There we go.
+
+Trevor @ CrowdTamers (56:04.832)
+Well, thanks very much. Again, there's so many ways I'm dumb. I don't really like, I don't toot that horn anymore.
+
+Nebojsa (56:09.967)
+Yeah, but you're like amazing guy. I really appreciate everything and I also learned a lot from you So thank you for willingly sharing your knowledge Have a great rest of the day and yeah, we'll catch up Okay, see you. Bye
+
+Trevor @ CrowdTamers (56:14.368)
+Well, thank you very much.
+
+Trevor @ CrowdTamers (56:18.846)
+Awesome. Thanks so much to you as well.
+
+Alrighty, see you dude, bye.
+

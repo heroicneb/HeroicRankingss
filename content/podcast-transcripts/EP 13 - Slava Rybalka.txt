@@ -1,0 +1,1354 @@
+Welcome back to the Ranking Heroes
+podcast where we uncover the strategies
+that drive ex exceptional business
+growth. I'm your host and today I'm
+excited to welcome Slava Ibalca, a
+marketing executive who's been at the
+forefront of digital transformation for
+over two decades now. Slava has led
+growth initiatives at major companies
+like Chavy, Arteza, VSC aviation,
+helping them scale revenue and optimize
+their performance marketing efforts.
+What sets him apart is his early
+adoption of AI and machine learning back
+in 2017. He completed a machine learning
+program specifically to understand how
+Google's rank brain was changing SEO
+forever. Since then, he's building uh
+he's been building Python-based
+marketing tools, leveraging chat GPT and
+different APIs for content operations
+and developing automation systems that
+give businesses a real competitive edge.
+He combined strategic leadership um with
+hands-on technical expertise using
+everything from advanced analytics to AI
+integration to drive measurable results
+for businesses he worked with. Today we
+are diving into how AI and machine
+learning are reshaping digital
+marketing, what it really takes to scale
+performance marketing in today's
+landscape and how data automatation can
+transform your marketing operations.
+Slava, welcome to our podcast. It's so
+nice to have you here and I'm excited
+for the discussion we are going to have.
+So,
+>> thank you Nibbush. Nice to nice to meet
+you. Nice to meet everyone.
+>> Thank you. So, first I would like uh if
+you can do a short introduction, tell
+something about yourself, something
+about your uh early career and like how
+you first got involved in SEO.
+>> Yes, of course. So um initially I was a
+teacher of English a long time ago in
+Barus and um at some point I realized
+that that's not the career that I want
+to to to continue with and I decided to
+switch to digital marketing or anything
+basically related to the IT and um I had
+some intent to to to learn programming
+but it was not uh that that big. I more
+I liked more to deal with people and um
+I was looking for a profession on the
+intersect of computers and um personal
+relations and psychology and I figured
+out that search engine optimization at
+that point of time was the exact career
+that was booming and it picked my
+interest and I started learning as much
+as I could about search engine
+optimization. basically absorbing the
+the data uh the the blogs the
+information that I could find on the web
+etc. So I switched to search engine
+optimization and uh my first job on uh
+uh on o odesk uh it's upwork now but
+back then it was odesk
+>> was to to build uh to build five
+backlinks as far as I remember and the
+person who hired me he offered $10 for
+that job and back then I did not know
+how to do backlinks but I read something
+about it and I said yes I'm an SEO
+specialist I can do that. I can help
+you. And of course, we ended up being a
+friends and he helped me with these
+backlinks. He actually helped me how to
+build these backlinks for himself. So,
+um that's how I started and then um it's
+been like I'm saying like 14 years ago
+and since then I moved to the US, worked
+at different companies, worked with
+literally hundreds of businesses and
+organizations and helped them with their
+websites. Mhm. And what would you say uh
+when you started, you just mentioned you
+started reading blogs, articles uh like
+compared to the current knowledge that
+you can find on the internet, was it
+harder to learn SEO back when you
+started?
+>> Yeah. So it was uh very something very
+very new because you did not uh see lots
+of information. You could not find lots
+of information. For example, we did not
+have websites like mos.com or search
+engine journal or anything
+>> at least maybe they existed at that time
+but I started in Belarus in around 2010
+and all I could see was related to
+blogging, affiliate marketing basically
+how you can rank affiliate websites. So
+I started from that
+>> and only when I moved to the US then I
+uh learned about actually no I think I
+learned about MOS before. So u I I
+learned about Moz and search engine
+journal some other websites about search
+engine optimization later a little bit
+later but initially it was just about
+blogging.
+>> Mhm. And like what attracted you to
+specialize in SEO and link building and
+things you you said you mentioned you
+want to switch to the IT but still when
+people are asked people let's say some
+old grandma is asking you what you do I
+know like because she doesn't understand
+what SEO is and you will say uh
+programming or it or something like that
+but it's completely a different thing
+some parts of SEO uh overlaps with it
+like technical
+implementations that you need to do
+coding schemas, things like that. But
+like was there a specific thing that
+attracted you to to
+specialize in SEO?
+>> You know, the the the
+term itself, it sounded cool at that
+point of time and uh it was something
+new, something that I had not heard
+about before and it was a perfect match
+for my aspirations at that time. I think
+in some way it was um it was a pathway
+for me to achieve um my personal goals
+like become more successful in my career
+path or something because
+>> uh back then in Bellarus uh we did not
+have um uh how to say that more
+opportunities to you know to to progress
+in career path. Mhm.
+>> So search engine optimization it sounded
+new at the same time and at the same
+time it promised something bigger than
+uh why I could achieve just doing my 9
+to5 work there.
+>> Mhm. And was the SEO popular in Belarus
+said that I'm 2010 like
+>> you you know what it no um I don't think
+u more than 10 people knew about it or
+more than 50 people in Bellaris knew
+about it. I worked in I got my first job
+there at an IT company and um I offered
+my boss to conduct a course on personal
+effectiveness uh for their executives.
+So we had the one-hour session where I
+told them about the things I learned at
+business seminars and they in exchange
+um offered me like my boss he in
+exchange offered me to uh teach me some
+search engine optimization and he
+learned it he had learned it at a Yandex
+conference that he attended in Moscow uh
+maybe a year before that. So, and I
+literally took um uh a few notes uh
+based on what he was uh telling me about
+some keywords placement and some link
+building and I I took that and then I
+built upon that by reading these blogs
+and learning from the internet.
+>> Yeah. And like how has your approach
+evolved as you've worked with diverse
+markets and industries especially when
+you went to the US where you started
+working with some US companies that are
+like up to date with the trends and I
+know that the west is going like in the
+future like 10 years compared to us that
+are in Europe.
+>> Yeah and my approach has evolved
+dramatically. Um so there were a few
+pivotal points uh and I'm actually I
+have a video on my channel where I'm
+talking about the history of search
+engine optimization.
+>> So what happened is initially when as I
+mentioned I learned about search engine
+optimization as link building. So I I
+thought that it's a synonym and um I
+learned how to build these links, how to
+place them on different websites like
+educational websites or um how to how to
+do the commenting and do all this gray
+hat type of link building, right?
+>> And uh I sold my services as as an SEO
+person, but it's basically was link
+building under the hood and some minor
+optimization. And um then I moved to the
+US and I got hired as an SEO manager at
+a at a company in Los Angeles and I went
+to my first SEO conference which was SMX
+West uh in 2012 in San Francisco or San
+Jose, I don't remember exactly. So when
+I got there, I so I I thought I knew
+search engine optimization and I got to
+this conference and all of a sudden I
+see lots of people who've been doing
+search engine optimization for 10 years
+as like since since 2000 2002 and
+they're talking about a completely
+different world. Uh it was a huge mind
+shift for me in terms of my approach of
+how how I do search engine optimization
+for different websites. All of a sudden
+I realized so the the content is
+important, the structure is important,
+>> all these elements they play an
+important role like all these 200
+factors or more it was a completely
+different world.
+>> And then moving forward in time uh again
+like 2016 I believe uh when I learned
+about rankbrain that was another uh
+shift uh for me because I realized I
+need to catch up. I need to understand
+how neural nets work. So I signed up for
+that course at Udacity and learned how
+to build this machine learning
+algorithms.
+>> Oh, you like you you knew about the AI
+before everything happened? You were
+following the trends. Did you expect the
+the boom in the AI when it happened like
+nearly three years ago when Chad GPT um
+announced and published the first model?
+you know, I uh I did not expect that and
+I think few people could expect that
+because um
+I don't I don't want to make
+assumptions. uh so um actually you know
+in 2016 then uh when there was an
+article and they did the research and
+they said that I believe 15% or so uh
+search search queries are being
+processed by neural net
+>> um and Google was experimenting with
+that I realized that I need to to
+understand how it works
+>> so um back then I signed up for another
+course uh for an artificial intelligence
+course uh that was served at EDX
+and um during that course um I got a
+book I got a book that sick on uh
+artificial intelligence and I tried to
+go through it but in that book you could
+not find anything related to the AI we
+knew right now. So in 20 um 20 or
+whatever Chad GPT happened um everything
+shifted again and now we use CH GPT to
+just uh doing to do research about our
+customer audience to get the insights to
+translate those insights into the
+keywords. Uh it's a completely different
+type of AI now than the AI I imagined in
+2016 when I signed up for that course.
+>> Yeah. Yeah. You didn't think about okay
+I'm going to be able to chat with it to
+provide insights get insights back like
+the whole the knowledge database is
+really huge when you think about it like
+it can scrape the entire internet and it
+has everything. And what I know that the
+the first AI was created by scanning the
+books in the library and then they fed
+the model with the knowledge from the
+books and then the model knew every book
+in the library and could answer any
+related questions.
+So yeah, that's very interesting. Uh
+before we we discuss more about AI, I
+want to ask you some traditional SEO
+questions of course. So, uh, considering
+you're working with an e-commerce right
+now, correct?
+>> Yes.
+>> What would you say that an ecom needs
+the most when it comes to SEO and online
+marketing?
+>> Yeah. So, uh, of course, I'm not calling
+myself an expert in e-commerce. Uh I'm
+I've been working in e-commerce for a
+few years and uh definitely I picked up
+some of the approaches related to
+e-commerce that uh work that we use in
+search engine optimization specifically
+when I worked at Chewy and they had a
+different approach from what I learned
+before. So that was another shift for
+me. Um so the the the difference is that
+let's say if we compare an e-commerce
+website to a regular website to to a
+small business website for example on a
+small business website they have
+services let's say dentist or a spalon
+they have services they're listed so
+those are their hub pages
+>> in e-commerce we have collections or
+categories product categories so those
+are the hub pages that accumulate the
+majority of link equity or authority and
+then underneath we have uh product pages
+So this is I would say a standard
+structure right. Whereas for the local
+businesses uh we have um services and we
+have uh pages um like blog pages or
+guides supporting this um u
+pages with with the links. So that's the
+major difference in structure. Of course
+with e-commerce websites we're talking
+about lots of SKs. uh it can be 20,000
+can be 100,000 SKs and technical SEO
+becomes to play an import important role
+because Google might not be able to
+crawl a huge chunk of the website.
+>> Um we deal with lots of faceted URLs
+again depends on on the framework. Um
+lots of websites are on Shopify right
+now and Shopify did great job on um
+optimizing their SEO. other they hire
+some smart people to do that
+>> and uh um so I'm pretty confident in
+Shopify but still it also needs uh
+sometimes it needs some finetuning as
+well.
+>> Yeah. Um so I mean it's it's different
+these are two different things but uh in
+terms of e-commerce um my approach
+changed a little bit and uh I I started
+thinking more about the structure
+technical SEO and uh the the content and
+the way the information is presented to
+the consumer with the focus that if I'm
+a customer I want to buy something if I
+visit this this website I've already um
+gave uh give um I I've already gave some
+some of a portion of my time to this
+website. So now I'm expecting this
+website to understand my need
+>> and give me the information right away.
+Give me the the idea or or actually
+answer my um my intent right away. So
+that's the difference I would say
+between e-commerce websites and uh some
+other types of websites.
+>> Yes, I understand. And uh one of my
+previous guests, he mentioned how he
+noticed for an e-commerce client,
+they've been running ads for a specific
+landing page and they were they they've
+been doing Google ads specifically and
+he noticed that even without the SEO
+only by running a keyword campaign on
+Google ads uh you'll get your organic
+positions for these keywords also move
+up. Uh do you did you ever see such
+correlation between ads and organic?
+>> Okay. So what I can tell regarding that
+there might be some indirect influence
+indirect correlation because of that uh
+maybe because of um more awareness and
+more more brand signals.
+>> So indirectly that could could help.
+Again that's my take. I'm not saying
+that uh I'm an expert in everything
+related to paid search and search engine
+optimization. Uh I spoke uh with uh one
+very famous person in SEO industry.
+Everybody in SEO knows this person long
+time ago and um uh again during one of
+the conferences and uh he told me that
+um they don't see any correlation
+between paid ads and search engine
+optimization. uh
+>> it's a it's it's a different completely
+different different traffic acquisition
+channels. So whether there is direct
+impact right now today uh from paid ads
+on SEO or not not say that because I
+don't have enough data to to prove that
+>> and uh another question regarding the
+ecom is something that I recently
+noticed is that GPT launched a thing
+where it requires a website owner like a
+store owner to fill out some form so the
+GPT can uh basically uh show the results
+so that the users who are searching for
+products using GPT uh can directly buy
+from GPT. And I think this will really
+change how things are working because
+like before we were typing like uh shoes
+running red for example and now you are
+typing like this also from one of my
+previous podcast where Sarah told like
+now people want to search uh I live in
+Colorado. I want to buy myself uh red
+shoes. I want to go up in the hills.
+this is the average price that I can uh
+pay for these shoes and like these are
+the questions that are really going
+through uh to the LLM and not to Google
+directly. So that's very interesting how
+the search will evolve and I'm not sure
+if you have like uh kids and that but
+like I have a son he's only a year and a
+half old and he I know that he will now
+grow up next to the AI and probably
+these youngsters when they grow up their
+way of searching will be completely
+different than our way of searching.
+>> 100%.
+>> Yeah.
+>> Absolutely.
+>> Yeah. So I mean it definitely definitely
+the new generation the kids who grow
+grow up now they grow up with AI because
+Chad GPT it's it's the part of their
+life now uh they do their their homework
+with Chad GPT
+>> and they use it uh
+>> so uh in terms of product placement
+within Chad GPT results uh you're
+absolutely right so the the situation
+has changed um because before uh when
+Google just appeared um people typed
+very simple keywords there like shoes or
+running shoes, right? And Google tried
+to do their best job to provide the the
+optimal results for that searcher for
+that person for that particular person
+who is looking for that information. uh
+and then uh there was a shift to a
+longer keywords uh to to longer keywords
+and we we thought about how we optimize
+for this longer keywords and how we use
+TF algorithm to identify the the
+similarity or cosign similarity or and
+then there were a few b businesses built
+on that. Um I used the natural language
+processing to extract the entities. Uh I
+I was really excited about that for a
+certain point for a few years regarding
+uh analyzing the copy on the web page
+and the anchor text and the incoming
+keywords and to match all that using the
+entities and biograms and triagrams from
+NLTK. um to to to truly understand the
+intent
+um just even behind the traditional
+distribution toformational
+um transactional navigational types like
+what's the true reason why people are
+buying something.
+>> Yeah. And um I worked at some company
+and they utilized this approach when
+somebody uh performed um a purchase.
+they they made a purchase and on the
+thank you page they did this popup which
+said uh why did you buy from us
+>> and some people filled that out and
+based on their answers you could get
+deeper into the their mindset
+>> and then you could match that
+information to the product that they
+purchased and uh power your marketing
+strategy going forward.
+>> Yeah. form your messaging according to
+the your audience feedback and this is
+something that every business should do
+like if you don't get the feedback from
+your customers then you can't improve
+your product
+>> absolutely absolutely and going back to
+chat GPT so regarding so we moved from
+the simple keywords to large prompts
+when person provides the contest uh the
+context to chat GPT right or or to LLM
+and uh what I think we should be doing
+um the web masters and SEO people what
+we we need to be doing now is to um use
+maybe go back to this um entities um
+algorithm or method methodology when we
+uh process the information on the
+website on our websites and extract this
+entities and then we try to map the the
+possible con context or possible prompts
+to these um entities that we have on the
+website. It's just an idea and I might
+play with it for a while um to to test
+it but uh this I think basically we need
+to adopt now to to this angst.
+>> I agree. I agree. and Slava tell me what
+do you look for in a successful SEO
+campaign like
+>> well uh first of all um there should be
+uh a strategy and um what I did over
+years I came up with a checklist
+um I I took I found an SEO checklist on
+the web uh somebody created it and um I
+adopted it to my needs I added some some
+additional points and I modified it from
+year to year. So right now I have it
+modified for 2025
+and uh the problem is especially
+especially for me it has been that
+whenever you start working with a
+website lots of websites they every
+website is different they have different
+they at different stage of optimization.
+Some of websites are not optimized some
+of them some of them are very optimized
+and uh they require different things to
+be done. So this checklist it helps me
+to make sure to that every point is
+optimized and that's uh that's actually
+built on Bruce Clay's approach uh
+because uh he um he used to say that
+>> uh we need to make sure that um we optim
+that our website is better than our
+competitor's websites. So every let's
+say every point in our website should be
+better than the same point in the
+competitor's website. That's what I
+learned from his master class in 2012.
+And uh I'm using this checklist to make
+sure that all the points are uh checked
+and completed. So the page titles are in
+place, the internal linking is in place,
+everything is done properly.
+>> So that's the classical uh SEO I would
+say.
+Now also we're talking about u the
+importance of links whether they
+important or not uh the optimization for
+AI how to do that do we need to apply
+this llms txt or not all these new
+things they need to be added to this
+checklist and the modern search engine
+optimization it should be done um
+considering all these new uh new tools
+and new uh new changes.
+>> Mhm. Okay. Okay. Thanks for sharing
+that. Um, I also wanted to ask you
+because like I know that at some point
+when you're working on the website's
+SEO, you just hit the wall and you just
+want to find a way how to improve the
+positions. And from my experience, this
+is where the perfect timing for link
+building campaign comes. So I want to
+ask you like be because a lot of people
+are saying links are not the the best
+ranking signal. Some of them they say uh
+links are the best uh and will always
+remain as the strongest signals based on
+what Nathan got for example uh was
+saying in his videos. So I want to ask
+you how important is link building.
+You know what? Um my opinion is that
+link building um lost its um um how do
+you say that? Popularity or let let me
+actually dial it back. So uh before we
+were talking about 200 uh factors
+>> that help a web page to rank and link
+building was one of these factors that
+was prior to this neural net ad
+algorithms. M
+>> um a neural network that's what Google
+started using uh in 2016 or around 2016.
+Uh it's a black box that has lots of
+inputs and we're talking let's say about
+this 200 plus inputs um that and back
+links is one of them and u you put this
+input you load this information into
+this black box and you get uh the result
+the position in search results. Mhm.
+>> Uh that was the idea back then. And each
+of these inputs, it has its own weight
+from zero to one, let's say, and it can
+change dynamically. So that complicates
+things even more. So my assumption is
+that let's say links were one of these
+inputs or have been one of these inputs
+and their weight was let's say one very
+important. So they affected the ranking
+very much. Mhm.
+>> Now this weight has shifted and it's
+probably not one but 0.1 or 0.2.
+>> Mhm.
+>> Again this is I'm not saying this is
+true. I'm saying this is just my
+understanding how this is happening. Of
+course things have changed a lot.
+Everything is much more complex than
+that what I've just described. But I
+think links are still important but they
+should be relevant. they should um they
+should not be appearing on the website
+rapidly at the same time because that
+could trigger some algorithms.
+um they should be done from um uh using
+there are different ways of doing that
+like as I mentioned I started as a link
+builder so I built all kind of backlinks
+>> but now uh I'm telling my clients
+>> uh if it's a small business I'm saying
+you want to to do it strategically and
+build let's say one link from your local
+chamber of commerce from the city where
+you operate
+>> and that could be a good signal for you
+if it's an e-commerce website I would
+recommend and to buy a blog uh a
+wellestablished blog on the same topic
+that already has accumulated lots of
+backlinks and uh go very meticulously
+through these backlinks through this
+content and then redirect the pages to
+your blog on your domain.
+>> That's smart.
+>> There are different approaches
+>> depending on the situation.
+>> And tell me what tips would you give
+companies looking to scale their SEO
+efforts through strategic partnerships?
+Well, um I read this book. It's called
+uh competition um competition
+>> and uh it's an old one but they uh talk
+about the game theory and how company
+could regard itself um in that scheme
+where you have the competitors, you have
+suppliers, you have clients and you have
+complimenters. So um in that scheme you
+can think about how you could utilize
+your competitors or your indirect
+competitors uh to become your partners.
+You might be competing on one side but
+you might be helping each other on on
+the other side. And uh so I'm regarding
+um through u I'm regarding partnership
+through that lens since I read that book
+and uh uh let's say if somebody is doing
+paid search um I can speak with them and
+ask them if they would be happy to to
+provide my services to their clients and
+vice versa if somebody needs paid search
+I can recommend their services. Um, I
+have a few friends who who specialize in
+paid ads and whenever somebody asks me
+about paid ads, I recommend their
+services for example. So
+>> there's always there are always
+opportunities. It's it depends on how
+you how you look at things.
+>> Yeah. And they say don't uh they say uh
+there is this sentence it says uh don't
+wait for the perfect opportunity. You
+take the moment and make the
+opportunity. And I I think that's
+something that we all need to do. But
+some people uh can see it uh faster and
+react faster and better. Some people
+might not see it right away. But you
+know, it's like that. So yeah, I want to
+move and discuss more about the uh AI
+influence in the SEO industry. So I'm
+going to just follow uh form a follow-up
+question based on what you previously
+said that you built a checklist uh that
+you updated to 2025. I suppose it has
+some things related to the AI such as
+LLM, TXT and things that you mentioned
+and I want to ask you uh do you use uh
+AI to help you uh with some of the uh
+tasks that could be found on that
+specific list that you currently have
+>> kind of so um I'm experimenting with it
+right now and now you know that there is
+a boom in AI a agents um field. So
+people are building this AI agents with
+NAN and uh other tools.
+>> So um I'm exploring the idea of
+automating some of these um points in
+this checklist using the using AI.
+>> Of course I did that before using Python
+but that was more around if else logic.
+Now we have LLM. So you could just plug
+LLM
+>> it will do something. But I think I
+firmly believe that there there should
+be a system of checks that um that
+serves as a filter for every LLM uh
+input because you can't just plug in an
+LLM and expect that it will get the job
+done. I think it should be a synergy
+>> between a person and uh an LLM. So for
+to achieve the best results.
+>> Mhm. And since you've been using Python
+for a while, I'm familiar that for
+example, clot code can build Python
+scripts using an LLM uh and basically uh
+it can follow your instructions, your
+modification and it can run serious
+Python scripts. Did you test it out?
+>> No, I did not. You mean cloud from an
+anistropic? Uh
+>> yes, now you can integrate cloud in for
+example, Visual Code Studio and then it
+can code for you basically.
+>> Yeah. Yeah. Yeah. Uh no, so what I did,
+I experimented with it and I asked
+Claude to build me an app in React and
+it did that pretty well. ChatGpt does
+this. I think they can do that as well.
+But I have not tried that functionality
+yet in chat GPT. Um what I wanted to add
+here uh in order not to forget so uh
+with the introduction of CH GPT and LLM
+uh I've been using it uh for for some
+SEO tasks but those SEO tasks were were
+related more towards understanding the
+customers and um so I know some people
+are using it uh they they use CH GPT to
+find the keywords which I think it's not
+correct because um they won't be able to
+tell you the exact keywords. They will
+be imagining things and just giving you
+something some some assumptions and and
+such. So what I did instead, I could for
+example describe um the customer the the
+customer persona based on a typical
+persona that my clients have
+>> and u I would ask Chad GPT to to to give
+me to give me more insights ba based on
+this uh description like this is my
+ideal customer. Tell me five things that
+I might not be thinking of that this
+person uh cares about or
+>> or they're interested about in relation
+to
+>> my client's business.
+>> Yeah.
+>> Maybe they have some hidden questions or
+something we couldn't think of.
+>> And uh I worked with um a pretty big
+company. um they had their own uh VP of
+content and uh Chad GPT just uh just
+appeared. It was a couple of years ago
+and with that company with with their VP
+of content, we developed a very
+elaborate method of how to understand uh
+their customers and how to build their
+con the content calendar for that
+company
+>> based on the intent based on the
+questions that we might be asking or
+they might be asking
+>> etc.
+And uh I used um to build that series of
+prompts I used an approach um from some
+of the greatest minds in information
+retrieval.
+>> Mhm.
+>> And uh that's uh this is I think how you
+could use chat GPT in a smart way.
+>> That's very interesting. I mean uh it
+seems like you you want you make him
+understand the entire topic better. So
+you give him the quality input and of
+course you will get the better output
+than just typing a short query prompt.
+>> Yes. It's more like uh let's say
+somebody uh some great mind they
+introduce a concept related to
+information retrieval or related to
+uh how how how customers think or how
+how we think or how we
+>> something related to psychology. Let's
+say it can be psy psychological concept
+>> and you take that concept and you think
+about it through the lens of marketing
+and branding and customer acquisition
+and then you create this prompt for Chad
+GPT and tell CHP about the psychological
+concept and the client's business and uh
+basically you let the the you let Chad
+GPT do the do the work that
+>> oh that's that's very interesting. I
+like it. I like the way of I mean I like
+the entire approach that you have there.
+And by the way uh for the keywords um
+there are some APIs that you can connect
+with chat GPT and they can help you get
+the actual uh information the exact
+keyword positions that are correct. Uh
+there are ways now to do that and I've
+been testing it out. I even built an app
+that analyzes Google search AI overview
+results and then takes all the feedback.
+You just need to type the keyword of
+course and then it gives you back the
+feedback uh by analyzing all the AI
+overview and Google search results um
+how you need to structure your content
+what you need to be to do in order to
+rank in AI overview as well things like
+that and even it can like create a new
+page and this is something that uh I've
+been working on for the last two months
+because I find it very interesting how
+you can now connect AI with real data
+sources through various APIs, endpoints
+and then you can do some very good
+things and simplify some tasks.
+>> Mhm.
+>> How do you like the results? Sorry for
+interrupting you. How do you like the
+results?
+>> Oh, I like the results. I really like
+the results especially because uh it
+generates the HTML that you can uh
+basically preview in your browser, send
+it to your content writer. So he can
+update the content. Your designer, he
+can do the design and you have a perfect
+piece uh to publish.
+>> Okay.
+>> Yeah, that sounds
+>> Yeah, I'll I'll make sure to forward the
+link after the call.
+>> Yeah, that would be great. I'm going to
+ask.
+>> Yeah, no worries. Uh and uh since we are
+discussing these trends like and
+technologies, I want to ask you what SEO
+trends or technologies excite you the
+most right now.
+Uh well, you know, uh for many years, uh
+I've been following Gartner's uh hype
+cycle chart. They they've been building
+this great charts. And one of the things
+that u attracted my attention has been
+uh customer data platforms
+>> uh CDPs um because um I think that it's
+very important to understand
+u the true need of a customer and um to
+to do that uh you need to to be able to
+get the the the information you need to
+understand what they like um and uh what
+what they do on the website and
+basically just regular information that
+uh that they provide. So once you have
+that you can build on top of that. So
+you could um you could use let's say
+chat GPT to to analyze the data or uh
+you can get some insights. And as I
+mentioned in the example before, there
+was this popup at the end of a of a
+checkout process that that asked why did
+you buy from us? Right now, you could
+collect you could connect uh Chad GP to
+that to those uh answers and you could
+do that even better.
+>> Mhm.
+>> So that's that's uh something that I'm
+excited.
+>> Okay. Thanks. Thanks for uh for sharing
+that. Uh also I have a a question about
+the the content that performs well. So
+what frameworks or tools do you
+recommend for structuring content that
+performs well? Uh let's say both in SEO
+search engine result pages but in AI
+overview results as well.
+Uh could you please elaborate a little
+bit more regarding uh frameworks like
+frameworks like WordPress or frameworks
+like uh method and elements and what
+>> more like uh for example when I say
+framework I mean like uh content
+production workflow like uh we analyze
+this and then we do that we send it to
+our writers. That was I that was I
+referring to.
+>> Yeah. So um um back then again I think
+2012 2014 um at one of the conferences
+there was a presentation by Greg Jarbo
+um regarding a content factory and I
+liked it a lot. It was a series of
+slides. I liked it a lot. Uh I asked him
+to send me the presentation. I still
+have it somewhere. Um and uh in that
+presentation he described um the content
+machine how it how it works from the
+beginning till the very end. So uh it's
+like a factory where everything goes on
+a conveyor belt
+>> and uh at each stage certain actions are
+done to produce that content. So um I'm
+very excited about this approach and I'm
+explore I'm exploring the ways of
+putting them into AI.
+>> Yeah, nice. I mean uh I recently read
+that Google announced that AI content
+won't be penalized but like for example
+if you misuse it and you start
+publishing 50 articles a day of course
+you will be penalized. they will know.
+Uh to move more and discuss uh about the
+different metrics in SEO, I want to ask
+you which metrics do you find most
+important uh when scaling SEO efforts?
+>> Specifically regarding search engine
+optimization, I'm looking at um the
+number of keywords, the total number of
+keywords uh a website is ranking for. Uh
+there are lots of things in SEO that we
+cannot influence, we cannot impact. But
+uh
+>> let's say as we add more content to the
+website we were we have been
+traditionally ranking for more keywords
+now again like the situation changes
+because people are getting those answers
+from AI and uh we might not be able to
+look at the same KPI uh like that again.
+we might need to change the the to the
+our approach to the KPIs. But
+traditionally, I was I was looking at
+the number of keywords. I was looking at
+the uh sessions from active users um on
+on the website. Um I was looking from
+the technical SEO standpoint, of course,
+I've been looking at the number of pages
+indexed in Google.
+um the qual you need to look at the
+quality of those pages that are indexed
+because don't want to have just anything
+there. Yeah.
+>> Um
+>> yeah and purely from the SEO perspective
+again you look not really a KPI but
+internal links I think very important
+and
+>> if there is a way to measure the
+uh the the equity that those internal
+links pass I don't want to say page rank
+but uh some metric that helps you
+understand which which page on your
+website at a given moment of time
+is more has more weight. I think that
+would be a great metric to have.
+>> Yeah, nobody provided such a detailed
+answer before and I 100% agree with all
+the metrics that you just listed and I
+wasn't thinking about some metrics in a
+way you did but you just opened my eyes.
+So, thank you Slava. And since you
+worked with different teams, uh how do
+you ensure for example let's say sales
+and marketing they work together. How do
+you ensure that both sales and marketing
+teams stay aligned around data and
+reporting?
+>> Yes. I mean communication I think
+communication is the key because uh you
+need to um to it's better to
+overcommunicate you know than to
+undercommunicate. and uh uh training and
+explaining things how how things work uh
+what's important because for them
+>> let's say for marketers it might be the
+quantity of leads for sales it might be
+the quality of leads
+>> so um understanding how things work um
+going back to the topic of AI uh a few
+years ago um just when I finished my
+Udacity education uh one of the things I
+built using machine learning was an
+algorithm that scored uh the the leads
+uh to uh to to to to understand the
+quality of each lead. So for example, we
+had the call center at the organization
+I worked at and I built this machine
+learning algorithm that took all the
+leads that were incoming and uh analyzed
+them and assigned the score
+>> based on the metric based on the
+training data that I had and I saw that
+let's say certain leads that had certain
+parameters let's say certain people from
+certain states or um they visited the
+number of pages on the website they
+ended up um making a purchase, right?
+And I used that as a training set. So my
+algorithm could tell that if a lead
+comes from a certain state and they have
+certain parameters, there is let's say
+85 probability that this
+>> they will convert. So and I prioritize
+those leads up in the queue and that
+that's something that you could build
+without CHP. that's uh pure machine and
+uh that's actually part of AI as well.
+>> That's that's so smart. Actually uh last
+year when I was uh developing a sales
+team inhouse uh I I I told my growth
+marketer to help me build a system like
+that worked uh via app script uh through
+boost sheets and when we have a lead
+lead list that we want to reach out to
+uh have each one of them gets their um
+qualified score rating and then based on
+that we prioritize the list that but
+what you created is on a high much
+higher level because they are coming to
+you uh and you're qualified them. Uh
+it's completely opposite here because we
+are reaching out to them. But yeah, I
+get it and I I'm I'm familiar that you
+don't need uh AI, you can build it via
+scripts and if you have a like a
+qualified matrix that you preview
+>> more more importantly is that now you
+could use AI to build AI like you could
+go to and say build first of all you
+could say okay I'm a complete newbie in
+machine learning um teach me machine
+learning in in 30 minutes I've got 30
+give me the most important concepts and
+explain like I'm five what it is and
+this is my situation let's say I want to
+increase the sales uh on my business I'm
+doing this I'm selling tires for example
+right so you give all this context and
+chat GPT tells you what is machine
+learning how you could apply it uh to
+your business your specific business uh
+what algorithms would be the most
+helpful and then as the next prompt you
+could say okay now build me this machine
+learning algorithm that you recommend,
+you just recommend it. That should
+increase my sales. And again, I I'm
+completely newbie in Python. I don't
+understand machine learning or any
+machine learning algorithms. Just build
+me this this app and it will create you
+an app with this machine learning
+algorithm under the hood that you could
+use. You could just plug and play it.
+And I think that's that's where
+>> I agree. I agree. Uh okay. And I I do
+have a few more questions before we wrap
+it up. So this is the question that I
+ask almost uh every guest uh and that's
+what is a marketing meat uh or
+misconception you often encounter.
+>> That's a good one. Um
+well it depends. Uh actually I have
+another video uh that I recently uh shot
+regarding the mistakes that like typical
+mistakes that companies make uh or
+website owners make when they build a
+website or they they have new website
+and things they do. Uh one misconception
+is that again they they they think about
+backlinks as search engine optimization.
+So they want to get the results fast and
+instead of let's say buying ads they go
+and buy SEO services which is
+essentially a link link building
+services but those link building
+services they are done not by a
+legitimate company not by by the company
+who understands how to do link building
+but by someone from fiber and u that
+actually worsens the reputation of their
+brand and ruins their the credibility.
+And another thing that's related to that
+is that my approach has always been that
+you want to regard your website not just
+a website but as an asset and as a
+brand. So you want to treat it uh very w
+with all the attention that you you you
+have and you don't want just to order $5
+link building package from Fiverr
+>> for your brand that you want to cherish
+and build and treat it as an asset.
+>> Yeah. I agree. I agree. Definitely. Many
+sadly, many businesses they went and
+bought uh like 200 back links for $200
+from Fiverr and they got a bunch of
+chunk uh and uh it just ruined their
+rankings, hurts their organic keywords
+because it that specific keyword just
+>> went over optimized, you know, it fell
+down with its rankings, things like that
+happened. And you should really be
+careful uh when you're doing backlinks.
+You need to work with a company who
+really has experience in it. Yeah.
+>> Another thing there is one more thing
+that I wanted to mention. Uh another
+thing that I'm noticing is that um lots
+of companies they have uh SEO done for
+them. But when I'm checking this
+websites, I'm seeing the approach that
+was popular a few years ago. let's say
+overation
+and lots of internal links uh that
+should not be there because Google has
+become smarter and it's not like you
+just plug in all these links everywhere
+and it will work for you.
+>> So that's another thing
+>> and I know that uh with every new core
+update their website is just going down
+and down and down until it completely
+disappears. I've seen it like for for
+companies that didn't change or update
+their website anything except publishing
+new content like in forms of blogs uh
+every new update just hurt their
+rankings and I agree
+>> and tell me about like because the AI
+things that's happening how do you see
+the role of marketers changing as
+automatation and I AI become more
+commonplace place.
+>> Yes. Uh so again that's that's another
+thing. So um we uh as marketers they
+need to learn they need to keep learning
+every single day. Especially right now
+when the rate of change has increased
+our rate of learning should should
+increase as well.
+>> It's it should be a constant learning
+process and um this as I mentioned
+before this there should be synergy. We
+should learn how to create the synergy
+because be between us as marketers and
+all these tools. Same thing as we
+learned to use scrape box or how we
+learn to use frog SEO spider.
+>> LLMs is a new tool and we need to learn
+how to use it. Mhm.
+>> And again the the concept of how we
+understand marketing, how we approach
+marketing now because our consumers the
+consumers they they also change because
+now people start using AI. So we need to
+uh to understand what we should change
+in our approach to treat them better and
+serve them better with with what they're
+looking for. Yeah, I understand and uh
+you already elaborated on that and
+touched that point when you were
+speaking about how are you prompting to
+chat GPT without your knowledge and
+without your experience you wouldn't
+know what to ask what specific questions
+and prompts. So I agree about that. So
+you should still learn more and stay
+updated because that will enable you to
+use that AI tool even better.
+you know, I think it's it's an untapped
+opportunity
+>> to look into this concepts and that's
+something that I mentioned earlier. Uh
+if you take some methodology, some
+specific methodology in from from
+psychology or from uh marketing and
+apply it within a prompt and apply it
+using uh an LLM, you could get some
+really fantastic and unexpected results.
+very specific to your uh situation and
+as I mentioned earlier all websites are
+different when you do search engine
+search engine optimization for them. So
+for every website you could create this
+custom solution using this unique method
+maybe a longforgotten method
+>> and just enhancing it with AI.
+>> Mhm. And do you have any bold
+predictions about the future of SEO and
+digital marketing?
+It's hard to make, you know, it's hard
+to make any predictions, especially at
+this rate of change. Um because I'm
+calling everyone I speak with, I'm
+telling it's a wild west right now
+because uh people build these tools,
+they that create tons of content, tons
+of links, and then the websites go up
+and down, the search results go up and
+down. So um I think that we are in the
+middle of a very um unexpected situation
+where things are changing very rapidly.
+It's very hard to keep up with what
+everything what's going on right now
+because you can think about let's say uh
+different technologies that we we
+thought would be popular but they're not
+they just gone like uh flash micromedia
+flash technology that people were using
+long time ago to build websites nobody's
+using it right now
+>> another thing I learned about yesterday
+I think somebody mentioned AngularJS
+>> again I'm not an expert in programming
+but uh people in the comment section
+they discussed that it was uh booming
+for some time now I don't think that uh
+>> it's it's very popular
+>> so I think what we need to do is to
+focus on the fundamentals on the on the
+core principles on understanding the
+customer psychology and everything else
+is just the tools that surrounds the
+core principles and core foundation you
+you never go wrong with learning uh with
+becoming better at uh at the foundations
+>> and the fundamental principles of
+marketing and uh marketing and customer
+psychology.
+>> Yeah, I get it. I get there are these
+fundamentals that everybody should know
+about who wants to specialize in the
+marketing and want to purchase that
+career. And uh I have two more questions
+for you. uh first would be what skills
+or let's say more importantly mindsets
+are most critical for success in your
+area of expertise.
+>> Yeah. So I think it's um there are a few
+things. So uh first of all willing
+willingness to learn uh being open and
+being humble and being open to learning
+new things. Sometimes uh you talk to
+someone and they tell you something that
+you know already. You already know that
+but um it's interesting to to hear their
+perspective and they might say something
+that they might put it at a different
+angle from what you used to to to learn
+it from or or what you used to
+understand it. Um so it's important to
+be open to um to have an open mind to
+all these new technologies and um things
+that are incoming and uh
+just uh you know learn as much as you
+can. I'm learning every day from my
+LinkedIn feed uh from this uh Gartner
+hype cycle uh whenever they publish it.
+In fact there is there is this funny
+thing. So what you can do you can go to
+chat GPT and say you know what um I like
+uh Gartner hype cycle uh for marketers
+so much and but they publish it once a
+year. Um can you and now let's say
+today's let's say it's it's February uh
+could you build me a similar type of a
+hype cycle chart based on the recent
+information in my area in my field
+>> and build you very similar chart with
+the up-to-date technology so you can be
+always up to date with the similar type
+of uh a chart or
+>> um visual representation
+>> you don't have to wait for a year you
+can build
+using AI. That's crazy. That's crazy.
+And yeah, my my final question I guess
+is another question, the second question
+that I ask um every guest and that's uh
+what is the one piece of advice you
+would give to anyone who's chasing their
+market marketing career or just starting
+with it?
+>> Yes. So
+again it again it it goes back to what I
+mentioned that times are changing very
+fast. Um I would recommend to get a few
+uh books a few fundamental books on
+marketing. Again you could use chat GPT
+to ask here is my situation. I'm just
+starting in marketing. What are the top
+three books that with spend time that no
+matter what happens these books will be
+popular will will always be popular
+to to get me to to to to learn the
+basics right it will give you these
+books buy these books from Amazon or go
+to the library get them and read them
+read these books so now you'll get this
+fundamentals and then just listen to the
+news uh try different method methods,
+see what's working, see what's not
+working. Because I tried lots of things
+on my blog 10, 10, 12, 14 years ago. I
+had my own website that I experimented
+with and um it successfully got deranked
+by Google Panda algorithm. So, I learned
+from that experience. So, don't be
+afraid to to learn and practice uh
+practice different things, try different
+things in marketing to learn more.
+>> Yeah, I agree with you. uh especially on
+uh having a website where you can test
+the different strategies and see what
+works and what it doesn't and uh this is
+very important like to to do it by with
+your hands and to really test it in a
+live example. Slava this conversation
+has been packed with a lot of actionable
+insights about AI and datadriven
+marketing strategy. So for listeners who
+want to connect with you or learn more
+about your marketing approach, where's
+the best place to reach you?
+>> Yeah. So um on YouTube I have my
+channel. It's called Slavry Balka and um
+I'm on Instagram as Slav Balkan as well.
+So
+>> okay, thanks for sharing that. And to
+our ranking heroes community, thank you
+for joining us for another deep dive
+into what it takes to achieve
+exceptional growth. This time with
+Slava. If today's discussion about AI
+marketing we had inspired some new ideas
+for your business, hit that subscribe
+button so you never miss an episode.
+We'll be back soon with more
+conversation that will help you climb
+the top of your industry. Until then,
+keep pushing the boundaries of what's
+possible.
+Thanks.
+>> Thank you. Thank you for having me.

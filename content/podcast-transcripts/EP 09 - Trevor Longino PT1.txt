@@ -1,0 +1,946 @@
+Nebojsa (00:00.674)
+Hello guys, welcome to the ranking heroes. I podcast where we discuss different strategies right with the experts behind them. So today we have a very special guest, travel Longino. He's a founder of crowd tamers and they build million dollar marketing engines and they start bringing businesses leads in less than 45 days with their framework. So first I'd like to
+
+introduce you to the audience, Trevor. Nice to have you here. Thanks for joining. So you've had a fascinating career journey. So I would like if you can walk us through your early years and what led you into marketing and startups.
+
+Trevor @ CrowdTamers (00:44.887)
+Okay, cool, sure. So I've been doing marketing in a professional capacity. I mean, I can really trace it. way back as 1996 when I had my first job, and that's a long time ago, know. I have a first job, I was in high school and I did web development work as like a, let me do it as a fun side project, because this whole internet thing is probably gonna be a big deal. And I learned there, my first client that I landed,
+
+Nebojsa (01:05.87)
+Mm-hmm.
+
+Trevor @ CrowdTamers (01:14.507)
+was a cantankerous 75-year-old man who had worked for the CIA and wanted to sell kind of like Tom Clancy style books that he had written in Microsoft Word on his website. Now, if you can harken back to 1996, anybody who's listening, PayPal wasn't a thing yet. The way that we had to do transactions was there was literally one internet bank in North America.
+
+Nebojsa (01:30.094)
+Okay.
+
+Trevor @ CrowdTamers (01:42.017)
+where when you signed up you could use their API to transact credit cards on the internet. And it was about a minute and a half load time to send a request to the server, have the server do something and send it back. Documentation was nonexistent. Everything was in Perl and PHP. I didn't know what I was doing. I was very bad at it. And took about six months to deliver this guy a extremely broken, barely functional e-commerce website. And from there I learned, look, the website...
+
+Nebojsa (02:00.93)
+Mm-hmm.
+
+Trevor @ CrowdTamers (02:10.647)
+part of it is kind of garbage, but I can do the marketing, the promotional side of things. And bummed around doing marketing design and stuff for my high school years into college, got to work at the University of Central Florida in their marketing department. And print marketing was still the big thing. University, right, it's 10 years behind the time, so that's effectively 1990, well, it wasn't a thing, right, in 2000.
+
+Nebojsa (02:33.78)
+Mm-hmm. Okay.
+
+Trevor @ CrowdTamers (02:40.149)
+got from there took a brief sideline into photography was a wedding studio photographer and sometimes birthday clown for for a year or two there went to work for electronic arts as a video game testing manager and then got a job from there when you write bug reports all day you write and so I managed to convince a startup accelerator hey
+
+Nebojsa (02:56.524)
+Mm-hmm
+
+Nebojsa (03:02.968)
+Mm-hmm.
+
+Trevor @ CrowdTamers (03:08.275)
+I know how to write, hire me as your copywriter. Look, here's examples. I'm producing like 25 pages of text a day. I just happen to be buggering for it. So they went, okay, you're hired. So I went to go work for a company called Next Televisions, a startup incubator. When I joined at the time, their office space was located on the main fiber optic trunk for Orlando, Florida. So they had the fastest internet I'd ever heard of. It was like gigabit speeds, which back in 2000 and...
+
+Nebojsa (03:21.896)
+Mm-hmm.
+
+Nebojsa (03:36.654)
+At that time, mean, that was very fast.
+
+Trevor @ CrowdTamers (03:38.045)
+six? Yeah, six. It was like you could get the entire internet in your like a fire hose coming in, right? So, okay. And their whole thing was they decided to pivot to a model where they launched startups at least once a month. And they were not building their own startups. They were finding people graduating from Embry-Riddle Aeronautical University or FTU or like some computer science program. And say, look, you build the code, we will do everything else.
+
+Nebojsa (03:45.838)
+You
+
+Nebojsa (04:01.272)
+Mm-hmm.
+
+Nebojsa (04:04.782)
+Mm-hmm.
+
+Trevor @ CrowdTamers (04:08.267)
+back office, admin, marketing, sales, the whole thing. And we moved to a corrugated aluminum quonset hut right next to the airport. So it is a semi-circle shaped building like this, where it's a giant like airplane hanger looking thing. And we had rows and rows and rows of folding tables and then two closed offices, one for the CEO, one for the accountants and the rest was open floor plan.
+
+Nebojsa (04:20.566)
+Okay.
+
+Nebojsa (04:25.268)
+Yeah, that was what I had.
+
+Trevor @ CrowdTamers (04:35.327)
+all the way back to the server racks, which were just out in the open. This is, now this is how you should do business, by the by, right? But we made that move and the entire marketing department quit, except for me. And so I was six weeks into my tenure as their newly hired copywriter, everybody above me in the org chart quit, and the CEO went, you're the new director of marketing. And I was like, what?
+
+Nebojsa (05:03.15)
+What just happened?
+
+Trevor @ CrowdTamers (05:04.087)
+He's like, we have to have a director of marketing. People need to know that there's someone who loves to be doing, you know, with their hands on the wheel. And I went, I don't know what I'm doing. Like, whatever, you're the guy now. Well, Nexteligence was owned by a publicly traded company called Web2Corp. So I became the director of marketing for Nexteligence and for a publicly traded company, which meant I had to do investor relations and do things that were compliant with SEC regulations and all this stuff. And mind you,
+
+Nebojsa (05:13.112)
+Yeah.
+
+Nebojsa (05:18.222)
+Mm-hmm.
+
+Nebojsa (05:30.574)
+Mm-hmm.
+
+Trevor @ CrowdTamers (05:32.257)
+Three months ago, I was writing bug reports for Madden football 2007. So that's a big shift, right? And so it was insane and moving to launch a startup every month. I didn't know what I was doing. I basically murdered the first four startups. I just, know, hey, I'll do something that feels marketing related. I bought a bunch of books on marketing, the new rules of marketing and PR.
+
+Nebojsa (05:41.026)
+They threw you in fire like...
+
+you can see.
+
+Mm-hmm.
+
+Trevor @ CrowdTamers (06:01.845)
+by David, I think, Miramond Scott, which was very cutting edge marketing research at the time, 20 years ago now, gave a couple of core strategies that I ended up using. But what I really learned from that was no one knows how to market a specific business when you're reading books or advice on whatever. They don't know. So try stuff and then write down what works and then stop doing the stuff that doesn't work.
+
+Nebojsa (06:09.173)
+Yeah.
+
+Nebojsa (06:25.902)
+Mm-hmm.
+
+Nebojsa (06:31.224)
+Do you still do that, like in today's life?
+
+Trevor @ CrowdTamers (06:33.129)
+I still do that. This is from 20 years ago. I still do that. And the core ideas of basically try a lot. You don't know what you're doing, but also internet marketing in general is new enough where no one really knows what they're doing. So just go crazy and launch to start up a month for 13 months, killed the first couple, but then started to have some success. Launched broadcast bid to when they bid was a
+
+Nebojsa (06:49.814)
+Yeah. Yeah.
+
+Nebojsa (06:57.996)
+Mm-hmm.
+
+Trevor @ CrowdTamers (07:02.145)
+Terrestrial radio station rewards program for listener loyalty Grew them from 2 to 535 radio stations over the course of four months took the prize factory from just an idea to the online fulfillment engine for the McDonald's Monopoly game Which was it's a big in the US at least every year. They do a big McDonald's Monopoly game That's hundreds of thousands of people play and we were for two years there online
+
+Nebojsa (07:22.51)
+Mm-hmm.
+
+Trevor @ CrowdTamers (07:31.895)
+part of it. There was a crazy promo Taco Bell did where if the de-orbited Mir space station hit a target in the middle of the internet, every person in North America would get a taco. And we had a game in support of that, which you played through the Price Factory. like these kinds of things grew by India.com to be the second larger search engine in India.
+
+Nebojsa (07:33.358)
+Mm-hmm.
+
+Trevor @ CrowdTamers (07:59.955)
+had some results here and all of it was based on don't really know what I'm doing but learn.
+
+Nebojsa (08:06.178)
+And how challenging was that? Like, I mean, considering that you didn't have access to many things that you could have if it was 2024, 2025, I suppose that you had to do a lot of things on foot, like, you know, like go there, like traditional marketing techniques. So was that challenging to you?
+
+Trevor @ CrowdTamers (08:23.479)
+So I was buying what Google Ads bought a company called DoubleClick. that became, actually Google bought a company called DoubleClick, that became Google Search Ads, right? And I remember when Google bought YouTube, the CEO of Nexteligence had made all of his money in streaming video porn on the internet back when video porn was a postage stamp side.
+
+Nebojsa (08:29.845)
+Mm-hmm.
+
+Nebojsa (08:35.726)
+Mm, yeah.
+
+Nebojsa (08:52.993)
+Yeah.
+
+Trevor @ CrowdTamers (08:54.106)
+120 by 90 pixel image that refreshed four times a second. Like this is where he, because it was dial up, right? So this is where he came from. And so he's like, this is actually, a lot of people were like, Google was an idiot to buy YouTube for I think a billion dollars at the time. like, this is an insane amount of money. This is stupid. And Bill Mobley, the CEO of Web2Quilt was like, no, this is going to be where the internet goes. Right? So he did see that his background was in video. So he kind of understood.
+
+albeit a very different kind of video. And I saw DoubleClick become Google Ads. I saw YouTube become a Google property and was building out like, do you do search ads? I was doing SEO back when the valid way to do SEO was to keyword stuff the meta tags on your web page to tell Google this is what my site was about, right? It's forever, all this crazy stuff. And learned a lot about, find out what works.
+
+Nebojsa (09:26.007)
+Yeah.
+
+Nebojsa (09:40.846)
+Yeah, I remember it.
+
+Trevor @ CrowdTamers (09:51.575)
+do more of that and then no matter what anybody tells you, if this doesn't work for this business, get rid of it. And those core ideas are still key to how I do marketing now 15, 18 years later, right? And they are, the other thing I learned was you're going to be wrong when you do something new. So how do you reduce the cost of being wrong to the smallest possible amount? And over the years,
+
+Nebojsa (09:56.14)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (10:03.084)
+Yeah.
+
+Trevor @ CrowdTamers (10:18.111)
+I've learned how to make it really cheap and really fast to be wrong so you can be wrong a lot. And after working at Nexteligence for a couple years, the public company side of things got collapsed because an investor did a for-run and then a pump and dump and then shut down the WBTO. The cost per share went from, I think it was 42 cents per share to three hundredths of a cent per share in a month. Right? So there's like...
+
+Nebojsa (10:23.608)
+Well, man.
+
+Nebojsa (10:42.484)
+man.
+
+Trevor @ CrowdTamers (10:45.025)
+You think your Bitcoin rugs are a thing? Yeah, well, it's been around for a long time, okay? Like, crypto isn't what they invented, rugged. So this guy rugged us, and the company shut down. I went from managing a team of 55 people in October, to managing a team of seven in November, to they never paid my December paycheck, so I stopped coming in. I never technically resigned, I guess I technically still work there. But, this would have been December of 08, so it's been a while.
+
+Nebojsa (10:49.141)
+Yeah.
+
+Mmm.
+
+Nebojsa (11:03.351)
+Ugh.
+
+Nebojsa (11:07.959)
+You
+
+Nebojsa (11:14.274)
+Mm-hmm. Mm-hmm.
+
+Trevor @ CrowdTamers (11:14.295)
+and did some freelancing for a bit and then ended up getting hired for a company called Good Old Games in Warsaw, Poland and moved out there. And I was their first international hire for the whole group. They'd never recruited somebody from the US. I remember the job mentioned relocation assistance will be provided. And so when I've been hired, I'm getting ready to move. I'm like, the CEO, or actually the managing director emailed me and says, so when are you flying out? I'm like, I don't know.
+
+Nebojsa (11:19.822)
+Yeah.
+
+Nebojsa (11:27.117)
+Mm-hmm.
+
+Trevor @ CrowdTamers (11:43.607)
+shouldn't you tell me?" And they're like, what do you mean? I'm like, well, aren't you paying for my airplane ticket to move? And they're like, no. Relocation assistance means we'll have somebody who speaks Polish help you negotiate your contract for your flat. And I'm like, that is not what relocation assistance means in America. So there were some cultural gaps there. So once GOG, were doing about, I think, 10, 20K a month. And over the course of four years, we went up to about 16 million a year.
+
+Nebojsa (12:03.502)
+Ugh.
+
+Trevor @ CrowdTamers (12:12.361)
+A lot of what I did there built upon test-based marketing. And one of the things that we'll talk a bit about in a few minutes, minimum viable sprints and the idea of like, what is the tiniest bit of marketing you could do to learn? I really developed and honed this there because one of the technical limitations we had at Good Old Games was the email sending program that we had to message our list of a quarter of a million, then a half million, then a one million, then a two million, then a four million people.
+
+Nebojsa (12:16.951)
+Yes.
+
+Yeah.
+
+Trevor @ CrowdTamers (12:42.367)
+It was basically one giant batch script, no configuration of any kind, no features. You just told the developer, here's the HTML, go run it. And so the cost to run an email list to a million people was literally like 45 cents. We were paying for basically electricity. That was it for the server. But no features. And so when you have a list of a million people and you're sending them email newsletters twice a week with
+
+Nebojsa (12:49.166)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (13:05.966)
+Mm-hmm.
+
+Nebojsa (13:11.234)
+Mm-hmm.
+
+Trevor @ CrowdTamers (13:11.575)
+discounts. A good subject line and a bad subject line would produce a difference of like 30 to 40 thousand dollars per email. Like not individual but per like percent. Yes. So the difference there means like twice a week right. If you sent two bad subject lines that week you would close down 60k from where you want to be.
+
+Nebojsa (13:24.27)
+Only one subject line. I mean we are just looking for home it okay Yeah
+
+Nebojsa (13:38.51)
+Mmm.
+
+Trevor @ CrowdTamers (13:38.805)
+And so with those features in the software, we had to find a way to test the messaging before the emails went out. And over the course of about six weeks, what we did was we split the list into two, so half a million, half a million, or eventually into four, quarter million each, and we would test different subject lines. And before we did that, we would go on meta, and for a remarketing audience of our website's traffic, we would send.
+
+Nebojsa (13:51.406)
+Yeah.
+
+Nebojsa (14:04.638)
+Mm-hmm.
+
+Trevor @ CrowdTamers (14:06.593)
+test ads with the same subject lines as the emails. And what we found was there was a really strong correlation between the ad that got the best click through rate and the subject line that would get the best open rate. And so after we did that enough times to where we had a very high confidence in the data, then what we switched to doing was every Monday we would test four different subject lines for the Wednesday email. And then every Wednesday we would test four subject lines for the Friday email.
+
+Nebojsa (14:09.838)
+you
+
+Nebojsa (14:17.262)
+Mm-hmm.
+
+Nebojsa (14:33.442)
+Well.
+
+Mm-hmm
+
+Trevor @ CrowdTamers (14:36.531)
+And so people who were really like the hardcore nerds and good old games had hardcore nerds because we sold video games that at the time were 20 years old, now they're 35 years old. And we were getting like old school video game nerds like me who were playing these games in the 90s. They realized they could figure out what next week sales were gonna be if you just went to our Facebook page and refreshed it a bunch, then you would start seeing our ads.
+
+Nebojsa (14:43.202)
+Yeah.
+
+Nebojsa (14:59.434)
+Mm-hmm.
+
+Got it, got it.
+
+Trevor @ CrowdTamers (15:04.991)
+And so they would be like, know, Friday's sale is gonna be this, we know on a Wednesday, so don't buy this game now, it's gonna be 80 % off in a couple days. Like, people learned some hacks here, but it was a really consistent way to figure out the difference between how this subject line versus this one was going to do. And I remember at the end of the year, my second year there when we started to really do this, the accounting team was like, hey, so you spent like 20 grand in Facebook ads to no revenue.
+
+Nebojsa (15:13.228)
+Mm-hmm.
+
+Nebojsa (15:26.702)
+Mm-hmm.
+
+Trevor @ CrowdTamers (15:33.729)
+You're a horrible marketer. What are you doing? And I went, look at the difference in what we made on email. We made about $360,000 more on email than we would have because we knew what to say in the subject line. And they went, never mind. That's actually a pretty good ROAS. I guess you can keep doing it. I was like, thanks, guys. building this out, right, and the idea, which is still how I do it, 48-hour ad.
+
+Nebojsa (15:35.758)
+You
+
+Nebojsa (15:41.506)
+Mm-hmm.
+
+Nebojsa (15:49.088)
+Yes.
+
+Trevor @ CrowdTamers (16:02.827)
+very small spend, 100 bucks, 200 bucks spend. And you learn from here what's going to get people's interest because I mean, David Oglevy, famous marketer, says 80 % of the people who see any of your marketing will never read more than the headline. So you should put most of your work there. And that's really what this is, right? If the headline can't get enough interest to get the click, all the rest of your marketing doesn't matter because they'll never engage further down the funnel.
+
+Nebojsa (16:19.395)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (16:29.748)
+Exactly, yeah. Yeah.
+
+Trevor @ CrowdTamers (16:32.257)
+So this is a way to test, it get the click? And a minimum viable sprint, I guess, to bring up the actual how this works. The idea here is on Meta, almost always, because Meta is cheap and ubiquitous, you run display ads with a very simple headline. And you test either several different headlines to one audience or one headline to several different audiences. And what you're doing here
+
+Nebojsa (16:46.478)
+Mm-hmm.
+
+Nebojsa (16:57.742)
+Mm-hmm.
+
+Trevor @ CrowdTamers (16:58.975)
+is you're looking to see what the engagement rate on the ad is. But there's a big caveat here. Any marketer who knows their stuff knows you can game the system to get clicks on an ad. If I put a picture of a donut on an ad or a puppy on an ad, you will get a lot of clicks because people love donuts and puppies. Doesn't matter what the headline is, right? But if you want to understand which headline is working and what you're really finding out is who loves donuts, you're not learning the right thing.
+
+Nebojsa (17:04.558)
+Mm-hmm.
+
+Nebojsa (17:17.902)
+That's true.
+
+Trevor @ CrowdTamers (17:28.833)
+So what you have to do is make an ad with no graphic design at all, just a couple of words on a plain background. And when you do that, then you're testing your appeal. And if you're scrolling your, I don't know, Ariana Grande videos or new crazy dance, meme videos or whatever, and you see this ad that is kind of almost saying, don't click me, right? It has none of the things that marketers use to get engagement.
+
+Nebojsa (17:28.942)
+Mm-hmm.
+
+Nebojsa (17:50.286)
+Mm-hmm.
+
+Trevor @ CrowdTamers (17:58.219)
+Not a video ad. There's no animation. There's no fancy graphics. It's just a couple of words. If you click then, that means you really got the pain. Your brain is somewhere else. You see this not very attractive ad, but you go, you know what? I do want to know more. You click and you go through. And then what you need to do is figure out what number of people click. You're measuring the click through rate, which is usually a stupid thing to measure for a full marketing campaign. But again, this is a one question survey. Do you want whatever this ad says?
+
+Nebojsa (18:09.068)
+Yeah.
+
+Nebojsa (18:14.989)
+Mm-hmm.
+
+Trevor @ CrowdTamers (18:28.209)
+and you want to see at least a 1 % click-through rate. Because across all of meta, the average ad click-through rate is 7 tenths of 1%. So if your stupid-looking ad is in the top quartile, basically, top 30-something-ish percent of all ads ever run on meta, when you've deliberately made it unattractive, that means for the people who you're talking to, this message is really resonating.
+
+Nebojsa (18:28.472)
+Mm-hmm.
+
+Nebojsa (18:36.876)
+Yeah.
+
+Nebojsa (18:50.039)
+Yeah
+
+Nebojsa (18:54.711)
+Yeah, they are high intent, yeah
+
+Trevor @ CrowdTamers (18:54.773)
+And to build a million dollar marketing engine, to harken back to the very first thing, right? You need to know three things. You need to know a crowd, who you're going to work for. You need to start a conversation. And that click on the ad starts the conversation. Now the next thing you need to do, and we'll talk about it in a minute, is how do you build up the confidence that you can solve their problems? So you do this to model out for this crowd, can I start a conversation? And if I can, great, let's go. And if I can't, let's stop. Because $100 and 48 hours, and you can run several of these at a time.
+
+Nebojsa (19:02.318)
+Mm-hmm.
+
+Trevor @ CrowdTamers (19:25.483)
+You can be wrong 10 times in a row. It maybe takes you two weeks and it costs a thousand bucks. This is such an efficient way to get rid of the bad ideas for your marketing, to go back to how I learned all this, to fail, to fail quickly, to fail inexpensively, and then when you find the right thing to double down and make...
+
+Nebojsa (19:29.666)
+Yeah.
+
+Nebojsa (19:38.252)
+Mm-hmm.
+
+Nebojsa (19:45.358)
+And how do you figure out what are the subject lines that you want to use in your ads? Let's say do you speak with the founders or do you have them in your head or how do you do that?
+
+Trevor @ CrowdTamers (19:56.558)
+so for a given client?
+
+Nebojsa (19:58.254)
+For example, you have a client and he needs to do minimum viable sprint So you need to put the text on a plain background. How do you decide which words you want to use there?
+
+Trevor @ CrowdTamers (20:06.007)
+Gotcha.
+
+Trevor @ CrowdTamers (20:10.475)
+Gotcha, so there's a couple different parts to how we decide that. One of them is you don't use, if you can, any of the language that the founder themselves used. Because your founders, I say this with love in my heart, you were all wrong, always. I'll give you a great example. One of my clients right now, extremely smart founder, built a marketing tech company up to, I mean, he was raising $20 million rounds, it was doing.
+
+Nebojsa (20:13.646)
+Mm-hmm.
+
+Nebojsa (20:26.314)
+Yeah.
+
+Trevor @ CrowdTamers (20:39.595)
+millions of dollars a month in revenue. company exited it, has built his new one, doing a couple million a year in revenue.
+
+He works with me because he's like, hey, we're stuck at two and a half to three million revenue. We can't grow bigger than this. I don't know why. Can you help me? And we went, yeah, this is our perfect client in many ways because your business works, people want to buy it, but how do you get more people to want it? And so we ran three minimum viable spreads, just three, 300 bucks. And then we said, great. Now for our fourth one, we're to pick the best headlines that we came up with, we'll talk about how in a minute, against all of the headlines you have right now.
+
+Nebojsa (21:17.902)
+Okay.
+
+Trevor @ CrowdTamers (21:18.443)
+So we had four of ours versus four of his. And mind you, going into this, I don't know what's going to win. I'm like, man, I really hope that ours win. Otherwise, we look pretty stupid. And so of our headlines, they were first, second, third, and fourth place were our headlines. And fifth, sixth, seventh, and eighth place were his headlines. Right? The strongest possible signal that despite having a business that does a couple million dollars a year, you don't know how to talk to your buyer.
+
+Nebojsa (21:49.154)
+Yeah, I mean, that's that I understand that like sometimes founders really don't know how to talk with their audience
+
+Trevor @ CrowdTamers (21:49.772)
+So like...
+
+Trevor @ CrowdTamers (21:55.467)
+But the thing is like this guy runs a MarTech company of anybody. You'd figure that this guy is the guy who's gonna get it right anyway. And even still, no, because as a builder, you don't think about what your audience's problem is. You wanna talk about the thing you built, because you put years of your life into it. But no one cares about what you built. They only care about what their problem is. So when you ask, how do you write the headline? Here's how you do it.
+
+Nebojsa (21:58.832)
+Yeah, I understand
+
+Yeah.
+
+Nebojsa (22:15.854)
+Mm-hmm.
+
+Trevor @ CrowdTamers (22:25.505)
+You figure out what the value prop is for a company, right? Whatever problem you solve. I'll give you crowd tamers as an example. Fundamentally, what do we do? We buy ads and we make content. And so you could go to my website and it could say, the number one performance marketing agency for startups. And I just talked about me. You don't care about me. So how do I make my
+
+Nebojsa (22:29.134)
+Mm-hmm.
+
+Nebojsa (22:34.702)
+Mm-hmm.
+
+Nebojsa (22:48.046)
+Mm-hmm.
+
+Nebojsa (22:52.366)
+Mm-hmm.
+
+Trevor @ CrowdTamers (22:54.569)
+solution into something that solves your problem. Well, about a year and a half ago, we were testing new headlines for the website and we had three. The one that I had been using is go to market backed by data, which is okay, it's a little more what I want. And then one was, we're the agency you call second after the first ones have screwed it up.
+
+Nebojsa (23:17.908)
+You
+
+Trevor @ CrowdTamers (23:19.433)
+And the third one is, we build million dollar marketing engines guaranteed. Now you'll notice across all of these, none of them mention ads, none of them mention content. They're trying to speak to the problem that you have as a founder, which is either, don't know how to go to market, or I hired an agency and they sucked, or I would like to have a marketing engine that's dependable, I don't know how to make it, right? One, two, three. And so we test these, and probably not too surprisingly, we build million dollar marketing engines guaranteed.
+
+Nebojsa (23:29.518)
+Mm-hmm.
+
+Nebojsa (23:33.614)
+Mm-hmm.
+
+Trevor @ CrowdTamers (23:49.691)
+That's what's on my website right now, is that one, because it worked. And so it took the thing we do, which is we buy ads to answer who your audience is, and then we scale the marketing profitably to make you money, and turned it around to what the client wants. So when you talk about what you have built, I sleep. When you talk about how to solve my problems, now I'm paying attention. So you take your value prop, you turn them around to a benefit statement.
+
+Nebojsa (23:54.008)
+Just.
+
+Trevor @ CrowdTamers (24:20.213)
+And it can't be too vague, right? If my website said, make you money. So, like everyone says that, you've to narrow down how we make you money. And I would note, we build million dollar marketing engines guaranteed. Million dollar is there for a reason. If you're a really big company, you don't want a million dollar marketing engine. That's too small. And if you're a brand new founder who hasn't done any marketing at all, like a million dollar marketing engine is aspirational.
+
+Nebojsa (24:26.06)
+Yeah. Exactly.
+
+Nebojsa (24:38.74)
+you want billion yeah
+
+Trevor @ CrowdTamers (24:50.337)
+but you're probably not ready to deal with something that big yet. So this kind of forces a middling size client to come talk to me. That's on purpose. And when I'm talking to people in the sales process, I also mentioned, look, standing up this sort of thing costs about $15,000 before it really starts to fire and make you money. And if they go,
+
+Nebojsa (24:50.382)
+Mm-hmm.
+
+Yeah.
+
+Nebojsa (24:58.658)
+Mm-hmm.
+
+Nebojsa (25:15.796)
+Yeah, I know they they become skeptical, you know, like okay, so yeah
+
+Trevor @ CrowdTamers (25:19.477)
+Right. If they go, can't afford $15,000. Well, okay, awesome. There are other ways to go to market, but my way isn't the one for you. And so you set these expectations up when you're talking to people to force away the bad fit clients. It's the same thing for anybody. One of my clients right now, do, they help make drone aerial photography into maps, right? Extremely niche product. And you can advertise.
+
+Nebojsa (25:47.682)
+Mm-hmm.
+
+Trevor @ CrowdTamers (25:49.217)
+to everybody who likes drones. But then what you do is in the ad copy you say, we make orthographic mapping easier. And if you're just somebody who likes to watch drone FP videos flying through a warehouse, what's an orthographic map? You don't know. So you will click on the ad because you don't want to whatever I can even say that word, right? Like away you go. But the people who do want orthographic maps, because they're doing aerial photography of many different things that you have to make it all.
+
+Nebojsa (25:51.63)
+Mm-hmm.
+
+Nebojsa (26:04.995)
+Mm-hmm.
+
+Nebojsa (26:09.422)
+Mm-hmm.
+
+Nebojsa (26:15.278)
+Mm-hmm.
+
+Trevor @ CrowdTamers (26:16.777)
+Orthographic map basically means there's no perspective in it. If you shoot many photos, you have to even out all the different perspectives of everything to make it look like it's taken from like way outer space, even though your drone's only up 300 feet. So like, okay, this kind of thing, you take what you do, you make it a positive statement, and then you test. And the first couple of times you do it, you're gonna have a crappy click-through rate. Because you don't know. Something to pay attention to.
+
+Nebojsa (26:19.982)
+Mm-hmm.
+
+Nebojsa (26:25.582)
+understand you.
+
+Nebojsa (26:29.934)
+Mm-hmm.
+
+Nebojsa (26:40.494)
+Mm-hmm.
+
+Trevor @ CrowdTamers (26:44.797)
+On a hundred dollar marketing campaign for 48 hours, if you see a click-through rate of like 0.5 and 0.7, you're like, the 0.7 is better. Almost certainly not. Because the resolution of the data you're gathering isn't very high. As a statistical sample, two tenths of 1 % with only maybe a couple thousand impressions on each ad, going to be really hard to measure. If you see 0.5 and 1.1,
+
+Nebojsa (27:08.533)
+Mm-hmm.
+
+Trevor @ CrowdTamers (27:14.101)
+Yeah, now we've got a big enough difference where you have a confidence in the data. What you're wanna do when you get the data in from your ads, go look, SurveyMonkey has a statistical relevance calculator. It's free. Just go to their website. Put in your numbers and you'll see, is it relevant or not. You want a p-value of nine. If you get a p-value of nine and it's relevant, cool, let's go. If it's not, you haven't learned anything, go try again. And it'll take you a few tries, right?
+
+Nebojsa (27:18.944)
+Mm-hmm.
+
+Nebojsa (27:30.04)
+Mm-hmm.
+
+Trevor @ CrowdTamers (27:42.923)
+the whole idea of this is $100 in 48 hours is so cheap, you can be wrong a good bit. So the way you write it is you think about what changes in someone's life after they've used you for 90 days. You talk about that and you define it for as narrow an audience as you can. And when you're doing your first tests, I mentioned my three different headlines. They were completely different. It wasn't, we build million dollar marketing engines guaranteed versus
+
+Nebojsa (27:48.43)
+Mm-hmm.
+
+Nebojsa (27:56.957)
+Mm-hmm.
+
+Nebojsa (28:06.796)
+Mm-hmm.
+
+Trevor @ CrowdTamers (28:12.619)
+We build million dollar marketing engines, we promise, because that's not a very big difference, right? We build million dollar marketing engines versus we're the agency you call second, completely different ways to talk about it. And as a result, when you see differences in the click through rate, they're going to tend to be more extreme because the offers are so different. So you write these different ways to talk about it. You run them there, you see what comes back. And then the most important thing that people get wrong is as you build up your marketing from here,
+
+Nebojsa (28:15.714)
+Mm-hmm. Yeah.
+
+Nebojsa (28:22.744)
+Mm-hmm. Exactly.
+
+Nebojsa (28:32.546)
+Mm-hmm.
+
+Trevor @ CrowdTamers (28:42.955)
+don't forget the things you've learned. If you have an ad that says this, and you send traffic to your home page that says something different, okay, most marketers know you have to build a custom landing page for your ads. Cool. We've all learned that one. The very next step, literally everybody gets wrong, which is I've signed up now and I go into the same onboarding flow that everybody else gets.
+
+Nebojsa (28:45.698)
+Mm-hmm.
+
+Nebojsa (28:57.656)
+Yeah.
+
+Trevor @ CrowdTamers (29:12.543)
+So I see, I don't know, we've got a ad campaign for, we'll pick a, okay, I used to work for Unido. Am I wearing their shirt today? I am not. Unido did, they connected different project management software like Jira, Wrike, Trello, Asana, connected together so you could use different tools across different teams, but all be in one place. Awesome, okay. So if you signed up, that was a CMO there, yeah.
+
+Nebojsa (29:36.852)
+Yeah, I know you were the CMO right and you scale the company I think to 90 000 monthly occurring revenue just like 18 months Correct me if i'm wrong, but yeah, what was the key like to that rapid growth like you really? Yeah
+
+Trevor @ CrowdTamers (29:46.091)
+Yeah, grew them up to more than a million, yeah, exactly. Well, so this is relevant, When I joined, my very first thing I did for them actually, well, they had zero revenue, was my first project during the hiring sequence. They had me do a pilot project, and it was, how much should we charge for our software? And so I did minimum viable sprints with the price on the ad. And then you see, know, $9 a month had this click through late.
+
+Nebojsa (30:02.178)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (30:10.606)
+Mm.
+
+Trevor @ CrowdTamers (30:14.359)
+19 had this click-through rate and 49 had this click-through rate. And then you just measure the, of course nine got the most clicks, but 19 got almost the same click-through rate and it was double the revenue. So obviously you go with the most capital efficient way of doing it, right? So we had at the time, Reich, Gira, Trello and Assange, those were our tools. And when you chose two tools that you wanted to work with and signed up, you got the same onboarding, no matter what tool pair you chose.
+
+Nebojsa (30:26.722)
+Mm-hmm. Yeah. Exactly.
+
+Nebojsa (30:43.438)
+Mm-hmm.
+
+Trevor @ CrowdTamers (30:43.617)
+which is of course stupid because we said you can connect these two tools and then you go on to onboarding and it says great, here you connect any tool but you want to connect two and we knew which two because you told us already. At the ad you told us, at the landing page you told us again so in onboarding we should tell you here's how you connect Jira and here's how you connect Trello because you told me you wanted those two. And every SaaS app until they're like
+
+Nebojsa (31:08.428)
+Mm-hmm.
+
+Trevor @ CrowdTamers (31:12.891)
+super late stage maybe. If they've got onboarding, it is, well, you wanted this and the landing page said this, and then we dump you in the onboarding that doesn't say that, and then we wonder why our activation rates are crap. Or if it's sales led, said this, landing page said this, sales deck is the same sales deck we use for everybody. No, stop it. You know what they want, tell them you do that, and then you'll close more. So like that is, you build up every stage.
+
+Nebojsa (31:24.364)
+Yeah.
+
+Nebojsa (31:40.11)
+Yeah.
+
+Trevor @ CrowdTamers (31:41.655)
+to reinforce the message. That's the confidence part, the last C in your million dollar marketing engine, is if I have a problem, like if I go to a car mechanic, because my brakes don't work, and he says, awesome, let's all board you here, We're gonna look at your headlights, we're gonna check your suspension, we're gonna see if your air conditioning works. You're like, but my brakes don't work, and they won't get to it. You're like, no, I wanna go to a brake specialist, right? Because they'll fix my problem. This is the same thing.
+
+Nebojsa (31:48.558)
+Yeah.
+
+Nebojsa (31:54.615)
+Yeah.
+
+Nebojsa (32:00.542)
+Yeah, no.
+
+Nebojsa (32:07.886)
+Mm-hmm.
+
+Trevor @ CrowdTamers (32:10.411)
+You've got all these other things we can do, but for you today, my friend, I am a brakes specialist. Let's fix your brakes. And then maybe when your air conditioning conks out in six months, you'll go, they did a good job on my brakes and they also do AC. Can I go back and have them fix that? Right? That's how you have to sell. So like minimum viable sprints tell you who your crowd is. They tell you how to start the conversation. And then it is on you to build their confidence in every interaction along the journey that you will solve that problem.
+
+And if you do, then your conversion rates get really good and then people want to work with you more. I will give a relevant example. I'm a B2B service business, right? A big part of how you build confidence over time is content marketing. Content marketing is a giant pain in the butt. It's time intensive, it's labor intensive, and it takes forever to maybe make you money. Most content marketers go, give me a year. It'll be worth it. I totally promise you.
+
+Nebojsa (32:40.462)
+Mm-hmm.
+
+Nebojsa (32:46.658)
+Mm-hmm.
+
+Nebojsa (32:56.046)
+Mm-hmm.
+
+Trevor @ CrowdTamers (33:10.455)
+But you also have to pay me, I don't know, 60, 80, 100K a year in salary, and then I have to bother everybody in your company every week to get my content written, because I'm not a subject matter expert. Yeeks, right? So we went at Crowd Tamers, and we said, hey, why don't we make this all easier for you? We will do all of your content marketing for you, one hour of one thought leader's time every month, and we only charge a thousand bucks a month to do it. That's crazy cheap, it's crazy easy. The sell rate on this offer is crazy high.
+
+I don't make any money on a thousand bucks a month, right? This is not what I'm doing. When people have worked with me for 60 to 90 days on that one K a month offer, then they upsell to three or five or seven a month because they're like, you were, I came to you about this problem, you solved it really well. I know you solve these other problems, can you help me? answer is, of course we can, that's why you're here. So come in, onboard, fix the problem, and then expand.
+
+Nebojsa (34:01.634)
+Mm-hmm.
+
+Nebojsa (34:06.966)
+Makes sense.
+
+Trevor @ CrowdTamers (34:09.515)
+the offer is a really successful way, whether you're sales led or product led, to build confidence. Because I mean, I'm in the marketing agency business, right? Most agencies suck. Not because they're bad, but because they don't understand what their client wants. They understand how to do ads or SEO or whatever. like, so my content engine that I create for people is ad supported. And the ad that I run to make the content work means five weeks in, your content engine is making you money.
+
+Nebojsa (34:10.238)
+Mm-hmm.
+
+Nebojsa (34:19.181)
+Yeah.
+
+Nebojsa (34:24.428)
+Mm-hmm.
+
+Yeah.
+
+Nebojsa (34:31.584)
+Makes sense.
+
+Trevor @ CrowdTamers (34:39.403)
+Which, if you didn't want to wait a year for your content engine to start to perform, this is way better, right? And you make the problem of, I want to do content, but I want to make me money. Great. Really, anybody who works with a marketer, they want to make money. So how do we get to there faster to build that confidence? Whatever it is you're doing, selling shoes, fixing brakes, anything, solve that problem, and then you can build up.
+
+Nebojsa (34:40.046)
+Mm-hmm.
+
+Yeah.
+
+Yeah.
+
+Nebojsa (34:58.168)
+Mm-hmm. Yeah.
+
+Nebojsa (35:06.12)
+Yeah, I mean many founders they struggle to gain early traction and I think the things that you just mentioned that's a very good recommendation that they should focus on before they upsell the higher packages, you know, like start from small things like make them understand that you can solve their issues and then move forward with the bigger ones, you know, so that makes sense. And how do you balance growth hacking versus sustainable long-term marketing strategies?
+
+Trevor @ CrowdTamers (35:29.089)
+Exactly.
+
+Trevor @ CrowdTamers (35:35.969)
+So growth hacking is such an interesting term.
+
+because a lot of growth hacking is really just executing a tactic with leverage for as long as that leverage exists. And eventually hacks will either become so common, whether or not a hack, it's just how you do business, or if there's some kind of edge case exploit that you're finding on some place with leverage, if they see it, they will close it down. And your job then is
+
+Nebojsa (35:52.098)
+Mm-hmm
+
+Trevor @ CrowdTamers (36:14.327)
+as a senior marketer, your job is to set up the strategy that is successful, whether or not a given tactic is going to work. I will speak from hard won experience from my agency. Right, Crowd Tamers effectively became a agency in 2021. I was doing freelance work before then, under the name Crowd Tamers, I decided to actually scale it up then. And actually, February...
+
+Nebojsa (36:27.235)
+Yeah.
+
+Trevor @ CrowdTamers (36:44.631)
+23rd so on Sunday it'll be five years well I guess out of my fourth year starting with my fifth year hey there we go all right and the
+
+Nebojsa (36:49.009)
+congrats, congrats.
+
+Trevor @ CrowdTamers (36:56.471)
+The I had to build was basically thought leadership led, which is not a bad strategy. My tactical execution for it was really short-sighted, although I didn't think about it at the time. The only way I found new clients was by answering people's questions in Facebook groups and LinkedIn groups and a little bit on Reddit about marketing. And if somebody had a question that, you know, in a group of 5,000 people,
+
+someone asked a marketing question and I provide a reasonably good 350 word answer when everyone else is just like, I've DM'd you. People go, well, this guy knows his stuff. And so usually I would answer someone's question and people who were not the person who asked the question would book calls on my calendar because they'd go, yeah. And it works, but the problem was all my client acquisition was just that. And the only time I actually did that,
+
+Nebojsa (37:30.423)
+Yeah.
+
+Nebojsa (37:41.55)
+It happened to me recently as well.
+
+Trevor @ CrowdTamers (37:54.007)
+was I would walk my son to school, which was a seven minute walk. Now the walk back, I would take out my phone and answer questions. Then I would sit down and do my work for the day. And then I'd walk to get my son from school. I'd take out my phone and answer questions till I picked him up. Then we'd walk home together. So I did 14 minutes of funnel building a day. That was it. And it worked. My first year we did about 270K. My second year we did about 770K. But then that opportunity
+
+Nebojsa (38:10.861)
+Okay.
+
+Trevor @ CrowdTamers (38:24.161)
+for how to generate business through this changed because the algorithm changed. I didn't notice. So the that my answers were visible and the way that questions were shared in people's timelines changed. So if you were part of a group on Facebook and someone asked a high engagement question, you used to see that question in your native timeline. And then it changed so you didn't.
+
+Nebojsa (38:30.798)
+And what do you mean by that?
+
+Nebojsa (38:42.072)
+Mm-hmm.
+
+Trevor @ CrowdTamers (38:53.239)
+So my answers, which would usually be the top voted answer, like most likes because it was the best quality answer, weren't seen by hundreds of people several times a day. They were seen by single digits of people several times a day. The algo changed. And in 2022, we did 770K. In 2023, we did 180K. We dropped almost 80 % year over year.
+
+Nebojsa (38:59.768)
+Mm-hmm.
+
+Nebojsa (39:04.558)
+Mm-hmm.
+
+Nebojsa (39:19.736)
+Trevor @ CrowdTamers (39:23.735)
+because it took me about four months or five months to really see that my tactics weren't working anymore because also my revenue was really lumpy. I would land a 20K a month client every two or three months and I'd fill it in between with some two and five K a month clients. So like the business was really, if you go three months and don't land a new big marquee client, that's okay. One's gonna come until one doesn't come. And until finally you go, oh no, all my 20K a month clients have churned.
+
+Nebojsa (39:32.93)
+Mm-hmm.
+
+Nebojsa (39:46.55)
+Mm-hmm.
+
+Trevor @ CrowdTamers (39:54.037)
+and no one came in to replace them and I'm screwed. That's because thought leadership client acquisition is a good strategy, but you need to have resilience in your tactics. And I didn't, right? So I had a growth hack until the growth hack stopped hacking. And then because I only had one channel and only put a tiny bit of work into it, like, of course, eventually you're gonna get screwed there, but you've got to be smart enough.
+
+Nebojsa (40:06.413)
+Yeah.
+
+Nebojsa (40:10.69)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (40:16.343)
+Yeah.
+
+Nebojsa (40:20.195)
+Yes.
+
+Trevor @ CrowdTamers (40:21.879)
+to either upfront realize that or in my case be dumb enough to suffer through all the consequences of it. And now I have four different dependable channels to acquire leads, right? If one of them dries up, no worries, the others can support the load while I find another fourth. And so growth hacking, like a growth hack I can talk about is right now my YouTube ads return about 100 X return on ad spend.
+
+Nebojsa (40:34.286)
+Mm-hmm.
+
+Nebojsa (40:41.582)
+Mmm, yeah. Yeah.
+
+Trevor @ CrowdTamers (40:50.881)
+which is preposterous. My ad spend is about $4,400 a month, and I'm making between 20 and 40 grand a month on them. That's ludicrous. That's a hack, right? When that dries up, which it will surely do someday, there will be other ways I acquire customers, even if the ROI isn't quite as high, as long as I'm still bringing in customers with a successful acquisition cost, business will grow, right? So like, there's the growth hack is a tactic.
+
+Nebojsa (41:02.711)
+Yes.
+
+Yeah.
+
+Nebojsa (41:09.198)
+Mm-hmm.
+
+Nebojsa (41:14.552)
+Yeah.
+
+Trevor @ CrowdTamers (41:20.353)
+The overall strategy is what makes the business successful, whether or not your hack works month to month.
+
+Nebojsa (41:27.992)
+Wow, man, that's crazy. That's crazy. And I have one very good question for you. If you had to distill your growth to market system into three key principles, what would they be?
+
+Trevor @ CrowdTamers (41:41.907)
+I have done them, so let's go into it, right? Minimum viable sprints is the first key principle. If you know that, you know how to learn. Then the next thing is, once I have people who are beginning their buyer journey, I have to understand all the core metrics from first visit to closed and hit certain numbers. And I could just tell you the numbers, because I've taught this for years, right? Your click through rate needs to be over 1%.
+
+Nebojsa (41:47.106)
+Okay.
+
+Nebojsa (41:57.1)
+Mm-hmm.
+
+Nebojsa (42:03.458)
+Mm-hmm. Mm-hmm.
+
+Trevor @ CrowdTamers (42:11.797)
+Your sign up rate either on platform, because you can do ads that sign up directly on LinkedIn or on Meta, or on your landing page needs to be over 5%. Your activation rate into a sales qualified lead or a product qualified lead, either way you want to talk about it, needs to be over 20%. And then of those people who are highly active in product or highly interested in your sales discussion, you want to see a close rate of
+
+at least over 30 and ideally over 50 if you're really qualifying at the product level well and if you do that and your cost per lead is less than 1 % of the lifetime value of the lead this makes you money every time you build it. That's how we built a hundred and I think 17 million dollar marketing engine in the last four years is we stick to these numbers and if you hit these numbers
+
+Nebojsa (42:54.988)
+Mm-hmm.
+
+Trevor @ CrowdTamers (43:08.897)
+then with every dollar you put in, will get at least $2 back. And if you do better than 1 % click through rate or better than 5 % sign up rate or anywhere in this value chain, you do better than, that's when you do 3X or 5X or 10X return on spend because the system is working at above the minimum efficiency. So first thing is learn how to learn. The second thing is understand what your core metrics are.
+
+Nebojsa (43:13.646)
+Mm-hmm.
+
+Nebojsa (43:24.28)
+Mm-hmm.
+
+Nebojsa (43:29.708)
+Mm-hmm. Mm-hmm.
+
+Trevor @ CrowdTamers (43:35.383)
+so that you know what success looks at for each stage of the journey. And if you're failing at some point in the journey, focus on that part of the journey. The way most marketers work is they launch an entire campaign upfront. You spend four months prepping the big new summer launch. It's our new summer outerwear campaign for, I don't know, a fashion, and it's all dependent on, I get it right? If this campaign works or not is basically luck. Now,
+
+If you've been in the fashion industry for 20 years, one, survivorship bias, you've been lucky a lot, so you're probably going to keep being lucky. But two is also you have an understanding of some of the fundamentals of what a good campaign will look like almost as a muscle memory as opposed to scientific memory. So, okay, but it would be way better if you were to start with what's the right thing to tell people for this summer? And then what's the right visual design to make a landing page work?
+
+Nebojsa (44:09.571)
+Mm-hmm.
+
+Nebojsa (44:13.122)
+Mm-hmm.
+
+Nebojsa (44:21.592)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (44:29.986)
+Mm-hmm. Mm-hmm.
+
+Trevor @ CrowdTamers (44:33.461)
+And then other people who sign up, right, how many folks are actually adding to cart? Like all of this, if you go one at a time, you always know where your marketing engine is broken and you can always fix that part. So build up sequentially through these numbers and it takes a little longer than just launching a campaign. But you're never at a loss for why this isn't working. You always know where to fix and doing it that way makes it dependable.
+
+Nebojsa (44:47.17)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (44:53.678)
+Mm-hmm.
+
+Nebojsa (44:58.634)
+And did you ever have a client where you couldn't hit the numbers? And if so, what did you do then? Did you just tell the client to quit or?
+
+Trevor @ CrowdTamers (45:09.335)
+Yes, so there's a couple of cases where that'll happen and there's two or three reasons why. One of them will come down to, I've got a client right now where they actually, their in product metrics are so unreliable that it's really hard to see what the activation rate is at each step in what is a very long sale process.
+
+Nebojsa (45:16.897)
+Yeah.
+
+Trevor @ CrowdTamers (45:39.147)
+they have like a three week sales process for a travel product, right? That's crazy long. And people are dropping off and we really don't know where because every step along the way we're losing people but where and how and why it's very tough. so like we're not hitting their core numbers but it's partly because our instrumentation is bad and has always been. There's one. Another one is if your product fundamentally doesn't do a very good job.
+
+Nebojsa (45:44.686)
+Mm-hmm, mm-hmm, mm-hmm.
+
+Okay
+
+Nebojsa (45:56.27)
+Mm-hmm.
+
+Nebojsa (46:03.608)
+Thank
+
+Nebojsa (46:08.662)
+Yeah, journey will happen, yeah. Yeah.
+
+Trevor @ CrowdTamers (46:09.087)
+Okay, people will churn, which means your lifetime value is too low to keep them around. I would note your product might do a very good job, but not solve the pain of your current customer base. That Martech client I'm talking about, who they built up to about two million in revenue, they have a ludicrously, it's like...
+
+Nebojsa (46:13.997)
+Yeah.
+
+Nebojsa (46:24.963)
+Yeah.
+
+Trevor @ CrowdTamers (46:33.461)
+I think it's like three months is their average customer life cycle. Now, a lot of those customers will come back in six months for a month again, and then go away, then come back, then go away, and come back. But that means like fundamentally you're bringing the wrong people in because they find your tool kind of valuable but not valuable enough to pay for every month. So tool works, tool does a great job of its thing, but the wrong people show up so it looks like the product sucks.
+
+Nebojsa (46:37.953)
+Okay.
+
+Nebojsa (46:42.306)
+Mm-hmm.
+
+Nebojsa (46:48.782)
+Mm-hmm.
+
+Nebojsa (46:53.453)
+Yeah.
+
+Nebojsa (47:02.167)
+Mm-hmm.
+
+Trevor @ CrowdTamers (47:02.423)
+So you can't hit core metrics if you can't keep people around long enough. Or if they're not buying your econ product at a high enough price. I'd say a third reason why is if competition is out there and they are better funded than you, and they are able to pay more than you can to acquire traffic because either their engine is working more efficiently or they can just afford to lose money bringing people in to corner the market. Basically, if at some point these numbers don't work.
+
+Nebojsa (47:05.635)
+Yeah.
+
+Nebojsa (47:31.95)
+Mm-hmm.
+
+Trevor @ CrowdTamers (47:32.183)
+and you can't make them work, then the engine won't work for you. And for clients where I've had that problem, has tended to either be product isn't like either good at all or not good for the audience we're trying to sell to, metrics aren't dependable enough to actually build from. One other one I would grant is if your target market is too small, if you can only sell to 400 people, like paid ads are not the way you're growing, right? If you're a B2B with a $100,000 average customer value with a target
+
+Nebojsa (47:52.194)
+Mm-hmm.
+
+Mm-hmm.
+
+Okay.
+
+Trevor @ CrowdTamers (48:02.103)
+list of 500 companies, ads aren't it, right? You've got to find other ways to sell. keeping that in mind as you try and grow is also like your point. And then the third thing is if you've got competition, can outspend you, ads also aren't it because you will lose money fighting them unless you can find a little niche what they aren't going after and win in that niche.
+
+Nebojsa (48:04.194)
+Mm-hmm.
+
+Nebojsa (48:07.894)
+Mm-hmm.
+
+Nebojsa (48:25.198)
+Okay, I mean I understand so I know we are short with the time I mean you don't have enough time so I Would really not do the outro if you are like, okay We should continue with the podcast maybe next week or something like that because we didn't talk about the AI We didn't talk about the entrepreneurship with the vision for your company with many things that I mean the mentorship program that you already have
+
+Trevor @ CrowdTamers (48:42.23)
+Okay.
+
+Nebojsa (48:54.008)
+I mean, there are a lot of different things that I would like to cover and I really think that your experience and your knowledge is like so high and that many people can learn from you. So I would like, I would not like to just finish with the podcast without discussing like these different topics.
+
+Trevor @ CrowdTamers (49:08.989)
+Okay, I am traveling Friday and I'm out the whole week after that because I'm going to Florida to take my kids to Disney. like a week of book before then, cool. Otherwise you'll have to wait till I get back.
+
+Nebojsa (49:13.932)
+Okay? Okay? Okay?
+
+Nebojsa (49:23.776)
+Okay, I'll just stop the podcast recording right now so we can just continue. Okay.
+
