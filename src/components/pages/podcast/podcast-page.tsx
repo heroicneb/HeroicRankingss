@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AskPodcastAIButton } from "@/components/chat/AskPodcastAIButton";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientText } from "@/components/ui/gradient-text";
+import { PageLinks } from "@/components/ui/page-links";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
 import { createPageMetadata } from "@/lib/metadata";
@@ -287,8 +288,16 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
 // 3. Episodes grid
 // ---------------------------------------------------------------------------
 
-function EpisodesGridSection({ episodes }: { episodes: EpisodeView[] }) {
+const EPISODES_PAGE_SIZE = 9;
+const hrefForPage = (n: number) => (n <= 1 ? "/podcast/" : `/podcast/?page=${n}`);
+
+function EpisodesGridSection({ episodes, page: requestedPage }: { episodes: EpisodeView[]; page: number }) {
   if (episodes.length === 0) return null;
+
+  // WHY: three rows of three per page, like the case studies index; out-of-range pages clamp to the last one.
+  const pageCount = Math.max(1, Math.ceil(episodes.length / EPISODES_PAGE_SIZE));
+  const page = Math.min(Math.max(1, requestedPage), pageCount);
+  const visible = episodes.slice((page - 1) * EPISODES_PAGE_SIZE, page * EPISODES_PAGE_SIZE);
 
   return (
     <section className="pt-[60px] lg:pt-[120px]" id="podcast-episodes">
@@ -302,10 +311,12 @@ function EpisodesGridSection({ episodes }: { episodes: EpisodeView[] }) {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-[10px] lg:mt-5 lg:grid lg:grid-cols-3 lg:items-stretch lg:gap-5">
-          {episodes.map((episode) => (
+          {visible.map((episode) => (
             <EpisodeCard episode={episode} key={episode.key} />
           ))}
         </div>
+
+        <PageLinks ariaLabel="Episode pages" className="mt-10 lg:mt-[60px]" hrefFor={hrefForPage} page={page} pageCount={pageCount} />
       </div>
     </section>
   );
@@ -394,9 +405,12 @@ function PodcastAISection() {
 
 interface PodcastPageProps {
   episodes: SanityPodcastEpisodeSummary[];
+  /** `?page=` from the URL; anything unparseable means page 1. */
+  page?: string | null;
 }
 
-export default function PodcastPage({ episodes }: PodcastPageProps) {
+export default function PodcastPage({ episodes, page }: PodcastPageProps) {
+  const requestedPage = Number.parseInt(page ?? "1", 10) || 1;
   const views = episodes.map((episode, index) => toEpisodeView(episode, index === 0 ? 1216 : 826));
   const [latest, ...rest] = views;
   const hasCms = Boolean(latest);
@@ -406,7 +420,7 @@ export default function PodcastPage({ episodes }: PodcastPageProps) {
       <HeroSection episodeCount={hasCms ? episodes.length : 15} />
       <LatestEpisodeSection episode={latest ?? FALLBACK_LATEST} />
       {/* WHY: the newest episode fills the Latest panel; the grid shows the rest, or the frame's trio until more exist. */}
-      <EpisodesGridSection episodes={rest.length ? rest : FALLBACK_EPISODES} />
+      <EpisodesGridSection episodes={rest.length ? rest : FALLBACK_EPISODES} page={requestedPage} />
       <PodcastAISection />
     </>
   );
