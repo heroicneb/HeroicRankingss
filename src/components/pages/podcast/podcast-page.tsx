@@ -199,8 +199,9 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
   return (
     <section className="pt-[60px] lg:pt-[120px]" id="podcast-latest">
       <div className="mx-auto w-full max-w-[1440px] px-[5px] lg:px-20">
-        <div className="relative overflow-hidden rounded-[30px] bg-[linear-gradient(180deg,var(--color-hr-dark)_4.89%,var(--color-case-art-maudsch)_193.64%)] lg:h-[540px] lg:rounded-[40px] lg:bg-[linear-gradient(48.69deg,var(--color-hr-dark)_35.36%,var(--color-case-art-maudsch)_142.03%)]">
-          <div className="flex flex-col items-center gap-10 px-[15px] pb-[15px] pt-[60px] text-center lg:absolute lg:left-[40px] lg:top-[40px] lg:w-[482px] lg:items-start lg:gap-5 lg:p-0 lg:text-left">
+        <div className="relative overflow-hidden rounded-[30px] bg-[linear-gradient(180deg,var(--color-hr-dark)_4.89%,var(--color-case-art-maudsch)_193.64%)] lg:min-h-[540px] lg:rounded-[40px] lg:bg-[linear-gradient(48.69deg,var(--color-hr-dark)_35.36%,var(--color-case-art-maudsch)_142.03%)]">
+          {/* WHY: the column is in flow (not pinned) so a long summary grows the panel instead of pushing the pills into the arrow. */}
+          <div className="flex flex-col items-center gap-10 px-[15px] pb-[15px] pt-[60px] text-center lg:min-h-[540px] lg:w-[562px] lg:items-start lg:gap-5 lg:p-[40px] lg:text-left">
             <div className="flex flex-col items-center gap-5 lg:items-start">
               <SectionLabel className="text-[var(--color-hr-pure-white)]">/&nbsp;&nbsp;Latest Episode&nbsp;&nbsp;/</SectionLabel>
               <div className="flex flex-col items-center gap-[10px] lg:items-start lg:gap-0">
@@ -252,20 +253,20 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
                 label={`Open latest episode: ${episode.title}`}
               />
             </div>
-          </div>
 
-          {/* WHY: wrapped so `hidden` is not fought by the button's own display class. */}
-          <div className="absolute bottom-[40px] left-[40px] hidden lg:block">
-            <ArrowButton
-              className="size-[72px]"
-              external={episode.external}
-              href={episode.href}
-              label={`Open latest episode: ${episode.title}`}
-            />
+            {/* Desktop arrow: last item of the column, 66px under the pills as in the frame (2251:94), never overlapping. */}
+            <div className="mt-auto hidden pt-[46px] lg:block">
+              <ArrowButton
+                className="size-[72px]"
+                external={episode.external}
+                href={episode.href}
+                label={`Open latest episode: ${episode.title}`}
+              />
+            </div>
           </div>
 
           {/* Desktop image: 607.75×500 inset 20px from the top and right (Figma 2251:82). */}
-          <div className="absolute right-[20px] top-[20px] hidden h-[500px] w-[607.75px] overflow-hidden rounded-[40px] shadow-[0px_4px_14px_0px_rgba(0,0,0,0.18)] lg:block">
+          <div className="absolute bottom-[20px] right-[20px] top-[20px] hidden w-[607.75px] overflow-hidden rounded-[40px] shadow-[0px_4px_14px_0px_rgba(0,0,0,0.18)] lg:block">
             {episode.image ? (
               <Image
                 alt={episode.image.alt}
