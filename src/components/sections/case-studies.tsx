@@ -7,6 +7,8 @@ import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { DEFAULT_HOME_CONTENT, type HomeContent } from "@/components/pages/home/home-content";
 import type { SanityCaseStudy } from "@/lib/sanity-data";
 import type { CaseStudy, QuoteLine } from "@/types";
 
@@ -23,6 +25,7 @@ type CaseStudyEntry = CaseStudy & {
 interface CaseStudiesProps {
   /** Case studies ticked "Featured on homepage" in the Studio, newest first. */
   cmsCaseStudies?: SanityCaseStudy[];
+  content?: HomeContent["caseStudies"];
 }
 
 const STUDIES: CaseStudyEntry[] = [
@@ -180,68 +183,53 @@ function PanelArt({ study, className }: { study: CaseStudyEntry; className?: str
 const PROVEN_RESULTS_PHOTO_SRC =
   "/figma/case-studies/proven-results-photo.webp";
 
-export function CaseStudies({ cmsCaseStudies }: CaseStudiesProps) {
+export function CaseStudies({ cmsCaseStudies, content = DEFAULT_HOME_CONTENT.caseStudies }: CaseStudiesProps) {
   const studies = cmsCaseStudies?.length
     ? cmsCaseStudies.filter((caseStudy) => caseStudy.slug).slice(0, 3).map(toEntry)
     : STUDIES;
+  const quotes: QuoteLine[] = content.quotes.length
+    ? content.quotes.map((line, index) => ({ id: `quote-${index + 1}`, ...line }))
+    : QUOTES;
 
   return (
     <section className="section-shell pt-[60px] lg:pt-20" id="case-studies">
       <Container>
         <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5 text-center lg:hidden" data-reveal>
-          <SectionLabel>
-            /{"  "}Proven Results{"  "}/
-          </SectionLabel>
+          <SectionLabel>{content.label}</SectionLabel>
           <h2 className="type-h2 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-            Benefit From a Proven{" "}
-            <span className="gradient-text-brand gradient-text-brand-case">
-              Data-Driven Approach
-            </span>{" "}
-            That Delivers Results
+            <GradientHeading highlightClassName="gradient-text-brand-case" segments={content.heading} />
           </h2>
           <p className="type-paragraph text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]">
-            With our dynamic approach, you&apos;ll experience unparalleled
-            growth, dominate search rankings, and become a long term hero in
-            your market. with our data driven approach, we find streams of
-            organic revenue you didn&apos;t even know exist.
+            {content.body}
           </p>
           <AppLink
             className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-            href="/case-study"
+            href={content.ctaUrl}
             motionPreset="none"
           >
-            See For Yourself
+            {content.ctaLabel}
             <GradientArrowUpRightIcon className="size-[10px]" />
           </AppLink>
         </div>
 
         <div className="hidden gap-12 min-[1360px]:grid-cols-[577px_413px] min-[1360px]:items-end min-[1360px]:justify-between lg:grid" data-reveal>
           <div className="text-center min-[1360px]:text-left">
-            <SectionLabel>
-              /{"  "}Proven Results{"  "}/
-            </SectionLabel>
+            <SectionLabel>{content.label}</SectionLabel>
             <h2 className="type-h2 mt-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              Benefit From a Proven{" "}
-              <span className="gradient-text-brand gradient-text-brand-case">
-                Data-Driven Approach
-              </span>{" "}
-              That Delivers Results
+              <GradientHeading highlightClassName="gradient-text-brand-case" segments={content.heading} />
             </h2>
           </div>
 
           <div className="text-center min-[1360px]:text-left">
             <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              With our dynamic approach, you&apos;ll experience unparalleled
-              growth, dominate search rankings, and become a long term hero in
-              your market. with our data driven approach, we find streams of
-              organic revenue you didn&apos;t even know exist.
+              {content.body}
             </p>
             <AppLink
               className="type-cta motion-interactive motion-interactive-press mt-8 inline-flex h-[47px] w-fit min-w-max items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href="/case-study"
+              href={content.ctaUrl}
               motionPreset="none"
             >
-              See For Yourself
+              {content.ctaLabel}
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
@@ -337,7 +325,7 @@ export function CaseStudies({ cmsCaseStudies }: CaseStudiesProps) {
       </Container>
 
       <Container className="mt-[60px] lg:mt-[120px]">
-        <QuoteRotator quotes={QUOTES} />
+        <QuoteRotator quotes={quotes} />
       </Container>
 
       <div className="hidden lg:block">

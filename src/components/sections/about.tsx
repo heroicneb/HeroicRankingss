@@ -3,7 +3,9 @@ import Image from "next/image";
 import { AboutColumnsLoop } from "@/components/sections/about-columns-loop";
 import { Container } from "@/components/ui/container";
 import { DesktopScrollProgress } from "@/components/ui/desktop-scroll-progress";
+import { GradientHeading } from "@/components/ui/gradient-heading";
 import { SectionLabel } from "@/components/ui/section-label";
+import { DEFAULT_HOME_CONTENT, type HomeContent } from "@/components/pages/home/home-content";
 import type { AboutLogoAsset } from "@/types";
 
 const ABOUT_LOGOS: Array<AboutLogoAsset & { darkSrc: string }> = [
@@ -89,26 +91,11 @@ const ABOUT_LOGOS: Array<AboutLogoAsset & { darkSrc: string }> = [
   },
 ];
 
-const ABOUT_PARAGRAPHS = [
-  {
-    body: "Committed to delivering data-driven results and ",
-    emphasis: "long-term success for your business.",
-    suffix: "",
-  },
-  {
-    body: "We believe in building strong relationships with our clients, rooted in trust, collaboration, and transparency. Our goal is to craft ",
-    emphasis: "strategies that align with your vision, ",
-    suffix: "ensuring growth and success for every business we serve.",
-  },
-  {
-    body: "What drives us? ",
-    emphasis: "Seeing our clients achieve their goals",
-    suffix:
-      " and thrive in a competitive market. Our team is driven by creativity, dedication, and the hard work to push boundaries in digital marketing.",
-  },
-] as const;
+interface AboutProps {
+  content?: HomeContent["about"];
+}
 
-export function About() {
+export function About({ content = DEFAULT_HOME_CONTENT.about }: AboutProps) {
   return (
     <section className="pb-[60px] pt-[60px] lg:pb-24 lg:pt-[7px]" id="about">
       <div className="mx-auto w-full max-w-[1440px] px-5 md:px-10 xl:px-[40px]">
@@ -120,25 +107,18 @@ export function About() {
           <div className="mx-auto w-full max-w-[352px] xl:mx-0 xl:max-w-none">
             <div className="flex flex-col items-center text-center xl:items-start xl:text-left">
               <SectionLabel className="w-full xl:relative xl:-top-[6px]">
-                / About /
+                {content.label}
               </SectionLabel>
               <h2 className="type-h2 mt-5 w-[306px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] xl:mt-[26px] xl:w-auto xl:max-w-[485px]">
-                Data-Driven SEO Agency and{" "}
-                <span className="gradient-text-brand gradient-text-brand-about-heading">
-                  Trusted Growth Partner
-                </span>
+                <GradientHeading highlightClassName="gradient-text-brand-about-heading" segments={content.heading} />
               </h2>
               <div className="mt-10 w-[316px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] xl:w-auto xl:max-w-[485px]">
-                {ABOUT_PARAGRAPHS.map((paragraph, index) => (
+                {content.paragraphs.map((paragraph, index) => (
                   <p
-                    className={`type-paragraph${index < 2 ? " mb-5" : ""}`}
-                    key={`${paragraph.body}-${index + 1}`}
+                    className={`type-paragraph${index < content.paragraphs.length - 1 ? " mb-5" : ""}`}
+                    key={`about-paragraph-${index + 1}`}
                   >
-                    {paragraph.body}
-                    <span className="gradient-text-brand gradient-text-brand-about-body">
-                      {paragraph.emphasis}
-                    </span>
-                    {paragraph.suffix ?? ""}
+                    <GradientHeading highlightClassName="gradient-text-brand-about-body" segments={paragraph} />
                   </p>
                 ))}
               </div>

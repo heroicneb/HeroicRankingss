@@ -6,6 +6,8 @@ import { Container } from "@/components/ui/container";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { DEFAULT_HOME_CONTENT, splitSegments, type HomeContent } from "@/components/pages/home/home-content";
 import type { StatItem } from "@/types";
 
 type StatEntry = StatItem & {
@@ -61,41 +63,59 @@ function renderMetric(metric: string) {
   );
 }
 
-export function Stats() {
+interface StatsProps {
+  content?: HomeContent["stats"];
+}
+
+/** CMS stats keep the circle size of the built-in stat in the same slot. */
+function toStatEntries(items: HomeContent["stats"]["items"]): StatEntry[] {
+  return items.map((item, index) => {
+    // WHY: STATS is a non-empty constant, so the modulo lookup always hits.
+    const slot = STATS[index % STATS.length] as StatEntry;
+    return {
+      ...slot,
+      metric: item.metric,
+      detail: item.detail,
+      imageSrc: item.image?.src ?? slot.imageSrc,
+      imageAlt: item.image?.alt || slot.imageAlt,
+    };
+  });
+}
+
+export function Stats({ content = DEFAULT_HOME_CONTENT.stats }: StatsProps) {
+  const stats = toStatEntries(content.items);
+  const headingLines = splitSegments(content.heading);
+  // WHY: the phone heading runs on as one sentence; only desktop keeps the design's line breaks.
+  const headingInline = headingLines.flatMap((line, index) => (index ? [{ text: " " }, ...line] : line));
   return (
     <section className="pt-[40px] lg:pt-[60px]">
       <Container>
         <div className="mx-auto flex max-w-[350px] flex-col items-center text-center text-[var(--color-hr-pure-white)] lg:hidden">
           <div className="flex flex-col items-center gap-5" data-reveal>
             <SectionLabel className="text-[var(--color-hr-pure-white)]">
-              / Guided by Data /
+              {content.label}
             </SectionLabel>
             <h2 className="type-h2 w-[264px] text-[var(--color-hr-pure-white)]">
-              Proven Success Through{" "}
-              <span className="gradient-text-brand">Data-Driven</span> SEO
-              Strategies
+              <GradientHeading highlightClassName="" segments={headingInline} />
             </h2>
             <p className="type-paragraph w-[300px] text-[var(--color-hr-pure-white)]">
-              Being in a hero business involves the great responsibility of
-              saving, defending, and improving the quality of your metrics. As
-              solution designers and builders, we assure you that nothing will
-              surprise us and that we are always ready for action!
+              {content.body}
             </p>
             <AppLink
               className={cn(
                 "type-cta motion-interactive motion-interactive-press inline-flex w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)] [&_svg]:text-[var(--color-hr-pure-white)]",
                 STATS_CTA_HEIGHT_CLASS,
               )}
-              href="/contact"
+              href={content.ctaUrl}
               motionPreset="none"
             >
-              Get Started Today
+              {content.ctaLabel}
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
 
           <div className="mt-[60px] flex flex-col gap-10" data-reveal-stagger>
-            {STATS.map((stat, index) => (
+            {stats.map((stat, index) => (
               <article
                 className="w-[294px] text-center text-[var(--color-hr-pure-white)]"
                 key={`mobile-${stat.metric}`}
@@ -130,35 +150,32 @@ export function Stats() {
         <div className="hidden lg:block">
           <div className="mx-auto max-w-[724px] pt-20 text-center text-[var(--color-hr-pure-white)] lg:pt-[80px]" data-reveal>
             <SectionLabel className="text-[var(--color-hr-pure-white)]">
-              / Guided by Data /
+              {content.label}
             </SectionLabel>
             <h2 className="type-h2 mt-5 text-[var(--color-hr-pure-white)]">
-              <span className="block">Proven Success</span>
-              <span className="block">
-                Through <span className="gradient-text-brand">Data-Driven</span>
-              </span>
-              <span className="block">SEO Strategies</span>
+              {headingLines.map((line, index) => (
+                <span className="block" key={`stats-heading-${index}`}>
+                  <GradientHeading highlightClassName="" segments={line} />
+                </span>
+              ))}
             </h2>
             <p className="type-paragraph mt-10 text-[var(--color-hr-pure-white)]">
-              Being in a hero business involves the great responsibility of
-              saving, defending, and improving the quality of your metrics. As
-              solution designers and builders, we assure you that nothing will
-              surprise us and that we are always ready for action!
+              {content.body}
             </p>
             <AppLink
               className={cn(
                 "type-cta motion-interactive motion-interactive-press mt-10 inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)] [&_svg]:text-[var(--color-hr-pure-white)]",
                 STATS_CTA_HEIGHT_CLASS,
               )}
-              href="/contact"
+              href={content.ctaUrl}
               motionPreset="none"
             >
-              Get Started Today
+              {content.ctaLabel}
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
           <div className="grid gap-8 pb-10 pt-16 lg:grid-cols-3 lg:gap-0 lg:pb-[40px] lg:pt-[114px]" data-reveal-stagger>
-            {STATS.map((stat, index) => (
+            {stats.map((stat, index) => (
               <article
                 className="mx-auto w-full max-w-[413px] text-center text-[var(--color-hr-pure-white)]"
                 key={`desktop-${stat.metric}`}

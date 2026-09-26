@@ -8,6 +8,8 @@ import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { getPostHref } from "@/lib/post-url";
 import type { SanityPostSummary } from "@/lib/sanity-data";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { DEFAULT_HOME_CONTENT, type HomeContent } from "@/components/pages/home/home-content";
 
 interface BlogCardItem {
   slug: string;
@@ -45,9 +47,10 @@ function mapCmsPosts(cmsPosts: SanityPostSummary[]): MaybeBlogCardItem[] {
 
 interface BlogProps {
   cmsPosts?: SanityPostSummary[];
+  content?: HomeContent["blog"];
 }
 
-export function Blog({ cmsPosts }: BlogProps) {
+export function Blog({ cmsPosts, content = DEFAULT_HOME_CONTENT.blog }: BlogProps) {
   // WHY: Posts without urlCategory have no canonical URL — skip them in
   // the homepage featured list rather than render dead links.
   const posts: BlogCardItem[] =
@@ -71,24 +74,19 @@ export function Blog({ cmsPosts }: BlogProps) {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[577px_1fr] lg:items-end" data-reveal>
           <div className="text-center lg:text-left">
-            <SectionLabel>
-              /{"  "}Featured Blogs{"  "}/
-            </SectionLabel>
+            <SectionLabel>{content.label}</SectionLabel>
             <h2 className="type-h2 mt-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              Insights and Trends in Our{" "}
-              <span className="gradient-text-brand gradient-text-brand-blog">
-                Most Popular Reads
-              </span>
+              <GradientHeading highlightClassName="gradient-text-brand-blog" segments={content.heading} />
             </h2>
           </div>
 
           <div className="hidden justify-end lg:flex">
             <AppLink
               className="type-cta motion-interactive motion-interactive-press inline-flex h-[47px] w-fit min-w-max items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href="/blog"
+              href={content.ctaUrl}
               motionPreset="none"
             >
-              View More Blogs
+              {content.ctaLabel}
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
@@ -136,10 +134,10 @@ export function Blog({ cmsPosts }: BlogProps) {
         <div className="mt-10 flex justify-center lg:hidden">
           <AppLink
             className="type-cta motion-interactive motion-interactive-press inline-flex h-[47px] w-full max-w-[350px] items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-            href="/blog"
+            href={content.ctaUrl}
             motionPreset="none"
           >
-            View More Blogs
+            {content.ctaLabel}
             <GradientArrowUpRightIcon className="size-[10px]" />
           </AppLink>
         </div>

@@ -10,6 +10,8 @@ import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { DEFAULT_HOME_CONTENT, segmentsText, type HomeContent } from "@/components/pages/home/home-content";
 import type { ServiceCard } from "@/types";
 
 const MOBILE_CARD_WIDTH = 350;
@@ -150,7 +152,36 @@ function trackSpotlight(event: React.PointerEvent<HTMLElement>) {
   event.currentTarget.style.setProperty("--spot-y", `${event.clientY - rect.top}px`);
 }
 
-export function Services() {
+interface ServicesProps {
+  content?: HomeContent["services"];
+}
+
+/**
+ * CMS cards carry the words and link; the statue artwork (and its per-card
+ * crop) comes from the built-in card in the same slot unless the editor
+ * uploaded a photo for that card.
+ */
+function toCardEntries(cards: HomeContent["services"]["cards"]): ServiceCardEntry[] {
+  return cards.map((card, index) => {
+    // WHY: SERVICE_CARDS is a non-empty constant, so the modulo lookup always hits.
+    const art = SERVICE_CARDS[index % SERVICE_CARDS.length] as ServiceCardEntry;
+    const photo = card.image;
+    return {
+      ...art,
+      title: card.title,
+      href: card.url ?? undefined,
+      backDescription: card.descriptionLines.join(" "),
+      backDescriptionLines: card.descriptionLines.length > 1 ? card.descriptionLines : undefined,
+      frontImageSrc: photo?.src ?? art.frontImageSrc,
+      frontImageAlt: photo?.alt || art.frontImageAlt,
+      backImageSrc: photo ? photo.src : art.backImageSrc,
+      mobileImageClassName: photo ? "inset-0 h-full w-full object-cover" : art.mobileImageClassName,
+    };
+  });
+}
+
+export function Services({ content = DEFAULT_HOME_CONTENT.services }: ServicesProps) {
+  const cards = toCardEntries(content.cards);
   const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
   const [mobileIndicatorIndex, setMobileIndicatorIndex] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
@@ -278,7 +309,7 @@ export function Services() {
       return;
     }
 
-    const maxIndicatorIndex = SERVICE_CARDS.length - 1;
+    const maxIndicatorIndex = cards.length - 1;
     const cardStep = MOBILE_CARD_WIDTH + MOBILE_CARD_GAP;
 
     const updateIndicator = () => {
@@ -308,7 +339,7 @@ export function Services() {
       window.removeEventListener("resize", onResize);
       cancelAnimationFrame(resizeRafId);
     };
-  }, []);
+  }, [cards.length]);
 
   return (
     <section
@@ -319,31 +350,20 @@ export function Services() {
       <Container>
         <div className="mx-auto flex max-w-[350px] flex-col items-center text-center lg:mx-0 lg:max-w-none lg:items-start lg:text-left" data-reveal>
           <div className="flex w-[324px] flex-col items-center gap-5 lg:w-auto lg:items-start lg:gap-[25px]">
-            <SectionLabel>/ Services /</SectionLabel>
+            <SectionLabel>{content.label}</SectionLabel>
             <h2
-              aria-label="Strategies for sustainable success and proven growth."
+              aria-label={segmentsText(content.heading)}
               className="type-h2 max-w-[760px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]"
             >
-              <span className="block">
-                Strategies for{" "}
-                <span className="gradient-text-brand gradient-text-brand-services">
-                  sustainable
-                </span>
-              </span>
-              <span className="block">
-                <span className="gradient-text-brand gradient-text-brand-services">
-                  success
-                </span>{" "}
-                and proven growth.
-              </span>
+              <GradientHeading highlightClassName="gradient-text-brand-services" segments={content.heading} />
             </h2>
           </div>
           <AppLink
             className="type-cta motion-interactive motion-interactive-press mt-10 inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:mt-7 lg:w-auto lg:max-w-none"
-            href="/contact"
+            href={content.ctaUrl}
             motionPreset="none"
           >
-            Book a Strategy Call
+            {content.ctaLabel}
             <GradientArrowUpRightIcon className="size-[10px]" />
           </AppLink>
         </div>
@@ -355,7 +375,7 @@ export function Services() {
         ref={railRef}
       >
         <div className="mx-auto flex w-max gap-[10px] px-[20px] lg:gap-5 lg:px-[var(--space-page-x)]" data-reveal-stagger>
-          {SERVICE_CARDS.map((card, index) => (
+          {cards.map((card, index) => (
             <article
               className={getServiceCardArticleClassName(
                 card,
@@ -492,7 +512,7 @@ export function Services() {
           className="flex items-center"
           role="status"
         >
-          {SERVICE_CARDS.map((card, index) => (
+          {cards.map((card, index) => (
             <button
               aria-label={`Show service card ${index + 1}`}
               className="relative flex items-center justify-center p-[19px]"

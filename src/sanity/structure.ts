@@ -15,6 +15,23 @@ export const structure: StructureResolver = (S) =>
   S.list()
     .title("Content")
     .items([
+      // Homepage folder — one fixed document with a group per section.
+      S.listItem()
+        .title("Homepage")
+        .id("homepage")
+        .child(
+          S.list()
+            .title("Homepage")
+            .items([
+              S.listItem()
+                .title("Home Page")
+                .id("homePage")
+                .child(S.document().schemaType("homePage").documentId("homePage")),
+            ]),
+        ),
+
+      S.divider(),
+
       // Singletons
       S.listItem()
         .title("Site Settings")

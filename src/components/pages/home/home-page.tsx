@@ -12,40 +12,52 @@ import { Stats } from "@/components/sections/stats";
 import { Team } from "@/components/sections/team";
 import { Testimonials } from "@/components/sections/testimonials";
 import { TrustAuthority } from "@/components/sections/trust-authority";
-import { getFeaturedCaseStudies, getPartnerLogos, getPosts, getTestimonials } from "@/lib/sanity-data";
+import {
+  getFeaturedCaseStudies,
+  getHomePage,
+  getPartnerLogos,
+  getPosts,
+  getTestimonials,
+} from "@/lib/sanity-data";
 import { createPageMetadata } from "@/lib/metadata";
+import { DEFAULT_HOME_CONTENT, HOME_DEFAULT_SEO } from "@/components/pages/home/home-content";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Data-Driven SEO Agency for Organic Growth",
-  description:
-    "Explore Heroic Rankings’ SEO services, proven case studies, certifications, and partnerships built for long-term organic growth.",
-  path: "/",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const page = await getHomePage().catch(() => null);
+  return createPageMetadata({
+    title: page?.seo?.metaTitle?.trim() || HOME_DEFAULT_SEO.title,
+    description: page?.seo?.metaDescription?.trim() || HOME_DEFAULT_SEO.description,
+    path: "/",
+  });
+}
 
 export default async function HomePage() {
-  const [partnerLogos, cmsPosts, cmsTestimonials, featuredCaseStudies] = await Promise.all([
+  const [page, partnerLogos, cmsPosts, cmsTestimonials, featuredCaseStudies] = await Promise.all([
+    // WHY: the built-in copy is the safety net if the CMS document is missing or unreachable.
+    getHomePage().catch(() => null),
     getPartnerLogos().catch(() => []),
     getPosts().catch(() => []),
     getTestimonials().catch(() => []),
     getFeaturedCaseStudies().catch(() => []),
   ]);
+  const content = page?.content ?? DEFAULT_HOME_CONTENT;
 
   return (
     <>
       <ScrollReveal />
-      <Hero />
-      <Services />
-      <About />
-      <Team />
+      <Hero content={content.hero} />
+      <Services content={content.services} />
+      <About content={content.about} />
+      <Team content={content.team} />
       <div className="surface-rect-5 mx-[5px] rounded-[30px] md:mx-[10px] lg:rounded-[var(--radius-card)]">
-        <Stats />
-        <FeaturedLogos partnerLogos={partnerLogos} />
+        <Stats content={content.stats} />
+        <FeaturedLogos heading={content.featuredLogos.heading} partnerLogos={partnerLogos} />
       </div>
-      <CaseStudies cmsCaseStudies={featuredCaseStudies} />
-      <TrustAuthority />
-      <Partnerships />
-      <Blog cmsPosts={cmsPosts} />
-      <Testimonials cmsTestimonials={cmsTestimonials} />
+      <CaseStudies cmsCaseStudies={featuredCaseStudies} content={content.caseStudies} />
+      <TrustAuthority content={content.trust} />
+      <Partnerships content={content.partnerships} />
+      <Blog cmsPosts={cmsPosts} content={content.blog} />
+      <Testimonials cmsTestimonials={cmsTestimonials} content={content.testimonials} />
     </>
   );
 }

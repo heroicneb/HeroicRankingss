@@ -3,6 +3,7 @@ import type { SchemaTypeDefinition } from "sanity";
 import { caseStudy } from "./documents/caseStudy";
 import { contactPage } from "./documents/contactPage";
 import { faqItem } from "./documents/faqItem";
+import { homePage } from "./documents/homePage";
 import { legalPage } from "./documents/legalPage";
 import { linkBuildingPage } from "./documents/linkBuildingPage";
 import { partnerLogo } from "./documents/partnerLogo";
@@ -24,6 +25,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
     // Documents
     siteSettings,
+    homePage,
     post,
     seoServicePage,
     partnershipPage,

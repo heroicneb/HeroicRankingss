@@ -5,46 +5,48 @@ import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { DEFAULT_HOME_CONTENT, segmentsText, splitSegments, type HomeContent } from "@/components/pages/home/home-content";
 import type { TeamMember } from "@/types";
 
-const MEMBERS: TeamMember[] = [
-  {
-    name: "Nebojša Janković",
-    role: "/  Founder & CEO  /",
-    imageSrc: "/figma/team/nebojsa.webp",
-    imageAlt: "Nebojša Janković portrait",
-    href: "/about/nebojsa-jankovic",
-  },
-  {
-    name: "Anastasija Janković",
-    role: "/  Co-Founder & CHRO  /",
-    imageSrc: "/figma/team/anastasija.webp",
-    imageAlt: "Anastasija Janković portrait",
-    offsetClassName: "min-[1360px]:translate-y-[70px]",
-    href: "/about/anastasija-jankovic",
-  },
-];
+interface TeamProps {
+  content?: HomeContent["team"];
+}
 
-export function Team() {
+/** The second card sits 70px lower on wide screens, as in the design. */
+const OFFSET_CLASS_BY_INDEX = ["", "min-[1360px]:translate-y-[70px]"];
+
+function toMembers(members: HomeContent["team"]["members"]): TeamMember[] {
+  return members.map((member, index) => ({
+    name: member.name,
+    role: `/  ${member.role}  /`,
+    imageSrc: member.image?.src ?? "/figma/team/nebojsa.webp",
+    imageAlt: member.image?.alt || `${member.name} portrait`,
+    href: member.url,
+    offsetClassName: OFFSET_CLASS_BY_INDEX[index] || undefined,
+  }));
+}
+
+export function Team({ content = DEFAULT_HOME_CONTENT.team }: TeamProps) {
+  const MEMBERS = toMembers(content.members);
+  const headingLines = splitSegments(content.heading);
   return (
     <section className="section-shell pt-[60px] lg:pt-16">
       <Container>
         <div className="mx-auto flex max-w-[350px] flex-col items-center lg:hidden" data-reveal>
           <div className="flex w-[348px] flex-col items-center gap-5 text-center">
-            <SectionLabel>
-              /{"  "}The Team{"  "}/
-            </SectionLabel>
+            <SectionLabel>{content.label}</SectionLabel>
             <h2 className="type-h2 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              We stand out by turning search into a measurable revenue engine
+              {headingLines.map(segmentsText).join(" ")}
             </h2>
           </div>
 
           <div className="mt-10 flex flex-col items-center pb-[10px]">
             <p className="text-[120px] font-semibold leading-none tracking-[-0.02em] text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)]">
-              20+
+              {content.statValue}
             </p>
             <p className="type-paragraph mt-1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              professionals in our team
+              {content.statLabel}
             </p>
           </div>
 
@@ -85,37 +87,36 @@ export function Team() {
 
           <AppLink
             className="type-cta motion-interactive motion-interactive-press mt-10 inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-            href="/about"
+            href={content.ctaUrl}
             motionPreset="none"
           >
-            More About Us
+            {content.ctaLabel}
             <GradientArrowUpRightIcon className="size-[10px]" />
           </AppLink>
         </div>
 
         <div className="hidden gap-10 lg:grid min-[1360px]:grid-cols-[506px_630px] min-[1360px]:gap-[144px]">
           <div data-reveal>
-            <SectionLabel>
-              /{"  "}The Team{"  "}/
-            </SectionLabel>
+            <SectionLabel>{content.label}</SectionLabel>
             <h2 className="type-h2 mt-5 max-w-[506px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              <span className="block">We stand out by</span>
-              <span className="block">turning search into</span>
-              <span className="block">a measurable</span>
-              <span className="block">revenue engine</span>
+              {headingLines.map((line, index) => (
+                <span className="block" key={`team-heading-${index}`}>
+                  <GradientHeading highlightClassName="gradient-text-brand-about-heading" segments={line} />
+                </span>
+              ))}
             </h2>
             <p className="mt-5 text-[72px] font-semibold leading-none tracking-[-0.02em] text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)] min-[1280px]:text-[120px]">
-              20+
+              {content.statValue}
             </p>
             <p className="type-paragraph mt-1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              professionals in our team
+              {content.statLabel}
             </p>
             <AppLink
               className="type-cta motion-interactive motion-interactive-press mt-12 inline-flex h-[45px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href="/about"
+              href={content.ctaUrl}
               motionPreset="none"
             >
-              More About Us
+              {content.ctaLabel}
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
