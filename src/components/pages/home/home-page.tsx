@@ -12,7 +12,7 @@ import { Stats } from "@/components/sections/stats";
 import { Team } from "@/components/sections/team";
 import { Testimonials } from "@/components/sections/testimonials";
 import { TrustAuthority } from "@/components/sections/trust-authority";
-import { getPartnerLogos, getPosts, getTestimonials } from "@/lib/sanity-data";
+import { getFeaturedCaseStudies, getPartnerLogos, getPosts, getTestimonials } from "@/lib/sanity-data";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createPageMetadata({
@@ -23,10 +23,11 @@ export const metadata: Metadata = createPageMetadata({
 });
 
 export default async function HomePage() {
-  const [partnerLogos, cmsPosts, cmsTestimonials] = await Promise.all([
+  const [partnerLogos, cmsPosts, cmsTestimonials, featuredCaseStudies] = await Promise.all([
     getPartnerLogos().catch(() => []),
     getPosts().catch(() => []),
     getTestimonials().catch(() => []),
+    getFeaturedCaseStudies().catch(() => []),
   ]);
 
   return (
@@ -40,7 +41,7 @@ export default async function HomePage() {
         <Stats />
         <FeaturedLogos partnerLogos={partnerLogos} />
       </div>
-      <CaseStudies />
+      <CaseStudies cmsCaseStudies={featuredCaseStudies} />
       <TrustAuthority />
       <Partnerships />
       <Blog cmsPosts={cmsPosts} />
