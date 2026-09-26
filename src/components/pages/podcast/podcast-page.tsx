@@ -412,9 +412,9 @@ const NOTCH_FILLET: CSSProperties = {
 function EpisodeCard({ episode }: { episode: EpisodeView }) {
   return (
     <article
-      className="relative h-[544.61px] w-full max-w-[413px] overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--podcast-card-bg)] [--podcast-card-bg:var(--color-hr-pure-white)] dark:border-[var(--color-hr-dark-line)] dark:[--podcast-card-bg:var(--color-hr-black-box)]"
+      className="relative flex min-h-[544.61px] w-full max-w-[413px] flex-col overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--podcast-card-bg)] [--podcast-card-bg:var(--color-hr-pure-white)] dark:border-[var(--color-hr-dark-line)] dark:[--podcast-card-bg:var(--color-hr-black-box)]"
     >
-      <div className="relative h-[305px] w-full overflow-hidden rounded-[40px] lg:rounded-b-none lg:rounded-t-[40px]">
+      <div className="relative h-[305px] w-full shrink-0 overflow-hidden rounded-[40px] lg:rounded-b-none lg:rounded-t-[40px]">
         {episode.image ? (
           <Image
             alt={episode.image.alt}
@@ -445,7 +445,8 @@ function EpisodeCard({ episode }: { episode: EpisodeView }) {
         />
       </div>
 
-      <div className="absolute left-[17px] top-[325px] flex w-[316px] flex-col gap-5 lg:left-[20px] lg:w-[373px]">
+      {/* WHY: in flow (not absolute) so the 20px rhythm description → Ask AI → card edge always holds, whatever the text length. */}
+      <div className="flex w-[333px] flex-col gap-5 px-[17px] pb-[20px] pt-[20px] lg:w-[393px] lg:px-[20px]">
         <div className="flex flex-col gap-[10px]">
           <h3 className="text-[22px] font-normal leading-[normal] tracking-[-0.44px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-[32px] lg:leading-[1.2] lg:tracking-[-0.64px]">
             <AppLink
