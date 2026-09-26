@@ -1,0 +1,778 @@
+Nebojsa (00:00.905)
+Okay guys, welcome back to the ranking heroes, the podcast where we dive deep into the strategies that help businesses climb to the top. I'm your host and today I'm thrilled to be joined by Jakub Rodnik. He is currently working in Growth Tax as a managing director and he leads content and SEO team. Welcome Jakub. I'm happy to have you here as I know that you bring a wealth of experience in SEO, especially in content.
+
+and also work with AI right now and...
+
+all these workflows that are getting popular. So today I want to explore how AI is reshaping marketing strategies and also talk about some marketing trends. So first I would like you to introduce yourself, to tell us a bit what you do, how you started your career and what led you from transitioning from journalism to content marketing and SEO.
+
+Jakub Rudnik (01:04.652)
+Yeah, lots to talk about there and not.
+
+to correct with Jacob Rudnick. So I use like a US pronunciation. All my European friends will say Jakub. So not a stranger to that at all. Eastern European background for sure. So I'm at, yeah, I'm at Grothex. We're a 60 person or so content marketing agency to really oversimplify. But basically we built a platform on top of multiple LMS and other different tools that we use to produce content via AI, but also with, you know, a human intervention at kind of where we see
+
+Nebojsa (01:14.071)
+Yeah.
+
+Jakub Rudnik (01:37.244)
+to be the right moments. We do that for lots of different clients, know, tons of SaaS companies, companies from series A up to enterprise and kind of lead strategy for a series of clients and then do testing and analytics things across all clients. But before that, I've, you know, was always almost always in house. So I, this is my first like real extended stretch at an agency other than one short stint. And so I got my career started at G2.
+
+was G2 crowd at the time. They were about 30 people. I think it was hire number 32, write it for a series A. I had no idea what I was doing. I was a journalist, like you mentioned.
+
+trying to not work sports journalism hours. So, you know, not working till 1 a.m. and making a little bit more money than journalists make because they don't make much here in the States and probably elsewhere. So I went over there as a content specialist, had no idea really what I was doing. I like, this is a startup, they've got beer in the fridge. And that was like my whole thought process, but got thrown into the deep end really quickly. You my first quarter, we were just trying to scale reviews for certain categories and write reports on those. My next quarter, like, how do we expand the number of categories on the site dramatically?
+
+Nebojsa (02:23.767)
+you
+
+Mm-hmm.
+
+Nebojsa (02:41.674)
+Mm-hmm.
+
+Jakub Rudnik (02:47.972)
+How do we triple that in six months? Then it was, you you to think about all the different projects we had, but every quarter, every six months, it was a whole new thing. I was on a different team, different role, and eventually got into the content side and learned organic. Like on the fly, we had a SEO director and a research director leave at the same time. And there was a big gap and we had a big goal that half. And so they tagged me and another person, Levi Olmstead to take on two sides of it. And he did a lot of the link building outreach stuff. did more of the content.
+
+strategy, like so the keyword selection, the on-page optimization, and we had never done that stuff for blog and editorial content before. Just learned that on the fly, like staying up late nights, reading blogs, testing stuff, looking through Ahrefs for the first time in my whole life and, you know, working long, long hours, but we went from, I don't know, 50,000 people on the blog to 1.5 million and...
+
+It was something like 18 months, moved over to like the marketing team grew out a huge team. And that was part of the big growth was we hired a ton of writers. Like we couldn't have done it on our own, certainly, but huge scale. then since then I've been doing content SEO and a few like have sometimes taken on other teams like video, but generally speaking, I stay my expertise is editorial link building, some technical, depending on how technical you get. I've done that at active campaign scribe, softer, a couple other places as well.
+
+But yeah, really in the SaaS place, some marketplace like G2 and review sites, otherwise, SaaS is my world, SEO and content and like growth overall. I definitely, we're kindred spirits in that way.
+
+Nebojsa (04:17.961)
+Yeah.
+
+Nebojsa (04:23.314)
+I mean I believe working with G2 was like a huge experience for you especially on the...
+
+if you were there during the highest scaling moments for that company. And I know how challenging it is because I actually worked with Design Rush, which is like the similar thing to Glutch. And I know how hard it was. Like every day was struggle every month. There were new goals to be achieved and yeah, you can really learn a lot of that. And I want to ask you, did your early experience as journalists actually shape the way you think about content, storytelling and audience engagement?
+
+Jakub Rudnik (04:59.17)
+Yeah, for sure. So, it did, and then it changed. It's always evolved, but I think I
+
+Nebojsa (05:05.791)
+Mm-hmm.
+
+Jakub Rudnik (05:05.93)
+I did a master's program here at DePaul University in Chicago and I teach there now. so it's like, had really great professors that taught awesome storytelling. taught a lot of like digital tools and I think I could write a great story. did a lot of freelance writing for newspapers here and had that, those types of skills. And then what was the unlock for like, so that shaped it. I think I was always a good editor at first. And that's where G2 found like we're writing all this content, give everything to Jacob. He's going to make it really clean.
+
+Nebojsa (05:22.294)
+Mm-hmm.
+
+Jakub Rudnik (05:35.786)
+improvements to it, et cetera. But there was none of that SEO and distribution side that was not part of that grad program really, like very minor details. And so when I mentioned that sort of like learning and just deep diving, was like, how do we get?
+
+We wrote something great. How on earth can we get someone to that content? I had no concept of what that was. Right. And so that was the, kind of like startup world, um, learnings, but also, uh, kind of just doing stuff on the side. My brother like started a video game blog. It never went anywhere. We never made a dollar on it or anything, but he just was like, how do I do this? How do I get more? I I don't know how you get more traffic. Let's try stuff. And so, I don't know. Well, you wrote a lot of articles. I wrote a few articles. We tried. Like we tried a lot of things. learned like how backlinks worked.
+
+I learned some plays and like do an interview, they backlink to you. Okay, this works. All right, this is getting some traffic. Now can we do that 10 more times? I'm learning about like speed of like, you do, if you're the first one to break some news, you rank number one typically right away. So there's like a bunch of learnings like that. And then how I did header, you know, it was like, I didn't know I was doing SEO, but I was for the first time. I was doing that at the same time as like editing at G2. So I started to like.
+
+Nebojsa (06:39.626)
+Yeah.
+
+Jakub Rudnik (06:42.348)
+connect dots across these two very different worlds. And so then that was, think, where I started to get tapped into more and more. was like, he's got a good insight here, good insight here. Suddenly like six months later, you're leading a small team and then like trying to figure out stuff at scale. So, but the good storytelling really mattered. But the point I didn't get to, which sorry, it's going long winded, but like, I always thought everything was like.
+
+Journalism edit ten times make sure everything's perfect perfect perfect and what I've changed a lot is like, of course I want perfection but the like final 1 % or 3 % of like the editing Journalistically sometimes none of that matters. So we'll hire an editor a copywriter whatever that had journalism background Sometimes they like their output
+
+is much lower and you're like, want that perfection, but maybe if we can cut that 10 % of a corner, will it matter? Will the reader still read, get the right information? Like I think what I value in content is not like, did I get the Oxford comma right? Or like some of these like grammatical things as much as like, is the actual information in there going to be the most valuable and structured in the right way? And I can worry about the other things later.
+
+So I've changed my mindset in that front of like where I cut corners and what I value, but it did really set me up well to have a career in content.
+
+Nebojsa (07:58.303)
+And did that save a lot of your time? In terms of like, yeah...
+
+Jakub Rudnik (08:01.774)
+Yeah, so the best example, 100%. So G2 even, because we had such a big team, I think we had 22 content.
+
+people like editors, writers, et cetera, like huge team. So everything got edited three times still. And when I moved to Scribe a couple of jobs later, me, one content marketer and a bunch of freelancers. So G2, were publishing like 200 blogs a month at Scribe. At one point, we were trying to publish a hundred blogs with those two people instead of a team of 22. Obviously freelancers fill some of those gaps, but like that's a huge goal for it. Like there's no way even with freelance support. And so the CEO at one point challenged me on like, do we need all of these rounds of revisions? we, what would happen?
+
+Nebojsa (08:10.646)
+And yeah.
+
+Nebojsa (08:15.669)
+You
+
+Nebojsa (08:27.871)
+haha
+
+Jakub Rudnik (08:39.536)
+like this as she poses like what would happen if you just publish this content straight from the contractors over I did not feel comfortable doing that but we did try it like the CEO is telling you but also like this is a good experiment nobody ever once said like wrote to us and like there's a typo or there's an error that doesn't mean that nobody spotted or bounced from the site but people were signing up for scribe and then they were
+
+Nebojsa (08:54.742)
+you
+
+Jakub Rudnik (09:00.384)
+staying on the page and reading to the bottom and they were signing up. Then some of those people were turning into paid users. So it's like, that data is what matters. And so even if we've lost someone, of course we can improve those blogs. We would like spend more deep time editing the content once it got traffic and once it got, you know, like when we were seeing signups, like, okay, then let's go make sure this is better. But we were, it's
+
+Nebojsa (09:09.62)
+Yeah.
+
+Jakub Rudnik (09:22.094)
+treated kind of like a grading scale. if like, I don't want to publish D content or like failing content, but I want to use a good freelancer, a good writer who I know will take it to a pretty solid level, a B plus let's call it. And then publish it, let Google and the first readers interact with it and see what happens before we spend a ton of time going. Cause like even a G2, which is an awesome content program, 40 % of our content wasn't on page one. So like that stuff, if we're going to spend like
+
+dozens of hours making that perfect and it never gets read, that's waste of our time. So I'd rather lose a few articles and never make it to page one and optimize those later and save that time and use it the more valuable pieces. So yes, it saved a ton of time and also prioritization. I'd spend more time on the stuff that matters the most and less on the ones that don't need that work.
+
+Nebojsa (09:58.665)
+Mm-hmm.
+
+Nebojsa (10:07.882)
+Yeah.
+
+Nebojsa (10:12.467)
+Yeah, I'd say from the business perspective, it's very cost effective and time effective. yeah, and tell me like, I know that you have too many experiences and as you moved through different industries and roles, what game changing lessons have stayed with you in your approach to growth?
+
+Jakub Rudnik (10:33.934)
+I mean, that one is one of them, right? It's like get ship something. The CEO get it out the door, publish it. Like we had 100 blogs sitting in our like in our backlog. We were publishing much because of like it was a CMS issue. There's a bunch more things. It's a longer story. But generally speaking, all that content that needs, you know, I'm telling her it's going to need three, six, 12 months to rank. She's like, well, it's not it's not published. So it can't start that clock. So that's an organic lesson. But I think that's a lesson with everything is like
+
+Nebojsa (10:36.916)
+Mm-hmm.
+
+Nebojsa (10:59.605)
+Yeah.
+
+Jakub Rudnik (11:03.298)
+done and pretty good is better than perfect but sitting in your inbox or sitting in draft, right? So I think knowing some of that, but that is opposite of what my journalism background would tell me, generally speaking. So to me, get out the door, go learn from something as fast as possible and don't look for perfection. I think other places like...
+
+Nebojsa (11:08.149)
+Mmm.
+
+Jakub Rudnik (11:22.798)
+And some of this started with G2, but yeah, we would like map out this massive project and like have to get everything in order before you do something like now I'm very much on the side of what can we test with like the least amount of lift that we can go learn from before we go and implement. Like right now, just talked to a designer at one of our clients the other day and I was like, let's, recommend let's put in FAQs. We should do this in the backend and put in, you know, like schema markup, all this stuff. And then he's like, we've got one designer and I've got all these things. like, let me have my team write these manually. We don't need the schema necessarily unless we can
+
+and do it manually, let's do it on 10 blogs, see what happens before you put design resources. And he's like, that's exactly what I need. And so that's the type of, like, before I would have asked for the big massive change without testing and proving that concept and finding a scrappier way. I think that those are some, I don't know, I've like learned, I think to like.
+
+So much with all content is like, are you going, like who are you creating, writing, recording for? And then where do they go find something and what did they want? Like I think too often at G2 and other places early was like, I think this is going to be a good piece of content. We wrote for like someone that didn't, we didn't know exists. So validating whether that's with a keyword research tool or, you know, comments or a thread you see on Reddit or things you're seeing over and over on social or conversations you're having, you need to have some validation that someone wants what you are going to create.
+
+Not only do you do that, are you publishing it and finding them where they're at? I think too often too, we're like, I want a podcast. Nobody's going to like, you don't know how to get that to them or your audience doesn't want a podcast for this topic. So there's like a gap there. So it's like finding the people that you're trying to reach and thinking, putting yourself in their shoes before you start making the content and thinking about that from a distribution. That's probably one of those. It's like,
+
+you know, I didn't have 10 years ago in my brain at all, but that's where I really focused first with like any sort of growth idea or constant idea.
+
+Nebojsa (13:14.995)
+Yeah, and I like that concept and I think especially when for example building a SaaS product, you can't just think about the solution. need to...
+
+think about the problem first and the people that want your solution and then you can come up with the solution. The same way for content, you're thinking about the audience and what they actually want to read, what type of answers they want to get and you go from their mindset and then form a content strategy. I want to move more to this content marketing and SEO and I want to ask you how do you personally define effective content marketing and
+
+SEO strategies.
+
+Jakub Rudnik (13:57.742)
+Yeah, it's a good question. think like you have to define the goal at the beginning. Like we said, like what's the audience, what do we want them to do? What would effective look like? Right? Like we're in starting with the right goals matters. I've got done this LinkedIn post probably a couple of times, but like at G2, we, one of our goals before we, learned a lot of SEO is like publish 500 blogs. I published and edited and published 500 blogs, but none of them had keywords or target keywords. We wrote those again, topics that were like, we thought were interesting. So we hit the goal.
+
+but it didn't do anything for the business really. Like I'm sure somebody did something at G2 because of it, but the traffic was really low. We weren't measuring any sort of signups or, you know, review count or anything like that. And so that was a miss because we had the wrong goals. And so starting with like, what is the goal and like, does your goal align with the larger business goals? So if you're on a content marketing team, your goal should align to the marketing team, which should align to the go to marketing and so on. And then, you know, from there to your point, like what's the type of content that you think
+
+will solve that or will help you to reach that goal most effectively. And so that's like an analysis of like the amount of effort you're putting in versus like what's coming out, right? And the impact it has towards that goal. And then, I mean, this is more on the process than like what makes it effective, but like, you testing those hypotheses before you go launch, right? G2 said, we haven't tested any of this, but let's just go publish 500 blogs. Someone told us we should do blogs. But instead like maybe test 25 blogs before and see if that,
+
+Nebojsa (15:19.772)
+Yeah.
+
+Jakub Rudnik (15:26.512)
+and do three different strategies and see which one has the early signals to show you. Anyway, to me it's like, there's plenty of different metrics that could make something effective, but it should trickle up to all of those. It should be like.
+
+Nebojsa (15:30.355)
+Mm-hmm.
+
+Jakub Rudnik (15:39.582)
+have that really high ROI, so that time and or budget against what, you know, how you're hitting that goal or measuring to that goal, measuring the proper things. And generally for me, in my experience, like again, SaaS companies at different stages, but when I'm measuring the right, it used to be like traffic was like what I thought it should be. And that's often what I was gold on, but more importantly has been like, whether that's leads or free trials or paid users to a product. Like I really want, I think I'm not
+
+doing my job anymore at like this stage, certainly if my strategies aren't connecting there or if I can't prove how that's connecting, right? So that's really like, there's other things if you were an e-commerce company, you'd be looking at sales and know, think like different metrics like that. But so it just depends on the business. Long-winded answer. Hopefully that that gives you something there.
+
+Nebojsa (16:32.412)
+And I'm interested like how do you prioritize the pieces of content? For example, let's say you have a topic cluster and you form like 50 different topics you want to write about and cover that cluster. How do you approach the prioritization? Which ones you want to publish and write first?
+
+Jakub Rudnik (16:52.502)
+Yeah, to simplify, a few, you know, quantify and simplify and quantify. I'm certainly looking at the volume of keywords. Typically there's reasons to do stuff that doesn't, we're speaking strictly organic. Like I am looking at volume there, even if some people tell you to not look at volume anymore at all. think that's still one of those indicators. like depends on your domain. If it's a brand new domain, like I want to work on stuff that's really, really, really low hanging fruit, no competition, no difficulty. If we're a much bigger company, if I'm active campaign, I'm not going to focus there as much.
+
+Nebojsa (17:17.182)
+Yeah.
+
+Jakub Rudnik (17:22.416)
+So I'm looking at those different pieces and I'm looking at, you know, stage of the funnel or that's probably what I would call it because that's the like what we would use here, but the closest to like solving a business problem. So from doing work for a SaaS company, like often that's prioritizing like software lists or alternatives or versus pages because those are all really low funnel. I know if somebody is searching, if I'm active campaign and someone's searching for hub spot alternatives, like that is a prime spot for someone to go and trial active campaign.
+
+Nebojsa (17:22.419)
+Yeah.
+
+Nebojsa (17:41.884)
+Mm-hmm.
+
+Jakub Rudnik (17:52.288)
+any content that looks or feels like that. Someone has a problem, if they read this blog or see this landing page, there's a chance that they trial your product, download your product, download your template, buy your service, whatever. So I'm looking for the things that are closest to your product and intent, plus matching that with the volume and difficulty factors. I don't want to start too far away from the product, the like, is top of funnel glossary type of stuff, because you have so many layers before someone could convert. So I think that's a lot of like my experience on what
+
+Nebojsa (18:17.896)
+Yeah
+
+Jakub Rudnik (18:23.112)
+converts fairly well, connecting that to what the company is and what I believe will work. Ideally, they have some sort of metrics behind it that we can take our best estimates on how those things will work and then difficulty like factoring in a little bit at the end.
+
+Nebojsa (18:39.38)
+And would you say that these are the foundational principles that you prioritize in every organic growth motion you lead or there are some others that you would like to add?
+
+Jakub Rudnik (18:50.52)
+I think that's like when you're looking at the individual keywords and you've got a bunch selected to answer it that way. think like to take a step back, mean, those factor into all of those. But I think that's a little bit more granular than I look at like those principles. Some of that is like, what would your, but that connects to like what we said about good content strategy. Like what does somebody want? You know, what, does the person that you're hoping to reach, what are their biggest problems? What do they want? What language do they speak? I think that those are the other things that I didn't mention before. And so an example of that is like,
+
+Nebojsa (19:03.901)
+Yeah.
+
+Jakub Rudnik (19:20.576)
+It's scribe. They're like, just get blogs going. And I've got pretty good idea of what could work. We did three or four clusters my first few months. Probably one of those worked really well. Two of those worked like, okay. And one felt very flat, like never really turned into that many. Like we made some assumptions about ICP that wasn't quite right. That was our stage. We didn't have much marketing traction or traffic or anything at that point. So that's like a bet. That's okay to make it that stage to go fast. However, like when we reset after that, our mark or product marketers sent out a survey.
+
+to like the users we had gathered at this point. like, what did you use before Scribe? Because we were kind of a new tool in a new space, pulling from like a few different categories. Like, what did you use before Scribe? What would you call Scribe? Like we didn't have a category designed like on G2 or anything. Like what is the language you'd use for this? If Scribe went away, what would you use tomorrow? There's a bunch of questions like this that was like, we understood what their language was. Some people were calling us like an SOP documentation tool, SOP generator, which became an awesome landing page for us because
+
+Nebojsa (20:18.011)
+Jakub Rudnik (20:20.356)
+someone called it that we just made the landing page and other people were searching for it, even though it wasn't in SEMrush. Other people were like work instruction software is like, I wouldn't have called it that, but that is what it is. We made it like best work instructions, landing page that turned into users right away. So all of a we found keywords because this is like someone that had actually converted, like what would you're like recreating their search history, even though you don't like they might not show up in SEMrush or all those volumes. So that's one of those like that that's tactical like example.
+
+Nebojsa (20:36.03)
+Nice.
+
+Jakub Rudnik (20:50.356)
+But I want to find the language, how they're speaking, the problems they have right then. And I think the best way to do that, talk to real users, have conversations, ask surveys. The other ways are like, go to reddits where you know that people live and like, what are they talking about? Go to the Twitter threads, go to, you know, whatever that is, like find where real people are talking about the things that you solve. Use that language to like reverse engineer topics, clusters, high level themes, and then content types. So again, some tactics in there, but I think like
+
+Nebojsa (20:51.667)
+Yeah.
+
+Nebojsa (21:19.432)
+Yeah.
+
+Jakub Rudnik (21:20.176)
+finding your user, that's like the other theme is that, that I would add.
+
+Nebojsa (21:24.648)
+That's very interesting. I talked with a lot of content experts and nobody has this perception as you do and I really like it. It makes sense. Everybody thinks like only for building a product you need to validate the ideas with the users, but also for building content you need that. I mean, obviously Samrash, Ahrefs, they didn't show you the queries and you find it on Reddit or somewhere else and you immediately validated that there are potential people who are looking for those types
+
+solutions and you created the landing page got users and of course conversions that's very very good and from your perspective where does AI fit into this framework do you see it as integrated with organic growth or as its own separate track
+
+Jakub Rudnik (22:13.294)
+We're so like so you mean like LM referral or like being surfaced in LM so like geo or are you talking about like using AI in the production?
+
+Nebojsa (22:22.963)
+using AI in the production, yeah.
+
+Jakub Rudnik (22:25.806)
+Okay. Yeah, I think it's part of it. I mean, if you're not using AI, I think you are falling behind. Like I think that's almost hard to argue with just on the speed that someone can do something. mean, whether that's like writing entire content. Like again, we built a platform that isn't, it's like you go to chat, gbt and ask it to write a blog. It can do that. Like the platform has so many micro requests and like optimizations and fact checks and all these things like going into every blog that like, it doesn't feel like that process necessarily, but the speed is very similar.
+
+Nebojsa (22:34.651)
+Yeah.
+
+Jakub Rudnik (22:55.98)
+and the output's much different, but even if you're not doing something to that extent, like, can you offer me three titles for this keyword? Can you rewrite this section? Can you like, like having chat, GBT open as a writer or an editor seems like the bare minimum at this point. And like all the other sorts of automations and multiple, there's so many things that you can do beyond that, but just like, if a writer wasn't doing that, I would really question like that scrappiness and that I think there is like some stubbornness and not wanting jobs and things to fall.
+
+to AI, which I like feel in my heart, I do, but also there's just the reality that it's here. It's here to stay and your peers or your like. Competitors are doing it. So yeah, using it like all across the board. think like AI and automation in the operations standpoint, you know, it's trying to talk through like how I do keyword research with other directors and like getting tips. I'm like, okay, this would be a great spot to use AI. I'm like, okay, that's different than how I've done it, but like that would save me 10 minutes, which if I'm doing this, you know, twice a week over, that's massive time savings. So it's finding.
+
+Nebojsa (23:31.667)
+Mm-hmm.
+
+Jakub Rudnik (23:55.582)
+those like micro ways to do it, but also how do you scale like a whole, you know, content creation playbook or distribution? Like there's so many things. I think it's like not about like setting and forgetting AI or just taking like first outputs. It's really about doing a lot of work upfront to manipulate, you know, your, your chat or manipulate like your systems to get things set up well and then iterating over time. But I think it's kind of table stakes at this point.
+
+Nebojsa (24:03.282)
+Mm-hmm.
+
+Nebojsa (24:18.599)
+Mm-hmm.
+
+Nebojsa (24:23.847)
+Yeah.
+
+I mean, if you're not using AI as a tool to like operate on a daily basis, I think you will fall behind at one point because like it really gives you too many value when it comes to the speed of production. Of course, I agree there must be like a human behind it. I wouldn't just allow AI to do bunch of content and let it publish on my website without some reviews, but I fully agree with you.
+
+While we are talking about the content, I have an interesting question that I'm also always thinking about when I'm working with the clients is like when faced with the choice between optimizing existing content and creating new content, how do you prioritize?
+
+Jakub Rudnik (25:11.886)
+Yeah, as always with SEO and stuff, it it depends. It's like how the answer starts, but, um, it really, think the, the, the, the first look there, you know, and like kind of the decision tree is like how much content already exists. came to ActiveCampaign, thousands of pages on the site, probably 700 blogs or something of that nature. A lot of old content that had never been optimized.
+
+let's start with optimization. Like we did do some publishing. I always want to like create new, show Google that like we are public, get those new like fresh published dates up there. At the same time, like that was a massive part of our strategy was to go refresh all sorts of old content. We pruned a ton. I think we pruned like a quarter of our content before we even started publishing. We saw results right away. So it's not only the optimization, but cleaning up old stuff, right?
+
+At Scribe, we had 10 blogs when I started. There's nothing I'm going to optimize that's going to matter or make a difference. It's just there's no scale there to do it. like we just had to go and start. Obviously like those are two extremes, but really I'd be looking at like, do you have organic traction historically? Right? Like if that's a good signal that there's re probably reason to refresh some stuff. it's like the, volume of your content library, if it's 25, 50, even a hundred articles, you're good. There's not that much to refresh here. I'd rather expand.
+
+Nebojsa (26:00.977)
+Yeah.
+
+Jakub Rudnik (26:26.824)
+like our footprint first. If you're talking hundreds or even thousands of pages, like we should be refreshing, pruning, and making sure that's all dialed in.
+
+while we also identify gaps. So, it's definitely a depends. think the other piece there is like new content. Generally speaking will take much longer to see results. So if you have a long runway, they're like, let's set this up for two years. I'm like, let's get all of the infrastructure in place. Let's put down a lot more shots on goal and see how those all work. If I need to go make results happen in like three months, I'm going to go optimize and not create anything new because we already are on position two or high position page one moving up.
+
+from like position eight to position two, it's gonna be easier than going from nothing to position eight and the impact will be much bigger. And so sometimes even like that eight to six is gonna have a bigger impact than publishing something new, right? So the optimization, there's just, we've already closed the gap. Google already knows that fresh signal can push us over the edge rather than like starting from scratch and having Google take its time moving us into page one.
+
+Nebojsa (27:15.92)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (27:28.434)
+And did that content optimization for active campaign shifted the company's growth trajectory after you re-optimized existing content? Yeah.
+
+Jakub Rudnik (27:38.638)
+Yeah, we, mean, from the, there's so many levers over there. So it's like, organic was just a small chunk of a lot of other pieces, but from an organic standpoint, like if we're just looking at leads driven from organic, especially on like blog and those related type of sections, like that, we did have a good lift. had a good lift traffic wise and that, that did turn into trials. I think we're our primary metric at that time. Um, so, so the answer is yes. Like, was it material to the whole company? Like, I don't know, we were, you know, hundreds of millions of revenue and that was like, it was a
+
+Nebojsa (27:46.118)
+Mm-hmm.
+
+Nebojsa (28:04.785)
+Mm-hmm.
+
+Jakub Rudnik (28:08.592)
+small lifting comparison to that. But I think it also, when you did that cleanup, you showed all those like our new content worked better because we cleaned up a lot of old URLs, we'd reduce our crawl budget. We show Google like my friend Levi Olmsted over at Whatfix. He's the guy from G2. He's got a good like metric of like, or like in his head, it's like the number of pieces like on page one or that are driving traffic, like the percentage of your pie that works. He thinks like Google has some sort of like that somehow built in. Like if everything you write,
+
+Nebojsa (28:08.754)
+Yeah.
+
+Nebojsa (28:38.06)
+Yeah.
+
+Jakub Rudnik (28:38.692)
+is on page one, the next article will rank faster and be on page one right away. Because Google trusts your website. I think that's like the kind of idea. And so to me, it's like cut out all the stuff that doesn't work or refresh it if you believe in it, but you're not quite there. But if it's something that's like never worked, like get rid of it because you're showing Google like this is unsuccessful and you have a bunch of like duds on your site for lack of a better word.
+
+Nebojsa (28:44.742)
+Nebojsa (29:00.146)
+Mm-hmm.
+
+Jakub Rudnik (29:00.96)
+I don't know if that's one smart person that has this kind of hypothesis, but I think it is in line with, again, Google wants your site to be authoritative. If half of your content doesn't seem to be authoritative, Google is flipping a coin every time. If 85 % of your content is authoritative, Google's like, we trust that this next piece will work pretty confidently. So it makes sense to me. So I like cleaning out anything that's not working or refreshing it just to help with that type of mindset, whether that's a real metric or not.
+
+Nebojsa (29:19.563)
+yeah, that makes sense. Yeah.
+
+Nebojsa (29:27.122)
+Mm-hmm.
+
+Nebojsa (29:31.056)
+Yeah, I mean with the Google algorithm and its capabilities, I think that makes sense. Like if it trusts your website. And it's obvious, like you can see if Forbes publishes an entrepreneurial article, it will rank high, you know, because Google already trusts such websites. And like what factors help you decide when to double down on a strategy versus pivot toward a new
+
+Jakub Rudnik (29:45.538)
+Yeah.
+
+Jakub Rudnik (29:57.634)
+Yeah, I mean, I think in general, like I want to maximize a strategy that's already working to its fullest extent, assuming that like we, we know, you know, it's a known entity. Like we generally speaking should have trust of like, this is how much one article costs here. like, well, we believe the conversion rate here's all along. Like we can map those things out with decent confidence. Maybe it's like not the single article, but like, we're just talking blogs, like at a big cohort of content. When we're a mature content org, like we
+
+can say 25 blogs, this much search volume, this type of funnel stage, I can estimate this type of like impact over time. Right. So I would want to continue that as far as possible when applicable, but then, you know, you'll eventually on some strategies like run out of things like that and you have to move different directions. my goal is typically like stand up something, a V1 test, make sure we get like those early signals, then start to scale, make sure that that is proving out. Like we don't want to just leave that like MVP of everything, continue to iterate.
+
+And then like once it stood up and really scaling, I want to hand that off to somebody. Ideally internally, maybe it's like a contractor or whatever, but like have that keep running and go as far. And then like, then I start to use my time to go identify other tests or programs that we could use and like start that project. So I'm always trying to like have, it depends on the team size, but have a really tried and true thing going.
+
+So we have like runway on that and we're never like out of those things, but then simultaneously like find those next pieces. It's like doing a little bit of both, but I would, if I'm like picking between the two, I'd invest in the thing I know works.
+
+Nebojsa (31:25.905)
+Mm-hmm.
+
+Jakub Rudnik (31:36.014)
+with like 80 % of my time and energy would be spent over there with like 20 % more on the experimental side. like Scribe, made, know, blogs were working, blogs were working, but we needed some other things. Influencers, like that was a weird test we like came out of after an onsite and like our fourth TikTok video had 1.4 million views and turned into 30, like 3000 signups. Blogs had never even done that before. Like not the page views, definitely not the signups. And that was in like three days. So was like, okay, sometimes experiments like can be game changers. So doing the tried and
+
+Nebojsa (31:55.346)
+Whoa, man.
+
+Nebojsa (31:59.698)
+That's impressive.
+
+Jakub Rudnik (32:05.968)
+true things that are like incremental can be really the safe play, but you do need to find that room for experiments. That's a pretty extreme example, but I think again, like it's, just a matter of like placing bets. And so I like that kind of like 80 20 or 70 30 breakdown probably.
+
+Nebojsa (32:09.05)
+Mm-hmm.
+
+Nebojsa (32:22.883)
+Yeah, I mean that's very interesting. I mean that's real generating such numbers of impressions that's and of course the subscribers and conversions that's crazy really. And since you are a professor and you're a director I guess you your job like you meet a lot of people you communicate with a lot of people at the university at your work. I believe that you have a strong social intelligence and I want to ask you when
+
+you're building or scaling content or SEO team or any kind of teams where people are involved, what qualities or traits are you looking for excluding the professional skills, just like a personal traits and skills that you think people should have.
+
+Jakub Rudnik (33:10.71)
+Yeah, that's a question. I don't know that I've ever been asked that one. So appreciate the thoughtfulness into that. I think it certainly depends on the role. You have different expectations for the junior SEO specialist, first job or second job versus the director. But I think the that the quality that I have...
+
+that is hard to quantify and you can definitely take swings and miss, but like the, really over index on it's probably a flaw to some extent, but I really index on like the scrappiness, like the person that can just like go get stuff done. mean, thinking about like my current role, like we have, I don't know, 50, 60, whatever the number of clients is today. Like we have a good number of dozens of clients. They all have needs. Like somebody that can just like jump in and fix their website or make it grow. Like just go do something without being asked, find an awesome idea, be experimental, like go get stuff done.
+
+That's awesome. At G2 it was like...
+
+Do we want the person that's like, this is not my job and I'm just going to keep writing these. Like you asked me to do three blogs, I three blogs or like maybe this is like me trying to look for something like I did, but it's like, we need traffic. We need to figure this out in the next three months. How will we do it? Like let's experiment every night until we find something that sticks. Like that's what got us to our goal. Not like the person that's like, I don't want to do this. So I really look for like, who's thinking outside the box. Who's going to make that extra effort. Who like wants to find the answer no matter what it's like.
+
+Nebojsa (34:28.112)
+Mm-hmm.
+
+Jakub Rudnik (34:31.886)
+It's a journalism trait. Not all journalists have it, but like the good journalists, like they want to learn everything. They want to everything. They're looking for ideas and everything. They're connecting dots. think dot connecting is like another one of these. It's hard to quantify, but someone who can like see potential in anybody or any situation, like somebody who's like, okay, this happens and now what, or that problem solving. I think those are all related, but I'll call it scrappiness is like the number one trait that I don't.
+
+Nebojsa (34:43.089)
+Mm-hmm.
+
+Nebojsa (34:51.589)
+Yeah.
+
+Jakub Rudnik (34:57.484)
+always know how to find, but like for example, someone who we were on the fence at with G2 as a content marketer, she had like a little bit less experience than some other people, but like she took this time and like made these like handcrafted thank you notes. she designed them and like it was hand done. It was like just this little bit of extra effort where we were like,
+
+Probably not sure. But it was like, OK, she wants this. She's got good like she's a good designer here. She gets like she gets how to market herself like I want to market her. So like she's marketing herself better than anybody else in this job role. And so it's like that was enough to say if we were.
+
+Nebojsa (35:20.847)
+Yeah.
+
+Jakub Rudnik (35:32.846)
+20 % unsure, push it over the edge. Like I believe in this person. And then she turned into like one of our best content marketers. She was the scrappiest person we knew. Like everything, she was like, what can I do? Or I had this idea. Like she was always looking for that extra edge. Some people had more experience, weren't doing those things. Like they were doing their job. They might've done it well, but like she crushed, had a bunch of, she might still be there. So those type of people, like what, what can you do? And so you mentioned that like LinkedIn post. I'm like, everyone reached out and said, you want to meet? Like.
+
+I don't know, maybe, but did the person that's like, I solved this problem for you. I found this thing or like whatever made a connection. That's the person that's like, that person wants it a little bit more. They've got a good idea. They like reverse engineered why a hiring manager or someone involved in the hiring process would want to talk to you. It's like, that's good scrappiness to me. So that's the stuff I like often look for. And that's probably like not like some people will not understand that like, but.
+
+Nebojsa (36:04.091)
+Yeah.
+
+Nebojsa (36:08.326)
+Mm-hmm.
+
+Jakub Rudnik (36:21.9)
+That's what I want. And especially when you're at a high growth company, like you guys have a ton to do, too many clients, too much work all the time. Like who's going to go get stuff done to make your life easier? Scrappy people, they're going to make the clients really happy and like help the company grow.
+
+Nebojsa (36:28.814)
+Yeah.
+
+Nebojsa (36:35.971)
+Yeah, I hope that in the future, Harris, you won't find many, too many CVs that they put main traits crap in this. They watch the podcast. And yeah.
+
+Jakub Rudnik (36:48.83)
+Yeah, you know, I would at least talk to them if they did that because it would be like a little scrappy tactic, probably a little bit like cliche, but at the same time, like, well, if you listened, you saw it, you heard like that's customization. There's some scrappiness to that even, but it would be a pretty silly thing to see in the future. Yeah.
+
+Nebojsa (36:52.655)
+Yeah, yeah, yeah.
+
+Nebojsa (37:01.775)
+Yeah, yeah.
+
+And from my perspective, sometimes it's very hard to give that creative freedom to people because especially if they are like new employees because they are afraid of mistakes and it's completely normal and to me I say to my employees like if you are not making mistakes something is wrong you're not working then because if you were working like full-time all the time you would be making mistakes what's wrong with you so I want to ask you yeah
+
+Jakub Rudnik (37:30.894)
+I love that. Before you go on, I love that. I think it is an unlock. At G2, I was like probably a little bit scrappy. And then there was like a moment where...
+
+Nebojsa (37:34.533)
+Mm-hmm.
+
+Jakub Rudnik (37:41.132)
+two co-founders like we need you to there was three of us. We need you three to like help us do this. How could we do it? It was an unlock. We're like, don't you won't break anything. Go figure this out for us, please. And it was like, I can like step outside of my role. So there was like the as a director, manager, whatever CEO, you do control some of that. There can be scrappiness unlocked in people. Some people like it is harder to eke out and like you can't see it they can still be really good employees. But that's like not that one trait necessarily. But the scrappiness, think, can like
+
+be pulled out. You probably have to see that like glimmer that they have it in some ways to like really get the most. But what you're doing, that's one of those ways. If you're not breaking something, if you're not failing, then we're not learning and we're not trying. like I plus one, I just don't, I just don't want to stop before like giving you good credit for that. But also saying like it is on the other side to help to enable scrappiness too, I think.
+
+Nebojsa (38:23.552)
+Exactly.
+
+Nebojsa (38:32.868)
+Thank you so much man, I appreciate your words there. My follow up question would be how do you strike the balance between giving your team creative freedom and ensuring accountability through data and measurement?
+
+Jakub Rudnik (38:47.98)
+Yeah, I think a lot of that like probably thinking through the agency lens here, but like we have deliverables every week, right? And a lot of those.
+
+like those things have to get done. So it's kind of, those are non-negotiable to some extent. Like we have to find some way to get it out the door. but at the same time, like, so it's doing that. saw a good post recently, like if your editors, your managers, whatever, don't have any time to think about like other pieces, then they won't have time to be scrappy or have that. like you do need to build in, if you're saying like, we need 40 hours of editing, like they'll never have that room to be scrappy because they can't go sit around to problem solve. They need to edit. They need to fix this content.
+
+Nebojsa (39:16.663)
+Yeah.
+
+Jakub Rudnik (39:25.968)
+need to publish, right? So you need to build in time at the same time. Like, so I think it's like probably an 80, 20, 70, 30 again, maybe that's just me defaulted to those numbers, but some of that, I do think it's what you're saying. Like how do you talk to the team? It's like about the problem solving for us. Like we do have an RSOW is like number of pieces of content, but we also don't.
+
+necessarily want that to be like what our full deliverables are. like for me, I'm always looking for an opportunity to like go do an analysis on like their conversion rates or like what CTAs could we be testing or like is there technical optimization? So.
+
+That only happens when I have extra time as well. Right. Like it's not always there, but that's I think carving that out for the team and then not saying like number of pieces of content in our example is like the North Star, but it's growth for our clients. Like a client that gets awesome growth and they come to us with a marketing problem that's not even about SEO and we have the perfect answer for them or we give them an idea. Like those are the people that are going to sign up and never think about that contract. Right. The people that like, we were three blogs short and the only thing we talked about was number of blogs published and not the results and like the
+
+Like being a growth partner. So, you know, the managing editors, the content managers, their roles largely are about that production, but carving out the time and then showing them what that's like and then giving them the freedom to say, like, interact with the client here, you know, be able to chip in ideas you had or like having conversations offline to make space for that. But not a perfect way. I don't think we do that perfectly at all. But that's what's worked for me. Like that's how it enabled me earlier in my career. And I think like kind of what you're saying with
+
+your employees that can work if done correctly.
+
+Nebojsa (41:01.68)
+Mm-hmm.
+
+Yeah, it happened that when I gave my, for example, operational manager, the complete creative freedom, I could see the immediate value that she's bringing with this freedom, but also the potential that she could achieve in X epsilon months in the future. And it's really incredible what your team can do if you, if you give them that freedom and also like if those mistakes aren't costing you anything, then it's okay to make them, you know, as long as they are not endangering you or your company or
+
+clients that's fine like you wrote the bad piece of content because you wanted to do it that way that was your idea okay if it doesn't work you will rewrite it doesn't cost anything you know so yeah makes sense makes sense and like have you ever found it necessary to restructure or fully restructured restrategize a team to hit ambitious growth goals like what did that process look like
+
+Jakub Rudnik (42:00.858)
+I mean that first G2 experience was kind of like that. That was that we needed traffic. We were trying to do organic stuff, but we didn't have like our whole, it wasn't content marketers, like a lot of research teams. So that team pivoted on the fly from like building out categories and getting reviews and things like that to writing blogs. And so that was like on the fly and some folks really worked well with that. they.
+
+Nebojsa (42:11.396)
+Mm-hmm.
+
+Jakub Rudnik (42:23.214)
+You know, we're sitting in those calls, like asking how to optimize, like bringing ideas. Like you're saying, like we're all, we have North star is our traffic number. They were coming in with that. Other people are like, job was this. I'm not so sure. Like, I don't want to. So there was apprehension and there was difficulties in that. I'm trying to think of other like things on the fly like that. mean, at active campaign, we definitely made changes. Like when I came in, you know, we had a, an SEO manager who was really talented, but didn't have a ton of resources. And also like, it was definitely like big picture, but we needed someone also to, to execute like the.
+
+Nebojsa (42:50.393)
+Mm-hmm.
+
+Jakub Rudnik (42:53.168)
+micro and the technical pieces. And so like wanted to do like a lot of like large projects, but we needed, you know, changes right away. So I remember coming in and being kind of handed, like, this is our Q1 roadmap and it had like 18 different big projects on it. And like three had gotten to the, and a bunch of like 15 or 12 were, know, in flight and the other handful had never been started. It was like, I don't think that's a full restructure, but I was like, let's, I understand there's a lot of good ideas here, but like, let's pick two of them and go do those until they're done. Like, don't like.
+
+Stop spreading ourselves across all these. So more of like a mindset and strategy and then surely like do those, do those really well, get it out across the door so we can like see the impact. can do these tests and know how to, better prioritize. And then like, let's pick a one new one that was on the content front. Like let's go do the audit and then let's go publish a bunch of like listicles, but it was so shortening the list. I don't know if that quite qualifies, but that was one where I came in like did my inventory had those conversations, but that was a piece where like,
+
+Nebojsa (43:31.215)
+Mm-hmm.
+
+Nebojsa (43:43.799)
+Mm-hmm.
+
+Jakub Rudnik (43:52.96)
+Like, I didn't wait too long to say like, pause, 10 things, do three of them really well. And that helped us like, ship a lot quicker.
+
+Nebojsa (44:02.767)
+Okay, okay, these are the great insights that you just shared. I do have a few more questions, I don't want to drag you and take more of your time. But yeah, first, this is a question that I often ask to any guest and this is because we are speaking about the content, I really want to hear from your experience what are some of the most common misconceptions you see companies having about content marketing.
+
+Jakub Rudnik (44:34.702)
+Yeah, good question. I think in general, there's like, I don't know if this is a misconception, but some people are just like, we need a blog because of SEO. Now it's we need a blog for GEO. It's like, yes.
+
+But like again, to the where is your audience? How will they find this? Like, is there actual content that will move that needle? I don't think blogs and content are often that answer or even like podcasts or like I said, TikTok. That doesn't mean TikTok will work for your company. You need to evaluate that as like an individual strategy. Like there are, there are so many channels and tactics and strategies that can work. You need to identify like, is your problem? What's the best way to solve it? Like what's the safest way? And then like, what's that one risky way that you can try, but
+
+think about the problem in the audience before you think about the channel. think so many people think channel first, right? Here on a podcast that you need to go to TikTok, you go start publishing on TikTok, but you don't know why you're doing that necessarily. Other things like I think so many people right now, like SEO is dead. SEO is still driving significantly more traffic than LLMs for most companies, right? Like my parents don't use chat GBT. They don't know what it is probably, right? Like they're even people that know what it is and use it often still Google. Like when we look at our clients,
+
+Nebojsa (45:44.749)
+Yeah.
+
+Jakub Rudnik (45:50.398)
+Like they only talk about LM optimization and referral traffic, but their traffic still comes from Google primarily, like significantly more. It doesn't mean that like we shouldn't be thinking about those in future stakes, but SEO is certainly not dead. There's like billions and billions and billions of searches. And depending on your market can even be like.
+
+Nebojsa (45:57.412)
+Yeah.
+
+Nebojsa (46:05.593)
+Yeah.
+
+Jakub Rudnik (46:08.862)
+Stuff will change if you're in like fast moving SaaS. Probably is the one to think about GEO earlier, but like I have a client in the dentistry world. I don't know. Maybe like dent dentistry is faster than I believe, but there are LM like referral traffic.
+
+Nebojsa (46:12.399)
+Mm-hmm.
+
+Nebojsa (46:21.295)
+Uh-huh.
+
+Jakub Rudnik (46:23.754)
+Is not growing at the same rate as their G as their SEO because I think the search like trends are probably a little bit behind some other places. So thinking about your audience like that. So I think like not that geo is overblown. I don't think so, but I do think the demise of SEO and the importance still they're way overblown. there's probably others, I think like the focus, you know, I've mentioned that a few times here. I also call that like random X of marketing, whether like someone comes up with an idea or, know, the CEO is here something and like pings someone. Hey, can you this blog?
+
+Nebojsa (46:24.47)
+No.
+
+Nebojsa (46:31.215)
+Yeah.
+
+Nebojsa (46:38.348)
+Mm-hmm.
+
+Jakub Rudnik (46:53.648)
+we should do a podcast like CEOs or other leaders can like have a ton of gravity and can create these like random acts of marketing that bring you away from focus. It's like, I think like focus, get something done really right, go scale that then move to the next thing. The teams are like really spread apart. I don't know. There's probably other misconceptions I'll think of like the second this ends, but those are some that come to mind right away.
+
+Nebojsa (47:15.971)
+Yeah, and you mentioned the SEO is that I read it. Like when I go to LinkedIn, I can just see SEO is that all over the feed. And what I think is that...
+
+I mean, the thing is that I, for example, I have a son, he's two years old. Yes, of course that the search will change because these newborns, are growing up next to the technology that we didn't have such as AI, LLMs. And of course that, that will change. For example, let's think like 10 years ago, or even now you and I, we are searching running shoes, for example, and they are going to search.
+
+Nike, running shoes, red, and they will add like too many keywords and they will prompt to Google or LLM. So the way of how people are searching will, I think it will change. So I want to ask you what do you think about that? Do you think it will change in the future?
+
+Jakub Rudnik (48:20.6)
+Totally, I my son is too as well so we should share some pictures after this or something because they'd be fast friends but they'll see different things. mean we, you know, think about like...
+
+Nebojsa (48:23.984)
+Yeah.
+
+Jakub Rudnik (48:31.726)
+Yeah, how we bought shoes like I'm in my later thirties now, like when I was buying shoes in middle school, we got magazines, right? And like, so wasn't even searched. Like I went and got something mailed to me and then like then I went to their website. So now those those magazines don't exist. Right. But then I would go to Nike or now. Yeah, you're searching and you used to find like just basic queries. But now there's like the carousel and you can like shop straight in Google. Like, so it's already changed for us. Like, there's no way that that wouldn't change just on its own. And so, of course, like, alums have changed. So, I mean, they're going to be like how I was
+
+Nebojsa (48:39.288)
+Yeah.
+
+Nebojsa (48:45.419)
+Yeah, yeah, yeah.
+
+Jakub Rudnik (49:01.68)
+I guess I had a computer pretty early, internet was a little bit lesser and stuff. someone 10 years younger than me, very digitally native, our kids are going be AI native.
+
+Nebojsa (49:06.549)
+Yeah.
+
+Nebojsa (49:13.833)
+Yeah
+
+Jakub Rudnik (49:14.208)
+Of course, like those trends are going to change. Like TikTok, someone looking for a restaurant on TikTok versus like looking on Yelp. Like those are changes in my lifetime that's happened. Right. So like search totally has changed. We'll continue to change. We don't know where it's going. You do want to get ahead of like geo in many ways at the same time. Again, like some of these old tactics, they may look different, but they still matter and they're still driving a ton of business for companies. Depending on your niche in particular.
+
+Nebojsa (49:24.24)
+Yeah.
+
+Nebojsa (49:31.576)
+Mm-hmm.
+
+Nebojsa (49:37.598)
+Mhm. Yeah, agree.
+
+Nebojsa (49:44.046)
+Yeah, agree, 100 % agree, yeah, yeah, yeah. And I also think that the voice search will be quite popular.
+
+Jakub Rudnik (49:52.398)
+Yeah. And that has picked up some, mean, I think like for a while I was like, that is, that is going to happen. then Ted makes results, but people do it more than I think too. And like, I think that's another, like a general concept for me that I teach my classes is like the way you search, the way you interact with media, like you're not everybody, right? Like we are in tech, we're in SEO. We think about search all day. That's not how the average user thinks about it. Right. But also like
+
+Nebojsa (50:08.802)
+Yeah.
+
+Yeah. Exactly.
+
+Jakub Rudnik (50:15.566)
+You know, someone in your niche and this other niche way different. Like, so you need to know, like to put your own like thoughts and, and, you know, biases to the side, to some extent, and go learn from the real people that you want to interact with. Um, but like I don't use voice search. mean other people don't. Right. I use chat. GPT doesn't mean people aren't using Google. I use Google. It doesn't mean people weren't still using MSN. Like some people were, it depends on what, know, the, who they were and what the age were and all that.
+
+Nebojsa (50:31.457)
+Yeah.
+
+Nebojsa (50:35.454)
+Yeah.
+
+Yeah, 100 % and I think also the messaging is very important. So I wanted to ask you like what signals do you look for that tell you a company is really nailing content-led growth? For example, you take a look at our website here at Rankings. How do you know if we are really doing like a good content production or we are not doing it?
+
+Jakub Rudnik (51:04.845)
+Yeah, I I think someone that you mentioned messaging, like you can hit that, am I, do I know what your product does right away? If I look at your, you know, as an SEO, like if I run.
+
+your site and have seen your homepage or your landing page or whatever it is or your podcast. And I see all the blogs you've written. One, do I see success? Like are they ranking? Is there traffic? All those type of things. If you're organic content focus, but then to those topics align to, you know, what I believe your product is. I think that's one. So you can have a ton of organic traffic, like active campaign or best blog when I came in was top marketing quotes. Like, I don't think that that was driving a ton of business, right? Like that's not, it's so far away from trialing and marketing automation tools. So like.
+
+Nebojsa (51:41.038)
+Yeah.
+
+Jakub Rudnik (51:44.672)
+You need to look at those granular details of like, they winning in search and are they winning the right queries? So there's some things like that. I mean, there's other plays. It depends on the channel. Like if you're doing all blogs, I'll probably look at your Ahrefs. If your company is like, we want to go out and build in public. I'm like, okay, let's have I seen your name on LinkedIn? Like are people talking about you? Are you building that like kind of momentum there, the dark social? Like if someone's saying I need an SEO agency, who are they mentioning? Like those people are doing content really well. They just might not show up in organic.
+
+Nebojsa (51:50.574)
+Mm-hmm.
+
+Nebojsa (51:58.413)
+Mm-hmm.
+
+Jakub Rudnik (52:14.676)
+So there's a lot of ways to do that. Depends on the channel, depends on what, who you are and things, but for organic, like I look at Ahrefs as a whole, but then I look at the individual details and then I would get onto the pages and say, like, does what you're doing match to kind of like the company mission, positioning, et cetera.
+
+Nebojsa (52:15.918)
+you
+
+Nebojsa (52:35.224)
+Thanks, thanks, makes sense, makes sense. And what do you see as the biggest untapped opportunity in content marketing right now?
+
+Jakub Rudnik (52:44.554)
+Hmm. That is a good question. I still think like, I don't know, I'm a little bit like down on...
+
+repurposing in some ways, but I do think especially with AI, like repurposing some good content to a couple channels and doing that really well is like underserved. Either when I normally see it, people are like, I need to repurpose everywhere. So like one blog becomes 20 different things and that's not done very well typically, or they have a really good blog or they have really good podcast and it's not being interwoven. Like setting up a great blog and then having...
+
+Snippets of podcasts like embedded throughout those because you've done a great podcast and then having your bit like that multimedia experience or all of your content connects really well That's really hard to do not even saying that like I've always done that really well or have the resources But that's the thing that like find people on like three or four different channels create all sorts of surface area and then intertwine those because they all will improve things like if you put the right YouTube video or Influencer video in one of those blogs time on page goes up dramatically and conversions improve So it's like it all can work together if you know
+
+how to pull those levers and like stitch it all together. But I don't think people can do that. I don't know that that's like, that's definitely not like a silver bullet that somebody people are missing. I think like to that other one of my other examples, like TikTok still or like short form video still really can work for the right company. It's like I've seen that at Scribe. They're still doing it seven years later or whatever it is five years later now. So I think that's one that like I would explore in the right circumstances. But
+
+Nebojsa (53:56.92)
+Mm-hmm.
+
+Nebojsa (54:15.469)
+Mm-hmm.
+
+Jakub Rudnik (54:17.802)
+more saturated than it was like when we were doing it too.
+
+Nebojsa (54:20.941)
+Okay, okay now this question I think it requires like a longer answer but if you can like do it like if you can put it in a short answer that would be great but like if
+
+You were handed a SaaS product today and somebody told you, hey Jacob, its organic traffic from zero to a hundred thousand visits in 12 months. What would your starting playbook look like?
+
+Jakub Rudnik (54:55.662)
+I'd run
+
+I'd either find existing customers or people who would fit that ICP and I'd talk to them right away, take all those different notes. I would run that, you know, in some way to see what comes back, but through an LM to identify different like blog opportunities and, know, identify keywords and clusters and do some of that stuff. The other piece that I would, there'd be two other pieces. Like one of my favorite plays with an LM right now is to ask for like programmatic ideas. And I like to ask like if I was doing product led content, what I'd offer.
+
+Nebojsa (55:03.434)
+Okay.
+
+Jakub Rudnik (55:27.536)
+opportunities are there. It's like you can do this manually, but finding those like keyword strings that work over and over and over, I would look for some of those because you'd have way more blue ocean potentially depending on your category and things. So I'd look for an opportunity like that because once you nail it, the lift is much lower on a per piece basis. Again, typically the difficulty is much lower. And then the last thing, if it makes sense for that business is that like short form video where we, what we did with Scribe was like once we identified that SOP generator topic and landing page,
+
+you know, a few hundred people are hitting it a month, but then all the TikTok videos start saying, S O P generator, S O P generator, S O P generator. So traffic went up to that. And so we basically created search volume via short form video and it will still work. Like we didn't need that.
+
+Nebojsa (56:03.445)
+you
+
+Nebojsa (56:07.725)
+crazy.
+
+Jakub Rudnik (56:11.008)
+always, but then even people who had forgotten what scribe was called saw that. And so some of our most impact, were getting people to the best pages we had on the site via like, so we were boosting those. So I think that three pronged is like, and that doesn't have to be tick tock. It could be LinkedIn. could be like you need to you need a social channel like.
+
+Nebojsa (56:14.27)
+Ha!
+
+Yeah.
+
+Jakub Rudnik (56:27.618)
+that post we talked about had 125,000 views and not all those were like views I wanted or people weren't all happy with it, but like if you can find that one million or even 100,000 TikTok video that has a scale that none of your organic can do. So I want to pair organic with a channel with crazy distribution and figure out how to marry those. That's like not a perfect answer, but I think that those would be the two pieces I'd need together. like organic bones with something else like giving it a ton of acceleration.
+
+Nebojsa (56:34.15)
+Yeah.
+
+Nebojsa (56:53.677)
+Mm-hmm. Yeah, I mean, that's very interesting. And I didn't even think about the social channels, that they can really bring the value that they brought to script. But that's very good. And I know that now, for example, we mentioned that on TikTok, I don't know, like I feel that every young person uses TikTok for search.
+
+And I was like, why, why, why would you use Dictoc to search? But yeah, it's like that. And I like how you actually, what you just said, you are creating demand for your product by doing that. And that works like a charm. And do you have any bold predictions about the future of digital marketing now with the AI?
+
+Jakub Rudnik (57:24.332)
+Yeah, totally.
+
+Jakub Rudnik (57:44.601)
+Do I have bold predictions? I mean, I think it's not bold at all. It's always gonna change, right? think GEO definitely matters, but I think it will.
+
+Nebojsa (57:47.213)
+Yeah.
+
+Jakub Rudnik (57:53.292)
+The impact for many companies will be much less than they think in like the next three years. think, you know, if they're future proofing to 10 years, they certainly should be doing it. We still care about it. But I think like for a lot of folks, they're putting a lot more weight onto that than they'll actually have impact. That might be because they don't know how to execute. That might be because their industry is behind and the search isn't there. So I think like lots of people should. not saying not to, but I think there's a lot of folks that it's like the sky is falling. We need to go jump.
+
+Nebojsa (58:13.067)
+Yeah.
+
+Jakub Rudnik (58:23.216)
+to jump, like put too many resources there when they shouldn't. So I don't know. It's weird because we are up, like we do a lot of geo optimization that is part of our game, but also I don't think everyone needs to do that. You know, it's not where everyone needs to spend all their time.
+
+Nebojsa (58:29.773)
+Okay.
+
+Nebojsa (58:34.921)
+huh.
+
+Nebojsa (58:39.117)
+And is there a particular reason why I think they shouldn't spend their time doing GEO? Aha, okay.
+
+Jakub Rudnik (58:46.912)
+Again, like if you're that dental, you know, one, GEO and SEO, there's like a significant overlap in those two things, right? So like that dental example I've given, they have, we're doing like very similar stuff to what I would have done 10 years ago. And it's working for SEO and like, GEO is a little bit flatter, not like not working, but it's definitely not scaling it the same as some of other clients. like, if they were worried about like, we're not seeing GEO traffic go up, maybe it's because of the...
+
+Nebojsa (59:09.186)
+Mm-hmm.
+
+Jakub Rudnik (59:14.798)
+the way that trends are working in the dental industry more so than for them. And how different are they? So I think so many people, and I'm gonna be one included, because I'm gonna be running tests and trying to figure out where there is true lovers, but so many people are looking at this optimization at a 10 % increase in LLM visibility or whatever. But that is still very small in your industry. That doesn't matter. Or if you're like...
+
+Nebojsa (59:17.215)
+Yeah, I agree.
+
+Jakub Rudnik (59:37.782)
+disavowing doing lots of SEO for this. Like I think that, I don't know, they're not as decoupled as I think people act right now. And some industries won't have that same type of scale. So people like look for how do I optimize for LLMs? And I'd rather say like produce good content, like structure it really well, have really important information.
+
+It's going to work for largely speaking for SEO and GEO. Like don't overthink some of that. would be so I don't know. I'm like kind of back stepping a little bit, but GEO matters. Still matter. Like SEO still matters too, but people are only thinking about one right now.
+
+Nebojsa (01:00:12.172)
+Yeah, I mean you're 100 % right and I think that dentists should listen to you and also other local businesses as well because GEO is not, I think it's not very important for local businesses at this moment, more for high-tech businesses, know, that align with the whole AI and it goes with them, you know, they are...
+
+using it for their clients for themselves it's around them of course they should like write about AI and also be shown in the LLMs. Two more questions for you Jacob. First is the one that I asked to every guest is what is the one piece of advice you would give to anyone who's chasing their marketing career?
+
+Jakub Rudnik (01:01:00.78)
+Yeah, I would like...
+
+Consume every single thing you can. Marketing material, good marketing, engage in communities. Like go find smart people, follow them, like challenge what they're saying too. Cause a lot of like LinkedIn or community stuff is like fluffy and self-serving. So like question everything too, but go find like absorb and be around good things. It's like read good books, good magazines, good websites, like produce good content. Ask yourself, why did they do this? Why is this ad right here? Why would this pop up at this moment? Why would.
+
+would this be linking over here? Notice those things. think that's been the massive unlock in my life is just curiosity, digital curiosity, everything. then it's curiosity at beginning and then it flips into looking for opportunity and everything. Oh, okay, they did this. Maybe my company could do this, right? Oh, that's really interesting. Let me go put that in my Notion database so I can not forget that that's a cool idea. Awesome, I saw this LinkedIn post. Who can I use that for? So it's like learn.
+
+process and then figure out where it can be used. Can't always be used all the time, but that would be one. And then it's like network, connect, like be genuine and like give away a little bits of like information here and there, have conversations, like join a pod, whatever these things are. Cause you don't know who is going to have a job opportunity or consulting or like know somebody or need. So it's just like open doors and all you can. And that like takes meeting people, talking to people, networking, all that stuff.
+
+Nebojsa (01:02:27.5)
+I agree.
+
+a great advice and now like the knowledge became so accessible like everybody can have access to the knowledge and it's not like before where you needed books and even if you can get a book it's very hard to find the one that that you really want but now you can really get access to knowledge through internet and you can really learn and grow as you said. So finally if you could leave the audience with one
+
+big theme or takeaway about content-led growth or digital marketing what would it be and let's make them wonder
+
+Jakub Rudnik (01:03:09.838)
+Launch, launch faster than you think you should. Put out more content than you think you should. Post when it makes you feel a little bit nervous and fix it later if you need to. Just go faster than you think. Stop putting up red tape for everything. Go faster.
+
+Nebojsa (01:03:22.028)
+Cut.
+
+Nebojsa (01:03:31.018)
+You heard Jacob, he's a professor and director and you should listen to the guy, he knows his things. Jacob, this has been an incredibly insightful conversation about AI, content, marketing, and for our listeners who want to connect with you or learn more about your work, where they can find you.
+
+Jakub Rudnik (01:03:53.038)
+Yeah, come find me on LinkedIn. I'm chatting in there more and more. I have a lot of conversations, engage with everybody, whether that's comments or DMs. I would love to connect, learn from you all too. But that's definitely the best place to find me.
+
+Nebojsa (01:04:09.133)
+And to our listeners, thank you for jumping into another episode of our podcast. If today's discussion with Jacob sparked some ideas for your own marketing and content strategies, make sure to subscribe so you don't miss our upcoming episodes. Until the next time, keep climbing, keep innovating, keep learning and growing. Thanks.
+

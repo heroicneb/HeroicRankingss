@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AskPodcastAIButton } from "@/components/chat/AskPodcastAIButton";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientText } from "@/components/ui/gradient-text";
+import { PageLinks } from "@/components/ui/page-links";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
 import { createPageMetadata } from "@/lib/metadata";
@@ -198,8 +199,9 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
   return (
     <section className="pt-[60px] lg:pt-[120px]" id="podcast-latest">
       <div className="mx-auto w-full max-w-[1440px] px-[5px] lg:px-20">
-        <div className="relative overflow-hidden rounded-[30px] bg-[linear-gradient(180deg,var(--color-hr-dark)_4.89%,var(--color-case-art-maudsch)_193.64%)] lg:h-[540px] lg:rounded-[40px] lg:bg-[linear-gradient(48.69deg,var(--color-hr-dark)_35.36%,var(--color-case-art-maudsch)_142.03%)]">
-          <div className="flex flex-col items-center gap-10 px-[15px] pb-[15px] pt-[60px] text-center lg:absolute lg:left-[40px] lg:top-[40px] lg:w-[482px] lg:items-start lg:gap-5 lg:p-0 lg:text-left">
+        <div className="relative overflow-hidden rounded-[30px] bg-[linear-gradient(180deg,var(--color-hr-dark)_4.89%,var(--color-case-art-maudsch)_193.64%)] lg:min-h-[540px] lg:rounded-[40px] lg:bg-[linear-gradient(48.69deg,var(--color-hr-dark)_35.36%,var(--color-case-art-maudsch)_142.03%)]">
+          {/* WHY: the column is in flow (not pinned) so a long summary grows the panel instead of pushing the pills into the arrow. */}
+          <div className="flex flex-col items-center gap-10 px-[15px] pb-[15px] pt-[60px] text-center lg:min-h-[540px] lg:w-[562px] lg:items-start lg:gap-5 lg:p-[40px] lg:text-left">
             <div className="flex flex-col items-center gap-5 lg:items-start">
               <SectionLabel className="text-[var(--color-hr-pure-white)]">/&nbsp;&nbsp;Latest Episode&nbsp;&nbsp;/</SectionLabel>
               <div className="flex flex-col items-center gap-[10px] lg:items-start lg:gap-0">
@@ -251,20 +253,20 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
                 label={`Open latest episode: ${episode.title}`}
               />
             </div>
-          </div>
 
-          {/* WHY: wrapped so `hidden` is not fought by the button's own display class. */}
-          <div className="absolute bottom-[40px] left-[40px] hidden lg:block">
-            <ArrowButton
-              className="size-[72px]"
-              external={episode.external}
-              href={episode.href}
-              label={`Open latest episode: ${episode.title}`}
-            />
+            {/* Desktop arrow: last item of the column, 66px under the pills as in the frame (2251:94), never overlapping. */}
+            <div className="mt-auto hidden pt-[46px] lg:block">
+              <ArrowButton
+                className="size-[72px]"
+                external={episode.external}
+                href={episode.href}
+                label={`Open latest episode: ${episode.title}`}
+              />
+            </div>
           </div>
 
           {/* Desktop image: 607.75×500 inset 20px from the top and right (Figma 2251:82). */}
-          <div className="absolute right-[20px] top-[20px] hidden h-[500px] w-[607.75px] overflow-hidden rounded-[40px] shadow-[0px_4px_14px_0px_rgba(0,0,0,0.18)] lg:block">
+          <div className="absolute bottom-[20px] right-[20px] top-[20px] hidden w-[607.75px] overflow-hidden rounded-[40px] shadow-[0px_4px_14px_0px_rgba(0,0,0,0.18)] lg:block">
             {episode.image ? (
               <Image
                 alt={episode.image.alt}
@@ -287,8 +289,16 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
 // 3. Episodes grid
 // ---------------------------------------------------------------------------
 
-function EpisodesGridSection({ episodes }: { episodes: EpisodeView[] }) {
+const EPISODES_PAGE_SIZE = 9;
+const hrefForPage = (n: number) => (n <= 1 ? "/podcast/" : `/podcast/?page=${n}`);
+
+function EpisodesGridSection({ episodes, page: requestedPage }: { episodes: EpisodeView[]; page: number }) {
   if (episodes.length === 0) return null;
+
+  // WHY: three rows of three per page, like the case studies index; out-of-range pages clamp to the last one.
+  const pageCount = Math.max(1, Math.ceil(episodes.length / EPISODES_PAGE_SIZE));
+  const page = Math.min(Math.max(1, requestedPage), pageCount);
+  const visible = episodes.slice((page - 1) * EPISODES_PAGE_SIZE, page * EPISODES_PAGE_SIZE);
 
   return (
     <section className="pt-[60px] lg:pt-[120px]" id="podcast-episodes">
@@ -302,10 +312,12 @@ function EpisodesGridSection({ episodes }: { episodes: EpisodeView[] }) {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-[10px] lg:mt-5 lg:grid lg:grid-cols-3 lg:items-stretch lg:gap-5">
-          {episodes.map((episode) => (
+          {visible.map((episode) => (
             <EpisodeCard episode={episode} key={episode.key} />
           ))}
         </div>
+
+        <PageLinks ariaLabel="Episode pages" className="mt-10 lg:mt-[60px]" hrefFor={hrefForPage} page={page} pageCount={pageCount} />
       </div>
     </section>
   );
@@ -394,9 +406,12 @@ function PodcastAISection() {
 
 interface PodcastPageProps {
   episodes: SanityPodcastEpisodeSummary[];
+  /** `?page=` from the URL; anything unparseable means page 1. */
+  page?: string | null;
 }
 
-export default function PodcastPage({ episodes }: PodcastPageProps) {
+export default function PodcastPage({ episodes, page }: PodcastPageProps) {
+  const requestedPage = Number.parseInt(page ?? "1", 10) || 1;
   const views = episodes.map((episode, index) => toEpisodeView(episode, index === 0 ? 1216 : 826));
   const [latest, ...rest] = views;
   const hasCms = Boolean(latest);
@@ -406,7 +421,7 @@ export default function PodcastPage({ episodes }: PodcastPageProps) {
       <HeroSection episodeCount={hasCms ? episodes.length : 15} />
       <LatestEpisodeSection episode={latest ?? FALLBACK_LATEST} />
       {/* WHY: the newest episode fills the Latest panel; the grid shows the rest, or the frame's trio until more exist. */}
-      <EpisodesGridSection episodes={rest.length ? rest : FALLBACK_EPISODES} />
+      <EpisodesGridSection episodes={rest.length ? rest : FALLBACK_EPISODES} page={requestedPage} />
       <PodcastAISection />
     </>
   );

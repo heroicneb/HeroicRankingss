@@ -1,0 +1,1402 @@
+Nebojsa (00:00.91)
+So welcome to the ranking heroes where we explore the cutting -edge strategies that dominate search rankings and the innovative minds behind them. I'm your host Nebojsa and today I'm thrilled to introduce Nick Vujic, the renowned SEO expert, webflow SEO expert and the guy who helped many businesses scale, especially with the focus on SaaS businesses.
+
+But with a lot of experience regarding content strategies SEO and web flow behind him So thanks for joining Nick. It's so nice to have you here
+
+Nik (00:37.37)
+Yeah, thank you Neblisha for having me. Thank you for a warm interaction and thank you so much for even giving me the opportunity to be part of the podcast. I'm super, super glad that we can finally talk about XMSio stuff, you know, in person and share our knowledge with the audience. So once again, thank you. It's my pleasure to be a part of your podcast.
+
+Nebojsa (01:01.166)
+Yeah, I'm looking forward to diving deep into some SEO strategies and discussing your personal background. So let's start with that. So can you share a bit about your background and what led you to specialize in SEO and Webflow?
+
+Nik (01:17.226)
+yeah, that's a super good question. Thank you for asking that and it's the best way to kick off for sure. So I think like, yeah, I was like, you know that from our private chats, but I was like part of a few podcasts there, some well -known SEO podcasts where I explained like actually how I stood up to this. Also, you know that they share my, you know, let's say specific approach to marketing SEO overall.
+
+So my story actually began completely unrelated to marketing. I was a student at law university back in the day, so like 10 years ago almost. So I had one subject, it's called basics of economics. And clearly I stood up on that economics or basically in that book, it was like explain everything about market. So my approach, it was like, okay, like in marketing,
+
+Nebojsa (01:46.702)
+Mm -hmm.
+
+Nebojsa (01:50.645)
+Mm -hmm.
+
+Nebojsa (02:11.087)
+Mm -hmm.
+
+Nik (02:13.978)
+we have that word market that like, you know, actually is like making the word marketing. So you really need to be familiar with everything. That's like, you know, basics of the market and like rules of the markets, similar stuff to that. So I really felt in love with that from that one book. And it was like, okay, how can I later on, learn more and apply, you know, that to digital because like, I always was interested in business in, you know, some sort of a working and providing services on my own.
+
+Nebojsa (02:28.302)
+Mm -hmm.
+
+Nebojsa (02:41.678)
+Mm -hmm.
+
+Nik (02:43.674)
+And back in 2016, I started to learn digital marketing, but it was like everything regarding like PPC, socials, whatever. So I started and I was like, okay, but like how I can generate, like, you know, or offer my service to any clients because I don't have experience. So like, I need to manage, for example, a hundred K per month for PPC, stuff like that. I wasn't back in the day, so I confident enough that I can tackle that.
+
+Nebojsa (03:11.086)
+Mm -hmm.
+
+Nik (03:12.122)
+And I was like, okay, there must be like, you know, some other way that you can like actually apply everything there. And I stood up to SEO. And it was like very funny because like, yeah, I focused the most on data. So it was like, basically it was like, I think it was like Google, actually Google. I'm not sure do you even have that. It's called like Google digital garage or something like that. It was like course that you can like, you know,
+
+Nebojsa (03:22.701)
+Nebojsa (03:30.766)
+Mm -hmm.
+
+Nebojsa (03:35.598)
+Okay.
+
+Nik (03:39.13)
+take and for free query and learn about the Google. And then Google explained actually what is SEO and Google search console and stuff like that. So I was like, my gosh, this is phenomenal. So I don't need like, I need to request money from the clients. I can offer my service and I can help them basically for free query. That's not how SEO works, but back in the days for me, it was enough. And I started to actually...
+
+Nebojsa (03:47.214)
+Nebojsa (04:05.39)
+Mm -hmm.
+
+Nik (04:08.73)
+freelance a bit, Upwork and usual consultant beginnings.
+
+Nebojsa (04:11.502)
+Mm -hmm You got a chance to live test some of your knowledge and you know perform SEO implementation to your clients. Yeah
+
+Nik (04:16.346)
+Yes, yes, yes, yes, first time because I can't until until then, like basically 2016 2017. I was just like in 2018. Actually, I was just like learning and then testing as you said, like I needed someone to apply my knowledge. So it was like very basic stuff, like, you know, basic on -page SEO, like writing meta title meta descriptions, like, you know, a little bit of tech SEO, but nothing like too serious.
+
+Nebojsa (04:26.157)
+and
+
+Nebojsa (04:32.109)
+Mm -hmm.
+
+Nebojsa (04:37.613)
+Mm -hmm.
+
+Nebojsa (04:42.798)
+huh.
+
+Nik (04:44.826)
+And then, and getting money was not too serious. So I worked like different stuff, you know, and like a lot of nasty on the side because like, I really felt in love. You'd get a data analysis, marketing, like everything, everything that they really loved. Like basically it was like, like perfect professional for myself. And clearly with that time, I built the confidence. SEO was like super simple back in days, you know that. So it's not like, so yeah. Yeah.
+
+Nebojsa (04:48.654)
+Yeah.
+
+Nebojsa (04:54.062)
+Mm -hmm.
+
+Nebojsa (05:07.014)
+So like you're now feeling the difference there is a difference like would you say that there is a huge difference when optimizing websites right now comparing to back to the days when you were doing up work freelance works for clients and what is the main difference like what.
+
+Nik (05:14.426)
+Yes.
+
+Nik (05:20.346)
+Yes, yes, for sure. For sure. So.
+
+Yeah, so I think the main difference is like the whole like basically back in this also you had that approach but it was like practiced by very like a lot of people like you know to for example like I stood up on some articles from you know Bilsławski and you know after that like you know unfortunately there is not longer with us but like we have Cora and stuff like that so I would say that like back in these people practiced a bit topical authority.
+
+Nebojsa (05:36.622)
+Mm -hmm.
+
+Nebojsa (05:42.51)
+Mm -hmm.
+
+Nebojsa (05:48.207)
+Mm -hmm.
+
+Nik (05:54.778)
+but it was more oriented towards keywords and like basic, like, you know, approach to SEO. So technically before what I would do, I would like, you know, jump in HFs and stuff like that. And then I would find keywords so I could do the basic on page that we did back then, like, you know, add some keywords there, you know, optimize content and stuff like that. But I think that's the biggest switch in those query it passed like almost eight years from that.
+
+Nebojsa (05:55.214)
+Mm -hmm.
+
+Nebojsa (06:01.134)
+Yeah.
+
+Nebojsa (06:11.694)
+Yeah.
+
+Nik (06:19.674)
+moment, but like, yeah, like we moved towards topic authority way more. I don't even look at keywords anymore, like, you know, that much. I'm just like trying to optimize site on a very, you know, different level, very high end level. So I really think that you can still do SEO in both ways, but I'm gonna, I'm pretty sure that you're gonna like experience way better results that I even showed on some of my examples if you following topic authority.
+
+Nebojsa (06:27.789)
+Mm -hmm.
+
+Nebojsa (06:41.709)
+Mm -hmm.
+
+Mm -hmm.
+
+Yeah, like I remember back in the days, for example, when you open a local business website, you can see how many keywords they are staffing. They are mentioning the main keyword plus location on every single page linking back to the homepage. So this is something that doesn't work right now.
+
+Nik (06:57.882)
+Yeah.
+
+Yeah.
+
+Nik (07:07.29)
+Yeah. Yeah.
+
+Nebojsa (07:07.406)
+You need to focus on other things right now. You don't need to do keyword staffing right now. Okay. And what's your opinion? Do you think that people can learn SEO by looking at the different courses, reading articles, hearing other people who are obviously experts in that field? Or do you think that in order to become a successful SEO strategist or specialist,
+
+Nik (07:10.17)
+For sure.
+
+Nebojsa (07:36.43)
+leading to an SEO experts, you will need to do live testing on a website in like real life situations. You cannot just learn SEO from reading and listening to videos, podcasts and everything.
+
+Nik (07:51.482)
+Yeah, I would say, I would say like clearly and I think majority of people will say like the second one is the transfer you need to apply knowledge and applied knowledge is the king. Okay. But like, I'm not completely like, I can understand that part, but I don't completely agree with that standpoint. Why? I think the both are very important. So I can tell you like back then it was very easier to learn SEO just like from.
+
+Nebojsa (08:00.806)
+Okay.
+
+Nebojsa (08:08.718)
+Mm -mm.
+
+Nik (08:20.602)
+reading, being part of the different communities, following people on LinkedIn, following people on Twitter or current to X. So it was like, my process was like, learning by reading search engine journal and like, you know, HMS blogs, whatever, like whatever you can find and query going on those courses, because like, I wouldn't like even know for SEO if I didn't like take that free course from the Google, like, you know, so clearly you need to have a relevant source for that.
+
+Nebojsa (08:22.8)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (08:29.455)
+Yeah.
+
+Nebojsa (08:35.728)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (08:46.415)
+Mm -hmm. Yeah.
+
+Nik (08:49.818)
+But I think back in day was very simpler because as you explained it was like very simple to do SEO and to execute SEO. But today I would say that learning SEO and getting into industry is super like clearly we see like that that like trash SEOs are like, you know, jumping all over the place because like, you know, demand is huge. But I would say that like, if you really want to get to some level and to become expert, you know, you need to have both. So actually my practice was the next when I started to
+
+Nebojsa (08:49.937)
+Yeah.
+
+Nebojsa (08:57.2)
+Mm -hmm.
+
+Nebojsa (09:07.472)
+Mmm.
+
+Nik (09:19.45)
+You know, getting some clients, you know, working on some serious projects. We can like touch the base with those after I, I spent 80 % online. I spent 70 % active. So like, you know, applying the knowledge and 30 % of each day by reading. Still, I'm trying to do that even today. So I'm probably spending like, okay, could I have like, you know, way less time.
+
+Nebojsa (09:22.992)
+Mm -hmm.
+
+Mm -hmm. Yeah.
+
+Nebojsa (09:35.665)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (09:41.84)
+Nik (09:48.858)
+But I spending here, I spending probably today 90 % applying stuff or like managing stuff, whatever, and 10 % like each and every day I'm spending at least 10 % of my time on reading, following the news and stuff like that. So I would say that learning SEO currently is super complex. It's way more complex than before because SEO, you know, became very, very more complex. But I would say that if someone wants to jump in this industry, it needs to find relevant sources.
+
+Nebojsa (09:49.426)
+Yeah.
+
+Nebojsa (10:12.593)
+Mm -hmm.
+
+Nik (10:18.842)
+and you have a lot of them on LinkedIn actually, but be careful, you know, who you follow. Read, read, read, read, read, and then start with at least one project that you can apply that. Because again, like I just like mentioned that in first question that like for three years, I almost like read like 80 % of time and I was applying like 20 % because like my first big project was like in 2018 actually.
+
+Nebojsa (10:19.824)
+Mm -hmm.
+
+Nebojsa (10:23.92)
+Mm -hmm.
+
+Nebojsa (10:30.032)
+Mm -hmm.
+
+Nebojsa (10:46.576)
+Mm -hmm. Mm -hmm. Mm -hmm. Mm -hmm.
+
+Nik (10:46.586)
+So I started to make like real money and to live from this from 2018. So 2016, 2017 and good portion of 2018, I was just like reading and learning. So if you would say someone, you know, today to spend three years learning something, they would say, why, okay, like this is, I'm going to quit. This is not like work time, but for me it, yeah.
+
+Nebojsa (11:06.641)
+Yeah, but like what helped you define what's good to read and to get knowledge from comparing to what's not like because there are a lot of different people that have different articles different information like did you what helped you define for example I had a guy who learned how to do SEO because he was working with the expert right beside him. So that helped him get the right knowledge. Yes.
+
+Nik (11:34.806)
+that's amazing way. Yes.
+
+Nebojsa (11:36.546)
+in a single year compared to that like for example if he had to do it on his own it would take him three or four years so it took you three years to completely like cover every aspects so like what helped you find the information you need.
+
+Nik (11:45.178)
+Mm -hmm. Mm -hmm. Mm -hmm. Mm -hmm.
+
+Nik (11:53.466)
+Yeah, so again, back in this, I was working on different jobs, so I didn't have like, you know, way more like, you know, I spent probably like eight to eight hours per day practicing, you know, SEO, like actually reading and learning. Yeah. And it was like, just because pure of love and interest. And I really think that's like, you know, the first part that you need to have if you want to be successful. And for me personally, that's for all aspects of the job, not only SEO. So for all different professions is applied to.
+
+Nebojsa (11:57.871)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (12:05.903)
+That's amazing.
+
+Nebojsa (12:10.767)
+Yeah.
+
+Nebojsa (12:18.576)
+Mm -hmm. Mm -hmm.
+
+Nik (12:23.162)
+But like amazing question, amazing question that you asked me. I would say back in the days, you didn't have huge amount of, for example, LinkedIn or big people there. So it was very easier to manage who you're gonna follow. But I would also apply the same thing from back then. So what I did, I actually like follow up who is sharing case studies.
+
+Nebojsa (12:34.608)
+Yeah, right, right, right.
+
+Nebojsa (12:44.399)
+Mm -hmm.
+
+Nik (12:49.498)
+And if those case studies make sense. So regarding like people that you're going to follow you even because of that, I'm not too detective on LinkedIn. Like, you know, by myself, even I have like, you know, some very nice following and stuff like that, but I I'm not active because like, I just want to share what I think it's good to sharing. So case studies, some really like strong opinions or some things insights, but you really need to have.
+
+Nebojsa (12:52.431)
+Yeah, that makes sense.
+
+Nebojsa (13:01.904)
+Mm -hmm.
+
+Nebojsa (13:06.607)
+Mm -hmm.
+
+Nebojsa (13:10.415)
+Mm -hmm.
+
+Mm -hmm.
+
+Nik (13:14.65)
+reason to share, I would say like that. So if you're looking for people that you want to learn from, I guess, look for like follow, look for case studies, look for type of content that they're publishing and clearly double check, you know, if that makes sense. From, yes, yes, from blogs, I would say that is like a bit of, you know, a bit of tricky questions.
+
+Nebojsa (13:16.719)
+Mm -hmm.
+
+Nebojsa (13:23.023)
+Mm -hmm.
+
+Nebojsa (13:30.639)
+Yeah, I find legitimacy. Yeah, yeah, yeah, right.
+
+Nebojsa (13:39.503)
+Yeah.
+
+Nik (13:39.546)
+But I was following who they actually mentioned and who wrote the blogs. For example, we have like...
+
+Nebojsa (13:45.392)
+You were following some specific authors. Yeah. nice
+
+Nik (13:48.538)
+Yes, yes. So that was like the only reason like you have if like John Muir writing something then like clearly I'm gonna take a look you know Barry Schwartz or Barry Schwartz, I'm not sure how he pronounced the name. Then like Glenn Gabe who was there like more of Aleda solis. So like it was like you know decent amount of people that you can like find if those books are actually written by those authors.
+
+Nebojsa (13:54.287)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (13:59.407)
+Mm -hmm. Mm -hmm. Yeah.
+
+Nik (14:13.242)
+And clearly in SEO right now, that's like a big ranking factor, you know, EAT. So I was like, you know, trying to, yeah.
+
+Nebojsa (14:13.68)
+Yeah.
+
+Nebojsa (14:18.256)
+Yeah, I think these are some great advice. This is a great advice for everyone who wants to learn SEO to just implement what you just said and it will be very helpful for them to learn actually to learn and find the valuable information. So Nick, like it's your story is amazing like starting love University then going switching to Google and SEO learning about the SEO starting with some freelance.
+
+Nik (14:40.698)
+Yeah.
+
+Nebojsa (14:44.975)
+clients and then right now you scale it to a marketing director. So like how did your role evolve from the freelancer to a marketing director like like what are the key points that that helped you like go from that to this where you are now.
+
+Nik (14:56.25)
+Yeah.
+
+Nik (15:03.97)
+Yeah, that's super amazing. Again, I don't even love titles that much because I'm still considering myself a consultant and a nerd about the SEO. So I'm SEO nerd. I'm not anything more than that. But yeah, it is super nice to... I think it was a combination of my effort and luck. We all need to have one moment that was like, okay, I'm really lucky that that moment occurred.
+
+Nebojsa (15:14.961)
+Mm -hmm. Yeah. Yeah, yeah, yeah.
+
+Nebojsa (15:26.672)
+Mm -hmm. Yeah.
+
+Nik (15:31.386)
+So as I said, like for three years I was practicing and like basically I mentioned that also, like I think from three years of SEO, I were in maybe like 2000 USD, like, you know, in three years, you know, from just like doing the stuff, it was nothing, you know? So, but yes.
+
+Nebojsa (15:31.632)
+Mm -hmm.
+
+Nebojsa (15:42.96)
+Whoa.
+
+Yeah, yeah, yeah, but the value and the knowledge you were getting that something that really cost a lot so you converted knowledge into money. So yeah.
+
+Nik (15:52.794)
+Yes, yes, yes, yes, for sure. Yeah, yeah, but it was like, you know, it was very like, because I didn't, I was practicing and learning until the moment I was like super ready. Okay, I know, you know, enough so that I can go and take some serious road. So I would say that like my effort, as I said, I was like, just in one moment of my life, I was like, you know, learning for eight or 10 hours per day. So it was like, you know,
+
+Nebojsa (16:09.616)
+Mm -hmm.
+
+Nik (16:21.594)
+That is that part of preparation. And then back in 2018, 19, it happened that I accidentally went to the meeting. I was like, back in day, like, you know, okay, I was like, okay, this is the moment. So I'm going to put everything in this. I know that I'm going to succeed in that because like for me, SEO is like, you know, the only real professional love in my life. And I'm sure that I want to do this for the rest of my life, you know.
+
+Nebojsa (16:24.016)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (16:37.905)
+Mm -hmm.
+
+Nebojsa (16:45.553)
+Mm -hmm.
+
+Nebojsa (16:50.129)
+Yeah.
+
+Nik (16:51.482)
+clearly because like, you know, if I'm not getting bored from three years of, you know, learning and like interesting there, and I really needed, and I really wanted to make something and to, you know, make living from SEO. Then I applied to, trust me, I think I got three, 400, like, you know, different jobs, like serious jobs. Yeah, it was like crazy. It was crazy hustle back in the days.
+
+Nebojsa (16:58.065)
+Thank you.
+
+Nebojsa (17:11.473)
+Hahaha
+
+Nebojsa (17:16.177)
+And did you apply to like, did you apply on some roles where you don't have like too much experience? You're like bluffing, like I'm just gonna try and if they accept there is nothing I can lose, I can just get fired and that's it. Like you had some risks.
+
+Nik (17:31.13)
+Yeah, yeah, yeah, yeah. It was like, yeah, clearly. Because like, listen, I think in that moment, I knew that I know pretty much, you know, so I knew that I know, I didn't know how much I actually knew, but I was pretty sure that I know enough so that they can land a decent job. And in one moment, I can believe it or not, nothing happened, you know, and then in one moment, three offers are on my table.
+
+Nebojsa (17:41.264)
+Yeah, yeah.
+
+Nebojsa (17:47.184)
+Yeah.
+
+Nebojsa (17:51.696)
+Yeah, yeah.
+
+Nebojsa (17:58.088)
+Now you you you you were in the position to choose between three different jobs, that's nice, man
+
+Nik (17:58.362)
+and yeah yeah it was like
+
+Nik (18:04.442)
+Yes, and it was like really like making from like, you know, maybe like 2000 in, you know. Yes, yes, yes. It was like crazy because like as I said, like I barely that three years made like, you know, some money and then like you actually would like have very decent salaries and that one of the company was Cryptomat. So maybe you heard for that. They're pretty I think they were pretty big back in the days.
+
+Nebojsa (18:09.521)
+like my efforts finally paid off yeah nice
+
+Nebojsa (18:19.952)
+Yeah.
+
+Mm -hmm.
+
+Mm -hmm. Mm -hmm.
+
+Nik (18:30.394)
+And two other, one company I cannot mention and the third company or agency was my choice. I was offered like clearly more things than actually they put on the table, but that's the life of the agency. And then, but I'm very grateful for that. And that was like lucky moment again, that I like choose them. So actually they had like, you know, up for a level up.
+
+Nebojsa (18:30.544)
+Mm -hmm.
+
+Nebojsa (18:46.656)
+Yeah.
+
+Nebojsa (18:52.85)
+Mm -hmm.
+
+Nik (18:59.706)
+compared to my profile. So they ran agency through the Upwork. Query right now that doesn't sound super serious, but like, you know, back in 2018, 2019, that was like, you know, really decent place that you can like earn, you know, good living. And they actually got the clients. And in one moment, because it was only two guys and myself, you know, besides them, I took all of the SU work.
+
+Nebojsa (19:00.273)
+Mm -hmm.
+
+Nebojsa (19:15.505)
+Mm -hmm. Mm -hmm.
+
+Nik (19:28.442)
+that needs to be tackled. So one of the client was, and I think is still the biggest crypto betting site in the world. It's Cryptomaniacs. We scaled from 4 ,000 monthly visits to over 200K per month. Also, we achieved the 1 million year revenue back in 2019 in only one month or 2020, like don't hold me for days. Yeah, 1 million, yeah.
+
+Nebojsa (19:28.913)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (19:40.4)
+Mm -hmm.
+
+Nebojsa (19:52.816)
+In one month? Well, that's impressive.
+
+Nik (19:56.058)
+So it was like different because like they couldn't run PPC because it was betting. It is like forbidden to run PPC. So it was only SEO. Yeah. Right now it's not, but like before it was. Yeah. Yeah. So I really got the chance and because of that, I'm blessed. Query money, you know, like actually I skipped that part. I choose like the offer that like offered me the least money. Also like from those three on the table, that was like offer with the least money, you know, salary, whatever.
+
+Nebojsa (20:01.008)
+yeah, it was forbidden, yeah, yeah, yeah, yeah.
+
+Right now, yeah, before it was forbidden, yeah.
+
+Nebojsa (20:14.097)
+haha
+
+Nebojsa (20:20.465)
+Mhm, mhm.
+
+Nebojsa (20:25.745)
+And like, why did you choose the one that offered you the Lisman? okay, okay, okay, okay, okay. Okay, yeah, yeah, yeah.
+
+Nik (20:28.762)
+Because they promised like, you know, the stuff they promised a lot of stuff, but you know, it wasn't like, you know, that case. So I took that, but again, I wasn't like, and I, that's my advice for everyone. I wasn't like, like in any moment of my career motivated by money, but this money just falls to me and follows me whatever I'm doing. But like regarding SEO, I really like doing this for love and money just follows that. So, yeah, for sure. For sure. For sure. For sure.
+
+Nebojsa (20:44.593)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (20:52.721)
+So the results are motivating you the most would you say that? Yeah, okay, okay
+
+Nik (20:58.17)
+And then I actually, I got like in touch with that amazing guy. His name is Mendel. Amazing affiliate marketeer back in the days. Amazing SEO mind. He was like, you know, 20 years in SEO or something like that. So imagine that I got the opportunity to get in touch with the person like him. And then actually started my biggest learning curve. Clearly when I joined that agency, the guys were blown away.
+
+Nebojsa (21:04.305)
+Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (21:17.553)
+Yeah.
+
+Nik (21:26.33)
+They're like, my gosh, like you, you know, like, you know, some, you know, very experienced guys, like, so is this like really your first gig? I was like, yeah, it's, it was my first job, but actually like, you know, three years of learning, like, you know, lead to that. And they said, like, they were blown away. So in that moment, even my confidence skyrocketed, but I was like, okay, I know.
+
+Nebojsa (21:32.465)
+Yeah.
+
+Nebojsa (21:42.417)
+Yeah.
+
+Nik (21:54.426)
+I was pretty sure that they can like provide what I'm paid for. but like the biggest, the biggest uptake from that period was that I get in touch with amazing affiliate marketer, amazing SEO. And I learned a lot, like basically. I think like a reason for success. It was that I had like the right guy that I learned from. So you mentioned that you had a guest that, got a mentor. So I would say that like, if you have opportunity, even for free.
+
+Nebojsa (22:04.465)
+Mm -hmm.
+
+Nebojsa (22:16.209)
+Mm -hmm.
+
+Mm -hmm.
+
+Nik (22:24.25)
+to work with people that can actually offer you some knowledge, use that because like that's the most valuable asset that you can have, you know. And yeah, and after that, as I said, it was that. So after three years in crypto, I was like bored. It was super stressful because we have like, when I'm talking right now, it is like, okay, like what you're talking about, but like.
+
+Nebojsa (22:34.673)
+Yeah, 100 % agree with you on this.
+
+Nik (22:51.386)
+We had like even 100K for backlinks and you know how big that budget is per month. So it was like crazy what we did. And in one moment when you like repeatedly do the stuff, it getting like kind of boring. So, and for me, it's not boring. It was like super stressful. So when crypto starts to fall down, that was like when COVID -19 happened or something like that 2000, yeah, 20, 2021, 22. Yeah, yeah, exactly. 21, 22.
+
+Nebojsa (22:54.769)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (23:04.049)
+Mm -hmm.
+
+Nebojsa (23:08.337)
+Mm -hmm.
+
+Nebojsa (23:13.361)
+yeah that's the yeah 20 20 21 22 yeah yeah
+
+Nik (23:20.57)
+I basically stopped working with them and I realized that my, my, you know, path is to take more clients and consult them and help as many businesses as they can. So in that way, I stood up on that B2B and startups like the most, and had a very amazing success even today with some of them. And in one moment query. So that part is.
+
+Nebojsa (23:36.849)
+Mm -hmm.
+
+Nebojsa (23:40.817)
+Mm -hmm.
+
+Nebojsa (23:45.265)
+Mm -hmm.
+
+Nik (23:49.85)
+Pretty awkward, but like, yeah, in one moment, we had that agency, I got in touch with WFO agency and amazing company, Vezor Digital. It was back in 2020, believe it or not. And they, like that agency actually asked me like, listen, like we have some keyword research, you need to set up the whole website, whatever. I said, okay, let's do it. And they said like, they're a digital marketing agency, you know, Vezor Digital, like.
+
+Nebojsa (24:03.505)
+Mm -hmm.
+
+Nebojsa (24:11.185)
+Ha.
+
+Nik (24:17.818)
+And so basically I did the first keyword research for Vesa Digital. And in one moment I started working with them as a part of that other agency. But something happened in business and actually Vesa broke up partnership with that agency. Similar time I stopped working with them too. So it happens that CEO of Vesa, Stefan contacted me and said, I want that you keep what you're doing because you set up the whole...
+
+Nebojsa (24:20.977)
+Whoa.
+
+Nik (24:47.834)
+website and the whole SEO. We have very nice success. So I wanted that you actually lead this. Then I started to work as an SEO executive, then SEO director for VESA and for years, actually three years, you know, passed by VESA grew to the biggest web agency in the world. And I took another challenge and that's marketing director and I'm running marketing operations for them for the past year, year and a half.
+
+Nebojsa (24:48.081)
+Mm -hmm.
+
+Nebojsa (25:05.647)
+Well.
+
+Nebojsa (25:17.646)
+Well, Nick, I mean, that's amazing, man, like all the experience and everything you went through, starting from the freelancing through your learning curves, everything, the clients that you experience, the industries you worked with, especially the ones in crypto now working with B2B. I mean, a lot of great experience behind you and you have such good advice for all the people that want to learn SEO.
+
+Nik (25:32.442)
+Yeah.
+
+Nebojsa (25:44.654)
+So now that you mentioned the web flow, I would love to ask you some questions regarding web flow. So my first question was what unique advantages does web flow offer for SEO compared to other platforms? But to make this question more interesting, I would ask you to do a live example. Let's say that you have a client who has a website built in WordPress.
+
+Nik (25:50.298)
+Mm -hmm.
+
+Nebojsa (26:11.502)
+and you want to suggest migrating from WordPress to Webflow. So what would you say to the client?
+
+Nik (26:11.674)
+Mm -hmm.
+
+Mm -hmm.
+
+Yeah, so this is super interesting and I really love your approach and it gives like different note to this podcast. I really enjoy this and I hope that audience will see the value in those because this is like, yes, to some extent, you know, it's applying, you know, the knowledge that we just like talk about. So first I want to start from Webflow.
+
+Nebojsa (26:18.894)
+Hehehe.
+
+Nebojsa (26:30.222)
+I'm sure they will. I mean you already shared some valuable nuggets of wisdom here. So just yeah.
+
+Nebojsa (26:40.75)
+Yeah.
+
+Nik (26:44.346)
+And I said the same thing to any podcast that I went in. I'm not telling Webflow is the best for SEO. I'm not even telling that Webflow is the better choice for SEO than WordPress. My only, if I want to transparently answer that question, I would say Webflow is very, it's very worse for SEO if you're a beginner. Because Webflow doesn't have a lot of stuff.
+
+Nebojsa (26:52.91)
+Yeah.
+
+Mm -hmm.
+
+Nebojsa (27:09.613)
+Mm -hmm.
+
+Nik (27:13.338)
+or like starting from plugins that can help your optimization that WordPress has. So actually, like if you want to start applying SEO knowledge in Webflow, you cannot go there, like install Yoast or RankMet or whatever, and then like implement meta elements, canonicals. Yeah, so, Robotics, Robotics, and stuff like that, you cannot do that. They don't have anything like that.
+
+Nebojsa (27:15.725)
+Mm -hmm.
+
+Nebojsa (27:19.469)
+Yes.
+
+Nebojsa (27:28.885)
+That was one of my questions I would have that Okay, yeah, yeah, yeah so like what's your approach there?
+
+Nik (27:41.434)
+So my approach is like for a webflow to actually go and do everything manually with the developer. So I'm not like, again, I always like put like a very clear differences between like my part of the job and developer part of the job. So I'm not touching like, you know, that even if I know to code, I know HTML, dysentery, I know CSS, I don't know Java that much. I know a Python a little bit, but I never touched the websites in that manner. Like I did some coding before when I had like different.
+
+Nebojsa (27:46.541)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (27:53.645)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (28:02.125)
+Mm -hmm. Mm -hmm. Mm -hmm.
+
+Nik (28:10.33)
+you know, clients in the past. So we had some custom websites. So I needed to implement like custom posts and things like that. But I, regarding the workflow, I never touch the website. So I'm just telling, okay, like we need this. So technically if you want to add robot text or a robot tags or like, pardon, I think robot text, you can like actually implement on site level, but like robot tags, you need to implement manual directive on the page.
+
+Nebojsa (28:11.788)
+Mm -hmm.
+
+Nebojsa (28:16.204)
+Mm -hmm.
+
+Nebojsa (28:21.676)
+Okay.
+
+Nebojsa (28:33.42)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (28:37.772)
+in the gold yeah on the page yeah yeah each page yeah yeah yeah you can do you cannot do it site -wide like yeah okay
+
+Nik (28:39.098)
+Yeah, in the code on each page. So if you want to have like index follow on some page, okay. Like if you want to have one different, no, no, no, that's very big problem. Then, you like recently, they just like, gave a option for a site maps before that you, you, you, you had like horrible automatically generated site map where you're actually building something is staging and site map, pulling up staging you to be indexed. It's, it was horrible.
+
+Nebojsa (28:49.644)
+Mm -hmm.
+
+Nebojsa (28:55.468)
+Mm -hmm.
+
+Nebojsa (29:00.172)
+Nebojsa (29:04.876)
+yeah.
+
+Nik (29:06.586)
+So technically, if you ask me like about the advantages and comparing with WordPress, for example, they're very small amount of advantages that they can say that webflow has if you're talking about, you know, you know, beginners or like people that starting that. So I would always advise beginners to start running SEO on WordPress. I actually started like learning on Drupal, believe it or not. That was, that was super, super funny story.
+
+Nebojsa (29:28.972)
+Yeah.
+
+Nik (29:34.81)
+But regarding like advantages on WF -O and if you're my client and if you're coming, okay, hey, I have the WordPress website. So, you know, how I can sell you the WF -O? Yeah, yeah, yeah, yeah.
+
+Nebojsa (29:35.468)
+Yeah.
+
+Nebojsa (29:39.116)
+Mm -hmm.
+
+Nebojsa (29:45.356)
+Yeah, like, but I don't like the design. I like how web flow has all the animations. I would love to migrate. Like what are the steps I need to do to move forward?
+
+Nik (29:55.258)
+Yeah, so technically, okay, with migration, we can we're gonna cover that it's pretty straightforward. As you're like, more people calling that tech as your question. So it is okay, we're gonna like tackle that. But I would like always tackle exactly things that you said. So if you ask me, okay, hello, like, you know, can you just explain to me why I need to migrate 1000 pages from WordPress to Webflow?
+
+Nebojsa (30:05.804)
+Yeah.
+
+Nebojsa (30:18.444)
+Yeah.
+
+Nik (30:18.746)
+I would say, listen, like if you want very amazing animation experience, like, you know, user experience, options that you can like actually imagine something and that be like that put in the reality query. A lot of people will say, okay, WordPress can do that. No, WordPress cannot do that. And if you want a really fast product, that's another question. Again, I didn't measure, you know, the time that developer can make site in Webfoot and WordPress, but I would...
+
+Nebojsa (30:35.148)
+Yeah. Mm -hmm.
+
+Nebojsa (30:45.644)
+Yeah, okay. I will just talking from the SEO perspective. Yeah.
+
+Nik (30:48.474)
+Yeah, I would say always, always go with the webflow for that. And from TechAsia perspective regarding migration, it's my standard procedure that I mark all URLs that you have there. First, we are making a migration map. So we are marking all URLs that you have. If you don't like migrating the whole domain, if you want just to switch your platform from WordPress to Webflow, then we are going to keep URLs. We just need to set up, you know,
+
+Nebojsa (30:52.78)
+Mm -hmm.
+
+Nebojsa (31:03.468)
+Mm -hmm.
+
+Nik (31:15.866)
+Different DNS settings and transfer the website there and follow the process. But query if you're like, you know, changing domain, truly changing URLs, then we are getting in process of Mapping URLs with the new URLs that you want to have and query we are doing a lot of migrations in VESA Where we need to like migrate even 5000 pages, you know, so imagine like the spreadsheet with 5000, you know, old URLs, 5000 new URLs and then like setting up query.
+
+Nebojsa (31:22.956)
+Mm -hmm.
+
+Nebojsa (31:37.9)
+Yeah.
+
+Yeah.
+
+Nik (31:44.186)
+correct for you once and Yeah, that would be like, you know the process then like following what developers do and after that I can check if everything was is okay Clearly I have like one hack there. So I love to always keep the old URLs in the sitemap Until they are not until the new URLs are not indexed. So that's like a little bit hack from a migration perspective
+
+Nebojsa (31:46.572)
+Mm -hmm.
+
+Nebojsa (32:03.052)
+Mm -hmm.
+
+Nebojsa (32:06.988)
+yeah, okay.
+
+Nik (32:11.066)
+And always I need to be transparent. So I will need to say to the client or you in this case, that Webflow doesn't give you option to migrate from Webflow to other platforms. So that's also pretty shitty situation. Yeah.
+
+Nebojsa (32:21.26)
+that's interesting. Yeah, okay, but I can I can see like they are making sure that Everyone is staying on that flow. I mean they have a better Retention rate by by doing that. So yeah, I mean that's business
+
+Nik (32:32.282)
+Yeah, I wouldn't advise that business decision to anyone, but yeah, they are doing and clearly it's going okay for them.
+
+Nebojsa (32:40.428)
+Yeah, yeah, I get it. I get it. Okay, so Nick I've seen your case studies and I must say that I'm impressed So I wanted to ask you what are some of your most effective SEO strategies for SaaS companies?
+
+Nik (32:54.01)
+So yeah, then I would need to mention you also there. But regarding the stuff there that we actually doing, my main focus is that, I will explain why I need to mention you, is that I don't focus, I focus on general strategy level. I'm focusing on content marketing a lot.
+
+Nebojsa (32:59.916)
+Hehehe
+
+Nebojsa (33:14.796)
+Mm -hmm.
+
+Nik (33:19.322)
+And then I'm focusing on Omnichannel SEO. So I left out one very big reason for success that a lot of those companies have, and those are backlinks. I'm not like tackling backlinks. I don't have operational power to do that, and I don't have, I would say, even knowledge and interest to tackle backlinks.
+
+Nebojsa (33:23.052)
+Mm -hmm.
+
+Nebojsa (33:28.492)
+Mm -hmm.
+
+Nebojsa (33:32.044)
+Mm -hmm.
+
+Nebojsa (33:37.292)
+Mm -hmm.
+
+Nebojsa (33:41.164)
+Yeah, I get it.
+
+Nik (33:41.562)
+But my main focus and my main goal with the success that I found, it is that omnichannel SEO approach and content marketing strategy. So what I mean, I just want...
+
+Nebojsa (33:52.844)
+Mm -hmm and like mm -hmm. I like to me. I just want to get into the flow So let's say like what are your first steps once the client is on board and ready to kick off with the SEO campaign?
+
+Nik (33:59.578)
+Yeah.
+
+Nik (34:04.782)
+Again, amazing question. I really like this format. So first and foremost, like I have like a very, very analytical approach. So we are collecting ICPs. So that's ideal customer profiles, a demographic that they want to target, competitors, and basically we kicking off with analysis. My main goal is to understand demographics that we need to reach.
+
+Nebojsa (34:15.916)
+Mm -hmm. Mm -hmm.
+
+Mm -hmm.
+
+Nebojsa (34:26.604)
+Mm -hmm.
+
+Nik (34:30.97)
+And then when we like actually tackle and map all of those things, okay, if we are sure that we understand demographic, if we are sure that we understand competitors, if we are sure that we see, you know, our way to reach that demographics, then we can get to execution point. So because of that, I think my, I would say, spiritual mentor, Daniel Foley -Carter just recently said, like, you know, audits are the big part of SEO.
+
+Nebojsa (34:35.532)
+Mm -hmm.
+
+Nebojsa (34:47.82)
+Mm -hmm.
+
+Nik (34:57.786)
+So if you prepare very, you know, in -depth audit and analysis prior to the project, you have 90 % of project success guaranteed. Clearly it's not possible with all of the clients, unfortunately, but like with majority of startups, I'm doing like that. And then we preparing document, we are outlining everything that we found. And then we are proceeding with two main things, as I said, because I'm focusing on that.
+
+Nebojsa (35:01.42)
+Mm -hmm.
+
+Nebojsa (35:07.308)
+Yeah.
+
+Nebojsa (35:14.348)
+Mm -hmm.
+
+Nebojsa (35:20.3)
+Mm -hmm.
+
+Nik (35:25.754)
+First thing is keyword research. Again, we are mapping the keywords, but not keyword research for the sake of targeting, but keyword research for the sake of analysis what we need to target, who we need to reach, and what's like traffic potential stuff, like Gregor stuff there, what is like keyword difficulty so that we just can understand from those keywords. And then like the biggest point that we are doing is actually making topical map.
+
+Nebojsa (35:38.604)
+Mm -hmm.
+
+Nebojsa (35:46.732)
+Mm -hmm.
+
+Nik (35:51.386)
+So we are making like the whole topical month like structuring in different clusters in pure pages in Everything like in one like very structured content plan and from that moment we are proceeding and clearly as I said, I cannot like let that out organizing the the off page strategy Regarding like each client that I'm not directly providing but like those You know backlinks and strategy in place
+
+Nebojsa (36:02.54)
+Mm -hmm.
+
+Nebojsa (36:08.652)
+Mm -hmm.
+
+Nebojsa (36:12.236)
+Mm -hmm.
+
+Nik (36:20.57)
+are actually making for a big part of our success. That would be like basic flow.
+
+Nebojsa (36:24.62)
+Yeah, yeah, yeah, like backlinks are a good ranking signal and I think like they will always be because links are everywhere on the web. Yeah. Yeah.
+
+Nik (36:31.066)
+Yeah, for sure. Yeah. Especially for startups. Yeah, you know that like, you know, the best especially for startups. Why? Because like startups actually you're starting from scratch, you have zero authority for startups. So like, it's very important that they make some kind of authority in the niche and industry that they're trying to, you know, rank for. And clearly I wanted just to explain more even from last question, omnichannel SEO. So I'm having that.
+
+Nebojsa (36:50.092)
+Mm -hmm.
+
+Nik (37:00.09)
+A lot of people I hear right now coming with different, you know, terms, but like omni -channel SEO is the only way that I think SEO should be applied. So that means that SEO is the part of all different digital channels. So what that actually means, I'm using SEO to help PPC channel to collaborate with PPC team, you know, also, so to collaborate with email marketing team, to collaborate with outbound team. So technically I'm also in my...
+
+Nebojsa (37:08.716)
+Mm -hmm.
+
+Nebojsa (37:13.004)
+Mm -hmm. Yeah, what?
+
+Nebojsa (37:20.492)
+Mm -hmm.
+
+Nik (37:27.994)
+approach like giving directives to startup founders to CEOs how they can apply SEO not as a only channel there but how then can apply SEO to actually increase the performance of rest of the channels that they actually utilizing SPPC for example
+
+Nebojsa (37:38.156)
+Mm -hmm.
+
+Nebojsa (37:46.892)
+Yeah, that's a great strategy. And I see how SEO is complimentary with all the other aspects of digital marketing. So Nick, yeah, I wanted to ask you like, how do you approach content optimization to ensure it ranks well on search engines?
+
+Nik (37:52.282)
+Complement Excel.
+
+Nik (38:02.074)
+I would say why this question right now with... Yeah. Yeah. Yeah. Yeah. Yeah.
+
+Nebojsa (38:05.672)
+I know like you are the guy who knows how to create content that will actually rank and provide great results in such a short time period and I've seen that you showed me how you do it. I was amazed. So like how do you approach that content optimization?
+
+Nik (38:22.778)
+Yeah, and I would, I would, yeah, for sure. Like, you know, ask you why discussion right now, like as a joke query, because of AI, FG and everything that's going on on the Google currently. So it's a very tricky question to answer, but I would like, try to give the best answer that I can. So my standard procedure is that as I explained, I focus on topical authority. So we're always looking to cover, you know, topic till, you know,
+
+Nebojsa (38:31.716)
+Yeah.
+
+Nebojsa (38:41.964)
+Yeah.
+
+Nebojsa (38:47.596)
+Mm -hmm.
+
+Nik (38:51.994)
+it's full, you know, so that we cover each aspect. And then if you ask me, okay, but like, you know, if you want to cover same stuff on the internet, why you're citing performing well, that's not the secret, you know, sauce there or secret thing. The main point there is that I have actually writers that are taught by me how to approach to content from SEO perspective.
+
+Nebojsa (39:01.676)
+Mm -hmm.
+
+Nebojsa (39:06.412)
+Mm -hmm.
+
+Nebojsa (39:12.78)
+Mm -hmm.
+
+Nik (39:16.89)
+So technically I would say that the biggest part of that success is very good research for each topic, very good preparation in references and then zero usage of AI. That's like must in, with my writers that we're actually providing content for the clients. It's like actually zero AI. And the third part of that success,
+
+Nebojsa (39:37.644)
+Mm -hmm.
+
+Nik (39:46.714)
+would be clearly that writers need to understand who they're writing for. So my writers actually always before starting to write for the client, they go on some serious meetings with personnel from the client company or a client team. Yes. So I would say deeply understanding of who you're talking about.
+
+Nebojsa (39:54.092)
+Mm -hmm.
+
+Nebojsa (40:09.388)
+okay.
+
+Nik (40:16.378)
+And who you want to reach with your content, I would say topical authority and great execution of making topical maps. And the last part is amazing research. So maybe even you will call me crazy, but my writers are, by my end, limited to write only one article per day. So we are not going on volume. Yeah.
+
+Nebojsa (40:25.452)
+Mm -hmm.
+
+Nebojsa (40:38.7)
+Mm -hmm.
+
+Nebojsa (40:43.18)
+so you want to make sure to keep the yell. For example, one of my question was like I wanted to ask you like how do you manage your team and projects to maintain high standards in SEO? So you just answer me that so you keep your writers, your people well informed about the projects you get them on the meetings with the clients to discuss goals, strategies, topics and everything that they need to cover. So.
+
+Nik (40:46.81)
+Yes.
+
+Nik (40:54.074)
+Mm -hmm.
+
+Nik (40:58.81)
+Yes.
+
+Nebojsa (41:11.404)
+I see that like you are always keeping your writers updated and that you are making sure not to overwhelm them with the work so they drop with their quality. So that's a good strategy.
+
+Nik (41:22.586)
+Exactly like that. Thank you so much. But like, again, a lot of founders don't understand this part. And they even ask me like, you know, why you don't scale? Why you like, what is that one article per day? They need two hours. No, like if they want to create content that actually varies my right to spending weight, you know, six to eight hours per each, you know, content that they write, content piece. So as I said, I really don't like, I don't love that. So if you...
+
+Nebojsa (41:29.644)
+Mm -hmm.
+
+Nik (41:50.33)
+cannot sacrifice money. And again, because of that, I'm thinking that like, you know, if you focus on money, you will not have a quality agency and quality output. So if you want to focus on quality work and like sacrifice a bit of profit and revenue there, it's like, you know, just organization. And clearly one big part, I think I talked with Russ McCumber SEO success story. It's one of the biggest podcast in SEO. So he asked me like, you know, the process of, you know, employing people.
+
+Nebojsa (41:56.14)
+Mm -hmm.
+
+Nebojsa (42:13.228)
+Mm -hmm.
+
+Nik (42:19.578)
+And that part is actually just, I actually spent six months with each of them to actually onboard the person up. And I spent like basically those six months are just like process of making mistakes and like, you know, challenging ourselves to actually, you know, learn stuff and to actually get in touch with everything that they need to do. So each of my employees is actually taught by me how to do stuff. So that's like,
+
+Nebojsa (42:20.94)
+Mm -hmm.
+
+Nebojsa (42:28.396)
+Hmm.
+
+Nebojsa (42:48.62)
+Mm -hmm.
+
+Nik (42:50.042)
+first part of your answer and second part, I never look to, I never look to for extra profit if I need to sacrifice quality. So we have procedures that are actually working for us. One article per day per query each writer that we have in the team is like our maximum amount.
+
+Nebojsa (43:06.604)
+Yeah.
+
+Nebojsa (43:12.236)
+man, like now when you said all this and I see how tired you are when choosing and picking people you want to work with, I'm even more honored to be able to work with you on some projects and now when I see the quality you're looking and everything, that's great man. Yeah, so.
+
+Nik (43:22.65)
+Yeah, yeah.
+
+Nik (43:28.89)
+Yeah, yeah, for sure. For sure. And yeah, I already shared that with you. So I'm very, very picky who I'm taking for like, you know, some projects to work on.
+
+Nebojsa (43:33.868)
+Yeah, I see. I mean, yeah, I see like you, you, you, I mean, we can see from all of these that you really appreciate all your clients. You want to have the same quality, never drop it. You're focused on all the details. You never want to miss anything. So I mean, that makes you a guy who people want to work with. So that that's good. That's very good, Nick.
+
+Nik (43:58.146)
+Yeah, actually, yeah, actually, yeah. And I would say that like, I have a lot of actually, like, you know, messages from people like, even you know that, but you know, when, when those like sales guys reach you, so do you know, do you need extra leads? No, like, no, you're lying. You're like, you're lying. No. So actually, it's happening with a lot of business owners and even startup founders, like CEOs, whatever approaching me and I'm
+
+Nebojsa (44:08.268)
+Yeah.
+
+Nebojsa (44:15.756)
+Hehehehe. Hehehe.
+
+Nik (44:27.066)
+basically very picky. So it's, you know, and sometimes like I'm like even rejecting like 80 % of them. So if my, if my capacity with the team is a full, then I would, I would like reject them. Like basically we cannot like offer you the same quality and that's all because of that. As I said, like you need to make some sacrifices. So if I'm not ready to take the project that I'm pretty confident that we can make results with, then I would probably like reject that even for time being or stuff like that.
+
+Nebojsa (44:53.964)
+Mm -hmm.
+
+Nik (44:55.834)
+Because like, listen, if my team is like at full capacity and if I'm like, you know, taking more projects that will lead to two different situations that I want to avoid. First one that they need to fast employ. And that's like that very stupid for me that that's very bad flow school about like, you know, fast employee, fast hire fast fire, you know, so what you're getting like, you know, that that's super horrible.
+
+Nebojsa (45:00.012)
+Mm -hmm.
+
+Nebojsa (45:09.548)
+Mm -hmm.
+
+Nebojsa (45:14.156)
+Yeah.
+
+Yeah, yeah, I know, I know. Yeah.
+
+Nik (45:20.442)
+And second part is that I think for long activity in this business, you need to make a very good client, you know, approach so that you can keep the clients because it's very competitive niche. So I would say, and I know from fact that you are also doing that, that we have like very, very high and long client retention rate that actually, yes, it's surplus like three, four, five years, whatever. So it's very good. It's very good.
+
+Nebojsa (45:27.852)
+Mm -hmm.
+
+Nebojsa (45:40.46)
+retention rate yeah that's right.
+
+Nebojsa (45:45.612)
+Yeah, that's a big respect for you Nick. I mean I see how many people are just you know, they just want to get new clients. They don't care about the quality. They care about the quantity. They lose their quality by providing and accepting more and more and more clients to their agency. So yeah, I also agree with you that if you see that the project is.
+
+Nik (45:50.01)
+Thank you.
+
+Nik (46:02.746)
+Yes, yes.
+
+Nebojsa (46:10.476)
+Currently too big for you and you would need to immediately hire new people or that the other option is to lose the quality as your people won't have enough time to commit to the project then you can either Postpone the project if the guy really wants to work with you or you can refer it to someone else you know that is trustworthy and Then if you cannot do any of these two then you you the only option is to reject the project
+
+Nik (46:19.578)
+Yeah.
+
+Nik (46:28.922)
+Yeah.
+
+Yes, absolutely.
+
+Nik (46:39.802)
+Yes, as you said, as you said, yeah. And because of that, we are working also.
+
+Nebojsa (46:40.492)
+So yeah.
+
+Nik (46:44.378)
+As I said on some of the projects, because I saw in you that you also don't sacrifice quality for money and stuff like that, so that you're very organized, your people know what they're doing, you're very knowledgeable about the stuff, and at the end of the day, you're trying to keep the same quality for each client. So because of that, as I said, some clients are paying very small retainer, and I'm also providing clearly in...
+
+Nebojsa (46:49.996)
+Yeah.
+
+Nebojsa (47:09.132)
+Yeah, the same quality for everyone. Yeah. Yeah.
+
+Nik (47:10.426)
+smaller amount, but same quality. If they even pay for one meeting per month, actually we got amazing client that he was paying one meeting per month and with only that one meeting, we almost doubled the traffic over the year. So I'm just trying to provide the value for the amount that I paid for. Clearly we have some other retainers that were huge, but again, as I said, it's not like that. I'm not gonna ditch anyone.
+
+Nebojsa (47:18.444)
+That's radnik.
+
+Nebojsa (47:29.804)
+Mm -hmm.
+
+Nebojsa (47:34.316)
+Mm -hmm.
+
+Nik (47:38.97)
+I will just like, okay, like let's find a way to collaborate because like this is the way how I work and my team works. So I don't really want to sacrifice any of the quality for any of the clients that I'm working with.
+
+Nebojsa (47:39.276)
+Mm -hmm.
+
+Nebojsa (47:44.524)
+Mm -hmm.
+
+Nebojsa (47:53.292)
+Yeah, man, that's awesome. So Nick, when it comes to keyword research, like what tools and techniques do you use for keyword research in different industries? Yeah.
+
+Nik (48:02.522)
+Yeah, again, as I said, like, last week I moved away from keyword research and I moved, you know, forward to more and more ditching keywords and focused topic authority. But I would say like my tool's preference, I know it's pretty horrible state right now, it's Ahrefs. I just like started to work with Ahrefs when I started in the industry. So logically, that was like the part that, that tool, like, you know, is my favorite tool.
+
+Nebojsa (48:06.444)
+Thank you.
+
+Mm -hmm.
+
+Nebojsa (48:14.7)
+Mm -hmm. Mm.
+
+Nebojsa (48:20.408)
+Yeah. Mm -hmm.
+
+Nebojsa (48:25.452)
+Mm -hmm.
+
+Nebojsa (48:29.516)
+Yeah.
+
+Nik (48:31.898)
+I really think it's amazing tool for analysis. So again, if I'm not using it exactly for keywords, maybe Semrash is even better because we have different intent and stuff like that. I would use anyway, HS because of analysis that they can get from it and I'm pretty used to HS. So regarding techniques, again, it's very hard for me to say that because like, again, I ditched the approach to just being the keywords, but...
+
+Nebojsa (48:36.236)
+Mm -hmm.
+
+Nebojsa (48:41.836)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (48:46.732)
+Mm -hmm.
+
+Mm -hmm.
+
+Nik (49:00.73)
+I would say like, you know, looking at overall. So I, way back, I have three different techniques, competitors query, what they're going for. Then manual approach and paid ads if the client got like paid team. So whatever the bidding on paid ads, I would like take that and like, you know, spread more around that manual research is like that. You are getting some idea and then typing, trying to find different.
+
+Nebojsa (49:00.78)
+Mm -hmm.
+
+Nebojsa (49:09.196)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (49:17.292)
+Mm -hmm.
+
+Nik (49:27.194)
+ways query like for that, it was given it's everywhere. Amazing tool. Or even like also asked I'm using like a lot of so asked to this day to find like different questions about the query and similar stuff to that. And in the end, it would be, it would be, you know, competitors, but again, I'm very against. following exact way that your competitors did because you will provide zero.
+
+Nebojsa (49:36.844)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (49:51.052)
+Mm -hmm.
+
+Nik (49:53.37)
+new information, you will provide zero new value for the users. And I am really thinking that Google will move towards that if you don't have anything new or anything from the value. I'm really thinking that you will not rank anymore.
+
+Nebojsa (50:10.0)
+Okay, thanks for sharing this. We also use a trust as we find it the best of all the other tools. I mean, we tested out other tools as well, but like we love the UI and the simplicity. Everything is very easy to use and you can get all the details.
+
+Nik (50:15.962)
+Mm -hmm.
+
+Nik (50:26.522)
+Yes, apart from price. Apart from price. Yeah, for sure. For sure. For sure. No, I actually went back and forth with them regarding that. It's crazy what they're doing, but whatever. Yeah.
+
+Nebojsa (50:30.476)
+Yeah apart from price. Yeah, so h3fs is if you're listening you should send us a special offer to me and nick So nick, yeah Yeah, I know I know especially if you want to get the api that's ultra expensive, but yeah So, yeah nick. I wanted to ask you an very interesting question that
+
+Nik (50:50.362)
+Yeah, yeah.
+
+Nebojsa (50:58.572)
+People always have different answers to these questions. So like what are some common SEO mistakes business make and how can they avoid them based on your previous experience?
+
+Nik (51:01.946)
+Mm -hmm.
+
+Nik (51:11.802)
+I have very actually quick answer to that and I'm sure probably like a majority of people you agree with that is like paying too low for SEO. That's the biggest mistake that business can do. Like if you pay and if you have very low budget that like you can actually think that you can get something for example 500 USD per month, you cannot get anything. Like just imagine how one writer cost backlinks and stuff like that. So, and SEO expert on top of that. So,
+
+Nebojsa (51:15.948)
+Yeah.
+
+Nebojsa (51:19.692)
+Mm -hmm.
+
+Nebojsa (51:23.724)
+Mm -hmm.
+
+Nebojsa (51:34.636)
+Yeah.
+
+Nik (51:40.41)
+With 500 USD per month, you don't have anything there. So the biggest mistake was that, and that even so in career. So technically people don't count on something that's like, you know, cumulative over the timeframe. So what's happening there is that if you're paying 500 USD per month for 12 months, you're going to pay 6 ,000. You know, it's better to pay, for example, 2000 per month for three months, very good expert that can give you knowledge, strategy, everything. And to follow up with that.
+
+Nebojsa (52:00.844)
+Yeah.
+
+Nebojsa (52:08.652)
+Mm -hmm.
+
+Nik (52:10.202)
+Then to spend like, you know, 6 ,000 over the year, get absolutely nothing, maybe even destroy the website with different forbidden techniques or like, you know, cheap links from Fiverr and stuff like that, whatever. And then like hire after that period, good SEO for like two, three, 4 ,000 per month. And you're going to like anyways, you know, you, you anyway lose like six, six K. So why with six K you can like really make some very nice movement, you know,
+
+Nebojsa (52:20.556)
+Yeah.
+
+Nebojsa (52:35.596)
+Yeah.
+
+Nik (52:37.306)
+So I would say that the biggest problem with founders, because they are not knowledgeable about the SEO and the biggest problem is that their budget for SEO is way lower. So they just like want to have some SEO guy. They just want to have mentioning of SEO in their marketing, but they don't understand it. And then they don't want to pay. And when they don't want to pay, then we get the situation that they're like having actually double of the cost.
+
+Nebojsa (52:47.052)
+Mm -hmm.
+
+Nebojsa (52:58.54)
+Mm -hmm.
+
+Nebojsa (53:04.793)
+Yeah, and like how do you maintain transparency with your clients about their SEO investments?
+
+Nik (53:11.066)
+KP, you already know that, but like query on some serious level when you are working, when you have international clients and clients that we are working with query, you know, from your perspective regarding backlinks, but, my perspective, it's maybe a little bit more complex. but, I would say KPIs so I can always doing KPIs. And I know that a lot of people like running away from KPIs because they don't want that responsibility.
+
+Nebojsa (53:16.313)
+Mm -hmm.
+
+Nebojsa (53:23.705)
+Mm. Mm -hmm.
+
+Nebojsa (53:29.561)
+Mm -hmm.
+
+Nebojsa (53:33.273)
+Mm -hmm.
+
+Nebojsa (53:38.361)
+Mm -hmm.
+
+Nik (53:39.194)
+But simple reports and kps. Keyword positions gain for not all keywords, but keywords that actually matter. Leads to some sort, like if that we want to go for conversions, we want to go for, you know, signing demos, we want to go for signing newsletters, whatever. So signups, conversions, I would say like traffic, I would say probably that's all, like, you know, clicks or whatever, like depending on the tool.
+
+Nebojsa (53:46.585)
+Mm -hmm.
+
+Nebojsa (53:51.641)
+Mm -hmm.
+
+Nebojsa (54:06.233)
+Yeah, like what metrics do you consider most important when measuring the success of an SEO campaign? Like if you have to choose one.
+
+Nik (54:12.346)
+I cannot say, like, I need to say that, but I'm not happy to say that, because I think SEO is multi -dimensional on the marketing channel, but I need to say leads. I need to say leads. Absolutely the leads. Yeah.
+
+Nebojsa (54:19.609)
+Hehehe.
+
+Nebojsa (54:24.581)
+okay leads but in order to measure leads you would have you would need to have some access to their crm or something like that yeah right
+
+Nik (54:34.298)
+CRM, yes. Yeah, but usually I have, again, I will need that if you want to send those KPI, so usually I have, but yesterday I just got like amazing message, amazing feedback from the client. It's, my gosh, like we, you know, start cooperating, you know, recently he built this website, whatever, and he was like, my gosh, I just like, you know, got like free leads organically. And like, I'm amazed, you know, it's very...
+
+Nebojsa (54:41.433)
+Yeah, mm -hmm.
+
+Nebojsa (54:53.305)
+Mm -hmm.
+
+Nebojsa (54:58.297)
+Mm -hmm.
+
+Nik (55:00.794)
+It is not a cheap industry in case of free weights are super big, but like I would say that access to the leads are the most. So, sorry, I just wanted to clarify that. Yeah. You have MQL and SQL. So MQL is marketing qualified leads and SQL is sales qualified leads.
+
+Nebojsa (55:05.369)
+So... Mm -hmm.
+
+Nebojsa (55:13.145)
+Yeah, they bring the value. I know that everyone wants to have more leads. That's their goal. Yeah. Yeah. Yeah. Shoot. Mm hmm.
+
+Nebojsa (55:24.825)
+Mm -hmm.
+
+Nik (55:24.986)
+both of those metrics should be the part of report system. So for me personally, I wouldn't say that that's most important because I know people that actually get generating 30 people on the website, but from 30 people per month. And you will say, my God, that's nothing. But from 30 people, they scheduling four calls for meetings. So it's just like, it's super, it's super for me personally, not good that you look at one metric as most important in SEO.
+
+Nebojsa (55:29.049)
+Okay
+
+Nik (55:54.97)
+But I would say qualified traffic, if I can say like that, and leads. Those two is the most important.
+
+Nebojsa (55:55.129)
+Okay.
+
+Mm -hmm. Yeah, you can Okay, man. Yeah, that makes sense. That makes sense and for example once the client starts getting a decent number of leads every single month Would you recommend that the client starts? Looking at the conversion rate as an edit as one metric that should be tracked as well
+
+Nik (56:09.85)
+Mm -hmm.
+
+Nik (56:22.83)
+Very interesting question. I would say no. I would say more quick -through ratio. I think CTR or quick -through ratio is way more important from SEO because we can affect meta -titles, meta -descriptions that can affect quick -through ratio. Regarding conversions, I don't find that as a part of a job of SEO.
+
+Nebojsa (56:32.185)
+Mm -hmm. Okay.
+
+Nebojsa (56:38.681)
+Mm -hmm exactly
+
+Nik (56:46.33)
+I know that a lot of people will not agree, but I really hate people when they said they are experts from web design to SEO to PPC. You are not expert in anything, like if you ask me, you know, in that way. But I would say that conversions are more for conversion rate expert or at least for UX designer. I wouldn't like accept that as my KPI, to be honest with you. And also, what happened? What if we have 80...
+
+Nebojsa (56:51.545)
+Mm -hmm.
+
+Nebojsa (56:56.313)
+Yeah, yeah, yeah.
+
+Nebojsa (57:03.609)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (57:07.897)
+yeah, yeah, you're completely right, yes.
+
+Nik (57:14.362)
+I even generated something like 90, 80, you know, leads per month. And if the sales team is super bad and they like, you know, convert only five of them for me personally, that's like there. So I don't have anything to do with that. Yes. Yes. Yes. Yes.
+
+Nebojsa (57:18.073)
+Mm -hmm.
+
+Nebojsa (57:22.713)
+Yeah, yeah, yeah, yeah. They would hurt your KPIs if you measure that. Yeah. Okay. Okay. So like to bring the this podcast at the very end, I wanted to discuss one important thing and you already know what is it about. So now that SG is up and running, how do you see the role of AI evolving in the SEO industry?
+
+Nik (57:49.05)
+I'm not fan of it. I'm going to say like that. I'm going to start like, you know, with that. Clearly I had a chance to test it even in beta before. So we have like that, that part that we can like follow up. So let's say like bad and good things. Bad things, I still don't find AI relevant there. And we can see those memes, you know, Bananum, Oranjanum and the other stuff, you know, with different stuff there.
+
+Nebojsa (57:54.073)
+huh.
+
+Nebojsa (57:57.625)
+Mm -hmm.
+
+Nebojsa (58:07.225)
+Yeah.
+
+Nebojsa (58:12.601)
+Yeah.
+
+Nik (58:16.09)
+And clearly, so I'm not a fan of it there. I am more oriented that AI is not going to be there for some quality time. Why? So I think AI will be there for a long time, but not quality time, because with quality, they struggle a bit. And I'm not sure that Google was ready for this.
+
+Also, I saw some super warning signs yesterday that I think Eliushvards mentioning is that like Google planning in one moment to give you not only AI overview, but whole AI generated page. In that part, that would be, you know, deadly for SEO and like at least SEO that we know. No, no, no, on the Google search. Yeah. Yeah. Yeah. Without any links. The whole, yeah, that's, that's stupid. Like you can f -
+
+Nebojsa (58:57.401)
+like on the on the right on the home page like on the google search page you will be able to see the whole page
+
+that can.
+
+Nik (59:10.394)
+That would be like end of SEO query. But yeah, I hope they will not do that, at least, you know, soon. And when I say end of SEO, it's like end of SEO that we know, that we are doing right now, query, it will be, you know, managing that AI actually show you in that random generated page. But anyway, I'm not a fan of it. I think it's not for quality at all. It's not quality improvement. It will stay for a long time. It will be more and more...
+
+Nebojsa (59:14.105)
+Yeah.
+
+Nebojsa (59:28.441)
+Yeah.
+
+Nik (59:39.706)
+You know, there, I think Google like was pushed to publish this by stake stakeholders to not show their weak weakness over open AI and similar stuff to follow the latest trends. Also, I am not, I'm pretty sure that Google, you know, will manage to make it better over the time, you know, so from that perspective,
+
+Nebojsa (59:51.321)
+Mm -hmm.
+
+Nik (01:00:08.602)
+I'm not happy with it, but why I'm happy with it, at least what I can conclude from a test, it was that some evergreen topics, as we mentioned in this podcast, some different examples, actually gave me answer from 2018. So I was thinking, okay, this is very bad, whatever. But then I was realizing that isn't bad. Why? Because like,
+
+Nebojsa (01:00:20.665)
+Mm -hmm.
+
+Nebojsa (01:00:36.697)
+Mm -hmm.
+
+Nik (01:00:37.242)
+If we just have and we have a lot of spin -off in the past years of Google, so we are not actually doing anything new, anything like, you know, we are not evolving. So I'm actually happy that they chose to show some older, you know, articles and all the results for the topics that are evergreen, that are not changing.
+
+Nebojsa (01:00:41.433)
+Mm -hmm.
+
+Nebojsa (01:00:58.649)
+Mm -hmm.
+
+Nik (01:00:59.226)
+You know, so I really think that this can be like looked at both sides. So like for, for now, like, you know, and the worst case scenario is that they weren't ready for this. Google wasn't ready for this at all. So I'm very scared about that, but from the good point, I think it will open new opportunities. It will give us more value to actually provide original content. And I think it will maybe open some new profession as like, you know,
+
+Google AI, you know, test your expert or whatever. So we're gonna feel, you know.
+
+Nebojsa (01:01:31.739)
+Yeah.
+
+Yeah, yeah, yeah at the end of this year we expect to see drop titles like that Yeah as a is your specialist Yeah
+
+Nik (01:01:41.21)
+Job titles, yeah, for sure regarding AI and Google, yeah. AI, yes, your specialist. Yeah, that would be the case for sure. But yeah, and as I said, the problem with the whole Google is that they have a monopole over search engines. And I really think that we need another search engine that will be competitor. Because in this way, they're just doing whatever they want. And it's not only problem that they affect us, they affect even.
+
+Nebojsa (01:02:01.851)
+Mm -hmm.
+
+Nik (01:02:09.53)
+a lot of businesses returning money via search.
+
+Nebojsa (01:02:11.099)
+Mm -hmm Yeah, I understand I understand next day this this has been an interesting discussion So thank you for joining us on the ranking heroes a big shout out to you for sharing all the wealth of knowledge and inspiring journey So if you guys enjoyed today's episode with Nick, make sure to subscribe to our channel follow us with on our social media So stay tuned for more episodes we bring
+
+Nik (01:02:24.762)
+Thanks so much.
+
+Nebojsa (01:02:39.899)
+And until next time keep innovating and remember I think that you just learned a big lesson from nick and that's that success is a journey not a destination Goodbye for now. Thanks nick Bye. Bye
+
+Nik (01:02:51.322)
+For sure, for sure. That was like the grass. Bye bye.
+

@@ -12,11 +12,16 @@ const GLOBAL_FALLBACK_SUGGESTIONS = [
   "Quote the strongest take on B2B content from any episode",
 ];
 
-export default async function PodcastRoute() {
-  const episodes = await getPodcastEpisodes();
+interface PodcastRouteProps {
+  searchParams: Promise<{ page?: string | string[] }>;
+}
+
+export default async function PodcastRoute({ searchParams }: PodcastRouteProps) {
+  const [episodes, params] = await Promise.all([getPodcastEpisodes(), searchParams]);
+  const page = Array.isArray(params.page) ? params.page[0] : params.page;
   return (
     <>
-      <PodcastPage episodes={episodes} />
+      <PodcastPage episodes={episodes} page={page ?? null} />
       <PodcastChatProvider
         globalSuggestions={GLOBAL_FALLBACK_SUGGESTIONS}
         mode="global"

@@ -1,0 +1,1103 @@
+Nebojsa (00:01.008)
+Hi, welcome to the ranking heroes, a podcast where we discuss different strategies with the experts behind them. Today we have a very special guest, Antonio Gabrić, an outreach expert from hunter.io who joined us today. So first I want to thank you, Antonio, for taking your time to join this podcast and to properly kick off. I would ask you to share your journey into SEO and link building and tell us what inspired you to specialize in this field and how did
+
+your freelancing days shape your career now.
+
+Antonio Gabric (00:35.278)
+Well, thank you, Nabosha, for having me. It's a pleasure. So maybe a bit about myself, what I'm doing at the moment. And then after that, I could share how everything started. It was quite a journey. But yeah, at the moment, I'm managing link building at Hunter IO. On top of that, I'm managing the affiliate partner network there.
+
+So at Hunter, we've been doing link building forever. I've been part of a team for last almost four years. And over the years, it slowly changed like from what you could see before, like skyscraper method. We can talk about that later, but it started like that. And now it's like we try pretty much everything what's out there. We find what's working for us. So I can share more about that later.
+
+Nebojsa (01:09.308)
+you
+
+Nebojsa (01:29.147)
+Mm-hmm.
+
+Antonio Gabric (01:32.314)
+So yeah, that's kind of in general what I'm doing at Hunter. In terms of how everything started, well, it's a long journey.
+
+Nebojsa (01:41.511)
+Yeah.
+
+Antonio Gabric (01:44.602)
+I was like, I'm from Croatia and in 2015 I was still at the university and I was kind of like, I didn't know what to do and I didn't like that much like what I was studying. I was studying something very related to marketing but it was quite outdated. So the knowledge like didn't follow the trends. What we can see now.
+
+Nebojsa (02:01.593)
+Nebojsa (02:05.213)
+Mm-hmm.
+
+Antonio Gabric (02:09.41)
+And I was like kind of always like to be kind of on the computer. Even before in the high school, I was kind of playing a lot of video games and connecting with people around the world. And one day I was like writing on Google, like how to earn money online. And there was like tons of different ways how to do it. at that time I was really bad at English. So I was like...
+
+Nebojsa (02:15.143)
+Mm-hmm.
+
+Nebojsa (02:20.573)
+Uh-huh.
+
+Nebojsa (02:28.176)
+haha
+
+Antonio Gabric (02:35.106)
+Let me start. I started at that time, like a free wordpress.com blog. And it was, I was reviewing the, the calisthenics equipment, like pull up bars, chin up bars, like the push up bars and stuff like that. And it was the way how I kind of learn everything that they read and also how I kind of make my English a bit better, especially in the written form. And actually that website started to earn money after a couple months, it started to earn money.
+
+Nebojsa (02:41.424)
+Okay.
+
+Nebojsa (02:48.845)
+Okay.
+
+Nebojsa (03:04.127)
+Mm-hmm.
+
+Antonio Gabric (03:05.334)
+At that time, was SEO was way easier than now. Like you could just spam it, like block comments and stuff. So I kind of liked the idea that, okay, you are at home, you are kind of very flexible when it comes to your time and you can also earn money. So that was quite something that kind of motivated me to, you know, to kind of focus more on that. And then later on, like maybe like year after,
+
+Nebojsa (03:09.757)
+Yeah.
+
+Antonio Gabric (03:31.744)
+I started to be on Upwork and there was a guy from Israel. had the kind of like portfolio of affiliate websites and he was also building new websites and it was something that it was something interesting because he had the money to invest.
+
+Nebojsa (03:34.815)
+Mm-hmm.
+
+Antonio Gabric (03:49.306)
+and I didn't have the money to do it on my website, but I learned how to do it. And I wanted, it was quite interesting experience when someone throw the money and you can do like experiments and stuff. And it worked for a couple of years. And then COVID happened, then we stopped working on that. And I think after COVID, maybe 2021,
+
+Nebojsa (03:53.844)
+You had skills.
+
+Yeah.
+
+Antonio Gabric (04:09.978)
+I found like an ad on Upperc, like we need a link builder for B2B business. And I kind of send a message there and it was Hunter. So we started, I started as a freelancer for a year, almost two years. And then like some changes in the team happened and it was opportunity for me to really join the team. It was 2022, I think.
+
+Nebojsa (04:21.607)
+Haha.
+
+Antonio Gabric (04:38.338)
+Yeah, 2022 and from then I kind of take over link building. It was very different at time and we slowly like experimented building new things and yeah, it's that's kind of in nutshell. I could talk for probably for more than an hour about things, but I try to keep it as as short as possible. So yeah, I would say that would be something.
+
+Nebojsa (04:54.465)
+Mm-hmm.
+
+Nebojsa (04:59.668)
+Yeah, that's an interesting story. And I like how Upwork made you apply for a job. And then once you upgraded your skills, Hunter just took you as their own Lingilder. And then you were able to upgrade your knowledge to even another different level before you were promoted to an Outreach Manager. So I wanna...
+
+discuss more about building effective link building strategies. mean, that's why we are here right now and I'm enjoying because finally I have a guest who has like expertise specifically in link building quality backlinks and also, you know, that we do the same. So I really want to share more knowledge with you. So I went through LinkedIn. I mean, I've been following you for a while. I've been...
+
+reading your posts and I like them you share like a lot of value to all the people there and in one of your posts you mentioned that building backlinks that move the needle is hard so what do you think are the biggest challenges in link building today and how do you tackle them?
+
+Antonio Gabric (06:07.34)
+Well, that's a great question. Like, first of all, I would say like the link building started to be very harder than it was before. And link builders don't get enough recognition from the people around other industries because it's really like when you look at it from the like bird eye, you will see that it's quite similar to sales, but it's it's even I would say more challenging because
+
+like of all of those like spammers that kind of just reach out to you, hey, dear sir, madam, I have the list for you. They give a bad rep to us. And from the beginning, it's harder for us to kind of land into inboxes and really start a conversation. So yeah, I would say like it's very challenging at the moment, but.
+
+Nebojsa (06:39.341)
+Yeah.
+
+Nebojsa (06:47.043)
+Mm-hmm. Mm-hmm.
+
+Antonio Gabric (06:56.214)
+Especially like to build the backlinks that really like move the business in the right direction because it's not like I believe it's not only, you know, you just look at the vanity metrics from a traps and then you say like, Hey, hide the our backlinks with, I don't know, 10,000 of the main traffic. That's all what you need. Then you build a lot of those backlinks. You maybe grow a little bit on the DR side and maybe like some traffic grows. But then many times with businesses, it happened that like.
+
+Nebojsa (07:02.788)
+Mm-hmm.
+
+Nebojsa (07:09.346)
+Mm-hmm.
+
+Nebojsa (07:13.625)
+Mm-hmm.
+
+Antonio Gabric (07:26.06)
+they don't actually create any new revenue. Like they maybe get some rankings higher, but this pause that you build backlinks to, they don't generate more organic acquisitions and also conversions. So for me, like what I would say, like building the backlinks that are kind of moving the needle over like, of course, having backlinks that are.
+
+Nebojsa (07:30.148)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (07:38.158)
+Mm-hmm.
+
+Antonio Gabric (07:49.54)
+high quality in terms of like this vanity metrics. That's kind of like, would say like scratching the surface. But once you go like a bit deeper than that, like building backlinks that are very relevant to your industry, building backlinks that are coming from domains that are real businesses, like not some, you know, like some random website that is made for the link building purposes. But let's say,
+
+Nebojsa (08:08.485)
+Mm-hmm.
+
+Nebojsa (08:13.882)
+Yeah.
+
+Antonio Gabric (08:14.594)
+You get, I don't know, like Hunter, for example, we take Hunter as a domain example, you know, it's a real business behind it. Like, you know, there is like always some kind of updates happening. So if you are into, let's say, cold email industry and you want a real, really good backlink, like backlink from Hunter would be a great, great option. Also, would, I would go a bit deeper than that. I would also analyze like what, what are they doing in terms of like content? What are they doing in terms of link building itself?
+
+Nebojsa (08:22.277)
+Mm-hmm.
+
+Nebojsa (08:32.934)
+Mm-hmm.
+
+Nebojsa (08:43.214)
+Mm-hmm.
+
+Antonio Gabric (08:44.522)
+because like I saw like couple of experiments where people buy like, I don't know, package on Fever or Upwork and they start from, they buy a new domain and they build it like to DR 70 and
+
+Nebojsa (08:53.434)
+Mm-hmm. Mm-hmm.
+
+Antonio Gabric (08:59.556)
+couple thousand of traffic like in a month and they start to sell the backlinks. So it's kind of tricky. First kind of you need to have a bit of understanding what's actually a good backlink other than just looking at the metrics. And then also one thing that we started to notice that matter for us, it's building the backlinks from pages that have traffic. Like the philosophy behind that is pretty much like
+
+Nebojsa (09:03.524)
+Yeah.
+
+Nebojsa (09:24.644)
+Mm-hmm.
+
+Antonio Gabric (09:28.652)
+Imagine you land on the page that has traffic. Whenever you kind of like analyze what keywords they are trying to rank for, there is a huge chance that they need to build some backlinks to push that page on top of Google. Because right now it's almost for everything there is a competition. And sometimes you need to really stand out to be high on Google and get some organic traffic. So for us, these pages are, first, it's hard to find them.
+
+Nebojsa (09:41.223)
+Mm-hmm.
+
+Nebojsa (09:47.588)
+Mm-hmm.
+
+Nebojsa (09:52.817)
+Mm-hmm.
+
+Antonio Gabric (09:58.424)
+because not everything ranks. And second, it's also a bit tricky to negotiate because
+
+Nebojsa (09:58.748)
+Mm-hmm.
+
+Nebojsa (10:02.555)
+Yes.
+
+Nebojsa (10:06.648)
+Mm-hmm.
+
+Antonio Gabric (10:07.106)
+People usually would give you links like from some not important pages, but these that generate traffic, they are usually a little bit more important for them. So then it comes to your offer of what you can offer them. And we were also working on that a lot, like trying to make our offers better, trying to put more things into our offers. So yeah, I would say these are the backlinks that would move the needle. It's way more.
+
+Nebojsa (10:15.538)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (10:33.682)
+Mm-hmm.
+
+Antonio Gabric (10:34.668)
+below the surface than just the air and the main traffic.
+
+Nebojsa (10:39.082)
+Okay, so I have two follow up questions on this. So the first one is, let's say you found a domain that's very relevant to your industry and you want to get a backlink for your client. And then you go and see their top performing pages. And it happens that you found a page that's performing very well, has organic traffic, doesn't have any competitors back links, content looks very good. And you think, okay, so this is the perfect place for me to place the link there.
+
+Would you rather use that page and do a link insertion or would you go with the article publication like writing and publishing an article?
+
+Antonio Gabric (11:18.478)
+Yeah, like for, for that, I would just go like straight to, to getting a link inside that page. If it's, if it's listicle, even better, like if they could mention Hunter to do specific thing into that, like sometimes like, for example, there is a page that writes about specific, let's say tactic for cold emails and it's not actually like.
+
+Nebojsa (11:25.033)
+Mm-hmm.
+
+Nebojsa (11:29.374)
+Mm-hmm. Mm-hmm. Yeah.
+
+Nebojsa (11:41.255)
+Mm-hmm.
+
+Antonio Gabric (11:42.646)
+best called email tools, but how to write called email that converts, for example. And then inside the article, if there is a way that we could kind of negotiate with them to kind of showcase Hunter as a tool for doing all of that, that's perfect. Either like that or just like getting like a regular link insertion that works. But usually how we do it, like we never, we always kind of try to,
+
+Nebojsa (11:47.05)
+Mm-hmm.
+
+Nebojsa (11:55.807)
+Mm-hmm.
+
+Yeah.
+
+Antonio Gabric (12:09.988)
+how to say it, avoid transactional link building. I just give me one link and bye bye. We try to always like we do one link and then we see it like as a partnership, let's see what else we can do together. And then this would be kind of like link insertions. feel like they're kind of the easiest. They don't need much management and time. And if that goes well from both sides, then I would be like, can we do guest posts maybe? Can we do some co-marketing so co-content creation or something? So we always try to from link insertions
+
+Nebojsa (12:13.323)
+Mm-hmm.
+
+Nebojsa (12:20.636)
+Exactly.
+
+Nebojsa (12:29.461)
+Mm-hmm.
+
+Nebojsa (12:36.075)
+you
+
+Antonio Gabric (12:39.932)
+move to some other ways to do the partnership. So I would say link insertions would be like way to, you know, knock on the door, start the partnership and then from there move on.
+
+Nebojsa (12:48.812)
+Okay. So once you have that link created, like that link inserted, then you establish like a long-term relationship and you want to do something more. Does that mean that you have this, let's say that it's okay for you to like do multiple backlinks from one referring domain when it comes to Hunter?
+
+Antonio Gabric (13:15.95)
+Yeah, yeah, yeah.
+
+Nebojsa (13:16.747)
+So then my guess is that you are expecting to get referral traffic from those links, right?
+
+Antonio Gabric (13:23.898)
+yeah, sometimes, sometimes, especially like it's, it's kind of like, it's a, it's a tricky topic to, to, talk about referral traffic because some people will, expect referral traffic from links, but it's, it's our job to kind of
+
+Nebojsa (13:33.075)
+I know.
+
+Antonio Gabric (13:43.704)
+try to, how to say it, like try to explain them that it's not always working like that. Because from our experience, like referral traffic works only kind of like when the, when the article, for example, when we place Hunter is very, very bottom of the funnel. So for example, let's say there is article about best email verification tools.
+
+Nebojsa (13:50.238)
+Yes.
+
+Nebojsa (14:02.88)
+Mm-hmm.
+
+Antonio Gabric (14:08.664)
+That means that the user who is writing that keyword on Google, they are already kind of in consideration. They know what is verification. They know that it's important. But they are still not sure which tool they need. And then if they land on that article, which is ranking high on Google, let's say best email verification tools, they click on the first page on Google. And Hunter pops up as the number one tool there. There is a high possibility that will be referral traffic and potentially convert into internet.
+
+Nebojsa (14:08.768)
+Mm-hmm.
+
+Nebojsa (14:16.492)
+Mm-hmm.
+
+Nebojsa (14:28.046)
+Mm-hmm.
+
+Nebojsa (14:35.457)
+Yeah.
+
+Antonio Gabric (14:38.57)
+to customer. These links for us are like, this is the golden link. Sometimes it doesn't matter whether it's coming from DR 40, DR 50, like this is really, this doesn't matter if it gets traffic and it's bottom of the funnel for us, that's that's the generating referral traffic. But for the the anchor tags that are kind of keyword rich anchor tests, some are placed randomly in the article.
+
+Nebojsa (14:39.181)
+you
+
+Nebojsa (14:47.657)
+Exactly.
+
+Antonio Gabric (15:04.824)
+we get close to non-referral traffic that way.
+
+Nebojsa (15:08.847)
+Yeah, and I like that psychology where people are more likely to convert when they have options, when they have to choose. That's why ICO is better channel than PPC because it's not forcing them to click and buy. It allows them to see multiple results. They get to choose. And for example, they type best email verification tools. They go to that first or second article and then they then they land to a listicle where they can see Hunter IO and then they get to choose.
+
+If they want to go to Hunter among the other tools that are listed, if they go, the more likely they will convert at the end of the day. So I like that.
+
+Antonio Gabric (15:39.204)
+Yeah.
+
+Antonio Gabric (15:45.978)
+Yeah, but even like the, would say like the kind of like addition to this strategy is if you can get on all of the listicles that exist pretty much for this keyword, because like, let's say they go to, to, to result number one, they see Hunter, they go to result number two. They again see maybe not first, but they see it. So they hear it all the time. I, I'm not sure what's the exactly name of that strategy, but I know like Irina.
+
+Nebojsa (16:05.935)
+Exactly, yeah.
+
+Nebojsa (16:14.313)
+It's called parasite SEO. That's how it's called parasite SEO. Yeah, that's that. Yeah
+
+Antonio Gabric (16:17.07)
+Merit at SEO. OK. I heard something like soundproof bullet, something like that with sound from SMRush. They call it like that, but not sure exactly.
+
+Nebojsa (16:28.132)
+Yeah, cool, cool. Yeah, I mean, in most cases when clients ask us, will we get traffic from those links? Will people click and convert? We say the goal of backlinks is not only that, it's to increase the positions in the keywords that we are targeting. Therefore, you'll rank better in organic. So you'll get organic traffic, like more organic than referral traffic. So yeah, okay.
+
+Antonio Gabric (16:45.295)
+Yeah.
+
+Antonio Gabric (16:54.136)
+Yeah, I mean, the main goal of link building, in my opinion, is like to rank for the keywords of your clients higher. And that will indirectly bring to more traffic. And then at the end, like there is sometimes like clients would say, you know, like we get traffic, but none of those convert. But then like, it's usually like,
+
+Nebojsa (17:01.004)
+Exactly, exactly, exactly.
+
+Antonio Gabric (17:15.424)
+something from their side, like maybe on their website, it's not optimized for their conversions and stuff like that. But yeah, the main, like the referral traffic isn't and shouldn't be the main goal of a link building. If you get that perfect, but the main goal is to just increase the positions, what you said.
+
+Nebojsa (17:18.693)
+Yeah.
+
+Nebojsa (17:35.201)
+Yeah, I definitely agree with you on this. also you emphasize hyper personalized outreach campaigns So can you walk us through your process for crafting outreach messages that achieve like 20 % conversion rate? What's the strategy there? How do you manage to get such good conversion rate?
+
+Antonio Gabric (17:53.634)
+Yeah, I mean like, yeah, I could, I could share a bit. So it's like our outreach evolved over the years. Like I remember when I started doing outreach for Hunter, we started like just that's regular skyscraper method. Hey, I saw your article talking about X we have Ypsilon. Like, can you, can you link to us? And then it slowly evolved to something that
+
+Nebojsa (18:15.717)
+Yeah.
+
+Antonio Gabric (18:23.83)
+It's not how to say it. don't try to our outreach.
+
+this main goal is not actually to build the backlinks, but to build relationships. So we kind of change our mindset regarding what's actually our goal. And then based on that, we change the whole approach when it comes to link building and also the outreach. So nowadays, our outreach is not that personal anymore. It's more like...
+
+very well targeted and timed. So we make sure that we reach out to the domains that most likely are building the backlinks and that we reach out to the person that is most likely the person who is managing backlinks at that company. So once we nail those two, we kind of look, let's say, if you go to Ahrefs, for example, you can see like referring domain are growing like exponentially in the last three months. And then this is kind of like for
+
+Nebojsa (19:10.617)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (19:18.333)
+Mm.
+
+Nebojsa (19:22.483)
+Mm-hmm.
+
+Antonio Gabric (19:24.586)
+us a good assumption that probably they are doing some link building actively. And then based on that, we try to find the right person who is behind that, email address. And then we reach out in a way like, we saw, I don't know, QPaaS X referring domains. Great job. At Hunter, we believe at partnerships. the
+
+Nebojsa (19:28.422)
+Mm-hmm. Mm-hmm.
+
+Antonio Gabric (19:48.344)
+Would you like to explore the ideas how we can grow together faster? That's pretty much something that works for us nowadays. And this is like part where we try to build the partnerships. The other part, which is kind of, we are heavy on that is a guest blogging. So in guest blogging, we try to be very specific.
+
+Nebojsa (19:51.901)
+Mm-hmm. Mm-hmm.
+
+Antonio Gabric (20:07.918)
+but from the second email, because from the first email, it takes so much time to really kind of like nail the personalization. And sometimes the email doesn't even land in the inbox. So it just takes so much time. Right now we write something like in kind of in terms like, hey, we saw there is some gap into keywords that you try to rank for. Your competitors are nailing those keywords. You are not. What if we can do it right article
+
+for you and then we would share some articles that we wrote before. And then usually they kind of respond, like we get high response rate on those and then it depends like, what keywords do you have in mind? And then it's kind of like...
+
+Nebojsa (20:53.129)
+Mm-hmm.
+
+Antonio Gabric (20:54.306)
+you have to go on Ahrefs, you do the research and stuff. So you kind of send like three to four to five different keywords and article ideas. And usually that works quite well. So yeah, also with partnerships, we don't personalize quite a lot for the first email. But later on when you get response, then we really put the effort to try every email to be like as personalized as possible.
+
+Nebojsa (21:08.671)
+Yeah.
+
+Nebojsa (21:23.575)
+Yeah, I mean, it should be done that way. You shouldn't be losing too many time doing...
+
+then once you get the confirmation that this can develop into a further relationship that's when you need to include some more manual interactions like checking the Ahrefs, looking the keywords etc. So that's a good approach and how like is there a difference between outreaching let's say 50-60 domain rating websites and 80 plus domain rating websites and what strategies do you recommend for scaling the approach when you
+
+Antonio Gabric (21:56.982)
+Yeah, yeah. Yeah, so like for the really top level domains, it's for my experience, really kind of hard to scale it. Mostly because like.
+
+Nebojsa (21:58.356)
+double ablumins.
+
+Antonio Gabric (22:14.733)
+Like in a way, kind of world is quite small. So if you mess up something, if someone sees you as a spammer or stuff, like the word is like going around quite quickly. So like, I have always a list of domains that I really, really, really want to be featured on. And most of the times, like when I, when I think about it, how, how we got there, it's mostly like.
+
+Nebojsa (22:22.825)
+Yeah.
+
+Antonio Gabric (22:38.796)
+Every time when I kind of like didn't even think about backlink, but I think like, okay, like I kind of engage on the LinkedIn, like, but genuinely not like without any goals in mind, like I would kind of engage. So I would kind of get into the rudder of the, of the person who might be responsible for link building. And then like from there, like it would, it would come up. There is some, there is some, collaboration options, whatever. just help each other. So usually like, whenever there is like, whenever.
+
+you kind of help someone without wanting anything return, then it's really these things happen that we got into big publications. Like there was once, I remember like on Moz, we got a guest post on Moz and the whole approach was something like that we were building a script internally for tracking the loss backlinks.
+
+Nebojsa (23:26.232)
+Thanks.
+
+Nebojsa (23:33.794)
+Mm-hmm.
+
+Antonio Gabric (23:34.84)
+And then we figure out there is a, there is a huge, huge number of backlinks that got lost over the years. I think it was for our case, it was something around 20 % of backlinks that we built in a year will get lost. And without kind of tracking that that's, that's an issue. You lose a lot of money. So we built something like using chat GPT. And I remember Chima, she's the editor of content at Moz. She was writing something on LinkedIn about that.
+
+Nebojsa (23:42.488)
+Mm-hmm.
+
+Antonio Gabric (24:04.716)
+topic and then I kind of commented with some of the research that we did based on our research and then she got back to me and she kind of asked me a couple questions and based on that we kind of we kind of figured out that it would be actually a guest post and then that's like how we just write a guest post and you know like get featured there so for these big websites I always like most of the times like we don't do kind of like outreach we try to figure it out
+
+Nebojsa (24:20.505)
+Cool.
+
+Nebojsa (24:26.073)
+Cool.
+
+Nebojsa (24:30.655)
+You let them come to you.
+
+Antonio Gabric (24:33.356)
+Yeah, but always kind of like offer like a lot of value in advance and then usually it works. Exactly. And there is sometimes I remember like I kind of always wanted to be featured on Ahrefs. It's my, I mean, for SEO guys, it's one of the best blog, I guess.
+
+Nebojsa (24:37.091)
+Yeah, value, of course, of course. I mean, otherwise they wouldn't approach.
+
+Antonio Gabric (24:56.51)
+And I remember they had like a submission form like for the guest posts. So it takes a lot of time for them to kind of like get back to you because I guess they get like tons of like other quests.
+
+And I remember like, get the response from them. was like, wow, that's it. You know, like that's it. I sent the outline. were like, that's approved. Okay, let's do it. And I was like, so pumped. were writing it like for a month, for a couple months. And then like, they were like, I was, I was getting back to them and they were like,
+
+Nebojsa (25:24.57)
+Whoa.
+
+Antonio Gabric (25:29.753)
+you know, they didn't answer, didn't answer. And I was like, okay, let me try on LinkedIn. And then they say, hey, we changed some strategy. don't, we don't do anymore like a guest posts. So that was like, that was a shame, but yeah. But for the lower DR websites, we usually just do like, you know, call the email and later on we'll find out some gems there. And then we,
+
+We just kind of figure out the partnerships and from there move on. Because sometimes I feel like lower DR domains, some businesses are really good, but they are just starting out and they are like not high level domain rating or SEO metrics. But you can kind of see like them as the investment because right now it's easy to get in.
+
+Nebojsa (26:09.669)
+Mm-hmm.
+
+Antonio Gabric (26:19.64)
+And then later on, it will be harder. So let's focus on partnership now. Let's help each other build this business. And then later on, like you'll have another Ahrefs or another Hunter where you have a contact where you can get backlink or guest posts so easily. So yeah, I see also some of those like investment, like real estate, you invest now and it will return later.
+
+Nebojsa (26:25.332)
+Mm-hmm.
+
+Nebojsa (26:37.551)
+That's true, yeah.
+
+Nebojsa (26:43.961)
+Yeah, I mean, I couldn't agree more. That's so right. I mean, you can make an assumption based on their current performance. If they are going up or down, if they are going up, that might...
+
+good time to partner with them, get some backlinks later on, you'll have a link on DR9D website, hopefully. Cool. And we mentioned listicles. So what is your approach to getting brands in high traffic listicles? also since, okay, Hunter is like a brand now, people know about Hunter, we've been using Hunter, all other people have been using Hunter, but like how can smaller companies achieve this visibility?
+
+Antonio Gabric (27:01.657)
+Yeah.
+
+Antonio Gabric (27:05.549)
+Sure.
+
+Antonio Gabric (27:10.105)
+Mm-hmm.
+
+Antonio Gabric (27:29.218)
+Yeah, that's that's that's easier. Like when you have a big brand behind you, I feel that's very, very easier to do this type of outreach. But if you are if you're smaller business, like you have to start somewhere like it's hard for I would say it's very, very hard for you. Like if you just build a business and someone hires you and they say, hey, we want to be on HubSpot. We want to be on Hunter or Nature's. It's sometimes like
+
+Nebojsa (27:34.108)
+Mm-hmm.
+
+Nebojsa (27:55.958)
+Yeah
+
+Antonio Gabric (27:59.132)
+very like not realistic because like if they never heard for you, it's hard. So I would say like just start building off like from the smaller domains, like just get there, just there into the rudder and then slowly build from there from those listicles. I find those listicles are kind of easier to get.
+
+they won't probably give you like lot of referral traffic because maybe those don't even like rank for specific keywords, but they'll give you some visibility. And from there you will build like SEO metrics. Maybe it will push you a little bit in SERPs. And then on top of that, on the side, I would always build like just regular backlinks, not listicles, kind of supporting strategy just to build visibility, overall visibility of your business.
+
+And just like I think like collaborations and partnerships, it doesn't matter like if you build these good partnerships outside of this specific line that you are working on, this goes a long way. So sometimes like this will open you the doors where you cannot get through without the partnerships. So always like have this partnership, build them, nurture them. You never know like even if you just start out with business.
+
+you can get to HubSpot if you have the right connections and partnerships with them.
+
+Nebojsa (29:21.119)
+Cool and also what I wanted to ask you, so you've been building links every month with your team, so do you have a strict number of links that you need to do every month? That's my first question and the second one is what KPIs do you use to measure the success of your link building campaign?
+
+Antonio Gabric (29:29.914)
+Mm-hmm.
+
+Antonio Gabric (29:43.738)
+Yeah, we usually don't have any more the numbers when it comes to backlinks because we changed the whole approach to link building recently this year. So we are like, we really focus mostly on quality at Hunter than quantity. So like if you build...
+
+let's say 10 backlinks for us, but if they're all high quality backlinks, we would rather take that than hundred of like just average backlinks. We usually end up like, I think the average this year was around 25 to 30 backlinks per month from unique domains.
+
+Nebojsa (30:22.57)
+cool.
+
+Antonio Gabric (30:25.602)
+We try to always like, since we have a very small team, we always try to leverage as much as possible. So out of these 30 backlinks, we, for example, publish five guest posts and the guest posts, we include our partners. So let's say in one guest post, we are able to get actually one link to Hunter and four links to our partners that would later always the backlinks. like for, with five guest posts, we kind of create five backlinks for Hunter, but
+
+Nebojsa (30:32.251)
+Mm-hmm.
+
+Antonio Gabric (30:54.347)
+In the future, we'll get back another 25 backlinks from the partners. So this is kind of like we always try to find a way as how to leverage the resources. That's how it works for us. 25 to 30 backlinks per month we do. And in terms of KPIs, some metrics that we track is we track how many domains we outreach per month.
+
+Nebojsa (30:57.377)
+Mmm, yeah.
+
+Antonio Gabric (31:24.154)
+We track how many links we build at the end. It's not important, but we also want to have that metric somewhere. Because like, if you see like, we reach out to 2000 people this month, then we only build like 10 backlinks. Something is not wrong or correct. We'll see like every month when we reach more people, we build more backlinks.
+
+Nebojsa (31:30.945)
+Of course.
+
+Nebojsa (31:41.377)
+Mm-hmm.
+
+Antonio Gabric (31:45.026)
+Then we track like how many, how much, what is the DR average of the backlinks and we also track what is the average page traffic of these pages that we're building from. This is something that we started to track earlier this year, page traffic.
+
+Nebojsa (31:56.451)
+Hmm.
+
+Nebojsa (32:02.061)
+Mm-hmm.
+
+Antonio Gabric (32:04.026)
+And on the on some business sides, we also like we really look at the conversions like we try to see like how the backlinks actually Increase the organic traffic and then we see like how the funnel goes So for example, let's say we increase the organic traffic for a specific page for 30 % But like conversions from visitor to free account Maybe didn't follow or it grows but conversions from free to paid account didn't grow so we also
+
+try to figure out okay we build backlinks but now it seems that something inside the business is broken so let's figure out like the funnel because the worst is like if you manage to bring in people but people don't convert it really doesn't move the needle so we try to also combine backlinks with with the cost with conversion conversion optimization
+
+Nebojsa (32:48.676)
+Exactly.
+
+Nebojsa (32:56.42)
+Mm-hmm.
+
+Antonio Gabric (32:59.226)
+So yeah, I feel this should work together as well as like just optimizing content, figuring out how to move the needle because sometimes you build like tons of backlinks, but the page doesn't move anywhere. I'm sure that you get those experiences. And then like it's not only backlinks, but you have to figure out a way how to balance different aspects of SEO to work together.
+
+Nebojsa (33:13.612)
+Exactly. Yeah.
+
+Antonio Gabric (33:27.042)
+So yeah, would say like conversions are in the end, like the most important.
+
+Nebojsa (33:32.794)
+I mean I agree that backlinks they need support from other channels. You cannot just do backlinks on a page that isn't properly optimized content wise also for conversions use like UX and UI also. So yeah all these things you need to follow it's the same as you are running ads to the page that you didn't optimize you're just wasting your money. yeah and did you build any automation processes for link building?
+
+Antonio Gabric (33:54.446)
+Yeah, yeah, exactly.
+
+Antonio Gabric (34:02.741)
+Yeah, quite some. Like we had kind of...
+
+semi-automated processes for finding emails because Hunter is doing that. So we connect the API to the spreadsheets. Even there is like an extension for spreadsheets. So it's kind of easy for us now to scale that kind of automatic. don't need like come to this website, come to LinkedIn. It's mostly like automatic.
+
+Nebojsa (34:11.757)
+Mm-hmm.
+
+Nebojsa (34:16.174)
+Yeah, yeah, yeah,
+
+Antonio Gabric (34:34.138)
+Hunter won't find all of the emails like any tools, so sometimes you need to dig yourself like we outsource now that part.
+
+Then these things like with the unlinked mentions, this is also when you have like a kind of known brand, a lot of websites kind of mention you and they don't give link back to you. So we always want to track that. have, we kind of connected a couple tools together that give us that mentions and we just push it to the, to the campaigns. That's quite easy campaign. Lost backlinks campaign. Like I mentioned before that we built
+
+Nebojsa (35:07.834)
+Antonio Gabric (35:12.476)
+some script for the Google sheets that always kind of check our backlink profile and whenever something is broken, it just push it to the campaigns. What else? Yeah, I think on top of my head, this is most of the things that are kind of automated or semi-automated.
+
+Nebojsa (35:32.806)
+Mm-hmm.
+
+Antonio Gabric (35:34.074)
+We also use some help from the freelancers that help us with the manual tasks because we don't want to spend time on like, let's say cleaning the lists, initial lists from Ahrefs when you do prospecting, there is a lot of pages that are not actually the fit. So this takes a lot of time to manually go through it. We were working on the way how to automate that, but...
+
+Nebojsa (35:40.113)
+Mm-hmm.
+
+Nebojsa (35:47.857)
+Mm-hmm.
+
+Nebojsa (35:52.167)
+Mm-hmm.
+
+Antonio Gabric (35:58.316)
+it's still not as where we want. So we kind of use it for initial cleaning and then we would go like a freelancer to do the rest.
+
+Nebojsa (36:09.288)
+Cool, mean we, last year we built something like that so yeah later I can send it over so you can check it out. Cool, cool, I would love to. So there is one question that I wanna ask related to the tools because what I've noticed is that...
+
+Antonio Gabric (36:16.644)
+Sure, sure, I can do the same.
+
+Nebojsa (36:28.86)
+agencies they tend to lock themselves around some tools. Like for example you want to use some link building management tool and then all of a sudden all your processes, reports, everything is like locked with that tool and you cannot just let it go you know like it becomes a problem when you want to scale and that tool becomes like not very good for you, you want to change but then you need to revamp everything. Do you?
+
+Are you like locked with those tools or you're like you're able to like completely detach those tools from your procedures?
+
+Antonio Gabric (37:06.752)
+Yeah, I think like we have like, I would say like, compared to the agencies and like just doing link building in-house, it's completely different. Because for us, like...
+
+Probably like the structure and procedures are kind of the same, but it's still like harder when you have like 20, 30 clients and kind of organize this together. For us, we have pretty much everything in the, Google. so spreadsheets, master spreadsheets, and it kind of works for us because like, I feel like whenever you move like somewhere or like Google will always be around. So, so this works for us. Also, most of the partners that we work with, they use, they are used to.
+
+Nebojsa (37:30.448)
+Mm-hmm.
+
+Nebojsa (37:34.409)
+Mm-hmm.
+
+Nebojsa (37:38.675)
+yet.
+
+Antonio Gabric (37:50.788)
+Google spreadsheets and this Google suit. So for us that works and we just do like the minimalistic approach to tools. So standard one we have Ahrefs. This is pretty much everything when it comes to SEO. We have mention.com. This is like for tracking and link mentions. These are two tools.
+
+Nebojsa (38:01.897)
+Mm-mm.
+
+Nebojsa (38:11.977)
+Mm-hmm.
+
+Antonio Gabric (38:14.22)
+And everything else from finding emails, verifying, sending emails, finding the right domains to reach out to on top of Ahrefs, we use internal in Hunter. So we have like three main tools. Yeah. So we have three main tools. And here and there, when we need something extra, we would get some tool. But usually, these three are the main tools that we use on top of the Google Suite. And it's quite keeping things quite minimal.
+
+Nebojsa (38:21.515)
+It's harder.
+
+Nebojsa (38:25.619)
+Yeah, mean, God bless you, have Hunter.
+
+Antonio Gabric (38:43.796)
+many times we need to every couple of months come back to processes, come back to spreadsheets, polish them because it's also with the Google sheets, it's tricky because it depends if you don't have like a really clear procedures, how to track things, how to add things to the spreadsheet. Every person is different. So if you give them like the freestyle approach, like you'll get messed because if they move,
+
+Nebojsa (39:01.138)
+Exactly.
+
+Nebojsa (39:06.537)
+Yeah, it becomes a mess, yeah.
+
+Antonio Gabric (39:09.656)
+Yeah. If they move from the company and then you kind of get those spreadsheets, you're like, what's the, I don't get it. Like you spend so much time to figure out. Yeah. So that's the, that's the challenge I would say with spreadsheets, but that's the reason why you have to have like SOPs and to really document how to report things. And, and we use also, sorry, I didn't mention like, but we also use Looker. So like to connect the spreadsheets and create the reports.
+
+Nebojsa (39:15.866)
+my god, like what should I do?
+
+Nebojsa (39:27.443)
+Exactly.
+
+Nebojsa (39:35.723)
+Okay, yeah, yeah, Mm-hmm.
+
+Antonio Gabric (39:39.68)
+And yeah, and post hoc, but it's more from the business side, like to see like how the funnels are moving. So yeah, these are like, I think all tools.
+
+Nebojsa (39:52.013)
+Okay, thanks. You listed quite a lot of tools there, but one is the most important, that's Hunter. Cool. So tell me, how do you see the role of link building evolving with Google's algorithms and the rise of AI and everything that's going on in the industry now? So, you know, I'll just say what I've noticed and then you can add. So what I've noticed is that when Google introduced this AI search,
+
+Antonio Gabric (39:59.012)
+You
+
+Antonio Gabric (40:07.61)
+Mm-hmm.
+
+Nebojsa (40:19.629)
+I went to chat GPT and to Google and I typed the main keyword for the client that we were doing backlinks for I think 18 months. We ranked them number one for the main keywords and when I typed that on Google AI showed me the result. I could see the client's landing page both in Google AI search and chat GPT. So I think that...
+
+backlinks really have high signals because AI is like scraping all the data from different sources and if you are having your website and keywords mentioned on many sources most likely your result will come up when someone searches for specific keywords relevant to your industry using AI. yeah, tell me what do you think about that? Do you agree and do you have anything to add?
+
+Antonio Gabric (41:07.993)
+Yeah.
+
+Antonio Gabric (41:12.506)
+Yeah, I think I can totally agree to that. I did some research on the perplexity cloud and Sergipity and it seems like the great thing is that they always have the source. So like you write like best called email tool and there is like the sources why specific tool is mentioned there. And when you see the sources, it's usually like
+
+Nebojsa (41:21.027)
+Mm-hmm.
+
+Nebojsa (41:31.394)
+Mm-hmm.
+
+Antonio Gabric (41:39.086)
+the websites that are already ranking high on Google or like
+
+top three websites, depending how many sources. But yeah, I think one of the ways how to really make sure that you are also mentioning those AI searches is to get your brand pretty much everywhere for the keywords that matters to you. if you want to, in the Hunter context,
+
+Nebojsa (41:43.758)
+Yes.
+
+Nebojsa (42:01.688)
+Mm-hmm.
+
+Antonio Gabric (42:09.71)
+be like mentioned in pretty much every listicle be mentioned like as in the context of cold email be mentioned there doesn't need to be listicle. So yeah, I think that still like the backlinks will matter a lot. It will change for sure because like if you compare like 10 years ago how the backlinks link building look like and now it's like there is.
+
+Nebojsa (42:29.656)
+Yes. Completely different, yeah.
+
+Antonio Gabric (42:33.206)
+nothing the same, you know, and I think just like with the AI and all of this, it will just in five years, maybe the whole backlinks how we see it now, it will be completely different. So it will just go on faster pace, I think. And, but yeah, also interesting thing is that I read somewhere that Google is slowly losing like the, how to say it?
+
+the market share, like there are many other smaller players coming in. like, let's say I see somewhere in Europe, especially in Western Europe that like, Google lost the most market share there, due to, search GPT Claude and perplexity, because people change their way, how they search internet. So for example, you go like you have Google and then you go like you are looking for, let's say headphones, you want to buy new headphones.
+
+Nebojsa (43:03.236)
+Mmm. Mm-hmm. Mm-hmm. Mm-hmm.
+
+Nebojsa (43:18.384)
+Mmm. Mm-hmm.
+
+Antonio Gabric (43:29.416)
+And then you go on Google best headphones for $200, let's say. And then you have tons of ads, tons of different sources and you go there and there is ads. And then it's so hard for you to kind of like figure out like which source is reputable, which is not. And you spend so much time just to figure that out first. But your goal is to really see the headphones. But what AI do, like you go to the AI, you write, hey, I want to buy the best
+
+Nebojsa (43:37.71)
+Yes.
+
+Nebojsa (43:46.798)
+Yeah.
+
+Antonio Gabric (43:58.988)
+headphones for under 2,200 euros. And then they kind of compile all of that that you need to spend so much time. You don't have ads, you don't have nothing. You just have sources. And based on that, you have top 10.
+
+Nebojsa (44:08.746)
+Exactly.
+
+Antonio Gabric (44:11.99)
+And how they find the sources, how they kind of edit, order it, what is the best. I believe that it's mostly from like, from this authority websites. And I feel like the backlink still, like if you want to be authority, you need to be mentioned from other authorities. That's how you, how you get your authority. So I feel like it's same in the, life. Like if someone is mentioned from really authority people around, then it's kind of like.
+
+Nebojsa (44:22.598)
+Mm-hmm.
+
+Antonio Gabric (44:41.142)
+you are probably authority to them, you know? So yeah, I feel like it will change, it will be harder, but yeah, it will still be around.
+
+Nebojsa (44:41.98)
+Yeah, exactly. mean...
+
+Nebojsa (44:51.154)
+I really like how you explain that, how to build authorities, so get mentioned from other more authority websites. Yeah, it works both in private and business life. wait just a second.
+
+Antonio Gabric (44:58.574)
+Yeah.
+
+Antonio Gabric (45:05.817)
+Mm-hmm.
+
+Nebojsa (45:10.706)
+So sorry someone connected to my bluetooth speakers cool, so yeah, so I want to say like many argue that content is king and link building is secondary How would you respond to that and is there a balance that businesses should aim for?
+
+Antonio Gabric (45:12.408)
+No problem.
+
+Yeah.
+
+Antonio Gabric (45:30.862)
+Yeah, I think like, they're, they're like in the same ecosystem both. So like one cannot, work with other, would say. So if you have great content, but no one visits it, I mean, like, what's the point, you know, or if you have the bad content, but crazy backlinks profiles, you managed to rank high. Someone visit your website. They just get out of the website. They bounce again. There is no, no point in that. So I think like both.
+
+Nebojsa (45:45.076)
+Mm-hmm.
+
+Nebojsa (45:56.744)
+Yeah.
+
+Antonio Gabric (46:00.836)
+like content and link building when they are like working together and like they have like both like very like you throw resources at both and they work together I think that's the the strongest combination. What I can say like with content there is like right now like with the AI there is a lot of trash.
+
+Nebojsa (46:22.887)
+Mm-hmm.
+
+Antonio Gabric (46:23.458)
+So yeah, I think like it's just like a good opportunity for some businesses to really create valuable content that really solves the problems to the users. And that kind of it could easily stand out from the rest and with the right backlinks, it can also rank and then you are generating some business, is great. But I think one without other cannot work.
+
+Nebojsa (46:41.876)
+Mm-hmm.
+
+Nebojsa (46:52.437)
+Yeah, I agree. mean, it's like having a car without an engine inside it. So you need both. Like you need to have that engine. Yeah. And I think that links are the engine that like they grew the content, they grew the keywords, they grew the authority, they improve your visibility. So yeah. And what are the most common mistakes you see companies make in their link building strategies?
+
+Antonio Gabric (46:59.022)
+Yeah, yeah.
+
+Antonio Gabric (47:22.202)
+hmm. Let me think for a bit for this one.
+
+Nebojsa (47:28.31)
+Yeah.
+
+Antonio Gabric (47:31.382)
+I think one of the biggest mistakes is like they it's for them, like when they, when they hire a link builder, they have, they don't have, they don't have kind of clear expectations about the backlinks. So it's, it's link builders task or job to educate them. What is the backlinks, what they can expect.
+
+how it will impact their business, that if you just build the backlinks, but the other parts of your business are not in line, it won't work. for me, I think it's very important before you start to work with someone to kind of educate them on that, to show them what are the other gaps in their business, like probably content that could cause the issues.
+
+Because people like to point like, this agency suck. build a backlinks. They took my money, but it grows the rankings. Business didn't grow backlinks doesn't work, you know? So I saw that quite common. So I think there is a, there is still a lot of like a black box in terms of backlinks. Like it's still not clear for a lot of people. What is it? How it will help. It's not a silver bullet that it will solve all of your business problems. I think this education is something that
+
+Nebojsa (48:34.23)
+Yeah.
+
+Antonio Gabric (48:57.156)
+But both like clients, they are not educated enough about backlinks and the agencies or freelancers, they don't educate as much as they should. That's the one. Then I would say the other thing is like I saw a lot that people focus quite a lot on these DR metrics and vanity metrics.
+
+Nebojsa (49:21.421)
+Mm-hmm.
+
+Antonio Gabric (49:22.924)
+like graphs on hrefs and other tools that's in the end really.
+
+doesn't show the real picture because usually like what you see on hrefs is different than what you see on Google search console or like a tool that you track the conversions. So in the end like that would be the one and also like when it comes to to wetting the backlinks like what I mentioned at the beginning like many people just crash the surface they say okay this is a good backlink and then they build it and then you know it doesn't work.
+
+Nebojsa (49:34.738)
+Yeah, that's right.
+
+Antonio Gabric (49:54.476)
+Or like when you say people like, backlink is like 500 plus euros. And they're like, wow, that's too expensive. Like this guy give, give the backlink 50 euros for one backlink. And then what happens like they kind of try to save on the backlinks. And in the end, like they will spend more because they will hire someone to build those cheap backlinks. And then they will hire someone to clean the mess. And then they will be like, okay, let's build like normal backlinks. So I saw that a lot.
+
+Nebojsa (49:58.914)
+Yeah.
+
+Nebojsa (50:04.777)
+Yeah.
+
+Nebojsa (50:19.035)
+Exactly. Well, yeah. So that's why we need to educate. Yeah, I mean, I think the same. think they need a proper education. The clients are not aware, most often they are not aware, like how link building works. They try to lower the price of backlinks. They don't see the value. So I think the best approach is like to tell them, okay, let's do like a...
+
+Antonio Gabric (50:23.342)
+Yeah, not sure. What do you think? Like?
+
+Nebojsa (50:48.452)
+test period, let's do like some, I'll give you a good price, but only for the first 10 backlinks, once we correlate their impact with your growth, then we need to like continue with the proper structure, like pricing structure and then, no, but yeah, I think the education is a part of the process because it's a very broad topic. I mean, it's not broad, but for the clients who are not educated, is, and it's very hard to make them understand how a link building
+
+works you know because it's something like a long term for example I got a client who got a lead that they close like a 10k a month I think it was a deal they got that lead through the backlink we created like eight months ago you know
+
+Antonio Gabric (51:33.593)
+Yeah.
+
+Nebojsa (51:34.198)
+So there is a value that you will see and you know that how Google it clears their cash I think once in a year after 11th month I think in November and then when they clear all the caches they index like all the links again and then you see the impact of all the backlinks like later in the future so with a proper education and with informative content like telling the client what we did what happened every month like
+
+or monthly meetings that will for sure help them understand how link building works and how it contributes to their growth.
+
+Antonio Gabric (52:05.421)
+Mm-hmm.
+
+Antonio Gabric (52:11.098)
+But also something interesting that might we might mention is that like I noticed that some people compare like PPC with link building. They would say, Hey, you will build links for three to six months and I might not see any results, but with PPC I put the same budget. I'll see the results immediately. But then after six months, like the backlink start to really work. You start to rank.
+
+Nebojsa (52:23.48)
+Mm-hmm
+
+Nebojsa (52:30.426)
+Mm-hmm.
+
+Nebojsa (52:35.694)
+Yeah.
+
+Antonio Gabric (52:41.398)
+And then like you remove the PPC, you don't have any results anymore. So you put the same money in the same period. Like back links is really like long-term game while the other things like PPC, will bring the results immediately. But once you stop, it's not passive at all. So back links are really great when you look like long-term. For example, Hunter, like it really started like with the strong SEO foundations when the business started.
+
+Nebojsa (52:45.974)
+Exactly.
+
+Nebojsa (52:57.081)
+Yes.
+
+Exactly.
+
+Nebojsa (53:05.241)
+Yes.
+
+Antonio Gabric (53:11.03)
+And over years, they just put quite importance to the SEO, not just backlinks. And it really pays off because the company wasn't built like, let's just get quick money and then let's move. It was built for the longterm. So I feel the backlinks fit very well into that.
+
+Nebojsa (53:26.097)
+Yeah.
+
+Yeah, 100 % agree. This happens a lot, know, clients, want to see quick results. They invest in PPC. And then for example, they get the leads, but they are not able to scale and serve all the leads. You know, there is an internal operational problem. And then once they fail to service all the leads that they got, they lost their money. They don't have any more budget for PPC. So they start like they're washed away from Google. You know, they lose.
+
+Everything and they don't have anything and when it comes to SEO link building Yeah, it's gradually you won't see the first lead coming in the first month But let's say if everything is done properly and if the market is not very saturated you can get the first results in let's say like Maybe in the fourth month of the campaigns So you'll start getting leads and if you decide like okay these two months I'll
+
+Antonio Gabric (54:01.39)
+Mm-hmm.
+
+Nebojsa (54:28.5)
+put the money in social media or in a new website, you still have those leads incoming because you were investing in SEO as an acquisition channel for some time. So I like how that works and yeah, mean, if SEO is the right channel for the business, it is the best channel for them for sure, long term.
+
+Antonio Gabric (54:38.83)
+Mm-hmm.
+
+Antonio Gabric (54:51.226)
+Yeah, can agree to that.
+
+Nebojsa (54:52.741)
+So that's what I think and that's why we always do this market research, you know, before we engage in SEO to confirm if that's the right channel. I mean, first we do like a keyword research, competitor analysis and all the things we fix the websites from technical SEO perspective, optimize pages with new content, do on-site SEO, metadata, et cetera. And then when we show like, okay, now we exactly know what's the market. Let's step into that.
+
+but we don't know what's your conversion rate. So if you don't want to like do SEO and wait for leads to check it out then you can engage in PPC like pay for Google Ads, confirm the conversion rate based on the search volume of the keyword research that you did and if there is a
+
+good conversion rate, you can make projections. You can say, okay, so now we know this is the conversion rate, we know what's the monthly potential in searches for all these keywords, and if we know the conversion rate, we can make projections. If we get a thousand people, that's how much of them will convert. So we always make these projections and go to accomplish and achieve all these goals and projections.
+
+Antonio Gabric (56:07.738)
+That's an interesting approach, like to kind of test the grounds with the PPC, just to kind of give the idea of ROI. That's great. That's great.
+
+Nebojsa (56:13.51)
+Exactly.
+
+Exactly. Yeah, that's our approach when the website is new and they don't know what will happen when they rank on Google. That's how we like test it immediately and after the first month we know, okay, so we know how many people came, how many converted, now we can do organic. So that's how we work.
+
+Antonio Gabric (56:24.419)
+Mm-hmm.
+
+Antonio Gabric (56:35.054)
+Yeah, but also great point that you mentioned is that like you make sure that the website from the technical standpoint is ready for the backlinks that there is no some leak in terms of SEO. So you just build the links and nothing happens. So that's, that's a really good approach to make sure that you have strong foundation and then you can get some external mentions, which is great.
+
+Nebojsa (56:44.355)
+Yeah.
+
+Exactly.
+
+Nebojsa (56:52.704)
+Yeah.
+
+Nebojsa (56:58.914)
+Exactly, it happened that there were there was a partner who? Referred a client and we like we had this type of deal that they do on site We don't do we just supply with backlinks. They've sent us the domain We built backlinks and then I realized wait So the URL doesn't have a training slash But when I open the URL it redirects to a training slash URL at the end and I was like man if we built links on these URLs that they don't have they are redirected we are
+
+some link juice you know so we now pointed back and said hey this is our feedback we don't want to create backlinks on these URLs they're redirecting to these ones we're losing link juice let's just make this properly and do it the right way you know so yeah you need to be aware of all of the all of these things I see that we only have nine more minutes I have a lot of questions but let's let's let's wrap it up with like two more questions
+
+Antonio Gabric (57:38.127)
+huh.
+
+Nebojsa (57:59.428)
+First, want to ask you about, I know you manage the Slack community of SaaS link builders, so I want to, can you share a bit more about the community, who can join, like is it open for anyone, or like, and what they can get from the, if they join the group.
+
+Antonio Gabric (58:17.274)
+So yeah, the idea was that at one point we had like 50 plus partners and we figured out that usually we need to do like to make some backlink combinations to work. We need to kind of introduce each other to the third partner and it was kind of like very time consuming. So we were like, what if we just help all of this partner network?
+
+and add extra value, we just create community. Everyone has the access to each other. Everyone can invite their own partners and create something that is like, usually like this Slack channels are like, I was in a couple and usually there is a lot of like freelancers that are actually not affiliated with the domains. And that's where the problem started because you count that you'll get that link, but they cannot get it because they are actually not in that affiliated with that business. So what we want to do is like,
+
+Nebojsa (58:54.904)
+like that.
+
+Nebojsa (59:01.828)
+I don't know.
+
+Nebojsa (59:08.642)
+Yeah.
+
+Antonio Gabric (59:17.18)
+like we wanted to really open it up to people that are really like into SaaS business. So there are SaaS businesses mostly, and the people are really like with their email, they are really affiliated with that business.
+
+Nebojsa (59:32.024)
+Mm-hmm, mm-hmm.
+
+Antonio Gabric (59:32.994)
+So that was the one and we also started to do the vetting of the people. before they, we don't kind of do invitations now, but we kind of send the application form. So we manually kind of review, like we ask couple of questions to help us determine whether they are right fit or not. And then we would just like go through those answers and invite them once we are, we are happy with that.
+
+Nebojsa (59:49.22)
+you
+
+Antonio Gabric (59:59.062)
+At the moment, there are maybe a bit more than 200 partners. Yeah, so it's kind of like it's one of the ways how we could really speed it up. It's not like it's weak.
+
+Nebojsa (01:00:03.94)
+Whoa, that's a big community.
+
+Antonio Gabric (01:00:13.728)
+Let's say how I said at the beginning, we started with like 50 partners, someone invited their own partners, someone introduced someone else. So it's kind of like from 50 partners, you build like if every partner has like five partners, that's, that's a lot extra partners and it kind of opens you up to all different opportunities. So yeah, I can share with you the application form later, so you can share it around.
+
+Nebojsa (01:00:22.116)
+It's so cool.
+
+Nebojsa (01:00:29.56)
+That's so cool.
+
+Nebojsa (01:00:39.556)
+Yeah, please. mean our link building manager, he would like to be there, share the knowledge, know, help others, maybe get help from your community. That would be perfect. Okay, so two more quick questions, but I need to ask you this. So I know SEO and outreach can be like demanding. So I want you to tell me how do you balance work?
+
+Antonio Gabric (01:00:49.818)
+Sure. Sure.
+
+Nebojsa (01:01:02.257)
+with personal passions like motorbike adventures. You like motorbikes? I know that. I also ride a motorbike myself. I like them. So I wanna know how do you like balance between these?
+
+Antonio Gabric (01:01:15.842)
+Well, winter here is a little bit tricky with that passion. yeah, winter is a little bit like more like being indoors, you know, like training, reading books, playing board games. These are kind of things that I enjoy doing. Also spending time with my wife and daughter, like when I come back from the work. So yeah, this is something, but...
+
+Nebojsa (01:01:41.927)
+Beautiful. How old is your daughter?
+
+Antonio Gabric (01:01:46.392)
+She will be two in February.
+
+Nebojsa (01:01:49.223)
+Nice I'm also brand new that I have a son. He's nine months old Thanks, thanks
+
+Antonio Gabric (01:01:53.8)
+congrats. Congrats. Nice. Nice. So I guess like that for me, like the, the, that transition to the becoming father and working and that it was, it was tough, but how is it for you? Did it, is it, was it tough? Is it getting better now?
+
+Nebojsa (01:02:03.921)
+Nebojsa (01:02:09.767)
+Yes, at the beginning it was tough, now you know like when I come back from home I'm so happy because you know my wife and boy are waiting for me but what I found out that I think that because having a baby required for me to even like enhance my organization to a whole another level that opened the new door so I was thinking that
+
+I think that before my kid I didn't have time to do some things that I can do now because I'm so well organized. But no, I cannot stay like until 1 a.m. like after midnight. I can't do that anymore. So these things change but also I think I'm like very well organized right now and have time to do other things as well.
+
+Antonio Gabric (01:02:44.75)
+Mm-hmm.
+
+Antonio Gabric (01:02:58.84)
+Yeah, can totally relate to that. Like I was like literally I wanted to train to be kind of to try to be in the shape, not to get like, you know, sitting all day and then it's easy to get out of the shape. And then I was thinking, okay, like I have a, I have a kid, have a wife going to gym will take me like every day, 20 minutes just to go there. And then it will, it will cause the gas. It will cause the fee. It will cause like clothes and stuff. So I was like, let me build the
+
+Nebojsa (01:03:11.652)
+Yeah.
+
+Nebojsa (01:03:21.833)
+Yeah.
+
+Nebojsa (01:03:26.9)
+Exactly.
+
+Antonio Gabric (01:03:28.824)
+at home and then I was really I started to calculate how much I would save not in money that's not that important but in time I would say like around hundred something hours per year in time and you could do like this like you could read you could be with your family so yeah I can agree I'm totally way more organized and mostly because of that I could do things that
+
+Nebojsa (01:03:35.24)
+That's so cool,
+
+Nebojsa (01:03:42.43)
+Whoa.
+
+Antonio Gabric (01:03:51.722)
+same as you. couldn't do before because I never had time, but actually it was my disorganization. So yeah. Yeah.
+
+Nebojsa (01:03:56.586)
+Exactly, exactly. Yeah, that's what you realize when you have a baby. Cool, man. I love that.
+
+Antonio Gabric (01:04:03.416)
+Yeah, can totally relate to that.
+
+Nebojsa (01:04:07.988)
+Okay and my final question for today is if you had to share one golden nugget of advice about link building, what would it be?
+
+Antonio Gabric (01:04:19.642)
+Focus on building relationships, not links. It will bring you like in life, like relationships will bring you far, very far than like you do one thing and you forget about the person. Always build the relationships. Like I said, like you get 10 people in your network, they have...
+
+10 other people in their network. instead of like having 10 people, you have a hundred people actually. And then like you need some link from some website and you know who to call or who to contact to get you to get you there. So I feel, yeah, this, if, if I can, that would be my best advice, like for link building for everything, I guess, just like focus on building and nurturing relationships.
+
+Nebojsa (01:04:58.836)
+That's so true. Cool.
+
+Nebojsa (01:05:06.666)
+You never know when you'll need help from those people.
+
+Antonio Gabric (01:05:11.482)
+True, true. And don't hesitate. I think also when it comes to that, don't be a person who is always trying to get something in return, that you always have some hidden agenda behind it, but try to be like, offer help just for the sake of helping people, seeing them succeed at something. in my experience, in my life,
+
+Nebojsa (01:05:25.064)
+Mm-hmm.
+
+Nebojsa (01:05:32.01)
+Mm-hmm.
+
+Yeah.
+
+Antonio Gabric (01:05:36.73)
+The best things always happen when I didn't expect nothing in return. I just genuinely want to help someone. The best things happen always. So this is kind of my motto when it comes to link building and relationships and it works quite well.
+
+Nebojsa (01:05:48.137)
+I liked.
+
+Nebojsa (01:05:52.333)
+Okay, thank you. mean that was a very good answer. So yeah to wrap it up quickly I know you don't have any more time So, I mean it was a pleasure speaking with you. I really am thankful for that. Thank you for joining me here and Sharing all this wisdom that you gather through all these years. It's very valuable. I think that many people who are in the industry, especially link builders who are just starting out to all
+
+Antonio Gabric (01:05:57.08)
+hope it will help someone.
+
+Nebojsa (01:06:22.927)
+are in the middle of their career they'll find too many value so they should like 100 % follow you on LinkedIn because you're sharing a lot of value there as well and hopefully we'll have like another discussion maybe we can do some collab about link building do something for the community all together
+
+Antonio Gabric (01:06:43.726)
+Yeah, that's that would be awesome. And thank you for doing this. it's, it's, it's great that you are decided to do the podcast to bring people in, like to share the knowledge. That's, that's great. Like trying to give some value to the community. And I feel that's in line what we talk briefly about educating clients. I feel these things are like
+
+will help a lot. So thank you for doing that and thank you for having me here. was really nice chat. Finally, we catch each other.
+
+Nebojsa (01:07:09.036)
+Yeah.
+
+Nebojsa (01:07:14.157)
+Yeah, yes, yes, I mean at the end of the day you are the biggest part of this podcast and without you guys I wouldn't be able to do it. So yeah, I appreciate you and all the other guests, the past and the future guests that I'll have. So yeah, I mean that's it. Thank you for joining and yeah, let's meet some other time. Thanks.
+
+Antonio Gabric (01:07:18.554)
+Thanks
+
+Antonio Gabric (01:07:37.912)
+Yeah, awesome. Let's stay in touch and if you'll need some help with promotion or something, just let me know.
+

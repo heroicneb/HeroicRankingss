@@ -1,0 +1,1422 @@
+Nebojsa (00:01.165)
+Hey guys, welcome to the ranking heroes, a podcast where we discuss different strategies with the experts behind them. I'm Nebojsa, your host and here we have Nanac Tamenko, which is my co -host. Today we have a very special guest with over a decade of experience in SEO, Peter Rota. Thanks for joining us and it's a pleasure having you on this podcast. So to kick off this properly, we want to hear more about
+
+what you do and what first sparked your interest in SEO and how did you transition from internship to running your own SEO services, becoming a manager and do wonderful things for the clients.
+
+Peter Rota (00:45.486)
+Yeah, of course. Yeah. Thanks again for having me. So currently in my day job, I had up the technical SEO for hub international. They're an insurance brokerage. So I've been with them for almost two years now, but I could do anything from technical SEO. We do a lot of content optimization and also working with developers. And then on the side, I do some freelance slash kind of retainer work. So I work with local clients, e -commerce, and then I also do
+
+Nenad S (00:57.656)
+Thanks.
+
+Peter Rota (01:15.852)
+one -off type work on Upwork. then as you found me, I post weekly on LinkedIn as well and kind of just share my experts with I feel indebted to the SEO community for providing their value. But how I got into SEO, I think was kind of like most people. I went to school for sports management and then after I basically created a sports blog, it was kind of like the more controversial things going on in sports and.
+
+One day I was like, like I would love to promote this. And I did a search for digital marketing and then they kept mentioning SEO and I was like, Ooh, well, let me try that. And like, I had some success. I tried to better optimize the content. then, so this is a 2011. So I was like posting on Reddit and they got a good amount of traffic there. And then I basically felt like I definitely love to get an internship and see like if I can like.
+
+getting experience there, so I worked for like, well, it was an IT company, and then like a digital marketing agency, for two internships, and then another agency, and then it kind of just spun into a career, and I'm definitely happy how it worked out. I think, like most SEOs, you never intended to get into it, but it's like a serpentipitous discovery, I don't know.
+
+Nenad S (02:36.577)
+Yes.
+
+Yeah, yeah, it truly is. How did you opt for technical SEO? Do you have any technical background before that or was that something that you developed along your career path?
+
+Nebojsa (02:40.397)
+Cool, cool.
+
+Peter Rota (02:50.106)
+I've, yeah, I mean, I think it's something I got into more recently because I just enjoy how it's, it's a lot more analysis and you're kind of trying to figure out like, why is this happening certain ways? And I think I just enjoy a lot of technology. So I've been using a lot of AI and trying to learn more Python, but I think it's, I think it's
+
+a field that's either very underutilized or people just don't think it's a big deal. So I think there's always a ton of opportunities I see. And I think I've always been interested in technology since I was growing up. I think it's an area. Yeah, go ahead.
+
+Nenad S (03:30.177)
+When you say it's underutilized, are you referring to technical SEO or AI in technical SEO?
+
+Peter Rota (03:37.734)
+technical SEO. mean, I've seen everyone's like, if your website's small, you don't need technical SEO, but I've worked on sites where it's like the title tag is the same on every page or the h1 is the same on every page or it's like pages aren't indexed or they don't have a meta description or it's like links aren't working, forms aren't working. So it's like, it's easy as an SEO to give these very like generalized statements or like such and such doesn't matter. But then
+
+It's very nuanced where it's like there's a very like each unique each case is very unique. So I think it's yeah.
+
+Nebojsa (04:12.077)
+Mm -hmm.
+
+Nenad S (04:15.329)
+Got it.
+
+So what is the big
+
+Nebojsa (04:18.209)
+Okay, so by saying that you... Yeah, I just wanted to jump in quickly. I have something to say since you said that you got into SEO by trying to promote something. We can say that you got into the SEO organically. And I think that's a good way to start with SEO. So, like, since you have over a decade of experience, how has SEO changed since you started? And what do you think the next big shift will be?
+
+Nenad S (04:21.601)
+No, go for it, go for it.
+
+Peter Rota (04:30.651)
+Yes.
+
+Peter Rota (04:34.726)
+Exactly.
+
+Peter Rota (04:47.302)
+wow, yeah, so I mean, like I mentioned, I've been doing it since 2011. So I think when I started, was, I think they had like the Penguin and Panda algorithms, but I mean, even then there was still hyper -focus on a lot of like backlink strategies. So I mean, I remember back in the day I was selling a GSA, Sierra Lake service and had, I made a good amount with that, but I think we've gone from where it's like the,
+
+And 10 used to be, let's get people to the website and write the content and see what happens. So now where it's like, you have the content, does it engage? Does it get people the answer they're looking for? Are they able to like just use other parts of the website? Once they get on the page, are they able to complete your desired action? So say if you're in a blog post, do they have like a CTA or a banner somewhere pushing you back to like a money page to like sign up for something? So.
+
+I think it's a lot more focused on human beings too, so I think SEO in 2011 there is a hyper focus on like jamming as many keywords as possible into things and these tactics like article directories and all this fun stuff and it's like, yeah.
+
+Nebojsa (06:00.215)
+Yeah.
+
+Nenad S (06:03.757)
+It was a lot more technical back in the day because we knew that, I mean in 2011 for instance, was about that time that they, for instance Google stopped, started ignoring the keyword tag that you placed in the head. Yeah, but that tag was used and it was really, people have used it in order to rank for keyword, but that was the thing.
+
+Peter Rota (06:21.424)
+Yes, meta keywords, yeah.
+
+Nenad S (06:33.377)
+technical thing you know that when you did this that will happen but Google from that moment on I mean I'm listening to you the things that you're saying yes Google really turned more to the UX side of things than it was just basic plain technical to understand the crawlers and stuff tell me during your career have you done anything UX related
+
+Peter Rota (07:02.85)
+honestly not a ton, but I try to just I've read into on like persuasion and like I think I'm not sure if it's pronounced last name, probably Robert Saldini and like I've definitely focused on just like if I'm a user like when I get here am I able to like get what I need so I've seen a lot where like content will look good on desktop but then you have all these like on mobile all these bulky paragraphs and it's like most people
+
+really just skim now. So it's like, are they able to find the information easily? I mean, are you using like social proof maybe on like a money page or conversion page? like one thing I've been doing at work recently is we're trying to do more social proof and I guess UX. we're using the wisdom of the crowd technique where essentially it's like a thousand people signed up for this last month. Like, so it's essentially kind of
+
+and sensitizing that like this is a valuable service and people have used it. So I've definitely learned a bit about it. I mean, it's not like my full background, but I think as SEOs you want to be dangerous enough to have some energy, but also like possess not to hyper -focus on it because it's like there's people that have whole jobs as UX and I can't replace it. But I think it's good to at least have some familiarity and understand like what the intent of each page is.
+
+Nenad S (08:17.591)
+to.
+
+Nenad S (08:21.762)
+Got it.
+
+Nenad S (08:27.917)
+Tell me now, what was the most difficult... What was your biggest challenge in terms of technical SEO that you did, that you resolved?
+
+Nebojsa (08:28.771)
+Cool.
+
+Peter Rota (08:39.45)
+biggest challenge was more of a, I guess, of F. Yeah, no, no, I'm just, yeah, it was more of an F up on my side, but it was an eCommerce Shopify website and I kept seeing all these URLs getting crawled up, weren't really useful. And I basically, yeah, yeah, so I accidentally ended up disavowing, well, yeah, was a disallow, disallowing essentially these.
+
+Nenad S (08:41.409)
+You don't need to identify a website directly, just talk about the problem.
+
+Peter Rota (09:06.672)
+pass that Google was using in merchant center and basically ended up de -indexing all their shopping products in merchant center. So that was a big F -up, but thankfully I fixed it in a few days and the clients saw it, trusted me, but that was probably like my biggest F -up.
+
+Nenad S (09:22.209)
+How much time did it take? How much time did it take to get it back? To get it indexed again?
+
+Peter Rota (09:27.398)
+A few days, but I mean, I guess my biggest challenge recently was one of the websites I was working on was a single page application on JavaScript. So I had to kind of go in and just lay out all these recommendations that we want things and like the source code and just essentially communicating with developers can sometimes be challenging because there's an aspect where it's like they want to do what's best for them.
+
+but then some of them don't know about SEO. So it's kind of like having a fine line between what's going to benefit both us and you. So I think definitely enterprise, it's a lot of just resources and what's going to be most impactful. So I would probably say those are the biggest challenges I probably deal with more daily and most recently.
+
+Nenad S (09:55.692)
+Yes.
+
+Nenad S (10:15.782)
+How do you approach that part? For instance, I had similar challenges when working with software development companies. I was working for a software development company. So they have their whole website spat out as basically an app and you have client side rendering in JavaScript, but you need HTML, so you need HTML render.
+
+And when you try to communicate that with developers, they tell you, okay, just do me a layout of the page and tell me what you need where. Are you writing them HTML code of the page that you would like to look, I mean, that you would like all placed like that, or do you just screenshot and mark like the specific element, hey, this should be this tag or this element or this ID or something. What's your approach in it?
+
+Peter Rota (11:07.034)
+yeah, I mean I haven't had to do a ton of that, but if I was I would most likely do screenshots. essentially another thing too is like we have chat GPT now so it's like I can be like, yeah.
+
+Nenad S (11:14.85)
+Done.
+
+Nenad S (11:19.467)
+That's my follow -up question. Did you consider or have you used AI for it? I mean, even GPTs of a kind can actually help. That's what I'm asking.
+
+Nebojsa (11:23.607)
+Yeah.
+
+Peter Rota (11:30.842)
+Yeah, I mean, I've used Chad GPT a lot as far as like helping out with JSON schema. like I had certain like properties I wanted to nest and it was basically able to like create something where it nested. But I mean, I think it's something I definitely use a lot because it makes things easier to explain. like there was something where I was working on a site where they have all these buttons, but they didn't have anchor text. So I basically asked Chad GPT to like,
+
+Nebojsa (11:42.691)
+Mm
+
+Nenad S (11:45.901)
+guys.
+
+Peter Rota (12:00.986)
+write me something up in HTML that includes an anchor and I was able to do that and I basically told the client they get you to be like that so I, yeah.
+
+Nenad S (12:08.075)
+Yeah, they should use instead of using a button like an element they should use A and just have the CSS around. Yeah, nice, nice. Good call. Also...
+
+Nebojsa (12:08.909)
+Mm -hmm.
+
+Peter Rota (12:12.932)
+Yeah, A -Trance, yeah, A -Trance, yeah.
+
+Nebojsa (12:14.829)
+Yeah, and how do you prioritize? Yeah, I want to ask how do you prioritize issues in a technical SEO audit? What tends to be the most impactful changes? I know that some tools like Screaming Frog, they can suggest some issues. They can say if it's a low moderate or a high priority. Do you follow the tools or do you have some, let's say, feeling that you develop from your experience?
+
+Nenad S (12:43.191)
+some prioritization scale.
+
+Peter Rota (12:44.46)
+Yeah, yeah, I mean, I think it depends on the organization, but with us, I try to focus on what's going to have the biggest impact. Generally, obviously all the time, it's not going to, sometimes that requires the most resources. So it's kind of being able to weigh what's going to have the biggest impact, what's going to maybe take up the whole resources. So sometimes it's like, maybe something's not going to have as big of an impact, but it has less resources. So that goes higher up. But I generally have always focused on like,
+
+Nebojsa (12:45.1)
+Yeah.
+
+Peter Rota (13:14.01)
+what's gonna have the biggest impact and try to find a way to tie it back to the ROI and be actionable because people will get a technical audit or something from SEM Rushless Automated Tools and be like, you have like not enough text on the page or like not enough HTML or like you're missing all image tags. it's like, those things are important, but it's like, are those things really, you wanna get things that are gonna move the needle. Once you've done that thoroughly, then you focus on these like.
+
+Nebojsa (13:40.513)
+Yeah.
+
+Peter Rota (13:42.106)
+things that maybe Google focuses on more secondary factors and kind of ranking pages and things like
+
+Nenad S (13:47.693)
+Yeah, you have 10 pages that have low content, but all of those pages are category pages that are basically set to no index because you don't want them indexed. So what's the point of having that info that you're lacking content of 10 pages when it's not even included in the strategy or are not part of their acquisition funnel? So why should you even care?
+
+Peter Rota (13:51.8)
+Right. Yeah, exactly.
+
+Nebojsa (13:57.557)
+Yeah.
+
+Peter Rota (14:11.364)
+Yeah, for sure.
+
+Nenad S (14:13.217)
+Yeah, but it's a good thing to know that there are people who actually see it from the control back and get a perspective of what this business actually wants needs. What are their goals behind it? Because it's often that when you approach an SEO agency or a consultant that does this work. Yes.
+
+There are some qualities that you can get from doing an audit with that automated stuff, getting the data, data sets from other tools or sources, but the feedback itself and the strategy itself should be formed around your conclusions from it aligned with their business goals and stuff. But that was always a cat and mouse game. Like whenever you see, you see people build tools that could give you those answers, but none of them can actually give you the real...
+
+answers like this should be prioritized, yes you have 20 of these issues but these three on these specific pages are the ones that we should focus and this is what you should be doing. But it's good to know that there are people around that actually can do that, can just move away, stop and take a look at the whole picture. Haven't met many of them to be honest.
+
+Nebojsa (15:03.971)
+Yeah.
+
+Peter Rota (15:16.848)
+Yeah.
+
+Nebojsa (15:17.069)
+Yeah, by the way, you're
+
+Nebojsa (15:21.559)
+Yeah, yeah.
+
+Nebojsa (15:26.676)
+Yeah, by the way, while we are speaking about the tools, Peter, what are your go -to SEO tools?
+
+Peter Rota (15:34.054)
+Yeah, so I mean I use a variety but I use Screaming Frog a ton which is funny that actually I think the SEO crawl they started in 2011 which was when I started so I use that a ton Google Search Console Google Analytics Adobe Analytics though I'm not really a fan Ton of SEO extensions like the SEO Pro extension
+
+There's some JavaScript extensions I use web developer extension There's one I think called like nofollowlink where basically if you're on a page, it'll show you nofollowlinks Which has been good in my past because I've one I've worked on sites where it's like there are nofollowing internal links So it's very odd and these were actually like important links on a page. So that's been good to see that
+
+Nenad S (16:06.829)
+Awesome.
+
+Nenad S (16:12.735)
+link in the description
+
+Nebojsa (16:21.743)
+Yeah.
+
+Nenad S (16:23.127)
+Yeah.
+
+Peter Rota (16:26.244)
+I use a tool, you may have heard of it, it's called Sightliner, which essentially will show you duplicate content and it's really good, it shows you the instances. I use some of the tools from Merkle, technicalseo .com, they have a good suite of tools there. I really like to use the one that shows you any difference between the mobile version slash desktop version if there's changes in contents or links.
+
+Nenad S (16:30.059)
+Yeah. Yeah.
+
+Peter Rota (16:54.628)
+And then I also like to use the Schema Validator by Google as well as the old one by the JSON Schema Validator.
+
+Nenad S (17:03.531)
+Yeah, from schema .org. yeah. I mean, was using that you... Follow -up question. So you don't like to rely on new tools and you don't like to expand your tool sets if you don't need to do it actually, right? If you don't have a need for it.
+
+Peter Rota (17:05.978)
+Yes, game and I'm out of
+
+Nebojsa (17:07.801)
+Yeah, cool, cool.
+
+Peter Rota (17:29.476)
+I'm definitely open to new tools. Like I mentioned, I'm using more AI, but I think sometimes it's like overkill and it's like, you want to also like not have shiny object syndrome and be like, there's a new tool and then you're gonna change your entire workflow. So it's like, I think there's a time and place for tools, but you also need to know which ones are gonna be best for you and most helpful.
+
+Nenad S (17:51.05)
+Exactly, yeah.
+
+Nebojsa (17:53.465)
+Yeah.
+
+Nenad S (17:55.767)
+There was a funny, when I was working as a link builder a while back, I used the same tool that you were using to check internal links because I needed to see if that article is flagging all links as nofollow because they would probably set mine as a nofollow. And that tool, when new updates came for Google Chrome,
+
+Peter Rota (18:10.842)
+Mm -hmm. Yeah.
+
+Nenad S (18:19.057)
+or for Mozilla, those tools were removed because they were breaking the policy for Google App Store because they were using your client side data for it. So that tool became on and off, on and off constantly on the marketplace, on the App Store. And that was the thing. I completely relied on that tool.
+
+and I got really pissed when it was removed I had to back it up, I need to upload it again into my new Chrome browser or anything and there was a point where I just figured out if I start relying on as many tools I'm using for this job then they will be basically, my process will be locked around them I need to rely on as less tools that I can so there was a point where I found out that I can make a bookmarklet
+
+Peter Rota (18:44.347)
+Yeah.
+
+Nebojsa (19:05.765)
+That makes sense.
+
+Nenad S (19:09.783)
+with JavaScript and I just placed that and it flags all the links on the page like the ones that are nofollow, the ones that are affiliate probably or something like that. But yeah, it's good to know that when I heard you talking about tools you were saying like Google Analytics, Google Search Console, I said yes, this is the guy. This is exactly the guy that went through all of this. This is exactly the person who got pissed about it in numerous times. So yeah, that's all for it.
+
+Peter Rota (19:09.829)
+Yes, yeah.
+
+Nebojsa (19:29.455)
+Ha ha ha ha ha
+
+Peter Rota (19:39.056)
+Yeah, I mean, I think it's important. Yeah, I mean, I think it's important to get the data from the source when you can, especially because Google Search Console is free and it's important to utilize it.
+
+Nenad S (19:39.981)
+for refactoring your toolset.
+
+Nenad S (19:48.833)
+Yeah, but the data you need for the thing that you're currently working on and resolving it and that's it. If you use a tool for it, you're using a tool that can cover those questions, those issues. You don't need to...
+
+You don't need to integrate a new tool. For instance, yes, we use Ahrefs. That doesn't mean that I don't use Majestic SEO, that I don't know how to use Moz, SEMrush, et cetera. But if my whole work and process revolves around it, if the data that I collect and the suggestions, advices that I give to the client are based on that data, then I'm just gonna use that.
+
+If at any point a project needs to use SEMrush for whatever reason, yeah, okay, I'll go with it, but I won't do an export for a single project then get data from SEMrush, HS, Majestic SEO, et cetera, et cetera, and then try to figure out for each and every one what I'm gonna do and what are the correlations. Yeah, but it's good to know. I have one thing that I'm interested in.
+
+How do you use, with those tools, how do you use, explain me for instance, how do you use GPT with the data sets that you are using for audits or for resolving technical issues? Are you making your own prompts, saving them somewhere? Or are you doing it as you go? Are you just having a conversation with the GPT?
+
+Peter Rota (21:19.282)
+I mean, it's, I definitely want to integrate it more into my process, but right now it's a lot of like manual work, but I know there's, I've seen like recently on LinkedIn, people are using Python to like use utilize internal link opportunities, but right now it's a lot of, more just manual work, but I think they'll definitely be time. But I mean, I've also like, I've used like chat GBT to basically
+
+Nenad S (21:31.799)
+Mm
+
+Nebojsa (21:32.238)
+Mm
+
+Nenad S (21:40.247)
+Mm -hmm.
+
+Peter Rota (21:47.45)
+look at search console and be like, tell me some of the trends you see in this data and it's able to like get some high level like stuff like that. But a lot of it's still like manual work, unfortunately. But I think it's important to like automate and outsource things when you can. But for the most part, mine's a of like more manual. Yeah. Yeah.
+
+Nenad S (21:59.597)
+Okay.
+
+Nenad S (22:06.337)
+Yeah, until you figure out your own process and know that it works flawlessly, won't automate it. Until you know that everything works, won't automate it, right?
+
+Nebojsa (22:15.855)
+Yeah.
+
+Peter Rota (22:17.402)
+Yeah, yeah, I think too it's like the over reliance on tools. So it's like, I'll sell go through like each page template and you can find things that a lot of these tools don't pick up or like they'll have false positives. So it's like, in some rush it'll be like, we can't crawl this page, but then Google can. So it's just like, need to like know, you need to look at data from multiple sources before really understanding things.
+
+Nenad S (22:27.991)
+Got it, yeah.
+
+Nebojsa (22:37.647)
+Mm
+
+Nenad S (22:41.143)
+Got it, got it, yeah. Yeah, that's why I also rely on Screaming Frog more than those site audits in some Russian natures.
+
+Nebojsa (22:44.255)
+And Peter, I Yeah Yeah, Peter I read something interesting on your profile and I want to ask you if you can share more about your no BS communication style with clients How does it work and improve client relationship?
+
+Peter Rota (22:49.925)
+Yes.
+
+Peter Rota (23:06.084)
+Yeah, sure. So I mean, I SEO gets a bad rap for kind of being nebulous or like you mentioned before, kind of black box. And I just try to be as transparent as possible. And they're able to see what I'm working on. They're able to see the backlinks. I'm not like hiding them. Like we're getting all this nefarious work. Like they're able to see all my work. I'm communicative. do monthly like reports. I also do
+
+Nebojsa (23:08.185)
+Yeah.
+
+Nebojsa (23:24.452)
+Yeah.
+
+Peter Rota (23:35.428)
+weekly slash biolink reports. Some clients don't require them because sometimes they just, don't want to be as hands on with their son. I just try to like be transparent and like treat someone how I want to be treated. And I like to sleep well at night knowing that I like definitely. Yeah, I work well and that's just like, I think.
+
+Nenad S (23:51.905)
+Yeah, did you work well?
+
+Nebojsa (23:52.037)
+Yeah.
+
+Peter Rota (23:58.778)
+I just try to be empathetic and put myself in their shoes and try to understand their viewpoints and just see where they're coming from. it's like, unfortunately, a lot of them have been burned like by SEOs or they over -promised and under -deliver. was speaking to a gentleman yesterday and he's told me he's worked with six to eight SEO people and like they haven't been able to deliver. like, I like tell someone on a call, it's like, if I can or can't do the work, it's like, I don't want to get you.
+
+start the work and not be able to deliver it because like that doesn't help either of us so just just trying to be be a human being and not think like an seo all time yeah
+
+Nenad S (24:34.635)
+Yeah, yeah, true. I mean, there were situations and I understand that part. mean, how do you handle when a client approaches you and they have a goal, they want to use, to utilize SEO for it and you can see it from a far away that that goal cannot be achieved in the timeline or with SEO whatsoever. How do you respond to that situation?
+
+Nebojsa (24:36.046)
+That's right.
+
+Peter Rota (25:03.462)
+I actually had similar situation like that come up recently where I was approached by, I think it's like a PR agency and basically the United Kingdom and they thought they only needed backlinks. And then I looked at their on page and it's like they're missing internal linking opportunities, the title tags under optimized, they don't have related or like target keywords in their H1 tags.
+
+Google's crawling all these pages that are things that are actually links and they're really just hashtags. So it's like, I try to figure out there's a difference between what they think they need versus what they actually need. So it's like, I've done this whole on -page strategy for them to kind of educate them and just understand like, like I think as SEOs and even some business owners, it's like they've almost been oversold on like backlinks, backlinks, backlinks, but it's like, here they are. And it's like,
+
+Nenad S (25:34.687)
+and Curseyan.
+
+Peter Rota (25:58.438)
+these websites aren't doing basic fundamentals. So they actually posted about that on LinkedIn today where it's like people want all these hacks, but it's like, if you do the basics, you'll get 80 % of the way there. Then it's like, okay, like what else do I need to do to differentiate my client and my page to help me better rank in Google? Yeah.
+
+Nenad S (26:11.489)
+Yeah.
+
+Nenad S (26:19.895)
+Got it. What do you see as a single most influential on -site or technical SEO factor on the page, but a single one? So I know that other factors can correlate and they give you something like an impact, but one that could be like individual factor to be seen across the website.
+
+Peter Rota (26:45.136)
+definitely title tags. I feel like they've always been like the source of truth for Google, especially when they're crawling pages. And I mean, it's also what's shown in like the search engines too. So it's like, this is the first thing the user is going to see when they're in a search engine. They're going to see like the faith comp, but they're also going to see title tags. And it's like, I've, I have always considered them the single most like, influential thing because
+
+Nenad S (26:47.073)
+Definitely, that's the title, that's, yeah.
+
+too.
+
+Nenad S (26:55.437)
+you
+
+Peter Rota (27:14.82)
+I've done changes where you make even just move around a few words or characters and you'll see changes and like they're like the thing that's gonna have the quickest impact too. it's like, yeah, definitely.
+
+Nenad S (27:25.343)
+What's your opinion on should title tags and H1s be the same?
+
+Peter Rota (27:33.84)
+Good question. I mean, personally I use the H1 as another opportunity to kind of use partial keywords, but a lot of CMS, it's like I work with Psychcore, it's like, it's gonna be the default. So it's like, if you can utilize that opportunity, but if you can't, it's not a big deal. But I like know like what I can to utilize that to target some other secondary or partial keywords, but still related to like the main theme of the page.
+
+Nenad S (28:01.129)
+And have you seen any correlations in Search Console? Have you tested it out? Does it give you those partial keywords? Do you receive any visits on the website from search queries using those partial keywords? Could you tie that to an H1 or the title? For instance, have you done some experiments around that?
+
+Peter Rota (28:26.194)
+I have not done specifically on the H1s, but I did run a few SEO tests a while back with title tags and H1. It's more so title tags where I moved some keywords around and I was able to see that ones where we kind of moved the more important keywords closer to the beginning, we saw increases in clicks over those pages versus the control where we just left it. So.
+
+I think I've definitely seen changes and improvements.
+
+Nenad S (28:54.135)
+Awesome.
+
+Nenad S (28:57.619)
+Awesome, awesome, cool, good to know.
+
+Nebojsa (29:01.205)
+And Peter, I know that you had a chance to work with some e -commerce brands and do SEO for them. So there are platforms like Shopify, which has a lot of limitations. So how do you overcome them for platforms like Shopify, for example? The challenges.
+
+Peter Rota (29:05.072)
+Yes.
+
+Peter Rota (29:17.838)
+Yeah, yeah, sure. So I mean, I did a Shopify audit for an individual recently, and I think Shopify out of the box is good, but there's a ton of issues as far as like when they use related links, the link to the canonical link or like, I'm trying to think, but it's essentially the way they have it set up is that they're not really gonna use the preferred URL.
+
+Nenad S (29:39.725)
+Thanks
+
+Peter Rota (29:46.788)
+run into canonical issues or like page nation issues where it's like there may be that link into the last page in the series or the first page in the series links to like slash page one when it should just be the default. So I mean, I've run into those things and...
+
+Nenad S (30:05.697)
+There are many built -in templates in Shopify where they, when you go to the collection page and the product items, products that are listed there, have a URL that's slash collection, slash collection name, slash product, slash product name. And you just want it to lead to slash product. So instead of having slash collection name, slash et cetera, and they are both using that URL, which is on that page. They're using it as a canonical. They are using it as a
+
+Peter Rota (30:10.822)
+Yes.
+
+Peter Rota (30:16.762)
+Yeah. Yeah.
+
+Nenad S (30:34.277)
+Direct URL of the page they are using it in schema if you set it up etc. But initially when you just build a Shopify website when you use a template the robots .txt file will by default Drop those pages from from crawl it will disallow them to crawl so I seen this numerous times where people basically have Launched the website they have a collection page they have it listed as those URLs and
+
+But because those are disallowed to crawl, they basically see the collection pages as empty. So there were time issues. mean, out of the box, Shopify is good. It's great for e -commerce. It's really easy to use. It can be optimized well. But out of the box, if you don't pick out a template properly, if you don't know that these things can happen, like specific pain points that you need to resolve pre -launch, you're going to have...
+
+Nebojsa (31:12.42)
+Yeah.
+
+Peter Rota (31:15.856)
+Yeah.
+
+Nenad S (31:33.261)
+much difficult time in resolving them later on because that way Shopify for a page that has a shop that has 100 products can generate 500 ,000 URLs and that's a lot of things a lot of URLs that bots need to crawl and to to get to index so yeah
+
+Peter Rota (31:37.338)
+Yeah.
+
+Peter Rota (31:46.191)
+thousand.
+
+Peter Rota (31:53.2)
+Yeah, I mean, I think it serves a point where it's like Shopify is selling to small business owners and these people don't care about SEO, they just care about getting their products up. So I think in that case it works, but there's still a lot of areas to improve.
+
+Nebojsa (31:53.816)
+Yeah.
+
+Nenad S (32:01.389)
+Exactly.
+
+Nebojsa (32:04.078)
+Yeah.
+
+Nenad S (32:07.885)
+What CMS would you opt for if you were working for an e -commerce store that has let's say 10 ,000 products and more? Would you go for some existing CMS or would you probably opt for developing a customer?
+
+Peter Rota (32:29.902)
+I'd probably go with a standard like a Shopify because custom is just a lot of work. Unless you're like a major like retailer, you probably don't have the energy and resources to continually debug and fix the issue. it's like, I definitely like Shopify that like it's, you can.
+
+I'll configure it out of the box, but I think like I have I've done WordPress for like e -commerce and I think that one's decent too. I probably wouldn't recommend it for like 10 ,000 pages, but like definitely like I Mean Shopify is like the only one I could think of so I'd probably go with that
+
+Nenad S (33:03.169)
+You it.
+
+Nenad S (33:09.706)
+He it.
+
+Nebojsa (33:10.125)
+Yeah. Okay, so I've seen some e -commerce brands like having a properly optimized websites in terms of onsite and technical SEO. They don't have a blog section, like they don't write any content, but they build a lot of backlinks and actually all the category pages are ranking on top of Google search. Do you think that having a blog isn't necessary when it comes to an e -commerce brand?
+
+Peter Rota (33:17.989)
+Mm
+
+Peter Rota (33:38.768)
+Good question, yeah. whenever I work with an e -commerce brand, I tend to go for a blog. And the reason being, I think it's important to address different parts of the buyer's journey. Obviously now with AI overviews, it's a bit more complicated, but I think it's important to educate people on, so if someone's top of the funnel, middle of the funnel, bottom of the funnel, you're covering all of the intents. So basically,
+
+You're the source of truth of anything they want for that specific topic. And I think also what you do is you allow those, you get those internal links, those contextual internal links that you can go back to the collection pages and the homepage and the individual product pages and power those up. So I think as long as the content is useful to the user, it's going to be beneficial. And if you're just creating content just for SEO with like no really intent, I think.
+
+Nebojsa (34:18.373)
+exact.
+
+Peter Rota (34:37.766)
+that's what matters and like on the blog post you're kind of funneling people back to like the product and collection pages and just I think yeah so is it necessary no will it be beneficial 100 % but if short long short answer yeah
+
+Nebojsa (34:46.105)
+Mm -hmm.
+
+Nebojsa (34:53.88)
+Yeah, okay. Thanks for clarifying. Yeah, because...
+
+Nenad S (34:57.031)
+Have you ever clicked on a link in a blog post and bought something?
+
+Nebojsa (35:02.405)
+Good question.
+
+Peter Rota (35:02.63)
+I mean, don't... In my life, yes, probably, but personally, I don't read a ton of blogs now. It's mostly SEO blogs. But I've never been like, ooh, I'll buy something now, but yeah.
+
+Nenad S (35:02.719)
+in your life. I just wanna know that.
+
+Nenad S (35:11.329)
+Got it.
+
+Nebojsa (35:11.663)
+Yeah.
+
+Nenad S (35:16.221)
+And one more thing, one more thing, I wanna know this. When you share, so for instance, you don't read a lot of blogs, you read SEO blogs. When you find a piece that you find interesting and you wanna share it on social media or anywhere, do you copy paste the URL from the address bar or do you click the share button? What type of person are you?
+
+Nebojsa (35:16.343)
+Yeah, because I've seen... Okay, shoot, shoot, shoot.
+
+Peter Rota (35:18.5)
+Yeah, yeah you're good.
+
+Peter Rota (35:35.302)
+Yeah.
+
+Peter Rota (35:40.976)
+Good question. I mean, I usually just copy and paste the URL.
+
+Nenad S (35:45.994)
+Okay.
+
+Nebojsa (35:47.737)
+Me too.
+
+Peter Rota (35:47.844)
+Yeah, I'm not someone that like here's a blog I'm reading and share to Facebook. like, I don't I just be my mentality too. It's like I like I feel like if you're an older generation, you're probably used to copying pasting or it's like if you're younger, you're like, I'll just share this because like they didn't have to copy and paste anything before. Yeah.
+
+Nenad S (35:53.014)
+Yeah.
+
+Nenad S (36:06.157)
+Yeah, the thing is...
+
+Nebojsa (36:06.765)
+I think you need to be somewhere in the middle because very old people will not copy paste the URL. Also very young people won't.
+
+Peter Rota (36:09.764)
+See ya.
+
+Yeah, exactly.
+
+Nenad S (36:13.243)
+When you you when you track data like for instance I know I know that you worked with analytics before so you know that You can set up an event to see if anyone clicked on a button to share a certain blog post anywhere And you're tracking shares
+
+Peter Rota (36:20.645)
+Yeah.
+
+Nenad S (36:30.571)
+But if they click to copy paste the URL from the URL bar, that's outside the client side of analytics. So you cannot even see if that was shared or wasn't shared. Yes, you can go to Facebook with URL inspector to see if there was any data that was shared anywhere across the web, but still not get that data back into analytics.
+
+This was one of the major issues that I had, like, they are, we have that ventracking, they are not sharing, they are not sharing, no man they probably are, but hear me out. We are like a decade older than you, so people probably just copy paste.
+
+Peter Rota (37:08.248)
+Yeah, I think now too is a lot of the analytics platforms are giving you less and less data. So it's just, it's not, if you're trying to track anything with cookies now as a marketer, it's, very tough.
+
+Nebojsa (37:09.114)
+Yeah.
+
+Nenad S (37:14.925)
+Yeah, true.
+
+Nenad S (37:20.865)
+Have you tried at any point in time to track for which keyword the person directly, for which keyword the person landed on your website from Google search?
+
+Peter Rota (37:36.528)
+like you mean just tracking the keywords individually and rank tracking?
+
+Nenad S (37:38.837)
+Search query that they put in before they clicked and visited your website to have that data tracked in Google Analytics.
+
+Peter Rota (37:50.163)
+No!
+
+Nenad S (37:51.245)
+So you can connect the keyword or the query with specific pages or specific user groups, segments or whatever.
+
+Peter Rota (37:58.254)
+I mostly use Search Console. I mean, I might work with Adobe Analytics, but I'm not a fan, so I'm more using Search Console to see what heroes are driving the traffic.
+
+Nenad S (38:09.453)
+Cool. Cool.
+
+Nebojsa (38:11.014)
+Yeah, okay, so we spoke about e -commerce now I want to move to local SEO and ask you what makes local SEO so powerful for a business and how do you ensure a local business can compete with larger players?
+
+Peter Rota (38:27.918)
+Yeah, so I mean, I think with local SEO, it's just, it's generally gonna be, depending on the niche, obviously there's some caveats, but it's gonna tend to be less competitive, because you're only competing with people in your general vicinity. And most people, how they make decisions now is they Google reviews, or they're on their phone or mobile, and like, they're gonna put your address into their phone. So it's like, if you don't have a Google,
+
+business page, basically your competitors are gonna take your traffic. So I think that's very important there. Most people now, it's like they complete most transactions online. They're not like, obviously I'm dating myself, but many years ago there was the yellow pages and you use that. it's like, that's how now people are looking for the fastest, most least frictionless way to complete their things. And it's like,
+
+Nebojsa (39:14.605)
+Yeah
+
+Peter Rota (39:23.684)
+If you have a website and you educate people and you're there, you can definitely be competitive. But going back to like competing with like the bigger players, one thing I've noticed is that the geo pages tend to do pretty well. So if you're based in Boston and you want to rank in, I guess, Miami, you may create like a geo page, which
+
+Nebojsa (39:40.655)
+Mm -hmm.
+
+Peter Rota (39:50.278)
+I think they still rank pretty well, but ultimately you're gonna get more traffic if you can set up a physical location because I feel like the majority of the traffic at this point goes to the map pack most people sometimes won't Read an organic result, but some people sometimes they want that additional clarification or like Social proof to be like okay. This person is ranked here. Like can I trust them? So they'll still go to the website. So I think it's important to like
+
+Nenad S (39:57.024)
+you
+
+Peter Rota (40:18.85)
+Ideally if you have the option to get another location do it but location pages still do pretty well because some people have these super long -term queries and if you're like showing up for that stuff you can still rank and get trafficked.
+
+Nebojsa (40:29.956)
+Yeah.
+
+Nebojsa (40:33.729)
+Yeah, and what do you think about GMB profiles that do keyword stuffing such as for example you have a dentist in Houston, Texas and their Google My Business name is like Smile Dental slash dental implants Houston TX. What do you think about that?
+
+Peter Rota (40:53.53)
+I mean, it definitely works because Google, think, highly uses the name of the business slash if there's a keyword in there to rank. It's probably something I wouldn't recommend long term because I might be weary of them maybe suspending that listing. But I guess if you can get away with it, great. But it's probably not. I could see it more of as like a rent ranking or like a paper lead.
+
+Nenad S (40:57.045)
+you
+
+Nebojsa (41:12.207)
+Yeah.
+
+Peter Rota (41:23.46)
+but it's just like, it's not gonna help the business long -term. So I actually have to get penalized.
+
+Nebojsa (41:28.553)
+And it's very easy to like, you can easily like make an edit from your Google account when you see the profile, but also what helps that profile gets, let's say, it won't be penalized, but Google will just check all the info and then replace with the right information. There is this Google Reinheritial Submission Form for local businesses that you can submit directly like a ticket to Google, write all the info and Google will, like I've
+
+Peter Rota (41:34.352)
+Yes.
+
+Peter Rota (41:47.705)
+Yes, true.
+
+Peter Rota (41:54.715)
+Mm.
+
+Nebojsa (41:58.527)
+I've actually tested this and in less than a week Google fix all the Keyword staffing and removes there. Yeah, it's very easy to do and basically how it helps like if your client is at the sixth place and there are two keyword stuffers at five and four position when you like Fix them your client will automatically jump for two places So it's very easy strategy to move your local business up when you have competitors
+
+that are doing keyword stopping yeah man that I mean bro like that was one of the strategy I mean yeah exactly
+
+Nenad S (42:30.749)
+Also, you're a snitch, right? You're a snitch. So you're a snitch I get it. So yeah, you're a snitch. We got it So the thing is the thing is in Google actually Google guidelines when you want to form a GDP page for someone they ask of you for instance, you have a multi -location business
+
+Peter Rota (42:32.901)
+so you're going and editing their business? that's bad.
+
+Nenad S (43:00.275)
+and you have somewhere in Boston, somewhere in Miami and one in Washington they won't allow you to have the same name on all three listings you need to change the names each one of them has to have a unique name and the only way you can have it unique is to have a location in the title to differentiate it I mean I don't know
+
+Nebojsa (43:19.225)
+Yes, right.
+
+Nenad S (43:27.551)
+If you don't want to change the brand name, what is the only thing that you can add to differentiate it? Add one? Or add some form like, let's say, if you have some like name formatting to add like G16, a similar thing that a company here in Serbia, a franchise here in Serbia does. if, but it's intuitive for people to add a location to that listing, to that title, and they don't know how, the other way to do it.
+
+Peter Rota (43:34.118)
+location.
+
+Nenad S (43:56.321)
+But Google also in their guidelines says that you should not and cannot do that because you can get suspended for it. So it's more of an issue on Google's end that you cannot just switch a GDP profile and name it like this is a franchise or this is a multi -location business and just replicate this name but use other locations. you, I mean, when you want to create a GDP, even if you want to create, you need to...
+
+Nebojsa (44:03.812)
+Yeah.
+
+Peter Rota (44:11.6)
+Yeah.
+
+Nenad S (44:23.309)
+turn it into a franchise because you're basically going to add first your main location then to add other locations as well so still you're starting as a single location business then adding new profiles it's complicated I know and it's not intuitive and many people do that type of title adding like location to titles just because of that but then you have snitches like this guy
+
+Nebojsa (44:35.076)
+Yeah.
+
+Yeah.
+
+Nebojsa (44:45.401)
+Yeah.
+
+Yeah.
+
+Peter Rota (44:48.42)
+I mean, I joke, local SEO is like the wild, wild west. It's just like anything goes. It's like, yeah.
+
+Nenad S (44:54.027)
+Yeah, yeah, yeah, true, true, true.
+
+Nebojsa (44:54.949)
+Yeah, yeah Yeah, and do you know do you guys know that you can create practitioner listing for example if you own like a dental Office like then you can register yourself with your name as a practitioner and look just hear me out what I figured out there is a there was one They were one locks meter from Toronto, and he has locks meeting company
+
+Nenad S (45:08.909)
+Mm
+
+Peter Rota (45:11.639)
+yeah.
+
+Nebojsa (45:24.929)
+And basically what he did, he created a practitioner listing and he made it Emergency Locksmith Toronto and basically it ranked number one when someone from Toronto types Emergency Locksmith. I mean, it's a cheat, but it worked. So yeah, Peter, it is a Wild West out there. So yeah.
+
+Nenad S (45:40.801)
+Yeah, title tags in those cases work very well. I actually...
+
+Peter Rota (45:41.04)
+Yeah.
+
+Peter Rota (45:46.554)
+Yeah, for sure.
+
+Nebojsa (45:50.117)
+So yeah, another question that I wanted to ask you is what's your approach to optimizing content for SEO, especially in competitive industry like finance or tech?
+
+Peter Rota (46:02.276)
+Yeah, I mean, I generally start my process by, I use surf for SEO, which give a shout out to them. I've been using them for years, but essentially I'll kind of see, I'll basically find the most relevant competitors from there. And then I am using chat GPT to basically scrape one possible scrape their websites, look for all their headers. And then basically.
+
+Nebojsa (46:18.233)
+Mm
+
+Peter Rota (46:28.912)
+Create a content ally from that, get rid of any redundant headers, also find, ask it to find any content or topics they're not mentioning. I use that. And then, I mean, right now I'm using some AI content, but essentially what I'll do is I'll then use ZimWriter, create that content. I'll add all the keywords, surface mentioning, put that in the article and it comes out.
+
+Nebojsa (46:38.661)
+Mm
+
+Nebojsa (46:58.255)
+Mm -hmm.
+
+Peter Rota (46:59.428)
+And then what I like to do now is I'll do like a key takeaways at the top, because I feel like, like I mentioned, a lot of just want the information faster, but then that still presents the option for them to still read. So it's like, people were afraid it's like, if they're going to find the answer, then leave. And it's like, there's nothing wrong with that if they're completing what you want them to do. So, I mean, I'll do that. I'll try to use some semantic HTML. So like making.
+
+Nenad S (47:20.128)
+Exactly.
+
+Nebojsa (47:22.073)
+Yeah.
+
+Peter Rota (47:28.322)
+on the first ordered list, making bulleted tables when possible, using images and using videos. But I mean, I'm not doing anything crazy. Like I feel like the basics are not insane, but I've seen a lot of people miss the basics. mean, I'll sometimes use table of contents and sometimes those links get indexed you kind of get additional traffic for those jump links.
+
+Nebojsa (47:38.626)
+Mm
+
+Peter Rota (47:58.022)
+I do that and then I'll use make sure to link to the most relevant competitor, most relevant pages, make sure like the focus keywords in the title tag, H1 first 100 words of like the beginning, a few times in the body towards the end, and then just using any relevant entities. Also using NLP when you're using like this FAQ question. it's like, like, I don't know.
+
+Nenad S (48:24.94)
+Yeah.
+
+Nebojsa (48:26.382)
+Mm -hmm.
+
+Peter Rota (48:27.684)
+I'm trying to think of one where it's like, what is the engine in a car called? And it's like, the engine in a car is called such and such. it's just making it as easy as possible for Google to understand removing any friction because as smart as we think Google is, there's still like areas where it's just dumb. So it's like, you need to make it as easy as possible. So I would probably just say that and really utilizing those contextual internal links. It's like,
+
+Nebojsa (48:49.021)
+Mm
+
+Peter Rota (48:55.824)
+those are gonna be sometimes a differentiator because obviously back links are important, but it's hard to get back links. it's like, you can help square that up by getting maybe more supporting content or going more in depth or giving the person an answer, the information faster, or these contextual internal links. So I'd say that's how I generally approach things. But obviously some industries, you need a heck ton of back links. So maybe try to use digital PR or...
+
+Nebojsa (49:09.059)
+Mm -hmm.
+
+Nebojsa (49:14.446)
+Mm -hmm. Mm -hmm.
+
+Nebojsa (49:22.499)
+Mm
+
+Peter Rota (49:24.506)
+guest posts to kind of like get up there.
+
+Nebojsa (49:28.057)
+Yeah, and what do you think about the backlinks? What do you consider is a quality backlink?
+
+Nenad S (49:28.45)
+Go.
+
+Peter Rota (49:33.958)
+At this point I'd probably say a website that the traffic trend is generally moving up. It's on topic. There's not like any traffic isn't crashing or tanking. The contextual, mean the backlink profile as far as the anchor texts are mostly on brand. They look natural.
+
+They're not linking out to like any suspect websites. I mean, I think sometimes you can get away with some of it because you like Google will neutralize it. But I think just ideally content that you go to the website, it doesn't list suspects. So we've all seen those sites where it's like, this is clearly like just for SEO. So I think it's just you want some, you want to ideally get some natural links in there. I think at the same time, like a few guest posts is not going to crash your site.
+
+Nebojsa (50:00.684)
+Mm
+
+Nebojsa (50:04.389)
+Mm
+
+Nenad S (50:21.203)
+Yeah.
+
+Nenad S (50:31.063)
+Do you consider... So you mentioned context and topic. of... Context and topic are not metrics on their own that you can just go out and get from a tool like Ahrefs or SEMrush or whatever. Compared to every other metric that you can take into account from any of those tools, so Ahrefs, SEMrush, etc. Any of those big crawlers.
+
+how do you, I mean, do you value more context and content and topics around it or the metrics? If you, let's say if the traffic was low, if the domain was young, if they are tied to some suspect website, suspicious websites, because they could be either generally earning links or those links were made because they, I don't know, do...
+
+an SQL, did an SQL inject or they did something with their feet or whatever. So what would you, what would be like a decision factor on your end if that website should be used for a back?
+
+Peter Rota (51:46.03)
+Yeah, I mean, I like I mentioned, I take in a variety of things, but if like if the backlink is super authoritative and it has a good amount of referring domains and like backlinks and one or two of those links is not going to kill you. think what SEOs tend to overfocus is on is like Google is going to take into account your whole profile. So it's like you may have some suspect links, but it's like if you had all these natural links, it's like that's going to offset that and like.
+
+Nebojsa (52:09.699)
+Mm
+
+Peter Rota (52:16.112)
+What I like to do when I get each new client is I'll start with like a press release so I can get those like branded anchors and just like some authority and foundational links. So it's like, if you get a few bad links, it's not gonna tank the site. So, but overall I think it's like, if it looks like a good backlink and it's like, it's gonna power you great, but ideally you want like, you wanna like focus on both the short term and the long.
+
+Nenad S (52:31.34)
+Yeah.
+
+Nebojsa (52:43.997)
+And if we exclude the context and everything and only look at the metrics, which one would you say that is the most important metric for a website that you want to get a link from? The organic traffic number of referring domains.
+
+Nenad S (52:44.098)
+Got it.
+
+Peter Rota (53:01.786)
+Yeah, that's a tough one because I mean, I think it's hard to look at just one metric at this point because backlink sellers and just people have basically inflated DR and all this stuff so you can fake it. But I mean, even like the traffic on some of these things on like third party tools, you can look at Ahrefs and SEMrush and the traffic looks completely different. So I think it's
+
+Nenad S (53:09.165)
+There's no one here.
+
+Nebojsa (53:10.123)
+Yeah, I know.
+
+Nebojsa (53:15.117)
+Yeah. Yeah.
+
+Nenad S (53:16.907)
+Yeah, that can be.
+
+Nebojsa (53:24.033)
+Yeah, can be fake, yeah.
+
+Peter Rota (53:29.954)
+important to take into a few an account. I mean if I had to say maybe referring domains but even then it's like it's hard. Yeah you're fine yeah okay good.
+
+Nebojsa (53:38.391)
+Yeah, I know. I mean, it was like a tricky question, but you got it right. You got it right. You cannot like look at one matrix.
+
+Nenad S (53:41.513)
+I would, yeah, I would
+
+I would rather go with a combo of ratio between backlinks and domains, but if it was a single one, it should be linked domains. So I would probably focus on that category because linked domains would actually show me if it's a pvn or something. It could show me if it's a pvn or if it's just a bad neighborhood for that website. So linked websites, not the referring domains.
+
+Peter Rota (53:52.41)
+Yeah. Yeah, same.
+
+Peter Rota (54:00.27)
+Amen.
+
+Nebojsa (54:01.058)
+Okay, cool.
+
+Peter Rota (54:14.65)
+Yeah, I mean something I've also seen is like, and that's something I necessarily look for, but it's also some validation where it's like some sites they have an insane ratio of do follow versus no follow and it's like, I don't look for like, there's people that be like, what's the perfect ratio? And I was like, there's no such thing, but it's like, you can clearly tell if like they're trying to manipulate things.
+
+Nebojsa (54:15.289)
+Yeah.
+
+Nenad S (54:25.441)
+Yeah.
+
+Nenad S (54:32.75)
+No, no such thing.
+
+Nenad S (54:38.157)
+I would just have it flagged on like if I have more than 10 % no if I have less than 10 % of nofollow links for this website then I can't yeah it could be suspicious so I would raise a flag if I have less than 10 % for that referring domain so a guideline a flag a milestone however you want to call it but not like specific ratio that you should keep or something
+
+Nebojsa (54:38.276)
+Yeah.
+
+Peter Rota (54:49.082)
+Yeah, the my piece of
+
+Peter Rota (54:59.908)
+Yes, I'm cry -syriac.
+
+Yeah, agreed. Yeah.
+
+Nebojsa (55:07.289)
+Also, I have another question for you regarding backlinks. So what do you think about having more links coming from a single website? I've noticed that some big websites they tend to get more links from the same domain, but they made sure that the
+
+every second or the third or the fourth link doesn't come in some specific time period. For example, on every six months they can repeat the link. What do you think about that?
+
+Peter Rota (55:39.36)
+I mean, I think it depends on the domain and the authority, but I could just see the benefits being less and less. I would say maybe there's some benefit if it's to a different page. But if you're sending all of them to the homepage over and over, that's just like, I'd rather try to like get it from different domains than the same one. It also kind of plays in your favor too. Cause if Google is seeing you're only getting all these links in one domain, they're like.
+
+What are they doing? Are they doing this intentionally? Like, it's kind of like not natural in a way, but I've also seen ones where like they'll have one page and it's like in the footer and it ends up like a million links from one site. So it's like, I think just trying to like be somewhat natural.
+
+Nenad S (56:20.352)
+Yeah
+
+Nenad S (56:25.345)
+Yeah, I mean, naturally you'll get more links from even though even if you built a single link in terms of like you wrote a guest post. Now that one can be in a sidebar in sidebar in latest post. So a link that post is linked if that post has like an excerpt and a link happens to be there. I mean, those things happen and they are natural. You can from one single link you could get
+
+Nebojsa (56:26.117)
+Okay.
+
+Nenad S (56:50.349)
+from one single referring domain you can get 5 -6 backlinks by default so keeping that ratio 1 -1 was never actually an option I mean in long term but repeating once that's a whole new beast to tackle so if you have in search console whenever you publish an article on your blog
+
+Peter Rota (57:03.312)
+Great.
+
+Nenad S (57:15.421)
+you have a sudden spike, not a spike in traffic, but it starts generating a bump because it gets indexed, it gets new search queries and it gets traffic. After a while it starts to drop, you're refreshing content, you're adding new content, etc. If you refresh that article by adding some new content to it, then the same curve will go up and down. But if you wrote a guest post on a specific website with a backlink in it,
+
+you basically created an article there you will get that spike in traffic so or spiking metrics for that link back when that you're generating but once that blog post is if that blog post wasn't refreshed if it wasn't done anything to it after three or six months it will again start to drop so there is no new metrics or no new gains that could be actually transferred i mean they there are i'm just saying like overall so
+
+if you would do something like that then you can put it in a basket like hey my link on that website makes the most impact anywhere between 6 and 12 months so anywhere between 6 months and a year so I made the most impact with it in the first 6 months it could get up to 12 but if I do it after a year and make a new article there that article might bring in some I mean that
+
+article and that backlink can bring some new impact but that again is a bump because you are again using it on a repeated referring domain it's much better that you do it from a new one and get new fresh set of signals rather to repeat ones it still would work and it can be seen in search console those not the effects from it can be seen but not tied to a specific metric but still
+
+Repeating once can do good after six months not sure after a year could be but it's always better to go With a new one rather than just repeating the old You get to a point if you're a large website where you have like 10 ,000 referring domains that you cannot find a Place where you can get published, but still if your website that has 10 ,000 referring domains
+
+Peter Rota (59:23.462)
+The Kree.
+
+Nebojsa (59:24.815)
+Yeah, makes sense.
+
+Nenad S (59:37.741)
+You're probably already a well -known brand that's going to be published around numerous websites. You're a well -known tool that people will refer to or talk about on their websites, in their blogs, in their guides or whatever. So it's much... You will get more earned links once you get bigger. And those links can be repeated once. You don't know, you never know. But again, if you're going for it, that you will build links and that you focus on it.
+
+Nebojsa (01:00:01.445)
+Yeah.
+
+Nenad S (01:00:06.989)
+After 2000 referring domains you're gonna have a problem with finding new ones according to the metrics or thresholds that you make. So repeating old ones is a good way to mend that. But again, it should be used in that case. And probably after a year since you published it. I mean that's just my opinion.
+
+Peter Rota (01:00:09.851)
+Yeah
+
+Nebojsa (01:00:17.284)
+Yeah.
+
+Nebojsa (01:00:30.126)
+Yeah.
+
+Peter Rota (01:00:33.284)
+Yeah, I agree.
+
+Nebojsa (01:00:33.87)
+Yeah.
+
+Nenad S (01:00:35.701)
+It's based on some data, but you can never actually directly correlate it to it because you don't have a specific type metric and you cannot isolate it from all other signals like traffic on that website, clicks on those links, referral traffic coming from people who clicked on a link in that blog post to go to your website. You can't isolate it completely to do a test, to do a proper test.
+
+Nebojsa (01:00:57.86)
+Yeah.
+
+Mm -hmm. Yeah.
+
+Peter Rota (01:01:02.34)
+Yeah, I could see a reason to do it because you lose backlinks over time. So it's like, maybe this was an authoritative domain and you lost a back. Like I you get a back, but I definitely don't. Yeah.
+
+Nenad S (01:01:10.561)
+Yeah, that's also a reason why would they do it. Yeah.
+
+Nebojsa (01:01:15.213)
+Yeah, that's a good point. Yeah, that's a point.
+
+Nenad S (01:01:17.687)
+But at that point it's basically counted as a new one, right? Not a repeated one.
+
+Peter Rota (01:01:20.698)
+Yeah. Yes.
+
+Nebojsa (01:01:21.615)
+Yeah, yeah. Peter, when doing an SEO audit, how do you determine what will have the biggest ROI for the client?
+
+Peter Rota (01:01:32.114)
+Good question. I mean biggest ROI at least for me is a lot of just around the content and the technical SEO, but I mean I've worked with clients where are sometimes all their pages are below like four to three to four levels so I'll feel like Create an HTML site map so I can get those sites higher in the hierarchy, but generally
+
+It's going to depend on the site. Some small sites, it's maybe some changes in the title tags and more contextual internal links. Larger sites, could be how Google's crawling the site, route canonical issues, making sure like alternate, think fixing those like search console issues as far as like making their job easier. So it's crawling the right things and prioritizing. So I think it just really depends on the site.
+
+where they're currently at, have they used an SEO, variety of things, but yeah, generally content, technical SEO, maybe improving user experience is gonna have like the most benefit. I definitely think page speed's still a thing, but I think ideally you wanna be faster than your competitors. And I've said this and it's nice Google came out to say this, like people over -focus on core web vitals and it's like.
+
+Nebojsa (01:02:32.239)
+Yeah.
+
+Nebojsa (01:02:48.204)
+Yeah.
+
+Peter Rota (01:02:54.062)
+Obviously you want a fast site, but you also need to be realistic where it's like is it fixing it by point two? Milliseconds gonna like have this massive increase in SEO. yeah
+
+Nenad S (01:02:54.433)
+Yeah.
+
+Nebojsa (01:02:54.533)
+Mm.
+
+Nenad S (01:03:04.685)
+That's a controversial thing that I wanted to ask, in this case PageSpeed, yeah I figured, it's really good and you should focus if a website loads fast, yes you should focus on it. But we're talking about PageSpeed in times where I currently here have 500 megabytes upload and download.
+
+Nebojsa (01:03:05.957)
+Yeah.
+
+Nenad S (01:03:30.445)
+My 4G on my mobile has 25 megabits upload download. At my home I have a gigabit. So what are we talking about? How large could that page be for me not to load it under three seconds? And we're talking about commercial ISP packages. So for that, website that has a web page that has 35 megabytes can be loaded in less than three seconds.
+
+If I'm on 4G, it will take me, let's say, 6. But we are addressing, if you want to do those core web vitals to have that score, your page needs to be under 3 .5 megabytes. Meaning you're directly limiting me to not use specific media files, media types. Yes, WebM is cool for video, WebP for picture, okay, that can be all converted. Yes, they can hold basically the same quality.
+
+But what if we're talking about this is my collection page in which I want to list 100 or so products because it covers my end line. It increases my chances of conversions in sales. But I can't do that, I need to limit it. If I add an event tracking, for instance, who had clicked and added this to cart, each individual event carries with itself a payload that can be a certain
+
+kilobytes or something into Google Analytics data layer. So at this point, it would be an issue. And it was brought as an issue back in 2013, 2014 when they started with PageSpeed. But today where we have slash 500 megabits upload, download, it doesn't even matter.
+
+Peter Rota (01:05:20.9)
+Yeah, I think it's just relative to your audience and like I've worked with
+
+Nenad S (01:05:23.709)
+Exactly, exactly. So if it's relative to your audience, why should it considered as a factor overall on all geolocations? I could see it if it was in some area where you still don't have that ISP coverage of those uploads and download speeds. I mean, I'm not in Korea. Korea has insane downloads and upload speeds. But still, these are common ones, commercial ones.
+
+and the page speed, I think it's now on v10 or v11 in terms of how it handles weights to that scoring but still doesn't give it, it hasn't changed much it's still, if you're above 3 .5 megabytes you're considered a slow page to load it's not in it with times so in that case page speed meh I don't know but that's just my opinion
+
+Nebojsa (01:06:09.999)
+Yeah.
+
+Nebojsa (01:06:16.695)
+Yeah, yeah. Peter, back when you were speaking about the SEO audit, you mentioned quite a lot of metrics. And I wanna ask you, how do you convey the value of SEO to clients who may not understand the metrics? What's the most important data to show them?
+
+Peter Rota (01:06:25.221)
+Yes.
+
+Peter Rota (01:06:35.236)
+I think it's important to connect each recommendation to what impact they'll have on revenue or just go back to their bottom line. it's like, if say certain pages aren't getting a ton of traffic, you can be able to improve your title tags and that'll help you get more traffic and then ideally more people on your website and then that can improve your conversion rate. But yeah, I mean, I always try to.
+
+Each thing I do should have an impact. Like I mentioned, all image tags fixing that on poor, but like if like improving the crawl depth or like improving, like getting rid of the, I don't know, Ralph can now to hose or fixing like some crawl is going to have a high impact. I'll focus on that.
+
+Nebojsa (01:07:22.649)
+for answering and if you can share what's been one of your most challenging but rewarding client projects in terms of SEO results.
+
+Peter Rota (01:07:24.272)
+Yeah.
+
+Peter Rota (01:07:35.672)
+Yeah, can I, do you mind if I share my screen? Okay, yeah, I have a thing for
+
+Nenad S (01:07:38.881)
+Go for it!
+
+Nebojsa (01:07:39.813)
+Of course.
+
+Peter Rota (01:07:50.666)
+Okay, so I mean, these weren't too challenging, but I guess I had pretty good experience. So this was like, I mentioned this was the e commerce space and this client basically competes in mostly related to religious books. So I had pretty good success. basically audited their whole site and improved a lot of like the title tags collection pages.
+
+and then we added internal links on like the collection pages as well as created a blog strategy, but I basically increased our overall search traffic like 14%, non -branded increased 167 % and then was also able to have a significant improvement in keywords right to the top 100, but then also last not least.
+
+Nenad S (01:08:34.039)
+Nice.
+
+Peter Rota (01:08:44.87)
+Revenue potential so I increase revenue by like 24 % There's also ones or like I've Increased the organic conversions like 230 % So I think like we mentioned SEO metrics are important, but you need to tie it back to What's gonna make the client more money? Traffic and rankings are great, but if they're not making more money, they they can't pay their bills. So it's like I would say those things
+
+Nenad S (01:08:49.517)
+Yes.
+
+Nebojsa (01:08:49.881)
+Good job, man.
+
+Nenad S (01:08:57.547)
+Yes.
+
+Nebojsa (01:09:05.209)
+Yeah, right.
+
+Nebojsa (01:09:10.421)
+Exactly. Well man, mean good job, you did a great job there.
+
+Nenad S (01:09:12.617)
+Awesome. That's why I asked you the question regarding tying a specific keyword, specific search query to the bottom line. For instance, did this search query bring me more sales to all this product, specific product, which is a product from e -commerce store? Now Google never allowed that.
+
+because when you go to Analytics, initially Analytics, you had difference between page and event hits. Like the event hits is specifically for clicking, adding to cart, page hits was coming in from which channel, which page. But you still couldn't send a query, search query from it. There were ways back in the days, like in 2010, you had first types of deep linking that basically people utilized. We had...
+
+Peter Rota (01:09:38.97)
+that kind of show.
+
+Nenad S (01:10:03.053)
+Options where you can add a specific parameter to that payload to a cookie like This was a previous I stored this from your Google browser before you clicked it and sent it over But if Google sees that in Google Analytics, you're immediately going to get suspended and holding deleted But yeah, there are still ways that you can do it. I seen it even in GA for because you basically
+
+could tie it to a user ID or something. I mean, they already have that user ID, their session ID, they have event ID, you can tie everything to it without personally identifying a buyer. You want to know that it was, I don't know, Peter Ota, but you will know that the person who typed in this keyword and came in from this channel bought in this product. It could be done. And still avoiding those...
+
+and still respecting GDPR compliance with it. Have you done anything black hat? Or explored at least? In terms of learning about it, understanding it, not specifically using it.
+
+Peter Rota (01:11:03.557)
+Yeah.
+
+I mean, not like -
+
+Peter Rota (01:11:14.66)
+Not like that specifically, but I mean, in the past I bought Sape Links or I did like GSA or I mean, I consider this great hat. I mean, I've done like PBNs and, I've never like been someone where it's like, I'm gonna hack your website and jack stuff. Like that's what I consider black hat where it's like, I've seen people like.
+
+Nebojsa (01:11:15.162)
+Yeah.
+
+Nenad S (01:11:25.441)
+Yeah, it's kind of... it's great.
+
+Peter Rota (01:11:38.316)
+A business near me, were new and someone literally edited the information and changed everything and made a locksmith. So, in fact, I consider that stuff more black hat, like...
+
+Nenad S (01:11:44.898)
+Yeah.
+
+Nebojsa (01:11:49.743)
+Yeah.
+
+Nenad S (01:11:49.837)
+And what's your thoughts? mean, what do you consider? PBNs are a gray zone. They are a gray zone. What do you consider? A PBN that's... What type of PBN... What are the things that you see or metrics or stuff around PBN that you see that would make you flag it as black -headed?
+
+Peter Rota (01:11:56.954)
+Yes, okay.
+
+Nenad S (01:12:18.559)
+when you explore that pbn when you find out okay i landed on this website that see it it's a pbn there are some factors that show me it's a pbn but i still consider it white hat or considering black hat
+
+Peter Rota (01:12:23.194)
+Yeah.
+
+Peter Rota (01:12:33.348)
+I mean, maybe if you can, it's obvious that like the content is just really bad and they maybe have like sidebar for links and the listing. Like I've seen sites where it's like, they have tons of links on the sidebar on every page. And it's like, that's something safe there where it's like, here's all these further links. I injected it. It's on every page. So, I mean, that would be things to look for. Maybe it's just like, it's super spammy. it's like, yeah.
+
+Nenad S (01:12:58.359)
+But yeah, but those are all things that are subjective. So you're not getting them from a crawl or from a tool. You need to look into it and find like a certain thing that will tell you, this is a black hat or white hat, right? So it's more, again, more of a subjective thing when it comes to this. So I was asking because...
+
+Peter Rota (01:13:02.566)
+videos.
+
+Peter Rota (01:13:13.434)
+Yes. Yeah, for sure. Subjective, yeah.
+
+Nebojsa (01:13:18.575)
+Yeah.
+
+Nenad S (01:13:20.427)
+For instance, you... Some people would tell like, I see an IP address and they have like C match classing, goes three parts of IP address are completely the same and you just change the last part. Some go and say it's not a C, it's a full D, so go for full IP address if you see that they are matching, that's it. But to be honest, for instance, I'm an SEO consultant and I do freelance, let's say.
+
+Nebojsa (01:13:35.546)
+Yeah.
+
+Nenad S (01:13:48.205)
+Plus I'm into gardening and I make a website where I'm just going to post my photos, write blogs, I mean I'm old school, I would probably write blogs about gardening. But also at some point in time I opened a company, Heroic Rankings, with a partner and we built this, but still, all of those websites will probably be hosted with the same hosting provider on the same IP address because I'm using the same server that I've using for years, so I have the same IP.
+
+Peter Rota (01:13:57.094)
+Yeah.
+
+Nenad S (01:14:16.533)
+And how is that, according to those things that should be flagged as a PBN and if you consider a PBN with that metric as a black hat, then a lot of people are doing it as black hat. So again, it's more of a subjective thing and I just wanted to learn what are specific things that you see and do use something like an automate, not an automate, like a formula.
+
+based on some calculated data that's not subjective but specifically calculated data and from that discern, hey, this is a PBM and I don't even wanna look into it without opening the website. So just have a list of 100 website and flag them these are PBMs. What would be the metric if you would ever see one or metrics?
+
+Peter Rota (01:15:10.79)
+Well, I mean, it probably could be like the domain IP address and like things like that. But I mean, I don't do a ton of PDFs now, but like back like 10 years ago was more. Yeah.
+
+Nenad S (01:15:21.547)
+No, no, we were just discussing like how would you approach it in that case but still I get you it's a difficult thing to even consider how would you automate it I would again go and will do always go with that subjective approach hey I'm gonna open a website and see what's there
+
+Peter Rota (01:15:27.631)
+Yeah.
+
+Nebojsa (01:15:31.613)
+Yeah.
+
+Peter Rota (01:15:32.538)
+Yeah.
+
+Nebojsa (01:15:40.889)
+Exactly like no about page no contact page the links are all over the websites Yeah
+
+Nenad S (01:15:43.553)
+that page not a single author mentioned links to I see a link to a website on in a sidebar in somewhere in a side I just click it and when I open it I see the previous website link there so something like that
+
+Peter Rota (01:15:44.025)
+Yeah, yeah, you can you can yeah, it's
+
+Nebojsa (01:16:00.905)
+has a million backlinks coming from a thousand referring domains, etc. So you can figure out.
+
+Nenad S (01:16:05.293)
+Exactly. that's cool. Actually, it's not cool. Sorry. It's not cool. 10 to 1 should be considered 100 to 1. It's again okay, but 1000 to 1, that's not. Definitely not.
+
+Nebojsa (01:16:11.079)
+Yeah, that's not cool.
+
+Nebojsa (01:16:20.103)
+Yeah, three more questions left for you Peter. First one is you lead SEO teams in various companies. How do you foster collaboration across different departments to ensure SEO success?
+
+Peter Rota (01:16:24.314)
+Look out.
+
+Peter Rota (01:16:36.39)
+yeah, I mean I work a lot with like developers on a daily basis. So I think there's a lot of just educating them. What are we're doing? What's their realistic expectation of the ticket? and like what is considered done? so I work a lot of them there. I help kind of educate other SEO. I mean, some of my other.
+
+Nenad S (01:16:38.231)
+Wish.
+
+Peter Rota (01:16:59.748)
+people I work with. it's like, I'll often share SEO articles from like search engine labs, search engine journal. But I think that's just being able to accurately communicate and having the communication be in specific areas. So if like we're working on a GR ticket, make sure all the communication is in that GR ticket. Or like we also use work front, which is similar. So it's like making sure all the communication is in a centralized location and not across four different mediums. So you're like, what was going on? So I just,
+
+tracking everything.
+
+Nebojsa (01:17:31.225)
+Also, educating your people is the key to success. Let's say it like that.
+
+Peter Rota (01:17:36.942)
+Yeah, educating them and just understanding why we're doing each things and a lot with like upper management is like telling the story of why we're doing something. What's the expected result? Like, and just basically talking, making speaking in their business language. So as SEO, sometimes we speak in like redirects or like status codes. it's like, they want to know like what this traffic will, how this traffic will.
+
+Nebojsa (01:17:41.415)
+Yeah.
+
+Mm -hmm.
+
+Nebojsa (01:17:49.468)
+Mm -hmm.
+
+Nebojsa (01:17:55.089)
+Yeah.
+
+Nebojsa (01:17:58.619)
+Yeah.
+
+Peter Rota (01:18:04.932)
+make their site more visible so it's just like speaking in layman's terms and get rid of SEO jargon.
+
+Nebojsa (01:18:11.079)
+Yeah, cool, cool, thanks. So also what I saw on your LinkedIn is this free video SEO audit. So I wanted to ask you if you can tell us more about that and how it serves as an effective lead magnet. Do you like get a lot of these requests and like is this something that's time consuming for you?
+
+Peter Rota (01:18:34.49)
+Yeah, I mean, I essentially the reason I set it up is like, think, at least on LinkedIn, everyone's selling a service. So I'm trying to at least get something that's very low -commit all free. And essentially you're doing two things. You're helping the client get their needs. You're educating them and you're basically establishing yourself as an expert. And it's like, why am I going to do all this stuff when I can just pay someone else? So, I mean, I've gotten a good amount of inquiries from it.
+
+I think I would probably get more if I had my hours open during the day, but I imagine I work a full -time job, but I still do get a good amount from some businesses trying to educate them. I just try to provide value and no strings attached, so if they got value from it, great, but it's just be helpful and not expecting something in return.
+
+Nenad S (01:19:23.873)
+Yeah.
+
+Nebojsa (01:19:29.523)
+Yeah, doing the greater good.
+
+Nenad S (01:19:30.257)
+If they if they see value in that in the way you communicate those issues and your ideas to resolve them in that video or anything They would definitely choose you. I mean, that's Lee. That's the whole point of the lead magnet they find a Person that communicates and then can vocalize their the issues behind it. Yeah, you feel safe This person already knows I don't need to go with this video to someone else
+
+Peter Rota (01:19:44.612)
+for sure.
+
+Nebojsa (01:19:48.796)
+Exactly.
+
+Nenad S (01:19:55.725)
+if it's a price that we're discussing that other agency might not see or prioritize those issues that you saw and that you mentioned in that video or anything. But it's always difficult to scale it that way. That's why we ask, so what do you do when you have an inquiry and you can't complete an audit? Do you have like some queue for it or
+
+Nebojsa (01:20:14.621)
+Yeah.
+
+Nenad S (01:20:25.005)
+Do you have some queue for it? Do people have to wait for it? Do you always get every inquiry done in time? Every other time?
+
+Peter Rota (01:20:35.062)
+it's mostly like the video audit. So it's like, I'll just do like a quick one, but there's been ones where I'll do a full audit, but it's generally just to give them an idea of what they could expect if they use me some tips and kind of send them on their way. And if they want, like I'm not, I'm not hard selling, so I just try to basically like provide the value.
+
+Nenad S (01:20:41.195)
+Mhm.
+
+Nebojsa (01:20:41.629)
+Mm -hmm.
+
+Nenad S (01:20:49.601)
+Mm
+
+Nebojsa (01:20:49.758)
+Mm -hmm.
+
+Nenad S (01:20:54.615)
+Got it.
+
+Nebojsa (01:20:54.803)
+call. Nice. Lastly, the question that I asked at the very end of the podcast, like I asked this to every guest, so what advice would you give to someone just starting an SEO and wants to grow into an expert?
+
+Nenad S (01:20:57.889)
+Got it.
+
+Nenad S (01:21:12.758)
+Run.
+
+Peter Rota (01:21:13.86)
+Yeah, definitely right now is I would say develop your personal brand. think everyone's doing SEO now, but to really set yourself apart, want to position yourself as having unique takes and unique information and maybe how you differ from the crowd. I would definitely say like, since then, obviously you found me through LinkedIn, but I've been able to like...
+
+get on so many things that get more clients. So I think definitely that and get a website, try to rank it, understand it. I think as SEOs we try to understand every, read every best guy, everything of information, but you're gonna learn an impactfully a ton more if you like basically like can get the information. And then also kind of try to get some initial, maybe offer some initial free client work to kind of like
+
+get proof of work, case studies, and then position yourself and be like, that's gonna be much harder to sell yourself if you've never had any clients. So it's kind of very low committal. So I would definitely say all those.
+
+Nebojsa (01:22:23.258)
+Thanks, thanks. And do you have any specific person that you're following and reading all the things that they've been posting that you can recommend for others to follow as well?
+
+Peter Rota (01:22:24.165)
+Yeah, no problem.
+
+Peter Rota (01:22:34.79)
+yeah, mean definitely Lewis Smith. does a lot of e -commerce, SEO, follow a ton of stuff he puts out. I'm trying to like, I'm like blanking on names right now, but I could definitely share it after, but there's like Anna York who does really some great stuff with AI. I like know a lot of people's first names, but not their last names.
+
+Yeah, mean those are the first two that came to me. Yeah.
+
+Nebojsa (01:23:01.757)
+Okay.
+
+Nebojsa (01:23:06.107)
+Okay, thanks for sharing that. So Peter, it's been a real pleasure having you and thank you for taking your time to be here with us on this podcast. It was a very... Yeah, man, always. Like, and hopefully we'll speak more in the future and everything. So thanks for being a part of this and helping us with all the idea with the podcast. Yeah, so that's it for today.
+
+Nenad S (01:23:12.747)
+Yeah, it was really good call.
+
+Peter Rota (01:23:15.578)
+Yeah, I appreciate you having me.
+
+Nenad S (01:23:31.489)
+This really, really went well. So I was really glad for this call and to actually find the person that has similar attitudes towards some things regarding those processes, tools and development and stuff. And specifically the part that you mentioned, like learn at least some basics of that other thing so you can understand it better. The whole point is not only to see the bigger picture, but
+
+Nebojsa (01:23:41.234)
+Yeah.
+
+Nebojsa (01:23:55.294)
+Yeah.
+
+Nenad S (01:23:59.859)
+able to communicate that with others. For instance, I have a development background. I work with software. I I developed software earlier, but I was never, I could never call myself a programmer. I'm a failed developer. I program things for myself. But I know how to communicate in developers language. So whenever something technical SEO related, I knew what I needed to tell them. It was not always just to tell them, hey, do
+
+Nebojsa (01:24:02.44)
+Yeah.
+
+Nebojsa (01:24:17.138)
+Yeah.
+
+Nenad S (01:24:28.257)
+this thing but I want to achieve this thing let's get ideas on the table and when they get me those ideas I could understand them because I already know parts of that job parts of their work but when you gather for when you work with UXers when you work with designers you don't need to know everything
+
+You don't need to know the full terminology, but it's always good to know at least parts of their processes so you can better communicate those values and communicate issues and values behind them to other teams. And if you had worked in that field, I mean, if you buy...
+
+I already see that you know how to communicate and that you experience those things and if you work with the development team for a while, not many people could actually accept that. So you could work with the development team for a decade and never actually accept that and never pick up that or learn anything behind their work. You will just see what works and just send them over here is the work order, here is the thing that they need and that's it.
+
+Peter Rota (01:25:36.218)
+Yeah.
+
+Nenad S (01:25:40.609)
+get it done. could never challenge them, hey, like, why did you use JavaScript for this? could be, why did you use the JavaScript and use a button for this? You can do it with an href. Why the button? Why the JS link here? But still, you're an SEO and you're basically learning, need to know some things in development backgrounds so you can communicate that. And I really like that about you, by the way. Yeah.
+
+Nebojsa (01:25:41.384)
+Yeah.
+
+Peter Rota (01:25:46.81)
+See ya!
+
+Nebojsa (01:25:51.507)
+Yeah.
+
+Peter Rota (01:26:04.438)
+Eh, appreciate the compliment, thank you.
+
+Nebojsa (01:26:04.915)
+Yeah. Yeah.
+
+Nenad S (01:26:06.015)
+It's a cool thing to find people that have those traits because it's difficult to find them. Really, I mean really difficult to find them. That's why many SEOs talk about abstract things when it comes to SEO and stuff. cannot like, okay, I know my traffic is falling, I know I have JavaScript issues. What does that mean I have JavaScript issues? What's the point of that? Yeah.
+
+Peter Rota (01:26:12.646)
+for sure.
+
+Nebojsa (01:26:15.462)
+Yeah.
+
+Nebojsa (01:26:30.289)
+Yeah, yeah, like getting knowledge is easy if you know where to look, but actually to test the knowledge practically on examples, on projects, it takes time and there are mistakes that you are going to learn from. So thank you for sharing all the valuable insights. It's super useful for everyone and thanks for being a part here. Wishing you a great day.
+
+Peter Rota (01:26:50.541)
+No problem.
+
+Nenad S (01:26:54.699)
+Definitely.
+
+Nebojsa (01:26:58.652)
+And yeah, talk soon, man.
+
+Peter Rota (01:27:00.742)
+Thank you, you too.
+
+Nenad S (01:27:02.061)
+Bye Peter.
+
+Nebojsa (01:27:03.441)
+Yeah, have a great day. Bye bye, Peter.
+
+Peter Rota (01:27:04.848)
+Thank you, bye.
+

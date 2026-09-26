@@ -1,0 +1,644 @@
+Nebojsa (00:00.938)
+Okay, welcome back to the ranking heroes podcast where we discuss different strategies right with the experts behind them and we are looking to debunk different marketing myths. Today we have a very special guest, Jason Rivera. He's from LA currently in Connecticut. He's a CEO and a founder of Terrazzo marketing solutions. And he was working with big companies like Lenus and Bikin.
+
+as a chief growth officer and global head of growth excellence. Nice to have you here, Jason. Welcome to our podcast.
+
+Jason Rivera (00:38.306)
+Yeah, thanks. Nice to be here.
+
+Nebojsa (00:41.504)
+I appreciate your time and for us to start this properly, if you could introduce yourself, like let's start with your story, not just your executive roles, but those like formative early days in sales and marketing, what first drove you into these fields?
+
+Jason Rivera (00:53.838)
+Mm-hmm.
+
+Jason Rivera (01:00.366)
+Yeah, sure. I started out actually on the sales operations side early on in my career. I was an intern and I was just finishing my work super quickly. So I was looking for more work and I, um, there was this director there. Um, she was the global, the global director of marketing and I just put some time on her calendar.
+
+started talking to her about marketing strategies and she just took a liking to me and she took me off of the sales ops team and put me on her team and CC'd me on every email, she added me to every meeting and she kind of just took me under her wing. So she's really like I think the main main driver for my marketing experience that kind of shifted my career focus and then through the years I've just kind of went from company to company and learned a little bit more.
+
+sides of marketing, digital marketing, creative marketing, growth marketing, marketing operations, and that kind of grew me into the full stack marketer that I am today.
+
+Nebojsa (02:01.664)
+Yeah, so I guess you have been like working a lot. mean the follow-up question here would be do you know what she saw in you? Like did she ever told you?
+
+Jason Rivera (02:18.476)
+Yeah, she actually became, she became my mentor. So I've been, I still talk to her to this day whenever I have any questions or if I'm going through a career transition, we're still pretty close. She said that she thought that it was really amazing because I was an intern. So I just put time on her calendar and she thought that that was like.
+
+ballsy. So she was like, I really liked, I really liked that you did that. And when I was talking to you, you know, you just had, there was something about you that interested me and I wanted to help you. And I think that's kind of what I've learned too throughout my career is like finding people who are
+
+Nebojsa (02:40.084)
+Hahaha
+
+Jason Rivera (02:57.634)
+going to help you on your career growth journey and who want to do more than just the bare minimum, but actually like help you become a better person. Those are the types of relationships that have really pushed my career so much further. It's just really like anything having a good team behind you, but especially people who know more than you and who wanna share that knowledge.
+
+Nebojsa (03:07.488)
+Hmm.
+
+Nebojsa (03:18.912)
+Yeah, that's great perspective. I tell myself the best environment for you is when you are the worst guy in there. You know, when all the other guys and all the other people are like way better and way smarter than you, then that's the right environment you should be in. And yeah, I totally agree with you. And could you walk us through some pivotal roles in your career? Like especially those with a foundation in sales, marketing or growth?
+
+Jason Rivera (03:31.278)
+Yeah.
+
+Jason Rivera (03:49.39)
+Mm-hmm. Yeah, I think my last few roles probably
+
+are where things really started. So obviously that was my first one that I was talking to you about where I met my mentor, Renee. But then I started working at a company called HashiCorp. So if you don't know, HashiCorp is one of those companies that touches everything, but you've never heard of it. If you've used a credit card, like the American government, the Canadian government use our products and it's cloud automation infrastructure and application infrastructure, super highly technical tool. They've just gone through two IPOs and there
+
+where I really started to learn one like
+
+working with a global team and operationalizing a full marketing team across digital marketing operations, events, kind of everything. And I was sitting in marketing operations. So the cool thing about operations is you kind of get to touch every bit of the marketing funnel and understand how everything fits into one another and how the greater funnel kind of works because you're building the funnel.
+
+That's where I think my deep understanding of how marketing flows came from. And then from there, I founded a company with a few business partners called Beacon, and that was a real estate technology company, and we did everything from the ground up. So building out our marketing strategy, our partnerships, marketing automation, kind of everything end to end, and we bootstrapped it. that was coming out of our, we weren't funded, we were funding it ourselves. So all of the work that we were doing,
+
+Jason Rivera (05:25.198)
+You know, if we didn't work, we didn't eat. So it was like very, very motivational, for us. and then after a few years of doing that, I went back into big tech and started working for a company called Linus, which is a global company, as their global head of growth. And that was really interesting because we had 13 offices across 10 different countries. So I was traveling a lot back and forth to Europe and I got to see kind of how different countries interact with different pieces.
+
+Nebojsa (05:38.879)
+Mm-hmm.
+
+Jason Rivera (05:55.134)
+of marketing and how culture comes into play when you're building that narrative for a product. So that was super, super interesting and focusing mainly on growth and building out a funnel that works cross country and across borders is super interesting. Yeah.
+
+Nebojsa (06:13.725)
+Yeah, that sounds very cool.
+
+Jason Rivera (06:15.98)
+And then I built this company, so Terrazzo Marketing Solutions. Now just doing basically all of that just on an independent consulting basis for my clients.
+
+Nebojsa (06:25.663)
+Cool and like what key lessons did you pick up moving between hands-on marketing operations, campaign management and high responsibility growth leadership positions?
+
+Jason Rivera (06:39.694)
+I mean, there's so many things. I think it's really important to think of like clear North Star metrics. So everyone should know what success looks like. You should have clearly defined benchmarks so that everyone is on the same page. Making sure that you have systems before you scale. So having that.
+
+Having that operational efficiency and foundation and knowledge of your marketing tech stack. Having everything kind of fully fleshed out before you start to build. You want that core foundation. And you want cross-functional transparency. So looking, building and facilitating relationships between the various teams that you have. Making sure that you have really great communication skills when it comes to projects that are cross-functional.
+
+Nebojsa (07:09.811)
+Mm-hmm.
+
+Jason Rivera (07:31.822)
+and making sure that there is radical transparency.
+
+Nebojsa (07:35.807)
+Mm-hmm.
+
+Jason Rivera (07:35.84)
+I really, whenever I'm working on a new project, I want to make sure that everyone is on the same page. We're understanding the problem that we're trying to solve, how it impacts the greater business, where everyone else's role comes into play and making sure that I have their feedback before we start to build because you never know what another team's perspective on your project might be and they might have some really valuable insight. So yeah, I would say all of those things.
+
+Nebojsa (08:03.806)
+you
+
+Jason Rivera (08:05.744)
+Main thing just really truly being transparent about what you're trying to do and why you're trying to do it.
+
+Nebojsa (08:13.298)
+Yeah, I think this is a great answer and thank you for that. I wanna circle back on the, when you mentioned that you traveled a lot to Europe and you noticed how different marketing works in different cultures. Do you by any case have an example that you could share? For example, like US compared to like Spain or I don't know, the country you visited.
+
+Jason Rivera (08:38.72)
+Yeah, that's a really great example, actually. So we did have a market in Spain and one of the main things that are different are, well, obviously there's language that plays a huge role. So if we're looking at it from like a paid advertising perspective, one of the teams that I was managing was our paid ads team. had performance marketers sit within every country who were translating all of the different content.
+
+But there are different cultural norms around how much a company can actually spend on paid advertising because the economy is different. So if you're looking at one, what resonates to a Spanish consumer versus an American consumer, a Spanish consumer is more risk averse to spending money on a product that they're not quite certain of. Whereas in the US, we might just spend money and try something.
+
+The company itself has a different budget associated to it. So you have to really optimize your ads. I mean, you want to do that in every country, but you have to really optimize your ads in Spain in order for them to be successful and your acquisition costs. So CAC for a paid ad in Spain has to be super, super low so that you can actually have conversions. Whereas in the U S we have a little bit more flexibility with our budgets. So
+
+Yeah, you really have to be kind of spot on. Like Spain is very different. Spain is a little bit more difficult than the US because the narrative has to be super tight. You have to make sure that you're constantly optimizing your ads and that you're staying within your budget thresholds. I mean, that's without anywhere, but it's definitely more strict within a different country. And the way that the consumers interact with those ads are just a little bit different. know, those cultural norms play a huge role in how people are interacting and engaging with your content.
+
+Nebojsa (10:28.914)
+Yeah, that's so interesting. mean, know from personal travels or things like that, you can figure out that the whole mentality changes from country to country and of course that psychology and marketing, work together. So it's obvious that the one message could be completely...
+
+Jason Rivera (10:39.704)
+Mm-hmm.
+
+Nebojsa (10:52.702)
+the audience from Spain could like understand the message in a completely different way than the audience from like US or from Asia or things like that so that's very very interesting very interesting yeah like mm-hmm
+
+Jason Rivera (11:04.155)
+for sure.
+
+Even the same languages too, like if you were in, if we would, if we were run the same ad in the UK, for example, our cultures are so different. We have different senses of humor. you know, like everything, everything is different. So they might just not understand like the American sense of humor or a joke that we have, or just like, a cultural reference. It's just, it's just different. really have to be, and that's the same thing with marketing in general. Like the more dynamic you are.
+
+Nebojsa (11:13.576)
+Mm-hmm. Mm-hmm. Yeah. Yeah.
+
+Nebojsa (11:26.45)
+Yeah.
+
+Jason Rivera (11:36.054)
+with the content that you have to your audience, the more it resonates and the more likely you are to convert from that content.
+
+Nebojsa (11:37.886)
+Mm-hmm.
+
+Yeah. Yeah. So at the end of the day, can get to know your audience before you start advertising would be the most important step to do. And I know that you managed a lot of teams. So I wanted to ask you like, how did managing cross-functional teams, for example, marketing, sales, product, brand teams, help you shape revenue driven strategies?
+
+Jason Rivera (11:49.324)
+Mm-hmm. for sure. Yeah.
+
+Jason Rivera (12:08.233)
+I think it's interesting because you know the full scope of what your customers go through. So when you're managing that pipeline from
+
+awareness to activation to conversion and then onto retention. You have a very laser focused idea of like, okay, this is where my customer started. This is the content that they're seeing. This is how they're engaging with my marketing content, my sales team. is how, this is what our aftercare looks like. So if you're, if you're very hyper aware of what that looks like, then you can fine tune their journey to resonate with what
+
+they care about. And that's where I think a lot of growth potential comes from. I think people, when they think about growth, they're like, OK, we need to do something big, and it needs to have an immediate impact. And yeah, there are a bunch of things that you can do that do drive really immediate impact.
+
+Having that core foundation of a super optimized customer journey is where you really need to start. And those small optimizations over time yield a lot of growth. And you need to have that fully optimized customer journey to build scale within your business. Because if you're building something on a shaky foundation, it's just gonna crumble at the end of the day.
+
+Nebojsa (13:39.678)
+Yeah, I get it, I get it. And like what frameworks or processes or philosophies have helped you drive operational efficiency, like optimize lead management, enhance campaign targeting.
+
+Jason Rivera (13:54.668)
+Yeah. So I think when
+
+I am mapping out a funnel end to end and I think of a funnel as like the entirety of a customer journey. So we're looking at things like awareness. So how are people getting to know about our brand? Is that through thought leadership? Is that through organic or paid social? We're looking at things like activation. So what do our nurturers look like? What do our drip campaigns look like? What does our website look like? Is that set up to be then going on to
+
+So how are those people actually converting? So are conversions a part of our nurture? Are they a part of our email journeys? Is our website set up to be a conversion funnel in itself? And then once we actually have the customer, what does retention look like? How are we driving retention of our customers? Because the best way to grow a business is actually by reducing churn rates. Churn rates being how many customers...
+
+try your business and leave. So you want to maintain as many customers as possible while adding new customers onto it into your ecosystem. So the way I like to explain it is if you have a bucket of water, you want to plug all those holes within that bucket so it stops leaking while you're filling up that bucket with more water.
+
+So I'm looking for, you know, like friction points. So where are leads dropping off? Where is cat creeping up? And then using marketing automation, especially now in the world of AI, there's so much that you can do with automating your workflows and automating optimization. So.
+
+Jason Rivera (15:32.224)
+And continuous feedback loops too. So we want to constantly iterate on what we've already done. Everything can always be optimized. Everything can always be a little bit better. So, you know, just really searching and pushing for excellence, I would say.
+
+Nebojsa (15:46.684)
+Yeah, makes sense, makes sense. Like, could you share an example where your leadership draw meaningful business results? If that's possible, like such as scaling growth, don't know, optimizing team structure or improving campaign success.
+
+Jason Rivera (16:01.738)
+Yeah, for sure. One project that I did...
+
+over at Linus, which was huge. And it was not just me by any means. We had all of our leadership team on it. We were trying to figure out kind of exactly what I'm talking about, the ideal customer journey. And you have to remember we were mapping out different teams across 10 different countries. So we had the the same person on paper, like a marketing specialist, for example, sitting in the U S sitting in the UK, sitting in Spain, and they were all doing the same thing, but it wasn't the same.
+
+They had different standards, they have different templates, they understood the project differently. So we were tasked with identifying what services we were actually delivering to our clients, to what quality were we delivering those services, and how were those services actually impacting our clients' revenue, which in turn impacts our own revenue, because we take a percentage of our clients' revenue as our own.
+
+So we did this huge audit across every team. What were the services they were delivering? What were examples of those services? And then we audited all of them to identify what was our best in class services. How should we actually execute on those? So what were best practices for those services? And then we packaged those up into different tiers. So different service packages. And then we trained our team on them. So I think one thing that
+
+One thing that is a miss that a lot of, a lot of leaders I think will expect is they want results without actually enabling their team to be successful. and if your team isn't successful, a lot of times it's that they don't have the education to be, or they aren't enabled to be. So part of this was we trained our teams and gave them best practice, documentation so that they can reference and know exactly what they're supposed to do, when they're supposed to do it and how they're supposed to do it. so I think that was the
+
+Jason Rivera (18:01.912)
+key differentiator. So ultimately it enabled us to have more services delivered to our clients. We honed in on what those services look like. So they were higher quality services to our clients and we made the workflow of our team more streamlined. So their work-life balance was improving as well and they were less stressed because they knew exactly what they should be doing. kind of gave them, yeah, gave them the tools.
+
+Nebojsa (18:15.069)
+Mm-hmm.
+
+Nebojsa (18:24.347)
+Hmm...excepted.
+
+Exactly. Yeah. That's what I wanted to sell. They didn't feel stressed out all the time. And I remember when we introduced, like we created SOPs in our agency and then we shared them with our employees. And then we introduced a project management platform where everybody is onboarded.
+
+then that's when I felt that the pressure has been relieved and the people don't stress too much because like when I come and talk about some task or something that we are doing, everybody knows what is it about because they can find it in a project management tool and we are all synced and aligned. So yeah, I think that's what fuels the growth. Yeah.
+
+Jason Rivera (19:06.392)
+Right.
+
+Yeah, for sure.
+
+Nebojsa (19:09.445)
+And tell me, and Jason, in your experience, how important is organic search as part of the overall growth and marketing mix? And like, are there any lessons you've learned about integrating SEO into broader campaign strategies?
+
+Jason Rivera (19:28.92)
+For sure, so SEO is one of the main things, one of my main services that I offer at Terrazzo Marketing Solutions. So there's a lot that I've learned. guess, short answer, I think it's super important. You wanna have your website be fully SEO optimized. But there are ways that you can make that more efficient. I think a lot of companies will just start cranking out content and just using that in the form of blog posts. They'll just use AI copywriting to create blog posts that are
+
+relevant, map their keywords over to the blog posts, and then kind of post that on their site. And that's great. It's a super easy way to kind of increase your SEO ranking and your organic search ranking on Google. But I think it's better if there's a strategy associated to it. So we're in a world of thought leadership right now. So there are kids on TikTok making millions of dollars a year just because they have a unique thought and they have a unique perspective on.
+
+Nebojsa (19:59.517)
+Mm-hmm.
+
+Nebojsa (20:13.936)
+Mm-hmm.
+
+Nebojsa (20:18.874)
+Yeah.
+
+Jason Rivera (20:24.79)
+I don't know the way that they do makeup or something stupid. So we can do the same thing with big companies. So being a thought leader within your space, finding your niche, creating content around that in the form of podcasts or, you know, doing webinars or,
+
+Nebojsa (20:25.414)
+Yeah. Yeah.
+
+Jason Rivera (20:40.128)
+I don't know, like a moderation of some of some kind and then turning those into a full content strategy. So having that hosted on organic and paid advertising and then turning that turning those video clips into really hyper relevant blog posts and articles and one pagers infographics that then are hosted on your website and then everything your entire narrative is completely cohesive and you're not creating
+
+Nebojsa (20:58.673)
+you
+
+Jason Rivera (21:10.032)
+different pieces of content for different things. You know, it's just like I created this one piece of content that then I use across every single marketing channel. So that would be my advice is kind of work a little bit smarter, find your niche and then create super hyper-focused content around that so that you can reach your target audience a little bit more efficiently.
+
+Nebojsa (21:13.393)
+Yeah.
+
+Nebojsa (21:19.203)
+Mm-hmm.
+
+Nebojsa (21:31.885)
+Mm-hmm agreed agreed. would like like to stick a bit more about and talk about SEO as it's something that we really know how it works and we are providing that service Wanted to ask you what do you think about like the whole AI booming industry and the things that people are saying SEO is that? Traditional search is dying long live a yo G yo What's your opinion about that?
+
+Jason Rivera (22:00.47)
+I don't think it's dead. mean, I think that AI is completely disrupting. It's completely disrupting every industry. And in the next decade, everything is going to, I mean, our entire economy is going to look very different.
+
+Nebojsa (22:09.04)
+Mm-hmm.
+
+Jason Rivera (22:15.086)
+But for now, SEO is definitely not dead. You have to differentiate yourself across your competitors and Google search is a way that a lot of companies still do that. I think that that's where it kind of comes into this idea of like thought leadership being a new type of SEO and the content that you have that's customer facing kind of like what we're doing now, that grabbing a little bit more attention than just...
+
+Searching within Google or whatever your search engine is but if you integrate it in the way that I was talking about earlier where all you're kind of hitting every single channel with your content and Using AI to do that then you can make it super efficient You can crank out content super efficiently You can make sure that it's mapping to your keywords and you can use AI to your advantage. So AI copywriting is One of the one of the largest industries right now you see all of these agencies
+
+Nebojsa (22:48.697)
+Yeah.
+
+Nebojsa (22:55.76)
+Yeah.
+
+Nebojsa (23:01.412)
+Yeah.
+
+Jason Rivera (23:14.288)
+offering it as a service and I would say leverage leverage that it's super simple. It's super simple to put a dictation of a podcast or a dictation of a video or a webinar series into AI and have it crank out crank out blog post for you or crank out content for your website for a web page. I would say take advantage and adopt AI and familiarize yourself with its capabilities now so that you can
+
+Nebojsa (23:15.098)
+Yeah.
+
+Nebojsa (23:30.18)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (23:42.224)
+Mm-mm.
+
+Jason Rivera (23:44.208)
+be a leader within the space because either you adopt you adapt with it or you're going to be left behind.
+
+Nebojsa (23:47.312)
+Yeah.
+
+Nebojsa (23:51.802)
+Yeah, I totally agree. mean, that's, I think we should use AI as a tool, you know, and if we are not using, then we are going to be left behind. And since you're also in PPC and paid advertising, what's your approach there? For example, what I know from my experience is like, when the client isn't sure if the SEO, if SEO is the right channel for its business,
+
+Jason Rivera (23:58.636)
+Yeah.
+
+Jason Rivera (24:05.208)
+Mm-hmm.
+
+Nebojsa (24:17.634)
+I think PPC is a great way to actually confirm if those keywords are going to drive conversions and then you can like tell the client, hey, you know, like we just ran the campaign for these keywords. If you rank organically, you can achieve some leads and we can confirm that SEO is the right channel. Do you have the similar approach or how do you do it with your clients?
+
+Jason Rivera (24:41.11)
+Yeah, for sure. I do the same thing. I also use a tool called Roadway, Roadway AI, which helps you generate AI content and it leverages your keyword ranking as well. So it will auto create those PVC ads for you and then continuously optimize them. So you can create like a road, it's called like a roadway agent. And then you kind of set it and forget it. for me having like being a consultant, being a consultant,
+
+Nebojsa (25:03.356)
+Thanks.
+
+Mm-hmm.
+
+Jason Rivera (25:11.024)
+I'm obviously trying to make the best use of my time. And those are pieces of AI that become super useful and you can trust its ranking, obviously. So yeah, I fully agree.
+
+Nebojsa (25:16.227)
+Mm-hmm.
+
+Nebojsa (25:19.899)
+Yeah.
+
+Nebojsa (25:23.32)
+Mm-hmm. sure. And to move further to some other questions, I want to ask you across your leadership journey. I know it can be draining your energy at some moments because you just need to share a lot to give back. So what keeps you energized and inspired to give back through mentorship, cross-functional collaboration, community initiatives? So what's your driver?
+
+Jason Rivera (25:54.23)
+I mean, I think for me, it's working on companies that are super mission driven. So being a marketer, would, mean, if you have the luxury to working for a company that you really believe in and believe in the product and feel like it's making a difference for you. Some people are motivated differently. Some people are motivated by money. Some people are motivated by recognition. I mean, I wouldn't say I'm not motivated by those things, but really, really being laser focused on a mission and knowing
+
+that your team has your back, you have their back facilitating that psychological trust within your team so that they feel like they can fail and it's not a problem because if someone feels like they can't fail, they're not gonna try new things, they're not gonna innovate, they're not gonna trust you when they have a problem.
+
+Nebojsa (26:37.572)
+Yeah.
+
+Nebojsa (26:42.967)
+percent.
+
+Jason Rivera (26:44.726)
+So building the rapport with your team and then knowing that you're really making a difference. So I wanna be the person that my mentor was to someone else and I wanna pay that forward. And when they have a question or they're looking for guidance, it motivates me when someone feels like they can come to me and ask me and they care about my opinion. So I think that's what gives me that little bit of extra drive.
+
+Nebojsa (27:06.147)
+Yeah, definitely.
+
+Yeah, definitely, definitely. It feels very well. mean, people who are like normal, we really feel very good inside when we when we help someone, you know, and sharing knowledge is something that that can really inspire us, especially when we really know what to share, when to share, how to say it properly, you know. So, yeah, I agree. I agree. I recently spoke with a guy and we agreed that giving
+
+creative freedom to your employees, to your partners is something that really helps them, you know, do different things. And we said, like he said, that's funny, but I've asked him, he's a director, he works with many teams and I've asked him.
+
+which personality traits are you looking when you are hiring? Like exclude every business skill, professional skills. And he loved the question and he said, scrappiness. Like when a person can just like go itself, like put something on the website, then he sees something else. Hey, I wanna do this and that. That creative freedom really opens them and they can like scale it much faster.
+
+Jason Rivera (28:23.63)
+for sure, for sure.
+
+Nebojsa (28:25.243)
+So yeah, that's something we agreed. And like, are there any more? Yeah, yeah, please continue. I really want your opinion on this.
+
+Jason Rivera (28:29.228)
+Yeah, when someone I think it's a diff... No, no, go ahead.
+
+Jason Rivera (28:37.62)
+Okay, yeah, I think when there's skills that can be taught and skills that can't really be taught, and I think that when someone is super interested and they have the ability to see concepts and how they work together, that's super, super rare. And that's someone that's gonna grow into being a future leader, a future director, maybe even an executive one day, because they can see behind the work that they're doing and see beyond and how it fits into the bigger picture.
+
+that is super rare and something that's super hard to teach someone.
+
+Nebojsa (29:12.901)
+Yeah, I think that Renee, if I remember, she saw this in you. Yeah, so that's very good. And like, are there any emerging trends or shifts in growth marketing or like digital ops that you're especially excited about right now?
+
+Jason Rivera (29:16.971)
+huh.
+
+Jason Rivera (29:30.412)
+Yeah, think, really great question. think growth marketing is going to turn, I'm seeing this trend more towards go to market engineers. So that's a new sort of new job role that I'm seeing emerge. And it's interesting because right now, like we were talking, we've been talking about AI and how that's impacting the industry.
+
+It's basically people who can understand how to leverage all of these different tools, how they integrate together, how they fit together, and then create a fully automated growth engine. So it's this idea behind like being a go-to-market engineer, you're actually engineering an ecosystem based off of AI tools. And I think that's super exciting, especially for emerging tech startups, because they can do so much more with so much less. But on the other side, it also means
+
+Nebojsa (30:13.85)
+Mm-hmm. Mm, yeah.
+
+Nebojsa (30:24.814)
+Yeah.
+
+Jason Rivera (30:25.518)
+that people, like my advice to people would be you really have to understand AI and take as many courses, take trainings. I've been doing like my CLEI certifications. CLEI is a new tool that's coming and emerging. To stay ahead of the game because if you're not constantly learning, whole industry is gonna look very different within the next few years.
+
+Nebojsa (30:38.682)
+Yeah, I know.
+
+Nebojsa (30:50.266)
+Yeah, makes sense, makes sense. And like what I also wanted to ask you is like, you worked with a lot of software as a service companies. What are some of the most common misconceptions you see SaaS companies having about sales and marketing?
+
+Jason Rivera (31:02.766)
+Mm-hmm.
+
+Jason Rivera (31:12.162)
+Hmm, really good question. I think there's always been a little bit of a power dynamic between sales and marketing and each team kind of thinking that they have a little bit more importance than the other, but really they go so hand in hand. And I think that when you're trying to optimize the handoff between sales and marketing,
+
+You can do it very efficiently now through AI automated handoffs, but also just really looking at the data and creating one cohesive narrative between the two. So when it comes to large SaaS companies, it's creating an
+
+it's creating kind of like a community of people. like HashiCorp does this really well where they create webinars, they have really great content for engineers and blog posts. They have forums for engineers to kind of have free form discussions around their products and how they're leveraging their products. And they've really created like this HashiCorp community around their products, which one,
+
+is really great for marketing content and content generation. And they have an ear on the floor about what their customers care about. And two, it's really great from a sales perspective as well, because those people in the community then turn into revenue generating clients that they can then target and outbound to. So I think that's a really great opportunity for SaaS companies to create that community, find your niche, and build an ecosystem.
+
+Nebojsa (32:21.923)
+Mm-hmm.
+
+Nebojsa (32:43.694)
+Mm-hmm.
+
+Nebojsa (32:47.908)
+Mm-hmm.
+
+Jason Rivera (32:48.688)
+some narrative around it.
+
+Nebojsa (32:51.192)
+Yeah, that's very interesting. mean, you already answered my follow up question, which was what do you see as the biggest untapped opportunity in SaaS content marketing right now? I guess the communities would be the answer. And I like the answer. Do you see anything else?
+
+Jason Rivera (33:04.845)
+community.
+
+Jason Rivera (33:08.406)
+I think thought leadership. So I think we're moving into the space where
+
+Nebojsa (33:10.776)
+Mm-hmm.
+
+Jason Rivera (33:15.084)
+Like the next generation after us, think, you know, they're not really, they're not like reading blog posts. They're not, you know, they're getting all of their information on videos and podcasts and, through their content. So I think being a thought leader within your space can really differentiate you and your business. If you think about like large companies and how they gain publicity, like
+
+Nebojsa (33:22.06)
+Exactly,
+
+Yeah.
+
+Jason Rivera (33:39.22)
+Elon Musk, example, not to use him as like the gleaming example, but he his name is bigger than Tesla. know, like Steve Jobs was Steve Jobs before Apple came to be, you know, the CEO of Google. So building out those personal thought leadership brands separate from the business and having that funnel, funnel publicity onto your business, I think that's a really, really great opportunity for growth. And a lot of companies are doing that.
+
+Nebojsa (33:43.917)
+Yeah.
+
+Nebojsa (33:47.929)
+Yeah.
+
+Nebojsa (33:52.023)
+Mm-hmm, mm-hmm.
+
+Nebojsa (33:59.684)
+Mm-hmm.
+
+Jason Rivera (34:09.124)
+and being super successful at it.
+
+Nebojsa (34:11.434)
+Yeah. Yeah. And it's not only that it will help them like grow their product, but it also helps them whatever product that they want to build. If their name is behind the product that then the audience will just come, you know, like I remember there was a joke, but
+
+Snoop Dogg, created LinkedIn profile and he got like millions of followers like in the week, you know, because he has the name. People know about him. And I agree, like if Elon Musk wants to create another business, that business will of course like be supported by many of Elon Musk supporters, not Tesla supporters. So yeah.
+
+Jason Rivera (34:40.355)
+Yeah.
+
+Jason Rivera (34:52.302)
+For sure. Yeah, I took this, it sounds so stupid, but I thought it was super interesting and useful. Chris Jenner created a master class on building your personal brand and I took it. And I mean, she's turned all of her children into multimillion, if not billion dollar industries in their own.
+
+Nebojsa (34:54.382)
+Yeah.
+
+Jason Rivera (35:13.068)
+class and her thoughts behind building that personal brand that funnels into your into your other businesses. Super resonating. It's on master class if you haven't checked it out. It's really interesting.
+
+Nebojsa (35:24.674)
+I'll definitely check it out. Thanks for sharing that by the way. And like as AI continues to reshape the entire marketing approach, what do you think, how should content and SEOs prepare like to stay ahead?
+
+Jason Rivera (35:27.19)
+Yeah. Yeah.
+
+Jason Rivera (35:42.464)
+I mean, AI copywriting is a really great tool to have in your toolbox and leveraging tools like Roadway to optimize and generate content for you. So it's really easy to kind of build that into your tech stack, build it into your automated workflow, and then kind of just sit back and optimize and make tweaks as you go along. So I think that's where AI has really come to change the game is taking all of this tedious work.
+
+that would take someone hours and hours of research and typing and revision and Just having it exist within your workflow that is that's I think the big game-changer especially for agencies too because a lot of times big companies don't necessarily want to Integrate it or they don't want to spend the time to figure out how it works within their ecosystem So they will hire an agency and an agency can do it fairly easily and inexpensively
+
+and make a lot of money off of it.
+
+Nebojsa (36:46.145)
+Yeah, that's it. That's and is this like, is this how you approach to guiding your teams to remain agile? Like because of all the changes in markets, technology, digital channels.
+
+Jason Rivera (37:00.404)
+for sure. For sure. I mean, if there is a tool that exists that does the problem, does the task that you're doing for a reasonable amount of cost and
+
+very low implementation effort, why would you spend the time to manually do a process? even if, even if let's say the entire, advice I got super early on in my career is like, I got this job and I was like, I want to become indispensable to the company. How do I do that? And my manager at the time, Val, he was like, you don't want to like spread yourself thin and just take on everything and do it that way. You want to automate yourself.
+
+out of a job. You want to make sure that everything that you're doing is as streamlined and as perfect as possible so that everybody can see, give something to Jason and he makes it so simple, someone else can do it and then we can move him onto bigger and better projects. And I think that that's the way you can really progress your career is just showing, look how I made this ridiculously tedious process so streamlined and easy and now an intern can do it and I can move on to be a director, I can move on to be an executive.
+
+Nebojsa (37:58.222)
+Yeah.
+
+Nebojsa (38:14.411)
+Yeah.
+
+Jason Rivera (38:15.542)
+and I can take that same approach and concept behind automation and push it to the next level.
+
+Nebojsa (38:24.013)
+Yeah, yeah, yeah, that's right. mean, I really enjoy like how you provide all the answers. They're so, so, like...
+
+They're not complex, but you expand everything to the point that everybody can understand it properly. And I really like that. Not many people can like... I can obviously see that you know how to transfer the knowledge and I really appreciate that. I mean all the knowledge that you're transferring with me and with the audience. I really appreciate it. Thank you for that.
+
+Jason Rivera (38:41.512)
+good, I'm glad.
+
+Jason Rivera (38:50.318)
+Great.
+
+Jason Rivera (38:53.934)
+Amazing.
+
+Nebojsa (38:55.597)
+Yeah. And like also what I wanted to ask you, like, are there tactics or metrics you find particularly overrated or even misleading in our industry?
+
+Jason Rivera (39:08.59)
+tactics or methods? I would say the idea, yeah, yeah. I would say the idea, like, so one thing I learned early on, like, if you are a marketer, a company will a lot of times give you like a new lead generation target or an MQL target.
+
+Nebojsa (39:12.745)
+or metrics, let's say metrics.
+
+Jason Rivera (39:30.924)
+And those are great. You need those to be able to grow for sure. But I can kind of manipulate though. You can manipulate new lead generation. You can create leads that aren't relevant. You can push forward MQLs that don't actually convert. So I would say those are kind of fluff. What I care about being in growth and looking at the bottom line of revenue is what is my closed one conversion rate? What are the customer,
+
+look like that are actually turning into paid clients. So I would rather have less lead generation and less MQLs, but have higher converting closed one ratios. That's what I really care about. So if you look at it backwards, let's say like an easy way to do this is look at it backwards and look at all of the customers that you've had that have been successful. So everyone that has come through and actually converted to be like a super high.
+
+high paying, high retention, close one client and look at their journey. So what are the channels that they came in from? What is the content that they were resonating with? What was the sales outreach? What was the marketing outreach? And then you try and recreate that journey into your different segmented buckets. And that's how you can kind of look at it backwards and create something that's highly converting because you're saying these are the indicators of a super high converting client.
+
+Nebojsa (40:55.011)
+Ha.
+
+Jason Rivera (41:00.688)
+at the beginning of the funnel and let's see if we can adapt our customer journey to that because we know that that's what success looks like instead of just trying to make success out of nothing.
+
+Nebojsa (41:13.707)
+Yeah, I agree and I've seen many SaaS founders building MVPs without even thinking about if they have a product market fit and they are thinking about solution first instead of the problem first and then they spend a lot on development and realize that they don't have a product market fit. So yeah, that theory that you have like starting backwards.
+
+Jason Rivera (41:25.006)
+Yeah.
+
+Nebojsa (41:39.467)
+make sense like you put yourself in the shoes of your audience and think about the their journey how how it works where they click what they want to see and then build something yeah that makes sense makes sense like and like what conventional wisdom have you seen
+
+Jason Rivera (41:44.899)
+Hmm.
+
+Jason Rivera (41:54.548)
+Exactly.
+
+Nebojsa (42:02.108)
+overturned by your experience moving from specialist roles into like a full spectrum growth leadership.
+
+Jason Rivera (42:12.416)
+I mean, I think I wouldn't say anything like overturned. would just say that my perspective has progressed. where when you're earlier on in your career, it's that idea of seeing how everything fits together. So when you're early on in your career, you're kind of taking tasks as they come to you and just executing on them. But
+
+looking behind the curtain and seeing like how this piece of the engine actually makes the car move. That is super important. Being able to understand why that actually has the impact that it does or why it's an important piece of the funnel or how that interacts with the other teams and what they're working on and being able to kind of create that into one cohesive engine. I think that would be where I would encourage
+
+people to kind of think about things. It's the same thing like when you're in school, you know, like you can memorize answers and regurgitate them, or you can actually understand the content and be able to apply that to other pieces of your life. And that's where kind of education comes. It's the same thing with marketing and with growing a company at any industry is actually really understanding your market fit.
+
+Nebojsa (43:18.156)
+Yeah.
+
+Nebojsa (43:23.351)
+Yeah.
+
+Nebojsa (43:32.759)
+I really love your metaphors, like every metaphors that you just, yeah, I love them, So, yeah, I do have a few more questions before we wrap it up. So like, this is a question that I asked to almost all the guests and that's like, what advice would you give to aspiring leaders in sales, marketing or growth?
+
+Jason Rivera (43:36.558)
+Thanks.
+
+Jason Rivera (43:43.832)
+Thanks.
+
+Jason Rivera (43:48.524)
+Yes, sir.
+
+Nebojsa (44:01.246)
+or those considering a switch between these disciplines.
+
+Jason Rivera (44:06.186)
+I would say...
+
+I would say be really cross-functional. spend some time with digital, spend some time with growth, spend some time with operations, spend some time with sales. Like when I was first starting out, I would sit and I asked if I could spend like an hour with a salesperson and just watch their process and how they interact with their clients and ask them, know, what are the biggest drawbacks that our clients give you?
+
+What is there, what are their, what are their blockers from actually becoming a converting person? What is the kinks within your workflow or what do you think, if you had your choice, what would be your biggest opportunity to make your team more efficient or have higher conversion metrics? And then you can kind of understand that, like, like I was saying before, understand how everything fits together. And as you progress in your career, you don't have to be an expert on everything. You don't, I'm not saying go and like be.
+
+a better salesperson than the salesperson, but understand their role, understand what they care about, understand what their day looks like. So when you're working with them and you're building that relationship, it all makes sense. And then also to build a framework of measurement that helps you reach your goals. So being a leader, like you wanna have very clear OKRs and KPIs.
+
+on a high level business perspective and then you want to be able to translate
+
+Jason Rivera (45:41.9)
+to your team how their work impacts those super high level business objectives. So, you know, if we have these new client goals and you are in digital marketing, your ads are bringing in the leads that convert to new clients. Or if you are in sales, you're actually converting the clients from the marketing content that digital is creating. So you guys have to work together. You guys have to understand. And these are the specific metrics that I want you to focus on that interact with our conversion.
+
+metrics and explain that to them. So everybody knows what their job is, how to do it. They feel enabled. They feel like they they have kind of like rapport with one another and they can talk and openly exchange ideas.
+
+And then just continuously learn new things. So stay ahead of the game, stay tech savvy, learn AI, take new courses. Your knowledge is never done. And the person that stays ahead of the game when it comes to learning new tools, learning new strategies, that person is gonna be successful.
+
+Nebojsa (46:50.837)
+Yeah, I appreciate that. I completely agree with everything. Which skills or attitudes do you consider essential for professionals in these roles today?
+
+Jason Rivera (47:03.086)
+I think being able to express your ideas in a way that helps people understand and agree with them, especially as you progress in your career, you know, because your projects are going to be super high-stake. There's going to be revenue. There's going to be a cost associated to them. Like if you're trying to onboard a tool that costs two or $300,000, you have to justify that need. So putting things in terms of
+
+profit, revenue, how its business impact, whether that is streamlining an existing process for the team so that they can spend time doing other things, or just creating more revenue from it being a superior service that it's offering. So just being able to express that through data, and I think data is the best way to do that because you can't argue with data. So showcasing other examples
+
+of where a similar product or a similar campaign has been able to achieve the business outcomes that you're trying to produce with your project. That's what I've seen be the most compelling.
+
+Nebojsa (48:15.637)
+Yeah, I mean, thank you, really thank you for sharing all these nuggets of wisdom with us today. I do have like, I had only one, but now I have, I just remember another question that I had for you because it just came all naturally while discussing this with you. And this is like...
+
+Jason Rivera (48:20.747)
+Yeah.
+
+Yeah, yeah, of course, happy to.
+
+Jason Rivera (48:33.654)
+Yeah, yeah, sure.
+
+Nebojsa (48:36.151)
+If you were handed a SaaS product today and said, hey, Jason, grow its organic traffic from zero to 100K visits in 12 months, what would your starting playbook look like?
+
+Jason Rivera (48:51.08)
+Ooh, interesting. I would start out with doing some product research. I would figure out how that SaaS product fits in with a greater ecosystem and what differentiates it from the rest of its competitors. And then I would find someone who is super well adverse and respected within that community to start cranking out thought leadership content. And then I would have that thought leadership content translate over to the website.
+
+translate that into conversion campaigns, build out the SEO strategy from it like we were talking about before, create blog posts, create organic traffic on LinkedIn, on Instagram, on TikTok, and then turn those high converting organic posts into paid advertising. So you're hitting them from an SEO side, you're hitting them from organic, you're hitting them from paid, and then eventually I would create some
+
+email marketing nurtures as well so that they when those customers start converting there is something automated that can start nurturing them on the product how it fits with them how it can help them and then get some conversion down the line to over to sales so yeah I would just start to hit with those with those few channels first and then start to build from there get that get that get that marketing infrastructure down and that foundation down first
+
+Nebojsa (50:15.478)
+Yeah.
+
+Yeah, make sure like if the foundation is not stable, then you can like move to the next level and start building more. You need to have like a thorough and strong foundation in order not to just break along the way. Okay. Cool. Cool. Cool. That's so like, finally, if you could leave the audience with one big theme or takeaway about growth marketing, what would it be?
+
+Jason Rivera (50:24.746)
+Exactly.
+
+For sure.
+
+Yeah, exactly. Yeah.
+
+Jason Rivera (50:46.03)
+I would say to try and think outside the box. mean, you don't have to recreate the wheel, but really figuring out where your market fit is, where your product fit is and how you can.
+
+how you can get that to resonate with your audience. So really differentiating yourself within that niche. And then through thought leadership, I really think thought leadership is the future of marketing. So mix your thought leadership ideas with some AI automation and you will have a super high converting growth funnel.
+
+Nebojsa (51:25.719)
+Jason, I want to thank you for your time and for sharing all the useful insights with the audience. I'm sure that everybody will enjoy hearing you answering all these questions and brainstorming all these things with me today. I really appreciate it. For the listeners that want to find you and follow you, where is the best channel to find you?
+
+Jason Rivera (51:48.812)
+Yeah, I mean, I would say find me on LinkedIn, message me. I'm always open to have a discussion. I think that that's the best place,
+
+Nebojsa (51:59.348)
+And for our listeners who enjoyed, thank you for listening to another episode. Make sure to subscribe to be here with us, not to miss any future episodes. I'm sure that you've enjoyed listening to Jason. Keep pushing to the limits, learn and grow. The future of AI is coming, so better get ready soon. Thank you.
+
+Jason Rivera (52:22.318)
+Hmm.
+

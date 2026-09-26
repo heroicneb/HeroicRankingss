@@ -1,0 +1,928 @@
+Nebojsa (00:00.784)
+So, welcome to the Ranking Heroes, a podcast where we discuss different marketing strategies with the experts behind them. Today we have Jonathan Boshoff, an SEO expert who also does interesting SEO AI apps that helps other SEOs shorten their time for doing different procedures. So, Jonathan, thanks for joining this podcast. It's a pleasure speaking with you.
+
+So to start properly, I would love to ask you if you can walk us through your journey into the world of SEO starting from your early days in 2012.
+
+Jonathan Boshoff (00:39.762)
+Sure, yeah. So thanks for having me. I got started in SEO back in 2012 by making WordPress websites for small local businesses in my area. So my first website was for like a tattoo shop and then I did one for a restaurant and just whoever I could convince to do a website for.
+
+And eventually the people who were asking for these websites, they would start to ask like, how do I get leads? How do I get customers? So I started learning SEO as a way to help those website people out.
+
+And then I kind of got over time much more interested in SEO and digital marketing than just making websites. So that led me to a career in digital marketing where I worked at a couple different marketing agencies and in -house SEO roles. And yeah, here I am today.
+
+Nenad S (01:44.322)
+Awesome. I have questions. Did you work solely on inbound methodologies like content marketing, etc., or did you work on PPC as well? mean, generally paid advertising stuff.
+
+Nebojsa (01:44.363)
+nice.
+
+Jonathan Boshoff (01:58.448)
+Yeah, yeah, so back in the day, I just did digital marketing anything, whether it was like email campaigns or PPC or social media. I've done it all, but I realized that I like SEO the most probably because it's like the most introverted marketing channel, like it involves the least amount of like talking to people.
+
+Nenad S (01:59.606)
+Yeah.
+
+Nenad S (02:19.426)
+Absolutely.
+
+Yeah, and a huge amount of data that you cannot have. For instance, with advertising, you see a click, you see the input and the output, and as for SEO, you always have those latency and results. I mean, it's much more interesting chasing rabbit holes and stuff. I feel
+
+Jonathan Boshoff (02:34.951)
+Yeah.
+
+Nebojsa (02:39.587)
+So like John, since you're now pretty much into the AI... Yeah. So since you're now pretty much into the AI and SEO, combining those together and mixing up to get some interesting tools out of it, like did you...
+
+Jonathan Boshoff (02:39.984)
+That's true. The data part of it also makes me very interested.
+
+Nebojsa (02:59.054)
+Did you have that in mind before the Chad GPT and the AI came to the market? Did you already have something in your mind? You wanted to automate some procedures or did that inspired you after the Chad GPT and the massive AI spread that happened like two years ago?
+
+Jonathan Boshoff (03:19.014)
+Yeah.
+
+So that's mostly what got me into it is when ChatGBT came out, I just started giving it SEO prompts and I quickly realized that it's going to help me do my job faster and easier. I was like, my goodness, I was really happy to start messing around in ChatGBT. I was an open AI beta tester. So I was messing around with like the early stages when I was in its infancy.
+
+Nebojsa (03:28.633)
+Mm -hmm.
+
+Nebojsa (03:38.874)
+Mm -hmm.
+
+Jonathan Boshoff (03:49.902)
+And I was kind of following along before that, like I was posting about how Google built new supercomputers that'll be able to handle AI applications. So I have kind of been there for most of the steps, but I didn't really get super involved until chat GPT.
+
+Nebojsa (03:50.255)
+Mm -hmm.
+
+Jonathan Boshoff (04:09.53)
+And then what happened with ChatGBT, I started coming up with all these prompts and I realized that if I wanted to get the same kind of outputs every time, I need to start like writing my prompts down and like copying and pasting them in. So I started like collecting them on a spreadsheet and eventually that became like a database. But then I realized that ChatGBT can also help you code Python.
+
+Nebojsa (04:09.581)
+Mm -hmm
+
+Nebojsa (04:30.296)
+Hmm.
+
+Jonathan Boshoff (04:34.962)
+and I had messed around with Python scripts before and tried scripts that people in the SEO community had made, but I never really dug deep into Python until ChatGBT could start coding it. And then I started making my own Python scripts to do the things that I wanted to mess around with with Python.
+
+And that was like the next step for me, using Python and chat GBT to make like applications. And then I kind of realized that Python applications are really buggy because I would share them on social media and you know, like five comments would be like, this is amazing. And five comments would be like, I got this error. So every time I posted, I would be like trying to fix all the code. And I really know how to code Python.
+
+Nebojsa (05:22.35)
+Mm
+
+Jonathan Boshoff (05:29.06)
+So if there's errors, I'm just throwing them into chat gbt and being like, Hey, I got this error and it would fix the code for you.
+
+Nenad S (05:34.1)
+Yeah. Yeah, but at least, I mean, if you develop WordPress and websites, if at any point you actually access the source code, the semantics are really similar. I mean, similar. So if you know the functions and their behavior in other programming languages, it's easy to kind of read and understand the parts of code even though you cannot write the code yourself. I mean, these are the things that I tested out. Same with JetJPT. I
+
+I consider myself a failed developer. Was doing PHP, JavaScript, Python as well, R. But I am not sufficiently well versed in all of the, in full semantics of the code, so I will know the full semantics of each individual of those programming languages. But I understand the functions, I know the algorithms.
+
+And to be honest, with ChadGPT it was much easier for me to actually code Python scripts, specifically for SEO. So, cats off, I understand that part and the issues behind it. I have a follow -up question regarding that though. What are your, I mean, even when I was working and making some Python scripts, Python or PHP when it comes to crawling or something regarding SEO, I always tried to avoid...
+
+Jonathan Boshoff (06:34.673)
+Yeah.
+
+Nenad S (06:55.646)
+using APIs as much as possible due to their limitations or because they don't have long -term support. Much of the projects that were existing at the time were just a complete fail. For instance, React, it's a complete failure today, but it was a big thing when it kicked off. So I've noticed that a lot of the things that you had on AISO Academy are
+
+strictly tied to ChatGPT and to its API. Have you considered or have you worked with any other GPT model that you trained on your own or used any existing ones locally? Or are you completely relying on ChatGPT?
+
+Jonathan Boshoff (07:40.892)
+Yeah, that's a good question.
+
+Nenad S (07:41.216)
+I mean, in your line of work so far.
+
+Jonathan Boshoff (07:45.116)
+So with this other tool that I use, that's kind of like the next step is after I realized that Python scripts are really buggy, because I can't foresee all the errors that people are going to get because they don't code Python, I started using a no -code builder called Moonlit Platform. It's not a very well -known one. It's fairly new.
+
+Nenad S (07:58.53)
+True. True.
+
+Nenad S (08:05.824)
+Yeah, yeah, I know.
+
+I know.
+
+Jonathan Boshoff (08:10.13)
+But I started using this platform and it just has like a drag and drop interface so I didn't need to focus so much on the Python. And in that interface, you can change the chat model. So it's got the open AI models like GPT -4, GPT -4 -0. It used to have 3 .5 and 3 .5 Turbo. Or I think it still does actually. And then it's got Llama, it's got Gemini, it's got Claude, it's got
+
+Nebojsa (08:16.387)
+Mm -hmm.
+
+Jonathan Boshoff (08:40.256)
+which is really cool because you can get those same web browsing features from Perplexity. Yeah, there's a Perplexity API now.
+
+Nenad S (08:43.308)
+haven't heard about perplexity.
+
+haven't heard about preflexity? Awesome, awesome. I'll look into
+
+Jonathan Boshoff (08:52.643)
+But the cool thing about that is all you have to do is click the little model drop down and switch it to whatever you want and they're all in there.
+
+Nebojsa (08:59.974)
+Nice,
+
+Nenad S (09:00.864)
+Yeah, that's the thing. mean, I think that when it comes to programming, the most important part is to actually see the logic, see the algorithm behind getting to that point what you need. So no -code platforms are actually, I mean, from a developer perspective, if a developer, someone who considers himself a full stacker or someone who actually knows vanilla languages, they are automatically like stigmatizing it. They don't want to even look at it. But
+
+from a perspective of a person who knows what they want to achieve but they don't have the skill or knowledge completely to follow it through, but they know the logic behind the algorithm and to polish it. No code platforms are really, really cool. I actually tested out several of them. I heard about Moonlight One, still haven't made it there.
+
+still focusing on some of my own customs and chat jpt also for Python development, but I'll really look into it and test it out. It's a cool thing. But yeah, a lot of people stigmatize it a lot, specifically in the development world. And I'm really glad that SEO people are actually going that direction, like, yeah, go no
+
+Jonathan Boshoff (10:06.886)
+Yeah.
+
+Nebojsa (10:07.312)
+So yeah.
+
+Nebojsa (10:12.818)
+So yeah.
+
+Nebojsa (10:18.568)
+Yeah, like while we are there, I want to ask another question is like how did the integration of AI into the SEO take place in your career? Like I suppose that what was before like a five hours long work that you can now shorten it to like 30 minutes or so. So are you able to handle more projects at once and do them all by yourself? Like are you using the same approach for
+
+SEO strategies but shortening the steps with AI or how does it work?
+
+Jonathan Boshoff (10:55.642)
+Yeah, great question. So there's kind of two areas where AI is really useful. Number one is doing something consistently and repetitively. So like a great example is title tags and meta descriptions. So you can create an app that's just gonna do that for you.
+
+Nenad S (11:13.462)
+Absolutely.
+
+Jonathan Boshoff (11:17.784)
+So I kind of started by creating those apps that are going to do the most common repetitive tasks. that was one of them, title tags and meta descriptions. Another one's like keyword research or like on page SEO recommendations, just like typical day -to -day stuff. Yeah. Content
+
+Nenad S (11:35.298)
+content creeps etc. Content decays and yeah, content decays and stuff that you can track with it. I saw a similar thing that you already published on AI Academy. Cool
+
+Nebojsa (11:44.656)
+Nice.
+
+Jonathan Boshoff (11:47.504)
+Yeah, yeah, the other interesting part of it is stuff that you probably wouldn't have thought of.
+
+before AI, which is like using the speed and intelligence of AI to kind of do things a little bit out of the box. And that's where those like EEAT checker tools come in. Like they can check so many details from a list of criteria instantly and tell you exactly like where it did well, where it didn't do well. You can compare it against other pages. So all that stuff is possible to do manually, but it would
+
+Nebojsa (12:25.09)
+room.
+
+Jonathan Boshoff (12:26.234)
+hours just to do like one page in the same way that AI can do it in like a minute. So that's kind of like the other area where AI is really cool.
+
+Nebojsa (12:29.858)
+haha
+
+Nenad S (12:30.69)
+True, true.
+
+Nebojsa (12:33.931)
+that's crazy.
+
+Nenad S (12:38.561)
+Awesome.
+
+Nebojsa (12:38.919)
+Cool man. Okay, so you just answered another of questions that I had. So what motivated you to found the AIS SEO Academy and what are the primary goals you aim to achieve with it?
+
+Jonathan Boshoff (12:54.118)
+Yeah, so the gold
+
+is largely just to share what I've learned with other people who are mostly like SEOs and developers. And that's how it started. I was just like, this is really cool. Other people should know how to do this. My assumption was that I'm just like a really early adopter. And in a couple of years, or maybe even just like a year, a lot more people in the SEO community will be doing similar stuff, like messing with tools and AI to help them do their
+
+So I was like, it would be cool if I had like a little community where I could show people what I've learned and maybe I'll get other like -minded individuals in there.
+
+Nebojsa (13:36.409)
+Mm -hmm.
+
+Jonathan Boshoff (13:36.708)
+And I've kept it pretty open, but some really interesting things have happened since I created that group. Like I've had everything from Python type of developer people, like full stack developers come in and like show me new things and help me learn to people who are like in startups and they're trying to like make their startup to grow and succeed, but they don't have any team or resources. And then they come in and they're like,
+
+Nebojsa (14:06.309)
+Nice.
+
+Jonathan Boshoff (14:06.614)
+all these tools this is super helpful and they can get so much more done than they couldn't have done before. And the really cool part about
+
+making SEO tools for people who aren't SEO experts is that I can give them my expertise baked into a tool so that they don't need to go and learn why, you know, like, EEAT is important, how to look for it and all that stuff. I can just do it for them and give them a tool. And it saves them time and helps them just keep going and be more productive and do the things that they need to do.
+
+Nebojsa (14:29.668)
+Beautiful man.
+
+Nebojsa (14:36.917)
+haha
+
+Nebojsa (14:45.462)
+Yeah, so now I can see the difference between the AI SEO Academy that you are running from the traditional SEO courses that take a long time to complete and then once you finish with them, then you still need to do it manually in practice on websites and you don't have the tools that will just help you do some procedure in a few clicks. So man, what you're doing, I think that you're giving free value to all the people out there.
+
+Nenad S (14:46.114)
+sure.
+
+Nebojsa (15:15.72)
+And like cat software that man. I really support that and I love what you're So like cat Okay
+
+Jonathan Boshoff (15:22.022)
+Thanks.
+
+Nenad S (15:22.082)
+have another analogy that I want to ask you. I'm into woodworking, metallurgy, those are like my hobbies. When, for instance, I need a screwdriver to just tighten a screw and I have around 100 or 120 different screwdrivers in my shop. When I have those 100 or 120, and I have different tools that I can use to screw that tool as well, but the moment I need
+
+Because I have that many tools, it's difficult for me to actually catch and find one that I'm using. And I have sort of a tool creep in that way. When it comes to developing tools, scripts, et cetera, you definitely had a lot of them that did similar stuff or similar work that are incorporated in that part. So how do you handle that, let's call it tool creep?
+
+Do you refactor? Do you just upgrade some tools? Do you just let them go and build another one? How do you handle that part of scaling?
+
+Jonathan Boshoff (16:21.298)
+That's it.
+
+Nebojsa (16:28.9)
+Yeah.
+
+Jonathan Boshoff (16:30.32)
+Yeah, good question. So I try to make like a new tool every week, which is kind of tricky because I've rebuilt tools multiple times. Like I think I've got three or four title and meta description tools in there. I've built like three or four.
+
+Nenad S (16:48.831)
+That's what I wanted to know.
+
+Jonathan Boshoff (16:51.012)
+EAT checker tools. So basically like what I'm doing is I'm kind of reinventing it and then because you know a couple months later there's new technology I understand the prompts a little bit better and then I'm like I didn't really like the output that that one gave I'll try and make it a little bit better but instead of just deleting the old one I just kept it in there and that's something I've been like
+
+unsure about like should I just get rid of the old one should I keep it in there because they all do slightly different things
+
+Nenad S (17:21.782)
+That's what I wanted to know. Yeah. Do you just drop it and completely throw it in the bin and make another one or do you try to upgrade and refactor it as much as you can? Awesome.
+
+Jonathan Boshoff (17:32.082)
+Yeah, so so far I'm just collecting them, but I do go in and upgrade the old ones. Like I went in and changed all of them to GPT -40 when that came out just because it's so much faster and better. And like I'll go in and like when Clawed 3 .5 came out, I went and I changed my like some of my content writing tools to use Clawed 3 .5. So I do go in and do like sneaky upgrades that I don't really announce.
+
+Nenad S (17:58.53)
+Sneaky upgrades, love it.
+
+Nebojsa (17:58.931)
+Nice. Can you share some insights into the development process of your AI powered SEL pools?
+
+Jonathan Boshoff (18:11.306)
+Sure. So there's no brilliance behind that process. It's largely a lot of trial and error and just getting frustrated and trying new things and spending the whole day not getting anywhere and then getting up the next day and trying again and then finally you get it working and then you're like, aha, I've done it and then you can go post it. So that's basically the process.
+
+Nebojsa (18:21.861)
+Mm -hmm.
+
+Nenad S (18:40.639)
+Yeah, story of my life. We should definitely get a beer sometime.
+
+Nebojsa (18:48.257)
+man.
+
+Yeah, I mean you need to be persistent, know, you need to repeat the process and like if you if you Like just give up then you are avoiding like for example, well what you just said you You're not doing it successfully that day But tomorrow morning you get up you grab a coffee and you finish it in two hours Like if you would give up the last day, then it wouldn't be finished the tomorrow I mean, so yeah, so like
+
+Jonathan Boshoff (19:17.658)
+Yeah, I have abandoned a few tools, so there's some that are like halfway done and I just gave up on them and made something else. But most of them I've seen through to completion.
+
+Nebojsa (19:31.987)
+So like, are you always first looking the problems that the tools are going to solve and then creating the tool or you're just coming up with the different ideas? Problem first.
+
+Jonathan Boshoff (19:44.934)
+Yeah, the weird thing is, so I'll have an idea of what I want to make just in my head, but I'll actually write my blog post first and I'll be like, here's what it's gonna do, here's what it does, and then I use that blog post as my assignment for the tool that I need to make. And it's very assumptive that I'll be able to actually make the thing that I'm planning on making. And that's usually when I hit that wall of
+
+Nebojsa (19:55.888)
+Mm -hmm.
+
+Nebojsa (20:05.364)
+Mmm, that's clever.
+
+Nebojsa (20:12.356)
+Mm -hmm.
+
+Jonathan Boshoff (20:14.82)
+and error and banging my head against the wall and I'm like why did I plan to do this? didn't I pick something simpler or easier? But yeah, I start with the blog post, then I kind of work my way backwards.
+
+Nebojsa (20:30.53)
+Mm -hmm, cool.
+
+Nenad S (20:30.69)
+Again, so any of those GPT tools that you're using, have a token limit to, I mean, the token limit to exactly how much you can use their API. The tools, when you have an idea for a tool, it might work well if you have, let's say, a website with 50 or so pages, but once you hit the wall with a website that has over 500 ,000 URLs, you either,
+
+get expiration or you need to pay up for those tokens. But in many cases you don't know when, I mean specifically the way you work, don't know or you cannot estimate at what point, what threshold will that tool be kind of either unuseful or it will cost too much to have it done that way. I mean that it's not completely cost effective.
+
+Is this the way you do it or do you handle those estimates before you start doing, working on that tool? Like in terms of, I estimate that this is going to be like really, really heavy for high number, for websites that have a lot of URLs.
+
+Jonathan Boshoff (21:45.746)
+Yeah, good question. And I've definitely experienced that. Like I've built tools that use GPT -4 when it was more expensive and it costs like $1 per run. And I didn't realize that until I shared it. And then I ended up getting like a $300 bill from OpenAI. And I was like, wow, I really should have put some thought into that before sharing it publicly. So that has happened to me before.
+
+Nebojsa (22:09.508)
+haha
+
+Jonathan Boshoff (22:13.756)
+But today, all the AIs are way cheaper than they were even just a few months ago, so it's gotten quite a bit better. And
+
+Nenad S (22:20.428)
+Yeah, absolutely. I mean, we reached that kind of reach that plateau where they kind of sort of stopped more with the upgrades and more with the optimization in terms of how much they will cost, how much energy they will spend, the infrastructure, et cetera, et cetera. So at least from what I see in the next two years, at least they will more be focused on optimization of costs for those AI running than to actually add some new features.
+
+But yeah, it was at start whenever it launched first, all the tools that, I mean, there were thousands and thousands of tools, not specifically for SEO, for anything else that where AI can help, but they all appeared and disappeared three months after because exactly due to those reasons, weren't cost effective, they weren't sustainable in that part. But I feel you understand if you already passed that bill of $300, that...
+
+definitely sticks in your head.
+
+Jonathan Boshoff (23:23.346)
+Yeah, the biggest limitation with SEO right now is the token limit, which even for the API tools is around 18 ,000 tokens. So those tools where you compare three web pages, if you're trying to compare your page against the top three ranking pages and everybody's got a long form content, it's not just a 500 word blog post or something, they're all going to hit those token limits and it's not going to work properly.
+
+Nenad S (23:38.519)
+Mm -hmm.
+
+Jonathan Boshoff (23:53.722)
+So creating like a stemming and lemmatization solution is what needs to happen there. It's just a little more complicated. It's something that like Moonlit is working on in the backend and people have shared scripts that can do it in the AI Academy. But that's something that I want to get going. And also like scraping the body HTML, not like the whole HTML of the page.
+
+but that's also a little tricky to implement. It saves a lot of tokens because the scripts of the header and the footer take up like so much of the token limit.
+
+Nenad S (24:22.24)
+Yeah, that definitely sure.
+
+Nebojsa (24:32.062)
+Yeah, got
+
+Nenad S (24:32.21)
+and have you considered or tried, for instance, to shorten those steps by first, let's say, you scrape the pages, HTML specifically, using some SEO tool like Screaming Frog, you do that part of scraping, and then uploading those specific parts to GPT models itself. I mean, it's an added step.
+
+it's a complicated thing, but still it runs locally and it doesn't require that API. The point is, have you considered moving any of those functions outside the GPT where you can use them locally or something instead of just pushing everything to
+
+Jonathan Boshoff (25:17.619)
+Yeah, I have thought about that because it would be easy to do like a screaming frog crawl with like the HTML enabled and then just chop out the headers and footers. That would be totally doable. It's just not something that I have dug into yet. It's on my to -do list somewhere.
+
+Nenad S (25:33.804)
+Got it, got it. Well, you're making a new tool idea each week, so I bet it's down the line. It's somewhere in the backlog. Awesome.
+
+Jonathan Boshoff (25:39.352)
+Yeah.
+
+Jonathan Boshoff (25:46.022)
+Yeah.
+
+Nebojsa (25:47.292)
+Yeah, so yeah, also I've checked your profile and I know that you have high skills in SEO content. So I wanted to ask you how do your AI tools optimize content strategies and what advantages do they provide over these traditional methods?
+
+Jonathan Boshoff (26:06.31)
+Yeah, that's a good question. So the big one, the big two is speed and comprehension.
+
+So it takes a lot of brain juice to read content and provide like specific SEO recommendations on it. Like maybe refine this section here, tweak this. That is very time consuming for SEOs to do. And AI can serve as like an assistant that helps you do that stuff. I wouldn't recommend just like copy pasting what the AI says, but it can point you in the right direction. Like you can say this page did this and your page didn't. And you can go, that's interesting.
+
+Nebojsa (26:38.687)
+Mm -hmm
+
+Jonathan Boshoff (26:44.596)
+and then go look at your page and be like, that's true, this page did a way better job of explaining these points and my page didn't go into those details. So now I know, I can expand there. So it's a lot of like just time saving that it can do for content.
+
+Nebojsa (26:45.01)
+Hmm.
+
+Jonathan Boshoff (27:01.382)
+And then another part that it's really good at is like the briefing stage. So let's say that I just want to get the top three pages and turn them into a content brief. AI can do that in like a minute. It's really quick and easy to do. And I think the bar for good content is getting higher because it's so easy to just scrape the top three pages and turn that into like a content brief.
+
+So it's gonna have to, you're gonna have to add something on top of that, like some information gain. You have to bring something new and exciting to the table that wasn't already in those briefs. Like if you're just trying to create some Frankenstein of existing pages without bringing anything new to the table, you're probably not gonna see much success. But even then,
+
+For a lot of companies just making a decent piece of content is still a huge challenge, especially for small businesses So a small business Scraping the top three pages making content brief then like generating that content with AI and then just doing some quick edits on top of it that is so much more than what they're capable of doing today and Even that can can be good for them. But if you're like a large -scale content operation, then you need to put
+
+more effort and thought into it. So it really depends on how the size of your business and like how quickly you want to move, how much you care about the quality of your content and like how much competition you're dealing with.
+
+Nenad S (28:35.52)
+I completely agree and respect your opinion, like AI should be used in this case more of as a system role, where at the end you shouldn't just go and blindly copy paste whatever it spells out.
+
+Nebojsa (28:35.999)
+Yeah, nice to explain,
+
+Nenad S (28:53.986)
+How do you have, can you, in your community that you manage and that you build so far, do they have the same sentiments? Do they share that same opinion? How hard is it for you to keep it up like that? Because many people who are looking for AI solutions are just looking for something to copy paste, not something that would give them like assist or point them in a direction that they should do more research.
+
+How hard is it for you to actually manage that, to keep that opinion, to keep that sentiment in your community?
+
+Jonathan Boshoff (29:30.726)
+Yeah, it really depends. It's a range because let's say I'm like a local restaurant, right? And I want content for my blog. I don't care if it's good, you know? I'm just gonna hit generate, copy and paste, because it's gonna be about like making pizza or something. But if you're like...
+
+Nenad S (29:39.137)
+Mm
+
+Nenad S (29:45.755)
+Great.
+
+Nenad S (29:49.943)
+God.
+
+Jonathan Boshoff (29:51.012)
+If you're a B2B SaaS and you're competing with the biggest companies in the world and you have like an editorial team, it matters so much more to put that extra thought into it. So the only way that I can deal with it is kind of be like a parent about it, like use AI responsibly kids, and it's up to them whether they want to listen or not.
+
+Nenad S (30:18.764)
+Got it, got it. Yeah, at the end of the day, that's the only thing that we can do. Keep a sticker like you handle with care.
+
+Nebojsa (30:18.961)
+Hahaha
+
+Nebojsa (30:24.593)
+Yeah.
+
+So like while we are speaking about the content, we all know that backlinks are very important, the internal links. So I wanna ask you why is internal linking optimization important and how does your AI tool improve this process?
+
+Jonathan Boshoff (30:45.83)
+Yeah, good question.
+
+something that I've learned recently, especially since like the Google API leak, is internal linking is so much more important than I ever thought it was. Like I've always been like, yeah, it's one of those best practices at the internal links. But to me, it had like the same weight as having good headings or like a good title tag and things like that. Internal linking is like really underestimated because it's hard to report on. It's hard to report on like I didn't have
+
+links and then I added them and then here's what happened. You only really get to see the benefits of internal linking if you're working on really big sites that have unlinked pages and you get the opportunity to actually plug those links in and observe the changes. But I've seen internal linking improve the rankings of pages, I've seen it improve revenue directly, drive people towards money pages like...
+
+It's so much more important and impactful than I could have ever imagined. And it's something that I was honestly sleeping on for the majority of my like SEO career up until like the last couple of years. And now I'm really big on internal linking. Like I almost annoy people with internal linking recommendations. Like instead of giving them two or three pages, I'll give them 20. And people don't like that about me, but I do it because I know it's important and it's going to
+
+Nenad S (32:05.185)
+Yeah.
+
+Jonathan Boshoff (32:14.324)
+impactful. So for the AI tools, I've built three of them so far, I think that help with internal linking. One of them just automates the Google search.
+
+Nenad S (32:18.326)
+Oui.
+
+Jonathan Boshoff (32:28.178)
+And it's the same internal linking strategy that most SEOs use, which is when you type like site, and then you put your domain and then you like enter your keyword and you do like minus URL and filter out some of those URLs. So it does that, but automatically using the Google search API. And it just finds 10. Yeah, uses search operators.
+
+Nenad S (32:48.138)
+Yeah, it's using search operators, Using search operators, side data, yeah, yeah, cool, cool.
+
+Jonathan Boshoff (32:56.242)
+And it just finds like 10 linking ideas per page. And it's supposed to be pages that don't already link, but it's not 100 % accurate. I need to like go back and work on that some more. And then I've also built tools that help with the placement and the anchor text and the context around internal links.
+
+Nebojsa (33:17.547)
+Okay, and how do they work? mean, I'm pretty interested to hear that.
+
+Nenad S (33:17.621)
+Awesome.
+
+Jonathan Boshoff (33:22.512)
+Yeah, so the anchor text, basically it's just going to
+
+where on the page you should add the link and what kind of anchor text you should use. And you just like give it your page and your keyword and your link and it'll give you a couple options. Like you could put it here, you could put it there. It's not perfect, like it's not as good as an SEO would do it. Sometimes it's a little bit silly. Like it'll add things like, and if you want to read our ultimate guide on blah, blah, blah, click here. And it's like, no, GPT, bad, bad GPT.
+
+Nenad S (33:53.872)
+that's a bad GPT. Yeah, that's true, Regarding those internal links, what do you think that, I mean, we actually use, but we take into account like a full anchor text optimization portfolio regarding both taking into account both internal linking and external linking. So I mean backlinks, et cetera. So we take more into account.
+
+Jonathan Boshoff (34:01.04)
+Like no AI is perfect.
+
+Nebojsa (34:05.301)
+comma.
+
+Nenad S (34:22.518)
+the anchor text portfolio, its distribution of specific types of anchors, and also the link hierarchy. It's always difficult for me to say that word. Meaning how many links, what page has, and how it should be prioritized. But in this case, I wanna know what do you think that, what's the background of why the internal linking works? Is it more because you're doing
+
+Nebojsa (34:34.824)
+Here I am here, okay.
+
+Nenad S (34:52.546)
+content refreshing. mean, if you want to do an internal link, need to edit that page. It automatically updates the site map, the last modification date, change frequency, etc. Or is it just adding the link and connecting that page so the bots could just have a more clearer crawl path? Or it was more from an anchor text perspective? Or is it all of the above? I want to know
+
+your opinion what exactly what what part does the internal linking actually push that it helps SEO? Is it more from Googlebot discovery, Googlebot refresh mode or something similar? I really want to know your opinion on it. I mean they differ but I want to hear yours.
+
+Nebojsa (35:21.38)
+Heh.
+
+Jonathan Boshoff (35:33.202)
+Yeah, that is good.
+
+Jonathan Boshoff (35:46.118)
+So my observations is the first couple of links is just to help with crawling and indexing. If you have a page that has zero links and then you go add three links, all of a sudden it'll show up on Google's radar and start getting a couple of clicks and impressions here and there. The majority of where internal linking becomes helpful.
+
+I believe is like in the contextual component of it. Like it doesn't really matter too much if it's in the navigation or the footer from like a ranking perspective. It's better than nothing. but when you look at the internal links on a page, I'll do like comparisons, like, okay, my content is better than this page. And I'll be comparing against the competing page and the competing page, the content isn't as good, but they have like 40 internal
+
+all from relevant pages. So they've built and that requires you to have a content network that's really relevant to that topic. Like you couldn't fake that if you just had a bunch of random pages and started linking to them together in a way that didn't make sense. So it's basically like showing Google that you've already done the work of creating all of this context and you're not just working on one topic. You have all of these like interlinked topics.
+
+that are all relevant to one another. That I think skews the weightings in your favor. So if you have better content but the competing page has way more links they can often outrank you. And then with like the internal links.
+
+Nenad S (37:25.74)
+So it's a soft balance between context and technical parts as well, meaning this has more internal links. That's from a technical perspective, but those internal links contextualize by adding topics from different things. So a bit of both worlds in that case. Right? Yeah,
+
+Jonathan Boshoff (37:42.79)
+Yep. And that's, that's what I think the majority of topical authority is. It's how many like contextual links you have pointing to your page about a certain topic. It's like your, background.
+
+Nenad S (37:50.155)
+Mm -hmm.
+
+Nenad S (37:59.628)
+Yeah, exactly. I mean, we share the same opinions. I mean, not just two of us, many people who are in this niche who are doing handling SEO, they might have like different opinions like the number or the percentages or weighing of number of links that should point out to specific pages, anchors, etc. Those are all technicalities that can be tested.
+
+But the main sentiment is there. It also goes from a technical and from the contextual perspective. Yes, internal linking actually does work and internal linking is thing that should be focused. I mean, at least in that part, I fully share your opinion. It's really a thing that many people actually ignore or they try to do it really unnatural. So I've seen so many times that people just place
+
+Nebojsa (38:32.296)
+Mm -hmm.
+
+Nenad S (38:52.938)
+a link to a service page, they don't even want to add an external link, an internal link or something like, because this is a single link in this text, it takes all the weight and it takes all the link juice, which is really, really bad opinion in this, but bad sentiment behind this. So yeah, I completely agree with you. Sorry if my question was a bit vague, but I share the same opinion. It's cool to know that there are other people who understand that part as well.
+
+Jonathan Boshoff (39:18.266)
+Yeah, it's like, ugh.
+
+Jonathan Boshoff (39:22.714)
+A lot of SEOs have that link building, like there's no point in building irrelevant links to my page. If you take that same logic from link building and just apply it to internal linking, it works the same way.
+
+Nenad S (39:30.454)
+Yeah.
+
+Nenad S (39:37.462)
+Yeah, exactly. Exactly. That's why we basically take into account the whole portfolio of both internal and external links and weigh them together. but yeah, that's the sentiment. They see link building purely as an offsite thing and completely ignore the internal part. Or they see the internal part like a completely separate segment that's not part of the whole hierarchy. Again, a difficult word for me to say.
+
+Nebojsa (40:07.018)
+So like as we all know that Google pushed the update the EAT update at the end of 2022 by adding this additional E that says experience and many SEOs didn't mind about that. They didn't care not until the end of 2023 when it became popular to optimize your blogs to you know become a famous author to I don't know publish backlinks and put yourself as an author so you get that
+
+authority so like could you and we just discussed about the EAT checker app that you developed so I know that like it shortens the time to I don't know a few minutes but can you like explain us the functionality behind the app
+
+Jonathan Boshoff (40:55.634)
+Sure. Yeah, so the EAT checker, or like I've built three of them, one of them was like Matt Diggity's video that I turned into a prompt, one was like my own take on it, and one of them was like a simplified version. Actually, I've built five of them.
+
+One of them checks against Google reviews. Google reviews is a totally different beast. So if you're making like best XYZ content, you have to listen to like Google's review guidelines. And then one of them is just checking against quality rater guidelines, which isn't like anything to do with rankings, but it's like how the quality evaluators check if your website is good or not. So the easiest one to use is just the one that's called like Eat Checker because
+
+Nebojsa (41:14.312)
+Hahaha
+
+Jonathan Boshoff (41:42.26)
+just put in a URL and you hit enter and all it's doing is in that prompt there I have like every single guideline I think there's about 20 or so of them and the prompt is saying like this is the guideline did it follow this guideline did it not follow the guideline provide your like feedback as to like how well it was met or how well it wasn't met and I switched it to I think I switched it to Claude and Claude was way more brutal about the content it started saying things like this
+
+Nebojsa (41:53.824)
+Mm -hmm.
+
+Jonathan Boshoff (42:12.18)
+really generic advice that you'd find on any like a best practice list. It's really well known. The author clearly didn't put much like thought into this. So I kind of loved that how like brutal Claude was versus like open AI is a little just like more vanilla. Like they could have maybe done a little bit better job Claude is just like these guys did a terrible job. So that's basically what it's doing and it's just doing it like 20 times for different things.
+
+Nenad S (42:31.349)
+yeah.
+
+Jonathan Boshoff (42:40.187)
+for first -hand experience, expertise, honestly, like, authoritativeness and trustworthiness is largely coming from backlinks.
+
+But there are a few things here and there you can do to prove to enhance Your ability to be seen as an authority like one of them would be linking to a portable authoritative sources so like if you are linking to if you make a statement like that's a fact or something like 80 % of people do blah blah blah that should be an external link to an authoritative source that proves it beyond a reasonable doubt instead of
+
+Nebojsa (43:01.055)
+Mm
+
+Nebojsa (43:19.212)
+Mm
+
+Jonathan Boshoff (43:21.402)
+making stuff up because if anybody wants to fact check you it should only take one click so that nobody has any doubt that you're just like making up statistics or something.
+
+Nebojsa (43:25.376)
+Mm -hmm.
+
+Nebojsa (43:33.11)
+Mm
+
+Nenad S (43:33.57)
+You started doing work at, I mean, you went into SEO since 2012, right? There was, Google actually tested DEAT in much simpler terms, much simpler way. I don't know if you, I mean, you obviously remember Google+. There was a specific tag that you can add. For instance, you have your Google Plus profile link.
+
+and then you add the tag rel equals author and you just add that to your Google Plus profile. And it used that, so it basically will create a panel like you have today, like a knowledge panel for a specific person. And in that way, it connected and created EAT. This is an expert who has experience, who's an author, trusted author, he's on all of these websites because we have a backlink.
+
+going to his Google Plus profile. It was a much simpler version of them testing out EAT. They advanced it so much more. mean, after the Hummingbird update, when they could actually go through contacts, because you can do a lot of things with links and you can fake trustworthiness, you can fake authority and expertise in that way. But how do you, if you remember those days,
+
+So I mean, Google Plus was shut down somewhere in 2012. So this thing was somewhere between 2008 and 2012. If you could compare, if you remember bloggers or people who were actually experts in the SEO field from that era, let's say Grant Fishkin, Matt Cutts, Gary Elias, Dan from the NSCO or those people, if you could compare that period.
+
+and authors that you met in SEO field and how did they appear across the web, across the search to what you are seeing today? What's your opinion? Was the old thing better in affirming EEAT or the new thing that you're seeing today?
+
+Jonathan Boshoff (45:52.72)
+Yeah, that's a good question. So the really interesting thing is that Google can now tell who the author is just by the way that they write. So it's impossible to fake. Google has secret author profiles on various authors. And I tested this before because I was working on like a loan site and I changed the author of one of the posts to Warren Buffett.
+
+Nenad S (46:04.458)
+Right,
+
+Jonathan Boshoff (46:19.76)
+to basically prove people wrong that I wouldn't do anything. And I didn't do anything because it's clearly not like Warren Buffett's writing style or speaking style. can't just like... Because like in theory, if I change the author to Warren Buffett, it should rank better because he's like a financial guru, right?
+
+Nebojsa (46:22.289)
+Yeah.
+
+Nebojsa (46:29.84)
+haha
+
+Nenad S (46:37.204)
+Yeah, exactly. And if you had that relouter, you can just add that part to any of the links, like linking to his Google Plus profile, then basically do online reputation management, negative or a positive one. So yeah.
+
+Nebojsa (46:42.622)
+Haha
+
+Jonathan Boshoff (46:45.522)
+Yeah.
+
+Jonathan Boshoff (46:51.728)
+Yeah. So it's much harder to fake. Like, back then you could fake it a little bit. Like, you could send the fake signals to create and, like, game the system a little bit. But today, you can't fake authorship because Google knows who an author is. Unless you're not, a well -published author, like, if you've only written a couple of posts. But a lot of the people who are, like, expert authors...
+
+They've written on multiple websites and they have the same writing style so Google kind of creates a profile about that person. So the modern day version is much sneakier and much more effective. And that's why Google was able to shut down things like Google Plus and author profiles. There was even author schema. They never ended up using it in their ranking algorithms. They were like, we don't need all that stuff. We just need like the sneaky hidden author profiles and we're good.
+
+Nenad S (47:41.366)
+Yeah.
+
+Nenad S (47:48.31)
+Yeah, exactly.
+
+Jonathan Boshoff (47:48.592)
+and that's what they've been rolling with ever since.
+
+Nenad S (47:52.906)
+Awesome. Yeah, there was one point where when I did structure data for a website and it was a web development, no, software development agency. And at that point in time, I did structure data using microdata. So you needed to fix HTML, mean, the nesting, the parts, et cetera. But they had a
+
+Nebojsa (47:54.469)
+Yeah, good answer.
+
+Nenad S (48:14.524)
+and they wanted, because I did schema for each and every one of them as a professional in a specific area of expertise in that company with that organization, et cetera, so full microdata behind it, but they had a cat and they wanted him on the profile. So there is a part in schema where you can assign it as an emotional support animal. And we did that and we gave him a name and that name was a weird name.
+
+Really weird name like not weird name in terms of like you never heard it before but it's kind of a weird or it's a niche name that they I think it's a or something like UGG, but it's not that of a name But when we tried and tested like with clean Google search just to look for his name we used VPNs bright locals or just trying anything. I mean that can give us a clearer search back then whenever you typed in
+
+he always appeared like an emotional support animal with a short feature snippet behind it. So it was a lot of fun. mean, yeah, you could do a lot of faking that way if you knew what exactly you are doing. But today it's difficult and Google doesn't rely on those specific. I mean, the whole point of structured data is to add context to that content. But with NLP's, with ML, it can end with a lot of data today.
+
+Nebojsa (49:15.614)
+Hahaha
+
+Nenad S (49:38.658)
+It can get to that part even without using those technical parts, those specific technical inputs to understand the content. So I get where you're going with this. It's still, it was, it might have been cleaner in terms of who had better expertise for some specific topics, but that was mostly because internet was not as populated with content or
+
+that use as it is today. By the way, what are your thoughts on dead internet theory?
+
+Jonathan Boshoff (50:15.532)
+Yeah, it's
+
+Nenad S (50:16.076)
+that everything is basically...
+
+Jonathan Boshoff (50:18.962)
+It's getting scarier, you know, cause you can like post stuff and you get like 30 AI generated comments of people just like saying the most random stuff. And I can see it starting to happen. It's definitely likely. like mass generating AI content isn't helping either. Like soon we're going to have like dead search results and the only people reading.
+
+Nebojsa (50:20.111)
+Shooting it out of nowhere.
+
+Nenad S (50:39.752)
+Either.
+
+Jonathan Boshoff (50:44.582)
+the dead search results will be like people's AI summarizers, you know, like, so it's very possible that we're approaching the dead internet.
+
+Nebojsa (50:50.194)
+Nenad S (50:55.266)
+Do you think that Google's design approach with 10 blue links is something that needs to die and turn more over to GPT search results like, hey, something like Bing implemented recently. Yeah, these are the search, this is your prompt, these are the search, this is like a short summary and here are a few results. Do you think
+
+this is something that we should go towards to, or should we stick to 10 blue links with the same UI where people can make and assume their own opinions, like what result is the best, rather than going with a single one, like Bing and GPD, or I mean other
+
+Jonathan Boshoff (51:43.59)
+Yeah, like there's definitely cases where AI is more useful. Like if you just want to know some answers to some basic questions, AI can answer most of them for you. But if you want experience or expertise, that's when organic search results become valuable. And that's why I'm always talking about those things, because I'm thinking towards the future, like everybody's making AI -generated content. You're the only person who's put
+
+real human expertise or experience into your content, you're gonna stand out. I do like the organic 10 blue links just because I'm a bit like nostalgic and old school. But the problem with AI is we shouldn't trust it to give recommendations like if I'm looking for the best restaurants or the best software or something, and AI is just like, this is the best software, use these. Like, how should I know that I'm supposed to trust?
+
+Nenad S (52:14.39)
+will
+
+Nebojsa (52:25.161)
+Mm -hmm.
+
+Jonathan Boshoff (52:42.546)
+that AI, that those are the best softwares. Whereas if I can hop onto Google and I'm seeing a thing like, we tested 27 different softwares, here's what we thought of each one, and there's like a detailed breakdown, that's like a real human doing the work. I'm gonna trust that way more than what chat GBT tells me to do.
+
+Nenad S (53:03.148)
+Definitely. mean, when it comes to, for instance, also those GPT's are limited when you try, let's say you have lyrics, you want to find the lyrics of a specific song, you input the song and the author, but they won't give you the lyrics because they are copyright protected. What happens with software that has trademarked copyrighted brands behind it? They won't be even included in those lists or mentioned in those lists. But GPT won't tell you that, but it will go with
+
+Nebojsa (53:04.895)
+Mm -hmm. Mm -hmm.
+
+Nenad S (53:32.418)
+less resistive path, like find the ones that are not copyrighted and just include those in its output. I apologize. Sorry. So yeah, always the human approach is always better
+
+Nebojsa (53:39.231)
+Mm -hmm.
+
+Jonathan Boshoff (53:43.868)
+Yeah. Yeah, and all the AIs
+
+Nebojsa (53:44.351)
+Yeah, makes sense.
+
+Jonathan Boshoff (53:51.484)
+All the AIs that look
+
+Nenad S (53:51.82)
+Human content will always be there and react and value it better.
+
+Nebojsa (53:52.285)
+Mm -hmm.
+
+Jonathan Boshoff (53:55.984)
+Yeah, the AIs that look for expertise, they're just searching the web anyway. Like chat GPU just searches Bing and it goes, here's the top ranking results. These must be the right ones. And other AIs might use Google, but when it comes down to, need real human opinions on this, even AIs will turn to the search results for now anyway.
+
+Nebojsa (54:19.774)
+Yeah, yeah, I have another question. For businesses looking to integrate AI into their SEO strategy, what are the first steps they should take? For an example, how can small businesses and startups leverage AI to compete with larger corporations in the SEO space?
+
+Jonathan Boshoff (54:41.424)
+Yeah, so the best place to start is with ChatGPT and by recording prompts so that you can get consistent outputs. That's kind of where it all begins. And you can use the prompts that people have given you, which is great because there's a lot of people sharing their prompts and their processes. Like I'm only one of the few, one of the very large amount of SEO people who are posting their prompts and their processes and their systems.
+
+Nebojsa (54:51.116)
+Mm -hmm.
+
+Nebojsa (55:01.217)
+Mm -hmm.
+
+Nebojsa (55:07.624)
+Mm -hmm
+
+Jonathan Boshoff (55:10.31)
+You just want to be hunting for those, probably on LinkedIn, you know, like making a spreadsheet or something like this prompt does this, and then you can test it out and see if you like it. If you're a small business owner or something, that's the best place to start because it's not very complex and you'll learn along the way. You might eventually get to the point where you need something more complex, like you need a tool or a system or a process that's going to do like automated steps, but that
+
+Nebojsa (55:15.275)
+Mm -hmm.
+
+Nebojsa (55:22.304)
+Mm -hmm.
+
+Jonathan Boshoff (55:39.602)
+much more complex. It's way easier to just keep it simple at first and start with chat GPT, basic prompts, recording the ones you like, creating like your own little spreadsheet full of prompts that you know, like and trust. Maybe you can score them. That's how I basically got started. And then you just, you grow from there.
+
+Nebojsa (56:01.166)
+Mm
+
+Yeah, like can you share a few success stories where your AI -driven SEO strategies have significantly impacted a client's business, for example?
+
+Nenad S (56:04.214)
+Yeah, definitely. I agree.
+
+Jonathan Boshoff (56:15.986)
+Yeah, so I was just checking on one this morning. So there's this e -commerce client that I've worked with for a couple months. They run a fairly big e -commerce store. So like their organic traffic will do something like a quarter million a month in revenue. So I just checked on this and since we started writing their category pages, so we went and they had about 3000 category pages, we wrote
+
+AI text, like SEO optimized text for all of those 3000 category pages. They're seeing about a 13 % increase in revenue every month since implementing those AI category page texts. And year over year, their revenue from organic search has increased by 39%, which is, it's not like the most
+
+Nebojsa (56:51.509)
+No.
+
+Jonathan Boshoff (57:14.539)
+groundbreaking numbers, but for a large e -commerce store that's huge. Like that's thousands of dollars in revenue that they weren't making last year.
+
+Nebojsa (57:18.952)
+Exactly
+
+Nebojsa (57:23.955)
+Yeah, man, those numbers are like amazing comparing to the revenue that they're generating. These percentages are high. I mean, great man. These are the great results that you achieved. So like, could you tell us what are some common SEO mistakes businesses make and how can AI solutions help address these issues?
+
+Jonathan Boshoff (57:45.766)
+The big one is a knowledge gap. So a lot of people will just Google, like, what's the best practice? And then they start trying to do it and they don't really know what they're doing. The solution is working with AI tools or AI prompts created by someone who did know what they're doing. So that way you can kind of bypass the knowledge gap.
+
+Nebojsa (58:09.603)
+Mm -hmm.
+
+Mm -hmm cool man cool and like how what do you think? How will AI? Advancements impact the future of SEO and how should we all prepare?
+
+Jonathan Boshoff (58:25.734)
+Yeah, it's spooky because AI moves so quickly.
+
+Nenad S (58:26.05)
+from a professional standpoint.
+
+Nebojsa (58:28.439)
+Yeah, for all my professional, yes.
+
+Jonathan Boshoff (58:32.42)
+AI moves so fast, ever since I started paying attention to it and messing around with it, it's already evolved completely like two or three times. So like you have to stay up to date with it. There's a lot of people who are like anti AI. They're like, no, no, I won't learn. I'm not doing this. those people, they need to pay attention and learn what's happening in AI. And even if you think
+
+the content that it generates is terrible or the recommendations it outputs is terrible just try it anyway and be like yeah it's still terrible in my opinion because one day it won't be and then you'll be like crap I should have been staying up to date with all these advancements like you don't want to get left behind you want to kind of stay relevant even if you're against it stay relevant keep up with the times and make sure that you know
+
+Nebojsa (59:26.265)
+Mm -hmm.
+
+Jonathan Boshoff (59:27.846)
+what the latest model is, what the latest tools and techniques are, try them out for yourself and kind of like keep an open mind because it will get to the point where it's better than what we can do by ourselves. It's already kind of crossing that threshold, but it'll get to the point where AI is so much better and smarter than any SEO on the planet that if you don't know what you're doing with AI by then, you're in the dust already basically.
+
+Nebojsa (59:50.531)
+Heh.
+
+Nenad S (59:57.078)
+Yeah, you're definitely in the dust.
+
+Nebojsa (59:58.734)
+Well man, this is so nicely explained and the advice you've given is like very good man. So like, Yes, like... Everything, yes. So like...
+
+Jonathan Boshoff (01:00:06.29)
+Thanks.
+
+Nenad S (01:00:07.114)
+And you basically answer the follow -up question like what would you advise the professionals doing that? Definitely. I have a follow -up question regarding that. AI, I'm not saying it's a fad,
+
+When it comes to emerging technologies, you have a lot of early adopters and to be honest with Trajit Pitti launched, it was really, really like huge jumps. It was really shocking, tectonic thing that made here. Everybody used it for everything. However, if you already see a way of getting to that data or getting to that goal that you want to achieve that where you don't need
+
+engage AI where you don't need neural networks, machine learning, NLP's, but you can do it with a simple formula like x plus y equals z. Should you even try using AI or should you stick to the traditional tested ways? Should you engage with AI only for the things that you don't already know the best way how to handle? Or should you go either way
+
+Push everything into AI, whatever comes across your mind. Specifically in our field. mean, it doesn't necessarily need to be like overall, but yeah.
+
+Jonathan Boshoff (01:01:24.624)
+I think is.
+
+Jonathan Boshoff (01:01:30.012)
+For SEO, it's good to try everything because there's always going to be a level, depending on where you're at in SEO, where you'll be like, okay, I can do this better than AI, but AI can do this better than me. So it's really gonna depend on your skills and experience, but it's good to try because you're gonna learn. And if you know that you can do something better than AI currently, that's an advantage for you.
+
+Nenad S (01:01:34.007)
+Mm -hmm.
+
+Jonathan Boshoff (01:01:56.228)
+If you know AI can do something better than you currently, but you know how to use the AI to do it, there's another advantage for you. like you only gain those kind of like, yeah, you only gain the advantages by trying it out and seeing how it works out.
+
+Nenad S (01:02:05.004)
+That is for
+
+Nenad S (01:02:11.958)
+that's a really, really positive outlook on it because this could be like a war in questions where you ask someone who is going to be like, yeah, you should do everything like this or no, you should just skip to traditional ways to try the tested methods, et cetera. So you really gave a diplomatic answer on this, to be honest.
+
+Nebojsa (01:02:24.856)
+Yeah
+
+Jonathan Boshoff (01:02:33.366)
+Yeah, like for example, say meta description, right? Like, yeah, meta description. Nobody wants to write meta descriptions anymore. Even if you're the, even if you're the best SEO on the planet and you, you're anti AI and I'm like, Hey, I got a little AI tool for you. never have to write a meta description again. Yeah.
+
+Nebojsa (01:02:34.2)
+So like we can see how John is open -minded like... Yeah.
+
+Nenad S (01:02:41.342)
+Nobody wants to write the description!
+
+Nenad S (01:02:53.644)
+Yeah, yeah, nobody likes to write meta descriptions, right? Yeah, you explained it perfectly.
+
+Nebojsa (01:02:59.278)
+So like, what are some emerging trends in SEO that you're excited about and why?
+
+Jonathan Boshoff (01:03:10.95)
+Yeah, the emerging trend that I'm excited about is basically for more people to get knee deep in AI and start making their own tools and solutions. I'm always looking out for those people on LinkedIn. I'm like, where are they? Who's making tools? Because there's more and more people popping up every day and everybody's got their own ideas and solutions.
+
+And I always encourage people to try and build their own tools and create their own stuff. Cause I want to see what unique things come out of other people's brains that they can turn into automated solutions. So in SEO, that's the big revelation that I think is coming is everybody being like, AI and creating tools and automations is not that hard. There is a learning curve, but it's not a huge leap.
+
+Nebojsa (01:03:48.962)
+Mm -hmm.
+
+Jonathan Boshoff (01:04:04.144)
+and the leap distance is getting smaller with AI's advancements. So I'm excited to see what other people can come up
+
+Nebojsa (01:04:14.895)
+Cool man, Like, I mean, these were almost all the questions that I had, but I wanna ask another one. Can you recommend any resources for the listeners who want to learn more about AI and SEO and perhaps get started with some of your tools and courses?
+
+Nenad S (01:04:34.71)
+Yeah, this is definitely the part where you should do the plug of your AI school.
+
+Jonathan Boshoff (01:04:40.338)
+Yeah, so two best places to learn number one is LinkedIn Just be on there all the time on the hunt because that's what I do I'm always looking for like who's got some prompts who's got some tools. I want to try them and I will selfishly plug my AI SEO Academy So I've built over 30 tools Most of them have videos and like step -by -step guides. It's free to join
+
+Not all of the tools are free, like some of them are on, most of them are on Moonlit, which you would need a subscription for if you're going to use it every day. But you can still learn and try it out. And I'm also posting like Python scripts and I'm now making GPTs as well. So some of the like less complex tasks, I'm turning those into GPTs just so more people can use them. So there's a lot you can learn in
+
+Nebojsa (01:05:15.385)
+Mm -hmm.
+
+Jonathan Boshoff (01:05:33.232)
+And it's a cool community because there's like developers, there's SEOs, SEO directors, agency owners, all kinds of cool people you can connect with in there. As long as you don't go spam them.
+
+Nebojsa (01:05:41.465)
+Mm -hmm. Cool, man.
+
+Nenad S (01:05:43.596)
+Yeah, definitely. browse through the topics, I browse through the scripts and you really have a healthy community there. I I handle communities, been in community management, but this is really, really, really clean. I've seen some blatant plugs viewed here, but that always happens somewhere, but your community is really, really very clean and you are really responsive in terms of whenever someone asks a question.
+
+aside your work you're still managing to do that. It's really natural, really organic and I'm definitely gonna become a part of it. Probably right after this call. I mean I haven't...
+
+Jonathan Boshoff (01:06:19.132)
+Thank you. That's all.
+
+Nebojsa (01:06:19.35)
+Yeah, and we already, yeah, we've already shown our people, our team members some of your tools. So they've been looking that up so you can count on more members coming from our company joining the community because we really love what you're doing, man. Keep up with all the work that you're doing.
+
+Nenad S (01:06:27.648)
+Yeah, there are cool things
+
+Nenad S (01:06:33.12)
+Yeah, definitely.
+
+Jonathan Boshoff (01:06:35.868)
+Sweet.
+
+Thanks, man. Thank you.
+
+Nenad S (01:06:40.578)
+Yeah, it really takes a lot of... I kind of lost that edge. I kind of lost that thing where I want to keep up with the community. I want to build it and do that. I burned out over several communities. You still haven't. pushing for 12 years at least, mean, before now. So yeah, hats off for that. And it's a really cool community to be a part of. Definitely.
+
+Jonathan Boshoff (01:07:09.042)
+Thanks.
+
+Nenad S (01:07:09.386)
+It was really a pleasure to emit like this, but again, there will be times we'll grab a beer, discuss GPTs more, and to show you why Python is not that bad or buggy, but R is better.
+
+Nebojsa (01:07:16.463)
+Yeah.
+
+Jonathan Boshoff (01:07:16.486)
+Yeah, well done.
+
+Nebojsa (01:07:24.208)
+Cool man, yeah
+
+So yeah, i'm gonna just do the outro so yeah that I first of all I want to thank you for joining us on the ranking heroes podcast I want to give a big shout to Jonathan basho for sharing his wealth of knowledge and inspiring journey of combining and mixtureing ai with the seo So like if you've enjoyed if you enjoyed today's episode i'm gonna See more insights from industry leaders. Don't forget to subscribe to our channels and
+
+us on social media. Stay tuned for more episodes where we bring you the latest strategies and stories to help you excel in your field. Until next time keep innovating and remember success is a journey not a destination. So goodbye for now. Thanks John.
+
+Nenad S (01:08:17.868)
+Bye. Thanks, John. It was really a
+

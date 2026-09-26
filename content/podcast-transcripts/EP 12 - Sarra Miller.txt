@@ -1,0 +1,839 @@
+Nebojsa (00:03.882)
+and we are live. Welcome back to the ranking heroes, the podcast where we dive deep into the strategies that help businesses climb to the top. I'm your host and today I'm thrilled to be joined by Sarah Miller, a digital marketing strategist and consultant who knows what it takes to drive real results. Sarah brings a wealth of experience in marketing, SEO, paid media and content strategy, having previously led digital marketing efforts.
+
+at many different companies she worked with in the past and now she's partnering with other businesses to strengthen their online presence, generate measurable demand. As a SEMrush ambassador, she's passionate about helping fellow marketers learn and grow in an industry that's currently being transformed by the AI. Today,
+
+We are exploring how AI is reshaping marketing strategies, what trends are actually worth paying attention to, and how businesses can adapt without getting lost in the hype. Sarah, welcome to the Ranking Heroes podcast. To begin this with a short introduction, I would ask you to just do a quick intro about yourself and tell the audience who you are and what you do.
+
+Sara Miller (01:25.814)
+Great, well thank you so much for having me. I'm excited to be here and chat about all things AI and SEO. A little bit about me, I've been working in digital marketing for 15 plus years. I've worked with a variety of companies in that time, but the majority of them have been in the B2B SaaS space. So I have worked with startups all the way up to companies bringing in billions of dollars a year. I think I love the challenge
+
+of both. Sometimes you're doing really simple SEO work and others you're taking on really technical challenges and I love the mix of having both types of clients kind of in the mix.
+
+Most recently I started my own business. I started consulting full-time in January of 2025 and since then I have been bringing on my own clients rather than working for other agencies or in-house. So it's been an adventure over the last eight months or so but I've really been loving the experience of working for myself.
+
+Nebojsa (02:31.413)
+Thank you, Sarah. I'm really excited to cover more about everything you just discussed and what happened in the previous months. So first, I want to ask you, you've built a remarkable career in digital marketing. What first sparked your passion for this field?
+
+Sara Miller (02:49.332)
+Yeah, I kind of fell into SEO. Back in the day, I started my own blog. It was a personal blog while I was living in Washington, DC. I had just moved away from my hometown and started just blogging about my life. And, you know, there was a little bit of fashion mixed in and just, you know, all the things I was doing on the weekends and exploring. So I really wanted to figure out how to get people to find my personal blog. So I ended up watching a lot of
+
+Nebojsa (03:11.341)
+You
+
+Sara Miller (03:19.256)
+YouTube videos, a lot of it was self-taught, but I really just wanted to figure out how to get people to read my content. And then I was able to take that experience and transition it into a professional career and start doing that for clients. So after I had started that blog, I started working for a startup. And at that time I took on a marketing role there. I worked on our content, promoting it through social and really just kind of took off from there. So it really was just a personal thing.
+
+Nebojsa (03:39.19)
+Mm-hmm.
+
+Sara Miller (03:49.176)
+I wanted people to find my own content. So it's kind of funny how it's now become my whole life.
+
+Nebojsa (03:53.133)
+Yeah.
+
+Yeah, like something that you started building without having a clue that that's something that you want to build. I mean, it's your career that you want to build. And now here you are with all the previous experiences and having your own business. Now, I also think that because you had your own website, you could test different things with the content, with SEO titles, things like that. I think it's like when you want to learn some
+
+Sara Miller (04:00.726)
+Thanks.
+
+Nebojsa (04:26.123)
+math and then if you don't really sit down and start writing math do the calculations on your own with your hand you can't just learn with watching the videos and you know like reading the scripts you really need to sit down and start working on it now you did that so yeah
+
+Sara Miller (04:43.102)
+It's so true. Yeah.
+
+Nebojsa (04:46.145)
+Thanks, thanks. We share the same view here. And looking back, Sarah, what was the most formative experience that shaped your approach to strategy and execution?
+
+Sara Miller (04:58.582)
+That's a great question. I think for me, I've just been really lucky to work with some really strong leaders in the space. And so for me, when I went to work in agencies, that was really when I wanted to learn from people who had strong experience. Because I was self-taught, I wanted to learn from people who had been in the industry. So I think some of those experiences would just be working with really strong team members who helped kind
+
+mentor me into what I know today. I had a really strong mentor in the technical SEO space when I first started working in SEO. We worked with a very large international client and we would have weekly technical SEO calls and I think that really helped me understand the technical perspective rather than just content and backlinks.
+
+And then after that, I went to a larger agency and I had a really strong leader in our SEO team at the time. I actually still work with him today on a couple of accounts, but he really helped me understand the value of what SEO could bring to the table. And I think working with clients and with mentors in the space, it really helped me see the value of what SEO can do for a business.
+
+Nebojsa (06:17.962)
+Yeah.
+
+one of my mentors, said, being surrounded by the people who are better than you, that's the best environment for you. So yeah, that's something that really shaped your career, like being surrounded by all the experts and not thinking about they are not smarter, they are not better, because if you think like that, you want improve, then you will just wanna adopt everything that they are doing good, I want to do better, I want to learn more from them.
+
+Sara Miller (06:49.618)
+Exactly, and I think that's even something I look for today because I am working by myself and working with clients. I really want to be challenged by people who have a lot of experience and will push me to learn more. And so I do have clients that have so much experience and so much knowledge and I love partnering with them because they can challenge an idea and help me bring better
+
+Nebojsa (06:49.728)
+Yeah.
+
+Nebojsa (06:57.014)
+Mm-hmm.
+
+Sara Miller (07:15.806)
+to the table and it's something that even though I'm a solopreneur, I get to work with really strong SEO minds every day.
+
+Nebojsa (07:26.006)
+Yeah, I think without the mindset that you have, it would be very hard to achieve what you achieved. I mean, the entire path would be harder, you know, but when you're open-minded like that, it really makes all those walls disappear in front of you and you can just...
+
+Sara Miller (07:43.296)
+Mm-hmm.
+
+Nebojsa (07:44.695)
+Go. So Sarah, you've led marketing for high profile SaaS and B2B brands. How do you approach creating integrated strategies that drive both brand awareness and demand?
+
+Sara Miller (08:00.98)
+Yeah, so I think that there's a couple of pieces to this. I think for me, I came from a background before working just in SEO. I was working in a paid and an SEO space. And I started there, went to just SEO, and now I'm kind of back in that space. So I like to look at campaigns from a holistic perspective, not just from an SEO perspective. While there's different opportunities to...
+
+build different types of content. So you have your top of funnel content, you have your converting content. I think that there's a piece of that that can also really be heavily influenced by paid. I actually, I've been working with a client recently and they turned off their paid media spend and it dramatically impacted their organic efforts. So we're trying to come up with a balance for that. So while I think we can look at them siloed.
+
+Nebojsa (08:51.382)
+Yeah.
+
+Sara Miller (08:56.746)
+I think it's so important to think about things from a holistic marketing perspective. But I think that when you're approaching a campaign or an initiative, really looking at what is your timeline and what are your goals for the campaign, I'm putting together a strategy with a client right now where we're building out something.
+
+Nebojsa (09:12.521)
+Mm.
+
+Sara Miller (09:17.718)
+through the end of the year. We're looking at what is our top of funnel content? Are we gonna have a lot of video content to drive just impressions and driving people to the site? And then what are we gonna do with that? Are we gonna try and hook them in with a little bit more middle funnel content? Are we gonna have checklists or things for them? And then really what are we gonna do to secure that conversion? Because at the end of the day, if we're not driving pipeline for the business, it's not really gonna be doing much. We wanna look at so much more than
+
+Nebojsa (09:22.188)
+Mm-hmm.
+
+Nebojsa (09:44.096)
+Yeah.
+
+Sara Miller (09:47.624)
+metrics and I think being able to do so with really strong content that will convert and then layering in that paid media perspective really can drive success for clients.
+
+Nebojsa (10:01.004)
+Yeah, I can definitely correlate about the impact of paid ads to organic search. I also worked with a client and they've been investing in a single page for different keywords and their varieties. And then it just started ranking organically very well. And I was like, okay, you haven't touched your SEO, but you are driving organic traffic because you're doing paid ads. So I totally get it. And I like this.
+
+Sara Miller (10:29.727)
+You
+
+Nebojsa (10:31.038)
+the entire holistic approach. It's like a full stack market, it's not just looking at the numbers, it looks at the consequences that will occur from different actions and I really like that. And Sarah, what would you say that B2B SaaS needs the most when it comes to SEO and online marketing?
+
+Sara Miller (10:35.901)
+Mm-hmm.
+
+Sara Miller (10:55.04)
+think that B2B SaaS is just remembering that you're talking to people on the other side of when you're marketing to them. I know it's not necessarily a B2C opportunity, but you're still talking to people every day. So understanding that while it is another business that you're trying to convert, you're still trying to reach the people who are those decision makers. And they still like to be entertained. They still like creative campaigns.
+
+Nebojsa (11:23.094)
+Yeah.
+
+Sara Miller (11:25.004)
+think that so often we stick to just really simple, boring messaging. I think one of the things I've seen a lot in B2B is just really trying to push what your features are so often when really people want to understand what your solution can bring to them. What are you going to help them do better? And I think focusing so much more on
+
+Nebojsa (11:48.172)
+Mmm.
+
+Sara Miller (11:51.955)
+user is going to receive as a benefit rather than just pushing features out. Everyone has features, but how is your solution going to make their lives better?
+
+Nebojsa (12:02.911)
+That's very interesting. Yeah, and I know there are many super niche SaaS for specific use cases like I don't know invoice generator SaaS or you know like super niche SaaS. So what are some unique challenges you faced when engaging technical buyers or complex audiences?
+
+Sara Miller (12:27.206)
+I would say that is something I faced a lot over the last few years. Especially trying to understand some of the products that I've been working with. think sometimes they're so technical and trying to speak to that audience and still sounding like I understand what's happening. But I think that it's been a challenge also because
+
+Nebojsa (12:30.773)
+You
+
+Nebojsa (12:36.765)
+Aha, yeah, that's Yeah, yeah.
+
+Sara Miller (12:51.08)
+especially some of these technical products, there are so many different people who are involved in that buying process. So, you know, we might be marketing to one audience or really, you know.
+
+Our message resonates really well with someone who would be using the product, but they're not the buyer of the solution. So I think it can be really difficult sometimes to try and reach multiple members of a team that need to make that decision, but really trying to build those internal champions who can help sway that buying office to make a decision and convert.
+
+Nebojsa (13:10.251)
+Mm.
+
+Nebojsa (13:20.426)
+Mm-hmm.
+
+Nebojsa (13:28.907)
+Would you say that these types of SAS, would need to do a lot of audience A-B testing to figure out who their ideal audience is?
+
+Sara Miller (13:40.946)
+I think that can be really helpful and I mean also just trying to understand like who's converting on
+
+on the content, even if it isn't like bottom of funnel conversion, who's interested in the content that you're putting out? Are you typically seeing it as more of a junior role, but you need senior level team members to buy the software? Really trying to look at like job titles if you have the ability to capture that information in forms or even like working with sales to understand who they're talking to and then who the ones are that are finally able to convert and bring in
+
+revenue.
+
+Nebojsa (14:21.931)
+Okay, that makes sense. And since you're deep into content, could you share an example when creative content delivered measurable results?
+
+Sara Miller (14:33.462)
+Yeah, I think that content is, there's so many different types of content and what it can bring to the table. I think for me, one of my favorite stories of content that really drove results was just not just blog content, but building out a lot of, almost like a hub and spoke type model, like,
+
+content around a topic. So really refreshing and reorganizing what that core page looks like, making sure you have enough internal linking opportunities, you have conversion opportunities, but you have enough of the right content, but also the layout of that page. Do you have trust signals with, you know, logos of companies that are using this product, or do you have a video that people are
+
+captured by at the top of the page and then building out a lot of supporting content around that. So whether it's blog content or checklists or ebooks, making sure that you have a lot of content kind of funneling traffic back to that main core page. But I think my favorite example would be just really refining what that core page looks like and really optimizing that page just for better conversion and
+
+user experience more than anything. think that user experience is such a big piece of SEO now. I think we used to always think about things strictly as keywords and content, but making sure that the user can find what they're looking for and they're interested in staying on that page is such a big piece of how people are experiencing websites differently than they were two and three years ago.
+
+Nebojsa (16:10.378)
+Yeah.
+
+Nebojsa (16:24.373)
+Yeah, I mean, that was an extended answer. So thank you for all the details for real. Yeah. So I would like to now dig deeper into the AI in modern marketing because I do have a...
+
+few questions about this. So I know that you're a SEMrush ambassador and you have years of experience in SEO even when we didn't have AI present. How do you see SEO evolving as AI and GEO slash AEO change the way user discover content?
+
+Sara Miller (16:50.503)
+You
+
+Sara Miller (17:01.364)
+Yeah, this is the question of the year, right? Like how is everything changing with AI? But I think one thing that I really have noticed, and again, it's always changing, but I think it really goes back to fundamental SEO. A lot of the content that is performing in LLMs and...
+
+know, chat GPT is presenting as a correct answer is really driven by the content that is appearing at the top of search results. And it may not be in position one, but I think a lot of fundamental SEO is really coming back around. But I think it's important for
+
+Nebojsa (17:40.031)
+Yeah.
+
+Sara Miller (17:42.96)
+to still have like great header structure. You have a strong single H1 on a page. You have H2s and H3s to support that. You are answering questions in a natural language format. And then it might bullet things out even though a website has answered the question in a paragraph and really trying to find that balance. But I think there's also opportunity for...
+
+bringing in a lot of expertise into content, whether you're quoting a third party source or listing your client as that expert, but really becoming an authoritative quote unquote expert on a topic. And I'd also say, like, I've seen a lot of success with schema with clients lately. So adding schema in, whether it's product schema, it's FAQ schema, I know it's not necessarily a ranking factor, but I've seen it help with
+
+Nebojsa (18:29.375)
+Yeah.
+
+Nebojsa (18:34.235)
+Yeah.
+
+Sara Miller (18:39.0)
+People also ask questions and getting ranked in there, but also a lot of that schema is being pulled into those LLMs and helping with that optimization.
+
+Nebojsa (18:41.417)
+Yeah.
+
+Nebojsa (18:49.736)
+Yes, exactly. I I agree with you and I've been also learning a lot about how the AI is creeping the websites and which ones it's going to show in the AI overviews. And I wanted to ask you, like, what's the distinction between optimizing for search engines like Google and AI driven answer engines like LLMs?
+
+Sara Miller (19:17.426)
+Yeah, I think for me at the end of the day, you want to write the content for the users. So I know that we still we want to rank, but who's looking for this content and where are they looking for it? So a lot of my clients and I, we've set up a lot of tracking so we can see how much traffic is coming in from these.
+
+like chat GPT, perplexity, Gemini. So we're getting, they're being served this content to users and then they're coming to the site. But how often are they just seeing that information in an LLM and then not clicking through? I think there's a lot of impressions that are happening that we're not able to capture or track right now.
+
+Nebojsa (20:03.498)
+Yeah.
+
+Sara Miller (20:03.51)
+But I think overall there's still a lot of search happening on Google and I think that the intent behind those searches is also very different. You are probably seeing a lot more top of funnel and long tail searches in AIO type things or in LLMs.
+
+Nebojsa (20:13.226)
+Mm-hmm.
+
+Nebojsa (20:17.874)
+Yeah.
+
+Nebojsa (20:22.932)
+Yeah.
+
+Sara Miller (20:24.586)
+so I think there's again, opportunity for really optimizing for long tail keywords, especially as the way people search changes. If you think back like 10 years ago, we would put such shortened condensed words together in a search bar. It would be like green shoes running, and then you'd see what would happen. But now you go in, you're like, I really want to find the best running shoes. live in Colorado and I want to go uphill.
+
+Nebojsa (20:33.258)
+Mm-hmm.
+
+Nebojsa (20:37.702)
+Yes!
+
+Nebojsa (20:50.26)
+Yeah
+
+Sara Miller (20:54.23)
+Also, I want green, blue, and red. I mean, you have so many different things that you're putting into that search now, and it'll serve you those specific results. And so really trying to understand that how people are searching has changed so much since I first got into SEO.
+
+Nebojsa (21:11.368)
+Yes, and I was thinking like...
+
+what will happen with the generations that are born now, like in 2025. Their way of searching will be completely different than ours. Like they will grow up next to the AI. We haven't got like a single phone when we were five years old, you know? We waited for Android and then iPhone and then, know, like TV in color, wow. Like, but now...
+
+Sara Miller (21:33.71)
+Yeah.
+
+Nebojsa (21:42.612)
+people, mean these youngsters, are growing up next to the high technology and they have the access to the technology. yeah, have you ever seen like now with a EO and for example, did you notice that some of your clients, the impressions they remained the same, but the clicks went down like tremendous, like I don't know.
+
+Sara Miller (21:49.289)
+Mm-hmm.
+
+Sara Miller (22:10.794)
+Yeah. Yeah, I think that especially if you're, you know, showing up in those AI overviews, your click through rates are so, so far down.
+
+Nebojsa (22:11.177)
+90 % yeah yeah I saw that too
+
+Nebojsa (22:24.201)
+Yeah, yeah, yeah, yeah. my God. like when you're working on a landing page, let's say you're creating a new landing page and you want to have the perfect content for that page. Do you use any tools? And if you use like what frameworks or tools do you recommend for structuring content that performs well in both SEO and AEEO?
+
+Sara Miller (22:35.542)
+Mm-hmm.
+
+Sara Miller (22:54.006)
+For landing pages specifically, I've built custom landing pages in HubSpot. It really just depends on what platforms clients are using. But I think that...
+
+Nebojsa (23:00.329)
+Mm-hmm.
+
+Nebojsa (23:03.859)
+Yeah, yeah.
+
+Sara Miller (23:08.18)
+More than anything, it's not really the platform, but it's the layout of that content and where you're putting in those opportunities for conversion. So if you're driving traffic to a page, where, you want them to convert, do you have the form above the fold or do you want them to click on a button to take them to another landing page? Like really trying to remove barriers for conversion and making it a seamless process for anyone who stumbles upon that content.
+
+Nebojsa (23:13.129)
+Mm-hmm, mm-hmm.
+
+Sara Miller (23:38.124)
+so they're easily persuaded to submit their information.
+
+Nebojsa (23:43.113)
+And when it comes to a simple blog post...
+
+Sara Miller (23:49.3)
+Yeah, I mean, I think again, you're limited by the platforms that your clients are running on. But I think again, strong structure is important and going back to basics of making sure your images have alt text in them and
+
+you have strong anchor text within your content. Just so many things that seem like they're very simple, but I really think that they make such an impact as you have a collective site full of really strong pieces of content.
+
+Nebojsa (24:10.718)
+Mm-hmm.
+
+Nebojsa (24:21.097)
+Can you give real-world examples of using AI in keyword research, content creation or performance analysis?
+
+Sara Miller (24:30.71)
+you
+
+Yeah, I would say I do this almost every day. So I have a lot of examples of this. I still use a lot of tools for keyword research. I'll use Ahrefs and SEMrush because I do think it's nice to have options when you're looking at what these third party tools are pulling in. But like for content, for example, I like to put together really strong content briefs. So we'll have our
+
+Nebojsa (24:38.439)
+huh.
+
+Nebojsa (24:54.195)
+Mm-hmm.
+
+Sara Miller (25:01.728)
+focus keywords, semantically related keywords. We'll take a look at questions around this topic. But really putting that in a really strong like two page, three page brief and putting that into something like ChatGPT for content creation, that can give you a pretty strong draft. think especially if you have a prompt you're using consistently asking for a specific tone or.
+
+Nebojsa (25:23.497)
+you
+
+Sara Miller (25:25.596)
+or you don't use specific language or you don't talk about specific type of product within there, you can get pretty strong draft content that you can go back and edit.
+
+also say like for data analysis, there will be a lot of times that I'll take screenshots of things I'm seeing in Google Analytics or if I'm seeing a chart and really want to understand like what can we do to improve this. I know that there's, it's always nice to kind of have a second set of eyes on things while experience is great and you can draw from that. If you can pull from the experience of a collective using something like ChatGPT, it can really highlight things that you maybe haven't thought of.
+
+Nebojsa (25:52.841)
+Yeah.
+
+Nebojsa (25:59.818)
+Mm-hmm.
+
+Nebojsa (26:05.501)
+Mm-hmm.
+
+Sara Miller (26:05.686)
+just really trying to get a fresh set of eyes on that data so you can bring the best recommendations to your client with that analysis.
+
+Nebojsa (26:14.281)
+So like using AI as an additional tool that will help you with some tasks that you're doing. Yeah, that's smart, especially having a second pair of eyes looking at the data. It's always good to have that.
+
+Sara Miller (26:27.476)
+Yeah, like.
+
+or trying to figure out, like we saw a spike on a specific day, what did we do differently? Was there a lot of social posts? Like let's take screenshots from different places in GA4 to see if we can build a story around why we're seeing this. Or if we're seeing like a drop off, like what did we do? Did we change the landing page? Did we take off all of our buttons for conversion? What did we do in trying to
+
+Nebojsa (26:56.625)
+Yeah.
+
+Sara Miller (27:00.118)
+again, just brainstorm with AI around what might have impacted these changes.
+
+Nebojsa (27:08.547)
+make sense and how important is it to track LLM traffic when it comes to decision making.
+
+Sara Miller (27:18.11)
+I mean, I think that the more data you have to collect, the better. I think that you can build a story around the data. And if you can track it, why not? I mean, it's not going to hurt to have that information.
+
+Nebojsa (27:35.369)
+Yeah, I mean, I agree. And also another question that I wanted to ask is like, how do you protect a brand's voice and authority in the piles of AI generated content? Like everybody can just scrape the content from your website and just publish it somewhere else, like formulating the sentences. So like, how do you protect it?
+
+Sara Miller (27:52.874)
+Yeah.
+
+Sara Miller (27:56.886)
+I think that is a struggle for sure. It's definitely something that we're all still learning. But I have a client that they have really strong brand guidelines and we use that with a lot of.
+
+that we are generating through ChatGBT. We ask for specific voice in every prompt. So we say that we want it to be influenced by specific writers and we want it to have...
+
+like different tone for when it's making analogies. So I think having really strong prompts is really how you're going to get really strong outputs because the tool is only as good as the information that you feed into it. So the more that you can do upfront, think the much better results you get in the end.
+
+Nebojsa (28:33.586)
+Yeah.
+
+Nebojsa (28:45.906)
+Yeah.
+
+Nebojsa (28:52.648)
+Yeah, and do you think that big brands like, I don't know, Microsoft or G2, do you think that they should be worried about the protection or you think the brand has enough authority to protect itself?
+
+Sara Miller (29:06.806)
+It's a good question. I think a lot of companies at least that I've seen like internally a lot of them will use tools that are only built for their organization like when I Yeah, exactly or they're only using
+
+Nebojsa (29:21.032)
+Like a custom.
+
+Sara Miller (29:28.47)
+like their Teams instance in Microsoft and they'll be using like the AI versions of that rather than going to something like a chat GPT or Gemini. They're using things that are only internal and not sharing their information out as well.
+
+Nebojsa (29:32.42)
+huh.
+
+Nebojsa (29:46.405)
+Yeah, that makes sense. So that way they are not sharing their data with any servers except their own servers. OK. Now I want to move and discuss about the measurements, metrics, things like that. And I want to ask you which metrics do you find most important when scaling SaaS marketing efforts, especially with technical or sales-facing teams?
+
+Sara Miller (29:53.458)
+Mm-hmm. Exactly.
+
+Sara Miller (30:15.732)
+I mean, I think at the end of the day, determining what metrics matter most to the client, typically it's going to be like a pipeline or a revenue metric. So really trying to show that you are influencing pipeline. So trying to bring in qualified leads. Are they the right leads? Are they converting? Because if you're bringing in the wrong traffic at the end of the day, nobody, nobody wins if you're doing that.
+
+Nebojsa (30:43.048)
+Yeah.
+
+Sara Miller (30:44.182)
+So I would say for me it's looking at, I mean, I still look at organic traffic, but I think it's trying to educate clients now on how that's not necessarily a metric we can focus on anymore because we're probably gonna see a decline in organic traffic knowing that a lot of these searches are gonna be answered with an AIO or answered in an LLM.
+
+there's never going to be a click through to the website. So helping them understand that while click through rates may drop, organic traffic may drop, we're still trying to drive the same number of qualified leads. And so we're not really seeing a decline in what we're bringing in organically as far as pipeline and revenue.
+
+Nebojsa (31:23.218)
+Hmm.
+
+Nebojsa (31:29.832)
+And since marketing and sales, work together, they go together, they depend on each other. How do you ensure sales and marketing teams stay aligned around data and reporting? Do you do like meetings with them or do you have some specific?
+
+Sara Miller (31:45.054)
+I think having like a single source of truth for what you're using for reporting. Many of my clients are using HubSpot, so we're able to see leads come in through HubSpot. We're able to track conversions in HubSpot. Like it's just all in one place. we're easily able to see if the traffic is really driving leads, which are driving conversions. But I think that having a really open line of
+
+communication because if you're again bringing in the wrong types of leads then sales is going to be upset and it's never a good situation. So you want to be have that feedback loop so you understand that what you're doing is bringing in the right type of people.
+
+Nebojsa (32:31.314)
+Yeah, that's smart, especially when you chain the KPIs between those two teams. They need to share a few of KPIs and then they start depending on each other and pushing each other to achieve the KPIs. That's very smart. Yeah.
+
+Sara Miller (32:41.61)
+Mm-hmm.
+
+Right.
+
+Nebojsa (32:49.23)
+I think every business should do that if they want to really improve their team collaboration and relationship while achieving all the goals. That's very smart. what is, I often ask this to my guests, what is a marketing myth or misconception you often encounter? Ask you is that, don't tell me that.
+
+Sara Miller (32:58.88)
+Mm-hmm.
+
+Sara Miller (33:12.534)
+you
+
+I think that something that, I mean, there's a lot of memes about it, but I think so often everyone thinks that they can do marketing and that it's just really easy. I think that everyone believes that they know the best way, but they don't necessarily use data to support their recommendations or decisions. And so often I've had clients bring in
+
+either me or a fractional marketing resource to help lead junior team members because everyone thinks, it's so easy. Just bring in young.
+
+students right out of college or you someone who doesn't have a lot of experience and then they expect the same results when they would typically need someone who's driving strategy not just trying to put out content. So I think that having a strategic lens and bringing in someone with that experience is something that is easily forgotten when people are looking at you know marketing budgets especially today where you know it's a lot easier to hire someone at
+
+a lower cost, but you're not necessarily going to get the results that you're hoping for.
+
+Nebojsa (34:34.055)
+Mm-hmm.
+
+Yeah, I agree. agree. And someone told me like if you are very careful, but not in the way that you can hurt your business, but you are, you don't want to pay enough, you know, and you squeeze your hand like this. Nothing can come out of it. But when you release it, everything just gets started flowing and going through the hand. And I agree with you. Like you shouldn't, you should hire top talents if you really want your business to succeed. And at the end of the day, the business realize
+
+Sara Miller (34:47.702)
+Mm-hmm.
+
+Nebojsa (35:05.257)
+on the people who are building it, who are working for that company and you can't achieve the results without a qualified team. That's what I think.
+
+Sara Miller (35:17.078)
+Exactly.
+
+Nebojsa (35:18.695)
+Yeah, you can be a solo printer, but you need to partner with different companies that if you want to achieve some success and you you want to really scale your agency. Yeah, and we're going to move to the leadership because you just touched that topic. But before we move to leadership, I want to ask you if you can share a time when a campaign didn't go as planned and what you learned or did after that.
+
+Sara Miller (35:30.196)
+Yeah.
+
+Sara Miller (35:48.404)
+Yeah, I think, again, lots of examples. I think so often things don't go as planned or we anticipate seeing a lot stronger results than we did and really trying to figure out what happened. it, like, was the messaging wrong? Was it a timing problem? Did we put out this content when our audience is all, you know, traveling at a conference?
+
+Nebojsa (35:51.175)
+Hey.
+
+Sara Miller (36:17.992)
+I think that a good example of this, honestly, it's not an SEO campaign, but it's adjacent. But really for me, a campaign or an SEO example of something that went wrong that I was not prepared for and I have learned so much from was a website migration that did not go well.
+
+And I think that, again, a lot of people think, website migration, it's easy. We just, you know, flip the switch and all of the content will move over. But there are so many different things that you need to check before making those changes. And I had a team member who did not do the proper QA on a project and the website severely suffered and it cost the client a lot.
+
+because they lost rankings in what, you know, things that are very high volume search terms that drive a lot of revenue for their business. And so often I think that we forget that, you know, dropping from position one to position three, when you have a really high value keyword, that can cost a company millions of dollars in just dropping down a couple of spots. So yeah, I've had that happen a couple of times with different clients I've worked with. I haven't been involved
+
+Nebojsa (37:32.113)
+Yes.
+
+Sara Miller (37:40.802)
+in all of them, but I think it really has made me very hyper aware of the technical side of migrations and making sure that everything is really buttoned up before moving over.
+
+Nebojsa (37:55.087)
+You're like, Michael, you forgot to crawl the website before migration? Yeah, it happened to me.
+
+Sara Miller (37:59.382)
+Yeah, we have to make sure those very important pages have a one-to-one redirect and they're redirecting to the right place. You don't want to just forget about some of them.
+
+Nebojsa (38:14.727)
+Yeah, you don't want to forget redirections. You don't want to forget to crawl the website so you know the old paths. Yeah, that's crazy. It happened to me as well. And recently the partnering agency that I worked with, they've uploaded the wrong file into the client Shopify, which caused a lot of 404s and they lost $50,000 in a single
+
+Sara Miller (38:22.75)
+Yeah.
+
+Sara Miller (38:43.008)
+Yeah.
+
+Nebojsa (38:44.781)
+day and I was like you can't do that you can't do that yeah
+
+Sara Miller (38:45.941)
+Yeah.
+
+Yeah, it's really crazy how such small things can have such a big impact to the bottom line for a company. So.
+
+Nebojsa (38:57.871)
+Yeah, this was only just like a product description update basically that went completely wrong and broke all the images, all the product descriptions and the website just went down and it was a Memorial Day, I remember and they were running ads towards those products and they were completely ruined. Yeah, so the guy now needs to work for free. Yeah, you need to redeem.
+
+Sara Miller (39:01.982)
+Yeah.
+
+Sara Miller (39:13.023)
+Mm-hmm.
+
+Yeah. Yeah. So anytime someone says, yeah, anytime someone thinks SEO doesn't matter, it's like, you can share those examples. And it's like, it really does matter so much more than people realize. It's not just showing up at the top of search results. There's so many other things that are impacted by the work that SEO does.
+
+Nebojsa (39:39.127)
+Exactly. And like people say, you're a manager. I wish I was a manager and things like that. But they are not aware about the responsibility that those roles have. Like, yes, they are managing five SEO specialists, but everything that they mess with the website is their fault. You know, you are really, really need to think well about everything that you are doing, especially when it comes to a technical implementations.
+
+Sara Miller (39:50.388)
+Yeah.
+
+Sara Miller (39:57.365)
+Yeah.
+
+Sara Miller (40:02.637)
+you
+
+Sara Miller (40:06.142)
+Yeah, exactly.
+
+Nebojsa (40:07.214)
+So yeah, I want to move more and speak about leadership. As you mentioned, I really liked that when you said that you got invited as a fractional CMO where you guided some teams and...
+
+I really like people who enjoy sharing knowledge and this is something that you are doing right now with me and with all the others that will watch the video. Me personally also enjoy sharing the knowledge. I could do it every day, but sometimes we just don't have enough time to do it. So you are known for mentoring and team leadership. So what's your process for developing marketing talent?
+
+Sara Miller (40:41.462)
+You
+
+Nebojsa (40:52.114)
+How have you shaped those youngsters when you entered the company? What do you do with them?
+
+Sara Miller (40:54.582)
+you
+
+Yeah, I think for me, I always just want like I managed an SEO team at my last agency and I always wanted to show up as the manager that I would want to have. And so trying to help my team and
+
+Nebojsa (41:14.982)
+That's so nice.
+
+Sara Miller (41:17.994)
+really try to be empathetic towards things that are going on outside of work, but also trying to help them grow, understand really what motivates people. think that it can be so helpful to know that some people really want to help others. Others want to show up every day and get their work done and sign out. And having an understanding of really.
+
+do the job that they're doing and helping them grow how they want to. Taking an interest in them as a person, I think is always really helpful as well, like just building a relationship with them. I still talk to most of my former team on a pretty routine basis because we did build strong relationships. But I think that more than anything,
+
+Nebojsa (42:00.826)
+He
+
+Sara Miller (42:08.181)
+Um, just trying to build community and be it open if people have questions or if you're, you know, I'm in a lot of the different Slack groups. Um, and people will ask a lot of questions in there, like just be a resource, help people out. If you have knowledge or a resource, a link, anything that someone could benefit from, like be, be able to share that with them. And just, I think building community wherever you're going is something that, you know, gives back to you so much more.
+
+Nebojsa (42:12.069)
+Mm-hmm.
+
+Sara Miller (42:38.166)
+than what you're just answering a question.
+
+Nebojsa (42:41.488)
+Yeah, and people say you're strong as your connections and I totally agree with that. Like the more connections and the more high valued people you have in your network, it can really help you in different types of situations. Yeah.
+
+Sara Miller (42:57.993)
+Absolutely.
+
+Nebojsa (43:00.298)
+like how do you keep learning and stay ahead in such a fast-changing environment? Don't want to say landscape, I would sound as an AI. Sarah is learning a lot of things.
+
+Sara Miller (43:08.342)
+In today's fast-paced world, yeah, I would say, I mean, like I mentioned, I'm in a lot of Slack groups, which sometimes there's a lot of noise. People are talking about things and really trying to filter through like what I find most valuable in there.
+
+But also, I mentioned this earlier, but I think partnering with really strong, smart people, that is one of my favorite things, is I have a couple of clients that I work with strictly because of the people that I work with. They are just really good at staying on top of how things are changing and being able to work with them every day really helps me grow a lot. So it may not be, you know, the most lucrative client that I have, but I...
+
+it's really nice being able to work with someone who continues to help me grow and learn and because this field is changing every day, being able to have those resources and someone to turn to ask questions or what are you seeing and just again like building that network of people that you can turn to and ask what they're seeing in the industry is so so helpful.
+
+Nebojsa (44:27.725)
+I mean, you built quite a good knowledge workflow right there. You have like a...
+
+Sara Miller (44:33.162)
+You
+
+Nebojsa (44:34.629)
+network of people you exchange knowledge with and then on the mentoring you have people you're sharing knowledge with. That's such a good knowledge flow that you have right there. I like it very much. And like any advice for marketers building their own personal brands. I know we just said everybody wants to do marketing now, AI is accessible, they can connect different APIs, pull out metrics and like even some programmers they want to switch
+
+Sara Miller (44:42.858)
+Mm-hmm.
+
+you
+
+Sara Miller (44:56.106)
+Mm-hmm.
+
+Nebojsa (45:04.653)
+to marketing because they can integrate technology. like what type of advice would you give to the marketers building their own personal brands and businesses?
+
+Sara Miller (45:15.594)
+Yeah, I think that...
+
+You know, I used to be someone who was very afraid to share my opinion or my experiences because I didn't want to be seen as being wrong. I mean, there's always people who are going to do things differently, do things better. You know, I'm, I'm not the best marketer. mean, there's people out there who do it far better than I do, but what I've learned and I actually learned this when I went to like a thought leadership training through LinkedIn and one of the
+
+things that I took away from that which was really big for me is that you know everyone has experiences that have shaped who they are today and your experiences can help other people learn and grow. So you know like I have a different experience than you have had but we're still able to talk about how we have so many similar experiences and what you have learned from past clients or past experiences like a failed website migration like sharing that information someone might learn something
+
+from that and you know it's okay to share it. Someone might not agree with it but again it's also okay to have differing opinions and so for me I used to be really afraid to post things on LinkedIn because I didn't want anyone to judge what I was doing and I had someone say to me you know whether you're sharing those experiences or not people have already made up their mind or made a decision about you so you might as well just share your opinion anyway because people are gonna
+
+Nebojsa (46:28.601)
+Mm-hmm.
+
+Nebojsa (46:35.439)
+Yeah.
+
+Nebojsa (46:45.581)
+Yeah.
+
+Sara Miller (46:49.384)
+what they want to think, so may as well just share what you can and if someone can benefit or learn from it, even better.
+
+Nebojsa (46:56.793)
+Yeah, I mean, I couldn't agree more. Yeah. I mean, based on what I'm seeing by scrolling LinkedIn, mean, there are many BS that people are just, you know, writing and, you know, people are judging. Yes. But like, you know, people react to these negative things, you know, they want to leave a comment or something that will cause other people to express their opinions. But anyway,
+
+Yeah, I think we shouldn't care about that and you're doing that right. And like what cultural or industry changes would you like to see in the next few years?
+
+Sara Miller (47:26.25)
+The end.
+
+Sara Miller (47:36.982)
+I would like to be able to start tracking more data through what is being shown in LLMs. I don't know if we'll get to that where I know that there are some companies out there right now that can try to show you, know, what is your share of voice in these different platforms, but I feel like they're not necessarily as reliable as some of the others that have been around longer, but.
+
+Even, you know, the third party tools we use today aren't perfect, but just the ability to have more data around where clients have that visibility and more of an impact. Again, like I said earlier, the more data you have, the better and whatever you can gain with that, you can really try to build that story and talk about how there's an impact or a change and
+
+Nebojsa (48:27.385)
+Yeah.
+
+Sara Miller (48:36.278)
+correlate the dots.
+
+Nebojsa (48:38.309)
+Yeah, and do you think Google will introduce some kind of like tracking, for example in Google Search Console or Google Analytics? I think that they will at one point make an update where you'll be able to see the LLMs and things like that.
+
+Sara Miller (48:57.588)
+Yeah, I mean, yeah.
+
+Nebojsa (48:58.181)
+They're probably just waiting for all these third party sources to do their best and then they will just steal the audience. They are waiting for the demand to be built and then when they release there, everybody will just go there and stop paying for other, I don't want to mention which ones. But it's possible, knowing the Google.
+
+Sara Miller (49:05.716)
+Yeah.
+
+Sara Miller (49:14.624)
+you
+
+Sara Miller (49:20.726)
+Exactly.
+
+Nebojsa (49:24.677)
+Yeah, okay, and fine. I have a few more questions for you. It's about future trends and let's look at them as a final insights of this podcast. So like what trends in digital marketing and AI are you most excited about?
+
+Sara Miller (49:35.222)
+Okay.
+
+Sara Miller (49:44.596)
+I think for me, the thing that's most exciting about trends in digital marketing is probably what got me most excited about digital marketing to begin with, and that it's always changing. I feel like it's not something that once you learn it, you have it for life. It's something that you're always having to consistently learn and grow.
+
+I love that challenge and so I think that it's not necessarily a current trend but I think just in general digital marketing is always trying to be better and I love that it's always a challenge. It's never just like show up, do what you did two years ago and it'll keep showing you results.
+
+Nebojsa (50:20.43)
+Yeah.
+
+Nebojsa (50:26.872)
+Yeah.
+
+Yeah, like nowadays something that worked two weeks ago doesn't work anymore. That's crazy, but it is like this. Just imagine waking up and feeding your dog with some, I don't know, food that you're giving to him every day and then he just says, no, I want something else. This doesn't work anymore. You would be like, oh my God, but that's really happening right now, you know? So yeah, it depends on the...
+
+Sara Miller (50:33.686)
+Exactly.
+
+Sara Miller (50:46.302)
+Yeah. Exactly. Yeah, that's exactly like what we do.
+
+Nebojsa (50:56.94)
+Yeah, yeah, yeah, what would you do? You would need to adopt or you would say get out of the room. You will be hungry. You will come and you will eat this. That's crazy. But yeah, it depends on the perspective as we can now see. Yeah, I mean, things are dramatically changing and like, could you imagine that TadGPD was published like two and a half years ago? It looks like it's been like six, ten years.
+
+Sara Miller (51:04.298)
+you
+
+Nebojsa (51:26.51)
+You know, it's like that. That's crazy. Yeah. Because also what I was reading a lot is like these companies that already fired a lot of their staff because of the AI, like Microsoft, Twitter, I don't know, these big enterprises. And now like people are being scared about what will happen. So how do you see the role of marketers changing?
+
+Sara Miller (51:26.741)
+Yeah.
+
+It is.
+
+Nebojsa (51:56.107)
+as automation and AI become more commonplace.
+
+Sara Miller (52:02.67)
+I think that we have the ability to automate a lot of simple tasks and hopefully it gives us the ability to be more creative because we are automating things that have taken up time in the past and ideally we'll see more creative campaigns.
+
+a lot of personalized campaigns. think that in today's world, we really like having personalization. But I think that the more that we can automate tedious tasks and just do better work overall, like I...
+
+Nebojsa (52:29.016)
+Yeah.
+
+Sara Miller (52:41.086)
+I know that we've automated some things that seem like we don't need to create art with AI, but I think the ability to type in what you're looking for and automatically or quickly generate ads for a campaign or an image to go with a blog post, it may not necessarily be like...
+
+Nebojsa (52:57.357)
+Yeah.
+
+Sara Miller (53:04.958)
+Yes, it could be a creative job that is being replaced, but really, I mean, how many designers love creating multiple sizes of ads or creating these? It's not like you're taking work away from people who really are passionate about creating an ad size or a featured image for a blog post. I think that there's things that can really be automated on that side of things.
+
+Nebojsa (53:13.486)
+Yeah.
+
+Nebojsa (53:23.94)
+huh.
+
+Nebojsa (53:28.011)
+Mm-hmm.
+
+Sara Miller (53:29.544)
+or even, you know, meta titles, meta descriptions. We don't have to write those ourselves anymore. We can upload a list to an LLM and it can provide that information. I think there's still like opportunity to go in and optimize that, but I think that a lot of things that have previously taken so much time really can be automated and help people work faster and provide better results.
+
+Nebojsa (53:34.222)
+Yeah.
+
+Yeah.
+
+Nebojsa (53:41.677)
+Suck.
+
+Nebojsa (53:55.5)
+Yeah, yeah. And I'm thinking about also, like, maybe companies won't fire the staff, but they will lower the number of their employees. Because as you just mentioned, do you agree that right now with the AI, you can do like two times or even three times, you can handle two or three times more workload per day than you were able to do before?
+
+So yeah, that paints the picture that you know like one person can now handle more work.
+
+Sara Miller (54:24.256)
+Yeah.
+
+Sara Miller (54:31.72)
+Mm-hmm. I've definitely seen that, especially now that I'm managing my own book of business. And the number of clients that I'm able to take on is far greater than when I worked at an agency because I'm able to automate so many things that I wasn't able to do before.
+
+Nebojsa (54:38.742)
+Yeah, yeah.
+
+Nebojsa (54:51.862)
+Yeah, that's so great. And do you have any bold predictions about the future of SEO and digital marketing?
+
+Sara Miller (54:59.638)
+Hmm.
+
+Nebojsa (55:02.926)
+Feel free to speak, nobody will judge. Because everybody has different opinion about this question.
+
+Sara Miller (55:04.263)
+You
+
+Sara Miller (55:12.118)
+Yeah, I'm sure. I think that my boldest prediction is that we're gonna come back, like I said earlier, but I think everything's gonna come back to basics. I think we've gone so far, like so extreme with things that we're trying to test and do. I think everything is gonna come back to the beginning. So again, creating really good quality content and...
+
+sticking to, you know, things we did 10, 12 years ago when we're writing content and just making sure that it is.
+
+clear, it is not stuffed with keywords, it's really just answering questions and helping people capture that information and move on with their day. So really focusing on the user and helping people, like understanding that people are using websites as users, again, like not creating everything for a search engine or an LLM, it's really focusing on that end user and what that experience looks like for them.
+
+Nebojsa (56:06.872)
+Yeah.
+
+Nebojsa (56:18.423)
+Yeah, yeah, that's it.
+
+Sara Miller (56:19.358)
+It's not that bold, but...
+
+Nebojsa (56:21.365)
+It's not that bold. mean, it's, I would say this is a statement that that's true. That's really true. mean, I would see if you asked me and by the way, I was thinking about like all the algorithms, like what's the one thing that all these have in common. And I figured out that there is one it's relevancy, right? So I think the relevancy will always stay and remain and like everything, as you said, you have to build a whole topic class.
+
+Sara Miller (56:30.507)
+Yeah.
+
+Nebojsa (56:51.279)
+around that single core landing page and the key of this is relevance right and yeah based on what you said I also think everything will go back to the basic as I think it's just more like a hype that's currently happening everybody's trying different things and they want to go viral but the things will just calm down you know it's like any other
+
+Sara Miller (56:54.752)
+Mm-hmm.
+
+Sara Miller (57:11.286)
+Mm-hmm.
+
+Nebojsa (57:19.041)
+let's say catastrophe that happened like COVID for example, know, everybody was, and then things got back to normal. It's the same like SEO is not dying, it's evolving. That's it, that's it. Yeah.
+
+Sara Miller (57:24.662)
+Exactly, yeah.
+
+Exactly.
+
+Nebojsa (57:34.283)
+Okay, Sarah, my last question for you and this is the question that I always ask is like, what is the one piece of advice you would give to anyone who's just starting with their career? And I believe you know the perfect answer because you're mentoring, but I really want to hear you. Yeah.
+
+Sara Miller (57:55.804)
+If you're just starting in your career, think like ask for opportunities. I think people are very willing to share and mentor and educate. And like we were talking about earlier, having that opportunity to be hands on rather than just watching a video. So if you don't have a client but you want to learn, create your own website and test it out or work with someone who will kind of show
+
+you how to test things out or implement things even as like an intern but I think really just asking people if they're willing to chat with you.
+
+It doesn't have to be a big time commitment. Even just grab a virtual coffee or hey, I'm posting a Slack group. I'm looking for someone to help me with this, this, and this. There's so many different ways to build your network and start learning. But I think just don't be afraid to ask for that help.
+
+Nebojsa (59:00.323)
+Okay, that's a great advice and I think it will be useful to anyone who implements it. So yeah, Sarah, this has been an incredibly insightful conversation about the intersection of AI, mentoring, leadership, marketing, all the things that we mentioned and for our listeners who want to connect with you or learn more about your work, where can they find you?
+
+Sara Miller (59:15.638)
+you
+
+Sara Miller (59:27.03)
+The best place to find me honestly is on LinkedIn. I don't have a website. I know I just said build a website, but I don't personally have one. So LinkedIn is probably the best way to find me.
+
+Nebojsa (59:40.481)
+Okay, okay. So guys look for Sarah Miller if you want to see what she does and to our listeners, thank you for tuning into another episode of ranking heroes podcast. If today's discussions sparked some ideas for your own marketing strategy or for creating a new website, getting first clients, make sure to subscribe so you don't miss our upcoming episodes where we continue to explore what it takes to achieve heroic results in business.
+
+Until the next time keep climbing towards those top rankings not just SERP but AEO as well. See you guys!
+

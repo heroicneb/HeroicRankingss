@@ -1,0 +1,738 @@
+[
+  {
+    "episodeNumber": 1,
+    "slug": "nenad-stamenkovic",
+    "youtubeId": "McVXVqpdLjM",
+    "videoUrl": "https://www.youtube.com/watch?v=McVXVqpdLjM",
+    "title": "How to Improve as an SEO",
+    "titleHighlighted": "as an SEO",
+    "duration": "53 min",
+    "publishedAt": "2024-05-21T00:00:00.000Z",
+    "guest": {
+      "name": "Nenad Stamenkovic",
+      "role": "Growth Marketing Expert",
+      "company": "SASVIM",
+      "bio": "Nenad Stamenkovic got into SEO out of spite. Over 15 years ago, a local SEO consultant told him his English wasn't good enough to do ghostwriting. So Nenad wrote five articles and convinced him to forward them to the editor — without revealing who the writer is. The articles passed. That was the start. From ghostwriting, he moved into understanding what the content was actually for, which pulled him into SEO, link building, and on-site optimization during the early WordPress era.\n\nBack then, there were no SEO managers. You were a webmaster — designing, developing, and optimizing a site all at once. Nenad leaned into that breadth. He picked up PHP and JavaScript alongside his HTML and CSS skills, then branched into social media, PPC, analytics, and eventually UX and product development. He worked on design sprints, collaborated with product teams, and contributed to user acquisition for several apps — one of which went IPO.\n\nThree mentors shaped his early thinking: Radomir Basta, a Serbian SEO consultant who taught him how to ask the right questions; Gary Illyes from Google's webspam team, who kept him grounded in how search actually worked; and Dan Petrovic from Dejan SEO, who taught him to test every assumption instead of taking Google's word at face value. That instinct (test before you trust) became the foundation of everything he does.",
+      "linkedinUrl": null
+    },
+    "description": "In the first episode of The Ranking Heroes Podcast, host Nebojsa sits down with Nenad Stamenkovic for a wide-ranging conversation about what SEO actually looked like over the past 15 years — and what still holds true today.",
+    "keyInsights": {
+      "headingHighlighted": "15 Years of SEO",
+      "headingMain": ", Tested Instead of Trusted",
+      "body": "Nenad started as a webmaster who built, designed and optimised sites at once, and never took Google's word without running the test himself.",
+      "topicPills": [
+        "Early SEO & Webmaster Era",
+        "Structured Data Evolution (Microdata to JSON-LD)",
+        "Conversion Rate Optimization",
+        "Behavioral Targeting & Personalization",
+        "Google's Hummingbird Update & NLP",
+        "Omnichannel Analytics & Attribution",
+        "UX Principles in Marketing",
+        "Testing & Assumption Validation"
+      ],
+      "bullets": [
+        "Starting SEO as a webmaster — building, designing, and optimizing sites before specialized roles existed.",
+        "Testing over trusting — why empirical evidence matters more than what Google publicly says.",
+        "Conversion optimization through discovery — a behavioral system that predicted brand preferences within 4-6 clicks.",
+        "The Hummingbird update's lasting effect — how NLP and voice search changed what SEOs needed to focus on.",
+        "Omnichannel tracking before GA4 — the difficulty of connecting user sessions across devices and channels.",
+        "The \"content is king\" misread — why writing more content isn't the same as writing better content.",
+        "Analytics with intent — always start with a written question before opening any dashboard."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 01 - Nenad Stamenkovic.txt"
+    ],
+    "seo": {
+      "metaTitle": "How to Improve as an SEO — Nenad Stamenkovic",
+      "metaDescription": "In the first episode of The Ranking Heroes Podcast, host Nebojsa sits down with Nenad Stamenkovic for a wide-ranging conversation about what SEO actually…"
+    }
+  },
+  {
+    "episodeNumber": 2,
+    "slug": "nick-vujic",
+    "youtubeId": "lUPV1Ac2mSY",
+    "videoUrl": "https://www.youtube.com/watch?v=lUPV1Ac2mSY",
+    "title": "We Need a New Search Engine",
+    "titleHighlighted": "New Search Engine",
+    "duration": "1h 02min",
+    "publishedAt": "2024-06-04T00:00:00.000Z",
+    "guest": {
+      "name": "Nick Vujić",
+      "role": "Founder",
+      "company": "Get Stuff Digital",
+      "bio": "Nick Vujic came to SEO through an unlikely path. He was a law student in Belgrade when an economics textbook sparked an interest in how markets work, leading him to digital marketing around 2016. He tried PPC and social media first but gravitated toward SEO — it was analytical, didn't require upfront ad spend, and combined data with strategy.\n\nHe spent nearly three years studying the field and following figures like John Mueller (Google's Senior Webmaster Trends Analyst and Search Relations Team Lead) and Barry Schwartz (Executive Editor of Search Engine Roundtable) before landing his first paid role, earning roughly $2,000 from freelance work in that time.\n\nHis break came around 2018-2019 when he took over SEO for a crypto betting site called Crypto Maniacs. With paid ads banned in that space, everything had to come through organic search. He scaled the site from 4,000 to over 200,000 monthly visits and contributed to a $1 million revenue month. After the crypto downturn, he shifted toward B2B and SaaS.\n\nNick then joined Veza Digital, rising from SEO executive to marketing director over three years. He now runs Get Stuff Digital, his own consultancy helping startups grow through organic channels. One principle runs through everything he does: never sacrifice quality for revenue, even if that means turning clients away.",
+      "linkedinUrl": "https://www.linkedin.com/in/nik-vujic/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa talks with Nick Vujic, founder of Get Stuff Digital, about what it actually takes to build an SEO career and deliver results that last.",
+    "keyInsights": {
+      "headingHighlighted": "Three Years of Learning",
+      "headingMain": " Before a Single Dollar Earned",
+      "body": "From a crypto betting site scaled to 200,000 monthly visits to running his own consultancy, Nick lays out what an SEO career really costs and returns.",
+      "topicPills": [
+        "Self-Taught SEO Career Path",
+        "Topical Authority vs. Keyword Targeting",
+        "Webflow vs. WordPress for SEO",
+        "Site Migration Strategy",
+        "SaaS & Startup SEO",
+        "Content Quality & Writer Management",
+        "Omni-Channel SEO Approach",
+        "SEO Budgeting Mistakes"
+      ],
+      "bullets": [
+        "How Nick spent three years learning before earning, and why that investment shaped his entire approach.",
+        "Scaling a crypto betting site from 4,000 to 200,000 monthly visits when paid ads were off the table.",
+        "Why Webflow has fewer SEO advantages than most people assume, particularly for beginners.",
+        "His emphasis on topical authority over keyword targeting as the foundation of content strategy.",
+        "The one-article-per-day rule for writers and the six-month onboarding process behind it.",
+        "Why omni-channel SEO means using organic search to improve PPC, email, and outbound performance.",
+        "His view that underspending on SEO is the most common business mistake, not overspending."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 02 - Nick Vujic.txt"
+    ],
+    "seo": {
+      "metaTitle": "We Need a New Search Engine — Nick Vujić",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa talks with Nick Vujic, founder of Get Stuff Digital, about what it actually takes to build an…"
+    }
+  },
+  {
+    "episodeNumber": 3,
+    "slug": "mihailo-miljkovic",
+    "youtubeId": "cE6QVlJALdM",
+    "videoUrl": "https://www.youtube.com/watch?v=cE6QVlJALdM",
+    "title": "Innovation & Entrepreneurship",
+    "titleHighlighted": "Entrepreneurship",
+    "duration": "1h 26min",
+    "publishedAt": "2024-06-24T00:00:00.000Z",
+    "guest": {
+      "name": "Mihailo Miljković",
+      "role": "Founder and SEO Team Lead",
+      "company": "Elvion",
+      "bio": "Mihailo Miljkovic got into SEO through a formal digital marketing academy during high school. His first project was OnePro, an affiliate site promoting English conversation programs in Serbia. He ranked it number one for competitive local terms, and the American company behind those programs hired him as their SEO and content manager. He was 17 years old.\n\nThat role showed him how companies actually coordinate SEO alongside PPC, social, and content under one marketing strategy. He then landed a position at one of the largest digital agencies in the United States while still a teenager, spending two and a half years working with large-scale accounts including Bodybuilding.com and the International Monetary Fund.\n\nElvion, the agency he founded, came out of a gap he kept seeing: big companies treating SEO as a function instead of an outcome, and agencies reporting hours worked instead of revenue generated. His firm runs 90-day pilot projects to prove measurable results before proposing long-term strategy, and his team recently published a research study analyzing over 28,000 e-commerce keywords for AI Overview behavior — a piece that went viral on LinkedIn.",
+      "linkedinUrl": "https://www.linkedin.com/in/mihailo-miljkovi%C4%87-706a24217/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Mihailo Miljkovic, founder and SEO team lead at Elvion, to talk about enterprise SEO strategy, revenue-driven consulting, and why most large companies are leaving money on the table in organic search.",
+    "keyInsights": {
+      "headingHighlighted": "SEO as an Outcome",
+      "headingMain": ", Not a Department",
+      "body": "Mihailo ties every initiative to revenue, proves it in 90-day pilots, and shows where large companies leave organic money on the table.",
+      "topicPills": [
+        "Revenue-Focused SEO",
+        "90-Day Pilot Projects",
+        "Demand Segmentation",
+        "Enterprise SEO Strategy",
+        "AI Overviews & E-Commerce",
+        "Product-Level Marketing",
+        "Google as a Marketplace",
+        "Backlinks & Core Updates"
+      ],
+      "bullets": [
+        "Why most enterprise companies treat SEO as a function rather than an outcome and how that creates misaligned expectations.",
+        "Mihailo's 90-day pilot project model for proving measurable results before proposing a long-term strategy.",
+        "How an e-commerce client generated over $1 million in incremental revenue by building category pages around untapped demand segments.",
+        "Elvion's AI Overview research: 28,000+ keywords analyzed, with product listings dominating e-commerce query layouts.",
+        "Why Google is shifting toward a marketplace model and what product-level marketing means for online retailers.",
+        "The role of backlinks after the March Core Update — sites with strong off-page authority held steady while content-only sites got hit.",
+        "How to evaluate an SEO agency before signing — depth of pre-purchase analysis, strategic language, and honest discussion of what is and is not possible."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 03 - Mihailo Miljkovic.txt"
+    ],
+    "seo": {
+      "metaTitle": "Innovation & Entrepreneurship — Mihailo Miljković",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Mihailo Miljkovic, founder and SEO team lead at Elvion, to talk about enterprise…"
+    }
+  },
+  {
+    "episodeNumber": 4,
+    "slug": "jonathan-boshoff",
+    "youtubeId": "sh26NpiiJyo",
+    "videoUrl": "https://www.youtube.com/watch?v=sh26NpiiJyo",
+    "title": "AI-Driven SEO Techniques",
+    "titleHighlighted": "SEO Techniques",
+    "duration": "1h 05min",
+    "publishedAt": "2024-07-31T00:00:00.000Z",
+    "guest": {
+      "name": "Jonathan Boshoff",
+      "role": "Founder",
+      "company": "AI SEO Engine & AI SEO Academy",
+      "bio": "Jonathan Boshoff started in SEO in 2012 by building WordPress websites for small local businesses — a tattoo shop, a restaurant, whoever he could convince. When those clients started asking how to actually get leads and customers, he taught himself search optimization to answer their questions. The website work lost its appeal quickly. The marketing side didn't. That shift led to a career across multiple agencies and in-house SEO roles.\n\nWhen ChatGPT launched, Jonathan was already an OpenAI beta tester. He started feeding it SEO prompts and saw right away that it could cut hours of routine work down to minutes. What followed was a steady progression: collecting prompts in a spreadsheet, writing Python scripts with ChatGPT's help, then building full no-code applications on a platform called Moonlit. The tools he built covered the most common and time-consuming SEO tasks — title tags, meta descriptions, keyword research, E-E-A-T content audits, internal linking suggestions.\n\nThat work became the AI SEO Academy, a community he created to share what he'd learned with other SEOs, developers, and startup founders. It now houses over 30 tools with step-by-step guides. The membership spans full-stack developers to solo founders running businesses without a dedicated SEO team.\n\nJonathan also runs AI SEO Engine, where he puts those same systems to work on client projects. One result worth noting: a large e-commerce store saw a 39% year-over-year increase in organic revenue after his team wrote AI-optimized text for 3,000 category pages.",
+      "linkedinUrl": "https://www.linkedin.com/in/jontyboshoff/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, Jonathan Boshoff walks through how he went from ChatGPT prompts to Python scripts to full no-code applications, and the messy trial-and-error that came with it — including a $300 OpenAI bill he didn't expect.",
+    "keyInsights": {
+      "headingHighlighted": "From Prompts to Products",
+      "headingMain": ", One Messy Step at a Time",
+      "body": "Jonathan went from a spreadsheet of ChatGPT prompts to 30+ no-code SEO tools, and learned along the way that internal linking was the lever he had underrated for years.",
+      "topicPills": [
+        "AI-Powered SEO Tools",
+        "No-Code Tool Building",
+        "Internal Linking Strategy",
+        "E-E-A-T & Author Signals",
+        "AI Content Optimization",
+        "Token Limits & API Costs",
+        "Dead Internet Theory",
+        "Content Quality vs. AI Scale"
+      ],
+      "bullets": [
+        "How Jonathan progressed from prompt collecting to no-code SEO applications on Moonlit Platform.",
+        "The two areas where AI is most useful for SEOs: routine automation and analysis at scale.",
+        "Why internal linking is undervalued by most practitioners and how it directly affects rankings and revenue.",
+        "Google's hidden author profiles and why you can't fake E-E-A-T by swapping a byline.",
+        "A client case study: 39% YoY organic revenue growth from AI-written text across 3,000 category pages.",
+        "The dead internet theory, AI-generated content flooding search, and what it means for quality.",
+        "Where small businesses should start with AI and SEO — a prompt spreadsheet, not complex tooling."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 04 - Jonathan Boshoff.txt"
+    ],
+    "seo": {
+      "metaTitle": "AI-Driven SEO Techniques — Jonathan Boshoff",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, Jonathan Boshoff walks through how he went from ChatGPT prompts to Python scripts to full no-code…"
+    }
+  },
+  {
+    "episodeNumber": 5,
+    "slug": "peter-rota",
+    "youtubeId": "wTe3IXhr4iE",
+    "videoUrl": "https://www.youtube.com/watch?v=wTe3IXhr4iE",
+    "title": "Improving SEO",
+    "titleHighlighted": "SEO",
+    "duration": "1h 26min",
+    "publishedAt": "2024-10-01T00:00:00.000Z",
+    "guest": {
+      "name": "Peter Rota",
+      "role": "Technical SEO Manager",
+      "company": "HUB International",
+      "bio": "Peter Rota has been in SEO since 2011, though he didn't plan on it. He studied sports management, started a sports blog, and Googled how to promote it. That search led him to SEO, where early success turned a couple of internships into a full career — one he describes as a *serendipitous discovery*.\n\nIn his day job, Peter leads technical SEO at HUB International, a large insurance brokerage, handling technical audits, content optimization, and working directly with development teams. On the side, he runs freelance work across local businesses, e-commerce brands, and one-off projects through Upwork. He also posts weekly on LinkedIn, sharing what he's learned — out of a sense of debt to the SEO community that helped him grow.\n\nWhat stands out about Peter is his directness. He calls his approach \"no BS\" and means it: full transparency, regular reporting, and a willingness to tell clients when their real problem isn't what they think it is. He's had prospects come to him convinced they need backlinks, only to find their title tags are under-optimized and basic on-page fundamentals haven't been addressed. His instinct is to fix the foundation first and sell second.",
+      "linkedinUrl": "https://www.linkedin.com/in/peterrota/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, hosts Nebojsa and Nenad sit down with Peter Rota, Technical SEO Manager at HUB International and freelance SEO consultant, for a conversation about what actually produces results in SEO — and what doesn't.",
+    "keyInsights": {
+      "headingHighlighted": "The Basics Still Win",
+      "headingMain": ", and Most Sites Still Get Them Wrong",
+      "body": "Peter prioritises audits by impact, fixes the foundation before selling anything, and ties every recommendation back to revenue.",
+      "topicPills": [
+        "Technical SEO Audit Prioritization",
+        "Title Tag Optimization & Testing",
+        "Shopify SEO Limitations",
+        "Local SEO & Google Business Profile",
+        "Content Optimization Workflow",
+        "Backlink Quality Assessment",
+        "Client Communication & Transparency",
+        "Cross-Department Collaboration"
+      ],
+      "bullets": [
+        "Why title tags remain the most influential on-page element and how small keyword repositioning changes produce measurable click improvements.",
+        "Peter's approach to prioritizing technical audits by impact versus resource cost, not just tool-generated severity scores.",
+        "Common Shopify SEO pitfalls including canonical issues, URL bloat, and pagination problems that trip up store owners.",
+        "How Peter uses a “no BS\" communication style with clients built on transparency, regular reporting, and honest scoping.",
+        "The role of contextual internal links as a ranking differentiator when backlinks are hard to earn.",
+        "Why geo pages and Google Business Profile optimization still work for local SEO, and the gray areas around keyword-stuffed listing names.",
+        "His advice for new SEOs: build a personal brand, rank your own site, and offer free initial work to create proof of results."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 05 - Peter Rota.txt"
+    ],
+    "seo": {
+      "metaTitle": "Improving SEO — Peter Rota",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, hosts Nebojsa and Nenad sit down with Peter Rota, Technical SEO Manager at HUB International and freelance…"
+    }
+  },
+  {
+    "episodeNumber": 6,
+    "slug": "dimitris-gkiokas",
+    "youtubeId": "WJ5Hn1Yy9Q8",
+    "videoUrl": "https://www.youtube.com/watch?v=WJ5Hn1Yy9Q8",
+    "title": "ChatGPT & SEO",
+    "titleHighlighted": "SEO",
+    "duration": "1h 50min",
+    "publishedAt": "2024-11-07T00:00:00.000Z",
+    "guest": {
+      "name": "Dimitris Gkiokas",
+      "role": "Founder & CEO",
+      "company": "Atropos Digital",
+      "bio": "Dimitris Gkiokas is a software engineer turned SEO and CRO specialist who runs Atropos Digital, a full-stack agency serving enterprise and B2B software companies in the US and Canada. He studied electrical engineering but knew early that full-time coding was not for him. After corporate sales, he began freelancing, building WordPress sites, and launched a blog on learning techniques — teaching himself SEO along the way.\n\nThat foundation led to an SEO role at a US-based online education company, where he rose to COO. The company spent around $75,000 per month on ads and was heavily data-driven, suiting his analytical background. He handled marketing tech, A/B testing, funnels, and tracking — work at the intersection of engineering and marketing. He later built one of Greece's most popular podcasts, \"*The Brain Hacking Academy*,\" growing it past 1.5 million downloads before returning to SEO.\n\nBefore launching Atropos Digital, Dimitris worked at a Serbian agency where he saw white-label chains erode quality — a $20,000 project passing through four intermediaries until the builder got just $1,000. That convinced him to work directly with clients. Today, Atropos Digital handles full-stack SEO and CRO for enterprise clients, and Dimitris still writes code for programmatic SEO when needed.",
+      "linkedinUrl": "https://www.linkedin.com/in/dimitris-gkiokas/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, hosts Nebojsa and Nenad talk with Dimitris Gkiokas, founder of Atropos Digital, about what it takes to run SEO at the enterprise level — and why the overlooked fundamentals matter most.",
+    "keyInsights": {
+      "headingHighlighted": "Engineering Thinking",
+      "headingMain": " Applied to Enterprise SEO",
+      "body": "Dimitris pairs CRO with SEO so results show up before rankings do, tracks leads without cookies, and explains why links will stay a top signal for decades.",
+      "topicPills": [
+        "Enterprise SEO Strategy",
+        "CRO & Lead Form Optimization",
+        "Client Communication & Expectation Management",
+        "Technical SEO for Custom-Built Websites",
+        "White-Label Agency Dynamics",
+        "SEO Tool Selection & Scalability",
+        "The Future of Search & AI Content",
+        "Links as a Lasting Ranking Signal"
+      ],
+      "bullets": [
+        "Why CRO and multi-step lead forms directly support SEO by producing measurable results before rankings fully kick in.",
+        "How Dimitris tracks referral sources at the form submission level to tie organic leads to specific channels without cookie-based tracking.",
+        "The white-label chain problem in agencies and why cutting out intermediaries produces better work at higher margins.",
+        "Why enterprise and B2B software clients are a natural fit for SEOs with engineering backgrounds.",
+        "How the fundamentals of SEO have not changed — canonicalization, indexation, internal linking, and quality content still compound over time.",
+        "Why links will remain a top-three ranking signal for the foreseeable future, based on processing cost and signal reliability.",
+        "His advice for beginners: start at an agency, master one tool, and study black hat SEO to understand how search engines actually work."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 06 - Dimitris Gkiokas.txt"
+    ],
+    "seo": {
+      "metaTitle": "ChatGPT & SEO — Dimitris Gkiokas",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, hosts Nebojsa and Nenad talk with Dimitris Gkiokas, founder of Atropos Digital, about what it takes to run…"
+    }
+  },
+  {
+    "episodeNumber": 7,
+    "slug": "antonio-gabric",
+    "youtubeId": "oY2KYcwbxag",
+    "videoUrl": "https://www.youtube.com/watch?v=oY2KYcwbxag",
+    "title": "Backlinks & SEO",
+    "titleHighlighted": "SEO",
+    "duration": "1h 07min",
+    "publishedAt": "2025-01-22T00:00:00.000Z",
+    "guest": {
+      "name": "Antonio Gabrić",
+      "role": "Link Building & Partnerships Manager",
+      "company": "Hunter.io",
+      "bio": "Antonio Gabrić manages link building and the affiliate partner network at Hunter.io, where he has spent nearly four years growing the company's backlink profile by thousands of referring domains. He joined Hunter as a freelancer through Upwork, transitioned to a full-time role in 2022, and has since taken ownership of a link building program that evolved from basic skyscraper outreach to a relationship-driven partnership model.\n\nBefore Hunter, Antonio taught himself SEO from scratch. Growing up in Croatia, he started a free WordPress blog in 2015 reviewing calisthenics equipment — partly to earn money, partly to improve his English. That site began generating income within months, convincing him that working online was worth pursuing seriously. He then freelanced on Upwork for several years, managing a portfolio of affiliate websites for a client in Israel — gaining hands-on experience with content, link building, and the economics of running sites for profit.\n\nAntonio also runs a vetted, application-only Slack community of over 200 SaaS link builders, built from Hunter's partner network. Members must be directly affiliated with real SaaS businesses — not freelancers reselling links they don't control. He is also a published author on Moz, Zapier, G2, and more than 50 other industry publications.",
+      "linkedinUrl": "https://www.linkedin.com/in/antonio-gabric/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Antonio Gabrić, Link Building & Partnerships Manager at Hunter.io, for a grounded conversation about what actually makes link building work in 2025, and what most people get wrong about it.",
+    "keyInsights": {
+      "headingHighlighted": "Build Relationships",
+      "headingMain": ", Not Links",
+      "body": "Antonio grew Hunter.io by thousands of referring domains by turning skyscraper outreach into partnerships, and explains which links move a business and which only look good.",
+      "topicPills": [
+        "Link Quality vs. Vanity Metrics",
+        "Partnership-Based Outreach",
+        "Skyscraper Method Evolution",
+        "Guest Blogging Strategy",
+        "Referral Traffic & Bottom-of-Funnel Links",
+        "Link Building KPIs & Reporting",
+        "Backlinks in AI Search Engines",
+        "Content & Link Building Synergy"
+      ],
+      "bullets": [
+        "Why backlinks from pages with organic traffic are worth more than high-DR links from dead pages.",
+        "How Hunter moved from skyscraper outreach to a partnership-first model that starts with link insertions and scales to guest posts and co-marketing.",
+        "The difference between outreach to mid-range domains and outreach to top-tier publications like Moz — and why the latter requires a completely different playbook.",
+        "Why referral traffic from backlinks only converts when the linking page targets bottom-of-funnel intent.",
+        "How Hunter tracks KPIs beyond link counts: average page traffic, DR averages, and conversion funnel impact.",
+        "The case for investing in links from smaller, growing domains as a long-term play — like real estate you buy early.",
+        "Antonio's top advice: build relationships, not links, because a network of 10 partners with 10 partners each gives you access to 100."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 07 - Antonio Gabric.txt"
+    ],
+    "seo": {
+      "metaTitle": "Backlinks & SEO — Antonio Gabrić",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Antonio Gabrić, Link Building & Partnerships Manager at Hunter.io, for a grounded…"
+    }
+  },
+  {
+    "episodeNumber": 8,
+    "slug": "kevin-lee",
+    "youtubeId": "wuVl2MH9Uk4",
+    "videoUrl": "https://www.youtube.com/watch?v=wuVl2MH9Uk4",
+    "title": "Traditional Marketing Methods",
+    "titleHighlighted": "Marketing Methods",
+    "duration": "1h 12min",
+    "publishedAt": "2025-03-13T00:00:00.000Z",
+    "guest": {
+      "name": "Kevin Lee",
+      "role": "Executive Chairman & Co-Founder",
+      "company": "Didit",
+      "bio": "Kevin Lee has been in digital marketing since before Google existed. He co-founded Didit in 1996 as a SaaS SEO monitoring tool that tracked whether domains were indexed across pre-Google search engines like AltaVista, Excite, and InfoSeek. Before that, he was running floppy disk marketing, CD-ROM campaigns, and advertising on CompuServe, AOL, and Prodigy. His background is in economics, and he started his career at traditional agencies like J. Walter Thompson and McCann Erickson before digital pulled him in for good.\n\nOver the years, Didit transitioned from a technology company into a full-service marketing agency. Kevin grew the business through 11 acquisitions, adding capabilities in PR, influencer marketing, and creative production. He holds an MBA from Yale, which he credits less for the credential and more for the microeconomics foundation — particularly marginal cost, auction dynamics, and media elasticity. That thinking shaped how Didit built its bid management platforms and still approaches paid media today.\n\nOutside of Didit, Kevin co-founded WeCare.com, which generated $8 million for nonprofits and directly inspired Amazon Smile. He currently runs Giving Forward, a cause marketing nonprofit, and has investments in ad tech, social CRM, conference businesses, and a nutraceutical brand he uses as a testing ground for marketing experiments.",
+      "linkedinUrl": "https://www.linkedin.com/in/variousventures/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa talks with Kevin Lee, executive chairman and co-founder of Didit, about nearly 30 years of digital marketing — from the pre-Google era to the current shift toward AI-driven search visibility.",
+    "keyInsights": {
+      "headingHighlighted": "30 Years of Digital Marketing",
+      "headingMain": ", From AltaVista to AI Answers",
+      "body": "Kevin has run search marketing since before Google existed. He breaks down biddable media economics, the full-funnel flywheel and how LLMs decide what to surface.",
+      "topicPills": [
+        "Pre-Google SEO & Search History",
+        "Biddable Media Economics",
+        "Full-Funnel Marketing Strategy",
+        "Agency Growth Through Acquisitions",
+        "AI Search Visibility & LLMs",
+        "Traditional vs. Digital Media Integration",
+        "Hiring & Team Building Philosophy",
+        "Cause Marketing & Social Impact"
+      ],
+      "bullets": [
+        "Why biddable media economics flip traditional media buying on its head — more spend means higher marginal cost, not volume discounts",
+        "How Kevin grew Didit through 11 agency acquisitions, keeping founders in place until retirement and then sunsetting the acquired brands",
+        "The difference between ranking algorithms and answer algorithms in AI search, and why the same query can return different results every time",
+        "Why consistent brand language across listicles and third-party mentions may matter more than backlinks for AI visibility",
+        "A case study where combining traditional and digital media for a clean power startup showed measurable lift in digital engagement in areas with stronger offline presence",
+        "Kevin's hiring philosophy: attitude and intelligence over domain expertise, with a current CEO who started as an assistant account executive 18 years ago",
+        "His advice for aspiring entrepreneurs: ask for help early, because solopreneurs are always stuck between delivering and selling."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 08 - Kevin Lee.txt"
+    ],
+    "seo": {
+      "metaTitle": "Traditional Marketing Methods — Kevin Lee",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa talks with Kevin Lee, executive chairman and co-founder of Didit, about nearly 30 years of…"
+    }
+  },
+  {
+    "episodeNumber": 9,
+    "slug": "trevor-longino",
+    "youtubeId": "_T3MDl0ceBA",
+    "videoUrl": "https://www.youtube.com/watch?v=_T3MDl0ceBA",
+    "title": "Marketing That Actually Works",
+    "titleHighlighted": "That Actually Works",
+    "duration": "1h 44min",
+    "publishedAt": "2025-04-25T00:00:00.000Z",
+    "guest": {
+      "name": "Trevor Longino",
+      "role": "Founder & CEO",
+      "company": "CrowdTamers",
+      "bio": "Trevor Longino has been doing marketing since 1996, when he built a barely functional e-commerce site for a former CIA agent selling self-published books. That project taught him he was better at promoting things than building them. What followed was a string of unlikely roles — wedding photography, birthday clown work, and video game testing at Electronic Arts. Writing 25 pages of bug reports a day gave him the samples to land a copywriter role at an Orlando startup incubator. Six weeks in, the entire marketing department above him quit, and the CEO made him director of marketing for a publicly traded company. He was 23.\n\nTrevor then moved to Warsaw to run marketing for Good Old Games (GOG), growing revenue from roughly $10-20K a month to about $16 million a year over four years. At GOG he developed his test-based marketing approach — running small Meta ad experiments to pre-validate email subject lines, producing an extra $360,000 in email revenue in one year. He later served as CMO at Unido, scaling to over a million in ARR within 18 months. Today, through CrowdTamers, he builds \"million dollar marketing engines\" for startups and has mentored over 6,000 founders via the Founders Institute.",
+      "linkedinUrl": "https://www.linkedin.com/in/trevorlongino/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa talks with Trevor Longino, Founder and CEO of CrowdTamers, about test-based marketing, startup go-to-market strategy, and why most founders fail at talking to their own buyers.",
+    "keyInsights": {
+      "headingHighlighted": "25 Years of Marketing Lessons",
+      "headingMain": ", Compressed Into One Conversation",
+      "body": "No theory. Trevor has the receipts — $117M in marketing engines built, 6,000+ founders mentored, and a framework that still works 25 years later.",
+      "topicPills": [
+        "Minimum Viable Sprints",
+        "Test-Based Marketing",
+        "Funnel Metrics & Benchmarks",
+        "Positioning & Messaging",
+        "Growth Hacking vs. Strategy",
+        "Content Marketing Engines",
+        "Startup Founder Mistakes",
+        "Scaling with AI"
+      ],
+      "bullets": [
+        "Minimum viable sprints as a framework for testing market positioning at $100 per experiment in 48 hours.",
+        "Why founders almost always use the wrong language to describe their own product to buyers.",
+        "The specific funnel benchmarks (1% CTR, 5% signup, 20% activation, 30%+ close rate) that make a marketing engine profitable.",
+        "How a Facebook algorithm change wiped out 80% of CrowdTamers' revenue in one year and what Trevor rebuilt afterward.",
+        "Why onboarding should mirror the ad message that brought the customer in, not dump them into a generic flow.",
+        "The rise of disposable, AI-built software and what it means for marketing agencies in the next few years.",
+        "Trevor's goal to help 1,000 founders reach a million dollars a year and how he is distributing that knowledge at scale."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 09 - Trevor Longino PT1.txt",
+      "EP 09 - Trevor Longino PT2.txt"
+    ],
+    "seo": {
+      "metaTitle": "Marketing That Actually Works — Trevor Longino",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa talks with Trevor Longino, Founder and CEO of CrowdTamers, about test-based marketing, startup…"
+    }
+  },
+  {
+    "episodeNumber": 10,
+    "slug": "tom-winter",
+    "youtubeId": "-vo9BHbQwyU",
+    "videoUrl": "https://www.youtube.com/watch?v=-vo9BHbQwyU",
+    "title": "SEO Wind",
+    "titleHighlighted": "Wind",
+    "duration": "57 min",
+    "publishedAt": "2025-06-12T00:00:00.000Z",
+    "guest": {
+      "name": "Tom Winter",
+      "role": "Founder",
+      "company": "SEOwind",
+      "bio": "Tom Winter is a serial founder who describes himself as half developer, half marketer. His previous company, DevSkiller, was a platform for testing and mapping developer skills that served blue-chip companies in over 100 countries. At DevSkiller, Tom landed in the marketing and sales seat because he was the extrovert on a team of stronger engineers. That mix of technical ability and commercial instinct shaped everything that followed.\n\nThe frustration that led to SEOwind was personal. Tom spent one to two hours building content briefs by hand — opening dozens of browser tabs, pulling keyword data, checking competitors, cross-referencing search intent — and every shortcut he tried hurt the quality of the final output. When GPT-3 arrived, he saw an opportunity: feed an AI system enough structured research data, and it stops producing generic filler and starts writing content that matches what Google rewards. SEOwind was built on that principle — a research-first tool that scrapes SERP data, analyzes competitor outlines, pulls statistics, and scores content against E-E-A-T factors before a single paragraph gets written.\n\nTom is upfront about his weaknesses. He calls himself a \"chaos person\" who can solve problems to 80% but struggles with perfection. He credits much of SEOwind's direction to roughly 600 customer conversations a year and a running list of every piece of feedback. His operating philosophy is blunt: the customer is right, and his ego needs to stay out of the way.",
+      "linkedinUrl": "https://www.linkedin.com/in/tom-winter/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Tom Winter, founder of SEOwind, to talk about what separates research-backed AI writing from the flood of generic AI-generated content on the market. Tom makes a pointed distinction early on: roughly 95 to 97 percent of AI writing tools are little more than a prompt wrapper around ChatGPT. If a tool produces an article in two or three minutes, it is not pulling real data, and the output is, in his words, \"the definition of writing spam.\"",
+    "keyInsights": {
+      "headingHighlighted": "Research-First AI Writing",
+      "headingMain": " Versus the Prompt Wrappers",
+      "body": "Tom explains why most AI writing tools produce spam, how SEOwind scores drafts against E-E-A-T, and what 600 customer conversations a year taught him about product.",
+      "topicPills": [
+        "Research-First AI Writing",
+        "E-E-A-T Scoring and Measurement",
+        "AI Content vs. Human Expertise",
+        "Content Update Strategy",
+        "SaaS Product-Market Fit",
+        "Customer Feedback Loops",
+        "Startup Growth and Branding",
+        "UX Design for Non-Technical Users"
+      ],
+      "bullets": [
+        "Why 95-97% of AI writing tools are prompt wrappers that produce low-value content indistinguishable from spam.",
+        "How SEOwind uses vector-based keyword mapping and SERP analysis to match search intent before writing begins.",
+        "The critique-rewrite cycle that scores drafts against E-E-A-T factors and pulls additional data to fill gaps.",
+        "Why AI should be treated as a logical engine, not a search engine — and the difference that distinction makes.",
+        "Tom's approach to content updates over new content, targeting striking-distance keywords already in the top 20.",
+        "How 600 annual customer conversations shaped the product roadmap and why Tom keeps an internal voting list rather than a public one.",
+        "The startup discipline of writing goals and KPIs down on paper to avoid justifying poor results after the fact."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 10 - Tom Winter.txt"
+    ],
+    "seo": {
+      "metaTitle": "SEO Wind — Tom Winter",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Tom Winter, founder of SEOwind, to talk about what separates research-backed AI…"
+    }
+  },
+  {
+    "episodeNumber": 11,
+    "slug": "ali-sayyed-mihailo-miljkovic",
+    "youtubeId": "WaSGf00FL0I",
+    "videoUrl": "https://www.youtube.com/watch?v=WaSGf00FL0I",
+    "title": "AEO Special #1",
+    "titleHighlighted": "Special #1",
+    "duration": "1h 11min",
+    "publishedAt": "2025-07-03T00:00:00.000Z",
+    "guest": {
+      "name": "Ali Sayyed & Mihailo Miljković",
+      "role": "SEO/SEM/AEO Lead Analyst at One Identity",
+      "company": "Founder of Elvion",
+      "bio": "Mihailo Miljkovic is the CEO and founder of Elvion, where his team works with enterprise and e-commerce brands to convert search demand into revenue. That work combines SEO, PPC, and conversion rate optimization — not as separate disciplines, but as integrated inputs that produce measurable business results. Mihailo has been closely tracking how ChatGPT and other AI-powered search tools now send real, converting traffic to websites, using log file analysis and revenue attribution across multiple client accounts.\n\nAli Sayyed serves as the SEO/SEM/AEO Lead Analyst at One Identity and OneLogin, two cybersecurity companies. He is also the co-founder of Aleph Website, a digital marketing agency. Ali has been adapting corporate SEO strategies for generative AI, including implementing sentiment tracking through tools like Profound and building a dedicated Gen.AI marketing channel within his organization. His perspective comes from an industry where informational queries have already migrated heavily toward chatbots, forcing his team to rethink how they measure visibility and pipeline impact.\n\nBoth guests joined host Nebojsa for the first installment of a roundtable series on AI-era search optimization — sharing real operational changes, not theory.",
+      "linkedinUrl": "https://www.linkedin.com/in/mihailo-miljkovi%C4%87-706a24217/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa is joined by Mihailo Miljkovic and Ali Sayyed for a roundtable conversation about what is actually changing in search — and what SEO practitioners need to do about it now. This is the first episode in a planned series where working professionals compare notes on AI-driven search, and the discussion reflects that: practical, specific, and grounded in what all three are seeing across their own accounts and clients.",
+    "keyInsights": {
+      "headingHighlighted": "What Is Actually Changing",
+      "headingMain": " in AI-Era Search",
+      "body": "Two practitioners compare notes on ChatGPT traffic, compressed buying journeys and sentiment tracking — operational changes, not theory.",
+      "topicPills": [
+        "AI as a Search Engine",
+        "ChatGPT Traffic & Revenue Attribution",
+        "Sentiment Score Optimization",
+        "Top-of-Funnel Content Strategy",
+        "Publisher & Listicle Positioning",
+        "User Journey Compression",
+        "Cross-Platform Brand Consistency",
+        "Robots.txt & LLM Accessibility"
+      ],
+      "bullets": [
+        "Why ChatGPT is now a legitimate revenue-producing channel, with some e-commerce clients already generating thousands in referred sales.",
+        "How the purchasing journey has compressed from days of comparison shopping to seconds of AI-synthesized recommendations.",
+        "The case for sentiment score tracking as a new optimization metric and how it feeds back into product messaging.",
+        "Why top-of-funnel content is not dead — it trains LLMs on your language, your framing, and your brand association.",
+        "How publisher listicles now shape AI responses, making strategic placement in third-party content more valuable than before.",
+        "The difference between traffic loss and value loss — fewer clicks does not automatically mean fewer conversions or less pipeline.",
+        "Why SEO is becoming a cross-platform brand positioning discipline that requires coordination with product, PR, and brand teams."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 11 - AEO - Miha & Ali.txt"
+    ],
+    "seo": {
+      "metaTitle": "AEO Special #1 — Ali Sayyed & Mihailo Miljković",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa is joined by Mihailo Miljkovic and Ali Sayyed for a roundtable conversation about what is…"
+    }
+  },
+  {
+    "episodeNumber": 12,
+    "slug": "sara-miller",
+    "youtubeId": "d4Oh-9dlCgU",
+    "videoUrl": "https://www.youtube.com/watch?v=d4Oh-9dlCgU",
+    "title": "SEO, AEO & AI Growth",
+    "titleHighlighted": "AI Growth",
+    "duration": "59 min",
+    "publishedAt": "2025-09-05T00:00:00.000Z",
+    "guest": {
+      "name": "Sara Miller",
+      "role": "Marketing Consultant & Founder",
+      "company": "SM Consulting",
+      "bio": "Sara Miller has spent over 15 years in digital marketing, most of it focused on B2B SaaS companies ranging from early-stage startups to billion-dollar enterprises. She got into SEO almost by accident — she started a personal blog while living in Washington, D.C. and taught herself search optimization through YouTube videos because she wanted people to actually find what she was writing. That self-taught foundation became a professional career when she moved into a startup marketing role and shifted fully into SEO.\n\nWhat shaped her most was working alongside strong mentors in agency environments. One introduced her to technical SEO through weekly calls on a large international account. Another helped her understand what SEO could do for a business at a strategic level — someone she still collaborates with today. Those experiences pushed her beyond content and backlinks into a fuller view of how search performance connects to revenue.\n\nIn January 2023, Sara launched SM Consulting, working directly with clients rather than through agencies or in-house teams. She is also a Semrush Ambassador and holds a LinkedIn Certified Marketing Expert credential. Even as a solo consultant, she deliberately partners with clients who challenge her thinking — not always the most profitable accounts, but the ones where she continues to learn.",
+      "linkedinUrl": "https://www.linkedin.com/in/sara-miller-99342219/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Sara Miller, Marketing Consultant and Founder of SM Consulting, to talk about how AI is changing the way marketers work — and what hasn't changed at all. Sara brings a perspective grounded in years of B2B SaaS marketing across agency and in-house settings, covering everything from integrated campaign strategy to tracking LLM-driven traffic.",
+    "keyInsights": {
+      "headingHighlighted": "What AI Changed",
+      "headingMain": " and What It Didn't",
+      "body": "Sara brings 15 years of B2B SaaS marketing to the question of where AI fits, why paid and organic are connected, and why buyers still want to be spoken to like people.",
+      "topicPills": [
+        "Integrated Paid & Organic Strategy",
+        "B2B SaaS Content Marketing",
+        "AI in Keyword Research & Content Creation",
+        "Optimizing for LLMs and AI Overviews",
+        "Pillar Content & Hub-and-Spoke Models",
+        "User Experience as an SEO Factor",
+        "Website Migration Risks",
+        "Marketing & Sales Alignment"
+      ],
+      "bullets": [
+        "Why paid media and organic SEO are more connected than most marketers treat them.",
+        "The argument for benefit-led messaging over feature-pushing in B2B SaaS marketing.",
+        "How pillar content and hub-and-spoke models still produce measurable results when the page experience is right.",
+        "Why fundamental SEO — header structure, schema, natural language answers — matters more now with AI-driven search.",
+        "Using AI as a second set of eyes on analytics data, not a replacement for strategic thinking.",
+        "How a botched website migration can cost a company millions and why QA is non-negotiable.",
+        "Sara's advice on building a personal brand: share your experiences even if someone disagrees, because people have already formed opinions about you anyway."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 12 - Sarra Miller.txt"
+    ],
+    "seo": {
+      "metaTitle": "SEO, AEO & AI Growth — Sara Miller",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Sara Miller, Marketing Consultant and Founder of SM Consulting, to talk about how…"
+    }
+  },
+  {
+    "episodeNumber": 13,
+    "slug": "slava-rybalka",
+    "youtubeId": "NTnUra7F6pY",
+    "videoUrl": "https://www.youtube.com/watch?v=NTnUra7F6pY",
+    "title": "SEO, AEO & AI Growth",
+    "titleHighlighted": "AI Growth",
+    "duration": "1h 01min",
+    "publishedAt": "2025-09-17T00:00:00.000Z",
+    "guest": {
+      "name": "Slava Rybalka",
+      "role": "Director of Marketing",
+      "company": "Independent SEO Consultant",
+      "bio": "Slava Rybalka started his career as an English teacher in Belarus before being drawn to the intersection of technology and human psychology. Around 2010, search engine optimization fit that description. His first SEO job came through oDesk — now Upwork — where a client paid him $10 to build five backlinks. He didn't know how to do it; the client taught him, and they became friends. That was the start of a 14-year career that brought him to the United States, where he has worked with hundreds of businesses across e-commerce, local services, and enterprise organizations, including Chewy, Arteza, and VSE Aviation.\n\nWhat separates Slava from many SEO practitioners is his early bet on machine learning. In 2016, when Google revealed that RankBrain was processing roughly 15% of queries through a neural network, Slava enrolled in ML and AI courses at Udacity and edX. That technical curiosity later led him to build Python-based marketing tools, including a lead-scoring algorithm that prioritized incoming leads by conversion probability. He does not treat AI as a shortcut. He treats it as a layer on top of deep marketing knowledge — using concepts from information retrieval and consumer psychology to write prompts that return genuinely useful output.",
+      "linkedinUrl": "https://www.linkedin.com/in/slavarybalka/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Slava Rybalka, a marketing executive and SEO consultant with over 14 years of experience, for a conversation about how SEO has changed across multiple eras — from gray-hat link building in Belarus to neural networks, LLMs, and what comes next.",
+    "keyInsights": {
+      "headingHighlighted": "Fundamentals Over Tools",
+      "headingMain": ", Across Every Era of Search",
+      "body": "Slava traces 14 years from gray-hat link building to RankBrain, machine learning and LLMs, and explains why principles outlast every tool.",
+      "topicPills": [
+        "SEO Evolution Across Eras",
+        "Neural Networks & RankBrain",
+        "AI for Customer Psychology Research",
+        "E-Commerce SEO & Technical Challenges",
+        "Link Building in the Neural Ranking Era",
+        "Machine Learning for Lead Scoring",
+        "Content Production Workflows",
+        "SEO Metrics & KPIs"
+      ],
+      "bullets": [
+        "Why Slava views backlinks as a diminished but still relevant signal inside Google's neural ranking system.",
+        "How he uses ChatGPT for customer psychology research rather than keyword discovery.",
+        "The value of a regularly updated SEO checklist built on Bruce Clay's competitive optimization philosophy.",
+        "Why technical SEO matters more in e-commerce due to large SKU counts, faceted URLs, and crawl budget constraints.",
+        "His approach to building content workflows modeled on a factory process, inspired by Greg Jarboe's content factory framework.",
+        "How he built a machine learning lead-scoring algorithm that prioritized high-probability conversions for a call center.",
+        "His advice to focus on marketing fundamentals and customer psychology because tools change but principles do not."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 13 - Slava Rybalka.txt"
+    ],
+    "seo": {
+      "metaTitle": "SEO, AEO & AI Growth — Slava Rybalka",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Slava Rybalka, a marketing executive and SEO consultant with over 14 years of…"
+    }
+  },
+  {
+    "episodeNumber": 14,
+    "slug": "jason-rivera",
+    "youtubeId": "M7unUoZtsgQ",
+    "videoUrl": "https://www.youtube.com/watch?v=M7unUoZtsgQ",
+    "title": "Organic Growth",
+    "titleHighlighted": "Growth",
+    "duration": "50 min",
+    "publishedAt": "2025-10-17T00:00:00.000Z",
+    "guest": {
+      "name": "Jason Rivera",
+      "role": "CEO & Founder",
+      "company": "Terrazzo Marketing Solutions",
+      "bio": "Jason Rivera started his marketing career almost by accident. As a sales operations intern finishing his tasks too quickly, he booked time on the calendar of a global marketing director — a move she found impressively bold. She pulled him off the sales ops team, added him to every meeting, and became his long-term mentor. That early shift set the trajectory for everything that followed. Over the years, Jason moved through digital marketing, creative marketing, growth marketing, and marketing operations — building the cross-functional knowledge that turns a specialist into what he calls a \"full stack marketer.\"\n\nHis career includes a role at HashiCorp, where he managed marketing operations and learned to build the full marketing funnel across a global team. He then co-founded Beacon, a bootstrapped real estate technology company where he built marketing strategy and automation from scratch with no outside funding. After that, he became Global Head of Growth at Lenus, a company with 13 offices across 10 countries, where he ran cross-border paid advertising and saw firsthand how cultural differences affect consumer behavior and messaging.\n\nJason now runs Terrazzo Marketing Solutions, where he applies that accumulated experience — full-funnel strategy, marketing automation, SEO, paid advertising, and team enablement — to clients on a consulting basis.",
+      "linkedinUrl": "https://www.linkedin.com/in/jasonriverala/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Jason Rivera, CEO and Founder of Terrazzo Marketing Solutions, for a conversation about growth marketing, team leadership, and why most companies get their customer journey wrong before they start scaling. Jason brings a background spanning sales ops, marketing operations at HashiCorp, a bootstrapped startup, and global growth leadership at Lenus.",
+    "keyInsights": {
+      "headingHighlighted": "Plug the Funnel",
+      "headingMain": " Before You Pour More In",
+      "body": "Jason built marketing operations at HashiCorp and ran growth across ten countries. His case: systems first, real customer journeys over vanity metrics, and thought leadership as the new content engine.",
+      "topicPills": [
+        "Full-Funnel Growth Strategy",
+        "Cross-Cultural Marketing & Global Teams",
+        "Marketing Operations & Systems Building",
+        "Thought Leadership as Content Strategy",
+        "AI in Marketing Workflows",
+        "Vanity Metrics vs. Revenue Metrics",
+        "Sales & Marketing Alignment",
+        "SaaS Community Building"
+      ],
+      "bullets": [
+        "Why reverse-engineering your best customers' journey matters more than chasing lead volume.",
+        "How cultural differences across countries change paid ad strategy, messaging, and budget thresholds.",
+        "The case for building systems before you scale — operational foundations that prevent growth from collapsing.",
+        "Why thought leadership is becoming the primary content engine, feeding SEO, organic, and paid channels from a single source.",
+        "The emerging role of go-to-market engineers who build AI-powered growth systems from connected tools.",
+        "How training and enabling your team — not just expecting output — is what separates good leadership from bad.",
+        "Jason's zero-to-100K organic traffic playbook for a SaaS product starting from scratch."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 14 - Jason Rivera.txt"
+    ],
+    "seo": {
+      "metaTitle": "Organic Growth — Jason Rivera",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Jason Rivera, CEO and Founder of Terrazzo Marketing Solutions, for a conversation…"
+    }
+  },
+  {
+    "episodeNumber": 15,
+    "slug": "jonathan-bentz",
+    "youtubeId": "WLNoU3794xY",
+    "videoUrl": "https://www.youtube.com/watch?v=WLNoU3794xY",
+    "title": "SEO Growth",
+    "titleHighlighted": "Growth",
+    "duration": "52 min",
+    "publishedAt": "2025-10-27T00:00:00.000Z",
+    "guest": {
+      "name": "Jonathan Bentz",
+      "role": "Growth Specialist",
+      "company": "Direct Online Marketing",
+      "bio": "Johnathan Bentz got his start in SEO in 2004 while studying at West Virginia University and writing sports coverage for the Associated Press. His uncle, Bob Bentz — who runs the digital marketing agency Purple Gator near Philadelphia — offered him an internship and pointed him to SEOBook.com. That internship gave Johnathan hands-on experience with SEO and Google Ads, and his journalism background pulled him toward content-driven organic search. The first time he ranked a page for a keyword that mattered to the business, he was hooked.\n\nSince then, Johnathan has worked across agency, corporate, freelance, and startup environments. He was employee number four at a startup agency, managed campaigns for a Fortune 500 tech firm where he drove 2000% traffic growth and built a million-dollar annual sales pipeline through SEO, and has spent nearly a decade at Direct Online Marketing — a Premier Google Partner agency based in Pittsburgh. His approach has always been anchored in commercial intent and measurable business outcomes. He is known for using cost-per-click data to reprioritize keyword lists by revenue potential, a method that helped him generate enterprise-level leads within his first 90 days at the Fortune 500 firm.",
+      "linkedinUrl": "https://www.linkedin.com/in/jonathan-bentz/"
+    },
+    "description": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Johnathan Bentz, Growth Specialist at Direct Online Marketing, for a conversation about what has changed in SEO over the past two decades — and what still works. Johnathan has been in the industry since 2004, so he has seen every major algorithm shift, the rise of content marketing, and the disruption brought on by large language models. His perspective is grounded in real campaign results, not theory.",
+    "keyInsights": {
+      "headingHighlighted": "Twenty Years of SEO",
+      "headingMain": ", and What Still Works",
+      "body": "Jonathan prioritises keywords by revenue potential, keeps pages fresh with small frequent updates, and shares early results from generative engine optimisation.",
+      "topicPills": [
+        "CPC-Weighted Keyword Prioritization",
+        "Content Freshness as a Ranking Signal",
+        "Generative Engine Optimization (GEO)",
+        "AI Overviews and Click Erosion",
+        "E-E-A-T and Human Validation",
+        "Bot Readability and Schema Markup",
+        "Sales Pipeline Attribution from SEO",
+        "Client Expectation Management"
+      ],
+      "bullets": [
+        "How Johnathan uses CPC-weighted keyword research to prioritize terms by revenue potential, not just search volume.",
+        "Why content freshness works as a performance multiplier and how to implement incremental page updates.",
+        "The early results from generative engine optimization (GEO) and why LLM-sourced leads tend to be highly qualified and high-intent.",
+        "Why informational content is losing click value as AI overviews absorb top-of-funnel queries.",
+        "The importance of bot readability and schema markup alongside personalized website experiences.",
+        "How E-E-A-T principles serve as reasonable doubt against being flagged for AI-generated content.",
+        "His advice on keeping the client focused on the main signal to manage expectations and reduce scope creep."
+      ]
+    },
+    "transcriptFiles": [
+      "EP 15 - Jonathan Bentz.txt"
+    ],
+    "seo": {
+      "metaTitle": "SEO Growth — Jonathan Bentz",
+      "metaDescription": "In this episode of The Ranking Heroes Podcast, host Nebojsa sits down with Johnathan Bentz, Growth Specialist at Direct Online Marketing, for a conversation…"
+    }
+  }
+]

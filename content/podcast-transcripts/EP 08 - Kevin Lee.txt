@@ -1,0 +1,1029 @@
+Nebojsa (00:01.324)
+Welcome to the ranking heroes, a podcast where we discuss different strategies right with the experts behind them. Today we have a pleasure to have Kevin Lee joined. He's an executive chairman and founder of didit.com, a company that was established back in September 1996. So Kevin, nice to meet you and thank you for joining the podcast.
+
+Kevin Lee (00:28.185)
+Thanks so much for having me.
+
+Nebojsa (00:30.804)
+So I would like to start with some basic introduction. So first of all, welcome. And you've been in the digital marketing space since the mid 90s, which is practically ancient history in internet years. So I want to know what initially drove you to this rapidly evolving field.
+
+Kevin Lee (00:53.071)
+Prior to starting Did It in 1996, had also previously started or co-founded a digital marketing agency and originally Did It was a SaaS SEO tool, not an agency. We've transitioned into being an agency, but to some extent, Did It was a spin-off of a digital marketing agency that used to do
+
+floppy disk marketing, CD-ROM marketing, marketing on Compuserve, AOL, and Prodigy, are all brands that people will have to look up on Wikipedia to figure out for the most part what they are. And then Did It became a search position monitoring tool in 96 for search engines prior to...
+
+prior to Google's founding. But digital marketing just appealed to me as sort of an economist who was fairly geeky and enjoyed advertising. So I was in mainstream advertising for a couple of years, Joe Walter Thompson and McCann Erickson and sort of learned traditional advertising. But the sort of
+
+targeting opportunities that were available in digital, know, seemed to resonate with me even in 1994 when, you you could send different people different floppy disks or CD-ROMs, you know, or create different tools for them online.
+
+Nebojsa (02:19.777)
+Yeah.
+
+Nebojsa (02:24.429)
+And what was the digital landscape like back then? What were some of biggest challenges and opportunities you encountered in those early days?
+
+Kevin Lee (02:36.973)
+The challenges really were lack of standardization, right? Because the first three platforms weren't internet platforms. They were separate platforms. So Compuserve, AOL, and Prodigy were three distinct separate online platforms with separate everything. And it wasn't really until the founding of Netscape that the internet started to standardize around HTML. so that lack of standardization created
+
+both opportunity and headwinds for people, right? Because you have to do different things for different places. And you might say that to some extent that's happening again, right? the fact that you have to deal with mobile, you have to deal with internet, the other forms of digital now like digital outdoor advertising, et cetera.
+
+Nebojsa (03:19.607)
+Yeah.
+
+Nebojsa (03:24.333)
+And you mentioned using some traditional marketing techniques. So I want to ask you, are you still using some of these or if you are not using them, do you find that these old traditional marketing techniques are still reflecting in some of the new marketing strategies that you're implementing for your clients and for your brands?
+
+Kevin Lee (03:49.018)
+Yeah, mean, digital ended up layering on top of traditional, right? But everything that was possible in some forms of traditional became available in digital. So probably the closest analogous form of traditional marketing back pre-internet was direct mail, right? Where you knew that you didn't know the person's IP address.
+
+Nebojsa (04:13.677)
+Hmm.
+
+Kevin Lee (04:16.175)
+But you knew the person's postal address and so that allowed you to do a lot of hyper focused marketing so Ironically did it in its journey ended up in the direct mail business and I've been about some technology in the direct mail business to use hyper personalized QR codes on direct mail to allow B2B marketers and high-end B2C marketers to Get alerted any time a person scans a unique QR code on the mail
+
+So, you know, what is old becomes new again over time, right?
+
+Facebook wasn't the first community either, or the first social media platform. were two or three GeoCities and Tripod in particular came before Facebook. you know, sometimes it's just a matter of timing when something becomes resonant with the audience and takes off. But yeah, traditional marketing absolutely remains critically important for digital marketers to know. Many digital marketers spend most of their time at the
+
+Nebojsa (04:49.165)
+nice to sit.
+
+Nebojsa (04:58.305)
+Yeah.
+
+Kevin Lee (05:18.921)
+lower end of the funnel, meaning hand raisers in search who say, I'm looking for this and so it's a perfect time to get a message to them. So the signal is very high. But there's a limit to how much demand you can harvest in search. Eventually you reach a point where you have to move up funnel, and that's where more traditional marketing ends up being really important.
+
+Nebojsa (05:33.677)
+Thank you.
+
+Nebojsa (05:41.974)
+Yeah, so can capture more audience than actually compared to demand like of online searches that are coming every month. So, okay, that's a good answer and I like how you said the old becomes the new and that's like well said. So also I've noticed that you hold an MBA from Yale. So I want to ask you, I've seen like a lot of people who are in the marketing. They also want to...
+
+Kevin Lee (05:44.45)
+Yeah.
+
+Nebojsa (06:11.767)
+to have a diploma from MBA. So how has your business education influenced your approach to marketing and entrepreneurship?
+
+Kevin Lee (06:23.263)
+Well, certainly for an entrepreneurship basis, it's good to have those other foundational understandings of business and accounting, you know, if you're going to be running a business. But they're equally useful in an agency context for people to have the fundamentals of business and understand the KPIs that a business is using, which are different than the KPIs that might be the marketing KPIs.
+
+Right, so being able to understand the language as you move further up in the seniority of an organization, as you go from tactics into strategy and as you start to move into the kinds of KPIs that senior managers might be interested in, or goals that senior managers might be interested in achieving, it's sort of useful to have that framework. I'm not entirely sure that
+
+Nebojsa (07:02.752)
+Mm-hmm.
+
+Kevin Lee (07:17.071)
+for all those people that a traditional MBA is necessarily the way to accomplish that, right? So MBAs probably are more useful from the perspective, you know, in hindsight of having them on your LinkedIn or your resume if you're looking to get hired. If you're not looking to get hired, there are lots of great resources, including, you know, online universities that are free, or online repositories of information that are free.
+
+Nebojsa (07:24.151)
+Mm-hmm.
+
+Kevin Lee (07:46.51)
+really interesting business podcasters like Alex Hormozi and other folks like that that will sort of distill elements of marketing, elements of sales, elements of business down. And so if it's just the information you're interested in as opposed to the credential, you can find the information without the credential, right? So it's fairly expensive to spend two years full-time or some portion of part-time.
+
+Nebojsa (08:04.973)
+Mm.
+
+Kevin Lee (08:14.361)
+to get a credential. And so if you need the credential because you believe that you want the credential and the knowledge, then absolutely, MBA is the way to go. If you just want the knowledge, knowledge has become pretty frictionless these days, right? Even more so with ChatGPT and LLMs.
+
+Nebojsa (08:22.89)
+Mm-hmm.
+
+Nebojsa (08:31.521)
+Yeah, you read my mind. Yeah, and like what key takeaways from your MBA program have you found most valuable in your career?
+
+Kevin Lee (08:43.119)
+Because I ended up building bid management platforms under its umbrella, you know, after we went from SEO monitoring platform into bid alert and bid management platforms that we built, there are a few things that came in really handy. think understanding how to look at media and business at the margin is really handy. So it's sort of an economic construct in microeconomics that what's the marginal
+
+Nebojsa (08:47.543)
+Mm-hmm.
+
+Kevin Lee (09:12.815)
+change in one variable based on the marginal change in another variable, right? And that becomes really important in any auction-based media because in an auction-based media, as you increase the bid, you have to look at the marginal result, right, of that because when you're increasing a bid, you don't just pay more for the marginal increase in traffic, you pay more for all of it.
+
+Nebojsa (09:27.947)
+Mm-hmm.
+
+Kevin Lee (09:34.928)
+So understanding the mathematics behind that is really key when you're building systems and processes that are going to result in maximizing spend across a corpus of opportunities, which include maybe search, social, programmatic, et cetera. So understanding the elasticities of each market. So paid search is extremely inelastic. And so at the margin, if you want more traffic out of a set fixed corpus of keywords,
+
+Nebojsa (09:46.413)
+Mm-hmm.
+
+Nebojsa (09:56.077)
+Mm-hmm.
+
+Kevin Lee (10:03.545)
+Though you're going to end up having to elbow other marketers out of the way by bidding more, right? And that becomes extremely expensive. And so understanding the inelasticity of search in comparison, for example, to the elasticity of meta.
+
+Nebojsa (10:08.919)
+Yeah
+
+Kevin Lee (10:17.795)
+right, as an advertising vehicle or an advertising platform. So that's come in really handy because I think a lot of folks in the media business and the advertising business who didn't take, you know, economics 101 don't understand elasticities, they don't understand marginal impact of things.
+
+Nebojsa (10:18.217)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (10:34.505)
+Mm-hmm, and how do you approach when the client is worried about these things? Do you like give an explanation or you just I don't know like just make them trust you and like just let me do my work
+
+Kevin Lee (10:43.567)
+Thank
+
+Kevin Lee (10:49.243)
+I think it's important for senior people at agencies to sometimes wear that sort of educational, professorial hat with clients because in some cases your point of contact with the client maybe came through the creative track.
+
+Nebojsa (10:57.281)
+Yeah.
+
+Kevin Lee (11:08.461)
+right and so they're not exposed to the mathematical side of things at all right they're exposed to communications that like PR or corporate communications or they're exposed to design as in graphic design and copywriting and they became a marketer through that channel so they don't have necessarily the comfort level with mathematics or the comfort level with numbers and with data that that
+
+you might have at the agency side. So I think it's advantageous to educate clients on that. But there are even clients who maybe had been buying media. At this point, there's less of them.
+
+But in traditional media, usually if you bought more of it, you would get a discount. That's the opposite of biddable media, right? So in your hometown, wherever you happen to be at the moment, if there's a radio station, it used to be that if you went to lunch with the sales manager and you were currently buying 100 radio spots on the radio, and you said, all right, what if I buy 200? How much of a discount can you give me?
+
+That's the opposite of what happens in digital biddable media. In digital biddable media, if you want more, you pay more at the margin, right? And so a lot of people, it's hard for them to get, wrap their heads around that because whether it was newspaper advertising or magazine advertising, TV, radio, all of those, the more you buy, the cheaper it gets for the most part. There are some differences. But that world has gone away and now you're in this biddable media environment where you need to understand the
+
+Nebojsa (12:08.469)
+Mm.
+
+Nebojsa (12:12.043)
+Yeah. Exactly. Yeah.
+
+Nebojsa (12:19.67)
+Mm-hmm.
+
+Nebojsa (12:26.772)
+Mm-hmm. Mm-hmm.
+
+Kevin Lee (12:37.187)
+marketplace you're trading in.
+
+Nebojsa (12:40.255)
+Yeah. Okay. Now well explained. So I want to dive deeper into the journey of Did It. So you found that Did It back in 1996 and what was the initial vision you had for Did It and how has that vision changed or stayed the same over the years?
+
+Kevin Lee (12:58.531)
+The common thread across DITED and the other businesses that I run is really being helpful in solving a problem. So the vision has typically been sort of fairly narrow.
+
+in the beginning of something because it's usually a narrow problem that I'm solving, right? And then sometimes the ability to solve bigger problems occurs over time. So when Did It was founded, the problem was that domain holders had no idea whether or not they were currently in AltaVista, Excite, InfoSeek, and these other pre-Google engines. And so you needed a combination of monitoring.
+
+Nebojsa (13:32.758)
+Mm-hmm.
+
+Kevin Lee (13:36.188)
+and remediation. And if so, your domain fell out of the engine, you'd have to resubmit it. And so we had to did a detective, which would monitor your current status and then resubmit you if your domain or pages or subdomains fell out of the engine. we were initially, the vision was fairly tight. Like, here's a problem, we can solve it. People will be willing to pay for us to solve the problem.
+
+Nebojsa (13:51.629)
+Mm-hmm.
+
+Kevin Lee (14:03.427)
+Then when we got into paid search early, again, there was a problem in that managing a large set of keywords across a biddable search became complex. And so we were solving that complexity and adding efficiency to it. And it was really, over the years as it became more challenging to run just our bid manager platform and SEO practice in a silo.
+
+Nebojsa (14:17.868)
+Mm-hmm.
+
+Nebojsa (14:28.394)
+Mm-hmm.
+
+Kevin Lee (14:28.803)
+you know we had a competitor marine software that was extremely competitive on price i don't believe they've ever had a profitable quarter in their entire existence and publicly traded and then you had google on the other side basically giving away bid management services so we had to layer services on top and once you layer services on top of technology then people start asking you to solve all kinds of problems then you have to decide do you want to solve that person's problem or let somebody else solve it
+
+Nebojsa (14:58.317)
+So considering that the digital marketing field has changed dramatically since you found the delete How did you adopt to these changes and what strategies have been most effective in staying ahead of the curve? Especially when it comes to competitors I mean you probably started with a few competitors and I can just imagine like just stacking the competitors year by year and fighting with all of them etc. So
+
+I wanna like...
+
+Kevin Lee (15:30.106)
+Yeah, think, know, obviously making sure that I remain a subject matter expert in search in particular, which still is a big foundation for, for did its business, but in digital marketing more broadly has helped, right? I think when people make agency decisions,
+
+Nebojsa (15:37.719)
+Mm-hmm.
+
+Nebojsa (15:44.013)
+Mm-hmm.
+
+Kevin Lee (15:50.202)
+they're often getting a little slice of the founder's brain in time, right? And so I think that remains key. Then having subject matter experts in the individual verticals, paid search, organic search, social, et cetera, and having those team members who are smarter than me at those individual elements, right, is key, right? Because I want them to be smarter than me at those things. don't want, I can't be a master of all trades, a jack of all trades. I can understand enough and...
+
+Nebojsa (15:54.208)
+Mm-hmm.
+
+Nebojsa (15:59.96)
+Mm-hmm.
+
+Nebojsa (16:11.533)
+Mm-hmm.
+
+Kevin Lee (16:19.097)
+probably against many other people at many other agencies, I still know more or better just due to lots of years of experience. retaining that sort subject matter expertise, because in the agency world, you're buying people, right? You're not buying the brand, the agency brand. mean, maybe for WPP's brands, you're buying the brand and not the people. But I would argue even at that case, the decision to go with one agency over the other is about the people.
+
+Nebojsa (16:21.623)
+Yeah.
+
+Kevin Lee (16:46.637)
+So having the right people in the right roles and having them be sort of best of breed at what they do is key.
+
+Nebojsa (16:46.797)
+you
+
+Nebojsa (16:53.995)
+Okay, so basically what you did is like breaking your company into several different departments. Each one is in charge for a specific vertical like SEO, PPC, et cetera. And you have like a head of the apartment, department that knows the word the best. And then that person has the entire team under itself, which the team reports to that head of department and the head department reports back to you as an owner, right?
+
+Kevin Lee (17:22.671)
+Yes, that's the way we've done it. And then for clients where we're doing more than one channel, right, there'll be an account person who's more of a generalist, right? So the account person sort of becomes a general contractor for, you know, making sure that the SEO team is doing what they're supposed to be doing, that the paid search team understands what their objectives are, the paid media team, et cetera. So yeah, that's the way we structure it.
+
+Nebojsa (17:31.521)
+Yeah.
+
+Nebojsa (17:40.448)
+Mm-hmm.
+
+Nebojsa (17:46.094)
+And is it still structured like that? Okay, so I know that you started in SEO and PPC and then you shifted becoming a full service agency. So what prompted that shift?
+
+Kevin Lee (17:48.642)
+It is.
+
+Kevin Lee (18:03.087)
+Once we sort of started to back out of being in the bid management category, because when we were a SaaS company, had many big brands using us, including agencies like Digitas, using the technology. But as the margin eroded out of the technology due to the weird landscape that it was in, we started to layer services on top. then clients...
+
+Nebojsa (18:12.685)
+Mm-hmm.
+
+Nebojsa (18:18.935)
+Yeah.
+
+Kevin Lee (18:29.327)
+enjoyed the quality of my people and so would ask my people, can you also do that? And that creates a conundrum because if you don't have the subject matter experts to do that thing, you have to say no. So, you know, we started to think about acquiring agencies that had that subject matter expertise so that acquires, right, where you get the revenue and you get the people. And so we made 11 of those acquisitions, right, to bring on the subject matter experts within those various categories.
+
+Nebojsa (18:51.149)
+Mm-hmm.
+
+Whoa.
+
+Nebojsa (18:59.889)
+So are you still keeping these companies as a separate entities? Have you merged out any of these or what's your approach there?
+
+Kevin Lee (19:09.263)
+So our approach with that, and I don't know that it's the perfect approach necessarily, but the approach that we took is as long as the founder of the agency that we were acquiring or marketing services from that we were acquiring was still active in managing the business and in business development, we would just add a did it company under the logo, right? And sort of keep them somewhat independent, but they would share obviously things like accounting and human resources. And then some of the teams.
+
+right, would bridge over. So when we would require a PR agency, a lot of times PR agencies are in charge of sort of general visibility. And so they might liaise with the SEO team, right? So there was some efficiencies of scale for that. And then, you know, once the founder left, because they were retiring or whatever, then we would just sort of, you know, we would start sending the invoices from they did and sort of the clients would get comfortable with that and they would end up having different account managers.
+
+and then we would sunset the brand for the most part. One of the brands we've kept separate just because it allows us to put a focus on influencer marketing. So one of our acquisitions, the Halo Group, does influencer marketing under that brand because that's a unique enough difference. And also the name goes really well because influencers create a halo effect on the brands, right? So we figured, well, we'll keep that domain separate and talk about influencer marketing there.
+
+Nebojsa (20:17.374)
+Mm-hmm.
+
+Nebojsa (20:28.897)
+Yeah.
+
+there.
+
+Nebojsa (20:36.413)
+Do you have any consultant like a strategic consultant that's helping you with all these decisions like for example keeping that domain separate because the message is so well for the brand itself or do you like do everything alone?
+
+Kevin Lee (20:51.439)
+I don't like I I don't do it alone You know the you know, I've got a great team at the senior level And in addition to that, I think you know, I belong to a few sort of business groups where you can sort of bounce ideas off of each other like the C-suite network I'm a member of that and there's some other business groups that I belong to and When it comes to sort of a potential sort of fork in the road where I have to sort of decide
+
+Nebojsa (21:11.533)
+Mm-hmm.
+
+Kevin Lee (21:19.833)
+What's the best strategy here? I'll just find some trusted people in addition to my executive team and other owners of the firm and we'll hash it out and think through what the best strategy is.
+
+Nebojsa (21:24.141)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (21:34.527)
+Yeah, before I continue asking a few more questions about Did It? I just want to jump in with a question related to scaling the team. So scaling teams is a challenge and I know that I've been experiencing that myself. So what's your approach to hiring and building teams that really deliver results and care about the company?
+
+Kevin Lee (21:57.444)
+Yeah, that's a tough one. I I was a skeptic when I was a young, young kid before I was an owner of a company. I used to think of HR as an impediment to getting what I wanted, which was the job I was going after. But once you're running an agency, you realize how critically important HR is. And I feel like attitude and intelligence are equally important, and in some cases, more important than specific subject matter.
+
+domain expertise, right? And so as a result of that, having the right person with the right intelligence and the right attitude, we can sort of train those people up on the did it way of doing things, whether that's the did it way of doing SEO or the did it way of managing paid search or paid social or programmatic, et cetera. So as long as they have sort of the fundamental base of knowledge, attitude and intelligence are really the key.
+
+Nebojsa (22:27.927)
+Mm-hmm.
+
+Nebojsa (22:37.389)
+Mm-hmm.
+
+Nebojsa (22:44.653)
+Mm-hmm. Mm-hmm.
+
+Kevin Lee (22:51.567)
+often attitude is even to some extent trumps that right because you're in a services business and so those people are front-facing and certainly I've made my share of mistakes in hiring over the years and it's also a little bit more complicated sometimes when you make an acquisition of an agency you end up with people that you didn't hire right but you still want to keep them as part of the team and integrate them into the team and you have to think that through.
+
+Nebojsa (22:55.499)
+Yeah.
+
+Nebojsa (23:02.029)
+Yeah.
+
+Nebojsa (23:08.385)
+Mm-hmm.
+
+Nebojsa (23:12.013)
+Right.
+
+Kevin Lee (23:17.849)
+You know, if you have sort of the slow and steady growth mindset, I think you can do really great things by taking junior people who are smart and have great attitude, and you can sort of bring them up. mean, the current CEO who I put, you we put in that position because he's such sort of a team focused player, like I'm sort of more of the big picture marketing mad scientist. He started as an assistant account executive. I think it must have been.
+
+Nebojsa (23:22.059)
+Mm-hmm.
+
+Nebojsa (23:27.319)
+Mm-hmm.
+
+Nebojsa (23:39.775)
+Mm-hmm.
+
+Yeah
+
+Kevin Lee (23:46.912)
+be like 18 years ago or 16 years ago. He's now the CEO. So, I think one should run one's business as a meritocracy. People earn the positions that they have.
+
+Nebojsa (23:51.627)
+So it is possible.
+
+Kevin Lee (24:07.631)
+Sometimes they'll reach a certain plateau and end up changing and going to another agency or whatever and that's okay, right? I we have at this point since 1996, we have more alumni than we have employees just because even with a long retention, when you're talking about 30 years, 30 plus years, there's going to be a lot of alumni out there. And we have happy relationships with most of our alumni.
+
+So they have fond memories of working at Did It.
+
+Nebojsa (24:41.549)
+I want to thank you because I just got encouraged. I'm really having a hard time with the hiring processes, you know, it's easy for me to keep the people in the agency. They like working here, but finding the right talent that is a bit of challenge that I'm currently facing. But yeah.
+
+Kevin Lee (25:03.003)
+Yeah, you know, once you reach a certain point, you can have your own HR person, right, whether that's HR VP or the person may share that role with it with another role, but having somebody dedicated to that is a real luxury, right? Once you reach that point in size where you can have an HR person, it's really useful.
+
+Nebojsa (25:10.157)
+Mm-hmm.
+
+Nebojsa (25:22.221)
+And do you like talking with the potential employees before hiring them? So I guess they go like a hiring cycle. They speak with the HR. If they pass that interview, they go to the head of department, I guess. Maybe it's different in your situation. And then at the end, do you make the final decision about the hiring and meet with the employee or how that goes?
+
+Kevin Lee (25:47.9)
+I generally don't impose myself on that, right? I mean, that's a part of, like, just trust in my team. While I'll be interacting with everybody that gets hired...
+
+Nebojsa (25:50.477)
+Mm-hmm.
+
+Nebojsa (25:54.701)
+Yeah.
+
+Kevin Lee (25:59.312)
+their manager is the key, right, the person they're reporting to. So if the person that they're reporting to is excited about the hire and really thinks it's great and HR has vetted them from a sort of general attitude and intelligence basis, I will sometimes end up being asked to also interact with the candidate, but that's really when they're...
+
+Nebojsa (26:03.039)
+Mm-hmm, yeah.
+
+Nebojsa (26:14.508)
+Mm-hmm.
+
+Kevin Lee (26:23.833)
+But if they're in like a tiebreak situation where there's two candidates that both seem great and they're sort of thinking, well which one should we go with?
+
+Nebojsa (26:25.879)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (26:30.067)
+yeah, then Kevin is the shot color then. Okay, okay, and one more question. Since you've been an investor, obviously you acquired 11 companies. Can you tell me what are the biggest mistakes startups make when they pitch to investors?
+
+Kevin Lee (26:34.787)
+Yeah, exactly.
+
+Kevin Lee (26:55.631)
+You know, I've done, you know, obviously startups were not the companies that we acquired, but I've done investing outside of that. And I would say they don't do a deep enough evaluation of the defensibility of their business, right? Can they defend their turf? Is there some kind of a moat that separates them?
+
+Nebojsa (27:04.107)
+Yeah, you can give me an example.
+
+Kevin Lee (27:24.655)
+from the competition if there is any in their category. And it doesn't necessarily mean that it's bad, that there's no moat or that it's not fully defensible, right? Sometimes they can just be better and better is good enough as a differentiator. But a lot of times, I'll get a pitch where they just haven't fully thought through, you know.
+
+two years down the road, five years down the road, what is the competitive landscape going to look like? Because when you're an investor, you're having a two to five year or longer horizon, right? And so if you feel like the entrepreneur or startup team has not fully explored the defensibility of their product and or service, it's a big red flag.
+
+Nebojsa (28:15.085)
+Do you have any other examples like red flags?
+
+Kevin Lee (28:21.199)
+I mean There's far more companies I haven't invested in than I have and my track record with the ones that I have isn't Superb, and I've got like two or three that I think will do really well I guess the other is I sometimes see and these I usually stay pretty far away from is is they don't have They don't have sort of their own fiscal commitment
+
+And that comes in two flavors, right? That means either that they're expecting post-funding to take a pretty large salary, or they're not putting in their own cash, right? So those again are sort of warning signs. you know, they're asking you to bet on the future of their company, but they're not necessarily putting their own skin in the game, right? They're not necessarily dedicating themselves to the same extent.
+
+Nebojsa (28:58.743)
+Mm-hmm.
+
+Nebojsa (29:10.167)
+Yeah.
+
+Nebojsa (29:17.933)
+Yeah, makes you just avoid kind of companies. Yeah. Yeah. So I know that you are using different technologies. So I want to know with Didit transforming itself into a fully full service marketing firm. Can you tell us about your strategic goals when retaining technology at its core while expanding?
+
+Kevin Lee (29:21.422)
+Yep.
+
+Kevin Lee (29:41.796)
+Yeah, mean these days there are tools out there that do most of what we need and there's dozens of SEO tools including competitive intelligence tools as well that sort of bridge between SEO and competitive intelligence. There's obviously a bunch of different paid media tools for most of our clients. They're standardized around the Google stack, right? But we're happy to use any other.
+
+media management platform that the client has a preference to, right? We don't want to make a client have to make two decisions to hire us as an agency and to switch from something that they're used to at the same time. So we've become more sort of technology agnostic and it's only when a of technology is missing, right, that allows us to accomplish something unique for a client that will think about maybe building it.
+
+like the direct mail technology that we built for custom QR codes. It was still possible to do that at the time with a couple of other players, but we didn't feel like it was executed well, and so we went ahead and built our own there. So we generally use external tools and glue them all together in interesting ways. That's much easier these days than it used to be. I mean, it used to be if you had to do API integrations, it was a lot of coding. Now, with AI,
+
+Nebojsa (30:36.779)
+Mm-hmm.
+
+Nebojsa (30:57.421)
+Ugh.
+
+Kevin Lee (31:01.059)
+the AI reads the documentation of the API so you can do the integrations much more quickly. So it's really been a huge change, the introduction of AI. And of course, now with AIO, lots of the SEO conversations are now not just exclusively about ranking in Google, but they're about, well, how do I increase my odds of showing up in a chatbot result?
+
+Nebojsa (31:01.559)
+Yeah.
+
+Nebojsa (31:16.525)
+Yeah.
+
+Nebojsa (31:24.012)
+Yeah, I know you do. Do you have such requests? Request from the clients like asking how can I be shown in the AI overview search or how can chat GPT or other AI search engines show me as like the most reliable reliable source based on the search terms people are using.
+
+Kevin Lee (31:48.1)
+yeah, we get it increasingly. think that light bulb is really just starting to go on at marketers now as they're realizing that the ranking algorithms for Google and Bing are very different than the ranking algorithms. If you want to call it that, it's not even really a ranking algorithm, it's an answer algorithm.
+
+Nebojsa (31:54.349)
+Mm-hmm. Yeah.
+
+Kevin Lee (32:08.855)
+at an AI and the AI is a probabilistic engine, right? So depending on slight changes in the search query, you'll get very different answers and you also get different answers with the same search query, right? So just because you'll end up with a different cluster of compute and you'll end up with a different answer. then you have the fact that ChatGPT has multiple models, right? So you won't get the same answer depending on which model you use.
+
+Nebojsa (32:17.943)
+Yeah.
+
+Nebojsa (32:35.499)
+Yeah, yeah, exactly.
+
+Kevin Lee (32:38.529)
+So, you know, I do a fair amount of education now on understanding how LLMs work, understanding where the information comes from, understanding how they make decisions about what to show, and how that...
+
+Nebojsa (32:49.515)
+Mm-hmm.
+
+Kevin Lee (32:53.581)
+Those decisions come from a corpus of crawled information, right? That is the same information that is feeding in many cases a Google SERP, right? Especially in Gemini, right? And understanding how you can adapt your SEO strategy to simultaneously prepare yourself for future proof yourself for AI visibility. Because they don't want to invest necessarily exclusively in AI visibility because it's...
+
+Nebojsa (32:58.025)
+Mm-hmm.
+
+Nebojsa (33:03.722)
+Yeah.
+
+Nebojsa (33:13.257)
+Mm-hmm. Mm-hmm. Yeah.
+
+Kevin Lee (33:20.911)
+It's changing so quickly, to be able to future-proof your SEO against AI visibility is a good idea, for sure.
+
+Nebojsa (33:28.583)
+Yeah, well, I would just want to share like what I noticed because we do many backlinks. We tried searching for the terms that we were targeting in the link building campaigns for different clients, but for the clients who built more than let's say 200 links targeting one specific page and some search query. So what I've noticed that
+
+Shadg, EPT, Perplexity and Gemini, they all showed the client in top 10 positions. when, for example, if I was prompting, what are the most popular web flow agencies? And we have a client who built more than 200 links to the web flow service page. The client was shown in top 10 results. And why do I think that's happening is because both Google, these AI search engines,
+
+They look for different information, especially the AI prompts, and they go through, let's say you wanna, for example, you're prompting, list me at most popular web flow agencies. What AI will do, and Perplexity has it, like the sources where the information are coming from, I can see listicles, like popular websites that are listing all the popular.
+
+companies in the specific area of expertise. And if you show yourself your company in all of these listicles, you will most likely be shown in the AI search and the AI overview as well. So I think backlinks is something that will empower your brands to be shown in AI searches. Yeah, I'm not sure about other strategies right now. We are still testing that, but yeah.
+
+for backlinks, I'm pretty sure that they work. Did you guys test anything related to the AI search rankings?
+
+Kevin Lee (35:33.424)
+Yeah, we've done some testing as well. I would be curious if you ever get a chance to do an A-B split test, whether the existence of the backlink actually makes a difference in the listicle. So if you're thinking about two different listicles, they could both list 10 firms in a category. And one listicle could include links out, and those could either be follow or no follow links. And others might just list it, but generally, for usability, you would link.
+
+Nebojsa (35:40.855)
+Mm-hmm.
+
+Nebojsa (35:46.679)
+Mm-hmm.
+
+Nebojsa (35:52.246)
+Yeah.
+
+Nebojsa (35:58.328)
+Mm-hmm.
+
+Nebojsa (36:02.419)
+Yeah. Yeah.
+
+Kevin Lee (36:03.377)
+But because of the way the LLMs ingest the information, they may not actually treat it differently as to whether or not the backlink exists or not. Now obviously, when there is a listicle, it's pretty common that there's a backlink. Now the backlink may be on the company name, the backlink may be on a link button or a link term right next to it. But usually in a listicle, there's a link, right? But I think...
+
+Nebojsa (36:12.077)
+Mm-hmm.
+
+Mm-hmm.
+
+Nebojsa (36:19.819)
+Yeah. Mm-hmm.
+
+Nebojsa (36:25.451)
+like yeah
+
+Yes.
+
+Kevin Lee (36:33.465)
+Part of what is driving the ranking behavior or the visibility behavior is the fact that the commonality of language in the listicle, right? So the way that the company is described in that list, so if the number four in the list, and it's described in exactly the same way or nearly the same way in every listicle,
+
+Nebojsa (36:45.815)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (36:52.023)
+Mm-hmm.
+
+Kevin Lee (36:58.223)
+I think that's probably more of a driver or equally a driver to their existence in the listicle. So the existence in the listicle allows perplexity in particular because it likes to look for these listicles to then prefer you. then it's the fact that the descriptor of the company or the product or the service or the brand is consistent and reinforces itself in many places. So it's pretty common that if you take a
+
+Nebojsa (37:00.855)
+Mm-hmm.
+
+Nebojsa (37:04.595)
+Mm-hmm. Makes sense.
+
+Nebojsa (37:20.621)
+Mm-hmm. Yeah. Yeah.
+
+Kevin Lee (37:26.883)
+moderately famous person and you they reuse their bio over and over again and you actually take the descriptor of who they are that shows up in their bio many many times and then you just say who is and insert the descriptor it'll end up picking that person right because it's a probabilistic engine and it's it's seeing that phrase in relationship to that brand or person over and over again
+
+Nebojsa (37:32.055)
+Yeah.
+
+Nebojsa (37:36.567)
+Yeah.
+
+Nebojsa (37:43.671)
+Right. Yeah.
+
+Nebojsa (37:49.537)
+Mm-hmm.
+
+Yeah, makes sense, makes sense. I would like to do the A-B testing like backlinks versus not backlinks in listicles and see the results. also your LinkedIn mentions inventing new PPC, SEO, social and display technologies. So can you share an example of one of these inventions and how that benefit did it and its clients?
+
+Kevin Lee (38:17.039)
+Sure, mean our bid management platform we were famous for 15 years ago and that had a huge impact on us. At one point we were over 100 employees. We're about half of that now, a little less than half of that now as an agency. But I've continued to invent some other technologies. Like I said, the QR codes on direct mail has been a fun one. I built the hyperlocal SEO platform that's still sort of in beta.
+
+Nebojsa (38:19.807)
+Yeah. Yeah.
+
+Nebojsa (38:38.38)
+Mm-hmm
+
+Kevin Lee (38:43.375)
+We're looking at potential publishing partners to test that with. Then outside of Did It, I even invented some fun tech, WeCare.com, raised $8 million for nonprofits up until the point when Amazon decided to take it and run Smile, which they did for 10 years until they shut that down. So that was a philanthropic invention as opposed to...
+
+Nebojsa (38:52.909)
+Mm-hmm.
+
+Nebojsa (39:01.101)
+Mm-hmm.
+
+Kevin Lee (39:05.743)
+So yeah, a lot of stuff is super fun. More recently, out of my incubator, I've invented an AI-powered voicemail drop system to do hyper-personalized voicemails that can be left in people's voicemail inboxes, driven by AI. So I continue to invent.
+
+Nebojsa (39:14.679)
+Mm-hmm.
+
+Nebojsa (39:24.397)
+So what are some areas you are focusing on now when it comes to inventing?
+
+Kevin Lee (39:29.583)
+Well, I mean, you can't not pay attention to AI, right? Because the fact that most of the AI engines are available via API, and you can do data enrichment in a way that you couldn't do data enrichment before, I think that's an area that we're dabbling with within the teams as well, is enriching data around a domain, enriching data around keywords, you know, doing...
+
+Nebojsa (39:33.698)
+Yeah.
+
+Nebojsa (39:40.269)
+Mm-hmm.
+
+Nebojsa (39:44.203)
+Yeah.
+
+Kevin Lee (39:59.396)
+doing sort of backfill or appending of information around pages or keywords or brands using AI. That's super powerful for sure.
+
+Nebojsa (40:07.405)
+And do you use AI on a daily basis?
+
+Kevin Lee (40:12.171)
+yeah. Probably not that many hours go by where I haven't used the eye in some form.
+
+Nebojsa (40:17.035)
+Yeah.
+
+And have you automated some of your procedures so that now you're let's say saving some time because AI is doing something that you needed to do before. Okay.
+
+Kevin Lee (40:29.975)
+Yeah, I've automated some of them. are certain prompts. There's sort of different things. If it's a procedure that I do over and over again, yeah, sure, the tech team will automate it for me. If it's really more of a type of...
+
+Nebojsa (40:37.645)
+Mm-hmm.
+
+Kevin Lee (40:45.007)
+prompt that I tend to use fairly frequently where I want that prompt engineered in a certain way. I'll just keep it in a spreadsheet and I'll just reuse that prompt and change the end of the query, right? But sometimes having the prompt crafted in a certain way can result in a really good output from the LLMs.
+
+Nebojsa (40:53.655)
+Mm-hmm. Mm-hmm.
+
+Nebojsa (41:07.949)
+And is there any technology that you think is overhyped? Yes.
+
+Kevin Lee (41:12.887)
+Overhype?
+
+Kevin Lee (41:19.055)
+it, well, it's too early to say whether any of the AI technologies are overhyped. I mean, they probably deserve the hype that they get. I think certain players within the ecosystem and the SEO tool set and, AI tool set sort of end up making claims that are a little bit overhyped, right? I won't name any names, but there are some tools.
+
+Nebojsa (41:25.933)
+Mm-hmm.
+
+Nebojsa (41:30.498)
+Yeah.
+
+Nebojsa (41:43.181)
+Mm-hmm.
+
+Kevin Lee (41:48.31)
+where you know the information is wrong, right? It made me better than zero information, but they sort of overhype the accuracy of their information. So I think there's some hype going on there. I can't think of any other sort of overhype technologies off the top of my head.
+
+Nebojsa (42:05.997)
+Okay, so I just want to move to some marketing philosophy because I think you have a lot of experience and you've seen so many trends come and go. What are some of the fundamental marketing principles that have remained constant throughout your career?
+
+Kevin Lee (42:30.285)
+I would say moving from the bottom of the funnel to the top. So that sort of remained constant. I started off as a brand marketer at an agency, and then I sort of became a little bit more of a direct response marketer as I got involved in Search in 1996. And it was over the years I sort of realized you can't ignore any part of the funnel.
+
+if you want to end up being a leader in a category. So that's remained constant. I hadn't always necessarily embraced it as a constant, but I realized as I became a more savvy marketer that demand harvesting is great, but having a brand becomes the differentiator in the efficiency of your ads.
+
+Right? when we look at the data, the data shows that a well-known brand gets a higher click-through rate, all other things being equal. And that's on a search ad, that's on a social ad, that's on a YouTube pre-roll. Right? So you get this flywheel effect, right, that happens from marketing up and down the funnel. And I think that that constant has been really important because not every CMO
+
+Nebojsa (43:29.133)
+Mm-hmm.
+
+Kevin Lee (43:48.856)
+understands that there's this sort of flywheel effect where visibility drives cheaper future visibility, right? If your message is strong and you're on brand.
+
+Nebojsa (44:02.145)
+Yeah, I've seen people using, running meta ads, but only using a plain background with writing a few words on it so they can see which type of audience will these words attract so they can relate that with the targeted audience and then later design the whole ad like a landing page and push it to the audience. And it's quite useful because failures will cost you less.
+
+like you need $100 per test. So that enables you to make mistakes until you find the right messaging that you can also use on your website, on your ads, et cetera. And you can just change them. Maybe you'll have like four of them that are working targeting different types of audience and which you can then target using like some advanced ads, designing landing page, et cetera. So.
+
+I agree. And what is the biggest change in marketing that you've observed? I would exclude the AI because yeah, I obviously, but let's let's look back before the AI came. What was the biggest change?
+
+Kevin Lee (45:12.835)
+biggest change is really that the consumer, their ability to, and this is a B2B or B2C consumer, the ability to opt out of your messaging is greater than ever before. So if you think about two generations back in advertising, you couldn't escape it. It had positives and negatives for the marketer. When it's from a lack of targeting basis, you had
+
+Nebojsa (45:34.519)
+Mm-hmm.
+
+Kevin Lee (45:42.49)
+people being shown ads for children's diapers who didn't have children and people being shown ads for denture cream who didn't wear dentures, right? But they couldn't escape the ads, right? They're watching the TV show that had the ad in it. Other than running out of the room, there was no skipping, right? And then ad skipping in TV appeared when you started having on-demand everything, right? And so it raised the bar for the market.
+
+Nebojsa (46:11.191)
+Mm-hmm. Mm-hmm.
+
+Kevin Lee (46:11.853)
+Right? Because now the consumer, if they don't want to engage with your message, they won't. Right? So that creates more difficulty for marketers to reach their audiences. Right? Because the audience, whether they skip the pre-roll in a YouTube ad or pay no attention to the Facebook ad or whatever it is, the control of whether or not that ad message is consumed is now in the consumer's hands. Right? They choose to absorb the ad.
+
+Nebojsa (46:18.849)
+Mm-hmm.
+
+Nebojsa (46:23.981)
+Mm-hmm.
+
+Nebojsa (46:36.013)
+Yeah.
+
+Kevin Lee (46:41.399)
+So it's raised the creative bar on ad production and on ad messaging. Write message, write time, write audience. And then whether or not you choose to borrow an influencer, perhaps to give you an extra edge that maybe they'll pay a little bit more attention to you because it's an influencer that they like or whatever, to just give you that extra edge to get the attention long enough that you keep it to get your message across.
+
+Nebojsa (46:55.671)
+Yeah. Yeah.
+
+Nebojsa (47:04.215)
+Mm-hmm.
+
+Mm-hmm.
+
+Kevin Lee (47:07.213)
+You didn't need to have that in the past. You still needed to have good advertising. And there was plenty of great advertising running in primetime TV or in the soap opera, daytime TV, or in drive time and radio, when people were stuck in their cars listening to radio. But the bar is higher now. The creative bar is higher.
+
+Nebojsa (47:09.377)
+Yeah.
+
+Nebojsa (47:14.315)
+Yeah.
+
+Nebojsa (47:18.827)
+Mm-hmm.
+
+Mm-hmm.
+
+Yeah.
+
+Yeah.
+
+Yeah, there is still correlation with the traditional advertising where you need to send some emotional message so they feel that message inside them like makes them their heart goes warm, you know, so they can feel that and click and you know convert and I'm based on what you said. Yes, it was easier before now it's become it became more harder to you know, like because
+
+Nebojsa (47:56.536)
+you as you said now it's everything to the cost in customers hand and they might opt out faster than before. Do you think that that had a huge impact on big brands? For example, Coca-Cola, think do you think that they spent more money on their marketing year over a year considering that the market is changing and it's becoming hard?
+
+Kevin Lee (48:23.031)
+I think it took a long time for some of the larger brands, and I don't have specific data on Coca-Cola per se, but I think it took a long time.
+
+Nebojsa (48:29.387)
+Yeah.
+
+Kevin Lee (48:32.451)
+for them to shift their strategies towards these sort of segmentable audiences online, which are easier to segment than the way they used to buy advertising. Everybody used to see the same Coca-Cola advertisements, at least within the same country, and they were global. you'd see the same Coca-Cola ads everywhere. it requires a particular creative strategy, and one, like you said, has an emotional impact to it.
+
+Nebojsa (48:44.235)
+Yeah, offline.
+
+Yes. Yeah. Yeah.
+
+Nebojsa (48:56.864)
+Mm-hmm.
+
+Nebojsa (49:00.422)
+Mm-hmm. Mm-hmm.
+
+Kevin Lee (49:01.049)
+But when you start to think about the personas of different groups of your customers and maybe treating them differently and targeting them differently and the fact that you could do that online, eventually these big brands embrace that.
+
+But the inertia in the way they were doing things and doing the same thing that they had done the previous year often meant that it took three, four, five years for that to steer that ship in a new direction. And often their big agencies were not particularly excited about steering the ship in a new direction. Because if you think about the cost overhead that it takes to place one Super Bowl ad where you get to charge a percentage of media.
+
+Nebojsa (49:24.941)
+Yeah.
+
+Nebojsa (49:33.229)
+Mm-hmm. Mm-hmm.
+
+Kevin Lee (49:42.32)
+or splitting that same five, six million dollars into hundred thousand dollar segments. It's a lot more work, right, to do that and to spread the money out, right? So often the agencies weren't getting paid enough to take that same five million dollars or six million dollars or whatever it was and spread it out.
+
+Nebojsa (49:50.006)
+Yeah.
+
+Kevin Lee (50:04.111)
+That's not to say that the Super Bowl ad decision wasn't a good one, right? It may have been. But maybe instead of doing four Super Bowl ads, you should have done three, and you should have sort of spread out the other media in a different place. And understanding the impact of each media placement that you do, and if you're big enough running econometric models to understand that, eventually that got embraced. But I think there was a lag in...
+
+Nebojsa (50:08.173)
+Mm-hmm.
+
+Nebojsa (50:12.237)
+Mm-hmm.
+
+Nebojsa (50:27.629)
+Mm-hmm.
+
+Kevin Lee (50:31.311)
+both the brands and the agencies, the bigger agencies in particular, it's sort of re-tasking themselves to take advantage of what the internet brought to the table.
+
+Nebojsa (50:42.263)
+Mmm.
+
+Okay, I mean that's well said, like you placed everything in order. So you emphasize the importance of planning online and offline marketing, right? Can you provide a specific example of how this integration has led to successful results?
+
+Kevin Lee (51:04.015)
+Sure. We had launched from a zero brand, zero name, whatever, there was a clean power company on Long Island, which is just east of New York City, called Community Power Ally, which we helped them name that. And we had to come up with a full media plan for them. So it wasn't purely digital. We had acquired some traditional agencies, so we have media buyers and creative teams that do that type of advertising as well.
+
+And so when we did the full media plan of all, know, not just search and social, but programmatic and TV and radio and outdoor advertising, you know, everything, we saw some interesting dynamics where the engagement rates of the digital ads were greater in the areas where we did stronger traditional media, right? And so, you know, whether we did outdoor.
+
+advertising or we bought a big banner on a trestle underneath a train track, right? Those kinds of things, right? We could see these, it was a big enough campaign that we saw that some of the things we were doing to make people aware of the brand had secondary impacts, right? And so...
+
+Nebojsa (52:05.631)
+Kevin Lee (52:19.257)
+you know, had we taken a pure direct response mentality, it still mostly direct response, because all those other ads had direct response call to action, right? But they weren't necessarily always in a place where the person was ready to take that call to action, right? If a person's driving, they're not going to pull over to the side of the road and take an action. But we definitely saw that a holistic marketing plan outperformed what we would have done if we had done a non-holistic plan.
+
+Nebojsa (52:26.679)
+Mm-hmm.
+
+Nebojsa (52:47.245)
+Many marketers struggle to integrate online and offline efforts. What advice would you give them?
+
+Kevin Lee (52:56.899)
+I would say again, it's the right message to the right audience at the right time, and then you can add using the right channel. So we were surprised for Community Power Li, for example, that direct mail worked as well as it did. But it's a tactile advertising medium, and you receive it in the mailbox, and you take it out, and you touch it, and you read it.
+
+Interestingly, we think that one of the psychological elements of that on a newer brand or brand that people aren't fully aware of yet is because the person took the money to pay for the postage to get into your mailbox, it sort of creates a legitimacy and a trust that you wouldn't get in a Facebook ad alone, for example, right? Because to be honest,
+
+Nebojsa (53:36.109)
+Mm-hmm.
+
+Kevin Lee (53:49.338)
+There's a lot of ads on Meta, which are pretty sketchy, right? So the consumer sort of knows when they see an ad on Facebook and they never see it anywhere else. Could be sketchy. Maybe I'm not actually going to get the thing that that ad promises, right? And so thinking through the ability of a channel.
+
+Nebojsa (54:00.922)
+Yeah, Yeah.
+
+Kevin Lee (54:07.513)
+to not just communicate the right message to the right audience at the right time, but also build trust, right? Because that trust ends up being instrumental in the person making the decision to change something or to take an action.
+
+Nebojsa (54:21.769)
+Okay, okay. mean, that was a very detailed answer. Thank you for that. So I want to move more and now cover some topics about giving back and other ventures. So can you tell us more about giving forward and the e-marketing association and what motivates you to get involved with these organizations?
+
+Kevin Lee (54:35.993)
+Sure.
+
+Kevin Lee (54:44.455)
+The marketing association I acquired in 2018 just as a byproduct of a relationship I had for many years. It's actually a story too long to tell in our remaining time. But I acquired the marketing association almost by accident. And it's been an interesting tool and I'm in the process of sort of now relaunching it and repositioning it to do more events and webinars and roundtables, not just the podcasts that I have been doing.
+
+But giving forward really was a byproduct of my continued interest in cause marketing. So cause marketing is where you take advertising dollars and end up having those advertising dollars go to causes of different types. And it's been around for many years and under We Care, back...
+
+20 plus years ago when we started Wecare, which we ran up until 13 years ago, we generated eight million for nonprofits using affiliate marketing and allowing that affiliate payment to go to a cause. And it became the inspiration for Amazon Smile. And so in the interim between when we ended up shutting down Wecare and when I sort of started giving forward, I was dabbling with a bunch of other things like cause marketing powered content, for example. I even tried to buy.
+
+Nebojsa (55:41.727)
+Mm-hmm.
+
+Kevin Lee (56:00.505)
+four different domain names, including Gawker.com, to turn them into cause marketing powered content, ended up pivoting giving forward as a non-profit back into the commerce space when Smile shut down. So while giving forwards only in the tens of thousands of dollars generated so far, Smile was doing nearly 100 million a year in donation revenue off of 20.
+
+sales. So there is an opportunity to make big social impact changes off of cause marketing. And now, know, GivingForwards partnered with hundreds of merchants to do that, as well as lead gen organizations as well. So it's fun to combine marketing with the nonprofit and social impact community.
+
+Nebojsa (56:40.109)
+Mm-hmm.
+
+Nebojsa (56:46.509)
+And look you're involved in several diverse ventures including truth nutrition voice. So so what strategies do you use to manage your time and energy effectively across these different projects because Myself I have a small baby like 11 year old baby at home I have one agency and still I need some spare time for myself. So how are you doing this?
+
+Kevin Lee (57:14.945)
+I don't know if there's that much spare time. And I don't think I necessarily always do it effectively or as effectively as I should. But the key is having great teams that you can delegate to, right? And sometimes I've made the mistake of overdelegating. But you need to find the people that you can delegate to and have the trust in that you can delegate as much of the responsibility as possible to them.
+
+Nebojsa (57:35.085)
+Mm-hmm.
+
+Kevin Lee (57:40.226)
+and then continue to monitor and check in with them. It allows you to sort of, you can't clone yourself, but you can sort of decide how to allocate your time. And you'll never get it perfect, right? But it's a journey. It's a journey of sort of deciding how to find the right people.
+
+Nebojsa (57:46.945)
+Yeah.
+
+Kevin Lee (57:58.032)
+Sometimes when you find the right people, as an agency grows, you reach these sort of size tipping points where suddenly you can afford a better person to be sort of your peer or on your executive team and that will allow you to delegate more.
+
+Nebojsa (58:11.725)
+Again, do you ever get stressed out from work and all the things and how you cope with that?
+
+Kevin Lee (58:18.127)
+I'm sort of more of a natural stoic, right, in most cases, so I don't really get that stressed out, right? Business is a really fun game, as is marketing, right, if you think about it that way, right? So, you know, I guess singers and actors say that they're blessed to have the ability to get paid.
+
+Nebojsa (58:27.201)
+God bless that characteristic. It certainly helped a lot.
+
+Kevin Lee (58:45.401)
+for doing what they love and I sort of feel the same way about business and about marketing. So it's just a lot of fun every day to get up and.
+
+help solve clients problems in the case of the agency or help solve problems in a sort of more macro way on giving forward or solve a specific problem with Voisoo. Obviously, know, Truth Nutrition in the Nutraceutical category, there's other competitors there, but I bought that really as a brand to run marketing experiments under that perhaps did it clients weren't willing to underwrite more risky marketing experiments.
+
+Nebojsa (59:18.313)
+Every every competitor is one trouble. So I can't imagine how much trouble you're having with all these brands and competitors So yes, you're an investor in several companies ranging from ad tech to coffee Literally, I'm saying right So how how do you decide which ventures to invest your time and resources in? Like what do you look for when investing in a company and what criteria do you use?
+
+when deciding.
+
+Kevin Lee (59:49.008)
+That really depends on the size of the investment. So some of the investments I have listed on my LinkedIn profile were fairly small investments used with a crowdfunding platform, right? So, you know, a thousand bucks or, you know, 1500 bucks or something like that. You know, I don't need to, the level of due diligence that I would do in an investment case like that is very different than the level of due diligence.
+
+Nebojsa (01:00:04.034)
+Yeah.
+
+Kevin Lee (01:00:14.019)
+But in the end, in addition to the due diligence, you're investing more in the team than you are in the idea. And I'll give you an example. So when I invested in Nimble.com, it was a social CRM platform. And they took advantage of the fact that at the time that Nimble.com was founded, LinkedIn had an open API. And you had the ability to do all sorts of stuff. And so I made the investment despite having this sort of gut instinct.
+
+Nebojsa (01:00:22.081)
+Mm-hmm.
+
+Kevin Lee (01:00:42.809)
+that probably LinkedIn would shut the APIs down, but I knew the founder would be able to figure out how to pivot around that, right, when that happened and provide value to the CRM seat holders in other ways, which he's continuing to do now, right? So you look at a combination of the idea and the founder's ability.
+
+Nebojsa (01:00:50.637)
+Mm-hmm. Mm-hmm.
+
+Kevin Lee (01:01:03.821)
+to pivot if necessary, right? Because it's rare for a startup not to have to do any pivot. Some of them have to do major pivots, others have to do course corrections.
+
+Nebojsa (01:01:13.773)
+And what are some of the biggest risks and rewards associated with angel investing?
+
+Kevin Lee (01:01:23.189)
+it's mostly risks. I haven't had anything major exit yet, although there are a few of my angel investments which can, folks who go to my LinkedIn and look at them, that I'm fairly confident about, that we'll have to see what the exits look like. I had one good exit in the investment in the possible conference, which they just did an amazing job.
+
+Nebojsa (01:01:25.367)
+Yeah.
+
+Kevin Lee (01:01:51.448)
+two years in a row, first two years running a conference in Miami Beach, and they sold before the third year conference, which had an amazing payback for me. But again, that was really the team and the vision of that team. I knew they could pull off what their vision was, and they did, and they got rewarded for it very quickly. Most of my other investments haven't exited yet, and some of them have been around for quite some time.
+
+Nebojsa (01:02:09.869)
+Mm-hmm.
+
+Kevin Lee (01:02:21.123)
+So then it's just a matter of patience.
+
+Nebojsa (01:02:23.755)
+Yeah, and that's how capital show like without the risk, you can't make capital. mean you can but still every business has its own risks that you're dealing with with seed investing in hellowoofy.com I read that you mentioned the founders energy and focus plus TAM total dressable market got me to invest. Could you elaborate on that?
+
+Kevin Lee (01:02:48.013)
+Yeah. Sure. mean, know, Arjun's a dynamic guy. He's got a high level of energy. And, you know, that's a problem that a lot of folks, what HelloWoofie does, it solves a problem for a lot of medium-sized businesses and small businesses. So I thought, well, you know, he'll figure it out, right? So I made the investment there because...
+
+he saw the problem, right, and he saw the ability to create a solution to the problem. And, you know, that combination of sort of his personality and the problem that he was solving being a significant problem for the small to medium-sized business in particular was the reason I invested.
+
+Nebojsa (01:03:32.141)
+Okay, so I know we are running out of time, so a few more questions if you don't mind. So we can wrap it up. What emerging trends in marketing are you most excited about?
+
+Kevin Lee (01:03:49.058)
+I think, you know, we depending on how privacy regulations end up impacting each country, we're getting closer to hyper personalization. And that hyper personalization may take some really interesting paths, right? So I think autonomous agents, for example, have the ability to completely remake how people interact with stores and brands. Because
+
+If I have an autonomous agent that does my shopping for me, and I actually authorize my autonomous agent to make a decision for me on which flight or cruise vacation I take, because it has my American Express number or my visa number, Now, it's not, know, marketers won't just be marketing to humans. I'll be marketing to humans' autonomous agent bots.
+
+So that one's a pretty big potential change. It's too early to say how that's going to shake out, but that's an amazing transformative change.
+
+Nebojsa (01:04:44.589)
+Mm-hmm.
+
+Nebojsa (01:04:55.373)
+Okay, so I'm going to ask you three more questions I might plug in four but the fourth one doesn't require you to think about but these three will require you to think So what's the best piece of advice you've ever received and how has it shaped your career?
+
+Kevin Lee (01:05:20.559)
+You know, I think early on when I think it was at McCann Erickson, one of my managers said, don't sweat the small stuff, right? So, you know, certain things can go wrong and it's not the biggest deal, right? So that sort of fit in with my general stoic mentality, but I remember that was a pretty good piece of advice.
+
+Nebojsa (01:05:47.501)
+Now this one is very interesting. If you could go back and give your younger self one piece of advice, what would it be?
+
+Kevin Lee (01:05:56.944)
+Other than buy Bitcoin earlier, I'm not really sure.
+
+Nebojsa (01:05:59.834)
+That's hilarious. Yeah, other than buying the Bitcoin.
+
+Kevin Lee (01:06:12.879)
+Yeah, I think doing better due diligence on.
+
+on acquisitions and doing better due diligence with HR and partners in particular, Sort of, you know, digging a little bit deeper than the surface.
+
+Nebojsa (01:06:33.581)
+Aspiring entrepreneurs and marketers, what are the key skills and qualities they need to cultivate to succeed in this competitive environment that is happening today?
+
+Kevin Lee (01:06:45.679)
+It has to be a willingness to ask for help, right? You can't do everything yourself. It's very difficult to be a solopreneur because a solopreneur is always struggling between delivering on the thing that they promised and selling the next person on the next thing. And so in order to sort of scale oneself up, one needs to ask for help and trust in others to be able to deliver the thing that you're doing, whatever that thing is.
+
+Nebojsa (01:07:15.839)
+Okay, and the final question for me today, I'm just going to merge into the two small questions. So first one is what books would you recommend to people who wants to grow in terms of entrepreneurship and marketing? Do you have any favorite book that really left an impression after you read it?
+
+Kevin Lee (01:07:46.402)
+I enjoyed, trust me, I'm lying, which is one of Ryan Holiday's books, which he originally wrote, I believe, more as a warning of how the press could be manipulated. And then folks, you know, ended up saying, this is really cool. Look how we can manipulate the press. You know, but it's a really interesting book that talks about...
+
+journalism, the press, it overlaps a little bit into influencer marketing as well if you sort of think about some of the ideas around what's covered in the book. So I enjoyed Ryan Holiday's Trust Me I'm Lying, and actually I enjoyed his more philosophical book, The Obstacle is the Way, which is more of a stoicism book.
+
+Nebojsa (01:08:35.885)
+I get it. Do you still do you now follow some people like doing social bookmarking or something like following their posts or news or anything like that? you have any, let's say, people that you follow and you like reading their posts?
+
+Kevin Lee (01:08:58.703)
+I really let my network of social media contacts bubble the stuff up to the surface that I should end up reading. So I'm not as dedicated to consuming a specific individual's content other than areas of interest that I might have. In fitness, for example, I might have a couple of folks. But usually, my...
+
+the wisdom of the crowd of my social media network bubbles of the stuff up to the surface that I should be consuming. Other than that, I do tend to watch the All In podcast most of the time. I'm also an investor in Jason Talkandis' Fund 4, and he's the moderator of that podcast.
+
+Nebojsa (01:09:35.853)
+Mm-hmm.
+
+Nebojsa (01:09:42.478)
+Well, Kevin, I don't know what to say except to thank you for joining the podcast and for sharing all the wisdoms of all the nuggets of wisdom. I mean, I really like your mindset and your approach in the business. How you trust your employees and how you shaped your company so that you can fully rely on the key people.
+
+And especially the thing when you said they say that they enjoy being getting salaries for doing what they love. And I remember, I think maybe seven years ago, my dad told me we were driving in the car and I've asked him, should I pursue other career outside of the mechanical engineering one, where I spent a lot of my time studying, you know, working. And he said,
+
+You know what, when you get up and you need to go to work, if you don't feel comfortable going to work, that job is not for you. And I completely agree with that, that we should do what we love because that's the best way to be good at it and become the best at it. So yeah, I can totally correlate with that and also...
+
+Myself I'm a very like people pleaser. Maybe I can call it like that and I really care about the team sometimes I cross some boundaries because I Shouldn't care that much in specific time periods like in the specific situation. I should just not exclude my emotions and you know address the issue and solve it how it should be solved so that was some of the
+
+Obstacles that I had but as you said obstacles are a way to go based on the book So I will keep going through the obstacles, know, like figuring out all the how can I move without just Awaiting the obstacle but resolving it, you know, like actually dealing with the problem and then continuing my journey. So yeah Kevin was it was so
+
+Kevin Lee (01:12:06.103)
+Thanks so much for having me on. I said, thanks so much for having me on your pod.
+
+Nebojsa (01:12:08.365)
+Hmm?
+
+Yeah, it was a pleasure. could speak fighting three times more than I just spoke with you because I see how much knowledge you have and I'm sure that there are many topics that we could cover where you can contribute with a lot of insights that would be so great to hear, but maybe some other time. So yeah, thanks again. I'm wishing you a great week and have a great upcoming weekend. should best of luck in your career.
+
+and may you acquire more companies and all the people that you bring be satisfied with the work that they are doing next to you. Yeah, okay, have a nice day. Bye bye.
+
+Kevin Lee (01:12:47.107)
+Thanks so much.
+
+Kevin Lee (01:12:52.527)
+Thanks you too.
+
