@@ -9,7 +9,7 @@
  *   node --env-file=.env.local --experimental-strip-types scripts/seed/podcast-episodes.ts [slug]
  *
  * Safe to re-run. Fields an editor may have filled in the Studio are kept:
- * bestMoments (reels), chatbotEpisodeId, and Trevor's Figma hero image.
+ * bestMoments (reels), chatbotEpisodeId, and any hero image already set.
  * Only the opening host line of each transcript is stored (the transcript
  * card shows it); full transcripts stay on disk for the AI chat work.
  */
@@ -82,10 +82,8 @@ async function main() {
     const existing = await client.getDocument(id).catch(() => null);
     const keep = existing as Record<string, unknown> | null;
 
-    const heroImage =
-      e.slug === "trevor-longino" && keep?.heroImage
-        ? keep.heroImage // WHY: Trevor's hero is the Figma artwork uploaded earlier; the YouTube thumbnail is the same art at lower quality.
-        : await uploadThumbnail(e.youtubeId, `${e.guest.name} — ${e.title}, episode ${e.episodeNumber}`);
+    // WHY: a hero image already in the CMS (Figma artwork, an editor's upload) wins; the YouTube thumbnail only fills empty slots.
+    const heroImage = keep?.heroImage ?? (await uploadThumbnail(e.youtubeId, `${e.guest.name} — ${e.title}, episode ${e.episodeNumber}`));
 
     const opener = transcriptOpener(e.transcriptFiles);
     const transcript = opener ? [block([span(`${opener.speaker}:`, ["strong"]), span(` ${opener.text}`)])] : undefined;
