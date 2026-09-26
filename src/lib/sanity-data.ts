@@ -12,6 +12,7 @@ import {
   TEAM_MEMBER_BY_SLUG_QUERY,
   TEAM_MEMBER_SLUGS_QUERY,
   CASE_STUDIES_QUERY,
+  FEATURED_CASE_STUDIES_QUERY,
   CASE_STUDY_BY_SLUG_QUERY,
   CASE_STUDY_SLUGS_QUERY,
   CONTACT_PAGE_QUERY,
@@ -930,15 +931,8 @@ export interface SanityCaseStudy {
   quoteText: string | null;
 }
 
-export async function getCaseStudies(): Promise<SanityCaseStudy[]> {
-  const data = await client.fetch(
-    CASE_STUDIES_QUERY,
-    {},
-    { next: { tags: ["caseStudy"], revalidate: false } },
-  );
-  if (!data) return [];
-
-  return (data as SanityRawCaseStudy[]).map((cs) => ({
+function mapCaseStudyListItem(cs: SanityRawCaseStudy): SanityCaseStudy {
+  return {
     _id: cs._id,
     title: cs.title,
     slug: cs.slug?.current ?? "",
@@ -953,7 +947,33 @@ export async function getCaseStudies(): Promise<SanityCaseStudy[]> {
     services: cs.services ?? [],
     featured: cs.featured ?? false,
     quoteText: cs.quoteText ?? null,
-  }));
+  };
+}
+
+export async function getCaseStudies(): Promise<SanityCaseStudy[]> {
+  const data = await client.fetch(
+    CASE_STUDIES_QUERY,
+    {},
+    { next: { tags: ["caseStudy"], revalidate: false } },
+  );
+  if (!data) return [];
+
+  return (data as SanityRawCaseStudy[]).map(mapCaseStudyListItem);
+}
+
+/**
+ * The (up to three) case studies ticked "Featured on homepage" in the Studio,
+ * newest first. Empty when nothing is ticked, so the homepage can fall back.
+ */
+export async function getFeaturedCaseStudies(): Promise<SanityCaseStudy[]> {
+  const data = await client.fetch(
+    FEATURED_CASE_STUDIES_QUERY,
+    {},
+    { next: { tags: ["caseStudy"], revalidate: false } },
+  );
+  if (!data) return [];
+
+  return (data as SanityRawCaseStudy[]).map(mapCaseStudyListItem);
 }
 
 export interface CaseStudyGrowthChartData {

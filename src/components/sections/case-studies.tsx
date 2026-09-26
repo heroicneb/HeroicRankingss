@@ -7,12 +7,23 @@ import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
+import type { SanityCaseStudy } from "@/lib/sanity-data";
 import type { CaseStudy, QuoteLine } from "@/types";
 
 type CaseStudyEntry = CaseStudy & {
   mobileCardHeightClassName: string;
   mobileDate?: string;
+  /** Sanity card/hero image; when set it replaces the flat colour panel. */
+  imageSrc?: string;
+  imageLqip?: string;
+  /** Text drawn over the panel. Empty when the artwork carries the brand. */
+  panelLabel?: string;
 };
+
+interface CaseStudiesProps {
+  /** Case studies ticked "Featured on homepage" in the Studio, newest first. */
+  cmsCaseStudies?: SanityCaseStudy[];
+}
 
 const STUDIES: CaseStudyEntry[] = [
   {
@@ -24,6 +35,7 @@ const STUDIES: CaseStudyEntry[] = [
     colorClassName: "bg-[var(--color-hr-my-baskets)]",
     href: "/case-study/my-baskets",
     mobileCardHeightClassName: "h-[435px]",
+    panelLabel: "My Baskets",
   },
   {
     title: "Nagish",
@@ -35,6 +47,7 @@ const STUDIES: CaseStudyEntry[] = [
     href: "/case-study/nagish",
     mobileCardHeightClassName: "h-[477px]",
     mobileDate: "December 1, 2024",
+    panelLabel: "Nagish",
   },
   {
     title: "Art by Maudsch",
@@ -46,6 +59,7 @@ const STUDIES: CaseStudyEntry[] = [
     href: "/case-study/art-by-maudsch",
     mobileCardHeightClassName: "h-[456px]",
     mobileDate: "December 1, 2024",
+    panelLabel: "Art by Maudsch",
   },
 ];
 
@@ -106,10 +120,71 @@ const QUOTES: QuoteLine[] = [
   },
 ];
 
+function formatPublishedDate(dateValue: string | null): string {
+  if (!dateValue) return "Case study in progress";
+  const parsed = new Date(dateValue);
+  if (Number.isNaN(parsed.getTime())) return "Case study in progress";
+  return new Intl.DateTimeFormat("en-US", { day: "numeric", month: "long", year: "numeric" }).format(parsed);
+}
+
+/**
+ * Card title: the short brand name. Panel Label is the editor's explicit
+ * short name; the Client field is next unless it is just a domain, in which
+ * case the document title is used.
+ */
+function shortName(caseStudy: SanityCaseStudy): string {
+  const label = caseStudy.panelLabel?.trim();
+  if (label) return label;
+  const client = caseStudy.client?.trim();
+  if (client && !/\.[a-z]{2,}$/i.test(client)) return client;
+  return caseStudy.title;
+}
+
+function toEntry(caseStudy: SanityCaseStudy): CaseStudyEntry {
+  const name = shortName(caseStudy);
+  const imageSrc = caseStudy.cardImageUrl || caseStudy.heroImageUrl || undefined;
+  return {
+    title: name,
+    headline: name,
+    summary:
+      caseStudy.excerpt ??
+      "Explore how Heroic Rankings delivered measurable SEO growth for this client.",
+    date: formatPublishedDate(caseStudy.publishedAt),
+    colorClassName: "bg-[var(--color-hr-dark)]",
+    href: `/case-study/${caseStudy.slug}`,
+    mobileCardHeightClassName: "h-[477px]",
+    imageSrc,
+    imageLqip: caseStudy.cardImageLqip ?? caseStudy.heroImageLqip,
+    // WHY: same rule as the index cards — only an explicit Panel Label is
+    // drawn over artwork; the fallback name is used only on a flat panel.
+    panelLabel: imageSrc ? (caseStudy.panelLabel?.trim() ?? "") : name,
+  };
+}
+
+function PanelArt({ study, className }: { study: CaseStudyEntry; className?: string }) {
+  if (!study.imageSrc) return null;
+  return (
+    <Image
+      alt=""
+      aria-hidden
+      blurDataURL={study.imageLqip}
+      className={cn("object-cover", className)}
+      fill
+      placeholder={study.imageLqip ? "blur" : "empty"}
+      sizes="(min-width: 1024px) 413px, calc(100vw - 40px)"
+      src={study.imageSrc}
+    />
+  );
+}
+
 const PROVEN_RESULTS_PHOTO_SRC =
   "/figma/case-studies/proven-results-photo.webp";
 
-export function CaseStudies() {
+export function CaseStudies({ cmsCaseStudies }: CaseStudiesProps) {
+  const studies = cmsCaseStudies?.length
+    ? cmsCaseStudies.filter((caseStudy) => caseStudy.slug).slice(0, 3).map(toEntry)
+    : STUDIES;
+
   return (
     <section className="section-shell pt-[60px] lg:pt-20" id="case-studies">
       <Container>
@@ -175,7 +250,7 @@ export function CaseStudies() {
 
       <Container className="mt-[60px] lg:mt-20">
         <div className="flex flex-col gap-[10px] lg:hidden">
-          {STUDIES.map((study) => (
+          {studies.map((study) => (
             <AppLink
               aria-label={`Open case study: ${study.title}`}
               className={cn(
@@ -187,13 +262,16 @@ export function CaseStudies() {
             >
               <div
                 className={cn(
-                  "relative h-[250px] rounded-t-[30px]",
+                  "relative h-[250px] overflow-hidden rounded-t-[30px]",
                   study.colorClassName,
                 )}
               >
-                <p className="type-h3 absolute left-0 right-0 top-1/2 -translate-y-1/2 text-center text-[var(--color-hr-pure-white)]">
-                  {study.headline}
-                </p>
+                <PanelArt study={study} />
+                {study.panelLabel ? (
+                  <p className="type-h3 absolute left-0 right-0 top-1/2 -translate-y-1/2 text-center text-[var(--color-hr-pure-white)]">
+                    {study.panelLabel}
+                  </p>
+                ) : null}
                 <span
                   aria-hidden
                   className="absolute right-5 top-[170px] inline-flex size-[60px] items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)] transition-transform duration-300 ease-out group-hover:scale-105 group-focus-visible:scale-105 dark:bg-[var(--color-bg-dark)] dark:text-[var(--color-text-inverse)]"
@@ -204,7 +282,7 @@ export function CaseStudies() {
               <div className="mt-5 flex flex-col items-center gap-5 text-center">
                 <div className="flex flex-col items-center gap-[10px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                   <h3 className="type-team-title w-full">{study.title}</h3>
-                  <p className="type-paragraph w-[266px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                  <p className="type-paragraph line-clamp-4 w-[266px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                     {study.summary}
                   </p>
                 </div>
@@ -217,7 +295,7 @@ export function CaseStudies() {
         </div>
 
         <div className="hidden gap-5 lg:grid lg:grid-cols-3" data-reveal-stagger>
-          {STUDIES.map((study) => (
+          {studies.map((study) => (
             <AppLink
               aria-label={`Open case study: ${study.title}`}
               className="group relative mx-auto block w-full max-w-[348px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:h-[501px] lg:max-w-none lg:rounded-[var(--radius-card)]"
@@ -226,18 +304,21 @@ export function CaseStudies() {
             >
               <div
                 className={cn(
-                  "relative h-[174px] rounded-t-[30px] lg:h-[305px] lg:rounded-t-[var(--radius-card)]",
+                  "relative h-[174px] overflow-hidden rounded-t-[30px] lg:h-[305px] lg:rounded-t-[var(--radius-card)]",
                   study.colorClassName,
                 )}
               >
-                <p className="type-h3 absolute left-0 right-0 top-1/2 -translate-y-1/2 text-center text-[var(--color-hr-pure-white)]">
-                  {study.headline}
-                </p>
+                <PanelArt study={study} />
+                {study.panelLabel ? (
+                  <p className="type-h3 absolute left-0 right-0 top-1/2 -translate-y-1/2 text-center text-[var(--color-hr-pure-white)]">
+                    {study.panelLabel}
+                  </p>
+                ) : null}
               </div>
               <h3 className="type-h4 mt-5 px-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
                 {study.title}
               </h3>
-              <p className="type-paragraph mt-2 px-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
+              <p className="type-paragraph mt-2 line-clamp-4 px-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
                 {study.summary}
               </p>
               <p className="type-paragraph mt-5 px-5 pb-5 text-center text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:pb-0 lg:text-left">

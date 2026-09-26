@@ -153,13 +153,18 @@ export const CASE_STUDY_SLUGS_QUERY = defineQuery(`
 `);
 
 export const FEATURED_CASE_STUDIES_QUERY = defineQuery(`
-  *[_type == "caseStudy" && featured == true && !(_id match "audit-fixture-*")] | order(publishedAt desc) [0...6] {
+  *[_type == "caseStudy" && featured == true && defined(slug.current) && !(_id match "audit-fixture-*")] | order(publishedAt desc) [0...3] {
     _id,
     title,
     slug,
     client,
+    panelLabel,
     excerpt,
-    heroImage,
+    publishedAt,
+    heroImage { ..., asset->{ _id, _type, metadata { lqip } } },
+    cardImage { ..., asset->{ _id, _type, metadata { lqip } } },
+    services,
+    featured,
     quoteText
   }
 `);
