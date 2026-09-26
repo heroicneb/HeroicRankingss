@@ -1,45 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
-import { cn } from "@/lib/cn";
 import type { SanityPodcastEpisodeDetail } from "@/lib/sanity-data";
 import { SITE_URL } from "@/lib/site";
 
 interface PodcastShareBarProps {
-  episode: SanityPodcastEpisodeDetail;
-}
-
-function CopyLinkIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="h-[18px] w-[18px]"
-      fill="none"
-      viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M8.5 11.5a3.5 3.5 0 0 0 5 0l3-3a3.5 3.5 0 0 0-4.95-4.95l-1.06 1.06M11.5 8.5a3.5 3.5 0 0 0-5 0l-3 3a3.5 3.5 0 0 0 4.95 4.95l1.06-1.06"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.6"
-      />
-    </svg>
-  );
+  episode: Pick<SanityPodcastEpisodeDetail, "slug" | "title">;
 }
 
 /**
- * Share bar (Figma `2223:162` desktop / mobile share row inside `2223:807`).
+ * Share row inside the transcript panel (Figma 2223:162 desktop / 2223:815
+ * mobile): "Share this podcast" + LinkedIn / X / Facebook pills on the left,
+ * "Copy link to podcast" with the copy glyph on the right. Mobile stacks
+ * everything centred with 20px gaps.
  *
- * Dark panel with "Share this podcast" label and 3 light pills (LinkedIn /
- * X / Facebook) plus a "Copy link to podcast" button with a link icon. On
- * desktop the share label is left-aligned and pills are inline; on mobile
- * everything stacks centered.
- *
- * Marked `'use client'` because the copy-link button uses the clipboard API
- * and tracks a transient "Link copied" state.
+ * Client component: the copy button uses the clipboard API.
  */
 export function PodcastShareBar({ episode }: PodcastShareBarProps) {
   const [copied, setCopied] = useState(false);
@@ -50,18 +27,9 @@ export function PodcastShareBar({ episode }: PodcastShareBarProps) {
   const encodedTitle = encodeURIComponent(episode.title ?? "");
 
   const shareLinks = [
-    {
-      label: "LinkedIn",
-      url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
-    },
-    {
-      label: "X",
-      url: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
-    },
-    {
-      label: "Facebook",
-      url: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
-    },
+    { label: "LinkedIn", url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}` },
+    { label: "X", url: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}` },
+    { label: "Facebook", url: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}` },
   ];
 
   const handleCopy = async () => {
@@ -71,55 +39,41 @@ export function PodcastShareBar({ episode }: PodcastShareBarProps) {
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1800);
     } catch {
-      // Silent fail — clipboard may be blocked. UX should not break.
+      // Clipboard may be blocked; the row stays usable for the share links.
     }
   };
 
-  const pillBase =
-    "motion-interactive motion-interactive-press inline-flex h-[40px] items-center justify-center rounded-[20px] bg-[var(--color-hr-off-white)] px-[18px] text-[16px] font-medium leading-[20px] text-[var(--color-hr-dark)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-hr-dark)]";
-
   return (
-    <section
-      className="px-[20px] pb-[60px] lg:px-[80px] lg:pb-[120px]"
-      id="podcast-share"
-    >
-      <div className="mx-auto w-full max-w-[1440px]">
-        <div className="rounded-[30px] bg-[var(--color-hr-dark)] px-[20px] py-[40px] lg:rounded-[40px] lg:px-[60px] lg:py-[60px]">
-          <div className="flex flex-col items-center gap-[20px] lg:flex-row lg:justify-between lg:gap-[20px]">
-            <div className="flex flex-col items-center gap-[15px] lg:flex-row lg:items-center lg:gap-[20px]">
-              <p className="text-[16px] font-medium leading-[20px] text-[var(--color-hr-pure-white)] lg:text-[24px] lg:leading-[28px] lg:tracking-[-0.48px]">
-                Share this podcast
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-[10px]">
-                {shareLinks.map((link) => (
-                  <a
-                    aria-label={`Share on ${link.label}`}
-                    className={pillBase}
-                    href={link.url}
-                    key={link.label}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <button
-              aria-label="Copy link to podcast"
-              className={cn(
-                "motion-interactive motion-interactive-press inline-flex h-[40px] items-center gap-[8px] rounded-[30px] bg-[var(--color-hr-off-white)] px-[18px] text-[16px] font-medium leading-[20px] text-[var(--color-hr-dark)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-hr-dark)]",
-              )}
-              onClick={handleCopy}
-              type="button"
+    <div className="flex w-full flex-col items-center gap-5 lg:flex-row lg:items-center lg:justify-between">
+      <div className="flex flex-col items-center gap-5 lg:flex-row lg:gap-5">
+        <p className="text-[16px] leading-[1.3] text-[var(--color-hr-pure-white)] lg:text-[24px] lg:font-medium lg:leading-[normal] lg:tracking-[-0.48px]">
+          Share this podcast
+        </p>
+        <div className="flex items-center gap-[10px] lg:gap-[8px]">
+          {shareLinks.map((link) => (
+            <a
+              aria-label={`Share on ${link.label}`}
+              className="motion-interactive motion-interactive-press inline-flex items-center justify-center rounded-[20px] bg-[var(--color-hr-off-white)] px-5 py-2 text-[16px] leading-[1.3] text-[var(--color-hr-dark)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-hr-dark)] lg:font-medium lg:leading-[normal]"
+              href={link.url}
+              key={link.label}
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <CopyLinkIcon />
-              <span>{copied ? "Link copied" : "Copy link to podcast"}</span>
-            </button>
-          </div>
+              {link.label}
+            </a>
+          ))}
         </div>
       </div>
-    </section>
+
+      <button
+        aria-label="Copy link to podcast"
+        className="motion-interactive inline-flex items-center gap-[10px] text-[16px] font-medium leading-[normal] text-[var(--color-hr-pure-white)] hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-hr-dark)]"
+        onClick={handleCopy}
+        type="button"
+      >
+        <Image alt="" aria-hidden className="size-[20px]" height={20} src="/podcast/copy-link.svg" width={20} />
+        <span>{copied ? "Link copied" : "Copy link to podcast"}</span>
+      </button>
+    </div>
   );
 }

@@ -15,8 +15,10 @@ interface AskPodcastAIButtonProps {
    * "inline": the podcast index card row — GPT swirl icon + label, no border.
    */
   variant?: "outline" | "outline-inverse" | "inline";
-  /** Hide the sparkle glyph (the Figma "Try the Chat Widget" button is text only). */
+  /** Hide the glyph (the Figma "Try the Chat Widget" button is text only). */
   showIcon?: boolean;
+  /** "sparkle": small line star. "swirl": the 31×32 GPT swirl used by the podcast frames. */
+  icon?: "sparkle" | "swirl";
 }
 
 /**
@@ -30,6 +32,7 @@ export function AskPodcastAIButton({
   label = "Ask Podcast AI",
   variant = "outline",
   showIcon = true,
+  icon = "sparkle",
 }: AskPodcastAIButtonProps) {
   if (process.env.NEXT_PUBLIC_CHAT_ENABLED !== "true") return null;
 
@@ -67,7 +70,10 @@ export function AskPodcastAIButton({
       onClick={open}
       type="button"
     >
-      {showIcon ? (
+      {showIcon && icon === "swirl" ? (
+        <Image alt="" aria-hidden className="dark:brightness-0 dark:invert" height={32} src="/podcast/ask-ai.svg" width={31} />
+      ) : null}
+      {showIcon && icon === "sparkle" ? (
       <svg
         aria-hidden="true"
         fill="none"

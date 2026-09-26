@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 import { PodcastChatProvider } from "@/components/chat/PodcastChatProvider";
 import { PodcastEpisodePage } from "@/components/pages/podcast/podcast-episode-page";
 import { createPageMetadata } from "@/lib/metadata";
+import { FALLBACK_EPISODES, toEpisodeView } from "@/components/pages/podcast/parts/podcast-episode-card";
 import {
   getPodcastEpisodeBySlug,
+  getPodcastEpisodes,
   getPodcastEpisodeSlugs,
 } from "@/lib/sanity-data";
 
@@ -46,16 +48,24 @@ export async function generateMetadata({
 
 export default async function Page({ params }: PodcastEpisodeRouteProps) {
   const { slug } = await params;
-  const episode = await getPodcastEpisodeBySlug(slug);
+  const [episode, allEpisodes] = await Promise.all([
+    getPodcastEpisodeBySlug(slug),
+    getPodcastEpisodes().catch(() => []),
+  ]);
 
   if (!episode) {
     notFound();
   }
 
+  // WHY: "More From The Podcast" falls back to the newest other episodes, and to the
+  // index frame's trio while the CMS has nothing else, so the section is never empty.
+  const others = allEpisodes.filter((item) => item._id !== episode._id).slice(0, 3).map((item) => toEpisodeView(item, 826));
+  const moreEpisodes = others.length ? others : FALLBACK_EPISODES;
+
   const chatbotEpisodeId = episode.chatbotEpisodeId ?? undefined;
   return (
     <>
-      <PodcastEpisodePage episode={episode} />
+      <PodcastEpisodePage episode={episode} moreEpisodes={moreEpisodes} />
       <PodcastChatProvider
         episodeId={chatbotEpisodeId}
         episodeTitle={episode.title}

@@ -518,9 +518,29 @@ textarea {
 .gradient-text-podcast-episodes {
   --gradient-angle: 211.65deg;
 }
+.gradient-text-podcast-episode-title {
+  --gradient-angle: 226.986deg;
+}
+.gradient-text-podcast-episode-guest {
+  --gradient-angle: 188.068deg;
+}
+.gradient-text-podcast-insights {
+  --gradient-angle: 219.422deg;
+}
+.gradient-text-podcast-moments {
+  --gradient-angle: 213.473deg;
+}
+.gradient-text-podcast-related {
+  --gradient-angle: 197.13deg;
+}
 .dark .gradient-text-podcast-hero,
 .dark .gradient-text-podcast-guest,
-.dark .gradient-text-podcast-episodes {
+.dark .gradient-text-podcast-episodes,
+.dark .gradient-text-podcast-episode-title,
+.dark .gradient-text-podcast-episode-guest,
+.dark .gradient-text-podcast-insights,
+.dark .gradient-text-podcast-moments,
+.dark .gradient-text-podcast-related {
   background-image: var(--gradient-brand-light);
 }
 /* Always-light variants for the dark panels (latest episode, Podcast AI). */

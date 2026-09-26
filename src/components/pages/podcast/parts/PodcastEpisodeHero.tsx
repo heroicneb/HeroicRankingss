@@ -1,20 +1,19 @@
 import Image from "next/image";
 
 import { AppLink } from "@/components/ui/app-link";
-import { PlayButtonOverlay } from "@/components/ui/play-button-overlay";
-import { SectionLabel } from "@/components/ui/section-label";
+import { GradientText } from "@/components/ui/gradient-text";
+import { cn } from "@/lib/cn";
 import type { SanityPodcastEpisodeDetail } from "@/lib/sanity-data";
 import { splitTitle } from "@/lib/split-title";
 import { urlFor } from "@/sanity/lib/image";
+
+import { GuestLine, PILL } from "./podcast-episode-card";
 
 interface PodcastEpisodeHeroProps {
   episode: SanityPodcastEpisodeDetail;
 }
 
-function getHeroImageUrl(
-  source: SanityPodcastEpisodeDetail["heroImage"],
-  width: number,
-): string | null {
+function getHeroImageUrl(source: SanityPodcastEpisodeDetail["heroImage"], width: number): string | null {
   if (!source?.asset) return null;
   try {
     return urlFor(source).width(width).url();
@@ -23,142 +22,104 @@ function getHeroImageUrl(
   }
 }
 
+/** The frame's play glyph: a 29.56×38 gradient triangle with a soft shadow (Figma 2223:103). */
+export function PlayTriangle({ className }: { className?: string }) {
+  return (
+    <span aria-hidden className={cn("pointer-events-none absolute inset-0 flex items-center justify-center", className)}>
+      <Image alt="" className="h-[59px] w-[54px] translate-x-[-2px] translate-y-[4px]" height={59} src="/podcast/play-shadow.svg" width={54} />
+    </span>
+  );
+}
+
 /**
- * Podcast episode hero (Figma `2223:91` desktop / `2223:746` mobile).
+ * Episode hero (Figma 2223:91 desktop / 2223:746 mobile).
  *
- * Two-column desktop:
- *   - Left (487): EP pill + duration pill, H1 (split solid + gradient),
- *     "with Guest Name / Role" caption (gradient bold), summary paragraph.
- *   - Right (738x415): hero thumbnail with circular play overlay (72x72),
- *     linked to the video embed URL.
+ * Desktop: two columns 487.875 / 738 spread across the 1280 container.
+ * Left: EP + duration pills, 62/80 title with a gradient span, "with
+ * Guest • Role, Company", 40px gap, 522-wide summary. Right: 738×415
+ * thumbnail with the play glyph, linked to the video when one is set.
  *
- * Single-column mobile: pills + H1 + caption + body + 350x197 thumbnail.
+ * Mobile: centred stack (pills, 38px title, caption, 304-wide summary,
+ * 350×197 thumbnail), 40px gaps.
  */
 export function PodcastEpisodeHero({ episode }: PodcastEpisodeHeroProps) {
   if (!episode?.title) return null;
 
-  const heroImageUrl = getHeroImageUrl(episode.heroImage, 1200);
+  const heroImageUrl = getHeroImageUrl(episode.heroImage, 1476);
   const heroImageLqip = episode.heroImage?.asset?.metadata?.lqip;
   const heroImageAlt = episode.heroImage?.alt ?? episode.title;
+  const { before, gradient, after } = splitTitle(episode.title, episode.titleHighlighted);
+  const guestName = episode.guest?.name?.trim() || null;
+  const guestSuffix = [episode.guest?.role?.trim(), episode.guest?.company?.trim()].filter(Boolean).join(", ") || null;
+  const playHref = episode.videoEmbedUrl?.trim() || null;
 
-  const { before, gradient, after } = splitTitle(
-    episode.title,
-    episode.titleHighlighted,
+  const thumbnail = (
+    <>
+      {heroImageUrl ? (
+        <Image
+          alt={heroImageAlt}
+          blurDataURL={heroImageLqip}
+          className="object-cover"
+          fetchPriority="high"
+          fill
+          placeholder={heroImageLqip ? "blur" : "empty"}
+          priority
+          sizes="(min-width: 1024px) 738px, 350px"
+          src={heroImageUrl}
+        />
+      ) : null}
+      <PlayTriangle />
+    </>
   );
 
-  const guestName = episode.guest?.name ?? null;
-  const guestRole = episode.guest?.role ?? null;
-
-  const playHref = episode.videoEmbedUrl ?? null;
-
   return (
-    <section
-      className="px-[20px] pb-[60px] pt-[100px] lg:px-[80px] lg:pb-[120px] lg:pt-[160px]"
-      id="podcast-episode-hero"
-    >
-      <div className="mx-auto w-full max-w-[1440px]">
-        <SectionLabel className="text-center lg:text-left">
-          / Podcast /
-        </SectionLabel>
-
-        <div className="mt-[20px] flex flex-wrap items-center justify-center gap-[5px] lg:mt-[30px] lg:justify-start">
-          <span className="inline-flex items-center rounded-[100px] bg-[var(--color-hr-off-white)] px-[14px] py-[6px] text-[16px] leading-[24px] text-[var(--color-hr-dark)] lg:text-[18px] dark:bg-[var(--color-surface-inverse-10)] dark:text-[var(--color-text-inverse)]">
-            EP&nbsp;&bull;&nbsp;{episode.episodeNumber}
-          </span>
-          <span className="inline-flex items-center rounded-[100px] bg-[var(--color-hr-off-white)] px-[14px] py-[6px] text-[16px] leading-[24px] text-[var(--color-hr-dark)] lg:text-[18px] dark:bg-[var(--color-surface-inverse-10)] dark:text-[var(--color-text-inverse)]">
-            {episode.duration}
-          </span>
-        </div>
-
-        <div className="mt-[20px] grid grid-cols-1 gap-[30px] lg:mt-[40px] lg:grid-cols-[487px_minmax(0,1fr)] lg:items-center lg:gap-[60px]">
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <h1 className="font-normal text-[38px] leading-[1.2] tracking-[-0.76px] text-[var(--color-hr-pure-black)] lg:text-[62px] lg:leading-[80px] lg:tracking-[-1.24px] dark:text-[var(--color-text-inverse)]">
+    <section className="pb-[60px] pt-[60px] lg:pb-[120px] lg:pt-[114px]" id="podcast-episode-hero">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-10 px-5 lg:flex-row lg:items-center lg:justify-between lg:gap-[55px] lg:px-20">
+        <div className="flex flex-col items-center gap-10 text-center lg:items-start lg:text-left">
+          <div className="flex flex-col items-center gap-[10px] lg:w-[487.875px] lg:items-start">
+            <div className="flex items-center gap-[5px]">
+              <span className={cn(PILL, "bg-[var(--color-hr-off-white)] text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:bg-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]")}>
+                EP • {episode.episodeNumber}
+              </span>
+              <span className={cn(PILL, "bg-[var(--color-hr-off-white)] text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:bg-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]")}>
+                {episode.duration}
+              </span>
+            </div>
+            <h1 className="type-h1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:w-[430.164px]">
               {before}
-              {gradient ? (
-                <span className="gradient-text-brand">{gradient}</span>
-              ) : null}
+              {gradient ? <GradientText className="gradient-text-podcast-episode-title">{gradient}</GradientText> : null}
               {after}
             </h1>
-
             {guestName ? (
-              <p className="mt-[20px] text-[16px] leading-[24px] text-[var(--color-hr-dark)] lg:mt-[24px] lg:text-[18px] dark:text-[var(--color-text-inverse)]">
-                with{" "}
-                <span className="gradient-text-brand font-bold">
-                  {guestName}
-                </span>
-                {guestRole ? (
-                  <>
-                    <span aria-hidden> &bull; </span>
-                    {guestRole}
-                  </>
-                ) : null}
-              </p>
-            ) : null}
-
-            {episode.description ? (
-              <p className="mt-[20px] max-w-[521px] text-[16px] leading-[24px] text-[var(--color-hr-dark)] lg:mt-[24px] lg:text-[18px] dark:text-[var(--color-text-inverse)]">
-                {episode.description}
-              </p>
+              <GuestLine
+                className="w-[324px] text-[16px] leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:w-full lg:text-[18px] lg:leading-[24px]"
+                gradientClass="gradient-text-podcast-episode-guest"
+                name={guestName}
+                suffix={guestSuffix}
+              />
             ) : null}
           </div>
 
-          {heroImageUrl ? (
-            <div className="relative aspect-[350/197] w-full overflow-hidden rounded-[20px] lg:aspect-[738/415] lg:rounded-[20px]">
-              {playHref ? (
-                <AppLink
-                  aria-label={`Play episode: ${episode.title}`}
-                  className="motion-interactive motion-interactive-press group block h-full w-full"
-                  href={playHref}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <Image
-                    alt={heroImageAlt}
-                    blurDataURL={heroImageLqip}
-                    className="object-cover"
-                    fetchPriority="high"
-                    fill
-                    placeholder={heroImageLqip ? "blur" : "empty"}
-                    priority
-                    sizes="(min-width: 1024px) 738px, 100vw"
-                    src={heroImageUrl}
-                  />
-                  <span className="pointer-events-none absolute inset-0 flex items-center justify-center">
-                    <PlayButtonOverlay
-                      ariaLabel="Play episode"
-                      className="lg:size-[106px]"
-                      size={72}
-                    />
-                  </span>
-                </AppLink>
-              ) : (
-                <>
-                  <Image
-                    alt={heroImageAlt}
-                    blurDataURL={heroImageLqip}
-                    className="object-cover"
-                    fetchPriority="high"
-                    fill
-                    placeholder={heroImageLqip ? "blur" : "empty"}
-                    priority
-                    sizes="(min-width: 1024px) 738px, 100vw"
-                    src={heroImageUrl}
-                  />
-                  <span
-                    aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 flex items-center justify-center"
-                  >
-                    <PlayButtonOverlay
-                      ariaLabel="Play episode"
-                      className="lg:size-[106px]"
-                      size={72}
-                    />
-                  </span>
-                </>
-              )}
-            </div>
+          {episode.description ? (
+            <p className="w-[304px] text-[16px] leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:w-[521.938px] lg:text-[18px] lg:leading-[24px]">
+              {episode.description}
+            </p>
           ) : null}
         </div>
+
+        {playHref ? (
+          <AppLink
+            aria-label={`Play episode: ${episode.title}`}
+            className="motion-interactive relative block h-[197px] w-[350px] shrink-0 overflow-hidden rounded-[20px] lg:h-[415.125px] lg:w-[738px]"
+            href={playHref}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {thumbnail}
+          </AppLink>
+        ) : (
+          <div className="relative h-[197px] w-[350px] shrink-0 overflow-hidden rounded-[20px] lg:h-[415.125px] lg:w-[738px]">{thumbnail}</div>
+        )}
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -6,11 +5,20 @@ import { AskPodcastAIButton } from "@/components/chat/AskPodcastAIButton";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientText } from "@/components/ui/gradient-text";
 import { SectionLabel } from "@/components/ui/section-label";
-import { DiagonalArrowIcon } from "@/components/ui/icons/decorative";
 import { cn } from "@/lib/cn";
 import { createPageMetadata } from "@/lib/metadata";
 import type { SanityPodcastEpisodeSummary } from "@/lib/sanity-data";
-import { urlFor } from "@/sanity/lib/image";
+
+import {
+  ArrowButton,
+  EpisodeCard,
+  FALLBACK_EPISODES,
+  GuestLine,
+  PILL,
+  YOUTUBE_CHANNEL_URL,
+  toEpisodeView,
+  type EpisodeView,
+} from "./parts/podcast-episode-card";
 
 /*
  * Podcast index (`/podcast`) — Figma `2251:28` (dark desktop), `2251:475`
@@ -23,8 +31,6 @@ import { urlFor } from "@/sanity/lib/image";
  * episodes and latest episode are shown so the page never loses sections 2
  * and 3 (their arrows lead to the YouTube channel).
  */
-
-const YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@heroicrankings";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Podcast — SEO Conversations That Actually Rank",
@@ -73,19 +79,6 @@ const AI_FEATURES = [
   },
 ] as const;
 
-interface EpisodeView {
-  key: string;
-  title: string;
-  guestName: string | null;
-  description: string;
-  /** Pill text, e.g. "EP • 15 • Part 1". */
-  episodeLabel: string;
-  duration: string;
-  href: string;
-  external: boolean;
-  image: { src: string; alt: string; lqip?: string } | null;
-}
-
 /** The frame's own episodes, shown until Sanity has real ones. */
 const FALLBACK_LATEST: EpisodeView = {
   key: "fallback-latest",
@@ -99,116 +92,6 @@ const FALLBACK_LATEST: EpisodeView = {
   external: true,
   image: { src: "/podcast/guest-4.png", alt: "Jonathan Bentz" },
 };
-
-const FALLBACK_EPISODES: EpisodeView[] = [
-  {
-    key: "fallback-1",
-    title: "Organic Growth",
-    guestName: "Jason Rivera",
-    description: "If you work in SaaS and care about growing organic traffic, you’ll want to hear what Jason Rivera has to say.",
-    episodeLabel: "EP • 14",
-    duration: "50 min",
-    href: YOUTUBE_CHANNEL_URL,
-    external: true,
-    image: { src: "/podcast/episode-1.png", alt: "Jason Rivera" },
-  },
-  {
-    key: "fallback-2",
-    title: "SEO, AEO & AI Growth",
-    guestName: "Sara Miller",
-    description:
-      "She quietly builds her content one piece at a time- perfectly tuned for SEO, AEO, and AI before anyone else even realized.",
-    episodeLabel: "EP • 14",
-    duration: "59 min",
-    href: YOUTUBE_CHANNEL_URL,
-    external: true,
-    image: { src: "/podcast/episode-2.png", alt: "Sara Miller" },
-  },
-  {
-    key: "fallback-3",
-    title: "SEO Wind",
-    guestName: "Tom Winter",
-    description: "He’s all about getting real feedback to improve his product. He doesn’t trust assumptions, he trusts data.",
-    episodeLabel: "EP • 14",
-    duration: "57 min",
-    href: YOUTUBE_CHANNEL_URL,
-    external: true,
-    image: { src: "/podcast/episode-3.png", alt: "Tom Winter" },
-  },
-];
-
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-function toEpisodeView(episode: SanityPodcastEpisodeSummary, imageWidth: number): EpisodeView {
-  const slug = episode.slug?.current ?? "";
-  const guestName = episode.guest?.name?.trim() || null;
-  let imageSrc: string | null = null;
-  if (episode.heroImage?.asset) {
-    try {
-      imageSrc = urlFor(episode.heroImage).width(imageWidth).url();
-    } catch {
-      imageSrc = null;
-    }
-  }
-  return {
-    key: episode._id ?? slug ?? episode.title,
-    title: episode.title,
-    guestName,
-    description: episode.description ?? "",
-    episodeLabel: `EP • ${episode.episodeNumber}`,
-    duration: episode.duration,
-    href: slug ? `/podcast/${slug}` : YOUTUBE_CHANNEL_URL,
-    external: !slug,
-    image: imageSrc
-      ? {
-          src: imageSrc,
-          alt: episode.heroImage?.alt || (guestName ? `${guestName} — ${episode.title}` : episode.title),
-          lqip: episode.heroImage?.asset?.metadata?.lqip,
-        }
-      : null,
-  };
-}
-
-const PILL =
-  "inline-flex items-center justify-center rounded-[100px] px-[14px] py-[6px] text-[16px] leading-[1.3] lg:text-[18px] lg:leading-[24px]";
-
-function GuestLine({ name, className, gradientClass }: { name: string; className?: string; gradientClass: string }) {
-  return (
-    <p className={className}>
-      with{" "}
-      <GradientText className={cn("font-bold", gradientClass)}>{name}</GradientText>
-    </p>
-  );
-}
-
-/** Round arrow button used on the latest panel and every episode card. */
-function ArrowButton({
-  href,
-  external,
-  label,
-  className,
-}: {
-  href: string;
-  external: boolean;
-  label: string;
-  className?: string;
-}) {
-  return (
-    <AppLink
-      aria-label={label}
-      className={cn(
-        "motion-interactive motion-interactive-press inline-flex items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)] shadow-[0_4px_14px_rgba(0,0,0,0.18)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)]",
-        className,
-      )}
-      href={href}
-      {...(external ? { rel: "noopener noreferrer", target: "_blank" } : {})}
-    >
-      <DiagonalArrowIcon className="size-5" />
-    </AppLink>
-  );
-}
 
 // ---------------------------------------------------------------------------
 // 1. Hero
@@ -403,80 +286,6 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
 // ---------------------------------------------------------------------------
 // 3. Episodes grid
 // ---------------------------------------------------------------------------
-
-/** Card-coloured notch that lets the arrow button sit "cut into" the image corner (Figma "Subtract"). */
-const NOTCH_FILLET: CSSProperties = {
-  background: "radial-gradient(circle at top left, transparent 19.5px, var(--podcast-card-bg) 20px)",
-};
-
-function EpisodeCard({ episode }: { episode: EpisodeView }) {
-  return (
-    <article
-      className="relative flex min-h-[544.61px] w-full max-w-[413px] flex-col overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--podcast-card-bg)] [--podcast-card-bg:var(--color-hr-pure-white)] dark:border-[var(--color-hr-dark-line)] dark:[--podcast-card-bg:var(--color-hr-black-box)]"
-    >
-      <div className="relative h-[305px] w-full shrink-0 overflow-hidden rounded-[40px] lg:rounded-b-none lg:rounded-t-[40px]">
-        {episode.image ? (
-          <Image
-            alt={episode.image.alt}
-            blurDataURL={episode.image.lqip}
-            className="object-cover"
-            fill
-            placeholder={episode.image.lqip ? "blur" : "empty"}
-            sizes="(min-width: 1024px) 413px, 350px"
-            src={episode.image.src}
-          />
-        ) : null}
-
-        {/* Desktop notch: 112×110 card-coloured block with a 40px inner radius and two 20px concave fillets. */}
-        <div aria-hidden className="pointer-events-none absolute bottom-0 right-0 hidden h-[110px] w-[112px] rounded-tl-[40px] bg-[var(--podcast-card-bg)] lg:block" />
-        <div aria-hidden className="pointer-events-none absolute bottom-[110px] right-0 hidden size-[20px] lg:block" style={NOTCH_FILLET} />
-        <div aria-hidden className="pointer-events-none absolute bottom-0 right-[112px] hidden size-[20px] lg:block" style={NOTCH_FILLET} />
-
-        <div className="absolute right-[20px] top-[20px] flex gap-[5px]">
-          <span className={cn(PILL, "bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)]")}>{episode.episodeLabel}</span>
-          <span className={cn(PILL, "bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)]")}>{episode.duration}</span>
-        </div>
-
-        <ArrowButton
-          className="absolute right-[14px] top-[216px] size-[66px] lg:bottom-[20px] lg:right-[20px] lg:top-auto lg:size-[72px]"
-          external={episode.external}
-          href={episode.href}
-          label={`Open episode: ${episode.title}`}
-        />
-      </div>
-
-      {/* WHY: in flow (not absolute) so the 20px rhythm description → Ask AI → card edge always holds, whatever the text length. */}
-      <div className="flex w-[333px] flex-col gap-5 px-[17px] pb-[20px] pt-[20px] lg:w-[393px] lg:px-[20px]">
-        <div className="flex flex-col gap-[10px]">
-          <h3 className="text-[22px] font-normal leading-[normal] tracking-[-0.44px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-[32px] lg:leading-[1.2] lg:tracking-[-0.64px]">
-            <AppLink
-              className="hover:underline"
-              href={episode.href}
-              {...(episode.external ? { rel: "noopener noreferrer", target: "_blank" } : {})}
-            >
-              {episode.title}
-            </AppLink>
-          </h3>
-          {episode.guestName ? (
-            <GuestLine
-              className="text-[16px] leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-[18px] lg:leading-[24px]"
-              gradientClass="gradient-text-podcast-guest"
-              name={episode.guestName}
-            />
-          ) : null}
-        </div>
-
-        {episode.description ? (
-          <p className="line-clamp-3 text-[16px] leading-[1.3] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:w-[359px] lg:text-[18px] lg:leading-[24px]">
-            {episode.description}
-          </p>
-        ) : null}
-
-        <AskPodcastAIButton label="Ask AI" variant="inline" />
-      </div>
-    </article>
-  );
-}
 
 function EpisodesGridSection({ episodes }: { episodes: EpisodeView[] }) {
   if (episodes.length === 0) return null;
