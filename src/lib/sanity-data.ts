@@ -21,6 +21,7 @@ import {
   PARTNER_LOGOS_QUERY,
   LINK_BUILDING_PAGE_QUERY,
   PARTNERSHIP_PAGE_QUERY,
+  HOME_PAGE_QUERY,
   REDDIT_MARKETING_PAGE_QUERY,
   SEO_SERVICE_PAGE_QUERY,
   PODCAST_EPISODES_QUERY,
@@ -42,12 +43,19 @@ import {
   type RedditMarketingContent,
 } from "@/components/pages/reddit-marketing/reddit-marketing-content";
 import type { RichBlock } from "@/components/pages/shared/page-content";
+import {
+  DEFAULT_HOME_CONTENT,
+  segmentsToQuote,
+  splitSegments,
+  type HomeContent,
+} from "@/components/pages/home/home-content";
 import type { SeoServiceContent, SeoServicePageKey } from "@/components/pages/shared/seo-service-content";
 import { seoServicePage } from "@/components/pages/shared/seo-service-registry";
 import {
   faqEntries,
   headingSegments,
   listOr,
+  optionalText,
   pageImage,
   text,
   type SanityRawPageImage,
@@ -1612,3 +1620,204 @@ export async function getSeoServicePage(pageKey: SeoServicePageKey): Promise<San
 
   return { _id: raw._id, content, seo: seoOf(raw) };
 }
+
+// ── Home Page ─────────────────────────────────────────────────────
+
+interface SanityRawHomeCta {
+  ctaLabel?: string | null;
+  ctaUrl?: string | null;
+}
+
+/** Raw home page from HOME_PAGE_QUERY */
+interface SanityRawHomePage {
+  _id: string;
+  hero?: ({ heading?: PortableTextBlock[] | null; paragraphs?: string[] | null } & SanityRawHomeCta) | null;
+  services?:
+    | ({
+        label?: string | null;
+        heading?: PortableTextBlock[] | null;
+        cards?: Array<{
+          _key: string;
+          title?: string | null;
+          descriptionLines?: string[] | null;
+          url?: string | null;
+          image?: SanityRawPageImage | null;
+        }> | null;
+      } & SanityRawHomeCta)
+    | null;
+  about?: { label?: string | null; heading?: PortableTextBlock[] | null; paragraphs?: PortableTextBlock[] | null } | null;
+  team?:
+    | ({
+        label?: string | null;
+        heading?: PortableTextBlock[] | null;
+        statValue?: string | null;
+        statLabel?: string | null;
+        members?: Array<{
+          _id: string;
+          name?: string | null;
+          role?: string | null;
+          slug?: { current?: string | null } | null;
+          photo?: SanityRawPageImage | null;
+        } | null> | null;
+      } & SanityRawHomeCta)
+    | null;
+  stats?:
+    | ({
+        label?: string | null;
+        heading?: PortableTextBlock[] | null;
+        body?: string | null;
+        items?: Array<{ _key: string; metric?: string | null; detail?: string | null; image?: SanityRawPageImage | null }> | null;
+      } & SanityRawHomeCta)
+    | null;
+  featuredLogos?: { heading?: PortableTextBlock[] | null } | null;
+  caseStudies?:
+    | ({
+        label?: string | null;
+        heading?: PortableTextBlock[] | null;
+        body?: string | null;
+        quotes?: PortableTextBlock[] | null;
+      } & SanityRawHomeCta)
+    | null;
+  trust?:
+    | ({
+        label?: string | null;
+        heading?: PortableTextBlock[] | null;
+        certifications?: Array<{ _key: string; label?: string | null; tone?: string | null }> | null;
+      } & SanityRawHomeCta)
+    | null;
+  partnerships?:
+    | ({ label?: string | null; statement?: PortableTextBlock[] | null; paragraphs?: string[] | null } & SanityRawHomeCta)
+    | null;
+  blog?: ({ label?: string | null; heading?: PortableTextBlock[] | null } & SanityRawHomeCta) | null;
+  testimonials?: ({ label?: string | null; heading?: PortableTextBlock[] | null } & SanityRawHomeCta) | null;
+  seo?: SanitySeo | null;
+}
+
+export interface SanityHomePage {
+  _id: string;
+  content: HomeContent;
+  seo: { metaTitle: string | null; metaDescription: string | null } | null;
+}
+
+const cta = (raw: SanityRawHomeCta | null | undefined, fallback: { ctaLabel: string; ctaUrl: string }) => ({
+  ctaLabel: text(raw?.ctaLabel, fallback.ctaLabel),
+  ctaUrl: text(raw?.ctaUrl, fallback.ctaUrl),
+});
+
+/** Multi-block gradient fields → one segment list per block, or the default. */
+function segmentGroups(
+  blocks: PortableTextBlock[] | null | undefined,
+  fallback: HomeContent["about"]["paragraphs"],
+) {
+  if (!blocks?.length) return fallback;
+  const groups = splitSegments(headingSegments(blocks, []));
+  return groups.length ? groups : fallback;
+}
+
+export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
+  const data = await client.fetch(HOME_PAGE_QUERY, {}, { next: { tags: ["homePage"], revalidate: false } });
+  if (!data) return null;
+
+  const raw = data as SanityRawHomePage;
+  const d = DEFAULT_HOME_CONTENT;
+
+  const content: HomeContent = {
+    hero: {
+      heading: headingSegments(raw.hero?.heading, d.hero.heading),
+      paragraphs: raw.hero?.paragraphs?.filter((p) => p?.trim()).length
+        ? raw.hero.paragraphs.filter((p) => p?.trim())
+        : d.hero.paragraphs,
+      ...cta(raw.hero, d.hero),
+    },
+    services: {
+      label: text(raw.services?.label, d.services.label),
+      heading: headingSegments(raw.services?.heading, d.services.heading),
+      ...cta(raw.services, d.services),
+      cards: listOr(raw.services?.cards, d.services.cards, (card, i) => ({
+        title: card.title ?? "",
+        descriptionLines: card.descriptionLines?.filter((line) => line?.trim()) ?? [],
+        url: optionalText(card.url),
+        // WHY: no CMS photo means "keep the built-in artwork for this slot".
+        image: pageImage(card.image, d.services.cards[i]?.image ?? null),
+      })),
+    },
+    about: {
+      label: text(raw.about?.label, d.about.label),
+      heading: headingSegments(raw.about?.heading, d.about.heading),
+      paragraphs: segmentGroups(raw.about?.paragraphs, d.about.paragraphs),
+    },
+    team: {
+      label: text(raw.team?.label, d.team.label),
+      heading: headingSegments(raw.team?.heading, d.team.heading),
+      statValue: text(raw.team?.statValue, d.team.statValue),
+      statLabel: text(raw.team?.statLabel, d.team.statLabel),
+      ...cta(raw.team, d.team),
+      members: listOr(
+        raw.team?.members?.filter((member): member is NonNullable<typeof member> => Boolean(member?.name)),
+        d.team.members,
+        (member, i) => ({
+          name: member.name ?? "",
+          role: member.role ?? "",
+          image: pageImage(member.photo, d.team.members[i]?.image ?? null),
+          url: member.slug?.current ? `/about/${member.slug.current}` : d.team.ctaUrl,
+        }),
+      ),
+    },
+    stats: {
+      label: text(raw.stats?.label, d.stats.label),
+      heading: headingSegments(raw.stats?.heading, d.stats.heading),
+      body: text(raw.stats?.body, d.stats.body),
+      ...cta(raw.stats, d.stats),
+      items: listOr(raw.stats?.items, d.stats.items, (item, i) => ({
+        metric: item.metric ?? "",
+        detail: item.detail ?? "",
+        image: pageImage(item.image, d.stats.items[i]?.image ?? null),
+      })),
+    },
+    featuredLogos: {
+      heading: headingSegments(raw.featuredLogos?.heading, d.featuredLogos.heading),
+    },
+    caseStudies: {
+      label: text(raw.caseStudies?.label, d.caseStudies.label),
+      heading: headingSegments(raw.caseStudies?.heading, d.caseStudies.heading),
+      body: text(raw.caseStudies?.body, d.caseStudies.body),
+      ...cta(raw.caseStudies, d.caseStudies),
+      quotes: raw.caseStudies?.quotes?.length
+        ? splitSegments(headingSegments(raw.caseStudies.quotes, [])).map(segmentsToQuote)
+        : d.caseStudies.quotes,
+    },
+    trust: {
+      label: text(raw.trust?.label, d.trust.label),
+      heading: headingSegments(raw.trust?.heading, d.trust.heading),
+      ...cta(raw.trust, d.trust),
+      certifications: listOr(raw.trust?.certifications, d.trust.certifications, (item) => ({
+        label: item.label ?? "",
+        tone: item.tone === "google" ? "google" : "hubspot",
+      })),
+    },
+    partnerships: {
+      label: text(raw.partnerships?.label, d.partnerships.label),
+      statement: headingSegments(raw.partnerships?.statement, d.partnerships.statement),
+      paragraphs: raw.partnerships?.paragraphs?.filter((p) => p?.trim()).length
+        ? raw.partnerships.paragraphs.filter((p) => p?.trim())
+        : d.partnerships.paragraphs,
+      ...cta(raw.partnerships, d.partnerships),
+    },
+    blog: {
+      label: text(raw.blog?.label, d.blog.label),
+      heading: headingSegments(raw.blog?.heading, d.blog.heading),
+      ...cta(raw.blog, d.blog),
+    },
+    testimonials: {
+      label: text(raw.testimonials?.label, d.testimonials.label),
+      heading: headingSegments(raw.testimonials?.heading, d.testimonials.heading),
+      ...cta(raw.testimonials, d.testimonials),
+    },
+  };
+
+  return {
+    _id: raw._id,
+    content,
+    seo: raw.seo ? { metaTitle: raw.seo.metaTitle ?? null, metaDescription: raw.seo.metaDescription ?? null } : null,
+  };
+});

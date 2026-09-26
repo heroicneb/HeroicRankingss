@@ -314,6 +314,27 @@ export const SITE_SETTINGS_QUERY = defineQuery(`
 // Image projection shared by the fixed-section page documents.
 const PAGE_IMAGE = `{ alt, asset->{ url, metadata { dimensions { width, height } } } }`;
 
+export const HOME_PAGE_QUERY = defineQuery(`
+  *[_type == "homePage"][0] {
+    _id,
+    hero { heading, paragraphs, ctaLabel, ctaUrl },
+    services { label, heading, ctaLabel, ctaUrl, cards[] { _key, title, descriptionLines, url, image ${PAGE_IMAGE} } },
+    about { label, heading, paragraphs },
+    team {
+      label, heading, statValue, statLabel, ctaLabel, ctaUrl,
+      members[]-> { _id, name, role, slug, photo ${PAGE_IMAGE} }
+    },
+    stats { label, heading, body, ctaLabel, ctaUrl, items[] { _key, metric, detail, image ${PAGE_IMAGE} } },
+    featuredLogos { heading },
+    caseStudies { label, heading, body, ctaLabel, ctaUrl, quotes },
+    trust { label, heading, ctaLabel, ctaUrl, certifications[] { _key, label, tone } },
+    partnerships { label, statement, paragraphs, ctaLabel, ctaUrl },
+    blog { label, heading, ctaLabel, ctaUrl },
+    testimonials { label, heading, ctaLabel, ctaUrl },
+    seo
+  }
+`);
+
 export const PARTNERSHIP_PAGE_QUERY = defineQuery(`
   *[_type == "partnershipPage"][0] {
     _id,

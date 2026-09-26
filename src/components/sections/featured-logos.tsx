@@ -2,15 +2,18 @@ import Image from "next/image";
 
 import type { SanityPartnerLogo } from "@/lib/sanity-data";
 import { Container } from "@/components/ui/container";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { DEFAULT_HOME_CONTENT, type HeadingSegment } from "@/components/pages/home/home-content";
 
 interface FeaturedLogosProps {
   partnerLogos?: SanityPartnerLogo[];
+  heading?: HeadingSegment[];
 }
 
 const featuredHeadingGradientClassName =
   "gradient-text-brand gradient-text-brand-featured inline-block pb-[0.12em]";
 
-export function FeaturedLogos({ partnerLogos = [] }: FeaturedLogosProps) {
+export function FeaturedLogos({ partnerLogos = [], heading = DEFAULT_HOME_CONTENT.featuredLogos.heading }: FeaturedLogosProps) {
   const cmsLogos = partnerLogos
     .filter((logo) => Boolean(logo.logoUrl))
     .map((logo) => ({
@@ -26,8 +29,7 @@ export function FeaturedLogos({ partnerLogos = [] }: FeaturedLogosProps) {
         <Container className="lg:hidden">
           <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5">
             <h2 className="type-h3 w-[272px] text-center text-[var(--color-hr-pure-white)]">
-              Featured and <span className="gradient-text-brand gradient-text-brand-featured">Recognized</span> by{" "}
-              <span className="gradient-text-brand gradient-text-brand-featured">Industry Leaders</span>
+              <GradientHeading highlightClassName="gradient-text-brand-featured" segments={heading} />
             </h2>
             <div className="w-full rounded-[30px] border border-[var(--color-hr-accent)] px-[30px] py-[20px]">
               <div className="grid grid-cols-2 gap-x-5 gap-y-5">
@@ -71,8 +73,7 @@ export function FeaturedLogos({ partnerLogos = [] }: FeaturedLogosProps) {
         <div className="hidden lg:block">
           <Container>
             <h2 className="type-h4 overflow-visible pb-[0.12em] font-normal text-center text-[var(--color-hr-pure-white)]">
-              Featured and <span className={featuredHeadingGradientClassName}>Recognized</span> by{" "}
-              <span className={featuredHeadingGradientClassName}>Industry Leaders</span>
+              <GradientHeading highlightClassName={featuredHeadingGradientClassName} segments={heading} />
             </h2>
           </Container>
 
@@ -124,8 +125,7 @@ export function FeaturedLogos({ partnerLogos = [] }: FeaturedLogosProps) {
       <Container className="lg:hidden">
         <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5">
           <h2 className="type-h3 w-[272px] text-center text-[var(--color-hr-pure-white)]">
-            Featured and <span className="gradient-text-brand gradient-text-brand-featured">Recognized</span> by{" "}
-            <span className="gradient-text-brand gradient-text-brand-featured">Industry Leaders</span>
+            <GradientHeading highlightClassName="gradient-text-brand-featured" segments={heading} />
           </h2>
           <div className="w-full rounded-[30px] border border-[var(--color-hr-accent)] px-[30px] py-[20px]">
             <div className="grid grid-cols-2 gap-x-5 gap-y-5">
@@ -174,8 +174,7 @@ export function FeaturedLogos({ partnerLogos = [] }: FeaturedLogosProps) {
       <div className="hidden lg:block">
         <Container>
           <h2 className="type-h3 overflow-visible pb-[0.12em] text-center text-[var(--color-hr-pure-white)]">
-            Featured and <span className={featuredHeadingGradientClassName}>Recognized</span> by{" "}
-            <span className={featuredHeadingGradientClassName}>Industry Leaders</span>
+            <GradientHeading highlightClassName={featuredHeadingGradientClassName} segments={heading} />
           </h2>
         </Container>
 

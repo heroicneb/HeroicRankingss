@@ -9,6 +9,8 @@ import { Container } from "@/components/ui/container";
 import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { DEFAULT_HOME_CONTENT, type HomeContent } from "@/components/pages/home/home-content";
 import { cn } from "@/lib/cn";
 import type { SanityTestimonial } from "@/lib/sanity-data";
 import type { Testimonial } from "@/types";
@@ -90,6 +92,7 @@ interface TestimonialsProps {
   cmsTestimonials?: SanityTestimonial[];
   /** Hide the "Become a Satisfied Client" button (the About page has its own CTA block). */
   showCta?: boolean;
+  content?: HomeContent["testimonials"];
 }
 
 function cmsToEntry(t: SanityTestimonial): TestimonialEntry {
@@ -115,7 +118,11 @@ function cmsToEntry(t: SanityTestimonial): TestimonialEntry {
   };
 }
 
-export function Testimonials({ cmsTestimonials, showCta = true }: TestimonialsProps = {}) {
+export function Testimonials({
+  cmsTestimonials,
+  showCta = true,
+  content = DEFAULT_HOME_CONTENT.testimonials,
+}: TestimonialsProps = {}) {
   const cmsReady =
     cmsTestimonials &&
     cmsTestimonials.length > 0 &&
@@ -199,15 +206,9 @@ export function Testimonials({ cmsTestimonials, showCta = true }: TestimonialsPr
       <Container>
         <div className="grid gap-[30px] xl:grid-cols-[393px_1fr] xl:items-end" data-reveal>
           <div className="mx-auto w-full max-w-[350px] text-center xl:mx-0 xl:max-w-[393px] xl:text-left">
-            <SectionLabel>
-              /{"  "}Dedication{"  "}/
-            </SectionLabel>
+            <SectionLabel>{content.label}</SectionLabel>
             <h2 className="type-h2 mt-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              What Our{" "}
-              <span className="gradient-text-brand gradient-text-brand-testimonials">
-                Clients
-              </span>{" "}
-              Say
+              <GradientHeading highlightClassName="gradient-text-brand-testimonials" segments={content.heading} />
             </h2>
           </div>
 
@@ -215,10 +216,10 @@ export function Testimonials({ cmsTestimonials, showCta = true }: TestimonialsPr
             <div className="flex justify-center xl:justify-end">
               <AppLink
                 className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] xl:max-w-[253px]"
-                href="/contact"
+                href={content.ctaUrl}
                 motionPreset="none"
               >
-                Become a Satisfied Client
+                {content.ctaLabel}
                 <GradientArrowUpRightIcon className="size-[10px]" />
               </AppLink>
             </div>

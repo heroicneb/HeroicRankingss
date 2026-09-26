@@ -3,6 +3,8 @@ import { TrustAuthorityRail } from "@/components/sections/trust-authority-rail";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
+import { GradientHeading } from "@/components/ui/gradient-heading";
+import { DEFAULT_HOME_CONTENT, type HomeContent } from "@/components/pages/home/home-content";
 import type { TrustAuthorityItem as TrustAuthorityItemType } from "@/types";
 
 const TRUST_AUTHORITY_ITEMS: TrustAuthorityItemType[] = [
@@ -35,7 +37,21 @@ const TRUST_AUTHORITY_ITEMS: TrustAuthorityItemType[] = [
   { label: "Hubspot Content Marketing", iconTone: "hubspot", compact: true },
 ];
 
-export function TrustAuthority() {
+interface TrustAuthorityProps {
+  content?: HomeContent["trust"];
+}
+
+/** Long HubSpot names get the narrower card so the rail keeps its rhythm. */
+function toItems(certifications: HomeContent["trust"]["certifications"]): TrustAuthorityItemType[] {
+  return certifications.map((item) => ({
+    label: item.label,
+    iconTone: item.tone,
+    compact: item.tone === "hubspot" && item.label.length > 14,
+  }));
+}
+
+export function TrustAuthority({ content = DEFAULT_HOME_CONTENT.trust }: TrustAuthorityProps) {
+  const items = content.certifications.length ? toItems(content.certifications) : TRUST_AUTHORITY_ITEMS;
   return (
     <section
       className="mb-[40px] mt-[40px] lg:mb-[81px] lg:mt-[60px]"
@@ -44,24 +60,21 @@ export function TrustAuthority() {
       <Container>
         <div className="grid items-start gap-[10px] lg:grid-cols-[600px_670px]" data-reveal-stagger>
           <div className="text-center lg:text-left">
-            <SectionLabel>/ Trust and Authority /</SectionLabel>
+            <SectionLabel>{content.label}</SectionLabel>
             <h2 className="type-h2 mt-5 max-w-[413px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              Certifications and{" "}
-              <span className="gradient-text-brand gradient-text-brand-trust">
-                Partnerships
-              </span>
+              <GradientHeading highlightClassName="gradient-text-brand-trust" segments={content.heading} />
             </h2>
             <AppLink
-              href="/contact"
+              href={content.ctaUrl}
               className="type-cta mt-10 inline-flex h-[45px] w-full max-w-[303px] items-center justify-center gap-2 rounded-[var(--radius-button)] whitespace-nowrap border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] hover:bg-[var(--color-hr-off-white)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:w-[303px]"
             >
-              Work with Certified SEO Experts
+              {content.ctaLabel}
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
 
           <div className="mt-[30px] grid grid-cols-2 gap-[10px] lg:hidden">
-            {TRUST_AUTHORITY_ITEMS.slice(0, 8).map((item) => (
+            {items.slice(0, 8).map((item) => (
               <article
                 className="flex h-[100px] flex-col items-center rounded-[20px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] px-1 text-center dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]"
                 key={item.label}
@@ -82,7 +95,7 @@ export function TrustAuthority() {
           </div>
 
           <div className="hidden lg:block">
-            <TrustAuthorityRail items={TRUST_AUTHORITY_ITEMS} />
+            <TrustAuthorityRail items={items} />
           </div>
         </div>
       </Container>
