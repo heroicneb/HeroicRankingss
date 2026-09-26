@@ -213,16 +213,14 @@ function mergeCmsWithHardcoded(
         date:
           formatPublishedDate(caseStudy.publishedAt) ??
           "Case study in progress",
-        // Always prefer the brand-color SVG panel keyed by slug — that's the
-        // Figma source-of-truth for this card (flat brand panel + URL/client
-        // overlay, no photo). Falling back to caseStudy.cardImage / heroImage
-        // produced the regression where every card rendered the same shared
-        // hero photo, especially visible in light mode (see audit
-        // docs/audits/figma-alignment/REPORT.md §3).
+        // WHY: an image set in Sanity (Card Image, else Hero Image) always wins,
+        // so editors can swap the artwork without a deploy. The slug-keyed local
+        // panel art is only the fallback for case studies that have no image
+        // uploaded yet.
         panelImageSrc:
-          panelFallback?.panelImageSrc ||
           caseStudy.cardImageUrl ||
           caseStudy.heroImageUrl ||
+          panelFallback?.panelImageSrc ||
           "/case-studies/imgGroup44.svg",
         panelLabelClassName:
           panelFallback?.panelLabelClassName ?? "left-1/2 -translate-x-1/2",
