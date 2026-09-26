@@ -507,6 +507,59 @@ textarea {
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
+/* Podcast index (Figma 2223:283 light / 2251:28 dark): purple sweep on light
+   surfaces, HR Gradient Light in dark mode. Angles per text node. */
+.gradient-text-podcast-hero {
+  --gradient-angle: 214.735deg;
+}
+.gradient-text-podcast-guest {
+  --gradient-angle: 191.39deg;
+}
+.gradient-text-podcast-episodes {
+  --gradient-angle: 211.65deg;
+}
+.gradient-text-podcast-episode-title {
+  --gradient-angle: 226.986deg;
+}
+.gradient-text-podcast-episode-guest {
+  --gradient-angle: 188.068deg;
+}
+.gradient-text-podcast-insights {
+  --gradient-angle: 219.422deg;
+}
+.gradient-text-podcast-moments {
+  --gradient-angle: 213.473deg;
+}
+.gradient-text-podcast-related {
+  --gradient-angle: 197.13deg;
+}
+.dark .gradient-text-podcast-hero,
+.dark .gradient-text-podcast-guest,
+.dark .gradient-text-podcast-episodes,
+.dark .gradient-text-podcast-episode-title,
+.dark .gradient-text-podcast-episode-guest,
+.dark .gradient-text-podcast-insights,
+.dark .gradient-text-podcast-moments,
+.dark .gradient-text-podcast-related {
+  background-image: var(--gradient-brand-light);
+}
+/* Always-light variants for the dark panels (latest episode, Podcast AI). */
+.gradient-text-podcast-latest-title {
+  --gradient-angle: 207.724deg;
+}
+.gradient-text-podcast-ai-title {
+  --gradient-angle: 208.762deg;
+}
+.gradient-text-podcast-ai-built {
+  --gradient-angle: 185.801deg;
+}
+.gradient-text-podcast-latest-title,
+.gradient-text-podcast-ai-title,
+.gradient-text-podcast-ai-built,
+.gradient-text-podcast-panel-guest {
+  background-image: var(--gradient-brand-light);
+}
+
 .gradient-text-partnership-hero {
   --gradient-angle: 208.28deg;
 }

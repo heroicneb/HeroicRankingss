@@ -140,10 +140,11 @@ export const podcastEpisode = defineType({
     }),
     defineField({
       name: "videoEmbedUrl",
-      title: "Video Embed URL",
+      title: "YouTube episode link",
       type: "url",
       group: "episode",
-      description: "YouTube, Vimeo, or direct mp4 URL.",
+      description:
+        "Where the play button on the episode page goes, e.g. https://www.youtube.com/watch?v=… (YouTube, Vimeo or a direct .mp4). Leave empty and the thumbnail is not clickable.",
       validation: (r) =>
         r
           .uri({ scheme: ["http", "https"], allowRelative: false })
