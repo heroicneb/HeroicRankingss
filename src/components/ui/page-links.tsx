@@ -43,6 +43,9 @@ const PILL_DISABLED = "cursor-default opacity-40";
  * Link-based pagination (server component). Every page is a real URL, so it
  * works without JavaScript and is crawlable. Same pill styling as the blog
  * pagination.
+ *
+ * WHY `scroll={false}`: a page change swaps the cards in place; jumping to the
+ * top of the page on every click was the complaint that led to this.
  */
 export function PageLinks({ page, pageCount, hrefFor, ariaLabel = "Pages", className }: PageLinksProps) {
   if (pageCount <= 1) return null;
@@ -51,7 +54,7 @@ export function PageLinks({ page, pageCount, hrefFor, ariaLabel = "Pages", class
   return (
     <nav aria-label={ariaLabel} className={cn("flex flex-wrap items-center justify-center gap-[10px]", className)}>
       {page > 1 ? (
-        <Link aria-label="Previous page" className={cn(PILL, PILL_IDLE)} href={hrefFor(page - 1)}>
+        <Link aria-label="Previous page" className={cn(PILL, PILL_IDLE)} href={hrefFor(page - 1)} scroll={false}>
           <ChevronLeftIcon className="size-3" />
         </Link>
       ) : (
@@ -70,14 +73,14 @@ export function PageLinks({ page, pageCount, hrefFor, ariaLabel = "Pages", class
             {item}
           </span>
         ) : (
-          <Link aria-label={`Page ${item}`} className={cn(PILL, PILL_IDLE)} href={hrefFor(item)} key={item}>
+          <Link aria-label={`Page ${item}`} className={cn(PILL, PILL_IDLE)} href={hrefFor(item)} key={item} scroll={false}>
             {item}
           </Link>
         ),
       )}
 
       {page < pageCount ? (
-        <Link aria-label="Next page" className={cn(PILL, PILL_IDLE)} href={hrefFor(page + 1)}>
+        <Link aria-label="Next page" className={cn(PILL, PILL_IDLE)} href={hrefFor(page + 1)} scroll={false}>
           <ChevronRightIcon className="size-3" />
         </Link>
       ) : (
