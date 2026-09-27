@@ -289,13 +289,13 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
 // 3. Episodes grid
 // ---------------------------------------------------------------------------
 
-const EPISODES_PAGE_SIZE = 9;
+const EPISODES_PAGE_SIZE = 3;
 const hrefForPage = (n: number) => (n <= 1 ? "/podcast/" : `/podcast/?page=${n}`);
 
 function EpisodesGridSection({ episodes, page: requestedPage }: { episodes: EpisodeView[]; page: number }) {
   if (episodes.length === 0) return null;
 
-  // WHY: three rows of three per page, like the case studies index; out-of-range pages clamp to the last one.
+  // WHY: one row of three per page (the frame shows three cards); out-of-range pages clamp to the last one.
   const pageCount = Math.max(1, Math.ceil(episodes.length / EPISODES_PAGE_SIZE));
   const page = Math.min(Math.max(1, requestedPage), pageCount);
   const visible = episodes.slice((page - 1) * EPISODES_PAGE_SIZE, page * EPISODES_PAGE_SIZE);
