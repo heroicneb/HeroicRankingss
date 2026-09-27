@@ -49,9 +49,7 @@ export function PodcastChatPanel({
     setInput,
     setMessages,
   } = useChat({
-    // Same-origin Vercel Edge proxy — see src/app/api/chat/route.ts.
-    // The proxy injects the Bearer secret server-side; the browser never
-    // sees CHATBOT_SERVER_SECRET. Per docs/CHATBOT_INTEGRATION.md §6.2.
+    // Same-origin route backed by Gemini — see src/app/api/chat/route.ts.
     api: "/api/chat",
     initialMessages: seedMessages,
     body: {
@@ -73,7 +71,7 @@ export function PodcastChatPanel({
     mode === "episode" ? PER_EPISODE_FALLBACK_PROMPTS : globalSuggestions;
 
   const headline =
-    mode === "episode" && episodeTitle ? episodeTitle : "Ranking Heroes AI";
+    mode === "episode" && episodeTitle ? episodeTitle : "Podcast AI";
   const subline =
     mode === "episode" && guestName
       ? `with ${guestName}`

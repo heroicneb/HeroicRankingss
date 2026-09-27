@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   // WHY: No heavy server-only dependencies were detected in this repo.
   serverExternalPackages: [],
+  // WHY: the Podcast AI reads its index and the transcripts from disk at request time;
+  // Vercel only bundles files it can trace, so list them explicitly.
+  outputFileTracingIncludes: {
+    "/api/chat": ["./content/podcast-ai/index.json", "./content/podcast-transcripts/*.txt"],
+    "/podcast/[slug]": ["./content/podcast-ai/index.json"],
+  },
   // WHY: Improve image transfer efficiency and cacheability for Core Web Vitals.
   images: {
     formats: ["image/webp"],

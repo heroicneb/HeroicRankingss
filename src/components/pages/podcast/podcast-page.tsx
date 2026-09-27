@@ -133,7 +133,7 @@ function HeroSection({ episodeCount }: { episodeCount: number }) {
               )}
             >
               <Image alt="" aria-hidden className="dark:brightness-0 dark:invert" height={24} src="/podcast/gpt-icon.svg" width={24} />
-              GPT 5.2 Chat
+              Podcast AI Chat
             </span>
             <AppLink
               className={cn(
