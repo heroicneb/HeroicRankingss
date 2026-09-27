@@ -5,6 +5,7 @@ import { PodcastChatProvider } from "@/components/chat/PodcastChatProvider";
 import { PodcastEpisodePage } from "@/components/pages/podcast/podcast-episode-page";
 import { createPageMetadata } from "@/lib/metadata";
 import { FALLBACK_EPISODES, toEpisodeView } from "@/components/pages/podcast/parts/podcast-episode-card";
+import { hasTranscript } from "@/lib/podcast-ai/knowledge";
 import {
   getPodcastEpisodeBySlug,
   getPodcastEpisodes,
@@ -62,15 +63,16 @@ export default async function Page({ params }: PodcastEpisodeRouteProps) {
   const others = allEpisodes.filter((item) => item._id !== episode._id).slice(0, 3).map((item) => toEpisodeView(item, 826));
   const moreEpisodes = others.length ? others : FALLBACK_EPISODES;
 
-  const chatbotEpisodeId = episode.chatbotEpisodeId ?? undefined;
+  // WHY: per-episode chat needs the transcript on disk (content/podcast-transcripts); otherwise the drawer answers across all episodes.
+  const episodeChat = hasTranscript(episode.episodeNumber);
   return (
     <>
       <PodcastEpisodePage episode={episode} moreEpisodes={moreEpisodes} />
       <PodcastChatProvider
-        episodeId={chatbotEpisodeId}
+        episodeId={episodeChat ? String(episode.episodeNumber) : undefined}
         episodeTitle={episode.title}
         guestName={episode.guest?.name ?? undefined}
-        mode={chatbotEpisodeId ? "episode" : "global"}
+        mode={episodeChat ? "episode" : "global"}
         routeKey={`podcast:${slug}`}
       />
     </>

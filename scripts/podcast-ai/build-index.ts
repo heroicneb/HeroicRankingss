@@ -34,7 +34,10 @@ function parseFileName(file: string): { episodeNumber: number; guest: string; pa
   return { episodeNumber: Number(m[1]), guest: (m[2] ?? "").replace(/^AEO - /, "").trim(), part: Number(m[3] ?? 1) };
 }
 
-async function embedBatch(texts: string[]): Promise<number[][]> {
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/** Retries 429/5xx with a growing pause so a free-tier quota just slows the build down instead of failing it. */
+async function embedBatch(texts: string[], attempt = 0): Promise<number[][]> {
   const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${EMBEDDING_MODEL}:batchEmbedContents`, {
     method: "POST",
     headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey as string },
@@ -47,6 +50,13 @@ async function embedBatch(texts: string[]): Promise<number[][]> {
       })),
     }),
   });
+  if (res.status === 429 || res.status >= 500) {
+    if (attempt >= 12) throw new Error(`embed failed ${res.status} after ${attempt} retries: ${(await res.text()).slice(0, 200)}`);
+    const wait = Math.min(90_000, 15_000 * (attempt + 1));
+    process.stdout.write(`\n  ${res.status} from the API, waiting ${wait / 1000}s…`);
+    await sleep(wait);
+    return embedBatch(texts, attempt + 1);
+  }
   if (!res.ok) throw new Error(`embed failed ${res.status}: ${(await res.text()).slice(0, 300)}`);
   const json = (await res.json()) as { embeddings: Array<{ values: number[] }> };
   return json.embeddings.map((e) => e.values);
@@ -97,15 +107,34 @@ async function main() {
     flush();
   }
 
-  console.log(`${files.length} files → ${chunks.length} chunks; embedding…`);
-  const BATCH = 50;
-  for (let i = 0; i < chunks.length; i += BATCH) {
-    const slice = chunks.slice(i, i + BATCH);
+  // Resume: reuse vectors already computed for identical chunk text.
+  const PARTIAL = OUT_FILE.replace(/\.json$/, ".partial.json");
+  const done = new Map<string, number[]>();
+  try {
+    for (const c of JSON.parse(readFileSync(PARTIAL, "utf8")) as Array<{ text: string; vector: number[] }>) done.set(c.text, c.vector);
+  } catch {
+    /* no partial file yet */
+  }
+  const savePartial = () =>
+    writeFileSync(PARTIAL, JSON.stringify(chunks.filter((c) => c.vector.length).map((c) => ({ text: c.text, vector: c.vector }))));
+
+  console.log(`${files.length} files → ${chunks.length} chunks; embedding (${done.size} already cached)…`);
+  const BATCH = 20;
+  const pending = chunks.filter((c) => {
+    const cached = done.get(c.text);
+    if (cached) c.vector = cached;
+    return !cached;
+  });
+  mkdirSync(path.dirname(OUT_FILE), { recursive: true });
+  for (let i = 0; i < pending.length; i += BATCH) {
+    const slice = pending.slice(i, i + BATCH);
     const vectors = await embedBatch(slice.map((c) => c.text));
     slice.forEach((c, j) => {
       c.vector = (vectors[j] ?? []).map((v) => Number(v.toFixed(5)));
     });
-    process.stdout.write(`  ${Math.min(i + BATCH, chunks.length)}/${chunks.length}\r`);
+    savePartial();
+    process.stdout.write(`  ${Math.min(i + BATCH, pending.length)}/${pending.length}\r`);
+    await sleep(1500);
   }
   console.log();
 

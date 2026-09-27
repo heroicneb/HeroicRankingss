@@ -78,3 +78,4 @@ figma-extract/
 node_modules
 scripts/media/out/
 /scripts/seed/*-snapshot.json
+content/podcast-ai/index.partial.json

@@ -34,7 +34,7 @@ const OPEN_EVENT = "podcast-chat:open";
  * the same drawer without prop drilling.
  *
  * Disabled by default — set NEXT_PUBLIC_CHAT_ENABLED=true on the deploy to
- * opt in. Required env vars: NEXT_PUBLIC_CHAT_API_URL, NEXT_PUBLIC_CHAT_TOKEN.
+ * opt in. The server route needs GEMINI_API_KEY.
  */
 export function PodcastChatProvider({
   routeKey,
@@ -44,11 +44,8 @@ export function PodcastChatProvider({
   guestName,
   globalSuggestions,
 }: PodcastChatProviderProps) {
-  // Gate the widget mount only on the public-safe flag. The chatbot
-  // backend URL + Bearer secret live exclusively on the server (server-
-  // side env vars consumed by /api/chat Edge route), so the browser
-  // can't see them — and shouldn't need to. Per
-  // docs/CHATBOT_INTEGRATION.md §5.
+  // Gate the widget mount only on the public-safe flag. The Gemini key
+  // lives exclusively on the server (/api/chat), so the browser never sees it.
   const enabled = process.env.NEXT_PUBLIC_CHAT_ENABLED === "true";
 
   const [mounted, setMounted] = useState(false);
