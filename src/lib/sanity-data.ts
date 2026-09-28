@@ -1163,6 +1163,8 @@ export interface SanityPodcastEpisodeSummary {
     role?: string | null;
     company?: string | null;
   } | null;
+  /** Key Insights topic pills — used for the per-episode chat's suggested questions. */
+  topicPills?: string[] | null;
   heroImage?: SanityImageRef | null;
 }
 

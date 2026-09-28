@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { cn } from "@/lib/cn";
 
+import type { ChatEpisodeContext } from "./chat-episode";
 import { PODCAST_CHAT_OPEN_EVENT } from "./PodcastChatProvider";
 
 interface AskPodcastAIButtonProps {
@@ -19,6 +20,8 @@ interface AskPodcastAIButtonProps {
   showIcon?: boolean;
   /** "sparkle": small line star. "swirl": the 31×32 GPT swirl used by the podcast frames. */
   icon?: "sparkle" | "swirl";
+  /** When set, the drawer opens scoped to this episode (its transcript, its suggested questions). */
+  episode?: ChatEpisodeContext;
 }
 
 /** The podcast hero pill (Figma 2251:68): 24px swirl + 18/24 label on an off-white / dark pill. */
@@ -46,6 +49,7 @@ export function AskPodcastAIButton({
   variant = "outline",
   showIcon = true,
   icon = "sparkle",
+  episode,
 }: AskPodcastAIButtonProps) {
   const enabled = process.env.NEXT_PUBLIC_CHAT_ENABLED === "true";
 
@@ -61,7 +65,7 @@ export function AskPodcastAIButton({
 
   const open = () => {
     if (typeof window !== "undefined") {
-      window.dispatchEvent(new CustomEvent(PODCAST_CHAT_OPEN_EVENT));
+      window.dispatchEvent(new CustomEvent<ChatEpisodeContext | undefined>(PODCAST_CHAT_OPEN_EVENT, { detail: episode }));
     }
   };
 

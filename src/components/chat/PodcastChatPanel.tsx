@@ -24,6 +24,8 @@ interface PodcastChatPanelProps {
   episodeTitle?: string;
   guestName?: string;
   globalSuggestions?: string[];
+  /** Guest-specific starters; falls back to the generic per-episode prompts. */
+  episodeSuggestions?: string[];
 }
 
 export function PodcastChatPanel({
@@ -33,6 +35,7 @@ export function PodcastChatPanel({
   episodeTitle,
   guestName,
   globalSuggestions = [],
+  episodeSuggestions,
 }: PodcastChatPanelProps) {
   const [seedMessages] = useState(() => load(routeKey));
   const listEndRef = useRef<HTMLDivElement | null>(null);
@@ -68,7 +71,7 @@ export function PodcastChatPanel({
   }, [messages]);
 
   const suggestions =
-    mode === "episode" ? PER_EPISODE_FALLBACK_PROMPTS : globalSuggestions;
+    mode === "episode" ? (episodeSuggestions?.length ? episodeSuggestions : PER_EPISODE_FALLBACK_PROMPTS) : globalSuggestions;
 
   const headline =
     mode === "episode" && episodeTitle ? episodeTitle : "Podcast AI";

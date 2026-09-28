@@ -390,6 +390,7 @@ export const PODCAST_EPISODES_QUERY = defineQuery(`
     description,
     publishedAt,
     guest { name, role, company },
+    "topicPills": keyInsights.topicPills,
     heroImage { ..., asset->{ _id, _type, metadata { lqip } } }
   }
 `);
