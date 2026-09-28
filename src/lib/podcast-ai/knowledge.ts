@@ -15,9 +15,25 @@ const TRANSCRIPTS_DIR = path.join(ROOT, "content/podcast-transcripts");
 
 let indexCache: PodcastIndex | null = null;
 
+const EMPTY_INDEX: PodcastIndex = { builtAt: "", embeddingModel: "", dimensions: 0, episodes: [], chunks: [] };
+
+/**
+ * The index, or an empty one when content/podcast-ai/index.json is missing
+ * or unreadable. WHY: pages must never 500 because the AI index is absent;
+ * they just fall back to the cross-episode mode / "chat not configured".
+ */
 export function loadIndex(): PodcastIndex {
-  if (!indexCache) indexCache = JSON.parse(readFileSync(INDEX_FILE, "utf8")) as PodcastIndex;
+  if (indexCache) return indexCache;
+  try {
+    indexCache = JSON.parse(readFileSync(INDEX_FILE, "utf8")) as PodcastIndex;
+  } catch {
+    return EMPTY_INDEX;
+  }
   return indexCache;
+}
+
+export function indexReady(): boolean {
+  return loadIndex().chunks.length > 0;
 }
 
 export interface EpisodeMeta {
@@ -31,11 +47,15 @@ export interface EpisodeMeta {
 export function fullTranscript(episodeNumber: number): string | null {
   const episode = loadIndex().episodes.find((e) => e.episodeNumber === episodeNumber);
   if (!episode) return null;
-  return episode.files
-    .map((file) => parseTranscript(readFileSync(path.join(TRANSCRIPTS_DIR, file), "utf8")))
-    .flat()
-    .map((turn) => `${turn.speaker}: ${turn.text}`)
-    .join("\n");
+  try {
+    return episode.files
+      .map((file) => parseTranscript(readFileSync(path.join(TRANSCRIPTS_DIR, file), "utf8")))
+      .flat()
+      .map((turn) => `${turn.speaker}: ${turn.text}`)
+      .join("\n");
+  } catch {
+    return null;
+  }
 }
 
 export function hasTranscript(episodeNumber: number): boolean {
