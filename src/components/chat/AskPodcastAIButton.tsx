@@ -22,6 +22,8 @@ interface AskPodcastAIButtonProps {
   icon?: "sparkle" | "swirl";
   /** When set, the drawer opens scoped to this episode (its transcript, its suggested questions). */
   episode?: ChatEpisodeContext;
+  /** Inline variant on an always-dark surface: white text and glyph. */
+  inverse?: boolean;
 }
 
 /** The podcast hero pill (Figma 2251:68): 24px swirl + 18/24 label on an off-white / dark pill. */
@@ -50,6 +52,7 @@ export function AskPodcastAIButton({
   showIcon = true,
   icon = "sparkle",
   episode,
+  inverse = false,
 }: AskPodcastAIButtonProps) {
   const enabled = process.env.NEXT_PUBLIC_CHAT_ENABLED === "true";
 
@@ -86,13 +89,16 @@ export function AskPodcastAIButton({
     return (
       <button
         className={cn(
-          "motion-interactive motion-interactive-press inline-flex items-center gap-[10px] text-[16px] font-medium leading-[1.3] text-[var(--color-hr-dark)] hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:text-[var(--color-text-inverse)] lg:leading-none",
+          "motion-interactive motion-interactive-press inline-flex items-center gap-[10px] text-[16px] font-medium leading-[1.3] hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 lg:leading-none",
+          inverse
+            ? "text-[var(--color-hr-pure-white)] focus-visible:ring-offset-[var(--color-hr-dark)]"
+            : "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
           className,
         )}
         onClick={open}
         type="button"
       >
-        <Image alt="" aria-hidden className="dark:brightness-0 dark:invert" height={32} src="/podcast/ask-ai.svg" width={31} />
+        <Image alt="" aria-hidden className={inverse ? "brightness-0 invert" : "dark:brightness-0 dark:invert"} height={32} src="/podcast/ask-ai.svg" width={31} />
         <span>{label}</span>
       </button>
     );
