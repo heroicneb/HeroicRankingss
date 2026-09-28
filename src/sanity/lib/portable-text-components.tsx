@@ -126,7 +126,7 @@ export function makePortableTextComponents(
         return (
           <figure className="my-[40px]">
             <Image
-              alt={v.alt ?? ""}
+              alt={v.alt || v.caption || ""}
               blurDataURL={lqip}
               className="h-auto w-full rounded-[20px] lg:rounded-[30px]"
               height={800}

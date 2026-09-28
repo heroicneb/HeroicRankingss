@@ -3,7 +3,6 @@ import Image from "next/image";
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
 import { PUBLISHED_BLOG_POSTS } from "@/data/blog-posts";
-import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { getPostHref } from "@/lib/post-url";

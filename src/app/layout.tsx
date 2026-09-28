@@ -4,6 +4,7 @@ import { DM_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+import { SITE_INDEXING_ENABLED } from "@/lib/indexing";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 import "./globals.css";
@@ -47,19 +48,19 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: ["/opengraph-image"],
   },
-  robots: {
-    index: false,
-    follow: false,
-    nocache: true,
-    googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
-      "max-video-preview": -1,
-      "max-image-preview": "none",
-      "max-snippet": -1,
-    },
-  },
+  // Locked until NEXT_PUBLIC_SITE_INDEXING=true (see src/lib/indexing.ts).
+  robots: SITE_INDEXING_ENABLED
+    ? {
+        index: true,
+        follow: true,
+        googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
+      }
+    : {
+        index: false,
+        follow: false,
+        nocache: true,
+        googleBot: { index: false, follow: false, noimageindex: true, "max-video-preview": -1, "max-image-preview": "none", "max-snippet": -1 },
+      },
 };
 
 export const viewport: Viewport = {

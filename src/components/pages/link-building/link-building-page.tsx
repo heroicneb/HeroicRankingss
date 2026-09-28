@@ -131,6 +131,7 @@ export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingP
               <div className="relative h-[439px] w-[1643px] flex-none rotate-[14.4deg]">
                 <Image
                   alt=""
+                  aria-hidden
                   className="absolute block max-w-none"
                   height={664}
                   src={SECTION_GLOW_SRC}

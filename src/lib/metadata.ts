@@ -10,12 +10,37 @@ interface PageMetadataOptions {
 }
 
 const DEFAULT_OG_IMAGE = "/opengraph-image";
+const TITLE_SUFFIX = ` | ${SITE_NAME}`;
+/** Google shows roughly 60 characters of a title and 155–160 of a description. */
+const MAX_TITLE_WITH_SUFFIX = 60;
+const MAX_DESCRIPTION = 160;
 
-export function createPageMetadata({ title, description, path, ogType = "website" }: PageMetadataOptions): Metadata {
+/** Cuts at a word boundary and adds an ellipsis when the text is longer than `max`. */
+export function clampDescription(text: string, max = MAX_DESCRIPTION): string {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max - 1);
+  const end = Math.max(cut.lastIndexOf(" "), cut.lastIndexOf(", "), cut.lastIndexOf(". "));
+  return `${cut.slice(0, end > max * 0.6 ? end : cut.length).replace(/[,.;:\s]+$/, "")}…`;
+}
+
+/**
+ * Page title as the <title> tag: the layout template appends " | Heroic Rankings".
+ * WHY: a suffix pushes many post titles past what Google displays, and some callers
+ * already include it — so strip a duplicate and drop the suffix when it would not fit.
+ */
+function resolveTitle(title: string): Metadata["title"] {
+  const base = title.replace(new RegExp(`(\\s*\\|\\s*${SITE_NAME})+$`), "").trim();
+  return base.length + TITLE_SUFFIX.length <= MAX_TITLE_WITH_SUFFIX ? base : { absolute: base };
+}
+
+export function createPageMetadata({ title: rawTitle, description: rawDescription, path, ogType = "website" }: PageMetadataOptions): Metadata {
   const canonicalPath = normalizePath(path);
+  const title = rawTitle.replace(new RegExp(`(\\s*\\|\\s*${SITE_NAME})+$`), "").trim();
+  const description = clampDescription(rawDescription);
 
   return {
-    title,
+    title: resolveTitle(rawTitle),
     description,
     alternates: {
       canonical: canonicalPath,

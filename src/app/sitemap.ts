@@ -69,7 +69,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
 
   return routes.map((route) => ({
-    url: route === "/" ? SITE_URL : `${SITE_URL}${route}`,
+    // WHY: trailingSlash is on, so the canonical form of every page ends with "/"; the sitemap must match.
+    url: route === "/" ? `${SITE_URL}/` : `${SITE_URL}${route}/`,
     lastModified: LAST_MODIFIED,
     changeFrequency: route === "/" ? "weekly" : "monthly",
     priority: getRoutePriority(route),

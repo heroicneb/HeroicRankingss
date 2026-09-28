@@ -2,6 +2,7 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
 import { buildContentSecurityPolicy, CSP_NONCE_HEADER } from "@/lib/csp";
+import { SITE_INDEXING_ENABLED } from "@/lib/indexing";
 
 export function middleware(request: NextRequest) {
   // WHY: trailingSlash: true (next.config.ts) appends a slash to every
@@ -42,11 +43,14 @@ export function middleware(request: NextRequest) {
     "camera=(), microphone=(), geolocation=(), interest-cohort=()",
   );
   // Pre-launch lockdown: hard block all crawlers at the HTTP level. Belt-
-  // and-braces with the layout meta tag and robots.ts. Remove on cutover.
-  response.headers.set(
-    "X-Robots-Tag",
-    "noindex, nofollow, noarchive, nosnippet, noimageindex",
-  );
+  // and-braces with the layout meta tag and robots.ts. Lifted by
+  // NEXT_PUBLIC_SITE_INDEXING=true at cutover (see src/lib/indexing.ts).
+  if (!SITE_INDEXING_ENABLED) {
+    response.headers.set(
+      "X-Robots-Tag",
+      "noindex, nofollow, noarchive, nosnippet, noimageindex",
+    );
+  }
 
   return response;
 }
