@@ -33,10 +33,11 @@ export function CaseStudyDetailPage({ caseStudy }: CaseStudyDetailPageProps) {
       <CaseStudyHero data={caseStudy} />
       <CaseStudyHeroPanel data={caseStudy} fallbackImageSrc={panelArt?.panelImageSrc} />
       <CaseStudyOverview data={caseStudy.caseOverview} />
+      {/* WHY: Nebojsa wants the headline numbers and the growth chart seen first, straight after the overview (2026-09-28). */}
+      <CaseStudyNumbers chart={caseStudy.growthChart} data={caseStudy.numbersThatMatter} />
       <CaseStudyChallenges data={caseStudy.objectiveChallenges} />
       <CaseStudyPillars data={caseStudy.strategyPillars} intro={caseStudy.strategyIntro} />
       <CaseStudyJourney data={caseStudy.journeyTimeline} />
-      <CaseStudyNumbers chart={caseStudy.growthChart} data={caseStudy.numbersThatMatter} />
       <CaseStudyProofData data={caseStudy.proofData} />
       <CaseStudyBeforeAfter afterLabel={caseStudy.beforeAfter?.afterLabel ?? undefined} beforeLabel={caseStudy.beforeAfter?.beforeLabel ?? undefined} data={caseStudy.beforeAfter} />
       <CaseStudyConclusion data={caseStudy.conclusion} />
