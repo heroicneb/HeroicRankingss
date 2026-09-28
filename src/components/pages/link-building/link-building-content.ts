@@ -57,7 +57,14 @@ export interface LinkBuildingContent {
   competitorInsights: {
     label: string;
     heading: HeadingSegment[];
-    items: Array<{ title: string; paragraphs: string[]; chart: ContentImage | null }>;
+    items: Array<{
+      title: string;
+      paragraphs: string[];
+      /** Id of an interactive chart in `competitor-insights-charts.ts`; when set it replaces the image. */
+      chartId: string | null;
+      /** Static fallback, used when `chartId` is empty or unknown. */
+      chart: ContentImage | null;
+    }>;
   };
   whyChoose: {
     label: string;
@@ -213,6 +220,7 @@ export const DEFAULT_LINK_BUILDING_CONTENT: LinkBuildingContent = {
     items: [
       {
         title: "Domain Rating Trend Over Time",
+        chartId: "domain-rating",
         chart: lb("charts/domain-rating.jpg", 600, 441, "Domain rating changes month-over-month chart"),
         paragraphs: [
           "This chart visualizes the Domain Rating (DR) of yours and your competitor's websites over time, providing insight into how a domain's authority evolves based on its backlink profile.",
@@ -224,6 +232,7 @@ export const DEFAULT_LINK_BUILDING_CONTENT: LinkBuildingContent = {
       },
       {
         title: "Link Velocity Changes Month-over-Month",
+        chartId: "link-velocity",
         chart: lb("charts/link-velocity.jpg", 600, 441, "Link velocity changes month-over-month chart"),
         paragraphs: [
           "This chart illustrates Link Velocity Changes Month-over-Month, tracking the number of referring domains acquired by yours and your competitor's websites over time. Referring domains represent unique websites linking back, and a higher number typically indicates stronger link-building efforts and potential for improved search visibility.",
@@ -234,6 +243,7 @@ export const DEFAULT_LINK_BUILDING_CONTENT: LinkBuildingContent = {
       },
       {
         title: "Competitive Organic Traffic Predictions for the Next Three Months",
+        chartId: "competitive-organic-traffic",
         chart: lb("charts/competitive-organic-traffic.jpg", 600, 441, "Competitive organic traffic predictions for the next three months chart"),
         paragraphs: [
           "This chart tracks the Organic Traffic changes for your website and your competitors, using predictive models to estimate future monthly traffic based on current SEO performance.",
@@ -245,6 +255,7 @@ export const DEFAULT_LINK_BUILDING_CONTENT: LinkBuildingContent = {
       },
       {
         title: "Your Website's Organic Traffic Predictions for the Next Three Months",
+        chartId: "website-organic-traffic",
         chart: lb("charts/website-organic-traffic.jpg", 600, 441, "Your website organic traffic predictions for the next three months chart"),
         paragraphs: [
           "This chart predicts future Organic Traffic for your website, showing best-case, worst-case, and trend scenarios using predictive modeling based on SEO performance.",

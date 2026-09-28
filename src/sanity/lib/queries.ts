@@ -457,7 +457,7 @@ export const LINK_BUILDING_PAGE_QUERY = defineQuery(`
       cards[] { _key, title, subtitle, body, ctaLabel, ctaUrl, icon ${PAGE_IMAGE} },
       banner { heading, processSteps[] { _key, label, description }, ctaLabel, ctaUrl }
     },
-    competitorInsights { label, heading, items[] { _key, title, paragraphs, chart ${PAGE_IMAGE} } },
+    competitorInsights { label, heading, items[] { _key, title, paragraphs, interactiveChart, chart ${PAGE_IMAGE} } },
     whyChoose { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} }, ctaTitle, ctaLabel, ctaUrl },
     faq { items[] { _key, question, answer } },
     seo

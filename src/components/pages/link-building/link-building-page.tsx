@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { TimeSeriesChart } from "@/components/charts/TimeSeriesChart";
 import { RichParagraphs } from "@/components/sanity/rich-paragraphs";
 import { ProcessStepSwitcher } from "@/components/sections/process-step-switcher";
 import { ServiceFaq } from "@/components/sections/shared/service-faq";
@@ -19,6 +20,7 @@ import { SUCCESS_STORIES } from "@/data/success-stories";
 import type { SanityFaqItem } from "@/lib/sanity-data";
 
 import type { ContentImage } from "../shared/page-content";
+import { COMPETITOR_INSIGHTS_CHARTS } from "./competitor-insights-charts";
 import type { LinkBuildingContent } from "./link-building-content";
 
 /*
@@ -273,7 +275,9 @@ export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingP
             </h2>
 
             <div className="mt-[80px] space-y-[10px]">
-              {competitorInsights.items.map((item, index) => (
+              {competitorInsights.items.map((item, index) => {
+                const chartSpec = item.chartId ? COMPETITOR_INSIGHTS_CHARTS[item.chartId] : undefined;
+                return (
                 <details
                   className="group relative overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]"
                   key={item.title}
@@ -289,7 +293,9 @@ export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingP
 
                   <div className="relative z-10 border-t border-[var(--color-hr-light-grey)] px-[30px] pb-[30px] pt-[30px] dark:border-[var(--color-border-inverse-10)]">
                     <div className="grid gap-[30px] xl:grid-cols-[520px_1fr] xl:items-start">
-                      {item.chart ? (
+                      {chartSpec ? (
+                        <TimeSeriesChart spec={chartSpec} />
+                      ) : item.chart ? (
                         <Image
                           alt={item.chart.alt}
                           className="h-auto w-full rounded-[20px]"
@@ -308,7 +314,8 @@ export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingP
                     </div>
                   </div>
                 </details>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

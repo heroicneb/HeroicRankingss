@@ -21,7 +21,7 @@ async function main() {
   }
   const insights = [];
   for (const item of c.competitorInsights.items) {
-    insights.push({ _type: "insightItem", _key: key("ci"), title: item.title, paragraphs: item.paragraphs, chart: await uploadImage(client, item.chart) });
+    insights.push({ _type: "insightItem", _key: key("ci"), title: item.title, paragraphs: item.paragraphs, interactiveChart: item.chartId ?? undefined, chart: await uploadImage(client, item.chart) });
   }
   const reasons = [];
   for (const item of c.whyChoose.items) {

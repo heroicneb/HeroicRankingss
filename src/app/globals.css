@@ -418,6 +418,21 @@ textarea {
     );
 }
 
+/* Dark brand panel behind the interactive charts (Competitor Insights). */
+.surface-chart {
+  background:
+    radial-gradient(
+      110% 80% at 100% 100%,
+      color-mix(in srgb, var(--color-hr-gradient-end) 42%, transparent) 0%,
+      transparent 65%
+    ),
+    linear-gradient(
+      160deg,
+      var(--color-brand-surface-start) 0%,
+      var(--color-brand-radial-end) 100%
+    );
+}
+
 .gradient-text-brand {
   background: linear-gradient(
     var(--gradient-angle, 226.5719074237deg),

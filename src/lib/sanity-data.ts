@@ -1327,7 +1327,7 @@ interface SanityRawLinkBuildingPage extends RawSeoPage {
   } | null;
   competitorInsights?: {
     label?: string | null; heading?: RawHeading;
-    items?: Array<{ _key: string; title?: string | null; paragraphs?: string[] | null; chart?: SanityRawPageImage | null }> | null;
+    items?: Array<{ _key: string; title?: string | null; paragraphs?: string[] | null; interactiveChart?: string | null; chart?: SanityRawPageImage | null }> | null;
   } | null;
   whyChoose?: { label?: string | null; heading?: RawHeading; items?: RawIconItem[] | null; ctaTitle?: string | null; ctaLabel?: string | null; ctaUrl?: string | null } | null;
   faq?: RawFaq | null;
@@ -1392,6 +1392,8 @@ export async function getLinkBuildingPage(): Promise<SanityLinkBuildingPage | nu
       items: listOr(raw.competitorInsights?.items, d.competitorInsights.items, (item, i) => ({
         title: item.title ?? "",
         paragraphs: item.paragraphs ?? [],
+        // WHY: rows seeded before the field existed keep their built-in chart by position; "image" opts out explicitly.
+        chartId: item.interactiveChart === "image" ? null : item.interactiveChart || (d.competitorInsights.items[i]?.chartId ?? null),
         chart: pageImage(item.chart, d.competitorInsights.items[i]?.chart ?? null),
       })),
     },
