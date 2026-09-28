@@ -38,7 +38,31 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 /** Retries 429/5xx with a growing pause so a free-tier quota just slows the build down instead of failing it. */
 async function embedBatch(texts: string[], attempt = 0): Promise<number[][]> {
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${EMBEDDING_MODEL}:batchEmbedContents`, {
+  let res: Response;
+  try {
+    res = await fetchEmbeddings(texts);
+  } catch (error) {
+    // Network hiccup (ECONNRESET etc.) — treat like a 5xx and retry.
+    if (attempt >= 12) throw error;
+    const wait = Math.min(90_000, 15_000 * (attempt + 1));
+    process.stdout.write(`\n  network error, waiting ${wait / 1000}s…`);
+    await sleep(wait);
+    return embedBatch(texts, attempt + 1);
+  }
+  if (res.status === 429 || res.status >= 500) {
+    if (attempt >= 12) throw new Error(`embed failed ${res.status} after ${attempt} retries: ${(await res.text()).slice(0, 200)}`);
+    const wait = Math.min(90_000, 15_000 * (attempt + 1));
+    process.stdout.write(`\n  ${res.status} from the API, waiting ${wait / 1000}s…`);
+    await sleep(wait);
+    return embedBatch(texts, attempt + 1);
+  }
+  if (!res.ok) throw new Error(`embed failed ${res.status}: ${(await res.text()).slice(0, 300)}`);
+  const json = (await res.json()) as { embeddings: Array<{ values: number[] }> };
+  return json.embeddings.map((e) => e.values);
+}
+
+function fetchEmbeddings(texts: string[]): Promise<Response> {
+  return fetch(`https://generativelanguage.googleapis.com/v1beta/models/${EMBEDDING_MODEL}:batchEmbedContents`, {
     method: "POST",
     headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey as string },
     body: JSON.stringify({
@@ -50,16 +74,6 @@ async function embedBatch(texts: string[], attempt = 0): Promise<number[][]> {
       })),
     }),
   });
-  if (res.status === 429 || res.status >= 500) {
-    if (attempt >= 12) throw new Error(`embed failed ${res.status} after ${attempt} retries: ${(await res.text()).slice(0, 200)}`);
-    const wait = Math.min(90_000, 15_000 * (attempt + 1));
-    process.stdout.write(`\n  ${res.status} from the API, waiting ${wait / 1000}s…`);
-    await sleep(wait);
-    return embedBatch(texts, attempt + 1);
-  }
-  if (!res.ok) throw new Error(`embed failed ${res.status}: ${(await res.text()).slice(0, 300)}`);
-  const json = (await res.json()) as { embeddings: Array<{ values: number[] }> };
-  return json.embeddings.map((e) => e.values);
 }
 
 async function main() {

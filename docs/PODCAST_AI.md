@@ -11,7 +11,7 @@ The chat drawer on `/podcast` and `/podcast/<slug>` is answered by Gemini from t
 
 ## Environment
 - `GEMINI_API_KEY` (server only) — required.
-- `GEMINI_CHAT_MODEL` (optional) — defaults to `gemini-2.5-flash`.
+- `GEMINI_CHAT_MODEL` (optional) — defaults to `gemini-3.8-flash` with hidden reasoning off (lite models reject that option; if you switch to one, remove `thinkingConfig` in the route).
 - `NEXT_PUBLIC_CHAT_ENABLED=true` — shows the drawer, the Ask AI rows and the chat widget button.
 
 ## Rules the assistant follows

@@ -179,7 +179,9 @@ export function PodcastChatPanel({
             <p>
               {error.message?.includes("Failed to fetch")
                 ? "Couldn’t reach the chat. Try again?"
-                : "This chat isn’t available right now."}
+                : error.message?.startsWith("The chat ")
+                  ? error.message
+                  : "This chat isn’t available right now."}
             </p>
             <button
               className="mt-1 text-[12px] text-[var(--color-hr-accent)] underline-offset-2 hover:underline"
