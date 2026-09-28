@@ -157,7 +157,8 @@ function HeroSection({ episodeCount }: { episodeCount: number }) {
                 left: `${(guest.desktopLeft / 1280) * 100}%`,
                 top: `${guest.desktopTop}px`,
                 transform: `rotate(${guest.rotate}deg)`,
-                zIndex: index === 2 ? 2 : 1,
+                // WHY: each photo overlaps the one to its left, left to right, as in the frame.
+                zIndex: index + 1,
               }}
             >
               <Image alt="" aria-hidden className="object-cover" fill sizes="200px" src={guest.src} />
@@ -175,7 +176,8 @@ function HeroSection({ episodeCount }: { episodeCount: number }) {
                 left: `${guest.mobileLeft}px`,
                 top: `${guest.mobileTop}px`,
                 transform: `rotate(${guest.rotate}deg)`,
-                zIndex: index === 2 ? 2 : 1,
+                // WHY: each photo overlaps the one to its left, left to right, as in the frame.
+                zIndex: index + 1,
               }}
             >
               <Image alt="" aria-hidden className="object-cover" fill sizes="80px" src={guest.src} />
