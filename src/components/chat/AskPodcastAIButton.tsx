@@ -76,7 +76,12 @@ export function AskPodcastAIButton({
     return (
       <button
         aria-label="Open the Podcast AI chat"
-        className={cn(PILL_CLASS, "motion-interactive motion-interactive-press focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2", className)}
+        className={cn(
+          PILL_CLASS,
+          // WHY: the pill must read as clickable — on hover it mixes towards the accent, lifts slightly and shows a pointer.
+          "motion-interactive motion-interactive-press cursor-pointer transition-[background-color,box-shadow,transform] duration-200 hover:-translate-y-[1px] hover:bg-[color-mix(in_srgb,var(--color-hr-off-white)_70%,var(--color-hr-accent)_30%)] hover:shadow-[0_4px_14px_rgba(153,138,255,0.35)] dark:hover:bg-[color-mix(in_srgb,var(--color-hr-dark)_60%,var(--color-hr-accent)_40%)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2",
+          className,
+        )}
         onClick={open}
         type="button"
       >
