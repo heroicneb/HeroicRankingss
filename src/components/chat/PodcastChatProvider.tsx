@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
+import type { ChatEpisodeContext } from "./chat-episode";
 import { PodcastChatDrawer } from "./PodcastChatDrawer";
 import { PodcastChatLauncher } from "./PodcastChatLauncher";
 import { PodcastChatPanel } from "./PodcastChatPanel";
@@ -50,6 +51,8 @@ export function PodcastChatProvider({
 
   const [mounted, setMounted] = useState(false);
   const [open, setOpen] = useState(false);
+  // WHY: an "Ask AI" on an episode card scopes the drawer to that episode; the floating launcher keeps the page's own mode.
+  const [scoped, setScoped] = useState<ChatEpisodeContext | null>(null);
 
   const close = useCallback(() => setOpen(false), []);
 
@@ -60,7 +63,11 @@ export function PodcastChatProvider({
 
   useEffect(() => {
     if (!enabled) return;
-    const onOpen = () => setOpen(true);
+    const onOpen = (event: Event) => {
+      const detail = (event as CustomEvent<ChatEpisodeContext | undefined>).detail;
+      setScoped(detail?.episodeId ? detail : null);
+      setOpen(true);
+    };
     window.addEventListener(OPEN_EVENT, onOpen);
     return () => window.removeEventListener(OPEN_EVENT, onOpen);
   }, [enabled]);
@@ -70,18 +77,34 @@ export function PodcastChatProvider({
   return createPortal(
     <>
       <PodcastChatLauncher
-        onClick={() => setOpen((prev) => !prev)}
+        onClick={() => {
+          setScoped(null);
+          setOpen((prev) => !prev);
+        }}
         active={open}
       />
       <PodcastChatDrawer onClose={close} open={open}>
-        <PodcastChatPanel
-          episodeId={episodeId}
-          episodeTitle={episodeTitle}
-          globalSuggestions={globalSuggestions}
-          guestName={guestName}
-          mode={mode}
-          routeKey={routeKey}
-        />
+        {scoped ? (
+          <PodcastChatPanel
+            episodeId={scoped.episodeId}
+            episodeSuggestions={scoped.suggestions}
+            episodeTitle={scoped.episodeTitle}
+            guestName={scoped.guestName}
+            key={`scoped:${scoped.episodeId}`}
+            mode="episode"
+            routeKey={`podcast:episode-${scoped.episodeId}`}
+          />
+        ) : (
+          <PodcastChatPanel
+            episodeId={episodeId}
+            episodeTitle={episodeTitle}
+            globalSuggestions={globalSuggestions}
+            guestName={guestName}
+            key="page"
+            mode={mode}
+            routeKey={routeKey}
+          />
+        )}
       </PodcastChatDrawer>
     </>,
     document.body,

@@ -126,15 +126,7 @@ function HeroSection({ episodeCount }: { episodeCount: number }) {
                 {countLabel}
               </span>
             ) : null}
-            <span
-              className={cn(
-                PILL,
-                "gap-[10px] bg-[var(--color-hr-off-white)] text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:bg-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]",
-              )}
-            >
-              <Image alt="" aria-hidden className="dark:brightness-0 dark:invert" height={24} src="/podcast/gpt-icon.svg" width={24} />
-              Podcast AI Chat
-            </span>
+            <AskPodcastAIButton label="Podcast AI Chat" variant="pill" />
             <AppLink
               className={cn(
                 PILL,

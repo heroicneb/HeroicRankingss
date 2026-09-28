@@ -5,7 +5,9 @@ import { AskPodcastAIButton } from "@/components/chat/AskPodcastAIButton";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientText } from "@/components/ui/gradient-text";
 import { DiagonalArrowIcon } from "@/components/ui/icons/decorative";
+import { episodeSuggestions } from "@/components/chat/chat-episode";
 import { cn } from "@/lib/cn";
+import { hasTranscript } from "@/lib/podcast-ai/knowledge";
 import type { SanityPodcastEpisodeSummary } from "@/lib/sanity-data";
 import { urlFor } from "@/sanity/lib/image";
 
@@ -28,6 +30,8 @@ export interface EpisodeView {
   href: string;
   external: boolean;
   image: { src: string; alt: string; lqip?: string } | null;
+  /** Set when a transcript exists, so the card's Ask AI opens the chat scoped to this episode. */
+  chat?: { episodeId: string; episodeTitle: string; guestName?: string; suggestions: string[] };
 }
 
 /** The index frame's own episodes, shown until Sanity has real ones. */
@@ -71,6 +75,7 @@ export const FALLBACK_EPISODES: EpisodeView[] = [
 type EpisodeLike = Pick<SanityPodcastEpisodeSummary, "_id" | "title" | "slug" | "episodeNumber" | "duration" | "heroImage"> & {
   description?: string | null;
   guest?: { name?: string | null } | null;
+  topicPills?: string[] | null;
 };
 
 export function toEpisodeView(episode: EpisodeLike, imageWidth: number): EpisodeView {
@@ -93,6 +98,14 @@ export function toEpisodeView(episode: EpisodeLike, imageWidth: number): Episode
     duration: episode.duration,
     href: slug ? `/podcast/${slug}` : YOUTUBE_CHANNEL_URL,
     external: !slug,
+    chat: hasTranscript(episode.episodeNumber)
+      ? {
+          episodeId: String(episode.episodeNumber),
+          episodeTitle: episode.title,
+          guestName: guestName ?? undefined,
+          suggestions: episodeSuggestions(guestName, episode.topicPills ?? []),
+        }
+      : undefined,
     image: imageSrc
       ? {
           src: imageSrc,
@@ -219,7 +232,7 @@ export function EpisodeCard({ episode }: { episode: EpisodeView }) {
           </p>
         ) : null}
 
-        <AskPodcastAIButton label="Ask AI" variant="inline" />
+        <AskPodcastAIButton episode={episode.chat} label="Ask AI" variant="inline" />
       </div>
     </article>
   );
