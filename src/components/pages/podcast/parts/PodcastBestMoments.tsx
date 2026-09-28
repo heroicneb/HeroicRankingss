@@ -29,32 +29,38 @@ function thumbnailUrl(reel: Reel, width: number): string | null {
   }
 }
 
+/**
+ * One reel slot. `reel` is null for a placeholder: the empty frame with the
+ * play glyph stays in the design until a reel is added in the Studio.
+ */
 function ReelTile({
   reel,
   className,
   sizes,
   style,
 }: {
-  reel: Reel;
+  reel: Reel | null;
   className?: string;
   sizes: string;
   style?: CSSProperties;
 }) {
-  const src = thumbnailUrl(reel, 800);
-  const label = reel.title?.trim() || "Play reel";
+  const src = reel ? thumbnailUrl(reel, 800) : null;
+  const label = reel?.title?.trim() || "Play reel";
   const inner = (
     <>
       {src ? (
         <Image
-          alt={reel.thumbnail?.alt ?? label}
-          blurDataURL={reel.thumbnail?.asset?.metadata?.lqip}
+          alt={reel?.thumbnail?.alt ?? label}
+          blurDataURL={reel?.thumbnail?.asset?.metadata?.lqip}
           className="object-cover"
           fill
-          placeholder={reel.thumbnail?.asset?.metadata?.lqip ? "blur" : "empty"}
+          placeholder={reel?.thumbnail?.asset?.metadata?.lqip ? "blur" : "empty"}
           sizes={sizes}
           src={src}
         />
-      ) : null}
+      ) : (
+        <span aria-hidden className="absolute inset-0 bg-[var(--color-hr-off-white)] dark:bg-[var(--color-hr-black-box)]" />
+      )}
       <span aria-hidden className="absolute inset-0 bg-[rgba(0,0,0,0)] transition-colors duration-300 group-hover:bg-[rgba(0,0,0,0.5)]" />
       <span aria-hidden className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <Image alt="" className="h-[38px] w-[29.56px]" height={38} src="/podcast/play.svg" width={30} />
@@ -65,7 +71,7 @@ function ReelTile({
     "group absolute block overflow-hidden border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-hr-dark-line)]",
     className,
   );
-  return reel.videoUrl ? (
+  return reel?.videoUrl ? (
     <AppLink aria-label={label} className={base} href={reel.videoUrl} rel="noopener noreferrer" style={style} target="_blank">
       {inner}
     </AppLink>
@@ -86,8 +92,10 @@ function ReelTile({
  * 5px apart.
  */
 export function PodcastBestMoments({ reels }: PodcastBestMomentsProps) {
-  const validReels = (reels ?? []).filter((reel) => Boolean(reel.thumbnail?.asset)).slice(0, 3);
-  if (validReels.length === 0) return null;
+  // WHY: the card is part of every episode page; reels added in the Studio fill the three slots in order,
+  // empty slots stay as placeholder frames with the play glyph.
+  const validReels = (reels ?? []).filter((reel) => Boolean(reel.thumbnail?.asset || reel.videoUrl)).slice(0, 3);
+  const slots: Array<Reel | null> = [...validReels, ...Array<null>(Math.max(0, 3 - validReels.length)).fill(null)];
 
   return (
     <div className="flex w-full max-w-[350px] flex-col items-center gap-[30px] rounded-[30px] bg-[var(--color-hr-pure-white)] px-[15px] pb-[15px] pt-[60px] shadow-[0px_4px_12px_rgba(0,0,0,0.1)] dark:bg-[var(--color-bg-dark)] lg:max-w-none lg:flex-row lg:items-center lg:justify-between lg:rounded-[40px] lg:p-[30px]">
@@ -103,12 +111,12 @@ export function PodcastBestMoments({ reels }: PodcastBestMomentsProps) {
 
       {/* Desktop: tiered portrait reels. */}
       <div className="relative hidden h-[398.55px] w-[630px] shrink-0 lg:block">
-        {validReels.map((reel, index) => {
+        {slots.map((reel, index) => {
           const slot = DESKTOP_REEL_SLOTS[index] ?? DESKTOP_REEL_SLOTS[0];
           return (
             <ReelTile
               className="rounded-[40px]"
-              key={reel._key ?? `reel-${index}`}
+              key={reel?._key ?? `reel-${index}`}
               reel={reel}
               sizes="197px"
               style={{ left: slot.left, top: slot.top, width: slot.width, height: slot.height }}
@@ -119,8 +127,8 @@ export function PodcastBestMoments({ reels }: PodcastBestMomentsProps) {
 
       {/* Mobile: 320px squares stacked. */}
       <div className="flex w-full flex-col items-center gap-[5px] lg:hidden">
-        {validReels.map((reel, index) => (
-          <div className="relative size-[320px]" key={reel._key ?? `reel-m-${index}`}>
+        {slots.map((reel, index) => (
+          <div className="relative size-[320px]" key={reel?._key ?? `reel-m-${index}`}>
             <ReelTile className="inset-0 rounded-[20px]" reel={reel} sizes="320px" />
           </div>
         ))}

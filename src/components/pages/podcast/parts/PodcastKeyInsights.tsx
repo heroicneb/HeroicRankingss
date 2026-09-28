@@ -27,9 +27,7 @@ export function PodcastKeyInsights({ insights, reels }: PodcastKeyInsightsProps)
   const topicPills = insights?.topicPills?.filter((pill) => pill?.trim()) ?? [];
   const bullets = insights?.bullets?.filter((bullet) => bullet?.trim()) ?? [];
   const hasInsights = Boolean(headingMain || headingHighlighted || body || topicPills.length || bullets.length);
-  const hasReels = Boolean(reels?.some((reel) => reel.thumbnail?.asset));
-
-  if (!hasInsights && !hasReels) return null;
+  // WHY: the Best Moments card always renders (placeholder frames until reels exist), so the panel always renders too.
 
   // WHY: the Figma heading runs ", Compressed Into…" straight after the gradient part; only add a space when main starts with a word.
   const joiner = headingMain && /^[\w]/.test(headingMain) ? " " : "";
