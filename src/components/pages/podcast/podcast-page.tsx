@@ -44,13 +44,17 @@ export const metadata: Metadata = createPageMetadata({
 // Static design content
 // ---------------------------------------------------------------------------
 
-/** Hero photo row. Desktop offsets are the 200px squares' positions inside the 1280px container (Figma 2251:76–80). */
+/**
+ * Hero photo row. Desktop offsets are the 200px squares' positions inside the 1280px container,
+ * measured from the Figma render (2223:283): the row is symmetric around the centre photo —
+ * centres at −340 / −180 / 0 / +180 / +340 px, tops 33 / 14 / 0 / 14 / 33 — so both sides overlap equally.
+ */
 const GUEST_IMAGES = [
   { src: "/podcast/guest-1.png", rotate: -9.51, desktopLeft: 200, desktopTop: 33, mobileLeft: 5.8, mobileTop: 12.6 },
   { src: "/podcast/guest-2.png", rotate: -4.29, desktopLeft: 360, desktopTop: 14, mobileLeft: 66.9, mobileTop: 5.5 },
   { src: "/podcast/guest-3.png", rotate: 0, desktopLeft: 540, desktopTop: 0, mobileLeft: 135.65, mobileTop: 0 },
-  { src: "/podcast/guest-4.png", rotate: 7.69, desktopLeft: 747, desktopTop: 14, mobileLeft: 204.4, mobileTop: 5.5 },
-  { src: "/podcast/guest-5.png", rotate: 13.96, desktopLeft: 928, desktopTop: 27, mobileLeft: 265.5, mobileTop: 10.3 },
+  { src: "/podcast/guest-4.png", rotate: 7.69, desktopLeft: 720, desktopTop: 14, mobileLeft: 204.4, mobileTop: 5.5 },
+  { src: "/podcast/guest-5.png", rotate: 13.96, desktopLeft: 880, desktopTop: 33, mobileLeft: 265.5, mobileTop: 10.3 },
 ] as const;
 
 const AI_FEATURES = [
@@ -153,7 +157,8 @@ function HeroSection({ episodeCount }: { episodeCount: number }) {
                 left: `${(guest.desktopLeft / 1280) * 100}%`,
                 top: `${guest.desktopTop}px`,
                 transform: `rotate(${guest.rotate}deg)`,
-                zIndex: index === 2 ? 2 : 1,
+                // WHY: each photo overlaps the one to its left, left to right, as in the frame.
+                zIndex: index + 1,
               }}
             >
               <Image alt="" aria-hidden className="object-cover" fill sizes="200px" src={guest.src} />
@@ -171,7 +176,8 @@ function HeroSection({ episodeCount }: { episodeCount: number }) {
                 left: `${guest.mobileLeft}px`,
                 top: `${guest.mobileTop}px`,
                 transform: `rotate(${guest.rotate}deg)`,
-                zIndex: index === 2 ? 2 : 1,
+                // WHY: each photo overlaps the one to its left, left to right, as in the frame.
+                zIndex: index + 1,
               }}
             >
               <Image alt="" aria-hidden className="object-cover" fill sizes="80px" src={guest.src} />

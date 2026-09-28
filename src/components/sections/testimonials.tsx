@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
-import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { GradientHeading } from "@/components/ui/gradient-heading";

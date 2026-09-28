@@ -293,16 +293,6 @@ interface SanityRawLegalPage {
 /** Raw service card sub-object */
 /** Raw process step sub-object */
 /** Raw why-choose item sub-object */
-/** Raw related case study reference (expanded via `->`) */
-interface SanityRawRelatedCaseStudy {
-  _id: string;
-  title: string;
-  slug?: { current: string };
-  client: string;
-  excerpt?: string | null;
-  heroImage?: SanityImageRef | null;
-}
-
 // ── Helpers ────────────────────────────────────────────────────────
 
 function imageUrl(

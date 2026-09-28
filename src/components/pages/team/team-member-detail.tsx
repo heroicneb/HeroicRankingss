@@ -168,9 +168,9 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
 
               {member.personalTraits ? (
                 <div className="mt-[30px] flex flex-col gap-[8px]">
-                  <h4 className="type-h4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                  <h2 className="type-h4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                     Personal traits
-                  </h4>
+                  </h2>
                   <p className="text-[16px] font-normal leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-[18px]">
                     {member.personalTraits}
                   </p>
@@ -179,9 +179,9 @@ export function TeamMemberDetail({ member }: TeamMemberDetailProps) {
 
               {member.spareTimeBullets.length > 0 ? (
                 <div className="mt-[24px] flex flex-col gap-[12px]">
-                  <h4 className="type-h4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                  <h2 className="type-h4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                     Spare time
-                  </h4>
+                  </h2>
                   <ul className="ml-[18px] list-disc text-[16px] font-normal leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-[18px]">
                     {member.spareTimeBullets.map((bullet, index) => (
                       <li key={`${member._id}-bullet-${index}`}>{bullet}</li>
