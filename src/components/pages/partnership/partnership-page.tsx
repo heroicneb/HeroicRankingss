@@ -201,7 +201,8 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
                         alt={cell.image.alt}
                         // WHY: the cells stay light in dark mode (95% white surface), so the logo must stay black there too;
                         // inverting it to white made every logo vanish in dark mode.
-                        className={`h-auto max-h-[48px] w-auto max-w-[142px] object-contain ${cell.keepColor ? "" : "[filter:brightness(0)]"}`}
+                        // WHY: cells are 142×100; capping logos at 106×44 leaves ~18px of air on every side so wordmarks never touch the border.
+                        className={`h-auto max-h-[44px] w-auto max-w-[106px] object-contain ${cell.keepColor ? "" : "[filter:brightness(0)]"}`}
                         height={cell.image.height}
                         sizes="142px"
                         src={cell.image.src}
