@@ -245,15 +245,20 @@ function LatestEpisodeSection({ episode }: { episode: EpisodeView }) {
                 label={`Open latest episode: ${episode.title}`}
               />
             </div>
+            <div className="lg:hidden">
+              <AskPodcastAIButton episode={episode.chat} inverse label="Ask AI" variant="inline" />
+            </div>
 
             {/* Desktop arrow: last item of the column, 66px under the pills as in the frame (2251:94), never overlapping. */}
-            <div className="mt-auto hidden pt-[46px] lg:block">
+            {/* Ask AI sits beside the arrow, scoped to this episode like the cards. */}
+            <div className="mt-auto hidden items-center gap-[30px] pt-[46px] lg:flex">
               <ArrowButton
                 className="size-[72px]"
                 external={episode.external}
                 href={episode.href}
                 label={`Open latest episode: ${episode.title}`}
               />
+              <AskPodcastAIButton episode={episode.chat} inverse label="Ask AI" variant="inline" />
             </div>
           </div>
 
