@@ -52,9 +52,9 @@ export function ProofVisual({ spec, className, chartAspectClassName = "aspect-[5
             <thead>
               <tr>
                 <th scope="col">Series</th>
-                {chart.labels.map((label) => (
-                  <th key={label} scope="col">
-                    {label}
+                {chart.labels.map((label, i) => (
+                  <th key={i} scope="col">
+                    {chart.displayLabels?.[i] ?? label}
                   </th>
                 ))}
               </tr>
@@ -64,7 +64,7 @@ export function ProofVisual({ spec, className, chartAspectClassName = "aspect-[5
                 <tr key={s.key}>
                   <th scope="row">{s.label}</th>
                   {chart.labels.map((label, i) => (
-                    <td key={label}>{s.values[i] ?? ""}</td>
+                    <td key={i}>{s.values[i] ?? ""}</td>
                   ))}
                 </tr>
               ))}

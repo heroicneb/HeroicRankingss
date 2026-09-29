@@ -17,6 +17,17 @@ import { monthLabels } from "@/components/pages/link-building/competitor-insight
 
 const line = (spec: Omit<TimeSeriesChartSpec, "variant"> & { variant?: TimeSeriesChartSpec["variant"] }): TimeSeriesChartSpec => ({ variant: "line", ...spec });
 
+/**
+ * WHY: Nebojsa wants the case study timelines to read as current, so the
+ * axis and tooltip show the month only ("Mar", "Apr", …) and no year
+ * (2026-09-30). The underlying labels keep the year so they stay unique,
+ * which recharts needs to match tooltip rows.
+ */
+const monthAxis = (year: number, month: number, count: number): Pick<TimeSeriesChartSpec, "labels" | "displayLabels"> => {
+  const labels = monthLabels(year, month, count);
+  return { labels, displayLabels: labels.map((label) => label.split(" ")[0] ?? label) };
+};
+
 /** "22 Jan", "5 Feb", … every 14 days from a start date. */
 function fortnightLabels(start: string, count: number): string[] {
   const date = new Date(start);
@@ -32,7 +43,7 @@ const NAGISH_KEYWORDS: ProofVisualSpec = {
   id: "nagish-keywords",
   title: "Nagish keyword rankings",
   table: {
-    caption: "Keyword rankings after the link building campaign (Ahrefs, July 2024). Before the campaign Nagish was outside the top 100 for every keyword.",
+    caption: "Keyword rankings after the link building campaign (Ahrefs). Before the campaign Nagish was outside the top 100 for every keyword.",
     columns: [
       { key: "keyword", label: "Keyword" },
       { key: "volume", label: "Volume", kind: "number", optional: true },
@@ -57,9 +68,9 @@ const NAGISH_TRAFFIC: ProofVisualSpec = {
   title: "Nagish organic traffic over time",
   chart: line({
     id: "nagish-traffic-chart",
-    title: "Organic clicks per month, March 2023 to June 2024",
+    title: "Organic clicks per month over 16 months",
     metricLabel: "Organic clicks",
-    labels: monthLabels(2023, 3, 16),
+    ...monthAxis(2023, 3, 16),
     yDomain: [0, 25000],
     yTicks: [0, 5000, 10000, 15000, 20000, 25000],
     series: [{ key: "clicks", label: "Clicks", color: "brand", emphasis: true, values: [300, 700, 900, 1800, 2100, 5000, 9200, 12300, 13700, 18700, 17600, 19500, 20100, 15700, 12600, 12500] }],
@@ -72,9 +83,9 @@ const NAGISH_REFERRING_DOMAINS: ProofVisualSpec = {
   title: "Nagish referring domains",
   chart: line({
     id: "nagish-rd-chart",
-    title: "Referring domains, July 2022 to July 2024",
+    title: "Referring domains over 25 months",
     metricLabel: "Referring domains",
-    labels: monthLabels(2022, 7, 25),
+    ...monthAxis(2022, 7, 25),
     yDomain: [0, 280],
     yTicks: [0, 65, 130, 195, 260],
     axisFormat: "plain",
@@ -96,10 +107,10 @@ const NAGISH_DOMAIN_RATING: ProofVisualSpec = {
   title: "Nagish Domain Rating",
   chart: line({
     id: "nagish-dr-chart",
-    title: "Domain Rating, February 2023 to July 2024",
+    title: "Domain Rating over 18 months",
     metricLabel: "Domain Rating",
     variant: "step",
-    labels: monthLabels(2023, 2, 18),
+    ...monthAxis(2023, 2, 18),
     yDomain: [0, 100],
     yTicks: [0, 25, 50, 75, 100],
     axisFormat: "plain",
@@ -134,7 +145,7 @@ const MAUDSCH_TRAFFIC: ProofVisualSpec = {
   title: "Art by Maudsch organic traffic",
   chart: line({
     id: "maudsch-traffic-chart",
-    title: "Organic traffic and traffic value, January to July 2024",
+    title: "Organic traffic and traffic value over six months",
     metricLabel: "Organic search",
     labels: fortnightLabels("2024-01-22", 14),
     yDomain: [0, 20000],
@@ -153,7 +164,7 @@ const MAUDSCH_REFERRING_DOMAINS: ProofVisualSpec = {
   title: "Art by Maudsch referring domains",
   chart: line({
     id: "maudsch-rd-chart",
-    title: "Referring domains, January to July 2024",
+    title: "Referring domains over six months",
     metricLabel: "Referring domains",
     labels: fortnightLabels("2024-01-22", 14),
     yDomain: [0, 320],
@@ -169,7 +180,7 @@ const MAUDSCH_DOMAIN_RATING: ProofVisualSpec = {
   title: "Art by Maudsch Domain Rating",
   chart: line({
     id: "maudsch-dr-chart",
-    title: "Domain Rating, January to July 2024",
+    title: "Domain Rating over six months",
     metricLabel: "Domain Rating",
     variant: "step",
     labels: fortnightLabels("2024-01-22", 14),
@@ -193,9 +204,12 @@ const DESIGNRUSH_GROWTH: ProofVisualSpec = {
   ],
   chart: line({
     id: "designrush-traffic-chart",
-    title: "Organic traffic and traffic value, July 2019 to July 2024 (quarterly)",
+    title: "Organic traffic and traffic value over five years (quarterly)",
     metricLabel: "Organic search",
-    labels: ["Jul 2019", "Oct 2019", "Jan 2020", "Apr 2020", "Jul 2020", "Oct 2020", "Jan 2021", "Apr 2021", "Jul 2021", "Oct 2021", "Jan 2022", "Apr 2022", "Jul 2022", "Oct 2022", "Jan 2023", "Apr 2023", "Jul 2023", "Oct 2023", "Jan 2024", "Apr 2024", "Jul 2024"],
+    ...(() => {
+      const labels = Array.from({ length: 21 }, (_, i) => monthLabels(2019, 7 + i * 3, 1)[0] ?? "");
+      return { labels, displayLabels: labels.map((label) => label.split(" ")[0] ?? label) };
+    })(),
     yDomain: [0, 1_200_000],
     yTicks: [0, 300_000, 600_000, 900_000, 1_200_000],
     yRight: { domain: [0, 3_200_000], ticks: [0, 800_000, 1_600_000, 2_400_000, 3_200_000], format: "currency" },
@@ -227,14 +241,12 @@ const DESIGNRUSH_KEYWORDS: ProofVisualSpec = {
     caption: "Google positions for the two category keywords, before and after.",
     columns: [
       { key: "keyword", label: "Keyword" },
-      { key: "from", label: "Start", optional: true },
-      { key: "to", label: "Reached", optional: true },
       { key: "outranked", label: "Outranked", optional: true },
       { key: "position", label: "Then → Now", kind: "positionChange" },
     ],
     rows: [
-      { keyword: "digital marketing agency", from: "Nov 2022", to: "Jul 2024", outranked: "Clutch.co", position: [7, 1] },
-      { keyword: "web design company", from: "Jul 2022", to: "May 2024", outranked: "Clutch.co, G2.com", position: [4, 1] },
+      { keyword: "digital marketing agency", outranked: "Clutch.co", position: [7, 1] },
+      { keyword: "web design company", outranked: "Clutch.co, G2.com", position: [4, 1] },
     ],
   },
   source: "Card copy",
@@ -245,9 +257,9 @@ const DESIGNRUSH_LINK_VELOCITY: ProofVisualSpec = {
   title: "DesignRush link velocity versus Clutch",
   chart: line({
     id: "designrush-rd-chart",
-    title: "Referring domains, DesignRush versus Clutch.co, July 2022 to July 2024",
+    title: "Referring domains, DesignRush versus Clutch.co, over 25 months",
     metricLabel: "Referring domains",
-    labels: monthLabels(2022, 7, 25),
+    ...monthAxis(2022, 7, 25),
     yDomain: [0, 60000],
     yTicks: [0, 15000, 30000, 45000, 60000],
     series: [
@@ -317,9 +329,9 @@ const DIY_SEARCH_CONSOLE: ProofVisualSpec = {
   ],
   chart: line({
     id: "diy-gsc-chart",
-    title: "Daily clicks and impressions by month, October 2024 to January 2026",
+    title: "Daily clicks and impressions by month over 16 months",
     metricLabel: "Search performance (daily average)",
-    labels: monthLabels(2024, 10, 16),
+    ...monthAxis(2024, 10, 16),
     yDomain: [0, 1500],
     yTicks: [0, 500, 1000, 1500],
     yRight: { domain: [0, 90000], ticks: [0, 30000, 60000, 90000] },
@@ -339,7 +351,7 @@ const DIY_TOP_KEYWORDS: ProofVisualSpec = {
     { label: "Monthly organic traffic", value: 65000, accent: true },
   ],
   table: {
-    caption: "Highest-traffic keywords ranking in the top 3 (Ahrefs, January 2026).",
+    caption: "Highest-traffic keywords ranking in the top 3 (Ahrefs).",
     columns: [
       { key: "keyword", label: "Keyword" },
       { key: "volume", label: "Volume", kind: "number", optional: true },
@@ -367,12 +379,12 @@ const DIY_AI_REVENUE: ProofVisualSpec = {
   id: "diy-ai-revenue",
   title: "DIY brand revenue from ChatGPT traffic",
   stats: [
-    { label: "Revenue from chatgpt.com", value: 9304.53, format: "currency", note: "$9,304.53 in 2025", accent: true },
+    { label: "Revenue from chatgpt.com", value: 9304.53, format: "currency", note: "$9,304.53 in one calendar year", accent: true },
     { label: "Key events", value: 135, note: "4.77% session rate" },
     { label: "Events", value: 57184 },
   ],
   table: {
-    caption: "GA4 traffic acquisition filtered to chatgpt.com, calendar year 2025.",
+    caption: "GA4 traffic acquisition filtered to chatgpt.com, one calendar year.",
     columns: [
       { key: "source", label: "Session source / medium" },
       { key: "events", label: "Events", kind: "number", optional: true },
@@ -406,11 +418,11 @@ const DIY_REVENUE_FORECAST: ProofVisualSpec = {
       { key: "timeframe", label: "Timeframe", optional: true },
     ],
     rows: [
-      { segment: "Paint by Numbers for Adults", traffic: 2000, revenue: 6550, timeframe: "March 1, 2025" },
-      { segment: "Paint by Numbers for Kids", traffic: 400, revenue: 1310, timeframe: "March 1, 2025" },
-      { segment: "Paint By Number Dinosaur", traffic: 150, revenue: 491, timeframe: "March 1, 2025" },
-      { segment: "Modern Paint By Numbers", traffic: 100, revenue: 328, timeframe: "March 1, 2025" },
-      { segment: "Cute Paint by Numbers", traffic: 100, revenue: 328, timeframe: "March 1, 2025" },
+      { segment: "Paint by Numbers for Adults", traffic: 2000, revenue: 6550, timeframe: "March 1" },
+      { segment: "Paint by Numbers for Kids", traffic: 400, revenue: 1310, timeframe: "March 1" },
+      { segment: "Paint By Number Dinosaur", traffic: 150, revenue: 491, timeframe: "March 1" },
+      { segment: "Modern Paint By Numbers", traffic: 100, revenue: 328, timeframe: "March 1" },
+      { segment: "Cute Paint by Numbers", traffic: 100, revenue: 328, timeframe: "March 1" },
     ],
   },
   source: "Revenue forecasting sheet (visible rows)",
@@ -420,14 +432,14 @@ const DIY_MONTHLY_REVENUE: ProofVisualSpec = {
   id: "diy-monthly-revenue",
   title: "DIY brand monthly organic search revenue",
   stats: [
-    { label: "Cumulative organic revenue", value: 1_300_000, format: "currency", note: "Jan 2024 – Dec 2025", accent: true },
-    { label: "Best month", value: 180240, format: "currency", note: "December 2025", accent: true },
+    { label: "Cumulative organic revenue", value: 1_300_000, format: "currency", note: "24 months of organic search", accent: true },
+    { label: "Best month", value: 180240, format: "currency", note: "December", accent: true },
   ],
   chart: line({
     id: "diy-revenue-chart",
-    title: "Monthly organic search revenue and users, January 2024 to December 2025",
+    title: "Monthly organic search revenue and users over 24 months",
     metricLabel: "Organic search",
-    labels: monthLabels(2024, 1, 24),
+    ...monthAxis(2024, 1, 24),
     valueFormat: "currency",
     yDomain: [0, 200000],
     yTicks: [0, 50000, 100000, 150000, 200000],

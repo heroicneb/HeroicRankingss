@@ -10,7 +10,7 @@ const AXIS_FONT = { fontSize: 12, fontFamily: "inherit" };
 const DRAW_DURATION = 1400;
 const FORECAST_KEY_SUFFIX = "__forecast";
 
-type Row = Record<string, string | number | boolean | null | [number, number] | undefined> & { label: string; forecast: boolean };
+type Row = Record<string, string | number | boolean | null | [number, number] | undefined> & { label: string; display: string; forecast: boolean };
 
 /**
  * WHY: a line can only carry one dash pattern, so the forecast part of each
@@ -23,7 +23,7 @@ function buildRows(spec: TimeSeriesChartSpec): Row[] {
   const high = spec.series.find((s) => s.bandRole === "high");
 
   return spec.labels.map((label, i) => {
-    const row: Row = { label, forecast: i >= forecastFrom };
+    const row: Row = { label, display: spec.displayLabels?.[i] ?? label, forecast: i >= forecastFrom };
     for (const s of spec.series) {
       const value = s.values[i] ?? null;
       if (spec.variant === "forecast") {
@@ -67,7 +67,7 @@ function ChartTooltip({ active, payload, spec }: TooltipProps) {
   return (
     <div className="min-w-[180px] rounded-[14px] border border-[var(--color-border-inverse-15)] bg-[var(--color-hr-dark)] px-[14px] py-[12px] text-[var(--color-hr-pure-white)] shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
       <p className="flex items-center justify-between gap-3 text-[14px] font-bold leading-[20px]">
-        <span>{row.label}</span>
+        <span>{row.display}</span>
         {row.forecast ? (
           <span className="rounded-full border border-[var(--color-border-inverse-20)] px-[8px] py-[1px] text-[11px] font-normal uppercase tracking-[0.04em] text-[var(--color-text-inverse-60)]">
             Forecast
@@ -113,6 +113,9 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
   const leftFormat = axisTickFormat(spec, spec.valueFormat);
   const rightFormat = axisTickFormat(spec, spec.yRight?.format);
   const axisId = (s: TimeSeries) => (s.axis === "right" ? "right" : "left");
+  // WHY: labels stay unique so recharts can match tooltip rows; the axis shows the display text.
+  const displayByLabel = new Map(spec.labels.map((label, i) => [label, spec.displayLabels?.[i] ?? label]));
+  const tickText = (label: string) => displayByLabel.get(label) ?? label;
 
   return (
     <ResponsiveContainer height="100%" width="100%">
@@ -143,7 +146,7 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
         </defs>
 
         <CartesianGrid stroke={CHART_THEME.grid} strokeWidth={1} vertical={spec.variant !== "step" && bars.length === 0} />
-        <XAxis axisLine={false} dataKey="label" dy={8} interval="preserveStartEnd" minTickGap={36} tick={{ fill: CHART_THEME.tick, ...AXIS_FONT }} tickLine={false} />
+        <XAxis axisLine={false} dataKey="label" dy={8} interval="preserveStartEnd" minTickGap={36} tick={{ fill: CHART_THEME.tick, ...AXIS_FONT }} tickFormatter={tickText} tickLine={false} />
         <YAxis
           axisLine={false}
           domain={spec.yDomain ?? ["auto", "auto"]}

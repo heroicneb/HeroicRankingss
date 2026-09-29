@@ -41,8 +41,13 @@ export interface TimeSeriesChartSpec {
   /** Shown in the tooltip header, e.g. "Domain Rating". */
   metricLabel: string;
   variant: TimeSeriesVariant;
-  /** One label per point, e.g. "Mar 2023". */
+  /** One label per point, e.g. "Mar 2023". Must be unique: recharts matches tooltip data by this text. */
   labels: string[];
+  /**
+   * What the axis and tooltip show for each point when it differs from
+   * `labels`, e.g. month names without the year ("Mar"). Duplicates are fine here.
+   */
+  displayLabels?: string[];
   /** Index from which values are forecast (inclusive). Only used by "forecast". */
   forecastFrom?: number;
   series: TimeSeries[];

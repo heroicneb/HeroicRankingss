@@ -71,8 +71,8 @@ export function TimeSeriesChart({ spec, className, frame = "panel", aspectClassN
             <tr>
               <th scope="col">Series</th>
               {spec.labels.map((label, i) => (
-                <th key={label} scope="col">
-                  {label}
+                <th key={i} scope="col">
+                  {spec.displayLabels?.[i] ?? label}
                   {spec.forecastFrom != null && i >= spec.forecastFrom ? " (forecast)" : ""}
                 </th>
               ))}
@@ -83,7 +83,7 @@ export function TimeSeriesChart({ spec, className, frame = "panel", aspectClassN
               <tr key={s.key}>
                 <th scope="row">{s.label}</th>
                 {spec.labels.map((label, i) => (
-                  <td key={label}>{s.values[i] ?? ""}</td>
+                  <td key={i}>{s.values[i] ?? ""}</td>
                 ))}
               </tr>
             ))}
