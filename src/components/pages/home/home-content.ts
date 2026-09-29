@@ -138,7 +138,7 @@ const quote = (lead: string, accent: string, tail: string): HomeQuote => ({ lead
 
 export const DEFAULT_HOME_CONTENT: HomeContent = {
   hero: {
-    heading: [tx("Others are not better,"), br, tx("they're just easier to find.")],
+    heading: [tx("Others are "), hl("not better"), tx(","), br, tx("they're just "), hl("easier to find"), tx(".")],
     paragraphs: [
       "If your audience can't find you, they'll choose the competitor who shows up.",
       "Search has changed. Your audience now finds answers through Google, AI overviews, and LLM recommendations. If you're not visible across all of them, you're losing ground. We help businesses dominate every search surface — backed by a 212.6% growth rate and 100% client retention.",

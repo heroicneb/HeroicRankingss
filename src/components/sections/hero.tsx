@@ -1,12 +1,12 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
 
-import { AnimatedWords } from "@/components/motion/animated-words";
+import { AnimatedWords, countWords } from "@/components/motion/animated-words";
 import { HeroVideoOverlay } from "@/components/sections/hero-video-overlay";
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
-import { DEFAULT_HOME_CONTENT, segmentsText, splitSegments, type HomeContent } from "@/components/pages/home/home-content";
+import { DEFAULT_HOME_CONTENT, splitSegments, type HomeContent } from "@/components/pages/home/home-content";
 
 interface HeroProps {
   content?: HomeContent["hero"];
@@ -14,10 +14,10 @@ interface HeroProps {
 
 export function Hero({ content = DEFAULT_HOME_CONTENT.hero }: HeroProps) {
   // WHY: the word stagger continues across lines, so each line starts where the previous one ended.
-  const lineTexts = splitSegments(content.heading).map(segmentsText);
-  const lines = lineTexts.map((line, index) => ({
+  const lineSegments = splitSegments(content.heading);
+  const lines = lineSegments.map((line, index) => ({
     line,
-    startIndex: lineTexts.slice(0, index).reduce((sum, previous) => sum + previous.split(" ").length, 0),
+    startIndex: lineSegments.slice(0, index).reduce((sum, previous) => sum + countWords(previous), 0),
   }));
   const [lead, ...rest] = content.paragraphs;
 
@@ -27,9 +27,9 @@ export function Hero({ content = DEFAULT_HOME_CONTENT.hero }: HeroProps) {
         <div className="mx-auto flex max-w-[857px] flex-col items-center text-center">
           <h1 className="type-h1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
             {lines.map(({ line, startIndex }, index) => (
-              <span key={`${line}-${index}`}>
+              <span key={index}>
                 {index > 0 ? <br /> : null}
-                <AnimatedWords startIndex={startIndex} text={line} />
+                <AnimatedWords highlightClassName="gradient-text-home-hero" segments={line} startIndex={startIndex} />
               </span>
             ))}
           </h1>

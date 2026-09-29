@@ -548,6 +548,14 @@ textarea {
 .gradient-text-podcast-related {
   --gradient-angle: 197.13deg;
 }
+/* Homepage hero: same sweep as the podcast H1 ("Want to Actually Rank."), applied per animated word. */
+.gradient-text-home-hero {
+  --gradient-angle: 214.735deg;
+}
+.hero-word > .gradient-text-brand {
+  padding-bottom: 0;
+}
+.dark .gradient-text-home-hero,
 .dark .gradient-text-podcast-hero,
 .dark .gradient-text-podcast-guest,
 .dark .gradient-text-podcast-episodes,

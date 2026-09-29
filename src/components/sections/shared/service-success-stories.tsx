@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 import { AppLink } from "@/components/ui/app-link";
@@ -10,6 +11,10 @@ export interface ServiceSuccessStory {
   date: string;
   heroClassName: string;
   href?: string;
+  /** Case study artwork; replaces the flat colour panel when set. */
+  image?: { src: string; lqip?: string };
+  /** Text drawn over the artwork. Undefined = draw the title on a flat panel; "" = artwork carries the brand. */
+  panelLabel?: string;
 }
 
 export interface ServiceSuccessStoriesProps {
@@ -59,13 +64,27 @@ export function ServiceSuccessStories({
                 <>
                   <div
                     className={cn(
-                      "relative h-[250px] lg:h-[305px]",
+                      "relative h-[250px] overflow-hidden lg:h-[305px]",
                       story.heroClassName,
                     )}
                   >
-                    <p className="type-h3 absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 text-center text-[var(--color-hr-pure-white)]">
-                      {story.title}
-                    </p>
+                    {story.image ? (
+                      <Image
+                        alt=""
+                        aria-hidden
+                        blurDataURL={story.image.lqip}
+                        className="object-cover"
+                        fill
+                        placeholder={story.image.lqip ? "blur" : "empty"}
+                        sizes="(min-width: 1024px) 413px, calc(100vw - 40px)"
+                        src={story.image.src}
+                      />
+                    ) : null}
+                    {(story.panelLabel ?? story.title) ? (
+                      <p className="type-h3 absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 text-center text-[var(--color-hr-pure-white)]">
+                        {story.panelLabel ?? story.title}
+                      </p>
+                    ) : null}
                   </div>
 
                   <div className="absolute right-5 top-[170px] inline-flex size-[60px] items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)] lg:top-[213px] lg:size-[72px]">

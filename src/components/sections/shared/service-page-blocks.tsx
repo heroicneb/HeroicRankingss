@@ -13,7 +13,7 @@ import {
   GradientArrowUpRightIcon,
 } from "@/components/ui/icons/decorative";
 import { PAGE_SHELL_CLASS, CONTENT_SHELL_CLASS } from "@/data/service-shared";
-import { SUCCESS_STORIES } from "@/data/success-stories";
+import { getSuccessStories } from "@/data/success-stories";
 import { cn } from "@/lib/cn";
 import type { SanityFaqItem } from "@/lib/sanity-data";
 
@@ -124,8 +124,9 @@ export function ServiceWhyChooseBlock({ whyChoose, sectionId }: { whyChoose: Seo
   );
 }
 
-/** Shared success stories block (still code-driven, identical on every service page). */
-export function ServiceSuccessStoriesBlock({ sectionId, arrowSize = "size-5", gradientFirst = true }: { sectionId: string; arrowSize?: string; gradientFirst?: boolean }) {
+/** Shared success stories block: three Sanity case studies with artwork, identical on every service page. */
+export async function ServiceSuccessStoriesBlock({ sectionId, arrowSize = "size-5", gradientFirst = true }: { sectionId: string; arrowSize?: string; gradientFirst?: boolean }) {
+  const stories = await getSuccessStories();
   return (
     <ServiceSuccessStories
       buttonIcon={<GradientArrowUpRightIcon className="size-[10px]" />}
@@ -144,7 +145,7 @@ export function ServiceSuccessStoriesBlock({ sectionId, arrowSize = "size-5", gr
       }
       pageShellClass={PAGE_SHELL_CLASS}
       sectionId={sectionId}
-      stories={SUCCESS_STORIES}
+      stories={stories}
     />
   );
 }

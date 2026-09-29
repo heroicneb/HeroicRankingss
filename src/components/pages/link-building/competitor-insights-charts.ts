@@ -7,8 +7,9 @@ import type { TimeSeriesChartSpec } from "@/components/charts/time-series-chart-
  * below were read off the original static images
  * (public/link-building/charts/*.jpg) at monthly resolution and reproduce
  * the same illustrative comparison ("client.com" vs three competitors) with
- * the same levels and trends. They are an example of what the report shows,
- * not a specific client's results. Replace the arrays here when real data is
+ * the same levels and trends, with the timeline moved forward three years so
+ * the example reads as current (it now ends in 2027). It is an example of what
+ * the report shows, not a specific client's results. Replace the arrays here when real data is
  * available; the labels and value arrays must stay the same length.
  */
 
@@ -27,7 +28,7 @@ const DOMAIN_RATING: TimeSeriesChartSpec = {
   title: "Domain Rating trend over time",
   metricLabel: "Domain Rating",
   variant: "step",
-  labels: monthLabels(2023, 3, 19), // Mar 2023 – Sep 2024
+  labels: monthLabels(2026, 3, 19), // Mar 2026 – Sep 2027
   yDomain: [0, 70],
   yTicks: [0, 10, 20, 30, 40, 50, 60, 70],
   axisFormat: "plain",
@@ -45,7 +46,7 @@ const LINK_VELOCITY: TimeSeriesChartSpec = {
   title: "Referring domains month-over-month",
   metricLabel: "Referring domains",
   variant: "line",
-  labels: monthLabels(2023, 3, 19), // Mar 2023 – Sep 2024
+  labels: monthLabels(2026, 3, 19), // Mar 2026 – Sep 2027
   yDomain: [0, 1200],
   yTicks: [0, 200, 400, 600, 800, 1000, 1200],
   axisFormat: "compact",
@@ -63,8 +64,8 @@ const COMPETITIVE_ORGANIC_TRAFFIC: TimeSeriesChartSpec = {
   title: "Competitive organic traffic with a three-month forecast",
   metricLabel: "Organic traffic",
   variant: "forecast",
-  labels: monthLabels(2023, 3, 21), // Mar 2023 – Nov 2024
-  forecastFrom: 18, // Sep 2024 onwards is predicted
+  labels: monthLabels(2026, 3, 21), // Mar 2026 – Nov 2027
+  forecastFrom: 18, // Sep 2027 onwards is predicted
   yDomain: [0, 10000],
   yTicks: [0, 2000, 4000, 6000, 8000, 10000],
   axisFormat: "compact",
@@ -93,8 +94,8 @@ const WEBSITE_ORGANIC_TRAFFIC: TimeSeriesChartSpec = {
   title: "Your website's organic traffic forecast for the next three months",
   metricLabel: "Organic traffic",
   variant: "band",
-  labels: monthLabels(2024, 7, 6), // Jul 2024 – Dec 2024
-  forecastFrom: 3, // Oct 2024 onwards is where the scenarios diverge
+  labels: monthLabels(2027, 7, 6), // Jul 2027 – Dec 2027
+  forecastFrom: 3, // Oct 2027 onwards is where the scenarios diverge
   yDomain: [8000, 10500],
   yTicks: [8000, 8500, 9000, 9500, 10000, 10500],
   axisFormat: "compact",
