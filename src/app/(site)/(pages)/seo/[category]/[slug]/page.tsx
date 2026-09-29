@@ -4,6 +4,8 @@ import { Suspense } from "react";
 
 import { BlogPostDetailContent } from "@/components/pages/insights/blog-post-detail-content";
 import { ArticleSchema } from "@/components/seo/article-schema";
+import { FaqSchema } from "@/components/seo/faq-schema";
+import { extractFaqFromPortableText } from "@/lib/faq-from-portable-text";
 import { createPageMetadata } from "@/lib/metadata";
 import { getPostBySlug, getPostUrls } from "@/lib/sanity-data";
 
@@ -60,8 +62,16 @@ export default async function Page({ params }: PostRouteProps) {
     notFound();
   }
 
+  // WHY: most posts close with a "Frequently Asked Questions" section; surfacing it as FAQPage schema costs nothing and is eligible for rich results.
+  const faqItems = extractFaqFromPortableText(post.body);
+
   return (
     <>
+      {faqItems.length ? (
+        <Suspense fallback={null}>
+          <FaqSchema items={faqItems} />
+        </Suspense>
+      ) : null}
       <Suspense fallback={null}>
         <ArticleSchema
           author={post.authorName}
