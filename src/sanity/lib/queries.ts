@@ -45,7 +45,8 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
       bioParagraphs,
       linkedin
     },
-    seo
+    seo,
+    faqSchema { mode, items[] { question, answer } }
   }
 `);
 

@@ -1,4 +1,6 @@
-import { defineField, defineType } from "sanity";
+import { defineArrayMember, defineField, defineType } from "sanity";
+
+import { FaqSchemaItemsInput, FaqSchemaObjectInput } from "@/sanity/components/faq-schema-input";
 
 export const post = defineType({
   name: "post",
@@ -207,6 +209,51 @@ export const post = defineType({
       title: "SEO",
       type: "seo",
       group: "seo",
+    }),
+    defineField({
+      name: "faqSchema",
+      title: "FAQ schema",
+      type: "object",
+      group: "seo",
+      description:
+        "FAQPage structured data for Google rich results. \"Auto\" reads the article's own \"Frequently Asked Questions\" section (H2 followed by H3 questions); \"Manual\" publishes the list below instead.",
+      options: { collapsible: true, collapsed: false },
+      components: { input: FaqSchemaObjectInput },
+      fields: [
+        defineField({
+          name: "mode",
+          title: "Source",
+          type: "string",
+          initialValue: "auto",
+          options: {
+            layout: "radio",
+            direction: "horizontal",
+            list: [
+              { title: "Auto (from the article)", value: "auto" },
+              { title: "Manual", value: "manual" },
+              { title: "Off", value: "off" },
+            ],
+          },
+        }),
+        defineField({
+          name: "items",
+          title: "Questions",
+          type: "array",
+          hidden: ({ parent }) => (parent as { mode?: string } | undefined)?.mode !== "manual",
+          components: { input: FaqSchemaItemsInput },
+          of: [
+            defineArrayMember({
+              type: "object",
+              name: "faqSchemaItem",
+              fields: [
+                defineField({ name: "question", title: "Question", type: "string", validation: (rule) => rule.required() }),
+                defineField({ name: "answer", title: "Answer", type: "text", rows: 4, validation: (rule) => rule.required() }),
+              ],
+              preview: { select: { title: "question", subtitle: "answer" } },
+            }),
+          ],
+        }),
+      ],
     }),
   ],
   orderings: [
