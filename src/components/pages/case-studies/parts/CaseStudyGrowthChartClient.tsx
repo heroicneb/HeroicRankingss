@@ -29,10 +29,20 @@ function niceMax(max: number): number {
 
 // WHY: small ranges (e.g. 0–2,000) need one decimal or several ticks read as the same "2k".
 const formatLeft = (value: number) => {
+  if (value >= 1_000_000) {
+    const m = value / 1_000_000;
+    return `${Number.isInteger(m) ? m : m.toFixed(1)}M`;
+  }
   if (value < 1000) return `${value}`;
   const k = value / 1000;
   return `${Number.isInteger(k) ? k : k.toFixed(1)}k`;
 };
+
+/** Axis/tooltip text for a row key ("MAY25#3" → "May"). */
+const tickText = (key: string) => monthOnly(key.split("#")[0] ?? key);
+
+/** Money series ("Traffic Value", "Revenue") get a dollar sign in the tooltip. */
+const isMoney = (name: string) => /value|revenue/i.test(name);
 
 interface TooltipPayload {
   name: string;
@@ -46,7 +56,7 @@ function ChartTooltip({ active, label, payload, colors }: { active?: boolean; la
   if (!active || !payload?.length) return null;
   return (
     <div className="flex flex-col gap-[10px] rounded-[30px] border border-[var(--color-hr-dark-line)] bg-[var(--color-hr-dark)] p-[15px]">
-      <p className="text-[18px] font-bold leading-[24px] text-[var(--color-hr-pure-white)]">{label ? monthOnly(label) : label}</p>
+      <p className="text-[18px] font-bold leading-[24px] text-[var(--color-hr-pure-white)]">{label ? tickText(label) : label}</p>
       <div className="flex flex-col gap-[5px]">
         {payload.map((entry) => (
           <div
@@ -54,7 +64,7 @@ function ChartTooltip({ active, label, payload, colors }: { active?: boolean; la
             key={entry.name}
           >
             <span aria-hidden className="size-[12px] rounded-full" style={{ background: colors[entry.name] }} />
-            {entry.name}: {typeof entry.value === "number" ? entry.value.toLocaleString("en-US") : entry.value}
+            {entry.name}: {typeof entry.value === "number" ? `${isMoney(entry.name) ? "$" : ""}${entry.value.toLocaleString("en-US")}` : entry.value}
           </div>
         ))}
       </div>
@@ -65,8 +75,9 @@ function ChartTooltip({ active, label, payload, colors }: { active?: boolean; la
 export default function CaseStudyGrowthChartClient({ data }: { data: CaseStudyGrowthChartData }) {
   const months = data.months ?? [];
   const series = data.series ?? [];
+  // WHY: month-only labels repeat across years and recharts matches tooltip rows by this text, so the key carries the index; `tickText` strips it again.
   const chartData = months.map((month, i) => {
-    const row: Record<string, string | number | undefined> = { month };
+    const row: Record<string, string | number | undefined> = { month: `${month}#${i}` };
     for (const s of series) row[s.label] = i < s.points.length ? s.points[i] : undefined;
     return row;
   });
@@ -86,7 +97,7 @@ export default function CaseStudyGrowthChartClient({ data }: { data: CaseStudyGr
         </defs>
         <CartesianGrid stroke={GRID} strokeWidth={1} />
         {/* WHY: monthly exports have 25+ points; keep labels legible by spacing ticks at least 48px apart. */}
-        <XAxis axisLine={false} dataKey="month" dy={12} interval="preserveStartEnd" minTickGap={48} tick={{ fill: TICK, ...AXIS_FONT }} tickFormatter={monthOnly} tickLine={false} />
+        <XAxis axisLine={false} dataKey="month" dy={12} interval="preserveStartEnd" minTickGap={48} tick={{ fill: TICK, ...AXIS_FONT }} tickFormatter={tickText} tickLine={false} />
         {hasLeft ? (
           <YAxis
             axisLine={false}
