@@ -1079,6 +1079,8 @@ export interface SanityCaseStudyDetail {
       _key?: string;
       title: string;
       body: string;
+      /** Id of a built-in interactive visual (proof-visuals.ts), "image" to force the screenshot, or unset for the default. */
+      interactiveVisual?: string | null;
       image?: SanityImageRef | null;
       metricTags?: Array<{
         _key?: string;

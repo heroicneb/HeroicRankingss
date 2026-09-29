@@ -433,6 +433,36 @@ textarea {
     );
 }
 
+/* Proof tables: rows stagger in once the panel is revealed; bars grow to --w. */
+.proof-row {
+  opacity: 0;
+  transform: translate3d(0, 8px, 0);
+}
+.proof-row-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 480ms var(--motion-ease-emphasized) var(--row-delay, 0ms),
+    transform 480ms var(--motion-ease-emphasized) var(--row-delay, 0ms);
+}
+.proof-bar {
+  width: 0;
+  background: var(--gradient-brand-light);
+}
+.proof-row-in .proof-bar {
+  width: var(--w, 0%);
+  transition: width 900ms var(--motion-ease-emphasized) calc(var(--row-delay, 0ms) + 200ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .proof-row {
+    opacity: 1;
+    transform: none;
+  }
+  .proof-bar {
+    width: var(--w, 0%);
+  }
+}
+
 .gradient-text-brand {
   background: linear-gradient(
     var(--gradient-angle, 226.5719074237deg),
