@@ -38,7 +38,7 @@ export function CaseStudyDetailPage({ caseStudy }: CaseStudyDetailPageProps) {
       <CaseStudyChallenges data={caseStudy.objectiveChallenges} />
       <CaseStudyPillars data={caseStudy.strategyPillars} intro={caseStudy.strategyIntro} />
       <CaseStudyJourney data={caseStudy.journeyTimeline} />
-      <CaseStudyProofData data={caseStudy.proofData} />
+      <CaseStudyProofData data={caseStudy.proofData} slug={caseStudy.slug?.current ?? null} />
       <CaseStudyBeforeAfter afterLabel={caseStudy.beforeAfter?.afterLabel ?? undefined} beforeLabel={caseStudy.beforeAfter?.beforeLabel ?? undefined} data={caseStudy.beforeAfter} />
       <CaseStudyConclusion data={caseStudy.conclusion} />
       <CaseStudyCtaFooter data={caseStudy.ctaFooter} />

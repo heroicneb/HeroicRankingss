@@ -137,6 +137,7 @@ export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
         _key,
         title,
         body,
+        interactiveVisual,
         image { ..., asset->{ _id, _type, metadata { lqip } } },
         metricTags,
         isFullWidth

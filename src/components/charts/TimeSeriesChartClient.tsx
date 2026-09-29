@@ -1,23 +1,16 @@
 "use client";
 
-import { Area, CartesianGrid, ComposedChart, Line, ReferenceArea, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Area, Bar, CartesianGrid, ComposedChart, Line, ReferenceArea, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
 import { CHART_GRADIENT_STOPS, CHART_THEME, SERIES_SOLID, SERIES_SWATCH } from "./chart-theme";
-import type { TimeSeries, TimeSeriesChartSpec } from "./time-series-chart-types";
+import { formatAxis, formatValue } from "./format-value";
+import type { TimeSeries, TimeSeriesChartSpec, ValueFormat } from "./time-series-chart-types";
 
 const AXIS_FONT = { fontSize: 12, fontFamily: "inherit" };
 const DRAW_DURATION = 1400;
 const FORECAST_KEY_SUFFIX = "__forecast";
 
-type Row = Record<string, string | number | boolean | null | [number, number] | undefined> & { label: string; forecast: boolean };
-
-const formatCompact = (value: number) => {
-  if (Math.abs(value) < 1000) return `${value}`;
-  const k = value / 1000;
-  return `${Number.isInteger(k) ? k : k.toFixed(1)}K`;
-};
-const formatPlain = (value: number) => `${value}`;
-const formatFull = (value: number) => value.toLocaleString("en-US");
+type Row = Record<string, string | number | boolean | null | [number, number] | undefined> & { label: string; display: string; forecast: boolean };
 
 /**
  * WHY: a line can only carry one dash pattern, so the forecast part of each
@@ -30,7 +23,7 @@ function buildRows(spec: TimeSeriesChartSpec): Row[] {
   const high = spec.series.find((s) => s.bandRole === "high");
 
   return spec.labels.map((label, i) => {
-    const row: Row = { label, forecast: i >= forecastFrom };
+    const row: Row = { label, display: spec.displayLabels?.[i] ?? label, forecast: i >= forecastFrom };
     for (const s of spec.series) {
       const value = s.values[i] ?? null;
       if (spec.variant === "forecast") {
@@ -49,6 +42,18 @@ function buildRows(spec: TimeSeriesChartSpec): Row[] {
   });
 }
 
+function seriesFormat(spec: TimeSeriesChartSpec, s: TimeSeries): ValueFormat {
+  if (s.format) return s.format;
+  if (s.axis === "right") return spec.yRight?.format ?? "number";
+  return spec.valueFormat ?? "number";
+}
+
+/** Axis ticks: plain numbers stay plain; everything else is shortened (1.2K, $3.2M). */
+function axisTickFormat(spec: TimeSeriesChartSpec, format: ValueFormat | undefined): ValueFormat {
+  if (format === "currency" || format === "percent") return format;
+  return spec.axisFormat === "plain" ? "number" : "compact";
+}
+
 interface TooltipProps {
   active?: boolean;
   payload?: ReadonlyArray<{ payload?: Row }>;
@@ -62,7 +67,7 @@ function ChartTooltip({ active, payload, spec }: TooltipProps) {
   return (
     <div className="min-w-[180px] rounded-[14px] border border-[var(--color-border-inverse-15)] bg-[var(--color-hr-dark)] px-[14px] py-[12px] text-[var(--color-hr-pure-white)] shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
       <p className="flex items-center justify-between gap-3 text-[14px] font-bold leading-[20px]">
-        <span>{row.label}</span>
+        <span>{row.display}</span>
         {row.forecast ? (
           <span className="rounded-full border border-[var(--color-border-inverse-20)] px-[8px] py-[1px] text-[11px] font-normal uppercase tracking-[0.04em] text-[var(--color-text-inverse-60)]">
             Forecast
@@ -73,7 +78,7 @@ function ChartTooltip({ active, payload, spec }: TooltipProps) {
       <ul className="mt-[10px] flex flex-col gap-[6px]">
         {spec.series.map((s) => {
           const raw = row[s.key] ?? row[`${s.key}${FORECAST_KEY_SUFFIX}`];
-          const value = typeof raw === "number" ? formatFull(raw) : "—";
+          const value = typeof raw === "number" ? formatValue(raw, seriesFormat(spec, s)) : "—";
           return (
             <li className="flex items-center justify-between gap-4 text-[13px] leading-[18px]" key={s.key}>
               <span className="flex items-center gap-[8px] text-[var(--color-text-inverse-95)]">
@@ -96,22 +101,39 @@ function strokeFor(spec: TimeSeriesChartSpec, s: TimeSeries): string {
 export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSeriesChartSpec; animate: boolean }) {
   const rows = buildRows(spec);
   const lineType = spec.variant === "step" ? "stepAfter" : "monotone";
-  const formatAxis = spec.axisFormat === "plain" ? formatPlain : formatCompact;
   const last = spec.labels.length - 1;
   const forecastFrom = spec.forecastFrom ?? last;
   const forecastLabel = spec.labels[forecastFrom];
   const forecastFraction = last > 0 ? forecastFrom / last : 1;
   const emphasised = spec.series.find((s) => s.emphasis);
+  const hasRight = spec.series.some((s) => s.axis === "right");
+  const bars = spec.series.filter((s) => s.draw === "bar");
+  const lines = spec.series.filter((s) => s.draw !== "bar");
   const activeDot = (s: TimeSeries) => ({ r: 5, strokeWidth: 2, stroke: CHART_THEME.panel, fill: SERIES_SOLID[s.color] });
+  const leftFormat = axisTickFormat(spec, spec.valueFormat);
+  const rightFormat = axisTickFormat(spec, spec.yRight?.format);
+  const axisId = (s: TimeSeries) => (s.axis === "right" ? "right" : "left");
+  // WHY: labels stay unique so recharts can match tooltip rows; the axis shows the display text.
+  const displayByLabel = new Map(spec.labels.map((label, i) => [label, spec.displayLabels?.[i] ?? label]));
+  const tickText = (label: string) => displayByLabel.get(label) ?? label;
 
   return (
     <ResponsiveContainer height="100%" width="100%">
-      <ComposedChart data={rows} desc="Use the left and right arrow keys to move between months." margin={{ top: 16, right: 12, bottom: 4, left: 0 }} title={spec.title}>
+      <ComposedChart
+        data={rows}
+        desc="Use the left and right arrow keys to move between points."
+        margin={{ top: 16, right: hasRight ? 0 : 12, bottom: 4, left: 0 }}
+        title={spec.title}
+      >
         <defs>
           <linearGradient id={`${spec.id}-stroke`} x1="0" x2="1" y1="0" y2="0">
             <stop offset="0%" stopColor={CHART_GRADIENT_STOPS[0]} />
             <stop offset="55%" stopColor={CHART_GRADIENT_STOPS[1]} />
             <stop offset="100%" stopColor={CHART_GRADIENT_STOPS[2]} />
+          </linearGradient>
+          <linearGradient id={`${spec.id}-bar`} x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stopColor={CHART_GRADIENT_STOPS[1]} />
+            <stop offset="100%" stopColor={CHART_GRADIENT_STOPS[0]} />
           </linearGradient>
           <linearGradient id={`${spec.id}-area`} x1="0" x2="0" y1="0" y2="1">
             <stop offset="0%" stopColor={CHART_THEME.areaFillTop} />
@@ -123,36 +145,68 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
           </linearGradient>
         </defs>
 
-        <CartesianGrid stroke={CHART_THEME.grid} strokeWidth={1} vertical={spec.variant !== "step"} />
-        <XAxis axisLine={false} dataKey="label" dy={8} interval="preserveStartEnd" minTickGap={36} tick={{ fill: CHART_THEME.tick, ...AXIS_FONT }} tickLine={false} />
+        <CartesianGrid stroke={CHART_THEME.grid} strokeWidth={1} vertical={spec.variant !== "step" && bars.length === 0} />
+        <XAxis axisLine={false} dataKey="label" dy={8} interval="preserveStartEnd" minTickGap={36} tick={{ fill: CHART_THEME.tick, ...AXIS_FONT }} tickFormatter={tickText} tickLine={false} />
         <YAxis
           axisLine={false}
           domain={spec.yDomain ?? ["auto", "auto"]}
+          label={spec.yLabel ? { value: spec.yLabel, angle: -90, position: "insideLeft", fill: CHART_THEME.tick, fontSize: 11, dx: 8 } : undefined}
           tick={{ fill: CHART_THEME.tick, ...AXIS_FONT }}
-          tickFormatter={formatAxis}
+          tickFormatter={(value: number) => formatAxis(value, leftFormat)}
           tickLine={false}
           ticks={spec.yTicks}
-          width={44}
+          width={spec.valueFormat === "currency" ? 52 : 44}
+          yAxisId="left"
         />
+        {hasRight ? (
+          <YAxis
+            axisLine={false}
+            domain={spec.yRight?.domain ?? ["auto", "auto"]}
+            label={spec.yRight?.label ? { value: spec.yRight.label, angle: 90, position: "insideRight", fill: CHART_THEME.tick, fontSize: 11, dx: -8 } : undefined}
+            orientation="right"
+            tick={{ fill: CHART_THEME.tick, ...AXIS_FONT }}
+            tickFormatter={(value: number) => formatAxis(value, rightFormat)}
+            tickLine={false}
+            ticks={spec.yRight?.ticks}
+            width={spec.yRight?.format === "currency" ? 52 : 44}
+            yAxisId="right"
+          />
+        ) : null}
 
         {spec.variant === "forecast" && forecastFrom <= last ? (
           <>
-            <ReferenceArea fill={CHART_THEME.forecastZone} ifOverflow="visible" stroke="none" x1={forecastLabel} x2={spec.labels[last]} />
+            <ReferenceArea fill={CHART_THEME.forecastZone} ifOverflow="visible" stroke="none" x1={forecastLabel} x2={spec.labels[last]} yAxisId="left" />
             <ReferenceLine
               label={{ value: "Forecast", position: "insideTopLeft", fill: CHART_THEME.tick, fontSize: 11, dx: 6, dy: -4 }}
               stroke={CHART_THEME.forecastLine}
               strokeDasharray="4 4"
               x={forecastLabel}
+              yAxisId="left"
             />
           </>
         ) : null}
 
         <Tooltip
           content={<ChartTooltip spec={spec} />}
-          cursor={{ stroke: CHART_THEME.cursor, strokeWidth: 1, strokeDasharray: "4 4" }}
+          cursor={bars.length ? { fill: CHART_THEME.forecastZone } : { stroke: CHART_THEME.cursor, strokeWidth: 1, strokeDasharray: "4 4" }}
           isAnimationActive={false}
           wrapperStyle={{ outline: "none", zIndex: 5 }}
         />
+
+        {bars.map((s, index) => (
+          <Bar
+            animationBegin={index * 90}
+            animationDuration={DRAW_DURATION}
+            animationEasing="ease-out"
+            dataKey={s.key}
+            fill={s.emphasis ? `url(#${spec.id}-bar)` : SERIES_SOLID[s.color]}
+            isAnimationActive={animate}
+            key={s.key}
+            maxBarSize={28}
+            radius={[6, 6, 0, 0]}
+            yAxisId={axisId(s)}
+          />
+        ))}
 
         {/* Emphasised series: subtle gradient area under the line (line/step) or the scenario band. */}
         {spec.variant === "band" ? (
@@ -165,8 +219,9 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
             isAnimationActive={animate}
             stroke="none"
             type="monotone"
+            yAxisId="left"
           />
-        ) : emphasised && spec.variant !== "forecast" ? (
+        ) : emphasised && emphasised.draw !== "bar" && spec.variant !== "forecast" ? (
           <Area
             activeDot={false}
             animationDuration={DRAW_DURATION}
@@ -176,10 +231,11 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
             isAnimationActive={animate}
             stroke="none"
             type={lineType}
+            yAxisId={axisId(emphasised)}
           />
         ) : null}
 
-        {spec.series.map((s, index) => (
+        {lines.map((s, index) => (
           <Line
             activeDot={activeDot(s)}
             animationBegin={index * 90}
@@ -193,11 +249,12 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
             stroke={strokeFor(spec, s)}
             strokeWidth={s.emphasis ? 3 : s.bandRole ? 1.5 : 2}
             type={lineType}
+            yAxisId={axisId(s)}
           />
         ))}
 
         {spec.variant === "forecast"
-          ? spec.series.map((s, index) => (
+          ? lines.map((s, index) => (
               <Line
                 activeDot={activeDot(s)}
                 animationBegin={index * 90 + DRAW_DURATION * forecastFraction}
@@ -212,6 +269,7 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
                 strokeDasharray="6 5"
                 strokeWidth={s.emphasis ? 3 : 2}
                 type={lineType}
+                yAxisId={axisId(s)}
               />
             ))
           : null}

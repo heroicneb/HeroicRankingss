@@ -1,10 +1,15 @@
 import Image from "next/image";
 
+import { ProofVisual } from "@/components/charts/ProofVisual";
+import type { ProofVisualSpec } from "@/components/charts/proof-visual-types";
+
 import { SectionLabel } from "@/components/ui/section-label";
 import { TwoToneHeading } from "@/components/ui/two-tone-heading";
 import { cn } from "@/lib/cn";
 import type { SanityCaseStudyDetail } from "@/lib/sanity-data";
 import { urlFor } from "@/sanity/lib/image";
+
+import { resolveProofVisual } from "../proof-visuals";
 
 type ProofDataData = NonNullable<SanityCaseStudyDetail["proofData"]>;
 type ProofItem = NonNullable<ProofDataData["items"]>[number];
@@ -12,6 +17,8 @@ type MetricTag = NonNullable<ProofItem["metricTags"]>[number];
 
 interface CaseStudyProofDataProps {
   data: ProofDataData | null | undefined;
+  /** Case study slug, used to pick the built-in interactive visual for each card. */
+  slug?: string | null;
 }
 
 function getImageUrl(item: ProofItem): string | null {
@@ -39,7 +46,7 @@ function MetricTagPill({ tag }: { tag: MetricTag }) {
  * body and tags; full-width cards put the title and body side by side under
  * the image. Off-white with a hairline border and 40px radius, 30px padding.
  */
-function ProofCard({ item }: { item: ProofItem }) {
+function ProofCard({ item, visual }: { item: ProofItem; visual: ProofVisualSpec | null }) {
   const imageUrl = getImageUrl(item);
   const lqip = item.image?.asset?.metadata?.lqip;
   const alt = item.image?.alt ?? item.title;
@@ -53,7 +60,9 @@ function ProofCard({ item }: { item: ProofItem }) {
         full ? "lg:col-span-2" : null,
       )}
     >
-      {imageUrl ? (
+      {visual ? (
+        <ProofVisual chartAspectClassName={full ? "aspect-[4/3] sm:aspect-[16/9] lg:aspect-[1220/420]" : "aspect-[4/3] sm:aspect-[570/300]"} spec={visual} />
+      ) : imageUrl ? (
         <figure className={cn("relative w-full overflow-hidden rounded-[10px] bg-[var(--color-hr-black-box)]", full ? "aspect-[1220/560]" : "aspect-[570/326]")}>
           <Image
             alt={alt}
@@ -94,7 +103,7 @@ function ProofCard({ item }: { item: ProofItem }) {
  * heading beside a 630px paragraph, then the analytics cards in a 2-column
  * grid where full-width cards span both columns.
  */
-export function CaseStudyProofData({ data }: CaseStudyProofDataProps) {
+export function CaseStudyProofData({ data, slug }: CaseStudyProofDataProps) {
   if (!data) return null;
   const items = data.items ?? [];
   if (items.length === 0) return null;
@@ -119,7 +128,7 @@ export function CaseStudyProofData({ data }: CaseStudyProofDataProps) {
         </div>
         <div className="mt-[40px] grid grid-cols-1 gap-[20px] lg:mt-[80px] lg:grid-cols-2">
           {items.map((item, index) => (
-            <ProofCard item={item} key={item._key ?? `${item.title}-${index}`} />
+            <ProofCard item={item} key={item._key ?? `${item.title}-${index}`} visual={resolveProofVisual(item.interactiveVisual, slug, index)} />
           ))}
         </div>
       </div>

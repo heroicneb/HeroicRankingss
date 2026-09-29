@@ -1,5 +1,7 @@
 import { defineField, defineType } from "sanity";
 
+import { PROOF_VISUAL_OPTIONS } from "@/components/pages/case-studies/proof-visuals";
+
 export const caseStudy = defineType({
   name: "caseStudy",
   title: "Case Study",
@@ -603,6 +605,14 @@ export const caseStudy = defineType({
                   rows: 3,
                   validation: (r) =>
                     r.required().warning("Card body is required."),
+                }),
+                defineField({
+                  name: "interactiveVisual",
+                  title: "Interactive visual",
+                  type: "string",
+                  description:
+                    "Live chart, table or metric tiles shown instead of the image. The numbers live in code (src/components/pages/case-studies/proof-visuals.ts). Leave empty to use the built-in visual for this card, or pick \"Static image\" to show the uploaded screenshot.",
+                  options: { list: [{ title: "Static image", value: "image" }, ...PROOF_VISUAL_OPTIONS], layout: "dropdown" },
                 }),
                 defineField({
                   name: "image",
