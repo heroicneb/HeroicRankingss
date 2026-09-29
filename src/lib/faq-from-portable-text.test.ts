@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import type { PortableTextBlock } from "@portabletext/react";
 
-import { extractFaqFromPortableText } from "./faq-from-portable-text";
+import { extractFaqFromPortableText, resolvePostFaq } from "./faq-from-portable-text";
 
 const block = (style: string, text: string, extra: Record<string, unknown> = {}): PortableTextBlock =>
   ({ _type: "block", _key: `${style}-${text.slice(0, 8)}`, style, children: [{ _type: "span", _key: "s", text }], ...extra }) as PortableTextBlock;
@@ -48,5 +48,24 @@ describe("extractFaqFromPortableText", () => {
     expect(extractFaqFromPortableText([block("h3", "Frequently Asked Questions"), block("h3", "A?"), block("normal", "B.")])).toEqual([]);
     expect(extractFaqFromPortableText([block("h2", "Frequently Asked Questions"), block("h3", "Unanswered?")])).toEqual([]);
     expect(extractFaqFromPortableText(null)).toEqual([]);
+  });
+});
+
+describe("resolvePostFaq", () => {
+  const body = [block("h2", "Frequently Asked Questions"), block("h3", "Auto?"), block("normal", "From the article.")];
+
+  it("defaults to the article's FAQ section", () => {
+    expect(resolvePostFaq(undefined, body)).toEqual([{ question: "Auto?", answer: "From the article." }]);
+    expect(resolvePostFaq({ mode: "auto", items: [{ question: "Ignored?", answer: "Yes." }] }, body)).toEqual([{ question: "Auto?", answer: "From the article." }]);
+  });
+
+  it("uses the manual list, skipping incomplete rows", () => {
+    expect(resolvePostFaq({ mode: "manual", items: [{ question: " Manual? ", answer: "Entered by hand." }, { question: "No answer?", answer: "" }] }, body)).toEqual([
+      { question: "Manual?", answer: "Entered by hand." },
+    ]);
+  });
+
+  it("publishes nothing when switched off", () => {
+    expect(resolvePostFaq({ mode: "off" }, body)).toEqual([]);
   });
 });

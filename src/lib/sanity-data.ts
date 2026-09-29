@@ -1,5 +1,7 @@
 import { cache } from "react";
 import type { PortableTextBlock } from "@portabletext/react";
+
+import { resolvePostFaq, type FaqPair, type PostFaqSchema } from "@/lib/faq-from-portable-text";
 import { urlFor } from "@/sanity/lib/image";
 import { client } from "@/sanity/lib/client";
 import {
@@ -114,6 +116,7 @@ interface SanityRawPostDetail extends SanityRawPost {
     linkedin?: string | null;
   } | null;
   seo?: SanitySeo | null;
+  faqSchema?: PostFaqSchema | null;
 }
 
 /** Raw case study from CASE_STUDIES_QUERY (list view) */
@@ -368,6 +371,8 @@ export interface SanityPostDetail extends SanityPostSummary {
   body: PortableTextBlock[] | null;
   seoDescription: string | null;
   seoTitle: string | null;
+  /** FAQPage schema entries resolved from the post's "FAQ schema" field (auto from the article, manual list, or off). */
+  faqItems: FaqPair[];
 }
 
 export async function getPosts(): Promise<SanityPostSummary[]> {
@@ -441,6 +446,7 @@ export const getPostBySlug = cache(
       author,
       seoTitle: post.seo?.metaTitle ?? null,
       seoDescription: post.seo?.metaDescription ?? null,
+      faqItems: resolvePostFaq(post.faqSchema, post.body),
     };
   },
 );

@@ -60,3 +60,21 @@ export function extractFaqFromPortableText(body: PortableTextBlock[] | null | un
   flush();
   return pairs;
 }
+
+/** The post's "FAQ schema" field as stored in Sanity. */
+export interface PostFaqSchema {
+  mode?: "auto" | "manual" | "off" | string | null;
+  items?: Array<{ question?: string | null; answer?: string | null }> | null;
+}
+
+/** Applies the editor's choice: manual entries, the article's own FAQ section (default), or nothing. */
+export function resolvePostFaq(setting: PostFaqSchema | null | undefined, body: PortableTextBlock[] | null | undefined): FaqPair[] {
+  const mode = setting?.mode ?? "auto";
+  if (mode === "off") return [];
+  if (mode === "manual") {
+    return (setting?.items ?? [])
+      .map((item) => ({ question: item.question?.trim() ?? "", answer: item.answer?.trim() ?? "" }))
+      .filter((item) => item.question && item.answer);
+  }
+  return extractFaqFromPortableText(body);
+}
