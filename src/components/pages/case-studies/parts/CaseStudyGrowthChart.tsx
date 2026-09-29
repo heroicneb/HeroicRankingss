@@ -1,3 +1,4 @@
+import { monthOnly } from "@/lib/month-label";
 import type { CaseStudyGrowthChartData } from "@/lib/sanity-data";
 
 import { CaseStudyGrowthChartLazy } from "./CaseStudyGrowthChartLazy";
@@ -45,9 +46,9 @@ export function CaseStudyGrowthChart({ data }: { data: CaseStudyGrowthChartData 
             <thead>
               <tr>
                 <th scope="col">Series</th>
-                {months.map((month) => (
-                  <th key={month} scope="col">
-                    {month}
+                {months.map((month, i) => (
+                  <th key={i} scope="col">
+                    {monthOnly(month)}
                   </th>
                 ))}
               </tr>
@@ -57,7 +58,7 @@ export function CaseStudyGrowthChart({ data }: { data: CaseStudyGrowthChartData 
                 <tr key={s.label}>
                   <th scope="row">{s.label}</th>
                   {months.map((month, i) => (
-                    <td key={month}>{i < s.points.length ? String(s.points[i]) : ""}</td>
+                    <td key={i}>{i < s.points.length ? String(s.points[i]) : ""}</td>
                   ))}
                 </tr>
               ))}

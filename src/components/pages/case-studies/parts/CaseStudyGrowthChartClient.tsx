@@ -2,6 +2,7 @@
 
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 
+import { monthOnly } from "@/lib/month-label";
 import type { CaseStudyGrowthChartData } from "@/lib/sanity-data";
 
 import { SERIES_COLORS, SERIES_DOTS, SERIES_STROKES } from "./growth-chart-colors";
@@ -45,7 +46,7 @@ function ChartTooltip({ active, label, payload, colors }: { active?: boolean; la
   if (!active || !payload?.length) return null;
   return (
     <div className="flex flex-col gap-[10px] rounded-[30px] border border-[var(--color-hr-dark-line)] bg-[var(--color-hr-dark)] p-[15px]">
-      <p className="text-[18px] font-bold leading-[24px] text-[var(--color-hr-pure-white)]">{label}</p>
+      <p className="text-[18px] font-bold leading-[24px] text-[var(--color-hr-pure-white)]">{label ? monthOnly(label) : label}</p>
       <div className="flex flex-col gap-[5px]">
         {payload.map((entry) => (
           <div
@@ -85,7 +86,7 @@ export default function CaseStudyGrowthChartClient({ data }: { data: CaseStudyGr
         </defs>
         <CartesianGrid stroke={GRID} strokeWidth={1} />
         {/* WHY: monthly exports have 25+ points; keep labels legible by spacing ticks at least 48px apart. */}
-        <XAxis axisLine={false} dataKey="month" dy={12} interval="preserveStartEnd" minTickGap={48} tick={{ fill: TICK, ...AXIS_FONT }} tickLine={false} />
+        <XAxis axisLine={false} dataKey="month" dy={12} interval="preserveStartEnd" minTickGap={48} tick={{ fill: TICK, ...AXIS_FONT }} tickFormatter={monthOnly} tickLine={false} />
         {hasLeft ? (
           <YAxis
             axisLine={false}
