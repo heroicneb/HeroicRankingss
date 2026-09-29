@@ -1,11 +1,13 @@
 import Image from "next/image";
 
+import { TimeSeriesChart } from "@/components/charts/TimeSeriesChart";
 import { RichParagraphs } from "@/components/sanity/rich-paragraphs";
 import { ProcessStepSwitcher } from "@/components/sections/process-step-switcher";
 import { ServiceFaq } from "@/components/sections/shared/service-faq";
 import { ServiceSuccessStories } from "@/components/sections/shared/service-success-stories";
 import { ServiceWhyChoose } from "@/components/sections/shared/service-why-choose";
 import { AppLink } from "@/components/ui/app-link";
+import { DetailsScrollIntoView } from "@/components/ui/details-scroll-into-view";
 import { GradientHeading } from "@/components/ui/gradient-heading";
 import { GradientText } from "@/components/ui/gradient-text";
 import {
@@ -15,10 +17,11 @@ import {
 } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
 import { PAGE_SHELL_CLASS, CONTENT_SHELL_CLASS } from "@/data/service-shared";
-import { SUCCESS_STORIES } from "@/data/success-stories";
+import { getSuccessStories } from "@/data/success-stories";
 import type { SanityFaqItem } from "@/lib/sanity-data";
 
 import type { ContentImage } from "../shared/page-content";
+import { COMPETITOR_INSIGHTS_CHARTS } from "./competitor-insights-charts";
 import type { LinkBuildingContent } from "./link-building-content";
 
 /*
@@ -57,7 +60,8 @@ interface LinkBuildingPageProps {
   cmsFaqItems?: SanityFaqItem[];
 }
 
-export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingPageProps) {
+export default async function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingPageProps) {
+  const successStories = await getSuccessStories();
   const { hero, whyBacklinks, howWeBuild, solutions, competitorInsights, whyChoose, faq } = content;
 
   const faqSource = faq.items.length
@@ -273,9 +277,12 @@ export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingP
             </h2>
 
             <div className="mt-[80px] space-y-[10px]">
-              {competitorInsights.items.map((item, index) => (
+              <DetailsScrollIntoView group="link-building-competitor-insights" />
+              {competitorInsights.items.map((item, index) => {
+                const chartSpec = item.chartId ? COMPETITOR_INSIGHTS_CHARTS[item.chartId] : undefined;
+                return (
                 <details
-                  className="group relative overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]"
+                    className="group relative scroll-mt-[90px] overflow-hidden rounded-[40px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:scroll-mt-[110px]"
                   key={item.title}
                   name="link-building-competitor-insights"
                   open={index === 0}
@@ -289,7 +296,9 @@ export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingP
 
                   <div className="relative z-10 border-t border-[var(--color-hr-light-grey)] px-[30px] pb-[30px] pt-[30px] dark:border-[var(--color-border-inverse-10)]">
                     <div className="grid gap-[30px] xl:grid-cols-[520px_1fr] xl:items-start">
-                      {item.chart ? (
+                      {chartSpec ? (
+                        <TimeSeriesChart spec={chartSpec} />
+                      ) : item.chart ? (
                         <Image
                           alt={item.chart.alt}
                           className="h-auto w-full rounded-[20px]"
@@ -308,7 +317,8 @@ export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingP
                     </div>
                   </div>
                 </details>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
@@ -347,7 +357,7 @@ export default function LinkBuildingPage({ content, cmsFaqItems }: LinkBuildingP
         }
         pageShellClass={PAGE_SHELL_CLASS}
         sectionId="link-building-success-stories"
-        stories={SUCCESS_STORIES}
+        stories={successStories}
       />
 
       <ServiceFaq

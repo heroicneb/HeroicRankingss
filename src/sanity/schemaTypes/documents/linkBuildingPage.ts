@@ -1,5 +1,7 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 
+import { COMPETITOR_INSIGHTS_CHART_OPTIONS } from "@/components/pages/link-building/competitor-insights-charts";
+
 import {
   ctaFields,
   faqField,
@@ -160,7 +162,15 @@ export const linkBuildingPage = defineType({
               name: "insightItem",
               fields: [
                 defineField({ name: "title", title: "Title", type: "string", validation: (r) => r.required() }),
-                imageWithAlt("chart", "Chart image"),
+                defineField({
+                  name: "interactiveChart",
+                  title: "Interactive chart",
+                  type: "string",
+                  description:
+                    "Live chart shown instead of the image. The numbers live in code (src/components/pages/link-building/competitor-insights-charts.ts). Leave empty to keep the built-in chart for this row, or pick \"Static image\" to show the uploaded image.",
+                  options: { list: [{ title: "Static image", value: "image" }, ...COMPETITOR_INSIGHTS_CHART_OPTIONS], layout: "dropdown" },
+                }),
+                imageWithAlt("chart", "Chart image (fallback)"),
                 defineField({ name: "paragraphs", title: "Paragraphs", type: "array", of: [defineArrayMember({ type: "text", rows: 3 })] }),
               ],
               preview: { select: { title: "title", media: "chart" } },

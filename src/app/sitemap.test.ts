@@ -29,12 +29,14 @@ describe("sitemap route", () => {
     const entries = await sitemap();
     const urls = entries.map((entry) => entry.url);
 
-    expect(urls).toContain("https://heroicrankings.com");
+    // WHY: trailingSlash is on, so every sitemap URL must carry the canonical "/".
+    expect(urls).toContain("https://heroicrankings.com/");
     expect(urls).toContain(
-      "https://heroicrankings.com/seo/managed/market-research-guide",
+      "https://heroicrankings.com/seo/managed/market-research-guide/",
     );
-    expect(urls).toContain("https://heroicrankings.com/case-study/affinda");
-    expect(urls).toContain("https://heroicrankings.com/about/nebojsa-jankovic");
+    expect(urls).toContain("https://heroicrankings.com/case-study/affinda/");
+    expect(urls).toContain("https://heroicrankings.com/about/nebojsa-jankovic/");
+    expect(urls.every((url) => url.endsWith("/"))).toBe(true);
   });
 
   it("skips posts without urlCategory until the editor fills the field", async () => {
@@ -58,7 +60,7 @@ describe("sitemap route", () => {
       urls.some(
         (url) =>
           url.startsWith("https://heroicrankings.com/about/") &&
-          url !== "https://heroicrankings.com/about",
+          url !== "https://heroicrankings.com/about/",
       ),
     ).toBe(false);
   });
