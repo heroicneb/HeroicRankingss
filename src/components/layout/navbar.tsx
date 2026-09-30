@@ -5,7 +5,6 @@ import { MobileMenu } from "@/components/layout/mobile-menu";
 import ThemeToggle from "@/components/theme-toggle";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
-import { SITE_PHONE } from "@/lib/site";
 import type { NavItem } from "@/types";
 
 const NAV_ITEMS: NavItem[] = [
@@ -45,12 +44,13 @@ function isRedditHref(href: string | undefined) {
 
 interface NavbarProps {
   navItems?: NavItem[];
+  /** Kept for the site settings document; the phone button was removed from the mobile menu (2026-09-30). */
   phone?: string;
   ctaLabel?: string | null;
   ctaUrl?: string | null;
 }
 
-export function Navbar({ navItems, phone, ctaLabel, ctaUrl }: NavbarProps) {
+export function Navbar({ navItems, ctaLabel, ctaUrl }: NavbarProps) {
   const baseItems = navItems?.length ? navItems : NAV_ITEMS;
   const hasPodcast = baseItems.some((item) => item.href === "/podcast");
   const itemsWithPodcast = hasPodcast
@@ -68,7 +68,6 @@ export function Navbar({ navItems, phone, ctaLabel, ctaUrl }: NavbarProps) {
         : children;
     return withReddit === item.children ? item : { ...item, children: withReddit };
   });
-  const resolvedPhone = phone?.trim() || SITE_PHONE;
   const resolvedCtaLabel = ctaLabel?.trim() || "Get Started";
   const resolvedCtaUrl = ctaUrl?.trim() || "/contact";
 
@@ -126,7 +125,6 @@ export function Navbar({ navItems, phone, ctaLabel, ctaUrl }: NavbarProps) {
 
           <MobileMenu
             navItems={items}
-            phone={resolvedPhone}
             ctaLabel={resolvedCtaLabel}
             ctaUrl={resolvedCtaUrl}
           />
