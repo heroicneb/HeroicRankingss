@@ -183,7 +183,9 @@ export const TESTIMONIALS_QUERY = defineQuery(`
     avatar,
     companyLogo,
     rating,
-    featured
+    featured,
+    sourceUrl,
+    order
   }
 `);
 

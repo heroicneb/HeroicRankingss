@@ -433,6 +433,36 @@ textarea {
     );
 }
 
+/* Testimonials: one continuous row of cards (the track holds the list twice) that
+   glides left and pauses on hover, keyboard focus, or a held touch. */
+.testimonial-marquee {
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+.testimonial-marquee-track {
+  animation: testimonial-marquee var(--marquee-duration, 42s) linear infinite;
+  will-change: transform;
+}
+.testimonial-marquee:hover .testimonial-marquee-track,
+.testimonial-marquee:focus-within .testimonial-marquee-track,
+.testimonial-marquee[data-paused="true"] .testimonial-marquee-track {
+  animation-play-state: paused;
+}
+@keyframes testimonial-marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-marquee {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  .testimonial-marquee-track {
+    animation: none;
+  }
+}
+
 /* Proof tables: rows stagger in once the panel is revealed; bars grow to --w. */
 .proof-row {
   opacity: 0;

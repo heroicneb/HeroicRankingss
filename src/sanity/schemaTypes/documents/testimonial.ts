@@ -59,9 +59,17 @@ export const testimonial = defineType({
       initialValue: false,
     }),
     defineField({
+      name: "sourceUrl",
+      title: "Review link",
+      type: "url",
+      description: "Link to the original review (e.g. the Clutch profile). When set, the card shows a \"Rating on Clutch\" badge linking here.",
+      validation: (rule) => rule.uri({ scheme: ["https", "http"] }),
+    }),
+    defineField({
       name: "order",
       title: "Display Order",
       type: "number",
+      description: "Lower numbers come first in the moving row.",
     }),
   ],
   preview: {
