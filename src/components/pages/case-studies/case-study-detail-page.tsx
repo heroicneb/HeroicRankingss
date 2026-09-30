@@ -35,10 +35,11 @@ export function CaseStudyDetailPage({ caseStudy }: CaseStudyDetailPageProps) {
       <CaseStudyOverview data={caseStudy.caseOverview} />
       {/* WHY: Nebojsa wants the headline numbers and the growth chart seen first, straight after the overview (2026-09-28). */}
       <CaseStudyNumbers chart={caseStudy.growthChart} data={caseStudy.numbersThatMatter} />
+      {/* WHY: the analytics proof follows the headline numbers and chart directly (Nebojsa, 2026-09-30). */}
+      <CaseStudyProofData data={caseStudy.proofData} slug={caseStudy.slug?.current ?? null} />
       <CaseStudyChallenges data={caseStudy.objectiveChallenges} />
       <CaseStudyPillars data={caseStudy.strategyPillars} intro={caseStudy.strategyIntro} />
       <CaseStudyJourney data={caseStudy.journeyTimeline} />
-      <CaseStudyProofData data={caseStudy.proofData} slug={caseStudy.slug?.current ?? null} />
       <CaseStudyBeforeAfter afterLabel={caseStudy.beforeAfter?.afterLabel ?? undefined} beforeLabel={caseStudy.beforeAfter?.beforeLabel ?? undefined} data={caseStudy.beforeAfter} />
       <CaseStudyConclusion data={caseStudy.conclusion} />
       <CaseStudyCtaFooter data={caseStudy.ctaFooter} />
