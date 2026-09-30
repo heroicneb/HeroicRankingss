@@ -85,8 +85,10 @@ export default function RootLayout({
         />
         <link rel="dns-prefetch" href="https://cdn.sanity.io" />
       </head>
+      {/* WHY: browser extensions (Grammarly adds data-gr-* attributes) mutate <body> before React hydrates; only attribute diffs on this element are ignored. */}
       <body
         className={`${dmSans.variable} flex min-h-screen flex-col overflow-x-hidden bg-[var(--color-hr-pure-white)] dark:bg-[var(--color-bg-dark)]`}
+        suppressHydrationWarning
       >
         {children}
         <Analytics />
