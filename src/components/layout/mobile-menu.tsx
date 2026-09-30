@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 import ThemeToggle from "@/components/theme-toggle";
 import { AppLink } from "@/components/ui/app-link";
-import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
+import { CloseIcon, MenuIcon } from "@/components/ui/icons";
 import { cn } from "@/lib/cn";
 import { isNavItemActive } from "@/lib/nav-active";
 import { normalizePath } from "@/lib/normalize-path";
@@ -14,7 +14,6 @@ import type { NavItem } from "@/types";
 
 interface MobileMenuProps {
   navItems: NavItem[];
-  phone: string;
   ctaLabel: string;
   ctaUrl: string;
 }
@@ -50,7 +49,6 @@ export function buildMobileMenuItems(navItems: NavItem[]): MobileMenuItem[] {
 
 export function MobileMenu({
   navItems,
-  phone,
   ctaLabel,
   ctaUrl,
 }: MobileMenuProps) {
@@ -129,13 +127,6 @@ export function MobileMenu({
   return (
     <>
       <div className="flex items-center gap-[10px] lg:hidden">
-        <a
-          aria-label="Call Heroic Rankings"
-          className="motion-interactive motion-interactive-press inline-flex size-[44px] items-center justify-center rounded-[14px] border border-[var(--color-hr-light-grey)] text-[var(--color-hr-dark)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:text-[var(--color-text-inverse)] dark:focus-visible:ring-offset-[var(--color-bg-dark)]"
-          href={`tel:${phone.replace(/\s/g, "")}`}
-        >
-          <PhoneIcon className="size-[19px]" />
-        </a>
 
         <ThemeToggle />
 
@@ -193,14 +184,6 @@ export function MobileMenu({
               </AppLink>
 
               <div className="flex items-center gap-[10px]">
-                <a
-                  aria-label="Call Heroic Rankings"
-                  className="motion-interactive motion-interactive-press inline-flex size-[44px] items-center justify-center rounded-[14px] border border-[var(--color-hr-light-grey)] text-[var(--color-hr-dark)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:text-[var(--color-text-inverse)] dark:focus-visible:ring-offset-[var(--color-bg-dark)]"
-                  href={`tel:${phone.replace(/\s/g, "")}`}
-                  tabIndex={isOpen ? 0 : -1}
-                >
-                  <PhoneIcon className="size-[19px]" />
-                </a>
 
                 <ThemeToggle />
 

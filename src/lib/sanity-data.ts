@@ -878,6 +878,9 @@ export interface SanityTestimonial {
   companyLogoAlt: string;
   rating: number | null;
   featured: boolean;
+  /** Link to the original review (Clutch); drives the rating badge. */
+  sourceUrl: string | null;
+  order: number | null;
 }
 
 /** Raw testimonial from TESTIMONIALS_QUERY */
@@ -891,6 +894,8 @@ interface SanityRawTestimonial {
   companyLogo?: SanityImageRef | null;
   rating?: number | null;
   featured?: boolean;
+  sourceUrl?: string | null;
+  order?: number | null;
 }
 
 export async function getTestimonials(): Promise<SanityTestimonial[]> {
@@ -913,6 +918,8 @@ export async function getTestimonials(): Promise<SanityTestimonial[]> {
     companyLogoAlt: t.companyLogo?.alt ?? t.company ?? "",
     rating: t.rating ?? null,
     featured: t.featured ?? false,
+    sourceUrl: t.sourceUrl ?? null,
+    order: t.order ?? null,
   }));
 }
 

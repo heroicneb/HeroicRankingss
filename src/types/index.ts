@@ -93,5 +93,8 @@ export interface Testimonial {
   logoAlt: string;
   logoWidth: number;
   logoHeight: number;
-  logoOffsetTop: number;
+  /** Rating shown on the badge (e.g. 5 or 4.5) when `sourceUrl` is set. */
+  rating?: number | null;
+  /** Link to the original review, e.g. the Clutch profile. */
+  sourceUrl?: string | null;
 }
