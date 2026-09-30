@@ -54,10 +54,11 @@ export default async function HomePage() {
         <FeaturedLogos heading={content.featuredLogos.heading} partnerLogos={partnerLogos} />
       </div>
       <CaseStudies cmsCaseStudies={featuredCaseStudies} content={content.caseStudies} />
+      {/* WHY: client voices sit right after the case studies they back up (Nebojsa, 2026-09-30). */}
+      <Testimonials cmsTestimonials={cmsTestimonials} content={content.testimonials} />
       <TrustAuthority content={content.trust} />
       <Partnerships content={content.partnerships} />
       <Blog cmsPosts={cmsPosts} content={content.blog} />
-      <Testimonials cmsTestimonials={cmsTestimonials} content={content.testimonials} />
     </>
   );
 }
