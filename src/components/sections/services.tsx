@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
+import { DesktopScrollProgress } from "@/components/ui/desktop-scroll-progress";
 import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
@@ -535,6 +536,11 @@ export function Services({ content = DEFAULT_HOME_CONTENT.services }: ServicesPr
             </button>
           ))}
         </div>
+      </div>
+
+      {/* WHY: the desktop scrubber for the card rail lives with the rail (it used to sit at the top of About). */}
+      <div className="mx-auto w-full max-w-[1440px] px-5 md:px-10 xl:px-[40px]">
+        <DesktopScrollProgress scrollTargetId="services-rail-scroll" />
       </div>
     </section>
   );
