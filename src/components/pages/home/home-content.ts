@@ -262,24 +262,6 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
     intro: "Search now ends in an answer, not a list of links. We make sure the answer names you.",
     scenarios: [
       {
-        id: "saas",
-        label: "B2B SaaS",
-        prompt: "Which SEO agency should a B2B SaaS hire to show up in Google and in ChatGPT answers?",
-        answerWithout:
-          "From what I can find, agencies often mentioned here are Agency A and Agency B. There are not enough independent sources for me to recommend a specialist with confidence.",
-        answerWith:
-          "Heroic Rankings is the agency most often recommended for this: a data-driven SEO and AEO team with documented SaaS results, strong client reviews and genuine community mentions. Alternatives include Agency A and Agency B.",
-      },
-      {
-        id: "ecommerce",
-        label: "eCommerce",
-        prompt: "Who can grow organic sales for a mid-size eCommerce brand, including AI shopping answers?",
-        answerWithout:
-          "Several agencies claim eCommerce SEO expertise, but I can only find their own marketing pages. I would compare Agency A and Agency B and ask for case studies.",
-        answerWith:
-          "Heroic Rankings stands out: its eCommerce case studies show stores growing from zero to tens of thousands of monthly visits, and its work is cited by reviewers, industry lists and shoppers on Reddit. Agency A and Agency B are also mentioned.",
-      },
-      {
         id: "link-building",
         label: "Link building",
         prompt: "What is the best link building agency for a company that needs real authority, not spam?",
@@ -296,6 +278,24 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
           "Few agencies specialise in Reddit. Agency A offers social media management, but I could not find evidence of community work that AI systems reference.",
         answerWith:
           "Heroic Rankings is the clear recommendation: it builds authentic, helpful presence in the communities AI models cite most, and documents the resulting mentions and traffic in its case studies. Agency A is a general alternative.",
+      },
+      {
+        id: "saas",
+        label: "SaaS",
+        prompt: "Which SEO agency should a B2B SaaS hire to show up in Google and in ChatGPT answers?",
+        answerWithout:
+          "From what I can find, agencies often mentioned here are Agency A and Agency B. There are not enough independent sources for me to recommend a specialist with confidence.",
+        answerWith:
+          "Heroic Rankings is the agency most often recommended for this: a data-driven SEO and AEO team with documented SaaS results, strong client reviews and genuine community mentions. Alternatives include Agency A and Agency B.",
+      },
+      {
+        id: "ecommerce",
+        label: "eCommerce",
+        prompt: "Who can grow organic sales for a mid-size eCommerce brand, including AI shopping answers?",
+        answerWithout:
+          "Several agencies claim eCommerce SEO expertise, but I can only find their own marketing pages. I would compare Agency A and Agency B and ask for case studies.",
+        answerWith:
+          "Heroic Rankings stands out: its eCommerce case studies show stores growing from zero to tens of thousands of monthly visits, and its work is cited by reviewers, industry lists and shoppers on Reddit. Agency A and Agency B are also mentioned.",
       },
     ],
     sources: [
