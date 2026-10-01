@@ -9,8 +9,8 @@ export const ON_PAGE_SEO_PAGE: SeoServicePageDefinition = {
   path: "/seo/on-page",
   faqService: "on-page-seo",
   seo: {
-    title: "On-Page SEO Services",
-    description: "Create a solid on-site SEO structure and start driving traffic with Heroic Rankings on-page SEO services.",
+    title: "On-Page SEO Services | Heroic Rankings",
+    description: "Turn more pages into organic growth drivers. We optimize content, metadata, headings and internal links around search intent and your business goals.",
   },
   content: {
     hero: {

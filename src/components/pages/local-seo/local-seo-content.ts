@@ -9,8 +9,8 @@ export const LOCAL_SEO_PAGE: SeoServicePageDefinition = {
   path: "/seo/local",
   faqService: "local-seo",
   seo: {
-    title: "Local SEO Services",
-    description: "Dominate your local market, connect with nearby customers, and increase foot traffic with Heroic Rankings local SEO services.",
+    title: "Local SEO Services | Heroic Rankings",
+    description: "Reach customers searching in your area. We optimize your Google Business Profile, local citations and location pages to drive more calls and visits.",
   },
   content: {
     hero: {

@@ -244,6 +244,7 @@ export const TEAM_MEMBER_BY_SLUG_QUERY = defineQuery(`
     socialLinks[] { _key, platform, url },
     linkedin,
     showOnAboutPage,
+    seo,
     _createdAt,
     _updatedAt
   }

@@ -9,8 +9,8 @@ export const TECHNICAL_SEO_PAGE: SeoServicePageDefinition = {
   path: "/seo/technical",
   faqService: "technical-seo",
   seo: {
-    title: "Technical SEO Services",
-    description: "Strengthen your site infrastructure, improve crawlability, and boost rankings with Heroic Rankings technical SEO services.",
+    title: "Technical SEO Services & Audits | Heroic Rankings",
+    description: "Fix the technical issues holding your site back. Our technical SEO services cover crawling, indexing, site speed, structured data and mobile performance.",
   },
   content: {
     hero: {

@@ -1,7 +1,17 @@
-import ContactPage from "@/components/pages/contact/contact-page";
+import type { Metadata } from "next";
+
+import ContactPage, { CONTACT_DEFAULT_SEO } from "@/components/pages/contact/contact-page";
+import { createPageMetadata } from "@/lib/metadata";
 import { getContactPage } from "@/lib/sanity-data";
 
-export { metadata } from "@/components/pages/contact/contact-page";
+export async function generateMetadata(): Promise<Metadata> {
+  const page = await getContactPage().catch(() => null);
+  return createPageMetadata({
+    title: page?.seoTitle?.trim() || CONTACT_DEFAULT_SEO.title,
+    description: page?.seoDescription?.trim() || CONTACT_DEFAULT_SEO.description,
+    path: "/contact",
+  });
+}
 
 export default async function ContactRoute() {
   const contactPage = await getContactPage().catch(() => null);

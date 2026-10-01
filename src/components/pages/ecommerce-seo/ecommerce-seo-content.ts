@@ -9,8 +9,8 @@ export const ECOMMERCE_SEO_PAGE: SeoServicePageDefinition = {
   path: "/seo/e-commerce",
   faqService: "ecommerce-seo",
   seo: {
-    title: "E-commerce SEO Services",
-    description: "Grow sales, not just traffic, with e-commerce SEO services built to turn search visibility into sustainable revenue.",
+    title: "eCommerce SEO Services & Agency | Heroic Rankings",
+    description: "Grow organic sales with eCommerce SEO for Shopify, WooCommerce and Magento. We optimize product pages, categories and site structure for revenue.",
   },
   content: {
     hero: {

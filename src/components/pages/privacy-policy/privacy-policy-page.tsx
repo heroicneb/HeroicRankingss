@@ -1,16 +1,13 @@
-import type { Metadata } from "next";
 import { PortableText } from "@portabletext/react";
 
 import { portableTextComponents } from "@/components/sanity/PortableTextComponents";
-import { createPageMetadata } from "@/lib/metadata";
 import type { SanityLegalPage } from "@/lib/sanity-data";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Privacy Policy",
-  description:
-    "Review how Heroic Rankings handles personal information, communication preferences, and data protection practices.",
-  path: "/privacy-policy",
-});
+/** Fallback when the legal document has no SEO fields. */
+export const PRIVACY_DEFAULT_SEO = {
+  title: "Privacy Policy | Heroic Rankings",
+  description: "Read the Heroic Rankings privacy policy to understand how we collect, use and protect personal information and how to contact us about your data.",
+};
 
 interface PrivacyPolicyPageProps {
   cmsPage?: SanityLegalPage | null;

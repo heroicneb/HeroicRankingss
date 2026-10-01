@@ -6,9 +6,9 @@ import type { SanityPostSummary } from "@/lib/sanity-data";
 import { SubscribeBar } from "@/components/ui/subscribe-bar";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Insights",
+  title: "SEO, Link Building & AI Search Blog | Heroic Rankings",
   description:
-    "Explore Heroic Rankings insights, research guides, and practical SEO playbooks for sustainable organic growth.",
+    "Explore SEO guides, link building tactics and AI search insights from Heroic Rankings. Get practical ideas to strengthen your organic growth strategy.",
   path: "/blog",
 });
 const InsightsCatalog = dynamic(

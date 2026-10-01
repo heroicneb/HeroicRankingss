@@ -1,8 +1,10 @@
 import { PodcastChatProvider } from "@/components/chat/PodcastChatProvider";
-import PodcastPage from "@/components/pages/podcast/podcast-page";
+import type { Metadata } from "next";
+
+import PodcastPage, { PODCAST_PAGE_SEO, PODCAST_SEO } from "@/components/pages/podcast/podcast-page";
+import { createPageMetadata } from "@/lib/metadata";
 import { getPodcastEpisodes } from "@/lib/sanity-data";
 
-export { metadata } from "@/components/pages/podcast/podcast-page";
 
 const GLOBAL_FALLBACK_SUGGESTIONS = [
   "What does Ranking Heroes teach about link-building at scale?",
@@ -14,6 +16,22 @@ const GLOBAL_FALLBACK_SUGGESTIONS = [
 
 interface PodcastRouteProps {
   searchParams: Promise<{ page?: string | string[] }>;
+}
+
+const pageNumber = (value: string | string[] | undefined) => {
+  const raw = Array.isArray(value) ? value[0] : value;
+  const n = Number(raw);
+  return Number.isInteger(n) && n > 1 ? n : null;
+};
+
+export async function generateMetadata({ searchParams }: PodcastRouteProps): Promise<Metadata> {
+  const page = pageNumber((await searchParams).page);
+  if (!page) return createPageMetadata({ ...PODCAST_SEO, path: "/podcast" });
+  const copy = PODCAST_PAGE_SEO[page] ?? {
+    title: `Ranking Heroes Podcast Episodes | Page ${page}`,
+    description: `Browse page ${page} of the Ranking Heroes podcast archive for more conversations with SEO practitioners, founders and marketers.`,
+  };
+  return createPageMetadata({ ...copy, path: `/podcast/?page=${page}` });
 }
 
 export default async function PodcastRoute({ searchParams }: PodcastRouteProps) {

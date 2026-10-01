@@ -1,16 +1,12 @@
-import type { Metadata } from "next";
-
 import { ContactForm } from "@/components/pages/contact/contact-form";
 import { PAGE_SHELL_CLASS, CONTENT_SHELL_CLASS } from "@/data/service-shared";
-import { createPageMetadata } from "@/lib/metadata";
 import type { SanityContactPage } from "@/lib/sanity-data";
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Contact",
-  description:
-    "Get in touch with Heroic Rankings to discuss SEO strategy, technical optimization, and long-term organic growth opportunities.",
-  path: "/contact",
-});
+/** Fallback when the Contact document has no SEO fields. */
+export const CONTACT_DEFAULT_SEO = {
+  title: "Contact Heroic Rankings | Discuss Your SEO Growth",
+  description: "Talk to Heroic Rankings about your SEO, link building or AI visibility goals. Tell us about your website and explore the next steps for growth.",
+};
 
 interface ContactPageProps {
   cmsPage?: SanityContactPage | null;

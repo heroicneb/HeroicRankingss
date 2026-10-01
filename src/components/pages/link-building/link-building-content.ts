@@ -296,7 +296,7 @@ export const DEFAULT_LINK_BUILDING_CONTENT: LinkBuildingContent = {
 };
 
 export const LINK_BUILDING_DEFAULT_SEO = {
-  title: "Link Building Services",
+  title: "Link Building Services & Agency | Heroic Rankings",
   description:
-    "Strengthen your off-page SEO with white-hat link building services that improve rankings, authority, and long-term organic growth.",
+    "Build authority with relevant backlinks, digital PR and third-party listicle placements. Our link building supports Google rankings and AI visibility.",
 };
