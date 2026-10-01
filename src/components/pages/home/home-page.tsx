@@ -10,6 +10,7 @@ import { Partnerships } from "@/components/sections/partnerships";
 import { Services } from "@/components/sections/services";
 import { Stats } from "@/components/sections/stats";
 import { Team } from "@/components/sections/team";
+import { AiVisibility } from "@/components/sections/ai-visibility/ai-visibility";
 import { Testimonials } from "@/components/sections/testimonials";
 import { TrustAuthority } from "@/components/sections/trust-authority";
 import {
@@ -47,6 +48,8 @@ export default async function HomePage() {
       <ScrollReveal />
       <Hero content={content.hero} />
       <Services content={content.services} />
+      {/* WHY: the AI section explains "how" right after the services it maps to (Nebojsa, 2026-10-01). */}
+      <AiVisibility content={content.aiVisibility} />
       <About content={content.about} />
       <Team content={content.team} />
       <div className="surface-rect-5 mx-[5px] rounded-[30px] md:mx-[10px] lg:rounded-[var(--radius-card)]">

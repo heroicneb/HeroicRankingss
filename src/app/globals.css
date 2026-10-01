@@ -463,6 +463,39 @@ textarea {
   }
 }
 
+/* Answer Engine: source → model edges draw in when a source is active. */
+.answer-engine-edge-base {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 1.5;
+}
+.answer-engine-edge {
+  fill: none;
+  stroke: url(#answer-engine-edge);
+  stroke-width: 2;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  opacity: 0;
+  transition:
+    stroke-dashoffset 1100ms var(--motion-ease-emphasized) var(--edge-delay, 0ms),
+    opacity 300ms ease var(--edge-delay, 0ms);
+}
+.answer-engine-edge.is-on {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+.answer-engine-node {
+  transition:
+    border-color 400ms ease,
+    background-color 400ms ease,
+    color 400ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .answer-engine-edge {
+    transition: none;
+  }
+}
+
 /* Proof tables: rows stagger in once the panel is revealed; bars grow to --w. */
 .proof-row {
   opacity: 0;

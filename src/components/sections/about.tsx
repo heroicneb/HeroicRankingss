@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import { AboutColumnsLoop } from "@/components/sections/about-columns-loop";
 import { Container } from "@/components/ui/container";
-import { DesktopScrollProgress } from "@/components/ui/desktop-scroll-progress";
 import { GradientHeading } from "@/components/ui/gradient-heading";
 import { SectionLabel } from "@/components/ui/section-label";
 import { DEFAULT_HOME_CONTENT, type HomeContent } from "@/components/pages/home/home-content";
@@ -97,12 +96,8 @@ interface AboutProps {
 
 export function About({ content = DEFAULT_HOME_CONTENT.about }: AboutProps) {
   return (
-    <section className="pb-[60px] pt-[60px] lg:pb-24 lg:pt-[7px]" id="about">
-      <div className="mx-auto w-full max-w-[1440px] px-5 md:px-10 xl:px-[40px]">
-        <DesktopScrollProgress scrollTargetId="services-rail-scroll" />
-      </div>
-
-      <Container className="pt-0 lg:pt-20">
+    <section className="pb-[60px] pt-[60px] lg:pb-24 lg:pt-[120px]" id="about">
+      <Container className="pt-0">
         <div className="grid gap-10 xl:grid-cols-[522px_630px] xl:items-start xl:gap-32" data-reveal-stagger>
           <div className="mx-auto w-full max-w-[352px] xl:mx-0 xl:max-w-none">
             <div className="flex flex-col items-center text-center xl:items-start xl:text-left">
