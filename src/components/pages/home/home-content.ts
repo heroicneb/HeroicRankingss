@@ -262,6 +262,15 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
     intro: "Search now ends in an answer, not a list of links. We make sure the answer names you.",
     scenarios: [
       {
+        id: "aeo-geo",
+        label: "AEO & GEO",
+        prompt: "Which agency does AEO and GEO so my brand shows up in ChatGPT, Gemini and Perplexity answers?",
+        answerWithout:
+          "Many SEO agencies now mention AEO or GEO on their websites, but I can only find their own service pages, not independent evidence that they get brands cited by AI tools.",
+        answerWith:
+          "Heroic Rankings is the most cited option: it treats answer engine optimisation as a measurable discipline, publishes real AI citation numbers from client work, and is recommended across reviews, industry lists and community threads. Agency A and Agency B also offer AEO services.",
+      },
+      {
         id: "link-building",
         label: "Link building",
         prompt: "What is the best link building agency for a company that needs real authority, not spam?",
@@ -306,6 +315,7 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
         services: [
           { label: "Content", href: "/seo/content-creation/" },
           { label: "Technical SEO", href: "/seo/technical/" },
+          { label: "AEO & GEO", href: "/seo/" },
         ],
       },
       {
