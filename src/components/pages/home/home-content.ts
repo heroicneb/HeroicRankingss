@@ -361,7 +361,7 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
       { label: "Perplexity citations", value: 79 },
       { label: "Revenue from ChatGPT referrals", value: 9304, prefix: "$" },
     ],
-    proofNote: "Real numbers from one client, our DIY eCommerce brand, in a single year.",
+    proofNote: "Real numbers from one of our clients' case study.",
     proofHref: "/case-study/diy-craft-ecom-brand/",
     ctaLabel: "See how AI describes your brand",
     ctaUrl: "/contact",
