@@ -1646,7 +1646,7 @@ interface SanityRawHomePage {
         heading?: PortableTextBlock[] | null;
         intro?: string | null;
         scenarios?: Array<{ _key: string; label?: string | null; prompt?: string | null; answerWithout?: string | null; answerWith?: string | null }> | null;
-        sources?: Array<{ _key: string; label?: string | null; detail?: string | null; service?: string | null; href?: string | null }> | null;
+        sources?: Array<{ _key: string; label?: string | null; detail?: string | null; services?: Array<{ _key: string; label?: string | null; href?: string | null }> | null }> | null;
         pillars?: Array<{ _key: string; title?: string | null; body?: string | null; ctaLabel?: string | null; href?: string | null }> | null;
         proof?: Array<{ _key: string; label?: string | null; value?: number | null; prefix?: string | null; suffix?: string | null }> | null;
         proofNote?: string | null;
@@ -1801,8 +1801,7 @@ export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
         id: d.aiVisibility.sources[i]?.id ?? item._key,
         label: item.label ?? "",
         detail: item.detail ?? "",
-        service: item.service ?? "",
-        href: item.href ?? "/contact",
+        services: listOr(item.services, d.aiVisibility.sources[i]?.services ?? [], (service) => ({ label: service.label ?? "", href: service.href ?? "/contact" })),
       })),
       pillars: listOr(raw.aiVisibility?.pillars, d.aiVisibility.pillars, (item) => ({
         title: item.title ?? "",

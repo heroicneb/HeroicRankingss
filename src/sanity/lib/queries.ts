@@ -331,7 +331,7 @@ export const HOME_PAGE_QUERY = defineQuery(`
     aiVisibility {
       label, heading, intro,
       scenarios[] { _key, label, prompt, answerWithout, answerWith },
-      sources[] { _key, label, detail, service, href },
+      sources[] { _key, label, detail, services[] { _key, label, href } },
       pillars[] { _key, title, body, ctaLabel, href },
       proof[] { _key, label, value, prefix, suffix },
       proofNote, proofHref, ctaLabel, ctaUrl, disclaimer

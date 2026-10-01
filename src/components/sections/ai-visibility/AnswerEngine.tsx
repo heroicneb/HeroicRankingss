@@ -276,7 +276,7 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
           <div className="relative z-10 flex flex-col justify-between py-[6px]">
             {sources.map((source, i) => (
               <button
-                aria-label={`${source.label}: ${source.detail} Earned by ${source.service}.`}
+                aria-label={`${source.label}: ${source.detail} Earned by ${source.services.map((service) => service.label).join(" + ")}.`}
                 className={cn(
                   "answer-engine-node flex items-center gap-[10px] self-start rounded-full border py-[5px] pl-[5px] pr-[12px] text-left text-[13px] leading-[16px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] lg:py-[6px] lg:pl-[6px] lg:pr-[14px] lg:text-[14px]",
                   active[i]
@@ -368,9 +368,14 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
           {tip ? (
             <>
               <span className="text-[var(--color-text-inverse-95)]">{tip.label}:</span> {tip.detail} Earned by{" "}
-              <AppLink className="text-[var(--color-hr-pure-white)] underline decoration-[var(--color-hr-accent)] underline-offset-4" href={tip.href} motionPreset="none">
-                {tip.service}
-              </AppLink>
+              {tip.services.map((service, index) => (
+                <span key={service.label}>
+                  {index > 0 ? " + " : null}
+                  <AppLink className="text-[var(--color-hr-pure-white)] underline decoration-[var(--color-hr-accent)] underline-offset-4" href={service.href} motionPreset="none">
+                    {service.label}
+                  </AppLink>
+                </span>
+              ))}
               .
             </>
           ) : (

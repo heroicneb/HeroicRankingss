@@ -60,13 +60,13 @@ export interface AiScenario {
   answerWith: string;
 }
 
-/** A source an answer engine draws on, and the service that earns it. */
+/** A source an answer engine draws on, and the service(s) that earn it. */
 export interface AiSource {
   id: string;
   label: string;
   detail: string;
-  service: string;
-  href: string;
+  /** Each service links to its own page; rendered joined with " + ". */
+  services: Array<{ label: string; href: string }>;
 }
 
 export interface AiPillar {
@@ -303,36 +303,37 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
         id: "site",
         label: "Your site",
         detail: "Citation-ready pages that answer the question directly, built so AI crawlers can read and quote them.",
-        service: "Content + Technical SEO",
-        href: "/seo/content-creation/",
+        services: [
+          { label: "Content", href: "/seo/content-creation/" },
+          { label: "Technical SEO", href: "/seo/technical/" },
+        ],
       },
       {
         id: "reddit",
         label: "Reddit",
         detail: "Threads where real people recommend you. Reddit is among the most-cited sources in AI answers.",
-        service: "Reddit Marketing",
-        href: "/seo/reddit-marketing/",
+        services: [{ label: "Reddit Marketing", href: "/seo/reddit-marketing/" }],
       },
       {
         id: "reviews",
         label: "Reviews",
         detail: "Verified reviews on platforms the models trust, such as Clutch and G2.",
-        service: "Reputation and digital PR",
-        href: "/seo/linkbuilding/",
+        services: [{ label: "Reputation and digital PR", href: "/seo/linkbuilding/" }],
       },
       {
         id: "listicles",
         label: "Best-of lists",
         detail: "Third-party 'best agencies' and comparison lists that AI quotes almost by default.",
-        service: "Digital PR + Link Building",
-        href: "/seo/linkbuilding/",
+        services: [
+          { label: "Digital PR", href: "/seo/linkbuilding/" },
+          { label: "Link Building", href: "/seo/linkbuilding/" },
+        ],
       },
       {
         id: "authority",
         label: "Authority mentions",
         detail: "Links and brand mentions on high-authority domains that models cross-reference before they trust a name.",
-        service: "Link Building",
-        href: "/seo/linkbuilding/",
+        services: [{ label: "Link Building", href: "/seo/linkbuilding/" }],
       },
     ],
     pillars: [

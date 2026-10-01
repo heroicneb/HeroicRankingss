@@ -178,10 +178,25 @@ export const homePage = defineType({
               fields: [
                 defineField({ name: "label", title: "Label", type: "string", validation: (r) => r.required().max(24) }),
                 defineField({ name: "detail", title: "What it is", type: "text", rows: 2 }),
-                defineField({ name: "service", title: "Service that earns it", type: "string" }),
-                defineField({ name: "href", title: "Service link", type: "string", description: "e.g. /seo/linkbuilding/" }),
+                defineField({
+                  name: "services",
+                  title: "Services that earn it",
+                  type: "array",
+                  description: "Each one links to its own page; shown joined with \"+\".",
+                  of: [
+                    defineArrayMember({
+                      type: "object",
+                      name: "aiSourceService",
+                      fields: [
+                        defineField({ name: "label", title: "Service", type: "string", validation: (r) => r.required() }),
+                        defineField({ name: "href", title: "Link", type: "string", description: "e.g. /seo/technical/" }),
+                      ],
+                      preview: { select: { title: "label", subtitle: "href" } },
+                    }),
+                  ],
+                }),
               ],
-              preview: { select: { title: "label", subtitle: "service" } },
+              preview: { select: { title: "label", subtitle: "detail" } },
             }),
           ],
         }),
