@@ -1640,6 +1640,20 @@ interface SanityRawHomeCta {
 /** Raw home page from HOME_PAGE_QUERY */
 interface SanityRawHomePage {
   _id: string;
+  aiVisibility?:
+    | ({
+        label?: string | null;
+        heading?: PortableTextBlock[] | null;
+        intro?: string | null;
+        scenarios?: Array<{ _key: string; label?: string | null; prompt?: string | null; answerWithout?: string | null; answerWith?: string | null }> | null;
+        sources?: Array<{ _key: string; label?: string | null; detail?: string | null; service?: string | null; href?: string | null }> | null;
+        pillars?: Array<{ _key: string; title?: string | null; body?: string | null; ctaLabel?: string | null; href?: string | null }> | null;
+        proof?: Array<{ _key: string; label?: string | null; value?: number | null; prefix?: string | null; suffix?: string | null }> | null;
+        proofNote?: string | null;
+        proofHref?: string | null;
+        disclaimer?: string | null;
+      } & SanityRawHomeCta)
+    | null;
   hero?: ({ heading?: PortableTextBlock[] | null; paragraphs?: string[] | null } & SanityRawHomeCta) | null;
   services?:
     | ({
@@ -1771,6 +1785,41 @@ export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
           url: member.slug?.current ? `/about/${member.slug.current}` : d.team.ctaUrl,
         }),
       ),
+    },
+    aiVisibility: {
+      label: text(raw.aiVisibility?.label, d.aiVisibility.label),
+      heading: headingSegments(raw.aiVisibility?.heading, d.aiVisibility.heading),
+      intro: text(raw.aiVisibility?.intro, d.aiVisibility.intro),
+      scenarios: listOr(raw.aiVisibility?.scenarios, d.aiVisibility.scenarios, (item, i) => ({
+        id: item._key,
+        label: item.label ?? "",
+        prompt: item.prompt ?? "",
+        answerWithout: text(item.answerWithout, d.aiVisibility.scenarios[i]?.answerWithout ?? ""),
+        answerWith: text(item.answerWith, d.aiVisibility.scenarios[i]?.answerWith ?? ""),
+      })),
+      sources: listOr(raw.aiVisibility?.sources, d.aiVisibility.sources, (item, i) => ({
+        id: d.aiVisibility.sources[i]?.id ?? item._key,
+        label: item.label ?? "",
+        detail: item.detail ?? "",
+        service: item.service ?? "",
+        href: item.href ?? "/contact",
+      })),
+      pillars: listOr(raw.aiVisibility?.pillars, d.aiVisibility.pillars, (item) => ({
+        title: item.title ?? "",
+        body: item.body ?? "",
+        ctaLabel: item.ctaLabel ?? "",
+        href: item.href ?? "/contact",
+      })),
+      proof: listOr(raw.aiVisibility?.proof, d.aiVisibility.proof, (item) => ({
+        label: item.label ?? "",
+        value: item.value ?? 0,
+        prefix: item.prefix ?? undefined,
+        suffix: item.suffix ?? undefined,
+      })),
+      proofNote: text(raw.aiVisibility?.proofNote, d.aiVisibility.proofNote),
+      proofHref: text(raw.aiVisibility?.proofHref, d.aiVisibility.proofHref),
+      ...cta(raw.aiVisibility, d.aiVisibility),
+      disclaimer: text(raw.aiVisibility?.disclaimer, d.aiVisibility.disclaimer),
     },
     stats: {
       label: text(raw.stats?.label, d.stats.label),

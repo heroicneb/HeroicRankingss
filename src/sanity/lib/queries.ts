@@ -328,6 +328,14 @@ export const HOME_PAGE_QUERY = defineQuery(`
       label, heading, statValue, statLabel, ctaLabel, ctaUrl,
       members[]-> { _id, name, role, slug, photo ${PAGE_IMAGE} }
     },
+    aiVisibility {
+      label, heading, intro,
+      scenarios[] { _key, label, prompt, answerWithout, answerWith },
+      sources[] { _key, label, detail, service, href },
+      pillars[] { _key, title, body, ctaLabel, href },
+      proof[] { _key, label, value, prefix, suffix },
+      proofNote, proofHref, ctaLabel, ctaUrl, disclaimer
+    },
     stats { label, heading, body, ctaLabel, ctaUrl, items[] { _key, metric, detail, image ${PAGE_IMAGE} } },
     featuredLogos { heading },
     caseStudies { label, heading, body, ctaLabel, ctaUrl, quotes },

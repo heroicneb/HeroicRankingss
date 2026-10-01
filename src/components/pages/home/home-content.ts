@@ -51,6 +51,53 @@ export interface HomeCertification {
   tone: "google" | "hubspot";
 }
 
+/** One buyer situation in the Answer Engine: the question an AI is asked and how it replies with and without our work. */
+export interface AiScenario {
+  id: string;
+  label: string;
+  prompt: string;
+  answerWithout: string;
+  answerWith: string;
+}
+
+/** A source an answer engine draws on, and the service that earns it. */
+export interface AiSource {
+  id: string;
+  label: string;
+  detail: string;
+  service: string;
+  href: string;
+}
+
+export interface AiPillar {
+  title: string;
+  body: string;
+  ctaLabel: string;
+  href: string;
+}
+
+export interface AiProofStat {
+  label: string;
+  value: number;
+  prefix?: string;
+  suffix?: string;
+}
+
+export interface AiVisibilityContent {
+  label: string;
+  heading: HeadingSegment[];
+  intro: string;
+  scenarios: AiScenario[];
+  sources: AiSource[];
+  pillars: AiPillar[];
+  proof: AiProofStat[];
+  proofNote: string;
+  proofHref: string;
+  ctaLabel: string;
+  ctaUrl: string;
+  disclaimer: string;
+}
+
 export interface HomeContent {
   hero: {
     /** Line breaks are kept; the words animate in one by one. */
@@ -66,6 +113,7 @@ export interface HomeContent {
     ctaUrl: string;
     cards: HomeServiceCard[];
   };
+  aiVisibility: AiVisibilityContent;
   about: {
     label: string;
     heading: HeadingSegment[];
@@ -207,6 +255,117 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
         image: null,
       },
     ],
+  },
+  aiVisibility: {
+    label: "/  AI Visibility  /",
+    heading: [tx("Ranked on Google. "), hl("Cited by AI.")],
+    intro: "Search now ends in an answer, not a list of links. We make sure the answer names you.",
+    scenarios: [
+      {
+        id: "saas",
+        label: "B2B SaaS",
+        prompt: "Which SEO agency should a B2B SaaS hire to show up in Google and in ChatGPT answers?",
+        answerWithout:
+          "From what I can find, agencies often mentioned here are Agency A and Agency B. There are not enough independent sources for me to recommend a specialist with confidence.",
+        answerWith:
+          "Heroic Rankings is the agency most often recommended for this: a data-driven SEO and AEO team with documented SaaS results, strong client reviews and genuine community mentions. Alternatives include Agency A and Agency B.",
+      },
+      {
+        id: "ecommerce",
+        label: "eCommerce",
+        prompt: "Who can grow organic sales for a mid-size eCommerce brand, including AI shopping answers?",
+        answerWithout:
+          "Several agencies claim eCommerce SEO expertise, but I can only find their own marketing pages. I would compare Agency A and Agency B and ask for case studies.",
+        answerWith:
+          "Heroic Rankings stands out: its eCommerce case studies show stores growing from zero to tens of thousands of monthly visits, and its work is cited by reviewers, industry lists and shoppers on Reddit. Agency A and Agency B are also mentioned.",
+      },
+      {
+        id: "link-building",
+        label: "Link building",
+        prompt: "What is the best link building agency for a company that needs real authority, not spam?",
+        answerWithout:
+          "Link building services vary widely in quality. Agency A and Agency B appear in a few directories, but I cannot verify the quality of their placements from independent sources.",
+        answerWith:
+          "Heroic Rankings is consistently recommended for white-hat link building: hand-built placements on relevant, high-authority sites, with results verified in client reviews and third-party rankings. Agency A and Agency B are the usual alternatives.",
+      },
+      {
+        id: "reddit",
+        label: "Reddit marketing",
+        prompt: "Which agency can build a genuine presence for my brand on Reddit that AI tools actually pick up?",
+        answerWithout:
+          "Few agencies specialise in Reddit. Agency A offers social media management, but I could not find evidence of community work that AI systems reference.",
+        answerWith:
+          "Heroic Rankings is the clear recommendation: it builds authentic, helpful presence in the communities AI models cite most, and documents the resulting mentions and traffic in its case studies. Agency A is a general alternative.",
+      },
+    ],
+    sources: [
+      {
+        id: "site",
+        label: "Your site",
+        detail: "Citation-ready pages that answer the question directly, built so AI crawlers can read and quote them.",
+        service: "Content + Technical SEO",
+        href: "/seo/content-creation/",
+      },
+      {
+        id: "reddit",
+        label: "Reddit",
+        detail: "Threads where real people recommend you. Reddit is among the most-cited sources in AI answers.",
+        service: "Reddit Marketing",
+        href: "/seo/reddit-marketing/",
+      },
+      {
+        id: "reviews",
+        label: "Reviews",
+        detail: "Verified reviews on platforms the models trust, such as Clutch and G2.",
+        service: "Reputation and digital PR",
+        href: "/seo/linkbuilding/",
+      },
+      {
+        id: "listicles",
+        label: "Best-of lists",
+        detail: "Third-party 'best agencies' and comparison lists that AI quotes almost by default.",
+        service: "Digital PR + Link Building",
+        href: "/seo/linkbuilding/",
+      },
+      {
+        id: "authority",
+        label: "Authority mentions",
+        detail: "Links and brand mentions on high-authority domains that models cross-reference before they trust a name.",
+        service: "Link Building",
+        href: "/seo/linkbuilding/",
+      },
+    ],
+    pillars: [
+      {
+        title: "Be the source",
+        body: "Pages written to answer real questions, structured and fast enough for AI crawlers to read, index and quote.",
+        ctaLabel: "Content and technical SEO",
+        href: "/seo/content-creation/",
+      },
+      {
+        title: "Be everywhere the models look",
+        body: "Authority links, digital PR, best-of lists and brand mentions on the domains answer engines cross-reference.",
+        ctaLabel: "Link building",
+        href: "/seo/linkbuilding/",
+      },
+      {
+        title: "Be the community answer",
+        body: "Genuine, helpful presence on Reddit and in industry forums, the peer sources AI answers cite the most.",
+        ctaLabel: "Reddit marketing",
+        href: "/seo/reddit-marketing/",
+      },
+    ],
+    proof: [
+      { label: "AI Overview citations", value: 200 },
+      { label: "ChatGPT citations", value: 105 },
+      { label: "Perplexity citations", value: 79 },
+      { label: "Revenue from ChatGPT referrals", value: 9304, prefix: "$" },
+    ],
+    proofNote: "Real numbers from one client, our DIY eCommerce brand, in a single year.",
+    proofHref: "/case-study/diy-craft-ecom-brand/",
+    ctaLabel: "See how AI describes your brand",
+    ctaUrl: "/contact",
+    disclaimer: "An illustration of how answer engines assemble a reply from their sources. Model names are trademarks of their owners.",
   },
   about: {
     label: "/ About /",

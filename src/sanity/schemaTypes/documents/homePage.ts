@@ -65,6 +65,7 @@ export const homePage = defineType({
   groups: [
     { name: "hero", title: "1. Hero", default: true },
     { name: "services", title: "2. Services" },
+    { name: "aiVisibility", title: "2b. AI Visibility" },
     { name: "about", title: "3. About" },
     { name: "team", title: "4. Team" },
     { name: "stats", title: "5. Guided by Data" },
@@ -133,6 +134,98 @@ export const homePage = defineType({
           ],
           validation: (rule) => rule.max(8).warning("The rail is designed for up to eight cards."),
         }),
+      ],
+    }),
+
+    defineField({
+      name: "aiVisibility",
+      title: "AI Visibility",
+      type: "object",
+      group: "aiVisibility",
+      description: "The Answer Engine section: a buyer's question, the sources an AI pulls from, and the reply with and without our work.",
+      fields: [
+        labelField("/ AI Visibility /"),
+        headingField(),
+        defineField({ name: "intro", title: "Intro paragraph", type: "text", rows: 3 }),
+        defineField({
+          name: "scenarios",
+          title: "Buyer scenarios",
+          type: "array",
+          description: "The chips above the simulator. Each has the question an AI is asked and its reply without and with our work.",
+          of: [
+            defineArrayMember({
+              type: "object",
+              name: "aiScenario",
+              fields: [
+                defineField({ name: "label", title: "Chip label", type: "string", validation: (r) => r.required().max(24) }),
+                defineField({ name: "prompt", title: "Buyer's question", type: "text", rows: 2, validation: (r) => r.required() }),
+                defineField({ name: "answerWithout", title: "AI reply without our work", type: "text", rows: 3 }),
+                defineField({ name: "answerWith", title: "AI reply with our work", type: "text", rows: 3 }),
+              ],
+              preview: { select: { title: "label", subtitle: "prompt" } },
+            }),
+          ],
+        }),
+        defineField({
+          name: "sources",
+          title: "Sources the AI draws on",
+          type: "array",
+          description: "The five nodes feeding the answer. Each names the service that earns it.",
+          of: [
+            defineArrayMember({
+              type: "object",
+              name: "aiSource",
+              fields: [
+                defineField({ name: "label", title: "Label", type: "string", validation: (r) => r.required().max(24) }),
+                defineField({ name: "detail", title: "What it is", type: "text", rows: 2 }),
+                defineField({ name: "service", title: "Service that earns it", type: "string" }),
+                defineField({ name: "href", title: "Service link", type: "string", description: "e.g. /seo/linkbuilding/" }),
+              ],
+              preview: { select: { title: "label", subtitle: "service" } },
+            }),
+          ],
+        }),
+        defineField({
+          name: "pillars",
+          title: "How we get you cited",
+          type: "array",
+          of: [
+            defineArrayMember({
+              type: "object",
+              name: "aiPillar",
+              fields: [
+                defineField({ name: "title", title: "Title", type: "string", validation: (r) => r.required() }),
+                defineField({ name: "body", title: "Body", type: "text", rows: 3 }),
+                defineField({ name: "ctaLabel", title: "Link label", type: "string" }),
+                defineField({ name: "href", title: "Link", type: "string" }),
+              ],
+              preview: { select: { title: "title", subtitle: "ctaLabel" } },
+            }),
+          ],
+        }),
+        defineField({
+          name: "proof",
+          title: "Proof numbers",
+          type: "array",
+          description: "Count-up tiles. Use real client numbers only.",
+          of: [
+            defineArrayMember({
+              type: "object",
+              name: "aiProofStat",
+              fields: [
+                defineField({ name: "label", title: "Label", type: "string", validation: (r) => r.required() }),
+                defineField({ name: "value", title: "Value", type: "number", validation: (r) => r.required() }),
+                defineField({ name: "prefix", title: "Prefix", type: "string", description: "e.g. $" }),
+                defineField({ name: "suffix", title: "Suffix", type: "string", description: "e.g. +" }),
+              ],
+              preview: { select: { title: "label", subtitle: "value" } },
+            }),
+          ],
+        }),
+        defineField({ name: "proofNote", title: "Proof note", type: "string", description: "Line under the numbers, e.g. where they come from." }),
+        defineField({ name: "proofHref", title: "Proof link", type: "string", description: "e.g. /case-study/diy-craft-ecom-brand/" }),
+        ...ctaFields("See how AI describes your brand", "/contact"),
+        defineField({ name: "disclaimer", title: "Disclaimer", type: "string" }),
       ],
     }),
 
