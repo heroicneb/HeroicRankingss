@@ -177,9 +177,9 @@ export interface HomeContent {
 }
 
 export const HOME_DEFAULT_SEO = {
-  title: "Data-Driven SEO Agency for Organic Growth",
+  title: "SEO, GEO & Link Building Agency | Heroic Rankings",
   description:
-    "Explore Heroic Rankings’ SEO services, proven case studies, certifications, and partnerships built for long-term organic growth.",
+    "Get found on Google and in AI answers. We help brands grow with SEO, link building and GEO across 30+ languages.",
 };
 
 const quote = (lead: string, accent: string, tail: string): HomeQuote => ({ lead, accent, tail });

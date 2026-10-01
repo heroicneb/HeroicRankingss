@@ -198,7 +198,7 @@ export const DEFAULT_REDDIT_MARKETING_CONTENT: RedditMarketingContent = {
 };
 
 export const REDDIT_MARKETING_DEFAULT_SEO = {
-  title: "Reddit Marketing Services",
+  title: "Reddit Marketing Services | Heroic Rankings",
   description:
-    "Show up in the Reddit threads that rank in Google, get cited by AI, and shape buyer decisions — authentic mentions, comments, posts, and reputation management run by specialists.",
+    "Reach buyers in the Reddit conversations that matter. Build trust, search visibility and AI mentions through useful, community-aware participation.",
 };

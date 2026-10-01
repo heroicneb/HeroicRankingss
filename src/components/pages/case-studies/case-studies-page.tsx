@@ -11,9 +11,9 @@ import { SubscribeBar } from "@/components/ui/subscribe-bar";
 import { CASE_STUDY_PANEL_BY_SLUG } from "./parts/case-study-panels";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Case Studies",
+  title: "SEO & Link Building Case Studies | Heroic Rankings",
   description:
-    "Review Heroic Rankings case studies to see how data-driven SEO strategy translated into measurable traffic and revenue growth.",
+    "See how Heroic Rankings helps SaaS, B2B and eCommerce brands grow. Explore case studies covering organic traffic, backlinks, AI visibility and revenue.",
   path: "/case-study",
 });
 

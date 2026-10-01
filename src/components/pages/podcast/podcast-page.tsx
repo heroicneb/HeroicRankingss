@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 
 import { AskPodcastAIButton } from "@/components/chat/AskPodcastAIButton";
@@ -7,7 +6,6 @@ import { GradientText } from "@/components/ui/gradient-text";
 import { PageLinks } from "@/components/ui/page-links";
 import { SectionLabel } from "@/components/ui/section-label";
 import { cn } from "@/lib/cn";
-import { createPageMetadata } from "@/lib/metadata";
 import type { SanityPodcastEpisodeSummary } from "@/lib/sanity-data";
 
 import {
@@ -33,12 +31,17 @@ import {
  * and 3 (their arrows lead to the YouTube channel).
  */
 
-export const metadata: Metadata = createPageMetadata({
-  title: "Podcast — SEO Conversations That Actually Rank",
-  description:
-    "Deep-dive conversations with practitioners, founders, and marketers who've done the work. Every episode breaks down what actually moves the needle in SEO.",
-  path: "/podcast",
-});
+/** Hub metadata; pages 2–5 of the archive carry their own copy (metadata review sheet, 1 Oct 2026). */
+export const PODCAST_SEO = {
+  title: "Ranking Heroes SEO Podcast | Heroic Rankings",
+  description: "Join Nebojsa Jankovic and industry guests for conversations on SEO, AI search and business growth. Watch Ranking Heroes episodes and explore key insights.",
+};
+export const PODCAST_PAGE_SEO: Record<number, { title: string; description: string }> = {
+  2: { title: "Ranking Heroes Podcast Episodes | Page 2", description: "Browse page 2 of the Ranking Heroes podcast archive for more conversations with SEO practitioners, founders and marketers. Choose an episode to watch." },
+  3: { title: "Ranking Heroes Podcast Episodes | Page 3", description: "Explore page 3 of the Ranking Heroes podcast archive. Find discussions on search, marketing and business growth, with episode insights and transcripts." },
+  4: { title: "Ranking Heroes Podcast Episodes | Page 4", description: "Browse page 4 of the Ranking Heroes podcast archive for practical SEO and marketing conversations. Watch episodes and explore their key takeaways." },
+  5: { title: "Ranking Heroes Podcast Episodes | Page 5", description: "Visit page 5 of the Ranking Heroes podcast archive to explore earlier episodes, guest conversations and practical lessons from working SEO professionals." },
+};
 
 // ---------------------------------------------------------------------------
 // Static design content

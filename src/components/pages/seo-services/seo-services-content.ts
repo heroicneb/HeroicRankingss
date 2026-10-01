@@ -9,8 +9,8 @@ export const SEO_SERVICES_PAGE: SeoServicePageDefinition = {
   path: "/seo",
   faqService: "seo-services",
   seo: {
-    title: "SEO Services",
-    description: "Boost visibility, drive engagement, and grow revenue with Heroic Rankings AEO and SEO services.",
+    title: "SEO, GEO & AEO Services | Heroic Rankings",
+    description: "Rank on Google. Get cited in AI answers. Our SEO, GEO and AEO services help your brand attract qualified traffic and turn search visibility into revenue.",
   },
   content: {
     hero: {

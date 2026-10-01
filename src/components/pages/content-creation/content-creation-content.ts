@@ -9,8 +9,8 @@ export const CONTENT_CREATION_PAGE: SeoServicePageDefinition = {
   path: "/seo/content-creation",
   faqService: "content-creation",
   seo: {
-    title: "Content Creation Services",
-    description: "Craft strategy-led content that attracts qualified traffic, strengthens authority, and turns engagement into conversions.",
+    title: "SEO Content Creation Services | Heroic Rankings",
+    description: "Turn search demand into content that earns attention and trust. Get SEO articles, listicles and linkable assets built around your audience and goals.",
   },
   content: {
     hero: {

@@ -326,7 +326,7 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
 };
 
 export const PARTNERSHIP_DEFAULT_SEO = {
-  title: "White Label SEO Partnership",
+  title: "White Label SEO & Link Building | Heroic Rankings",
   description:
-    "Build scalable agency growth with Heroic Rankings' white label SEO partnership model, from execution and reporting to long-term client retention.",
+    "Scale your agency with white label SEO and link building. We handle strategy, delivery and reporting while you own the client relationship.",
 };

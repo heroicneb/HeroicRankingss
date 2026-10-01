@@ -51,19 +51,20 @@ export async function generateMetadata({
 
   const cleanRole = member.role.replace(/^\/\s*|\s*\/$/g, "").trim();
   const titleSuffix = cleanRole ? `, ${cleanRole}` : "";
-  const title = `${member.name}${titleSuffix}`;
+  const title = member.seoTitle?.trim() || `${member.name}${titleSuffix}`;
   // WHY: the bio often opens with a question or a long personal paragraph; the meta description
   // needs a factual lead ("Name is Role at Heroic Rankings.") followed by the first prose sentence.
   const bioLead = [firstParagraph(member.bio), firstParagraph(member.bioParagraphs?.[0] ?? null)]
     .filter((p): p is string => Boolean(p && !p.trim().endsWith("?")))
     .map((p) => p.split(/(?<=[.!])\s+/)[0] ?? "")
     .find((s) => s.length > 20);
-  const description = [`${member.name} is ${cleanRole || "part of the team"} at Heroic Rankings.`, bioLead]
-    .filter(Boolean)
-    .join(" ");
+  const description =
+    member.seoDescription?.trim() ||
+    [`${member.name} is ${cleanRole || "part of the team"} at Heroic Rankings.`, bioLead].filter(Boolean).join(" ");
 
   const base = createPageMetadata({
     title,
+    exactTitle: Boolean(member.seoTitle?.trim()),
     description,
     path: `/about/${slug}`,
     ogType: "article",

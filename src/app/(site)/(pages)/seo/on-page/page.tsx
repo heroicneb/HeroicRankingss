@@ -11,6 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getSeoServicePage(PAGE.key).catch(() => null);
   return createPageMetadata({
     title: page?.seo?.metaTitle?.trim() || PAGE.seo.title,
+    exactTitle: Boolean(page?.seo?.metaTitle?.trim()),
     description: page?.seo?.metaDescription?.trim() || PAGE.seo.description,
     path: PAGE.path,
   });

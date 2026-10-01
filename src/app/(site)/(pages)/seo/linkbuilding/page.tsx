@@ -12,6 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getLinkBuildingPage().catch(() => null);
   return createPageMetadata({
     title: page?.seo?.metaTitle?.trim() || LINK_BUILDING_DEFAULT_SEO.title,
+    exactTitle: Boolean(page?.seo?.metaTitle?.trim()),
     description: page?.seo?.metaDescription?.trim() || LINK_BUILDING_DEFAULT_SEO.description,
     path: "/seo/linkbuilding",
   });

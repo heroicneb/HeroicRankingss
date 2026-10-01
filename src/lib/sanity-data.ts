@@ -151,6 +151,7 @@ interface SanityRawTeamMember {
   name: string;
   slug?: { current: string } | null;
   role: string;
+  seo?: SanitySeo | null;
   department?: string | null;
   photo?: SanityImageRef | null;
   cardImage?: SanityImageRef | null;
@@ -770,6 +771,9 @@ export interface SanityTeamMember {
   }>;
   contact: { email: string | null; phone: string | null } | null;
   socialLinks: Array<{ platform: string; url: string }>;
+  /** Meta title/description from the Studio; the route falls back to name + role. */
+  seoTitle: string | null;
+  seoDescription: string | null;
 }
 
 /** Detail view for /about/[slug] — adds createdAt/updatedAt for ProfilePage schema. */
@@ -819,6 +823,8 @@ function mapTeamMember(m: SanityRawTeamMember): SanityTeamMember {
       platform: sl.platform,
       url: sl.url,
     })),
+    seoTitle: m.seo?.metaTitle ?? null,
+    seoDescription: m.seo?.metaDescription ?? null,
   };
 }
 

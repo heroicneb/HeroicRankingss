@@ -9,8 +9,8 @@ export const KEYWORD_STRATEGY_PAGE: SeoServicePageDefinition = {
   path: "/seo/keyword-research",
   faqService: "keyword-strategy",
   seo: {
-    title: "Keyword Strategy Services",
-    description: "Reveal keyword opportunities you are missing and turn search demand into qualified traffic and revenue.",
+    title: "Keyword Research & Strategy Services | Heroic Rankings",
+    description: "Find the keywords worth competing for. Get search intent analysis, competitor gaps and traffic projections to guide your content and SEO investment.",
   },
   content: {
     hero: {

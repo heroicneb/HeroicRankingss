@@ -14,9 +14,9 @@ import type {
 } from "@/lib/sanity-data";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "About Us",
+  title: "About Heroic Rankings | Meet Your SEO & Link Building Team",
   description:
-    "Meet the ranking heroes behind Heroic Rankings and explore the team, process, and results-driven SEO philosophy.",
+    "Meet the people behind Heroic Rankings. Our team combines SEO, link building and content expertise to grow your rankings, authority and revenue.",
   path: "/about",
 });
 
