@@ -38,6 +38,7 @@ export async function generateMetadata({
 
   return createPageMetadata({
     title: episode.seo?.metaTitle?.trim() || titleFallback,
+    exactTitle: Boolean(episode.seo?.metaTitle?.trim()),
     description:
       episode.seo?.metaDescription?.trim() ||
       episode.description ||

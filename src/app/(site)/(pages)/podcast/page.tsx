@@ -26,12 +26,12 @@ const pageNumber = (value: string | string[] | undefined) => {
 
 export async function generateMetadata({ searchParams }: PodcastRouteProps): Promise<Metadata> {
   const page = pageNumber((await searchParams).page);
-  if (!page) return createPageMetadata({ ...PODCAST_SEO, path: "/podcast" });
+  if (!page) return createPageMetadata({ ...PODCAST_SEO, path: "/podcast", exactTitle: true });
   const copy = PODCAST_PAGE_SEO[page] ?? {
     title: `Ranking Heroes Podcast Episodes | Page ${page}`,
     description: `Browse page ${page} of the Ranking Heroes podcast archive for more conversations with SEO practitioners, founders and marketers.`,
   };
-  return createPageMetadata({ ...copy, path: `/podcast/?page=${page}` });
+  return createPageMetadata({ ...copy, path: `/podcast/?page=${page}`, exactTitle: true });
 }
 
 export default async function PodcastRoute({ searchParams }: PodcastRouteProps) {

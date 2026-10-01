@@ -12,6 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getPartnershipPage().catch(() => null);
   return createPageMetadata({
     title: page?.seo?.metaTitle?.trim() || PARTNERSHIP_DEFAULT_SEO.title,
+    exactTitle: Boolean(page?.seo?.metaTitle?.trim()),
     description: page?.seo?.metaDescription?.trim() || PARTNERSHIP_DEFAULT_SEO.description,
     path: "/partnership",
   });

@@ -27,6 +27,7 @@ export async function generateMetadata({
 
   return createPageMetadata({
     title: post.seoTitle?.trim() || post.title,
+    exactTitle: Boolean(post.seoTitle?.trim()),
     description:
       post.seoDescription?.trim() ||
       post.excerpt ||

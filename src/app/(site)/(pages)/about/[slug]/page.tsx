@@ -64,6 +64,7 @@ export async function generateMetadata({
 
   const base = createPageMetadata({
     title,
+    exactTitle: Boolean(member.seoTitle?.trim()),
     description,
     path: `/about/${slug}`,
     ogType: "article",

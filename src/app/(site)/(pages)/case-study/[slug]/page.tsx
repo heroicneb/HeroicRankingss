@@ -28,6 +28,7 @@ export async function generateMetadata({
 
   return createPageMetadata({
     title: caseStudy.seo?.metaTitle?.trim() || `${caseStudy.title} Case Study`,
+    exactTitle: Boolean(caseStudy.seo?.metaTitle?.trim()),
     description:
       caseStudy.seo?.metaDescription?.trim() ||
       caseStudy.excerpt ||

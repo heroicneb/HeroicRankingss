@@ -27,6 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getHomePage().catch(() => null);
   return createPageMetadata({
     title: page?.seo?.metaTitle?.trim() || HOME_DEFAULT_SEO.title,
+    exactTitle: Boolean(page?.seo?.metaTitle?.trim()),
     description: page?.seo?.metaDescription?.trim() || HOME_DEFAULT_SEO.description,
     path: "/",
   });

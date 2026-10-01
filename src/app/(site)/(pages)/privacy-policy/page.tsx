@@ -8,6 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getLegalPageBySlug("privacy-policy").catch(() => null);
   return createPageMetadata({
     title: page?.seoTitle?.trim() || PRIVACY_DEFAULT_SEO.title,
+    exactTitle: Boolean(page?.seoTitle?.trim()),
     description: page?.seoDescription?.trim() || PRIVACY_DEFAULT_SEO.description,
     path: "/privacy-policy",
   });

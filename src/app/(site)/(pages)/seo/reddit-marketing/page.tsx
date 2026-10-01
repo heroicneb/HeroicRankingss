@@ -12,6 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getRedditMarketingPage().catch(() => null);
   return createPageMetadata({
     title: page?.seo?.metaTitle?.trim() || REDDIT_MARKETING_DEFAULT_SEO.title,
+    exactTitle: Boolean(page?.seo?.metaTitle?.trim()),
     description: page?.seo?.metaDescription?.trim() || REDDIT_MARKETING_DEFAULT_SEO.description,
     path: "/seo/reddit-marketing",
   });

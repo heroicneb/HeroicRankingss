@@ -7,6 +7,11 @@ interface PageMetadataOptions {
   description: string;
   path: string;
   ogType?: "website" | "article";
+  /**
+   * Use the title exactly as given (no " | Heroic Rankings" added). Set when
+   * the title was written in the Studio or reviewed in the metadata sheet.
+   */
+  exactTitle?: boolean;
 }
 
 const DEFAULT_OG_IMAGE = "/opengraph-image";
@@ -29,18 +34,19 @@ export function clampDescription(text: string, max = MAX_DESCRIPTION): string {
  * WHY: a suffix pushes many post titles past what Google displays, and some callers
  * already include it — so strip a duplicate and drop the suffix when it would not fit.
  */
-function resolveTitle(title: string): Metadata["title"] {
+function resolveTitle(title: string, exact: boolean): Metadata["title"] {
+  if (exact) return { absolute: title.trim() };
   const base = title.replace(new RegExp(`(\\s*\\|\\s*${SITE_NAME})+$`), "").trim();
   return base.length + TITLE_SUFFIX.length <= MAX_TITLE_WITH_SUFFIX ? base : { absolute: base };
 }
 
-export function createPageMetadata({ title: rawTitle, description: rawDescription, path, ogType = "website" }: PageMetadataOptions): Metadata {
+export function createPageMetadata({ title: rawTitle, description: rawDescription, path, ogType = "website", exactTitle = false }: PageMetadataOptions): Metadata {
   const canonicalPath = normalizePath(path);
   const title = rawTitle.replace(new RegExp(`(\\s*\\|\\s*${SITE_NAME})+$`), "").trim();
   const description = clampDescription(rawDescription);
 
   return {
-    title: resolveTitle(rawTitle),
+    title: resolveTitle(rawTitle, exactTitle),
     description,
     alternates: {
       canonical: canonicalPath,

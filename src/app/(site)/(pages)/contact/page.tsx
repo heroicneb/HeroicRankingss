@@ -8,6 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getContactPage().catch(() => null);
   return createPageMetadata({
     title: page?.seoTitle?.trim() || CONTACT_DEFAULT_SEO.title,
+    exactTitle: Boolean(page?.seoTitle?.trim()),
     description: page?.seoDescription?.trim() || CONTACT_DEFAULT_SEO.description,
     path: "/contact",
   });
