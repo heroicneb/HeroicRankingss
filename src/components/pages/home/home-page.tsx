@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { ScrollReveal } from "@/components/motion/scroll-reveal";
 import { About } from "@/components/sections/about";
 import { Blog } from "@/components/sections/blog";
+import { FeaturedPodcasts } from "@/components/sections/featured-podcasts";
+import { PodcastChatProvider } from "@/components/chat/PodcastChatProvider";
 import { CaseStudies } from "@/components/sections/case-studies";
 import { FeaturedLogos } from "@/components/sections/featured-logos";
 import { Hero } from "@/components/sections/hero";
@@ -15,6 +17,7 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { TrustAuthority } from "@/components/sections/trust-authority";
 import {
   getFeaturedCaseStudies,
+  getPodcastEpisodes,
   getHomePage,
   getPartnerLogos,
   getPosts,
@@ -34,13 +37,14 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function HomePage() {
-  const [page, partnerLogos, cmsPosts, cmsTestimonials, featuredCaseStudies] = await Promise.all([
+  const [page, partnerLogos, cmsPosts, cmsTestimonials, featuredCaseStudies, episodes] = await Promise.all([
     // WHY: the built-in copy is the safety net if the CMS document is missing or unreachable.
     getHomePage().catch(() => null),
     getPartnerLogos().catch(() => []),
     getPosts().catch(() => []),
     getTestimonials().catch(() => []),
     getFeaturedCaseStudies().catch(() => []),
+    getPodcastEpisodes().catch(() => []),
   ]);
   const content = page?.content ?? DEFAULT_HOME_CONTENT;
 
@@ -63,6 +67,9 @@ export default async function HomePage() {
       <TrustAuthority content={content.trust} />
       <Partnerships content={content.partnerships} />
       <Blog cmsPosts={cmsPosts} content={content.blog} />
+      <FeaturedPodcasts content={content.featuredPodcasts} episodes={episodes} />
+      {/* WHY: the cards' Ask AI buttons open the podcast chat scoped to their episode; no floating launcher on the homepage. */}
+      <PodcastChatProvider hideLauncher mode="global" routeKey="home:podcast" />
     </>
   );
 }

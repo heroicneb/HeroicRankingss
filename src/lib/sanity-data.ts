@@ -1646,6 +1646,7 @@ interface SanityRawHomeCta {
 /** Raw home page from HOME_PAGE_QUERY */
 interface SanityRawHomePage {
   _id: string;
+  featuredPodcasts?: ({ label?: string | null; heading?: PortableTextBlock[] | null } & SanityRawHomeCta) | null;
   aiVisibility?:
     | ({
         label?: string | null;
@@ -1870,6 +1871,11 @@ export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
       label: text(raw.blog?.label, d.blog.label),
       heading: headingSegments(raw.blog?.heading, d.blog.heading),
       ...cta(raw.blog, d.blog),
+    },
+    featuredPodcasts: {
+      label: text(raw.featuredPodcasts?.label, d.featuredPodcasts.label),
+      heading: headingSegments(raw.featuredPodcasts?.heading, d.featuredPodcasts.heading),
+      ...cta(raw.featuredPodcasts, d.featuredPodcasts),
     },
     testimonials: {
       label: text(raw.testimonials?.label, d.testimonials.label),

@@ -15,6 +15,8 @@ interface PodcastChatProviderProps {
   episodeTitle?: string;
   guestName?: string;
   globalSuggestions?: string[];
+  /** Hide the floating launcher; the drawer then opens only from "Ask AI" buttons on the page. */
+  hideLauncher?: boolean;
 }
 
 const OPEN_EVENT = "podcast-chat:open";
@@ -44,6 +46,7 @@ export function PodcastChatProvider({
   episodeTitle,
   guestName,
   globalSuggestions,
+  hideLauncher = false,
 }: PodcastChatProviderProps) {
   // Gate the widget mount only on the public-safe flag. The Gemini key
   // lives exclusively on the server (/api/chat), so the browser never sees it.
@@ -76,13 +79,15 @@ export function PodcastChatProvider({
 
   return createPortal(
     <>
-      <PodcastChatLauncher
-        onClick={() => {
-          setScoped(null);
-          setOpen((prev) => !prev);
-        }}
-        active={open}
-      />
+      {hideLauncher ? null : (
+        <PodcastChatLauncher
+          onClick={() => {
+            setScoped(null);
+            setOpen((prev) => !prev);
+          }}
+          active={open}
+        />
+      )}
       <PodcastChatDrawer onClose={close} open={open}>
         {scoped ? (
           <PodcastChatPanel
