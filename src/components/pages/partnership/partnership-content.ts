@@ -176,8 +176,8 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
           "Grow your agency with white-label SEO and link building built for scale. To keep everything running smoothly, you get access to our custom white-label platform - a centralized hub where you can track finances, monitor deliverables and work progress, and order from a full service library, all in one place.",
         ],
         icon: icon("icon-group176774.svg", 31, 32),
-        ctaLabel: "Let's Grow Together",
-        ctaUrl: "/contact",
+        ctaLabel: null,
+        ctaUrl: null,
       },
       {
         title: "What makes us the best white label SEO agency?",
