@@ -80,7 +80,7 @@ export const locations = {
   partnerLogo: defineLocations({
     select: { title: "name" },
     resolve: () => ({
-      locations: [{ title: "Partnership", href: "/partnership" }],
+      locations: [{ title: "Partnership", href: "/white-label-seo-partnership" }],
     }),
   }),
   siteSettings: defineLocations({
@@ -95,7 +95,7 @@ export const locations = {
   partnershipPage: defineLocations({
     select: { title: "title" },
     resolve: () => ({
-      locations: [{ title: "Partnership", href: "/partnership" }],
+      locations: [{ title: "Partnership", href: "/white-label-seo-partnership" }],
     }),
   }),
   contactPage: defineLocations({

@@ -52,7 +52,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/seo/e-commerce",
     "/seo/linkbuilding",
     "/seo/reddit-marketing",
-    "/partnership",
+    "/white-label-seo-partnership",
     "/blog",
     "/case-study",
     "/contact",

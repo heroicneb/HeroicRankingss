@@ -847,6 +847,16 @@ textarea {
   );
 }
 
+/* Screen-blended hero: the still and the clip both screen over the gradient, so the
+   still fades away while the clip is showing or it would ghost behind the motion. */
+.hero-blend-poster {
+  transition: opacity 700ms ease-out;
+}
+
+.hero-blend-frame:has([data-video-active="true"]) .hero-blend-poster {
+  opacity: 0;
+}
+
 .team-popup-dialog::backdrop {
   background: var(--color-overlay-scrim);
 }

@@ -82,7 +82,7 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
     heading: [hl("White Label SEO Partnership"), { text: " Strategies That Grow Your MRR" }],
     intro:
       "Protect your client relationships and grow your agency's recurring revenue with white-label SEO and link building built for scale. We handle the execution, reporting, and strategy - you stay the hero, your clients see real results, and everyone grows together",
-    image: { src: "/partnership/hero-statue.webp", alt: "Classical statue", width: 3072, height: 4096 },
+    image: { src: "/partnership/hero-statue-money-v1-poster.webp", alt: "Marble statue tossing banknotes into the air", width: 1424, height: 640 },
   },
 
   recognize: {

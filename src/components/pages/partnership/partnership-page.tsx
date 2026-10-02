@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { RichParagraphs } from "@/components/sanity/rich-paragraphs";
+import { HeroVideoOverlay } from "@/components/sections/hero-video-overlay";
 import { ServiceFaq } from "@/components/sections/shared/service-faq";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientHeading } from "@/components/ui/gradient-heading";
@@ -20,6 +21,9 @@ import type { ContentImage, PartnershipContent } from "./partnership-content";
  */
 
 const TEXT = "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]";
+/** Silent 6s clip of the statue tossing bills; file names carry a version because caches key by URL. */
+const PARTNERSHIP_HERO_CLIP_SRC = "/partnership/hero-statue-money-v1.mp4";
+
 const LOGO_GRID_CELLS = 16;
 
 function IconTile({ icon }: { icon: ContentImage | null }) {
@@ -64,22 +68,22 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
             {hero.intro}
           </p>
 
-          <div className="relative mx-auto mt-[60px] h-[360px] w-full max-w-[350px] lg:mt-[128px] lg:h-[635px] lg:max-w-none">
-            <div className="partnership-hero-panel-gradient absolute bottom-0 left-0 h-[255px] w-full rounded-[30px] lg:h-[480px] lg:rounded-[40px]" />
-
+          {/* WHY: the statue clip has a black backdrop, so image and video screen-blend over the brand gradient; the still is
+              the clip's first frame and all that phones and reduced-motion visitors get, while desktop plays the clip once. */}
+          <div className="partnership-hero-panel-gradient hero-blend-frame relative mx-auto mt-[60px] h-[260px] w-full max-w-[350px] overflow-hidden rounded-[30px] sm:h-[320px] sm:max-w-none lg:mt-[128px] lg:h-[635px] lg:rounded-[40px]">
             {hero.image ? (
-              <div className="absolute bottom-0 left-0 h-[360px] w-full overflow-hidden rounded-[30px] lg:h-[635px] lg:rounded-br-[40px] lg:rounded-tl-none lg:rounded-tr-none">
+              <>
                 <Image
                   alt={hero.image.alt}
-                  className="pointer-events-none absolute left-[-10%] top-0 h-full w-[120%] max-w-none object-cover object-top lg:left-[9.28%] lg:top-[-12.4%] lg:h-[241.86%] lg:w-[81.12%]"
+                  className="hero-blend-poster pointer-events-none object-cover mix-blend-screen"
                   fetchPriority="high"
-                  height={hero.image.height}
+                  fill
                   priority
-                  sizes="(min-width: 1440px) 1152px, 350px"
+                  sizes="(min-width: 1440px) 1400px, 100vw"
                   src={hero.image.src}
-                  width={hero.image.width}
                 />
-              </div>
+                <HeroVideoOverlay autoPlayOnce src={PARTNERSHIP_HERO_CLIP_SRC} videoClassName="mix-blend-screen" />
+              </>
             ) : null}
           </div>
         </div>

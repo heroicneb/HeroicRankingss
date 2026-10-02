@@ -25,7 +25,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: "Link Building", href: "/seo/linkbuilding" },
-  { label: "Partnership", href: "/partnership" },
+  { label: "Partnership", href: "/white-label-seo-partnership" },
   { label: "Insights", href: "/blog" },
   { label: "Case Studies", href: "/case-study" },
   { label: "Podcast", href: "/podcast" },

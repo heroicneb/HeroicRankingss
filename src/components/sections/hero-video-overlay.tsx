@@ -9,6 +9,12 @@ interface HeroVideoOverlayProps {
   src: string;
   /** Extra classes for the <video> element (positioning/cropping should match the image). */
   videoClassName?: string;
+  /**
+   * Play the clip once as soon as the hero is on screen (desktop, motion allowed)
+   * and hold its last frame; hovering replays it. Without this the clip only
+   * plays while hovered.
+   */
+  autoPlayOnce?: boolean;
 }
 
 const FADE_MS = 700;
@@ -21,15 +27,10 @@ function canHover() {
   );
 }
 
-/**
- * Hover-activated video layer for the homepage hero — desktop only.
- *
- * WHY: the clip is a one-shot "awakening" (cracks light up, eyes glow), not a
- * seamless loop, so it plays once and holds its final frame instead of looping.
- * The static poster stays as the LCP asset and is all that phones, tablets and
- * reduced-motion visitors get (Nebojsa's call: no video motion on phones).
- */
-export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps) {
+/** Desktop viewport with motion allowed: the only place a clip may start by itself. */
+const AUTOPLAY_MEDIA = "(min-width: 1024px) and (prefers-reduced-motion: no-preference)";
+
+export function HeroVideoOverlay({ src, videoClassName, autoPlayOnce = false }: HeroVideoOverlayProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const pauseTimer = useRef<number | null>(null);
   const [active, setActive] = useState(false);
@@ -39,6 +40,39 @@ export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps)
       if (pauseTimer.current !== null) window.clearTimeout(pauseTimer.current);
     };
   }, []);
+
+  useEffect(() => {
+    if (!autoPlayOnce) return;
+    const video = videoRef.current;
+    if (!video) return;
+    const media = window.matchMedia(AUTOPLAY_MEDIA);
+    let observer: IntersectionObserver | null = null;
+    let played = false;
+    // WHY: the clip starts the first time the hero is actually on screen on a desktop
+    // viewport, not on page load in the background; the media listener covers a window
+    // that only grows past the lg breakpoint after mount.
+    const arm = () => {
+      if (played || observer || !media.matches) return;
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry?.isIntersecting) return;
+          played = true;
+          observer?.disconnect();
+          observer = null;
+          setActive(true);
+          void video.play().catch(() => setActive(false));
+        },
+        { threshold: 0.4 },
+      );
+      observer.observe(video);
+    };
+    arm();
+    media.addEventListener("change", arm);
+    return () => {
+      media.removeEventListener("change", arm);
+      observer?.disconnect();
+    };
+  }, [autoPlayOnce]);
 
   const handleEnter = () => {
     if (!canHover()) return;
@@ -56,6 +90,8 @@ export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps)
   };
 
   const handleLeave = () => {
+    // WHY: in autoplay mode the clip holds its last frame; leaving should not snap it back to the poster.
+    if (autoPlayOnce) return;
     const video = videoRef.current;
     setActive(false);
     if (!video) return;
@@ -72,6 +108,8 @@ export function HeroVideoOverlay({ src, videoClassName }: HeroVideoOverlayProps)
     <div
       aria-hidden
       className="absolute inset-0 hidden lg:block"
+      // WHY: lets a blended poster underneath fade out while the clip shows (see .hero-blend-frame).
+      data-video-active={active ? "true" : "false"}
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
     >

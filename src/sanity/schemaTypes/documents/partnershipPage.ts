@@ -2,7 +2,7 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 
 /*
  * Partnership page — fixed sections, one field group per section, in the
- * order they appear on /partnership. Layout, colours and icons' sizes are
+ * order they appear on /white-label-seo-partnership. Layout, colours and icons' sizes are
  * owned by the code; editors own every word, image and link.
  */
 

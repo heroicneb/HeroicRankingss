@@ -36,7 +36,7 @@ export const partnerLogo = defineType({
       title: "Partner (partnership page)",
       type: "boolean",
       description:
-        "Show on the /partnership page partner grid. Used for agency-partnership relationships.",
+        "Show on the /white-label-seo-partnership page partner grid. Used for agency-partnership relationships.",
       initialValue: false,
     }),
     defineField({
