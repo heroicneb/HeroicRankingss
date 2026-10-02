@@ -13,6 +13,9 @@ import {
 import { SectionLabel } from "@/components/ui/section-label";
 import { PAGE_SHELL_CLASS } from "@/data/service-shared";
 
+import { LogoField } from "@/components/sections/trusted-by/LogoField";
+import type { ClientLogo } from "@/components/sections/trusted-by/trusted-by-data";
+
 import { PortalShowcase } from "./parts/PortalShowcase";
 
 import type { ContentImage, PartnershipContent } from "./partnership-content";
@@ -26,7 +29,6 @@ const TEXT = "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]"
 /** Silent 6s clip of the statue tossing bills; file names carry a version because caches key by URL. */
 const PARTNERSHIP_HERO_CLIP_SRC = "/partnership/hero-statue-money-v1.mp4";
 
-const LOGO_GRID_CELLS = 16;
 
 function IconTile({ icon }: { icon: ContentImage | null }) {
   if (!icon) return null;
@@ -52,10 +54,20 @@ interface PartnershipPageProps {
 
 export default function PartnershipPage({ content }: PartnershipPageProps) {
   const { hero, recognize, portal, amplify, scale, darkCta, differentiators, nextSteps, faq } = content;
-  const logoCells = [
-    ...scale.logos,
-    ...Array.from({ length: Math.max(0, LOGO_GRID_CELLS - scale.logos.length) }, () => null),
-  ];
+  // WHY: the partner marks are black-on-transparent for the light grid; the field flattens them to white and
+  //      sizes emblems taller than wordmarks. Colour logos (keepColor) keep their colours.
+  const partnerLogos: ClientLogo[] = scale.logos.map(({ image, keepColor }) => {
+    const ratio = image.width / Math.max(1, image.height);
+    return {
+      name: image.alt || "Partner logo",
+      src: image.src,
+      width: image.width,
+      height: image.height,
+      logoHeight: ratio < 1.6 ? 36 : ratio > 4.5 ? 22 : 26,
+      invert: !keepColor,
+      blend: keepColor,
+    };
+  });
   const faqItems = faq.items.map((item, index) => ({ ...item, defaultOpen: index === 0 }));
 
   return (
@@ -214,28 +226,9 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
                 </div>
               </div>
 
-              {/* WHY: CMS logos have arbitrary natural sizes, so the grid needs its own width instead of sizing from its content. */}
-              <div className="grid w-full grid-cols-2 gap-5 sm:grid-cols-4 xl:w-[628px] xl:justify-self-end">
-                {logoCells.map((cell, index) => (
-                  <div
-                    className="flex h-[100px] w-full items-center justify-center rounded-[20px] bg-[var(--color-hr-off-white)] dark:border dark:border-[var(--color-border-inverse-15)] dark:bg-[var(--color-surface-inverse-95)]"
-                    key={cell ? `${cell.image.src}-${index}` : `empty-${index}`}
-                  >
-                    {cell ? (
-                      <Image
-                        alt={cell.image.alt}
-                        // WHY: the cells stay light in dark mode (95% white surface), so the logo must stay black there too;
-                        // inverting it to white made every logo vanish in dark mode.
-                        // WHY: cells are 142×100; capping logos at 106×44 leaves ~18px of air on every side so wordmarks never touch the border.
-                        className={`h-auto max-h-[44px] w-auto max-w-[106px] object-contain ${cell.keepColor ? "" : "[filter:brightness(0)]"}`}
-                        height={cell.image.height}
-                        sizes="142px"
-                        src={cell.image.src}
-                        width={cell.image.width}
-                      />
-                    ) : null}
-                  </div>
-                ))}
+              {/* WHY: the same floating logo field as the homepage, in a square panel so it reads as a tile beside the copy. */}
+              <div className="w-full xl:w-[628px] xl:justify-self-end">
+                <LogoField aspect="square" logos={partnerLogos} />
               </div>
             </div>
           </div>

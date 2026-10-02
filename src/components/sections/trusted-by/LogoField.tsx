@@ -14,6 +14,8 @@ import type { ClientLogo } from "./trusted-by-data";
  */
 export interface LogoFieldProps {
   logos: ClientLogo[];
+  /** "wide" is the homepage's 480px panel; "square" fills a 1:1 panel (partnership page). */
+  aspect?: "wide" | "square";
 }
 
 /** The simulation only runs where it was approved: desktop pointers, motion allowed. */
@@ -79,7 +81,7 @@ function layoutHomes(bodies: Body[], width: number, height: number) {
   });
 }
 
-export function LogoField({ logos }: LogoFieldProps) {
+export function LogoField({ logos, aspect = "wide" }: LogoFieldProps) {
   const fieldRef = useRef<HTMLUListElement>(null);
   const glowRef = useRef<HTMLDivElement>(null);
 
@@ -347,13 +349,13 @@ export function LogoField({ logos }: LogoFieldProps) {
   return (
     <div className="surface-chart relative overflow-hidden rounded-[30px] border border-[var(--color-border-inverse-10)] lg:rounded-[var(--radius-card)]">
       <div aria-hidden className="logo-field-glow" ref={glowRef} />
-      <ul aria-label="Brands we have worked with" className="logo-field" ref={fieldRef}>
+      <ul aria-label="Brands we have worked with" className={aspect === "square" ? "logo-field logo-field-square" : "logo-field"} ref={fieldRef}>
         {logos.map((item, index) => (
           <li className="logo-field-pill" key={item.src} style={{ "--i": index } as React.CSSProperties}>
             <span className="logo-field-pill-inner">
               <Image
                 alt={item.name}
-                className="logo-field-logo"
+                className={["logo-field-logo", item.invert ? "logo-field-logo-invert" : "", item.blend ? "logo-field-logo-screen" : ""].join(" ").trim()}
                 draggable={false}
                 height={Math.round(item.height)}
                 loading="lazy"

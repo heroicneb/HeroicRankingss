@@ -1269,6 +1269,11 @@ textarea {
   isolation: isolate;
 }
 
+.logo-field-square {
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
 .logo-field-pill {
   position: absolute;
   top: 0;
@@ -1324,6 +1329,15 @@ textarea {
 
 .logo-field-pill:hover .logo-field-logo {
   opacity: 1;
+}
+
+/* Black partner marks become white on the dark panel; colour logos are left alone. */
+.logo-field-logo-invert {
+  filter: brightness(0) invert(1);
+}
+
+.logo-field-logo-screen {
+  mix-blend-mode: screen;
 }
 
 .logo-field-glow {

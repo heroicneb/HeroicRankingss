@@ -13,6 +13,10 @@ export interface ClientLogo {
   height: number;
   /** Rendered height in px inside the pill; wordmarks sit around 24–28, emblems a little taller. */
   logoHeight: number;
+  /** Flatten a dark-on-transparent mark to white (used for the partnership page's black partner logos). */
+  invert?: boolean;
+  /** Screen-blend a colour logo so a baked-in black background disappears into the pill. */
+  blend?: boolean;
 }
 
 const logo = (name: string, file: string, width: number, height: number, logoHeight = 26): ClientLogo => ({
