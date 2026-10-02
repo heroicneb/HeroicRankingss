@@ -186,7 +186,7 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
   },
 
   scale: {
-    label: "/ Amplify Authority /",
+    label: "/ Growing Together /",
     heading: [hl("Partnerships"), br, hl("Designed to Scale")],
     paragraphs: [
       paragraph("Our partnerships scale alongside your business goals and create lasting value for everyone involved."),
