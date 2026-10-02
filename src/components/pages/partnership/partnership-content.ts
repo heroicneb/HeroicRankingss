@@ -26,6 +26,13 @@ export interface PartnershipContent {
     heading: HeadingSegment[];
     items: Array<{ title: string; description: string; icon: ContentImage | null }>;
   };
+  /** "/ Inside the Portal /": four captions, one per redrawn portal screen (dashboard, thread, reports, deliverables). */
+  portal: {
+    label: string;
+    heading: HeadingSegment[];
+    intro: string;
+    steps: Array<{ title: string; description: string }>;
+  };
   amplify: {
     label: string;
     heading: HeadingSegment[];
@@ -105,6 +112,35 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
         description:
           "Needing expert assistance with SEO implementation and link-building to provide top tier service to your clients.",
         icon: icon("icon-group176778.svg", 32, 28),
+      },
+    ],
+  },
+
+  portal: {
+    label: "/ Inside the Portal /",
+    heading: [{ text: "Your Clients, Our Work, " }, hl("One Login")],
+    intro:
+      "Every partner agency gets a white-label portal. This is what you see when you sign in: your clients' projects, our team's work on each deliverable, and reports you can forward as your own.",
+    steps: [
+      {
+        title: "Every client on one dashboard",
+        description:
+          "Sign in and see all of your clients' projects, active tasks, pending reviews and the latest activity in one place. Open any client with a click.",
+      },
+      {
+        title: "Talk to our team inside each deliverable",
+        description:
+          "Every deliverable has its own thread. Leave feedback, attach files, approve drafts and get previews, all under your agency's name.",
+      },
+      {
+        title: "Reports your clients will actually read",
+        description:
+          "A plain-English monthly summary, the completed work with hours, and keyword rankings with their movement, ready to forward.",
+      },
+      {
+        title: "Status on everything at a glance",
+        description:
+          "Priority, status, estimate and month for each deliverable, from proposed to approved to done, so you always know what is next.",
       },
     ],
   },

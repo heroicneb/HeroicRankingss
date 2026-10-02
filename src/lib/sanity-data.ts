@@ -239,6 +239,12 @@ interface SanityRawPartnershipPage {
     heading?: PortableTextBlock[] | null;
     items?: Array<{ _key: string; title?: string | null; description?: string | null; icon?: SanityRawPageImage | null }> | null;
   } | null;
+  portal?: {
+    label?: string | null;
+    heading?: PortableTextBlock[] | null;
+    intro?: string | null;
+    steps?: Array<{ _key: string; title?: string | null; description?: string | null }> | null;
+  } | null;
   amplify?: {
     label?: string | null;
     heading?: PortableTextBlock[] | null;
@@ -577,6 +583,19 @@ export async function getPartnershipPage(): Promise<SanityPartnershipPage | null
             return image ? [{ image, keepColor: Boolean(cell.keepColor) }] : [];
           })
         : d.scale.logos,
+    },
+    portal: {
+      label: text(raw.portal?.label, d.portal.label),
+      heading: headingSegments(raw.portal?.heading, d.portal.heading),
+      intro: text(raw.portal?.intro, d.portal.intro),
+      // WHY: the captions map onto four fixed screens, so anything but a full set falls back to the built-in copy.
+      steps:
+        raw.portal?.steps?.length === 4
+          ? raw.portal.steps.map((step, i) => ({
+              title: step.title?.trim() || d.portal.steps[i]?.title || "",
+              description: step.description?.trim() || d.portal.steps[i]?.description || "",
+            }))
+          : d.portal.steps,
     },
     darkCta: {
       heading: headingSegments(raw.darkCta?.heading, d.darkCta.heading),

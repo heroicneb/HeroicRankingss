@@ -57,6 +57,7 @@ export const partnershipPage = defineType({
   groups: [
     { name: "hero", title: "1. Hero", default: true },
     { name: "recognize", title: "2. Partner With Us" },
+    { name: "portal", title: "2b. Inside the Portal" },
     { name: "amplify", title: "3. Amplify Authority" },
     { name: "scale", title: "4. Designed to Scale" },
     { name: "darkCta", title: "5. Partner Portal CTA" },
@@ -109,6 +110,37 @@ export const partnershipPage = defineType({
             }),
           ],
           validation: (rule) => rule.max(6).warning("The design fits up to six items."),
+        }),
+      ],
+    }),
+
+    defineField({
+      name: "portal",
+      title: "Inside the Portal",
+      type: "object",
+      group: "portal",
+      description:
+        "The walkthrough of the partner portal. The four screens are drawn in code; these are the label, heading, intro and the caption for each screen, in order: dashboard, deliverable thread, reports, deliverables list.",
+      fields: [
+        labelField("/ Inside the Portal /"),
+        headingField,
+        defineField({ name: "intro", title: "Intro paragraph", type: "text", rows: 3 }),
+        defineField({
+          name: "steps",
+          title: "Step captions (exactly 4)",
+          type: "array",
+          validation: (rule) => rule.length(4),
+          of: [
+            defineArrayMember({
+              type: "object",
+              name: "portalStep",
+              fields: [
+                defineField({ name: "title", title: "Title", type: "string", validation: (rule) => rule.required().max(60) }),
+                defineField({ name: "description", title: "Description", type: "text", rows: 3, validation: (rule) => rule.required().max(240) }),
+              ],
+              preview: { select: { title: "title" } },
+            }),
+          ],
         }),
       ],
     }),

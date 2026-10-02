@@ -13,6 +13,8 @@ import {
 import { SectionLabel } from "@/components/ui/section-label";
 import { PAGE_SHELL_CLASS } from "@/data/service-shared";
 
+import { PortalShowcase } from "./parts/PortalShowcase";
+
 import type { ContentImage, PartnershipContent } from "./partnership-content";
 
 /*
@@ -49,7 +51,7 @@ interface PartnershipPageProps {
 }
 
 export default function PartnershipPage({ content }: PartnershipPageProps) {
-  const { hero, recognize, amplify, scale, darkCta, differentiators, nextSteps, faq } = content;
+  const { hero, recognize, portal, amplify, scale, darkCta, differentiators, nextSteps, faq } = content;
   const logoCells = [
     ...scale.logos,
     ...Array.from({ length: Math.max(0, LOGO_GRID_CELLS - scale.logos.length) }, () => null),
@@ -116,6 +118,25 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-[60px] lg:pt-[120px]" id="inside-the-portal">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className="px-5 sm:px-8 xl:px-[70px]">
+            <div className="grid grid-cols-1 gap-8 xl:grid-cols-[1fr_520px] xl:items-end xl:gap-[60px]" data-reveal>
+              <div>
+                <SectionLabel>{portal.label}</SectionLabel>
+                <h2 className={`type-h2 mt-[37px] w-full max-w-[640px] ${TEXT}`}>
+                  <GradientHeading highlightClassName="gradient-text-partnership-recognize" segments={portal.heading} />
+                </h2>
+              </div>
+              <p className={`type-paragraph ${TEXT}`}>{portal.intro}</p>
+            </div>
+            <div className="mt-[40px] lg:mt-[60px]" data-reveal>
+              <PortalShowcase steps={portal.steps} />
             </div>
           </div>
         </div>
