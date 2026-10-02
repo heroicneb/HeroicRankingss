@@ -29,8 +29,6 @@ const WEBSITES: Record<string, string> = {
   "My Baskets": "https://www.mybaskets.ca/",
   "Zip Moving & Storage": "https://www.zipmoving.us/",
   "Support Adventure": "https://supportadventure.com/",
-  "Gabriel & Co.": "https://www.gabrielny.com/",
-  TradingView: "https://www.tradingview.com/",
 };
 
 const slugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");

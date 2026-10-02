@@ -41,6 +41,4 @@ export const DEFAULT_CLIENT_LOGOS: ClientLogo[] = [
   logo("My Baskets", "my-baskets.png", 600, 189, 28),
   logo("Zip Moving & Storage", "zip-moving.png", 600, 145, 30),
   logo("Support Adventure", "support-adventure.png", 600, 189, 34),
-  logo("Gabriel & Co.", "gabriel-co.svg", 248, 26, 18),
-  logo("TradingView", "tradingview.png", 490, 283, 40),
 ];
