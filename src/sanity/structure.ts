@@ -94,6 +94,7 @@ export const structure: StructureResolver = (S) =>
       S.documentTypeListItem("teamMember").title("Team Members"),
       S.documentTypeListItem("faqItem").title("FAQ Items"),
       S.documentTypeListItem("partnerLogo").title("Partner Logos"),
+      S.documentTypeListItem("clientLogo").title("Client Logos"),
 
       S.divider(),
 

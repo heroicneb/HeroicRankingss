@@ -433,6 +433,129 @@ textarea {
     );
 }
 
+/* Trusted By: client logos floating in a dark panel. On desktop each pill is
+   positioned by the LogoField simulation; below lg and for reduced motion the
+   same list lays out as a static wrapped grid. */
+.logo-field {
+  position: relative;
+  height: 480px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  touch-action: pan-y;
+  isolation: isolate;
+}
+
+.logo-field-pill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.logo-field[data-grabbing],
+.logo-field[data-grabbing] .logo-field-pill {
+  cursor: grabbing;
+}
+
+.logo-field-pill-inner {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 24px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-inverse-10);
+  background: var(--color-surface-inverse-10);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  transform: scale(0.7);
+  transition:
+    opacity 600ms var(--motion-ease-emphasized) calc(var(--i, 0) * 40ms),
+    transform 600ms var(--motion-ease-emphasized) calc(var(--i, 0) * 40ms),
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+.logo-field[data-in] .logo-field-pill-inner {
+  opacity: 1;
+  transform: none;
+}
+
+.logo-field-pill:hover .logo-field-pill-inner {
+  background: var(--color-surface-inverse-20);
+  border-color: var(--color-surface-inverse-20);
+}
+
+.logo-field-logo {
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  opacity: 0.72;
+  transition: opacity 200ms ease;
+  pointer-events: none;
+}
+
+.logo-field-pill:hover .logo-field-logo {
+  opacity: 1;
+}
+
+.logo-field-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--color-hr-gradient-end) 34%, transparent) 0%,
+    transparent 68%
+  );
+  opacity: 0;
+  transition: opacity 400ms ease;
+  pointer-events: none;
+  filter: blur(6px);
+}
+
+@media (max-width: 1023px), (prefers-reduced-motion: reduce) {
+  .logo-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    padding: 24px 14px;
+  }
+
+  .logo-field-pill {
+    position: static;
+    transform: none !important;
+    cursor: default;
+    will-change: auto;
+  }
+
+  .logo-field-pill-inner {
+    height: 48px;
+    padding: 0 18px;
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .logo-field-logo {
+    max-width: 130px;
+    transform: scale(0.85);
+  }
+
+  .logo-field-glow {
+    display: none;
+  }
+}
+
 /* Testimonials: one continuous row of cards (the track holds the list twice) that
    glides left and pauses on hover, keyboard focus, or a held touch. */
 .testimonial-marquee {
@@ -546,6 +669,9 @@ textarea {
   --gradient-angle: 221.9547320338deg;
 }
 .gradient-text-brand-testimonials {
+  --gradient-angle: 221.34494289deg;
+}
+.gradient-text-brand-trusted {
   --gradient-angle: 221.34494289deg;
 }
 .gradient-text-brand-featured {

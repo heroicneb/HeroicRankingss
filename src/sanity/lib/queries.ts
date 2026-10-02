@@ -283,6 +283,17 @@ export const PARTNERSHIP_LOGOS_QUERY = defineQuery(`
   }
 `);
 
+export const CLIENT_LOGOS_QUERY = defineQuery(`
+  *[_type == "clientLogo" && defined(logo.asset) && !(_id match "audit-fixture-*")] | order(order asc, name asc) {
+    _id,
+    name,
+    logo,
+    "dimensions": logo.asset->metadata.dimensions,
+    logoHeight,
+    url
+  }
+`);
+
 export const ALL_PARTNER_LOGOS_QUERY = defineQuery(`
   *[_type == "partnerLogo" && !(_id match "audit-fixture-*")] | order(order asc) {
     _id,
@@ -340,6 +351,7 @@ export const HOME_PAGE_QUERY = defineQuery(`
     stats { label, heading, body, ctaLabel, ctaUrl, items[] { _key, metric, detail, image ${PAGE_IMAGE} } },
     featuredLogos { heading },
     caseStudies { label, heading, body, ctaLabel, ctaUrl, quotes },
+    trustedBy { label, heading },
     featuredPodcasts { label, heading, ctaLabel, ctaUrl },
     trust { label, heading, ctaLabel, ctaUrl, certifications[] { _key, label, tone } },
     partnerships { label, statement, paragraphs, ctaLabel, ctaUrl },

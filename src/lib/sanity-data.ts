@@ -30,6 +30,7 @@ import {
   PODCAST_EPISODE_BY_SLUG_QUERY,
   PODCAST_EPISODE_SLUGS_QUERY,
   TESTIMONIALS_QUERY,
+  CLIENT_LOGOS_QUERY,
 } from "@/sanity/lib/queries";
 import type { NavItem, NavLink } from "@/types";
 import {
@@ -1314,6 +1315,48 @@ export async function getPartnerLogos(): Promise<SanityPartnerLogo[]> {
   }));
 }
 
+// ── Client Logos ("/ Trusted By /") ───────────────────────────────
+
+interface SanityRawClientLogo {
+  _id: string;
+  name: string;
+  logo?: SanityImageRef | null;
+  dimensions?: { width?: number | null; height?: number | null } | null;
+  logoHeight?: number | null;
+  url?: string | null;
+}
+
+export interface SanityClientLogo {
+  _id: string;
+  name: string;
+  logoUrl: string;
+  width: number;
+  height: number;
+  logoHeight: number;
+  url: string | null;
+}
+
+export async function getClientLogos(): Promise<SanityClientLogo[]> {
+  const data = await client.fetch(
+    CLIENT_LOGOS_QUERY,
+    {},
+    { next: { tags: ["clientLogo"], revalidate: false } },
+  );
+  if (!data) return [];
+
+  return (data as SanityRawClientLogo[])
+    .map((l) => ({
+      _id: l._id,
+      name: l.name,
+      logoUrl: imageUrl(l.logo),
+      width: l.dimensions?.width ?? 200,
+      height: l.dimensions?.height ?? 50,
+      logoHeight: l.logoHeight ?? 26,
+      url: l.url ?? null,
+    }))
+    .filter((l) => Boolean(l.logoUrl));
+}
+
 // ── Service Page ──────────────────────────────────────────────────
 
 
@@ -1719,6 +1762,7 @@ interface SanityRawHomePage {
     | ({ label?: string | null; statement?: PortableTextBlock[] | null; paragraphs?: string[] | null } & SanityRawHomeCta)
     | null;
   blog?: ({ label?: string | null; heading?: PortableTextBlock[] | null } & SanityRawHomeCta) | null;
+  trustedBy?: { label?: string | null; heading?: PortableTextBlock[] | null } | null;
   testimonials?: ({ label?: string | null; heading?: PortableTextBlock[] | null } & SanityRawHomeCta) | null;
   seo?: SanitySeo | null;
 }
@@ -1876,6 +1920,10 @@ export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
       label: text(raw.featuredPodcasts?.label, d.featuredPodcasts.label),
       heading: headingSegments(raw.featuredPodcasts?.heading, d.featuredPodcasts.heading),
       ...cta(raw.featuredPodcasts, d.featuredPodcasts),
+    },
+    trustedBy: {
+      label: text(raw.trustedBy?.label, d.trustedBy.label),
+      heading: headingSegments(raw.trustedBy?.heading, d.trustedBy.heading),
     },
     testimonials: {
       label: text(raw.testimonials?.label, d.testimonials.label),

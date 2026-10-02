@@ -168,6 +168,11 @@ export interface HomeContent {
     ctaLabel: string;
     ctaUrl: string;
   };
+  /** "/ Trusted By /": client logos floating in a dark panel before the testimonials. */
+  trustedBy: {
+    label: string;
+    heading: HeadingSegment[];
+  };
   /** "/ Featured Podcasts /": the three newest episodes, cards shared with the podcast page. */
   featuredPodcasts: {
     label: string;
@@ -540,6 +545,10 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
     heading: [tx("Insights and Trends in Our "), hl("Most Popular Reads")],
     ctaLabel: "View More Blogs",
     ctaUrl: "/blog",
+  },
+  trustedBy: {
+    label: "/  Trusted By  /",
+    heading: [tx("From Startups to "), hl("Enterprise")],
   },
   featuredPodcasts: {
     label: "/  Featured Podcasts  /",

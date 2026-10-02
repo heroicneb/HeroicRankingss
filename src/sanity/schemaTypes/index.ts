@@ -1,6 +1,7 @@
 import type { SchemaTypeDefinition } from "sanity";
 
 import { caseStudy } from "./documents/caseStudy";
+import { clientLogo } from "./documents/clientLogo";
 import { contactPage } from "./documents/contactPage";
 import { faqItem } from "./documents/faqItem";
 import { homePage } from "./documents/homePage";
@@ -38,6 +39,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     teamMember,
     faqItem,
     partnerLogo,
+    clientLogo,
     podcastEpisode,
     // Objects
     portableText,
