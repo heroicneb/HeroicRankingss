@@ -75,6 +75,7 @@ export const homePage = defineType({
     { name: "partnerships", title: "9. Partnerships" },
     { name: "blog", title: "10. Blog" },
     { name: "testimonials", title: "11. Testimonials" },
+    { name: "featuredPodcasts", title: "12. Featured Podcasts" },
     { name: "seo", title: "SEO" },
   ],
   fields: [
@@ -432,6 +433,14 @@ export const homePage = defineType({
       fields: [labelField("/  Dedication  /"), headingField(), ...ctaFields("Become a Satisfied Client", "/contact")],
     }),
 
+    defineField({
+      name: "featuredPodcasts",
+      title: "Featured Podcasts",
+      type: "object",
+      group: "featuredPodcasts",
+      description: "Heading and button only; the three newest Podcast Episode documents fill the cards.",
+      fields: [labelField("/ Featured Podcasts /"), headingField(), ...ctaFields("View All Episodes", "/podcast")],
+    }),
     defineField({ name: "seo", title: "SEO", type: "seo", group: "seo" }),
   ],
   preview: {

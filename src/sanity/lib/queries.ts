@@ -340,6 +340,7 @@ export const HOME_PAGE_QUERY = defineQuery(`
     stats { label, heading, body, ctaLabel, ctaUrl, items[] { _key, metric, detail, image ${PAGE_IMAGE} } },
     featuredLogos { heading },
     caseStudies { label, heading, body, ctaLabel, ctaUrl, quotes },
+    featuredPodcasts { label, heading, ctaLabel, ctaUrl },
     trust { label, heading, ctaLabel, ctaUrl, certifications[] { _key, label, tone } },
     partnerships { label, statement, paragraphs, ctaLabel, ctaUrl },
     blog { label, heading, ctaLabel, ctaUrl },

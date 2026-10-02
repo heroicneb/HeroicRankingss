@@ -168,6 +168,13 @@ export interface HomeContent {
     ctaLabel: string;
     ctaUrl: string;
   };
+  /** "/ Featured Podcasts /": the three newest episodes, cards shared with the podcast page. */
+  featuredPodcasts: {
+    label: string;
+    heading: HeadingSegment[];
+    ctaLabel: string;
+    ctaUrl: string;
+  };
   testimonials: {
     label: string;
     heading: HeadingSegment[];
@@ -533,6 +540,12 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
     heading: [tx("Insights and Trends in Our "), hl("Most Popular Reads")],
     ctaLabel: "View More Blogs",
     ctaUrl: "/blog",
+  },
+  featuredPodcasts: {
+    label: "/  Featured Podcasts  /",
+    heading: [tx("Conversations With People Who "), hl("Actually Rank")],
+    ctaLabel: "View All Episodes",
+    ctaUrl: "/podcast",
   },
   testimonials: {
     label: "/  Dedication  /",
