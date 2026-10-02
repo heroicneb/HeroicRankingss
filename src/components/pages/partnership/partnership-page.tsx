@@ -154,6 +154,34 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
         </div>
       </section>
 
+      <section className="pt-[60px] lg:pt-[120px]" id="partnership-scale">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className="px-5 sm:px-8 xl:px-[70px]">
+            <SectionLabel>{scale.label}</SectionLabel>
+
+            <div className="mt-[43px] grid grid-cols-1 gap-10 xl:grid-cols-[1fr_628px] xl:gap-0">
+              <div>
+                <h2 className={`type-h2 w-full max-w-[483px] ${TEXT}`}>
+                  <GradientHeading
+                    highlightClassName={["gradient-text-partnership-scale", "gradient-text-partnership-scale-dark"]}
+                    segments={scale.heading}
+                  />
+                </h2>
+
+                <div className={`mt-[39px] w-full max-w-[502px] space-y-5 ${TEXT}`}>
+                  <RichParagraphs blocks={scale.paragraphs} />
+                </div>
+              </div>
+
+              {/* WHY: the same floating logo field as the homepage, in a square panel so it reads as a tile beside the copy. */}
+              <div className="w-full xl:w-[628px] xl:justify-self-end">
+                <LogoField aspect="square" logos={partnerLogos} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="pt-[60px] lg:pt-[120px]" id="amplify-authority">
         <div className={PAGE_SHELL_CLASS}>
           <div className="rounded-[40px] bg-[var(--color-hr-off-white)] px-5 pb-[60px] pt-[60px] dark:bg-[var(--color-bg-dark)] sm:px-8 lg:pb-[120px] lg:pt-[120px] xl:px-[70px]">
@@ -202,34 +230,6 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
                   ) : null}
                 </article>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pt-[60px] lg:pt-[120px]" id="partnership-scale">
-        <div className={PAGE_SHELL_CLASS}>
-          <div className="px-5 sm:px-8 xl:px-[70px]">
-            <SectionLabel>{scale.label}</SectionLabel>
-
-            <div className="mt-[43px] grid grid-cols-1 gap-10 xl:grid-cols-[1fr_628px] xl:gap-0">
-              <div>
-                <h2 className={`type-h2 w-full max-w-[483px] ${TEXT}`}>
-                  <GradientHeading
-                    highlightClassName={["gradient-text-partnership-scale", "gradient-text-partnership-scale-dark"]}
-                    segments={scale.heading}
-                  />
-                </h2>
-
-                <div className={`mt-[39px] w-full max-w-[502px] space-y-5 ${TEXT}`}>
-                  <RichParagraphs blocks={scale.paragraphs} />
-                </div>
-              </div>
-
-              {/* WHY: the same floating logo field as the homepage, in a square panel so it reads as a tile beside the copy. */}
-              <div className="w-full xl:w-[628px] xl:justify-self-end">
-                <LogoField aspect="square" logos={partnerLogos} />
-              </div>
             </div>
           </div>
         </div>
