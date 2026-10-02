@@ -165,7 +165,7 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
       logo("logo-atropos-digital.svg", "Atropos Digital logo", 114, 16),
       logo("logo-group176790.svg", "Partner logo", 49, 44),
       logo("logo-digital-spice.png", "Digital Spice logo", 114, 18),
-      logo("logo-group176792.svg", "Partner logo", 110, 15),
+      logo("websummit.png", "Web Summit logo", 106, 51, true),
       logo("logo-conversion-pipeline.svg", "Conversion Pipeline logo", 109, 34),
       logo("logo-ice-web.png", "Ice Web logo", 106, 38),
       logo("logo-white-label-agency.png", "White Label Agency logo", 108, 22),
