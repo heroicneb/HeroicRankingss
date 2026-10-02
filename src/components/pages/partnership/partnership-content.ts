@@ -25,6 +25,8 @@ export interface PartnershipContent {
     label: string;
     heading: HeadingSegment[];
     items: Array<{ title: string; description: string; icon: ContentImage | null }>;
+    /** "Is This You?" lead form under the audience items. */
+    form: { heading: string; body: string; ctaLabel: string; successMessage: string };
   };
   /** "/ Inside the Portal /": four captions, one per redrawn portal screen (dashboard, thread, reports, deliverables). */
   portal: {
@@ -114,6 +116,12 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
         icon: icon("icon-group176778.svg", 32, 28),
       },
     ],
+    form: {
+      heading: "Is This You?",
+      body: "Leave your name and work email and we'll reach out within one business day to talk through a white-label partnership.",
+      ctaLabel: "Request a Partnership",
+      successMessage: "Thanks! We'll be in touch within one business day.",
+    },
   },
 
   portal: {

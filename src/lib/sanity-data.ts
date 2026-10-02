@@ -238,6 +238,7 @@ interface SanityRawPartnershipPage {
     label?: string | null;
     heading?: PortableTextBlock[] | null;
     items?: Array<{ _key: string; title?: string | null; description?: string | null; icon?: SanityRawPageImage | null }> | null;
+    form?: { heading?: string | null; body?: string | null; ctaLabel?: string | null; successMessage?: string | null } | null;
   } | null;
   portal?: {
     label?: string | null;
@@ -557,6 +558,12 @@ export async function getPartnershipPage(): Promise<SanityPartnershipPage | null
             icon: pageImage(item.icon, d.recognize.items[i]?.icon ?? null),
           }))
         : d.recognize.items,
+      form: {
+        heading: text(raw.recognize?.form?.heading, d.recognize.form.heading),
+        body: text(raw.recognize?.form?.body, d.recognize.form.body),
+        ctaLabel: text(raw.recognize?.form?.ctaLabel, d.recognize.form.ctaLabel),
+        successMessage: text(raw.recognize?.form?.successMessage, d.recognize.form.successMessage),
+      },
     },
     amplify: {
       label: text(raw.amplify?.label, d.amplify.label),

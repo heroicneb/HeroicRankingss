@@ -365,7 +365,7 @@ export const PARTNERSHIP_PAGE_QUERY = defineQuery(`
   *[_type == "partnershipPage"][0] {
     _id,
     hero { heading, intro, image ${PAGE_IMAGE} },
-    recognize { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} } },
+    recognize { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} }, form { heading, body, ctaLabel, successMessage } },
     portal { label, heading, intro, steps[] { _key, title, description } },
     amplify { label, heading, intro, cards[] { _key, title, subtitle, paragraphs, ctaLabel, ctaUrl, icon ${PAGE_IMAGE} } },
     scale { label, heading, paragraphs, logos[] { _key, keepColor, image ${PAGE_IMAGE} } },

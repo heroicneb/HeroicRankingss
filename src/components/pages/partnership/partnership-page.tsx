@@ -16,6 +16,7 @@ import { PAGE_SHELL_CLASS } from "@/data/service-shared";
 import { LogoField } from "@/components/sections/trusted-by/LogoField";
 import type { ClientLogo } from "@/components/sections/trusted-by/trusted-by-data";
 
+import { PartnershipRequestForm } from "./parts/PartnershipRequestForm";
 import { PortalShowcase } from "./parts/PortalShowcase";
 
 import type { ContentImage, PartnershipContent } from "./partnership-content";
@@ -130,6 +131,11 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* WHY: the audience items qualify the visitor; the form right under them catches the "yes, that's us" moment. */}
+            <div className="mt-[60px] lg:mt-[80px]" data-reveal>
+              <PartnershipRequestForm form={recognize.form} />
             </div>
           </div>
         </div>
