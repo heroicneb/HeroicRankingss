@@ -14,8 +14,10 @@ import { Stats } from "@/components/sections/stats";
 import { Team } from "@/components/sections/team";
 import { AiVisibility } from "@/components/sections/ai-visibility/ai-visibility";
 import { Testimonials } from "@/components/sections/testimonials";
+import { TrustedBy } from "@/components/sections/trusted-by/trusted-by";
 import { TrustAuthority } from "@/components/sections/trust-authority";
 import {
+  getClientLogos,
   getFeaturedCaseStudies,
   getPodcastEpisodes,
   getHomePage,
@@ -37,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function HomePage() {
-  const [page, partnerLogos, cmsPosts, cmsTestimonials, featuredCaseStudies, episodes] = await Promise.all([
+  const [page, partnerLogos, cmsPosts, cmsTestimonials, featuredCaseStudies, episodes, clientLogos] = await Promise.all([
     // WHY: the built-in copy is the safety net if the CMS document is missing or unreachable.
     getHomePage().catch(() => null),
     getPartnerLogos().catch(() => []),
@@ -45,6 +47,7 @@ export default async function HomePage() {
     getTestimonials().catch(() => []),
     getFeaturedCaseStudies().catch(() => []),
     getPodcastEpisodes().catch(() => []),
+    getClientLogos().catch(() => []),
   ]);
   const content = page?.content ?? DEFAULT_HOME_CONTENT;
 
@@ -62,6 +65,8 @@ export default async function HomePage() {
         <FeaturedLogos heading={content.featuredLogos.heading} partnerLogos={partnerLogos} />
       </div>
       <CaseStudies cmsCaseStudies={featuredCaseStudies} content={content.caseStudies} />
+      {/* WHY: the client logo field shows breadth right after the depth of the case studies (Nebojsa, 2026-10-02). */}
+      <TrustedBy cmsLogos={clientLogos} content={content.trustedBy} />
       {/* WHY: client voices sit right after the case studies they back up (Nebojsa, 2026-09-30). */}
       <Testimonials cmsTestimonials={cmsTestimonials} content={content.testimonials} />
       <TrustAuthority content={content.trust} />

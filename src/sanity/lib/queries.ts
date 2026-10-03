@@ -283,6 +283,17 @@ export const PARTNERSHIP_LOGOS_QUERY = defineQuery(`
   }
 `);
 
+export const CLIENT_LOGOS_QUERY = defineQuery(`
+  *[_type == "clientLogo" && defined(logo.asset) && !(_id match "audit-fixture-*")] | order(order asc, name asc) {
+    _id,
+    name,
+    logo,
+    "dimensions": logo.asset->metadata.dimensions,
+    logoHeight,
+    url
+  }
+`);
+
 export const ALL_PARTNER_LOGOS_QUERY = defineQuery(`
   *[_type == "partnerLogo" && !(_id match "audit-fixture-*")] | order(order asc) {
     _id,
@@ -340,6 +351,7 @@ export const HOME_PAGE_QUERY = defineQuery(`
     stats { label, heading, body, ctaLabel, ctaUrl, items[] { _key, metric, detail, image ${PAGE_IMAGE} } },
     featuredLogos { heading },
     caseStudies { label, heading, body, ctaLabel, ctaUrl, quotes },
+    trustedBy { label, heading },
     featuredPodcasts { label, heading, ctaLabel, ctaUrl },
     trust { label, heading, ctaLabel, ctaUrl, certifications[] { _key, label, tone } },
     partnerships { label, statement, paragraphs, ctaLabel, ctaUrl },
@@ -353,7 +365,8 @@ export const PARTNERSHIP_PAGE_QUERY = defineQuery(`
   *[_type == "partnershipPage"][0] {
     _id,
     hero { heading, intro, image ${PAGE_IMAGE} },
-    recognize { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} } },
+    recognize { label, heading, items[] { _key, title, description, icon ${PAGE_IMAGE} }, form { heading, body, ctaLabel, successMessage } },
+    portal { label, heading, intro, steps[] { _key, title, description } },
     amplify { label, heading, intro, cards[] { _key, title, subtitle, paragraphs, ctaLabel, ctaUrl, icon ${PAGE_IMAGE} } },
     scale { label, heading, paragraphs, logos[] { _key, keepColor, image ${PAGE_IMAGE} } },
     darkCta { heading, body, ctaLabel, ctaUrl },

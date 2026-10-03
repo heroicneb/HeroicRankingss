@@ -30,6 +30,7 @@ import {
   PODCAST_EPISODE_BY_SLUG_QUERY,
   PODCAST_EPISODE_SLUGS_QUERY,
   TESTIMONIALS_QUERY,
+  CLIENT_LOGOS_QUERY,
 } from "@/sanity/lib/queries";
 import type { NavItem, NavLink } from "@/types";
 import {
@@ -237,6 +238,13 @@ interface SanityRawPartnershipPage {
     label?: string | null;
     heading?: PortableTextBlock[] | null;
     items?: Array<{ _key: string; title?: string | null; description?: string | null; icon?: SanityRawPageImage | null }> | null;
+    form?: { heading?: string | null; body?: string | null; ctaLabel?: string | null; successMessage?: string | null } | null;
+  } | null;
+  portal?: {
+    label?: string | null;
+    heading?: PortableTextBlock[] | null;
+    intro?: string | null;
+    steps?: Array<{ _key: string; title?: string | null; description?: string | null }> | null;
   } | null;
   amplify?: {
     label?: string | null;
@@ -550,6 +558,12 @@ export async function getPartnershipPage(): Promise<SanityPartnershipPage | null
             icon: pageImage(item.icon, d.recognize.items[i]?.icon ?? null),
           }))
         : d.recognize.items,
+      form: {
+        heading: text(raw.recognize?.form?.heading, d.recognize.form.heading),
+        body: text(raw.recognize?.form?.body, d.recognize.form.body),
+        ctaLabel: text(raw.recognize?.form?.ctaLabel, d.recognize.form.ctaLabel),
+        successMessage: text(raw.recognize?.form?.successMessage, d.recognize.form.successMessage),
+      },
     },
     amplify: {
       label: text(raw.amplify?.label, d.amplify.label),
@@ -576,6 +590,19 @@ export async function getPartnershipPage(): Promise<SanityPartnershipPage | null
             return image ? [{ image, keepColor: Boolean(cell.keepColor) }] : [];
           })
         : d.scale.logos,
+    },
+    portal: {
+      label: text(raw.portal?.label, d.portal.label),
+      heading: headingSegments(raw.portal?.heading, d.portal.heading),
+      intro: text(raw.portal?.intro, d.portal.intro),
+      // WHY: the captions map onto four fixed screens, so anything but a full set falls back to the built-in copy.
+      steps:
+        raw.portal?.steps?.length === 4
+          ? raw.portal.steps.map((step, i) => ({
+              title: step.title?.trim() || d.portal.steps[i]?.title || "",
+              description: step.description?.trim() || d.portal.steps[i]?.description || "",
+            }))
+          : d.portal.steps,
     },
     darkCta: {
       heading: headingSegments(raw.darkCta?.heading, d.darkCta.heading),
@@ -1314,6 +1341,48 @@ export async function getPartnerLogos(): Promise<SanityPartnerLogo[]> {
   }));
 }
 
+// ── Client Logos ("/ Trusted By /") ───────────────────────────────
+
+interface SanityRawClientLogo {
+  _id: string;
+  name: string;
+  logo?: SanityImageRef | null;
+  dimensions?: { width?: number | null; height?: number | null } | null;
+  logoHeight?: number | null;
+  url?: string | null;
+}
+
+export interface SanityClientLogo {
+  _id: string;
+  name: string;
+  logoUrl: string;
+  width: number;
+  height: number;
+  logoHeight: number;
+  url: string | null;
+}
+
+export async function getClientLogos(): Promise<SanityClientLogo[]> {
+  const data = await client.fetch(
+    CLIENT_LOGOS_QUERY,
+    {},
+    { next: { tags: ["clientLogo"], revalidate: false } },
+  );
+  if (!data) return [];
+
+  return (data as SanityRawClientLogo[])
+    .map((l) => ({
+      _id: l._id,
+      name: l.name,
+      logoUrl: imageUrl(l.logo),
+      width: l.dimensions?.width ?? 200,
+      height: l.dimensions?.height ?? 50,
+      logoHeight: l.logoHeight ?? 26,
+      url: l.url ?? null,
+    }))
+    .filter((l) => Boolean(l.logoUrl));
+}
+
 // ── Service Page ──────────────────────────────────────────────────
 
 
@@ -1719,6 +1788,7 @@ interface SanityRawHomePage {
     | ({ label?: string | null; statement?: PortableTextBlock[] | null; paragraphs?: string[] | null } & SanityRawHomeCta)
     | null;
   blog?: ({ label?: string | null; heading?: PortableTextBlock[] | null } & SanityRawHomeCta) | null;
+  trustedBy?: { label?: string | null; heading?: PortableTextBlock[] | null } | null;
   testimonials?: ({ label?: string | null; heading?: PortableTextBlock[] | null } & SanityRawHomeCta) | null;
   seo?: SanitySeo | null;
 }
@@ -1876,6 +1946,10 @@ export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
       label: text(raw.featuredPodcasts?.label, d.featuredPodcasts.label),
       heading: headingSegments(raw.featuredPodcasts?.heading, d.featuredPodcasts.heading),
       ...cta(raw.featuredPodcasts, d.featuredPodcasts),
+    },
+    trustedBy: {
+      label: text(raw.trustedBy?.label, d.trustedBy.label),
+      heading: headingSegments(raw.trustedBy?.heading, d.trustedBy.heading),
     },
     testimonials: {
       label: text(raw.testimonials?.label, d.testimonials.label),

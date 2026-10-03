@@ -76,6 +76,8 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // 2026-10-03: the partnership page moved to a keyword URL (Nebojsa).
+      { source: "/partnership", destination: "/white-label-seo-partnership/", permanent: true },
       // WHY: Internal alias kept from prior naming. Phase 2.2 renamed
       // /case-studies → /case-study to match legacy heroicrankings.com.
       {

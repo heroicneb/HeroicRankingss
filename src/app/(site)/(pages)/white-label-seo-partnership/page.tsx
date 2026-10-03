@@ -14,7 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: page?.seo?.metaTitle?.trim() || PARTNERSHIP_DEFAULT_SEO.title,
     exactTitle: Boolean(page?.seo?.metaTitle?.trim()),
     description: page?.seo?.metaDescription?.trim() || PARTNERSHIP_DEFAULT_SEO.description,
-    path: "/partnership",
+    path: "/white-label-seo-partnership",
   });
 }
 

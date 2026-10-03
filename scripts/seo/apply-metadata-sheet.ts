@@ -28,6 +28,7 @@ const SERVICE_IDS: Record<string, string> = {
   "/seo/linkbuilding/": "linkBuildingPage",
   "/seo/reddit-marketing/": "redditMarketingPage",
   "/partnership/": "partnershipPage",
+  "/white-label-seo-partnership/": "partnershipPage",
   "/contact/": "contactPage",
   "/privacy-policy/": "legalPage-privacy-policy",
 };

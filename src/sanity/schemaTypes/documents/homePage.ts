@@ -71,6 +71,7 @@ export const homePage = defineType({
     { name: "stats", title: "5. Guided by Data" },
     { name: "featuredLogos", title: "6. Featured Logos" },
     { name: "caseStudies", title: "7. Proven Results" },
+    { name: "trustedBy", title: "7b. Trusted By" },
     { name: "trust", title: "8. Certifications" },
     { name: "partnerships", title: "9. Partnerships" },
     { name: "blog", title: "10. Blog" },
@@ -422,6 +423,15 @@ export const homePage = defineType({
       group: "blog",
       description: "The three cards are the newest blog posts.",
       fields: [labelField("/  Featured Blogs  /"), headingField(), ...ctaFields("View More Blogs", "/blog")],
+    }),
+
+    defineField({
+      name: "trustedBy",
+      title: "Trusted By",
+      type: "object",
+      group: "trustedBy",
+      description: "The floating logos come from the Client Logo documents.",
+      fields: [labelField("/  Trusted By  /"), headingField()],
     }),
 
     defineField({

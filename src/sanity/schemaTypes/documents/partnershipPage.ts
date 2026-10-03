@@ -2,7 +2,7 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 
 /*
  * Partnership page — fixed sections, one field group per section, in the
- * order they appear on /partnership. Layout, colours and icons' sizes are
+ * order they appear on /white-label-seo-partnership. Layout, colours and icons' sizes are
  * owned by the code; editors own every word, image and link.
  */
 
@@ -57,8 +57,9 @@ export const partnershipPage = defineType({
   groups: [
     { name: "hero", title: "1. Hero", default: true },
     { name: "recognize", title: "2. Partner With Us" },
-    { name: "amplify", title: "3. Amplify Authority" },
-    { name: "scale", title: "4. Designed to Scale" },
+    { name: "portal", title: "2b. Inside the Portal" },
+    { name: "scale", title: "3. Designed to Scale" },
+    { name: "amplify", title: "4. Amplify Authority" },
     { name: "darkCta", title: "5. Partner Portal CTA" },
     { name: "differentiators", title: "6. Distinct Advantage" },
     { name: "nextSteps", title: "7. What's Next" },
@@ -104,11 +105,54 @@ export const partnershipPage = defineType({
                 defineField({ name: "title", title: "Title", type: "string", validation: (r) => r.required() }),
                 defineField({ name: "description", title: "Description", type: "text", rows: 3 }),
                 iconField,
-              ],
+                defineField({
+          name: "form",
+          title: "\"Is This You?\" form",
+          type: "object",
+          description: "The short lead form under the audience items. Submissions go to the same place as the contact form, marked as partnership requests.",
+          fields: [
+            defineField({ name: "heading", title: "Heading", type: "string", validation: (rule) => rule.max(60) }),
+            defineField({ name: "body", title: "Paragraph", type: "text", rows: 3, validation: (rule) => rule.max(240) }),
+            defineField({ name: "ctaLabel", title: "Button label", type: "string", validation: (rule) => rule.max(40) }),
+            defineField({ name: "successMessage", title: "Success message", type: "string", validation: (rule) => rule.max(160) }),
+          ],
+        }),
+      ],
               preview: { select: { title: "title", media: "icon" } },
             }),
           ],
           validation: (rule) => rule.max(6).warning("The design fits up to six items."),
+        }),
+      ],
+    }),
+
+    defineField({
+      name: "portal",
+      title: "Inside the Portal",
+      type: "object",
+      group: "portal",
+      description:
+        "The walkthrough of the partner portal. The four screens are drawn in code; these are the label, heading, intro and the caption for each screen, in order: dashboard, deliverable thread, reports, deliverables list.",
+      fields: [
+        labelField("/ Inside the Portal /"),
+        headingField,
+        defineField({ name: "intro", title: "Intro paragraph", type: "text", rows: 3 }),
+        defineField({
+          name: "steps",
+          title: "Step captions (exactly 4)",
+          type: "array",
+          validation: (rule) => rule.length(4),
+          of: [
+            defineArrayMember({
+              type: "object",
+              name: "portalStep",
+              fields: [
+                defineField({ name: "title", title: "Title", type: "string", validation: (rule) => rule.required().max(60) }),
+                defineField({ name: "description", title: "Description", type: "text", rows: 3, validation: (rule) => rule.required().max(240) }),
+              ],
+              preview: { select: { title: "title" } },
+            }),
+          ],
         }),
       ],
     }),

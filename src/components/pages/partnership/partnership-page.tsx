@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { RichParagraphs } from "@/components/sanity/rich-paragraphs";
+import { HeroVideoOverlay } from "@/components/sections/hero-video-overlay";
 import { ServiceFaq } from "@/components/sections/shared/service-faq";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientHeading } from "@/components/ui/gradient-heading";
@@ -12,6 +13,12 @@ import {
 import { SectionLabel } from "@/components/ui/section-label";
 import { PAGE_SHELL_CLASS } from "@/data/service-shared";
 
+import { LogoField } from "@/components/sections/trusted-by/LogoField";
+import type { ClientLogo } from "@/components/sections/trusted-by/trusted-by-data";
+
+import { PartnershipRequestForm } from "./parts/PartnershipRequestForm";
+import { PortalShowcase } from "./parts/PortalShowcase";
+
 import type { ContentImage, PartnershipContent } from "./partnership-content";
 
 /*
@@ -20,7 +27,9 @@ import type { ContentImage, PartnershipContent } from "./partnership-content";
  */
 
 const TEXT = "text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]";
-const LOGO_GRID_CELLS = 16;
+/** Silent 6s clip of the statue tossing bills; file names carry a version because caches key by URL. */
+const PARTNERSHIP_HERO_CLIP_SRC = "/partnership/hero-statue-money-v1.mp4";
+
 
 function IconTile({ icon }: { icon: ContentImage | null }) {
   if (!icon) return null;
@@ -45,11 +54,21 @@ interface PartnershipPageProps {
 }
 
 export default function PartnershipPage({ content }: PartnershipPageProps) {
-  const { hero, recognize, amplify, scale, darkCta, differentiators, nextSteps, faq } = content;
-  const logoCells = [
-    ...scale.logos,
-    ...Array.from({ length: Math.max(0, LOGO_GRID_CELLS - scale.logos.length) }, () => null),
-  ];
+  const { hero, recognize, portal, amplify, scale, darkCta, differentiators, nextSteps, faq } = content;
+  // WHY: the partner marks are black-on-transparent for the light grid; the field flattens them to white and
+  //      sizes emblems taller than wordmarks. Colour logos (keepColor) keep their colours.
+  const partnerLogos: ClientLogo[] = scale.logos.map(({ image, keepColor }) => {
+    const ratio = image.width / Math.max(1, image.height);
+    return {
+      name: image.alt || "Partner logo",
+      src: image.src,
+      width: image.width,
+      height: image.height,
+      logoHeight: ratio < 1.6 ? 36 : ratio > 4.5 ? 22 : 26,
+      invert: !keepColor,
+      blend: keepColor,
+    };
+  });
   const faqItems = faq.items.map((item, index) => ({ ...item, defaultOpen: index === 0 }));
 
   return (
@@ -64,22 +83,22 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
             {hero.intro}
           </p>
 
-          <div className="relative mx-auto mt-[60px] h-[360px] w-full max-w-[350px] lg:mt-[128px] lg:h-[635px] lg:max-w-none">
-            <div className="partnership-hero-panel-gradient absolute bottom-0 left-0 h-[255px] w-full rounded-[30px] lg:h-[480px] lg:rounded-[40px]" />
-
+          {/* WHY: the statue clip has a black backdrop, so image and video screen-blend over the brand gradient; the still is
+              the clip's first frame and all that phones and reduced-motion visitors get, while desktop plays the clip once. */}
+          <div className="partnership-hero-panel-gradient hero-blend-frame relative mx-auto mt-[60px] h-[260px] w-full max-w-[350px] overflow-hidden rounded-[30px] sm:h-[320px] sm:max-w-none lg:mt-[128px] lg:h-[635px] lg:rounded-[40px]">
             {hero.image ? (
-              <div className="absolute bottom-0 left-0 h-[360px] w-full overflow-hidden rounded-[30px] lg:h-[635px] lg:rounded-br-[40px] lg:rounded-tl-none lg:rounded-tr-none">
+              <>
                 <Image
                   alt={hero.image.alt}
-                  className="pointer-events-none absolute left-[-10%] top-0 h-full w-[120%] max-w-none object-cover object-top lg:left-[9.28%] lg:top-[-12.4%] lg:h-[241.86%] lg:w-[81.12%]"
+                  className="hero-blend-poster pointer-events-none object-cover mix-blend-screen"
                   fetchPriority="high"
-                  height={hero.image.height}
+                  fill
                   priority
-                  sizes="(min-width: 1440px) 1152px, 350px"
+                  sizes="(min-width: 1440px) 1400px, 100vw"
                   src={hero.image.src}
-                  width={hero.image.width}
                 />
-              </div>
+                <HeroVideoOverlay autoPlayOnce src={PARTNERSHIP_HERO_CLIP_SRC} videoClassName="mix-blend-screen" />
+              </>
             ) : null}
           </div>
         </div>
@@ -111,6 +130,58 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
                     ) : null}
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* WHY: the audience items qualify the visitor; the form right under them catches the "yes, that's us" moment. */}
+            <div className="mt-[60px] lg:mt-[80px]" data-reveal>
+              <PartnershipRequestForm form={recognize.form} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-[60px] lg:pt-[120px]" id="inside-the-portal">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className="px-5 sm:px-8 xl:px-[70px]">
+            <div className="grid grid-cols-1 gap-8 xl:grid-cols-[1fr_520px] xl:items-end xl:gap-[60px]" data-reveal>
+              <div>
+                <SectionLabel>{portal.label}</SectionLabel>
+                <h2 className={`type-h2 mt-[37px] w-full max-w-[640px] ${TEXT}`}>
+                  <GradientHeading highlightClassName="gradient-text-partnership-recognize" segments={portal.heading} />
+                </h2>
+              </div>
+              <p className={`type-paragraph ${TEXT}`}>{portal.intro}</p>
+            </div>
+            <div className="mt-[40px] lg:mt-[60px]" data-reveal>
+              <PortalShowcase steps={portal.steps} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-[60px] lg:pt-[120px]" id="partnership-scale">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className="px-5 sm:px-8 xl:px-[70px]">
+            <SectionLabel>{scale.label}</SectionLabel>
+
+            <div className="mt-[43px] grid grid-cols-1 gap-10 xl:grid-cols-[1fr_628px] xl:gap-0">
+              <div>
+                <h2 className={`type-h2 w-full max-w-[483px] ${TEXT}`}>
+                  <GradientHeading
+                    highlightClassName={["gradient-text-partnership-scale", "gradient-text-partnership-scale-dark"]}
+                    segments={scale.heading}
+                  />
+                </h2>
+
+                <div className={`mt-[39px] w-full max-w-[502px] space-y-5 ${TEXT}`}>
+                  <RichParagraphs blocks={scale.paragraphs} />
+                </div>
+              </div>
+
+              {/* WHY: the same floating logo field as the homepage, in a square panel so it reads as a tile beside the copy. */}
+              <div className="w-full xl:w-[628px] xl:justify-self-end">
+                <LogoField aspect="square" logos={partnerLogos} />
               </div>
             </div>
           </div>
@@ -165,53 +236,6 @@ export default function PartnershipPage({ content }: PartnershipPageProps) {
                   ) : null}
                 </article>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pt-[60px] lg:pt-[120px]" id="partnership-scale">
-        <div className={PAGE_SHELL_CLASS}>
-          <div className="px-5 sm:px-8 xl:px-[70px]">
-            <SectionLabel>{scale.label}</SectionLabel>
-
-            <div className="mt-[43px] grid grid-cols-1 gap-10 xl:grid-cols-[1fr_628px] xl:gap-0">
-              <div>
-                <h2 className={`type-h2 w-full max-w-[483px] ${TEXT}`}>
-                  <GradientHeading
-                    highlightClassName={["gradient-text-partnership-scale", "gradient-text-partnership-scale-dark"]}
-                    segments={scale.heading}
-                  />
-                </h2>
-
-                <div className={`mt-[39px] w-full max-w-[502px] space-y-5 ${TEXT}`}>
-                  <RichParagraphs blocks={scale.paragraphs} />
-                </div>
-              </div>
-
-              {/* WHY: CMS logos have arbitrary natural sizes, so the grid needs its own width instead of sizing from its content. */}
-              <div className="grid w-full grid-cols-2 gap-5 sm:grid-cols-4 xl:w-[628px] xl:justify-self-end">
-                {logoCells.map((cell, index) => (
-                  <div
-                    className="flex h-[100px] w-full items-center justify-center rounded-[20px] bg-[var(--color-hr-off-white)] dark:border dark:border-[var(--color-border-inverse-15)] dark:bg-[var(--color-surface-inverse-95)]"
-                    key={cell ? `${cell.image.src}-${index}` : `empty-${index}`}
-                  >
-                    {cell ? (
-                      <Image
-                        alt={cell.image.alt}
-                        // WHY: the cells stay light in dark mode (95% white surface), so the logo must stay black there too;
-                        // inverting it to white made every logo vanish in dark mode.
-                        // WHY: cells are 142×100; capping logos at 106×44 leaves ~18px of air on every side so wordmarks never touch the border.
-                        className={`h-auto max-h-[44px] w-auto max-w-[106px] object-contain ${cell.keepColor ? "" : "[filter:brightness(0)]"}`}
-                        height={cell.image.height}
-                        sizes="142px"
-                        src={cell.image.src}
-                        width={cell.image.width}
-                      />
-                    ) : null}
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

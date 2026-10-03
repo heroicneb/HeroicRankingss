@@ -25,6 +25,15 @@ export interface PartnershipContent {
     label: string;
     heading: HeadingSegment[];
     items: Array<{ title: string; description: string; icon: ContentImage | null }>;
+    /** "Is This You?" lead form under the audience items. */
+    form: { heading: string; body: string; ctaLabel: string; successMessage: string };
+  };
+  /** "/ Inside the Portal /": four captions, one per redrawn portal screen (dashboard, thread, reports, deliverables). */
+  portal: {
+    label: string;
+    heading: HeadingSegment[];
+    intro: string;
+    steps: Array<{ title: string; description: string }>;
   };
   amplify: {
     label: string;
@@ -82,7 +91,7 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
     heading: [hl("White Label SEO Partnership"), { text: " Strategies That Grow Your MRR" }],
     intro:
       "Protect your client relationships and grow your agency's recurring revenue with white-label SEO and link building built for scale. We handle the execution, reporting, and strategy - you stay the hero, your clients see real results, and everyone grows together",
-    image: { src: "/partnership/hero-statue.webp", alt: "Classical statue", width: 3072, height: 4096 },
+    image: { src: "/partnership/hero-statue-money-v1-poster.webp", alt: "Marble statue tossing banknotes into the air", width: 1424, height: 640 },
   },
 
   recognize: {
@@ -105,6 +114,41 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
         description:
           "Needing expert assistance with SEO implementation and link-building to provide top tier service to your clients.",
         icon: icon("icon-group176778.svg", 32, 28),
+      },
+    ],
+    form: {
+      heading: "Is This You?",
+      body: "Leave your name and work email and we'll reach out within one business day to talk through a white-label partnership.",
+      ctaLabel: "Request a Partnership",
+      successMessage: "Thanks! We'll be in touch within one business day.",
+    },
+  },
+
+  portal: {
+    label: "/ Inside the Portal /",
+    heading: [{ text: "Your Clients, Our Work, " }, hl("One Login")],
+    intro:
+      "Every partner agency gets a white-label portal. This is what you see when you sign in: your clients' projects, our team's work on each deliverable, and reports you can forward as your own.",
+    steps: [
+      {
+        title: "Every client on one dashboard",
+        description:
+          "Sign in and see all of your clients' projects, active tasks, pending reviews and the latest activity in one place. Open any client with a click.",
+      },
+      {
+        title: "Talk to our team inside each deliverable",
+        description:
+          "Every deliverable has its own thread. Leave feedback, attach files, approve drafts and get previews, all under your agency's name.",
+      },
+      {
+        title: "Reports your clients will actually read",
+        description:
+          "A plain-English monthly summary, the completed work with hours, and keyword rankings with their movement, ready to forward.",
+      },
+      {
+        title: "Status on everything at a glance",
+        description:
+          "Priority, status, estimate and month for each deliverable, from proposed to approved to done, so you always know what is next.",
       },
     ],
   },
@@ -132,8 +176,8 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
           "Grow your agency with white-label SEO and link building built for scale. To keep everything running smoothly, you get access to our custom white-label platform - a centralized hub where you can track finances, monitor deliverables and work progress, and order from a full service library, all in one place.",
         ],
         icon: icon("icon-group176774.svg", 31, 32),
-        ctaLabel: "Let's Grow Together",
-        ctaUrl: "/contact",
+        ctaLabel: null,
+        ctaUrl: null,
       },
       {
         title: "What makes us the best white label SEO agency?",
@@ -150,7 +194,7 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
   },
 
   scale: {
-    label: "/ Amplify Authority /",
+    label: "/ Growing Together /",
     heading: [hl("Partnerships"), br, hl("Designed to Scale")],
     paragraphs: [
       paragraph("Our partnerships scale alongside your business goals and create lasting value for everyone involved."),
@@ -165,7 +209,7 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
       logo("logo-atropos-digital.svg", "Atropos Digital logo", 114, 16),
       logo("logo-group176790.svg", "Partner logo", 49, 44),
       logo("logo-digital-spice.png", "Digital Spice logo", 114, 18),
-      logo("logo-group176792.svg", "Partner logo", 110, 15),
+      logo("websummit.png", "Web Summit logo", 106, 51, true),
       logo("logo-conversion-pipeline.svg", "Conversion Pipeline logo", 109, 34),
       logo("logo-ice-web.png", "Ice Web logo", 106, 38),
       logo("logo-white-label-agency.png", "White Label Agency logo", 108, 22),

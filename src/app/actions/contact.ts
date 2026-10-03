@@ -24,6 +24,10 @@ interface ContactSubmissionPayload {
   heardFrom: string;
   projectOverview: string;
   submittedAt: string;
+  /** Which form sent it; absent for the original contact form so existing receivers keep working. */
+  formType?: "partnership";
+  /** Page path the form lives on. */
+  source?: string;
 }
 
 interface RateLimitEntry {
@@ -410,10 +414,12 @@ async function dispatchContactSubmission(payload: ContactSubmissionPayload): Pro
   };
 }
 
-export async function submitContactForm(
-  _previousState: ContactFormState,
-  formData: FormData,
-): Promise<ContactFormState> {
+/**
+ * Bot and abuse checks shared by every form: honeypot, per-device rate limit
+ * and a minimum time-to-submit. Returns the state to send back when a check
+ * fails, otherwise the submittedAt stamp to forward.
+ */
+async function runSubmissionGuards(formData: FormData): Promise<{ state: ContactFormState } | { submittedAt: string; rateLimitBackend: string }> {
   const requestHeaders = await headers();
 
   const honeypot = formData.get("website");
@@ -422,14 +428,14 @@ export async function submitContactForm(
     logContactEvent("warn", "submission_blocked_honeypot", {
       botSignalDetected: true,
     });
-    return { success: true, error: null };
+    return { state: { success: true, error: null } };
   }
 
   if (honeypot !== null && typeof honeypot !== "string") {
     logContactEvent("warn", "submission_invalid_payload", {
       reason: "honeypot_not_string",
     });
-    return { success: false, error: "Invalid submission payload." };
+    return { state: { success: false, error: "Invalid submission payload." } };
   }
 
   const rateLimitKey = buildRateLimitKey(requestHeaders);
@@ -447,8 +453,10 @@ export async function submitContactForm(
       backend: rateLimitResult.backend,
     });
     return {
-      success: false,
-      error: "Too many submissions from this device. Please wait a few minutes and try again.",
+      state: {
+        success: false,
+        error: "Too many submissions from this device. Please wait a few minutes and try again.",
+      },
     };
   }
 
@@ -457,7 +465,7 @@ export async function submitContactForm(
     logContactEvent("warn", "submission_invalid_payload", {
       reason: "submitted_at_not_string",
     });
-    return { success: false, error: "Invalid submission payload." };
+    return { state: { success: false, error: "Invalid submission payload." } };
   }
 
   const submittedAtMs = Number(submittedAt);
@@ -465,8 +473,19 @@ export async function submitContactForm(
     logContactEvent("warn", "submission_blocked_too_fast", {
       elapsedMs: Date.now() - submittedAtMs,
     });
-    return { success: false, error: "Please wait a moment before submitting the form." };
+    return { state: { success: false, error: "Please wait a moment before submitting the form." } };
   }
+
+  return { submittedAt, rateLimitBackend: rateLimitResult.backend };
+}
+
+export async function submitContactForm(
+  _previousState: ContactFormState,
+  formData: FormData,
+): Promise<ContactFormState> {
+  const guard = await runSubmissionGuards(formData);
+  if ("state" in guard) return guard.state;
+  const { submittedAt, rateLimitBackend } = guard;
 
   const fullName = getRequiredString(formData, "fullName");
   const companyName = getRequiredString(formData, "companyName");
@@ -573,8 +592,82 @@ export async function submitContactForm(
   }
 
   logContactEvent("info", "submission_delivered", {
-    rateLimitBackend: rateLimitResult.backend,
+    rateLimitBackend,
   });
 
   return { success: true, error: null };
+}
+
+/**
+ * "Is This You?" on the white-label partnership page: name and work email
+ * only. Delivered to the same webhook as the contact form with formType
+ * "partnership" so it can be routed separately.
+ */
+export async function submitPartnershipForm(
+  _previousState: ContactFormState,
+  formData: FormData,
+): Promise<ContactFormState> {
+  const guard = await runSubmissionGuards(formData);
+  if ("state" in guard) return guard.state;
+  const { submittedAt, rateLimitBackend } = guard;
+
+  const fullName = getRequiredString(formData, "fullName");
+  const companyEmail = getRequiredString(formData, "companyEmail");
+
+  if (fullName === null || companyEmail === null) {
+    logContactEvent("warn", "submission_invalid_payload", { reason: "required_field_not_string", form: "partnership" });
+    return { success: false, error: "Please fill in all required fields." };
+  }
+  if (fullName === "") {
+    logContactEvent("warn", "submission_validation_failed", { reason: "full_name_required", form: "partnership" });
+    return { success: false, error: "Full name is required." };
+  }
+  if (companyEmail === "" || !isValidContactEmail(companyEmail)) {
+    logContactEvent("warn", "submission_validation_failed", { reason: "invalid_email", form: "partnership" });
+    return { success: false, error: "A valid work email address is required." };
+  }
+  if (fullName.length > CONTACT_FORM_MAX_NAME_LENGTH) {
+    logContactEvent("warn", "submission_validation_failed", { reason: "name_too_long", form: "partnership" });
+    return { success: false, error: "Name is too long." };
+  }
+  if (companyEmail.length > CONTACT_FORM_MAX_EMAIL_LENGTH) {
+    logContactEvent("warn", "submission_validation_failed", { reason: "email_too_long", form: "partnership" });
+    return { success: false, error: "Email address is too long." };
+  }
+
+  try {
+    const dispatchResult = await dispatchContactSubmission({
+      fullName,
+      companyName: "",
+      companyEmail: companyEmail.toLowerCase(),
+      heardFrom: "",
+      projectOverview: "Partnership request from the white-label SEO partnership page.",
+      submittedAt,
+      formType: "partnership",
+      source: "/white-label-seo-partnership/",
+    });
+
+    if (!dispatchResult.delivered) {
+      if (!dispatchResult.configured) {
+        logContactEvent("error", "submission_delivery_unavailable", { reason: dispatchResult.errorType, form: "partnership" });
+        return { success: false, error: `The form is temporarily unavailable. Please email ${SALES_EMAIL}.` };
+      }
+      logContactEvent("error", "submission_delivery_failed", {
+        attempts: dispatchResult.attempts,
+        errorType: dispatchResult.errorType,
+        statusCode: dispatchResult.lastStatusCode,
+        form: "partnership",
+      });
+      return { success: false, error: `We could not send your request. Please try again or email ${SALES_EMAIL}.` };
+    }
+
+    logContactEvent("info", "submission_delivered", { attempts: dispatchResult.attempts, rateLimitBackend, form: "partnership" });
+    return { success: true, error: null };
+  } catch (error) {
+    logContactEvent("error", "submission_unexpected_error", {
+      message: error instanceof Error ? error.message : "unknown_error",
+      form: "partnership",
+    });
+    return { success: false, error: `Something went wrong. Please try again or email ${SALES_EMAIL}.` };
+  }
 }
