@@ -62,8 +62,9 @@ const nextConfig: NextConfig = {
     inlineCss: true,
     // WHY: Enable cache directives support in App Router.
     useCache: true,
-    // WHY: Persist Turbopack filesystem cache across production builds for faster CI/local rebuilds.
-    turbopackFileSystemCacheForBuild: true,
+    // WHY: the persistent build cache shipped stale CSS to production on 2026-10-03 (new globals.css rules missing
+    //      from the deployed stylesheet, as it had done locally twice). Builds are slower without it, but correct.
+    turbopackFileSystemCacheForBuild: false,
     // WHY: Reuse fetched RSC data in dev HMR cycles for faster local iteration.
     serverComponentsHmrCache: true,
     // WHY: Smooth page transitions using the View Transitions API.
