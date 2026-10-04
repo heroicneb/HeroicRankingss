@@ -83,7 +83,7 @@ const nextConfig: NextConfig = {
       // /case-studies → /case-study to match legacy heroicrankings.com.
       {
         source: "/case-study/number-artist",
-        destination: "/case-study/diy-craft-ecom-brand",
+        destination: "/case-study/diy-craft-ecom-brand/",
         permanent: true,
       },
 
@@ -131,7 +131,7 @@ const nextConfig: NextConfig = {
         destination: "/seo/technical/seo-vs-google-ads/",
         permanent: true,
       },
-      { source: "/marketing/", destination: "/seo", permanent: true },
+      { source: "/marketing/", destination: "/seo/", permanent: true },
       { source: "/web-design-development/", destination: "/", permanent: true },
       {
         source: "/process-that-affects-visibility-of-website/",

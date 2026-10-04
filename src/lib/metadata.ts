@@ -69,8 +69,6 @@ export function createPageMetadata({ title: rawTitle, description: rawDescriptio
     },
     twitter: {
       card: "summary_large_image",
-      site: "@heroicrankings",
-      creator: "@heroicrankings",
       title,
       description,
       images: [DEFAULT_OG_IMAGE],

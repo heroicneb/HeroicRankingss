@@ -17,7 +17,8 @@ import type { ServiceCard } from "@/types";
 
 const MOBILE_CARD_WIDTH = 350;
 const MOBILE_CARD_GAP = 10;
-const MOBILE_FRONT_IMAGE_SIZES = "(min-width: 1024px) 826px, 820px";
+// WHY: the cards are 350px wide on phones and 413px from lg; asking for wider renditions sent 600KB+ images to phones.
+const MOBILE_FRONT_IMAGE_SIZES = "(min-width: 1024px) 413px, 350px";
 
 type ServiceCardEntry = ServiceCard & {
   backDescriptionLines?: readonly string[];
@@ -410,7 +411,7 @@ export function Services({ content = DEFAULT_HOME_CONTENT.services }: ServicesPr
                         "inset-0 h-full w-full object-cover",
                     )}
                     height={1120}
-                    quality={95}
+                    quality={80}
                     sizes={MOBILE_FRONT_IMAGE_SIZES}
                     src={card.frontImageSrc}
                     width={903}

@@ -4,6 +4,8 @@ import { DM_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+import { SiteAnalytics } from "@/components/analytics/SiteAnalytics";
+
 import { SITE_INDEXING_ENABLED } from "@/lib/indexing";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
@@ -93,6 +95,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <SpeedInsights />
+        <SiteAnalytics />
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { PortableTextComponents } from "@portabletext/react";
 import { urlFor } from "@/sanity/lib/image";
+import { withTrailingSlash } from "@/lib/with-trailing-slash";
 
 export const portableTextComponents: PortableTextComponents = {
   types: {
@@ -27,7 +28,8 @@ export const portableTextComponents: PortableTextComponents = {
   },
   marks: {
     link: ({ children, value }) => {
-      const href = value?.href;
+      // WHY: legacy post links were written without trailing slashes or as absolute heroicrankings.com URLs.
+      const href = value?.href ? withTrailingSlash(value.href) : value?.href;
       const isSafe = href && (href.startsWith("/") || href.startsWith("http://") || href.startsWith("https://") || href.startsWith("mailto:"));
       const target = value?.openInNewTab ? "_blank" : undefined;
       const rel = value?.openInNewTab ? "noopener noreferrer" : undefined;

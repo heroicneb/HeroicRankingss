@@ -31,6 +31,7 @@ import {
   PODCAST_EPISODE_SLUGS_QUERY,
   TESTIMONIALS_QUERY,
   CLIENT_LOGOS_QUERY,
+  SITEMAP_ENTRIES_QUERY,
 } from "@/sanity/lib/queries";
 import type { NavItem, NavLink } from "@/types";
 import {
@@ -1339,6 +1340,39 @@ export async function getPartnerLogos(): Promise<SanityPartnerLogo[]> {
     logoUrl: imageUrl(l.logo),
     url: l.url ?? null,
   }));
+}
+
+// ── Sitemap ───────────────────────────────────────────────────────
+
+interface SitemapDated {
+  slug: string;
+  _updatedAt: string;
+}
+
+export interface SitemapEntries {
+  posts: Array<SitemapDated & { urlCategory: string }>;
+  caseStudies: SitemapDated[];
+  team: SitemapDated[];
+  episodes: SitemapDated[];
+  pages: Array<{ _id: string; _updatedAt: string }>;
+}
+
+export async function getSitemapEntries(): Promise<SitemapEntries> {
+  const data = await client.fetch(
+    SITEMAP_ENTRIES_QUERY,
+    {},
+    { next: { tags: ["post", "caseStudy", "teamMember", "podcastEpisode", "homePage", "partnershipPage", "contactPage", "legalPage", "linkBuildingPage", "redditMarketingPage", "seoServicePage"], revalidate: false } },
+  );
+  const empty: SitemapEntries = { posts: [], caseStudies: [], team: [], episodes: [], pages: [] };
+  if (!data) return empty;
+  const raw = data as Partial<Record<keyof SitemapEntries, unknown[]>>;
+  return {
+    posts: (raw.posts ?? []) as SitemapEntries["posts"],
+    caseStudies: (raw.caseStudies ?? []) as SitemapDated[],
+    team: (raw.team ?? []) as SitemapDated[],
+    episodes: (raw.episodes ?? []) as SitemapDated[],
+    pages: (raw.pages ?? []) as SitemapEntries["pages"],
+  };
 }
 
 // ── Client Logos ("/ Trusted By /") ───────────────────────────────
