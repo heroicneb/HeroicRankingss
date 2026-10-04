@@ -12,6 +12,8 @@ interface PageMetadataOptions {
    * the title was written in the Studio or reviewed in the metadata sheet.
    */
   exactTitle?: boolean;
+  /** Page-specific preview image (1200×630); the site image is the fallback. */
+  image?: { url: string; alt?: string } | null;
 }
 
 const DEFAULT_OG_IMAGE = "/opengraph-image";
@@ -40,7 +42,7 @@ function resolveTitle(title: string, exact: boolean): Metadata["title"] {
   return base.length + TITLE_SUFFIX.length <= MAX_TITLE_WITH_SUFFIX ? base : { absolute: base };
 }
 
-export function createPageMetadata({ title: rawTitle, description: rawDescription, path, ogType = "website", exactTitle = false }: PageMetadataOptions): Metadata {
+export function createPageMetadata({ title: rawTitle, description: rawDescription, path, ogType = "website", exactTitle = false, image = null }: PageMetadataOptions): Metadata {
   const canonicalPath = normalizePath(path);
   const title = rawTitle.replace(new RegExp(`(\\s*\\|\\s*${SITE_NAME})+$`), "").trim();
   const description = clampDescription(rawDescription);
@@ -60,10 +62,10 @@ export function createPageMetadata({ title: rawTitle, description: rawDescriptio
       url: canonicalPath,
       images: [
         {
-          url: DEFAULT_OG_IMAGE,
+          url: image?.url ?? DEFAULT_OG_IMAGE,
           width: 1200,
           height: 630,
-          alt: `${SITE_NAME} Open Graph Image`,
+          alt: image?.alt ?? `${SITE_NAME} Open Graph Image`,
         },
       ],
     },
@@ -71,7 +73,7 @@ export function createPageMetadata({ title: rawTitle, description: rawDescriptio
       card: "summary_large_image",
       title,
       description,
-      images: [DEFAULT_OG_IMAGE],
+      images: [image?.url ?? DEFAULT_OG_IMAGE],
     },
   };
 }

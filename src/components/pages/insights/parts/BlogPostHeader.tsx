@@ -1,4 +1,6 @@
+import { AppLink } from "@/components/ui/app-link";
 import { GradientText } from "@/components/ui/gradient-text";
+import { formatPublishedDate } from "@/lib/format";
 import type { SanityPostDetail } from "@/lib/sanity-data";
 import { splitTitle } from "@/lib/split-title";
 
@@ -36,6 +38,11 @@ export function BlogPostHeader({ articleUrl, post }: BlogPostHeaderProps) {
     post.titleHighlighted,
   );
   const hasHighlight = gradient.length > 0;
+  const authorSlug = post.author?.slug ?? null;
+  const published = formatPublishedDate(post.publishedAt);
+  // WHY: show "Updated" only when the edit is a different day than publication; same-day edits are noise.
+  const updatedIsLater = Boolean(post.updatedAt && post.publishedAt && post.updatedAt.slice(0, 10) > post.publishedAt.slice(0, 10));
+  const updated = updatedIsLater ? formatPublishedDate(post.updatedAt) : null;
 
   return (
     <header className="w-full">
@@ -44,7 +51,13 @@ export function BlogPostHeader({ articleUrl, post }: BlogPostHeaderProps) {
         {authorName ? (
           <>
             <span>by </span>
-            <span className="font-bold">{authorName}</span>
+            {authorSlug ? (
+              <AppLink className="font-bold underline-offset-4 hover:underline" href={`/about/${authorSlug}/`} motionPreset="none">
+                {authorName}
+              </AppLink>
+            ) : (
+              <span className="font-bold">{authorName}</span>
+            )}
           </>
         ) : null}
         {authorName && categoryLabel ? (
@@ -59,6 +72,21 @@ export function BlogPostHeader({ articleUrl, post }: BlogPostHeaderProps) {
           </>
         ) : null}
       </p>
+
+      {/* Dates: freshness signal for readers, Google and AI engines (matches Article datePublished/dateModified). */}
+      {published ? (
+        <p className="mt-[10px] text-center text-[14px] leading-[20px] text-[var(--color-hr-grey)] lg:text-left lg:text-[16px] dark:text-[var(--color-text-inverse-60)]">
+          <span>Published </span>
+          <time dateTime={post.publishedAt ?? undefined}>{published}</time>
+          {updated ? (
+            <>
+              <span aria-hidden className="mx-[6px]">·</span>
+              <span>Updated </span>
+              <time dateTime={post.updatedAt ?? undefined}>{updated}</time>
+            </>
+          ) : null}
+        </p>
+      ) : null}
 
       {/* Two-tone H1 (solid + gradient via titleHighlighted), falls back to
           full gradient when no highlight is configured. */}

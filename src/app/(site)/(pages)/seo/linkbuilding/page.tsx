@@ -5,6 +5,7 @@ import {
   LINK_BUILDING_DEFAULT_SEO,
 } from "@/components/pages/link-building/link-building-content";
 import LinkBuildingPage from "@/components/pages/link-building/link-building-page";
+import { ServiceSchema } from "@/components/seo/service-schema";
 import { createPageMetadata } from "@/lib/metadata";
 import { getFaqItemsByService, getLinkBuildingPage } from "@/lib/sanity-data";
 
@@ -23,5 +24,16 @@ export default async function LinkBuildingRoute() {
     getLinkBuildingPage().catch(() => null),
     getFaqItemsByService("link-building").catch(() => []),
   ]);
-  return <LinkBuildingPage cmsFaqItems={faqItems} content={page?.content ?? DEFAULT_LINK_BUILDING_CONTENT} />;
+  const seoTitle = (page?.seo?.metaTitle?.trim() || LINK_BUILDING_DEFAULT_SEO.title).replace(/\s*\|\s*Heroic Rankings$/, "");
+  return (
+    <>
+      <ServiceSchema
+        description={page?.seo?.metaDescription?.trim() || LINK_BUILDING_DEFAULT_SEO.description}
+        name={seoTitle}
+        path="/seo/linkbuilding"
+        serviceType="Link building and digital PR"
+      />
+      <LinkBuildingPage cmsFaqItems={faqItems} content={page?.content ?? DEFAULT_LINK_BUILDING_CONTENT} />
+    </>
+  );
 }

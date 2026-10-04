@@ -7,6 +7,7 @@ import { ArticleSchema } from "@/components/seo/article-schema";
 import { FaqSchema } from "@/components/seo/faq-schema";
 import { createPageMetadata } from "@/lib/metadata";
 import { getPostBySlug, getPostUrls } from "@/lib/sanity-data";
+import { SITE_URL } from "@/lib/site";
 
 interface PostRouteProps {
   params: Promise<{
@@ -34,6 +35,7 @@ export async function generateMetadata({
       "Explore insights from Heroic Rankings.",
     path: `/seo/${category}/${slug}`,
     ogType: "article",
+    image: post.ogImageUrl ? { url: post.ogImageUrl, alt: post.mainImageAlt } : null,
   });
 }
 
@@ -74,11 +76,15 @@ export default async function Page({ params }: PostRouteProps) {
       ) : null}
       <Suspense fallback={null}>
         <ArticleSchema
-          author={post.authorName}
+          author={post.author?.name ?? post.authorName}
+          authorUrl={post.author?.slug ? `${SITE_URL}/about/${post.author.slug}/` : null}
+          dateModified={post.updatedAt}
           datePublished={post.publishedAt}
           description={post.excerpt}
           headline={post.title}
           image={post.mainImageUrl || null}
+          type="BlogPosting"
+          url={`${SITE_URL}/seo/${category}/${slug}/`}
         />
       </Suspense>
       <BlogPostDetailContent post={post} />

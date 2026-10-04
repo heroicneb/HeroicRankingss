@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import ContentCreationPage from "@/components/pages/content-creation/content-creation-page";
 import { seoServicePage } from "@/components/pages/shared/seo-service-registry";
+import { ServiceSchema } from "@/components/seo/service-schema";
 import { createPageMetadata } from "@/lib/metadata";
 import { getFaqItemsByService, getSeoServicePage } from "@/lib/sanity-data";
 
@@ -23,5 +24,16 @@ export default async function Route() {
     getSeoServicePage(PAGE.key).catch(() => null),
     getFaqItemsByService(PAGE.faqService).catch(() => []),
   ]);
-  return <ContentCreationPage cmsFaqItems={faqItems} content={page?.content ?? PAGE.content} />;
+  const seoTitle = (page?.seo?.metaTitle?.trim() || PAGE.seo.title).replace(/\s*\|\s*Heroic Rankings$/, "");
+  return (
+    <>
+      <ServiceSchema
+        description={page?.seo?.metaDescription?.trim() || PAGE.seo.description}
+        name={seoTitle}
+        path={PAGE.path}
+        serviceType="SEO content creation"
+      />
+      <ContentCreationPage cmsFaqItems={faqItems} content={page?.content ?? PAGE.content} />
+    </>
+  );
 }

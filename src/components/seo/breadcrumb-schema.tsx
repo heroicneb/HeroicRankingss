@@ -16,19 +16,23 @@ interface BreadcrumbSchemaProps {
 /** Map known URL slugs to human-readable breadcrumb labels. */
 const SLUG_LABELS: Record<string, string> = {
   about: "About Us",
-  "case-studies": "Case Studies",
-  insights: "Insights",
-  partnership: "Partnership",
+  blog: "Insights",
+  "case-study": "Case Studies",
+  podcast: "Podcast",
+  "white-label-seo-partnership": "White Label SEO Partnership",
   contact: "Contact",
   "privacy-policy": "Privacy Policy",
-  "seo-services": "SEO Services",
-  "on-page-seo": "On-Page SEO",
-  "technical-seo": "Technical SEO",
-  "local-seo": "Local SEO",
-  "ecommerce-seo": "Ecommerce SEO",
+  seo: "SEO Services",
+  "on-page": "On-Page SEO",
+  technical: "Technical SEO",
+  local: "Local SEO",
+  "e-commerce": "E-commerce SEO",
   "content-creation": "Content Creation",
-  "keyword-strategy": "Keyword Strategy",
-  "link-building": "Link Building",
+  "keyword-research": "Keyword Strategy",
+  linkbuilding: "Link Building",
+  "reddit-marketing": "Reddit Marketing",
+  // WHY: post URLs carry the legacy category segment (/seo/<category>/<slug>/).
+  managed: "Managed SEO",
 };
 
 /** Convert an unknown slug to title case as a fallback. */

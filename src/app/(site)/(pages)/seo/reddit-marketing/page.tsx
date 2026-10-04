@@ -5,6 +5,7 @@ import {
   REDDIT_MARKETING_DEFAULT_SEO,
 } from "@/components/pages/reddit-marketing/reddit-marketing-content";
 import RedditMarketingPage from "@/components/pages/reddit-marketing/reddit-marketing-page";
+import { ServiceSchema } from "@/components/seo/service-schema";
 import { createPageMetadata } from "@/lib/metadata";
 import { getFaqItemsByService, getRedditMarketingPage } from "@/lib/sanity-data";
 
@@ -23,5 +24,16 @@ export default async function RedditMarketingRoute() {
     getRedditMarketingPage().catch(() => null),
     getFaqItemsByService("reddit-marketing").catch(() => []),
   ]);
-  return <RedditMarketingPage cmsFaqItems={faqItems} content={page?.content ?? DEFAULT_REDDIT_MARKETING_CONTENT} />;
+  const seoTitle = (page?.seo?.metaTitle?.trim() || REDDIT_MARKETING_DEFAULT_SEO.title).replace(/\s*\|\s*Heroic Rankings$/, "");
+  return (
+    <>
+      <ServiceSchema
+        description={page?.seo?.metaDescription?.trim() || REDDIT_MARKETING_DEFAULT_SEO.description}
+        name={seoTitle}
+        path="/seo/reddit-marketing"
+        serviceType="Reddit marketing"
+      />
+      <RedditMarketingPage cmsFaqItems={faqItems} content={page?.content ?? DEFAULT_REDDIT_MARKETING_CONTENT} />
+    </>
+  );
 }
