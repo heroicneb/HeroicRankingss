@@ -282,7 +282,8 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
                   "answer-engine-node flex items-center gap-[10px] self-start rounded-full border py-[5px] pl-[5px] pr-[12px] text-left text-[13px] leading-[16px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] lg:py-[6px] lg:pl-[6px] lg:pr-[14px] lg:text-[14px]",
                   active[i]
                     ? "border-[var(--color-hr-accent)] bg-[color-mix(in_srgb,var(--color-hr-accent)_16%,var(--color-hr-dark))] text-[var(--color-hr-pure-white)]"
-                    : "border-[var(--color-border-inverse-10)] bg-[var(--color-hr-dark)] text-[var(--color-text-inverse-30)]",
+                    : // WHY: unlit sources stay muted but at 60% white they clear 4.5:1 on the dark panel (30% measured 2.7:1).
+                      "border-[var(--color-border-inverse-10)] bg-[var(--color-hr-dark)] text-[var(--color-text-inverse-60)]",
                   tipIndex === i && "ring-2 ring-[var(--color-hr-accent)]",
                 )}
                 key={source.id}
@@ -384,7 +385,7 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
           )}
         </p>
       </div>
-      <p className="mt-[14px] text-[11px] leading-[16px] text-[var(--color-text-inverse-30)]">{disclaimer}</p>
+      <p className="mt-[14px] text-[11px] leading-[16px] text-[var(--color-text-inverse-50)]">{disclaimer}</p>
     </div>
   );
 }

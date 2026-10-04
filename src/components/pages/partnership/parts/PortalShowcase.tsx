@@ -246,12 +246,15 @@ export function PortalShowcase({ steps }: PortalShowcaseProps) {
                 <button
                   aria-label={`${index + 1}. ${step.title}`}
                   aria-selected={index === active}
-                  className={cn("h-[8px] rounded-full transition-all", index === active ? "w-[24px] bg-[var(--color-hr-accent)]" : "w-[8px] bg-[var(--color-hr-light-grey)] dark:bg-[var(--color-border-inverse-20)]")}
+                  // WHY: the visible dot is 8px, but the tap target must be at least 24px.
+                  className="flex h-[28px] min-w-[28px] items-center justify-center"
                   key={step.title}
                   onClick={() => goTo(index)}
                   role="tab"
                   type="button"
-                />
+                >
+                  <span aria-hidden className={cn("block h-[8px] rounded-full transition-all", index === active ? "w-[24px] bg-[var(--color-hr-accent)]" : "w-[8px] bg-[var(--color-hr-light-grey)] dark:bg-[var(--color-border-inverse-20)]")} />
+                </button>
               ))}
             </div>
             <button
