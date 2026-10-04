@@ -105,7 +105,26 @@ Nebojsa installed Python 3.10 and added the `AgriciDaniel/claude-seo` marketplac
 
 Severity recap after the re-check: nothing new at P0 beyond §8; the cache-control/bfcache item joins P0 item 3 (performance); duplicated headings and the disavow review join P2.
 
-## 10. About the claude-seo plugin (github.com/AgricIDaniel/claude-seo)
+## 10. P0 implemented (2026-10-04, commit 3a51e01)
+
+Decisions from Nebojsa: keep the existing GA4 property (no new tracking, so GA4 and Search Console history continues); LinkedIn is `heroic-rankings`; drop X; add Instagram `https://www.instagram.com/heroicrankings/`.
+
+Done and verified on a local production build:
+
+- **Analytics carry-over.** The live site runs GA4 `G-JQPE5M229E` and Microsoft Clarity `vtitv6fbvf`; both now load in production through nonce'd `next/script` tags (`src/components/analytics/SiteAnalytics.tsx`), with the Google and Clarity hosts added to the CSP. Verified: `gtag` and `clarity` defined, dataLayer populated, no CSP violations. Vercel Analytics and Speed Insights were already present (correction to §7: the new build was not analytics-free, it lacked GA4). Ids can be overridden with `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_CLARITY_ID`; `NEXT_PUBLIC_DISABLE_ANALYTICS=true` turns both off. The live site also loads a `static.claydar.com` script that was not carried over; confirm whether it is still wanted.
+- **Sitemap**: 151 URLs including `/podcast/` and the 16 episodes, each with its document's `_updatedAt` (92 distinct dates instead of one).
+- **Trailing slashes**: `AppLink` and portable-text links normalise internal hrefs; 257 post-body links rewritten in Sanity (`scripts/seo/fix-post-links.ts`), the broken `b2b-seo-solutions-2024` link fixed, `/case-study/number-artist/` and `/marketing/` redirect targets no longer double-hop. Internal redirect hops on the crawl: 53 → 0.
+- **Homepage images**: Services cards request 350/413px renditions at quality 80. Lighthouse mobile home: performance 53 → **83**, LCP 10.9 s → 4.4 s, TBT 810 → 160 ms, transfer 2.9 MB → 1.06 MB. Service page 82 → 89. Best-practices dropped 96 → 75 only because Clarity sets third-party cookies (the live site scores 79 for the same reason) and because of the Sanity CORS console errors (fixed by the CORS step below).
+- **Social**: Organization `sameAs` is LinkedIn, Instagram, YouTube; footer fallback and the Sanity site settings carry the same three; `twitter:site`/`creator` removed.
+
+Tried and reverted: setting `Cache-Control: public, s-maxage` from middleware. Next.js overrides it for dynamically rendered pages, so the bfcache/CDN item needs a rendering change (static/ISR with webhook revalidation), which conflicts with the per-request CSP nonce. Options for Nebojsa: (a) keep nonce CSP and accept no shared caching, (b) switch to a hash-free CSP (`'unsafe-inline'` for scripts) and make pages static with ISR. Recommendation: (b) after launch, measured on Vercel first.
+
+Still yours to do before cutover (cannot be done from this machine):
+1. Sanity → project → API → CORS origins: add `https://heroicrankings.com` and `https://www.heroicrankings.com` (keep the Vercel preview origin). The write token lacks the CORS grant.
+2. Vercel production env: `NEXT_PUBLIC_SITE_INDEXING=true`, `NEXT_PUBLIC_SITE_URL=https://heroicrankings.com`; keep the preview deployment locked.
+3. Point the domain at Vercel with www → apex redirect; afterwards resubmit `https://heroicrankings.com/sitemap.xml` in Search Console (same domain property, history continues).
+
+## 11. About the claude-seo plugin (github.com/AgricIDaniel/claude-seo)
 
 MIT-licensed, ~18k stars, v2.4.1 (Sept 2026). It wraps 26 sub-skills (technical, content/E-E-A-T, schema, GEO/AEO citability scoring, sitemap) and runs without API keys by fetching the target URL; optional PageSpeed/CrUX/Search Console keys enrich it. It is a good second opinion once the P0/P1 fixes are in, pointed at the Vercel preview or the live domain. Install from an interactive `claude` terminal (not from this session):
 
