@@ -240,7 +240,6 @@ export function CaseStudies({ cmsCaseStudies, content = DEFAULT_HOME_CONTENT.cas
         <div className="flex flex-col gap-[10px] lg:hidden">
           {studies.map((study) => (
             <AppLink
-              aria-label={`Open case study: ${study.title}`}
               className={cn(
                 "group relative mx-auto block w-full max-w-[350px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]",
                 study.mobileCardHeightClassName,
@@ -285,7 +284,6 @@ export function CaseStudies({ cmsCaseStudies, content = DEFAULT_HOME_CONTENT.cas
         <div className="hidden gap-5 lg:grid lg:grid-cols-3" data-reveal-stagger>
           {studies.map((study) => (
             <AppLink
-              aria-label={`Open case study: ${study.title}`}
               className="group relative mx-auto block w-full max-w-[348px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] focus-visible:ring-offset-2 dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)] lg:h-[501px] lg:max-w-none lg:rounded-[var(--radius-card)]"
               href={study.href}
               key={`desktop-${study.title}`}

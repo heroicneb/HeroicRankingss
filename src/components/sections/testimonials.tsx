@@ -64,7 +64,8 @@ function StarIcon({ className }: { className?: string }) {
 function RatingBadge({ rating, href, tabIndex }: { rating: number; href: string; tabIndex?: number }) {
   return (
     <a
-      aria-label={`Rated ${rating.toFixed(1)} out of 5 on Clutch. Read the review on Clutch`}
+      // WHY: the accessible name must contain the visible "5.0 on Clutch" text.
+      aria-label={`${rating.toFixed(1)} on Clutch. Read the review on Clutch`}
       className="motion-interactive inline-flex shrink-0 items-center gap-[6px] whitespace-nowrap rounded-full border border-[var(--color-hr-accent)] px-[12px] py-[6px] text-[13px] leading-[16px] text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
       href={href}
       rel="noopener noreferrer"
@@ -124,7 +125,11 @@ function TestimonialCard({ testimonial, hidden = false }: { testimonial: Testimo
 
       <div className="flex items-end justify-between gap-3">
         <div className="flex min-w-0 flex-col gap-[10px]">
-          <h3 className="type-h4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{testimonial.name}</h3>
+          {hidden ? (
+            <p className="type-h4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{testimonial.name}</p>
+          ) : (
+            <h3 className="type-h4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{testimonial.name}</h3>
+          )}
           <p className="type-paragraph text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]">/ {testimonial.role} /</p>
         </div>
         {testimonial.sourceUrl && testimonial.rating ? <RatingBadge href={testimonial.sourceUrl} rating={testimonial.rating} tabIndex={hidden ? -1 : undefined} /> : null}

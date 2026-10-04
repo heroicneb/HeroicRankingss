@@ -473,10 +473,10 @@ export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
 
 /** Everything the XML sitemap lists, with the last edit date of each document. */
 export const SITEMAP_ENTRIES_QUERY = defineQuery(`{
-  "posts": *[_type == "post" && defined(slug.current) && defined(urlCategory) && !(_id match "audit-fixture-*")]{ "slug": slug.current, urlCategory, _updatedAt },
-  "caseStudies": *[_type == "caseStudy" && defined(slug.current) && !(_id match "audit-fixture-*")]{ "slug": slug.current, _updatedAt },
-  "team": *[_type == "teamMember" && defined(slug.current) && showOnAboutPage != false && !(_id match "audit-fixture-*")]{ "slug": slug.current, _updatedAt },
-  "episodes": *[_type == "podcastEpisode" && defined(slug.current) && !(_id match "audit-fixture-*")]{ "slug": slug.current, _updatedAt },
+  "posts": *[_type == "post" && defined(slug.current) && defined(urlCategory) && !(_id match "audit-fixture-*")] | order(publishedAt desc){ "slug": slug.current, urlCategory, _updatedAt, title, publishedAt },
+  "caseStudies": *[_type == "caseStudy" && defined(slug.current) && !(_id match "audit-fixture-*")]{ "slug": slug.current, _updatedAt, title, client },
+  "team": *[_type == "teamMember" && defined(slug.current) && showOnAboutPage != false && !(_id match "audit-fixture-*")]{ "slug": slug.current, _updatedAt, name, role },
+  "episodes": *[_type == "podcastEpisode" && defined(slug.current) && !(_id match "audit-fixture-*")] | order(episodeNumber desc){ "slug": slug.current, _updatedAt, title, episodeNumber, "guest": guest.name },
   "pages": *[_type in ["homePage", "partnershipPage", "contactPage", "legalPage", "linkBuildingPage", "redditMarketingPage", "seoServicePage"]]{ _id, _updatedAt }
 }`);
 

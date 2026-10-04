@@ -19,6 +19,7 @@
   --color-text-inverse-30: rgb(255 255 255 / 0.3);
   --color-text-inverse-50: rgb(255 255 255 / 0.5);
   --color-text-inverse-60: rgb(255 255 255 / 0.6);
+  --color-text-inverse-80: rgb(255 255 255 / 0.8);
   --color-text-inverse-95: rgb(255 255 255 / 0.95);
   --color-text-fill-light: #ffffff;
   --color-text-fill-dark: #151419;
@@ -711,9 +712,15 @@ textarea {
   width: 28px;
 }
 .pm-btn-primary {
+  /* WHY: white on the mid-purple accent measured under 4.5:1; the dark brand purple carries white text safely. */
+  background: var(--color-brand-700);
+  border-color: var(--color-brand-700);
+  color: var(--color-text-fill-light);
+}
+.dark .portal-mock .pm-btn-primary {
   background: var(--pm-accent);
   border-color: var(--pm-accent);
-  color: var(--color-text-fill-light);
+  color: var(--color-text-fill-dark);
 }
 .pm-btn-month {
   font-weight: 500;
