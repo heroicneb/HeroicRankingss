@@ -145,7 +145,23 @@ Also done:
 
 Still open (P2): colour-contrast fixes, shortening the 24 long post titles, duplicated responsive headings on the homepage, JS/CSS diet, static/ISR rendering decision (§10), optional llms.txt, disavow review of the legacy link profile.
 
-## 12. About the claude-seo plugin (github.com/AgricIDaniel/claude-seo)
+## 12. P2 implemented (2026-10-04, commits 79241fd, 0090f78)
+
+Decisions from Nebojsa: the +1 719 512 4616 phone is correct; no links are to be disavowed by us (review files only, §13).
+
+- **Titles**: the 24 posts with `<title>` over 60 characters have ≤60-character SEO titles in the Studio (`scripts/seo/shorten-post-titles.ts`); H1s unchanged. Re-crawl: 0 long titles across 151 URLs.
+- **Contrast**: Answer Engine chips/toggle moved from 60% to 80% white, unlit source nodes from 30% to 60% (2.7:1 → above 4.5:1); the portal mock's primary button uses the dark brand purple in light mode and dark text on the accent in dark mode.
+- **Accessible names**: card links in Case Studies, Team, Blog and About dropped the `aria-label` that omitted their visible text; the Clutch badge label now starts with the visible "5.0 on Clutch"; the portal stepper dots gained 28px tap targets.
+- **Duplicate headings**: the testimonial marquee's cloned cards no longer repeat `<h3>` names (homepage duplicated H3s 12 → 5). The remaining duplicates are the desktop/mobile variants in Team and Case Studies; Google handles responsive duplicates and the fix would mean restructuring those sections, so they are accepted.
+- **llms.txt**: `/llms.txt` now lists services, case studies, podcast episodes, team and all 103 posts, generated from the sitemap data. No ranking weight; a courtesy map for AI agents.
+- **Final Lighthouse (mobile, production build)**: home 81 / 100 / 75 / 100, partnership 88 / 100 / 75 / 100, post 86 / 100 / 75 / 100 (performance / accessibility / best practices / SEO). Accessibility is now 100 on every template tested; best practices stays at 75 only because of Clarity's third-party cookies and the Sanity CORS console errors that the cutover step removes.
+- Not done, by design: JS/CSS diet (needs bundle analysis; the homepage is at 78–83 mobile and all other templates 86–89) and the static/ISR rendering change (§10, needs the CSP decision).
+
+## 13. Disavow review files (no action taken)
+
+`docs/seo/disavow/2026-10-04-referring-domains-review.csv` lists all 775 referring domains with tier, spam score, links and first-seen date. `docs/seo/disavow/2026-10-04-disavow-candidates.txt` is in Search Console's `domain:` format with 25 active lines (spam score ≥ 60) and 400 review-tier domains commented out. Nothing has been uploaded; Nebojsa decides and uploads manually, if at all.
+
+## 14. About the claude-seo plugin (github.com/AgricIDaniel/claude-seo)
 
 MIT-licensed, ~18k stars, v2.4.1 (Sept 2026). It wraps 26 sub-skills (technical, content/E-E-A-T, schema, GEO/AEO citability scoring, sitemap) and runs without API keys by fetching the target URL; optional PageSpeed/CrUX/Search Console keys enrich it. It is a good second opinion once the P0/P1 fixes are in, pointed at the Vercel preview or the live domain. Install from an interactive `claude` terminal (not from this session):
 
