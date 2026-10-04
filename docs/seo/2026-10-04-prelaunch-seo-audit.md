@@ -87,7 +87,25 @@ Gaps against the live site and against what AI engines consume:
 **P2 — later**
 10. Contrast fixes; shorten the 24 long post titles; case-study schema; JS/CSS diet; optional `llms.txt`.
 
-## 9. About the claude-seo plugin (github.com/AgricIDaniel/claude-seo)
+## 9. Re-check with the claude-seo plugin and DataForSEO (2026-10-04, later the same day)
+
+Nebojsa installed Python 3.10 and added the `AgriciDaniel/claude-seo` marketplace. The plugin's slash commands are not loaded in this session, so its bundled scripts were run directly from its isolated runtime (`claude-seo setup` → Python 3.10, Chromium) against the local production build with `CLAUDE_SEO_LOCAL_TARGETS=localhost:3001`. Playwright-based scripts (agent-UX score, screenshots) refuse local hosts by policy and were skipped. DataForSEO's on-page and backlink endpoints were used on the Vercel preview and the live domain.
+
+**Every finding in sections 2–8 was re-confirmed.** Points the second pass added or sharpened:
+
+- **Structured data is valid on all seven templates** (plugin JSON-LD parser): WebSite, Organization, BreadcrumbList everywhere; FAQPage on services/partnership/65 posts; Article on posts; ProfilePage/Person on team. The plugin notes Google retired FAQ rich results for all sites on 2026-05-07, so FAQPage no longer earns a SERP feature; keep it (AI engines still read it) but do not expect rich results.
+- **Agentic/AI readiness** (`agentic_check`): primary content is server-rendered (2,591 words without JavaScript on the homepage, 2,025 on a post), robots.txt reachable, unknown URLs return a real 404, no AI user agents blocked. Informational gaps, all optional: no deliberate robots.txt groups for AI agents, no `llms.txt`, no Content-Signal header, no Markdown delivery. None carry ranking weight.
+- **bfcache and navigation speed** (`preload_check`, score 50/100): every HTML response carries `Cache-Control: private, no-cache, no-store`, which disqualifies pages from the browser back/forward cache and from CDN caching. Moving the public pages to static or ISR rendering (`revalidate`) with Sanity-webhook revalidation would fix both and is the single biggest performance lever after the homepage images. The preload hints for the LCP image are present (2 `fetchpriority=high`).
+- **Content quality** (`content_quality`): 87–88/100 on home, service and post; zero filler and zero AI-pattern flags; repetition 80–85 (driven by duplicated responsive markup, see next point).
+- **Duplicated headings on the homepage** (DataForSEO on-page + own check): 2 H2s and 12 H3s appear twice because desktop and mobile variants of a section are both in the DOM (team names, case-study titles, testimonial names, two section headings). Harmless for rankings but noisy for crawlers and screen readers; render one variant or demote the duplicate to a non-heading element.
+- **DataForSEO on-page score 97.4/100** for the Vercel homepage; title 49 chars, description 136, canonical correct, 1 render-blocking script, 1,983 words, DOM 1.1 MB (flagged as oversized, matching §2). Its "mismatched closing tag" warnings were checked with a strict parser: the HTML nests correctly; the warnings come from its parser not knowing `<header>/<nav>/<svg>`.
+- **Analytics confirmed absent**: `src/lib/tracking.ts` calls `window.gtag` if present and the layout preconnects to Vercel Analytics, but nothing loads GA4, GTM or `@vercel/analytics`, and no analytics env var is set. Launch-day traffic would be unmeasured.
+- **Baseline for "ranking better" (DataForSEO, US)**: heroicrankings.com currently ranks for 136 keywords, 3 in positions 2–3, 20 in 4–10, estimated 125 organic visits/month. Backlinks: 1,212 from 773 referring domains, spam score 17; 324 referring domains sit on cheap TLDs (.website, .store, .online, .space, .site, .shop), which looks like a legacy link-scheme footprint. The new site fixes the technical side; movement in rankings will come from content/authority work and a clean link profile (consider a disavow review), not from the platform alone.
+- Google core updates since the content was written: March 2026 and May 2026 core updates completed; posts dated 2023–2024 should get a freshness pass with visible "Updated" dates (ties to §6).
+
+Severity recap after the re-check: nothing new at P0 beyond §8; the cache-control/bfcache item joins P0 item 3 (performance); duplicated headings and the disavow review join P2.
+
+## 10. About the claude-seo plugin (github.com/AgricIDaniel/claude-seo)
 
 MIT-licensed, ~18k stars, v2.4.1 (Sept 2026). It wraps 26 sub-skills (technical, content/E-E-A-T, schema, GEO/AEO citability scoring, sitemap) and runs without API keys by fetching the target URL; optional PageSpeed/CrUX/Search Console keys enrich it. It is a good second opinion once the P0/P1 fixes are in, pointed at the Vercel preview or the live domain. Install from an interactive `claude` terminal (not from this session):
 
