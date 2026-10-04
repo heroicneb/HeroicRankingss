@@ -124,7 +124,28 @@ Still yours to do before cutover (cannot be done from this machine):
 2. Vercel production env: `NEXT_PUBLIC_SITE_INDEXING=true`, `NEXT_PUBLIC_SITE_URL=https://heroicrankings.com`; keep the preview deployment locked.
 3. Point the domain at Vercel with www → apex redirect; afterwards resubmit `https://heroicrankings.com/sitemap.xml` in Search Console (same domain property, history continues).
 
-## 11. About the claude-seo plugin (github.com/AgricIDaniel/claude-seo)
+## 11. P1 implemented (2026-10-04, commits 92281d8, 7a2efcb)
+
+Verified on a production build; every template now carries a complete, valid schema set:
+
+| Template | JSON-LD |
+|---|---|
+| All pages | WebSite, Organization (enriched), BreadcrumbList (labels fixed: SEO Services › Link Building, Case Studies, Podcast …) |
+| Service pages (9) | + Service (name, serviceType, description, provider, areaServed) + FAQPage |
+| Posts (103) | + BlogPosting with datePublished, dateModified, mainEntityOfPage, author Person with profile URL, publisher logo, image; FAQPage where present |
+| Case studies (6) | + Article (dates, mainEntityOfPage, hero image) |
+| Podcast episodes (16) | + PodcastEpisode (series, episode number, duration, guest) with VideoObject for the YouTube recording |
+| Team pages (7) | ProfilePage + Person (duplicate BreadcrumbList removed) |
+
+Also done:
+- Organization now states description, logo as PNG ImageObject (`/brand/heroic-rankings-logo.png`, rendered from the wordmark), founder (Nebojsa Jankovic → profile page), sales contact with the site's phone (+1 719 512 4616) and email, knowsAbout topics, areaServed. The old schema phone (+1 307 336 7191) was not used anywhere on the site; confirm the 719 number is the one to publish.
+- Posts show "Published <date> · Updated <date>" with `<time>` elements and link the author's name (byline and author card) to the team profile. Note: the trailing-slash link rewrite touched every post today, so every post currently reads "Updated October 4, 2026"; that is accurate and will diverge as posts are edited individually.
+- Posts, case studies and episodes send their own 1200×630 Open Graph/Twitter image cropped from the hero image; other pages keep the site image.
+- Correction to §4: the service page titles are fine on Vercel ("Link Building Services & Agency | Heroic Rankings" etc.). The short titles seen in the first crawl came from a stale local data cache, not from the site.
+
+Still open (P2): colour-contrast fixes, shortening the 24 long post titles, duplicated responsive headings on the homepage, JS/CSS diet, static/ISR rendering decision (§10), optional llms.txt, disavow review of the legacy link profile.
+
+## 12. About the claude-seo plugin (github.com/AgricIDaniel/claude-seo)
 
 MIT-licensed, ~18k stars, v2.4.1 (Sept 2026). It wraps 26 sub-skills (technical, content/E-E-A-T, schema, GEO/AEO citability scoring, sitemap) and runs without API keys by fetching the target URL; optional PageSpeed/CrUX/Search Console keys enrich it. It is a good second opinion once the P0/P1 fixes are in, pointed at the Vercel preview or the live domain. Install from an interactive `claude` terminal (not from this session):
 
