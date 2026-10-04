@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 import { TeamMemberDetail } from "@/components/pages/team/team-member-detail";
-import { BreadcrumbSchema } from "@/components/seo/breadcrumb-schema";
 import { PersonSchema } from "@/components/seo/person-schema";
 import { createPageMetadata } from "@/lib/metadata";
 import { getTeamMemberBySlug, getTeamMemberSlugs } from "@/lib/sanity-data";
@@ -103,13 +102,6 @@ export default async function TeamMemberPage({ params }: TeamMemberPageProps) {
   return (
     <>
       <Suspense fallback={null}>
-        <BreadcrumbSchema
-          items={[
-            { name: "Home", href: "/" },
-            { name: "About Us", href: "/about" },
-            { name: member.name, href: `/about/${slug}` },
-          ]}
-        />
         <PersonSchema
           dateCreated={member.createdAt}
           dateModified={member.updatedAt}
