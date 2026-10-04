@@ -5,7 +5,7 @@ import { AppLink } from "@/components/ui/app-link";
 import {
   SITE_INSTAGRAM_URL,
   SITE_LINKEDIN_URL,
-  SITE_X_URL,
+  SITE_YOUTUBE_URL,
 } from "@/lib/site";
 
 const NAV_LINKS = [
@@ -23,7 +23,7 @@ const NAV_LINKS = [
 const SOCIAL_LINKS = [
   { label: "LinkedIn", href: SITE_LINKEDIN_URL },
   { label: "Instagram", href: SITE_INSTAGRAM_URL },
-  { label: "X", href: SITE_X_URL },
+  { label: "YouTube", href: SITE_YOUTUBE_URL },
 ] as const;
 
 const PLATFORM_LABELS: Record<string, string> = {

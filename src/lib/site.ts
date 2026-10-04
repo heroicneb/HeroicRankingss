@@ -38,8 +38,8 @@ export const SITE_EMAIL_HREF = "mailto:info@heroicrankings.com";
 export const SALES_EMAIL = "sales@heroicrankings.com";
 
 /** Brand-level social URLs — single source of truth.
- * Note: real production handles use a hyphen on LinkedIn (heroic-rankings) and
- * an underscore on Twitter/X (heroic_rankings). Confirmed by Pavle 2026-04-28. */
+ * LinkedIn uses a hyphen (heroic-rankings). Heroic Rankings does not use X;
+ * Instagram and YouTube are the other active profiles (Nebojsa, 2026-10-04). */
 export const SITE_LINKEDIN_URL = "https://www.linkedin.com/company/heroic-rankings/";
-export const SITE_X_URL = "https://twitter.com/heroic_rankings";
-export const SITE_INSTAGRAM_URL = "https://instagram.com/heroicrankings";
+export const SITE_INSTAGRAM_URL = "https://www.instagram.com/heroicrankings/";
+export const SITE_YOUTUBE_URL = "https://www.youtube.com/@HeroicRankings";
