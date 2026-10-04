@@ -108,9 +108,11 @@ interface SanityRawPost {
 
 /** Raw post from POST_BY_SLUG_QUERY (detail view) */
 interface SanityRawPostDetail extends SanityRawPost {
+  _updatedAt?: string | null;
   body?: PortableTextBlock[] | null;
   author?: {
     name?: string;
+    slug?: string | null;
     role?: string;
     photo?: SanityImageRef | null;
     bio?: string | null;
@@ -130,6 +132,7 @@ interface SanityRawCaseStudy {
   panelLabel?: string | null;
   excerpt?: string | null;
   publishedAt?: string | null;
+  _updatedAt?: string | null;
   heroImage?: SanityImageRef | null;
   cardImage?: SanityImageRef | null;
   metrics?: SanityRawMetric[] | null;
@@ -321,6 +324,16 @@ function imageUrl(
   }
 }
 
+/** 1200×630 crop for Open Graph / Twitter cards, or null when there is no image. */
+function ogImageUrl(source: SanityImageRef | null | undefined): string | null {
+  if (!source?.asset) return null;
+  try {
+    return urlFor(source).width(1200).height(630).fit("crop").url();
+  } catch {
+    return null;
+  }
+}
+
 function imageLqip(
   source: SanityImageRef | null | undefined,
 ): string | undefined {
@@ -365,6 +378,8 @@ export interface SanityPostSummary {
 
 export interface SanityPostAuthor {
   name: string | null;
+  /** Team profile slug (/about/<slug>/) when the author is a team member. */
+  slug: string | null;
   role: string | null;
   bio: string | null;
   bioParagraphs: string[] | null;
@@ -375,6 +390,10 @@ export interface SanityPostAuthor {
 }
 
 export interface SanityPostDetail extends SanityPostSummary {
+  /** Last edit in the Studio; shown as "Updated" and sent as dateModified. */
+  updatedAt: string | null;
+  /** 1200×630 crop of the main image for link previews. */
+  ogImageUrl: string | null;
   authorName: string | null;
   authorRole: string | null;
   author: SanityPostAuthor | null;
@@ -425,6 +444,7 @@ export const getPostBySlug = cache(
     const author: SanityPostAuthor | null = rawAuthor
       ? {
           name: rawAuthor.name ?? null,
+          slug: rawAuthor.slug ?? null,
           role: rawAuthor.role ?? null,
           bio: rawAuthor.bio ?? null,
           bioParagraphs: rawAuthor.bioParagraphs ?? null,
@@ -444,7 +464,9 @@ export const getPostBySlug = cache(
       mainImageUrl: imageUrl(post.mainImage, 1200),
       mainImageLqip: imageLqip(post.mainImage),
       mainImageAlt: post.mainImage?.alt ?? post.title,
+      ogImageUrl: ogImageUrl(post.mainImage),
       publishedAt: post.publishedAt ?? null,
+      updatedAt: post._updatedAt ?? null,
       readMinutes: readMinutes(post.readTime, post.bodyLength),
       categories: (post.categories ?? []).filter(
         (category: unknown): category is string => typeof category === "string",
@@ -1048,6 +1070,7 @@ export interface SanityCaseStudyDetail {
     label?: string | null;
     value?: string | null;
   }> | null;
+  _updatedAt?: string | null;
   publishedAt?: string | null;
   seo?: {
     metaDescription?: string | null;
@@ -1208,6 +1231,7 @@ export interface SanityPodcastEpisodeSummary {
 }
 
 export interface SanityPodcastEpisodeDetail extends SanityPodcastEpisodeSummary {
+  _updatedAt?: string | null;
   chatbotEpisodeId?: string | null;
   videoEmbedUrl?: string | null;
   guest?: {

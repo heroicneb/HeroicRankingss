@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import type { SanityPostAuthor } from "@/lib/sanity-data";
+import { AppLink } from "@/components/ui/app-link";
 
 interface BlogPostAuthorCardProps {
   author: SanityPostAuthor | null;
@@ -81,7 +82,13 @@ export function BlogPostAuthorCard({ author }: BlogPostAuthorCardProps) {
       <div className="px-[24px] py-[24px] lg:px-[20px]">
         {author.name ? (
           <p className="text-[24px] font-medium leading-[28px] tracking-[-0.48px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-            {author.name}
+            {author.slug ? (
+              <AppLink className="underline-offset-4 hover:underline" href={`/about/${author.slug}/`} motionPreset="none">
+                {author.name}
+              </AppLink>
+            ) : (
+              author.name
+            )}
           </p>
         ) : null}
         {decoratedRole ? (

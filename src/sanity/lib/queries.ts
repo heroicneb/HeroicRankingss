@@ -33,12 +33,14 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
     mainImage { ..., asset->{ _id, _type, metadata { lqip } } },
     body,
     publishedAt,
+    _updatedAt,
     categories,
     urlCategory,
     readTime,
     "bodyLength": length(pt::text(body)),
     author-> {
       name,
+      "slug": slug.current,
       role,
       photo { ..., asset->{ _id, _type, metadata { lqip } } },
       bio,
@@ -84,6 +86,7 @@ export const CASE_STUDIES_QUERY = defineQuery(`
 export const CASE_STUDY_BY_SLUG_QUERY = defineQuery(`
   *[_type == "caseStudy" && slug.current == $slug && !(_id match "audit-fixture-*")][0] {
     _id,
+    _updatedAt,
     title,
     titleHighlighted,
     slug,
@@ -425,6 +428,7 @@ export const PODCAST_EPISODES_QUERY = defineQuery(`
 export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
   *[_type == "podcastEpisode" && slug.current == $slug && !(_id match "audit-fixture-*")][0] {
     _id,
+    _updatedAt,
     title,
     titleHighlighted,
     slug,

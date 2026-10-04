@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 import { PodcastChatProvider } from "@/components/chat/PodcastChatProvider";
 import { PodcastEpisodePage } from "@/components/pages/podcast/podcast-episode-page";
+import { PodcastEpisodeSchema } from "@/components/seo/podcast-episode-schema";
 import { createPageMetadata } from "@/lib/metadata";
+import { urlFor } from "@/sanity/lib/image";
 import { FALLBACK_EPISODES, toEpisodeView } from "@/components/pages/podcast/parts/podcast-episode-card";
 import { hasTranscript } from "@/lib/podcast-ai/knowledge";
 import {
@@ -45,6 +48,9 @@ export async function generateMetadata({
       "Heroic Rankings podcast episode.",
     path: `/podcast/${slug}`,
     ogType: "article",
+    image: episode.heroImage?.asset
+      ? { url: urlFor(episode.heroImage).width(1200).height(630).fit("crop").url(), alt: `${episode.title} — Ranking Heroes podcast` }
+      : null,
   });
 }
 
@@ -68,6 +74,20 @@ export default async function Page({ params }: PodcastEpisodeRouteProps) {
   const episodeChat = hasTranscript(episode.episodeNumber);
   return (
     <>
+      <Suspense fallback={null}>
+        <PodcastEpisodeSchema
+          dateModified={episode._updatedAt ?? null}
+          datePublished={episode.publishedAt ?? null}
+          description={episode.description ?? null}
+          duration={episode.duration ?? null}
+          episodeNumber={episode.episodeNumber ?? null}
+          guestName={episode.guest?.name ?? null}
+          image={episode.heroImage?.asset ? urlFor(episode.heroImage).width(1200).url() : null}
+          path={`/podcast/${slug}`}
+          title={episode.title}
+          videoUrl={episode.videoEmbedUrl ?? null}
+        />
+      </Suspense>
       <PodcastEpisodePage episode={episode} moreEpisodes={moreEpisodes} />
       <PodcastChatProvider
         episodeId={episodeChat ? String(episode.episodeNumber) : undefined}
