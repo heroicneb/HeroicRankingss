@@ -68,9 +68,9 @@ export function Hero({ content = DEFAULT_HOME_CONTENT.hero }: HeroProps) {
             sizes="(min-width: 1024px) 1440px, 100vw"
             src="/hero-awakening-v1-poster.webp"
           />
-          {/* WHY: the 12s "awakening" clip (H.264, 2.1 MB, preload=metadata) plays once when the hero is on screen on desktop
-              and holds its closing frame; hover replays it. Phones and reduced-motion visitors only ever get the still. */}
-          <HeroVideoOverlay autoPlayOnce src="/hero-awakening-v1.mp4" />
+          {/* WHY: the 12s "awakening" clip (H.264, 2.1 MB, preload=metadata) plays only while the hero is hovered on desktop
+              (Nebojsa, 2026-10-05: no autoplay). Phones and reduced-motion visitors only ever get the still. */}
+          <HeroVideoOverlay src="/hero-awakening-v1.mp4" />
         </div>
       </div>
     </section>
