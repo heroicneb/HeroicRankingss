@@ -88,10 +88,28 @@ export function HeroVideoOverlay({ src, sources, videoClassName, autoPlayOnce = 
       pauseTimer.current = null;
     }
     setActive(true);
-    // WHY: every hover restarts the clip from its first frame rather than resuming.
-    video.currentTime = 0;
-    // WHY: play() rejects if the browser blocks it; the poster simply stays visible.
-    void video.play().catch(() => setActive(false));
+    // WHY: Chrome can abort the very first play() of a clip that has not rendered a frame yet ("video-only background
+    //      media was paused to save power"); one retry a moment later succeeds. Any other rejection leaves the poster.
+    let retried = false;
+    const start = () => {
+      void video.play().catch(() => {
+        if (!retried) {
+          retried = true;
+          window.setTimeout(start, 300);
+        } else {
+          setActive(false);
+        }
+      });
+    };
+    // WHY: every hover restarts the clip from its first frame. Seeking and playing in the same tick made Chrome
+    //      abort the play ("video-only background media was paused to save power"), so the play waits for the seek
+    //      to land; the common case (clip already rewound by handleLeave) needs no seek at all.
+    if (video.currentTime > 0.05) {
+      video.addEventListener("seeked", start, { once: true });
+      video.currentTime = 0;
+    } else {
+      start();
+    }
   };
 
   const handleLeave = () => {
