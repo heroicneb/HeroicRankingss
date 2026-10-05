@@ -5,8 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/cn";
 
 interface HeroVideoOverlayProps {
-  /** Silent MP4 rendered on top of the hero image. */
-  src: string;
+  /** Silent MP4 rendered on top of the hero image (used when `sources` is not given). */
+  src?: string;
+  /**
+   * Alternative encodes in preference order, e.g. AV1 first and H.264 last;
+   * the browser picks the first type it can play.
+   */
+  sources?: Array<{ src: string; type: string }>;
   /** Extra classes for the <video> element (positioning/cropping should match the image). */
   videoClassName?: string;
   /**
@@ -30,7 +35,7 @@ function canHover() {
 /** Desktop viewport with motion allowed: the only place a clip may start by itself. */
 const AUTOPLAY_MEDIA = "(min-width: 1024px) and (prefers-reduced-motion: no-preference)";
 
-export function HeroVideoOverlay({ src, videoClassName, autoPlayOnce = false }: HeroVideoOverlayProps) {
+export function HeroVideoOverlay({ src, sources, videoClassName, autoPlayOnce = false }: HeroVideoOverlayProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const pauseTimer = useRef<number | null>(null);
   const [active, setActive] = useState(false);
@@ -123,10 +128,12 @@ export function HeroVideoOverlay({ src, videoClassName, autoPlayOnce = false }: 
         playsInline
         preload="metadata"
         ref={videoRef}
-        src={src}
+        src={sources ? undefined : src}
         style={{ transitionDuration: `${FADE_MS}ms` }}
         tabIndex={-1}
-      />
+      >
+        {sources?.map((source) => <source key={source.src} src={source.src} type={source.type} />)}
+      </video>
     </div>
   );
 }

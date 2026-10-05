@@ -59,16 +59,18 @@ export function Hero({ content = DEFAULT_HOME_CONTENT.hero }: HeroProps) {
               only thing phones and reduced-motion visitors see; on desktop the clip plays
               once over it on hover. */}
           <Image
-            alt="Classical statue representing enduring digital presence"
+            alt="Classical statue awakening into a network of light"
             className="pointer-events-none object-cover"
             fetchPriority="high"
             fill
             priority
             quality={95}
             sizes="(min-width: 1024px) 1440px, 100vw"
-            src="/hero-face-final-poster.webp"
+            src="/hero-awakening-v1-poster.webp"
           />
-          <HeroVideoOverlay src="/hero-face-final.mp4" />
+          {/* WHY: the 12s "awakening" clip (H.264, 2.1 MB, preload=metadata) plays once when the hero is on screen on desktop
+              and holds its closing frame; hover replays it. Phones and reduced-motion visitors only ever get the still. */}
+          <HeroVideoOverlay autoPlayOnce src="/hero-awakening-v1.mp4" />
         </div>
       </div>
     </section>
