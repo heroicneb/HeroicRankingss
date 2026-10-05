@@ -89,7 +89,6 @@ export function AboutUsTeam({ cmsTeamMembers }: AboutUsTeamProps) {
             if (member.slug) {
               return (
                 <Link
-                  aria-label={`Open team profile: ${member.name}`}
                   className={cardClass}
                   href={`/about/${member.slug}`}
                   key={member.name}

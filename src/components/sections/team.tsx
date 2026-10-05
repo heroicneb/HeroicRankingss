@@ -53,7 +53,6 @@ export function Team({ content = DEFAULT_HOME_CONTENT.team }: TeamProps) {
           <div className="mt-10 flex flex-col gap-10">
             {MEMBERS.map((member) => (
               <AppLink
-                aria-label={`Open team profile: ${member.name}`}
                 className={cn(
                   "group relative block h-[454px] w-[350px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]",
                 )}
@@ -123,7 +122,6 @@ export function Team({ content = DEFAULT_HOME_CONTENT.team }: TeamProps) {
           <div className="grid justify-center gap-5 sm:grid-cols-2 min-[1360px]:justify-start" data-reveal-stagger>
             {MEMBERS.map((member) => (
               <AppLink
-                aria-label={`Open team profile: ${member.name}`}
                 className={cn(
                   member.offsetClassName,
                   "group relative block h-[409px] w-[305px] rounded-[var(--radius-card)] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]",

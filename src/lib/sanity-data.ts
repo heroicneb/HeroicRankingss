@@ -1374,10 +1374,10 @@ interface SitemapDated {
 }
 
 export interface SitemapEntries {
-  posts: Array<SitemapDated & { urlCategory: string }>;
-  caseStudies: SitemapDated[];
-  team: SitemapDated[];
-  episodes: SitemapDated[];
+  posts: Array<SitemapDated & { urlCategory: string; title?: string | null; publishedAt?: string | null }>;
+  caseStudies: Array<SitemapDated & { title?: string | null; client?: string | null }>;
+  team: Array<SitemapDated & { name?: string | null; role?: string | null }>;
+  episodes: Array<SitemapDated & { title?: string | null; episodeNumber?: number | null; guest?: string | null }>;
   pages: Array<{ _id: string; _updatedAt: string }>;
 }
 
@@ -1392,9 +1392,9 @@ export async function getSitemapEntries(): Promise<SitemapEntries> {
   const raw = data as Partial<Record<keyof SitemapEntries, unknown[]>>;
   return {
     posts: (raw.posts ?? []) as SitemapEntries["posts"],
-    caseStudies: (raw.caseStudies ?? []) as SitemapDated[],
-    team: (raw.team ?? []) as SitemapDated[],
-    episodes: (raw.episodes ?? []) as SitemapDated[],
+    caseStudies: (raw.caseStudies ?? []) as SitemapEntries["caseStudies"],
+    team: (raw.team ?? []) as SitemapEntries["team"],
+    episodes: (raw.episodes ?? []) as SitemapEntries["episodes"],
     pages: (raw.pages ?? []) as SitemapEntries["pages"],
   };
 }

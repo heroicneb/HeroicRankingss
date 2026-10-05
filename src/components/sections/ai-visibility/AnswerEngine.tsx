@@ -111,7 +111,8 @@ function TypedText({ text, enabled, delay = 0, highlight }: { text: string; enab
 
 const CHIP =
   "motion-interactive inline-flex shrink-0 items-center gap-[8px] rounded-full border px-[14px] py-[7px] text-[14px] leading-[18px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)]";
-const CHIP_OFF = "border-[var(--color-border-inverse-15)] text-[var(--color-text-inverse-60)] hover:border-[var(--color-border-inverse-20)] hover:text-[var(--color-text-inverse-95)]";
+// WHY: 60% white on the dark panel measured 2.7:1 at 13px; 80% clears WCAG AA while the off state still reads as muted.
+const CHIP_OFF = "border-[var(--color-border-inverse-15)] text-[var(--color-text-inverse-80)] hover:border-[var(--color-border-inverse-20)] hover:text-[var(--color-text-inverse-95)]";
 const CHIP_ON = "border-[var(--color-hr-accent)] bg-[color-mix(in_srgb,var(--color-hr-accent)_18%,transparent)] text-[var(--color-hr-pure-white)]";
 
 interface AnswerEngineProps {
@@ -281,7 +282,8 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
                   "answer-engine-node flex items-center gap-[10px] self-start rounded-full border py-[5px] pl-[5px] pr-[12px] text-left text-[13px] leading-[16px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-hr-accent)] lg:py-[6px] lg:pl-[6px] lg:pr-[14px] lg:text-[14px]",
                   active[i]
                     ? "border-[var(--color-hr-accent)] bg-[color-mix(in_srgb,var(--color-hr-accent)_16%,var(--color-hr-dark))] text-[var(--color-hr-pure-white)]"
-                    : "border-[var(--color-border-inverse-10)] bg-[var(--color-hr-dark)] text-[var(--color-text-inverse-30)]",
+                    : // WHY: unlit sources stay muted but at 60% white they clear 4.5:1 on the dark panel (30% measured 2.7:1).
+                      "border-[var(--color-border-inverse-10)] bg-[var(--color-hr-dark)] text-[var(--color-text-inverse-60)]",
                   tipIndex === i && "ring-2 ring-[var(--color-hr-accent)]",
                 )}
                 key={source.id}
@@ -335,7 +337,7 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
             <TypedText delay={900} enabled={animate && revealed} highlight={BRAND} key={`${scenario?.id}-${withUs}-${cycle}`} text={answerText} />
           </p>
           <div className="mt-auto border-t border-[var(--color-border-inverse-10)] pt-[12px]">
-            <p className="text-[11px] uppercase tracking-[0.08em] text-[var(--color-text-inverse-50)]">Cited sources</p>
+            <p className="text-[11px] uppercase tracking-[0.08em] text-[var(--color-text-inverse-60)]">Cited sources</p>
             <ul className="mt-[8px] flex flex-wrap gap-[6px]">
               {citations.map((item) => (
                 <li
@@ -357,10 +359,10 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
       {/* Toggle + tip */}
       <div className="mt-[18px] flex flex-col gap-[14px] lg:mt-[24px] lg:flex-row lg:items-center lg:justify-between">
         <div className="grid grid-cols-2 rounded-full border border-[var(--color-border-inverse-15)] p-[4px] lg:inline-flex lg:self-start" role="group" aria-label="Compare">
-          <button aria-pressed={!withUs} className={cn("whitespace-nowrap rounded-full px-[12px] py-[8px] text-[13px] leading-[18px] transition-colors lg:px-[16px] lg:text-[14px]", !withUs ? "bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)]" : "text-[var(--color-text-inverse-60)]")} onClick={() => toggle(false)} type="button">
+          <button aria-pressed={!withUs} className={cn("whitespace-nowrap rounded-full px-[12px] py-[8px] text-[13px] leading-[18px] transition-colors lg:px-[16px] lg:text-[14px]", !withUs ? "bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)]" : "text-[var(--color-text-inverse-80)]")} onClick={() => toggle(false)} type="button">
             Without our work
           </button>
-          <button aria-pressed={withUs} className={cn("whitespace-nowrap rounded-full px-[12px] py-[8px] text-[13px] leading-[18px] transition-colors lg:px-[16px] lg:text-[14px]", withUs ? "bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)]" : "text-[var(--color-text-inverse-60)]")} onClick={() => toggle(true)} type="button">
+          <button aria-pressed={withUs} className={cn("whitespace-nowrap rounded-full px-[12px] py-[8px] text-[13px] leading-[18px] transition-colors lg:px-[16px] lg:text-[14px]", withUs ? "bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)]" : "text-[var(--color-text-inverse-80)]")} onClick={() => toggle(true)} type="button">
             With {BRAND}
           </button>
         </div>
@@ -383,7 +385,7 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
           )}
         </p>
       </div>
-      <p className="mt-[14px] text-[11px] leading-[16px] text-[var(--color-text-inverse-30)]">{disclaimer}</p>
+      <p className="mt-[14px] text-[11px] leading-[16px] text-[var(--color-text-inverse-50)]">{disclaimer}</p>
     </div>
   );
 }
