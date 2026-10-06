@@ -5,14 +5,18 @@ Set these in the deployment platform for each environment:
 
 - `NEXT_PUBLIC_SITE_URL`
 
-Form delivery (contact form and partnership request). Mailjet is the primary channel, the same provider the previous heroicrankings.com used (its SPF record includes `spf.mailjet.com` and a `mailjet._domainkey` DKIM record is published):
+Form delivery (contact form and partnership request) goes through Resend, from the verified subdomain `notifications.heroicrankings.com`. That subdomain is deliberately separate from the company mailboxes (Google Workspace on the root domain) and from `portal.heroicrankings.com`, so the forms cannot affect their reputation. The previous site used Mailjet; it keeps serving heroicrankings.com until the DNS switch and is not needed afterwards.
 
-- `MAILJET_API_KEY` and `MAILJET_SECRET_KEY`: the REST API key pair from Mailjet → Account settings → API Key Management.
-- `MAILJET_FROM_EMAIL`: a sender address validated on the Mailjet account (e.g. the one the old site used). `MAILJET_FROM_NAME` is optional.
+- `RESEND_API_KEY`: a Resend API key with sending permission for the domain.
+- `RESEND_FROM_EMAIL`: optional; defaults to `Heroic Rankings <hello@notifications.heroicrankings.com>`. Must be an address on a Resend-verified domain.
 - `CONTACT_FORM_TO`: comma-separated recipients of contact-form emails (the current contact group).
 - `PARTNERSHIP_FORM_TO`: comma-separated recipients of partnership requests; falls back to `CONTACT_FORM_TO`.
+- `FORM_REPLY_TO`: optional Reply-To on the visitor confirmation; defaults to sales@heroicrankings.com.
+- `FORM_CONFIRMATION_ENABLED`: optional; `false` turns off the visitor confirmation email.
 
-Optional secondary feed, a signed JSON webhook (set both or neither): `CONTACT_FORM_WEBHOOK_URL`, `CONTACT_FORM_WEBHOOK_SECRET`. A submission counts as delivered when at least one configured channel accepts it. Emails carry the submitter as Reply-To, so the team answers from their inbox.
+Each submission sends two emails: the team notification (the submitter is its Reply-To; it must be accepted for the submission to count as delivered) and a short confirmation to the visitor (best effort, never echoes the visitor's text). Requests carry an `Idempotency-Key`, so a retry after a timeout cannot double-send.
+
+Optional secondary feed, a signed JSON webhook (set both or neither): `CONTACT_FORM_WEBHOOK_URL`, `CONTACT_FORM_WEBHOOK_SECRET`. A submission counts as delivered when at least one configured channel accepts it.
 
 Optional distributed limiter (set both or neither):
 
@@ -63,7 +67,8 @@ Expected:
 ## 4) Runtime Log Signals
 Monitor for:
 
-- `contact_form_event {"event":"contact_config_missing"...}`: no delivery channel configured (neither Mailjet nor webhook).
-- `contact_form_event {"event":"mailjet_delivery_failed"...}` / `webhook_delivery_failed`: one channel rejected the submission (warn if the other delivered, error otherwise).
+- `contact_form_event {"event":"contact_config_missing"...}`: no delivery channel configured (neither Resend nor webhook).
+- `contact_form_event {"event":"resend_delivery_failed"...}` / `webhook_delivery_failed`: one channel rejected the submission (warn if the other delivered, error otherwise).
+- `contact_form_event {"event":"confirmation_failed"...}`: the visitor confirmation was not accepted; the submission itself was delivered.
 - `contact_form_event {"event":"rate_limit_degraded_to_memory"...}`: distributed limiter unavailable.
 - `contact_form_event {"event":"submission_delivery_failed"...}`: webhook delivery failure.
