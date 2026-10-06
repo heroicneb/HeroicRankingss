@@ -464,11 +464,11 @@ export function AnswerEngine({ scenarios, sources, disclaimer }: AnswerEnginePro
               <span>{MODEL_MARKS[model].label} replies</span>
               <span
                 className={cn(
-                  "ml-auto rounded-full px-[10px] py-[3px] text-[11px] uppercase tracking-[0.06em]",
+                  "ml-auto whitespace-nowrap rounded-full px-[10px] py-[3px] text-[11px] uppercase tracking-[0.06em]",
                   withUs ? "bg-[color-mix(in_srgb,var(--color-hr-accent)_22%,transparent)] text-[var(--color-hr-pure-white)]" : "border border-[var(--color-border-inverse-15)] text-[var(--color-text-inverse-50)]",
                 )}
               >
-                {withUs ? "You are the answer" : "You were not found"}
+                {withUs ? "You are the answer" : "Not found"}
               </span>
             </div>
             <p className="mt-[14px] min-h-[132px] text-[15px] leading-[22px] text-[var(--color-text-inverse-95)] lg:min-h-[150px] lg:text-[16px] lg:leading-[24px]">
