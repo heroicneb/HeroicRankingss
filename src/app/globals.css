@@ -1457,9 +1457,42 @@ textarea {
     background-color 400ms ease,
     color 400ms ease;
 }
+/* Answer Engine: the active half of the switch fills while a state plays; pausing holds it in place. */
+@keyframes answer-engine-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.answer-engine-progress {
+  transform: scaleX(0);
+  animation: answer-engine-progress var(--progress-duration, 4000ms) linear forwards;
+}
+.answer-engine-progress[data-paused="true"] {
+  animation-play-state: paused;
+}
+/* One-time nudge after the first pass: the switch pulses a soft accent ring three times. */
+@keyframes answer-engine-nudge {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-hr-accent) 0%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--color-hr-accent) 45%, transparent);
+  }
+}
+.answer-engine-nudge {
+  animation: answer-engine-nudge 1300ms ease-in-out 3;
+}
 @media (prefers-reduced-motion: reduce) {
   .answer-engine-edge {
     transition: none;
+  }
+  .answer-engine-progress,
+  .answer-engine-nudge {
+    animation: none;
   }
 }
 
