@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import type { SanityPostAuthor } from "@/lib/sanity-data";
 import { AppLink } from "@/components/ui/app-link";
+import type { SanityPostAuthor } from "@/lib/sanity-data";
+import { truncateBio } from "@/lib/truncate-bio";
 
 interface BlogPostAuthorCardProps {
   author: SanityPostAuthor | null;
@@ -27,18 +28,17 @@ function LinkedInGlyph() {
 /**
  * Author card for the blog detail page. Photo with absolute LinkedIn FAB
  * top-right (over the photo edge), then name (24/medium), role
- * (`/  Role  /` 18/24 grey), and bio paragraphs (18/24 grey).
+ * (`/  Role  /` 18/24 grey), and the bio (18/24 grey) shortened to about
+ * 355-400 characters with a link to the full profile when it was cut.
  *
  * Desktop width: 305px (Figma 2339:106). Mobile width: 350px (Figma 2339:248).
  */
 export function BlogPostAuthorCard({ author }: BlogPostAuthorCardProps) {
   if (!author) return null;
 
-  const bioParagraphs = author.bioParagraphs?.length
-    ? author.bioParagraphs
-    : author.bio
-      ? [author.bio]
-      : [];
+  const fullBio = author.bioParagraphs?.length ? author.bioParagraphs : author.bio ? [author.bio] : [];
+  const { paragraphs: bioParagraphs, truncated } = truncateBio(fullBio);
+  const profileHref = author.slug ? `/about/${author.slug}/` : null;
 
   const role = author.role?.trim() ?? "";
   const decoratedRole = role && !role.includes("/") ? `/  ${role}  /` : role;
@@ -101,6 +101,17 @@ export function BlogPostAuthorCard({ author }: BlogPostAuthorCardProps) {
             {bioParagraphs.map((paragraph, index) => (
               <p key={`bio-${index + 1}`}>{paragraph}</p>
             ))}
+            {truncated && profileHref ? (
+              <p>
+                <AppLink
+                  className="motion-interactive inline-flex items-center gap-[6px] text-[16px] leading-[24px] text-[var(--color-hr-dark)] underline decoration-[var(--color-hr-accent)] underline-offset-4 dark:text-[var(--color-text-inverse)]"
+                  href={profileHref}
+                  motionPreset="none"
+                >
+                  Read {author.name ? `${author.name.split(" ")[0]}'s` : "the"} full bio
+                </AppLink>
+              </p>
+            ) : null}
           </div>
         ) : null}
       </div>
