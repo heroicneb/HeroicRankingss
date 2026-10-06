@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-const REQUIRED_ENV_KEYS = [
-  "NEXT_PUBLIC_SITE_URL",
-  "CONTACT_FORM_WEBHOOK_URL",
-  "CONTACT_FORM_WEBHOOK_SECRET",
-];
+const REQUIRED_ENV_KEYS = ["NEXT_PUBLIC_SITE_URL"];
+
+// Form delivery needs at least one complete channel: Mailjet (primary) or the signed webhook.
+const MAILJET_KEYS = ["MAILJET_API_KEY", "MAILJET_SECRET_KEY", "MAILJET_FROM_EMAIL", "CONTACT_FORM_TO"];
+const WEBHOOK_KEYS = ["CONTACT_FORM_WEBHOOK_URL", "CONTACT_FORM_WEBHOOK_SECRET"];
 
 const OPTIONAL_PAIR_KEYS = ["UPSTASH_REDIS_REST_URL", "UPSTASH_REDIS_REST_TOKEN"];
 
@@ -28,6 +28,25 @@ for (const key of REQUIRED_ENV_KEYS) {
   const value = getEnvValue(key);
   if (value === "") {
     missing.push(key);
+  }
+}
+
+const channelComplete = (keys) => keys.every((key) => getEnvValue(key) !== "");
+const channelPartial = (keys) => !channelComplete(keys) && keys.some((key) => getEnvValue(key) !== "");
+
+if (!channelComplete(MAILJET_KEYS) && !channelComplete(WEBHOOK_KEYS)) {
+  missing.push(`a form delivery channel: ${MAILJET_KEYS.join(" + ")} (or ${WEBHOOK_KEYS.join(" + ")})`);
+}
+if (channelPartial(MAILJET_KEYS)) {
+  invalid.push(`${MAILJET_KEYS.join(", ")} must be set together`);
+}
+if (channelPartial(WEBHOOK_KEYS)) {
+  invalid.push(`${WEBHOOK_KEYS.join(" and ")} must be set together`);
+}
+for (const key of ["MAILJET_FROM_EMAIL", "CONTACT_FORM_TO", "PARTNERSHIP_FORM_TO"]) {
+  const value = getEnvValue(key);
+  if (value !== "" && !value.includes("@")) {
+    invalid.push(`${key} must contain an email address`);
   }
 }
 

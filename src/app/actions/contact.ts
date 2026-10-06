@@ -10,6 +10,7 @@ import {
   isAllowedContactHeardFrom,
   isValidContactEmail,
 } from "@/lib/contact-validation";
+import { buildFormEmail, buildMailjetRequest, isMailjetSuccessBody, readMailjetConfig, type FormEmailInput } from "@/lib/mailjet";
 import { SALES_EMAIL } from "@/lib/site";
 
 export interface ContactFormState {
@@ -41,6 +42,8 @@ interface DispatchResult {
   lastStatusCode: number | null;
   configured: boolean;
   delivered: boolean;
+  /** Which channels accepted the submission ("mailjet", "webhook"). */
+  channels: string[];
 }
 
 const MIN_HUMAN_SUBMIT_MS = 1500;
@@ -55,6 +58,8 @@ const WEBHOOK_SIGNATURE_VERSION = "v1";
 
 const CONTACT_FORM_WEBHOOK_URL = process.env.CONTACT_FORM_WEBHOOK_URL?.trim() ?? "";
 const CONTACT_FORM_WEBHOOK_SECRET = process.env.CONTACT_FORM_WEBHOOK_SECRET?.trim() ?? "";
+const WEBHOOK_CONFIGURED = CONTACT_FORM_WEBHOOK_URL !== "" && CONTACT_FORM_WEBHOOK_SECRET !== "";
+const MAILJET_CONFIG = readMailjetConfig();
 const UPSTASH_REDIS_REST_URL = process.env.UPSTASH_REDIS_REST_URL?.trim() ?? "";
 const UPSTASH_REDIS_REST_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN?.trim() ?? "";
 const CONTACT_FORM_RATE_LIMIT_WINDOW_MS = getPositiveIntEnv("CONTACT_FORM_RATE_LIMIT_WINDOW_MS", DEFAULT_RATE_LIMIT_WINDOW_MS);
@@ -91,8 +96,11 @@ function logContactEvent(
   console[level]("contact_form_event", JSON.stringify(payload));
 }
 
-if (process.env.NODE_ENV === "production" && (CONTACT_FORM_WEBHOOK_URL === "" || CONTACT_FORM_WEBHOOK_SECRET === "")) {
+// WHY: submissions need at least one delivery channel. Mailjet is the primary
+// one (same as the live site); the signed webhook is optional and may run alongside it.
+if (process.env.NODE_ENV === "production" && !WEBHOOK_CONFIGURED && MAILJET_CONFIG === null) {
   logContactEvent("warn", "contact_config_missing", {
+    mailjetConfigured: false,
     webhookSecretConfigured: CONTACT_FORM_WEBHOOK_SECRET !== "",
     webhookUrlConfigured: CONTACT_FORM_WEBHOOK_URL !== "",
   });
@@ -331,72 +339,59 @@ function sleep(ms: number) {
   });
 }
 
-async function dispatchContactSubmission(payload: ContactSubmissionPayload): Promise<DispatchResult> {
-  if (CONTACT_FORM_WEBHOOK_URL === "" || CONTACT_FORM_WEBHOOK_SECRET === "") {
-    return {
-      configured: false,
-      delivered: false,
-      attempts: 0,
-      errorType: "unconfigured",
-      lastStatusCode: null,
-    };
-  }
+interface PostAttemptResult {
+  attempts: number;
+  errorType: "http_error" | "network_error" | null;
+  lastStatusCode: number | null;
+  delivered: boolean;
+}
 
-  const serializedPayload = JSON.stringify(payload);
+/**
+ * POSTs once per attempt with a timeout, retrying transient failures with
+ * exponential backoff. `accept` lets a channel reject a 2xx whose body says
+ * the message was not taken (Mailjet does that).
+ */
+async function postWithRetry(
+  label: string,
+  url: string,
+  headers: Record<string, string>,
+  body: string,
+  accept: (response: Response) => Promise<boolean> = async () => true,
+): Promise<PostAttemptResult> {
   let lastStatusCode: number | null = null;
 
   for (let attempt = 1; attempt <= CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS; attempt += 1) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), CONTACT_FORM_WEBHOOK_ATTEMPT_TIMEOUT_MS);
+    const isFinalAttempt = attempt >= CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS;
 
     try {
-      const response = await fetch(CONTACT_FORM_WEBHOOK_URL, {
+      const response = await fetch(url, {
         method: "POST",
-        headers: createSignedWebhookHeaders(serializedPayload),
-        body: serializedPayload,
+        headers,
+        body,
         cache: "no-store",
         signal: controller.signal,
       });
 
-      if (response.ok) {
-        return {
-          configured: true,
-          delivered: true,
-          attempts: attempt,
-          errorType: null,
-          lastStatusCode: response.status,
-        };
+      if (response.ok && (await accept(response))) {
+        return { delivered: true, attempts: attempt, errorType: null, lastStatusCode: response.status };
       }
 
       lastStatusCode = response.status;
-      const retryable = shouldRetryStatusCode(response.status);
-      const isFinalAttempt = attempt >= CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS;
+      const retryable = response.ok ? false : shouldRetryStatusCode(response.status);
 
       if (!retryable || isFinalAttempt) {
-        return {
-          configured: true,
-          delivered: false,
-          attempts: attempt,
-          errorType: "http_error",
-          lastStatusCode: response.status,
-        };
+        return { delivered: false, attempts: attempt, errorType: "http_error", lastStatusCode: response.status };
       }
     } catch (error) {
-      const isFinalAttempt = attempt >= CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS;
-
       if (isFinalAttempt) {
-        logContactEvent("error", "webhook_dispatch_failed", {
+        logContactEvent("error", `${label}_dispatch_failed`, {
           attempts: attempt,
           message: error instanceof Error ? error.message : "unknown_error",
         });
 
-        return {
-          configured: true,
-          delivered: false,
-          attempts: attempt,
-          errorType: "network_error",
-          lastStatusCode,
-        };
+        return { delivered: false, attempts: attempt, errorType: "network_error", lastStatusCode };
       }
     } finally {
       clearTimeout(timeoutId);
@@ -405,12 +400,75 @@ async function dispatchContactSubmission(payload: ContactSubmissionPayload): Pro
     await sleep(getRetryDelayMs(attempt));
   }
 
+  return { delivered: false, attempts: CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS, errorType: "network_error", lastStatusCode };
+}
+
+async function sendViaMailjet(payload: ContactSubmissionPayload): Promise<PostAttemptResult | null> {
+  if (MAILJET_CONFIG === null) return null;
+
+  const input: FormEmailInput = {
+    formType: payload.formType ?? "contact",
+    fullName: payload.fullName,
+    companyEmail: payload.companyEmail,
+    companyName: payload.companyName || undefined,
+    heardFrom: payload.heardFrom || undefined,
+    projectOverview: payload.projectOverview || undefined,
+    source: payload.source,
+    submittedAt: payload.submittedAt,
+  };
+  const request = buildMailjetRequest(buildFormEmail(input, MAILJET_CONFIG), MAILJET_CONFIG);
+
+  return postWithRetry("mailjet", request.url, request.headers, request.body, async (response) => {
+    try {
+      return isMailjetSuccessBody(await response.clone().json());
+    } catch {
+      return true;
+    }
+  });
+}
+
+async function sendViaWebhook(payload: ContactSubmissionPayload): Promise<PostAttemptResult | null> {
+  if (!WEBHOOK_CONFIGURED) return null;
+
+  const serializedPayload = JSON.stringify(payload);
+  return postWithRetry("webhook", CONTACT_FORM_WEBHOOK_URL, createSignedWebhookHeaders(serializedPayload), serializedPayload);
+}
+
+/**
+ * Delivers one submission through every configured channel. Mailjet carries
+ * the email to the team; the webhook (if set) is a secondary feed. The
+ * submission counts as delivered when at least one channel accepted it.
+ */
+async function dispatchContactSubmission(payload: ContactSubmissionPayload): Promise<DispatchResult> {
+  const [mailjet, webhook] = await Promise.all([sendViaMailjet(payload), sendViaWebhook(payload)]);
+  const results = [
+    ["mailjet", mailjet],
+    ["webhook", webhook],
+  ].filter((entry): entry is [string, PostAttemptResult] => entry[1] !== null);
+
+  if (results.length === 0) {
+    return { configured: false, delivered: false, attempts: 0, errorType: "unconfigured", lastStatusCode: null, channels: [] };
+  }
+
+  const channels = results.filter(([, result]) => result.delivered).map(([name]) => name);
+  const failed = results.filter(([, result]) => !result.delivered);
+
+  for (const [name, result] of failed) {
+    logContactEvent(channels.length ? "warn" : "error", `${name}_delivery_failed`, {
+      attempts: result.attempts,
+      errorType: result.errorType,
+      statusCode: result.lastStatusCode,
+    });
+  }
+
+  const worst = failed[0]?.[1] ?? results[0]![1];
   return {
     configured: true,
-    delivered: false,
-    attempts: CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS,
-    errorType: "network_error",
-    lastStatusCode,
+    delivered: channels.length > 0,
+    attempts: Math.max(...results.map(([, result]) => result.attempts)),
+    errorType: channels.length > 0 ? null : worst.errorType,
+    lastStatusCode: worst.lastStatusCode,
+    channels,
   };
 }
 
@@ -550,14 +608,16 @@ export async function submitContactForm(
     return { success: false, error: "Project overview is too long." };
   }
 
+  let dispatchResult: DispatchResult;
   try {
-    const dispatchResult = await dispatchContactSubmission({
+    dispatchResult = await dispatchContactSubmission({
       fullName,
       companyName,
       companyEmail: companyEmail.toLowerCase(),
       heardFrom,
       projectOverview,
       submittedAt,
+      source: "/contact/",
     });
 
     if (!dispatchResult.delivered) {
@@ -593,6 +653,7 @@ export async function submitContactForm(
 
   logContactEvent("info", "submission_delivered", {
     rateLimitBackend,
+    channels: dispatchResult.channels.join(","),
   });
 
   return { success: true, error: null };
@@ -661,7 +722,7 @@ export async function submitPartnershipForm(
       return { success: false, error: `We could not send your request. Please try again or email ${SALES_EMAIL}.` };
     }
 
-    logContactEvent("info", "submission_delivered", { attempts: dispatchResult.attempts, rateLimitBackend, form: "partnership" });
+    logContactEvent("info", "submission_delivered", { attempts: dispatchResult.attempts, rateLimitBackend, form: "partnership", channels: dispatchResult.channels.join(",") });
     return { success: true, error: null };
   } catch (error) {
     logContactEvent("error", "submission_unexpected_error", {

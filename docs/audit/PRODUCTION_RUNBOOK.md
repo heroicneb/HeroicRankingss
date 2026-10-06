@@ -4,8 +4,15 @@
 Set these in the deployment platform for each environment:
 
 - `NEXT_PUBLIC_SITE_URL`
-- `CONTACT_FORM_WEBHOOK_URL`
-- `CONTACT_FORM_WEBHOOK_SECRET`
+
+Form delivery (contact form and partnership request). Mailjet is the primary channel, the same provider the previous heroicrankings.com used (its SPF record includes `spf.mailjet.com` and a `mailjet._domainkey` DKIM record is published):
+
+- `MAILJET_API_KEY` and `MAILJET_SECRET_KEY`: the REST API key pair from Mailjet → Account settings → API Key Management.
+- `MAILJET_FROM_EMAIL`: a sender address validated on the Mailjet account (e.g. the one the old site used). `MAILJET_FROM_NAME` is optional.
+- `CONTACT_FORM_TO`: comma-separated recipients of contact-form emails (the current contact group).
+- `PARTNERSHIP_FORM_TO`: comma-separated recipients of partnership requests; falls back to `CONTACT_FORM_TO`.
+
+Optional secondary feed, a signed JSON webhook (set both or neither): `CONTACT_FORM_WEBHOOK_URL`, `CONTACT_FORM_WEBHOOK_SECRET`. A submission counts as delivered when at least one configured channel accepts it. Emails carry the submitter as Reply-To, so the team answers from their inbox.
 
 Optional distributed limiter (set both or neither):
 
@@ -56,6 +63,7 @@ Expected:
 ## 4) Runtime Log Signals
 Monitor for:
 
-- `contact_form_event {"event":"contact_config_missing"...}`: missing webhook env.
+- `contact_form_event {"event":"contact_config_missing"...}`: no delivery channel configured (neither Mailjet nor webhook).
+- `contact_form_event {"event":"mailjet_delivery_failed"...}` / `webhook_delivery_failed`: one channel rejected the submission (warn if the other delivered, error otherwise).
 - `contact_form_event {"event":"rate_limit_degraded_to_memory"...}`: distributed limiter unavailable.
 - `contact_form_event {"event":"submission_delivery_failed"...}`: webhook delivery failure.
