@@ -1496,6 +1496,67 @@ textarea {
   }
 }
 
+/* Portal deck: four screens stacked; the pose comes from data-order (0 front, 1, 2 behind, exit = leaving). */
+.portal-deck {
+  padding-top: 44px;
+}
+.portal-deck-stage {
+  position: relative;
+  aspect-ratio: 1400 / 900;
+}
+.portal-deck-card {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--color-border-inverse-15);
+  background: var(--color-hr-dark);
+  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.6);
+  transform-origin: 50% 0;
+  transition:
+    transform 760ms var(--motion-ease-emphasized),
+    opacity 520ms ease;
+  will-change: transform, opacity;
+}
+.portal-deck-card[data-order="0"] {
+  z-index: 3;
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}
+.portal-deck-card[data-order="1"] {
+  z-index: 2;
+  transform: translate3d(0, -24px, 0) scale(0.94);
+  opacity: 0.72;
+}
+.portal-deck-card[data-order="2"] {
+  z-index: 1;
+  transform: translate3d(0, -44px, 0) scale(0.88);
+  opacity: 0.42;
+}
+.portal-deck-card[data-order="exit"] {
+  z-index: 4;
+  transform: translate3d(70%, -44px, 0) rotate(5deg) scale(0.88);
+  opacity: 0;
+  pointer-events: none;
+}
+.portal-deck-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
+.portal-deck-row {
+  transition:
+    border-color 300ms ease,
+    background-color 300ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .portal-deck-card {
+    transition: none;
+  }
+}
+
 /* Proof tables: rows stagger in once the panel is revealed; bars grow to --w. */
 .proof-row {
   opacity: 0;

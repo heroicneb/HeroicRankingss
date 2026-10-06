@@ -357,7 +357,7 @@ export const HOME_PAGE_QUERY = defineQuery(`
     trustedBy { label, heading },
     featuredPodcasts { label, heading, ctaLabel, ctaUrl },
     trust { label, heading, ctaLabel, ctaUrl, certifications[] { _key, label, tone } },
-    partnerships { label, statement, paragraphs, ctaLabel, ctaUrl },
+    partnerships { label, statement, summary, paths, portalEyebrow, screens[] { _key, title, caption }, ctaLabel, ctaUrl },
     blog { label, heading, ctaLabel, ctaUrl },
     testimonials { label, heading, ctaLabel, ctaUrl },
     seo

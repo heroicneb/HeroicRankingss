@@ -1,8 +1,17 @@
+import { DEFAULT_HOME_CONTENT, type HomeContent } from "@/components/pages/home/home-content";
 import { AppLink } from "@/components/ui/app-link";
+import { GradientHeading } from "@/components/ui/gradient-heading";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
-import { GradientHeading } from "@/components/ui/gradient-heading";
-import { DEFAULT_HOME_CONTENT, type HomeContent } from "@/components/pages/home/home-content";
+
+import { PortalDeck } from "./partnerships/portal-deck";
+
+/*
+ * "/ The Value We Bring /": the homepage's door to the white-label
+ * partnership page. Left: statement, one-line summary, the three partner
+ * paths and the CTA. Right: the partner portal as a deck of four screens
+ * with a legend (see ./partnerships/portal-deck.tsx).
+ */
 
 interface PartnershipsProps {
   content?: HomeContent["partnerships"];
@@ -12,58 +21,32 @@ export function Partnerships({ content = DEFAULT_HOME_CONTENT.partnerships }: Pa
   return (
     <section className="pb-24 pt-10" id="partnerships">
       <div className="mx-auto max-w-[var(--size-page-max)] px-[10px]">
-        {/* Mobile layout (< lg) — single column: label → H3 → body paragraphs → full-width CTA */}
-        <div className="overflow-hidden rounded-[30px] border border-[var(--color-hr-accent)] bg-[linear-gradient(80.38deg,var(--color-bg-inverse)_35.359%,var(--color-case-art-maudsch)_142.03%)] px-[15px] py-[60px] lg:hidden">
-          <div className="mx-auto flex w-full max-w-[350px] flex-col items-center gap-10 text-center text-[var(--color-hr-pure-white)]" data-reveal>
-            <SectionLabel className="text-[16px] text-[var(--color-hr-pure-white)]">
-              {content.label}
-            </SectionLabel>
-
-            <p className="w-full text-[32px] font-normal leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-pure-white)]">
-              <GradientHeading highlightClassName="gradient-text-brand-partnerships" segments={content.statement} />
-            </p>
-
-            <div className="w-full space-y-5 text-[16px] leading-[1.3] text-[var(--color-hr-pure-white)]">
-              {content.paragraphs.map((paragraph, index) => (
-                <p key={`partnerships-mobile-${index}`}>{paragraph}</p>
-              ))}
-            </div>
-
-            <AppLink
-              href={content.ctaUrl}
-              className="type-cta inline-flex h-[45px] w-full items-center justify-center gap-[9px] rounded-[16px] whitespace-nowrap border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)]"
-            >
-              {content.ctaLabel}
-              <GradientArrowUpRightIcon className="h-[11px] w-[11px] shrink-0" />
-            </AppLink>
-          </div>
-        </div>
-
-        {/* Desktop layout (lg+) — two-column: left = label+H3+CTA, right = two body paragraphs */}
-        <div className="hidden overflow-hidden rounded-[var(--radius-card)] bg-[linear-gradient(40.898deg,var(--color-bg-inverse)_35.359%,var(--color-case-art-maudsch)_142.03%)] lg:block lg:px-[70px] lg:py-[80px]">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,418px)] lg:gap-[140px] lg:items-start" data-reveal-stagger>
-            <div className="max-w-[600px]">
-              <SectionLabel className="text-[var(--color-hr-pure-white)]">
-                {content.label}
-              </SectionLabel>
-              <p className="mt-5 max-w-[600px] text-[32px] font-normal leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-pure-white)]">
+        <div className="overflow-hidden rounded-[30px] border border-[var(--color-hr-accent)] bg-[linear-gradient(40.898deg,var(--color-bg-inverse)_35.359%,var(--color-case-art-maudsch)_142.03%)] px-[15px] py-[60px] text-[var(--color-hr-pure-white)] lg:rounded-[var(--radius-card)] lg:px-[70px] lg:py-[80px]">
+          <div className="grid gap-[40px] lg:grid-cols-[minmax(0,1fr)_minmax(0,560px)] lg:items-center lg:gap-[80px]">
+            <div className="mx-auto w-full max-w-[350px] text-center lg:mx-0 lg:max-w-[600px] lg:text-left" data-reveal>
+              <SectionLabel className="text-[var(--color-hr-pure-white)]">{content.label}</SectionLabel>
+              <p className="mt-5 text-[32px] font-normal leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-pure-white)]">
                 <GradientHeading highlightClassName="gradient-text-brand-partnerships" segments={content.statement} />
               </p>
+              <p className="type-paragraph mt-6 text-[var(--color-text-inverse-80)]">{content.summary}</p>
+              <ul aria-label="Ways to partner" className="mt-[18px] flex flex-wrap justify-center gap-[8px] lg:justify-start">
+                {content.paths.map((path) => (
+                  <li className="rounded-full border border-[var(--color-border-inverse-15)] px-[12px] py-[6px] text-[13px] leading-[16px] text-[var(--color-text-inverse-95)]" key={path}>
+                    {path}
+                  </li>
+                ))}
+              </ul>
               <AppLink
+                className="type-cta mt-10 inline-flex h-[45px] w-full items-center justify-center gap-[9px] whitespace-nowrap rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)] focus-visible:ring-offset-[var(--color-hr-gradient-start)] lg:w-auto lg:min-w-[194px]"
                 href={content.ctaUrl}
-                className="type-cta mt-10 inline-flex h-[45px] w-[194px] items-center justify-center gap-[9px] rounded-[var(--radius-button)] whitespace-nowrap border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)] focus-visible:ring-offset-[var(--color-hr-gradient-start)]"
               >
                 {content.ctaLabel}
                 <GradientArrowUpRightIcon className="h-[11px] w-[11px] shrink-0" />
               </AppLink>
             </div>
 
-            <div className="max-w-[418px] text-[var(--color-hr-pure-white)]">
-              {content.paragraphs.map((paragraph, index) => (
-                <p className={index ? "type-paragraph mt-6" : "type-paragraph"} key={`partnerships-desktop-${index}`}>
-                  {paragraph}
-                </p>
-              ))}
+            <div className="mx-auto w-full max-w-[560px] lg:mx-0" data-reveal>
+              <PortalDeck eyebrow={content.portalEyebrow} screens={content.screens} />
             </div>
           </div>
         </div>

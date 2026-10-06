@@ -1843,7 +1843,14 @@ interface SanityRawHomePage {
       } & SanityRawHomeCta)
     | null;
   partnerships?:
-    | ({ label?: string | null; statement?: PortableTextBlock[] | null; paragraphs?: string[] | null } & SanityRawHomeCta)
+    | ({
+        label?: string | null;
+        statement?: PortableTextBlock[] | null;
+        summary?: string | null;
+        paths?: Array<string | null> | null;
+        portalEyebrow?: string | null;
+        screens?: Array<{ _key: string; title?: string | null; caption?: string | null }> | null;
+      } & SanityRawHomeCta)
     | null;
   blog?: ({ label?: string | null; heading?: PortableTextBlock[] | null } & SanityRawHomeCta) | null;
   trustedBy?: { label?: string | null; heading?: PortableTextBlock[] | null } | null;
@@ -1990,9 +1997,18 @@ export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
     partnerships: {
       label: text(raw.partnerships?.label, d.partnerships.label),
       statement: headingSegments(raw.partnerships?.statement, d.partnerships.statement),
-      paragraphs: raw.partnerships?.paragraphs?.filter((p) => p?.trim()).length
-        ? raw.partnerships.paragraphs.filter((p) => p?.trim())
-        : d.partnerships.paragraphs,
+      summary: text(raw.partnerships?.summary, d.partnerships.summary),
+      paths: (() => {
+        const paths = (raw.partnerships?.paths ?? []).filter((p): p is string => Boolean(p?.trim()));
+        return paths.length ? paths : d.partnerships.paths;
+      })(),
+      portalEyebrow: text(raw.partnerships?.portalEyebrow, d.partnerships.portalEyebrow),
+      // WHY: the pictures are fixed code assets in a fixed order; the CMS only renames the legend rows.
+      screens: d.partnerships.screens.map((screen, i) => ({
+        ...screen,
+        title: text(raw.partnerships?.screens?.[i]?.title, screen.title),
+        caption: text(raw.partnerships?.screens?.[i]?.caption, screen.caption),
+      })),
       ...cta(raw.partnerships, d.partnerships),
     },
     blog: {
