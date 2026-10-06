@@ -118,9 +118,9 @@ export const DEFAULT_PARTNERSHIP_CONTENT: PartnershipContent = {
     ],
     form: {
       heading: "Is This You?",
-      body: "Leave your name and work email and we'll reach out within one business day to talk through a white-label partnership.",
+      body: "Leave your name and work email and we'll get back to you shortly to talk through a white-label partnership.",
       ctaLabel: "Request a Partnership",
-      successMessage: "Thanks! We'll be in touch within one business day.",
+      successMessage: "Thanks! We'll get back to you shortly.",
     },
   },
 

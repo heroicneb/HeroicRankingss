@@ -10,6 +10,7 @@ import {
   isAllowedContactHeardFrom,
   isValidContactEmail,
 } from "@/lib/contact-validation";
+import { buildConfirmationEmail, buildResendRequest, buildTeamEmail, readResendConfig, type FormEmailInput } from "@/lib/resend";
 import { SALES_EMAIL } from "@/lib/site";
 
 export interface ContactFormState {
@@ -41,6 +42,8 @@ interface DispatchResult {
   lastStatusCode: number | null;
   configured: boolean;
   delivered: boolean;
+  /** Which channels accepted the submission ("resend", "webhook"). */
+  channels: string[];
 }
 
 const MIN_HUMAN_SUBMIT_MS = 1500;
@@ -55,6 +58,8 @@ const WEBHOOK_SIGNATURE_VERSION = "v1";
 
 const CONTACT_FORM_WEBHOOK_URL = process.env.CONTACT_FORM_WEBHOOK_URL?.trim() ?? "";
 const CONTACT_FORM_WEBHOOK_SECRET = process.env.CONTACT_FORM_WEBHOOK_SECRET?.trim() ?? "";
+const WEBHOOK_CONFIGURED = CONTACT_FORM_WEBHOOK_URL !== "" && CONTACT_FORM_WEBHOOK_SECRET !== "";
+const RESEND_CONFIG = readResendConfig();
 const UPSTASH_REDIS_REST_URL = process.env.UPSTASH_REDIS_REST_URL?.trim() ?? "";
 const UPSTASH_REDIS_REST_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN?.trim() ?? "";
 const CONTACT_FORM_RATE_LIMIT_WINDOW_MS = getPositiveIntEnv("CONTACT_FORM_RATE_LIMIT_WINDOW_MS", DEFAULT_RATE_LIMIT_WINDOW_MS);
@@ -91,8 +96,11 @@ function logContactEvent(
   console[level]("contact_form_event", JSON.stringify(payload));
 }
 
-if (process.env.NODE_ENV === "production" && (CONTACT_FORM_WEBHOOK_URL === "" || CONTACT_FORM_WEBHOOK_SECRET === "")) {
+// WHY: submissions need at least one delivery channel. Resend is the primary
+// one; the signed webhook is optional and may run alongside it.
+if (process.env.NODE_ENV === "production" && !WEBHOOK_CONFIGURED && RESEND_CONFIG === null) {
   logContactEvent("warn", "contact_config_missing", {
+    resendConfigured: false,
     webhookSecretConfigured: CONTACT_FORM_WEBHOOK_SECRET !== "",
     webhookUrlConfigured: CONTACT_FORM_WEBHOOK_URL !== "",
   });
@@ -331,72 +339,59 @@ function sleep(ms: number) {
   });
 }
 
-async function dispatchContactSubmission(payload: ContactSubmissionPayload): Promise<DispatchResult> {
-  if (CONTACT_FORM_WEBHOOK_URL === "" || CONTACT_FORM_WEBHOOK_SECRET === "") {
-    return {
-      configured: false,
-      delivered: false,
-      attempts: 0,
-      errorType: "unconfigured",
-      lastStatusCode: null,
-    };
-  }
+interface PostAttemptResult {
+  attempts: number;
+  errorType: "http_error" | "network_error" | null;
+  lastStatusCode: number | null;
+  delivered: boolean;
+}
 
-  const serializedPayload = JSON.stringify(payload);
+/**
+ * POSTs once per attempt with a timeout, retrying transient failures with
+ * exponential backoff. `accept` lets a channel reject a 2xx whose body says
+ * the message was not taken.
+ */
+async function postWithRetry(
+  label: string,
+  url: string,
+  headers: Record<string, string>,
+  body: string,
+  accept: (response: Response) => Promise<boolean> = async () => true,
+): Promise<PostAttemptResult> {
   let lastStatusCode: number | null = null;
 
   for (let attempt = 1; attempt <= CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS; attempt += 1) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), CONTACT_FORM_WEBHOOK_ATTEMPT_TIMEOUT_MS);
+    const isFinalAttempt = attempt >= CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS;
 
     try {
-      const response = await fetch(CONTACT_FORM_WEBHOOK_URL, {
+      const response = await fetch(url, {
         method: "POST",
-        headers: createSignedWebhookHeaders(serializedPayload),
-        body: serializedPayload,
+        headers,
+        body,
         cache: "no-store",
         signal: controller.signal,
       });
 
-      if (response.ok) {
-        return {
-          configured: true,
-          delivered: true,
-          attempts: attempt,
-          errorType: null,
-          lastStatusCode: response.status,
-        };
+      if (response.ok && (await accept(response))) {
+        return { delivered: true, attempts: attempt, errorType: null, lastStatusCode: response.status };
       }
 
       lastStatusCode = response.status;
-      const retryable = shouldRetryStatusCode(response.status);
-      const isFinalAttempt = attempt >= CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS;
+      const retryable = response.ok ? false : shouldRetryStatusCode(response.status);
 
       if (!retryable || isFinalAttempt) {
-        return {
-          configured: true,
-          delivered: false,
-          attempts: attempt,
-          errorType: "http_error",
-          lastStatusCode: response.status,
-        };
+        return { delivered: false, attempts: attempt, errorType: "http_error", lastStatusCode: response.status };
       }
     } catch (error) {
-      const isFinalAttempt = attempt >= CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS;
-
       if (isFinalAttempt) {
-        logContactEvent("error", "webhook_dispatch_failed", {
+        logContactEvent("error", `${label}_dispatch_failed`, {
           attempts: attempt,
           message: error instanceof Error ? error.message : "unknown_error",
         });
 
-        return {
-          configured: true,
-          delivered: false,
-          attempts: attempt,
-          errorType: "network_error",
-          lastStatusCode,
-        };
+        return { delivered: false, attempts: attempt, errorType: "network_error", lastStatusCode };
       }
     } finally {
       clearTimeout(timeoutId);
@@ -405,12 +400,101 @@ async function dispatchContactSubmission(payload: ContactSubmissionPayload): Pro
     await sleep(getRetryDelayMs(attempt));
   }
 
+  return { delivered: false, attempts: CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS, errorType: "network_error", lastStatusCode };
+}
+
+function toFormEmailInput(payload: ContactSubmissionPayload): FormEmailInput {
+  return {
+    formType: payload.formType ?? "contact",
+    fullName: payload.fullName,
+    companyEmail: payload.companyEmail,
+    companyName: payload.companyName || undefined,
+    heardFrom: payload.heardFrom || undefined,
+    projectOverview: payload.projectOverview || undefined,
+    source: payload.source,
+    submittedAt: payload.submittedAt,
+  };
+}
+
+/** One idempotency key per submission and message kind, so a retry after a timeout cannot double-send. */
+function submissionKey(payload: ContactSubmissionPayload, kind: string) {
+  return createHash("sha256").update(`${kind}:${JSON.stringify(payload)}`).digest("hex");
+}
+
+async function sendViaResend(payload: ContactSubmissionPayload): Promise<PostAttemptResult | null> {
+  if (RESEND_CONFIG === null) return null;
+
+  const request = buildResendRequest(buildTeamEmail(toFormEmailInput(payload), RESEND_CONFIG), RESEND_CONFIG, submissionKey(payload, "team"));
+  return postWithRetry("resend", request.url, request.headers, request.body);
+}
+
+/**
+ * The visitor's confirmation. Best effort: it runs only after the team email
+ * was accepted and never changes the outcome the visitor sees.
+ */
+async function sendConfirmation(payload: ContactSubmissionPayload): Promise<void> {
+  if (RESEND_CONFIG === null || !RESEND_CONFIG.confirmationEnabled) return;
+
+  const request = buildResendRequest(buildConfirmationEmail(toFormEmailInput(payload), RESEND_CONFIG), RESEND_CONFIG, submissionKey(payload, "confirmation"));
+  const result = await postWithRetry("confirmation", request.url, request.headers, request.body);
+
+  if (!result.delivered) {
+    logContactEvent("warn", "confirmation_failed", {
+      attempts: result.attempts,
+      errorType: result.errorType,
+      statusCode: result.lastStatusCode,
+      form: payload.formType ?? "contact",
+    });
+  }
+}
+
+async function sendViaWebhook(payload: ContactSubmissionPayload): Promise<PostAttemptResult | null> {
+  if (!WEBHOOK_CONFIGURED) return null;
+
+  const serializedPayload = JSON.stringify(payload);
+  return postWithRetry("webhook", CONTACT_FORM_WEBHOOK_URL, createSignedWebhookHeaders(serializedPayload), serializedPayload);
+}
+
+/**
+ * Delivers one submission through every configured channel. Resend carries
+ * the email to the team (and then the visitor's confirmation); the webhook
+ * (if set) is a secondary feed. The submission counts as delivered when at
+ * least one channel accepted it.
+ */
+async function dispatchContactSubmission(payload: ContactSubmissionPayload): Promise<DispatchResult> {
+  const [resend, webhook] = await Promise.all([sendViaResend(payload), sendViaWebhook(payload)]);
+  const results = [
+    ["resend", resend],
+    ["webhook", webhook],
+  ].filter((entry): entry is [string, PostAttemptResult] => entry[1] !== null);
+
+  if (results.length === 0) {
+    return { configured: false, delivered: false, attempts: 0, errorType: "unconfigured", lastStatusCode: null, channels: [] };
+  }
+
+  const channels = results.filter(([, result]) => result.delivered).map(([name]) => name);
+  const failed = results.filter(([, result]) => !result.delivered);
+
+  for (const [name, result] of failed) {
+    logContactEvent(channels.length ? "warn" : "error", `${name}_delivery_failed`, {
+      attempts: result.attempts,
+      errorType: result.errorType,
+      statusCode: result.lastStatusCode,
+    });
+  }
+
+  if (resend?.delivered) {
+    await sendConfirmation(payload);
+  }
+
+  const worst = failed[0]?.[1] ?? results[0]![1];
   return {
     configured: true,
-    delivered: false,
-    attempts: CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS,
-    errorType: "network_error",
-    lastStatusCode,
+    delivered: channels.length > 0,
+    attempts: Math.max(...results.map(([, result]) => result.attempts)),
+    errorType: channels.length > 0 ? null : worst.errorType,
+    lastStatusCode: worst.lastStatusCode,
+    channels,
   };
 }
 
@@ -550,14 +634,16 @@ export async function submitContactForm(
     return { success: false, error: "Project overview is too long." };
   }
 
+  let dispatchResult: DispatchResult;
   try {
-    const dispatchResult = await dispatchContactSubmission({
+    dispatchResult = await dispatchContactSubmission({
       fullName,
       companyName,
       companyEmail: companyEmail.toLowerCase(),
       heardFrom,
       projectOverview,
       submittedAt,
+      source: "/contact/",
     });
 
     if (!dispatchResult.delivered) {
@@ -593,6 +679,7 @@ export async function submitContactForm(
 
   logContactEvent("info", "submission_delivered", {
     rateLimitBackend,
+    channels: dispatchResult.channels.join(","),
   });
 
   return { success: true, error: null };
@@ -661,7 +748,7 @@ export async function submitPartnershipForm(
       return { success: false, error: `We could not send your request. Please try again or email ${SALES_EMAIL}.` };
     }
 
-    logContactEvent("info", "submission_delivered", { attempts: dispatchResult.attempts, rateLimitBackend, form: "partnership" });
+    logContactEvent("info", "submission_delivered", { attempts: dispatchResult.attempts, rateLimitBackend, form: "partnership", channels: dispatchResult.channels.join(",") });
     return { success: true, error: null };
   } catch (error) {
     logContactEvent("error", "submission_unexpected_error", {

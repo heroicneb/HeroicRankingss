@@ -23,6 +23,12 @@ const ENV_KEYS = [
   "CONTACT_FORM_RATE_LIMIT_STORE_MAX_ENTRIES",
   "UPSTASH_REDIS_REST_URL",
   "UPSTASH_REDIS_REST_TOKEN",
+  "RESEND_API_KEY",
+  "RESEND_FROM_EMAIL",
+  "CONTACT_FORM_TO",
+  "PARTNERSHIP_FORM_TO",
+  "FORM_REPLY_TO",
+  "FORM_CONFIRMATION_ENABLED",
 ] as const;
 
 function clearContactEnv() {
@@ -175,5 +181,121 @@ describe("submitContactForm", () => {
     expect(secondResult.success).toBe(false);
     expect(secondResult.error).toContain("Too many submissions");
     expect(fetchMock).toHaveBeenCalledTimes(3);
+  });
+});
+
+describe("Resend delivery", () => {
+  const resendEnv = {
+    RESEND_API_KEY: "re_test",
+    RESEND_FROM_EMAIL: "Heroic Rankings <hello@notifications.example.com>",
+    CONTACT_FORM_TO: "sales@example.com, team@example.com",
+    PARTNERSHIP_FORM_TO: "partners@example.com",
+  };
+  const ok = () => new Response(JSON.stringify({ id: "msg_1" }), { status: 200 });
+  const parseBody = (init: RequestInit) => JSON.parse(init.body as string) as Record<string, unknown>;
+  const call = (fetchMock: ReturnType<typeof vi.fn>, index: number) => fetchMock.mock.calls[index] as unknown as [string, RequestInit];
+
+  it("emails the team through Resend and then confirms to the visitor", async () => {
+    setContactEnv(resendEnv);
+    const fetchMock = vi.fn(async () => ok());
+    vi.stubGlobal("fetch", fetchMock);
+    const submitContactForm = await importSubmitContactForm();
+
+    const result = await submitContactForm({ success: false, error: null }, createValidFormData());
+
+    expect(result).toEqual({ success: true, error: null });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    const [teamUrl, teamInit] = call(fetchMock, 0);
+    expect(teamUrl).toBe("https://api.resend.com/emails");
+    const headers = teamInit.headers as Record<string, string>;
+    expect(headers.Authorization).toBe("Bearer re_test");
+    expect(headers["Idempotency-Key"]).toMatch(/^[a-f0-9]{64}$/);
+    const team = parseBody(teamInit);
+    expect(team.from).toBe(resendEnv.RESEND_FROM_EMAIL);
+    expect(team.to).toEqual(["sales@example.com", "team@example.com"]);
+    expect(team.reply_to).toBe("hello@example.com");
+    expect(team.subject).toBe("New contact request: Taylor Swift · Heroic Rankings");
+    expect(team.text).toContain("Need a technical SEO audit.");
+
+    const [, confirmInit] = call(fetchMock, 1);
+    const confirmation = parseBody(confirmInit);
+    expect(confirmation.to).toEqual(["hello@example.com"]);
+    expect(confirmation.reply_to).toBe("sales@heroicrankings.com");
+    expect(confirmation.subject).toBe("We received your message, Taylor");
+    // WHY: the confirmation must never echo the visitor's text.
+    expect(confirmation.text).not.toContain("Need a technical SEO audit.");
+    expect((confirmInit.headers as Record<string, string>)["Idempotency-Key"]).not.toBe(headers["Idempotency-Key"]);
+  });
+
+  it("sends partnership requests to the partnership recipients", async () => {
+    setContactEnv(resendEnv);
+    const fetchMock = vi.fn(async () => ok());
+    vi.stubGlobal("fetch", fetchMock);
+    vi.resetModules();
+    const { submitPartnershipForm } = await import("./contact");
+    const formData = new FormData();
+    formData.set("fullName", "Jordan Lee");
+    formData.set("companyEmail", "jordan@agency.example");
+    formData.set("submittedAt", String(Date.now() - 5_000));
+    formData.set("website", "");
+
+    const result = await submitPartnershipForm({ success: false, error: null }, formData);
+
+    expect(result).toEqual({ success: true, error: null });
+    const team = parseBody(call(fetchMock, 0)[1]);
+    expect(team.to).toEqual(["partners@example.com"]);
+    expect(team.subject).toBe("New partnership request: Jordan Lee");
+    const confirmation = parseBody(call(fetchMock, 1)[1]);
+    expect(confirmation.subject).toBe("We received your partnership request, Jordan");
+  });
+
+  it("skips the confirmation when it is disabled, and still delivers", async () => {
+    setContactEnv({ ...resendEnv, FORM_CONFIRMATION_ENABLED: "false" });
+    const fetchMock = vi.fn(async () => ok());
+    vi.stubGlobal("fetch", fetchMock);
+    const submitContactForm = await importSubmitContactForm();
+
+    const result = await submitContactForm({ success: false, error: null }, createValidFormData());
+
+    expect(result).toEqual({ success: true, error: null });
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+  });
+
+  it("fails the submission when Resend rejects the team email, without sending a confirmation", async () => {
+    setContactEnv(resendEnv);
+    const fetchMock = vi.fn(async () => new Response(JSON.stringify({ statusCode: 403, message: "domain not verified" }), { status: 403 }));
+    vi.stubGlobal("fetch", fetchMock);
+    const submitContactForm = await importSubmitContactForm();
+
+    const result = await submitContactForm({ success: false, error: null }, createValidFormData());
+
+    expect(result.success).toBe(false);
+    expect(result.error).toContain("could not submit");
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+  });
+
+  it("still succeeds when the confirmation fails after the team email was accepted", async () => {
+    setContactEnv(resendEnv);
+    let calls = 0;
+    const fetchMock = vi.fn(async () => (++calls === 1 ? ok() : new Response("{}", { status: 422 })));
+    vi.stubGlobal("fetch", fetchMock);
+    const submitContactForm = await importSubmitContactForm();
+
+    const result = await submitContactForm({ success: false, error: null }, createValidFormData());
+
+    expect(result).toEqual({ success: true, error: null });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+
+  it("counts the submission as delivered when Resend succeeds and the webhook fails", async () => {
+    setContactEnv({ ...resendEnv, FORM_CONFIRMATION_ENABLED: "false", CONTACT_FORM_WEBHOOK_URL: "https://hooks.example.com/contact", CONTACT_FORM_WEBHOOK_SECRET: "s", CONTACT_FORM_WEBHOOK_MAX_ATTEMPTS: "1" });
+    const fetchMock = vi.fn(async (url: string) => (url.startsWith("https://api.resend.com") ? ok() : new Response("nope", { status: 400 })));
+    vi.stubGlobal("fetch", fetchMock);
+    const submitContactForm = await importSubmitContactForm();
+
+    const result = await submitContactForm({ success: false, error: null }, createValidFormData());
+
+    expect(result).toEqual({ success: true, error: null });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
   });
 });
