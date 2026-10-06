@@ -9,7 +9,16 @@ import { withTrailingSlash } from "../../src/lib/with-trailing-slash.ts";
 
 import { createSeedClient } from "../seed/lib.ts";
 
-const REPLACEMENTS: Array<[RegExp, string]> = [[/\/seo\/on-page\/b2b-seo-solutions-2024\//, "/seo/on-page/b2b-seo-solutions-2026/"]];
+// WHY: five in-body links still used the old /blog/<slug>/ and /insights/<slug>/ shapes (404 on the
+// live site too); they point at the posts' real category URLs now.
+const REPLACEMENTS: Array<[RegExp, string]> = [
+  [/\/seo\/on-page\/b2b-seo-solutions-2024\//, "/seo/on-page/b2b-seo-solutions-2026/"],
+  [/^\/blog\/difference-between-marketing-and-sales-services\/$/, "/seo/keyword-research/difference-between-marketing-and-sales-services/"],
+  [/^\/blog\/ranking-factors-seo\/(?=$|#)/, "/seo/technical/ranking-factors-seo/"],
+  [/^\/blog\/seo-marketing-practices-2025\/$/, "/seo/technical/seo-marketing-practices-2026/"],
+  [/^\/blog\/web-summit-lisbon-2023\/$/, "/seo/local/web-summit-lisbon-2023/"],
+  [/^\/insights\/outsourcing-link-building\/$/, "/seo/linkbuilding/outsourcing-link-building/"],
+];
 
 interface Post {
   _id: string;
