@@ -13,6 +13,7 @@
  */
 
 import { br, hl, tx, type ContentImage, type HeadingSegment } from "../shared/page-content.ts";
+import type { PortalDeckScreen } from "@/components/sections/partnerships/portal-deck-data";
 
 export type { ContentImage, HeadingSegment } from "../shared/page-content.ts";
 
@@ -155,10 +156,14 @@ export interface HomeContent {
     ctaUrl: string;
     certifications: HomeCertification[];
   };
+  /** "/ The Value We Bring /": statement, summary, partner paths, and the portal deck's legend. */
   partnerships: {
     label: string;
     statement: HeadingSegment[];
-    paragraphs: string[];
+    summary: string;
+    paths: string[];
+    portalEyebrow: string;
+    screens: PortalDeckScreen[];
     ctaLabel: string;
     ctaUrl: string;
   };
@@ -533,12 +538,17 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
       tx(" opportunities for businesses and individuals looking to expand their service offerings "),
       hl("through our expertise."),
     ],
-    paragraphs: [
-      "Whether you're interested in reselling our services, partnering as an affiliate, or utilizing our white-label options, we provide flexible solutions to meet your needs.",
-      "Our partnership programs are designed to help you grow your business while delivering exceptional SEO results to your clients.",
+    summary: "Resell our white-label SEO, refer clients as an affiliate, or plug our team into your agency. Your clients see your brand; we do the work.",
+    paths: ["White-label SEO", "Affiliate program", "Reseller partnership"],
+    portalEyebrow: "Partner portal",
+    screens: [
+      { id: "dashboard", title: "Dashboard", caption: "Every client, task and update at a glance." },
+      { id: "thread", title: "Deliverable threads", caption: "One thread per deliverable, with your team and ours." },
+      { id: "reports", title: "Monthly reports", caption: "Rankings, traffic and links, written for your clients." },
+      { id: "deliverables", title: "Deliverables", caption: "Status, files and approvals for every project." },
     ],
     ctaLabel: "Become a Partner",
-    ctaUrl: "/contact",
+    ctaUrl: "/white-label-seo-partnership/",
   },
   blog: {
     label: "/  Featured Blogs  /",
