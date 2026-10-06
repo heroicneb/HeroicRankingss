@@ -150,13 +150,13 @@ export function buildConfirmationEmail(input: FormEmailInput, config: ResendConf
   const body = isPartnership
     ? [
         `Hi ${firstName},`,
-        `Thanks for your interest in partnering with ${SITE_NAME}. Your request has reached our partnerships team, and one of us will be in touch within one business day to talk about how we could work together.`,
+        `Thanks for your interest in partnering with ${SITE_NAME}. Your request has reached our partnerships team, and one of us will get back to you shortly to talk about how we could work together.`,
         `If anything is urgent in the meantime, just reply to this email.`,
         `The ${SITE_NAME} team`,
       ]
     : [
         `Hi ${firstName},`,
-        `Thanks for reaching out to ${SITE_NAME}. We have received your message and someone from our team will get back to you within one business day.`,
+        `Thanks for reaching out to ${SITE_NAME}. We have received your message and someone from our team will get back to you shortly.`,
         `If anything is urgent in the meantime, just reply to this email.`,
         `The ${SITE_NAME} team`,
       ];
