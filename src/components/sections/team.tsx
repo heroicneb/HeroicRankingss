@@ -14,12 +14,14 @@ interface TeamProps {
 /*
  * "/ The Team /": statement, headcount and CTA on the left; on the right the
  * team clip (see ./team-video.tsx) in place of the former two founder cards.
- * The clip is 4:3 (1008×756 source); phones get its opening frame as a still.
+ * The clip starts at the 9 s mark of the source (the office as a lit model),
+ * zooms out into the network and rewinds; 4:3, 1008×756. Phones get the
+ * opening frame as a still.
  */
 const TEAM_CLIP = {
-  src: "/team/about-us-anim-v1.mp4",
-  poster: "/team/about-us-anim-v1-poster.webp",
-  posterAlt: "The Heroic Rankings team at work in the office, seen from above",
+  src: "/team/about-us-anim-v2.mp4",
+  poster: "/team/about-us-anim-v2-poster.webp",
+  posterAlt: "The Heroic Rankings office as a lit model floating in the dark, seen from above",
   width: 1008,
   height: 756,
 };
