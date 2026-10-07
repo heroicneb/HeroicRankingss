@@ -15,7 +15,7 @@ describe("createPageMetadata", () => {
       {
         alt: "Heroic Rankings Open Graph Image",
         height: 630,
-        url: "/opengraph-image",
+        url: "/og/default.png",
         width: 1200,
       },
     ]);

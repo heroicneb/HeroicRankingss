@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og/default.png",
         width: 1200,
         height: 630,
         alt: `${SITE_NAME} Open Graph Image`,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    images: ["/opengraph-image"],
+    images: ["/og/default.png"],
   },
   // Locked until NEXT_PUBLIC_SITE_INDEXING=true (see src/lib/indexing.ts).
   robots: SITE_INDEXING_ENABLED

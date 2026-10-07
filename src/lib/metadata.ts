@@ -16,7 +16,7 @@ interface PageMetadataOptions {
   image?: { url: string; alt?: string } | null;
 }
 
-const DEFAULT_OG_IMAGE = "/opengraph-image";
+const DEFAULT_OG_IMAGE = "/og/default.png";
 const TITLE_SUFFIX = ` | ${SITE_NAME}`;
 /** Google shows roughly 60 characters of a title and 155–160 of a description. */
 const MAX_TITLE_WITH_SUFFIX = 60;
