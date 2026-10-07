@@ -1,4 +1,4 @@
-import { DEFAULT_HOME_CONTENT, segmentsText, splitSegments, type HomeContent } from "@/components/pages/home/home-content";
+import { DEFAULT_HOME_CONTENT, splitSegments, type HomeContent } from "@/components/pages/home/home-content";
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
 import { GradientHeading } from "@/components/ui/gradient-heading";
@@ -32,16 +32,22 @@ export function Team({ content = DEFAULT_HOME_CONTENT.team }: TeamProps) {
   return (
     <section className="section-shell pt-[60px] lg:pt-16">
       <Container>
-        <div className="mx-auto flex max-w-[350px] flex-col items-center lg:hidden" data-reveal>
-          <div className="flex w-[348px] flex-col items-center gap-5 text-center">
+        {/* WHY: one DOM for every width (grid areas on lg), so the page has a single H2 for this section. */}
+        <div className="mx-auto flex max-w-[350px] flex-col items-center lg:grid lg:max-w-none lg:grid-cols-[minmax(0,506px)_minmax(0,630px)] lg:grid-rows-[auto_auto_1fr] lg:items-start lg:justify-between lg:gap-x-10 min-[1360px]:gap-x-[144px]">
+          <div className="flex w-full max-w-[348px] flex-col items-center gap-5 text-center lg:col-start-1 lg:row-start-1 lg:block lg:max-w-[506px] lg:text-left" data-reveal>
             <SectionLabel>{content.label}</SectionLabel>
-            <h2 className="type-h2 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              {headingLines.map(segmentsText).join(" ")}
+            <h2 className="type-h2 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-5 lg:max-w-[506px]">
+              {headingLines.map((line, index) => (
+                <span className="lg:block" key={`team-heading-${index}`}>
+                  {index > 0 ? " " : null}
+                  <GradientHeading highlightClassName="gradient-text-brand-about-heading" segments={line} />
+                </span>
+              ))}
             </h2>
           </div>
 
-          <div className="mt-10 flex flex-col items-center pb-[10px]">
-            <p className="text-[120px] font-semibold leading-none tracking-[-0.02em] text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)]">
+          <div className="mt-10 flex flex-col items-center pb-[10px] lg:col-start-1 lg:row-start-2 lg:mt-5 lg:items-start lg:pb-0" data-reveal>
+            <p className="text-[120px] font-semibold leading-none tracking-[-0.02em] text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)] lg:text-[72px] min-[1280px]:text-[120px]">
               {content.statValue}
             </p>
             <p className="type-paragraph mt-1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
@@ -49,48 +55,18 @@ export function Team({ content = DEFAULT_HOME_CONTENT.team }: TeamProps) {
             </p>
           </div>
 
-          <div className="mt-10 w-full max-w-[350px]">
-            <TeamVideo {...TEAM_CLIP} className={TEAM_FRAME} sizes="350px" />
+          <div className="mt-10 w-full max-w-[350px] lg:col-start-2 lg:row-start-1 lg:row-span-3 lg:mt-0 lg:max-w-[630px] lg:self-center lg:justify-self-end" data-reveal>
+            <TeamVideo {...TEAM_CLIP} className={TEAM_FRAME} sizes="(min-width: 1024px) 630px, 350px" />
           </div>
 
           <AppLink
-            className="type-cta motion-interactive motion-interactive-press mt-10 inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
+            className="type-cta motion-interactive motion-interactive-press mt-10 inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:col-start-1 lg:row-start-3 lg:mt-12 lg:w-auto lg:justify-self-start"
             href={content.ctaUrl}
             motionPreset="none"
           >
             {content.ctaLabel}
             <GradientArrowUpRightIcon className="size-[10px]" />
           </AppLink>
-        </div>
-
-        <div className="hidden gap-10 lg:grid min-[1360px]:grid-cols-[506px_630px] min-[1360px]:gap-[144px]">
-          <div data-reveal>
-            <SectionLabel>{content.label}</SectionLabel>
-            <h2 className="type-h2 mt-5 max-w-[506px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              {headingLines.map((line, index) => (
-                <span className="block" key={`team-heading-${index}`}>
-                  <GradientHeading highlightClassName="gradient-text-brand-about-heading" segments={line} />
-                </span>
-              ))}
-            </h2>
-            <p className="mt-5 text-[72px] font-semibold leading-none tracking-[-0.02em] text-transparent [text-shadow:none] [-webkit-text-stroke:1px_var(--color-hr-accent)] min-[1280px]:text-[120px]">
-              {content.statValue}
-            </p>
-            <p className="type-paragraph mt-1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-              {content.statLabel}
-            </p>
-            <AppLink
-              className="type-cta motion-interactive motion-interactive-press mt-12 inline-flex h-[45px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-              href={content.ctaUrl}
-              motionPreset="none"
-            >
-              {content.ctaLabel}
-              <GradientArrowUpRightIcon className="size-[10px]" />
-            </AppLink>
-          </div>
-          <div className="w-full max-w-[630px] self-center" data-reveal>
-            <TeamVideo {...TEAM_CLIP} className={TEAM_FRAME} sizes="630px" />
-          </div>
         </div>
       </Container>
     </section>

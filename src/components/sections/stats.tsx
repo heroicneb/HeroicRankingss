@@ -85,34 +85,39 @@ function toStatEntries(items: HomeContent["stats"]["items"]): StatEntry[] {
 export function Stats({ content = DEFAULT_HOME_CONTENT.stats }: StatsProps) {
   const stats = toStatEntries(content.items);
   const headingLines = splitSegments(content.heading);
-  // WHY: the phone heading runs on as one sentence; only desktop keeps the design's line breaks.
-  const headingInline = headingLines.flatMap((line, index) => (index ? [{ text: " " }, ...line] : line));
   return (
     <section className="pt-[40px] lg:pt-[60px]">
       <Container>
+        {/* WHY: one heading block for every width, so the page has a single H2 for this section. */}
+        <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5 text-center text-[var(--color-hr-pure-white)] lg:max-w-[724px] lg:gap-0 lg:pt-[80px]" data-reveal>
+          <SectionLabel className="text-[var(--color-hr-pure-white)]">
+            {content.label}
+          </SectionLabel>
+          <h2 className="type-h2 w-[264px] text-[var(--color-hr-pure-white)] lg:mt-5 lg:w-auto">
+            {headingLines.map((line, index) => (
+              <span className="lg:block" key={`stats-heading-${index}`}>
+                {index > 0 ? " " : null}
+                <GradientHeading highlightClassName="" segments={line} />
+              </span>
+            ))}
+          </h2>
+          <p className="type-paragraph w-[300px] text-[var(--color-hr-pure-white)] lg:mt-10 lg:w-auto">
+            {content.body}
+          </p>
+          <AppLink
+            className={cn(
+              "type-cta motion-interactive motion-interactive-press inline-flex w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)] lg:mt-10 lg:w-auto [&_svg]:text-[var(--color-hr-pure-white)]",
+              STATS_CTA_HEIGHT_CLASS,
+            )}
+            href={content.ctaUrl}
+            motionPreset="none"
+          >
+            {content.ctaLabel}
+            <GradientArrowUpRightIcon className="size-[10px]" />
+          </AppLink>
+        </div>
+
         <div className="mx-auto flex max-w-[350px] flex-col items-center text-center text-[var(--color-hr-pure-white)] lg:hidden">
-          <div className="flex flex-col items-center gap-5" data-reveal>
-            <SectionLabel className="text-[var(--color-hr-pure-white)]">
-              {content.label}
-            </SectionLabel>
-            <h2 className="type-h2 w-[264px] text-[var(--color-hr-pure-white)]">
-              <GradientHeading highlightClassName="" segments={headingInline} />
-            </h2>
-            <p className="type-paragraph w-[300px] text-[var(--color-hr-pure-white)]">
-              {content.body}
-            </p>
-            <AppLink
-              className={cn(
-                "type-cta motion-interactive motion-interactive-press inline-flex w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)] [&_svg]:text-[var(--color-hr-pure-white)]",
-                STATS_CTA_HEIGHT_CLASS,
-              )}
-              href={content.ctaUrl}
-              motionPreset="none"
-            >
-              {content.ctaLabel}
-              <GradientArrowUpRightIcon className="size-[10px]" />
-            </AppLink>
-          </div>
 
           <div className="mt-[60px] flex flex-col gap-10" data-reveal-stagger>
             {stats.map((stat, index) => (
@@ -148,32 +153,6 @@ export function Stats({ content = DEFAULT_HOME_CONTENT.stats }: StatsProps) {
         </div>
 
         <div className="hidden lg:block">
-          <div className="mx-auto max-w-[724px] pt-20 text-center text-[var(--color-hr-pure-white)] lg:pt-[80px]" data-reveal>
-            <SectionLabel className="text-[var(--color-hr-pure-white)]">
-              {content.label}
-            </SectionLabel>
-            <h2 className="type-h2 mt-5 text-[var(--color-hr-pure-white)]">
-              {headingLines.map((line, index) => (
-                <span className="block" key={`stats-heading-${index}`}>
-                  <GradientHeading highlightClassName="" segments={line} />
-                </span>
-              ))}
-            </h2>
-            <p className="type-paragraph mt-10 text-[var(--color-hr-pure-white)]">
-              {content.body}
-            </p>
-            <AppLink
-              className={cn(
-                "type-cta motion-interactive motion-interactive-press mt-10 inline-flex items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-pure-white)] hover:bg-[color-mix(in_srgb,var(--color-hr-pure-white)_8%,transparent)] [&_svg]:text-[var(--color-hr-pure-white)]",
-                STATS_CTA_HEIGHT_CLASS,
-              )}
-              href={content.ctaUrl}
-              motionPreset="none"
-            >
-              {content.ctaLabel}
-              <GradientArrowUpRightIcon className="size-[10px]" />
-            </AppLink>
-          </div>
           <div className="grid gap-8 pb-10 pt-16 lg:grid-cols-3 lg:gap-0 lg:pb-[40px] lg:pt-[114px]" data-reveal-stagger>
             {stats.map((stat, index) => (
               <article

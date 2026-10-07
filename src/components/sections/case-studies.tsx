@@ -194,38 +194,24 @@ export function CaseStudies({ cmsCaseStudies, content = DEFAULT_HOME_CONTENT.cas
   return (
     <section className="section-shell pt-[60px] lg:pt-20" id="case-studies">
       <Container>
-        <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5 text-center lg:hidden" data-reveal>
-          <SectionLabel>{content.label}</SectionLabel>
-          <h2 className="type-h2 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-            <GradientHeading highlightClassName="gradient-text-brand-case" segments={content.heading} />
-          </h2>
-          <p className="type-paragraph text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]">
-            {content.body}
-          </p>
-          <AppLink
-            className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
-            href={content.ctaUrl}
-            motionPreset="none"
-          >
-            {content.ctaLabel}
-            <GradientArrowUpRightIcon className="size-[10px]" />
-          </AppLink>
-        </div>
-
-        <div className="hidden gap-12 min-[1360px]:grid-cols-[577px_413px] min-[1360px]:items-end min-[1360px]:justify-between lg:grid" data-reveal>
-          <div className="text-center min-[1360px]:text-left">
+        {/* WHY: one heading block for every width, so the page has a single H2 for this section. */}
+        <div
+          className="mx-auto flex max-w-[350px] flex-col items-center gap-5 text-center lg:grid lg:max-w-none lg:items-end lg:gap-12 min-[1360px]:grid-cols-[577px_413px] min-[1360px]:justify-between min-[1360px]:text-left"
+          data-reveal
+        >
+          <div className="flex flex-col items-center gap-5 lg:block">
             <SectionLabel>{content.label}</SectionLabel>
-            <h2 className="type-h2 mt-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+            <h2 className="type-h2 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-5">
               <GradientHeading highlightClassName="gradient-text-brand-case" segments={content.heading} />
             </h2>
           </div>
 
-          <div className="text-center min-[1360px]:text-left">
-            <p className="type-paragraph text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+          <div className="flex flex-col items-center gap-5 lg:block">
+            <p className="type-paragraph text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)] lg:text-[var(--color-hr-dark)] lg:dark:text-[var(--color-text-inverse)]">
               {content.body}
             </p>
             <AppLink
-              className="type-cta motion-interactive motion-interactive-press mt-8 inline-flex h-[47px] w-fit min-w-max items-center justify-center gap-[10px] rounded-[16px] border border-[var(--color-hr-accent)] bg-transparent px-5 py-3 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)]"
+              className="type-cta motion-interactive motion-interactive-press inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:mt-8 lg:h-[47px] lg:w-fit lg:min-w-max"
               href={content.ctaUrl}
               motionPreset="none"
             >
@@ -301,9 +287,10 @@ export function CaseStudies({ cmsCaseStudies, content = DEFAULT_HOME_CONTENT.cas
                   </p>
                 ) : null}
               </div>
-              <h3 className="type-h4 mt-5 px-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
+              {/* WHY: the phone list above already carries each title as an H3; a second H3 per study would double the outline. */}
+              <p className="type-h4 mt-5 px-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
                 {study.title}
-              </h3>
+              </p>
               <p className="type-paragraph mt-2 line-clamp-4 px-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:text-left">
                 {study.summary}
               </p>
