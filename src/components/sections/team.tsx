@@ -1,34 +1,31 @@
-import Image from "next/image";
+import { DEFAULT_HOME_CONTENT, segmentsText, splitSegments, type HomeContent } from "@/components/pages/home/home-content";
 import { AppLink } from "@/components/ui/app-link";
 import { Container } from "@/components/ui/container";
-import { ArrowUpRightIcon } from "@/components/ui/icons";
+import { GradientHeading } from "@/components/ui/gradient-heading";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
 import { SectionLabel } from "@/components/ui/section-label";
-import { cn } from "@/lib/cn";
-import { GradientHeading } from "@/components/ui/gradient-heading";
-import { DEFAULT_HOME_CONTENT, segmentsText, splitSegments, type HomeContent } from "@/components/pages/home/home-content";
-import type { TeamMember } from "@/types";
+
+import { TeamVideo } from "./team-video";
 
 interface TeamProps {
   content?: HomeContent["team"];
 }
 
-/** The second card sits 70px lower on wide screens, as in the design. */
-const OFFSET_CLASS_BY_INDEX = ["", "min-[1360px]:translate-y-[70px]"];
-
-function toMembers(members: HomeContent["team"]["members"]): TeamMember[] {
-  return members.map((member, index) => ({
-    name: member.name,
-    role: `/  ${member.role}  /`,
-    imageSrc: member.image?.src ?? "/figma/team/nebojsa.webp",
-    imageAlt: member.image?.alt || `${member.name} portrait`,
-    href: member.url,
-    offsetClassName: OFFSET_CLASS_BY_INDEX[index] || undefined,
-  }));
-}
+/*
+ * "/ The Team /": statement, headcount and CTA on the left; on the right the
+ * team clip (see ./team-video.tsx) in place of the former two founder cards.
+ * The clip is 4:3 (1008×756 source); phones get its opening frame as a still.
+ */
+const TEAM_CLIP = {
+  src: "/team/about-us-anim-v1.mp4",
+  poster: "/team/about-us-anim-v1-poster.webp",
+  posterAlt: "The Heroic Rankings team at work in the office, seen from above",
+  width: 1008,
+  height: 756,
+};
+const TEAM_FRAME = "team-video relative w-full overflow-hidden rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-dark)] [aspect-ratio:4/3] dark:border-[var(--color-border-inverse-10)] lg:rounded-[var(--radius-card)]";
 
 export function Team({ content = DEFAULT_HOME_CONTENT.team }: TeamProps) {
-  const MEMBERS = toMembers(content.members);
   const headingLines = splitSegments(content.heading);
   return (
     <section className="section-shell pt-[60px] lg:pt-16">
@@ -50,38 +47,8 @@ export function Team({ content = DEFAULT_HOME_CONTENT.team }: TeamProps) {
             </p>
           </div>
 
-          <div className="mt-10 flex flex-col gap-10">
-            {MEMBERS.map((member) => (
-              <AppLink
-                className={cn(
-                  "group relative block h-[454px] w-[350px] rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]",
-                )}
-                href={member.href}
-                key={member.name}
-              >
-                <Image
-                  alt={member.imageAlt}
-                  className="h-[350px] w-[350px] rounded-[30px] object-cover"
-                  height={350}
-                  quality={95}
-                  sizes="700px"
-                  src={member.imageSrc}
-                  width={350}
-                />
-                <h3 className="type-team-title mt-5 px-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                  {member.name}
-                </h3>
-                <p className="mt-[10px] px-5 text-[18px] leading-6 text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]">
-                  {member.role}
-                </p>
-                <span
-                  aria-hidden
-                  className="absolute right-5 top-[270px] inline-flex size-[60px] items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)] transition-transform duration-300 ease-out group-hover:scale-105 group-focus-visible:scale-105 dark:bg-[var(--color-bg-dark)] dark:text-[var(--color-text-inverse)]"
-                >
-                  <ArrowUpRightIcon className="size-5" />
-                </span>
-              </AppLink>
-            ))}
+          <div className="mt-10 w-full max-w-[350px]">
+            <TeamVideo {...TEAM_CLIP} className={TEAM_FRAME} sizes="350px" />
           </div>
 
           <AppLink
@@ -119,39 +86,8 @@ export function Team({ content = DEFAULT_HOME_CONTENT.team }: TeamProps) {
               <GradientArrowUpRightIcon className="size-[10px]" />
             </AppLink>
           </div>
-          <div className="grid justify-center gap-5 sm:grid-cols-2 min-[1360px]:justify-start" data-reveal-stagger>
-            {MEMBERS.map((member) => (
-              <AppLink
-                className={cn(
-                  member.offsetClassName,
-                  "group relative block h-[409px] w-[305px] rounded-[var(--radius-card)] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]",
-                )}
-                href={member.href}
-                key={`desktop-${member.name}`}
-              >
-                <Image
-                  alt={member.imageAlt}
-                  className="h-[305px] w-[305px] rounded-t-[var(--radius-card)] object-cover"
-                  height={305}
-                  quality={95}
-                  sizes="305px"
-                  src={member.imageSrc}
-                  width={305}
-                />
-                <h3 className="type-team-title mt-5 px-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                  {member.name}
-                </h3>
-                <p className="type-paragraph mt-[10px] px-5 text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]">
-                  {member.role}
-                </p>
-                <span
-                  aria-hidden
-                  className="absolute right-5 top-[213px] inline-flex size-[72px] items-center justify-center rounded-full bg-[var(--color-hr-pure-white)] text-[var(--color-hr-dark)] transition-transform duration-300 ease-out group-hover:scale-105 group-focus-visible:scale-105 dark:bg-[var(--color-bg-dark)] dark:text-[var(--color-text-inverse)]"
-                >
-                  <ArrowUpRightIcon className="size-7" />
-                </span>
-              </AppLink>
-            ))}
+          <div className="w-full max-w-[630px] self-center" data-reveal>
+            <TeamVideo {...TEAM_CLIP} className={TEAM_FRAME} sizes="630px" />
           </div>
         </div>
       </Container>

@@ -1496,6 +1496,14 @@ textarea {
   }
 }
 
+/* Team clip: the poster fades out once the video has its first frame. */
+.team-video-poster {
+  transition: opacity 600ms ease;
+}
+.team-video[data-video-active="true"] .team-video-poster {
+  opacity: 0;
+}
+
 /* Portal deck: four screens stacked; the pose comes from data-order (0 front, 1, 2 behind, exit = leaving). */
 .portal-deck {
   padding-top: 44px;
