@@ -70,9 +70,10 @@ export function CaseStudyJourney({ data }: CaseStudyJourneyProps) {
                         : "size-[30px] rounded-full bg-[var(--color-hr-light-grey)] dark:bg-[var(--color-hr-dark-line)]"
                     }
                   />
-                  <h3 className="mt-[40px] min-h-[80px] font-normal text-[32px] leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                  {/* WHY: the phone rail below carries each step as an H3; a second H3 per step would double the outline. */}
+                  <p className="mt-[40px] min-h-[80px] font-normal text-[32px] leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                     {step.title}
-                  </h3>
+                  </p>
                   <p className="text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{step.body}</p>
                 </li>
               ))}
