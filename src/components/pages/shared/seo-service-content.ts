@@ -92,7 +92,7 @@ export const DEFAULT_WHY_CHOOSE: SeoServiceContent["whyChoose"] = {
     { title: "Expertise", description: "Proven track record of success across various industries.", icon: { src: "/seo-services/why-icon-expertise.svg", alt: "", width: 20, height: 20 } },
     { title: "Customized Strategies", description: "Tailored to your goals and industry.", icon: { src: "/seo-services/why-icon-strategy.svg", alt: "", width: 20, height: 20 } },
     { title: "Comprehensive Services", description: "From on-page to technical SEO, we cover it all", icon: { src: "/seo-services/why-icon-services.svg", alt: "", width: 20, height: 20 } },
-    { title: "Take Your SEO To The Next Level", description: "Regular updates and detailed reports on your SEO performance.", icon: { src: "/seo-services/why-icon-reporting.svg", alt: "", width: 20, height: 20 } },
+    { title: "Transparent Reporting", description: "Regular updates and detailed reports on your SEO performance.", icon: { src: "/seo-services/why-icon-reporting.svg", alt: "", width: 20, height: 20 } },
     { title: "Dedicated Support", description: "A team of SEO experts always ready to assist you.", icon: { src: "/seo-services/why-icon-support.svg", alt: "", width: 20, height: 20 } },
   ],
   ctaTitle: "Take Your SEO To The Next Level",

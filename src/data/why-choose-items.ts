@@ -29,7 +29,7 @@ export const WHY_CHOOSE_ITEMS: readonly WhyChooseIconItem[] = [
     descriptionWidthClass: "max-w-[302px]",
   },
   {
-    title: "Take Your SEO To The Next Level",
+    title: "Transparent Reporting",
     description:
       "Regular updates and detailed reports on your SEO performance.",
     iconSrc: "/seo-services/why-icon-reporting.svg",

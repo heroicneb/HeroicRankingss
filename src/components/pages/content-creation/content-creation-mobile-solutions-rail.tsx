@@ -88,9 +88,10 @@ export function ContentCreationMobileSolutionsRail({ cards }: ContentCreationMob
                     />
                   </span>
 
-                  <h3 className="type-h3 mx-auto w-full max-w-[290px] text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+                  {/* WHY: the desktop cards carry these titles as H3; the phone rail must not add a second set. */}
+                  <p className="type-h3 mx-auto w-full max-w-[290px] text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                     {card.title}
-                  </h3>
+                  </p>
                   <p className="type-paragraph mx-auto w-full max-w-[290px] text-center gradient-text-brand gradient-text-brand-services">
                     {card.subtitle}
                   </p>

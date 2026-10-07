@@ -88,7 +88,8 @@ export function KeywordStrategyMobileSolutionsRail({ cards }: KeywordStrategyMob
                     />
                   </span>
 
-                  <h3 className="type-h3 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{card.title}</h3>
+                  {/* WHY: the desktop cards carry these titles as H3; the phone rail must not add a second set. */}
+                  <p className="type-h3 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{card.title}</p>
                   <p className="type-paragraph gradient-text-brand gradient-text-brand-services">{card.subtitle}</p>
                 </div>
 

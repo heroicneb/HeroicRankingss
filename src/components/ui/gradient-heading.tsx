@@ -26,7 +26,16 @@ export function GradientHeading({ segments, highlightClassName }: GradientHeadin
   return (
     <>
       {segments.map((segment, index) => {
-        if (segment.break) return <br key={index} />;
+        // WHY: a plain <br> glues the words around it in extracted text ("sustainablesuccess"); the
+        // space before it collapses visually but keeps the words apart for crawlers and screen readers.
+        if (segment.break) {
+          return (
+            <Fragment key={index}>
+              {" "}
+              <br />
+            </Fragment>
+          );
+        }
         if (!segment.text) return null;
         if (segment.highlight) {
           const className = classes[Math.min(highlightOrdinal[index] ?? 0, classes.length - 1)];

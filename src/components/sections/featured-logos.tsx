@@ -26,11 +26,13 @@ export function FeaturedLogos({ partnerLogos = [], heading = DEFAULT_HOME_CONTEN
   if (cmsLogos.length > 0) {
     return (
       <section className="pb-[60px] pt-[60px] lg:pb-[80px] lg:pt-[108px]">
-        <Container className="lg:hidden">
+        <Container>
+          <h2 className="type-h3 mx-auto w-[272px] overflow-visible pb-[0.12em] text-center text-[var(--color-hr-pure-white)] lg:w-auto">
+            <GradientHeading highlightClassName={featuredHeadingGradientClassName} segments={heading} />
+          </h2>
+        </Container>
+        <Container className="mt-5 lg:hidden">
           <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5">
-            <h2 className="type-h3 w-[272px] text-center text-[var(--color-hr-pure-white)]">
-              <GradientHeading highlightClassName="gradient-text-brand-featured" segments={heading} />
-            </h2>
             <div className="w-full rounded-[30px] border border-[var(--color-hr-accent)] px-[30px] py-[20px]">
               <div className="grid grid-cols-2 gap-x-5 gap-y-5">
                 {cmsLogos.map((logo) => {
@@ -71,12 +73,6 @@ export function FeaturedLogos({ partnerLogos = [], heading = DEFAULT_HOME_CONTEN
         </Container>
 
         <div className="hidden lg:block">
-          <Container>
-            <h2 className="type-h4 overflow-visible pb-[0.12em] font-normal text-center text-[var(--color-hr-pure-white)]">
-              <GradientHeading highlightClassName={featuredHeadingGradientClassName} segments={heading} />
-            </h2>
-          </Container>
-
           <Container className="mt-5">
             <div className="rounded-[var(--radius-card)] border border-[var(--color-hr-accent)] px-4 py-10 md:px-10 lg:px-20">
               <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-14 xl:gap-20 2xl:gap-[120px]">
@@ -122,11 +118,13 @@ export function FeaturedLogos({ partnerLogos = [], heading = DEFAULT_HOME_CONTEN
 
   return (
     <section className="pb-[60px] pt-[60px] lg:pb-[80px] lg:pt-[108px]">
-      <Container className="lg:hidden">
+      <Container>
+        <h2 className="type-h3 mx-auto w-[272px] overflow-visible pb-[0.12em] text-center text-[var(--color-hr-pure-white)] lg:w-auto">
+          <GradientHeading highlightClassName={featuredHeadingGradientClassName} segments={heading} />
+        </h2>
+      </Container>
+      <Container className="mt-5 lg:hidden">
         <div className="mx-auto flex max-w-[350px] flex-col items-center gap-5">
-          <h2 className="type-h3 w-[272px] text-center text-[var(--color-hr-pure-white)]">
-            <GradientHeading highlightClassName="gradient-text-brand-featured" segments={heading} />
-          </h2>
           <div className="w-full rounded-[30px] border border-[var(--color-hr-accent)] px-[30px] py-[20px]">
             <div className="grid grid-cols-2 gap-x-5 gap-y-5">
               {/* WHY: Keep vector logos crisp by serving source SVGs directly instead of optimizer transforms. */}
@@ -172,12 +170,6 @@ export function FeaturedLogos({ partnerLogos = [], heading = DEFAULT_HOME_CONTEN
       </Container>
 
       <div className="hidden lg:block">
-        <Container>
-          <h2 className="type-h3 overflow-visible pb-[0.12em] text-center text-[var(--color-hr-pure-white)]">
-            <GradientHeading highlightClassName={featuredHeadingGradientClassName} segments={heading} />
-          </h2>
-        </Container>
-
         <Container className="mt-5">
           <div className="rounded-[var(--radius-card)] border border-[var(--color-hr-accent)] px-4 py-10 md:px-10 lg:px-20">
             <div className="flex flex-nowrap items-center justify-center gap-8 lg:gap-14 xl:gap-20 2xl:gap-[180px]">

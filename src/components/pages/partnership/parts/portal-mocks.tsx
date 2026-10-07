@@ -179,7 +179,7 @@ export function DashboardMock() {
     <Shell active="Dashboard">
       <div className="pm-page-head">
         <div>
-          <h3 className="pm-h1">My Projects</h3>
+          <p className="pm-h1">My Projects</p>
           <p className="pm-sub">Manage all your projects and deliverables in one place</p>
         </div>
         <div className="pm-actions">
@@ -332,7 +332,7 @@ function ProjectHeader() {
     <>
       <div className="pm-page-head">
         <div>
-          <h3 className="pm-h1">Cedar &amp; Stone</h3>
+          <p className="pm-h1">Cedar &amp; Stone</p>
           <p className="pm-link pm-sub">https://cedar.example.com ↗</p>
           <p className="pm-badges">
             <Pill tone="success">Active</Pill> <Pill tone="danger">2 unread</Pill>
@@ -478,7 +478,7 @@ export function ReportsMock() {
     <Shell active="Reports">
       <div className="pm-page-head">
         <div>
-          <h3 className="pm-h1">Reports</h3>
+          <p className="pm-h1">Reports</p>
           <p className="pm-sub">View your project reports and analytics</p>
         </div>
       </div>

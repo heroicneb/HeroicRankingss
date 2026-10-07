@@ -34,7 +34,9 @@ function getIconUrl(pillar: StrategyPillar): string | null {
   }
 }
 
-function PillarCard({ pillar, className }: { pillar: StrategyPillar; className?: string }) {
+// WHY: the card renders in a phone rail and a desktop grid; only the phone copy carries the title as an H3,
+// so each pillar is one heading in the outline.
+function PillarCard({ pillar, className, titleAs: Title = "h3" }: { pillar: StrategyPillar; className?: string; titleAs?: "h3" | "p" }) {
   const iconUrl = getIconUrl(pillar);
   const bullets = pillar.bullets ?? [];
   return (
@@ -47,9 +49,9 @@ function PillarCard({ pillar, className }: { pillar: StrategyPillar; className?:
       <div className="flex size-[50px] items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-hr-dark-line)] dark:bg-[var(--color-hr-black-box)]">
         {iconUrl ? <Image alt={pillar.icon?.alt ?? ""} className="dark:invert" height={34} src={iconUrl} width={34} /> : null}
       </div>
-      <h3 className="mt-[25px] font-normal text-[32px] leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+      <Title className="mt-[25px] font-normal text-[32px] leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
         {pillar.title}
-      </h3>
+      </Title>
       {pillar.intro ? (
         <p className="mt-[16px] text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{pillar.intro}</p>
       ) : null}
@@ -103,7 +105,7 @@ export function CaseStudyPillars({ data, intro }: CaseStudyPillarsProps) {
         <div className="mx-auto w-full max-w-[1440px] px-[80px]">
           <div className="grid grid-cols-3 gap-[20px]">
             {data.map((pillar, index) => (
-              <PillarCard key={pillar._key ?? `${pillar.title}-${index}`} pillar={pillar} />
+              <PillarCard key={pillar._key ?? `${pillar.title}-${index}`} pillar={pillar} titleAs="p" />
             ))}
           </div>
         </div>

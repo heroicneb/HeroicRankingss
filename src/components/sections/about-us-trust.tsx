@@ -9,18 +9,19 @@ export function AboutUsTrust() {
       className="px-[15px] pb-[60px] pt-[60px] lg:px-[80px] lg:pb-[70px] lg:pt-[120px]"
       id="about-us-trust"
     >
-      <div className="lg:hidden">
-        <div className="mx-auto w-full max-w-[350px]">
-          <SectionLabel className="text-center">
+      {/* WHY: one heading block for every width (grid column 1 on lg), so the page has a single H2 for this section. */}
+      <div className="lg:grid lg:grid-cols-1 lg:gap-10 xl:grid-cols-[485px_630px] xl:gap-[165px]">
+        <div className="mx-auto w-full max-w-[350px] text-center lg:mx-0 lg:max-w-none lg:text-left">
+          <SectionLabel className="text-center lg:text-left">
             / Trust and Authority /
           </SectionLabel>
-          <h2 className="type-h2 mt-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+          <h2 className="type-h2 mt-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
             Over a Decade of Ethical, Data-Driven{" "}
             <GradientText className="gradient-text-brand-about-us-trust-title">
               SEO Excellence
             </GradientText>
           </h2>
-          <p className="type-paragraph mt-5 text-center text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+          <p className="type-paragraph mt-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-10">
             Heroic Rankings has evolved alongside search itself.
             <br />
             <br />
@@ -35,6 +36,7 @@ export function AboutUsTrust() {
           </p>
         </div>
 
+      <div className="lg:hidden">
         <div className="mx-auto mt-[60px] w-full max-w-[350px]">
           <article className="text-center">
             <div className="mx-auto flex size-[50px] items-center justify-center rounded-[12px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]">
@@ -125,30 +127,7 @@ export function AboutUsTrust() {
         </div>
       </div>
 
-      <div className="hidden lg:grid lg:grid-cols-1 lg:gap-10 xl:grid-cols-[485px_630px] xl:gap-[165px]">
-        <div>
-          <SectionLabel>/ Trust and Authority /</SectionLabel>
-          <h2 className="type-h2 mt-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-            Over a Decade of Ethical, Data-Driven{" "}
-            <GradientText className="gradient-text-brand-about-us-trust-title">
-              SEO Excellence
-            </GradientText>
-          </h2>
-          <p className="type-paragraph mt-10 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-            Heroic Rankings has evolved alongside search itself.
-            <br />
-            <br />
-            SEO isn&apos;t a mystery: it&apos;s a system to be understood,
-            tested, and mastered. Through white-hat strategies and continuous
-            adaptation, we help brands rank today and get recognized by
-            tomorrow&apos;s search:
-            <br />
-            <br />
-            AI engines and large language models that decide what gets seen,
-            cited, and trusted.
-          </p>
-        </div>
-
+      <div className="hidden lg:block">
         <div>
           <article>
             <div className="flex items-center gap-[14px]">
@@ -162,9 +141,9 @@ export function AboutUsTrust() {
                   width={17}
                 />
               </div>
-              <h3 className="type-h3 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+              <p className="type-h3 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                 Our Approach
-              </h3>
+              </p>
             </div>
             <p className="type-paragraph mt-4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
               Our Approach involves predictive modeling to anticipate organic
@@ -207,9 +186,9 @@ export function AboutUsTrust() {
                   />
                 </div>
               </div>
-              <h3 className="type-h3 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+              <p className="type-h3 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                 Our Team
-              </h3>
+              </p>
             </div>
             <p className="type-paragraph mt-4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
               Our team of seasoned experts is dedicated to helping businesses of
@@ -231,9 +210,9 @@ export function AboutUsTrust() {
                   width={29}
                 />
               </div>
-              <h3 className="type-h3 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+              <p className="type-h3 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
                 Our Vision
-              </h3>
+              </p>
             </div>
             <p className="type-paragraph mt-4 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
               Is to deliver exceptional result through personalized SEO
@@ -243,6 +222,7 @@ export function AboutUsTrust() {
             </p>
           </article>
         </div>
+      </div>
       </div>
     </section>
   );

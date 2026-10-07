@@ -103,7 +103,8 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     href: "/seo/technical",
   },
   {
-    title: "Technical SEO Services",
+    // WHY: this slot used to repeat the Technical card; the desktop grid has Local SEO here.
+    title: "Local SEO Services",
     imageSrc: "/figma/services/card-technical-2.webp",
     imageAlt: "Classical architectural temple",
     imageWidth: 4096,
@@ -112,12 +113,11 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     imageClassName: "h-[81.55%] w-[183.54%] left-[-30.43%] top-[18.29%]",
     imageStyle: { transform: "scaleX(-1)" },
     titleClassName: "max-w-[144px]",
-    backIntro:
-      "Ensure peak performance, mobile-friendliness, and superior speed. Our technical SEO services cover:",
-    backPoints: ["Site Audits", "Mobile Optimization", "Speed Optimization", "Structured Data Markup"],
+    backIntro: "Increase visibility in local searches and maps with targeted strategies. Our local SEO services include:",
+    backPoints: ["Google My Business", "Local Listings Management", "Local Content Creation"],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/seo/technical",
+    href: "/seo/local",
   },
   {
     title: "E-Commerce SEO Services",
@@ -155,18 +155,19 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     href: "/seo/content-creation",
   },
   {
-    title: "Content Services",
+    // WHY: this slot used to repeat the Content card; the desktop grid has Keyword Research here.
+    title: "Keyword Research and Strategy",
     imageSrc: "/figma/services/card-content-2.webp",
     imageAlt: "Classical scholar reading and writing",
     imageWidth: 4096,
     imageHeight: 2866,
     mobileImageRenderWidth: 784,
     imageClassName: "h-[121.78%] w-[223.77%] left-[-14.04%] top-[-4.83%]",
-    backIntro: "Align your brand's voice with audience needs for organic growth. Our content services include:",
-    backPoints: ["Content Strategy", "Content Creation", "Content Optimization", "Content calendar"],
+    backIntro: "Identify and target the keywords that matter to your audience. Our keyword services include:",
+    backPoints: ["Comprehensive Keyword Research", "Competitive Analysis", "Keyword Mapping", "Keyword Clustering"],
     backIntroWidthClass: "max-w-[245px]",
     backPointsWidthClass: "max-w-[237px]",
-    href: "/seo/content-creation",
+    href: "/seo/keyword-research",
   },
 ];
 
@@ -244,9 +245,10 @@ export function SeoServicesMobileServicesRail() {
                   />
                   <div className="seo-service-card-front-overlay absolute inset-0" />
 
-                  <h3 className={cn("type-h3 font-medium relative z-10 mt-10 max-w-[295px] text-[var(--color-hr-pure-white)]", card.titleClassName)}>
+                  {/* WHY: the desktop cards carry these titles as H3; the phone rail must not add a second set. */}
+                  <p className={cn("type-h3 font-medium relative z-10 mt-10 max-w-[295px] text-[var(--color-hr-pure-white)]", card.titleClassName)}>
                     {card.title}
-                  </h3>
+                  </p>
                 </div>
 
                 <div className="seo-service-card-face seo-service-card-back relative h-full overflow-hidden p-[20px] text-[var(--color-hr-pure-white)]">
