@@ -52,3 +52,12 @@ Written 2026-10-07 after the final pre-launch crawl. Tick the boxes in order. Ro
 ## Rollback
 
 Put back the `A`/`CNAME` values from step 6 (DNS only is fine). The old site is live again within minutes. Nothing on Vercel needs to change.
+
+## Done: 2026-10-07, evening
+
+DNS switched (root `A 76.76.21.21`, `www` → Vercel, both DNS only). Verified from outside right after:
+home 200 via Vercel with the latest build (team clip, portal deck, new favicon), Let's Encrypt certificate issued, HSTS on;
+http → https 308, www → apex 301; `/partnership/`, `/case-study/number-artist/`, `/marketing/` and
+`/seo/how-to-grow-your-business-online/` redirect 308 to their new URLs; robots.txt allows crawling and names the
+sitemap; no `X-Robots-Tag` header on any page; sitemap 200 with 151 URLs on heroicrankings.com; GA4 and Clarity in the
+HTML; portal.heroicrankings.com and Google Workspace MX untouched. Sitemap resubmitted in Search Console by Nebojsa.
