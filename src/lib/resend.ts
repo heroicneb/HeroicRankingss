@@ -10,6 +10,7 @@
  *   RESEND_FROM_EMAIL         sender, e.g. "Heroic Rankings <hello@notifications.heroicrankings.com>"
  *   CONTACT_FORM_TO           comma-separated recipients of contact submissions
  *   PARTNERSHIP_FORM_TO       comma-separated recipients of partnership requests (falls back to CONTACT_FORM_TO)
+ *   WEBSUMMIT_FORM_TO         comma-separated recipients of Web Summit "Heroic Five" claims (falls back to CONTACT_FORM_TO)
  *   FORM_REPLY_TO             Reply-To on the visitor confirmation (defaults to the sales address)
  *   FORM_CONFIRMATION_ENABLED "false" turns the visitor confirmation off
  */
@@ -24,11 +25,12 @@ export interface ResendConfig {
   from: string;
   contactRecipients: string[];
   partnershipRecipients: string[];
+  websummitRecipients: string[];
   replyTo: string;
   confirmationEnabled: boolean;
 }
 
-export type FormEmailType = "contact" | "partnership";
+export type FormEmailType = "contact" | "partnership" | "websummit";
 
 export interface FormEmailInput {
   formType: FormEmailType;
@@ -41,6 +43,10 @@ export interface FormEmailInput {
   source?: string;
   /** Client timestamp (ms since epoch) or "" when unknown. */
   submittedAt: string;
+  /** Web Summit claim: the site to audit, the optional worry, and whether they met the team. */
+  siteUrl?: string;
+  worry?: string;
+  spokeAtBooth?: boolean;
 }
 
 export interface ResendMessage {
@@ -69,12 +75,14 @@ export function readResendConfig(env: Record<string, string | undefined> = proce
   const apiKey = env.RESEND_API_KEY?.trim() ?? "";
   const contactRecipients = parseRecipients(env.CONTACT_FORM_TO);
   const partnershipRecipients = parseRecipients(env.PARTNERSHIP_FORM_TO);
+  const websummitRecipients = parseRecipients(env.WEBSUMMIT_FORM_TO);
   if (!apiKey || contactRecipients.length === 0) return null;
   return {
     apiKey,
     from: env.RESEND_FROM_EMAIL?.trim() || DEFAULT_FROM,
     contactRecipients,
     partnershipRecipients: partnershipRecipients.length ? partnershipRecipients : contactRecipients,
+    websummitRecipients: websummitRecipients.length ? websummitRecipients : contactRecipients,
     replyTo: env.FORM_REPLY_TO?.trim() || SALES_EMAIL,
     confirmationEnabled: (env.FORM_CONFIRMATION_ENABLED?.trim().toLowerCase() ?? "true") !== "false",
   };
@@ -99,19 +107,25 @@ function paragraphs(lines: string[]): string {
 /** The email to the team: every field, the submitter as Reply-To. Pure, so it is unit-tested without the network. */
 export function buildTeamEmail(input: FormEmailInput, config: ResendConfig): ResendMessage {
   const isPartnership = input.formType === "partnership";
+  const isWebSummit = input.formType === "websummit";
   const rows: Array<[string, string]> = [["Full name", input.fullName]];
   if (input.companyName) rows.push(["Company", input.companyName]);
   rows.push(["Email", input.companyEmail]);
+  if (input.siteUrl) rows.push(["Website to audit", input.siteUrl]);
+  if (isWebSummit) rows.push(["Spoke with the team at Web Summit", input.spokeAtBooth ? "Yes" : "No"]);
+  if (input.worry) rows.push(["Biggest visibility worry", input.worry]);
   if (input.heardFrom) rows.push(["Heard about us via", input.heardFrom]);
-  if (input.projectOverview) rows.push(["Project overview", input.projectOverview]);
-  rows.push(["Form", isPartnership ? "Partnership request" : "Contact form"]);
+  if (input.projectOverview && !isWebSummit) rows.push(["Project overview", input.projectOverview]);
+  rows.push(["Form", isWebSummit ? "Web Summit 2026: Heroic Five claim" : isPartnership ? "Partnership request" : "Contact form"]);
   if (input.source) rows.push(["Page", input.source]);
   rows.push(["Submitted", formatSubmittedAt(input.submittedAt)]);
 
-  const subject = isPartnership
-    ? `New partnership request: ${input.fullName}`
-    : `New contact request: ${input.fullName}${input.companyName ? ` · ${input.companyName}` : ""}`;
-  const lead = `${isPartnership ? "Partnership request" : "Contact form submission"} from heroicrankings.com`;
+  const subject = isWebSummit
+    ? `New Heroic Five claim (Web Summit): ${input.fullName}${input.companyName ? ` · ${input.companyName}` : ""}`
+    : isPartnership
+      ? `New partnership request: ${input.fullName}`
+      : `New contact request: ${input.fullName}${input.companyName ? ` · ${input.companyName}` : ""}`;
+  const lead = `${isWebSummit ? "Heroic Five claim (Web Summit 2026)" : isPartnership ? "Partnership request" : "Contact form submission"} from heroicrankings.com`;
 
   const text = [lead, "", ...rows.map(([label, value]) => `${label}: ${value}`), "", `Reply to this email to answer ${input.fullName} directly.`].join("\n");
   const html = [
@@ -127,13 +141,13 @@ export function buildTeamEmail(input: FormEmailInput, config: ResendConfig): Res
 
   return {
     from: config.from,
-    to: isPartnership ? config.partnershipRecipients : config.contactRecipients,
+    to: isWebSummit ? config.websummitRecipients : isPartnership ? config.partnershipRecipients : config.contactRecipients,
     reply_to: input.companyEmail,
     subject,
     text,
     html,
     tags: [
-      { name: "form", value: isPartnership ? "partnership" : "contact" },
+      { name: "form", value: input.formType },
       { name: "kind", value: "team" },
     ],
   };
@@ -145,9 +159,21 @@ export function buildTeamEmail(input: FormEmailInput, config: ResendConfig): Res
  */
 export function buildConfirmationEmail(input: FormEmailInput, config: ResendConfig): ResendMessage {
   const isPartnership = input.formType === "partnership";
+  const isWebSummit = input.formType === "websummit";
   const firstName = input.fullName.trim().split(/\s+/)[0] || "there";
-  const subject = isPartnership ? `We received your partnership request, ${firstName}` : `We received your message, ${firstName}`;
-  const body = isPartnership
+  const subject = isWebSummit
+    ? `Your Heroic Five is on its way, ${firstName}`
+    : isPartnership
+      ? `We received your partnership request, ${firstName}`
+      : `We received your message, ${firstName}`;
+  const body = isWebSummit
+    ? [
+        `Hi ${firstName},`,
+        `Thanks for claiming your Heroic Five at Web Summit. A real person on our team will now review your site and send you the five highest-impact fixes, each one specific to you and ready to action, within 7 days.`,
+        `If you want to talk about the full audit in the meantime, just reply to this email.`,
+        `The ${SITE_NAME} team`,
+      ]
+    : isPartnership
     ? [
         `Hi ${firstName},`,
         `Thanks for your interest in partnering with ${SITE_NAME}. Your request has reached our partnerships team, and one of us will get back to you shortly to talk about how we could work together.`,
@@ -172,7 +198,7 @@ export function buildConfirmationEmail(input: FormEmailInput, config: ResendConf
     text,
     html,
     tags: [
-      { name: "form", value: isPartnership ? "partnership" : "contact" },
+      { name: "form", value: input.formType },
       { name: "kind", value: "confirmation" },
     ],
   };

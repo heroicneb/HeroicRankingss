@@ -26,9 +26,13 @@ interface ContactSubmissionPayload {
   projectOverview: string;
   submittedAt: string;
   /** Which form sent it; absent for the original contact form so existing receivers keep working. */
-  formType?: "partnership";
+  formType?: "partnership" | "websummit";
   /** Page path the form lives on. */
   source?: string;
+  /** Web Summit claim extras. */
+  siteUrl?: string;
+  worry?: string;
+  spokeAtBooth?: boolean;
 }
 
 interface RateLimitEntry {
@@ -413,6 +417,9 @@ function toFormEmailInput(payload: ContactSubmissionPayload): FormEmailInput {
     projectOverview: payload.projectOverview || undefined,
     source: payload.source,
     submittedAt: payload.submittedAt,
+    siteUrl: payload.siteUrl,
+    worry: payload.worry,
+    spokeAtBooth: payload.spokeAtBooth,
   };
 }
 
@@ -756,5 +763,104 @@ export async function submitPartnershipForm(
       form: "partnership",
     });
     return { success: false, error: `Something went wrong. Please try again or email ${SALES_EMAIL}.` };
+  }
+}
+
+const WEBSUMMIT_MAX_URL_LENGTH = 255;
+const WEBSUMMIT_MAX_WORRY_LENGTH = 1000;
+
+/** "yourcompany.com" or "https://yourcompany.com/page" → a normalised https URL, or null when it is not a web address. */
+export function normalizeSiteUrl(value: string): string | null {
+  const trimmed = value.trim();
+  if (!trimmed || trimmed.length > WEBSUMMIT_MAX_URL_LENGTH || /\s/.test(trimmed)) return null;
+  try {
+    const url = new URL(/^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`);
+    if (!url.hostname.includes(".") || !/^[a-z0-9.-]+$/i.test(url.hostname)) return null;
+    return url.toString();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Web Summit 2026 "Heroic Five" claim: name, company, work email, the site
+ * to audit, an optional worry and the booth checkbox. Delivered like the
+ * other forms with formType "websummit" (own recipient list and confirmation).
+ */
+export async function submitWebSummitForm(
+  _previousState: ContactFormState,
+  formData: FormData,
+): Promise<ContactFormState> {
+  const guard = await runSubmissionGuards(formData);
+  if ("state" in guard) return guard.state;
+  const { submittedAt, rateLimitBackend } = guard;
+
+  const fullName = getRequiredString(formData, "fullName");
+  const companyName = getRequiredString(formData, "companyName");
+  const companyEmail = getRequiredString(formData, "companyEmail");
+  const siteUrlRaw = getRequiredString(formData, "siteUrl");
+  const worry = getOptionalString(formData, "worry");
+  const spokeAtBooth = formData.get("spokeAtBooth") === "yes";
+
+  if (fullName === null || companyName === null || companyEmail === null || siteUrlRaw === null || worry === null) {
+    logContactEvent("warn", "submission_invalid_payload", { reason: "required_field_not_string", form: "websummit" });
+    return { success: false, error: "Please fill in all required fields." };
+  }
+  if (fullName === "" || fullName.length > CONTACT_FORM_MAX_NAME_LENGTH) {
+    logContactEvent("warn", "submission_validation_failed", { reason: "full_name", form: "websummit" });
+    return { success: false, error: "Please tell us your name." };
+  }
+  if (companyName === "" || companyName.length > CONTACT_FORM_MAX_NAME_LENGTH) {
+    logContactEvent("warn", "submission_validation_failed", { reason: "company_name", form: "websummit" });
+    return { success: false, error: "Please tell us your company." };
+  }
+  if (companyEmail === "" || companyEmail.length > CONTACT_FORM_MAX_EMAIL_LENGTH || !isValidContactEmail(companyEmail)) {
+    logContactEvent("warn", "submission_validation_failed", { reason: "invalid_email", form: "websummit" });
+    return { success: false, error: "A valid work email address is required." };
+  }
+  const siteUrl = normalizeSiteUrl(siteUrlRaw);
+  if (!siteUrl) {
+    logContactEvent("warn", "submission_validation_failed", { reason: "invalid_site_url", form: "websummit" });
+    return { success: false, error: "Please enter the website we should audit, e.g. yourcompany.com." };
+  }
+  if (worry.length > WEBSUMMIT_MAX_WORRY_LENGTH) {
+    logContactEvent("warn", "submission_validation_failed", { reason: "worry_too_long", form: "websummit" });
+    return { success: false, error: "Please keep your note under 1000 characters." };
+  }
+
+  try {
+    const dispatchResult = await dispatchContactSubmission({
+      fullName,
+      companyName,
+      companyEmail: companyEmail.toLowerCase(),
+      heardFrom: "Web Summit 2026",
+      projectOverview: [`Heroic Five claim from the Web Summit 2026 page.`, `Website: ${siteUrl}`, `Spoke with the team: ${spokeAtBooth ? "yes" : "no"}`, worry ? `Worry: ${worry}` : ""].filter(Boolean).join("\n"),
+      submittedAt,
+      formType: "websummit",
+      source: "/web-summit-2026/",
+      siteUrl,
+      worry: worry || undefined,
+      spokeAtBooth,
+    });
+
+    if (!dispatchResult.delivered) {
+      if (!dispatchResult.configured) {
+        logContactEvent("error", "submission_delivery_unavailable", { reason: dispatchResult.errorType, form: "websummit" });
+        return { success: false, error: `The form is temporarily unavailable. Please email ${SALES_EMAIL}.` };
+      }
+      logContactEvent("error", "submission_delivery_failed", {
+        attempts: dispatchResult.attempts,
+        errorType: dispatchResult.errorType,
+        statusCode: dispatchResult.lastStatusCode,
+        form: "websummit",
+      });
+      return { success: false, error: `We could not send your claim. Please try again or email ${SALES_EMAIL}.` };
+    }
+
+    logContactEvent("info", "submission_delivered", { attempts: dispatchResult.attempts, rateLimitBackend, form: "websummit", channels: dispatchResult.channels.join(",") });
+    return { success: true, error: null };
+  } catch (error) {
+    logContactEvent("error", "submission_unexpected_error", { message: error instanceof Error ? error.message : "unknown_error", form: "websummit" });
+    return { success: false, error: `We could not send your claim. Please try again or email ${SALES_EMAIL}.` };
   }
 }

@@ -11,6 +11,7 @@ Form delivery (contact form and partnership request) goes through Resend, from t
 - `RESEND_FROM_EMAIL`: optional; defaults to `Heroic Rankings <hello@notifications.heroicrankings.com>`. Must be an address on a Resend-verified domain.
 - `CONTACT_FORM_TO`: comma-separated recipients of contact-form emails (the current contact group).
 - `PARTNERSHIP_FORM_TO`: comma-separated recipients of partnership requests; falls back to `CONTACT_FORM_TO`.
+- `WEBSUMMIT_FORM_TO`: optional; recipients of the Web Summit 2026 "Heroic Five" claims from `/web-summit-2026/` (noindex event page); falls back to `CONTACT_FORM_TO`.
 - `FORM_REPLY_TO`: optional Reply-To on the visitor confirmation; defaults to sales@heroicrankings.com.
 - `FORM_CONFIRMATION_ENABLED`: optional; `false` turns off the visitor confirmation email.
 

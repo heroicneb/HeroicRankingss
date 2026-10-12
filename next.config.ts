@@ -153,6 +153,15 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // WHY: the Web Summit perk page is reached by link or QR only; it must never be indexed.
+        source: "/web-summit-2026/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }],
+      },
+      {
+        source: "/web-summit-2026",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }],
+      },
+      {
         source: "/(.*)",
         headers: [
           { key: "Cross-Origin-Opener-Policy", value: "same-origin" },

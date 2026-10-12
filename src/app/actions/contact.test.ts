@@ -27,6 +27,7 @@ const ENV_KEYS = [
   "RESEND_FROM_EMAIL",
   "CONTACT_FORM_TO",
   "PARTNERSHIP_FORM_TO",
+  "WEBSUMMIT_FORM_TO",
   "FORM_REPLY_TO",
   "FORM_CONFIRMATION_ENABLED",
 ] as const;
@@ -297,5 +298,54 @@ describe("Resend delivery", () => {
 
     expect(result).toEqual({ success: true, error: null });
     expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+});
+
+describe("submitWebSummitForm", () => {
+  const env = { RESEND_API_KEY: "re_test", CONTACT_FORM_TO: "sales@example.com", WEBSUMMIT_FORM_TO: "events@example.com" };
+  const ok = () => new Response(JSON.stringify({ id: "msg_1" }), { status: 200 });
+  const claim = (overrides: Record<string, string> = {}) => {
+    const formData = new FormData();
+    formData.set("fullName", "Ana Lee");
+    formData.set("companyName", "Acme");
+    formData.set("companyEmail", "ana@acme.example");
+    formData.set("siteUrl", "acme.example");
+    formData.set("worry", "We never show up in ChatGPT.");
+    formData.set("spokeAtBooth", "yes");
+    formData.set("submittedAt", String(Date.now() - 5_000));
+    formData.set("website", "");
+    for (const [k, v] of Object.entries(overrides)) formData.set(k, v);
+    return formData;
+  };
+
+  it("normalises the site address, emails the event list and confirms to the visitor", async () => {
+    setContactEnv(env);
+    const fetchMock = vi.fn(async () => ok());
+    vi.stubGlobal("fetch", fetchMock);
+    vi.resetModules();
+    const { submitWebSummitForm } = await import("./contact");
+
+    const result = await submitWebSummitForm({ success: false, error: null }, claim());
+
+    expect(result).toEqual({ success: true, error: null });
+    expect(fetchMock).toHaveBeenCalledTimes(2);
+    const team = JSON.parse(((fetchMock.mock.calls[0] as unknown as [string, RequestInit])[1].body as string)) as Record<string, unknown>;
+    expect(team.to).toEqual(["events@example.com"]);
+    expect(team.text).toContain("Website to audit: https://acme.example/");
+    expect(team.text).toContain("Spoke with the team at Web Summit: Yes");
+  });
+
+  it("rejects a site that is not a web address", async () => {
+    setContactEnv(env);
+    const fetchMock = vi.fn(async () => ok());
+    vi.stubGlobal("fetch", fetchMock);
+    vi.resetModules();
+    const { submitWebSummitForm } = await import("./contact");
+
+    const result = await submitWebSummitForm({ success: false, error: null }, claim({ siteUrl: "not a site" }));
+
+    expect(result.success).toBe(false);
+    expect(result.error).toContain("website");
+    expect(fetchMock).not.toHaveBeenCalled();
   });
 });
