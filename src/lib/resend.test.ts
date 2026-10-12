@@ -7,6 +7,7 @@ const config: ResendConfig = {
   from: "Heroic Rankings <hello@notifications.example.com>",
   contactRecipients: ["sales@example.com"],
   partnershipRecipients: ["partners@example.com"],
+  websummitRecipients: ["events@example.com"],
   replyTo: "sales@example.com",
   confirmationEnabled: true,
 };
@@ -34,6 +35,7 @@ describe("readResendConfig", () => {
       replyTo: "sales@heroicrankings.com",
       confirmationEnabled: true,
       partnershipRecipients: ["a@x.com"],
+      websummitRecipients: ["a@x.com"],
     });
     expect(readResendConfig({ ...base, PARTNERSHIP_FORM_TO: "p@x.com", FORM_REPLY_TO: "r@x.com", FORM_CONFIRMATION_ENABLED: "FALSE" })).toMatchObject({
       partnershipRecipients: ["p@x.com"],
@@ -90,5 +92,27 @@ describe("buildConfirmationEmail", () => {
     const message = buildConfirmationEmail({ formType: "partnership", fullName: "Jo Lee", companyEmail: "jo@x.com", submittedAt: "" }, config);
     expect(message.subject).toBe("We received your partnership request, Jo");
     expect(message.text).toContain("partnering with Heroic Rankings");
+  });
+});
+
+describe("web summit claim emails", () => {
+  const input = { formType: "websummit" as const, fullName: "Ana Lee", companyEmail: "ana@x.com", companyName: "Acme", siteUrl: "https://acme.example/", worry: "No AI mentions", spokeAtBooth: true, submittedAt: "" };
+
+  it("goes to the event recipients with the site, the booth answer and the worry", () => {
+    const message = buildTeamEmail(input, config);
+    expect(message.to).toEqual(["events@example.com"]);
+    expect(message.subject).toBe("New Heroic Five claim (Web Summit): Ana Lee · Acme");
+    expect(message.text).toContain("Website to audit: https://acme.example/");
+    expect(message.text).toContain("Spoke with the team at Web Summit: Yes");
+    expect(message.text).toContain("Biggest visibility worry: No AI mentions");
+    expect(message.tags).toContainEqual({ name: "form", value: "websummit" });
+  });
+
+  it("confirms with the 7-day promise and never echoes the worry or the site", () => {
+    const message = buildConfirmationEmail(input, config);
+    expect(message.subject).toBe("Your Heroic Five is on its way, Ana");
+    expect(message.text).toContain("within 7 days");
+    expect(message.text).not.toContain("No AI mentions");
+    expect(message.text).not.toContain("acme.example");
   });
 });
