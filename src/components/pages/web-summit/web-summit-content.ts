@@ -7,6 +7,7 @@ import type { HeadingSegment } from "@/components/pages/home/home-content";
 
 export const WEB_SUMMIT_PATH = "/web-summit-2026/";
 export const WEB_SUMMIT_DELIVERY = "within 7 days";
+export const WEB_SUMMIT_BOOTH = "0202-21";
 
 export const WEB_SUMMIT_SEO = {
   title: "Web Summit 2026: Claim Your Heroic Five | Heroic Rankings",
@@ -25,7 +26,7 @@ export const WEB_SUMMIT_CONTENT = {
     intro:
       "Talk to the Heroic Rankings team at Web Summit and claim a free, personalised mini-audit: the 5 highest-impact fixes on your site, each one specific to you and ready to action. Not a template. Not a generic checklist. Your site, your five.",
     ctaLabel: "Claim your Heroic Five",
-    note: `Free for Web Summit attendees who stop by our booth. Delivered ${WEB_SUMMIT_DELIVERY}.`,
+    note: `Free for Web Summit attendees who stop by booth ${WEB_SUMMIT_BOOTH}. Delivered ${WEB_SUMMIT_DELIVERY}.`,
     image: { src: "/web-summit/hero-statue.webp", alt: "Classical marble statue holding a Web Summit medallion", width: 1596, height: 839 },
   },
   whatYouGet: {
@@ -60,7 +61,7 @@ export const WEB_SUMMIT_CONTENT = {
     label: "/  How to Claim It  /",
     heading: [{ text: "Three steps, " }, { text: "thirty seconds", highlight: true }] satisfies HeadingSegment[],
     steps: [
-      { title: "Come talk to us.", body: "Find the Heroic Rankings team on the show floor, or scan the QR code on our badge. Tell us what you’re working on." },
+      { title: "Come talk to us.", body: `Find the Heroic Rankings team at booth ${WEB_SUMMIT_BOOTH}, next to Stage 8, or scan the QR code on our badge. Tell us what you’re working on.` },
       { title: "Drop your details below.", body: "We need your website and an email to send the audit to. Takes 30 seconds." },
       { title: "Get your Heroic Five.", body: `Within 7 days we’ll send your five personalised, prioritised fixes, ready to action.` },
     ],
@@ -90,6 +91,6 @@ export const WEB_SUMMIT_CONTENT = {
     },
     { question: "How is it personalised if it’s free?", answer: "A real person reviews your actual site. The five fixes are specific to you, not pulled from a list." },
     { question: "When will I get it?", answer: "Within 7 days of claiming, during and just after Web Summit week." },
-    { question: "What if I want the full audit?", answer: "Tell us at the booth, or reply to your Heroic Five email. We’ll sort you out." },
+    { question: "What if I want the full audit?", answer: `Tell us at booth ${WEB_SUMMIT_BOOTH}, or reply to your Heroic Five email. We’ll sort you out.` },
   ],
 } as const;
