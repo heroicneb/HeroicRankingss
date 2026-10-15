@@ -56,8 +56,8 @@ export function BlogPostDetailContent({ post }: BlogPostDetailContentProps) {
             <BlogPostAuthorCard author={post.author} />
           </aside>
 
-          {/* Right column: hero image + body + share bar */}
-          <div className="text-center lg:text-left">
+          {/* Right column: hero image + body + share bar. WHY: body text is left-aligned at every width; centred paragraphs and lists are hard to read on phones. */}
+          <div className="text-left">
             <BlogPostHero post={post} />
             {post.body && post.body.length > 0 ? (
               <div className="mt-[40px] lg:mt-[60px]">
