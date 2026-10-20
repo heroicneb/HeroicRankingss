@@ -472,7 +472,7 @@ export const getPostBySlug = cache(
         (category: unknown): category is string => typeof category === "string",
       ),
       urlCategory: post.urlCategory ?? null,
-      body: post.body ?? null,
+        body: post.body ?? null,
       authorName: rawAuthor?.name ?? null,
       authorRole: rawAuthor?.role ?? null,
       author,
@@ -1374,7 +1374,7 @@ interface SitemapDated {
 }
 
 export interface SitemapEntries {
-  posts: Array<SitemapDated & { urlCategory: string; title?: string | null; publishedAt?: string | null }>;
+  posts: Array<SitemapDated & { urlCategory: string | null; title?: string | null; publishedAt?: string | null }>;
   caseStudies: Array<SitemapDated & { title?: string | null; client?: string | null }>;
   team: Array<SitemapDated & { name?: string | null; role?: string | null }>;
   episodes: Array<SitemapDated & { title?: string | null; episodeNumber?: number | null; guest?: string | null }>;

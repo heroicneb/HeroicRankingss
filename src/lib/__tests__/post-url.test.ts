@@ -9,8 +9,8 @@ describe("getPostHref", () => {
   });
 
   it("returns null when urlCategory is missing", () => {
-    expect(getPostHref({ slug: "x", urlCategory: null })).toBeNull();
-    expect(getPostHref({ slug: "x" })).toBeNull();
+    expect(getPostHref({ slug: "x", urlCategory: null })).toBe("/seo/x/");
+    expect(getPostHref({ slug: "x" })).toBe("/seo/x/");
   });
 
   it("trailing slash matches legacy URL form", () => {

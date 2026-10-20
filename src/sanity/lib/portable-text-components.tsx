@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ArticleVisual } from "@/components/sanity/blocks/ArticleVisual";
 import type {
   PortableTextBlock,
   PortableTextComponents,
@@ -118,6 +119,7 @@ export function makePortableTextComponents(
 
   return {
     types: {
+      articleVisual: ({ value }) => <ArticleVisual caption={value.caption} visualId={value.visualId} />,
       image: ({ value }) => {
         const v = value as SanityImageBlockValue | null;
         if (!v?.asset) return null;

@@ -127,10 +127,10 @@ export const post = defineType({
     defineField({
       name: "urlCategory",
       title: "URL Category",
+      description:
+        "Optional. With a category the post lives at /seo/<category>/<slug>/ (the legacy heroicrankings.com shape). Leave it empty and the post lives at /seo/<slug>/, for pillar guides.",
       type: "string",
       group: "article",
-      description:
-        "Drives the /seo/<urlCategory>/<slug>/ URL path for this post. Match the legacy heroicrankings.com category exactly. Required for the post to appear at its canonical URL.",
       options: {
         list: [
           { title: "Content Creation", value: "content-creation" },
@@ -144,31 +144,6 @@ export const post = defineType({
         ],
         layout: "dropdown",
       },
-      validation: (rule) =>
-        rule
-          .required()
-          .custom((value) => {
-            const allowed = [
-              "content-creation",
-              "e-commerce",
-              "keyword-research",
-              "linkbuilding",
-              "local",
-              "managed",
-              "on-page",
-              "technical",
-            ];
-            if (!value) {
-              return "URL category is required. It picks the legacy /seo/<category>/<slug>/ path segment for this post.";
-            }
-            if (!allowed.includes(value as string)) {
-              return "URL category is required. It picks the legacy /seo/<category>/<slug>/ path segment for this post.";
-            }
-            return true;
-          })
-          .error(
-            "URL category is required. It picks the legacy /seo/<category>/<slug>/ path segment for this post.",
-          ),
     }),
     defineField({
       name: "readTime",

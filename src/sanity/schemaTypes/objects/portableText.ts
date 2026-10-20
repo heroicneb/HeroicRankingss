@@ -1,4 +1,5 @@
 import { defineArrayMember, defineType } from "sanity";
+import { ARTICLE_VISUAL_OPTIONS } from "@/components/charts/article-visuals";
 
 export const portableText = defineType({
   name: "portableText",
@@ -108,6 +109,36 @@ export const portableText = defineType({
         select: { rows: "rows" },
         prepare: ({ rows }) => ({
           title: `Table (${Array.isArray(rows) ? rows.length : 0} rows)`,
+        }),
+      },
+    }),
+    // Article visual — a code-defined data visual (stats, chart, table) from
+    // src/components/charts/article-visuals.ts, rendered like the case-study proof cards.
+    defineArrayMember({
+      type: "object",
+      name: "articleVisual",
+      title: "Data visual",
+      fields: [
+        {
+          name: "visualId",
+          type: "string",
+          title: "Visual",
+          description: "Pick a prepared visual. New ones are added in code (article-visuals.ts) so the numbers stay reviewed.",
+          options: { list: ARTICLE_VISUAL_OPTIONS },
+          validation: (rule) => rule.required(),
+        },
+        {
+          name: "caption",
+          type: "string",
+          title: "Caption",
+          description: "Optional line under the visual, e.g. the data source.",
+        },
+      ],
+      preview: {
+        select: { visualId: "visualId", caption: "caption" },
+        prepare: ({ visualId, caption }) => ({
+          title: ARTICLE_VISUAL_OPTIONS.find((option) => option.value === visualId)?.title ?? "Data visual",
+          subtitle: caption ?? visualId,
         }),
       },
     }),

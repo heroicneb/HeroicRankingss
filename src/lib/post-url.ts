@@ -1,15 +1,8 @@
 /**
- * Build the canonical post URL: /seo/<urlCategory>/<slug>/.
- * Matches legacy heroicrankings.com path identity per
- * docs/migration/legacy-url-verification-baseline.md.
- *
- * Returns null when urlCategory is missing — callers must handle that
- * case (skip the post in lists, fall back to /blog/<slug>/, etc).
+ * Build the canonical post URL. With a URL category: /seo/<urlCategory>/<slug>/,
+ * the legacy heroicrankings.com shape (docs/migration/legacy-url-verification-baseline.md).
+ * Without one: /seo/<slug>/, used for pillar guides.
  */
-export function getPostHref(post: {
-  slug: string;
-  urlCategory?: string | null;
-}): string | null {
-  if (!post.urlCategory) return null;
-  return `/seo/${post.urlCategory}/${post.slug}/`;
+export function getPostHref(post: { slug: string; urlCategory?: string | null }): string {
+  return post.urlCategory ? `/seo/${post.urlCategory}/${post.slug}/` : `/seo/${post.slug}/`;
 }

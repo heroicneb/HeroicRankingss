@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
 
 import { BlogPostDetailContent } from "@/components/pages/insights/blog-post-detail-content";
@@ -22,7 +22,8 @@ export async function generateMetadata({
   const { category, slug } = await params;
   const post = await getPostBySlug(slug);
 
-  if (!post || !post.urlCategory || post.urlCategory !== category) {
+  // WHY: a post without a URL category lives at /seo/<slug>/; the page below redirects there, so no 404 here.
+  if (!post || (post.urlCategory && post.urlCategory !== category)) {
     notFound();
   }
 
@@ -55,6 +56,11 @@ export default async function Page({ params }: PostRouteProps) {
 
   if (!post) {
     notFound();
+  }
+
+  // WHY: a post with no URL category lives at /seo/<slug>/; the category form redirects there, never a duplicate.
+  if (!post.urlCategory) {
+    permanentRedirect(`/seo/${slug}/`);
   }
 
   // Strict category match — if a post has urlCategory but it doesn't match
