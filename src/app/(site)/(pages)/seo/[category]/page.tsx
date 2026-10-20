@@ -10,9 +10,9 @@ import { getPostBySlug, getPostUrls } from "@/lib/sanity-data";
 import { SITE_URL } from "@/lib/site";
 
 /*
- * /seo/<slug>/ for hub pages (pillar guides flagged "Hub page" in the
- * Studio). The static service routes (/seo/technical/ …) win over this
- * dynamic segment; anything else here that is not a hub post is a 404.
+ * /seo/<slug>/ for posts with no URL category (pillar guides). The static
+ * service routes (/seo/technical/ …) win over this dynamic segment; anything
+ * else here that is not such a post is a 404.
  */
 
 interface HubRouteProps {
@@ -22,7 +22,7 @@ interface HubRouteProps {
 export async function generateMetadata({ params }: HubRouteProps): Promise<Metadata> {
   const { category: slug } = await params;
   const post = await getPostBySlug(slug);
-  if (!post?.hubPage) notFound();
+  if (!post || post.urlCategory) notFound();
 
   return createPageMetadata({
     title: post.seoTitle?.trim() || post.title,
@@ -36,13 +36,13 @@ export async function generateMetadata({ params }: HubRouteProps): Promise<Metad
 
 export async function generateStaticParams() {
   const posts = await getPostUrls();
-  return posts.filter((post) => post.hubPage).map((post) => ({ category: post.slug }));
+  return posts.filter((post) => !post.urlCategory).map((post) => ({ category: post.slug }));
 }
 
 export default async function HubPostPage({ params }: HubRouteProps) {
   const { category: slug } = await params;
   const post = await getPostBySlug(slug);
-  if (!post?.hubPage) notFound();
+  if (!post || post.urlCategory) notFound();
 
   const faqItems = post.faqItems;
 

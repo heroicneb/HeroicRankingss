@@ -13,11 +13,10 @@ import sitemap from "./sitemap";
 describe("sitemap route", () => {
   beforeEach(() => {
     getSitemapEntriesMock.mockResolvedValue({
-      // WHY: the query already drops posts without urlCategory; the route must not invent URLs for them.
       posts: [
         { slug: "market-research-guide", urlCategory: "managed", _updatedAt: "2026-09-01T10:00:00Z" },
-        // WHY: hub pages (pillar guides) are served at /seo/<slug>/, never under their category.
-        { slug: "guide", urlCategory: "managed", hubPage: true, _updatedAt: "2026-08-20T10:00:00Z" },
+        // WHY: a post with no URL category (pillar guide) is served at /seo/<slug>/.
+        { slug: "guide", urlCategory: null, _updatedAt: "2026-08-20T10:00:00Z" },
       ],
       caseStudies: [{ slug: "affinda", _updatedAt: "2026-08-15T10:00:00Z" }],
       team: [{ slug: "nebojsa-jankovic", _updatedAt: "2026-07-01T10:00:00Z" }],

@@ -22,7 +22,8 @@ export async function generateMetadata({
   const { category, slug } = await params;
   const post = await getPostBySlug(slug);
 
-  if (!post || !post.urlCategory || post.urlCategory !== category) {
+  // WHY: a post without a URL category lives at /seo/<slug>/; the page below redirects there, so no 404 here.
+  if (!post || (post.urlCategory && post.urlCategory !== category)) {
     notFound();
   }
 
@@ -42,7 +43,7 @@ export async function generateMetadata({
 export async function generateStaticParams() {
   const posts = await getPostUrls();
   return posts
-    .filter((post) => post.urlCategory && post.slug && !post.hubPage)
+    .filter((post) => post.urlCategory && post.slug)
     .map((post) => ({
       category: post.urlCategory as string,
       slug: post.slug,
@@ -57,8 +58,8 @@ export default async function Page({ params }: PostRouteProps) {
     notFound();
   }
 
-  // WHY: hub pages live at /seo/<slug>/; the category form stays reachable as a redirect, never as a duplicate.
-  if (post.hubPage) {
+  // WHY: a post with no URL category lives at /seo/<slug>/; the category form redirects there, never a duplicate.
+  if (!post.urlCategory) {
     permanentRedirect(`/seo/${slug}/`);
   }
 
