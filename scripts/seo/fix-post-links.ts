@@ -18,6 +18,8 @@ const REPLACEMENTS: Array<[RegExp, string]> = [
   [/^\/blog\/seo-marketing-practices-2025\/$/, "/seo/technical/seo-marketing-practices-2026/"],
   [/^\/blog\/web-summit-lisbon-2023\/$/, "/seo/local/web-summit-lisbon-2023/"],
   [/^\/insights\/outsourcing-link-building\/$/, "/seo/linkbuilding/outsourcing-link-building/"],
+  // 2026-10-21: the AI Overview statistics post moved to /seo/<slug>/ with a shorter slug.
+  [/^\/seo\/managed\/google-ai-overview-statistics-2026\/(?=$|#)/, "/seo/google-ai-overview-statistics/"],
 ];
 
 interface Post {

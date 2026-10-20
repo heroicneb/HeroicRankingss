@@ -79,6 +79,9 @@ const nextConfig: NextConfig = {
     return [
       // 2026-10-03: the partnership page moved to a keyword URL (Nebojsa).
       { source: "/partnership", destination: "/white-label-seo-partnership/", permanent: true },
+      // WHY: the AI Overview statistics post moved to a category-less URL and a shorter slug (2026-10-21);
+      // the old address has backlinks, so it must carry its value over.
+      { source: "/seo/managed/google-ai-overview-statistics-2026", destination: "/seo/google-ai-overview-statistics/", permanent: true },
       // WHY: Internal alias kept from prior naming. Phase 2.2 renamed
       // /case-studies → /case-study to match legacy heroicrankings.com.
       {
