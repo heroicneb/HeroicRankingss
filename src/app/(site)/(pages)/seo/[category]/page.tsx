@@ -6,7 +6,7 @@ import { BlogPostDetailContent } from "@/components/pages/insights/blog-post-det
 import { ArticleSchema } from "@/components/seo/article-schema";
 import { FaqSchema } from "@/components/seo/faq-schema";
 import { createPageMetadata } from "@/lib/metadata";
-import { getPostBySlug, getPostUrls } from "@/lib/sanity-data";
+import { getPostBySlug } from "@/lib/sanity-data";
 import { SITE_URL } from "@/lib/site";
 
 /*
@@ -34,10 +34,14 @@ export async function generateMetadata({ params }: HubRouteProps): Promise<Metad
   });
 }
 
-export async function generateStaticParams() {
-  const posts = await getPostUrls();
-  return posts.filter((post) => !post.urlCategory).map((post) => ({ category: post.slug }));
-}
+/*
+ * WHY: every page on this site renders on demand (nonce-based CSP), so a
+ * static-params list buys nothing here, and it is actively harmful: when it
+ * comes back empty at build time (no category-less post yet), Next marks the
+ * route static and every on-demand render of it fails with a 500. Forcing
+ * dynamic rendering keeps the route behaving like /seo/[category]/[slug].
+ */
+export const dynamic = "force-dynamic";
 
 export default async function HubPostPage({ params }: HubRouteProps) {
   const { category: slug } = await params;
