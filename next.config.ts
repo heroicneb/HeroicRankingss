@@ -82,6 +82,16 @@ const nextConfig: NextConfig = {
       // WHY: the AI Overview statistics post moved to a category-less URL and a shorter slug (2026-10-21);
       // the old address has backlinks, so it must carry its value over.
       { source: "/seo/managed/google-ai-overview-statistics-2026", destination: "/seo/google-ai-overview-statistics/", permanent: true },
+      // WHY: 2026-10-21 backlink review (DataForSEO pages with referring domains, each checked on the
+      // live site): these old addresses still receive links and returned 404. Year-bumped slugs and
+      // posts linked before they had a category folder; all one hop to the current URL.
+      { source: "/seo/ai-for-seo-new-approaches/", destination: "/seo/on-page/ai-for-seo-new-approaches/", permanent: true },
+      { source: "/seo/process-that-affects-visibility-of-website/", destination: "/seo/on-page/process-that-affects-visibility-of-website/", permanent: true },
+      { source: "/first-step-in-marketing-research-process/", destination: "/seo/on-page/first-step-in-marketing-research-process/", permanent: true },
+      { source: "/link-exchange/", destination: "/seo/linkbuilding/link-exchange/", permanent: true },
+      { source: "/seo/b2b-seo-solutions-2024/", destination: "/seo/on-page/b2b-seo-solutions-2026/", permanent: true },
+      { source: "/seo/on-page/outdated-seo-practices-to-avoid-in-2025/", destination: "/seo/on-page/outdated-seo-practices-to-avoid-in-2026/", permanent: true },
+      { source: "/ai-overview-adoption-rates/", destination: "/seo/google-ai-overview-statistics/", permanent: true },
       // WHY: Internal alias kept from prior naming. Phase 2.2 renamed
       // /case-studies → /case-study to match legacy heroicrankings.com.
       {
