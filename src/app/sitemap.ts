@@ -55,7 +55,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     ...PAGE_ROUTES.map((p) => dated(p.route, (p.docId ? pageDates.get(p.docId) : undefined) ?? listingDates[p.route], p.priority, p.changeFrequency)),
-    ...(entries?.posts ?? []).map((p) => dated(`/seo/${p.urlCategory}/${p.slug}`, p._updatedAt, 0.7, "monthly")),
+    ...(entries?.posts ?? []).map((p) => dated(p.hubPage ? `/seo/${p.slug}` : `/seo/${p.urlCategory}/${p.slug}`, p._updatedAt, 0.7, "monthly")),
     ...(entries?.caseStudies ?? []).map((c) => dated(`/case-study/${c.slug}`, c._updatedAt, 0.7, "monthly")),
     ...(entries?.episodes ?? []).map((e) => dated(`/podcast/${e.slug}`, e._updatedAt, 0.7, "monthly")),
     ...(entries?.team ?? []).map((t) => dated(`/about/${t.slug}`, t._updatedAt, 0.6, "yearly")),

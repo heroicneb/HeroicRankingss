@@ -171,6 +171,14 @@ export const post = defineType({
           ),
     }),
     defineField({
+      name: "hubPage",
+      title: "Hub page",
+      type: "boolean",
+      group: "article",
+      initialValue: false,
+      description: "On: served at /seo/<slug>/ instead of /seo/<URL category>/<slug>/ (pillar guides). The old category URL redirects.",
+    }),
+    defineField({
       name: "readTime",
       title: "Read Time",
       type: "string",

@@ -45,7 +45,7 @@ export async function GET() {
     ...(entries?.team ?? []).map((t) => line(t.name ?? t.slug, `/about/${t.slug}/`, t.role ?? null)),
     "",
     `## Insights (${posts.length} articles, newest first)`,
-    ...posts.map((p) => line(p.title ?? p.slug, `/seo/${p.urlCategory}/${p.slug}/`, p.publishedAt ? p.publishedAt.slice(0, 10) : null)),
+    ...posts.map((p) => line(p.title ?? p.slug, p.hubPage ? `/seo/${p.slug}/` : `/seo/${p.urlCategory}/${p.slug}/`, p.publishedAt ? p.publishedAt.slice(0, 10) : null)),
     "",
     "## Optional",
     line("Sitemap", "/sitemap.xml"),

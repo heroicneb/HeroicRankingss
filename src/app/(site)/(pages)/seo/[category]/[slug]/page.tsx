@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
 
 import { BlogPostDetailContent } from "@/components/pages/insights/blog-post-detail-content";
@@ -42,7 +42,7 @@ export async function generateMetadata({
 export async function generateStaticParams() {
   const posts = await getPostUrls();
   return posts
-    .filter((post) => post.urlCategory && post.slug)
+    .filter((post) => post.urlCategory && post.slug && !post.hubPage)
     .map((post) => ({
       category: post.urlCategory as string,
       slug: post.slug,
@@ -55,6 +55,11 @@ export default async function Page({ params }: PostRouteProps) {
 
   if (!post) {
     notFound();
+  }
+
+  // WHY: hub pages live at /seo/<slug>/; the category form stays reachable as a redirect, never as a duplicate.
+  if (post.hubPage) {
+    permanentRedirect(`/seo/${slug}/`);
   }
 
   // Strict category match — if a post has urlCategory but it doesn't match

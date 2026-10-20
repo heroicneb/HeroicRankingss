@@ -14,7 +14,11 @@ describe("sitemap route", () => {
   beforeEach(() => {
     getSitemapEntriesMock.mockResolvedValue({
       // WHY: the query already drops posts without urlCategory; the route must not invent URLs for them.
-      posts: [{ slug: "market-research-guide", urlCategory: "managed", _updatedAt: "2026-09-01T10:00:00Z" }],
+      posts: [
+        { slug: "market-research-guide", urlCategory: "managed", _updatedAt: "2026-09-01T10:00:00Z" },
+        // WHY: hub pages (pillar guides) are served at /seo/<slug>/, never under their category.
+        { slug: "guide", urlCategory: "managed", hubPage: true, _updatedAt: "2026-08-20T10:00:00Z" },
+      ],
       caseStudies: [{ slug: "affinda", _updatedAt: "2026-08-15T10:00:00Z" }],
       team: [{ slug: "nebojsa-jankovic", _updatedAt: "2026-07-01T10:00:00Z" }],
       episodes: [{ slug: "sara-miller", _updatedAt: "2026-10-04T10:00:00Z" }],
@@ -28,6 +32,8 @@ describe("sitemap route", () => {
 
     expect(urls).toContain("https://heroicrankings.com/");
     expect(urls).toContain("https://heroicrankings.com/seo/managed/market-research-guide/");
+    expect(urls).toContain("https://heroicrankings.com/seo/guide/");
+    expect(urls).not.toContain("https://heroicrankings.com/seo/managed/guide/");
     expect(urls).toContain("https://heroicrankings.com/case-study/affinda/");
     expect(urls).toContain("https://heroicrankings.com/about/nebojsa-jankovic/");
     expect(urls).toContain("https://heroicrankings.com/podcast/sara-miller/");

@@ -100,6 +100,7 @@ interface SanityRawPost {
   publishedAt?: string | null;
   categories?: unknown[] | null;
   urlCategory?: string | null;
+  hubPage?: boolean | null;
   readTime?: string | null;
   /** Character count of the body text, projected by POSTS_QUERY. */
   bodyLength?: number | null;
@@ -364,6 +365,8 @@ export interface SanityPostSummary {
   _id: string;
   categories: string[];
   urlCategory: string | null;
+  /** Served at /seo/<slug>/ (pillar guides). */
+  hubPage: boolean;
   excerpt: string | null;
   mainImageAlt: string;
   mainImageLqip: string | undefined;
@@ -427,6 +430,7 @@ export async function getPosts(): Promise<SanityPostSummary[]> {
       (category: unknown): category is string => typeof category === "string",
     ),
     urlCategory: post.urlCategory ?? null,
+    hubPage: Boolean(post.hubPage),
   }));
 }
 
@@ -472,6 +476,7 @@ export const getPostBySlug = cache(
         (category: unknown): category is string => typeof category === "string",
       ),
       urlCategory: post.urlCategory ?? null,
+      hubPage: Boolean(post.hubPage),
       body: post.body ?? null,
       authorName: rawAuthor?.name ?? null,
       authorRole: rawAuthor?.role ?? null,
@@ -528,21 +533,22 @@ const URL_PARAM_FETCH = {
 };
 
 export async function getPostUrls(): Promise<
-  Array<{ slug: string; urlCategory: string | null }>
+  Array<{ slug: string; urlCategory: string | null; hubPage: boolean }>
 > {
   const data = await client.fetch<
-    Array<{ slug?: string | null; urlCategory?: string | null }>
+    Array<{ slug?: string | null; urlCategory?: string | null; hubPage?: boolean | null }>
   >(POST_URLS_QUERY, {}, URL_PARAM_FETCH);
   if (!data) return [];
 
   return data
     .filter(
-      (row): row is { slug: string; urlCategory?: string | null } =>
+      (row): row is { slug: string; urlCategory?: string | null; hubPage?: boolean | null } =>
         typeof row?.slug === "string" && isSafeSlug(row.slug),
     )
     .map((row) => ({
       slug: row.slug,
       urlCategory: row.urlCategory ?? null,
+      hubPage: Boolean(row.hubPage),
     }));
 }
 
@@ -1374,7 +1380,7 @@ interface SitemapDated {
 }
 
 export interface SitemapEntries {
-  posts: Array<SitemapDated & { urlCategory: string; title?: string | null; publishedAt?: string | null }>;
+  posts: Array<SitemapDated & { urlCategory: string; hubPage?: boolean | null; title?: string | null; publishedAt?: string | null }>;
   caseStudies: Array<SitemapDated & { title?: string | null; client?: string | null }>;
   team: Array<SitemapDated & { name?: string | null; role?: string | null }>;
   episodes: Array<SitemapDated & { title?: string | null; episodeNumber?: number | null; guest?: string | null }>;

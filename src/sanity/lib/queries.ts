@@ -17,6 +17,7 @@ export const POSTS_QUERY = defineQuery(`
     publishedAt,
     categories,
     urlCategory,
+    hubPage,
     readTime,
     "bodyLength": length(pt::text(body)),
     author-> { name, photo }
@@ -36,6 +37,7 @@ export const POST_BY_SLUG_QUERY = defineQuery(`
     _updatedAt,
     categories,
     urlCategory,
+    hubPage,
     readTime,
     "bodyLength": length(pt::text(body)),
     author-> {
@@ -59,7 +61,8 @@ export const POST_SLUGS_QUERY = defineQuery(`
 export const POST_URLS_QUERY = defineQuery(`
   *[_type == "post" && defined(slug.current) && !(_id match "audit-fixture-*")] {
     "slug": slug.current,
-    urlCategory
+    urlCategory,
+    hubPage
   }
 `);
 
@@ -473,7 +476,7 @@ export const PODCAST_EPISODE_BY_SLUG_QUERY = defineQuery(`
 
 /** Everything the XML sitemap lists, with the last edit date of each document. */
 export const SITEMAP_ENTRIES_QUERY = defineQuery(`{
-  "posts": *[_type == "post" && defined(slug.current) && defined(urlCategory) && !(_id match "audit-fixture-*")] | order(publishedAt desc){ "slug": slug.current, urlCategory, _updatedAt, title, publishedAt },
+  "posts": *[_type == "post" && defined(slug.current) && defined(urlCategory) && !(_id match "audit-fixture-*")] | order(publishedAt desc){ "slug": slug.current, urlCategory, hubPage, _updatedAt, title, publishedAt },
   "caseStudies": *[_type == "caseStudy" && defined(slug.current) && !(_id match "audit-fixture-*")]{ "slug": slug.current, _updatedAt, title, client },
   "team": *[_type == "teamMember" && defined(slug.current) && showOnAboutPage != false && !(_id match "audit-fixture-*")]{ "slug": slug.current, _updatedAt, name, role },
   "episodes": *[_type == "podcastEpisode" && defined(slug.current) && !(_id match "audit-fixture-*")] | order(episodeNumber desc){ "slug": slug.current, _updatedAt, title, episodeNumber, "guest": guest.name },
