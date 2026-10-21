@@ -138,7 +138,8 @@ export const post = defineType({
           { title: "Keyword Research", value: "keyword-research" },
           { title: "Link Building", value: "linkbuilding" },
           { title: "Local SEO", value: "local" },
-          { title: "Managed", value: "managed" },
+          // WHY: "managed" was retired on 2026-10-21; /seo/managed/<slug>/ now redirects to /seo/<slug>/,
+          // so a post given that folder would redirect into a 404.
           { title: "On-Page SEO", value: "on-page" },
           { title: "Technical SEO", value: "technical" },
         ],
