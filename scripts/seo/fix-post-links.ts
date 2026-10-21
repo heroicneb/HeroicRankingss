@@ -8,6 +8,7 @@
 import { withTrailingSlash } from "../../src/lib/with-trailing-slash.ts";
 
 import { createSeedClient } from "../seed/lib.ts";
+import { MANAGED_TO_FOLDER, SLUG_RENAMES } from "./move-posts-2026-10-21.ts";
 
 // WHY: five in-body links still used the old /blog/<slug>/ and /insights/<slug>/ shapes (404 on the
 // live site too); they point at the posts' real category URLs now.
@@ -20,6 +21,10 @@ const REPLACEMENTS: Array<[RegExp, string]> = [
   [/^\/insights\/outsourcing-link-building\/$/, "/seo/linkbuilding/outsourcing-link-building/"],
   // 2026-10-21: the AI Overview statistics post moved to /seo/<slug>/ with a shorter slug.
   [/^\/seo\/managed\/google-ai-overview-statistics-2026\/(?=$|#)/, "/seo/google-ai-overview-statistics/"],
+  // 2026-10-21: the managed folder went away and eleven slugs dropped their year (scripts/seo/move-posts-2026-10-21.ts).
+  ...Object.entries(SLUG_RENAMES).map(([from, to]): [RegExp, string] => [new RegExp(`^/seo/(?:[^/]+/)?${from}/(?=$|#)`), `/seo/${MANAGED_TO_FOLDER[from] ? `${MANAGED_TO_FOLDER[from]}/` : ""}${to}/`]),
+  [/^\/seo\/on-page\/(b2b-seo-solutions|outdated-seo-practices-to-avoid)\/(?=$|#)/, "/seo/on-page/$1/"],
+  [/^\/seo\/managed\/([^/]+)\/(?=$|#)/, "/seo/$1/"],
 ];
 
 interface Post {

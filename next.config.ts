@@ -89,9 +89,26 @@ const nextConfig: NextConfig = {
       { source: "/seo/process-that-affects-visibility-of-website/", destination: "/seo/on-page/process-that-affects-visibility-of-website/", permanent: true },
       { source: "/first-step-in-marketing-research-process/", destination: "/seo/on-page/first-step-in-marketing-research-process/", permanent: true },
       { source: "/link-exchange/", destination: "/seo/linkbuilding/link-exchange/", permanent: true },
-      { source: "/seo/b2b-seo-solutions-2024/", destination: "/seo/on-page/b2b-seo-solutions-2026/", permanent: true },
-      { source: "/seo/on-page/outdated-seo-practices-to-avoid-in-2025/", destination: "/seo/on-page/outdated-seo-practices-to-avoid-in-2026/", permanent: true },
+      { source: "/seo/b2b-seo-solutions-2024/", destination: "/seo/on-page/b2b-seo-solutions/", permanent: true },
+      { source: "/seo/on-page/outdated-seo-practices-to-avoid-in-2025/", destination: "/seo/on-page/outdated-seo-practices-to-avoid/", permanent: true },
       { source: "/ai-overview-adoption-rates/", destination: "/seo/google-ai-overview-statistics/", permanent: true },
+      // WHY: 2026-10-21 URL move (Nebojsa): the /seo/managed/ folder had no hub page and described none of
+      // its 30 posts, so they live at /seo/<slug>/ now (two tool round-ups joined /seo/linkbuilding/), and
+      // eleven slugs dropped the "-2026" year so a refresh never needs a new URL again. Specific rules
+      // first, the folder catch-all last, every old address one hop from its new one.
+      // Sanity side: scripts/seo/move-posts-2026-10-21.ts.
+      { source: "/seo/technical/seo-marketing-practices-2026/", destination: "/seo/technical/seo-marketing-practices/", permanent: true },
+      { source: "/seo/on-page/b2b-seo-solutions-2026/", destination: "/seo/on-page/b2b-seo-solutions/", permanent: true },
+      { source: "/seo/on-page/outdated-seo-practices-to-avoid-in-2026/", destination: "/seo/on-page/outdated-seo-practices-to-avoid/", permanent: true },
+      { source: "/seo/content-creation/benefits-of-blogging-for-small-businesses-in-2026/", destination: "/seo/content-creation/benefits-of-blogging-for-small-businesses/", permanent: true },
+      { source: "/seo/content-creation/google-eeat-and-seo-in-2026/", destination: "/seo/content-creation/google-eeat-and-seo/", permanent: true },
+      { source: "/seo/content-creation/content-marketing-statistics-2026/", destination: "/seo/content-creation/content-marketing-statistics/", permanent: true },
+      { source: "/seo/linkbuilding/link-building-statistics-2026/", destination: "/seo/linkbuilding/link-building-statistics/", permanent: true },
+      { source: "/seo/managed/top-link-building-tools-in-2026/", destination: "/seo/linkbuilding/top-link-building-tools/", permanent: true },
+      { source: "/seo/managed/top-backlink-analysis-tools-in-2026/", destination: "/seo/linkbuilding/top-backlink-analysis-tools/", permanent: true },
+      { source: "/seo/managed/cro-statistics-2026/", destination: "/seo/cro-statistics/", permanent: true },
+      { source: "/seo/managed/ai-in-sales-statistics-2026/", destination: "/seo/ai-in-sales-statistics/", permanent: true },
+      { source: "/seo/managed/:slug/", destination: "/seo/:slug/", permanent: true },
       // WHY: Internal alias kept from prior naming. Phase 2.2 renamed
       // /case-studies → /case-study to match legacy heroicrankings.com.
       {
