@@ -169,6 +169,21 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     backPointsWidthClass: "max-w-[237px]",
     href: "/seo/keyword-research",
   },
+  {
+    // 2026-10-23: AI search optimization joined the grid.
+    title: "AI Search Optimization (GEO & AEO)",
+    imageSrc: "/seo-services/subtract-8.webp",
+    imageAlt: "Glowing network carved into a stone slab",
+    imageWidth: 2000,
+    imageHeight: 667,
+    mobileImageRenderWidth: 1350,
+    imageClassName: "h-full w-auto left-[-190%] top-0",
+    backIntro: "Get cited in AI Overviews, AI Mode, ChatGPT and Perplexity. Our AI search optimization services include:",
+    backPoints: ["AI citation audit", "Answer-first page structure and schema", "Brand mention building", "Monthly AI visibility tracking"],
+    backIntroWidthClass: "max-w-[305px]",
+    backPointsWidthClass: "max-w-[248px]",
+    href: "/seo/ai-search",
+  },
 ];
 
 export function SeoServicesMobileServicesRail() {
