@@ -192,9 +192,9 @@ export default function SeoServicesPage({ content, cmsFaqItems }: SeoServicesPag
                   {results.rows.map((row) => (
                     <tr className="border-b border-[var(--color-hr-light-grey)] last:border-b-0 dark:border-[var(--color-border-inverse-10)]" key={row.client}>
                       <th className={`type-cta ${CELL} ${TEXT}`} scope="row">
-                        <AppLink className="gradient-text-brand gradient-text-brand-services inline-flex items-center gap-2 underline-offset-4 hover:underline" href={row.href}>
-                          {row.client}
-                          <GradientArrowUpRightIcon className="size-[10px]" />
+                        <AppLink className="inline-flex items-center gap-2 whitespace-nowrap underline-offset-4 hover:underline" href={row.href}>
+                          <span className="gradient-text-brand gradient-text-brand-services">{row.client}</span>
+                          <GradientArrowUpRightIcon className="size-[10px] shrink-0" />
                         </AppLink>
                       </th>
                       <td className={`type-paragraph ${CELL} ${TEXT}`}>{row.result}</td>
