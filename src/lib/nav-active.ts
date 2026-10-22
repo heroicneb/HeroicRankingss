@@ -8,6 +8,7 @@ const SEO_ROUTES = new Set([
   "/seo/e-commerce",
   "/seo/content-creation",
   "/seo/keyword-research",
+  "/seo/ai-search",
 ]);
 
 interface NavActiveItem {

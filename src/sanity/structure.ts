@@ -9,6 +9,7 @@ const SEO_SERVICE_PAGES = [
   { key: "ecommerce-seo", title: "E-commerce SEO" },
   { key: "content-creation", title: "Content Creation" },
   { key: "keyword-strategy", title: "Keyword Strategy" },
+  { key: "ai-search", title: "AI Search Optimization (GEO & AEO)" },
 ] as const;
 
 export const structure: StructureResolver = (S) =>

@@ -133,6 +133,7 @@ export const post = defineType({
       group: "article",
       options: {
         list: [
+          { title: "AI Search", value: "ai-search" },
           { title: "Content Creation", value: "content-creation" },
           { title: "E-Commerce", value: "e-commerce" },
           { title: "Keyword Research", value: "keyword-research" },
