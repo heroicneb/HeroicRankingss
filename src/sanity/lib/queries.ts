@@ -336,8 +336,8 @@ const PAGE_IMAGE = `{ alt, asset->{ url, metadata { dimensions { width, height }
 export const HOME_PAGE_QUERY = defineQuery(`
   *[_type == "homePage"][0] {
     _id,
-    hero { heading, paragraphs, ctaLabel, ctaUrl },
-    services { label, heading, ctaLabel, ctaUrl, cards[] { _key, title, descriptionLines, url, image ${PAGE_IMAGE} } },
+    hero { title, heading, paragraphs, ctaLabel, ctaUrl },
+    services { label, heading, intro, ctaLabel, ctaUrl, cards[] { _key, title, descriptionLines, url, image ${PAGE_IMAGE} } },
     about { label, heading, paragraphs },
     team {
       label, heading, statValue, statLabel, ctaLabel, ctaUrl,

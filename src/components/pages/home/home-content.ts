@@ -101,7 +101,9 @@ export interface AiVisibilityContent {
 
 export interface HomeContent {
   hero: {
-    /** Line breaks are kept; the words animate in one by one. */
+    /** The page's H1: a short plain line above the slogan. */
+    title: string;
+    /** The slogan. Line breaks are kept; the words animate in one by one. */
     heading: HeadingSegment[];
     paragraphs: string[];
     ctaLabel: string;
@@ -110,6 +112,8 @@ export interface HomeContent {
   services: {
     label: string;
     heading: HeadingSegment[];
+    /** One plain sentence saying what Heroic Rankings is and who it works with (the passage AI answers quote). */
+    intro: string;
     ctaLabel: string;
     ctaUrl: string;
     cards: HomeServiceCard[];
@@ -194,7 +198,7 @@ export interface HomeContent {
 }
 
 export const HOME_DEFAULT_SEO = {
-  title: "SEO, GEO & Link Building Agency | Heroic Rankings",
+  title: "B2B SEO & Link Building Agency | Heroic Rankings",
   description:
     "Get found on Google and in AI answers. We help brands grow with SEO, link building and GEO across 30+ languages.",
 };
@@ -203,6 +207,7 @@ const quote = (lead: string, accent: string, tail: string): HomeQuote => ({ lead
 
 export const DEFAULT_HOME_CONTENT: HomeContent = {
   hero: {
+    title: "B2B SEO Agency for Google and AI Search",
     heading: [tx("Others are "), hl("not better"), tx(","), br, tx("they're just "), hl("easier to find"), tx(".")],
     paragraphs: [
       "If your audience can't find you, they'll choose the competitor who shows up.",
@@ -214,6 +219,7 @@ export const DEFAULT_HOME_CONTENT: HomeContent = {
   services: {
     label: "/ Services /",
     heading: [tx("Strategies for "), hl("sustainable"), br, hl("success"), tx(" and proven growth.")],
+    intro: "Heroic Rankings is a B2B SEO and link building agency that helps SaaS, B2B and eCommerce brands rank on Google and get cited in AI answers, with programmes delivered in 30+ languages.",
     ctaLabel: "Book a Strategy Call",
     ctaUrl: "/contact",
     cards: [

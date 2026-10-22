@@ -86,6 +86,12 @@ export const homePage = defineType({
       type: "object",
       group: "hero",
       fields: [
+        defineField({
+          name: "title",
+          title: "Page title (H1)",
+          type: "string",
+          description: "The small line above the slogan. It is the page's H1 for search engines; the slogan below stays the visual headline.",
+        }),
         headingField(
           "One block per line. The words animate in one by one, so Highlight has no effect here.",
         ),
@@ -108,6 +114,13 @@ export const homePage = defineType({
       fields: [
         labelField("/ Services /"),
         headingField(),
+        defineField({
+          name: "intro",
+          title: "Intro sentence",
+          type: "text",
+          rows: 3,
+          description: "One plain sentence under the heading saying what Heroic Rankings is and who it works with.",
+        }),
         ...ctaFields("Book a Strategy Call", "/contact"),
         defineField({
           name: "cards",

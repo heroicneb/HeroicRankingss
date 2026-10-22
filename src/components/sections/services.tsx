@@ -359,6 +359,9 @@ export function Services({ content = DEFAULT_HOME_CONTENT.services }: ServicesPr
             >
               <GradientHeading highlightClassName="gradient-text-brand-services" segments={content.heading} />
             </h2>
+            {content.intro ? (
+              <p className="type-paragraph max-w-[640px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{content.intro}</p>
+            ) : null}
           </div>
           <AppLink
             className="type-cta motion-interactive motion-interactive-press mt-10 inline-flex h-[45px] w-full max-w-[350px] items-center justify-center gap-2 rounded-[var(--radius-button)] border border-[var(--color-hr-accent)] bg-transparent px-5 text-[var(--color-hr-dark)] hover:bg-[var(--color-hr-off-white)] dark:text-[var(--color-text-inverse)] dark:hover:bg-[var(--color-surface-inverse-10)] lg:mt-7 lg:w-auto lg:max-w-none"
