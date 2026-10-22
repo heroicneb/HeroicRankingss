@@ -15,7 +15,8 @@ export type SeoServicePageKey =
   | "local-seo"
   | "keyword-strategy"
   | "content-creation"
-  | "ecommerce-seo";
+  | "ecommerce-seo"
+  | "ai-search";
 
 export interface SolutionCard {
   title: string;

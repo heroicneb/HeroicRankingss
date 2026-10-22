@@ -15,6 +15,7 @@ const NAV_ITEMS: NavItem[] = [
     href: "/seo",
     children: [
       { label: "All SEO Services", href: "/seo" },
+      { label: "AI Search Optimization (GEO & AEO)", href: "/seo/ai-search" },
       { label: "On-Page SEO Services", href: "/seo/on-page" },
       { label: "Technical SEO Services", href: "/seo/technical" },
       { label: "Local SEO Services", href: "/seo/local" },
@@ -37,6 +38,15 @@ const REDDIT_NAV_CHILD = {
   label: "Reddit Marketing Services",
   href: "/seo/reddit-marketing",
 } as const;
+
+// WHY: same for the AI search page (2026-10-23): it sits right under "All SEO Services" until the
+// Sanity nav carries it.
+const AI_SEARCH_NAV_CHILD = {
+  label: "AI Search Optimization (GEO & AEO)",
+  href: "/seo/ai-search",
+} as const;
+
+const sameHref = (a: string | undefined, b: string) => Boolean(a && a.replace(/\/+$/, "") === b);
 
 function isRedditHref(href: string | undefined) {
   return Boolean(href && href.replace(/\/+$/, "") === REDDIT_NAV_CHILD.href);
@@ -62,10 +72,14 @@ export function Navbar({ navItems, ctaLabel, ctaUrl }: NavbarProps) {
       ? item.children
       : [{ label: `All ${item.label} Services`, href: item.href }, ...item.children];
     const isSeoDropdown = item.href.replace(/\/+$/, "") === "/seo";
-    const withReddit =
-      isSeoDropdown && !children.some((child) => isRedditHref(child.href))
-        ? [...children, REDDIT_NAV_CHILD]
+    const withAiSearch =
+      isSeoDropdown && !children.some((child) => sameHref(child.href, AI_SEARCH_NAV_CHILD.href))
+        ? [...children.slice(0, 1), AI_SEARCH_NAV_CHILD, ...children.slice(1)]
         : children;
+    const withReddit =
+      isSeoDropdown && !withAiSearch.some((child) => isRedditHref(child.href))
+        ? [...withAiSearch, REDDIT_NAV_CHILD]
+        : withAiSearch;
     return withReddit === item.children ? item : { ...item, children: withReddit };
   });
   const resolvedCtaLabel = ctaLabel?.trim() || "Get Started";

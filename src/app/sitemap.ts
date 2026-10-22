@@ -20,6 +20,7 @@ const PAGE_ROUTES: Array<{ route: string; docId: string | null; priority: number
   { route: "/seo/keyword-research", docId: "seoServicePage-keyword-strategy", priority: 0.9, changeFrequency: "monthly" },
   { route: "/seo/content-creation", docId: "seoServicePage-content-creation", priority: 0.9, changeFrequency: "monthly" },
   { route: "/seo/e-commerce", docId: "seoServicePage-ecommerce-seo", priority: 0.9, changeFrequency: "monthly" },
+  { route: "/seo/ai-search", docId: "seoServicePage-ai-search", priority: 0.9, changeFrequency: "monthly" },
   { route: "/seo/linkbuilding", docId: "linkBuildingPage", priority: 0.9, changeFrequency: "monthly" },
   { route: "/seo/reddit-marketing", docId: "redditMarketingPage", priority: 0.9, changeFrequency: "monthly" },
   { route: "/white-label-seo-partnership", docId: "partnershipPage", priority: 0.8, changeFrequency: "monthly" },

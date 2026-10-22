@@ -24,6 +24,21 @@ interface CtaVariant {
 const EXPANDED_CTA_WIDTH = "w-full max-w-[251px] lg:w-[198px]";
 
 const CTA_VARIANTS: Record<string, CtaVariant> = {
+  "/seo/ai-search": {
+    heading: (
+      <>
+        See what AI{" "}
+        <span className={GRADIENT_SPAN_CLASS} style={GRADIENT_STYLE}>
+          says about you today
+        </span>
+      </>
+    ),
+    body: "Send us your site and your three biggest competitors. We will run your buyers' questions through the major AI systems and show you who gets cited, who does not, and what it would take to change that.",
+    ctaLabel: "Get a Free AI Visibility Audit",
+    ctaWidth: "w-full max-w-[280px] lg:w-[280px]",
+    headingMaxW: "max-w-[520px]",
+    bodyMaxW: "lg:max-w-[736px]",
+  },
   "/seo/reddit-marketing": {
     heading: (
       <>

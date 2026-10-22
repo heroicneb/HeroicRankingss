@@ -3,6 +3,7 @@
  * title. Used by the data mapper (fallbacks), the routes and the seed script.
  */
 
+import { AI_SEARCH_PAGE } from "../ai-search/ai-search-content.ts";
 import { CONTENT_CREATION_PAGE } from "../content-creation/content-creation-content.ts";
 import { ECOMMERCE_SEO_PAGE } from "../ecommerce-seo/ecommerce-seo-content.ts";
 import { KEYWORD_STRATEGY_PAGE } from "../keyword-strategy/keyword-strategy-content.ts";
@@ -20,6 +21,7 @@ export const SEO_SERVICE_PAGES: readonly SeoServicePageDefinition[] = [
   KEYWORD_STRATEGY_PAGE,
   CONTENT_CREATION_PAGE,
   ECOMMERCE_SEO_PAGE,
+  AI_SEARCH_PAGE,
 ];
 
 export function seoServicePage(key: SeoServicePageKey): SeoServicePageDefinition {

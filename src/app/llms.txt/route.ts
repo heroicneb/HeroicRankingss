@@ -8,6 +8,7 @@ import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
  */
 const SERVICES = [
   ["SEO, GEO & AEO services", "/seo/"],
+  ["AI search optimization (GEO & AEO) services", "/seo/ai-search/"],
   ["On-page SEO", "/seo/on-page/"],
   ["Technical SEO", "/seo/technical/"],
   ["Local SEO", "/seo/local/"],
