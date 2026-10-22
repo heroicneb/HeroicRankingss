@@ -5,12 +5,13 @@ import {
   type SeoDesktopServiceCard,
 } from "@/components/pages/seo-services/seo-services-desktop-services-grid";
 import { SeoServicesMobileServicesRail } from "@/components/pages/seo-services/seo-services-mobile-services-rail";
+import { SEO_SERVICES_EXTRAS } from "@/components/pages/seo-services/seo-services-extras";
 import {
   ServiceFaqBlock,
-  ServiceSuccessStoriesBlock,
   ServiceWhyChooseBlock,
   TEXT,
 } from "@/components/sections/shared/service-page-blocks";
+import { ServiceProcessBanner } from "@/components/sections/shared/service-process-banner";
 import { AppLink } from "@/components/ui/app-link";
 import { GradientHeading } from "@/components/ui/gradient-heading";
 import { GradientArrowUpRightIcon } from "@/components/ui/icons/decorative";
@@ -29,7 +30,15 @@ const HUB_CARD_LAYOUT = [
   { titleWidthClass: "max-w-[250px]", descWidthClass: "max-w-[216px]", colSpanClass: "lg:col-span-1", backIntroWidthClass: "max-w-[245px]", backPointsWidthClass: "max-w-[237px]" },
   { titleWidthClass: "max-w-[250px]", descWidthClass: "max-w-[231px]", colSpanClass: "lg:col-span-1", backIntroWidthClass: "max-w-[245px]", backPointsWidthClass: "max-w-[237px]" },
   { titleWidthClass: "max-w-[453px]", descWidthClass: "max-w-[192px]", colSpanClass: "lg:col-span-2", backIntroWidthClass: "max-w-[400px]", backPointsWidthClass: "max-w-[300px]" },
+  // 2026-10-23: eighth, full-width card for AI search optimization.
+  { titleWidthClass: "max-w-[520px]", descWidthClass: "max-w-[420px]", colSpanClass: "lg:col-span-4", backIntroWidthClass: "max-w-[560px]", backPointsWidthClass: "max-w-[520px]" },
 ];
+
+const PANEL = "rounded-[40px] bg-[var(--color-hr-off-white)] px-5 pb-[70px] pt-[60px] dark:bg-[var(--color-bg-dark)] sm:px-8 lg:px-[70px] lg:pb-[100px] lg:pt-[100px]";
+const CARD = "rounded-[30px] border border-[var(--color-hr-light-grey)] bg-[var(--color-hr-pure-white)] dark:border-[var(--color-border-inverse-10)] dark:bg-[var(--color-bg-dark)]";
+const MUTED = "text-[var(--color-hr-grey)] dark:text-[var(--color-text-inverse-50)]";
+const TEXT_LINK = `type-cta inline-flex items-center gap-2 underline-offset-4 hover:underline ${TEXT}`;
+const CELL = "px-[24px] py-[20px] align-top";
 
 interface SeoServicesPageProps {
   content: SeoServiceContent;
@@ -38,6 +47,7 @@ interface SeoServicesPageProps {
 
 export default function SeoServicesPage({ content, cmsFaqItems }: SeoServicesPageProps) {
   const { hero, solutions } = content;
+  const { definition, pricing, results, audience } = SEO_SERVICES_EXTRAS;
 
   const gridCards: readonly SeoDesktopServiceCard[] = solutions.hubCards.map((card, index) => ({
     title: card.title,
@@ -108,7 +118,34 @@ export default function SeoServicesPage({ content, cmsFaqItems }: SeoServicesPag
         </div>
       </section>
 
-      <section className="pt-[60px] lg:pt-[120px]" id="services">
+      {/* WHY: the definition is the passage AI Overviews and People Also Ask quote for "what are SEO services". */}
+      <section className="pt-[60px] lg:pt-[120px]" id="what-are-seo-services">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className={PANEL}>
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,420px)_1fr] lg:gap-[80px]">
+              <div>
+                <SectionLabel>{definition.label}</SectionLabel>
+                <h2 className={`type-h2 mt-5 ${TEXT}`}>
+                  <GradientHeading highlightClassName="gradient-text-brand-services" segments={definition.heading} />
+                </h2>
+              </div>
+              <div className="space-y-6">
+                {definition.paragraphs.map((paragraph) => (
+                  <p className={`type-paragraph ${TEXT}`} key={paragraph}>
+                    {paragraph}
+                  </p>
+                ))}
+                <AppLink className={TEXT_LINK} href={definition.linkHref}>
+                  {definition.linkLabel}
+                  <GradientArrowUpRightIcon className="size-[10px]" />
+                </AppLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-[10px]" id="services">
         <div className={PAGE_SHELL_CLASS}>
           <div className={CONTENT_SHELL_CLASS}>
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
@@ -121,12 +158,131 @@ export default function SeoServicesPage({ content, cmsFaqItems }: SeoServicesPag
             <SeoServicesMobileServicesRail />
 
             <SeoServicesDesktopServicesGrid cards={gridCards} />
+
+            {solutions.banner ? (
+              <ServiceProcessBanner
+                banner={solutions.banner}
+                descriptionClassName="type-paragraph mt-[39px] max-w-[640px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]"
+              />
+            ) : null}
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-[10px]" id="pricing">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className={PANEL}>
+            <SectionLabel>{pricing.label}</SectionLabel>
+            <h2 className={`type-h2 mt-5 max-w-[640px] ${TEXT}`}>
+              <GradientHeading highlightClassName="gradient-text-brand-services" segments={pricing.heading} />
+            </h2>
+            <p className={`type-paragraph mt-5 max-w-[720px] ${TEXT}`}>{pricing.intro}</p>
+
+            <div className={`mt-10 overflow-x-auto ${CARD}`}>
+              <table className="w-full min-w-[640px] border-collapse text-left">
+                <thead>
+                  <tr className="border-b border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)]">
+                    {pricing.columns.map((column) => (
+                      <th className={`type-cta ${CELL} ${TEXT}`} key={column} scope="col">
+                        {column}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {pricing.rows.map(([programme, bestFor, includes]) => (
+                    <tr className="border-b border-[var(--color-hr-light-grey)] last:border-b-0 dark:border-[var(--color-border-inverse-10)]" key={programme}>
+                      <th className={`type-cta gradient-text-brand gradient-text-brand-services ${CELL}`} scope="row">
+                        {programme}
+                      </th>
+                      <td className={`type-paragraph ${CELL} ${MUTED}`}>{bestFor}</td>
+                      <td className={`type-paragraph ${CELL} ${TEXT}`}>{includes}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className={`type-paragraph mt-8 max-w-[720px] ${TEXT}`}>{pricing.note}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-[10px]" id="results">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className={PANEL}>
+            <SectionLabel>{results.label}</SectionLabel>
+            <h2 className={`type-h2 mt-5 max-w-[640px] ${TEXT}`}>
+              <GradientHeading highlightClassName="gradient-text-brand-services" segments={results.heading} />
+            </h2>
+
+            <div className={`mt-10 overflow-x-auto ${CARD}`}>
+              <table className="w-full min-w-[640px] border-collapse text-left">
+                <thead>
+                  <tr className="border-b border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)]">
+                    {results.columns.map((column) => (
+                      <th className={`type-cta ${CELL} ${TEXT}`} key={column} scope="col">
+                        {column}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {results.rows.map((row) => (
+                    <tr className="border-b border-[var(--color-hr-light-grey)] last:border-b-0 dark:border-[var(--color-border-inverse-10)]" key={row.client}>
+                      <th className={`type-cta ${CELL} ${TEXT}`} scope="row">
+                        <AppLink className="underline-offset-4 hover:underline" href={row.href}>
+                          {row.client}
+                        </AppLink>
+                      </th>
+                      <td className={`type-paragraph ${CELL} ${TEXT}`}>{row.result}</td>
+                      <td className={`type-paragraph ${CELL} ${MUTED}`}>{row.timeframe}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2">
+              {results.quotes.map((item) => (
+                <figure className={`${CARD} p-[30px]`} key={item.source}>
+                  <blockquote className={`type-paragraph ${TEXT}`}>“{item.quote}”</blockquote>
+                  <figcaption className={`type-cta mt-5 ${MUTED}`}>{item.source}</figcaption>
+                </figure>
+              ))}
+            </div>
+            <AppLink className={`${TEXT_LINK} mt-8`} href={results.linkHref}>
+              {results.linkLabel}
+              <GradientArrowUpRightIcon className="size-[10px]" />
+            </AppLink>
           </div>
         </div>
       </section>
 
       <ServiceWhyChooseBlock sectionId="about" whyChoose={content.whyChoose} />
-      <ServiceSuccessStoriesBlock gradientFirst={false} sectionId="case-studies" />
+
+      <section className="pt-[10px]" id="who-its-for">
+        <div className={PAGE_SHELL_CLASS}>
+          <div className={PANEL}>
+            <SectionLabel>{audience.label}</SectionLabel>
+            <h2 className={`type-h2 mt-5 max-w-[640px] ${TEXT}`}>
+              <GradientHeading highlightClassName="gradient-text-brand-services" segments={audience.heading} />
+            </h2>
+            <ul className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+              {audience.items.map((item) => (
+                <li className={`${CARD} flex flex-col p-[30px]`} key={item.title}>
+                  <h3 className={`type-h3 ${TEXT}`}>{item.title}</h3>
+                  <p className={`type-paragraph mt-[10px] ${MUTED}`}>{item.description}</p>
+                  <AppLink className={`${TEXT_LINK} mt-auto pt-6`} href={item.href}>
+                    {item.linkLabel}
+                    <GradientArrowUpRightIcon className="size-[10px]" />
+                  </AppLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <ServiceFaqBlock cmsFaqItems={cmsFaqItems} content={content} sectionId="faq" variant="boxed" />
     </>
   );
