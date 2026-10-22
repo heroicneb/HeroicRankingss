@@ -170,14 +170,14 @@ const MOBILE_SERVICE_CARDS: readonly MobileServiceCard[] = [
     href: "/seo/keyword-research",
   },
   {
-    // 2026-10-23: AI search optimization joined the grid. TODO(image pass): crop of the keyword statue for now.
+    // 2026-10-23: AI search optimization joined the grid.
     title: "AI Search Optimization (GEO & AEO)",
-    imageSrc: "/seo-services/subtract-8.jpg",
-    imageAlt: "Classical statue holding a magnifying glass",
-    imageWidth: 2560,
-    imageHeight: 840,
-    mobileImageRenderWidth: 1050,
-    imageClassName: "h-[76.67%] w-[300%] left-[-100%] top-[23.33%]",
+    imageSrc: "/seo-services/subtract-8.webp",
+    imageAlt: "Glowing network carved into a stone slab",
+    imageWidth: 2000,
+    imageHeight: 667,
+    mobileImageRenderWidth: 1040,
+    imageClassName: "h-[76.67%] w-[296%] left-[-118%] top-[23.33%]",
     backIntro: "Get cited in AI Overviews, AI Mode, ChatGPT and Perplexity. Our AI search optimization services include:",
     backPoints: ["AI citation audit", "Answer-first page structure and schema", "Brand mention building", "Monthly AI visibility tracking"],
     backIntroWidthClass: "max-w-[305px]",
