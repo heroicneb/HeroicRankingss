@@ -47,7 +47,7 @@ interface SeoServicesPageProps {
 
 export default function SeoServicesPage({ content, cmsFaqItems }: SeoServicesPageProps) {
   const { hero, solutions } = content;
-  const { definition, pricing, results, audience } = SEO_SERVICES_EXTRAS;
+  const { definition, results, audience } = SEO_SERVICES_EXTRAS;
 
   const gridCards: readonly SeoDesktopServiceCard[] = solutions.hubCards.map((card, index) => ({
     title: card.title,
@@ -169,44 +169,6 @@ export default function SeoServicesPage({ content, cmsFaqItems }: SeoServicesPag
         </div>
       </section>
 
-      <section className="pt-[10px]" id="pricing">
-        <div className={PAGE_SHELL_CLASS}>
-          <div className={PANEL}>
-            <SectionLabel>{pricing.label}</SectionLabel>
-            <h2 className={`type-h2 mt-5 max-w-[640px] ${TEXT}`}>
-              <GradientHeading highlightClassName="gradient-text-brand-services" segments={pricing.heading} />
-            </h2>
-            <p className={`type-paragraph mt-5 max-w-[720px] ${TEXT}`}>{pricing.intro}</p>
-
-            <div className={`mt-10 overflow-x-auto ${CARD}`}>
-              <table className="w-full min-w-[640px] border-collapse text-left">
-                <thead>
-                  <tr className="border-b border-[var(--color-hr-light-grey)] dark:border-[var(--color-border-inverse-10)]">
-                    {pricing.columns.map((column) => (
-                      <th className={`type-cta ${CELL} ${TEXT}`} key={column} scope="col">
-                        {column}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {pricing.rows.map(([programme, bestFor, includes]) => (
-                    <tr className="border-b border-[var(--color-hr-light-grey)] last:border-b-0 dark:border-[var(--color-border-inverse-10)]" key={programme}>
-                      <th className={`type-cta gradient-text-brand gradient-text-brand-services ${CELL}`} scope="row">
-                        {programme}
-                      </th>
-                      <td className={`type-paragraph ${CELL} ${MUTED}`}>{bestFor}</td>
-                      <td className={`type-paragraph ${CELL} ${TEXT}`}>{includes}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className={`type-paragraph mt-8 max-w-[720px] ${TEXT}`}>{pricing.note}</p>
-          </div>
-        </div>
-      </section>
-
       <section className="pt-[10px]" id="results">
         <div className={PAGE_SHELL_CLASS}>
           <div className={PANEL}>
@@ -230,8 +192,9 @@ export default function SeoServicesPage({ content, cmsFaqItems }: SeoServicesPag
                   {results.rows.map((row) => (
                     <tr className="border-b border-[var(--color-hr-light-grey)] last:border-b-0 dark:border-[var(--color-border-inverse-10)]" key={row.client}>
                       <th className={`type-cta ${CELL} ${TEXT}`} scope="row">
-                        <AppLink className="underline-offset-4 hover:underline" href={row.href}>
+                        <AppLink className="gradient-text-brand gradient-text-brand-services inline-flex items-center gap-2 underline-offset-4 hover:underline" href={row.href}>
                           {row.client}
+                          <GradientArrowUpRightIcon className="size-[10px]" />
                         </AppLink>
                       </th>
                       <td className={`type-paragraph ${CELL} ${TEXT}`}>{row.result}</td>

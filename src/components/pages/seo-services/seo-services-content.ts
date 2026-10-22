@@ -5,7 +5,7 @@ import { DEFAULT_WHY_CHOOSE, processSteps, type SeoServicePageDefinition } from 
  * SEO services hub (/seo). Copy approved from the 2026-10-23 draft
  * ("SEO Services and AI Search Pages: Draft Copy"). Target terms: SEO
  * services, professional SEO services, SEO services company, SEO agency.
- * The definition, pricing, results and audience sections live in
+ * The definition, results and audience sections live in
  * seo-services-extras.ts (fixed copy, not in the CMS model).
  */
 
@@ -33,10 +33,11 @@ export const SEO_SERVICES_PAGE: SeoServicePageDefinition = {
       label: "/ SEO, GEO & AEO services /",
       heading: [tx("Rank on Google. "), hl("Get cited in AI answers.")],
       paragraphs: [
-        "0 to 63,500 monthly organic visitors in 24 months for one eCommerce client. 11x organic traffic for a B2B marketplace. Programmes in 30+ languages.",
-        "Every programme runs four streams: technical SEO, content, links and reporting tied to revenue. Since 2024 it also earns citations in AI Overviews, AI Mode and ChatGPT.",
+        "SEO is a long-term growth engine and we build it with precision, visibility across searches not just rankings.",
+        "At Heroic Rankings, we combine data, strategy, and execution to drive measurable rankings, traffic, and revenue.",
+        "Our methods ensure brands aren't just ranking, they're being referenced, cited, and surfaced across LLM-driven results.",
       ],
-      ctaLabel: "Get a Free SEO Audit",
+      ctaLabel: "Get Your SEO Audit Now!",
       ctaUrl: "/contact",
       image: img("/seo-services/hero-statue.webp", 3072, 4096, "Classical statue holding a sword"),
     },
@@ -67,7 +68,7 @@ export const SEO_SERVICES_PAGE: SeoServicePageDefinition = {
           ],
           ["Audit and Opportunity Map", "Strategy and Roadmap", "Build", "Earn", "Report and Compound"],
         ),
-        ctaLabel: "Get a Free SEO Audit",
+        ctaLabel: "Grow Your SEO",
         ctaUrl: "/contact",
       },
     },

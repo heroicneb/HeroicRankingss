@@ -1,28 +1,16 @@
 import { hl, tx } from "../shared/page-content.ts";
 
-/** Hub sections outside the shared CMS model: definition, pricing shape, results and audience. */
+/** Hub sections outside the shared CMS model: definition, results and audience. */
 export const SEO_SERVICES_EXTRAS = {
   definition: {
     label: "/ What they are /",
     heading: [tx("What Are "), hl("SEO Services?")],
     paragraphs: [
-      "SEO services are the work an agency does to make a website rank higher on Google and appear in AI-generated answers. They cover four streams: technical fixes so pages get crawled and indexed, content that matches what people search for, links that build authority, and reporting that connects all of it to leads and revenue. No single stream works alone, which is why every Heroic Rankings programme runs all four.",
-      "In 2026 the job has a fifth part. AI Overviews, AI Mode, ChatGPT and Perplexity answer questions by quoting pages Google already trusts, so the same programme now has to earn citations as well as clicks. We treat that as part of SEO, not a separate product.",
+      "SEO services are the work an agency does to make a website rank higher on Google and appear in AI-generated answers. They cover four streams: technical fixes so pages get crawled and indexed, content that matches what people search for, links that build authority, and reporting that connects all of it to leads and revenue.",
+      "In 2026 the job has a fifth part. AI Overviews, AI Mode, ChatGPT and Perplexity answer questions by quoting pages Google already trusts. We treat that as part of SEO, not a separate product.",
     ],
     linkLabel: "Only want the AI side? See our AI search optimization services",
     linkHref: "/seo/ai-search/",
-  },
-  pricing: {
-    label: "/ How pricing works /",
-    heading: [tx("Scoped to the Work, "), hl("Not a Fixed Menu")],
-    intro: "SEO services at Heroic Rankings run on a monthly retainer scoped to the work. Three shapes cover most clients.",
-    columns: ["Programme", "Best for", "What it includes"],
-    rows: [
-      ["Focused", "One stream, usually link building or a technical fix", "A defined monthly deliverable, one strategist, monthly report"],
-      ["Growth", "SaaS, B2B and eCommerce sites competing in one market", "All four streams plus AI search, content calendar, link programme, quarterly review"],
-      ["Scale", "Multi-market, multi-language or enterprise sites", "Everything in Growth across markets, dedicated team, custom reporting"],
-    ],
-    note: "Every proposal lists deliverables, timeline and how results are measured, so you can compare it line by line with any other quote.",
   },
   results: {
     label: "/ Results /",
