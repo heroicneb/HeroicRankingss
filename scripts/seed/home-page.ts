@@ -49,6 +49,7 @@ async function main() {
     _id: "homePage",
     _type: "homePage",
     hero: {
+      title: c.hero.title,
       heading: headingBlocks(c.hero.heading),
       paragraphs: c.hero.paragraphs,
       ctaLabel: c.hero.ctaLabel,
@@ -57,6 +58,7 @@ async function main() {
     services: {
       label: c.services.label,
       heading: headingBlocks(c.services.heading),
+      intro: c.services.intro,
       ctaLabel: c.services.ctaLabel,
       ctaUrl: c.services.ctaUrl,
       cards: c.services.cards.map((card) => ({

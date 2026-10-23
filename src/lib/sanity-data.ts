@@ -1788,9 +1788,9 @@ interface SanityRawHomePage {
         disclaimer?: string | null;
       } & SanityRawHomeCta)
     | null;
-  hero?: ({ heading?: PortableTextBlock[] | null; paragraphs?: string[] | null } & SanityRawHomeCta) | null;
+  hero?: ({ title?: string | null; heading?: PortableTextBlock[] | null; paragraphs?: string[] | null } & SanityRawHomeCta) | null;
   services?:
-    | ({
+    | ({ intro?: string | null;
         label?: string | null;
         heading?: PortableTextBlock[] | null;
         cards?: Array<{
@@ -1888,6 +1888,7 @@ export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
 
   const content: HomeContent = {
     hero: {
+      title: text(raw.hero?.title, d.hero.title),
       heading: headingSegments(raw.hero?.heading, d.hero.heading),
       paragraphs: raw.hero?.paragraphs?.filter((p) => p?.trim()).length
         ? raw.hero.paragraphs.filter((p) => p?.trim())
@@ -1897,6 +1898,7 @@ export const getHomePage = cache(async (): Promise<SanityHomePage | null> => {
     services: {
       label: text(raw.services?.label, d.services.label),
       heading: headingSegments(raw.services?.heading, d.services.heading),
+      intro: text(raw.services?.intro, d.services.intro),
       ...cta(raw.services, d.services),
       cards: listOr(raw.services?.cards, d.services.cards, (card, i) => ({
         title: card.title ?? "",

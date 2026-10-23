@@ -25,14 +25,16 @@ export function Hero({ content = DEFAULT_HOME_CONTENT.hero }: HeroProps) {
     <section className="pb-0 pt-[60px] lg:pt-[104px]">
       <Container>
         <div className="mx-auto flex max-w-[857px] flex-col items-center text-center">
-          <h1 className="type-h1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
+          {/* WHY: the slogan stays the visual headline; the H1 is the plain line above it so search engines read what the company is. */}
+          <h1 className="type-section-label mb-5 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mb-[25px]">{content.title}</h1>
+          <p className="type-h1 text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
             {lines.map(({ line, startIndex }, index) => (
               <span key={index}>
                 {index > 0 ? <br /> : null}
                 <AnimatedWords highlightClassName="gradient-text-home-hero" segments={line} startIndex={startIndex} />
               </span>
             ))}
-          </h1>
+          </p>
           <p className="hero-fade type-paragraph mx-auto mt-[30px] w-full max-w-[342px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)] lg:mt-[17px] lg:max-w-[670px]" style={{ "--d": "520ms" } as CSSProperties}>
             <span className="block">{lead}</span>
             {rest.map((paragraph, index) => (
