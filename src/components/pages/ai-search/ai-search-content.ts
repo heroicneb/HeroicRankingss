@@ -34,8 +34,7 @@ export const AI_SEARCH_PAGE: SeoServicePageDefinition = {
       ],
       ctaLabel: "Get a Free AI Visibility Audit",
       ctaUrl: "/contact",
-      // TODO(image pass): placeholder reused from the keyword strategy page until the AI search hero is shot.
-      image: img("/keyword-strategy/012b3586db53585c2f2ea20a4f280ca6c2da8e1c.webp", 4096, 2866, "Classical statue holding a magnifying glass"),
+      image: img("/ai-search/hero.webp", 1361, 642, "AI chat window citing sources, with ChatGPT and Claude logos"),
     },
     solutions: {
       label: "/ What's included /",
