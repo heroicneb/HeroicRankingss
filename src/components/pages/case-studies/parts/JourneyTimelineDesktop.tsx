@@ -99,7 +99,7 @@ export function JourneyTimelineDesktop({ steps }: JourneyTimelineDesktopProps) {
           />
           <span
             aria-hidden
-            className="journey-dot absolute top-0 size-[30px] rounded-full bg-[linear-gradient(226.57deg,var(--color-brand-gradient-stop-1)_18.303%,var(--color-brand-gradient-stop-2)_40.658%,var(--color-brand-gradient-stop-3)_129.53%)] shadow-[0_0_24px_color-mix(in_srgb,var(--color-brand-gradient-stop-2)_70%,transparent)]"
+            className="journey-dot absolute top-0 z-10 size-[30px] rounded-full bg-[linear-gradient(226.57deg,var(--color-brand-gradient-stop-1)_18.303%,var(--color-brand-gradient-stop-2)_40.658%,var(--color-brand-gradient-stop-3)_129.53%)] shadow-[0_0_24px_color-mix(in_srgb,var(--color-brand-gradient-stop-2)_70%,transparent)]"
             style={{ transform: `translateX(${dotLeft}px)` }}
           />
         </>
@@ -114,6 +114,8 @@ export function JourneyTimelineDesktop({ steps }: JourneyTimelineDesktopProps) {
                 aria-hidden
                 className={cn(
                   "size-[30px] rounded-full",
+                  // WHY: with motion on, only the travelling dot shows; these stay in the layout (invisible) as its landing marks.
+                  highlight && "invisible",
                   !highlight && index === 0
                     ? "bg-[linear-gradient(226.57deg,var(--color-brand-gradient-stop-1)_18.303%,var(--color-brand-gradient-stop-2)_40.658%,var(--color-brand-gradient-stop-3)_129.53%)]"
                     : "bg-[var(--color-hr-light-grey)] dark:bg-[var(--color-hr-dark-line)]",
