@@ -81,7 +81,7 @@ export default function AiSearchPage({ content, cmsFaqItems }: AiSearchPageProps
               <div className="pointer-events-none relative h-[331px] w-full overflow-hidden lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:top-0 lg:h-auto">
                 <Image
                   alt={hero.image.alt}
-                  className="absolute left-[-36.81%] top-0 h-full w-[202.46%] max-w-none object-cover lg:left-[22%] lg:top-[-0.73%] lg:h-[106.69%] lg:w-[110%]"
+                  className="absolute inset-0 h-full w-full object-cover object-right"
                   fetchPriority="high"
                   height={hero.image.height}
                   priority
