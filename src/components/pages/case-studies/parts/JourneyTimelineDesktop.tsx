@@ -30,6 +30,7 @@ export function JourneyTimelineDesktop({ steps }: JourneyTimelineDesktopProps) {
   const [running, setRunning] = useState(false);
   const [motionOk, setMotionOk] = useState(false);
   const [dotLeft, setDotLeft] = useState(0);
+  const [trackWidth, setTrackWidth] = useState<number | null>(null);
   const rootRef = useRef<HTMLDivElement>(null);
   const dotRefs = useRef<Array<HTMLSpanElement | null>>([]);
 
@@ -74,9 +75,13 @@ export function JourneyTimelineDesktop({ steps }: JourneyTimelineDesktopProps) {
   const measure = useCallback(() => {
     const root = rootRef.current;
     const target = dotRefs.current[active];
-    if (!root || !target) return;
-    setDotLeft(target.getBoundingClientRect().left - root.getBoundingClientRect().left);
-  }, [active]);
+    const last = dotRefs.current[steps.length - 1];
+    if (!root || !target || !last) return;
+    const rootLeft = root.getBoundingClientRect().left;
+    setDotLeft(target.getBoundingClientRect().left - rootLeft);
+    // WHY: the line ends under the last step's dot, not at the panel edge, so the journey visibly completes there.
+    setTrackWidth(last.getBoundingClientRect().right - rootLeft);
+  }, [active, steps.length]);
 
   useEffect(() => {
     measure();
@@ -88,7 +93,11 @@ export function JourneyTimelineDesktop({ steps }: JourneyTimelineDesktopProps) {
 
   return (
     <div className="relative" ref={rootRef}>
-      <span aria-hidden className="absolute left-0 right-0 top-[14px] h-[2px] bg-[var(--color-hr-light-grey)] dark:bg-[var(--color-hr-dark-line)]" />
+      <span
+        aria-hidden
+        className="absolute left-0 top-[14px] h-[2px] bg-[var(--color-hr-light-grey)] dark:bg-[var(--color-hr-dark-line)]"
+        style={{ width: trackWidth === null ? "100%" : `${trackWidth}px` }}
+      />
       {highlight ? (
         <>
           {/* The filled part of the line, from the first step to the dot. */}
