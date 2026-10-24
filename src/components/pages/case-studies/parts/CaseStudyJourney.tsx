@@ -3,6 +3,8 @@ import { SectionLabel } from "@/components/ui/section-label";
 import { TwoToneHeading } from "@/components/ui/two-tone-heading";
 import type { SanityCaseStudyDetail } from "@/lib/sanity-data";
 
+import { JourneyTimelineDesktop } from "./JourneyTimelineDesktop";
+
 type JourneyTimelineData = NonNullable<SanityCaseStudyDetail["journeyTimeline"]>;
 type JourneyItem = NonNullable<JourneyTimelineData["items"]>[number];
 
@@ -28,9 +30,9 @@ function JourneyStepMobile({ step }: { step: JourneyItem }) {
 /**
  * Journey to Success (Figma 2255:1042–1065): off-white panel with label and
  * two-tone heading, then a horizontal timeline — one 2px hairline across the
- * full width, a 30px dot per step (the first filled with the brand gradient,
- * the rest light grey) and, 40px below, an 80px title slot and the body.
- * Steps share the width equally; on phones they become a card rail.
+ * full width, a 30px dot per step and, 40px below, an 80px title slot and the
+ * body. On desktop the brand-gradient dot travels along the line step by step
+ * (JourneyTimelineDesktop); on phones the steps become a static card rail.
  */
 export function CaseStudyJourney({ data }: CaseStudyJourneyProps) {
   if (!data) return null;
@@ -56,28 +58,11 @@ export function CaseStudyJourney({ data }: CaseStudyJourneyProps) {
             ) : null}
           </div>
 
-          {/* Desktop timeline */}
-          <div className="relative mt-[120px] hidden lg:block">
-            <span aria-hidden className="absolute left-0 right-0 top-[14px] h-[2px] bg-[var(--color-hr-light-grey)] dark:bg-[var(--color-hr-dark-line)]" />
-            <ol className="relative grid gap-[48px]" style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}>
-              {items.map((step, index) => (
-                <li className="flex flex-col" key={step._key ?? `${step.title}-${index}`}>
-                  <span
-                    aria-hidden
-                    className={
-                      index === 0
-                        ? "size-[30px] rounded-full bg-[linear-gradient(226.57deg,var(--color-brand-gradient-stop-1)_18.303%,var(--color-brand-gradient-stop-2)_40.658%,var(--color-brand-gradient-stop-3)_129.53%)]"
-                        : "size-[30px] rounded-full bg-[var(--color-hr-light-grey)] dark:bg-[var(--color-hr-dark-line)]"
-                    }
-                  />
-                  {/* WHY: the phone rail below carries each step as an H3; a second H3 per step would double the outline. */}
-                  <p className="mt-[40px] min-h-[80px] font-normal text-[32px] leading-[1.2] tracking-[-0.64px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">
-                    {step.title}
-                  </p>
-                  <p className="text-[18px] leading-[24px] text-[var(--color-hr-dark)] dark:text-[var(--color-text-inverse)]">{step.body}</p>
-                </li>
-              ))}
-            </ol>
+          {/* Desktop timeline: the dot travels from step to step while the section is in view. */}
+          <div className="mt-[120px] hidden lg:block">
+            <JourneyTimelineDesktop
+              steps={items.map((step, index) => ({ key: step._key ?? `${step.title}-${index}`, title: step.title ?? "", body: step.body ?? "" }))}
+            />
           </div>
 
           {/* Mobile rail */}
