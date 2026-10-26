@@ -466,6 +466,142 @@ const DIY_MONTHLY_REVENUE: ProofVisualSpec = {
   source: "Looker Studio organic search revenue overview (revenue labels verbatim; users read from the line)",
 };
 
+// ── Beauty eCommerce brand ───────────────────────────────────────────────────
+// Source: the client's Search Console, GA4 and Ahrefs exports (Jan–Oct 2026),
+// monthly daily averages; October covers Oct 1–21. Revenue in EUR.
+
+const BEAUTY_SEARCH_CONSOLE: ProofVisualSpec = {
+  id: "beauty-search-console",
+  title: "Beauty eCom brand Google Search Console performance",
+  stats: [
+    { label: "Total clicks / 28 days", value: 53400, note: "vs. 32.6K in June", accent: true },
+    { label: "Total impressions / 28 days", value: 937000, note: "vs. 519K in June", accent: true },
+    { label: "Average position", value: 6.2, decimals: 1, note: "vs. 6.8 in June" },
+    { label: "Non-branded clicks / 28 days", value: 31900, note: "vs. 19.9K in June", accent: true },
+  ],
+  chart: line({
+    id: "beauty-gsc-chart",
+    title: "Daily clicks and impressions by month, January to October",
+    metricLabel: "Search performance (daily average)",
+    ...monthAxis(2026, 1, 10),
+    yDomain: [0, 2000],
+    yTicks: [0, 500, 1000, 1500, 2000],
+    yRight: { domain: [0, 40000], ticks: [0, 10000, 20000, 30000, 40000] },
+    series: [
+      { key: "clicks", label: "Clicks / day", color: "brand", emphasis: true, values: [1438, 1434, 1526, 1363, 1267, 1166, 1378, 1582, 1780, 1936] },
+      { key: "impressions", label: "Impressions / day", color: "soft", axis: "right", values: [18804, 20513, 20902, 17438, 17929, 18606, 23717, 26729, 31285, 34118] },
+    ],
+  }),
+  source: "Search Console performance report, daily averages by month; last 28 days (Sep 24 – Oct 21) vs. Jun 1–28",
+};
+
+const BEAUTY_KEYWORDS: ProofVisualSpec = {
+  id: "beauty-keyword-rankings",
+  title: "Beauty eCom brand keyword rankings",
+  stats: [
+    { label: "Keywords in top 3", value: 598, note: "from 354 in June", accent: true },
+    { label: "Positions 4–10", value: 904, note: "from 628 in June" },
+    { label: "Total top 10", value: 1502, note: "from 982 in June", accent: true },
+  ],
+  chart: line({
+    id: "beauty-keywords-chart",
+    title: "Keywords in the top 3 and in positions 4–10, monthly snapshots January to October",
+    metricLabel: "Ranking keywords",
+    ...monthAxis(2026, 1, 10),
+    yDomain: [0, 1200],
+    yTicks: [0, 300, 600, 900, 1200],
+    axisFormat: "plain",
+    series: [
+      { key: "top3", label: "Top 3", color: "brand", emphasis: true, values: [243, 290, 299, 276, 329, 354, 428, 448, 480, 598] },
+      { key: "top410", label: "Positions 4–10", color: "soft", values: [594, 629, 646, 608, 653, 628, 821, 910, 978, 904] },
+    ],
+  }),
+  source: "Ahrefs organic keyword positions, snapshot on the 1st of each month",
+};
+
+const BEAUTY_TOP_KEYWORDS: ProofVisualSpec = {
+  id: "beauty-top-keyword-wins",
+  title: "Beauty eCom brand top keyword wins",
+  table: {
+    caption: "Non-branded queries, Jun 1–28 vs. Sep 24 – Oct 21 (Search Console). A dash means the store had no ranking in June.",
+    columns: [
+      { key: "query", label: "Query" },
+      { key: "meaning", label: "Meaning", optional: true },
+      { key: "before", label: "June position", kind: "text" },
+      { key: "now", label: "Now", kind: "position" },
+      { key: "clicksBefore", label: "Clicks in June", kind: "number", optional: true },
+      { key: "clicksNow", label: "Clicks now / 28 days", kind: "bar", max: 403 },
+    ],
+    rows: [
+      { query: "advent kalendar 2026", meaning: "Advent calendar 2026", before: "—", now: 5.9, clicksBefore: 0, clicksNow: 403 },
+      { query: "rituals miris za auto", meaning: "Rituals car fragrance", before: "#3.8", now: 2.7, clicksBefore: 93, clicksNow: 349 },
+      { query: "arapski parfemi", meaning: "Arabic perfumes", before: "—", now: 4.8, clicksBefore: 0, clicksNow: 277 },
+      { query: "ysl advent calendar 2026", meaning: "YSL advent calendar 2026", before: "—", now: 1.7, clicksBefore: 0, clicksNow: 220 },
+      { query: "dior sminka", meaning: "Dior makeup", before: "#6.5", now: 1.9, clicksBefore: 13, clicksNow: 94 },
+      { query: "chanel parfemi", meaning: "Chanel perfumes", before: "—", now: 2.8, clicksBefore: 0, clicksNow: 86 },
+      { query: "nuxe ulje", meaning: "Nuxe dry oil", before: "#5.8", now: 2.2, clicksBefore: 23, clicksNow: 83 },
+      { query: "dior rumenilo", meaning: "Dior blush", before: "#8.9", now: 2.1, clicksBefore: 2, clicksNow: 82 },
+      { query: "kerastase ulje za kosu", meaning: "Kérastase hair oil", before: "—", now: 2.4, clicksBefore: 0, clicksNow: 70 },
+      { query: "prada parfem", meaning: "Prada perfume", before: "#14.6", now: 4.8, clicksBefore: 0, clicksNow: 46 },
+    ],
+  },
+  source: "Search Console queries report, non-branded, Jun 1–28 vs. Sep 24 – Oct 21, 2026",
+};
+
+const BEAUTY_MONTHLY_REVENUE: ProofVisualSpec = {
+  id: "beauty-monthly-revenue",
+  title: "Beauty eCom brand monthly organic revenue",
+  stats: [
+    { label: "Organic revenue since kickoff", value: 110600, format: "eur", note: "Jun 1 – Oct 21", accent: true },
+    { label: "Best full month", value: 28700, format: "eur", note: "August, 2.0× June", accent: true },
+    { label: "Organic orders / month", value: 512, note: "September, from 331" },
+    { label: "Average order value", value: 53, format: "eur", note: "September, from €43" },
+  ],
+  chart: line({
+    id: "beauty-revenue-chart",
+    title: "Monthly organic search revenue in EUR and organic sessions per day, January to October (October covers Oct 1–21)",
+    metricLabel: "Organic search",
+    ...monthAxis(2026, 1, 10),
+    valueFormat: "eur",
+    yDomain: [0, 32000],
+    yTicks: [0, 8000, 16000, 24000, 32000],
+    yRight: { domain: [0, 2500], ticks: [0, 500, 1000, 1500, 2000, 2500] },
+    series: [
+      { key: "revenue", label: "Organic revenue", color: "brand", emphasis: true, draw: "bar", format: "eur", values: [19072, 17348, 21334, 21158, 18211, 14311, 19941, 28674, 27197, 20485] },
+      { key: "sessions", label: "Organic sessions / day", color: "white", axis: "right", values: [1429, 1464, 1559, 1398, 1288, 1233, 1404, 1653, 1982, 2117] },
+    ],
+  }),
+  source: "GA4 Organic Search channel, revenue converted to EUR; October is Oct 1–21 actual",
+};
+
+const BEAUTY_COLLECTIONS: ProofVisualSpec = {
+  id: "beauty-collection-pages",
+  title: "Beauty eCom brand collection page growth",
+  stats: [
+    { label: "Collection page clicks / 28 days", value: 24900, note: "from 12.1K (+106%)", accent: true },
+    { label: "Collection page impressions / 28 days", value: 476000, note: "from 202K (+136%)", accent: true },
+    { label: "Newly ranking collections", value: 175, note: "7.2K clicks in 28 days" },
+  ],
+  table: {
+    caption: "Clicks on collection pages, Jun 1–28 vs. Sep 24 – Oct 21 (Search Console).",
+    columns: [
+      { key: "page", label: "Collection page" },
+      { key: "june", label: "Clicks, Jun 1–28", kind: "number" },
+      { key: "now", label: "Clicks, Sep 24 – Oct 21", kind: "bar", max: 980 },
+    ],
+    rows: [
+      { page: "Car fragrance brand collection", june: 0, now: 980 },
+      { page: "Dior brand page", june: 48, now: 766 },
+      { page: "Arabic perfumes category", june: 0, now: 471 },
+      { page: "Salt & Stone brand page", june: 13, now: 365 },
+      { page: "KIKO Milano brand page", june: 12, now: 349 },
+      { page: "Perfumes category hub", june: 19, now: 290 },
+      { page: "Kérastase brand page", june: 0, now: 280 },
+    ],
+  },
+  source: "Search Console pages report filtered to collection URLs, Jun 1–28 vs. Sep 24 – Oct 21, 2026",
+};
+
 export const PROOF_VISUALS: Record<string, ProofVisualSpec> = Object.fromEntries(
   [
     NAGISH_KEYWORDS,
@@ -485,6 +621,11 @@ export const PROOF_VISUALS: Record<string, ProofVisualSpec> = Object.fromEntries
     DIY_AI_REVENUE,
     DIY_REVENUE_FORECAST,
     DIY_MONTHLY_REVENUE,
+    BEAUTY_SEARCH_CONSOLE,
+    BEAUTY_KEYWORDS,
+    BEAUTY_TOP_KEYWORDS,
+    BEAUTY_MONTHLY_REVENUE,
+    BEAUTY_COLLECTIONS,
   ].map((spec) => [spec.id, spec]),
 );
 
@@ -497,6 +638,7 @@ export const DEFAULT_PROOF_VISUALS: Record<string, Array<string | null>> = {
   "art-by-maudsch": [MAUDSCH_KEYWORDS.id, MAUDSCH_TRAFFIC.id, MAUDSCH_REFERRING_DOMAINS.id, MAUDSCH_DOMAIN_RATING.id],
   designrush: [DESIGNRUSH_GROWTH.id, DESIGNRUSH_KEYWORDS.id, DESIGNRUSH_LINK_VELOCITY.id],
   "diy-craft-ecom-brand": [DIY_AHREFS.id, DIY_SEARCH_CONSOLE.id, DIY_TOP_KEYWORDS.id, DIY_AI_REVENUE.id, DIY_REVENUE_FORECAST.id, DIY_MONTHLY_REVENUE.id],
+  "beauty-ecom-brand": [BEAUTY_SEARCH_CONSOLE.id, BEAUTY_KEYWORDS.id, BEAUTY_TOP_KEYWORDS.id, BEAUTY_MONTHLY_REVENUE.id, BEAUTY_COLLECTIONS.id],
 };
 
 /** Options offered in the Studio's "Interactive visual" select. */

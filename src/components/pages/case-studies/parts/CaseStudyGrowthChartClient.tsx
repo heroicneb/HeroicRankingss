@@ -41,8 +41,8 @@ const formatLeft = (value: number) => {
 /** Axis/tooltip text for a row key ("MAY25#3" → "May"). */
 const tickText = (key: string) => monthOnly(key.split("#")[0] ?? key);
 
-/** Money series ("Traffic Value", "Revenue") get a dollar sign in the tooltip. */
-const isMoney = (name: string) => /value|revenue/i.test(name);
+/** Money series ("Traffic Value", "Revenue") get a currency sign in the tooltip: euros when the label says EUR, dollars otherwise. */
+const moneyPrefix = (name: string) => (/€|\bEUR\b/i.test(name) ? "€" : /value|revenue/i.test(name) ? "$" : "");
 
 interface TooltipPayload {
   name: string;
@@ -64,7 +64,7 @@ function ChartTooltip({ active, label, payload, colors }: { active?: boolean; la
             key={entry.name}
           >
             <span aria-hidden className="size-[12px] rounded-full" style={{ background: colors[entry.name] }} />
-            {entry.name}: {typeof entry.value === "number" ? `${isMoney(entry.name) ? "$" : ""}${entry.value.toLocaleString("en-US")}` : entry.value}
+            {entry.name}: {typeof entry.value === "number" ? `${moneyPrefix(entry.name)}${entry.value.toLocaleString("en-US")}` : entry.value}
           </div>
         ))}
       </div>

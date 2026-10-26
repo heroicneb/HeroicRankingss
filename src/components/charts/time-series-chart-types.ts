@@ -15,7 +15,8 @@ export type TimeSeriesVariant =
   /** A shaded band between a low and a high series with a trend line between them. */
   | "band";
 
-export type ValueFormat = "number" | "compact" | "currency" | "percent";
+/** "currency" is US dollars; "eur" formats the same way with a euro sign. */
+export type ValueFormat = "number" | "compact" | "currency" | "eur" | "percent";
 
 export interface TimeSeries {
   key: string;

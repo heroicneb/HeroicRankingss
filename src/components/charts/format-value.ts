@@ -18,7 +18,8 @@ export function formatCompact(value: number): string {
 export function formatValue(value: number, format: ValueFormat = "number"): string {
   switch (format) {
     case "currency":
-      return `$${value.toLocaleString("en-US", { maximumFractionDigits: value < 100 ? 2 : 0 })}`;
+    case "eur":
+      return `${format === "eur" ? "€" : "$"}${value.toLocaleString("en-US", { maximumFractionDigits: value < 100 ? 2 : 0 })}`;
     case "percent":
       return `${value.toLocaleString("en-US", { maximumFractionDigits: 2 })}%`;
     case "compact":
@@ -33,6 +34,8 @@ export function formatAxis(value: number, format: ValueFormat = "compact"): stri
   switch (format) {
     case "currency":
       return `$${formatCompact(value)}`;
+    case "eur":
+      return `€${formatCompact(value)}`;
     case "percent":
       return `${value}%`;
     case "number":

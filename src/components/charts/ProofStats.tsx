@@ -51,7 +51,7 @@ function Gauge({ percent, animate }: { percent: number; animate: boolean }) {
 
 export function StatTile({ stat, animate }: { stat: StatSpec; animate: boolean }) {
   const numeric = typeof stat.value === "number";
-  const prefix = stat.prefix ?? (stat.format === "currency" ? "$" : "");
+  const prefix = stat.prefix ?? (stat.format === "currency" ? "$" : stat.format === "eur" ? "€" : "");
   const suffix = stat.suffix ?? (stat.format === "percent" ? "%" : "");
   const exact = numeric ? `${prefix}${(stat.value as number).toLocaleString("en-US")}${suffix}` : String(stat.value);
   return (

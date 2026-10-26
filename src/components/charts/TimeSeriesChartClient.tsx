@@ -50,7 +50,7 @@ function seriesFormat(spec: TimeSeriesChartSpec, s: TimeSeries): ValueFormat {
 
 /** Axis ticks: plain numbers stay plain; everything else is shortened (1.2K, $3.2M). */
 function axisTickFormat(spec: TimeSeriesChartSpec, format: ValueFormat | undefined): ValueFormat {
-  if (format === "currency" || format === "percent") return format;
+  if (format === "currency" || format === "eur" || format === "percent") return format;
   return spec.axisFormat === "plain" ? "number" : "compact";
 }
 
@@ -155,7 +155,7 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
           tickFormatter={(value: number) => formatAxis(value, leftFormat)}
           tickLine={false}
           ticks={spec.yTicks}
-          width={spec.valueFormat === "currency" ? 52 : 44}
+          width={spec.valueFormat === "currency" || spec.valueFormat === "eur" ? 52 : 44}
           yAxisId="left"
         />
         {hasRight ? (
@@ -168,7 +168,7 @@ export default function TimeSeriesChartClient({ spec, animate }: { spec: TimeSer
             tickFormatter={(value: number) => formatAxis(value, rightFormat)}
             tickLine={false}
             ticks={spec.yRight?.ticks}
-            width={spec.yRight?.format === "currency" ? 52 : 44}
+            width={spec.yRight?.format === "currency" || spec.yRight?.format === "eur" ? 52 : 44}
             yAxisId="right"
           />
         ) : null}
