@@ -7,7 +7,7 @@ import type { HeadingSegment } from "@/components/pages/home/home-content";
 
 export const WEB_SUMMIT_PATH = "/web-summit-2026/";
 export const WEB_SUMMIT_DELIVERY = "within 7 days";
-export const WEB_SUMMIT_BOOTH = "0202-21";
+export const WEB_SUMMIT_BOOTH = "E328";
 
 export const WEB_SUMMIT_SEO = {
   title: "Web Summit 2026: Claim Your Heroic Five | Heroic Rankings",
